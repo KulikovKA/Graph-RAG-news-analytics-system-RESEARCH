@@ -1,0 +1,25 @@
+{
+  "seed": 42,
+  "group_key": "pilot24 cluster (conservative topical/family proxy)",
+  "train": [
+    "D004",
+    "D010",
+    "D017",
+    "D024",
+    "D026",
+    "D038",
+    "D060",
+    "D078"
+  ],
+  "validation": [
+    "D001",
+    "D003",
+    "D035",
+    "D092"
+  ],
+  "validation_groups": [
+    "C02",
+    "C07"
+  ],
+  "limitation": "Cluster-disjoint, small descriptive DEV experiment; clusters are not independently verified patent/publication families."
+}

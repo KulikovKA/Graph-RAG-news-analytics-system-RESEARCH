@@ -1,0 +1,2362 @@
+{
+  "ontology_id": "pilot24-ontology-v1.0",
+  "version": "1.0",
+  "status": "TECHNICALLY_FROZEN_PENDING_HUMAN_APPROVAL",
+  "technical_freeze": {
+    "identity_file": "FREEZE_MANIFEST.json",
+    "content_final": true,
+    "hashes_created_by": "repository integration"
+  },
+  "approval": {
+    "final_human_ontology_approved": false,
+    "annotation_human_review_status": "NOT_REVIEWED",
+    "human_gold_documents": 0,
+    "ai_adjudication_actor": "AI",
+    "user_decision_scope": "Earlier individual Q1-Q6 constraints, where recorded, are design instructions; they do not approve labels or the final ontology.",
+    "technical_freeze_is_human_approval": false
+  },
+  "entities": {
+    "MATERIAL": {
+      "definition": "A substance, composition, or material system considered as matter.",
+      "examples": "graphene; graphene oxide; reduced graphene oxide; Ti3C2Tx MXene",
+      "boundary": "A fabricated sensor or functional component is DEVICE; a material may FUNCTIONS_AS a device component without becoming identical to it.",
+      "canonicalization": "Preserve composition, oxidation, dopant and defect distinctions; expand locally defined aliases only."
+    },
+    "DEVICE": {
+      "definition": "An engineered object or functional physical component with a technical role.",
+      "examples": "gas sensor; electrode; sensing layer; membrane",
+      "boundary": "A pore, junction or electronic layer described as structure is MORPHOLOGY; a manufactured electrode layer is DEVICE.",
+      "canonicalization": "Separate device class from source-scoped configuration and experimental instance."
+    },
+    "PROPERTY": {
+      "definition": "A physical, chemical, structural or manufacturing attribute or parameter of a bearer.",
+      "examples": "hole concentration; oxygen atomic ratio; adsorption energy; noise; pore width",
+      "boundary": "Sensitivity, selectivity, detection limit and task response are PERFORMANCE; a geometric structure is MORPHOLOGY.",
+      "canonicalization": "Keep parameter identity distinct from value, direction of change, condition and bearer instance."
+    },
+    "PERFORMANCE": {
+      "definition": "A capability, task outcome or evaluation measure in an application.",
+      "examples": "sensitivity; selectivity; response; detection limit; sensing stability",
+      "boundary": "Physical conductivity, carrier concentration and noise are PROPERTY even when they explain performance.",
+      "canonicalization": "Do not identify measurements across different analytes, configurations or conditions; retain those attachments."
+    },
+    "ANALYTE": {
+      "definition": "A substance or explicit substance class in the contextual role of target, adsorbate or comparison gas.",
+      "examples": "NH3 target; NO2 target; comparison gases/VOCs",
+      "boundary": "NO2 used as dopant in D060 is MATERIAL; do not turn a generic gas mention into a specific chemical.",
+      "canonicalization": "Role-specific mention kind does not assert a different chemical species; no SAME link between different compounds."
+    },
+    "PROCESS": {
+      "definition": "A technical action, transformation, operation or event, including formation and measurement.",
+      "examples": "microwave treatment; adsorption; junction formation; n-doping",
+      "boundary": "MECHANISM describes how or why a phenomenon occurs; the event it involves remains PROCESS.",
+      "canonicalization": "Keep the event of formation distinct from the resulting object and from a named method family."
+    },
+    "MECHANISM": {
+      "definition": "A source-expressed explanation, interaction, or combined explanatory account of technical behavior.",
+      "examples": "electrostatic interaction; sensing mechanism; combined current and mobility effects",
+      "boundary": "A junction itself is MORPHOLOGY; formation is PROCESS; do not promote every process into an explanation.",
+      "canonicalization": "Preserve the scope of hypothesized accounts and joint explanations; no inferred quantitative cancellation."
+    },
+    "OPERATING_CONDITION": {
+      "definition": "An environmental, sample or operating circumstance under which a claim applies.",
+      "examples": "150 °C; room temperature; gas mixture with reducing gases",
+      "boundary": "A measured outcome is PROPERTY/PERFORMANCE. A laser setting can be PROPERTY of a process.",
+      "canonicalization": "Normalize only explicit, unambiguous units and retain original values; room temperature is not silently 25 °C."
+    },
+    "MORPHOLOGY": {
+      "definition": "A structural arrangement, shape, geometry or electronic/spatial feature.",
+      "examples": "heterojunction; pore; electron accumulation/depletion layer; charged impurities",
+      "boundary": "Material composition is MATERIAL; engineered sensing/electrode components are DEVICE; carrier concentration is PROPERTY.",
+      "canonicalization": "Preserve junction composition, pore passivation, electronic layer type and location; never equate interfaces with their formation."
+    },
+    "TECHNOLOGY": {
+      "definition": "A named technology or method family referenced as an approach.",
+      "examples": "density functional theory; electron-beam technology",
+      "boundary": "A concrete execution or transformation is PROCESS; a technical end use is APPLICATION.",
+      "canonicalization": "A source may name a method family and an execution separately; RELATED does not imply SAME."
+    },
+    "APPLICATION": {
+      "definition": "An explicitly named end use, task or application field.",
+      "examples": "gas separation; breath analysis; gas sensing; disease diagnostics",
+      "boundary": "A device class such as fuel cell remains DEVICE; vague impact on it does not by itself establish USED_FOR.",
+      "canonicalization": "Preserve application scope and prospective modality; do not turn discussion of a field into a fabricated device."
+    },
+    "OTHER": {
+      "definition": "A source-expressed technical referent that does not fit the other kinds.",
+      "examples": "clothes as receiving host; functional template role",
+      "boundary": "Use only after checking the specific kinds; contextual_role can mark a role or group without adding a new kind.",
+      "canonicalization": "Keep source-scoped identity; OTHER is not permission to relax relation domains."
+    }
+  },
+  "relations": {
+    "HAS_PROPERTY": {
+      "definition": "The bearer has the stated non-task physical, chemical, structural or process attribute.",
+      "direction": "bearer -> property",
+      "head_kinds": [
+        "DEVICE",
+        "MATERIAL",
+        "PROCESS",
+        "OTHER",
+        "MORPHOLOGY"
+      ],
+      "tail_kinds": [
+        "PROPERTY"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "CH4_barrier",
+        "H2_barrier",
+        "analyte_scope",
+        "associated_change",
+        "change",
+        "comparison",
+        "evidence_basis",
+        "mass_ratio",
+        "material_configuration",
+        "optimization_status",
+        "pore_configuration",
+        "relative_humidity",
+        "scope",
+        "scope_limit",
+        "trend",
+        "width"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ],
+      "positive_example": {
+        "document_code": "D001",
+        "assertion_id": "f50ea985-9822-55e7-8fe1-c81b67a01955",
+        "head": "E-textiles",
+        "tail": "low cost",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": [
+          {
+            "span_id": "4ad6880f-0cba-5980-92a5-669c69042710",
+            "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+            "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+            "chunk_id": "6319af2d-0fe1-4daa-87c6-131c379a75c9",
+            "start": 0,
+            "end": 168,
+            "text": "E-textiles are gaining growing popularity recently due to low cost, light weight, and conformable compatibility with clothes in wearable and portable smart electronics.",
+            "source_text_sha256": "51d6b3595cc1b465fba348487a2c2784ee54f3ce01e850c9bea6eb5d424b0831"
+          }
+        ],
+        "qualifiers": []
+      },
+      "contrast": "Hole concentration belongs here; sensitivity belongs under HAS_PERFORMANCE. An increase in concentration also needs CHANGES_PARAMETER.",
+      "nearest_relations": "HAS_PERFORMANCE measures task outcomes; DEPENDS_ON relates a dependent quantity to its explanatory variable.",
+      "ambiguity_policy": "Abstain when the predicate, attachment, scope or endpoint referent is not licensed by the source. Preserve the weakest explicitly supported modality; no inferred transitive assertions.",
+      "group_policy": "Distribute only when grammar explicitly licenses each member claim. Otherwise use an exact-span group with HAS_MEMBER and scope=collective. Never infer Cartesian products."
+    },
+    "HAS_PERFORMANCE": {
+      "definition": "The bearer exhibits the stated task capability, measured outcome or performance limitation.",
+      "direction": "bearer -> performance",
+      "head_kinds": [
+        "DEVICE",
+        "MATERIAL"
+      ],
+      "tail_kinds": [
+        "PERFORMANCE"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "NO2_detection_limit",
+        "NO2_response_per_concentration",
+        "NO_detection_limit",
+        "NO_response_per_concentration",
+        "SNR_ratio",
+        "analyte_concentration",
+        "analyte_scope",
+        "bending_cycles",
+        "coefficient_of_determination",
+        "comparison",
+        "comparison_direction",
+        "comparison_material",
+        "detection_limit",
+        "detection_limit_range",
+        "doped_detection_limit",
+        "duration",
+        "estimation_status",
+        "evidence_basis",
+        "gas_pair",
+        "material_configuration",
+        "pore_configuration",
+        "relative_humidity_range",
+        "relative_sensitivity",
+        "response",
+        "scope",
+        "scope_limit",
+        "selectivity_comparison",
+        "selectivity_order",
+        "strain",
+        "stretch",
+        "temperature",
+        "temperature_selection",
+        "twisting_cycles",
+        "undoped_detection_limit"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ],
+      "positive_example": {
+        "document_code": "D001",
+        "assertion_id": "8e57c346-291c-5859-804e-9e7a7a3fa816",
+        "head": "as-prepared fiber",
+        "tail": "sensitive sensing response",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": [
+          {
+            "span_id": "aadcaf5c-4da9-5afb-9ffc-adb72fc324c0",
+            "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+            "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+            "chunk_id": "6319af2d-0fe1-4daa-87c6-131c379a75c9",
+            "start": 609,
+            "end": 928,
+            "text": "The as-prepared fiber demonstrates sensitive sensing response, excellent long-term stability (84 days), low theoretical detection limit (43.5 ppb NO 2 ), great mechanical deformation tolerance (3000 bending cycles, 1000 twisting cycles and 65% strain strength), and washing durability in room-temperature gas detection.",
+            "source_text_sha256": "51d6b3595cc1b465fba348487a2c2784ee54f3ce01e850c9bea6eb5d424b0831"
+          }
+        ],
+        "qualifiers": []
+      },
+      "contrast": "D060 hole concentration is a physical parameter, not performance. D078 nonresponse is a negative response claim, not absence of a physical component.",
+      "nearest_relations": "HAS_PROPERTY describes intrinsic/operational attributes; performance comparisons keep their comparator and modality.",
+      "ambiguity_policy": "Abstain when the predicate, attachment, scope or endpoint referent is not licensed by the source. Preserve the weakest explicitly supported modality; no inferred transitive assertions.",
+      "group_policy": "Distribute only when grammar explicitly licenses each member claim. Otherwise use an exact-span group with HAS_MEMBER and scope=collective. Never infer Cartesian products."
+    },
+    "HAS_MORPHOLOGY": {
+      "definition": "The bearer has a stated structural, geometric or electronic arrangement.",
+      "direction": "bearer -> structure",
+      "head_kinds": [
+        "DEVICE",
+        "MATERIAL"
+      ],
+      "tail_kinds": [
+        "MORPHOLOGY"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "evidence_basis",
+        "material_configuration",
+        "scope",
+        "scope_limit"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ],
+      "positive_example": {
+        "document_code": "D001",
+        "assertion_id": "8a663f4c-0033-5681-8006-4e061a927f7d",
+        "head": "mesoporous zinc oxide nanosheets",
+        "tail": "mesoporous",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": [
+          {
+            "span_id": "e4355556-02d0-5f32-9f45-e05222058885",
+            "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+            "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+            "chunk_id": "6319af2d-0fe1-4daa-87c6-131c379a75c9",
+            "start": 385,
+            "end": 608,
+            "text": "The proposed gas sensor is built using commercially available cotton/elastic threads as flexible/stretchable templates and reduced graphene oxide/mesoporous zinc oxide nanosheets as sensing layers to form conducting fibers.",
+            "source_text_sha256": "51d6b3595cc1b465fba348487a2c2784ee54f3ce01e850c9bea6eb5d424b0831"
+          }
+        ],
+        "qualifiers": []
+      },
+      "contrast": "A junction is a structure; its formation is an event. Physical material constituents use HAS_COMPONENT.",
+      "nearest_relations": "HAS_COMPONENT is physical composition; MORPHOLOGY includes electronic interfaces and spatial organization.",
+      "ambiguity_policy": "Abstain when the predicate, attachment, scope or endpoint referent is not licensed by the source. Preserve the weakest explicitly supported modality; no inferred transitive assertions.",
+      "group_policy": "Distribute only when grammar explicitly licenses each member claim. Otherwise use an exact-span group with HAS_MEMBER and scope=collective. Never infer Cartesian products."
+    },
+    "HAS_COMPONENT": {
+      "definition": "The composite or device explicitly contains the physical material or functional component.",
+      "direction": "whole -> physical component",
+      "head_kinds": [
+        "DEVICE",
+        "MATERIAL"
+      ],
+      "tail_kinds": [
+        "DEVICE",
+        "MATERIAL"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "evidence_basis",
+        "layer_position",
+        "location",
+        "material_configuration",
+        "scope",
+        "scope_limit"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ],
+      "positive_example": {
+        "document_code": "D001",
+        "assertion_id": "98421599-20f7-50ca-926f-0c6075107254",
+        "head": "reduced graphene oxide/mesoporous zinc oxide nanosheets",
+        "tail": "reduced graphene oxide",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": [
+          {
+            "span_id": "e4355556-02d0-5f32-9f45-e05222058885",
+            "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+            "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+            "chunk_id": "6319af2d-0fe1-4daa-87c6-131c379a75c9",
+            "start": 385,
+            "end": 608,
+            "text": "The proposed gas sensor is built using commercially available cotton/elastic threads as flexible/stretchable templates and reduced graphene oxide/mesoporous zinc oxide nanosheets as sensing layers to form conducting fibers.",
+            "source_text_sha256": "51d6b3595cc1b465fba348487a2c2784ee54f3ce01e850c9bea6eb5d424b0831"
+          }
+        ],
+        "qualifiers": []
+      },
+      "contrast": "A list of seven candidate nanocomposites is a group with HAS_MEMBER, not seven physical parts of one nanocomposite.",
+      "nearest_relations": "HAS_MEMBER is enumerated membership; USES_MATERIAL records the device/material role without requiring part identity.",
+      "ambiguity_policy": "Abstain when the predicate, attachment, scope or endpoint referent is not licensed by the source. Preserve the weakest explicitly supported modality; no inferred transitive assertions.",
+      "group_policy": "Distribute only when grammar explicitly licenses each member claim. Otherwise use an exact-span group with HAS_MEMBER and scope=collective. Never infer Cartesian products."
+    },
+    "HAS_MEMBER": {
+      "definition": "An explicitly expressed collection has the listed member; this does not distribute the collection claim to its members.",
+      "direction": "explicit group -> member",
+      "head_kinds": [
+        "PROPERTY",
+        "PROCESS",
+        "MATERIAL",
+        "ANALYTE",
+        "MORPHOLOGY",
+        "MECHANISM"
+      ],
+      "tail_kinds": [
+        "PROPERTY",
+        "PERFORMANCE",
+        "PROCESS",
+        "MATERIAL",
+        "ANALYTE",
+        "MORPHOLOGY",
+        "MECHANISM"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "evidence_basis",
+        "material_configuration",
+        "scope",
+        "scope_limit"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ],
+      "positive_example": {
+        "document_code": "D001",
+        "assertion_id": "cd7b7344-98d3-5924-877e-e75d8d9e3053",
+        "head": "repairability, reliability, stability, and practicability",
+        "tail": "repairability",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": [
+          {
+            "span_id": "36fac382-92d6-5f57-8be2-567420efdf00",
+            "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+            "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+            "chunk_id": "e9796bf6-68c8-440f-a814-ca185157cce3",
+            "start": 0,
+            "end": 320,
+            "text": "More significantly, scalable wearable characteristics including repairability, reliability, stability, and practicability have been efficiently improved, which are achieved by knotting the fractured fibers, incorporating multiple sensors in series/parallel and weaving multisensor array networks integrated into clothes.",
+            "source_text_sha256": "272bcd1547345d4fa14705d9e0af1c56a2d5692244e2bb2b8f3b8b04b12da3a3"
+          }
+        ],
+        "qualifiers": []
+      },
+      "contrast": "D026 failure to meet all requirements cannot be converted to failure of each requirement. A composite is not a list of alternatives.",
+      "nearest_relations": "HAS_COMPONENT is physical parthood. Membership never licenses a Cartesian product of relations between two lists.",
+      "ambiguity_policy": "Abstain when the predicate, attachment, scope or endpoint referent is not licensed by the source. Preserve the weakest explicitly supported modality; no inferred transitive assertions.",
+      "group_policy": "Distribute only when grammar explicitly licenses each member claim. Otherwise use an exact-span group with HAS_MEMBER and scope=collective. Never infer Cartesian products.",
+      "endpoint_pairs": [
+        [
+          "PROPERTY",
+          "PROPERTY"
+        ],
+        [
+          "PROCESS",
+          "PROCESS"
+        ],
+        [
+          "MATERIAL",
+          "MATERIAL"
+        ],
+        [
+          "ANALYTE",
+          "ANALYTE"
+        ],
+        [
+          "MORPHOLOGY",
+          "MORPHOLOGY"
+        ],
+        [
+          "MECHANISM",
+          "MECHANISM"
+        ],
+        [
+          "PROPERTY",
+          "PERFORMANCE"
+        ]
+      ],
+      "head_contextual_roles": [
+        "explicit_group",
+        "requirement_bundle"
+      ],
+      "mixed_kind_rule": "PROPERTY -> PERFORMANCE only for a requirement_bundle head."
+    },
+    "USES_MATERIAL": {
+      "definition": "A device explicitly employs a material in its construction or functioning.",
+      "direction": "device -> material",
+      "head_kinds": [
+        "DEVICE"
+      ],
+      "tail_kinds": [
+        "MATERIAL"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "evidence_basis",
+        "material_configuration",
+        "scope",
+        "scope_limit"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ],
+      "positive_example": {
+        "document_code": "D001",
+        "assertion_id": "0f2427bf-8600-58a4-8a0e-c16f7bba1b25",
+        "head": "gas sensor",
+        "tail": "cotton/elastic threads",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": [
+          {
+            "span_id": "e4355556-02d0-5f32-9f45-e05222058885",
+            "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+            "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+            "chunk_id": "6319af2d-0fe1-4daa-87c6-131c379a75c9",
+            "start": 385,
+            "end": 608,
+            "text": "The proposed gas sensor is built using commercially available cotton/elastic threads as flexible/stretchable templates and reduced graphene oxide/mesoporous zinc oxide nanosheets as sensing layers to form conducting fibers.",
+            "source_text_sha256": "51d6b3595cc1b465fba348487a2c2784ee54f3ce01e850c9bea6eb5d424b0831"
+          }
+        ],
+        "qualifiers": []
+      },
+      "contrast": "NO2 used to dope a sensor is not automatically an analyte detected by it.",
+      "nearest_relations": "FUNCTIONS_AS links material to a functional component role; HAS_COMPONENT records explicit physical composition.",
+      "ambiguity_policy": "Abstain when the predicate, attachment, scope or endpoint referent is not licensed by the source. Preserve the weakest explicitly supported modality; no inferred transitive assertions.",
+      "group_policy": "Distribute only when grammar explicitly licenses each member claim. Otherwise use an exact-span group with HAS_MEMBER and scope=collective. Never infer Cartesian products."
+    },
+    "FUNCTIONS_AS": {
+      "definition": "A material explicitly serves as the named functional component or role.",
+      "direction": "material -> functional component/role",
+      "head_kinds": [
+        "MATERIAL"
+      ],
+      "tail_kinds": [
+        "DEVICE",
+        "OTHER"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "evidence_basis",
+        "material_configuration",
+        "scope",
+        "scope_limit"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ],
+      "positive_example": {
+        "document_code": "D001",
+        "assertion_id": "c98893f2-5b7e-5193-b822-9924c7effa53",
+        "head": "cotton/elastic threads",
+        "tail": "flexible/stretchable templates",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": [
+          {
+            "span_id": "e4355556-02d0-5f32-9f45-e05222058885",
+            "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+            "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+            "chunk_id": "6319af2d-0fe1-4daa-87c6-131c379a75c9",
+            "start": 385,
+            "end": 608,
+            "text": "The proposed gas sensor is built using commercially available cotton/elastic threads as flexible/stretchable templates and reduced graphene oxide/mesoporous zinc oxide nanosheets as sensing layers to form conducting fibers.",
+            "source_text_sha256": "51d6b3595cc1b465fba348487a2c2784ee54f3ce01e850c9bea6eb5d424b0831"
+          }
+        ],
+        "qualifiers": []
+      },
+      "contrast": "Porous graphene functioning as a membrane does not make the material concept identical to every membrane.",
+      "nearest_relations": "USED_FOR links to an end use; FUNCTIONS_AS names what the material serves as.",
+      "ambiguity_policy": "Abstain when the predicate, attachment, scope or endpoint referent is not licensed by the source. Preserve the weakest explicitly supported modality; no inferred transitive assertions.",
+      "group_policy": "Distribute only when grammar explicitly licenses each member claim. Otherwise use an exact-span group with HAS_MEMBER and scope=collective. Never infer Cartesian products."
+    },
+    "DETECTS": {
+      "definition": "The sensor has an explicitly stated detection capability for the target substance, including explicit nonresponse and prospective capability.",
+      "direction": "sensor -> target analyte",
+      "head_kinds": [
+        "DEVICE"
+      ],
+      "tail_kinds": [
+        "ANALYTE"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_concentration",
+        "analyte_scope",
+        "concentration_regime",
+        "evidence_basis",
+        "material_configuration",
+        "response_per_concentration",
+        "scope",
+        "scope_limit",
+        "temperature"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ],
+      "positive_example": {
+        "document_code": "D001",
+        "assertion_id": "6c739cd3-4e69-547f-8bfe-ffc34ed99d07",
+        "head": "as-prepared fiber",
+        "tail": "NO 2",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": [
+          {
+            "span_id": "aadcaf5c-4da9-5afb-9ffc-adb72fc324c0",
+            "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+            "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+            "chunk_id": "6319af2d-0fe1-4daa-87c6-131c379a75c9",
+            "start": 609,
+            "end": 928,
+            "text": "The as-prepared fiber demonstrates sensitive sensing response, excellent long-term stability (84 days), low theoretical detection limit (43.5 ppb NO 2 ), great mechanical deformation tolerance (3000 bending cycles, 1000 twisting cycles and 65% strain strength), and washing durability in room-temperature gas detection.",
+            "source_text_sha256": "51d6b3595cc1b465fba348487a2c2784ee54f3ce01e850c9bea6eb5d424b0831"
+          }
+        ],
+        "qualifiers": [
+          {
+            "qualifier_type": "temperature",
+            "raw_text": "room-temperature",
+            "raw_value": "room temperature",
+            "normalized_value": null,
+            "unit": null,
+            "comparator": "EXPLICIT_TEXT",
+            "applies_to_assertion_id": "6c739cd3-4e69-547f-8bfe-ffc34ed99d07",
+            "evidence_refs": [
+              "3ecfec9c-3f5f-5ed0-a453-a729f5506215"
+            ],
+            "status": "EXPLICIT"
+          }
+        ]
+      },
+      "contrast": "Selectivity over SO2 does not establish detection of SO2; a dopant is not automatically a detected gas.",
+      "nearest_relations": "USED_FOR describes an end use; DETECTS requires a target and a detection claim.",
+      "ambiguity_policy": "Abstain when the predicate, attachment, scope or endpoint referent is not licensed by the source. Preserve the weakest explicitly supported modality; no inferred transitive assertions.",
+      "group_policy": "Distribute only when grammar explicitly licenses each member claim. Otherwise use an exact-span group with HAS_MEMBER and scope=collective. Never infer Cartesian products."
+    },
+    "USED_FOR": {
+      "definition": "The object has an explicitly stated actual, proposed or hypothetical application, process use or material sensing target.",
+      "direction": "object -> stated use",
+      "head_kinds": [
+        "DEVICE",
+        "MATERIAL"
+      ],
+      "tail_kinds": [
+        "APPLICATION",
+        "PROCESS",
+        "ANALYTE"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "concentration_regime",
+        "evidence_basis",
+        "material_configuration",
+        "monitoring_times",
+        "sample_condition",
+        "scope",
+        "scope_limit",
+        "temperature"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ],
+      "positive_example": {
+        "document_code": "D001",
+        "assertion_id": "2461a1dd-08a1-55c0-9478-5fd7c0a1df0a",
+        "head": "E-textiles",
+        "tail": "wearable and portable smart electronics",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": [
+          {
+            "span_id": "4ad6880f-0cba-5980-92a5-669c69042710",
+            "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+            "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+            "chunk_id": "6319af2d-0fe1-4daa-87c6-131c379a75c9",
+            "start": 0,
+            "end": 168,
+            "text": "E-textiles are gaining growing popularity recently due to low cost, light weight, and conformable compatibility with clothes in wearable and portable smart electronics.",
+            "source_text_sha256": "51d6b3595cc1b465fba348487a2c2784ee54f3ce01e850c9bea6eb5d424b0831"
+          }
+        ],
+        "qualifiers": []
+      },
+      "contrast": "D024 a pore could have impact on fuel cells does not establish porous graphene USED_FOR a fabricated fuel cell.",
+      "nearest_relations": "FUNCTIONS_AS names the component role; DETECTS is sensor capability; topic mention and vague impact are insufficient.",
+      "ambiguity_policy": "Abstain when the predicate, attachment, scope or endpoint referent is not licensed by the source. Preserve the weakest explicitly supported modality; no inferred transitive assertions.",
+      "group_policy": "Distribute only when grammar explicitly licenses each member claim. Otherwise use an exact-span group with HAS_MEMBER and scope=collective. Never infer Cartesian products."
+    },
+    "FABRICATED_BY": {
+      "definition": "The object is obtained by the stated fabrication process, within the source modality.",
+      "direction": "fabricated object -> fabrication process",
+      "head_kinds": [
+        "DEVICE",
+        "MATERIAL"
+      ],
+      "tail_kinds": [
+        "PROCESS"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "equipment",
+        "evidence_basis",
+        "material_configuration",
+        "parameter_selection",
+        "scope",
+        "scope_limit"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ],
+      "positive_example": {
+        "document_code": "D001",
+        "assertion_id": "98de89d5-d9f3-5ff2-9808-cb326e4cab9f",
+        "head": "fiber gas sensor",
+        "tail": "fabricating strategy",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": [
+          {
+            "span_id": "d07bf71f-db7c-5701-bc5b-fcfc2796a393",
+            "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+            "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+            "chunk_id": "6319af2d-0fe1-4daa-87c6-131c379a75c9",
+            "start": 169,
+            "end": 384,
+            "text": "Here, an easy-handing, low cost, and scalable fabricating strategy is reported to fabricate conductive, highly flexible, and mechanically stretchable/twisted fiber gas sensor with great wearability and knittability.",
+            "source_text_sha256": "51d6b3595cc1b465fba348487a2c2784ee54f3ce01e850c9bea6eb5d424b0831"
+          }
+        ],
+        "qualifiers": []
+      },
+      "contrast": "A characterization process acting on a product is not its fabrication method.",
+      "nearest_relations": "ACTS_ON relates process to object; FABRICATED_BY asserts production of that object.",
+      "ambiguity_policy": "Abstain when the predicate, attachment, scope or endpoint referent is not licensed by the source. Preserve the weakest explicitly supported modality; no inferred transitive assertions.",
+      "group_policy": "Distribute only when grammar explicitly licenses each member claim. Otherwise use an exact-span group with HAS_MEMBER and scope=collective. Never infer Cartesian products."
+    },
+    "IMPROVES": {
+      "definition": "The process is stated to make a property or task outcome better in the source-defined evaluative sense.",
+      "direction": "process -> improved property/performance",
+      "head_kinds": [
+        "PROCESS"
+      ],
+      "tail_kinds": [
+        "PROPERTY",
+        "PERFORMANCE"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "epistemic_basis",
+        "evidence_basis",
+        "improvement_factor",
+        "material_configuration",
+        "scope",
+        "scope_limit"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ],
+      "positive_example": {
+        "document_code": "D001",
+        "assertion_id": "dbc6e834-cfce-5e44-97eb-ca7af1388265",
+        "head": "knotting the fractured fibers, incorporating multiple sensors in series/parallel and weaving multisensor array networks integrated into clothes",
+        "tail": "repairability, reliability, stability, and practicability",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": [
+          {
+            "span_id": "36fac382-92d6-5f57-8be2-567420efdf00",
+            "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+            "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+            "chunk_id": "e9796bf6-68c8-440f-a814-ca185157cce3",
+            "start": 0,
+            "end": 320,
+            "text": "More significantly, scalable wearable characteristics including repairability, reliability, stability, and practicability have been efficiently improved, which are achieved by knotting the fractured fibers, incorporating multiple sensors in series/parallel and weaving multisensor array networks integrated into clothes.",
+            "source_text_sha256": "272bcd1547345d4fa14705d9e0af1c56a2d5692244e2bb2b8f3b8b04b12da3a3"
+          }
+        ],
+        "qualifiers": [
+          {
+            "qualifier_type": "scope",
+            "raw_text": "knotting the fractured fibers, incorporating multiple sensors in series/parallel and weaving multisensor array networks integrated into clothes",
+            "raw_value": "collective",
+            "normalized_value": null,
+            "unit": null,
+            "comparator": "EXPLICIT_TEXT",
+            "applies_to_assertion_id": "dbc6e834-cfce-5e44-97eb-ca7af1388265",
+            "evidence_refs": [
+              "b6e39142-073c-525f-9d83-bc4af28478a0"
+            ],
+            "status": "EXPLICIT"
+          }
+        ]
+      },
+      "contrast": "Increasing hole concentration is a direction of physical change, not inherently an improvement; decreasing detection limit can be an improvement.",
+      "nearest_relations": "CHANGES_PARAMETER has a signed or unspecified physical change; OPTIMIZES is adjustment of an object/configuration.",
+      "ambiguity_policy": "Abstain when the predicate, attachment, scope or endpoint referent is not licensed by the source. Preserve the weakest explicitly supported modality; no inferred transitive assertions.",
+      "group_policy": "Distribute only when grammar explicitly licenses each member claim. Otherwise use an exact-span group with HAS_MEMBER and scope=collective. Never infer Cartesian products."
+    },
+    "ACTS_ON": {
+      "definition": "The process explicitly acts on, characterizes, transforms or otherwise operates on the object.",
+      "direction": "process -> affected/studied object",
+      "head_kinds": [
+        "PROCESS"
+      ],
+      "tail_kinds": [
+        "DEVICE",
+        "MATERIAL"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "dopant",
+        "evidence_basis",
+        "fabrication_techniques",
+        "material_configuration",
+        "scope",
+        "scope_limit",
+        "support_method"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ],
+      "positive_example": {
+        "document_code": "D001",
+        "assertion_id": "7065f46d-83cf-5816-90ff-f106128ba135",
+        "head": "knotting the fractured fibers",
+        "tail": "fractured fibers",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": [
+          {
+            "span_id": "36fac382-92d6-5f57-8be2-567420efdf00",
+            "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+            "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+            "chunk_id": "e9796bf6-68c8-440f-a814-ca185157cce3",
+            "start": 0,
+            "end": 320,
+            "text": "More significantly, scalable wearable characteristics including repairability, reliability, stability, and practicability have been efficiently improved, which are achieved by knotting the fractured fibers, incorporating multiple sensors in series/parallel and weaving multisensor array networks integrated into clothes.",
+            "source_text_sha256": "272bcd1547345d4fa14705d9e0af1c56a2d5692244e2bb2b8f3b8b04b12da3a3"
+          }
+        ],
+        "qualifiers": []
+      },
+      "contrast": "DFT study of a group of surfaces and gases does not justify sixteen separate sensing-use claims.",
+      "nearest_relations": "FABRICATED_BY asserts object production; ACTS_ON does not imply an improved or fabricated outcome.",
+      "ambiguity_policy": "Abstain when the predicate, attachment, scope or endpoint referent is not licensed by the source. Preserve the weakest explicitly supported modality; no inferred transitive assertions.",
+      "group_policy": "Distribute only when grammar explicitly licenses each member claim. Otherwise use an exact-span group with HAS_MEMBER and scope=collective. Never infer Cartesian products."
+    },
+    "INTEGRATED_IN": {
+      "definition": "The functional object is explicitly incorporated into the receiving host.",
+      "direction": "integrated object -> host",
+      "head_kinds": [
+        "DEVICE"
+      ],
+      "tail_kinds": [
+        "DEVICE",
+        "OTHER"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "evidence_basis",
+        "material_configuration",
+        "scope",
+        "scope_limit"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ],
+      "positive_example": {
+        "document_code": "D001",
+        "assertion_id": "2455c001-da04-5095-bd51-df7e6bd35ab7",
+        "head": "multisensor array networks",
+        "tail": "clothes",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": [
+          {
+            "span_id": "36fac382-92d6-5f57-8be2-567420efdf00",
+            "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+            "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+            "chunk_id": "e9796bf6-68c8-440f-a814-ca185157cce3",
+            "start": 0,
+            "end": 320,
+            "text": "More significantly, scalable wearable characteristics including repairability, reliability, stability, and practicability have been efficiently improved, which are achieved by knotting the fractured fibers, incorporating multiple sensors in series/parallel and weaving multisensor array networks integrated into clothes.",
+            "source_text_sha256": "272bcd1547345d4fa14705d9e0af1c56a2d5692244e2bb2b8f3b8b04b12da3a3"
+          }
+        ],
+        "qualifiers": []
+      },
+      "contrast": "A material merely proposed for an application is not already integrated into that device.",
+      "nearest_relations": "HAS_COMPONENT gives whole-to-part direction; INTEGRATED_IN gives inserted-object-to-host direction.",
+      "ambiguity_policy": "Abstain when the predicate, attachment, scope or endpoint referent is not licensed by the source. Preserve the weakest explicitly supported modality; no inferred transitive assertions.",
+      "group_policy": "Distribute only when grammar explicitly licenses each member claim. Otherwise use an exact-span group with HAS_MEMBER and scope=collective. Never infer Cartesian products."
+    },
+    "HAS_MECHANISM": {
+      "definition": "The device or material has the stated source-expressed mechanism for its specified behavior.",
+      "direction": "device/material bearer -> mechanism",
+      "head_kinds": [
+        "DEVICE",
+        "MATERIAL"
+      ],
+      "tail_kinds": [
+        "MECHANISM"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "contribution",
+        "evidence_basis",
+        "explained_capability",
+        "material_configuration",
+        "outcome_scope",
+        "scope",
+        "scope_limit"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ],
+      "positive_example": {
+        "document_code": "D003",
+        "assertion_id": "d65ad610-3c52-5bf0-b838-9979bbde1caf",
+        "head": "gas sensor",
+        "tail": "design of a stretchable serpentine structure in the LIG electrode and strain isolation from the stiff island",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": [
+          {
+            "span_id": "065cf8f6-8363-53ff-8baf-8edf6f90f04c",
+            "document_id": "06066c66-1454-4813-b7b7-f366b9956035",
+            "revision_id": "7af46631-a38f-430d-a43c-bcfa0dccac9e",
+            "chunk_id": "0ad16539-951a-4c6a-95df-0d92179b23eb",
+            "start": 859,
+            "end": 1017,
+            "text": "The design of a stretchable serpentine structure in the LIG electrode and strain isolation from the stiff island allows the gas sensor to be stretched by 30%.",
+            "source_text_sha256": "93b3b8cd46f210f24559ada46e4094b348260a9b1c0be1b96965d77ac32e55ae"
+          }
+        ],
+        "qualifiers": [
+          {
+            "qualifier_type": "explained_capability",
+            "raw_text": "stretched by 30%",
+            "raw_value": "stretching by 30%",
+            "normalized_value": null,
+            "unit": null,
+            "comparator": "EXPLICIT_TEXT",
+            "applies_to_assertion_id": "d65ad610-3c52-5bf0-b838-9979bbde1caf",
+            "evidence_refs": [
+              "6e7130cc-dcea-51f8-acd6-3ae9b7b91b9e"
+            ],
+            "status": "EXPLICIT"
+          }
+        ]
+      },
+      "contrast": "The mechanism explains behavior; it is not a material constituent. An absent interaction with NH3 must keep NEGATIVE polarity and its target scope.",
+      "nearest_relations": "EXPLAINS links explanatory factor to an outcome, while HAS_MECHANISM links bearer to its explanatory account.",
+      "ambiguity_policy": "Abstain when the predicate, attachment, scope or endpoint referent is not licensed by the source. Preserve the weakest explicitly supported modality; no inferred transitive assertions.",
+      "group_policy": "Distribute only when grammar explicitly licenses each member claim. Otherwise use an exact-span group with HAS_MEMBER and scope=collective. Never infer Cartesian products."
+    },
+    "MECHANISM_INVOLVES": {
+      "definition": "The mechanism explicitly involves the named subordinate mechanism, process or structure.",
+      "direction": "mechanism -> involved mechanism/event/structure",
+      "head_kinds": [
+        "MECHANISM"
+      ],
+      "tail_kinds": [
+        "MECHANISM",
+        "PROCESS",
+        "MORPHOLOGY"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "evidence_basis",
+        "isolation_reference",
+        "material_configuration",
+        "scope",
+        "scope_limit"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ],
+      "positive_example": {
+        "document_code": "D003",
+        "assertion_id": "3fcfd6a9-2d61-5932-a80e-61ba8d224f3e",
+        "head": "design of a stretchable serpentine structure in the LIG electrode and strain isolation from the stiff island",
+        "tail": "design of a stretchable serpentine structure",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": [
+          {
+            "span_id": "065cf8f6-8363-53ff-8baf-8edf6f90f04c",
+            "document_id": "06066c66-1454-4813-b7b7-f366b9956035",
+            "revision_id": "7af46631-a38f-430d-a43c-bcfa0dccac9e",
+            "chunk_id": "0ad16539-951a-4c6a-95df-0d92179b23eb",
+            "start": 859,
+            "end": 1017,
+            "text": "The design of a stretchable serpentine structure in the LIG electrode and strain isolation from the stiff island allows the gas sensor to be stretched by 30%.",
+            "source_text_sha256": "93b3b8cd46f210f24559ada46e4094b348260a9b1c0be1b96965d77ac32e55ae"
+          }
+        ],
+        "qualifiers": []
+      },
+      "contrast": "Electron accumulation layer is a structure involved in the mechanism; the layer is not the complete sensing mechanism.",
+      "nearest_relations": "HAS_COMPONENT is physical parthood; CAUSES asserts production and is stronger than mere involvement.",
+      "ambiguity_policy": "Abstain when the predicate, attachment, scope or endpoint referent is not licensed by the source. Preserve the weakest explicitly supported modality; no inferred transitive assertions.",
+      "group_policy": "Distribute only when grammar explicitly licenses each member claim. Otherwise use an exact-span group with HAS_MEMBER and scope=collective. Never infer Cartesian products."
+    },
+    "LOCATED_IN": {
+      "definition": "The electronic or geometric structure is explicitly situated in the named material.",
+      "direction": "structure -> containing material",
+      "head_kinds": [
+        "MORPHOLOGY"
+      ],
+      "tail_kinds": [
+        "MATERIAL"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "evidence_basis",
+        "material_configuration",
+        "scope",
+        "scope_limit"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ],
+      "positive_example": {
+        "document_code": "D010",
+        "assertion_id": "e6ea4dae-f0cc-5ddd-aafb-72b3281d8134",
+        "head": "electron accumulation layer",
+        "tail": "GO/CuO/ZnO",
+        "polarity": "POSITIVE",
+        "modality": "PROPOSED",
+        "evidence": [
+          {
+            "span_id": "71ad8fbb-6182-5731-91b1-3386af058c29",
+            "document_id": "136d5083-0254-4930-a35e-88441bb802a0",
+            "revision_id": "fbd87a44-35d0-4f51-80d6-39abd117d01f",
+            "chunk_id": "761f757f-5005-4417-bf90-f2c5200f7600",
+            "start": 363,
+            "end": 588,
+            "text": "The NH 3 -sensing mechanism was proposed based on the modulation of complex p–n heterojunctions via the electron accumulation layer in the n-type of GO/CuO/ZnO and the electron depletion layer in the p-type Ti 3 C 2 Tx Mxene.",
+            "source_text_sha256": "c96d836b51f3c30b23d69406198bde211107fed455cd9631385c370269084ab3"
+          }
+        ],
+        "qualifiers": []
+      },
+      "contrast": "The electron depletion layer in p-type Ti3C2Tx is not located in GO/CuO/ZnO; preserve the attachment in D010.",
+      "nearest_relations": "HAS_MORPHOLOGY is bearer-to-structure and does not by itself encode the stated specific location.",
+      "ambiguity_policy": "Abstain when the predicate, attachment, scope or endpoint referent is not licensed by the source. Preserve the weakest explicitly supported modality; no inferred transitive assertions.",
+      "group_policy": "Distribute only when grammar explicitly licenses each member claim. Otherwise use an exact-span group with HAS_MEMBER and scope=collective. Never infer Cartesian products."
+    },
+    "OPTIMIZES": {
+      "definition": "A process explicitly adjusts an object or configuration described as optimized or optimal for a stated technical objective.",
+      "direction": "adjustment process -> optimized object",
+      "head_kinds": [
+        "PROCESS"
+      ],
+      "tail_kinds": [
+        "DEVICE",
+        "MATERIAL"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "evidence_basis",
+        "material_configuration",
+        "scope",
+        "scope_limit"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ],
+      "positive_example": {
+        "document_code": "D003",
+        "assertion_id": "30301f7a-cfcd-5947-9f02-63b749e88859",
+        "head": "tuning laser processing parameters",
+        "tail": "LIG sensing and electrode layer",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": [
+          {
+            "span_id": "e832c7c7-01f3-55df-80b0-87db32986efa",
+            "document_id": "06066c66-1454-4813-b7b7-f366b9956035",
+            "revision_id": "7af46631-a38f-430d-a43c-bcfa0dccac9e",
+            "chunk_id": "0ad16539-951a-4c6a-95df-0d92179b23eb",
+            "start": 331,
+            "end": 575,
+            "text": "Sandwiched between a soft elastomeric substrate and a moisture-resistant semipermeable encapsulant, the LIG sensing and electrode layer is first optimized by tuning laser processing parameters such as power, image density, and defocus distance.",
+            "source_text_sha256": "93b3b8cd46f210f24559ada46e4094b348260a9b1c0be1b96965d77ac32e55ae"
+          }
+        ],
+        "qualifiers": []
+      },
+      "contrast": "D024 tuning selectivity and diffusivity does not establish an optimum; it uses CHANGES_PARAMETER with unspecified direction.",
+      "nearest_relations": "IMPROVES targets a better attribute; neutral tuning is CHANGES_PARAMETER, and optimization must be explicit.",
+      "ambiguity_policy": "Abstain when the predicate, attachment, scope or endpoint referent is not licensed by the source. Preserve the weakest explicitly supported modality; no inferred transitive assertions.",
+      "group_policy": "Distribute only when grammar explicitly licenses each member claim. Otherwise use an exact-span group with HAS_MEMBER and scope=collective. Never infer Cartesian products."
+    },
+    "FACILITATES": {
+      "definition": "A material or process promotes or enables the named process without asserting strict production of its outcome.",
+      "direction": "facilitating material/process -> facilitated process",
+      "head_kinds": [
+        "MATERIAL",
+        "PROCESS"
+      ],
+      "tail_kinds": [
+        "PROCESS"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "evidence_basis",
+        "explanatory_basis",
+        "material_configuration",
+        "process_location",
+        "scope",
+        "scope_limit"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ],
+      "positive_example": {
+        "document_code": "D004",
+        "assertion_id": "3d2e0168-bacc-5412-b779-0e6763e81edf",
+        "head": "graphene",
+        "tail": "efficient transport of the microwave energy",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": [
+          {
+            "span_id": "0089ac36-0f2b-511e-9fcf-cc6f0af9d17f",
+            "document_id": "08d58bd1-a89e-4b70-b817-821df8428bc7",
+            "revision_id": "5afc0eeb-3c76-40cf-99be-e70f066beb2b",
+            "chunk_id": "1314b88d-a703-48b5-bb03-e426d5474034",
+            "start": 444,
+            "end": 647,
+            "text": "By the microwave treatment of graphene–SnO 2 nanocomposites, with the graphene promoting efficient transport of the microwave energy, evaporation and redeposition of SnO x nanoparticles were facilitated.",
+            "source_text_sha256": "5ab47cc03efc60802c5c6bece098307c9084b5e327212580366207ab757116c9"
+          }
+        ],
+        "qualifiers": []
+      },
+      "contrast": "D004 graphene promotes microwave-energy transport, while microwave treatment facilitates evaporation/redeposition. Do not infer a direct graphene-to-evaporation edge.",
+      "nearest_relations": "CAUSES asserts that an event produces another event; EXPLAINS attributes behavior to a factor.",
+      "ambiguity_policy": "Abstain when the predicate, attachment, scope or endpoint referent is not licensed by the source. Preserve the weakest explicitly supported modality; no inferred transitive assertions.",
+      "group_policy": "Distribute only when grammar explicitly licenses each member claim. Otherwise use an exact-span group with HAS_MEMBER and scope=collective. Never infer Cartesian products."
+    },
+    "CAUSES": {
+      "definition": "A source explicitly states that the causal factor produces or induces the named technical event; event endpoints remain events.",
+      "direction": "causal factor -> produced event",
+      "head_kinds": [
+        "PROCESS",
+        "MECHANISM",
+        "MATERIAL"
+      ],
+      "tail_kinds": [
+        "PROCESS"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "comparison",
+        "contribution",
+        "direction",
+        "evidence_basis",
+        "material_configuration",
+        "outcome_scope",
+        "scope",
+        "scope_limit",
+        "strength",
+        "target_parameter"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ],
+      "positive_example": {
+        "document_code": "D004",
+        "assertion_id": "fda0b6f7-50d4-5329-9479-9586a95ec805",
+        "head": "generation of SnO x nanoparticles and the SnO x phase in the matrix",
+        "tail": "formation of SnO 2 /SnO 2 homojunctions, SnO 2 /SnO x ( x < 2) heterojunctions, and SnO 2 /graphene heterojunctions",
+        "polarity": "POSITIVE",
+        "modality": "PROPOSED",
+        "evidence": [
+          {
+            "span_id": "e4753075-93f4-5ca0-8d11-fded24cdfedb",
+            "document_id": "08d58bd1-a89e-4b70-b817-821df8428bc7",
+            "revision_id": "5afc0eeb-3c76-40cf-99be-e70f066beb2b",
+            "chunk_id": "eb47e91a-4c35-4de7-96a3-f141eea0a6cf",
+            "start": 0,
+            "end": 321,
+            "text": "We suggest that the generation of SnO x nanoparticles and the SnO x phase in the matrix results in the formation of SnO 2 /SnO 2 homojunctions, SnO 2 /SnO x ( x < 2) heterojunctions, and SnO 2 /graphene heterojunctions, which are responsible for the excellent sensitivity of the graphene–SnO 2 nanocomposites to NO 2 gas.",
+            "source_text_sha256": "4fb5907a3a82cde6bcf412375e3883c2c52a669235fec58ce11b70619222a212"
+          }
+        ],
+        "qualifiers": []
+      },
+      "contrast": "D004 results in formation licenses CAUSES with PROPOSED modality. Merely promoting transport uses FACILITATES. A junction object cannot replace its formation event.",
+      "nearest_relations": "EXPLAINS attributes an outcome to a factor; signed parameter effects use CHANGES_PARAMETER when no separate produced event is needed.",
+      "ambiguity_policy": "Abstain when the predicate, attachment, scope or endpoint referent is not licensed by the source. Preserve the weakest explicitly supported modality; no inferred transitive assertions.",
+      "group_policy": "Distribute only when grammar explicitly licenses each member claim. Otherwise use an exact-span group with HAS_MEMBER and scope=collective. Never infer Cartesian products."
+    },
+    "EXPLAINS": {
+      "definition": "The source attributes an observed or proposed technical outcome or process to the explanatory factor, with the stated contribution and scope.",
+      "direction": "explanatory factor -> explained outcome/process",
+      "head_kinds": [
+        "PROCESS",
+        "MECHANISM",
+        "MORPHOLOGY",
+        "PROPERTY"
+      ],
+      "tail_kinds": [
+        "PERFORMANCE",
+        "PROPERTY",
+        "PROCESS"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "comparison",
+        "contribution",
+        "direction",
+        "evidence_basis",
+        "material_configuration",
+        "outcome_scope",
+        "pore_configuration",
+        "scope",
+        "scope_limit",
+        "strength",
+        "target_parameter"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ],
+      "positive_example": {
+        "document_code": "D003",
+        "assertion_id": "13a447d3-bbb4-5e3d-bb07-9ec86cce8421",
+        "head": "design of a stretchable serpentine structure in the LIG electrode and strain isolation from the stiff island",
+        "tail": "stretched by 30%",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": [
+          {
+            "span_id": "065cf8f6-8363-53ff-8baf-8edf6f90f04c",
+            "document_id": "06066c66-1454-4813-b7b7-f366b9956035",
+            "revision_id": "7af46631-a38f-430d-a43c-bcfa0dccac9e",
+            "chunk_id": "0ad16539-951a-4c6a-95df-0d92179b23eb",
+            "start": 859,
+            "end": 1017,
+            "text": "The design of a stretchable serpentine structure in the LIG electrode and strain isolation from the stiff island allows the gas sensor to be stretched by 30%.",
+            "source_text_sha256": "93b3b8cd46f210f24559ada46e4094b348260a9b1c0be1b96965d77ac32e55ae"
+          }
+        ],
+        "qualifiers": [
+          {
+            "qualifier_type": "contribution",
+            "raw_text": "design of a stretchable serpentine structure in the LIG electrode and strain isolation from the stiff island",
+            "raw_value": "joint",
+            "normalized_value": null,
+            "unit": null,
+            "comparator": "EXPLICIT_TEXT",
+            "applies_to_assertion_id": "13a447d3-bbb4-5e3d-bb07-9ec86cce8421",
+            "evidence_refs": [
+              "10daa469-f6fc-571f-ad21-5053d65931fa"
+            ],
+            "status": "EXPLICIT"
+          },
+          {
+            "qualifier_type": "scope",
+            "raw_text": "design of a stretchable serpentine structure in the LIG electrode and strain isolation from the stiff island",
+            "raw_value": "collective",
+            "normalized_value": null,
+            "unit": null,
+            "comparator": "EXPLICIT_TEXT",
+            "applies_to_assertion_id": "13a447d3-bbb4-5e3d-bb07-9ec86cce8421",
+            "evidence_refs": [
+              "10daa469-f6fc-571f-ad21-5053d65931fa"
+            ],
+            "status": "EXPLICIT"
+          }
+        ]
+      },
+      "contrast": "A device possessing a mechanism is HAS_MECHANISM. Three junctions jointly responsible for sensitivity do not license independent, sufficient explanations by each junction.",
+      "nearest_relations": "CAUSES is event production; FACILITATES is enabling; EXPLAINS preserves attribution, partial contribution and dominant background explanation.",
+      "ambiguity_policy": "Abstain when the predicate, attachment, scope or endpoint referent is not licensed by the source. Preserve the weakest explicitly supported modality; no inferred transitive assertions.",
+      "group_policy": "Distribute only when grammar explicitly licenses each member claim. Otherwise use an exact-span group with HAS_MEMBER and scope=collective. Never infer Cartesian products."
+    },
+    "CHANGES_PARAMETER": {
+      "definition": "A factor changes or explicitly leaves unchanged the target physical/property or performance parameter; direction describes that parameter, not desirability.",
+      "direction": "changing factor -> affected parameter",
+      "head_kinds": [
+        "PROCESS",
+        "MORPHOLOGY",
+        "MECHANISM"
+      ],
+      "tail_kinds": [
+        "PROPERTY",
+        "PERFORMANCE"
+      ],
+      "required_qualifiers": {
+        "direction": {
+          "enum": [
+            "increase",
+            "decrease",
+            "unchanged",
+            "unspecified"
+          ]
+        }
+      },
+      "optional_qualifiers": [
+        "analyte_scope",
+        "comparison",
+        "contribution",
+        "evidence_basis",
+        "material_configuration",
+        "outcome_scope",
+        "scope",
+        "scope_limit",
+        "strength",
+        "target_parameter"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ],
+      "positive_example": {
+        "document_code": "D060",
+        "assertion_id": "3474a0cd-e488-53f9-9dd9-82ace9d3f4ec",
+        "head": "adsorption of NO2 molecules",
+        "tail": "hole concentration",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": [
+          {
+            "span_id": "b7acc52e-a60e-526c-9bcf-4965b07fb208",
+            "document_id": "96575fc6-1212-4cb1-889f-179dd9515854",
+            "revision_id": "61ce4e43-1d79-4cee-af6c-43026828532a",
+            "chunk_id": "006deffa-1906-4677-942b-2a29bd47046b",
+            "start": 496,
+            "end": 745,
+            "text": "Electrical characterization and Raman spectroscopy measurements on graphene field-effect transistors show that adsorption of NO2 molecules significantly increases hole concentration in graphene, which results in the observed sensitivity enhancement.",
+            "source_text_sha256": "7e3054e2cb1e788c55f6c5f17b4855b0993823ba82f68f8cf3c012bac4ed1393"
+          }
+        ],
+        "qualifiers": [
+          {
+            "qualifier_type": "direction",
+            "raw_text": "increases hole concentration",
+            "raw_value": "increase",
+            "normalized_value": null,
+            "unit": null,
+            "comparator": "EXPLICIT_TEXT",
+            "applies_to_assertion_id": "3474a0cd-e488-53f9-9dd9-82ace9d3f4ec",
+            "evidence_refs": [
+              "da7eb5eb-546f-55e4-ab14-b09d975a7a4b"
+            ],
+            "status": "EXPLICIT"
+          },
+          {
+            "qualifier_type": "strength",
+            "raw_text": "significantly",
+            "raw_value": "significantly",
+            "normalized_value": null,
+            "unit": null,
+            "comparator": "EXPLICIT_TEXT",
+            "applies_to_assertion_id": "3474a0cd-e488-53f9-9dd9-82ace9d3f4ec",
+            "evidence_refs": [
+              "1c895dae-3028-59f9-ac91-9b18c6017ba6"
+            ],
+            "status": "EXPLICIT"
+          },
+          {
+            "qualifier_type": "evidence_basis",
+            "raw_text": "Electrical characterization and Raman spectroscopy measurements",
+            "raw_value": "experiment",
+            "normalized_value": null,
+            "unit": null,
+            "comparator": "EXPLICIT_TEXT",
+            "applies_to_assertion_id": "3474a0cd-e488-53f9-9dd9-82ace9d3f4ec",
+            "evidence_refs": [
+              "e89d4c4e-0382-59d1-a0c0-bac15ec56d5b"
+            ],
+            "status": "EXPLICIT"
+          }
+        ]
+      },
+      "contrast": "Increasing the magnitude of current decrease means direction=increase on the decrease magnitude; it must not become an increase in electric current.",
+      "nearest_relations": "IMPROVES is evaluative. Signed increases/decreases share one predicate; unspecified direction is valid only for an explicit change/tune statement.",
+      "ambiguity_policy": "Abstain when the predicate, attachment, scope or endpoint referent is not licensed by the source. Preserve the weakest explicitly supported modality; no inferred transitive assertions.",
+      "group_policy": "Distribute only when grammar explicitly licenses each member claim. Otherwise use an exact-span group with HAS_MEMBER and scope=collective. Never infer Cartesian products."
+    },
+    "DEPENDS_ON": {
+      "definition": "The source explicitly states that the head quantity/outcome depends on the tail parameter or structural configuration; no functional law is inferred.",
+      "direction": "dependent quantity/outcome -> determining variable/configuration",
+      "head_kinds": [
+        "PROPERTY",
+        "PERFORMANCE"
+      ],
+      "tail_kinds": [
+        "PROPERTY",
+        "MORPHOLOGY"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "comparison",
+        "contribution",
+        "direction",
+        "evidence_basis",
+        "material_configuration",
+        "outcome_scope",
+        "scope",
+        "scope_limit",
+        "strength",
+        "target_parameter"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ],
+      "positive_example": {
+        "document_code": "D078",
+        "assertion_id": "943d8572-c7a6-5cd3-b884-76eb38015c23",
+        "head": "current decrease",
+        "tail": "number of amine functional groups",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": [
+          {
+            "span_id": "e39657f3-4e0f-5648-8d2f-f836a2156b68",
+            "document_id": "c56c60ec-74f3-44d5-83e6-f83d87b921f5",
+            "revision_id": "85c8c16f-76e7-45fb-a9b2-6124974a51e9",
+            "chunk_id": "8e528f95-22fc-4b9a-8b16-90391b584bc3",
+            "start": 233,
+            "end": 429,
+            "text": "The exposure of the n-doped graphene to oxidizing gases such as NO 2 leads to a current decrease that depends strongly on the number of amine functional groups in various types of ethylene amines.",
+            "source_text_sha256": "b0f5211d8a7b056bc9d7cccb1c371076afd5e4dc80f88e80baf6e7c51c26a088"
+          }
+        ],
+        "qualifiers": [
+          {
+            "qualifier_type": "strength",
+            "raw_text": "depends strongly",
+            "raw_value": "strongly",
+            "normalized_value": null,
+            "unit": null,
+            "comparator": "EXPLICIT_TEXT",
+            "applies_to_assertion_id": "943d8572-c7a6-5cd3-b884-76eb38015c23",
+            "evidence_refs": [
+              "0d6b3ae6-9a92-50ef-abba-da2bd6aac75d"
+            ],
+            "status": "EXPLICIT"
+          }
+        ]
+      },
+      "contrast": "Having a pore width is HAS_PROPERTY; depending on its width is DEPENDS_ON. Joint lists do not justify a four-edge Cartesian product.",
+      "nearest_relations": "HAS_PROPERTY is possession; EXPLAINS is attribution of an outcome; dependence does not establish the sign, causality or quantitative law.",
+      "ambiguity_policy": "Abstain when the predicate, attachment, scope or endpoint referent is not licensed by the source. Preserve the weakest explicitly supported modality; no inferred transitive assertions.",
+      "group_policy": "Distribute only when grammar explicitly licenses each member claim. Otherwise use an exact-span group with HAS_MEMBER and scope=collective. Never infer Cartesian products."
+    },
+    "MEETS_REQUIREMENT": {
+      "definition": "The material/device meets, or explicitly fails to meet, a jointly specified requirement bundle.",
+      "direction": "evaluated bearer -> explicit joint requirement bundle",
+      "head_kinds": [
+        "MATERIAL",
+        "DEVICE"
+      ],
+      "tail_kinds": [
+        "PROPERTY"
+      ],
+      "required_qualifiers": {
+        "joint_requirement": {
+          "enum": [
+            "all"
+          ]
+        },
+        "scope": {
+          "enum": [
+            "collective"
+          ]
+        }
+      },
+      "optional_qualifiers": [
+        "analyte_scope",
+        "evidence_basis",
+        "material_configuration",
+        "scope_limit"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ],
+      "positive_example": {
+        "document_code": "D026",
+        "assertion_id": "353bda66-bf30-57b4-8b2b-9cee1eff65a0",
+        "head": "existing sensor materials",
+        "tail": "two requirements",
+        "polarity": "NEGATIVE",
+        "modality": "ASSERTED",
+        "evidence": [
+          {
+            "span_id": "a3842179-8d56-5cfa-83bd-a77205b9eb4b",
+            "document_id": "3df9cd7a-940f-400e-b03a-a72459a5558f",
+            "revision_id": "3ed28d1a-4b30-4ea4-bf03-3a69308fb8ba",
+            "chunk_id": "5a1139f9-9bf1-4665-96e1-c15a6477ded6",
+            "start": 263,
+            "end": 438,
+            "text": "To obtain high sensitivity, two requirements need to be simultaneously satisfied: (i) low electrical noise and (ii) strong signal, which existing sensor materials cannot meet.",
+            "source_text_sha256": "bedd2a7ed1ad17c747634824457042b37b609d742e51ee38b9ffc4f8c0f23907"
+          }
+        ],
+        "qualifiers": [
+          {
+            "qualifier_type": "joint_requirement",
+            "raw_text": "simultaneously satisfied",
+            "raw_value": "all",
+            "normalized_value": null,
+            "unit": null,
+            "comparator": "EXPLICIT_TEXT",
+            "applies_to_assertion_id": "353bda66-bf30-57b4-8b2b-9cee1eff65a0",
+            "evidence_refs": [
+              "4bab841d-2fa4-5ec4-95de-79994fa5bd99"
+            ],
+            "status": "EXPLICIT"
+          },
+          {
+            "qualifier_type": "scope",
+            "raw_text": "two requirements",
+            "raw_value": "collective",
+            "normalized_value": null,
+            "unit": null,
+            "comparator": "EXPLICIT_TEXT",
+            "applies_to_assertion_id": "353bda66-bf30-57b4-8b2b-9cee1eff65a0",
+            "evidence_refs": [
+              "0cc54a4a-e566-58d8-afcc-30251df5179b"
+            ],
+            "status": "EXPLICIT"
+          }
+        ]
+      },
+      "contrast": "Cannot simultaneously meet low noise AND strong signal means NOT(all requirements), not NOT(noise) AND NOT(signal).",
+      "nearest_relations": "HAS_PROPERTY/HAS_PERFORMANCE describe attributes individually; this relation preserves the conjunction and its negation.",
+      "ambiguity_policy": "Abstain when the predicate, attachment, scope or endpoint referent is not licensed by the source. Preserve the weakest explicitly supported modality; no inferred transitive assertions.",
+      "group_policy": "Distribute only when grammar explicitly licenses each member claim. Otherwise use an exact-span group with HAS_MEMBER and scope=collective. Never infer Cartesian products.",
+      "tail_contextual_roles": [
+        "requirement_bundle"
+      ]
+    }
+  },
+  "qualifiers": {
+    "duration": {
+      "definition": "Duration attached to the stated stability or durability result.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "detection_limit": {
+      "definition": "Detection limit for the target/configuration of this assertion.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "estimation_status": {
+      "definition": "Whether the quantity is explicitly theoretical or otherwise estimated.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "temperature": {
+      "definition": "Explicit operating temperature or the literal room-temperature condition.",
+      "raw_value_types": [
+        "number",
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "bending_cycles": {
+      "definition": "Number of bending cycles for the stated deformation tolerance.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "twisting_cycles": {
+      "definition": "Number of twisting cycles for the stated deformation tolerance.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "strain": {
+      "definition": "Strain percentage for the stated deformation or strain-strength result.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "layer_position": {
+      "definition": "Explicit spatial arrangement of the layer relative to its named hosts.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "parameter_selection": {
+      "definition": "Explicit selection of optimal fabrication parameters; no missing values are inferred.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "response_per_concentration": {
+      "definition": "Response per target concentration, preserving literal compound units.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "NO_response_per_concentration": {
+      "definition": "Response slope specifically for NO.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "NO2_response_per_concentration": {
+      "definition": "Response slope specifically for NO2.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "NO_detection_limit": {
+      "definition": "Detection limit specifically for NO.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "NO2_detection_limit": {
+      "definition": "Detection limit specifically for NO2.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "stretch": {
+      "definition": "Percentage stretch for the stated stretchability capability.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "explained_capability": {
+      "definition": "Source-stated capability that a bearer mechanism accounts for.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "isolation_reference": {
+      "definition": "Object from which strain is isolated.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "relative_humidity": {
+      "definition": "Relative humidity condition of the stated property/capability.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "monitoring_times": {
+      "definition": "Source-stated temporal scope of monitoring.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "equipment": {
+      "definition": "Explicit fabrication or processing equipment.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "location": {
+      "definition": "Source-stated component placement.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "trend": {
+      "definition": "Source-stated noncausal trend in a bearer attribute; not a causal factor.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "associated_change": {
+      "definition": "An associated event retained without upgrading correlation to causality.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "response": {
+      "definition": "Numerical sensor response, preserving its source unit or absent unit.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "analyte_concentration": {
+      "definition": "Target concentration for this specific response/detection assertion.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "temperature_selection": {
+      "definition": "Whether an operating temperature was explicitly optimized.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "comparison": {
+      "definition": "Exact comparator or comparison construction; no unspecified control is invented.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "mass_ratio": {
+      "definition": "Ordered composition mass ratio; order follows the named material components.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "optimization_status": {
+      "definition": "Explicit optimal/optimized status of the stated configuration.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "relative_humidity_range": {
+      "definition": "Range of relative humidity for the stated behavior.",
+      "raw_value_types": [
+        "array"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "coefficient_of_determination": {
+      "definition": "The source-stated R squared statistic.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "selectivity_comparison": {
+      "definition": "Target and comparison substances for selectivity.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "dopant": {
+      "definition": "Material used as dopant; it is not automatically the analyte.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "improvement_factor": {
+      "definition": "Source-stated amount/factor of improvement, with approximation retained.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "doped_detection_limit": {
+      "definition": "Detection limit in the doped configuration.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "undoped_detection_limit": {
+      "definition": "Detection limit in the undoped/before-doping configuration.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "support_method": {
+      "definition": "Source-stated computational/experimental support; it does not itself lower modality.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "analyte_scope": {
+      "definition": "The target substance(s) to which the assertion is restricted.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "material_configuration": {
+      "definition": "Source-stated material/device configuration for this assertion.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "concentration_regime": {
+      "definition": "Literal qualitative or quantitative concentration regime.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "sample_condition": {
+      "definition": "Composition or setting of the gas sample.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "epistemic_basis": {
+      "definition": "Calculated versus experimental provenance, separate from assertion modality.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "change": {
+      "definition": "Explicit qualitative property change and comparison; sign may be unspecified.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "study_method": {
+      "definition": "Method used to investigate the statement; not proof of actual sensor deployment.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "relative_sensitivity": {
+      "definition": "Sensitivity advantage relative to the named comparison.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "scope_limit": {
+      "definition": "Explicit restriction such as in some cases; prevents universalizing a review claim.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "process_location": {
+      "definition": "Material/site on which the process occurs.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "comparison_direction": {
+      "definition": "Literal direction of a stated comparison.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "comparison_material": {
+      "definition": "Material used as the comparison baseline.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "detection_limit_range": {
+      "definition": "Range for the stated detection limit, not a single interpolated value.",
+      "raw_value_types": [
+        "array"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "SNR_ratio": {
+      "definition": "Source-stated SNR advantage, including order-of-magnitude language.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "selectivity_order": {
+      "definition": "Literal order-of-magnitude selectivity; original notation retained.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "gas_pair": {
+      "definition": "Ordered gas pair for separation selectivity.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "pore_configuration": {
+      "definition": "Pore functionalization/passivation to which a result applies.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "CH4_barrier": {
+      "definition": "Energy barrier specifically for CH4.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "H2_barrier": {
+      "definition": "Energy barrier specifically for H2.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "fabrication_techniques": {
+      "definition": "Explicit fabrication alternatives; no Cartesian assignment of results.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "direction": {
+      "definition": "Direction of change of the target parameter or parameter state: increase, decrease, unchanged, unspecified.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text.",
+      "enum": [
+        "increase",
+        "decrease",
+        "unchanged",
+        "unspecified"
+      ]
+    },
+    "contribution": {
+      "definition": "Explicit partial, dominant or joint explanatory contribution; no numeric fraction inferred.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text.",
+      "enum": [
+        "partial",
+        "dominant",
+        "joint"
+      ]
+    },
+    "scope": {
+      "definition": "Whether the claim is collective or independently distributive.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text.",
+      "enum": [
+        "collective",
+        "individual"
+      ]
+    },
+    "joint_requirement": {
+      "definition": "Conjunction semantics for a requirement bundle: all must hold simultaneously.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text.",
+      "enum": [
+        "all"
+      ]
+    },
+    "evidence_basis": {
+      "definition": "Whether support is calculation, experiment or review; separate from modality.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text.",
+      "enum": [
+        "calculation",
+        "experiment",
+        "review"
+      ]
+    },
+    "strength": {
+      "definition": "Literal qualitative strength, such as strongly or significantly.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "target_parameter": {
+      "definition": "Names the parameter state when wording is a magnitude of decrease rather than the underlying current.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "width": {
+      "definition": "Literal pore width, retaining the source unit A without silently substituting angstrom.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "explanatory_basis": {
+      "definition": "Joint explanatory features retained as one source-grounded qualifier.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "outcome_scope": {
+      "definition": "Named behavior explained by a mechanism or explanatory claim.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    }
+  },
+  "qualifier_schema": {
+    "required_fields": [
+      "qualifier_type",
+      "raw_text",
+      "raw_value",
+      "unit",
+      "applies_to_assertion_id",
+      "evidence_refs"
+    ],
+    "optional_fields": [
+      "normalized_value",
+      "comparator",
+      "status"
+    ],
+    "unknown_types": "reject in accepted assertions; record unresolved candidates",
+    "required_qualifier_rule_format": "Mapping qualifier_type -> constraints, including enum on raw_value."
+  },
+  "polarity": {
+    "POSITIVE": "The relation is affirmed.",
+    "NEGATIVE": "The relation is explicitly negated; negation scope remains local.",
+    "UNKNOWN": "Uncertain polarity; candidate/abstention only, not SUPPORTED."
+  },
+  "modality": {
+    "ASSERTED": "Author presents the statement as holding, including calculated results.",
+    "PROPOSED": "Author proposes or suggests a mechanism, explanation or design.",
+    "COMPARED": "A comparative assertion with its source-stated comparator.",
+    "HYPOTHETICAL": "Possibility, potential, goal or future capability, without demonstrated realization.",
+    "UNKNOWN": "Unresolved author stance; candidate/abstention only."
+  },
+  "support_policy": {
+    "accepted": "SUPPORTED + DIRECT_SOURCE + AI_DRAFT; this means source support, not independently established physical truth.",
+    "abstention": "INSUFFICIENT_EVIDENCE decisions retain UNRESOLVED candidates and evidence; REJECT candidates remain in immutable decision records."
+  },
+  "evidence_policy": {
+    "offsets": "Python Unicode codepoints [start,end), relative to frozen chunk text.",
+    "required": "At least one exact source evidence span for each accepted assertion; source text and SHA-256 must match.",
+    "qualifier_grounding": "Exact raw_text span and matching assertion attachment required.",
+    "source_context": "Record source_relation_type, source_modality, source_polarity, interpretation_basis=AI_DEV_SOURCE_REVIEW, and evidence_span_ids as an AI regression interpretation; not an independent semantic oracle.",
+    "no_transitive_facts": true,
+    "absence_is_not_negation": true
+  },
+  "canonicalization": {
+    "normalization_version": "pilot24-ontology-v1.0",
+    "identity_levels": [
+      "concept",
+      "source-scoped configuration",
+      "experimental instance"
+    ],
+    "cannot_merge": [
+      "graphene / graphene oxide",
+      "graphene oxide / reduced graphene oxide",
+      "different compositions or dopants",
+      "different device configurations absent explicit identity"
+    ],
+    "same_policy": "Only aliases or co-reference established by this source license SAME. RELATED/BROADER/NARROWER are not identity. Chemical class membership is not SAME.",
+    "unicode": "Preserve source Unicode; chemical spacing normalization is conceptual only; original spans stay unchanged."
+  },
+  "group_policy": {
+    "explicit_group_required": true,
+    "membership_does_not_distribute": true,
+    "cartesian_products_forbidden": true,
+    "joint_negation": "NEGATIVE MEETS_REQUIREMENT with joint_requirement=all means NOT(all); no member-specific negation follows.",
+    "mixed_requirements": "PROPERTY requirement_bundle can contain PROPERTY/PERFORMANCE members; no new entity kind needed."
+  },
+  "provenance": {
+    "design_split": "DEV",
+    "design_document_count": 12,
+    "question_count": 20,
+    "candidate_count": 26,
+    "inputs_manifest": "INPUT_MANIFEST.json",
+    "snapshot_directory": "source_snapshot",
+    "isolation": "Semantic design used a fresh isolated agent context and only the enumerated DEV bundle. Parent session had earlier evaluation exposure; end-to-end historical independence cannot be proved.",
+    "historical_limitation": "The first 0.3 freeze persistence failed, evaluation text was shown before retry. Historical artifacts are preserved and not retroactively claimed perfectly isolated.",
+    "ai_self_audit": "Two separate logical passes by the same AI; not independent human review."
+  },
+  "proposal_disposition": {
+    "INCREASES": "MAP_TO_EXISTING: CHANGES_PARAMETER + direction=increase; physical increase kept distinct from IMPROVES.",
+    "DECREASES": "Covered by CHANGES_PARAMETER + direction=decrease, grounded in D078.",
+    "DOMINATES": "MAP_TO_EXISTING: EXPLAINS + contribution=dominant + collective scope.",
+    "USED_FOR_DEVICE_RANGE": "Not admitted: DEV impact wording is insufficient to establish device-directed use; D024-Q6/Q7 remain unresolved."
+  }
+}

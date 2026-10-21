@@ -1,0 +1,1468 @@
+{
+  "ontology_id": "pilot24-ontology-v1.0",
+  "version": "1.0",
+  "entities": {
+    "MATERIAL": {
+      "definition": "A substance, composition, or material system considered as matter."
+    },
+    "DEVICE": {
+      "definition": "An engineered object or functional physical component with a technical role."
+    },
+    "PROPERTY": {
+      "definition": "A physical, chemical, structural or manufacturing attribute or parameter of a bearer."
+    },
+    "PERFORMANCE": {
+      "definition": "A capability, task outcome or evaluation measure in an application."
+    },
+    "ANALYTE": {
+      "definition": "A substance or explicit substance class in the contextual role of target, adsorbate or comparison gas."
+    },
+    "PROCESS": {
+      "definition": "A technical action, transformation, operation or event, including formation and measurement."
+    },
+    "MECHANISM": {
+      "definition": "A source-expressed explanation, interaction, or combined explanatory account of technical behavior."
+    },
+    "OPERATING_CONDITION": {
+      "definition": "An environmental, sample or operating circumstance under which a claim applies."
+    },
+    "MORPHOLOGY": {
+      "definition": "A structural arrangement, shape, geometry or electronic/spatial feature."
+    },
+    "TECHNOLOGY": {
+      "definition": "A named technology or method family referenced as an approach."
+    },
+    "APPLICATION": {
+      "definition": "An explicitly named end use, task or application field."
+    },
+    "OTHER": {
+      "definition": "A source-expressed technical referent that does not fit the other kinds."
+    }
+  },
+  "relations": {
+    "HAS_PROPERTY": {
+      "definition": "The bearer has the stated non-task physical, chemical, structural or process attribute.",
+      "direction": "bearer -> property",
+      "head_kinds": [
+        "DEVICE",
+        "MATERIAL",
+        "PROCESS",
+        "OTHER",
+        "MORPHOLOGY"
+      ],
+      "tail_kinds": [
+        "PROPERTY"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "CH4_barrier",
+        "H2_barrier",
+        "analyte_scope",
+        "associated_change",
+        "change",
+        "comparison",
+        "evidence_basis",
+        "mass_ratio",
+        "material_configuration",
+        "optimization_status",
+        "pore_configuration",
+        "relative_humidity",
+        "scope",
+        "scope_limit",
+        "trend",
+        "width"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ]
+    },
+    "HAS_PERFORMANCE": {
+      "definition": "The bearer exhibits the stated task capability, measured outcome or performance limitation.",
+      "direction": "bearer -> performance",
+      "head_kinds": [
+        "DEVICE",
+        "MATERIAL"
+      ],
+      "tail_kinds": [
+        "PERFORMANCE"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "NO2_detection_limit",
+        "NO2_response_per_concentration",
+        "NO_detection_limit",
+        "NO_response_per_concentration",
+        "SNR_ratio",
+        "analyte_concentration",
+        "analyte_scope",
+        "bending_cycles",
+        "coefficient_of_determination",
+        "comparison",
+        "comparison_direction",
+        "comparison_material",
+        "detection_limit",
+        "detection_limit_range",
+        "doped_detection_limit",
+        "duration",
+        "estimation_status",
+        "evidence_basis",
+        "gas_pair",
+        "material_configuration",
+        "pore_configuration",
+        "relative_humidity_range",
+        "relative_sensitivity",
+        "response",
+        "scope",
+        "scope_limit",
+        "selectivity_comparison",
+        "selectivity_order",
+        "strain",
+        "stretch",
+        "temperature",
+        "temperature_selection",
+        "twisting_cycles",
+        "undoped_detection_limit"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ]
+    },
+    "HAS_MORPHOLOGY": {
+      "definition": "The bearer has a stated structural, geometric or electronic arrangement.",
+      "direction": "bearer -> structure",
+      "head_kinds": [
+        "DEVICE",
+        "MATERIAL"
+      ],
+      "tail_kinds": [
+        "MORPHOLOGY"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "evidence_basis",
+        "material_configuration",
+        "scope",
+        "scope_limit"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ]
+    },
+    "HAS_COMPONENT": {
+      "definition": "The composite or device explicitly contains the physical material or functional component.",
+      "direction": "whole -> physical component",
+      "head_kinds": [
+        "DEVICE",
+        "MATERIAL"
+      ],
+      "tail_kinds": [
+        "DEVICE",
+        "MATERIAL"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "evidence_basis",
+        "layer_position",
+        "location",
+        "material_configuration",
+        "scope",
+        "scope_limit"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ]
+    },
+    "HAS_MEMBER": {
+      "definition": "An explicitly expressed collection has the listed member; this does not distribute the collection claim to its members.",
+      "direction": "explicit group -> member",
+      "head_kinds": [
+        "PROPERTY",
+        "PROCESS",
+        "MATERIAL",
+        "ANALYTE",
+        "MORPHOLOGY",
+        "MECHANISM"
+      ],
+      "tail_kinds": [
+        "PROPERTY",
+        "PERFORMANCE",
+        "PROCESS",
+        "MATERIAL",
+        "ANALYTE",
+        "MORPHOLOGY",
+        "MECHANISM"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "evidence_basis",
+        "material_configuration",
+        "scope",
+        "scope_limit"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ]
+    },
+    "USES_MATERIAL": {
+      "definition": "A device explicitly employs a material in its construction or functioning.",
+      "direction": "device -> material",
+      "head_kinds": [
+        "DEVICE"
+      ],
+      "tail_kinds": [
+        "MATERIAL"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "evidence_basis",
+        "material_configuration",
+        "scope",
+        "scope_limit"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ]
+    },
+    "FUNCTIONS_AS": {
+      "definition": "A material explicitly serves as the named functional component or role.",
+      "direction": "material -> functional component/role",
+      "head_kinds": [
+        "MATERIAL"
+      ],
+      "tail_kinds": [
+        "DEVICE",
+        "OTHER"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "evidence_basis",
+        "material_configuration",
+        "scope",
+        "scope_limit"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ]
+    },
+    "DETECTS": {
+      "definition": "The sensor has an explicitly stated detection capability for the target substance, including explicit nonresponse and prospective capability.",
+      "direction": "sensor -> target analyte",
+      "head_kinds": [
+        "DEVICE"
+      ],
+      "tail_kinds": [
+        "ANALYTE"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_concentration",
+        "analyte_scope",
+        "concentration_regime",
+        "evidence_basis",
+        "material_configuration",
+        "response_per_concentration",
+        "scope",
+        "scope_limit",
+        "temperature"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ]
+    },
+    "USED_FOR": {
+      "definition": "The object has an explicitly stated actual, proposed or hypothetical application, process use or material sensing target.",
+      "direction": "object -> stated use",
+      "head_kinds": [
+        "DEVICE",
+        "MATERIAL"
+      ],
+      "tail_kinds": [
+        "APPLICATION",
+        "PROCESS",
+        "ANALYTE"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "concentration_regime",
+        "evidence_basis",
+        "material_configuration",
+        "monitoring_times",
+        "sample_condition",
+        "scope",
+        "scope_limit",
+        "temperature"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ]
+    },
+    "FABRICATED_BY": {
+      "definition": "The object is obtained by the stated fabrication process, within the source modality.",
+      "direction": "fabricated object -> fabrication process",
+      "head_kinds": [
+        "DEVICE",
+        "MATERIAL"
+      ],
+      "tail_kinds": [
+        "PROCESS"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "equipment",
+        "evidence_basis",
+        "material_configuration",
+        "parameter_selection",
+        "scope",
+        "scope_limit"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ]
+    },
+    "IMPROVES": {
+      "definition": "The process is stated to make a property or task outcome better in the source-defined evaluative sense.",
+      "direction": "process -> improved property/performance",
+      "head_kinds": [
+        "PROCESS"
+      ],
+      "tail_kinds": [
+        "PROPERTY",
+        "PERFORMANCE"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "epistemic_basis",
+        "evidence_basis",
+        "improvement_factor",
+        "material_configuration",
+        "scope",
+        "scope_limit"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ]
+    },
+    "ACTS_ON": {
+      "definition": "The process explicitly acts on, characterizes, transforms or otherwise operates on the object.",
+      "direction": "process -> affected/studied object",
+      "head_kinds": [
+        "PROCESS"
+      ],
+      "tail_kinds": [
+        "DEVICE",
+        "MATERIAL"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "dopant",
+        "evidence_basis",
+        "fabrication_techniques",
+        "material_configuration",
+        "scope",
+        "scope_limit",
+        "support_method"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ]
+    },
+    "INTEGRATED_IN": {
+      "definition": "The functional object is explicitly incorporated into the receiving host.",
+      "direction": "integrated object -> host",
+      "head_kinds": [
+        "DEVICE"
+      ],
+      "tail_kinds": [
+        "DEVICE",
+        "OTHER"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "evidence_basis",
+        "material_configuration",
+        "scope",
+        "scope_limit"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ]
+    },
+    "HAS_MECHANISM": {
+      "definition": "The device or material has the stated source-expressed mechanism for its specified behavior.",
+      "direction": "device/material bearer -> mechanism",
+      "head_kinds": [
+        "DEVICE",
+        "MATERIAL"
+      ],
+      "tail_kinds": [
+        "MECHANISM"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "contribution",
+        "evidence_basis",
+        "explained_capability",
+        "material_configuration",
+        "outcome_scope",
+        "scope",
+        "scope_limit"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ]
+    },
+    "MECHANISM_INVOLVES": {
+      "definition": "The mechanism explicitly involves the named subordinate mechanism, process or structure.",
+      "direction": "mechanism -> involved mechanism/event/structure",
+      "head_kinds": [
+        "MECHANISM"
+      ],
+      "tail_kinds": [
+        "MECHANISM",
+        "PROCESS",
+        "MORPHOLOGY"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "evidence_basis",
+        "isolation_reference",
+        "material_configuration",
+        "scope",
+        "scope_limit"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ]
+    },
+    "LOCATED_IN": {
+      "definition": "The electronic or geometric structure is explicitly situated in the named material.",
+      "direction": "structure -> containing material",
+      "head_kinds": [
+        "MORPHOLOGY"
+      ],
+      "tail_kinds": [
+        "MATERIAL"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "evidence_basis",
+        "material_configuration",
+        "scope",
+        "scope_limit"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ]
+    },
+    "OPTIMIZES": {
+      "definition": "A process explicitly adjusts an object or configuration described as optimized or optimal for a stated technical objective.",
+      "direction": "adjustment process -> optimized object",
+      "head_kinds": [
+        "PROCESS"
+      ],
+      "tail_kinds": [
+        "DEVICE",
+        "MATERIAL"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "evidence_basis",
+        "material_configuration",
+        "scope",
+        "scope_limit"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ]
+    },
+    "FACILITATES": {
+      "definition": "A material or process promotes or enables the named process without asserting strict production of its outcome.",
+      "direction": "facilitating material/process -> facilitated process",
+      "head_kinds": [
+        "MATERIAL",
+        "PROCESS"
+      ],
+      "tail_kinds": [
+        "PROCESS"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "evidence_basis",
+        "explanatory_basis",
+        "material_configuration",
+        "process_location",
+        "scope",
+        "scope_limit"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ]
+    },
+    "CAUSES": {
+      "definition": "A source explicitly states that the causal factor produces or induces the named technical event; event endpoints remain events.",
+      "direction": "causal factor -> produced event",
+      "head_kinds": [
+        "PROCESS",
+        "MECHANISM",
+        "MATERIAL"
+      ],
+      "tail_kinds": [
+        "PROCESS"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "comparison",
+        "contribution",
+        "direction",
+        "evidence_basis",
+        "material_configuration",
+        "outcome_scope",
+        "scope",
+        "scope_limit",
+        "strength",
+        "target_parameter"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ]
+    },
+    "EXPLAINS": {
+      "definition": "The source attributes an observed or proposed technical outcome or process to the explanatory factor, with the stated contribution and scope.",
+      "direction": "explanatory factor -> explained outcome/process",
+      "head_kinds": [
+        "PROCESS",
+        "MECHANISM",
+        "MORPHOLOGY",
+        "PROPERTY"
+      ],
+      "tail_kinds": [
+        "PERFORMANCE",
+        "PROPERTY",
+        "PROCESS"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "comparison",
+        "contribution",
+        "direction",
+        "evidence_basis",
+        "material_configuration",
+        "outcome_scope",
+        "pore_configuration",
+        "scope",
+        "scope_limit",
+        "strength",
+        "target_parameter"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ]
+    },
+    "CHANGES_PARAMETER": {
+      "definition": "A factor changes or explicitly leaves unchanged the target physical/property or performance parameter; direction describes that parameter, not desirability.",
+      "direction": "changing factor -> affected parameter",
+      "head_kinds": [
+        "PROCESS",
+        "MORPHOLOGY",
+        "MECHANISM"
+      ],
+      "tail_kinds": [
+        "PROPERTY",
+        "PERFORMANCE"
+      ],
+      "required_qualifiers": {
+        "direction": {
+          "enum": [
+            "increase",
+            "decrease",
+            "unchanged",
+            "unspecified"
+          ]
+        }
+      },
+      "optional_qualifiers": [
+        "analyte_scope",
+        "comparison",
+        "contribution",
+        "evidence_basis",
+        "material_configuration",
+        "outcome_scope",
+        "scope",
+        "scope_limit",
+        "strength",
+        "target_parameter"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ]
+    },
+    "DEPENDS_ON": {
+      "definition": "The source explicitly states that the head quantity/outcome depends on the tail parameter or structural configuration; no functional law is inferred.",
+      "direction": "dependent quantity/outcome -> determining variable/configuration",
+      "head_kinds": [
+        "PROPERTY",
+        "PERFORMANCE"
+      ],
+      "tail_kinds": [
+        "PROPERTY",
+        "MORPHOLOGY"
+      ],
+      "required_qualifiers": {},
+      "optional_qualifiers": [
+        "analyte_scope",
+        "comparison",
+        "contribution",
+        "direction",
+        "evidence_basis",
+        "material_configuration",
+        "outcome_scope",
+        "scope",
+        "scope_limit",
+        "strength",
+        "target_parameter"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ]
+    },
+    "MEETS_REQUIREMENT": {
+      "definition": "The material/device meets, or explicitly fails to meet, a jointly specified requirement bundle.",
+      "direction": "evaluated bearer -> explicit joint requirement bundle",
+      "head_kinds": [
+        "MATERIAL",
+        "DEVICE"
+      ],
+      "tail_kinds": [
+        "PROPERTY"
+      ],
+      "required_qualifiers": {
+        "joint_requirement": {
+          "enum": [
+            "all"
+          ]
+        },
+        "scope": {
+          "enum": [
+            "collective"
+          ]
+        }
+      },
+      "optional_qualifiers": [
+        "analyte_scope",
+        "evidence_basis",
+        "material_configuration",
+        "scope_limit"
+      ],
+      "supported_polarities": [
+        "POSITIVE",
+        "NEGATIVE"
+      ],
+      "supported_modalities": [
+        "ASSERTED",
+        "PROPOSED",
+        "COMPARED",
+        "HYPOTHETICAL"
+      ]
+    }
+  },
+  "qualifiers": {
+    "duration": {
+      "definition": "Duration attached to the stated stability or durability result.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "detection_limit": {
+      "definition": "Detection limit for the target/configuration of this assertion.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "estimation_status": {
+      "definition": "Whether the quantity is explicitly theoretical or otherwise estimated.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "temperature": {
+      "definition": "Explicit operating temperature or the literal room-temperature condition.",
+      "raw_value_types": [
+        "number",
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "bending_cycles": {
+      "definition": "Number of bending cycles for the stated deformation tolerance.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "twisting_cycles": {
+      "definition": "Number of twisting cycles for the stated deformation tolerance.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "strain": {
+      "definition": "Strain percentage for the stated deformation or strain-strength result.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "layer_position": {
+      "definition": "Explicit spatial arrangement of the layer relative to its named hosts.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "parameter_selection": {
+      "definition": "Explicit selection of optimal fabrication parameters; no missing values are inferred.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "response_per_concentration": {
+      "definition": "Response per target concentration, preserving literal compound units.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "NO_response_per_concentration": {
+      "definition": "Response slope specifically for NO.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "NO2_response_per_concentration": {
+      "definition": "Response slope specifically for NO2.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "NO_detection_limit": {
+      "definition": "Detection limit specifically for NO.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "NO2_detection_limit": {
+      "definition": "Detection limit specifically for NO2.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "stretch": {
+      "definition": "Percentage stretch for the stated stretchability capability.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "explained_capability": {
+      "definition": "Source-stated capability that a bearer mechanism accounts for.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "isolation_reference": {
+      "definition": "Object from which strain is isolated.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "relative_humidity": {
+      "definition": "Relative humidity condition of the stated property/capability.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "monitoring_times": {
+      "definition": "Source-stated temporal scope of monitoring.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "equipment": {
+      "definition": "Explicit fabrication or processing equipment.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "location": {
+      "definition": "Source-stated component placement.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "trend": {
+      "definition": "Source-stated noncausal trend in a bearer attribute; not a causal factor.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "associated_change": {
+      "definition": "An associated event retained without upgrading correlation to causality.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "response": {
+      "definition": "Numerical sensor response, preserving its source unit or absent unit.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "analyte_concentration": {
+      "definition": "Target concentration for this specific response/detection assertion.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "temperature_selection": {
+      "definition": "Whether an operating temperature was explicitly optimized.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "comparison": {
+      "definition": "Exact comparator or comparison construction; no unspecified control is invented.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "mass_ratio": {
+      "definition": "Ordered composition mass ratio; order follows the named material components.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "optimization_status": {
+      "definition": "Explicit optimal/optimized status of the stated configuration.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "relative_humidity_range": {
+      "definition": "Range of relative humidity for the stated behavior.",
+      "raw_value_types": [
+        "array"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "coefficient_of_determination": {
+      "definition": "The source-stated R squared statistic.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "selectivity_comparison": {
+      "definition": "Target and comparison substances for selectivity.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "dopant": {
+      "definition": "Material used as dopant; it is not automatically the analyte.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "improvement_factor": {
+      "definition": "Source-stated amount/factor of improvement, with approximation retained.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "doped_detection_limit": {
+      "definition": "Detection limit in the doped configuration.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "undoped_detection_limit": {
+      "definition": "Detection limit in the undoped/before-doping configuration.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "support_method": {
+      "definition": "Source-stated computational/experimental support; it does not itself lower modality.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "analyte_scope": {
+      "definition": "The target substance(s) to which the assertion is restricted.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "material_configuration": {
+      "definition": "Source-stated material/device configuration for this assertion.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "concentration_regime": {
+      "definition": "Literal qualitative or quantitative concentration regime.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "sample_condition": {
+      "definition": "Composition or setting of the gas sample.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "epistemic_basis": {
+      "definition": "Calculated versus experimental provenance, separate from assertion modality.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "change": {
+      "definition": "Explicit qualitative property change and comparison; sign may be unspecified.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "study_method": {
+      "definition": "Method used to investigate the statement; not proof of actual sensor deployment.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "relative_sensitivity": {
+      "definition": "Sensitivity advantage relative to the named comparison.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "scope_limit": {
+      "definition": "Explicit restriction such as in some cases; prevents universalizing a review claim.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "process_location": {
+      "definition": "Material/site on which the process occurs.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "comparison_direction": {
+      "definition": "Literal direction of a stated comparison.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "comparison_material": {
+      "definition": "Material used as the comparison baseline.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "detection_limit_range": {
+      "definition": "Range for the stated detection limit, not a single interpolated value.",
+      "raw_value_types": [
+        "array"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "SNR_ratio": {
+      "definition": "Source-stated SNR advantage, including order-of-magnitude language.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "selectivity_order": {
+      "definition": "Literal order-of-magnitude selectivity; original notation retained.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "gas_pair": {
+      "definition": "Ordered gas pair for separation selectivity.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "pore_configuration": {
+      "definition": "Pore functionalization/passivation to which a result applies.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "CH4_barrier": {
+      "definition": "Energy barrier specifically for CH4.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "H2_barrier": {
+      "definition": "Energy barrier specifically for H2.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "fabrication_techniques": {
+      "definition": "Explicit fabrication alternatives; no Cartesian assignment of results.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "direction": {
+      "definition": "Direction of change of the target parameter or parameter state: increase, decrease, unchanged, unspecified.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text.",
+      "enum": [
+        "increase",
+        "decrease",
+        "unchanged",
+        "unspecified"
+      ]
+    },
+    "contribution": {
+      "definition": "Explicit partial, dominant or joint explanatory contribution; no numeric fraction inferred.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text.",
+      "enum": [
+        "partial",
+        "dominant",
+        "joint"
+      ]
+    },
+    "scope": {
+      "definition": "Whether the claim is collective or independently distributive.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text.",
+      "enum": [
+        "collective",
+        "individual"
+      ]
+    },
+    "joint_requirement": {
+      "definition": "Conjunction semantics for a requirement bundle: all must hold simultaneously.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text.",
+      "enum": [
+        "all"
+      ]
+    },
+    "evidence_basis": {
+      "definition": "Whether support is calculation, experiment or review; separate from modality.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text.",
+      "enum": [
+        "calculation",
+        "experiment",
+        "review"
+      ]
+    },
+    "strength": {
+      "definition": "Literal qualitative strength, such as strongly or significantly.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "target_parameter": {
+      "definition": "Names the parameter state when wording is a magnitude of decrease rather than the underlying current.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "width": {
+      "definition": "Literal pore width, retaining the source unit A without silently substituting angstrom.",
+      "raw_value_types": [
+        "number"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "explanatory_basis": {
+      "definition": "Joint explanatory features retained as one source-grounded qualifier.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    },
+    "outcome_scope": {
+      "definition": "Named behavior explained by a mechanism or explanatory claim.",
+      "raw_value_types": [
+        "string"
+      ],
+      "unit_policy": "Preserve the exact source unit; no implicit normalization.",
+      "attachment": "applies_to_assertion_id must equal containing assertion; evidence_refs must be registered exact subspans covered by its evidence.",
+      "normalization": "normalized_value may remain null; controlled semantic values in raw_value are AI interpretations grounded in raw_text."
+    }
+  }
+}
