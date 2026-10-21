@@ -1,0 +1,286 @@
+[
+  {
+    "category": "validation_false_positive",
+    "document_code": "D001",
+    "subset": "validation",
+    "head": {
+      "start": 0,
+      "end": 10,
+      "surface_text": "E-textiles",
+      "kind": "MATERIAL",
+      "contextual_role": "UNKNOWN",
+      "score": 0.4116033613681793,
+      "mention_id": "6319af2d-0fe1-4daa-87c6-131c379a75c9:m0",
+      "source_spans": [
+        {
+          "span_id": "6319af2d-0fe1-4daa-87c6-131c379a75c9:0:10",
+          "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+          "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+          "chunk_id": "6319af2d-0fe1-4daa-87c6-131c379a75c9",
+          "start": 0,
+          "end": 10,
+          "text": "E-textiles",
+          "source_text_sha256": "51d6b3595cc1b465fba348487a2c2784ee54f3ce01e850c9bea6eb5d424b0831"
+        }
+      ],
+      "concept_ref": "e6f34aa3ce71df6e213fdfc8"
+    },
+    "tail": {
+      "start": 68,
+      "end": 80,
+      "surface_text": "light weight",
+      "kind": "PROPERTY",
+      "contextual_role": "UNKNOWN",
+      "score": 0.36960074305534363,
+      "mention_id": "6319af2d-0fe1-4daa-87c6-131c379a75c9:m1",
+      "source_spans": [
+        {
+          "span_id": "6319af2d-0fe1-4daa-87c6-131c379a75c9:68:80",
+          "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+          "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+          "chunk_id": "6319af2d-0fe1-4daa-87c6-131c379a75c9",
+          "start": 68,
+          "end": 80,
+          "text": "light weight",
+          "source_text_sha256": "51d6b3595cc1b465fba348487a2c2784ee54f3ce01e850c9bea6eb5d424b0831"
+        }
+      ],
+      "concept_ref": "d2af0150434ed9d0a44539c6"
+    },
+    "assertion": {
+      "assertion_id": "6319af2d-0fe1-4daa-87c6-131c379a75c9:a51:0",
+      "head_mention_id": "6319af2d-0fe1-4daa-87c6-131c379a75c9:m0",
+      "tail_mention_id": "6319af2d-0fe1-4daa-87c6-131c379a75c9:m1",
+      "relation_type": "HAS_PROPERTY",
+      "score": 0.9630950107025007,
+      "evidence": [
+        {
+          "span_id": "6319af2d-0fe1-4daa-87c6-131c379a75c9:0:168",
+          "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+          "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+          "chunk_id": "6319af2d-0fe1-4daa-87c6-131c379a75c9",
+          "start": 0,
+          "end": 168,
+          "text": "E-textiles are gaining growing popularity recently due to low cost, light weight, and conformable compatibility with clothes in wearable and portable smart electronics.",
+          "source_text_sha256": "51d6b3595cc1b465fba348487a2c2784ee54f3ce01e850c9bea6eb5d424b0831"
+        }
+      ],
+      "decision_status": "ACCEPTED_PROVISIONAL",
+      "reason": null
+    },
+    "exact_typed_relation_matches_gold": false
+  },
+  {
+    "category": "validation_correct_raw_abstained",
+    "document_code": "D003",
+    "subset": "validation",
+    "head": {
+      "start": 393,
+      "end": 409,
+      "surface_text": "wearable devices",
+      "kind": "DEVICE",
+      "contextual_role": "UNKNOWN",
+      "score": 0.6035767793655396,
+      "mention_id": "45f36916-7688-4edb-8dd1-2ac50ea13339:m4",
+      "source_spans": [
+        {
+          "span_id": "45f36916-7688-4edb-8dd1-2ac50ea13339:393:409",
+          "document_id": "06066c66-1454-4813-b7b7-f366b9956035",
+          "revision_id": "7af46631-a38f-430d-a43c-bcfa0dccac9e",
+          "chunk_id": "45f36916-7688-4edb-8dd1-2ac50ea13339",
+          "start": 393,
+          "end": 409,
+          "text": "wearable devices",
+          "source_text_sha256": "93b20b0f39df3ee410854241c279ea62bb58bb7097cf578d2413e403427c1a88"
+        }
+      ],
+      "concept_ref": "5a424b623b7dbf38042bb41f"
+    },
+    "tail": {
+      "start": 420,
+      "end": 430,
+      "surface_text": "biomarkers",
+      "kind": "ANALYTE",
+      "contextual_role": "target_substance",
+      "score": 0.43196284770965576,
+      "mention_id": "45f36916-7688-4edb-8dd1-2ac50ea13339:m5",
+      "source_spans": [
+        {
+          "span_id": "45f36916-7688-4edb-8dd1-2ac50ea13339:420:430",
+          "document_id": "06066c66-1454-4813-b7b7-f366b9956035",
+          "revision_id": "7af46631-a38f-430d-a43c-bcfa0dccac9e",
+          "chunk_id": "45f36916-7688-4edb-8dd1-2ac50ea13339",
+          "start": 420,
+          "end": 430,
+          "text": "biomarkers",
+          "source_text_sha256": "93b20b0f39df3ee410854241c279ea62bb58bb7097cf578d2413e403427c1a88"
+        }
+      ],
+      "concept_ref": "ce28546a678795cf9b9fcd1c"
+    },
+    "assertion": {
+      "assertion_id": "45f36916-7688-4edb-8dd1-2ac50ea13339:a2:0",
+      "head_mention_id": "45f36916-7688-4edb-8dd1-2ac50ea13339:m4",
+      "tail_mention_id": "45f36916-7688-4edb-8dd1-2ac50ea13339:m5",
+      "relation_type": "DETECTS",
+      "score": 0.7279140389533326,
+      "evidence": [
+        {
+          "span_id": "45f36916-7688-4edb-8dd1-2ac50ea13339:315:498",
+          "document_id": "06066c66-1454-4813-b7b7-f366b9956035",
+          "revision_id": "7af46631-a38f-430d-a43c-bcfa0dccac9e",
+          "chunk_id": "45f36916-7688-4edb-8dd1-2ac50ea13339",
+          "start": 315,
+          "end": 498,
+          "text": "Moisture-resistant, stretchable NO x gas sensors can expand the capability of wearable devices to detect biomarkers from humans and exposed environments for early disease diagnostics.",
+          "source_text_sha256": "93b20b0f39df3ee410854241c279ea62bb58bb7097cf578d2413e403427c1a88"
+        }
+      ],
+      "decision_status": "ABSTAIN",
+      "reason": "UNSUPPORTED_CAPABILITY:NEGATION_SCOPE"
+    },
+    "exact_typed_relation_matches_gold": true
+  },
+  {
+    "category": "correct_train",
+    "document_code": "D017",
+    "subset": "train",
+    "head": {
+      "start": 302,
+      "end": 310,
+      "surface_text": "Graphene",
+      "kind": "MATERIAL",
+      "contextual_role": "UNKNOWN",
+      "score": 0.9633986949920654,
+      "mention_id": "52c7bac2-feff-4316-934f-2726c4842540:m8",
+      "source_spans": [
+        {
+          "span_id": "52c7bac2-feff-4316-934f-2726c4842540:302:310",
+          "document_id": "2860ed7f-a2a8-4e76-9250-e3558d092f23",
+          "revision_id": "d80633dc-c57a-4253-8754-29c9366084f5",
+          "chunk_id": "52c7bac2-feff-4316-934f-2726c4842540",
+          "start": 302,
+          "end": 310,
+          "text": "Graphene",
+          "source_text_sha256": "651d394d86153236deeb8d70507215a9e8b8d77ab04eec43518a0daabf9003e2"
+        }
+      ],
+      "concept_ref": "4e10fd6d983963630f60b0bd"
+    },
+    "tail": {
+      "start": 457,
+      "end": 482,
+      "surface_text": "strong surface activities",
+      "kind": "PROPERTY",
+      "contextual_role": "UNKNOWN",
+      "score": 0.4462183713912964,
+      "mention_id": "52c7bac2-feff-4316-934f-2726c4842540:m10",
+      "source_spans": [
+        {
+          "span_id": "52c7bac2-feff-4316-934f-2726c4842540:457:482",
+          "document_id": "2860ed7f-a2a8-4e76-9250-e3558d092f23",
+          "revision_id": "d80633dc-c57a-4253-8754-29c9366084f5",
+          "chunk_id": "52c7bac2-feff-4316-934f-2726c4842540",
+          "start": 457,
+          "end": 482,
+          "text": "strong surface activities",
+          "source_text_sha256": "651d394d86153236deeb8d70507215a9e8b8d77ab04eec43518a0daabf9003e2"
+        }
+      ],
+      "concept_ref": "c09bf49345d17d63822c6e9d"
+    },
+    "assertion": {
+      "assertion_id": "52c7bac2-feff-4316-934f-2726c4842540:a282:0",
+      "head_mention_id": "52c7bac2-feff-4316-934f-2726c4842540:m8",
+      "tail_mention_id": "52c7bac2-feff-4316-934f-2726c4842540:m10",
+      "relation_type": "HAS_PROPERTY",
+      "score": 0.9515734495200452,
+      "evidence": [
+        {
+          "span_id": "52c7bac2-feff-4316-934f-2726c4842540:302:483",
+          "document_id": "2860ed7f-a2a8-4e76-9250-e3558d092f23",
+          "revision_id": "d80633dc-c57a-4253-8754-29c9366084f5",
+          "chunk_id": "52c7bac2-feff-4316-934f-2726c4842540",
+          "start": 302,
+          "end": 483,
+          "text": "Graphene and related layered inorganic analogues have shown great potential for gas-sensing applications because of their large specific surface areas and strong surface activities.",
+          "source_text_sha256": "651d394d86153236deeb8d70507215a9e8b8d77ab04eec43518a0daabf9003e2"
+        }
+      ],
+      "decision_status": "ACCEPTED_PROVISIONAL",
+      "reason": null
+    },
+    "exact_typed_relation_matches_gold": true
+  },
+  {
+    "category": "correct_train",
+    "document_code": "D026",
+    "subset": "train",
+    "head": {
+      "start": 465,
+      "end": 488,
+      "surface_text": "2D metal carbide MXenes",
+      "kind": "MATERIAL",
+      "contextual_role": "UNKNOWN",
+      "score": 0.8502064943313599,
+      "mention_id": "5a1139f9-9bf1-4665-96e1-c15a6477ded6:m8",
+      "source_spans": [
+        {
+          "span_id": "5a1139f9-9bf1-4665-96e1-c15a6477ded6:465:488",
+          "document_id": "3df9cd7a-940f-400e-b03a-a72459a5558f",
+          "revision_id": "3ed28d1a-4b30-4ea4-bf03-3a69308fb8ba",
+          "chunk_id": "5a1139f9-9bf1-4665-96e1-c15a6477ded6",
+          "start": 465,
+          "end": 488,
+          "text": "2D metal carbide MXenes",
+          "source_text_sha256": "bedd2a7ed1ad17c747634824457042b37b609d742e51ee38b9ffc4f8c0f23907"
+        }
+      ],
+      "concept_ref": "4a8aa371ffd542ca031369d0"
+    },
+    "tail": {
+      "start": 504,
+      "end": 530,
+      "surface_text": "high metallic conductivity",
+      "kind": "PROPERTY",
+      "contextual_role": "UNKNOWN",
+      "score": 0.5358054637908936,
+      "mention_id": "5a1139f9-9bf1-4665-96e1-c15a6477ded6:m9",
+      "source_spans": [
+        {
+          "span_id": "5a1139f9-9bf1-4665-96e1-c15a6477ded6:504:530",
+          "document_id": "3df9cd7a-940f-400e-b03a-a72459a5558f",
+          "revision_id": "3ed28d1a-4b30-4ea4-bf03-3a69308fb8ba",
+          "chunk_id": "5a1139f9-9bf1-4665-96e1-c15a6477ded6",
+          "start": 504,
+          "end": 530,
+          "text": "high metallic conductivity",
+          "source_text_sha256": "bedd2a7ed1ad17c747634824457042b37b609d742e51ee38b9ffc4f8c0f23907"
+        }
+      ],
+      "concept_ref": "12b6d7da3c9d551578db2ebd"
+    },
+    "assertion": {
+      "assertion_id": "5a1139f9-9bf1-4665-96e1-c15a6477ded6:a49:0",
+      "head_mention_id": "5a1139f9-9bf1-4665-96e1-c15a6477ded6:m8",
+      "tail_mention_id": "5a1139f9-9bf1-4665-96e1-c15a6477ded6:m9",
+      "relation_type": "HAS_PROPERTY",
+      "score": 0.8901477088549631,
+      "evidence": [
+        {
+          "span_id": "5a1139f9-9bf1-4665-96e1-c15a6477ded6:439:684",
+          "document_id": "3df9cd7a-940f-400e-b03a-a72459a5558f",
+          "revision_id": "3ed28d1a-4b30-4ea4-bf03-3a69308fb8ba",
+          "chunk_id": "5a1139f9-9bf1-4665-96e1-c15a6477ded6",
+          "start": 439,
+          "end": 684,
+          "text": "Here, we demonstrate that 2D metal carbide MXenes, which possess high metallic conductivity for low noise and a fully functionalized surface for a strong signal, greatly outperform the sensitivity of conventional semiconductor channel materials.",
+          "source_text_sha256": "bedd2a7ed1ad17c747634824457042b37b609d742e51ee38b9ffc4f8c0f23907"
+        }
+      ],
+      "decision_status": "ACCEPTED_PROVISIONAL",
+      "reason": null
+    },
+    "exact_typed_relation_matches_gold": true
+  }
+]

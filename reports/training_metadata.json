@@ -1,0 +1,151 @@
+{
+  "format": "marked-pair-tfidf-ovr-v1",
+  "labels": [
+    "HAS_PROPERTY",
+    "HAS_PERFORMANCE",
+    "HAS_MORPHOLOGY",
+    "HAS_COMPONENT",
+    "HAS_MEMBER",
+    "USES_MATERIAL",
+    "FUNCTIONS_AS",
+    "DETECTS",
+    "USED_FOR",
+    "FABRICATED_BY",
+    "IMPROVES",
+    "ACTS_ON",
+    "INTEGRATED_IN",
+    "HAS_MECHANISM",
+    "MECHANISM_INVOLVES",
+    "LOCATED_IN",
+    "OPTIMIZES",
+    "FACILITATES",
+    "CAUSES",
+    "EXPLAINS",
+    "CHANGES_PARAMETER",
+    "DEPENDS_ON",
+    "MEETS_REQUIREMENT",
+    "NO_RELATION"
+  ],
+  "seed": 42,
+  "tokenizer": "sklearn TfidfVectorizer: Unicode word regex, case-sensitive, unigram+bigram",
+  "pretrained_checkpoint": null,
+  "license": "Repository code license; newly fitted research parameters, no external RE checkpoint",
+  "train_documents": [
+    "D004",
+    "D010",
+    "D017",
+    "D024",
+    "D026",
+    "D038",
+    "D060",
+    "D078"
+  ],
+  "training_inventory": [
+    {
+      "document_code": "D004",
+      "examples": 250,
+      "positive_pairs": 23,
+      "gold_positive_pairs": 24,
+      "excluded_unresolved_negatives": 0,
+      "exhaustive_relations": true,
+      "hard_negatives": 227
+    },
+    {
+      "document_code": "D010",
+      "examples": 317,
+      "positive_pairs": 67,
+      "gold_positive_pairs": 99,
+      "excluded_unresolved_negatives": 0,
+      "exhaustive_relations": true,
+      "hard_negatives": 250
+    },
+    {
+      "document_code": "D017",
+      "examples": 172,
+      "positive_pairs": 28,
+      "gold_positive_pairs": 28,
+      "excluded_unresolved_negatives": 0,
+      "exhaustive_relations": true,
+      "hard_negatives": 144
+    },
+    {
+      "document_code": "D024",
+      "examples": 16,
+      "positive_pairs": 16,
+      "gold_positive_pairs": 20,
+      "excluded_unresolved_negatives": 123,
+      "exhaustive_relations": false,
+      "hard_negatives": 0
+    },
+    {
+      "document_code": "D026",
+      "examples": 86,
+      "positive_pairs": 17,
+      "gold_positive_pairs": 19,
+      "excluded_unresolved_negatives": 0,
+      "exhaustive_relations": true,
+      "hard_negatives": 69
+    },
+    {
+      "document_code": "D038",
+      "examples": 71,
+      "positive_pairs": 15,
+      "gold_positive_pairs": 17,
+      "excluded_unresolved_negatives": 0,
+      "exhaustive_relations": true,
+      "hard_negatives": 56
+    },
+    {
+      "document_code": "D060",
+      "examples": 89,
+      "positive_pairs": 12,
+      "gold_positive_pairs": 12,
+      "excluded_unresolved_negatives": 0,
+      "exhaustive_relations": true,
+      "hard_negatives": 77
+    },
+    {
+      "document_code": "D078",
+      "examples": 288,
+      "positive_pairs": 38,
+      "gold_positive_pairs": 39,
+      "excluded_unresolved_negatives": 0,
+      "exhaustive_relations": true,
+      "hard_negatives": 250
+    }
+  ],
+  "positive_support": {
+    "HAS_PROPERTY": 18,
+    "HAS_PERFORMANCE": 30,
+    "HAS_MORPHOLOGY": 12,
+    "HAS_COMPONENT": 45,
+    "HAS_MEMBER": 17,
+    "USES_MATERIAL": 8,
+    "FUNCTIONS_AS": 1,
+    "DETECTS": 6,
+    "USED_FOR": 26,
+    "FABRICATED_BY": 5,
+    "IMPROVES": 3,
+    "ACTS_ON": 9,
+    "INTEGRATED_IN": 0,
+    "HAS_MECHANISM": 4,
+    "MECHANISM_INVOLVES": 6,
+    "LOCATED_IN": 2,
+    "OPTIMIZES": 0,
+    "FACILITATES": 3,
+    "CAUSES": 2,
+    "EXPLAINS": 10,
+    "CHANGES_PARAMETER": 7,
+    "DEPENDS_ON": 1,
+    "MEETS_REQUIREMENT": 1,
+    "NO_RELATION": 1073
+  },
+  "untrained_labels": [
+    "INTEGRATED_IN",
+    "OPTIMIZES"
+  ],
+  "parameters_sha256": "cc9401bf53cb0a53b9d84aaddfa3412053016b95214d388514091af65a5c08da",
+  "features_sha256": "5be5f97fb79b9d7c629f43d9853aad75dd108cdd73a627cddedc715408dd1068",
+  "config_sha256": "6ee53ca17b26acacee0b5fac2891f7a55ebcc8aab56bcd8cb620c0fb93a21068",
+  "training_labels_sha256": "5e58d7913a244bacd423c6726569ec9ab76e4a1d674a2995cccdc042f10c7355"
+}

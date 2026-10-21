@@ -1,0 +1,24 @@
+{
+  "counts": {
+    "entities": 477,
+    "candidate_pairs": 2907,
+    "raw_proposals": 566,
+    "assertions": 46,
+    "budget_dropped": 594
+  },
+  "rejection_reasons": {
+    "NO_EXPLICIT_PREDICATE_BETWEEN_ENDPOINTS": 365,
+    "UNSUPPORTED_CAPABILITY:OVERLAPPING_RELATION_ENDPOINTS": 89,
+    "UNSUPPORTED_CAPABILITY:NEGATION_SCOPE": 18,
+    "UNSUPPORTED_CAPABILITY:NEGATION_ATTACHMENT": 6,
+    "UNSUPPORTED_CAPABILITY:QUALIFIER_ATTACHMENT": 35,
+    "UNSUPPORTED_CAPABILITY:COMPARISON_OR_DISTRIBUTION": 7
+  },
+  "stage_ms_all_12_dev": {
+    "candidates_ms": 40.43149994686246,
+    "relation_classifier_ms": 691.362600075081,
+    "scope_qualifiers_ms": 37.86440007388592,
+    "validation_ms": 10.607599979266524,
+    "ner_ms": 14245.927499607205
+  }
+}

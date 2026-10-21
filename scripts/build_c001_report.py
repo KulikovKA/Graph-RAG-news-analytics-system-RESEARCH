@@ -116,7 +116,7 @@ RE: **TF-IDF marked-pair linear sigmoid heads**, one-vs-rest logistic regression
 
 Изучен [GLiNER-Relex base](https://huggingface.co/knowledgator/gliner-relex-base-v1.0), revision `e6a880049a19c5cc222a7a479c32e84b0d8cdd9a`, Apache-2.0: joint NER+RE относится к arm F, поэтому не подменяет раздельную архитектуру C. Его веса в этом эксперименте не запускались. Выбран минимальный полностью обучаемый CPU marked-pair baseline; перенос на encoder head оставлен C-002.
 
-Обучение: {sum(x['examples'] for x in run['relation_model']['training_inventory'])} примеров, {sum(x['hard_negatives'] for x in run['relation_model']['training_inventory'])} hard negatives. Из 23 relation outputs 21 обучен; `INTEGRATED_IN` и `OPTIMIZES` имеют нулевой support и `UNSUPPORTED_CAPABILITY`, а не фиктивные предсказания. Все 23 labels присутствуют в inventory; 24-й output — NO_RELATION. Multi-label positives допустимы; ABSTAIN — отдельная policy при низких scores, конфликте с NO_RELATION или unsupported labels. Thresholds 0.65 фиксированы заранее, не calibrated probabilities.
+Обучение: {sum(x['examples'] for x in run['relation_model']['training_inventory'])} примеров, {sum(x['hard_negatives'] for x in run['relation_model']['training_inventory'])} hard negatives. Из 23 relation outputs 21 обучен; `INTEGRATED_IN` и `OPTIMIZES` имеют нулевой support и перечисляются в `unsupported_labels`; неопределённые пары получают ABSTAIN. Все 23 labels присутствуют в inventory; 24-й output — NO_RELATION. Multi-label positives допустимы; ABSTAIN — отдельная policy при низких scores, конфликте с NO_RELATION или unsupported labels. Thresholds 0.65 фиксированы заранее, не calibrated probabilities.
 
 Точная identity local RE parameters: `{run['relation_model']['parameters_sha256']}`; feature/tokenizer hash `{run['relation_model']['features_sha256']}`. Train IDs, support каждого класса и точные settings в [training_metadata.json](training_metadata.json). Checkpoint из внешнего Hub для RE отсутствует; лицензия sklearn — BSD-3-Clause, отдельная лицензия новых fitted parameters не назначалась. Веса/NPZ/cache в Git не включены.
 
@@ -176,9 +176,11 @@ Linking учитывается отдельно в per-document execution. Су�
 
 Ниже неизменённые model outputs. Успешные train-примеры иллюстрируют функционирование, а не независимое качество. Validation false positive включён явно. Exact offsets и evidence SHA-256 всех примеров: [examples.json](examples.json).
 
-{chr(10).join(examples_md)}
+{(chr(10) * 2).join(examples_md)}
 
 Главные наблюдения: NER boundary/type errors оставили только 7 из 132 Gold relations среди end-to-end candidates, хотя с Gold entities проходят 125/132. Лексические heads плохо переносятся на другие topical clusters. Из 91 raw validation relations только 5 совпали с Gold; gates удалили и эти TP, а 21 оставшийся provisional assertion не совпал с typed Gold. Следовательно, deterministic screen одновременно теряет recall и не гарантирует precision. Увеличение strictness само по себе недостаточно.
+
+Обнаружен конкретный дефект cue rules: uppercase chemical `NO x` попадает под case-insensitive `no` и вызывает ложный ABSTAIN по negation scope (пример D003 выше). Он сохранён в measured C-001 baseline; следующая версия должна отдельно различать химическое NO/NOx и языковое отрицание. После просмотра validation правила и thresholds ради улучшения scores не подгонялись.
 
 Reasons по raw proposals всех 12 DEV:
 

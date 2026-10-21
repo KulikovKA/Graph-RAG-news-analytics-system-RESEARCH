@@ -1,0 +1,402 @@
+{
+  "micro": {
+    "relation_raw_end_to_end": {
+      "tp": 50,
+      "fp": 88,
+      "fn": 82,
+      "gold": 132,
+      "predicted": 138,
+      "precision": 0.36231884057971014,
+      "recall": 0.3787878787878788,
+      "f1": 0.37037037037037035
+    },
+    "relation_end_to_end": {
+      "tp": 8,
+      "fp": 2,
+      "fn": 124,
+      "gold": 132,
+      "predicted": 10,
+      "precision": 0.8,
+      "recall": 0.06060606060606061,
+      "f1": 0.11267605633802817
+    },
+    "relation_given_candidate_endpoints": {
+      "tp": 8,
+      "fp": 2,
+      "fn": 117,
+      "gold": 125,
+      "predicted": 10,
+      "precision": 0.8,
+      "recall": 0.064,
+      "f1": 0.11851851851851852
+    },
+    "qualified_relation": {
+      "tp": 0,
+      "fp": 10,
+      "fn": 132,
+      "gold": 132,
+      "predicted": 10,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "candidate_pair_recall": {
+      "covered": 125,
+      "gold": 132,
+      "recall": 0.946969696969697
+    },
+    "abstention": {
+      "abstained": 1091,
+      "candidate_pairs": 1331,
+      "rate": 0.8196844477836214
+    }
+  },
+  "macro_document": {
+    "relation_raw_end_to_end": {
+      "f1": 0.3401938354843196,
+      "documents": 4
+    },
+    "relation_end_to_end": {
+      "f1": 0.06557377049180328,
+      "documents": 4
+    },
+    "relation_given_candidate_endpoints": {
+      "f1": 0.06557377049180328,
+      "documents": 4
+    },
+    "qualified_relation": {
+      "f1": 0.0,
+      "documents": 4
+    }
+  },
+  "documents": {
+    "D001": {
+      "relation_raw_end_to_end": {
+        "tp": 23,
+        "fp": 16,
+        "fn": 28,
+        "predicted": 39,
+        "gold": 51,
+        "precision": 0.5897435897435898,
+        "recall": 0.45098039215686275,
+        "f1": 0.5111111111111111
+      },
+      "relation_end_to_end": {
+        "tp": 8,
+        "fp": 2,
+        "fn": 43,
+        "predicted": 10,
+        "gold": 51,
+        "precision": 0.8,
+        "recall": 0.1568627450980392,
+        "f1": 0.26229508196721313
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 8,
+        "fp": 2,
+        "fn": 43,
+        "predicted": 10,
+        "gold": 51,
+        "precision": 0.8,
+        "recall": 0.1568627450980392,
+        "f1": 0.26229508196721313
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 10,
+        "fn": 51,
+        "predicted": 10,
+        "gold": 51,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 51,
+        "gold": 51,
+        "recall": 1.0
+      },
+      "abstention": {
+        "abstained": 370,
+        "candidate_pairs": 406
+      },
+      "accepted_assertions": 10,
+      "raw_proposals": 39,
+      "unsupported_proposals": 9
+    },
+    "D003": {
+      "relation_raw_end_to_end": {
+        "tp": 14,
+        "fp": 41,
+        "fn": 33,
+        "predicted": 55,
+        "gold": 47,
+        "precision": 0.2545454545454545,
+        "recall": 0.2978723404255319,
+        "f1": 0.27450980392156865
+      },
+      "relation_end_to_end": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 47,
+        "predicted": 0,
+        "gold": 47,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 42,
+        "predicted": 0,
+        "gold": 42,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 47,
+        "predicted": 0,
+        "gold": 47,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 42,
+        "gold": 47,
+        "recall": 0.8936170212765957
+      },
+      "abstention": {
+        "abstained": 375,
+        "candidate_pairs": 439
+      },
+      "accepted_assertions": 0,
+      "raw_proposals": 55,
+      "unsupported_proposals": 20
+    },
+    "D035": {
+      "relation_raw_end_to_end": {
+        "tp": 1,
+        "fp": 15,
+        "fn": 14,
+        "predicted": 16,
+        "gold": 15,
+        "precision": 0.0625,
+        "recall": 0.06666666666666667,
+        "f1": 0.06451612903225806
+      },
+      "relation_end_to_end": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 15,
+        "predicted": 0,
+        "gold": 15,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 13,
+        "predicted": 0,
+        "gold": 13,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 15,
+        "predicted": 0,
+        "gold": 15,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 13,
+        "gold": 15,
+        "recall": 0.8666666666666667
+      },
+      "abstention": {
+        "abstained": 200,
+        "candidate_pairs": 273
+      },
+      "accepted_assertions": 0,
+      "raw_proposals": 16,
+      "unsupported_proposals": 5
+    },
+    "D092": {
+      "relation_raw_end_to_end": {
+        "tp": 12,
+        "fp": 16,
+        "fn": 7,
+        "predicted": 28,
+        "gold": 19,
+        "precision": 0.42857142857142855,
+        "recall": 0.631578947368421,
+        "f1": 0.5106382978723404
+      },
+      "relation_end_to_end": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 19,
+        "predicted": 0,
+        "gold": 19,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 19,
+        "predicted": 0,
+        "gold": 19,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 19,
+        "predicted": 0,
+        "gold": 19,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 19,
+        "gold": 19,
+        "recall": 1.0
+      },
+      "abstention": {
+        "abstained": 146,
+        "candidate_pairs": 213
+      },
+      "accepted_assertions": 0,
+      "raw_proposals": 28,
+      "unsupported_proposals": 11
+    }
+  },
+  "matching_policy": "Exact Unicode spans+kind; directed predicate; multiset one-to-one; no relaxed/coreference substitution",
+  "qualifier_policy": "UNKNOWN qualifier completeness never receives qualified TP; gold qualifiers remain in denominator",
+  "annotation_limitation": "Single owner review, AI-origin annotations; no independent secondary review",
+  "semantic_support_rate": null,
+  "semantic_support_status": "NOT_MEASURED: requires independent review of predictions",
+  "mode": "gold_entities_re_diagnostic",
+  "subset": "validation",
+  "partition": {
+    "seed": 42,
+    "group_key": "pilot24 cluster (conservative topical/family proxy)",
+    "train": [
+      "D004",
+      "D010",
+      "D017",
+      "D024",
+      "D026",
+      "D038",
+      "D060",
+      "D078"
+    ],
+    "validation": [
+      "D001",
+      "D003",
+      "D035",
+      "D092"
+    ],
+    "validation_groups": [
+      "C02",
+      "C07"
+    ],
+    "limitation": "Cluster-disjoint, small descriptive DEV experiment; clusters are not independently verified patent/publication families."
+  },
+  "prediction_run_sha256": "ab726d7ca61ae34ee08011de7130dad0ca65580df691f6cbcaceefb8fe42801c",
+  "prediction_files_sha256": {
+    "D001": "7733a87e5009e5323352c38a786f2104a509a7d481045986efdaf52c79cba17b",
+    "D003": "0a021cd77704f30c02c77a5ee376233f8ac6be22f3f1cbf606d1a056f7312e96",
+    "D035": "cf65d1abd065d84778cb87e24c4b9f75390d2178f40d129d950181147930d130",
+    "D092": "ffb643388d9e02f2fa926b56add0ded922ea890f54a677d7692fffc950416f4b"
+  },
+  "performance": {
+    "documents": [
+      "D001",
+      "D003",
+      "D035",
+      "D092"
+    ],
+    "wall_ms": 4556.229199981317,
+    "cpu_ms": 3578.125,
+    "peak_ram_bytes": 116326400,
+    "peak_ram_method": "Windows GetProcessMemoryInfo PeakWorkingSetSize, process lifetime incl. imports/model load",
+    "llm_calls": 0,
+    "ner_calls": 0,
+    "encoder_forward_calls": 0,
+    "re_batch_calls": 6
+  },
+  "performance_scope": "Full prediction run listed above; per-document times are in performance_documents",
+  "performance_documents": {
+    "D001": {
+      "wall_ms": 102.84329997375607,
+      "cpu_ms": 78.125,
+      "ner_calls": 0,
+      "re_calls": 2,
+      "llm_calls": 0,
+      "stage_ms": {
+        "scope_qualifiers_ms": 5.479699932038784,
+        "candidates_ms": 3.6988999927416444,
+        "validation_ms": 1.0794000700116158,
+        "relation_classifier_ms": 91.67199989315122
+      }
+    },
+    "D003": {
+      "wall_ms": 130.52639993838966,
+      "cpu_ms": 125.0,
+      "ner_calls": 0,
+      "re_calls": 2,
+      "llm_calls": 0,
+      "stage_ms": {
+        "scope_qualifiers_ms": 4.993900074623525,
+        "candidates_ms": 5.199800129048526,
+        "validation_ms": 1.8467999761924148,
+        "relation_classifier_ms": 117.75769991800189
+      }
+    },
+    "D035": {
+      "wall_ms": 78.31110002007335,
+      "cpu_ms": 78.125,
+      "ner_calls": 0,
+      "re_calls": 1,
+      "llm_calls": 0,
+      "stage_ms": {
+        "scope_qualifiers_ms": 1.3614000054076314,
+        "candidates_ms": 4.638899932615459,
+        "validation_ms": 0.8552999934181571,
+        "relation_classifier_ms": 71.00900006480515
+      }
+    },
+    "D092": {
+      "wall_ms": 49.32440002448857,
+      "cpu_ms": 46.875,
+      "ner_calls": 0,
+      "re_calls": 1,
+      "llm_calls": 0,
+      "stage_ms": {
+        "scope_qualifiers_ms": 2.7123000472784042,
+        "candidates_ms": 1.431100070476532,
+        "validation_ms": 0.7197000086307526,
+        "relation_classifier_ms": 44.128599925898015
+      }
+    }
+  },
+  "independent_of_training_documents": true,
+  "inferential_status": "Descriptive DEV validation only; no confirmatory holdout claim"
+}
