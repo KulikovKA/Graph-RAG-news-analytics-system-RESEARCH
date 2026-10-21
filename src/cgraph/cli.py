@@ -10,6 +10,11 @@ import time
 from .common import config, file_sha256, fingerprint, read_json, write_json
 
 
+def inference_code_hashes():
+    # Even provenance collection must respect the annotation-module boundary.
+    return {p.as_posix(): file_sha256(p) for p in sorted(Path("src/cgraph").glob("*.py")) if p.name != "labels.py"}
+
+
 def main():
     parser = argparse.ArgumentParser(description="C-001: strictly non-generative DEV-only graph extraction")
     parser.add_argument("--config", default="config/c001.json")
@@ -111,7 +116,7 @@ def run_extraction(cfg, args):
                ner_model=ner.identity if ner else None, ner_load_ms=ner.load_ms if ner else None,
                relation_model=classifier.metadata, config=cfg, config_sha256=fingerprint(cfg),
                source_manifest_sha256=fingerprint(read_json(cfg["manifest"])), code_commit=commit,
-               source_code_files_sha256={p.as_posix(): file_sha256(p) for p in sorted(Path("src/cgraph").glob("*.py"))},
+               source_code_files_sha256=inference_code_hashes(),
                dependency_lock_sha256=file_sha256("uv.lock"),
                code_dirty=bool(subprocess.check_output(["git", "status", "--porcelain"], text=True).strip()),
                runtime={p: importlib.metadata.version(p) for p in ["torch", "gliner", "transformers", "scikit-learn", "numpy", "tokenizers", "psutil"]},

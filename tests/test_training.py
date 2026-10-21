@@ -36,3 +36,19 @@ def test_inference_modules_have_no_annotation_imports():
         tree = ast.parse(Path(f"src/cgraph/{name}.py").read_text(encoding="utf-8"))
         imports = [node.module for node in ast.walk(tree) if isinstance(node, ast.ImportFrom)]
         assert "labels" not in imports
+
+
+def test_provenance_does_not_open_the_annotation_module():
+    import subprocess
+    import sys
+    code = """
+import sys
+def guard(event, args):
+    if event == 'open' and isinstance(args[0], str) and args[0].replace('\\\\', '/').endswith('cgraph/labels.py'):
+        raise PermissionError('Forbidden annotation module access')
+sys.addaudithook(guard)
+from cgraph.cli import inference_code_hashes
+hashes = inference_code_hashes()
+assert hashes and all(not p.endswith('/labels.py') for p in hashes)
+"""
+    subprocess.run([sys.executable, "-c", code], check=True)
