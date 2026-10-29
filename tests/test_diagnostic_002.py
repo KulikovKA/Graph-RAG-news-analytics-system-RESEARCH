@@ -69,3 +69,18 @@ def test_new_inference_has_no_training_or_evaluation_calls():
             if isinstance(node, ast.Call):
                 method = node.func.attr if isinstance(node.func, ast.Attribute) else getattr(node.func, "id", "")
                 assert method not in {"fit", "fit_transform", "train", "backward", "step", "load_labels", "evaluate"}
+
+
+def test_pair_serving_does_not_imply_gold_label_was_queried():
+    spec = importlib.util.spec_from_file_location("diag_evaluate", "scripts/evaluate_c_diag_002.py")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    h = dict(mention_id="h", start=0, end=1, kind="MATERIAL", chunk_id="c")
+    t = dict(mention_id="t", start=2, end=3, kind="MATERIAL", chunk_id="c")
+    assertion = dict(head_mention_id="h", tail_mention_id="t", relation_type="HAS_COMPONENT", support_status="SUPPORTED")
+    labels = dict(D001=dict(mentions=[h, t], assertions=[assertion, assertion]))
+    trace = dict(head_mention_id="h", tail_mention_id="t", relation_type="HAS_MEMBER")
+    preds = [dict(document_code="D001", chunks=[dict(chunk_id="c", entities=[h, t], re_inference_trace=[trace])])]
+    assert module.actual_query_coverage(preds, labels)["covered"] == 0
+    trace["relation_type"] = "HAS_COMPONENT"
+    assert module.actual_query_coverage(preds, labels) == dict(covered=2, gold=2, recall=1.0)

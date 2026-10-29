@@ -52,6 +52,15 @@ def examples_and_fp(predictions, labels):
         remaining = ge.copy()
         typed = {entity_key(m["chunk_id"], m) for m in gm.values()}
         spans = {key[:3] for key in typed}
+        for m in pm.values():
+            key = entity_key(m["chunk_id"], m)
+            category = "entity_TP" if key in typed else "entity_FP_KIND" if key[:3] in spans else "entity_FP_BOUNDARY"
+            text = chunks[m["chunk_id"]]["source_text"]
+            keep(category, dict(document=code, chunk_id=m["chunk_id"], surface=m["surface_text"],
+                                start=m["start"], end=m["end"], predicted_kind=m["kind"],
+                                gold_kinds_at_exact_boundary=sorted(g["kind"] for g in gm.values()
+                                    if (g["chunk_id"], g["start"], g["end"]) == key[:3]),
+                                evidence=text[max(0, m["start"]-60):min(len(text), m["end"]+60)]))
         for c in pred["chunks"]:
             for a in c["assertions"]:
                 e = edge(a, pm)
@@ -96,6 +105,26 @@ def examples_and_fp(predictions, labels):
     return examples, dict(fp_categories)
 
 
+def actual_query_coverage(predictions, labels):
+    """Distinguish pair-level serving from the actual queried Gold relation label."""
+    covered, total = 0, 0
+    for pred in predictions:
+        gm = {m["mention_id"]: m for m in labels[pred["document_code"]]["mentions"]}
+        queries = set()
+        for c in pred["chunks"]:
+            pm = {m["mention_id"]: m for m in c["entities"]}
+            for trace in c["re_inference_trace"]:
+                queries.add((entity_key(c["chunk_id"], pm[trace["head_mention_id"]]),
+                             entity_key(c["chunk_id"], pm[trace["tail_mention_id"]]), trace["relation_type"]))
+        for a in labels[pred["document_code"]]["assertions"]:
+            if a["support_status"] != "SUPPORTED":
+                continue
+            h, t = gm[a["head_mention_id"]], gm[a["tail_mention_id"]]
+            total += 1
+            covered += (entity_key(h["chunk_id"], h), entity_key(t["chunk_id"], t), a["relation_type"]) in queries
+    return dict(covered=covered, gold=total, recall=covered / total if total else None)
+
+
 def main():
     cfg = read_json("config/c_diag_002.json")
     variants = cfg["diagnostic_protocol"]["variants"]
@@ -124,6 +153,15 @@ def main():
                 raise ValueError("Mixed predictions")
             validate_prediction(p)
             predictions[v].append(p)
+    costs = {v: read_json(f"artifacts/c_diag_002/{v}_ner_cost.json") for v in variants if v != "gold"}
+    for v, measurement in costs.items():
+        if (not measurement["inventory_matches_primary"]
+                or measurement["total_entities"] != sum(len(c["entities"]) for p in predictions[v] for c in p["chunks"])
+                or measurement["script_sha256"] != file_sha256("scripts/benchmark_c_diag_002_ner.py")
+                or measurement["primary_inventory_sha256"] != file_sha256(f"artifacts/c_diag_002/{v}/ner_inventory.json")
+                or measurement["protocol_sha256"] != file_sha256("reports/C_DIAG_002_COST_PROTOCOL.md")):
+            raise ValueError("NER-only cost measurement provenance mismatch")
+    write_json("reports/c_diag_002/ner_costs.json", costs)
     labels = load_labels(cfg, docs)
     out = Path("reports/c_diag_002")
     summary = {}
@@ -135,12 +173,20 @@ def main():
         for relation in ontology["relations"]:
             audit["per_relation"].setdefault(relation, dict(raw=zero.copy(), final=zero.copy()))
         examples, fp_categories = examples_and_fp(preds, labels)
+        if sum(fp_categories.values()) != result["micro"]["relation_end_to_end"]["fp"]:
+            raise ValueError("FP attribution does not partition final false positives")
         counts = Counter()
+        gate_totals = Counter()
         timings = Counter()
         reasons = Counter()
         for pred in preds:
             for c in pred["chunks"]:
                 counts.update({k: len(c[k]) for k in ("entities", "candidate_pairs", "raw_proposals", "assertions", "skipped_re_contexts")})
+                gate_totals.update(raw_re=len(c["raw_proposals"]),
+                                   domain_range=sum(a["domain_range_pass"] for a in c["raw_proposals"]),
+                                   scope=sum(a["scope_pass"] for a in c["raw_proposals"]),
+                                   evidence=sum(a["evidence_pass"] for a in c["raw_proposals"]),
+                                   final=len(c["assertions"]))
                 timings.update(c["stage_ms"])
                 for pair in c["candidate_pairs"]:
                     reasons.update(pair["reasons"])
@@ -149,6 +195,10 @@ def main():
         result.update(architecture_id="C-DIAG-002", variant=v, mode=run["mode"], exploratory=True,
                       gold_entities_diagnostic_only=v == "gold", counts=dict(counts), stage_ms=dict(timings),
                       loss_audit=audit, entity_per_kind=typed_coverage(preds, labels, ontology),
+                      actual_gold_label_query_coverage=actual_query_coverage(preds, labels),
+                      gate_totals={stage: dict(total=total, tp=audit["correct_assertions_remaining"][stage],
+                                              fp=total-audit["correct_assertions_remaining"][stage])
+                                   for stage, total in gate_totals.items()},
                       abstention_or_rejection_pair_reasons=dict(reasons), final_fp_categories=fp_categories,
                       unsupported_relations=[r for r, cap in cfg["zero_shot_re"]["capabilities"].items() if cap["status"] == "UNSUPPORTED"],
                       unsupported_gold_relations=dict(unsupported_gold), selected_examples=examples,

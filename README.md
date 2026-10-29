@@ -1,4 +1,18 @@
-# Architecture C — pretrained-only zero-shot pipeline (C-RESTART-001)
+# Architecture C — pretrained-only research
+
+Финальная ограниченная диагностика: [C_DIAG_002_REPORT.md](reports/C_DIAG_002_REPORT.md).
+Готовый scientific NER и electrocatalyst NER с оговоркой о происхождении,
+сохранённый GLiNER control, заранее заданный union и отдельный Gold-entity RE
+diagnostic. Обучения, новых heads и генеративных
+LLM нет. Gold entities разрешены только в явно обозначенной диагностике C-DIAG-002;
+обычный inference по-прежнему не получает Gold. Только те же 12 DEV.
+
+[Frozen protocol](reports/C_DIAG_002_PROTOCOL.md),
+[reproduction](reports/C_DIAG_002_REPRODUCE.md),
+[aggregate comparison](reports/c_diag_002/comparison.json).
+Исторические C-001 и C-RESTART-001 сохранены ниже и в их исходных отчётах.
+
+## C-RESTART-001
 
 Текущий протокол **запрещает обучение и дообучение на наших документах и Gold**.
 Рабочий inference: GLiNER-small → типизированные spans → направленные пары →

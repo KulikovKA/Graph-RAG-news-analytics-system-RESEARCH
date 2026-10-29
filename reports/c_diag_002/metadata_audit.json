@@ -1,0 +1,22 @@
+{
+  "baseline_scientific_encoder": {
+    "checkpoint": "m3rg-iitd/matscibert",
+    "revision": "ced9d8f5f208712c4a90f98a246fe32155b29995",
+    "vocab_size": 31090
+  },
+  "checkpoints": {
+    "chem": {
+      "model_vocab_size": 31090,
+      "tokenizer_vocab_size": 31090,
+      "do_lower_case": true,
+      "internally_consistent_vocab": true
+    },
+    "battery": {
+      "model_vocab_size": 28996,
+      "tokenizer_vocab_size": 28996,
+      "do_lower_case": false,
+      "internally_consistent_vocab": true
+    }
+  },
+  "interpretation": "Battery card claims MatSciBERT, but saved vocab=28996 and cased tokenizer differ from MatSciBERT vocab=31090. Lineage unverified; do not repair/replace tokenizer or treat card claim as proven. Both packages are internally vocab-consistent; strict saved NER heads were used as distributed. CHEM remains a scientific NER model; battery is a domain-labelled NER probe with a provenance caveat."
+}

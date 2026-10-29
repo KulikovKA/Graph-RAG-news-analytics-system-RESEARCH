@@ -1,0 +1,260 @@
+{
+  "ner": [
+    {
+      "checkpoint": "m3rg-iitd/matscibert",
+      "revision": "ced9d8f5f208712c4a90f98a246fe32155b29995",
+      "architectures": [
+        "BertForMaskedLM"
+      ],
+      "id2label": null,
+      "selected": false,
+      "reason": "Scientific base encoder (masked LM), not a complete NER checkpoint",
+      "source": "https://huggingface.co/m3rg-iitd/matscibert/blob/ced9d8f5f208712c4a90f98a246fe32155b29995/config.json"
+    },
+    {
+      "checkpoint": "allenai/scibert_scivocab_uncased",
+      "revision": "24f92d32b1bfb0bcaf9ab193ff3ad01e87732fc1",
+      "architectures": null,
+      "id2label": null,
+      "selected": false,
+      "reason": "Scientific base encoder, not a complete NER checkpoint",
+      "source": "https://huggingface.co/allenai/scibert_scivocab_uncased/blob/24f92d32b1bfb0bcaf9ab193ff3ad01e87732fc1/config.json"
+    },
+    {
+      "checkpoint": "akhil-thomas/matscibert-materiominer-ner",
+      "revision": "46a08094e2107083097a712bbcc360991d801be2",
+      "architectures": [
+        "BertForTokenClassification"
+      ],
+      "id2label": {
+        "0": "LABEL_0",
+        "1": "LABEL_1",
+        "2": "LABEL_2",
+        "3": "LABEL_3",
+        "4": "LABEL_4",
+        "5": "LABEL_5",
+        "6": "LABEL_6",
+        "7": "LABEL_7",
+        "8": "LABEL_8",
+        "9": "LABEL_9",
+        "10": "LABEL_10",
+        "11": "LABEL_11",
+        "12": "LABEL_12",
+        "13": "LABEL_13",
+        "14": "LABEL_14",
+        "15": "LABEL_15",
+        "16": "LABEL_16",
+        "17": "LABEL_17",
+        "18": "LABEL_18",
+        "19": "LABEL_19",
+        "20": "LABEL_20",
+        "21": "LABEL_21",
+        "22": "LABEL_22",
+        "23": "LABEL_23",
+        "24": "LABEL_24",
+        "25": "LABEL_25",
+        "26": "LABEL_26",
+        "27": "LABEL_27",
+        "28": "LABEL_28",
+        "29": "LABEL_29",
+        "30": "LABEL_30",
+        "31": "LABEL_31",
+        "32": "LABEL_32",
+        "33": "LABEL_33",
+        "34": "LABEL_34",
+        "35": "LABEL_35",
+        "36": "LABEL_36",
+        "37": "LABEL_37",
+        "38": "LABEL_38",
+        "39": "LABEL_39",
+        "40": "LABEL_40",
+        "41": "LABEL_41",
+        "42": "LABEL_42",
+        "43": "LABEL_43",
+        "44": "LABEL_44",
+        "45": "LABEL_45",
+        "46": "LABEL_46",
+        "47": "LABEL_47",
+        "48": "LABEL_48",
+        "49": "LABEL_49",
+        "50": "LABEL_50",
+        "51": "LABEL_51",
+        "52": "LABEL_52",
+        "53": "LABEL_53",
+        "54": "LABEL_54",
+        "55": "LABEL_55",
+        "56": "LABEL_56"
+      },
+      "selected": false,
+      "reason": "Saved token head but LABEL_n classes; model card has no decoding schema; do not invent mapping",
+      "source": "https://huggingface.co/akhil-thomas/matscibert-materiominer-ner/blob/46a08094e2107083097a712bbcc360991d801be2/config.json"
+    },
+    {
+      "checkpoint": "AmedeoBonatti/nlp_te_ner_matbert",
+      "revision": "c8a523198ffa217a366805814d501df8e9a5343d",
+      "architectures": [
+        "BertForTokenClassification"
+      ],
+      "id2label": {
+        "0": "B-app",
+        "1": "B-attribute",
+        "2": "B-cell",
+        "3": "B-char",
+        "4": "B-manuf",
+        "5": "B-mat_class",
+        "6": "B-mat_form",
+        "7": "B-mat_name",
+        "8": "B-number",
+        "9": "B-prop",
+        "10": "B-unit_measure",
+        "11": "I-app",
+        "12": "I-attribute",
+        "13": "I-cell",
+        "14": "I-char",
+        "15": "I-manuf",
+        "16": "I-mat_class",
+        "17": "I-mat_form",
+        "18": "I-mat_name",
+        "19": "I-number",
+        "20": "I-prop",
+        "21": "I-unit_measure",
+        "22": "O"
+      },
+      "selected": false,
+      "reason": "Saved token head with abbreviated labels, generated card says dataset None and lacks class definitions; not selected within two-model budget",
+      "source": "https://huggingface.co/AmedeoBonatti/nlp_te_ner_matbert/blob/c8a523198ffa217a366805814d501df8e9a5343d/config.json"
+    },
+    {
+      "checkpoint": "judithrosell/MatSciBERT_ST_DA_1800",
+      "revision": "62ff0f6ac77ada69a218c875d0b70835b0a307d0",
+      "architectures": [
+        "BertForTokenClassification"
+      ],
+      "id2label": {
+        "0": "B-Ceramics_Glasses",
+        "1": "B-Composites_Layers_Coverings",
+        "2": "B-Copolymers_Blends",
+        "3": "B-Metals_Alloys",
+        "4": "B-Natural_Polymer",
+        "5": "B-Synthetic_Polymer",
+        "6": "B-Trade_Name_Biomat",
+        "7": "B-chemical_Material",
+        "8": "I-Ceramics_Glasses",
+        "9": "I-Composites_Layers_Coverings",
+        "10": "I-Copolymers_Blends",
+        "11": "I-Metals_Alloys",
+        "12": "I-Natural_Polymer",
+        "13": "I-Synthetic_Polymer",
+        "14": "I-Trade_Name_Biomat",
+        "15": "I-chemical_Material",
+        "16": "O"
+      },
+      "selected": false,
+      "reason": "Saved NER head for material subcategories, generated card lacks dataset description; untested within two-model budget",
+      "source": "https://huggingface.co/judithrosell/MatSciBERT_ST_DA_1800/blob/62ff0f6ac77ada69a218c875d0b70835b0a307d0/config.json"
+    },
+    {
+      "checkpoint": "anlp/SciERC_trained_Scibert",
+      "revision": "9fe52eee0edec712fa58e2a79959594a3d368c29",
+      "architectures": [
+        "BertForTokenClassification"
+      ],
+      "id2label": {
+        "0": "O",
+        "1": "B-Method",
+        "2": "I-Method",
+        "3": "B-Metric",
+        "4": "I-Metric",
+        "5": "B-Task",
+        "6": "I-Task",
+        "7": "B-Material",
+        "8": "I-Material",
+        "9": "B-OtherScientificTerm",
+        "10": "I-OtherScientificTerm",
+        "11": "B-Generic",
+        "12": "I-Generic"
+      },
+      "selected": false,
+      "reason": "Scientific CS source schema; Material includes datasets/corpora, not guaranteed physical matter; no forced mapping",
+      "source": "https://huggingface.co/anlp/SciERC_trained_Scibert/blob/9fe52eee0edec712fa58e2a79959594a3d368c29/config.json"
+    },
+    {
+      "checkpoint": "nlp-magnets/matscibert-cner",
+      "revision": "862644ccf04c919d7153654ff025d8a7436e7410",
+      "architectures": [
+        "BertForTokenClassification"
+      ],
+      "id2label": {
+        "0": "B-MAT",
+        "1": "I-MAT",
+        "2": "O"
+      },
+      "selected": false,
+      "reason": "Saved MAT-only head but no model card or training provenance; chosen chem model provides explicit CHEMDNER provenance instead",
+      "source": "https://huggingface.co/nlp-magnets/matscibert-cner/blob/862644ccf04c919d7153654ff025d8a7436e7410/config.json"
+    },
+    {
+      "checkpoint": "perevalov/Custom-NER-MatBERT-SpringerMaterials-test-1",
+      "revision": "96ee45237e47ec73512b586e247602f472a1801a",
+      "architectures": [
+        "BertForTokenClassification"
+      ],
+      "id2label": {
+        "0": "SUBSTANCE",
+        "1": "PROPERTY",
+        "2": "O"
+      },
+      "selected": false,
+      "reason": "Saved SUBSTANCE/PROPERTY/O IO head, no model card; not selected within two-model budget",
+      "source": "https://huggingface.co/perevalov/Custom-NER-MatBERT-SpringerMaterials-test-1/blob/96ee45237e47ec73512b586e247602f472a1801a/config.json"
+    },
+    {
+      "checkpoint": "teman67/matscibert-chem-ner",
+      "revision": "e8bd203aec2ec59c8705f199c108b976d170d953",
+      "selected": true,
+      "alias": "chem",
+      "id2label": {
+        "0": "O",
+        "1": "B-CHEM",
+        "2": "I-CHEM"
+      },
+      "reason": "Explicit saved token-classifier head, readable class names and materials backbone; incomplete ontology coverage accepted a priori",
+      "source": "https://huggingface.co/teman67/matscibert-chem-ner/blob/e8bd203aec2ec59c8705f199c108b976d170d953/config.json"
+    },
+    {
+      "checkpoint": "Dmjdxb/batterybert-electrocatalyst-ner-v2",
+      "revision": "13e458cef185382b7a54ad2352f51946aa18b0f3",
+      "selected": true,
+      "alias": "battery",
+      "id2label": {
+        "0": "O",
+        "1": "B-MATERIAL",
+        "2": "I-MATERIAL",
+        "3": "B-CONDITION",
+        "4": "I-CONDITION",
+        "5": "B-DURATION",
+        "6": "I-DURATION",
+        "7": "B-FAILURE_MODE",
+        "8": "I-FAILURE_MODE",
+        "9": "B-CURRENT",
+        "10": "I-CURRENT"
+      },
+      "reason": "Explicit saved token-classifier head, readable class names and materials backbone; incomplete ontology coverage accepted a priori",
+      "source": "https://huggingface.co/Dmjdxb/batterybert-electrocatalyst-ner-v2/blob/13e458cef185382b7a54ad2352f51946aa18b0f3/config.json"
+    }
+  ],
+  "glirel_search": [
+    "jackboyla/glirel_beta",
+    "Matheusvrs/GLIREL_events",
+    "jackboyla/glirel-large-v0",
+    "skv03/ner-span-glirel",
+    "Sambenja1/glirel-ghost-b-v1"
+  ],
+  "re_exclusions": {
+    "Babelscape/rebel-large": "Generative encoder-decoder: prohibited",
+    "knowledgator/gliner-relex-base-v1.0": "Joint NER+RE arm F, not separate C",
+    "fixed-label TACRED/SciERC classifiers": "Their relation classes do not cover the frozen ontology; no newly trained mapping/head allowed"
+  },
+  "scope": "Bounded discovery; untested candidates are not declared impossible or universally unavailable",
+  "metadata_audit": "metadata_audit.json; battery MatSciBERT lineage not verified because cased vocab 28996 differs from base 31090. Selected before this audit; kept as distributed, no tokenizer repair."
+}

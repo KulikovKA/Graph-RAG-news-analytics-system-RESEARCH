@@ -1,0 +1,72 @@
+{
+  "purpose": "OFFICIAL RUNTIME CONTROL ONLY; EXCLUDED FROM DEV QUALITY",
+  "source": "https://github.com/jackboyla/GLiREL#usage",
+  "checkpoint": "jackboyla/glirel-large-v0",
+  "revision": "40a523e12a8432d6da364cf2a195a28755ff04d3",
+  "strict_load": true,
+  "official_loader": true,
+  "expected_characters_scores": [
+    0.9923334121704102,
+    0.9915636777877808
+  ],
+  "output": [
+    {
+      "head_pos": [
+        22,
+        24
+      ],
+      "tail_pos": [
+        26,
+        28
+      ],
+      "head_text": [
+        "First",
+        "Doctor"
+      ],
+      "tail_text": [
+        "Marco",
+        "Polo"
+      ],
+      "label": "followed by",
+      "score": 0.0028011028189212084
+    },
+    {
+      "head_pos": [
+        26,
+        28
+      ],
+      "tail_pos": [
+        22,
+        24
+      ],
+      "head_text": [
+        "Marco",
+        "Polo"
+      ],
+      "tail_text": [
+        "First",
+        "Doctor"
+      ],
+      "label": "followed by",
+      "score": 0.002741388976573944
+    }
+  ],
+  "characters_scores": [],
+  "pass_status": false,
+  "checkpoint_sha256": "840aa21bb68a676ebe17451aa2ce8a7e5b987af8db1c0e28850bf0e395b713de",
+  "local_runtime_files_sha256": {
+    "glirel_config.json": "48ce708216cadcc3739374a2c84bfa94156cbf5032b2673b8f5f5374b8455ee6",
+    "pytorch_model.bin": "840aa21bb68a676ebe17451aa2ce8a7e5b987af8db1c0e28850bf0e395b713de",
+    "backbone/added_tokens.json": "c7216c85a8b02a35876d89e4b2780ad547c890b37d952c3cb45b8d93ed19d932",
+    "backbone/config.json": "9a3f341e16140134571e2f445f02560caca7bb72fb9db1a281ba79ea9ea24101",
+    "backbone/model.safetensors": "f0b4dc178627f9fd5e3aeffc3037d84e22afd058a46d6fd82430f6e70c86ee77",
+    "backbone/special_tokens_map.json": "12ca2378b71f219e5230ae87c417804a970e0c429cde96323b4fbc5fae3c6386",
+    "backbone/spm.model": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd",
+    "backbone/tokenizer.json": "20d0ed8a7d133fad3e207300e3acf33bc80be6f3e10bbf2857c0241c327c8f72",
+    "backbone/tokenizer_config.json": "a35368d7632e841d016cfd8cd1d1bba4fef1c4a0cb5b9877bcf6174627b91a96"
+  },
+  "wall_s": 29.988515299977735,
+  "cpu_s": 31.328125,
+  "peak_ram_bytes": 2581127168,
+  "blocker": "Published control not reproduced after strict official load; root cause unresolved; STOP GLiREL"
+}
