@@ -49,7 +49,9 @@ class PretrainedScientificNER:
         self.unsupported_spans = 0
 
         def count(module, args, kwargs):
-            ids = kwargs["input_ids"]
+            ids = kwargs.get("input_ids", args[0] if args else None)
+            if ids is None:
+                raise ValueError("Cannot instrument scientific NER input IDs")
             self.encoder_calls += 1
             self.max_sequence_tokens = max(self.max_sequence_tokens, int(ids.shape[-1]))
             if ids.shape[-1] > spec["max_subtokens"]:
