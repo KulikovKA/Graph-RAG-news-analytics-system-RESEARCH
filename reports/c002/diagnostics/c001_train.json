@@ -1,0 +1,2870 @@
+{
+  "subset": "train",
+  "per_kind": {
+    "MATERIAL": {
+      "tp": 89,
+      "fp": 88,
+      "fn": 36,
+      "gold": 125,
+      "predicted": 177,
+      "overlapping_gold": 68,
+      "technical_notation_gold": 30,
+      "overlapping_recalled": 48,
+      "technical_notation_recalled": 22,
+      "missed": 12,
+      "span_too_short": 6,
+      "span_too_long": 14,
+      "wrong_kind_and_boundary": 2,
+      "wrong_kind_exact_span": 2,
+      "precision": 0.5028248587570622,
+      "recall": 0.712,
+      "f1": 0.5894039735099338
+    },
+    "DEVICE": {
+      "tp": 14,
+      "fp": 5,
+      "fn": 17,
+      "gold": 31,
+      "predicted": 19,
+      "missed": 10,
+      "overlapping_gold": 10,
+      "technical_notation_gold": 5,
+      "wrong_kind_and_boundary": 6,
+      "wrong_kind_exact_span": 1,
+      "overlapping_recalled": 2,
+      "technical_notation_recalled": 2,
+      "precision": 0.7368421052631579,
+      "recall": 0.45161290322580644,
+      "f1": 0.56
+    },
+    "PROPERTY": {
+      "tp": 17,
+      "fp": 39,
+      "fn": 15,
+      "gold": 32,
+      "predicted": 56,
+      "overlapping_recalled": 5,
+      "technical_notation_recalled": 0,
+      "missed": 8,
+      "wrong_kind_and_boundary": 3,
+      "overlapping_gold": 11,
+      "span_too_short": 1,
+      "span_too_long": 3,
+      "precision": 0.30357142857142855,
+      "recall": 0.53125,
+      "f1": 0.38636363636363635
+    },
+    "PERFORMANCE": {
+      "tp": 10,
+      "fp": 4,
+      "fn": 35,
+      "gold": 45,
+      "predicted": 14,
+      "missed": 20,
+      "overlapping_recalled": 2,
+      "technical_notation_recalled": 1,
+      "overlapping_gold": 5,
+      "technical_notation_gold": 3,
+      "wrong_kind_exact_span": 9,
+      "wrong_kind_and_boundary": 5,
+      "span_too_long": 1,
+      "precision": 0.7142857142857143,
+      "recall": 0.2222222222222222,
+      "f1": 0.3389830508474576
+    },
+    "ANALYTE": {
+      "tp": 26,
+      "fp": 13,
+      "fn": 21,
+      "gold": 47,
+      "predicted": 39,
+      "technical_notation_gold": 30,
+      "span_too_long": 6,
+      "overlapping_recalled": 3,
+      "technical_notation_recalled": 16,
+      "missed": 11,
+      "overlapping_gold": 7,
+      "wrong_kind_and_boundary": 4,
+      "precision": 0.6666666666666666,
+      "recall": 0.5531914893617021,
+      "f1": 0.6046511627906976
+    },
+    "PROCESS": {
+      "tp": 12,
+      "fp": 8,
+      "fn": 20,
+      "gold": 32,
+      "predicted": 20,
+      "overlapping_gold": 15,
+      "technical_notation_gold": 6,
+      "wrong_kind_and_boundary": 13,
+      "overlapping_recalled": 1,
+      "technical_notation_recalled": 0,
+      "missed": 4,
+      "span_too_short": 1,
+      "wrong_kind_exact_span": 2,
+      "precision": 0.6,
+      "recall": 0.375,
+      "f1": 0.46153846153846156
+    },
+    "MECHANISM": {
+      "tp": 1,
+      "fp": 2,
+      "fn": 8,
+      "gold": 9,
+      "predicted": 3,
+      "overlapping_gold": 6,
+      "technical_notation_gold": 3,
+      "wrong_kind_and_boundary": 4,
+      "missed": 4,
+      "overlapping_recalled": 0,
+      "technical_notation_recalled": 0,
+      "precision": 0.3333333333333333,
+      "recall": 0.1111111111111111,
+      "f1": 0.16666666666666666
+    },
+    "OPERATING_CONDITION": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 10,
+      "gold": 10,
+      "predicted": 0,
+      "technical_notation_gold": 2,
+      "missed": 10,
+      "overlapping_gold": 1,
+      "precision": null,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "MORPHOLOGY": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 28,
+      "gold": 28,
+      "predicted": 1,
+      "missed": 17,
+      "wrong_kind_and_boundary": 5,
+      "overlapping_gold": 12,
+      "technical_notation_gold": 8,
+      "wrong_kind_exact_span": 5,
+      "span_too_short": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "TECHNOLOGY": {
+      "tp": 3,
+      "fp": 11,
+      "fn": 0,
+      "gold": 3,
+      "predicted": 14,
+      "overlapping_recalled": 0,
+      "technical_notation_recalled": 0,
+      "precision": 0.21428571428571427,
+      "recall": 1.0,
+      "f1": 0.35294117647058826
+    },
+    "APPLICATION": {
+      "tp": 3,
+      "fp": 1,
+      "fn": 16,
+      "gold": 19,
+      "predicted": 4,
+      "missed": 12,
+      "wrong_kind_exact_span": 4,
+      "overlapping_recalled": 0,
+      "technical_notation_recalled": 0,
+      "precision": 0.75,
+      "recall": 0.15789473684210525,
+      "f1": 0.2608695652173913
+    },
+    "OTHER": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "gold": 1,
+      "predicted": 0,
+      "missed": 1,
+      "precision": null,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  },
+  "examples": {
+    "PERFORMANCE": [
+      {
+        "document": "D004",
+        "category": "missed",
+        "gold": {
+          "surface_text": "extremely high and selective sensitivity",
+          "kind": "PERFORMANCE",
+          "start": 12,
+          "end": 52
+        },
+        "nearest": null
+      },
+      {
+        "document": "D004",
+        "category": "missed",
+        "gold": {
+          "surface_text": "high sensor response",
+          "kind": "PERFORMANCE",
+          "start": 694,
+          "end": 714
+        },
+        "nearest": null
+      },
+      {
+        "document": "D004",
+        "category": "missed",
+        "gold": {
+          "surface_text": "selectively sensitive",
+          "kind": "PERFORMANCE",
+          "start": 824,
+          "end": 845
+        },
+        "nearest": null
+      },
+      {
+        "document": "D010",
+        "category": "missed",
+        "gold": {
+          "surface_text": "high signal-to-noise ratio",
+          "kind": "PERFORMANCE",
+          "start": 123,
+          "end": 149
+        },
+        "nearest": null
+      },
+      {
+        "document": "D010",
+        "category": "missed",
+        "gold": {
+          "surface_text": "high-performance",
+          "kind": "PERFORMANCE",
+          "start": 337,
+          "end": 353
+        },
+        "nearest": null
+      },
+      {
+        "document": "D010",
+        "category": "missed",
+        "gold": {
+          "surface_text": "best",
+          "kind": "PERFORMANCE",
+          "start": 703,
+          "end": 707
+        },
+        "nearest": null
+      }
+    ],
+    "ANALYTE": [
+      {
+        "document": "D004",
+        "category": "span_too_long",
+        "gold": {
+          "surface_text": "NO 2",
+          "kind": "ANALYTE",
+          "start": 56,
+          "end": 60
+        },
+        "nearest": {
+          "surface_text": "NO 2 gas",
+          "kind": "ANALYTE",
+          "start": 56,
+          "end": 64
+        }
+      },
+      {
+        "document": "D004",
+        "category": "span_too_long",
+        "gold": {
+          "surface_text": "NO 2",
+          "kind": "ANALYTE",
+          "start": 736,
+          "end": 740
+        },
+        "nearest": {
+          "surface_text": "NO 2 gas",
+          "kind": "ANALYTE",
+          "start": 736,
+          "end": 744
+        }
+      },
+      {
+        "document": "D004",
+        "category": "span_too_long",
+        "gold": {
+          "surface_text": "NO 2",
+          "kind": "ANALYTE",
+          "start": 849,
+          "end": 853
+        },
+        "nearest": {
+          "surface_text": "NO 2 gas",
+          "kind": "ANALYTE",
+          "start": 849,
+          "end": 857
+        }
+      },
+      {
+        "document": "D004",
+        "category": "missed",
+        "gold": {
+          "surface_text": "ethanol",
+          "kind": "ANALYTE",
+          "start": 894,
+          "end": 901
+        },
+        "nearest": null
+      },
+      {
+        "document": "D004",
+        "category": "span_too_long",
+        "gold": {
+          "surface_text": "NO 2",
+          "kind": "ANALYTE",
+          "start": 312,
+          "end": 316
+        },
+        "nearest": {
+          "surface_text": "NO 2 gas",
+          "kind": "ANALYTE",
+          "start": 312,
+          "end": 320
+        }
+      },
+      {
+        "document": "D010",
+        "category": "missed",
+        "gold": {
+          "surface_text": "NH 3",
+          "kind": "ANALYTE",
+          "start": 213,
+          "end": 217
+        },
+        "nearest": null
+      }
+    ],
+    "PROCESS": [
+      {
+        "document": "D004",
+        "category": "wrong_kind_and_boundary",
+        "gold": {
+          "surface_text": "fabricating graphene–SnO 2 nanocomposites",
+          "kind": "PROCESS",
+          "start": 68,
+          "end": 109
+        },
+        "nearest": {
+          "surface_text": "graphene",
+          "kind": "MATERIAL",
+          "start": 80,
+          "end": 88
+        }
+      },
+      {
+        "document": "D004",
+        "category": "missed",
+        "gold": {
+          "surface_text": "appearance of an SnO x ( x < 2) phase",
+          "kind": "PROCESS",
+          "start": 405,
+          "end": 442
+        },
+        "nearest": null
+      },
+      {
+        "document": "D004",
+        "category": "wrong_kind_and_boundary",
+        "gold": {
+          "surface_text": "efficient transport of the microwave energy",
+          "kind": "PROCESS",
+          "start": 533,
+          "end": 576
+        },
+        "nearest": {
+          "surface_text": "microwave energy",
+          "kind": "PROPERTY",
+          "start": 560,
+          "end": 576
+        }
+      },
+      {
+        "document": "D004",
+        "category": "span_too_short",
+        "gold": {
+          "surface_text": "evaporation and redeposition of SnO x nanoparticles",
+          "kind": "PROCESS",
+          "start": 578,
+          "end": 629
+        },
+        "nearest": {
+          "surface_text": "evaporation",
+          "kind": "PROCESS",
+          "start": 578,
+          "end": 589
+        }
+      },
+      {
+        "document": "D004",
+        "category": "wrong_kind_and_boundary",
+        "gold": {
+          "surface_text": "generation of SnO x nanoparticles and the SnO x phase in the matrix",
+          "kind": "PROCESS",
+          "start": 20,
+          "end": 87
+        },
+        "nearest": {
+          "surface_text": "SnO x",
+          "kind": "MATERIAL",
+          "start": 34,
+          "end": 39
+        }
+      },
+      {
+        "document": "D004",
+        "category": "wrong_kind_and_boundary",
+        "gold": {
+          "surface_text": "formation of SnO 2 /SnO 2 homojunctions, SnO 2 /SnO x ( x < 2) heterojunctions, and SnO 2 /graphene heterojunctions",
+          "kind": "PROCESS",
+          "start": 103,
+          "end": 218
+        },
+        "nearest": {
+          "surface_text": "SnO 2",
+          "kind": "MATERIAL",
+          "start": 116,
+          "end": 121
+        }
+      }
+    ],
+    "DEVICE": [
+      {
+        "document": "D004",
+        "category": "missed",
+        "gold": {
+          "surface_text": "commercial microwave oven",
+          "kind": "DEVICE",
+          "start": 118,
+          "end": 143
+        },
+        "nearest": null
+      },
+      {
+        "document": "D010",
+        "category": "missed",
+        "gold": {
+          "surface_text": "NH 3 gas sensor",
+          "kind": "DEVICE",
+          "start": 354,
+          "end": 369
+        },
+        "nearest": null
+      },
+      {
+        "document": "D010",
+        "category": "missed",
+        "gold": {
+          "surface_text": "gas sensors",
+          "kind": "DEVICE",
+          "start": 618,
+          "end": 629
+        },
+        "nearest": null
+      },
+      {
+        "document": "D010",
+        "category": "wrong_kind_and_boundary",
+        "gold": {
+          "surface_text": "Ti 3 C 2 Tx MXene/GO/CuO/ZnO nanocomposite gas sensor",
+          "kind": "DEVICE",
+          "start": 635,
+          "end": 688
+        },
+        "nearest": {
+          "surface_text": "Ti 3 C 2 Tx MXene",
+          "kind": "MATERIAL",
+          "start": 635,
+          "end": 652
+        }
+      },
+      {
+        "document": "D010",
+        "category": "wrong_kind_and_boundary",
+        "gold": {
+          "surface_text": "optimal Ti 3 C 2 Tx MXene/GO/CuO/ZnO based gas sensor",
+          "kind": "DEVICE",
+          "start": 4,
+          "end": 57
+        },
+        "nearest": {
+          "surface_text": "Ti 3 C 2 Tx MXene",
+          "kind": "MATERIAL",
+          "start": 12,
+          "end": 29
+        }
+      },
+      {
+        "document": "D017",
+        "category": "wrong_kind_exact_span",
+        "gold": {
+          "surface_text": "chemical sensors",
+          "kind": "DEVICE",
+          "start": 284,
+          "end": 300
+        },
+        "nearest": {
+          "surface_text": "chemical sensors",
+          "kind": "TECHNOLOGY",
+          "start": 284,
+          "end": 300
+        }
+      }
+    ],
+    "MATERIAL": [
+      {
+        "document": "D004",
+        "category": "missed",
+        "gold": {
+          "surface_text": "products",
+          "kind": "MATERIAL",
+          "start": 191,
+          "end": 199
+        },
+        "nearest": null
+      },
+      {
+        "document": "D004",
+        "category": "span_too_short",
+        "gold": {
+          "surface_text": "SnO 2 particles",
+          "kind": "MATERIAL",
+          "start": 256,
+          "end": 271
+        },
+        "nearest": {
+          "surface_text": "SnO 2",
+          "kind": "MATERIAL",
+          "start": 256,
+          "end": 261
+        }
+      },
+      {
+        "document": "D004",
+        "category": "missed",
+        "gold": {
+          "surface_text": "SnO x ( x < 2) phase",
+          "kind": "MATERIAL",
+          "start": 422,
+          "end": 442
+        },
+        "nearest": null
+      },
+      {
+        "document": "D010",
+        "category": "missed",
+        "gold": {
+          "surface_text": "mixture",
+          "kind": "MATERIAL",
+          "start": 194,
+          "end": 201
+        },
+        "nearest": null
+      },
+      {
+        "document": "D010",
+        "category": "span_too_long",
+        "gold": {
+          "surface_text": "GO",
+          "kind": "MATERIAL",
+          "start": 260,
+          "end": 262
+        },
+        "nearest": {
+          "surface_text": "graphene oxide (GO)",
+          "kind": "MATERIAL",
+          "start": 244,
+          "end": 263
+        }
+      },
+      {
+        "document": "D010",
+        "category": "missed",
+        "gold": {
+          "surface_text": "nanocomposites",
+          "kind": "MATERIAL",
+          "start": 399,
+          "end": 413
+        },
+        "nearest": null
+      }
+    ],
+    "MORPHOLOGY": [
+      {
+        "document": "D004",
+        "category": "missed",
+        "gold": {
+          "surface_text": "agglomerated structures",
+          "kind": "MORPHOLOGY",
+          "start": 216,
+          "end": 239
+        },
+        "nearest": null
+      },
+      {
+        "document": "D004",
+        "category": "wrong_kind_and_boundary",
+        "gold": {
+          "surface_text": "small secondary",
+          "kind": "MORPHOLOGY",
+          "start": 278,
+          "end": 293
+        },
+        "nearest": {
+          "surface_text": "small secondary SnO x ( x ≤ 2) nanoparticles",
+          "kind": "MATERIAL",
+          "start": 278,
+          "end": 322
+        }
+      },
+      {
+        "document": "D004",
+        "category": "missed",
+        "gold": {
+          "surface_text": "surfaces",
+          "kind": "MORPHOLOGY",
+          "start": 340,
+          "end": 348
+        },
+        "nearest": null
+      },
+      {
+        "document": "D004",
+        "category": "wrong_kind_exact_span",
+        "gold": {
+          "surface_text": "SnO 2 /SnO 2 homojunctions",
+          "kind": "MORPHOLOGY",
+          "start": 116,
+          "end": 142
+        },
+        "nearest": {
+          "surface_text": "SnO 2 /SnO 2 homojunctions",
+          "kind": "MATERIAL",
+          "start": 116,
+          "end": 142
+        }
+      },
+      {
+        "document": "D004",
+        "category": "wrong_kind_exact_span",
+        "gold": {
+          "surface_text": "SnO 2 /SnO x ( x < 2) heterojunctions",
+          "kind": "MORPHOLOGY",
+          "start": 144,
+          "end": 181
+        },
+        "nearest": {
+          "surface_text": "SnO 2 /SnO x ( x < 2) heterojunctions",
+          "kind": "MATERIAL",
+          "start": 144,
+          "end": 181
+        }
+      },
+      {
+        "document": "D004",
+        "category": "wrong_kind_exact_span",
+        "gold": {
+          "surface_text": "SnO 2 /graphene heterojunctions",
+          "kind": "MORPHOLOGY",
+          "start": 187,
+          "end": 218
+        },
+        "nearest": {
+          "surface_text": "SnO 2 /graphene heterojunctions",
+          "kind": "MATERIAL",
+          "start": 187,
+          "end": 218
+        }
+      }
+    ],
+    "OPERATING_CONDITION": [
+      {
+        "document": "D004",
+        "category": "missed",
+        "gold": {
+          "surface_text": "150 °C",
+          "kind": "OPERATING_CONDITION",
+          "start": 777,
+          "end": 783
+        },
+        "nearest": null
+      },
+      {
+        "document": "D010",
+        "category": "missed",
+        "gold": {
+          "surface_text": "room temperature",
+          "kind": "OPERATING_CONDITION",
+          "start": 153,
+          "end": 169
+        },
+        "nearest": null
+      },
+      {
+        "document": "D010",
+        "category": "missed",
+        "gold": {
+          "surface_text": "room temperature",
+          "kind": "OPERATING_CONDITION",
+          "start": 373,
+          "end": 389
+        },
+        "nearest": null
+      },
+      {
+        "document": "D010",
+        "category": "missed",
+        "gold": {
+          "surface_text": "room-temperature",
+          "kind": "OPERATING_CONDITION",
+          "start": 601,
+          "end": 617
+        },
+        "nearest": null
+      },
+      {
+        "document": "D010",
+        "category": "missed",
+        "gold": {
+          "surface_text": "30–70%RH",
+          "kind": "OPERATING_CONDITION",
+          "start": 146,
+          "end": 154
+        },
+        "nearest": null
+      },
+      {
+        "document": "D026",
+        "category": "missed",
+        "gold": {
+          "surface_text": "parts per billion (ppb) level",
+          "kind": "OPERATING_CONDITION",
+          "start": 184,
+          "end": 213
+        },
+        "nearest": null
+      }
+    ],
+    "APPLICATION": [
+      {
+        "document": "D010",
+        "category": "missed",
+        "gold": {
+          "surface_text": "gas sensing application",
+          "kind": "APPLICATION",
+          "start": 92,
+          "end": 115
+        },
+        "nearest": null
+      },
+      {
+        "document": "D017",
+        "category": "wrong_kind_exact_span",
+        "gold": {
+          "surface_text": "electronics",
+          "kind": "APPLICATION",
+          "start": 195,
+          "end": 206
+        },
+        "nearest": {
+          "surface_text": "electronics",
+          "kind": "TECHNOLOGY",
+          "start": 195,
+          "end": 206
+        }
+      },
+      {
+        "document": "D017",
+        "category": "wrong_kind_exact_span",
+        "gold": {
+          "surface_text": "optoelectronics",
+          "kind": "APPLICATION",
+          "start": 208,
+          "end": 223
+        },
+        "nearest": {
+          "surface_text": "optoelectronics",
+          "kind": "TECHNOLOGY",
+          "start": 208,
+          "end": 223
+        }
+      },
+      {
+        "document": "D017",
+        "category": "missed",
+        "gold": {
+          "surface_text": "spintronics",
+          "kind": "APPLICATION",
+          "start": 225,
+          "end": 236
+        },
+        "nearest": null
+      },
+      {
+        "document": "D017",
+        "category": "wrong_kind_exact_span",
+        "gold": {
+          "surface_text": "catalysts",
+          "kind": "APPLICATION",
+          "start": 238,
+          "end": 247
+        },
+        "nearest": {
+          "surface_text": "catalysts",
+          "kind": "MATERIAL",
+          "start": 238,
+          "end": 247
+        }
+      },
+      {
+        "document": "D017",
+        "category": "wrong_kind_exact_span",
+        "gold": {
+          "surface_text": "gas-sensing applications",
+          "kind": "APPLICATION",
+          "start": 382,
+          "end": 406
+        },
+        "nearest": {
+          "surface_text": "gas-sensing applications",
+          "kind": "PROCESS",
+          "start": 382,
+          "end": 406
+        }
+      }
+    ],
+    "PROPERTY": [
+      {
+        "document": "D010",
+        "category": "missed",
+        "gold": {
+          "surface_text": "weight ratio",
+          "kind": "PROPERTY",
+          "start": 859,
+          "end": 871
+        },
+        "nearest": null
+      },
+      {
+        "document": "D010",
+        "category": "wrong_kind_and_boundary",
+        "gold": {
+          "surface_text": "n-type",
+          "kind": "PROPERTY",
+          "start": 502,
+          "end": 508
+        },
+        "nearest": {
+          "surface_text": "n-type of GO/CuO/ZnO",
+          "kind": "MATERIAL",
+          "start": 502,
+          "end": 522
+        }
+      },
+      {
+        "document": "D010",
+        "category": "wrong_kind_and_boundary",
+        "gold": {
+          "surface_text": "p-type",
+          "kind": "PROPERTY",
+          "start": 563,
+          "end": 569
+        },
+        "nearest": {
+          "surface_text": "p-type Ti 3 C 2 Tx Mxene",
+          "kind": "MATERIAL",
+          "start": 563,
+          "end": 587
+        }
+      },
+      {
+        "document": "D017",
+        "category": "missed",
+        "gold": {
+          "surface_text": "large specific surface areas",
+          "kind": "PROPERTY",
+          "start": 424,
+          "end": 452
+        },
+        "nearest": null
+      },
+      {
+        "document": "D017",
+        "category": "missed",
+        "gold": {
+          "surface_text": "basic parameters",
+          "kind": "PROPERTY",
+          "start": 711,
+          "end": 727
+        },
+        "nearest": null
+      },
+      {
+        "document": "D024",
+        "category": "missed",
+        "gold": {
+          "surface_text": "small width",
+          "kind": "PROPERTY",
+          "start": 403,
+          "end": 414
+        },
+        "nearest": null
+      }
+    ],
+    "MECHANISM": [
+      {
+        "document": "D010",
+        "category": "wrong_kind_and_boundary",
+        "gold": {
+          "surface_text": "NH 3 -sensing mechanism",
+          "kind": "MECHANISM",
+          "start": 367,
+          "end": 390
+        },
+        "nearest": {
+          "surface_text": "NH 3",
+          "kind": "ANALYTE",
+          "start": 367,
+          "end": 371
+        }
+      },
+      {
+        "document": "D010",
+        "category": "missed",
+        "gold": {
+          "surface_text": "modulation of complex p–n heterojunctions",
+          "kind": "MECHANISM",
+          "start": 417,
+          "end": 458
+        },
+        "nearest": null
+      },
+      {
+        "document": "D038",
+        "category": "missed",
+        "gold": {
+          "surface_text": "synergetic effects",
+          "kind": "MECHANISM",
+          "start": 157,
+          "end": 175
+        },
+        "nearest": null
+      },
+      {
+        "document": "D078",
+        "category": "missed",
+        "gold": {
+          "surface_text": "attractive electrostatic interaction",
+          "kind": "MECHANISM",
+          "start": 647,
+          "end": 683
+        },
+        "nearest": null
+      },
+      {
+        "document": "D078",
+        "category": "missed",
+        "gold": {
+          "surface_text": "strong interaction",
+          "kind": "MECHANISM",
+          "start": 35,
+          "end": 53
+        },
+        "nearest": null
+      },
+      {
+        "document": "D078",
+        "category": "wrong_kind_and_boundary",
+        "gold": {
+          "surface_text": "combined effects of current increase by n-doping and mobility decrease by charged impurities",
+          "kind": "MECHANISM",
+          "start": 95,
+          "end": 187
+        },
+        "nearest": {
+          "surface_text": "current increase",
+          "kind": "PROPERTY",
+          "start": 115,
+          "end": 131
+        }
+      }
+    ],
+    "OTHER": [
+      {
+        "document": "D017",
+        "category": "missed",
+        "gold": {
+          "surface_text": "influence factors",
+          "kind": "OTHER",
+          "start": 732,
+          "end": 749
+        },
+        "nearest": null
+      }
+    ]
+  },
+  "pair_waterfall": {
+    "predicted_endpoints": {
+      "gold_relations": 258,
+      "both_exact_typed_endpoints": 68,
+      "same_sentence": 64,
+      "domain_range": 64,
+      "max_gap": 64,
+      "budget": 57
+    },
+    "gold_endpoints_diagnostic": {
+      "gold_relations": 258,
+      "both_exact_typed_endpoints": 258,
+      "same_sentence": 247,
+      "domain_range": 247,
+      "max_gap": 247,
+      "budget": 216
+    }
+  },
+  "documents": {
+    "D004": {
+      "predicted_endpoints": {
+        "gold_relations": 24,
+        "both_exact_typed_endpoints": 3,
+        "same_sentence": 3,
+        "domain_range": 3,
+        "max_gap": 3,
+        "budget": 3
+      },
+      "gold_endpoints_diagnostic": {
+        "gold_relations": 24,
+        "both_exact_typed_endpoints": 24,
+        "same_sentence": 23,
+        "domain_range": 23,
+        "max_gap": 23,
+        "budget": 23
+      }
+    },
+    "D010": {
+      "predicted_endpoints": {
+        "gold_relations": 99,
+        "both_exact_typed_endpoints": 30,
+        "same_sentence": 30,
+        "domain_range": 30,
+        "max_gap": 30,
+        "budget": 23
+      },
+      "gold_endpoints_diagnostic": {
+        "gold_relations": 99,
+        "both_exact_typed_endpoints": 99,
+        "same_sentence": 98,
+        "domain_range": 98,
+        "max_gap": 98,
+        "budget": 67
+      }
+    },
+    "D017": {
+      "predicted_endpoints": {
+        "gold_relations": 28,
+        "both_exact_typed_endpoints": 12,
+        "same_sentence": 12,
+        "domain_range": 12,
+        "max_gap": 12,
+        "budget": 12
+      },
+      "gold_endpoints_diagnostic": {
+        "gold_relations": 28,
+        "both_exact_typed_endpoints": 28,
+        "same_sentence": 28,
+        "domain_range": 28,
+        "max_gap": 28,
+        "budget": 28
+      }
+    },
+    "D024": {
+      "predicted_endpoints": {
+        "gold_relations": 20,
+        "both_exact_typed_endpoints": 1,
+        "same_sentence": 1,
+        "domain_range": 1,
+        "max_gap": 1,
+        "budget": 1
+      },
+      "gold_endpoints_diagnostic": {
+        "gold_relations": 20,
+        "both_exact_typed_endpoints": 20,
+        "same_sentence": 16,
+        "domain_range": 16,
+        "max_gap": 16,
+        "budget": 16
+      }
+    },
+    "D026": {
+      "predicted_endpoints": {
+        "gold_relations": 19,
+        "both_exact_typed_endpoints": 9,
+        "same_sentence": 8,
+        "domain_range": 8,
+        "max_gap": 8,
+        "budget": 8
+      },
+      "gold_endpoints_diagnostic": {
+        "gold_relations": 19,
+        "both_exact_typed_endpoints": 19,
+        "same_sentence": 17,
+        "domain_range": 17,
+        "max_gap": 17,
+        "budget": 17
+      }
+    },
+    "D038": {
+      "predicted_endpoints": {
+        "gold_relations": 17,
+        "both_exact_typed_endpoints": 2
+      },
+      "gold_endpoints_diagnostic": {
+        "gold_relations": 17,
+        "both_exact_typed_endpoints": 17,
+        "same_sentence": 15,
+        "domain_range": 15,
+        "max_gap": 15,
+        "budget": 15
+      }
+    },
+    "D060": {
+      "predicted_endpoints": {
+        "gold_relations": 12,
+        "both_exact_typed_endpoints": 4,
+        "same_sentence": 4,
+        "domain_range": 4,
+        "max_gap": 4,
+        "budget": 4
+      },
+      "gold_endpoints_diagnostic": {
+        "gold_relations": 12,
+        "both_exact_typed_endpoints": 12,
+        "same_sentence": 12,
+        "domain_range": 12,
+        "max_gap": 12,
+        "budget": 12
+      }
+    },
+    "D078": {
+      "predicted_endpoints": {
+        "gold_relations": 39,
+        "both_exact_typed_endpoints": 7,
+        "same_sentence": 6,
+        "domain_range": 6,
+        "max_gap": 6,
+        "budget": 6
+      },
+      "gold_endpoints_diagnostic": {
+        "gold_relations": 39,
+        "both_exact_typed_endpoints": 39,
+        "same_sentence": 38,
+        "domain_range": 38,
+        "max_gap": 38,
+        "budget": 38
+      }
+    }
+  },
+  "gate_review": [
+    {
+      "document": "D004",
+      "category": "lost_true_raw",
+      "head": "microwave treatment",
+      "head_kind": "PROCESS",
+      "tail": "graphene–SnO 2 nanocomposites",
+      "tail_kind": "MATERIAL",
+      "relation": "ACTS_ON",
+      "reason": "NO_EXPLICIT_PREDICATE_BETWEEN_ENDPOINTS",
+      "score": 0.9258678796433433,
+      "evidence": [
+        {
+          "span_id": "1314b88d-a703-48b5-bb03-e426d5474034:444:647",
+          "document_id": "08d58bd1-a89e-4b70-b817-821df8428bc7",
+          "revision_id": "5afc0eeb-3c76-40cf-99be-e70f066beb2b",
+          "chunk_id": "1314b88d-a703-48b5-bb03-e426d5474034",
+          "start": 444,
+          "end": 647,
+          "text": "By the microwave treatment of graphene–SnO 2 nanocomposites, with the graphene promoting efficient transport of the microwave energy, evaporation and redeposition of SnO x nanoparticles were facilitated.",
+          "source_text_sha256": "5ab47cc03efc60802c5c6bece098307c9084b5e327212580366207ab757116c9"
+        }
+      ]
+    },
+    {
+      "document": "D004",
+      "category": "accepted_false",
+      "head": "graphene",
+      "head_kind": "MATERIAL",
+      "tail": "evaporation",
+      "tail_kind": "PROCESS",
+      "relation": "FACILITATES",
+      "reason": null,
+      "score": 0.9506778321285897,
+      "evidence": [
+        {
+          "span_id": "1314b88d-a703-48b5-bb03-e426d5474034:444:647",
+          "document_id": "08d58bd1-a89e-4b70-b817-821df8428bc7",
+          "revision_id": "5afc0eeb-3c76-40cf-99be-e70f066beb2b",
+          "chunk_id": "1314b88d-a703-48b5-bb03-e426d5474034",
+          "start": 444,
+          "end": 647,
+          "text": "By the microwave treatment of graphene–SnO 2 nanocomposites, with the graphene promoting efficient transport of the microwave energy, evaporation and redeposition of SnO x nanoparticles were facilitated.",
+          "source_text_sha256": "5ab47cc03efc60802c5c6bece098307c9084b5e327212580366207ab757116c9"
+        }
+      ]
+    },
+    {
+      "document": "D004",
+      "category": "accepted_false",
+      "head": "graphene–SnO 2 nanocomposites",
+      "head_kind": "MATERIAL",
+      "tail": "evaporation",
+      "tail_kind": "PROCESS",
+      "relation": "FACILITATES",
+      "reason": null,
+      "score": 0.9023417303585669,
+      "evidence": [
+        {
+          "span_id": "1314b88d-a703-48b5-bb03-e426d5474034:444:647",
+          "document_id": "08d58bd1-a89e-4b70-b817-821df8428bc7",
+          "revision_id": "5afc0eeb-3c76-40cf-99be-e70f066beb2b",
+          "chunk_id": "1314b88d-a703-48b5-bb03-e426d5474034",
+          "start": 444,
+          "end": 647,
+          "text": "By the microwave treatment of graphene–SnO 2 nanocomposites, with the graphene promoting efficient transport of the microwave energy, evaporation and redeposition of SnO x nanoparticles were facilitated.",
+          "source_text_sha256": "5ab47cc03efc60802c5c6bece098307c9084b5e327212580366207ab757116c9"
+        }
+      ]
+    },
+    {
+      "document": "D004",
+      "category": "accepted_false",
+      "head": "graphene–SnO 2",
+      "head_kind": "MATERIAL",
+      "tail": "evaporation",
+      "tail_kind": "PROCESS",
+      "relation": "FACILITATES",
+      "reason": null,
+      "score": 0.9268630893202653,
+      "evidence": [
+        {
+          "span_id": "1314b88d-a703-48b5-bb03-e426d5474034:444:647",
+          "document_id": "08d58bd1-a89e-4b70-b817-821df8428bc7",
+          "revision_id": "5afc0eeb-3c76-40cf-99be-e70f066beb2b",
+          "chunk_id": "1314b88d-a703-48b5-bb03-e426d5474034",
+          "start": 444,
+          "end": 647,
+          "text": "By the microwave treatment of graphene–SnO 2 nanocomposites, with the graphene promoting efficient transport of the microwave energy, evaporation and redeposition of SnO x nanoparticles were facilitated.",
+          "source_text_sha256": "5ab47cc03efc60802c5c6bece098307c9084b5e327212580366207ab757116c9"
+        }
+      ]
+    },
+    {
+      "document": "D004",
+      "category": "accepted_false",
+      "head": "SnO 2",
+      "head_kind": "MATERIAL",
+      "tail": "evaporation",
+      "tail_kind": "PROCESS",
+      "relation": "FACILITATES",
+      "reason": null,
+      "score": 0.9179247166887237,
+      "evidence": [
+        {
+          "span_id": "1314b88d-a703-48b5-bb03-e426d5474034:444:647",
+          "document_id": "08d58bd1-a89e-4b70-b817-821df8428bc7",
+          "revision_id": "5afc0eeb-3c76-40cf-99be-e70f066beb2b",
+          "chunk_id": "1314b88d-a703-48b5-bb03-e426d5474034",
+          "start": 444,
+          "end": 647,
+          "text": "By the microwave treatment of graphene–SnO 2 nanocomposites, with the graphene promoting efficient transport of the microwave energy, evaporation and redeposition of SnO x nanoparticles were facilitated.",
+          "source_text_sha256": "5ab47cc03efc60802c5c6bece098307c9084b5e327212580366207ab757116c9"
+        }
+      ]
+    },
+    {
+      "document": "D004",
+      "category": "accepted_false",
+      "head": "graphene",
+      "head_kind": "MATERIAL",
+      "tail": "evaporation",
+      "tail_kind": "PROCESS",
+      "relation": "FACILITATES",
+      "reason": null,
+      "score": 0.9275563209729843,
+      "evidence": [
+        {
+          "span_id": "1314b88d-a703-48b5-bb03-e426d5474034:444:647",
+          "document_id": "08d58bd1-a89e-4b70-b817-821df8428bc7",
+          "revision_id": "5afc0eeb-3c76-40cf-99be-e70f066beb2b",
+          "chunk_id": "1314b88d-a703-48b5-bb03-e426d5474034",
+          "start": 444,
+          "end": 647,
+          "text": "By the microwave treatment of graphene–SnO 2 nanocomposites, with the graphene promoting efficient transport of the microwave energy, evaporation and redeposition of SnO x nanoparticles were facilitated.",
+          "source_text_sha256": "5ab47cc03efc60802c5c6bece098307c9084b5e327212580366207ab757116c9"
+        }
+      ]
+    },
+    {
+      "document": "D004",
+      "category": "accepted_false",
+      "head": "microwave treatment",
+      "head_kind": "PROCESS",
+      "tail": "evaporation",
+      "tail_kind": "PROCESS",
+      "relation": "FACILITATES",
+      "reason": null,
+      "score": 0.9493953586319958,
+      "evidence": [
+        {
+          "span_id": "1314b88d-a703-48b5-bb03-e426d5474034:444:647",
+          "document_id": "08d58bd1-a89e-4b70-b817-821df8428bc7",
+          "revision_id": "5afc0eeb-3c76-40cf-99be-e70f066beb2b",
+          "chunk_id": "1314b88d-a703-48b5-bb03-e426d5474034",
+          "start": 444,
+          "end": 647,
+          "text": "By the microwave treatment of graphene–SnO 2 nanocomposites, with the graphene promoting efficient transport of the microwave energy, evaporation and redeposition of SnO x nanoparticles were facilitated.",
+          "source_text_sha256": "5ab47cc03efc60802c5c6bece098307c9084b5e327212580366207ab757116c9"
+        }
+      ]
+    },
+    {
+      "document": "D004",
+      "category": "accepted_false",
+      "head": "SnO x nanoparticles",
+      "head_kind": "MATERIAL",
+      "tail": "microwave treatment",
+      "tail_kind": "PROCESS",
+      "relation": "FACILITATES",
+      "reason": null,
+      "score": 0.752695119854357,
+      "evidence": [
+        {
+          "span_id": "1314b88d-a703-48b5-bb03-e426d5474034:444:647",
+          "document_id": "08d58bd1-a89e-4b70-b817-821df8428bc7",
+          "revision_id": "5afc0eeb-3c76-40cf-99be-e70f066beb2b",
+          "chunk_id": "1314b88d-a703-48b5-bb03-e426d5474034",
+          "start": 444,
+          "end": 647,
+          "text": "By the microwave treatment of graphene–SnO 2 nanocomposites, with the graphene promoting efficient transport of the microwave energy, evaporation and redeposition of SnO x nanoparticles were facilitated.",
+          "source_text_sha256": "5ab47cc03efc60802c5c6bece098307c9084b5e327212580366207ab757116c9"
+        }
+      ]
+    },
+    {
+      "document": "D004",
+      "category": "lost_true_raw",
+      "head": "graphene–SnO 2 nanocomposites",
+      "head_kind": "MATERIAL",
+      "tail": "excellent sensitivity",
+      "tail_kind": "PERFORMANCE",
+      "relation": "HAS_PERFORMANCE",
+      "reason": "NO_EXPLICIT_PREDICATE_BETWEEN_ENDPOINTS",
+      "score": 0.7269703597931111,
+      "evidence": [
+        {
+          "span_id": "eb47e91a-4c35-4de7-96a3-f141eea0a6cf:0:321",
+          "document_id": "08d58bd1-a89e-4b70-b817-821df8428bc7",
+          "revision_id": "5afc0eeb-3c76-40cf-99be-e70f066beb2b",
+          "chunk_id": "eb47e91a-4c35-4de7-96a3-f141eea0a6cf",
+          "start": 0,
+          "end": 321,
+          "text": "We suggest that the generation of SnO x nanoparticles and the SnO x phase in the matrix results in the formation of SnO 2 /SnO 2 homojunctions, SnO 2 /SnO x ( x < 2) heterojunctions, and SnO 2 /graphene heterojunctions, which are responsible for the excellent sensitivity of the graphene–SnO 2 nanocomposites to NO 2 gas.",
+          "source_text_sha256": "4fb5907a3a82cde6bcf412375e3883c2c52a669235fec58ce11b70619222a212"
+        }
+      ]
+    },
+    {
+      "document": "D004",
+      "category": "lost_true_raw",
+      "head": "generation of surface Sn interstitial defects",
+      "head_kind": "PROCESS",
+      "tail": "excellent NO 2 sensing performance",
+      "tail_kind": "PERFORMANCE",
+      "relation": "EXPLAINS",
+      "reason": "NO_EXPLICIT_PREDICATE_BETWEEN_ENDPOINTS",
+      "score": 0.9153942278615834,
+      "evidence": [
+        {
+          "span_id": "eb47e91a-4c35-4de7-96a3-f141eea0a6cf:322:478",
+          "document_id": "08d58bd1-a89e-4b70-b817-821df8428bc7",
+          "revision_id": "5afc0eeb-3c76-40cf-99be-e70f066beb2b",
+          "chunk_id": "eb47e91a-4c35-4de7-96a3-f141eea0a6cf",
+          "start": 322,
+          "end": 478,
+          "text": "In addition, the generation of surface Sn interstitial defects is also partly responsible for the excellent NO 2 sensing performance observed in this study.",
+          "source_text_sha256": "4fb5907a3a82cde6bcf412375e3883c2c52a669235fec58ce11b70619222a212"
+        }
+      ]
+    },
+    {
+      "document": "D010",
+      "category": "lost_true_raw",
+      "head": "Mxene/GO",
+      "head_kind": "MATERIAL",
+      "tail": "Mxene",
+      "tail_kind": "MATERIAL",
+      "relation": "HAS_COMPONENT",
+      "reason": "UNSUPPORTED_CAPABILITY:OVERLAPPING_RELATION_ENDPOINTS",
+      "score": 0.7981497340226528,
+      "evidence": [
+        {
+          "span_id": "510e3540-e579-4536-a4ea-dae9b47eb024:391:630",
+          "document_id": "136d5083-0254-4930-a35e-88441bb802a0",
+          "revision_id": "fbd87a44-35d0-4f51-80d6-39abd117d01f",
+          "chunk_id": "510e3540-e579-4536-a4ea-dae9b47eb024",
+          "start": 391,
+          "end": 630,
+          "text": "Various nanocomposites such as Mxene/GO, Mxene/ZnO, Mxene/CuO, Mxene/GO/ZnO, Mxene/GO/CuO, Mxene/ZnO/CuO, and Mxene/GO/ZnO/CuO were synthesized via the hydrothermal method and used as NH 3 sensing materials in room-temperature gas sensors.",
+          "source_text_sha256": "64d799ca2abc5b0e0227acb9ed7866ea179d19a4e47cc2aaaebd797fdd0de985"
+        }
+      ]
+    },
+    {
+      "document": "D010",
+      "category": "lost_true_raw",
+      "head": "Mxene/GO",
+      "head_kind": "MATERIAL",
+      "tail": "GO",
+      "tail_kind": "MATERIAL",
+      "relation": "HAS_COMPONENT",
+      "reason": "UNSUPPORTED_CAPABILITY:OVERLAPPING_RELATION_ENDPOINTS",
+      "score": 0.8217877452181699,
+      "evidence": [
+        {
+          "span_id": "510e3540-e579-4536-a4ea-dae9b47eb024:391:630",
+          "document_id": "136d5083-0254-4930-a35e-88441bb802a0",
+          "revision_id": "fbd87a44-35d0-4f51-80d6-39abd117d01f",
+          "chunk_id": "510e3540-e579-4536-a4ea-dae9b47eb024",
+          "start": 391,
+          "end": 630,
+          "text": "Various nanocomposites such as Mxene/GO, Mxene/ZnO, Mxene/CuO, Mxene/GO/ZnO, Mxene/GO/CuO, Mxene/ZnO/CuO, and Mxene/GO/ZnO/CuO were synthesized via the hydrothermal method and used as NH 3 sensing materials in room-temperature gas sensors.",
+          "source_text_sha256": "64d799ca2abc5b0e0227acb9ed7866ea179d19a4e47cc2aaaebd797fdd0de985"
+        }
+      ]
+    },
+    {
+      "document": "D010",
+      "category": "lost_true_raw",
+      "head": "Mxene/ZnO",
+      "head_kind": "MATERIAL",
+      "tail": "Mxene",
+      "tail_kind": "MATERIAL",
+      "relation": "HAS_COMPONENT",
+      "reason": "UNSUPPORTED_CAPABILITY:OVERLAPPING_RELATION_ENDPOINTS",
+      "score": 0.8378006324187195,
+      "evidence": [
+        {
+          "span_id": "510e3540-e579-4536-a4ea-dae9b47eb024:391:630",
+          "document_id": "136d5083-0254-4930-a35e-88441bb802a0",
+          "revision_id": "fbd87a44-35d0-4f51-80d6-39abd117d01f",
+          "chunk_id": "510e3540-e579-4536-a4ea-dae9b47eb024",
+          "start": 391,
+          "end": 630,
+          "text": "Various nanocomposites such as Mxene/GO, Mxene/ZnO, Mxene/CuO, Mxene/GO/ZnO, Mxene/GO/CuO, Mxene/ZnO/CuO, and Mxene/GO/ZnO/CuO were synthesized via the hydrothermal method and used as NH 3 sensing materials in room-temperature gas sensors.",
+          "source_text_sha256": "64d799ca2abc5b0e0227acb9ed7866ea179d19a4e47cc2aaaebd797fdd0de985"
+        }
+      ]
+    },
+    {
+      "document": "D010",
+      "category": "lost_true_raw",
+      "head": "Mxene/ZnO",
+      "head_kind": "MATERIAL",
+      "tail": "ZnO",
+      "tail_kind": "MATERIAL",
+      "relation": "HAS_COMPONENT",
+      "reason": "UNSUPPORTED_CAPABILITY:OVERLAPPING_RELATION_ENDPOINTS",
+      "score": 0.8722081918949327,
+      "evidence": [
+        {
+          "span_id": "510e3540-e579-4536-a4ea-dae9b47eb024:391:630",
+          "document_id": "136d5083-0254-4930-a35e-88441bb802a0",
+          "revision_id": "fbd87a44-35d0-4f51-80d6-39abd117d01f",
+          "chunk_id": "510e3540-e579-4536-a4ea-dae9b47eb024",
+          "start": 391,
+          "end": 630,
+          "text": "Various nanocomposites such as Mxene/GO, Mxene/ZnO, Mxene/CuO, Mxene/GO/ZnO, Mxene/GO/CuO, Mxene/ZnO/CuO, and Mxene/GO/ZnO/CuO were synthesized via the hydrothermal method and used as NH 3 sensing materials in room-temperature gas sensors.",
+          "source_text_sha256": "64d799ca2abc5b0e0227acb9ed7866ea179d19a4e47cc2aaaebd797fdd0de985"
+        }
+      ]
+    },
+    {
+      "document": "D010",
+      "category": "lost_true_raw",
+      "head": "Mxene/CuO",
+      "head_kind": "MATERIAL",
+      "tail": "Mxene",
+      "tail_kind": "MATERIAL",
+      "relation": "HAS_COMPONENT",
+      "reason": "UNSUPPORTED_CAPABILITY:OVERLAPPING_RELATION_ENDPOINTS",
+      "score": 0.8348640919372544,
+      "evidence": [
+        {
+          "span_id": "510e3540-e579-4536-a4ea-dae9b47eb024:391:630",
+          "document_id": "136d5083-0254-4930-a35e-88441bb802a0",
+          "revision_id": "fbd87a44-35d0-4f51-80d6-39abd117d01f",
+          "chunk_id": "510e3540-e579-4536-a4ea-dae9b47eb024",
+          "start": 391,
+          "end": 630,
+          "text": "Various nanocomposites such as Mxene/GO, Mxene/ZnO, Mxene/CuO, Mxene/GO/ZnO, Mxene/GO/CuO, Mxene/ZnO/CuO, and Mxene/GO/ZnO/CuO were synthesized via the hydrothermal method and used as NH 3 sensing materials in room-temperature gas sensors.",
+          "source_text_sha256": "64d799ca2abc5b0e0227acb9ed7866ea179d19a4e47cc2aaaebd797fdd0de985"
+        }
+      ]
+    },
+    {
+      "document": "D010",
+      "category": "lost_true_raw",
+      "head": "Mxene/GO/ZnO",
+      "head_kind": "MATERIAL",
+      "tail": "Mxene",
+      "tail_kind": "MATERIAL",
+      "relation": "HAS_COMPONENT",
+      "reason": "UNSUPPORTED_CAPABILITY:OVERLAPPING_RELATION_ENDPOINTS",
+      "score": 0.8700005393690249,
+      "evidence": [
+        {
+          "span_id": "510e3540-e579-4536-a4ea-dae9b47eb024:391:630",
+          "document_id": "136d5083-0254-4930-a35e-88441bb802a0",
+          "revision_id": "fbd87a44-35d0-4f51-80d6-39abd117d01f",
+          "chunk_id": "510e3540-e579-4536-a4ea-dae9b47eb024",
+          "start": 391,
+          "end": 630,
+          "text": "Various nanocomposites such as Mxene/GO, Mxene/ZnO, Mxene/CuO, Mxene/GO/ZnO, Mxene/GO/CuO, Mxene/ZnO/CuO, and Mxene/GO/ZnO/CuO were synthesized via the hydrothermal method and used as NH 3 sensing materials in room-temperature gas sensors.",
+          "source_text_sha256": "64d799ca2abc5b0e0227acb9ed7866ea179d19a4e47cc2aaaebd797fdd0de985"
+        }
+      ]
+    },
+    {
+      "document": "D010",
+      "category": "lost_true_raw",
+      "head": "Mxene/GO/ZnO",
+      "head_kind": "MATERIAL",
+      "tail": "ZnO",
+      "tail_kind": "MATERIAL",
+      "relation": "HAS_COMPONENT",
+      "reason": "UNSUPPORTED_CAPABILITY:OVERLAPPING_RELATION_ENDPOINTS",
+      "score": 0.8837197237170045,
+      "evidence": [
+        {
+          "span_id": "510e3540-e579-4536-a4ea-dae9b47eb024:391:630",
+          "document_id": "136d5083-0254-4930-a35e-88441bb802a0",
+          "revision_id": "fbd87a44-35d0-4f51-80d6-39abd117d01f",
+          "chunk_id": "510e3540-e579-4536-a4ea-dae9b47eb024",
+          "start": 391,
+          "end": 630,
+          "text": "Various nanocomposites such as Mxene/GO, Mxene/ZnO, Mxene/CuO, Mxene/GO/ZnO, Mxene/GO/CuO, Mxene/ZnO/CuO, and Mxene/GO/ZnO/CuO were synthesized via the hydrothermal method and used as NH 3 sensing materials in room-temperature gas sensors.",
+          "source_text_sha256": "64d799ca2abc5b0e0227acb9ed7866ea179d19a4e47cc2aaaebd797fdd0de985"
+        }
+      ]
+    },
+    {
+      "document": "D010",
+      "category": "lost_true_raw",
+      "head": "Mxene/GO/CuO",
+      "head_kind": "MATERIAL",
+      "tail": "Mxene",
+      "tail_kind": "MATERIAL",
+      "relation": "HAS_COMPONENT",
+      "reason": "UNSUPPORTED_CAPABILITY:OVERLAPPING_RELATION_ENDPOINTS",
+      "score": 0.8407250856604112,
+      "evidence": [
+        {
+          "span_id": "510e3540-e579-4536-a4ea-dae9b47eb024:391:630",
+          "document_id": "136d5083-0254-4930-a35e-88441bb802a0",
+          "revision_id": "fbd87a44-35d0-4f51-80d6-39abd117d01f",
+          "chunk_id": "510e3540-e579-4536-a4ea-dae9b47eb024",
+          "start": 391,
+          "end": 630,
+          "text": "Various nanocomposites such as Mxene/GO, Mxene/ZnO, Mxene/CuO, Mxene/GO/ZnO, Mxene/GO/CuO, Mxene/ZnO/CuO, and Mxene/GO/ZnO/CuO were synthesized via the hydrothermal method and used as NH 3 sensing materials in room-temperature gas sensors.",
+          "source_text_sha256": "64d799ca2abc5b0e0227acb9ed7866ea179d19a4e47cc2aaaebd797fdd0de985"
+        }
+      ]
+    },
+    {
+      "document": "D010",
+      "category": "lost_true_raw",
+      "head": "Mxene/ZnO/CuO",
+      "head_kind": "MATERIAL",
+      "tail": "Mxene",
+      "tail_kind": "MATERIAL",
+      "relation": "HAS_COMPONENT",
+      "reason": "UNSUPPORTED_CAPABILITY:OVERLAPPING_RELATION_ENDPOINTS",
+      "score": 0.8145936972101993,
+      "evidence": [
+        {
+          "span_id": "510e3540-e579-4536-a4ea-dae9b47eb024:391:630",
+          "document_id": "136d5083-0254-4930-a35e-88441bb802a0",
+          "revision_id": "fbd87a44-35d0-4f51-80d6-39abd117d01f",
+          "chunk_id": "510e3540-e579-4536-a4ea-dae9b47eb024",
+          "start": 391,
+          "end": 630,
+          "text": "Various nanocomposites such as Mxene/GO, Mxene/ZnO, Mxene/CuO, Mxene/GO/ZnO, Mxene/GO/CuO, Mxene/ZnO/CuO, and Mxene/GO/ZnO/CuO were synthesized via the hydrothermal method and used as NH 3 sensing materials in room-temperature gas sensors.",
+          "source_text_sha256": "64d799ca2abc5b0e0227acb9ed7866ea179d19a4e47cc2aaaebd797fdd0de985"
+        }
+      ]
+    },
+    {
+      "document": "D010",
+      "category": "lost_true_raw",
+      "head": "Mxene/ZnO/CuO",
+      "head_kind": "MATERIAL",
+      "tail": "ZnO",
+      "tail_kind": "MATERIAL",
+      "relation": "HAS_COMPONENT",
+      "reason": "UNSUPPORTED_CAPABILITY:OVERLAPPING_RELATION_ENDPOINTS",
+      "score": 0.8409488374380064,
+      "evidence": [
+        {
+          "span_id": "510e3540-e579-4536-a4ea-dae9b47eb024:391:630",
+          "document_id": "136d5083-0254-4930-a35e-88441bb802a0",
+          "revision_id": "fbd87a44-35d0-4f51-80d6-39abd117d01f",
+          "chunk_id": "510e3540-e579-4536-a4ea-dae9b47eb024",
+          "start": 391,
+          "end": 630,
+          "text": "Various nanocomposites such as Mxene/GO, Mxene/ZnO, Mxene/CuO, Mxene/GO/ZnO, Mxene/GO/CuO, Mxene/ZnO/CuO, and Mxene/GO/ZnO/CuO were synthesized via the hydrothermal method and used as NH 3 sensing materials in room-temperature gas sensors.",
+          "source_text_sha256": "64d799ca2abc5b0e0227acb9ed7866ea179d19a4e47cc2aaaebd797fdd0de985"
+        }
+      ]
+    },
+    {
+      "document": "D010",
+      "category": "lost_true_raw",
+      "head": "Mxene/ZnO/CuO",
+      "head_kind": "MATERIAL",
+      "tail": "CuO",
+      "tail_kind": "MATERIAL",
+      "relation": "HAS_COMPONENT",
+      "reason": "UNSUPPORTED_CAPABILITY:OVERLAPPING_RELATION_ENDPOINTS",
+      "score": 0.8397477419893687,
+      "evidence": [
+        {
+          "span_id": "510e3540-e579-4536-a4ea-dae9b47eb024:391:630",
+          "document_id": "136d5083-0254-4930-a35e-88441bb802a0",
+          "revision_id": "fbd87a44-35d0-4f51-80d6-39abd117d01f",
+          "chunk_id": "510e3540-e579-4536-a4ea-dae9b47eb024",
+          "start": 391,
+          "end": 630,
+          "text": "Various nanocomposites such as Mxene/GO, Mxene/ZnO, Mxene/CuO, Mxene/GO/ZnO, Mxene/GO/CuO, Mxene/ZnO/CuO, and Mxene/GO/ZnO/CuO were synthesized via the hydrothermal method and used as NH 3 sensing materials in room-temperature gas sensors.",
+          "source_text_sha256": "64d799ca2abc5b0e0227acb9ed7866ea179d19a4e47cc2aaaebd797fdd0de985"
+        }
+      ]
+    },
+    {
+      "document": "D010",
+      "category": "lost_true_raw",
+      "head": "Mxene/GO/ZnO/CuO",
+      "head_kind": "MATERIAL",
+      "tail": "Mxene",
+      "tail_kind": "MATERIAL",
+      "relation": "HAS_COMPONENT",
+      "reason": "UNSUPPORTED_CAPABILITY:OVERLAPPING_RELATION_ENDPOINTS",
+      "score": 0.8494991161076003,
+      "evidence": [
+        {
+          "span_id": "510e3540-e579-4536-a4ea-dae9b47eb024:391:630",
+          "document_id": "136d5083-0254-4930-a35e-88441bb802a0",
+          "revision_id": "fbd87a44-35d0-4f51-80d6-39abd117d01f",
+          "chunk_id": "510e3540-e579-4536-a4ea-dae9b47eb024",
+          "start": 391,
+          "end": 630,
+          "text": "Various nanocomposites such as Mxene/GO, Mxene/ZnO, Mxene/CuO, Mxene/GO/ZnO, Mxene/GO/CuO, Mxene/ZnO/CuO, and Mxene/GO/ZnO/CuO were synthesized via the hydrothermal method and used as NH 3 sensing materials in room-temperature gas sensors.",
+          "source_text_sha256": "64d799ca2abc5b0e0227acb9ed7866ea179d19a4e47cc2aaaebd797fdd0de985"
+        }
+      ]
+    },
+    {
+      "document": "D010",
+      "category": "lost_true_raw",
+      "head": "Mxene/GO/ZnO/CuO",
+      "head_kind": "MATERIAL",
+      "tail": "ZnO",
+      "tail_kind": "MATERIAL",
+      "relation": "HAS_COMPONENT",
+      "reason": "UNSUPPORTED_CAPABILITY:OVERLAPPING_RELATION_ENDPOINTS",
+      "score": 0.8533328245806869,
+      "evidence": [
+        {
+          "span_id": "510e3540-e579-4536-a4ea-dae9b47eb024:391:630",
+          "document_id": "136d5083-0254-4930-a35e-88441bb802a0",
+          "revision_id": "fbd87a44-35d0-4f51-80d6-39abd117d01f",
+          "chunk_id": "510e3540-e579-4536-a4ea-dae9b47eb024",
+          "start": 391,
+          "end": 630,
+          "text": "Various nanocomposites such as Mxene/GO, Mxene/ZnO, Mxene/CuO, Mxene/GO/ZnO, Mxene/GO/CuO, Mxene/ZnO/CuO, and Mxene/GO/ZnO/CuO were synthesized via the hydrothermal method and used as NH 3 sensing materials in room-temperature gas sensors.",
+          "source_text_sha256": "64d799ca2abc5b0e0227acb9ed7866ea179d19a4e47cc2aaaebd797fdd0de985"
+        }
+      ]
+    },
+    {
+      "document": "D010",
+      "category": "lost_true_raw",
+      "head": "Mxene/GO/ZnO/CuO",
+      "head_kind": "MATERIAL",
+      "tail": "CuO",
+      "tail_kind": "MATERIAL",
+      "relation": "HAS_COMPONENT",
+      "reason": "UNSUPPORTED_CAPABILITY:OVERLAPPING_RELATION_ENDPOINTS",
+      "score": 0.8450828811255657,
+      "evidence": [
+        {
+          "span_id": "510e3540-e579-4536-a4ea-dae9b47eb024:391:630",
+          "document_id": "136d5083-0254-4930-a35e-88441bb802a0",
+          "revision_id": "fbd87a44-35d0-4f51-80d6-39abd117d01f",
+          "chunk_id": "510e3540-e579-4536-a4ea-dae9b47eb024",
+          "start": 391,
+          "end": 630,
+          "text": "Various nanocomposites such as Mxene/GO, Mxene/ZnO, Mxene/CuO, Mxene/GO/ZnO, Mxene/GO/CuO, Mxene/ZnO/CuO, and Mxene/GO/ZnO/CuO were synthesized via the hydrothermal method and used as NH 3 sensing materials in room-temperature gas sensors.",
+          "source_text_sha256": "64d799ca2abc5b0e0227acb9ed7866ea179d19a4e47cc2aaaebd797fdd0de985"
+        }
+      ]
+    },
+    {
+      "document": "D010",
+      "category": "lost_true_raw",
+      "head": "Ti 3 C 2 Tx MXene/GO/CuO/ZnO",
+      "head_kind": "MATERIAL",
+      "tail": "Ti 3 C 2 Tx MXene",
+      "tail_kind": "MATERIAL",
+      "relation": "HAS_COMPONENT",
+      "reason": "UNSUPPORTED_CAPABILITY:OVERLAPPING_RELATION_ENDPOINTS",
+      "score": 0.8760943517424143,
+      "evidence": [
+        {
+          "span_id": "510e3540-e579-4536-a4ea-dae9b47eb024:631:724",
+          "document_id": "136d5083-0254-4930-a35e-88441bb802a0",
+          "revision_id": "fbd87a44-35d0-4f51-80d6-39abd117d01f",
+          "chunk_id": "510e3540-e579-4536-a4ea-dae9b47eb024",
+          "start": 631,
+          "end": 724,
+          "text": "The Ti 3 C 2 Tx MXene/GO/CuO/ZnO nanocomposite gas sensor exhibited the best NH 3 gas sensor.",
+          "source_text_sha256": "64d799ca2abc5b0e0227acb9ed7866ea179d19a4e47cc2aaaebd797fdd0de985"
+        }
+      ]
+    },
+    {
+      "document": "D010",
+      "category": "lost_true_raw",
+      "head": "Ti 3 C 2 Tx MXene/GO/CuO/ZnO",
+      "head_kind": "MATERIAL",
+      "tail": "CuO",
+      "tail_kind": "MATERIAL",
+      "relation": "HAS_COMPONENT",
+      "reason": "UNSUPPORTED_CAPABILITY:OVERLAPPING_RELATION_ENDPOINTS",
+      "score": 0.8961343681091337,
+      "evidence": [
+        {
+          "span_id": "510e3540-e579-4536-a4ea-dae9b47eb024:631:724",
+          "document_id": "136d5083-0254-4930-a35e-88441bb802a0",
+          "revision_id": "fbd87a44-35d0-4f51-80d6-39abd117d01f",
+          "chunk_id": "510e3540-e579-4536-a4ea-dae9b47eb024",
+          "start": 631,
+          "end": 724,
+          "text": "The Ti 3 C 2 Tx MXene/GO/CuO/ZnO nanocomposite gas sensor exhibited the best NH 3 gas sensor.",
+          "source_text_sha256": "64d799ca2abc5b0e0227acb9ed7866ea179d19a4e47cc2aaaebd797fdd0de985"
+        }
+      ]
+    },
+    {
+      "document": "D010",
+      "category": "lost_true_raw",
+      "head": "Ti 3 C 2 Tx MXene/GO/CuO/ZnO",
+      "head_kind": "MATERIAL",
+      "tail": "ZnO",
+      "tail_kind": "MATERIAL",
+      "relation": "HAS_COMPONENT",
+      "reason": "UNSUPPORTED_CAPABILITY:OVERLAPPING_RELATION_ENDPOINTS",
+      "score": 0.9023909622541518,
+      "evidence": [
+        {
+          "span_id": "510e3540-e579-4536-a4ea-dae9b47eb024:631:724",
+          "document_id": "136d5083-0254-4930-a35e-88441bb802a0",
+          "revision_id": "fbd87a44-35d0-4f51-80d6-39abd117d01f",
+          "chunk_id": "510e3540-e579-4536-a4ea-dae9b47eb024",
+          "start": 631,
+          "end": 724,
+          "text": "The Ti 3 C 2 Tx MXene/GO/CuO/ZnO nanocomposite gas sensor exhibited the best NH 3 gas sensor.",
+          "source_text_sha256": "64d799ca2abc5b0e0227acb9ed7866ea179d19a4e47cc2aaaebd797fdd0de985"
+        }
+      ]
+    },
+    {
+      "document": "D010",
+      "category": "lost_true_raw",
+      "head": "Ti 3 C 2 Tx MXene/GO/CuO/ZnO",
+      "head_kind": "MATERIAL",
+      "tail": "Ti 3 C 2 Tx MXene",
+      "tail_kind": "MATERIAL",
+      "relation": "HAS_COMPONENT",
+      "reason": "UNSUPPORTED_CAPABILITY:OVERLAPPING_RELATION_ENDPOINTS",
+      "score": 0.8762794879492997,
+      "evidence": [
+        {
+          "span_id": "510e3540-e579-4536-a4ea-dae9b47eb024:725:901",
+          "document_id": "136d5083-0254-4930-a35e-88441bb802a0",
+          "revision_id": "fbd87a44-35d0-4f51-80d6-39abd117d01f",
+          "chunk_id": "510e3540-e579-4536-a4ea-dae9b47eb024",
+          "start": 725,
+          "end": 901,
+          "text": "The effects on the weight ratios of Ti 3 C 2 Tx MXene/GO/CuO/ZnO were also investigated, and the optimal Ti 3 C 2 Tx MXene/GO/CuO/ZnO weight ratio was determined to be 9:1:5:5.",
+          "source_text_sha256": "64d799ca2abc5b0e0227acb9ed7866ea179d19a4e47cc2aaaebd797fdd0de985"
+        }
+      ]
+    },
+    {
+      "document": "D010",
+      "category": "lost_true_raw",
+      "head": "Ti 3 C 2 Tx MXene/GO/CuO/ZnO",
+      "head_kind": "MATERIAL",
+      "tail": "GO",
+      "tail_kind": "MATERIAL",
+      "relation": "HAS_COMPONENT",
+      "reason": "UNSUPPORTED_CAPABILITY:OVERLAPPING_RELATION_ENDPOINTS",
+      "score": 0.8984006277253666,
+      "evidence": [
+        {
+          "span_id": "510e3540-e579-4536-a4ea-dae9b47eb024:725:901",
+          "document_id": "136d5083-0254-4930-a35e-88441bb802a0",
+          "revision_id": "fbd87a44-35d0-4f51-80d6-39abd117d01f",
+          "chunk_id": "510e3540-e579-4536-a4ea-dae9b47eb024",
+          "start": 725,
+          "end": 901,
+          "text": "The effects on the weight ratios of Ti 3 C 2 Tx MXene/GO/CuO/ZnO were also investigated, and the optimal Ti 3 C 2 Tx MXene/GO/CuO/ZnO weight ratio was determined to be 9:1:5:5.",
+          "source_text_sha256": "64d799ca2abc5b0e0227acb9ed7866ea179d19a4e47cc2aaaebd797fdd0de985"
+        }
+      ]
+    },
+    {
+      "document": "D010",
+      "category": "lost_true_raw",
+      "head": "Ti 3 C 2 Tx MXene/GO/CuO/ZnO",
+      "head_kind": "MATERIAL",
+      "tail": "CuO",
+      "tail_kind": "MATERIAL",
+      "relation": "HAS_COMPONENT",
+      "reason": "UNSUPPORTED_CAPABILITY:OVERLAPPING_RELATION_ENDPOINTS",
+      "score": 0.8929094355756947,
+      "evidence": [
+        {
+          "span_id": "510e3540-e579-4536-a4ea-dae9b47eb024:725:901",
+          "document_id": "136d5083-0254-4930-a35e-88441bb802a0",
+          "revision_id": "fbd87a44-35d0-4f51-80d6-39abd117d01f",
+          "chunk_id": "510e3540-e579-4536-a4ea-dae9b47eb024",
+          "start": 725,
+          "end": 901,
+          "text": "The effects on the weight ratios of Ti 3 C 2 Tx MXene/GO/CuO/ZnO were also investigated, and the optimal Ti 3 C 2 Tx MXene/GO/CuO/ZnO weight ratio was determined to be 9:1:5:5.",
+          "source_text_sha256": "64d799ca2abc5b0e0227acb9ed7866ea179d19a4e47cc2aaaebd797fdd0de985"
+        }
+      ]
+    },
+    {
+      "document": "D010",
+      "category": "lost_true_raw",
+      "head": "Ti 3 C 2 Tx MXene/GO/CuO/ZnO",
+      "head_kind": "MATERIAL",
+      "tail": "ZnO",
+      "tail_kind": "MATERIAL",
+      "relation": "HAS_COMPONENT",
+      "reason": "UNSUPPORTED_CAPABILITY:OVERLAPPING_RELATION_ENDPOINTS",
+      "score": 0.8963510743397806,
+      "evidence": [
+        {
+          "span_id": "510e3540-e579-4536-a4ea-dae9b47eb024:725:901",
+          "document_id": "136d5083-0254-4930-a35e-88441bb802a0",
+          "revision_id": "fbd87a44-35d0-4f51-80d6-39abd117d01f",
+          "chunk_id": "510e3540-e579-4536-a4ea-dae9b47eb024",
+          "start": 725,
+          "end": 901,
+          "text": "The effects on the weight ratios of Ti 3 C 2 Tx MXene/GO/CuO/ZnO were also investigated, and the optimal Ti 3 C 2 Tx MXene/GO/CuO/ZnO weight ratio was determined to be 9:1:5:5.",
+          "source_text_sha256": "64d799ca2abc5b0e0227acb9ed7866ea179d19a4e47cc2aaaebd797fdd0de985"
+        }
+      ]
+    },
+    {
+      "document": "D010",
+      "category": "lost_true_raw",
+      "head": "Ti 3 C 2 Tx MXene/GO/CuO/ZnO",
+      "head_kind": "MATERIAL",
+      "tail": "Ti 3 C 2 Tx MXene",
+      "tail_kind": "MATERIAL",
+      "relation": "HAS_COMPONENT",
+      "reason": "UNSUPPORTED_CAPABILITY:OVERLAPPING_RELATION_ENDPOINTS",
+      "score": 0.7845815811866892,
+      "evidence": [
+        {
+          "span_id": "761f757f-5005-4417-bf90-f2c5200f7600:0:362",
+          "document_id": "136d5083-0254-4930-a35e-88441bb802a0",
+          "revision_id": "fbd87a44-35d0-4f51-80d6-39abd117d01f",
+          "chunk_id": "761f757f-5005-4417-bf90-f2c5200f7600",
+          "start": 0,
+          "end": 362,
+          "text": "The optimal Ti 3 C 2 Tx MXene/GO/CuO/ZnO based gas sensor showed a high response of 96% at 200 ppm of NH 3, humidity independence in the range of 30–70%RH, good linear relationship ( R 2 = 0.998), low limit of detection of 4.1 ppm, and high selectivity to NH 3 over several gases/VOCs including formaldehyde, ethanol, methanol, isopropanol, toluene, and acetone.",
+          "source_text_sha256": "c96d836b51f3c30b23d69406198bde211107fed455cd9631385c370269084ab3"
+        }
+      ]
+    },
+    {
+      "document": "D010",
+      "category": "lost_true_raw",
+      "head": "Ti 3 C 2 Tx MXene/GO/CuO/ZnO",
+      "head_kind": "MATERIAL",
+      "tail": "ZnO",
+      "tail_kind": "MATERIAL",
+      "relation": "HAS_COMPONENT",
+      "reason": "UNSUPPORTED_CAPABILITY:OVERLAPPING_RELATION_ENDPOINTS",
+      "score": 0.8077829247243966,
+      "evidence": [
+        {
+          "span_id": "761f757f-5005-4417-bf90-f2c5200f7600:0:362",
+          "document_id": "136d5083-0254-4930-a35e-88441bb802a0",
+          "revision_id": "fbd87a44-35d0-4f51-80d6-39abd117d01f",
+          "chunk_id": "761f757f-5005-4417-bf90-f2c5200f7600",
+          "start": 0,
+          "end": 362,
+          "text": "The optimal Ti 3 C 2 Tx MXene/GO/CuO/ZnO based gas sensor showed a high response of 96% at 200 ppm of NH 3, humidity independence in the range of 30–70%RH, good linear relationship ( R 2 = 0.998), low limit of detection of 4.1 ppm, and high selectivity to NH 3 over several gases/VOCs including formaldehyde, ethanol, methanol, isopropanol, toluene, and acetone.",
+          "source_text_sha256": "c96d836b51f3c30b23d69406198bde211107fed455cd9631385c370269084ab3"
+        }
+      ]
+    },
+    {
+      "document": "D017",
+      "category": "lost_true_raw",
+      "head": "gas sensors",
+      "head_kind": "DEVICE",
+      "tail": "2D layered inorganic materials",
+      "tail_kind": "MATERIAL",
+      "relation": "USES_MATERIAL",
+      "reason": "NO_EXPLICIT_PREDICATE_BETWEEN_ENDPOINTS",
+      "score": 0.9533639757529743,
+      "evidence": [
+        {
+          "span_id": "52c7bac2-feff-4316-934f-2726c4842540:484:590",
+          "document_id": "2860ed7f-a2a8-4e76-9250-e3558d092f23",
+          "revision_id": "d80633dc-c57a-4253-8754-29c9366084f5",
+          "chunk_id": "52c7bac2-feff-4316-934f-2726c4842540",
+          "start": 484,
+          "end": 590,
+          "text": "This review aims to discuss the latest advancements in the 2D layered inorganic materials for gas sensors.",
+          "source_text_sha256": "651d394d86153236deeb8d70507215a9e8b8d77ab04eec43518a0daabf9003e2"
+        }
+      ]
+    },
+    {
+      "document": "D017",
+      "category": "lost_true_raw",
+      "head": "graphene",
+      "head_kind": "MATERIAL",
+      "tail": "gas-sensing applications",
+      "tail_kind": "APPLICATION",
+      "relation": "USED_FOR",
+      "reason": "NO_EXPLICIT_PREDICATE_BETWEEN_ENDPOINTS",
+      "score": 0.9499434945858977,
+      "evidence": [
+        {
+          "span_id": "52c7bac2-feff-4316-934f-2726c4842540:807:1105",
+          "document_id": "2860ed7f-a2a8-4e76-9250-e3558d092f23",
+          "revision_id": "d80633dc-c57a-4253-8754-29c9366084f5",
+          "chunk_id": "52c7bac2-feff-4316-934f-2726c4842540",
+          "start": 807,
+          "end": 1105,
+          "text": "Moreover, we systematically present the current gas-sensing applications based on graphene, graphene oxide (GO), reduced graphene oxide (rGO), functionalized GO or rGO, transition metal dichalcogenides, layered III-VI semiconductors, layered metal oxides, phosphorene, hexagonal boron nitride, etc.",
+          "source_text_sha256": "651d394d86153236deeb8d70507215a9e8b8d77ab04eec43518a0daabf9003e2"
+        }
+      ]
+    },
+    {
+      "document": "D017",
+      "category": "lost_true_raw",
+      "head": "graphene oxide",
+      "head_kind": "MATERIAL",
+      "tail": "gas-sensing applications",
+      "tail_kind": "APPLICATION",
+      "relation": "USED_FOR",
+      "reason": "NO_EXPLICIT_PREDICATE_BETWEEN_ENDPOINTS",
+      "score": 0.9500727429258926,
+      "evidence": [
+        {
+          "span_id": "52c7bac2-feff-4316-934f-2726c4842540:807:1105",
+          "document_id": "2860ed7f-a2a8-4e76-9250-e3558d092f23",
+          "revision_id": "d80633dc-c57a-4253-8754-29c9366084f5",
+          "chunk_id": "52c7bac2-feff-4316-934f-2726c4842540",
+          "start": 807,
+          "end": 1105,
+          "text": "Moreover, we systematically present the current gas-sensing applications based on graphene, graphene oxide (GO), reduced graphene oxide (rGO), functionalized GO or rGO, transition metal dichalcogenides, layered III-VI semiconductors, layered metal oxides, phosphorene, hexagonal boron nitride, etc.",
+          "source_text_sha256": "651d394d86153236deeb8d70507215a9e8b8d77ab04eec43518a0daabf9003e2"
+        }
+      ]
+    },
+    {
+      "document": "D017",
+      "category": "lost_true_raw",
+      "head": "reduced graphene oxide",
+      "head_kind": "MATERIAL",
+      "tail": "gas-sensing applications",
+      "tail_kind": "APPLICATION",
+      "relation": "USED_FOR",
+      "reason": "NO_EXPLICIT_PREDICATE_BETWEEN_ENDPOINTS",
+      "score": 0.9445837624405312,
+      "evidence": [
+        {
+          "span_id": "52c7bac2-feff-4316-934f-2726c4842540:807:1105",
+          "document_id": "2860ed7f-a2a8-4e76-9250-e3558d092f23",
+          "revision_id": "d80633dc-c57a-4253-8754-29c9366084f5",
+          "chunk_id": "52c7bac2-feff-4316-934f-2726c4842540",
+          "start": 807,
+          "end": 1105,
+          "text": "Moreover, we systematically present the current gas-sensing applications based on graphene, graphene oxide (GO), reduced graphene oxide (rGO), functionalized GO or rGO, transition metal dichalcogenides, layered III-VI semiconductors, layered metal oxides, phosphorene, hexagonal boron nitride, etc.",
+          "source_text_sha256": "651d394d86153236deeb8d70507215a9e8b8d77ab04eec43518a0daabf9003e2"
+        }
+      ]
+    },
+    {
+      "document": "D017",
+      "category": "lost_true_raw",
+      "head": "functionalized GO or rGO",
+      "head_kind": "MATERIAL",
+      "tail": "gas-sensing applications",
+      "tail_kind": "APPLICATION",
+      "relation": "USED_FOR",
+      "reason": "NO_EXPLICIT_PREDICATE_BETWEEN_ENDPOINTS",
+      "score": 0.9443697679241941,
+      "evidence": [
+        {
+          "span_id": "52c7bac2-feff-4316-934f-2726c4842540:807:1105",
+          "document_id": "2860ed7f-a2a8-4e76-9250-e3558d092f23",
+          "revision_id": "d80633dc-c57a-4253-8754-29c9366084f5",
+          "chunk_id": "52c7bac2-feff-4316-934f-2726c4842540",
+          "start": 807,
+          "end": 1105,
+          "text": "Moreover, we systematically present the current gas-sensing applications based on graphene, graphene oxide (GO), reduced graphene oxide (rGO), functionalized GO or rGO, transition metal dichalcogenides, layered III-VI semiconductors, layered metal oxides, phosphorene, hexagonal boron nitride, etc.",
+          "source_text_sha256": "651d394d86153236deeb8d70507215a9e8b8d77ab04eec43518a0daabf9003e2"
+        }
+      ]
+    },
+    {
+      "document": "D017",
+      "category": "lost_true_raw",
+      "head": "transition metal dichalcogenides",
+      "head_kind": "MATERIAL",
+      "tail": "gas-sensing applications",
+      "tail_kind": "APPLICATION",
+      "relation": "USED_FOR",
+      "reason": "NO_EXPLICIT_PREDICATE_BETWEEN_ENDPOINTS",
+      "score": 0.9469216426945217,
+      "evidence": [
+        {
+          "span_id": "52c7bac2-feff-4316-934f-2726c4842540:807:1105",
+          "document_id": "2860ed7f-a2a8-4e76-9250-e3558d092f23",
+          "revision_id": "d80633dc-c57a-4253-8754-29c9366084f5",
+          "chunk_id": "52c7bac2-feff-4316-934f-2726c4842540",
+          "start": 807,
+          "end": 1105,
+          "text": "Moreover, we systematically present the current gas-sensing applications based on graphene, graphene oxide (GO), reduced graphene oxide (rGO), functionalized GO or rGO, transition metal dichalcogenides, layered III-VI semiconductors, layered metal oxides, phosphorene, hexagonal boron nitride, etc.",
+          "source_text_sha256": "651d394d86153236deeb8d70507215a9e8b8d77ab04eec43518a0daabf9003e2"
+        }
+      ]
+    },
+    {
+      "document": "D017",
+      "category": "lost_true_raw",
+      "head": "layered III-VI semiconductors",
+      "head_kind": "MATERIAL",
+      "tail": "gas-sensing applications",
+      "tail_kind": "APPLICATION",
+      "relation": "USED_FOR",
+      "reason": "NO_EXPLICIT_PREDICATE_BETWEEN_ENDPOINTS",
+      "score": 0.9481146782189425,
+      "evidence": [
+        {
+          "span_id": "52c7bac2-feff-4316-934f-2726c4842540:807:1105",
+          "document_id": "2860ed7f-a2a8-4e76-9250-e3558d092f23",
+          "revision_id": "d80633dc-c57a-4253-8754-29c9366084f5",
+          "chunk_id": "52c7bac2-feff-4316-934f-2726c4842540",
+          "start": 807,
+          "end": 1105,
+          "text": "Moreover, we systematically present the current gas-sensing applications based on graphene, graphene oxide (GO), reduced graphene oxide (rGO), functionalized GO or rGO, transition metal dichalcogenides, layered III-VI semiconductors, layered metal oxides, phosphorene, hexagonal boron nitride, etc.",
+          "source_text_sha256": "651d394d86153236deeb8d70507215a9e8b8d77ab04eec43518a0daabf9003e2"
+        }
+      ]
+    },
+    {
+      "document": "D017",
+      "category": "lost_true_raw",
+      "head": "layered metal oxides",
+      "head_kind": "MATERIAL",
+      "tail": "gas-sensing applications",
+      "tail_kind": "APPLICATION",
+      "relation": "USED_FOR",
+      "reason": "NO_EXPLICIT_PREDICATE_BETWEEN_ENDPOINTS",
+      "score": 0.9471346701274832,
+      "evidence": [
+        {
+          "span_id": "52c7bac2-feff-4316-934f-2726c4842540:807:1105",
+          "document_id": "2860ed7f-a2a8-4e76-9250-e3558d092f23",
+          "revision_id": "d80633dc-c57a-4253-8754-29c9366084f5",
+          "chunk_id": "52c7bac2-feff-4316-934f-2726c4842540",
+          "start": 807,
+          "end": 1105,
+          "text": "Moreover, we systematically present the current gas-sensing applications based on graphene, graphene oxide (GO), reduced graphene oxide (rGO), functionalized GO or rGO, transition metal dichalcogenides, layered III-VI semiconductors, layered metal oxides, phosphorene, hexagonal boron nitride, etc.",
+          "source_text_sha256": "651d394d86153236deeb8d70507215a9e8b8d77ab04eec43518a0daabf9003e2"
+        }
+      ]
+    },
+    {
+      "document": "D017",
+      "category": "lost_true_raw",
+      "head": "phosphorene",
+      "head_kind": "MATERIAL",
+      "tail": "gas-sensing applications",
+      "tail_kind": "APPLICATION",
+      "relation": "USED_FOR",
+      "reason": "NO_EXPLICIT_PREDICATE_BETWEEN_ENDPOINTS",
+      "score": 0.9449895653051524,
+      "evidence": [
+        {
+          "span_id": "52c7bac2-feff-4316-934f-2726c4842540:807:1105",
+          "document_id": "2860ed7f-a2a8-4e76-9250-e3558d092f23",
+          "revision_id": "d80633dc-c57a-4253-8754-29c9366084f5",
+          "chunk_id": "52c7bac2-feff-4316-934f-2726c4842540",
+          "start": 807,
+          "end": 1105,
+          "text": "Moreover, we systematically present the current gas-sensing applications based on graphene, graphene oxide (GO), reduced graphene oxide (rGO), functionalized GO or rGO, transition metal dichalcogenides, layered III-VI semiconductors, layered metal oxides, phosphorene, hexagonal boron nitride, etc.",
+          "source_text_sha256": "651d394d86153236deeb8d70507215a9e8b8d77ab04eec43518a0daabf9003e2"
+        }
+      ]
+    },
+    {
+      "document": "D017",
+      "category": "lost_true_raw",
+      "head": "hexagonal boron nitride",
+      "head_kind": "MATERIAL",
+      "tail": "gas-sensing applications",
+      "tail_kind": "APPLICATION",
+      "relation": "USED_FOR",
+      "reason": "NO_EXPLICIT_PREDICATE_BETWEEN_ENDPOINTS",
+      "score": 0.9451092442109271,
+      "evidence": [
+        {
+          "span_id": "52c7bac2-feff-4316-934f-2726c4842540:807:1105",
+          "document_id": "2860ed7f-a2a8-4e76-9250-e3558d092f23",
+          "revision_id": "d80633dc-c57a-4253-8754-29c9366084f5",
+          "chunk_id": "52c7bac2-feff-4316-934f-2726c4842540",
+          "start": 807,
+          "end": 1105,
+          "text": "Moreover, we systematically present the current gas-sensing applications based on graphene, graphene oxide (GO), reduced graphene oxide (rGO), functionalized GO or rGO, transition metal dichalcogenides, layered III-VI semiconductors, layered metal oxides, phosphorene, hexagonal boron nitride, etc.",
+          "source_text_sha256": "651d394d86153236deeb8d70507215a9e8b8d77ab04eec43518a0daabf9003e2"
+        }
+      ]
+    },
+    {
+      "document": "D017",
+      "category": "lost_true_raw",
+      "head": "layered inorganic materials",
+      "head_kind": "MATERIAL",
+      "tail": "gas-sensing applications",
+      "tail_kind": "APPLICATION",
+      "relation": "USED_FOR",
+      "reason": "NO_EXPLICIT_PREDICATE_BETWEEN_ENDPOINTS",
+      "score": 0.937891023630324,
+      "evidence": [
+        {
+          "span_id": "60c46884-0b00-408c-a0d7-693eeae8beca:0:107",
+          "document_id": "2860ed7f-a2a8-4e76-9250-e3558d092f23",
+          "revision_id": "d80633dc-c57a-4253-8754-29c9366084f5",
+          "chunk_id": "60c46884-0b00-408c-a0d7-693eeae8beca",
+          "start": 0,
+          "end": 107,
+          "text": "Finally, we conclude the future prospects of these layered inorganic materials in gas-sensing applications.",
+          "source_text_sha256": "e52aca9b25835eb15b142479046e050ec9f21ae5aedcd22b3e2294c658206c41"
+        }
+      ]
+    },
+    {
+      "document": "D024",
+      "category": "lost_true_raw",
+      "head": "graphene sheets",
+      "head_kind": "MATERIAL",
+      "tail": "permeability",
+      "tail_kind": "PROPERTY",
+      "relation": "HAS_PROPERTY",
+      "reason": "NO_EXPLICIT_PREDICATE_BETWEEN_ENDPOINTS",
+      "score": 0.9212189031529888,
+      "evidence": [
+        {
+          "span_id": "8c66a2f4-bc1a-4135-b4ed-059f62c24390:0:162",
+          "document_id": "3a5a587d-5ddf-49b9-aa34-bd081fb0d04b",
+          "revision_id": "95f3f5a0-077c-4f5d-859f-37fc344f12f0",
+          "chunk_id": "8c66a2f4-bc1a-4135-b4ed-059f62c24390",
+          "start": 0,
+          "end": 162,
+          "text": "We investigate the permeability and selectivity of graphene sheets with designed subnanometer pores using first principles density functional theory calculations.",
+          "source_text_sha256": "c8eb765f52f0ff76bff16cd80f39ce601f551a617e79388c49bedca77cac4058"
+        }
+      ]
+    },
+    {
+      "document": "D024",
+      "category": "accepted_false",
+      "head": "first principles density functional theory calculations",
+      "head_kind": "PROCESS",
+      "tail": "permeability",
+      "tail_kind": "PROPERTY",
+      "relation": "HAS_PROPERTY",
+      "reason": null,
+      "score": 0.761070249634403,
+      "evidence": [
+        {
+          "span_id": "8c66a2f4-bc1a-4135-b4ed-059f62c24390:0:162",
+          "document_id": "3a5a587d-5ddf-49b9-aa34-bd081fb0d04b",
+          "revision_id": "95f3f5a0-077c-4f5d-859f-37fc344f12f0",
+          "chunk_id": "8c66a2f4-bc1a-4135-b4ed-059f62c24390",
+          "start": 0,
+          "end": 162,
+          "text": "We investigate the permeability and selectivity of graphene sheets with designed subnanometer pores using first principles density functional theory calculations.",
+          "source_text_sha256": "c8eb765f52f0ff76bff16cd80f39ce601f551a617e79388c49bedca77cac4058"
+        }
+      ]
+    },
+    {
+      "document": "D026",
+      "category": "lost_true_raw",
+      "head": "Ti3C2Tx MXene gas sensors",
+      "head_kind": "DEVICE",
+      "tail": "Ti3C2Tx MXene",
+      "tail_kind": "MATERIAL",
+      "relation": "USES_MATERIAL",
+      "reason": "UNSUPPORTED_CAPABILITY:OVERLAPPING_RELATION_ENDPOINTS",
+      "score": 0.9482157425590673,
+      "evidence": [
+        {
+          "span_id": "5a1139f9-9bf1-4665-96e1-c15a6477ded6:685:799",
+          "document_id": "3df9cd7a-940f-400e-b03a-a72459a5558f",
+          "revision_id": "3ed28d1a-4b30-4ea4-bf03-3a69308fb8ba",
+          "chunk_id": "5a1139f9-9bf1-4665-96e1-c15a6477ded6",
+          "start": 685,
+          "end": 799,
+          "text": "Ti3C2Tx MXene gas sensors exhibited a very low limit of detection of 50–100 ppb for VOC gases at room temperature.",
+          "source_text_sha256": "bedd2a7ed1ad17c747634824457042b37b609d742e51ee38b9ffc4f8c0f23907"
+        }
+      ]
+    },
+    {
+      "document": "D026",
+      "category": "lost_true_raw",
+      "head": "high metallic conductivity",
+      "head_kind": "PROPERTY",
+      "tail": "low noise",
+      "tail_kind": "PROPERTY",
+      "relation": "EXPLAINS",
+      "reason": "NO_EXPLICIT_PREDICATE_BETWEEN_ENDPOINTS",
+      "score": 0.878119347272708,
+      "evidence": [
+        {
+          "span_id": "5a1139f9-9bf1-4665-96e1-c15a6477ded6:439:684",
+          "document_id": "3df9cd7a-940f-400e-b03a-a72459a5558f",
+          "revision_id": "3ed28d1a-4b30-4ea4-bf03-3a69308fb8ba",
+          "chunk_id": "5a1139f9-9bf1-4665-96e1-c15a6477ded6",
+          "start": 439,
+          "end": 684,
+          "text": "Here, we demonstrate that 2D metal carbide MXenes, which possess high metallic conductivity for low noise and a fully functionalized surface for a strong signal, greatly outperform the sensitivity of conventional semiconductor channel materials.",
+          "source_text_sha256": "bedd2a7ed1ad17c747634824457042b37b609d742e51ee38b9ffc4f8c0f23907"
+        }
+      ]
+    },
+    {
+      "document": "D026",
+      "category": "lost_true_raw",
+      "head": "extremely low noise",
+      "head_kind": "PROPERTY",
+      "tail": "signal-to-noise ratio",
+      "tail_kind": "PERFORMANCE",
+      "relation": "EXPLAINS",
+      "reason": "NO_EXPLICIT_PREDICATE_BETWEEN_ENDPOINTS",
+      "score": 0.9285163108351732,
+      "evidence": [
+        {
+          "span_id": "5a1139f9-9bf1-4665-96e1-c15a6477ded6:800:957",
+          "document_id": "3df9cd7a-940f-400e-b03a-a72459a5558f",
+          "revision_id": "3ed28d1a-4b30-4ea4-bf03-3a69308fb8ba",
+          "chunk_id": "5a1139f9-9bf1-4665-96e1-c15a6477ded6",
+          "start": 800,
+          "end": 957,
+          "text": "Also, the extremely low noise led to a signal-to-noise ratio 2 orders of magnitude higher than that of other 2D materials, surpassing the best sensors known.",
+          "source_text_sha256": "bedd2a7ed1ad17c747634824457042b37b609d742e51ee38b9ffc4f8c0f23907"
+        }
+      ]
+    },
+    {
+      "document": "D026",
+      "category": "lost_true_raw",
+      "head": "highly sensitive sensors",
+      "head_kind": "DEVICE",
+      "tail": "highly functionalized metallic sensing channels",
+      "tail_kind": "DEVICE",
+      "relation": "HAS_COMPONENT",
+      "reason": "NO_EXPLICIT_PREDICATE_BETWEEN_ENDPOINTS",
+      "score": 0.7419343137904872,
+      "evidence": [
+        {
+          "span_id": "5a1139f9-9bf1-4665-96e1-c15a6477ded6:958:1087",
+          "document_id": "3df9cd7a-940f-400e-b03a-a72459a5558f",
+          "revision_id": "3ed28d1a-4b30-4ea4-bf03-3a69308fb8ba",
+          "chunk_id": "5a1139f9-9bf1-4665-96e1-c15a6477ded6",
+          "start": 958,
+          "end": 1087,
+          "text": "Our results provide insight in utilizing highly functionalized metallic sensing channels for developing highly sensitive sensors.",
+          "source_text_sha256": "bedd2a7ed1ad17c747634824457042b37b609d742e51ee38b9ffc4f8c0f23907"
+        }
+      ]
+    },
+    {
+      "document": "D026",
+      "category": "accepted_false",
+      "head": "2D metal carbide MXenes",
+      "head_kind": "MATERIAL",
+      "tail": "noise",
+      "tail_kind": "PROPERTY",
+      "relation": "HAS_PROPERTY",
+      "reason": null,
+      "score": 0.8846355749793231,
+      "evidence": [
+        {
+          "span_id": "5a1139f9-9bf1-4665-96e1-c15a6477ded6:439:684",
+          "document_id": "3df9cd7a-940f-400e-b03a-a72459a5558f",
+          "revision_id": "3ed28d1a-4b30-4ea4-bf03-3a69308fb8ba",
+          "chunk_id": "5a1139f9-9bf1-4665-96e1-c15a6477ded6",
+          "start": 439,
+          "end": 684,
+          "text": "Here, we demonstrate that 2D metal carbide MXenes, which possess high metallic conductivity for low noise and a fully functionalized surface for a strong signal, greatly outperform the sensitivity of conventional semiconductor channel materials.",
+          "source_text_sha256": "bedd2a7ed1ad17c747634824457042b37b609d742e51ee38b9ffc4f8c0f23907"
+        }
+      ]
+    },
+    {
+      "document": "D026",
+      "category": "lost_true_raw",
+      "head": "Ti3C2Tx MXene gas sensors",
+      "head_kind": "DEVICE",
+      "tail": "VOC gases",
+      "tail_kind": "ANALYTE",
+      "relation": "DETECTS",
+      "reason": "UNSUPPORTED_CAPABILITY:QUALIFIER_ATTACHMENT",
+      "score": 0.9581954802754761,
+      "evidence": [
+        {
+          "span_id": "5a1139f9-9bf1-4665-96e1-c15a6477ded6:685:799",
+          "document_id": "3df9cd7a-940f-400e-b03a-a72459a5558f",
+          "revision_id": "3ed28d1a-4b30-4ea4-bf03-3a69308fb8ba",
+          "chunk_id": "5a1139f9-9bf1-4665-96e1-c15a6477ded6",
+          "start": 685,
+          "end": 799,
+          "text": "Ti3C2Tx MXene gas sensors exhibited a very low limit of detection of 50–100 ppb for VOC gases at room temperature.",
+          "source_text_sha256": "bedd2a7ed1ad17c747634824457042b37b609d742e51ee38b9ffc4f8c0f23907"
+        }
+      ]
+    },
+    {
+      "document": "D026",
+      "category": "lost_true_raw",
+      "head": "2D metal carbide MXenes",
+      "head_kind": "MATERIAL",
+      "tail": "strong signal",
+      "tail_kind": "PERFORMANCE",
+      "relation": "HAS_PERFORMANCE",
+      "reason": "NO_EXPLICIT_PREDICATE_BETWEEN_ENDPOINTS",
+      "score": 0.831632201394494,
+      "evidence": [
+        {
+          "span_id": "5a1139f9-9bf1-4665-96e1-c15a6477ded6:439:684",
+          "document_id": "3df9cd7a-940f-400e-b03a-a72459a5558f",
+          "revision_id": "3ed28d1a-4b30-4ea4-bf03-3a69308fb8ba",
+          "chunk_id": "5a1139f9-9bf1-4665-96e1-c15a6477ded6",
+          "start": 439,
+          "end": 684,
+          "text": "Here, we demonstrate that 2D metal carbide MXenes, which possess high metallic conductivity for low noise and a fully functionalized surface for a strong signal, greatly outperform the sensitivity of conventional semiconductor channel materials.",
+          "source_text_sha256": "bedd2a7ed1ad17c747634824457042b37b609d742e51ee38b9ffc4f8c0f23907"
+        }
+      ]
+    },
+    {
+      "document": "D026",
+      "category": "accepted_false",
+      "head": "2D metal carbide MXenes",
+      "head_kind": "MATERIAL",
+      "tail": "strong signal",
+      "tail_kind": "PROPERTY",
+      "relation": "HAS_PROPERTY",
+      "reason": null,
+      "score": 0.8592223237284365,
+      "evidence": [
+        {
+          "span_id": "5a1139f9-9bf1-4665-96e1-c15a6477ded6:439:684",
+          "document_id": "3df9cd7a-940f-400e-b03a-a72459a5558f",
+          "revision_id": "3ed28d1a-4b30-4ea4-bf03-3a69308fb8ba",
+          "chunk_id": "5a1139f9-9bf1-4665-96e1-c15a6477ded6",
+          "start": 439,
+          "end": 684,
+          "text": "Here, we demonstrate that 2D metal carbide MXenes, which possess high metallic conductivity for low noise and a fully functionalized surface for a strong signal, greatly outperform the sensitivity of conventional semiconductor channel materials.",
+          "source_text_sha256": "bedd2a7ed1ad17c747634824457042b37b609d742e51ee38b9ffc4f8c0f23907"
+        }
+      ]
+    },
+    {
+      "document": "D038",
+      "category": "accepted_false",
+      "head": "graphene",
+      "head_kind": "MATERIAL",
+      "tail": "insufficient sensitivity and response rate",
+      "tail_kind": "PERFORMANCE",
+      "relation": "HAS_PERFORMANCE",
+      "reason": null,
+      "score": 0.9243513442710014,
+      "evidence": [
+        {
+          "span_id": "fb767df1-8f61-4334-89e7-29c1cdcf5364:325:534",
+          "document_id": "6a675d0d-8256-4c8f-b2ae-7c95c1bcabf8",
+          "revision_id": "b6535766-c337-4abd-9925-8381f0acc7fa",
+          "chunk_id": "fb767df1-8f61-4334-89e7-29c1cdcf5364",
+          "start": 325,
+          "end": 534,
+          "text": "However, graphene/metal oxide nanohybrid- based gas sensors still have several limitations in practical application such as the insufficient sensitivity and response rate, and long recovery time in some cases.",
+          "source_text_sha256": "6d06ae3b6c61d47994638233f63c8c06319dd0eb8a5ec0b5203b72e47f6e2da4"
+        }
+      ]
+    },
+    {
+      "document": "D038",
+      "category": "accepted_false",
+      "head": "graphene",
+      "head_kind": "MATERIAL",
+      "tail": "response rate",
+      "tail_kind": "PERFORMANCE",
+      "relation": "HAS_PERFORMANCE",
+      "reason": null,
+      "score": 0.9344693800381302,
+      "evidence": [
+        {
+          "span_id": "fb767df1-8f61-4334-89e7-29c1cdcf5364:325:534",
+          "document_id": "6a675d0d-8256-4c8f-b2ae-7c95c1bcabf8",
+          "revision_id": "b6535766-c337-4abd-9925-8381f0acc7fa",
+          "chunk_id": "fb767df1-8f61-4334-89e7-29c1cdcf5364",
+          "start": 325,
+          "end": 534,
+          "text": "However, graphene/metal oxide nanohybrid- based gas sensors still have several limitations in practical application such as the insufficient sensitivity and response rate, and long recovery time in some cases.",
+          "source_text_sha256": "6d06ae3b6c61d47994638233f63c8c06319dd0eb8a5ec0b5203b72e47f6e2da4"
+        }
+      ]
+    },
+    {
+      "document": "D038",
+      "category": "accepted_false",
+      "head": "graphene",
+      "head_kind": "MATERIAL",
+      "tail": "long recovery time",
+      "tail_kind": "PERFORMANCE",
+      "relation": "HAS_PERFORMANCE",
+      "reason": null,
+      "score": 0.9290682702334733,
+      "evidence": [
+        {
+          "span_id": "fb767df1-8f61-4334-89e7-29c1cdcf5364:325:534",
+          "document_id": "6a675d0d-8256-4c8f-b2ae-7c95c1bcabf8",
+          "revision_id": "b6535766-c337-4abd-9925-8381f0acc7fa",
+          "chunk_id": "fb767df1-8f61-4334-89e7-29c1cdcf5364",
+          "start": 325,
+          "end": 534,
+          "text": "However, graphene/metal oxide nanohybrid- based gas sensors still have several limitations in practical application such as the insufficient sensitivity and response rate, and long recovery time in some cases.",
+          "source_text_sha256": "6d06ae3b6c61d47994638233f63c8c06319dd0eb8a5ec0b5203b72e47f6e2da4"
+        }
+      ]
+    },
+    {
+      "document": "D038",
+      "category": "accepted_false",
+      "head": "graphene/metal oxides",
+      "head_kind": "MATERIAL",
+      "tail": "well-organized structure",
+      "tail_kind": "PROPERTY",
+      "relation": "HAS_PROPERTY",
+      "reason": null,
+      "score": 0.6958591321965267,
+      "evidence": [
+        {
+          "span_id": "fb767df1-8f61-4334-89e7-29c1cdcf5364:535:847",
+          "document_id": "6a675d0d-8256-4c8f-b2ae-7c95c1bcabf8",
+          "revision_id": "b6535766-c337-4abd-9925-8381f0acc7fa",
+          "chunk_id": "fb767df1-8f61-4334-89e7-29c1cdcf5364",
+          "start": 535,
+          "end": 847,
+          "text": "To achieve higher sensing performances of graphene/metal oxides nanocomposites, many recent efforts have been devoted to the controllable synthesis of 3D graphene/metal oxides architectures owing to their large surface area and well-organized structure for the enhanced gas adsorption/diffusion on sensing films.",
+          "source_text_sha256": "6d06ae3b6c61d47994638233f63c8c06319dd0eb8a5ec0b5203b72e47f6e2da4"
+        }
+      ]
+    },
+    {
+      "document": "D038",
+      "category": "accepted_false",
+      "head": "metal oxides",
+      "head_kind": "MATERIAL",
+      "tail": "well-organized structure",
+      "tail_kind": "PROPERTY",
+      "relation": "HAS_PROPERTY",
+      "reason": null,
+      "score": 0.6590420900997772,
+      "evidence": [
+        {
+          "span_id": "fb767df1-8f61-4334-89e7-29c1cdcf5364:535:847",
+          "document_id": "6a675d0d-8256-4c8f-b2ae-7c95c1bcabf8",
+          "revision_id": "b6535766-c337-4abd-9925-8381f0acc7fa",
+          "chunk_id": "fb767df1-8f61-4334-89e7-29c1cdcf5364",
+          "start": 535,
+          "end": 847,
+          "text": "To achieve higher sensing performances of graphene/metal oxides nanocomposites, many recent efforts have been devoted to the controllable synthesis of 3D graphene/metal oxides architectures owing to their large surface area and well-organized structure for the enhanced gas adsorption/diffusion on sensing films.",
+          "source_text_sha256": "6d06ae3b6c61d47994638233f63c8c06319dd0eb8a5ec0b5203b72e47f6e2da4"
+        }
+      ]
+    },
+    {
+      "document": "D038",
+      "category": "accepted_false",
+      "head": "graphene",
+      "head_kind": "MATERIAL",
+      "tail": "well-organized structure",
+      "tail_kind": "PROPERTY",
+      "relation": "HAS_PROPERTY",
+      "reason": null,
+      "score": 0.7068890291089515,
+      "evidence": [
+        {
+          "span_id": "fb767df1-8f61-4334-89e7-29c1cdcf5364:535:847",
+          "document_id": "6a675d0d-8256-4c8f-b2ae-7c95c1bcabf8",
+          "revision_id": "b6535766-c337-4abd-9925-8381f0acc7fa",
+          "chunk_id": "fb767df1-8f61-4334-89e7-29c1cdcf5364",
+          "start": 535,
+          "end": 847,
+          "text": "To achieve higher sensing performances of graphene/metal oxides nanocomposites, many recent efforts have been devoted to the controllable synthesis of 3D graphene/metal oxides architectures owing to their large surface area and well-organized structure for the enhanced gas adsorption/diffusion on sensing films.",
+          "source_text_sha256": "6d06ae3b6c61d47994638233f63c8c06319dd0eb8a5ec0b5203b72e47f6e2da4"
+        }
+      ]
+    },
+    {
+      "document": "D060",
+      "category": "lost_true_raw",
+      "head": "graphene",
+      "head_kind": "MATERIAL",
+      "tail": "hole concentration",
+      "tail_kind": "PROPERTY",
+      "relation": "HAS_PROPERTY",
+      "reason": "NO_EXPLICIT_PREDICATE_BETWEEN_ENDPOINTS",
+      "score": 0.8499495068780193,
+      "evidence": [
+        {
+          "span_id": "006deffa-1906-4677-942b-2a29bd47046b:496:745",
+          "document_id": "96575fc6-1212-4cb1-889f-179dd9515854",
+          "revision_id": "61ce4e43-1d79-4cee-af6c-43026828532a",
+          "chunk_id": "006deffa-1906-4677-942b-2a29bd47046b",
+          "start": 496,
+          "end": 745,
+          "text": "Electrical characterization and Raman spectroscopy measurements on graphene field-effect transistors show that adsorption of NO2 molecules significantly increases hole concentration in graphene, which results in the observed sensitivity enhancement.",
+          "source_text_sha256": "7e3054e2cb1e788c55f6c5f17b4855b0993823ba82f68f8cf3c012bac4ed1393"
+        }
+      ]
+    },
+    {
+      "document": "D060",
+      "category": "lost_true_raw",
+      "head": "NO2-doped graphene sensor",
+      "head_kind": "DEVICE",
+      "tail": "detection limit",
+      "tail_kind": "PERFORMANCE",
+      "relation": "HAS_PERFORMANCE",
+      "reason": "NO_EXPLICIT_PREDICATE_BETWEEN_ENDPOINTS",
+      "score": 0.9035915117785694,
+      "evidence": [
+        {
+          "span_id": "006deffa-1906-4677-942b-2a29bd47046b:361:495",
+          "document_id": "96575fc6-1212-4cb1-889f-179dd9515854",
+          "revision_id": "61ce4e43-1d79-4cee-af6c-43026828532a",
+          "chunk_id": "006deffa-1906-4677-942b-2a29bd47046b",
+          "start": 361,
+          "end": 495,
+          "text": "The detection limit of our NO2-doped graphene sensor is found to be ∼200 parts per billion (ppb), compared to ∼1400 ppb before doping.",
+          "source_text_sha256": "7e3054e2cb1e788c55f6c5f17b4855b0993823ba82f68f8cf3c012bac4ed1393"
+        }
+      ]
+    },
+    {
+      "document": "D060",
+      "category": "lost_true_raw",
+      "head": "hole concentration",
+      "head_kind": "PROPERTY",
+      "tail": "sensitivity enhancement",
+      "tail_kind": "PERFORMANCE",
+      "relation": "EXPLAINS",
+      "reason": "NO_EXPLICIT_PREDICATE_BETWEEN_ENDPOINTS",
+      "score": 0.88938191717321,
+      "evidence": [
+        {
+          "span_id": "006deffa-1906-4677-942b-2a29bd47046b:496:745",
+          "document_id": "96575fc6-1212-4cb1-889f-179dd9515854",
+          "revision_id": "61ce4e43-1d79-4cee-af6c-43026828532a",
+          "chunk_id": "006deffa-1906-4677-942b-2a29bd47046b",
+          "start": 496,
+          "end": 745,
+          "text": "Electrical characterization and Raman spectroscopy measurements on graphene field-effect transistors show that adsorption of NO2 molecules significantly increases hole concentration in graphene, which results in the observed sensitivity enhancement.",
+          "source_text_sha256": "7e3054e2cb1e788c55f6c5f17b4855b0993823ba82f68f8cf3c012bac4ed1393"
+        }
+      ]
+    },
+    {
+      "document": "D060",
+      "category": "lost_true_raw",
+      "head": "graphene field-effect transistors",
+      "head_kind": "DEVICE",
+      "tail": "graphene",
+      "tail_kind": "MATERIAL",
+      "relation": "USES_MATERIAL",
+      "reason": "NO_EXPLICIT_PREDICATE_BETWEEN_ENDPOINTS",
+      "score": 0.9090951798127397,
+      "evidence": [
+        {
+          "span_id": "006deffa-1906-4677-942b-2a29bd47046b:496:745",
+          "document_id": "96575fc6-1212-4cb1-889f-179dd9515854",
+          "revision_id": "61ce4e43-1d79-4cee-af6c-43026828532a",
+          "chunk_id": "006deffa-1906-4677-942b-2a29bd47046b",
+          "start": 496,
+          "end": 745,
+          "text": "Electrical characterization and Raman spectroscopy measurements on graphene field-effect transistors show that adsorption of NO2 molecules significantly increases hole concentration in graphene, which results in the observed sensitivity enhancement.",
+          "source_text_sha256": "7e3054e2cb1e788c55f6c5f17b4855b0993823ba82f68f8cf3c012bac4ed1393"
+        }
+      ]
+    },
+    {
+      "document": "D078",
+      "category": "accepted_false",
+      "head": "preferential adsorption",
+      "head_kind": "PROCESS",
+      "tail": "graphene",
+      "tail_kind": "MATERIAL",
+      "relation": "ACTS_ON",
+      "reason": null,
+      "score": 0.9114187317199381,
+      "evidence": [
+        {
+          "span_id": "8e528f95-22fc-4b9a-8b16-90391b584bc3:745:842",
+          "document_id": "c56c60ec-74f3-44d5-83e6-f83d87b921f5",
+          "revision_id": "85c8c16f-76e7-45fb-a9b2-6124974a51e9",
+          "chunk_id": "8e528f95-22fc-4b9a-8b16-90391b584bc3",
+          "start": 745,
+          "end": 842,
+          "text": "Our first-principles calculation supported a preferential adsorption of NO 2 on n-doped graphene.",
+          "source_text_sha256": "b0f5211d8a7b056bc9d7cccb1c371076afd5e4dc80f88e80baf6e7c51c26a088"
+        }
+      ]
+    },
+    {
+      "document": "D078",
+      "category": "accepted_false",
+      "head": "n-channel graphene gas sensors",
+      "head_kind": "DEVICE",
+      "tail": "graphene",
+      "tail_kind": "MATERIAL",
+      "relation": "USES_MATERIAL",
+      "reason": null,
+      "score": 0.9402960090053897,
+      "evidence": [
+        {
+          "span_id": "8e528f95-22fc-4b9a-8b16-90391b584bc3:118:232",
+          "document_id": "c56c60ec-74f3-44d5-83e6-f83d87b921f5",
+          "revision_id": "85c8c16f-76e7-45fb-a9b2-6124974a51e9",
+          "chunk_id": "8e528f95-22fc-4b9a-8b16-90391b584bc3",
+          "start": 118,
+          "end": 232,
+          "text": "Here, ultrasensitive n-channel graphene gas sensors were developed by using n-doped graphene with ethylene amines.",
+          "source_text_sha256": "b0f5211d8a7b056bc9d7cccb1c371076afd5e4dc80f88e80baf6e7c51c26a088"
+        }
+      ]
+    },
+    {
+      "document": "D078",
+      "category": "lost_true_raw",
+      "head": "n-doped graphene",
+      "head_kind": "MATERIAL",
+      "tail": "current decrease",
+      "tail_kind": "PROPERTY",
+      "relation": "HAS_PROPERTY",
+      "reason": "NO_EXPLICIT_PREDICATE_BETWEEN_ENDPOINTS",
+      "score": 0.8773519484590542,
+      "evidence": [
+        {
+          "span_id": "8e528f95-22fc-4b9a-8b16-90391b584bc3:233:429",
+          "document_id": "c56c60ec-74f3-44d5-83e6-f83d87b921f5",
+          "revision_id": "85c8c16f-76e7-45fb-a9b2-6124974a51e9",
+          "chunk_id": "8e528f95-22fc-4b9a-8b16-90391b584bc3",
+          "start": 233,
+          "end": 429,
+          "text": "The exposure of the n-doped graphene to oxidizing gases such as NO 2 leads to a current decrease that depends strongly on the number of amine functional groups in various types of ethylene amines.",
+          "source_text_sha256": "b0f5211d8a7b056bc9d7cccb1c371076afd5e4dc80f88e80baf6e7c51c26a088"
+        }
+      ]
+    },
+    {
+      "document": "D078",
+      "category": "accepted_false",
+      "head": "first-principles calculation",
+      "head_kind": "PROCESS",
+      "tail": "n-doped graphene",
+      "tail_kind": "MATERIAL",
+      "relation": "ACTS_ON",
+      "reason": null,
+      "score": 0.9070612073316305,
+      "evidence": [
+        {
+          "span_id": "8e528f95-22fc-4b9a-8b16-90391b584bc3:745:842",
+          "document_id": "c56c60ec-74f3-44d5-83e6-f83d87b921f5",
+          "revision_id": "85c8c16f-76e7-45fb-a9b2-6124974a51e9",
+          "chunk_id": "8e528f95-22fc-4b9a-8b16-90391b584bc3",
+          "start": 745,
+          "end": 842,
+          "text": "Our first-principles calculation supported a preferential adsorption of NO 2 on n-doped graphene.",
+          "source_text_sha256": "b0f5211d8a7b056bc9d7cccb1c371076afd5e4dc80f88e80baf6e7c51c26a088"
+        }
+      ]
+    },
+    {
+      "document": "D078",
+      "category": "accepted_false",
+      "head": "first-principles calculation",
+      "head_kind": "PROCESS",
+      "tail": "graphene",
+      "tail_kind": "MATERIAL",
+      "relation": "ACTS_ON",
+      "reason": null,
+      "score": 0.8560467346930221,
+      "evidence": [
+        {
+          "span_id": "8e528f95-22fc-4b9a-8b16-90391b584bc3:745:842",
+          "document_id": "c56c60ec-74f3-44d5-83e6-f83d87b921f5",
+          "revision_id": "85c8c16f-76e7-45fb-a9b2-6124974a51e9",
+          "chunk_id": "8e528f95-22fc-4b9a-8b16-90391b584bc3",
+          "start": 745,
+          "end": 842,
+          "text": "Our first-principles calculation supported a preferential adsorption of NO 2 on n-doped graphene.",
+          "source_text_sha256": "b0f5211d8a7b056bc9d7cccb1c371076afd5e4dc80f88e80baf6e7c51c26a088"
+        }
+      ]
+    },
+    {
+      "document": "D078",
+      "category": "lost_true_raw",
+      "head": "flexible graphene sensor",
+      "head_kind": "DEVICE",
+      "tail": "NO 2",
+      "tail_kind": "ANALYTE",
+      "relation": "DETECTS",
+      "reason": "NO_EXPLICIT_PREDICATE_BETWEEN_ENDPOINTS",
+      "score": 0.9345795896020488,
+      "evidence": [
+        {
+          "span_id": "509195ce-f818-487d-8196-eb0511b0acaf:233:471",
+          "document_id": "c56c60ec-74f3-44d5-83e6-f83d87b921f5",
+          "revision_id": "85c8c16f-76e7-45fb-a9b2-6124974a51e9",
+          "chunk_id": "509195ce-f818-487d-8196-eb0511b0acaf",
+          "start": 233,
+          "end": 471,
+          "text": "Because the n-channel is easily induced by a top-molecular dopant, a flexible graphene sensor with outstanding NO 2 detection capability was successfully fabricated on plastic without vertical stacks of gate-electrode and gate-dielectric.",
+          "source_text_sha256": "8cf72195f178a68bd7e6a2d2169cfb9fb999fd60e210183af6018a2992bca0e5"
+        }
+      ]
+    },
+    {
+      "document": "D078",
+      "category": "lost_true_raw",
+      "head": "flexible graphene sensor",
+      "head_kind": "DEVICE",
+      "tail": "plastic",
+      "tail_kind": "MATERIAL",
+      "relation": "USES_MATERIAL",
+      "reason": "UNSUPPORTED_CAPABILITY:NEGATION_SCOPE",
+      "score": 0.9089185592344149,
+      "evidence": [
+        {
+          "span_id": "509195ce-f818-487d-8196-eb0511b0acaf:233:471",
+          "document_id": "c56c60ec-74f3-44d5-83e6-f83d87b921f5",
+          "revision_id": "85c8c16f-76e7-45fb-a9b2-6124974a51e9",
+          "chunk_id": "509195ce-f818-487d-8196-eb0511b0acaf",
+          "start": 233,
+          "end": 471,
+          "text": "Because the n-channel is easily induced by a top-molecular dopant, a flexible graphene sensor with outstanding NO 2 detection capability was successfully fabricated on plastic without vertical stacks of gate-electrode and gate-dielectric.",
+          "source_text_sha256": "8cf72195f178a68bd7e6a2d2169cfb9fb999fd60e210183af6018a2992bca0e5"
+        }
+      ]
+    },
+    {
+      "document": "D078",
+      "category": "lost_true_raw",
+      "head": "gate-free graphene gas sensors",
+      "head_kind": "DEVICE",
+      "tail": "NO 2",
+      "tail_kind": "ANALYTE",
+      "relation": "DETECTS",
+      "reason": "UNSUPPORTED_CAPABILITY:NEGATION_ATTACHMENT",
+      "score": 0.9530176631589881,
+      "evidence": [
+        {
+          "span_id": "509195ce-f818-487d-8196-eb0511b0acaf:472:652",
+          "document_id": "c56c60ec-74f3-44d5-83e6-f83d87b921f5",
+          "revision_id": "85c8c16f-76e7-45fb-a9b2-6124974a51e9",
+          "chunk_id": "509195ce-f818-487d-8196-eb0511b0acaf",
+          "start": 472,
+          "end": 652,
+          "text": "Our gate-free graphene gas sensors enabled by nondestructive molecular n-doping could be used for the selective detection of subppq-level NO 2 in a gas mixture with reducing gases.",
+          "source_text_sha256": "8cf72195f178a68bd7e6a2d2169cfb9fb999fd60e210183af6018a2992bca0e5"
+        }
+      ]
+    }
+  ],
+  "contextual_role_gold_inventory": {
+    "technical_performance": 45,
+    "technical_analyte": 24,
+    "technical_material": 69,
+    "technical_process": 32,
+    "technical_device": 31,
+    "technical_morphology": 18,
+    "technical_property": 29,
+    "energy_transport_promoter": 1,
+    "technical_operating_condition": 10,
+    "comparison_analyte": 9,
+    "electronic_interface": 4,
+    "interfacial_defect": 1,
+    "explicit_group": 5,
+    "technical_application": 18,
+    "target_analyte": 10,
+    "sensing_material": 5,
+    "composition_ratio": 1,
+    "technical_mechanism": 8,
+    "electronic_charge_region": 2,
+    "named_composite_constituent": 38,
+    "application": 1,
+    "technical_other": 1,
+    "material": 3,
+    "material_alias": 2,
+    "technical_technology": 3,
+    "permeating_gas": 2,
+    "restricted_gas": 1,
+    "requirement_bundle": 1,
+    "dopant": 5,
+    "charge_carrier_host": 1,
+    "charged_scattering_center": 2
+  },
+  "attribution_policy": "Each missed gold mention receives one prioritized error; overlapping predictions need not be unique; entity metrics remain strict multiset."
+}

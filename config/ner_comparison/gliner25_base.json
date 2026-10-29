@@ -1,0 +1,65 @@
+{
+  "seed": 42,
+  "data_dir": "data",
+  "ontology": "contracts/runtime_ontology.json",
+  "manifest": "contracts/dev_manifest.json",
+  "partition": "contracts/partition.json",
+  "ner": {
+    "checkpoint": "fastino/gliner2.5-base-v1",
+    "revision": "54785d51df8d86a0d8f2eb212fec15871aad2c4d",
+    "license": "Apache-2.0",
+    "threshold": 0.35,
+    "max_window_words": 140,
+    "overlap_words": 30,
+    "labels": {
+      "material": "MATERIAL",
+      "device or device component": "DEVICE",
+      "physical or chemical property": "PROPERTY",
+      "performance measure": "PERFORMANCE",
+      "analyte or target substance": "ANALYTE",
+      "technical process": "PROCESS",
+      "scientific mechanism": "MECHANISM",
+      "operating condition": "OPERATING_CONDITION",
+      "morphology or structure": "MORPHOLOGY",
+      "technology or method": "TECHNOLOGY",
+      "application or end use": "APPLICATION",
+      "other technical entity": "OTHER"
+    },
+    "local_dir": "artifacts/models/gliner25_base",
+    "tokenizer_checkpoint": "fastino/gliner2.5-base-v1",
+    "tokenizer_revision": "54785d51df8d86a0d8f2eb212fec15871aad2c4d",
+    "tokenizer_dir": "artifacts/models/gliner25_base",
+    "backend": "gliner2",
+    "runtime_dir": "artifacts/models/runtime_gliner25_base",
+    "model_files_lock": "contracts/ner_comparison/gliner25_base_files.json",
+    "overlap_policy": "allow",
+    "assets": [
+      [
+        "fastino/gliner2.5-base-v1",
+        "54785d51df8d86a0d8f2eb212fec15871aad2c4d",
+        "artifacts/models/gliner25_base",
+        [
+          "config.json",
+          "encoder_config/config.json",
+          "tokenizer.json",
+          "tokenizer_config.json",
+          "model.safetensors",
+          "README.md"
+        ]
+      ]
+    ]
+  },
+  "relations": {
+    "backend": "marked_pair_tfidf_logistic_ovr",
+    "model_dir": "artifacts/re_model",
+    "threshold": 0.65,
+    "no_relation_threshold": 0.65,
+    "max_features": 12000,
+    "C": 1.0,
+    "max_iter": 500,
+    "max_pairs_per_chunk": 400,
+    "max_gap_characters": 300,
+    "max_negatives_per_document": 250
+  },
+  "cpu_threads": 4
+}

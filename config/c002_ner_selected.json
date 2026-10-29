@@ -1,0 +1,49 @@
+{
+  "seed": 42,
+  "data_dir": "data",
+  "ontology": "contracts/runtime_ontology.json",
+  "manifest": "contracts/dev_manifest.json",
+  "partition": "contracts/partition.json",
+  "ner": {
+    "checkpoint": "urchade/gliner_small-v2.1",
+    "revision": "4e091416cf7c3481db542c2a3d26156916f3a47f",
+    "license": "Apache-2.0",
+    "threshold": 0.2,
+    "max_window_words": 140,
+    "overlap_words": 30,
+    "labels": {
+      "material": "MATERIAL",
+      "device or device component": "DEVICE",
+      "physical or chemical property": "PROPERTY",
+      "performance measure": "PERFORMANCE",
+      "analyte or target substance": "ANALYTE",
+      "technical process": "PROCESS",
+      "scientific mechanism": "MECHANISM",
+      "operating condition": "OPERATING_CONDITION",
+      "morphology or structure": "MORPHOLOGY",
+      "technology or method": "TECHNOLOGY",
+      "application or end use": "APPLICATION",
+      "other technical entity": "OTHER"
+    },
+    "local_dir": "artifacts/models/gliner_small-v2.1",
+    "tokenizer_checkpoint": "microsoft/deberta-v3-small",
+    "tokenizer_revision": "a36c739020e01763fe789b4b85e2df55d6180012",
+    "tokenizer_dir": "artifacts/models/deberta-v3-small"
+  },
+  "relations": {
+    "backend": "marked_pair_tfidf_logistic_ovr",
+    "model_dir": "artifacts/re_model",
+    "threshold": 0.65,
+    "no_relation_threshold": 0.65,
+    "max_features": 12000,
+    "C": 1.0,
+    "max_iter": 500,
+    "max_pairs_per_chunk": 1200,
+    "max_gap_characters": 300,
+    "max_negatives_per_document": 250,
+    "candidate_version": "c002"
+  },
+  "cpu_threads": 4,
+  "architecture_id": "C-002",
+  "scope_version": "c002"
+}

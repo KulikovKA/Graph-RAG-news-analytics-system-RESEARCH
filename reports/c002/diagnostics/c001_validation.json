@@ -1,0 +1,1751 @@
+{
+  "subset": "validation",
+  "per_kind": {
+    "MATERIAL": {
+      "tp": 15,
+      "fp": 24,
+      "fn": 21,
+      "gold": 36,
+      "predicted": 39,
+      "overlapping_recalled": 2,
+      "technical_notation_recalled": 0,
+      "overlapping_gold": 13,
+      "span_too_long": 4,
+      "wrong_kind_and_boundary": 2,
+      "wrong_kind_exact_span": 2,
+      "missed": 11,
+      "span_too_short": 2,
+      "precision": 0.38461538461538464,
+      "recall": 0.4166666666666667,
+      "f1": 0.4
+    },
+    "DEVICE": {
+      "tp": 9,
+      "fp": 6,
+      "fn": 17,
+      "gold": 26,
+      "predicted": 15,
+      "wrong_kind_exact_span": 4,
+      "span_too_short": 2,
+      "missed": 9,
+      "overlapping_gold": 10,
+      "overlapping_recalled": 4,
+      "technical_notation_recalled": 0,
+      "wrong_kind_and_boundary": 2,
+      "precision": 0.6,
+      "recall": 0.34615384615384615,
+      "f1": 0.43902439024390244
+    },
+    "PROPERTY": {
+      "tp": 17,
+      "fp": 14,
+      "fn": 26,
+      "gold": 43,
+      "predicted": 31,
+      "missed": 20,
+      "overlapping_recalled": 6,
+      "technical_notation_recalled": 0,
+      "overlapping_gold": 20,
+      "wrong_kind_and_boundary": 3,
+      "span_too_short": 3,
+      "precision": 0.5483870967741935,
+      "recall": 0.3953488372093023,
+      "f1": 0.4594594594594595
+    },
+    "PERFORMANCE": {
+      "tp": 11,
+      "fp": 7,
+      "fn": 7,
+      "gold": 18,
+      "predicted": 18,
+      "overlapping_recalled": 0,
+      "technical_notation_recalled": 0,
+      "wrong_kind_and_boundary": 1,
+      "missed": 5,
+      "technical_notation_gold": 1,
+      "wrong_kind_exact_span": 1,
+      "precision": 0.6111111111111112,
+      "recall": 0.6111111111111112,
+      "f1": 0.6111111111111112
+    },
+    "ANALYTE": {
+      "tp": 15,
+      "fp": 2,
+      "fn": 15,
+      "gold": 30,
+      "predicted": 17,
+      "technical_notation_gold": 11,
+      "missed": 12,
+      "overlapping_recalled": 1,
+      "technical_notation_recalled": 6,
+      "overlapping_gold": 3,
+      "span_too_short": 2,
+      "wrong_kind_and_boundary": 1,
+      "precision": 0.8823529411764706,
+      "recall": 0.5,
+      "f1": 0.6382978723404256
+    },
+    "PROCESS": {
+      "tp": 1,
+      "fp": 2,
+      "fn": 18,
+      "gold": 19,
+      "predicted": 3,
+      "span_too_long": 1,
+      "missed": 12,
+      "overlapping_gold": 10,
+      "wrong_kind_and_boundary": 5,
+      "overlapping_recalled": 0,
+      "technical_notation_recalled": 0,
+      "precision": 0.3333333333333333,
+      "recall": 0.05263157894736842,
+      "f1": 0.09090909090909091
+    },
+    "MECHANISM": {
+      "tp": 0,
+      "fp": 2,
+      "fn": 4,
+      "gold": 4,
+      "predicted": 2,
+      "overlapping_gold": 2,
+      "wrong_kind_and_boundary": 1,
+      "missed": 2,
+      "wrong_kind_exact_span": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "OPERATING_CONDITION": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 4,
+      "gold": 4,
+      "predicted": 0,
+      "missed": 3,
+      "technical_notation_gold": 1,
+      "wrong_kind_and_boundary": 1,
+      "precision": null,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "MORPHOLOGY": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 9,
+      "gold": 10,
+      "predicted": 1,
+      "overlapping_gold": 10,
+      "wrong_kind_and_boundary": 6,
+      "missed": 3,
+      "overlapping_recalled": 1,
+      "technical_notation_recalled": 0,
+      "precision": 1.0,
+      "recall": 0.1,
+      "f1": 0.18181818181818182
+    },
+    "TECHNOLOGY": {
+      "tp": 1,
+      "fp": 3,
+      "fn": 1,
+      "gold": 2,
+      "predicted": 4,
+      "overlapping_gold": 1,
+      "missed": 1,
+      "overlapping_recalled": 0,
+      "technical_notation_recalled": 0,
+      "precision": 0.25,
+      "recall": 0.5,
+      "f1": 0.3333333333333333
+    },
+    "APPLICATION": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 9,
+      "gold": 9,
+      "predicted": 0,
+      "missed": 9,
+      "overlapping_gold": 2,
+      "precision": null,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "OTHER": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 6,
+      "gold": 6,
+      "predicted": 0,
+      "overlapping_gold": 5,
+      "missed": 5,
+      "wrong_kind_exact_span": 1,
+      "precision": null,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  },
+  "examples": {
+    "DEVICE": [
+      {
+        "document": "D001",
+        "category": "wrong_kind_exact_span",
+        "gold": {
+          "surface_text": "E-textiles",
+          "kind": "DEVICE",
+          "start": 0,
+          "end": 10
+        },
+        "nearest": {
+          "surface_text": "E-textiles",
+          "kind": "MATERIAL",
+          "start": 0,
+          "end": 10
+        }
+      },
+      {
+        "document": "D001",
+        "category": "span_too_short",
+        "gold": {
+          "surface_text": "fiber gas sensor",
+          "kind": "DEVICE",
+          "start": 327,
+          "end": 343
+        },
+        "nearest": {
+          "surface_text": "gas sensor",
+          "kind": "DEVICE",
+          "start": 333,
+          "end": 343
+        }
+      },
+      {
+        "document": "D001",
+        "category": "missed",
+        "gold": {
+          "surface_text": "gas sensor",
+          "kind": "DEVICE",
+          "start": 398,
+          "end": 408
+        },
+        "nearest": null
+      },
+      {
+        "document": "D001",
+        "category": "missed",
+        "gold": {
+          "surface_text": "sensing layers",
+          "kind": "DEVICE",
+          "start": 567,
+          "end": 581
+        },
+        "nearest": null
+      },
+      {
+        "document": "D001",
+        "category": "missed",
+        "gold": {
+          "surface_text": "conducting fibers",
+          "kind": "DEVICE",
+          "start": 590,
+          "end": 607
+        },
+        "nearest": null
+      },
+      {
+        "document": "D001",
+        "category": "missed",
+        "gold": {
+          "surface_text": "as-prepared fiber",
+          "kind": "DEVICE",
+          "start": 613,
+          "end": 630
+        },
+        "nearest": null
+      }
+    ],
+    "PROPERTY": [
+      {
+        "document": "D001",
+        "category": "missed",
+        "gold": {
+          "surface_text": "low cost",
+          "kind": "PROPERTY",
+          "start": 58,
+          "end": 66
+        },
+        "nearest": null
+      },
+      {
+        "document": "D001",
+        "category": "missed",
+        "gold": {
+          "surface_text": "conformable compatibility with clothes",
+          "kind": "PROPERTY",
+          "start": 86,
+          "end": 124
+        },
+        "nearest": null
+      },
+      {
+        "document": "D001",
+        "category": "missed",
+        "gold": {
+          "surface_text": "easy-handing",
+          "kind": "PROPERTY",
+          "start": 178,
+          "end": 190
+        },
+        "nearest": null
+      },
+      {
+        "document": "D001",
+        "category": "missed",
+        "gold": {
+          "surface_text": "low cost",
+          "kind": "PROPERTY",
+          "start": 192,
+          "end": 200
+        },
+        "nearest": null
+      },
+      {
+        "document": "D001",
+        "category": "wrong_kind_and_boundary",
+        "gold": {
+          "surface_text": "scalable",
+          "kind": "PROPERTY",
+          "start": 206,
+          "end": 214
+        },
+        "nearest": {
+          "surface_text": "scalable fabricating strategy",
+          "kind": "PROCESS",
+          "start": 206,
+          "end": 235
+        }
+      },
+      {
+        "document": "D001",
+        "category": "missed",
+        "gold": {
+          "surface_text": "conductive",
+          "kind": "PROPERTY",
+          "start": 261,
+          "end": 271
+        },
+        "nearest": null
+      }
+    ],
+    "OTHER": [
+      {
+        "document": "D001",
+        "category": "missed",
+        "gold": {
+          "surface_text": "clothes",
+          "kind": "OTHER",
+          "start": 117,
+          "end": 124
+        },
+        "nearest": null
+      },
+      {
+        "document": "D001",
+        "category": "missed",
+        "gold": {
+          "surface_text": "flexible/stretchable templates",
+          "kind": "OTHER",
+          "start": 473,
+          "end": 503
+        },
+        "nearest": null
+      },
+      {
+        "document": "D001",
+        "category": "wrong_kind_exact_span",
+        "gold": {
+          "surface_text": "clothes",
+          "kind": "OTHER",
+          "start": 312,
+          "end": 319
+        },
+        "nearest": {
+          "surface_text": "clothes",
+          "kind": "MATERIAL",
+          "start": 312,
+          "end": 319
+        }
+      },
+      {
+        "document": "D003",
+        "category": "missed",
+        "gold": {
+          "surface_text": "respiratory diseases",
+          "kind": "OTHER",
+          "start": 269,
+          "end": 289
+        },
+        "nearest": null
+      },
+      {
+        "document": "D003",
+        "category": "missed",
+        "gold": {
+          "surface_text": "healthy volunteers",
+          "kind": "OTHER",
+          "start": 295,
+          "end": 313
+        },
+        "nearest": null
+      },
+      {
+        "document": "D003",
+        "category": "missed",
+        "gold": {
+          "surface_text": "exposed environments",
+          "kind": "OTHER",
+          "start": 447,
+          "end": 467
+        },
+        "nearest": null
+      }
+    ],
+    "APPLICATION": [
+      {
+        "document": "D001",
+        "category": "missed",
+        "gold": {
+          "surface_text": "wearable and portable smart electronics",
+          "kind": "APPLICATION",
+          "start": 128,
+          "end": 167
+        },
+        "nearest": null
+      },
+      {
+        "document": "D001",
+        "category": "missed",
+        "gold": {
+          "surface_text": "scalable applications",
+          "kind": "APPLICATION",
+          "start": 376,
+          "end": 397
+        },
+        "nearest": null
+      },
+      {
+        "document": "D001",
+        "category": "missed",
+        "gold": {
+          "surface_text": "monitoring of numerous human activities",
+          "kind": "APPLICATION",
+          "start": 459,
+          "end": 498
+        },
+        "nearest": null
+      },
+      {
+        "document": "D001",
+        "category": "missed",
+        "gold": {
+          "surface_text": "personal mobile electronics",
+          "kind": "APPLICATION",
+          "start": 502,
+          "end": 529
+        },
+        "nearest": null
+      },
+      {
+        "document": "D001",
+        "category": "missed",
+        "gold": {
+          "surface_text": "human–machine interactions",
+          "kind": "APPLICATION",
+          "start": 534,
+          "end": 560
+        },
+        "nearest": null
+      },
+      {
+        "document": "D003",
+        "category": "missed",
+        "gold": {
+          "surface_text": "monitor the personal local environment",
+          "kind": "APPLICATION",
+          "start": 137,
+          "end": 175
+        },
+        "nearest": null
+      }
+    ],
+    "PROCESS": [
+      {
+        "document": "D001",
+        "category": "span_too_long",
+        "gold": {
+          "surface_text": "fabricating strategy",
+          "kind": "PROCESS",
+          "start": 215,
+          "end": 235
+        },
+        "nearest": {
+          "surface_text": "scalable fabricating strategy",
+          "kind": "PROCESS",
+          "start": 206,
+          "end": 235
+        }
+      },
+      {
+        "document": "D001",
+        "category": "missed",
+        "gold": {
+          "surface_text": "bending cycles",
+          "kind": "PROCESS",
+          "start": 808,
+          "end": 822
+        },
+        "nearest": null
+      },
+      {
+        "document": "D001",
+        "category": "missed",
+        "gold": {
+          "surface_text": "twisting cycles",
+          "kind": "PROCESS",
+          "start": 829,
+          "end": 844
+        },
+        "nearest": null
+      },
+      {
+        "document": "D001",
+        "category": "missed",
+        "gold": {
+          "surface_text": "gas detection",
+          "kind": "PROCESS",
+          "start": 914,
+          "end": 927
+        },
+        "nearest": null
+      },
+      {
+        "document": "D001",
+        "category": "wrong_kind_and_boundary",
+        "gold": {
+          "surface_text": "knotting the fractured fibers, incorporating multiple sensors in series/parallel and weaving multisensor array networks integrated into clothes",
+          "kind": "PROCESS",
+          "start": 176,
+          "end": 319
+        },
+        "nearest": {
+          "surface_text": "knotting",
+          "kind": "TECHNOLOGY",
+          "start": 176,
+          "end": 184
+        }
+      },
+      {
+        "document": "D001",
+        "category": "wrong_kind_and_boundary",
+        "gold": {
+          "surface_text": "knotting the fractured fibers",
+          "kind": "PROCESS",
+          "start": 176,
+          "end": 205
+        },
+        "nearest": {
+          "surface_text": "knotting",
+          "kind": "TECHNOLOGY",
+          "start": 176,
+          "end": 184
+        }
+      }
+    ],
+    "MATERIAL": [
+      {
+        "document": "D001",
+        "category": "span_too_long",
+        "gold": {
+          "surface_text": "reduced graphene oxide",
+          "kind": "MATERIAL",
+          "start": 508,
+          "end": 530
+        },
+        "nearest": {
+          "surface_text": "reduced graphene oxide/mesoporous zinc oxide nanosheets",
+          "kind": "MATERIAL",
+          "start": 508,
+          "end": 563
+        }
+      },
+      {
+        "document": "D001",
+        "category": "span_too_long",
+        "gold": {
+          "surface_text": "mesoporous zinc oxide nanosheets",
+          "kind": "MATERIAL",
+          "start": 531,
+          "end": 563
+        },
+        "nearest": {
+          "surface_text": "reduced graphene oxide/mesoporous zinc oxide nanosheets",
+          "kind": "MATERIAL",
+          "start": 508,
+          "end": 563
+        }
+      },
+      {
+        "document": "D003",
+        "category": "wrong_kind_and_boundary",
+        "gold": {
+          "surface_text": "LIG",
+          "kind": "MATERIAL",
+          "start": 325,
+          "end": 328
+        },
+        "nearest": {
+          "surface_text": "laser-induced graphene (LIG)",
+          "kind": "DEVICE",
+          "start": 301,
+          "end": 329
+        }
+      },
+      {
+        "document": "D003",
+        "category": "span_too_long",
+        "gold": {
+          "surface_text": "elastomeric",
+          "kind": "MATERIAL",
+          "start": 357,
+          "end": 368
+        },
+        "nearest": {
+          "surface_text": "soft elastomeric substrate",
+          "kind": "MATERIAL",
+          "start": 352,
+          "end": 378
+        }
+      },
+      {
+        "document": "D003",
+        "category": "wrong_kind_exact_span",
+        "gold": {
+          "surface_text": "LIG",
+          "kind": "MATERIAL",
+          "start": 435,
+          "end": 438
+        },
+        "nearest": {
+          "surface_text": "LIG",
+          "kind": "DEVICE",
+          "start": 435,
+          "end": 438
+        }
+      },
+      {
+        "document": "D003",
+        "category": "wrong_kind_exact_span",
+        "gold": {
+          "surface_text": "needlelike LIG",
+          "kind": "MATERIAL",
+          "start": 600,
+          "end": 614
+        },
+        "nearest": {
+          "surface_text": "needlelike LIG",
+          "kind": "DEVICE",
+          "start": 600,
+          "end": 614
+        }
+      }
+    ],
+    "MORPHOLOGY": [
+      {
+        "document": "D001",
+        "category": "wrong_kind_and_boundary",
+        "gold": {
+          "surface_text": "mesoporous",
+          "kind": "MORPHOLOGY",
+          "start": 531,
+          "end": 541
+        },
+        "nearest": {
+          "surface_text": "reduced graphene oxide/mesoporous zinc oxide nanosheets",
+          "kind": "MATERIAL",
+          "start": 508,
+          "end": 563
+        }
+      },
+      {
+        "document": "D001",
+        "category": "wrong_kind_and_boundary",
+        "gold": {
+          "surface_text": "nanosheets",
+          "kind": "MORPHOLOGY",
+          "start": 553,
+          "end": 563
+        },
+        "nearest": {
+          "surface_text": "reduced graphene oxide/mesoporous zinc oxide nanosheets",
+          "kind": "MATERIAL",
+          "start": 508,
+          "end": 563
+        }
+      },
+      {
+        "document": "D001",
+        "category": "missed",
+        "gold": {
+          "surface_text": "series/parallel",
+          "kind": "MORPHOLOGY",
+          "start": 241,
+          "end": 256
+        },
+        "nearest": null
+      },
+      {
+        "document": "D003",
+        "category": "wrong_kind_and_boundary",
+        "gold": {
+          "surface_text": "needlelike",
+          "kind": "MORPHOLOGY",
+          "start": 600,
+          "end": 610
+        },
+        "nearest": {
+          "surface_text": "needlelike LIG",
+          "kind": "DEVICE",
+          "start": 600,
+          "end": 614
+        }
+      },
+      {
+        "document": "D035",
+        "category": "wrong_kind_and_boundary",
+        "gold": {
+          "surface_text": "graphene surfaces",
+          "kind": "MORPHOLOGY",
+          "start": 161,
+          "end": 178
+        },
+        "nearest": {
+          "surface_text": "graphene",
+          "kind": "MATERIAL",
+          "start": 161,
+          "end": 169
+        }
+      },
+      {
+        "document": "D092",
+        "category": "wrong_kind_and_boundary",
+        "gold": {
+          "surface_text": "graphene structure",
+          "kind": "MORPHOLOGY",
+          "start": 390,
+          "end": 408
+        },
+        "nearest": {
+          "surface_text": "graphene",
+          "kind": "MATERIAL",
+          "start": 390,
+          "end": 398
+        }
+      }
+    ],
+    "ANALYTE": [
+      {
+        "document": "D001",
+        "category": "missed",
+        "gold": {
+          "surface_text": "NO 2",
+          "kind": "ANALYTE",
+          "start": 755,
+          "end": 759
+        },
+        "nearest": null
+      },
+      {
+        "document": "D003",
+        "category": "missed",
+        "gold": {
+          "surface_text": "healthcare-relevant gases",
+          "kind": "ANALYTE",
+          "start": 46,
+          "end": 71
+        },
+        "nearest": null
+      },
+      {
+        "document": "D003",
+        "category": "missed",
+        "gold": {
+          "surface_text": "NO",
+          "kind": "ANALYTE",
+          "start": 711,
+          "end": 713
+        },
+        "nearest": null
+      },
+      {
+        "document": "D003",
+        "category": "missed",
+        "gold": {
+          "surface_text": "NO 2",
+          "kind": "ANALYTE",
+          "start": 734,
+          "end": 738
+        },
+        "nearest": null
+      },
+      {
+        "document": "D003",
+        "category": "missed",
+        "gold": {
+          "surface_text": "NO",
+          "kind": "ANALYTE",
+          "start": 783,
+          "end": 785
+        },
+        "nearest": null
+      },
+      {
+        "document": "D003",
+        "category": "span_too_short",
+        "gold": {
+          "surface_text": "NO 2",
+          "kind": "ANALYTE",
+          "start": 801,
+          "end": 805
+        },
+        "nearest": {
+          "surface_text": "NO",
+          "kind": "ANALYTE",
+          "start": 801,
+          "end": 803
+        }
+      }
+    ],
+    "PERFORMANCE": [
+      {
+        "document": "D001",
+        "category": "wrong_kind_and_boundary",
+        "gold": {
+          "surface_text": "strain strength",
+          "kind": "PERFORMANCE",
+          "start": 853,
+          "end": 868
+        },
+        "nearest": {
+          "surface_text": "65% strain strength",
+          "kind": "PROPERTY",
+          "start": 849,
+          "end": 868
+        }
+      },
+      {
+        "document": "D003",
+        "category": "missed",
+        "gold": {
+          "surface_text": "large response",
+          "kind": "PERFORMANCE",
+          "start": 677,
+          "end": 691
+        },
+        "nearest": null
+      },
+      {
+        "document": "D003",
+        "category": "missed",
+        "gold": {
+          "surface_text": "stretched by 30%",
+          "kind": "PERFORMANCE",
+          "start": 1000,
+          "end": 1016
+        },
+        "nearest": null
+      },
+      {
+        "document": "D035",
+        "category": "wrong_kind_exact_span",
+        "gold": {
+          "surface_text": "selectivity",
+          "kind": "PERFORMANCE",
+          "start": 352,
+          "end": 363
+        },
+        "nearest": {
+          "surface_text": "selectivity",
+          "kind": "PROPERTY",
+          "start": 352,
+          "end": 363
+        }
+      },
+      {
+        "document": "D035",
+        "category": "missed",
+        "gold": {
+          "surface_text": "highly sensitive and selective",
+          "kind": "PERFORMANCE",
+          "start": 580,
+          "end": 610
+        },
+        "nearest": null
+      },
+      {
+        "document": "D092",
+        "category": "missed",
+        "gold": {
+          "surface_text": "much stronger adsorption",
+          "kind": "PERFORMANCE",
+          "start": 481,
+          "end": 505
+        },
+        "nearest": null
+      }
+    ],
+    "OPERATING_CONDITION": [
+      {
+        "document": "D001",
+        "category": "missed",
+        "gold": {
+          "surface_text": "room-temperature",
+          "kind": "OPERATING_CONDITION",
+          "start": 897,
+          "end": 913
+        },
+        "nearest": null
+      },
+      {
+        "document": "D003",
+        "category": "missed",
+        "gold": {
+          "surface_text": "humid environment",
+          "kind": "OPERATING_CONDITION",
+          "start": 109,
+          "end": 126
+        },
+        "nearest": null
+      },
+      {
+        "document": "D003",
+        "category": "wrong_kind_and_boundary",
+        "gold": {
+          "surface_text": "relative humidity of 90%",
+          "kind": "OPERATING_CONDITION",
+          "start": 54,
+          "end": 78
+        },
+        "nearest": {
+          "surface_text": "relative humidity",
+          "kind": "PROPERTY",
+          "start": 54,
+          "end": 71
+        }
+      },
+      {
+        "document": "D003",
+        "category": "missed",
+        "gold": {
+          "surface_text": "different times of the day",
+          "kind": "OPERATING_CONDITION",
+          "start": 183,
+          "end": 209
+        },
+        "nearest": null
+      }
+    ],
+    "MECHANISM": [
+      {
+        "document": "D003",
+        "category": "wrong_kind_and_boundary",
+        "gold": {
+          "surface_text": "design of a stretchable serpentine structure in the LIG electrode and strain isolation from the stiff island",
+          "kind": "MECHANISM",
+          "start": 863,
+          "end": 971
+        },
+        "nearest": {
+          "surface_text": "stretchable serpentine structure",
+          "kind": "MORPHOLOGY",
+          "start": 875,
+          "end": 907
+        }
+      },
+      {
+        "document": "D003",
+        "category": "missed",
+        "gold": {
+          "surface_text": "strain isolation",
+          "kind": "MECHANISM",
+          "start": 933,
+          "end": 949
+        },
+        "nearest": null
+      },
+      {
+        "document": "D035",
+        "category": "wrong_kind_exact_span",
+        "gold": {
+          "surface_text": "sensing mechanism",
+          "kind": "MECHANISM",
+          "start": 106,
+          "end": 123
+        },
+        "nearest": {
+          "surface_text": "sensing mechanism",
+          "kind": "PROCESS",
+          "start": 106,
+          "end": 123
+        }
+      },
+      {
+        "document": "D092",
+        "category": "missed",
+        "gold": {
+          "surface_text": "strong interactions",
+          "kind": "MECHANISM",
+          "start": 751,
+          "end": 770
+        },
+        "nearest": null
+      }
+    ],
+    "TECHNOLOGY": [
+      {
+        "document": "D035",
+        "category": "missed",
+        "gold": {
+          "surface_text": "density functional theory (DFT) calculations",
+          "kind": "TECHNOLOGY",
+          "start": 18,
+          "end": 62
+        },
+        "nearest": null
+      }
+    ]
+  },
+  "pair_waterfall": {
+    "predicted_endpoints": {
+      "gold_relations": 132,
+      "both_exact_typed_endpoints": 8,
+      "same_sentence": 7,
+      "domain_range": 7,
+      "max_gap": 7,
+      "budget": 7
+    },
+    "gold_endpoints_diagnostic": {
+      "gold_relations": 132,
+      "both_exact_typed_endpoints": 132,
+      "same_sentence": 127,
+      "domain_range": 127,
+      "max_gap": 127,
+      "budget": 125
+    }
+  },
+  "documents": {
+    "D001": {
+      "predicted_endpoints": {
+        "gold_relations": 51
+      },
+      "gold_endpoints_diagnostic": {
+        "gold_relations": 51,
+        "both_exact_typed_endpoints": 51,
+        "same_sentence": 51,
+        "domain_range": 51,
+        "max_gap": 51,
+        "budget": 51
+      }
+    },
+    "D003": {
+      "predicted_endpoints": {
+        "gold_relations": 47,
+        "both_exact_typed_endpoints": 2,
+        "same_sentence": 2,
+        "domain_range": 2,
+        "max_gap": 2,
+        "budget": 2
+      },
+      "gold_endpoints_diagnostic": {
+        "gold_relations": 47,
+        "both_exact_typed_endpoints": 47,
+        "same_sentence": 44,
+        "domain_range": 44,
+        "max_gap": 44,
+        "budget": 42
+      }
+    },
+    "D035": {
+      "predicted_endpoints": {
+        "gold_relations": 15,
+        "both_exact_typed_endpoints": 3,
+        "same_sentence": 2,
+        "domain_range": 2,
+        "max_gap": 2,
+        "budget": 2
+      },
+      "gold_endpoints_diagnostic": {
+        "gold_relations": 15,
+        "both_exact_typed_endpoints": 15,
+        "same_sentence": 13,
+        "domain_range": 13,
+        "max_gap": 13,
+        "budget": 13
+      }
+    },
+    "D092": {
+      "predicted_endpoints": {
+        "gold_relations": 19,
+        "both_exact_typed_endpoints": 3,
+        "same_sentence": 3,
+        "domain_range": 3,
+        "max_gap": 3,
+        "budget": 3
+      },
+      "gold_endpoints_diagnostic": {
+        "gold_relations": 19,
+        "both_exact_typed_endpoints": 19,
+        "same_sentence": 19,
+        "domain_range": 19,
+        "max_gap": 19,
+        "budget": 19
+      }
+    }
+  },
+  "gate_review": [
+    {
+      "document": "D001",
+      "category": "accepted_false",
+      "head": "E-textiles",
+      "head_kind": "MATERIAL",
+      "tail": "light weight",
+      "tail_kind": "PROPERTY",
+      "relation": "HAS_PROPERTY",
+      "reason": null,
+      "score": 0.9630950107025007,
+      "evidence": [
+        {
+          "span_id": "6319af2d-0fe1-4daa-87c6-131c379a75c9:0:168",
+          "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+          "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+          "chunk_id": "6319af2d-0fe1-4daa-87c6-131c379a75c9",
+          "start": 0,
+          "end": 168,
+          "text": "E-textiles are gaining growing popularity recently due to low cost, light weight, and conformable compatibility with clothes in wearable and portable smart electronics.",
+          "source_text_sha256": "51d6b3595cc1b465fba348487a2c2784ee54f3ce01e850c9bea6eb5d424b0831"
+        }
+      ]
+    },
+    {
+      "document": "D001",
+      "category": "accepted_false",
+      "head": "fractured fibers",
+      "head_kind": "MATERIAL",
+      "tail": "practicability",
+      "tail_kind": "PERFORMANCE",
+      "relation": "HAS_PERFORMANCE",
+      "reason": null,
+      "score": 0.8696340878571927,
+      "evidence": [
+        {
+          "span_id": "e9796bf6-68c8-440f-a814-ca185157cce3:0:320",
+          "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+          "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+          "chunk_id": "e9796bf6-68c8-440f-a814-ca185157cce3",
+          "start": 0,
+          "end": 320,
+          "text": "More significantly, scalable wearable characteristics including repairability, reliability, stability, and practicability have been efficiently improved, which are achieved by knotting the fractured fibers, incorporating multiple sensors in series/parallel and weaving multisensor array networks integrated into clothes.",
+          "source_text_sha256": "272bcd1547345d4fa14705d9e0af1c56a2d5692244e2bb2b8f3b8b04b12da3a3"
+        }
+      ]
+    },
+    {
+      "document": "D001",
+      "category": "accepted_false",
+      "head": "fractured fibers",
+      "head_kind": "MATERIAL",
+      "tail": "practicability",
+      "tail_kind": "PROPERTY",
+      "relation": "HAS_PROPERTY",
+      "reason": null,
+      "score": 0.8348748308258663,
+      "evidence": [
+        {
+          "span_id": "e9796bf6-68c8-440f-a814-ca185157cce3:0:320",
+          "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+          "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+          "chunk_id": "e9796bf6-68c8-440f-a814-ca185157cce3",
+          "start": 0,
+          "end": 320,
+          "text": "More significantly, scalable wearable characteristics including repairability, reliability, stability, and practicability have been efficiently improved, which are achieved by knotting the fractured fibers, incorporating multiple sensors in series/parallel and weaving multisensor array networks integrated into clothes.",
+          "source_text_sha256": "272bcd1547345d4fa14705d9e0af1c56a2d5692244e2bb2b8f3b8b04b12da3a3"
+        }
+      ]
+    },
+    {
+      "document": "D001",
+      "category": "accepted_false",
+      "head": "fractured fibers",
+      "head_kind": "MATERIAL",
+      "tail": "stability",
+      "tail_kind": "PERFORMANCE",
+      "relation": "HAS_PERFORMANCE",
+      "reason": null,
+      "score": 0.8395364456214094,
+      "evidence": [
+        {
+          "span_id": "e9796bf6-68c8-440f-a814-ca185157cce3:0:320",
+          "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+          "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+          "chunk_id": "e9796bf6-68c8-440f-a814-ca185157cce3",
+          "start": 0,
+          "end": 320,
+          "text": "More significantly, scalable wearable characteristics including repairability, reliability, stability, and practicability have been efficiently improved, which are achieved by knotting the fractured fibers, incorporating multiple sensors in series/parallel and weaving multisensor array networks integrated into clothes.",
+          "source_text_sha256": "272bcd1547345d4fa14705d9e0af1c56a2d5692244e2bb2b8f3b8b04b12da3a3"
+        }
+      ]
+    },
+    {
+      "document": "D001",
+      "category": "accepted_false",
+      "head": "fractured fibers",
+      "head_kind": "MATERIAL",
+      "tail": "stability",
+      "tail_kind": "PROPERTY",
+      "relation": "HAS_PROPERTY",
+      "reason": null,
+      "score": 0.849508898498091,
+      "evidence": [
+        {
+          "span_id": "e9796bf6-68c8-440f-a814-ca185157cce3:0:320",
+          "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+          "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+          "chunk_id": "e9796bf6-68c8-440f-a814-ca185157cce3",
+          "start": 0,
+          "end": 320,
+          "text": "More significantly, scalable wearable characteristics including repairability, reliability, stability, and practicability have been efficiently improved, which are achieved by knotting the fractured fibers, incorporating multiple sensors in series/parallel and weaving multisensor array networks integrated into clothes.",
+          "source_text_sha256": "272bcd1547345d4fa14705d9e0af1c56a2d5692244e2bb2b8f3b8b04b12da3a3"
+        }
+      ]
+    },
+    {
+      "document": "D001",
+      "category": "accepted_false",
+      "head": "fractured fibers",
+      "head_kind": "MATERIAL",
+      "tail": "reliability",
+      "tail_kind": "PERFORMANCE",
+      "relation": "HAS_PERFORMANCE",
+      "reason": null,
+      "score": 0.868685648291184,
+      "evidence": [
+        {
+          "span_id": "e9796bf6-68c8-440f-a814-ca185157cce3:0:320",
+          "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+          "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+          "chunk_id": "e9796bf6-68c8-440f-a814-ca185157cce3",
+          "start": 0,
+          "end": 320,
+          "text": "More significantly, scalable wearable characteristics including repairability, reliability, stability, and practicability have been efficiently improved, which are achieved by knotting the fractured fibers, incorporating multiple sensors in series/parallel and weaving multisensor array networks integrated into clothes.",
+          "source_text_sha256": "272bcd1547345d4fa14705d9e0af1c56a2d5692244e2bb2b8f3b8b04b12da3a3"
+        }
+      ]
+    },
+    {
+      "document": "D001",
+      "category": "accepted_false",
+      "head": "fractured fibers",
+      "head_kind": "MATERIAL",
+      "tail": "reliability",
+      "tail_kind": "PROPERTY",
+      "relation": "HAS_PROPERTY",
+      "reason": null,
+      "score": 0.8751649356762135,
+      "evidence": [
+        {
+          "span_id": "e9796bf6-68c8-440f-a814-ca185157cce3:0:320",
+          "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+          "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+          "chunk_id": "e9796bf6-68c8-440f-a814-ca185157cce3",
+          "start": 0,
+          "end": 320,
+          "text": "More significantly, scalable wearable characteristics including repairability, reliability, stability, and practicability have been efficiently improved, which are achieved by knotting the fractured fibers, incorporating multiple sensors in series/parallel and weaving multisensor array networks integrated into clothes.",
+          "source_text_sha256": "272bcd1547345d4fa14705d9e0af1c56a2d5692244e2bb2b8f3b8b04b12da3a3"
+        }
+      ]
+    },
+    {
+      "document": "D001",
+      "category": "accepted_false",
+      "head": "multiple sensors",
+      "head_kind": "DEVICE",
+      "tail": "practicability",
+      "tail_kind": "PERFORMANCE",
+      "relation": "HAS_PERFORMANCE",
+      "reason": null,
+      "score": 0.8771097122042251,
+      "evidence": [
+        {
+          "span_id": "e9796bf6-68c8-440f-a814-ca185157cce3:0:320",
+          "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+          "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+          "chunk_id": "e9796bf6-68c8-440f-a814-ca185157cce3",
+          "start": 0,
+          "end": 320,
+          "text": "More significantly, scalable wearable characteristics including repairability, reliability, stability, and practicability have been efficiently improved, which are achieved by knotting the fractured fibers, incorporating multiple sensors in series/parallel and weaving multisensor array networks integrated into clothes.",
+          "source_text_sha256": "272bcd1547345d4fa14705d9e0af1c56a2d5692244e2bb2b8f3b8b04b12da3a3"
+        }
+      ]
+    },
+    {
+      "document": "D001",
+      "category": "accepted_false",
+      "head": "fractured fibers",
+      "head_kind": "MATERIAL",
+      "tail": "repairability",
+      "tail_kind": "PROPERTY",
+      "relation": "HAS_PROPERTY",
+      "reason": null,
+      "score": 0.8751649356762135,
+      "evidence": [
+        {
+          "span_id": "e9796bf6-68c8-440f-a814-ca185157cce3:0:320",
+          "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+          "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+          "chunk_id": "e9796bf6-68c8-440f-a814-ca185157cce3",
+          "start": 0,
+          "end": 320,
+          "text": "More significantly, scalable wearable characteristics including repairability, reliability, stability, and practicability have been efficiently improved, which are achieved by knotting the fractured fibers, incorporating multiple sensors in series/parallel and weaving multisensor array networks integrated into clothes.",
+          "source_text_sha256": "272bcd1547345d4fa14705d9e0af1c56a2d5692244e2bb2b8f3b8b04b12da3a3"
+        }
+      ]
+    },
+    {
+      "document": "D001",
+      "category": "accepted_false",
+      "head": "multiple sensors",
+      "head_kind": "DEVICE",
+      "tail": "stability",
+      "tail_kind": "PERFORMANCE",
+      "relation": "HAS_PERFORMANCE",
+      "reason": null,
+      "score": 0.8503756010490949,
+      "evidence": [
+        {
+          "span_id": "e9796bf6-68c8-440f-a814-ca185157cce3:0:320",
+          "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+          "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+          "chunk_id": "e9796bf6-68c8-440f-a814-ca185157cce3",
+          "start": 0,
+          "end": 320,
+          "text": "More significantly, scalable wearable characteristics including repairability, reliability, stability, and practicability have been efficiently improved, which are achieved by knotting the fractured fibers, incorporating multiple sensors in series/parallel and weaving multisensor array networks integrated into clothes.",
+          "source_text_sha256": "272bcd1547345d4fa14705d9e0af1c56a2d5692244e2bb2b8f3b8b04b12da3a3"
+        }
+      ]
+    },
+    {
+      "document": "D001",
+      "category": "accepted_false",
+      "head": "multiple sensors",
+      "head_kind": "DEVICE",
+      "tail": "reliability",
+      "tail_kind": "PERFORMANCE",
+      "relation": "HAS_PERFORMANCE",
+      "reason": null,
+      "score": 0.8735547453442616,
+      "evidence": [
+        {
+          "span_id": "e9796bf6-68c8-440f-a814-ca185157cce3:0:320",
+          "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+          "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+          "chunk_id": "e9796bf6-68c8-440f-a814-ca185157cce3",
+          "start": 0,
+          "end": 320,
+          "text": "More significantly, scalable wearable characteristics including repairability, reliability, stability, and practicability have been efficiently improved, which are achieved by knotting the fractured fibers, incorporating multiple sensors in series/parallel and weaving multisensor array networks integrated into clothes.",
+          "source_text_sha256": "272bcd1547345d4fa14705d9e0af1c56a2d5692244e2bb2b8f3b8b04b12da3a3"
+        }
+      ]
+    },
+    {
+      "document": "D001",
+      "category": "accepted_false",
+      "head": "multisensor array networks",
+      "head_kind": "DEVICE",
+      "tail": "practicability",
+      "tail_kind": "PERFORMANCE",
+      "relation": "HAS_PERFORMANCE",
+      "reason": null,
+      "score": 0.8831630131153739,
+      "evidence": [
+        {
+          "span_id": "e9796bf6-68c8-440f-a814-ca185157cce3:0:320",
+          "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+          "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+          "chunk_id": "e9796bf6-68c8-440f-a814-ca185157cce3",
+          "start": 0,
+          "end": 320,
+          "text": "More significantly, scalable wearable characteristics including repairability, reliability, stability, and practicability have been efficiently improved, which are achieved by knotting the fractured fibers, incorporating multiple sensors in series/parallel and weaving multisensor array networks integrated into clothes.",
+          "source_text_sha256": "272bcd1547345d4fa14705d9e0af1c56a2d5692244e2bb2b8f3b8b04b12da3a3"
+        }
+      ]
+    },
+    {
+      "document": "D001",
+      "category": "accepted_false",
+      "head": "multisensor array networks",
+      "head_kind": "DEVICE",
+      "tail": "stability",
+      "tail_kind": "PERFORMANCE",
+      "relation": "HAS_PERFORMANCE",
+      "reason": null,
+      "score": 0.8563503862657023,
+      "evidence": [
+        {
+          "span_id": "e9796bf6-68c8-440f-a814-ca185157cce3:0:320",
+          "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+          "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+          "chunk_id": "e9796bf6-68c8-440f-a814-ca185157cce3",
+          "start": 0,
+          "end": 320,
+          "text": "More significantly, scalable wearable characteristics including repairability, reliability, stability, and practicability have been efficiently improved, which are achieved by knotting the fractured fibers, incorporating multiple sensors in series/parallel and weaving multisensor array networks integrated into clothes.",
+          "source_text_sha256": "272bcd1547345d4fa14705d9e0af1c56a2d5692244e2bb2b8f3b8b04b12da3a3"
+        }
+      ]
+    },
+    {
+      "document": "D001",
+      "category": "accepted_false",
+      "head": "multisensor array networks",
+      "head_kind": "DEVICE",
+      "tail": "reliability",
+      "tail_kind": "PERFORMANCE",
+      "relation": "HAS_PERFORMANCE",
+      "reason": null,
+      "score": 0.8829127202739817,
+      "evidence": [
+        {
+          "span_id": "e9796bf6-68c8-440f-a814-ca185157cce3:0:320",
+          "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+          "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+          "chunk_id": "e9796bf6-68c8-440f-a814-ca185157cce3",
+          "start": 0,
+          "end": 320,
+          "text": "More significantly, scalable wearable characteristics including repairability, reliability, stability, and practicability have been efficiently improved, which are achieved by knotting the fractured fibers, incorporating multiple sensors in series/parallel and weaving multisensor array networks integrated into clothes.",
+          "source_text_sha256": "272bcd1547345d4fa14705d9e0af1c56a2d5692244e2bb2b8f3b8b04b12da3a3"
+        }
+      ]
+    },
+    {
+      "document": "D001",
+      "category": "accepted_false",
+      "head": "clothes",
+      "head_kind": "MATERIAL",
+      "tail": "practicability",
+      "tail_kind": "PERFORMANCE",
+      "relation": "HAS_PERFORMANCE",
+      "reason": null,
+      "score": 0.8577286505813045,
+      "evidence": [
+        {
+          "span_id": "e9796bf6-68c8-440f-a814-ca185157cce3:0:320",
+          "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+          "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+          "chunk_id": "e9796bf6-68c8-440f-a814-ca185157cce3",
+          "start": 0,
+          "end": 320,
+          "text": "More significantly, scalable wearable characteristics including repairability, reliability, stability, and practicability have been efficiently improved, which are achieved by knotting the fractured fibers, incorporating multiple sensors in series/parallel and weaving multisensor array networks integrated into clothes.",
+          "source_text_sha256": "272bcd1547345d4fa14705d9e0af1c56a2d5692244e2bb2b8f3b8b04b12da3a3"
+        }
+      ]
+    },
+    {
+      "document": "D001",
+      "category": "accepted_false",
+      "head": "clothes",
+      "head_kind": "MATERIAL",
+      "tail": "practicability",
+      "tail_kind": "PROPERTY",
+      "relation": "HAS_PROPERTY",
+      "reason": null,
+      "score": 0.8364847303685786,
+      "evidence": [
+        {
+          "span_id": "e9796bf6-68c8-440f-a814-ca185157cce3:0:320",
+          "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+          "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+          "chunk_id": "e9796bf6-68c8-440f-a814-ca185157cce3",
+          "start": 0,
+          "end": 320,
+          "text": "More significantly, scalable wearable characteristics including repairability, reliability, stability, and practicability have been efficiently improved, which are achieved by knotting the fractured fibers, incorporating multiple sensors in series/parallel and weaving multisensor array networks integrated into clothes.",
+          "source_text_sha256": "272bcd1547345d4fa14705d9e0af1c56a2d5692244e2bb2b8f3b8b04b12da3a3"
+        }
+      ]
+    },
+    {
+      "document": "D001",
+      "category": "accepted_false",
+      "head": "clothes",
+      "head_kind": "MATERIAL",
+      "tail": "stability",
+      "tail_kind": "PERFORMANCE",
+      "relation": "HAS_PERFORMANCE",
+      "reason": null,
+      "score": 0.8243695471779626,
+      "evidence": [
+        {
+          "span_id": "e9796bf6-68c8-440f-a814-ca185157cce3:0:320",
+          "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+          "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+          "chunk_id": "e9796bf6-68c8-440f-a814-ca185157cce3",
+          "start": 0,
+          "end": 320,
+          "text": "More significantly, scalable wearable characteristics including repairability, reliability, stability, and practicability have been efficiently improved, which are achieved by knotting the fractured fibers, incorporating multiple sensors in series/parallel and weaving multisensor array networks integrated into clothes.",
+          "source_text_sha256": "272bcd1547345d4fa14705d9e0af1c56a2d5692244e2bb2b8f3b8b04b12da3a3"
+        }
+      ]
+    },
+    {
+      "document": "D001",
+      "category": "accepted_false",
+      "head": "clothes",
+      "head_kind": "MATERIAL",
+      "tail": "stability",
+      "tail_kind": "PROPERTY",
+      "relation": "HAS_PROPERTY",
+      "reason": null,
+      "score": 0.851461956880216,
+      "evidence": [
+        {
+          "span_id": "e9796bf6-68c8-440f-a814-ca185157cce3:0:320",
+          "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+          "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+          "chunk_id": "e9796bf6-68c8-440f-a814-ca185157cce3",
+          "start": 0,
+          "end": 320,
+          "text": "More significantly, scalable wearable characteristics including repairability, reliability, stability, and practicability have been efficiently improved, which are achieved by knotting the fractured fibers, incorporating multiple sensors in series/parallel and weaving multisensor array networks integrated into clothes.",
+          "source_text_sha256": "272bcd1547345d4fa14705d9e0af1c56a2d5692244e2bb2b8f3b8b04b12da3a3"
+        }
+      ]
+    },
+    {
+      "document": "D001",
+      "category": "accepted_false",
+      "head": "clothes",
+      "head_kind": "MATERIAL",
+      "tail": "reliability",
+      "tail_kind": "PERFORMANCE",
+      "relation": "HAS_PERFORMANCE",
+      "reason": null,
+      "score": 0.8569008680444982,
+      "evidence": [
+        {
+          "span_id": "e9796bf6-68c8-440f-a814-ca185157cce3:0:320",
+          "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+          "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+          "chunk_id": "e9796bf6-68c8-440f-a814-ca185157cce3",
+          "start": 0,
+          "end": 320,
+          "text": "More significantly, scalable wearable characteristics including repairability, reliability, stability, and practicability have been efficiently improved, which are achieved by knotting the fractured fibers, incorporating multiple sensors in series/parallel and weaving multisensor array networks integrated into clothes.",
+          "source_text_sha256": "272bcd1547345d4fa14705d9e0af1c56a2d5692244e2bb2b8f3b8b04b12da3a3"
+        }
+      ]
+    },
+    {
+      "document": "D001",
+      "category": "accepted_false",
+      "head": "clothes",
+      "head_kind": "MATERIAL",
+      "tail": "reliability",
+      "tail_kind": "PROPERTY",
+      "relation": "HAS_PROPERTY",
+      "reason": null,
+      "score": 0.8792612125862389,
+      "evidence": [
+        {
+          "span_id": "e9796bf6-68c8-440f-a814-ca185157cce3:0:320",
+          "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+          "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+          "chunk_id": "e9796bf6-68c8-440f-a814-ca185157cce3",
+          "start": 0,
+          "end": 320,
+          "text": "More significantly, scalable wearable characteristics including repairability, reliability, stability, and practicability have been efficiently improved, which are achieved by knotting the fractured fibers, incorporating multiple sensors in series/parallel and weaving multisensor array networks integrated into clothes.",
+          "source_text_sha256": "272bcd1547345d4fa14705d9e0af1c56a2d5692244e2bb2b8f3b8b04b12da3a3"
+        }
+      ]
+    },
+    {
+      "document": "D001",
+      "category": "accepted_false",
+      "head": "clothes",
+      "head_kind": "MATERIAL",
+      "tail": "repairability",
+      "tail_kind": "PROPERTY",
+      "relation": "HAS_PROPERTY",
+      "reason": null,
+      "score": 0.8792612125862389,
+      "evidence": [
+        {
+          "span_id": "e9796bf6-68c8-440f-a814-ca185157cce3:0:320",
+          "document_id": "00f9cfc7-459f-4c4d-8131-b425d01527dc",
+          "revision_id": "7664effe-8f20-46e8-b694-224b75bea829",
+          "chunk_id": "e9796bf6-68c8-440f-a814-ca185157cce3",
+          "start": 0,
+          "end": 320,
+          "text": "More significantly, scalable wearable characteristics including repairability, reliability, stability, and practicability have been efficiently improved, which are achieved by knotting the fractured fibers, incorporating multiple sensors in series/parallel and weaving multisensor array networks integrated into clothes.",
+          "source_text_sha256": "272bcd1547345d4fa14705d9e0af1c56a2d5692244e2bb2b8f3b8b04b12da3a3"
+        }
+      ]
+    },
+    {
+      "document": "D003",
+      "category": "lost_true_raw",
+      "head": "wearable devices",
+      "head_kind": "DEVICE",
+      "tail": "biomarkers",
+      "tail_kind": "ANALYTE",
+      "relation": "DETECTS",
+      "reason": "UNSUPPORTED_CAPABILITY:NEGATION_SCOPE",
+      "score": 0.7279140389533326,
+      "evidence": [
+        {
+          "span_id": "45f36916-7688-4edb-8dd1-2ac50ea13339:315:498",
+          "document_id": "06066c66-1454-4813-b7b7-f366b9956035",
+          "revision_id": "7af46631-a38f-430d-a43c-bcfa0dccac9e",
+          "chunk_id": "45f36916-7688-4edb-8dd1-2ac50ea13339",
+          "start": 315,
+          "end": 498,
+          "text": "Moisture-resistant, stretchable NO x gas sensors can expand the capability of wearable devices to detect biomarkers from humans and exposed environments for early disease diagnostics.",
+          "source_text_sha256": "93b20b0f39df3ee410854241c279ea62bb58bb7097cf578d2413e403427c1a88"
+        }
+      ]
+    },
+    {
+      "document": "D035",
+      "category": "lost_true_raw",
+      "head": "B–N@graphene",
+      "head_kind": "MATERIAL",
+      "tail": "electronic properties",
+      "tail_kind": "PROPERTY",
+      "relation": "HAS_PROPERTY",
+      "reason": "NO_EXPLICIT_PREDICATE_BETWEEN_ENDPOINTS",
+      "score": 0.8313809331652681,
+      "evidence": [
+        {
+          "span_id": "4f0f0e24-163f-4d49-a509-72a2393efd6a:365:533",
+          "document_id": "5f698fb2-5265-4343-a012-0c0fb3c6e9c4",
+          "revision_id": "6612f9ab-0007-4924-a4da-dc7e0bafdba3",
+          "chunk_id": "4f0f0e24-163f-4d49-a509-72a2393efd6a",
+          "start": 365,
+          "end": 533,
+          "text": "The electronic properties of the B–N@graphene surfaces change significantly compared to pure and B@ and N@graphene surfaces, while selective gas molecules are adsorbed.",
+          "source_text_sha256": "dc77ce8cc6bc90047c157e3478fef185677252383873f9ccd1db64ae3daab659"
+        }
+      ]
+    },
+    {
+      "document": "D092",
+      "category": "lost_true_raw",
+      "head": "gas sensor",
+      "head_kind": "DEVICE",
+      "tail": "B-doped graphene",
+      "tail_kind": "MATERIAL",
+      "relation": "USES_MATERIAL",
+      "reason": "UNSUPPORTED_CAPABILITY:COMPARISON_OR_DISTRIBUTION",
+      "score": 0.724626847037362,
+      "evidence": [
+        {
+          "span_id": "8c72db49-9f37-4151-a3be-46a88d5af916:890:1034",
+          "document_id": "ea87c55e-72ef-439c-aa6b-7285edc49095",
+          "revision_id": "19bedd9d-3827-402c-894b-e8ca762ecff7",
+          "chunk_id": "8c72db49-9f37-4151-a3be-46a88d5af916",
+          "start": 890,
+          "end": 1034,
+          "text": "The transport behavior of a gas sensor using B-doped graphene shows a sensitivity two orders of magnitude higher than that of pristine graphene.",
+          "source_text_sha256": "3cd403a29f08ece6f4d4437796b82391cb5783184abead4225be5fad86bc9f15"
+        }
+      ]
+    },
+    {
+      "document": "D092",
+      "category": "lost_true_raw",
+      "head": "gas sensor",
+      "head_kind": "DEVICE",
+      "tail": "sensitivity",
+      "tail_kind": "PERFORMANCE",
+      "relation": "HAS_PERFORMANCE",
+      "reason": "UNSUPPORTED_CAPABILITY:COMPARISON_OR_DISTRIBUTION",
+      "score": 0.8685350656044463,
+      "evidence": [
+        {
+          "span_id": "8c72db49-9f37-4151-a3be-46a88d5af916:890:1034",
+          "document_id": "ea87c55e-72ef-439c-aa6b-7285edc49095",
+          "revision_id": "19bedd9d-3827-402c-894b-e8ca762ecff7",
+          "chunk_id": "8c72db49-9f37-4151-a3be-46a88d5af916",
+          "start": 890,
+          "end": 1034,
+          "text": "The transport behavior of a gas sensor using B-doped graphene shows a sensitivity two orders of magnitude higher than that of pristine graphene.",
+          "source_text_sha256": "3cd403a29f08ece6f4d4437796b82391cb5783184abead4225be5fad86bc9f15"
+        }
+      ]
+    },
+    {
+      "document": "D092",
+      "category": "lost_true_raw",
+      "head": "gas sensors",
+      "head_kind": "DEVICE",
+      "tail": "defective graphenes",
+      "tail_kind": "MATERIAL",
+      "relation": "USES_MATERIAL",
+      "reason": "UNSUPPORTED_CAPABILITY:NEGATION_SCOPE",
+      "score": 0.6505369006808625,
+      "evidence": [
+        {
+          "span_id": "8c72db49-9f37-4151-a3be-46a88d5af916:0:274",
+          "document_id": "ea87c55e-72ef-439c-aa6b-7285edc49095",
+          "revision_id": "19bedd9d-3827-402c-894b-e8ca762ecff7",
+          "chunk_id": "8c72db49-9f37-4151-a3be-46a88d5af916",
+          "start": 0,
+          "end": 274,
+          "text": "The interactions between four different graphenes (including pristine, B- or N-doped and defective graphenes) and small gas molecules (CO, NO, NO(2) and NH(3)) were investigated by using density functional computations to exploit their potential applications as gas sensors.",
+          "source_text_sha256": "3cd403a29f08ece6f4d4437796b82391cb5783184abead4225be5fad86bc9f15"
+        }
+      ]
+    }
+  ],
+  "contextual_role_gold_inventory": {
+    "background_device_class": 1,
+    "technical_property": 37,
+    "integration_host": 2,
+    "technical_application": 9,
+    "technical_process": 17,
+    "technical_device": 19,
+    "fabrication_template": 1,
+    "template_function": 1,
+    "sensing_material": 1,
+    "sensing_component": 2,
+    "technical_morphology": 9,
+    "functional_layer": 1,
+    "technical_performance": 18,
+    "target_analyte": 11,
+    "technical_operating_condition": 4,
+    "explicit_group": 7,
+    "background_unmet_goal": 1,
+    "background_analyte_class": 1,
+    "target_analyte_class": 4,
+    "technical_material": 28,
+    "support_component": 1,
+    "substrate_material_class": 1,
+    "encapsulation_component": 1,
+    "dual_function_layer": 1,
+    "fabrication_parameter": 3,
+    "technical_mechanism": 4,
+    "mechanical_isolation_component": 1,
+    "sample_matrix": 1,
+    "clinical_target": 1,
+    "comparison_population": 1,
+    "prospective_device_class": 1,
+    "prospective_target_class": 1,
+    "prospective_sampling_context": 1,
+    "technical_technology": 2,
+    "technical_analyte": 11,
+    "material": 2
+  },
+  "attribution_policy": "Each missed gold mention receives one prioritized error; overlapping predictions need not be unique; entity metrics remain strict multiset."
+}

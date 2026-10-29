@@ -1,0 +1,73 @@
+{
+  "seed": 42,
+  "data_dir": "data",
+  "ontology": "contracts/runtime_ontology.json",
+  "manifest": "contracts/dev_manifest.json",
+  "partition": "contracts/partition.json",
+  "ner": {
+    "checkpoint": "urchade/gliner_large-v2.1",
+    "revision": "abd49a1f1ebc12af1be84d06f6848221cf96dcad",
+    "license": "Apache-2.0",
+    "threshold": 0.35,
+    "max_window_words": 140,
+    "overlap_words": 30,
+    "labels": {
+      "material": "MATERIAL",
+      "device or device component": "DEVICE",
+      "physical or chemical property": "PROPERTY",
+      "performance measure": "PERFORMANCE",
+      "analyte or target substance": "ANALYTE",
+      "technical process": "PROCESS",
+      "scientific mechanism": "MECHANISM",
+      "operating condition": "OPERATING_CONDITION",
+      "morphology or structure": "MORPHOLOGY",
+      "technology or method": "TECHNOLOGY",
+      "application or end use": "APPLICATION",
+      "other technical entity": "OTHER"
+    },
+    "local_dir": "artifacts/models/gliner_large",
+    "tokenizer_checkpoint": "microsoft/deberta-v3-large",
+    "tokenizer_revision": "64a8c8eab3e352a784c658aef62be1662607476f",
+    "tokenizer_dir": "artifacts/models/deberta-v3-large",
+    "backend": "gliner",
+    "runtime_dir": "artifacts/models/runtime_gliner_large",
+    "model_files_lock": "contracts/ner_comparison/gliner_large_files.json",
+    "weight_file": "pytorch_model.bin",
+    "assets": [
+      [
+        "urchade/gliner_large-v2.1",
+        "abd49a1f1ebc12af1be84d06f6848221cf96dcad",
+        "artifacts/models/gliner_large",
+        [
+          "gliner_config.json",
+          "pytorch_model.bin",
+          "README.md"
+        ]
+      ],
+      [
+        "microsoft/deberta-v3-large",
+        "64a8c8eab3e352a784c658aef62be1662607476f",
+        "artifacts/models/deberta-v3-large",
+        [
+          "config.json",
+          "tokenizer_config.json",
+          "spm.model",
+          "README.md"
+        ]
+      ]
+    ]
+  },
+  "relations": {
+    "backend": "marked_pair_tfidf_logistic_ovr",
+    "model_dir": "artifacts/re_model",
+    "threshold": 0.65,
+    "no_relation_threshold": 0.65,
+    "max_features": 12000,
+    "C": 1.0,
+    "max_iter": 500,
+    "max_pairs_per_chunk": 400,
+    "max_gap_characters": 300,
+    "max_negatives_per_document": 250
+  },
+  "cpu_threads": 4
+}
