@@ -1,0 +1,46 @@
+{
+  "glirel_published_control_reproduced": false,
+  "cause": "UNRESOLVED",
+  "expected_characters_scores_approximately": [
+    0.99,
+    0.99
+  ],
+  "observed_characters_scores": [
+    0.0010089167626574636,
+    0.0010857658926397562
+  ],
+  "checked_runtimes": [
+    "GLiREL 1.2.1 / Transformers 5.1.0",
+    "GLiREL 1.2.1 / Transformers 4.51.3",
+    "GLiREL 1.0.1 / Flair 0.14.0 / Transformers 4.51.3",
+    "GLiREL 1.0.1 / Flair 0.14.0 / Transformers 4.44.2"
+  ],
+  "official_loader_same_result": true,
+  "fast_and_slow_tokenizers_same_result": true,
+  "initial_guarded_dev_run": {
+    "documents": [
+      "D001",
+      "D003",
+      "D004",
+      "D010",
+      "D017",
+      "D024",
+      "D026",
+      "D035",
+      "D038",
+      "D060",
+      "D078",
+      "D092"
+    ],
+    "raw_predictions": 0,
+    "final_predictions": 0,
+    "wall_ms": 283278.10609992594,
+    "cpu_ms": 833500.0,
+    "peak_ram_bytes": 5156077568,
+    "ner_calls": 27,
+    "re_calls": 136,
+    "llm_calls": 0,
+    "local_run_sha256": "dee99bb7643015da2c3c45e26d45d950dbf11862bb5d93416bf5fd7255a95cd1"
+  },
+  "interpretation": "Runtime diagnostic excluded from scientific-quality comparison; no threshold lowering or synthetic replacement"
+}

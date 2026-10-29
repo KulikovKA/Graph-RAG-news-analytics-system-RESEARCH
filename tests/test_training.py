@@ -1,6 +1,7 @@
 from pathlib import Path
 
 import numpy as np
+import pytest
 
 from cgraph.common import config, read_json
 from cgraph.inputs import load_inputs, load_ontology
@@ -8,6 +9,7 @@ from cgraph.labels import load_labels
 from cgraph.relations import RelationClassifier, train
 
 
+@pytest.mark.historical_training
 def test_real_classifier_training_serialization_and_split(tmp_path):
     cfg = config()
     cfg["relations"]["model_dir"] = str(tmp_path / "model")

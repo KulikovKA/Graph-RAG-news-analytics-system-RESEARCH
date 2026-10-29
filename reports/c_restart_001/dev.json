@@ -1,0 +1,1956 @@
+{
+  "micro": {
+    "entity_span": {
+      "tp": 277,
+      "fp": 201,
+      "fn": 312,
+      "gold": 589,
+      "predicted": 478,
+      "precision": 0.5794979079497908,
+      "recall": 0.4702886247877759,
+      "f1": 0.5192127460168697
+    },
+    "entity_typed": {
+      "tp": 245,
+      "fp": 233,
+      "fn": 344,
+      "gold": 589,
+      "predicted": 478,
+      "precision": 0.5125523012552301,
+      "recall": 0.4159592529711375,
+      "f1": 0.4592314901593252
+    },
+    "relation_raw_end_to_end": {
+      "tp": 50,
+      "fp": 5508,
+      "fn": 340,
+      "gold": 390,
+      "predicted": 5558,
+      "precision": 0.008996041741633681,
+      "recall": 0.1282051282051282,
+      "f1": 0.016812373907195696
+    },
+    "relation_end_to_end": {
+      "tp": 48,
+      "fp": 4455,
+      "fn": 342,
+      "gold": 390,
+      "predicted": 4503,
+      "precision": 0.010659560293137908,
+      "recall": 0.12307692307692308,
+      "f1": 0.019619865113427344
+    },
+    "relation_given_candidate_endpoints": {
+      "tp": 48,
+      "fp": 1141,
+      "fn": 23,
+      "gold": 71,
+      "predicted": 1189,
+      "precision": 0.040370058873002525,
+      "recall": 0.676056338028169,
+      "f1": 0.0761904761904762
+    },
+    "qualified_relation": {
+      "tp": 0,
+      "fp": 4503,
+      "fn": 390,
+      "gold": 390,
+      "predicted": 4503,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "candidate_pair_recall": {
+      "covered": 71,
+      "gold": 390,
+      "recall": 0.18205128205128204
+    },
+    "abstention": {
+      "abstained": 1425,
+      "candidate_pairs": 3942,
+      "rate": 0.3614916286149163
+    }
+  },
+  "macro_document": {
+    "entity_span": {
+      "f1": 0.5106843423243829,
+      "documents": 12
+    },
+    "entity_typed": {
+      "f1": 0.44769126154186517,
+      "documents": 12
+    },
+    "relation_raw_end_to_end": {
+      "f1": 0.024429148698644213,
+      "documents": 12
+    },
+    "relation_end_to_end": {
+      "f1": 0.02930376915577279,
+      "documents": 12
+    },
+    "relation_given_candidate_endpoints": {
+      "f1": 0.13414857293148189,
+      "documents": 12
+    },
+    "qualified_relation": {
+      "f1": 0.0,
+      "documents": 12
+    }
+  },
+  "documents": {
+    "D001": {
+      "entity_span": {
+        "tp": 21,
+        "fp": 18,
+        "fn": 40,
+        "predicted": 39,
+        "gold": 61,
+        "precision": 0.5384615384615384,
+        "recall": 0.3442622950819672,
+        "f1": 0.42
+      },
+      "entity_typed": {
+        "tp": 17,
+        "fp": 22,
+        "fn": 44,
+        "predicted": 39,
+        "gold": 61,
+        "precision": 0.4358974358974359,
+        "recall": 0.2786885245901639,
+        "f1": 0.34
+      },
+      "relation_raw_end_to_end": {
+        "tp": 0,
+        "fp": 348,
+        "fn": 51,
+        "predicted": 348,
+        "gold": 51,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_end_to_end": {
+        "tp": 0,
+        "fp": 208,
+        "fn": 51,
+        "predicted": 208,
+        "gold": 51,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 0,
+        "fp": 18,
+        "fn": 0,
+        "predicted": 18,
+        "gold": 0,
+        "precision": 0.0,
+        "recall": null,
+        "f1": 0.0
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 208,
+        "fn": 51,
+        "predicted": 208,
+        "gold": 51,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 0,
+        "gold": 51,
+        "recall": 0.0
+      },
+      "abstention": {
+        "abstained": 160,
+        "candidate_pairs": 294
+      },
+      "accepted_assertions": 208,
+      "raw_proposals": 348,
+      "unsupported_proposals": 1
+    },
+    "D003": {
+      "entity_span": {
+        "tp": 21,
+        "fp": 11,
+        "fn": 48,
+        "predicted": 32,
+        "gold": 69,
+        "precision": 0.65625,
+        "recall": 0.30434782608695654,
+        "f1": 0.4158415841584158
+      },
+      "entity_typed": {
+        "tp": 18,
+        "fp": 14,
+        "fn": 51,
+        "predicted": 32,
+        "gold": 69,
+        "precision": 0.5625,
+        "recall": 0.2608695652173913,
+        "f1": 0.3564356435643564
+      },
+      "relation_raw_end_to_end": {
+        "tp": 2,
+        "fp": 142,
+        "fn": 45,
+        "predicted": 144,
+        "gold": 47,
+        "precision": 0.013888888888888888,
+        "recall": 0.0425531914893617,
+        "f1": 0.020942408376963352
+      },
+      "relation_end_to_end": {
+        "tp": 2,
+        "fp": 96,
+        "fn": 45,
+        "predicted": 98,
+        "gold": 47,
+        "precision": 0.02040816326530612,
+        "recall": 0.0425531914893617,
+        "f1": 0.027586206896551724
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 2,
+        "fp": 17,
+        "fn": 0,
+        "predicted": 19,
+        "gold": 2,
+        "precision": 0.10526315789473684,
+        "recall": 1.0,
+        "f1": 0.19047619047619047
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 98,
+        "fn": 47,
+        "predicted": 98,
+        "gold": 47,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 2,
+        "gold": 47,
+        "recall": 0.0425531914893617
+      },
+      "abstention": {
+        "abstained": 77,
+        "candidate_pairs": 148
+      },
+      "accepted_assertions": 98,
+      "raw_proposals": 144,
+      "unsupported_proposals": 0
+    },
+    "D004": {
+      "entity_span": {
+        "tp": 23,
+        "fp": 42,
+        "fn": 24,
+        "predicted": 65,
+        "gold": 47,
+        "precision": 0.35384615384615387,
+        "recall": 0.48936170212765956,
+        "f1": 0.4107142857142857
+      },
+      "entity_typed": {
+        "tp": 20,
+        "fp": 45,
+        "fn": 27,
+        "predicted": 65,
+        "gold": 47,
+        "precision": 0.3076923076923077,
+        "recall": 0.425531914893617,
+        "f1": 0.35714285714285715
+      },
+      "relation_raw_end_to_end": {
+        "tp": 3,
+        "fp": 1238,
+        "fn": 21,
+        "predicted": 1241,
+        "gold": 24,
+        "precision": 0.0024174053182917004,
+        "recall": 0.125,
+        "f1": 0.0047430830039525695
+      },
+      "relation_end_to_end": {
+        "tp": 3,
+        "fp": 1109,
+        "fn": 21,
+        "predicted": 1112,
+        "gold": 24,
+        "precision": 0.002697841726618705,
+        "recall": 0.125,
+        "f1": 0.00528169014084507
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 3,
+        "fp": 77,
+        "fn": 0,
+        "predicted": 80,
+        "gold": 3,
+        "precision": 0.0375,
+        "recall": 1.0,
+        "f1": 0.07228915662650602
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 1112,
+        "fn": 24,
+        "predicted": 1112,
+        "gold": 24,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 3,
+        "gold": 24,
+        "recall": 0.125
+      },
+      "abstention": {
+        "abstained": 113,
+        "candidate_pairs": 726
+      },
+      "accepted_assertions": 1112,
+      "raw_proposals": 1241,
+      "unsupported_proposals": 2
+    },
+    "D010": {
+      "entity_span": {
+        "tp": 59,
+        "fp": 18,
+        "fn": 46,
+        "predicted": 77,
+        "gold": 105,
+        "precision": 0.7662337662337663,
+        "recall": 0.5619047619047619,
+        "f1": 0.6483516483516484
+      },
+      "entity_typed": {
+        "tp": 57,
+        "fp": 20,
+        "fn": 48,
+        "predicted": 77,
+        "gold": 105,
+        "precision": 0.7402597402597403,
+        "recall": 0.5428571428571428,
+        "f1": 0.6263736263736264
+      },
+      "relation_raw_end_to_end": {
+        "tp": 10,
+        "fp": 1461,
+        "fn": 89,
+        "predicted": 1471,
+        "gold": 99,
+        "precision": 0.006798096532970768,
+        "recall": 0.10101010101010101,
+        "f1": 0.012738853503184714
+      },
+      "relation_end_to_end": {
+        "tp": 10,
+        "fp": 1311,
+        "fn": 89,
+        "predicted": 1321,
+        "gold": 99,
+        "precision": 0.00757002271006813,
+        "recall": 0.10101010101010101,
+        "f1": 0.014084507042253521
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 10,
+        "fp": 712,
+        "fn": 20,
+        "predicted": 722,
+        "gold": 30,
+        "precision": 0.013850415512465374,
+        "recall": 0.3333333333333333,
+        "f1": 0.026595744680851064
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 1321,
+        "fn": 99,
+        "predicted": 1321,
+        "gold": 99,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 30,
+        "gold": 99,
+        "recall": 0.30303030303030304
+      },
+      "abstention": {
+        "abstained": 501,
+        "candidate_pairs": 1230
+      },
+      "accepted_assertions": 1321,
+      "raw_proposals": 1471,
+      "unsupported_proposals": 0
+    },
+    "D017": {
+      "entity_span": {
+        "tp": 25,
+        "fp": 12,
+        "fn": 12,
+        "predicted": 37,
+        "gold": 37,
+        "precision": 0.6756756756756757,
+        "recall": 0.6756756756756757,
+        "f1": 0.6756756756756757
+      },
+      "entity_typed": {
+        "tp": 20,
+        "fp": 17,
+        "fn": 17,
+        "predicted": 37,
+        "gold": 37,
+        "precision": 0.5405405405405406,
+        "recall": 0.5405405405405406,
+        "f1": 0.5405405405405406
+      },
+      "relation_raw_end_to_end": {
+        "tp": 12,
+        "fp": 637,
+        "fn": 16,
+        "predicted": 649,
+        "gold": 28,
+        "precision": 0.01848998459167951,
+        "recall": 0.42857142857142855,
+        "f1": 0.03545051698670606
+      },
+      "relation_end_to_end": {
+        "tp": 12,
+        "fp": 541,
+        "fn": 16,
+        "predicted": 553,
+        "gold": 28,
+        "precision": 0.0216998191681736,
+        "recall": 0.42857142857142855,
+        "f1": 0.04130808950086059
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 12,
+        "fp": 116,
+        "fn": 0,
+        "predicted": 128,
+        "gold": 12,
+        "precision": 0.09375,
+        "recall": 1.0,
+        "f1": 0.17142857142857143
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 553,
+        "fn": 28,
+        "predicted": 553,
+        "gold": 28,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 12,
+        "gold": 28,
+        "recall": 0.42857142857142855
+      },
+      "abstention": {
+        "abstained": 87,
+        "candidate_pairs": 370
+      },
+      "accepted_assertions": 553,
+      "raw_proposals": 649,
+      "unsupported_proposals": 0
+    },
+    "D024": {
+      "entity_span": {
+        "tp": 16,
+        "fp": 17,
+        "fn": 24,
+        "predicted": 33,
+        "gold": 40,
+        "precision": 0.48484848484848486,
+        "recall": 0.4,
+        "f1": 0.4383561643835616
+      },
+      "entity_typed": {
+        "tp": 12,
+        "fp": 21,
+        "fn": 28,
+        "predicted": 33,
+        "gold": 40,
+        "precision": 0.36363636363636365,
+        "recall": 0.3,
+        "f1": 0.3287671232876712
+      },
+      "relation_raw_end_to_end": {
+        "tp": 1,
+        "fp": 287,
+        "fn": 19,
+        "predicted": 288,
+        "gold": 20,
+        "precision": 0.003472222222222222,
+        "recall": 0.05,
+        "f1": 0.006493506493506494
+      },
+      "relation_end_to_end": {
+        "tp": 1,
+        "fp": 199,
+        "fn": 19,
+        "predicted": 200,
+        "gold": 20,
+        "precision": 0.005,
+        "recall": 0.05,
+        "f1": 0.00909090909090909
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 1,
+        "fp": 14,
+        "fn": 0,
+        "predicted": 15,
+        "gold": 1,
+        "precision": 0.06666666666666667,
+        "recall": 1.0,
+        "f1": 0.125
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 200,
+        "fn": 20,
+        "predicted": 200,
+        "gold": 20,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 1,
+        "gold": 20,
+        "recall": 0.05
+      },
+      "abstention": {
+        "abstained": 58,
+        "candidate_pairs": 154
+      },
+      "accepted_assertions": 200,
+      "raw_proposals": 288,
+      "unsupported_proposals": 15
+    },
+    "D026": {
+      "entity_span": {
+        "tp": 19,
+        "fp": 10,
+        "fn": 12,
+        "predicted": 29,
+        "gold": 31,
+        "precision": 0.6551724137931034,
+        "recall": 0.6129032258064516,
+        "f1": 0.6333333333333333
+      },
+      "entity_typed": {
+        "tp": 18,
+        "fp": 11,
+        "fn": 13,
+        "predicted": 29,
+        "gold": 31,
+        "precision": 0.6206896551724138,
+        "recall": 0.5806451612903226,
+        "f1": 0.6
+      },
+      "relation_raw_end_to_end": {
+        "tp": 7,
+        "fp": 125,
+        "fn": 12,
+        "predicted": 132,
+        "gold": 19,
+        "precision": 0.05303030303030303,
+        "recall": 0.3684210526315789,
+        "f1": 0.09271523178807947
+      },
+      "relation_end_to_end": {
+        "tp": 7,
+        "fp": 94,
+        "fn": 12,
+        "predicted": 101,
+        "gold": 19,
+        "precision": 0.06930693069306931,
+        "recall": 0.3684210526315789,
+        "f1": 0.11666666666666667
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 7,
+        "fp": 30,
+        "fn": 1,
+        "predicted": 37,
+        "gold": 8,
+        "precision": 0.1891891891891892,
+        "recall": 0.875,
+        "f1": 0.3111111111111111
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 101,
+        "fn": 19,
+        "predicted": 101,
+        "gold": 19,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 8,
+        "gold": 19,
+        "recall": 0.42105263157894735
+      },
+      "abstention": {
+        "abstained": 68,
+        "candidate_pairs": 128
+      },
+      "accepted_assertions": 101,
+      "raw_proposals": 132,
+      "unsupported_proposals": 0
+    },
+    "D035": {
+      "entity_span": {
+        "tp": 17,
+        "fp": 6,
+        "fn": 17,
+        "predicted": 23,
+        "gold": 34,
+        "precision": 0.7391304347826086,
+        "recall": 0.5,
+        "f1": 0.5964912280701754
+      },
+      "entity_typed": {
+        "tp": 15,
+        "fp": 8,
+        "fn": 19,
+        "predicted": 23,
+        "gold": 34,
+        "precision": 0.6521739130434783,
+        "recall": 0.4411764705882353,
+        "f1": 0.5263157894736842
+      },
+      "relation_raw_end_to_end": {
+        "tp": 2,
+        "fp": 160,
+        "fn": 13,
+        "predicted": 162,
+        "gold": 15,
+        "precision": 0.012345679012345678,
+        "recall": 0.13333333333333333,
+        "f1": 0.022598870056497175
+      },
+      "relation_end_to_end": {
+        "tp": 2,
+        "fp": 142,
+        "fn": 13,
+        "predicted": 144,
+        "gold": 15,
+        "precision": 0.013888888888888888,
+        "recall": 0.13333333333333333,
+        "f1": 0.025157232704402517
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 2,
+        "fp": 43,
+        "fn": 0,
+        "predicted": 45,
+        "gold": 2,
+        "precision": 0.044444444444444446,
+        "recall": 1.0,
+        "f1": 0.0851063829787234
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 144,
+        "fn": 15,
+        "predicted": 144,
+        "gold": 15,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 2,
+        "gold": 15,
+        "recall": 0.13333333333333333
+      },
+      "abstention": {
+        "abstained": 45,
+        "candidate_pairs": 134
+      },
+      "accepted_assertions": 144,
+      "raw_proposals": 162,
+      "unsupported_proposals": 4
+    },
+    "D038": {
+      "entity_span": {
+        "tp": 13,
+        "fp": 17,
+        "fn": 14,
+        "predicted": 30,
+        "gold": 27,
+        "precision": 0.43333333333333335,
+        "recall": 0.48148148148148145,
+        "f1": 0.45614035087719296
+      },
+      "entity_typed": {
+        "tp": 11,
+        "fp": 19,
+        "fn": 16,
+        "predicted": 30,
+        "gold": 27,
+        "precision": 0.36666666666666664,
+        "recall": 0.4074074074074074,
+        "f1": 0.38596491228070173
+      },
+      "relation_raw_end_to_end": {
+        "tp": 0,
+        "fp": 340,
+        "fn": 17,
+        "predicted": 340,
+        "gold": 17,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_end_to_end": {
+        "tp": 0,
+        "fp": 214,
+        "fn": 17,
+        "predicted": 214,
+        "gold": 17,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 0,
+        "fp": 22,
+        "fn": 0,
+        "predicted": 22,
+        "gold": 0,
+        "precision": 0.0,
+        "recall": null,
+        "f1": 0.0
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 214,
+        "fn": 17,
+        "predicted": 214,
+        "gold": 17,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 0,
+        "gold": 17,
+        "recall": 0.0
+      },
+      "abstention": {
+        "abstained": 67,
+        "candidate_pairs": 162
+      },
+      "accepted_assertions": 214,
+      "raw_proposals": 340,
+      "unsupported_proposals": 1
+    },
+    "D060": {
+      "entity_span": {
+        "tp": 9,
+        "fp": 15,
+        "fn": 14,
+        "predicted": 24,
+        "gold": 23,
+        "precision": 0.375,
+        "recall": 0.391304347826087,
+        "f1": 0.3829787234042553
+      },
+      "entity_typed": {
+        "tp": 8,
+        "fp": 16,
+        "fn": 15,
+        "predicted": 24,
+        "gold": 23,
+        "precision": 0.3333333333333333,
+        "recall": 0.34782608695652173,
+        "f1": 0.3404255319148936
+      },
+      "relation_raw_end_to_end": {
+        "tp": 4,
+        "fp": 167,
+        "fn": 8,
+        "predicted": 171,
+        "gold": 12,
+        "precision": 0.023391812865497075,
+        "recall": 0.3333333333333333,
+        "f1": 0.04371584699453552
+      },
+      "relation_end_to_end": {
+        "tp": 4,
+        "fp": 144,
+        "fn": 8,
+        "predicted": 148,
+        "gold": 12,
+        "precision": 0.02702702702702703,
+        "recall": 0.3333333333333333,
+        "f1": 0.05
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 4,
+        "fp": 19,
+        "fn": 0,
+        "predicted": 23,
+        "gold": 4,
+        "precision": 0.17391304347826086,
+        "recall": 1.0,
+        "f1": 0.2962962962962963
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 148,
+        "fn": 12,
+        "predicted": 148,
+        "gold": 12,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 4,
+        "gold": 12,
+        "recall": 0.3333333333333333
+      },
+      "abstention": {
+        "abstained": 57,
+        "candidate_pairs": 150
+      },
+      "accepted_assertions": 148,
+      "raw_proposals": 171,
+      "unsupported_proposals": 0
+    },
+    "D078": {
+      "entity_span": {
+        "tp": 34,
+        "fp": 19,
+        "fn": 38,
+        "predicted": 53,
+        "gold": 72,
+        "precision": 0.6415094339622641,
+        "recall": 0.4722222222222222,
+        "f1": 0.544
+      },
+      "entity_typed": {
+        "tp": 29,
+        "fp": 24,
+        "fn": 43,
+        "predicted": 53,
+        "gold": 72,
+        "precision": 0.5471698113207547,
+        "recall": 0.4027777777777778,
+        "f1": 0.464
+      },
+      "relation_raw_end_to_end": {
+        "tp": 6,
+        "fp": 402,
+        "fn": 33,
+        "predicted": 408,
+        "gold": 39,
+        "precision": 0.014705882352941176,
+        "recall": 0.15384615384615385,
+        "f1": 0.026845637583892617
+      },
+      "relation_end_to_end": {
+        "tp": 4,
+        "fp": 247,
+        "fn": 35,
+        "predicted": 251,
+        "gold": 39,
+        "precision": 0.01593625498007968,
+        "recall": 0.10256410256410256,
+        "f1": 0.027586206896551724
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 4,
+        "fp": 48,
+        "fn": 2,
+        "predicted": 52,
+        "gold": 6,
+        "precision": 0.07692307692307693,
+        "recall": 0.6666666666666666,
+        "f1": 0.13793103448275862
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 251,
+        "fn": 39,
+        "predicted": 251,
+        "gold": 39,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 6,
+        "gold": 39,
+        "recall": 0.15384615384615385
+      },
+      "abstention": {
+        "abstained": 111,
+        "candidate_pairs": 268
+      },
+      "accepted_assertions": 251,
+      "raw_proposals": 408,
+      "unsupported_proposals": 109
+    },
+    "D092": {
+      "entity_span": {
+        "tp": 20,
+        "fp": 16,
+        "fn": 23,
+        "predicted": 36,
+        "gold": 43,
+        "precision": 0.5555555555555556,
+        "recall": 0.46511627906976744,
+        "f1": 0.5063291139240507
+      },
+      "entity_typed": {
+        "tp": 20,
+        "fp": 16,
+        "fn": 23,
+        "predicted": 36,
+        "gold": 43,
+        "precision": 0.5555555555555556,
+        "recall": 0.46511627906976744,
+        "f1": 0.5063291139240507
+      },
+      "relation_raw_end_to_end": {
+        "tp": 3,
+        "fp": 201,
+        "fn": 16,
+        "predicted": 204,
+        "gold": 19,
+        "precision": 0.014705882352941176,
+        "recall": 0.15789473684210525,
+        "f1": 0.026905829596412557
+      },
+      "relation_end_to_end": {
+        "tp": 3,
+        "fp": 150,
+        "fn": 16,
+        "predicted": 153,
+        "gold": 19,
+        "precision": 0.0196078431372549,
+        "recall": 0.15789473684210525,
+        "f1": 0.03488372093023256
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 3,
+        "fp": 25,
+        "fn": 0,
+        "predicted": 28,
+        "gold": 3,
+        "precision": 0.10714285714285714,
+        "recall": 1.0,
+        "f1": 0.1935483870967742
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 153,
+        "fn": 19,
+        "predicted": 153,
+        "gold": 19,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 3,
+        "gold": 19,
+        "recall": 0.15789473684210525
+      },
+      "abstention": {
+        "abstained": 81,
+        "candidate_pairs": 178
+      },
+      "accepted_assertions": 153,
+      "raw_proposals": 204,
+      "unsupported_proposals": 34
+    }
+  },
+  "matching_policy": "Exact Unicode spans+kind; directed predicate; multiset one-to-one; no relaxed/coreference substitution",
+  "qualifier_policy": "UNKNOWN qualifier completeness never receives qualified TP; gold qualifiers remain in denominator",
+  "annotation_limitation": "Single owner review, AI-origin annotations; no independent secondary review",
+  "semantic_support_rate": null,
+  "semantic_support_status": "NOT_MEASURED: requires independent review of predictions",
+  "mode": "end_to_end",
+  "subset": "all",
+  "partition": {
+    "seed": 42,
+    "group_key": "pilot24 cluster (conservative topical/family proxy)",
+    "train": [
+      "D004",
+      "D010",
+      "D017",
+      "D024",
+      "D026",
+      "D038",
+      "D060",
+      "D078"
+    ],
+    "validation": [
+      "D001",
+      "D003",
+      "D035",
+      "D092"
+    ],
+    "validation_groups": [
+      "C02",
+      "C07"
+    ],
+    "limitation": "Cluster-disjoint, small descriptive DEV experiment; clusters are not independently verified patent/publication families."
+  },
+  "prediction_run_sha256": "71aedae7509433ae9d3f851246c2174ec8cd50187af1644e0e62941b1e14f058",
+  "prediction_files_sha256": {
+    "D001": "01875e87f308fa7e081c83081f25c8847d14187d7c3b1d9d456d418b7081ffe4",
+    "D003": "255c551117af12de199a49c393bb6d9310d7f3595371cc9abd12f448d8b717b3",
+    "D004": "2e950b28ca541c433f129e8ed039f56fc5b0fc1e30bc545042b611fd35c3bffb",
+    "D010": "38d6f9e6e6d1d26e922d139201929e60b8ef0c2e42fab7ed860ba0708e3f39e9",
+    "D017": "dfa7acf5467fc1a0e6355a90b701a097e650758b0b087b39c3e01c61ce65a0fe",
+    "D024": "c50bcaa0b406dd72da8654a725faa47502c70eb690f4aafacab8120b1f6a3048",
+    "D026": "fcbb11140f0b83c45809cd15e6b7bb9831855f4d822b12fe4bb4bbd5538eaa59",
+    "D035": "9e3ba30a9b5e6872cde881ccce38ee2a441f9ca2b66dcc67b7d4643cddfd5763",
+    "D038": "988a900a04db6fb8980f9564ff3ba01305ef64860375bc8b75747bf48b2f4397",
+    "D060": "1fab0a08fe391f62f170eb2c06e8a73bcbd6df5ba0983444adbb7c017cd611df",
+    "D078": "3c4d855f8ec7e0ae78bd9203066fac55a6311562ae595cd49cb20cb0efbb018c",
+    "D092": "0d64520f1509148fdebb3d0ef0e084243b4253a5376f42211173754f9332e4d8"
+  },
+  "performance": {
+    "documents": [
+      "D001",
+      "D003",
+      "D004",
+      "D010",
+      "D017",
+      "D024",
+      "D026",
+      "D035",
+      "D038",
+      "D060",
+      "D078",
+      "D092"
+    ],
+    "wall_ms": 389959.26910010166,
+    "cpu_ms": 1443359.375,
+    "peak_ram_bytes": 1807134720,
+    "peak_ram_method": "Windows GetProcessMemoryInfo PeakWorkingSetSize; process lifetime including imports/load",
+    "llm_calls": 0,
+    "ner_calls": 27,
+    "encoder_forward_calls": 27,
+    "re_batch_calls": 223,
+    "re_encoder_forward_calls": 223,
+    "model_api_calls": 250,
+    "ner_load_ms": 8025.581500027329,
+    "re_load_ms": 1217.8056999109685
+  },
+  "performance_scope": "Full prediction run listed above; per-document times are in performance_documents",
+  "performance_documents": {
+    "D001": {
+      "wall_ms": 16115.273900097236,
+      "cpu_ms": 63546.875,
+      "ner_calls": 2,
+      "re_calls": 12,
+      "llm_calls": 0,
+      "stage_ms": {
+        "pretrained_re_ms": 15504.190200241283,
+        "candidates_ms": 0.37770019844174385,
+        "ner_ms": 571.6064998414367,
+        "validation_ms": 4.8773998860269785,
+        "scope_evidence_ms": 30.243499903008342
+      }
+    },
+    "D003": {
+      "wall_ms": 12268.658899934962,
+      "cpu_ms": 47421.875,
+      "ner_calls": 3,
+      "re_calls": 6,
+      "llm_calls": 0,
+      "stage_ms": {
+        "pretrained_re_ms": 10624.599599745125,
+        "candidates_ms": 0.47019985504448414,
+        "ner_ms": 1617.8900999948382,
+        "validation_ms": 3.461299929767847,
+        "scope_evidence_ms": 18.230199813842773
+      }
+    },
+    "D004": {
+      "wall_ms": 78144.73169995472,
+      "cpu_ms": 304546.875,
+      "ner_calls": 3,
+      "re_calls": 43,
+      "llm_calls": 0,
+      "stage_ms": {
+        "pretrained_re_ms": 76590.69989994168,
+        "candidates_ms": 0.9757000952959061,
+        "ner_ms": 1356.740799965337,
+        "validation_ms": 22.339700255542994,
+        "scope_evidence_ms": 169.98240002430975
+      }
+    },
+    "D010": {
+      "wall_ms": 145522.30180008337,
+      "cpu_ms": 570578.125,
+      "ner_calls": 3,
+      "re_calls": 73,
+      "llm_calls": 0,
+      "stage_ms": {
+        "pretrained_re_ms": 143835.45850007795,
+        "candidates_ms": 1.7621999140828848,
+        "ner_ms": 1515.4341999441385,
+        "validation_ms": 24.80580029077828,
+        "scope_evidence_ms": 141.63219998590648
+      }
+    },
+    "D017": {
+      "wall_ms": 31565.247599966824,
+      "cpu_ms": 123781.25,
+      "ner_calls": 3,
+      "re_calls": 22,
+      "llm_calls": 0,
+      "stage_ms": {
+        "pretrained_re_ms": 30720.529799815267,
+        "candidates_ms": 0.6471001543104649,
+        "ner_ms": 789.0230999328196,
+        "validation_ms": 6.564999930560589,
+        "scope_evidence_ms": 46.602899907156825
+      }
+    },
+    "D024": {
+      "wall_ms": 12150.530700106174,
+      "cpu_ms": 47828.125,
+      "ner_calls": 3,
+      "re_calls": 11,
+      "llm_calls": 0,
+      "stage_ms": {
+        "pretrained_re_ms": 11086.982700042427,
+        "candidates_ms": 0.28019980527460575,
+        "ner_ms": 1041.848000138998,
+        "validation_ms": 2.4933996610343456,
+        "scope_evidence_ms": 15.344100072979927
+      }
+    },
+    "D026": {
+      "wall_ms": 7539.557400159538,
+      "cpu_ms": 29734.375,
+      "ner_calls": 2,
+      "re_calls": 7,
+      "llm_calls": 0,
+      "stage_ms": {
+        "pretrained_re_ms": 6747.049700003117,
+        "candidates_ms": 0.15490013174712658,
+        "ner_ms": 778.2839999999851,
+        "validation_ms": 2.7171999681741,
+        "scope_evidence_ms": 9.710200130939484
+      }
+    },
+    "D035": {
+      "wall_ms": 7918.190500000492,
+      "cpu_ms": 31171.875,
+      "ner_calls": 1,
+      "re_calls": 7,
+      "llm_calls": 0,
+      "stage_ms": {
+        "pretrained_re_ms": 7526.573600014672,
+        "candidates_ms": 0.15760003589093685,
+        "ner_ms": 370.5649001058191,
+        "validation_ms": 2.3963998537510633,
+        "scope_evidence_ms": 17.44579989463091
+      }
+    },
+    "D038": {
+      "wall_ms": 11455.389000009745,
+      "cpu_ms": 45203.125,
+      "ner_calls": 1,
+      "re_calls": 9,
+      "llm_calls": 0,
+      "stage_ms": {
+        "pretrained_re_ms": 10916.717800078914,
+        "candidates_ms": 0.32119988463819027,
+        "ner_ms": 510.5910999700427,
+        "validation_ms": 3.63880000077188,
+        "scope_evidence_ms": 22.218900034204125
+      }
+    },
+    "D060": {
+      "wall_ms": 5449.5216000359505,
+      "cpu_ms": 20703.125,
+      "ner_calls": 1,
+      "re_calls": 6,
+      "llm_calls": 0,
+      "stage_ms": {
+        "pretrained_re_ms": 5078.785400139168,
+        "candidates_ms": 0.1754998229444027,
+        "ner_ms": 355.742400046438,
+        "validation_ms": 2.4788000155240297,
+        "scope_evidence_ms": 10.898999869823456
+      }
+    },
+    "D078": {
+      "wall_ms": 20431.51449994184,
+      "cpu_ms": 79875.0,
+      "ner_calls": 3,
+      "re_calls": 18,
+      "llm_calls": 0,
+      "stage_ms": {
+        "pretrained_re_ms": 19323.672800092027,
+        "candidates_ms": 0.32049999572336674,
+        "ner_ms": 1076.821600086987,
+        "validation_ms": 5.061500007286668,
+        "scope_evidence_ms": 23.27869995497167
+      }
+    },
+    "D092": {
+      "wall_ms": 11149.922200012952,
+      "cpu_ms": 43250.0,
+      "ner_calls": 2,
+      "re_calls": 9,
+      "llm_calls": 0,
+      "stage_ms": {
+        "pretrained_re_ms": 10413.192299893126,
+        "candidates_ms": 0.2400998491793871,
+        "ner_ms": 708.1933000590652,
+        "validation_ms": 4.4392000418156385,
+        "scope_evidence_ms": 20.27989993803203
+      }
+    }
+  },
+  "independent_of_training_documents": true,
+  "inferential_status": "Exploratory DEV; zero-shot relative to this dataset, not an untouched confirmatory test",
+  "architecture_id": "C-RESTART-001",
+  "training_performed": false,
+  "loss_audit": {
+    "order": [
+      "gold",
+      "untyped_endpoints",
+      "typed_endpoints",
+      "candidate_pairs",
+      "model_served",
+      "re_capability",
+      "raw_re",
+      "domain_range",
+      "scope",
+      "evidence",
+      "final"
+    ],
+    "correct_assertions_remaining": {
+      "gold": 390,
+      "untyped_endpoints": 86,
+      "typed_endpoints": 76,
+      "candidate_pairs": 71,
+      "model_served": 71,
+      "re_capability": 71,
+      "raw_re": 50,
+      "domain_range": 50,
+      "scope": 48,
+      "evidence": 48,
+      "final": 48
+    },
+    "correct_assertions_lost": {
+      "untyped_endpoints": 304,
+      "typed_endpoints": 10,
+      "candidate_pairs": 5,
+      "model_served": 0,
+      "re_capability": 0,
+      "raw_re": 21,
+      "domain_range": 0,
+      "scope": 2,
+      "evidence": 0,
+      "final": 0
+    },
+    "documents": {
+      "D001": {
+        "gold": 51,
+        "untyped_endpoints": 4,
+        "typed_endpoints": 0,
+        "candidate_pairs": 0,
+        "model_served": 0,
+        "re_capability": 0,
+        "raw_re": 0,
+        "domain_range": 0,
+        "scope": 0,
+        "evidence": 0,
+        "final": 0
+      },
+      "D003": {
+        "gold": 47,
+        "untyped_endpoints": 3,
+        "typed_endpoints": 2,
+        "candidate_pairs": 2,
+        "model_served": 2,
+        "re_capability": 2,
+        "raw_re": 2,
+        "domain_range": 2,
+        "scope": 2,
+        "evidence": 2,
+        "final": 2
+      },
+      "D004": {
+        "gold": 24,
+        "untyped_endpoints": 3,
+        "typed_endpoints": 3,
+        "candidate_pairs": 3,
+        "model_served": 3,
+        "re_capability": 3,
+        "raw_re": 3,
+        "domain_range": 3,
+        "scope": 3,
+        "evidence": 3,
+        "final": 3
+      },
+      "D010": {
+        "gold": 99,
+        "untyped_endpoints": 30,
+        "typed_endpoints": 30,
+        "candidate_pairs": 30,
+        "model_served": 30,
+        "re_capability": 30,
+        "raw_re": 10,
+        "domain_range": 10,
+        "scope": 10,
+        "evidence": 10,
+        "final": 10
+      },
+      "D017": {
+        "gold": 28,
+        "untyped_endpoints": 13,
+        "typed_endpoints": 12,
+        "candidate_pairs": 12,
+        "model_served": 12,
+        "re_capability": 12,
+        "raw_re": 12,
+        "domain_range": 12,
+        "scope": 12,
+        "evidence": 12,
+        "final": 12
+      },
+      "D024": {
+        "gold": 20,
+        "untyped_endpoints": 2,
+        "typed_endpoints": 1,
+        "candidate_pairs": 1,
+        "model_served": 1,
+        "re_capability": 1,
+        "raw_re": 1,
+        "domain_range": 1,
+        "scope": 1,
+        "evidence": 1,
+        "final": 1
+      },
+      "D026": {
+        "gold": 19,
+        "untyped_endpoints": 9,
+        "typed_endpoints": 9,
+        "candidate_pairs": 8,
+        "model_served": 8,
+        "re_capability": 8,
+        "raw_re": 7,
+        "domain_range": 7,
+        "scope": 7,
+        "evidence": 7,
+        "final": 7
+      },
+      "D035": {
+        "gold": 15,
+        "untyped_endpoints": 4,
+        "typed_endpoints": 3,
+        "candidate_pairs": 2,
+        "model_served": 2,
+        "re_capability": 2,
+        "raw_re": 2,
+        "domain_range": 2,
+        "scope": 2,
+        "evidence": 2,
+        "final": 2
+      },
+      "D038": {
+        "gold": 17,
+        "untyped_endpoints": 2,
+        "typed_endpoints": 2,
+        "candidate_pairs": 0,
+        "model_served": 0,
+        "re_capability": 0,
+        "raw_re": 0,
+        "domain_range": 0,
+        "scope": 0,
+        "evidence": 0,
+        "final": 0
+      },
+      "D060": {
+        "gold": 12,
+        "untyped_endpoints": 5,
+        "typed_endpoints": 4,
+        "candidate_pairs": 4,
+        "model_served": 4,
+        "re_capability": 4,
+        "raw_re": 4,
+        "domain_range": 4,
+        "scope": 4,
+        "evidence": 4,
+        "final": 4
+      },
+      "D078": {
+        "gold": 39,
+        "untyped_endpoints": 8,
+        "typed_endpoints": 7,
+        "candidate_pairs": 6,
+        "model_served": 6,
+        "re_capability": 6,
+        "raw_re": 6,
+        "domain_range": 6,
+        "scope": 4,
+        "evidence": 4,
+        "final": 4
+      },
+      "D092": {
+        "gold": 19,
+        "untyped_endpoints": 3,
+        "typed_endpoints": 3,
+        "candidate_pairs": 3,
+        "model_served": 3,
+        "re_capability": 3,
+        "raw_re": 3,
+        "domain_range": 3,
+        "scope": 3,
+        "evidence": 3,
+        "final": 3
+      }
+    },
+    "per_relation": {
+      "FABRICATED_BY": {
+        "raw": {
+          "tp": 7,
+          "fp": 149,
+          "fn": 7,
+          "gold": 14,
+          "predicted": 156,
+          "precision": 0.04487179487179487,
+          "recall": 0.5,
+          "f1": 0.08235294117647059
+        },
+        "final": {
+          "tp": 7,
+          "fp": 75,
+          "fn": 7,
+          "gold": 14,
+          "predicted": 82,
+          "precision": 0.08536585365853659,
+          "recall": 0.5,
+          "f1": 0.14583333333333334
+        }
+      },
+      "HAS_MEMBER": {
+        "raw": {
+          "tp": 0,
+          "fp": 2418,
+          "fn": 44,
+          "gold": 44,
+          "predicted": 2418,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 2069,
+          "fn": 44,
+          "gold": 44,
+          "predicted": 2069,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "OPTIMIZES": {
+        "raw": {
+          "tp": 0,
+          "fp": 22,
+          "fn": 1,
+          "gold": 1,
+          "predicted": 22,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 14,
+          "fn": 1,
+          "gold": 1,
+          "predicted": 14,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "FUNCTIONS_AS": {
+        "raw": {
+          "tp": 0,
+          "fp": 42,
+          "fn": 3,
+          "gold": 3,
+          "predicted": 42,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 36,
+          "fn": 3,
+          "gold": 3,
+          "predicted": 36,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "USES_MATERIAL": {
+        "raw": {
+          "tp": 6,
+          "fp": 26,
+          "fn": 17,
+          "gold": 23,
+          "predicted": 32,
+          "precision": 0.1875,
+          "recall": 0.2608695652173913,
+          "f1": 0.21818181818181817
+        },
+        "final": {
+          "tp": 5,
+          "fp": 24,
+          "fn": 18,
+          "gold": 23,
+          "predicted": 29,
+          "precision": 0.1724137931034483,
+          "recall": 0.21739130434782608,
+          "f1": 0.19230769230769232
+        }
+      },
+      "INTEGRATED_IN": {
+        "raw": {
+          "tp": 0,
+          "fp": 13,
+          "fn": 1,
+          "gold": 1,
+          "predicted": 13,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 11,
+          "fn": 1,
+          "gold": 1,
+          "predicted": 11,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "HAS_PERFORMANCE": {
+        "raw": {
+          "tp": 4,
+          "fp": 126,
+          "fn": 48,
+          "gold": 52,
+          "predicted": 130,
+          "precision": 0.03076923076923077,
+          "recall": 0.07692307692307693,
+          "f1": 0.04395604395604396
+        },
+        "final": {
+          "tp": 4,
+          "fp": 64,
+          "fn": 48,
+          "gold": 52,
+          "predicted": 68,
+          "precision": 0.058823529411764705,
+          "recall": 0.07692307692307693,
+          "f1": 0.06666666666666667
+        }
+      },
+      "USED_FOR": {
+        "raw": {
+          "tp": 10,
+          "fp": 262,
+          "fn": 37,
+          "gold": 47,
+          "predicted": 272,
+          "precision": 0.03676470588235294,
+          "recall": 0.2127659574468085,
+          "f1": 0.06269592476489028
+        },
+        "final": {
+          "tp": 10,
+          "fp": 191,
+          "fn": 37,
+          "gold": 47,
+          "predicted": 201,
+          "precision": 0.04975124378109453,
+          "recall": 0.2127659574468085,
+          "f1": 0.08064516129032258
+        }
+      },
+      "HAS_PROPERTY": {
+        "raw": {
+          "tp": 7,
+          "fp": 254,
+          "fn": 45,
+          "gold": 52,
+          "predicted": 261,
+          "precision": 0.02681992337164751,
+          "recall": 0.1346153846153846,
+          "f1": 0.04472843450479233
+        },
+        "final": {
+          "tp": 7,
+          "fp": 170,
+          "fn": 45,
+          "gold": 52,
+          "predicted": 177,
+          "precision": 0.03954802259887006,
+          "recall": 0.1346153846153846,
+          "f1": 0.0611353711790393
+        }
+      },
+      "DETECTS": {
+        "raw": {
+          "tp": 4,
+          "fp": 16,
+          "fn": 9,
+          "gold": 13,
+          "predicted": 20,
+          "precision": 0.2,
+          "recall": 0.3076923076923077,
+          "f1": 0.24242424242424243
+        },
+        "final": {
+          "tp": 3,
+          "fp": 12,
+          "fn": 10,
+          "gold": 13,
+          "predicted": 15,
+          "precision": 0.2,
+          "recall": 0.23076923076923078,
+          "f1": 0.21428571428571427
+        }
+      },
+      "IMPROVES": {
+        "raw": {
+          "tp": 1,
+          "fp": 9,
+          "fn": 6,
+          "gold": 7,
+          "predicted": 10,
+          "precision": 0.1,
+          "recall": 0.14285714285714285,
+          "f1": 0.11764705882352941
+        },
+        "final": {
+          "tp": 1,
+          "fp": 5,
+          "fn": 6,
+          "gold": 7,
+          "predicted": 6,
+          "precision": 0.16666666666666666,
+          "recall": 0.14285714285714285,
+          "f1": 0.15384615384615385
+        }
+      },
+      "EXPLAINS": {
+        "raw": {
+          "tp": 4,
+          "fp": 168,
+          "fn": 7,
+          "gold": 11,
+          "predicted": 172,
+          "precision": 0.023255813953488372,
+          "recall": 0.36363636363636365,
+          "f1": 0.04371584699453552
+        },
+        "final": {
+          "tp": 4,
+          "fp": 103,
+          "fn": 7,
+          "gold": 11,
+          "predicted": 107,
+          "precision": 0.037383177570093455,
+          "recall": 0.36363636363636365,
+          "f1": 0.06779661016949153
+        }
+      },
+      "HAS_COMPONENT": {
+        "raw": {
+          "tp": 4,
+          "fp": 1347,
+          "fn": 53,
+          "gold": 57,
+          "predicted": 1351,
+          "precision": 0.0029607698001480384,
+          "recall": 0.07017543859649122,
+          "f1": 0.005681818181818182
+        },
+        "final": {
+          "tp": 4,
+          "fp": 1325,
+          "fn": 53,
+          "gold": 57,
+          "predicted": 1329,
+          "precision": 0.0030097817908201654,
+          "recall": 0.07017543859649122,
+          "f1": 0.005772005772005772
+        }
+      },
+      "CHANGES_PARAMETER": {
+        "raw": {
+          "tp": 0,
+          "fp": 22,
+          "fn": 8,
+          "gold": 8,
+          "predicted": 22,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 8,
+          "gold": 8,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "HAS_MORPHOLOGY": {
+        "raw": {
+          "tp": 1,
+          "fp": 3,
+          "fn": 16,
+          "gold": 17,
+          "predicted": 4,
+          "precision": 0.25,
+          "recall": 0.058823529411764705,
+          "f1": 0.09523809523809523
+        },
+        "final": {
+          "tp": 1,
+          "fp": 3,
+          "fn": 16,
+          "gold": 17,
+          "predicted": 4,
+          "precision": 0.25,
+          "recall": 0.058823529411764705,
+          "f1": 0.09523809523809523
+        }
+      },
+      "DEPENDS_ON": {
+        "raw": {
+          "tp": 0,
+          "fp": 175,
+          "fn": 2,
+          "gold": 2,
+          "predicted": 175,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 110,
+          "fn": 2,
+          "gold": 2,
+          "predicted": 110,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "ACTS_ON": {
+        "raw": {
+          "tp": 2,
+          "fp": 160,
+          "fn": 11,
+          "gold": 13,
+          "predicted": 162,
+          "precision": 0.012345679012345678,
+          "recall": 0.15384615384615385,
+          "f1": 0.022857142857142857
+        },
+        "final": {
+          "tp": 2,
+          "fp": 86,
+          "fn": 11,
+          "gold": 13,
+          "predicted": 88,
+          "precision": 0.022727272727272728,
+          "recall": 0.15384615384615385,
+          "f1": 0.039603960396039604
+        }
+      },
+      "HAS_MECHANISM": {
+        "raw": {
+          "tp": 0,
+          "fp": 22,
+          "fn": 6,
+          "gold": 6,
+          "predicted": 22,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 9,
+          "fn": 6,
+          "gold": 6,
+          "predicted": 9,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "MECHANISM_INVOLVES": {
+        "raw": {
+          "tp": 0,
+          "fp": 3,
+          "fn": 9,
+          "gold": 9,
+          "predicted": 3,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 1,
+          "fn": 9,
+          "gold": 9,
+          "predicted": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "CAUSES": {
+        "raw": {
+          "tp": 0,
+          "fp": 88,
+          "fn": 3,
+          "gold": 3,
+          "predicted": 88,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 48,
+          "fn": 3,
+          "gold": 3,
+          "predicted": 48,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "FACILITATES": {
+        "raw": {
+          "tp": 0,
+          "fp": 181,
+          "fn": 3,
+          "gold": 3,
+          "predicted": 181,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 97,
+          "fn": 3,
+          "gold": 3,
+          "predicted": 97,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "LOCATED_IN": {
+        "raw": {
+          "tp": 0,
+          "fp": 2,
+          "fn": 2,
+          "gold": 2,
+          "predicted": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 2,
+          "fn": 2,
+          "gold": 2,
+          "predicted": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "MEETS_REQUIREMENT": {
+        "raw": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "gold": 2,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "gold": 2,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "rejected_raw_proposals": {
+      "UNSUPPORTED_CAPABILITY:REQUIRED_DIRECTION": 15,
+      "ONTOLOGY_DOMAIN_RANGE": 889,
+      "UNSUPPORTED_CAPABILITY:CROSS_CLAUSE_SCOPE": 42,
+      "UNSUPPORTED_CAPABILITY:NEGATION_ATTACHMENT": 109
+    },
+    "rejected_exact_gold_raw_proposals": {
+      "UNSUPPORTED_CAPABILITY:NEGATION_ATTACHMENT": 2
+    },
+    "note": "Counts match exact typed directed edges; qualified completeness is audited by the separate strict metric"
+  }
+}

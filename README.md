@@ -1,4 +1,59 @@
-# Architecture C — Small Classifier Pipeline (C-001)
+# Architecture C — pretrained-only zero-shot pipeline (C-RESTART-001)
+
+Текущий протокол **запрещает обучение и дообучение на наших документах и Gold**.
+Рабочий inference: GLiNER-small → типизированные spans → направленные пары →
+готовый NLI checkpoint как zero-shot RE → scope/qualifiers → exact evidence →
+консервативная каноникализация → provisional graph assertions. Генеративных LLM
+и downstream reranker нет. NLI использует свои три готовые головы
+contradiction/entailment/neutral; новые relation heads не создаются.
+
+Основной конфиг: [config/c_restart_001.json](config/c_restart_001.json).
+Реальный DEV-эксперимент и ограничения:
+[C_RESTART_001_REPORT.md](reports/C_RESTART_001_REPORT.md).
+Предварительный аудит: [protocol](reports/C_RESTART_001_PROTOCOL.md),
+[runtime audit и окончательный протокол](reports/C_RESTART_001_PROTOCOL_ADDENDUM.md).
+
+```console
+uv sync --frozen --extra test
+uv run --no-sync cgraph fetch-dev
+uv run --no-sync cgraph-zero download-models
+uv run --no-sync python scripts/probe_nli_checkpoint.py artifacts/nli_checkpoint_probe.json
+uv run --no-sync python scripts/assert_zero_shot_inference.py --subset all --output artifacts/c_restart_001_nli_dev
+uv run --no-sync cgraph-zero evaluate --subset all --predictions artifacts/c_restart_001_nli_dev --output reports/c_restart_001/dev.json
+uv run --no-sync cgraph-zero evaluate --subset validation --predictions artifacts/c_restart_001_nli_dev --output reports/c_restart_001/legacy_validation.json
+uv run --no-sync python -m pytest -q
+uv run --no-sync python scripts/build_c_restart_001_report.py --predictions artifacts/c_restart_001_nli_dev
+```
+
+Запускать из корня репозитория, Python 3.11. Для повторного inference нужен новый
+output-каталог. DEV downloader ограничен allowlist и hashes; CALIBRATION/HOLDOUT
+не получает. Extraction и scoring выполняются отдельными процессами. Guard
+запрещает доступ к Gold, старым обученным RE-параметрам и сети и сохраняет
+`access_audit.json`. Структурный PASS не подтверждает правильность отношений.
+Gold/weights/cache/полные predictions и per-query traces остаются в исключённых
+из Git `data/` и `artifacts/`. Подтверждающей HOLDOUT-оценки нет.
+
+22 отношения имеют только статус **EXPERIMENTAL_ZERO_SHOT**: формулировка
+гипотезы не доказывает поддержку научной семантики. `MEETS_REQUIREMENT`
+не поддержан. Qualifier completeness остаётся UNKNOWN и не получает strict
+qualified credit. Cross-sentence RE/coreference в основном NLI-run не поддержаны.
+
+GLiREL отдельно исследован, но не воспроизвёл опубликованный контрольный пример
+даже через официальный loader. Его конфиг сохранён в
+`config/c_restart_001_glirel.json`, диагностика описана в отчёте; основная модель
+RE — `cross-encoder/nli-deberta-v3-xsmall`, Apache-2.0. GLiREL card указывает
+CC BY-NC-SA 4.0 при конфликтующем Apache-2.0 в package metadata.
+
+`pytest` сохраняет и по умолчанию исключает один помеченный
+`historical_training` тест, обучающий C-001 на DEV. Он не выполняется в текущем
+протоколе; остальные старые контрактные проверки и новые тесты выполняются.
+
+## Исторический C-001: supervised baseline
+
+Ниже сохранена документация первоначального эксперимента. Его `train` и
+Gold-entity diagnostic команды и планы fine-tuning относятся только к истории и
+**не входят в текущий разрешённый протокол**. Обученные параметры C-001 новый
+pipeline не загружает. Исторический отчёт и метрики не переписаны.
 
 Работающий исследовательский CPU pipeline: GLiNER-small → contextual kinds → bounded directed pairs → обученный marked-pair classifier → правила scope/qualifiers → консервативные concepts → проверка exact evidence → JSON. Генеративные модели не используются.
 

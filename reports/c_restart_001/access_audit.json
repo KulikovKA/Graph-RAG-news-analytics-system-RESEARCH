@@ -1,0 +1,14 @@
+{
+  "guard": "process-wide Python audit hook",
+  "completed": true,
+  "forbidden_access": [
+    "Gold labels",
+    "CALIBRATION/HOLDOUT paths",
+    "historical fitted RE",
+    "network connections"
+  ],
+  "annotation_or_training_module_imported": false,
+  "run_sha256": "71aedae7509433ae9d3f851246c2174ec8cd50187af1644e0e62941b1e14f058",
+  "guard_script_sha256": "43e02f148deeeaf75db27fc4579e05f68e82de492328f6a58b464e2485201d5e",
+  "graph_semantics_certified": false
+}

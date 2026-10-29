@@ -1,0 +1,280 @@
+{
+  "legacy_validation": {
+    "c001": {
+      "entity_span": {
+        "tp": 79,
+        "fp": 51,
+        "fn": 128,
+        "gold": 207,
+        "predicted": 130,
+        "precision": 0.6076923076923076,
+        "recall": 0.38164251207729466,
+        "f1": 0.4688427299703264
+      },
+      "entity_typed": {
+        "tp": 70,
+        "fp": 60,
+        "fn": 137,
+        "gold": 207,
+        "predicted": 130,
+        "precision": 0.5384615384615384,
+        "recall": 0.33816425120772947,
+        "f1": 0.41543026706231456
+      },
+      "relation_raw_end_to_end": {
+        "tp": 5,
+        "fp": 86,
+        "fn": 127,
+        "gold": 132,
+        "predicted": 91,
+        "precision": 0.054945054945054944,
+        "recall": 0.03787878787878788,
+        "f1": 0.04484304932735426
+      },
+      "relation_end_to_end": {
+        "tp": 0,
+        "fp": 21,
+        "fn": 132,
+        "gold": 132,
+        "predicted": 21,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 7,
+        "gold": 7,
+        "predicted": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 21,
+        "fn": 132,
+        "gold": 132,
+        "predicted": 21,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 7,
+        "gold": 132,
+        "recall": 0.05303030303030303
+      },
+      "abstention": {
+        "abstained": 508,
+        "candidate_pairs": 623,
+        "rate": 0.8154093097913323
+      }
+    },
+    "zero_shot": {
+      "entity_span": {
+        "tp": 79,
+        "fp": 51,
+        "fn": 128,
+        "gold": 207,
+        "predicted": 130,
+        "precision": 0.6076923076923076,
+        "recall": 0.38164251207729466,
+        "f1": 0.4688427299703264
+      },
+      "entity_typed": {
+        "tp": 70,
+        "fp": 60,
+        "fn": 137,
+        "gold": 207,
+        "predicted": 130,
+        "precision": 0.5384615384615384,
+        "recall": 0.33816425120772947,
+        "f1": 0.41543026706231456
+      },
+      "relation_raw_end_to_end": {
+        "tp": 7,
+        "fp": 851,
+        "fn": 125,
+        "gold": 132,
+        "predicted": 858,
+        "precision": 0.008158508158508158,
+        "recall": 0.05303030303030303,
+        "f1": 0.014141414141414142
+      },
+      "relation_end_to_end": {
+        "tp": 7,
+        "fp": 596,
+        "fn": 125,
+        "gold": 132,
+        "predicted": 603,
+        "precision": 0.011608623548922056,
+        "recall": 0.05303030303030303,
+        "f1": 0.01904761904761905
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 7,
+        "fp": 103,
+        "fn": 0,
+        "gold": 7,
+        "predicted": 110,
+        "precision": 0.06363636363636363,
+        "recall": 1.0,
+        "f1": 0.11965811965811966
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 603,
+        "fn": 132,
+        "gold": 132,
+        "predicted": 603,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 7,
+        "gold": 132,
+        "recall": 0.05303030303030303
+      },
+      "abstention": {
+        "abstained": 363,
+        "candidate_pairs": 754,
+        "rate": 0.48143236074270557
+      }
+    }
+  },
+  "all_dev": {
+    "c001": {
+      "entity_span": {
+        "tp": 277,
+        "fp": 200,
+        "fn": 312,
+        "gold": 589,
+        "predicted": 477,
+        "precision": 0.5807127882599581,
+        "recall": 0.4702886247877759,
+        "f1": 0.5196998123827392
+      },
+      "entity_typed": {
+        "tp": 245,
+        "fp": 232,
+        "fn": 344,
+        "gold": 589,
+        "predicted": 477,
+        "precision": 0.5136268343815513,
+        "recall": 0.4159592529711375,
+        "f1": 0.4596622889305816
+      },
+      "relation_raw_end_to_end": {
+        "tp": 62,
+        "fp": 504,
+        "fn": 328,
+        "gold": 390,
+        "predicted": 566,
+        "precision": 0.10954063604240283,
+        "recall": 0.15897435897435896,
+        "f1": 0.1297071129707113
+      },
+      "relation_end_to_end": {
+        "tp": 5,
+        "fp": 41,
+        "fn": 385,
+        "gold": 390,
+        "predicted": 46,
+        "precision": 0.10869565217391304,
+        "recall": 0.01282051282051282,
+        "f1": 0.022935779816513763
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 46,
+        "fn": 390,
+        "gold": 390,
+        "predicted": 46,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 64,
+        "gold": 390,
+        "recall": 0.1641025641025641
+      }
+    },
+    "zero_shot": {
+      "entity_span": {
+        "tp": 277,
+        "fp": 201,
+        "fn": 312,
+        "gold": 589,
+        "predicted": 478,
+        "precision": 0.5794979079497908,
+        "recall": 0.4702886247877759,
+        "f1": 0.5192127460168697
+      },
+      "entity_typed": {
+        "tp": 245,
+        "fp": 233,
+        "fn": 344,
+        "gold": 589,
+        "predicted": 478,
+        "precision": 0.5125523012552301,
+        "recall": 0.4159592529711375,
+        "f1": 0.4592314901593252
+      },
+      "relation_raw_end_to_end": {
+        "tp": 50,
+        "fp": 5508,
+        "fn": 340,
+        "gold": 390,
+        "predicted": 5558,
+        "precision": 0.008996041741633681,
+        "recall": 0.1282051282051282,
+        "f1": 0.016812373907195696
+      },
+      "relation_end_to_end": {
+        "tp": 48,
+        "fp": 4455,
+        "fn": 342,
+        "gold": 390,
+        "predicted": 4503,
+        "precision": 0.010659560293137908,
+        "recall": 0.12307692307692308,
+        "f1": 0.019619865113427344
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 48,
+        "fp": 1141,
+        "fn": 23,
+        "gold": 71,
+        "predicted": 1189,
+        "precision": 0.040370058873002525,
+        "recall": 0.676056338028169,
+        "f1": 0.0761904761904762
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 4503,
+        "fn": 390,
+        "gold": 390,
+        "predicted": 4503,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 71,
+        "gold": 390,
+        "recall": 0.18205128205128204
+      },
+      "abstention": {
+        "abstained": 1425,
+        "candidate_pairs": 3942,
+        "rate": 0.3614916286149163
+      }
+    }
+  },
+  "caveat": "C-001 fitted on eight DEV docs; final NLI/NER runtime differs; DEV is exploratory; D024 incompletely annotated"
+}

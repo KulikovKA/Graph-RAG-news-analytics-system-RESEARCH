@@ -1,0 +1,203 @@
+{
+  "seed": 42,
+  "data_dir": "data",
+  "ontology": "contracts/runtime_ontology.json",
+  "manifest": "contracts/dev_manifest.json",
+  "partition": "contracts/partition.json",
+  "ner": {
+    "checkpoint": "urchade/gliner_small-v2.1",
+    "revision": "4e091416cf7c3481db542c2a3d26156916f3a47f",
+    "license": "Apache-2.0",
+    "threshold": 0.35,
+    "max_window_words": 140,
+    "overlap_words": 30,
+    "labels": {
+      "material": "MATERIAL",
+      "device or device component": "DEVICE",
+      "physical or chemical property": "PROPERTY",
+      "performance measure": "PERFORMANCE",
+      "analyte or target substance": "ANALYTE",
+      "technical process": "PROCESS",
+      "scientific mechanism": "MECHANISM",
+      "operating condition": "OPERATING_CONDITION",
+      "morphology or structure": "MORPHOLOGY",
+      "technology or method": "TECHNOLOGY",
+      "application or end use": "APPLICATION",
+      "other technical entity": "OTHER"
+    },
+    "local_dir": "artifacts/models/gliner_small-v2.1",
+    "tokenizer_checkpoint": "microsoft/deberta-v3-small",
+    "tokenizer_revision": "a36c739020e01763fe789b4b85e2df55d6180012",
+    "tokenizer_dir": "artifacts/models/deberta-v3-small"
+  },
+  "cpu_threads": 4,
+  "architecture_id": "C-RESTART-001",
+  "zero_shot_re": {
+    "checkpoint": "jackboyla/glirel-large-v0",
+    "revision": "40a523e12a8432d6da364cf2a195a28755ff04d3",
+    "license": "CC-BY-NC-SA-4.0 (model card); Apache-2.0 in package metadata; conflict recorded",
+    "local_dir": "artifacts/models/glirel-large-v0",
+    "files": [
+      "glirel_config.json",
+      "README.md",
+      "pytorch_model.bin"
+    ],
+    "file_contract": "contracts/c_restart_001_model_files.json",
+    "threshold": 0.5,
+    "sentence_window": 2,
+    "max_subtokens": 512,
+    "top_k": -1,
+    "backbone": {
+      "checkpoint": "microsoft/deberta-v3-large",
+      "revision": "64a8c8eab3e352a784c658aef62be1662607476f",
+      "local_dir": "artifacts/models/deberta-v3-large",
+      "files": [
+        "config.json",
+        "tokenizer_config.json",
+        "spm.model",
+        "README.md"
+      ],
+      "license": "MIT"
+    },
+    "capabilities": {
+      "HAS_PROPERTY": {
+        "prompt": "has property",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Open-label compatibility only; no per-type scientific accuracy guarantee"
+      },
+      "HAS_PERFORMANCE": {
+        "prompt": "has performance",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Open-label compatibility only; no per-type scientific accuracy guarantee"
+      },
+      "HAS_MORPHOLOGY": {
+        "prompt": "has morphology",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Open-label compatibility only; no per-type scientific accuracy guarantee"
+      },
+      "HAS_COMPONENT": {
+        "prompt": "has component",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Open-label compatibility only; no per-type scientific accuracy guarantee"
+      },
+      "HAS_MEMBER": {
+        "prompt": "has member",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Open-label compatibility only; no per-type scientific accuracy guarantee"
+      },
+      "USES_MATERIAL": {
+        "prompt": "uses material",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Open-label compatibility only; no per-type scientific accuracy guarantee"
+      },
+      "FUNCTIONS_AS": {
+        "prompt": "functions as",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Open-label compatibility only; no per-type scientific accuracy guarantee"
+      },
+      "DETECTS": {
+        "prompt": "detects",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Open-label compatibility only; no per-type scientific accuracy guarantee"
+      },
+      "USED_FOR": {
+        "prompt": "used for",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Open-label compatibility only; no per-type scientific accuracy guarantee"
+      },
+      "FABRICATED_BY": {
+        "prompt": "fabricated by",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Open-label compatibility only; no per-type scientific accuracy guarantee"
+      },
+      "IMPROVES": {
+        "prompt": "improves",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Open-label compatibility only; no per-type scientific accuracy guarantee"
+      },
+      "ACTS_ON": {
+        "prompt": "acts on",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Open-label compatibility only; no per-type scientific accuracy guarantee"
+      },
+      "INTEGRATED_IN": {
+        "prompt": "integrated into",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Open-label compatibility only; no per-type scientific accuracy guarantee"
+      },
+      "HAS_MECHANISM": {
+        "prompt": "has mechanism",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Open-label compatibility only; no per-type scientific accuracy guarantee"
+      },
+      "MECHANISM_INVOLVES": {
+        "prompt": "mechanism involves",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Open-label compatibility only; no per-type scientific accuracy guarantee"
+      },
+      "LOCATED_IN": {
+        "prompt": "located in",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Open-label compatibility only; no per-type scientific accuracy guarantee"
+      },
+      "OPTIMIZES": {
+        "prompt": "optimizes",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Open-label compatibility only; no per-type scientific accuracy guarantee"
+      },
+      "FACILITATES": {
+        "prompt": "facilitates",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Open-label compatibility only; no per-type scientific accuracy guarantee"
+      },
+      "CAUSES": {
+        "prompt": "causes",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Open-label compatibility only; no per-type scientific accuracy guarantee"
+      },
+      "EXPLAINS": {
+        "prompt": "explains",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Open-label compatibility only; no per-type scientific accuracy guarantee"
+      },
+      "CHANGES_PARAMETER": {
+        "prompt": "changes parameter",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Open-label compatibility only; no per-type scientific accuracy guarantee"
+      },
+      "DEPENDS_ON": {
+        "prompt": "depends on",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Open-label compatibility only; no per-type scientific accuracy guarantee"
+      },
+      "MEETS_REQUIREMENT": {
+        "prompt": null,
+        "status": "UNSUPPORTED",
+        "scientific_semantics_validated": false,
+        "reason": "Joint requirement bundle and collective scope require n-ary attachment unavailable in this checkpoint"
+      }
+    }
+  }
+}

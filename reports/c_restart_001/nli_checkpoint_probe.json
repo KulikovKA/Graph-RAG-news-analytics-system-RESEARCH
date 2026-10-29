@@ -1,0 +1,24 @@
+{
+  "purpose": "Published NLI checkpoint model-card control, excluded from DEV quality/performance",
+  "source": "https://huggingface.co/cross-encoder/nli-deberta-v3-xsmall",
+  "probabilities": [
+    [
+      0.0006006228504702449,
+      0.9397073984146118,
+      0.05969194322824478
+    ],
+    [
+      0.9995749592781067,
+      5.6140408560168e-05,
+      0.000368930515833199
+    ]
+  ],
+  "predicted_labels": [
+    "entailment",
+    "contradiction"
+  ],
+  "pass_status": true,
+  "checkpoint": "cross-encoder/nli-deberta-v3-xsmall",
+  "revision": "a150876415327c80daeff35ca6f68f5ed8cf5c24",
+  "strict_load": true
+}

@@ -1,3 +1,5 @@
 * text=auto eol=lf
 *.json -text
 *.jsonl -text
+# Preserve the executed config bytes for the experiment's provenance hashes.
+config/c_restart_001.json whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
