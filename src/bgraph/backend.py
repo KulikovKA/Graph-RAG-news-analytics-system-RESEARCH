@@ -70,6 +70,8 @@ class Qwen:
                 # Greedy decoding of the same truncated response cannot repair it.
                 if str(exc) == 'GENERATION_TRUNCATED':
                     break
+            except PermissionError:
+                raise
             except Exception as exc:
                 # Includes schema validation and request failures; never silently turn failure into empty predictions.
                 if exc.__class__.__name__ == 'ValidationError':

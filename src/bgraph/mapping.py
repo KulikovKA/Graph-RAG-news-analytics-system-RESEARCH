@@ -1,5 +1,6 @@
 """Deterministic source mapping and ontology/qualifier gates; no semantic oracle."""
 import json
+import re
 from cgraph.rules import evidence, link
 from cgraph.validation import validate_chunk
 from cgraph.zeroshot_re import candidate_pairs as c_candidate_pairs
@@ -30,11 +31,6 @@ def process(doc, chunk, responses, ontology):
             except (ValueError, KeyError, TypeError) as exc:
                 local.append(None)
                 rejected.append(dict(stage='entity_mapping', index=index, prediction=ent, reason=str(exc)))
-        # Pair coverage is based on all directed, distinct mentions served together in a window.
-        for h in local:
-            for t in local:
-                if h and t and h['mention_id'] != t['mention_id']:
-                    candidate_keys.add((h['mention_id'], t['mention_id']))
         for item in response['unresolved']:
             try:
                 a, b = anchor(item, rows)
@@ -43,11 +39,19 @@ def process(doc, chunk, responses, ontology):
                 rejected.append(dict(stage='unresolved_mapping', prediction=item, reason=str(exc)))
         for relation_index, rel in enumerate(response['relations']):
             try:
-                if rel['h'] >= len(local) or rel['t'] >= len(local):
-                    raise ValueError('DANGLING_ENDPOINT')
-                h, t = local[rel['h']], local[rel['t']]
-                if h is None or t is None:
-                    raise ValueError('UNMAPPED_ENDPOINT')
+                def endpoint(spec):
+                    a, b = anchor(dict(s=spec['s'], n=rows[0]['id'], o=spec['o']), rows)
+                    key = (a, b, spec['k'])
+                    if key not in by_key:
+                        identifier = f"{chunk['chunk_id']}:m:{a}:{b}:{spec['k']}"
+                        mention = dict(mention_id=identifier, start=a, end=b, surface_text=chunk['text'][a:b],
+                                       kind=spec['k'], contextual_role='UNKNOWN', score=None,
+                                       source_spans=[evidence(doc, chunk, a, b)])
+                        entities.append(mention)
+                        by_key[key] = mention
+                        local.append(mention)
+                    return by_key[key]
+                h, t = endpoint(rel['h']), endpoint(rel['t'])
                 ids = set(rel['e'])
                 selected = [r for r in rows if r['id'] in ids]
                 if len(selected) != len(ids) or not selected:
@@ -105,9 +109,15 @@ def process(doc, chunk, responses, ontology):
                             raise ValueError('QUALIFIER_VALUE_NOT_EXACT')
                         if q['u'] and q['u'] not in q['s']:
                             raise ValueError('QUALIFIER_UNIT_NOT_EXACT')
+                        types = ontology['qualifiers'][q['k']]['raw_value_types']
+                        raw_value = q['v']
+                        if 'string' not in types:
+                            if 'number' not in types or not re.fullmatch(r'[+-]?\d+(?:\.\d+)?', q['v']):
+                                raise ValueError('QUALIFIER_VALUE_TYPE_UNSUPPORTED')
+                            raw_value = float(q['v']) if '.' in q['v'] else int(q['v'])
                         span = evidence(doc, chunk, qa, qb)
                         scope.append(span)
-                        qout.append(dict(qualifier_type=q['k'], raw_value=q['v'], normalized_value=None,
+                        qout.append(dict(qualifier_type=q['k'], raw_value=raw_value, normalized_value=None,
                                          raw_text=q['s'], unit=q['u'] or None, evidence_refs=[span['span_id']],
                                          applies_to_assertion_id=identifier))
                     except (ValueError, KeyError, TypeError) as exc:
@@ -128,6 +138,11 @@ def process(doc, chunk, responses, ontology):
                     accepted_keys.add(key)
             except (ValueError, KeyError, TypeError) as exc:
                 rejected.append(dict(stage='relation_mapping', prediction=rel, reason=str(exc)))
+        # Pair coverage includes exact surfaces first proposed by relations.
+        for h in local:
+            for t in local:
+                if h and t and h['mention_id'] != t['mention_id']:
+                    candidate_keys.add((h['mention_id'], t['mention_id']))
     window_pairs = [dict(head_mention_id=h, tail_mention_id=t, model_served=True,
                   decision_status='ACCEPTED_PROVISIONAL' if any(a['head_mention_id']==h and a['tail_mention_id']==t for a in accepted) else 'ABSTAIN',
                   reasons=[], unsupported_labels=[])

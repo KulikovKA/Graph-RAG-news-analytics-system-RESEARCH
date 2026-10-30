@@ -61,12 +61,74 @@
         "type": "object",
         "properties": {
           "h": {
-            "type": "integer",
-            "minimum": 0
+            "type": "object",
+            "properties": {
+              "s": {
+                "type": "string",
+                "minLength": 1
+              },
+              "o": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "k": {
+                "enum": [
+                  "MATERIAL",
+                  "DEVICE",
+                  "PROPERTY",
+                  "PERFORMANCE",
+                  "ANALYTE",
+                  "PROCESS",
+                  "MECHANISM",
+                  "OPERATING_CONDITION",
+                  "MORPHOLOGY",
+                  "TECHNOLOGY",
+                  "APPLICATION",
+                  "OTHER"
+                ]
+              }
+            },
+            "required": [
+              "s",
+              "o",
+              "k"
+            ],
+            "additionalProperties": false
           },
           "t": {
-            "type": "integer",
-            "minimum": 0
+            "type": "object",
+            "properties": {
+              "s": {
+                "type": "string",
+                "minLength": 1
+              },
+              "o": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "k": {
+                "enum": [
+                  "MATERIAL",
+                  "DEVICE",
+                  "PROPERTY",
+                  "PERFORMANCE",
+                  "ANALYTE",
+                  "PROCESS",
+                  "MECHANISM",
+                  "OPERATING_CONDITION",
+                  "MORPHOLOGY",
+                  "TECHNOLOGY",
+                  "APPLICATION",
+                  "OTHER"
+                ]
+              }
+            },
+            "required": [
+              "s",
+              "o",
+              "k"
+            ],
+            "additionalProperties": false
           },
           "r": {
             "enum": [

@@ -11,13 +11,15 @@ def schema(ontology):
     string = dict(type='string')
     integer = dict(type='integer', minimum=0)
     anchored = dict(s=dict(type='string', minLength=1), n=integer, o=dict(type='integer', minimum=1))
+    endpoint = obj(dict(s=dict(type='string', minLength=1), o=dict(type='integer', minimum=1),
+                        k=dict(enum=list(ontology['entities']))))
     qualifier = obj(dict(anchored, k=dict(enum=list(ontology['qualifiers'])), v=string, u=string))
     return obj(dict(
         entities=dict(type='array', items=obj(dict(anchored,
             k=dict(enum=list(ontology['entities'])),
             r=dict(enum=['TARGET', 'COMPONENT', 'BEARER', 'METHOD', 'CONDITION', 'UNKNOWN'])))),
         relations=dict(type='array', items=obj(dict(
-            h=integer, t=integer, r=dict(enum=list(ontology['relations'])),
+            h=endpoint, t=endpoint, r=dict(enum=list(ontology['relations'])),
             e=dict(type='array', items=integer, minItems=1, uniqueItems=True),
             p=dict(enum=['POSITIVE', 'NEGATIVE', 'UNKNOWN']),
             m=dict(enum=['ASSERTED', 'PROPOSED', 'HYPOTHETICAL', 'COMPARED', 'UNKNOWN']),

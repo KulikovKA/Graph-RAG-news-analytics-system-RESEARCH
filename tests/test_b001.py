@@ -20,7 +20,15 @@ def run(text, entities, relations, unresolved=None):
                  ordinal=0, section_start=0, section_end=len(text), language='en')
     doc = dict(document_id='doc', revision_id='revision')
     rows = [dict(id=0, start=0, end=len(text), text=text)]
-    response = dict(entities=entities, relations=relations, unresolved=unresolved or [])
+    converted = []
+    for item in relations:
+        item = dict(item)
+        for role in ('h', 't'):
+            if isinstance(item[role], int):
+                source = entities[item[role]]
+                item[role] = {k: source[k] for k in ('s', 'o', 'k')}
+        converted.append(item)
+    response = dict(entities=entities, relations=converted, unresolved=unresolved or [])
     return process(doc, chunk, [(rows, response)], load_ontology(read_json('config/b001.json')))
 
 
@@ -63,6 +71,13 @@ def test_model_abstention_preserved():
               [relation(0, 1, d='ABSTAIN')])
     assert len(out['raw_proposals']) == 1 and not out['assertions']
     assert out['rejected'][0]['reason'] == 'MODEL_ABSTAIN'
+
+
+def test_relation_can_introduce_new_exact_mention():
+    out = run('Sensor detects NH3.', [entity('Sensor', 'DEVICE')],
+              [relation(0, dict(s='NH3', o=1, k='ANALYTE'))])
+    assert len(out['entities']) == 2
+    assert len(out['assertions']) == 1
 
 
 def test_windows_cover_sentences_with_overlap_and_schema_frozen():
