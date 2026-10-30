@@ -12,6 +12,10 @@ from cgraph.validation import validate_prediction
 from cgraph.zeroshot_evaluation import loss_audit
 
 
+def prediction_directory(variant):
+    return Path("artifacts/c_diag_002") / ("gold_entities_re_diagnostic" if variant == "gold" else variant)
+
+
 def typed_coverage(predictions, labels, ontology):
     result = {}
     for kind in ontology["entities"]:
@@ -129,11 +133,11 @@ def main():
     cfg = read_json("config/c_diag_002.json")
     variants = cfg["diagnostic_protocol"]["variants"]
     # Check every saved run before the first Gold read.
-    inventories = {v: read_json(f"artifacts/c_diag_002/{v}/run.json") for v in variants}
+    inventories = {v: read_json(prediction_directory(v) / "run.json") for v in variants}
     docs, ontology = load_inputs(cfg), load_ontology(cfg)
     predictions = {}
     for v, run in inventories.items():
-        directory = Path("artifacts/c_diag_002") / v
+        directory = prediction_directory(v)
         audit = read_json(directory / "access_audit.json")
         if run["config_sha256"] != fingerprint(cfg) or not audit["completed"] or audit["run_sha256"] != file_sha256(directory / "run.json"):
             raise ValueError("Run protocol/audit mismatch")
@@ -203,10 +207,10 @@ def main():
                       unsupported_relations=[r for r, cap in cfg["zero_shot_re"]["capabilities"].items() if cap["status"] == "UNSUPPORTED"],
                       unsupported_gold_relations=dict(unsupported_gold), selected_examples=examples,
                       performance={k: run[k] for k in ("wall_ms", "cpu_ms", "peak_ram_bytes", "ner_load_ms", "re_load_ms", "ner_calls", "ner_encoder_calls", "re_calls", "re_encoder_calls")},
-                      run_sha256=file_sha256(Path("artifacts/c_diag_002") / v / "run.json"))
+                      run_sha256=file_sha256(prediction_directory(v) / "run.json"))
         write_json(out / f"{v}.json", result)
         write_json(out / f"{v}_run.json", run)
-        write_json(out / f"{v}_access_audit.json", read_json(Path("artifacts/c_diag_002") / v / "access_audit.json"))
+        write_json(out / f"{v}_access_audit.json", read_json(prediction_directory(v) / "access_audit.json"))
         summary[v] = dict(micro=result["micro"], counts=result["counts"], performance=result["performance"],
                           funnel=audit["correct_assertions_remaining"], final_fp_categories=fp_categories)
         print(v, result["micro"]["entity_typed"], result["micro"]["relation_end_to_end"], flush=True)

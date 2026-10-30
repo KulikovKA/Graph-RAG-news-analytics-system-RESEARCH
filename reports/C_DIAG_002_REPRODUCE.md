@@ -15,7 +15,7 @@ uv run --no-sync python scripts/run_c_diag_002.py --variant battery --output art
 uv run --no-sync python scripts/run_c_diag_002.py --variant control --output artifacts/c_diag_002/control
 uv run --no-sync python scripts/run_c_diag_002.py --variant union --output artifacts/c_diag_002/union
 uv run --no-sync python scripts/export_c_diag_002_entities.py
-uv run --no-sync python scripts/run_c_diag_002.py --variant gold --output artifacts/c_diag_002/gold
+uv run --no-sync python scripts/run_c_diag_002.py --variant gold --output artifacts/c_diag_002/gold_entities_re_diagnostic
 uv run --no-sync python scripts/prepare_c_diag_002_ner_inventories.py
 uv run --no-sync python scripts/benchmark_c_diag_002_ner.py --variant control
 uv run --no-sync python scripts/benchmark_c_diag_002_ner.py --variant chem
@@ -60,6 +60,19 @@ encoder calls (`KeyError: input_ids`). Исправлен только measureme
 учитывающий positional inputs; модель, правила и protocol не менялись. Лог:
 локальный `artifacts/c_diag_002/chem_instrumentation_failure.log`. Эта попытка,
 downloads, GLiREL probe, tests и evaluator не входят во времена основных runs.
+
+Первый Gold diagnostic run остановился до записи первого prediction: имя output
+каталога `/gold/` было отвергнуто тем же guard, который запрещает Gold input.
+Исправлен только output path на `gold_entities_re_diagnostic`; guard, entities,
+модель и thresholds не менялись. Лог сохранён как
+`artifacts/c_diag_002/gold_failed_output_guard.log`; неудачная попытка не включена
+в primary timing. Scoring до исправления не выполнялся.
+
+Union потребовал 53.3 минуты непрерывного CPU inference. Лимит внешнего
+orchestrator увеличен до 75 минут до Gold scoring; ожидание orchestration было
+приостановлено, сам inference не останавливался и не перезапускался. Все 12
+predictions и audit успешно записаны. Позднейшее ожидание между завершением union
+29 октября и продолжением Gold-диагностики 30 октября не входит в model wall time.
 
 Сохранённый contract diagnostic test читает исходную ontology только для проверки
 её hash и равенства нормативных полей example-free runtime projection. Поля с
