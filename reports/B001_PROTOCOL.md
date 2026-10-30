@@ -16,6 +16,8 @@ Technical restart before Gold evaluation: the initial three-sentence setup (`044
 
 The preliminary sentence-window run (`58cb999`) was interrupted before completion and scoring. In its first chunk, Qwen emitted character-like positions instead of indexes into the entity list (11 relation endpoint failures). The endpoint representation was replaced with exact source surfaces and types; a relation may introduce an exact anchored mention, avoiding a hard entity inventory limit. This correction is based solely on source-only execution failures. No Gold or F1 was examined. The partial raw traces remain locally in `artifacts/b001/dev_sentence` and are excluded from the primary results.
 
+A second source-only technical run (`5a90136`, repeat penalty 1.0) produced a looping output on D001's second sentence, repeating the same relation until 4096 tokens. A single source-only decoding probe with repeat penalty 1.1 and a 256-token repetition window completed the same JSON in 1393 output tokens. Its purpose was termination, not Gold-based optimization. The interrupted outputs and probe are retained in `artifacts/b001/dev_final` and `artifacts/b001/repeat_probe.json`. The primary configuration fixes repeat penalty 1.1 and repeat_last_n 256 for every window, with no relation count cap. These preliminary source-only checks add DEV exposure; the resulting evaluation is exploratory.
+
 Reproduction from repository root (Python 3.11 with dependencies from `uv.lock` and Ollama 0.35.0 with the pinned model installed):
 
 ```powershell
