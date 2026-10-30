@@ -306,7 +306,7 @@ def main():
                           f"[{e['start']},{e['end']}) → {e['predicted_kind']}; "
                           f"Gold kinds на точной границе: {e['gold_kinds_at_exact_boundary'] or 'нет'}. "
                           "BOUNDARY означает отсутствие exact Gold span, без самостоятельной semantic adjudication.",
-                          "> " + e["evidence"].replace("\n", " ")]
+                          "> " + e["evidence"].replace("\n", " ").rstrip()]
     for v, key in [("control", "relation_TP"), ("control", "relation_FP"), ("control", "relation_FN_NER"),
                    ("union", "relation_FN_NER"), ("gold", "relation_FP"), ("gold", "relation_FN_RE_OR_CAPABILITY"), ("gold", "relation_FN_GATES")]:
         e = results[v]["selected_examples"].get(key)
@@ -314,7 +314,7 @@ def main():
             parts += [f"**{names[v]} / {e['document']} / {key}**: `{e['head']}` ({e['head_kind']}) "
                       f"→ {e['relation']} → `{e['tail']}` ({e['tail_kind']}). " +
                       (f"Score {e['score']:.4f}." if "score" in e else f"Loss stage: {e['stage']}."),
-                      "> " + e["evidence"].replace("\n", " ")]
+                      "> " + e["evidence"].replace("\n", " ").rstrip()]
     parts += ["Примеры выбраны детерминированно после predictions для иллюстрации; они не использованы "
               "для исправления prompts/thresholds. Более подробные examples и chunk IDs — в variant JSON.",
               "## Проверки",

@@ -210,7 +210,7 @@ REBEL исключён как генеративный, GLiNER-Relex как join
 
 **MatSciBERT CHEM / D001 / entity_FP_BOUNDARY**: `graphene oxide` [516,530) → MATERIAL; Gold kinds на точной границе: нет. BOUNDARY означает отсутствие exact Gold span, без самостоятельной semantic adjudication.
 
-> astic threads as flexible/stretchable templates and reduced graphene oxide/mesoporous zinc oxide nanosheets as sensing layers to form 
+> astic threads as flexible/stretchable templates and reduced graphene oxide/mesoporous zinc oxide nanosheets as sensing layers to form
 
 **Electrocatalyst NER* / D001 / entity_TP**: `room-temperature` [897,913) → OPERATING_CONDITION; Gold kinds на точной границе: ['OPERATING_CONDITION']. BOUNDARY означает отсутствие exact Gold span, без самостоятельной semantic adjudication.
 
