@@ -1,0 +1,2023 @@
+{
+  "micro": {
+    "entity_span": {
+      "tp": 209,
+      "fp": 296,
+      "fn": 380,
+      "gold": 589,
+      "predicted": 505,
+      "precision": 0.41386138613861384,
+      "recall": 0.3548387096774194,
+      "f1": 0.3820840950639854
+    },
+    "entity_typed": {
+      "tp": 155,
+      "fp": 350,
+      "fn": 434,
+      "gold": 589,
+      "predicted": 505,
+      "precision": 0.3069306930693069,
+      "recall": 0.2631578947368421,
+      "f1": 0.283363802559415
+    },
+    "relation_raw_end_to_end": {
+      "tp": 16,
+      "fp": 167,
+      "fn": 374,
+      "gold": 390,
+      "predicted": 183,
+      "precision": 0.08743169398907104,
+      "recall": 0.041025641025641026,
+      "f1": 0.055846422338568937
+    },
+    "relation_end_to_end": {
+      "tp": 16,
+      "fp": 48,
+      "fn": 374,
+      "gold": 390,
+      "predicted": 64,
+      "precision": 0.25,
+      "recall": 0.041025641025641026,
+      "f1": 0.07048458149779736
+    },
+    "relation_given_candidate_endpoints": {
+      "tp": 16,
+      "fp": 4,
+      "fn": 34,
+      "gold": 50,
+      "predicted": 20,
+      "precision": 0.8,
+      "recall": 0.32,
+      "f1": 0.45714285714285713
+    },
+    "qualified_relation": {
+      "tp": 0,
+      "fp": 64,
+      "fn": 390,
+      "gold": 390,
+      "predicted": 64,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "candidate_pair_recall": {
+      "covered": 50,
+      "gold": 390,
+      "recall": 0.1282051282051282
+    },
+    "abstention": {
+      "abstained": 4006,
+      "candidate_pairs": 4068,
+      "rate": 0.9847590953785644
+    }
+  },
+  "macro_document": {
+    "entity_span": {
+      "f1": 0.3779675583113249,
+      "documents": 12
+    },
+    "entity_typed": {
+      "f1": 0.28039293637806356,
+      "documents": 12
+    },
+    "relation_raw_end_to_end": {
+      "f1": 0.06138110397480833,
+      "documents": 12
+    },
+    "relation_end_to_end": {
+      "f1": 0.07763374609638977,
+      "documents": 12
+    },
+    "relation_given_candidate_endpoints": {
+      "f1": 0.4883333333333334,
+      "documents": 10
+    },
+    "qualified_relation": {
+      "f1": 0.0,
+      "documents": 12
+    }
+  },
+  "documents": {
+    "D001": {
+      "entity_span": {
+        "tp": 28,
+        "fp": 23,
+        "fn": 33,
+        "predicted": 51,
+        "gold": 61,
+        "precision": 0.5490196078431373,
+        "recall": 0.45901639344262296,
+        "f1": 0.5
+      },
+      "entity_typed": {
+        "tp": 15,
+        "fp": 36,
+        "fn": 46,
+        "predicted": 51,
+        "gold": 61,
+        "precision": 0.29411764705882354,
+        "recall": 0.2459016393442623,
+        "f1": 0.26785714285714285
+      },
+      "relation_raw_end_to_end": {
+        "tp": 4,
+        "fp": 19,
+        "fn": 47,
+        "predicted": 23,
+        "gold": 51,
+        "precision": 0.17391304347826086,
+        "recall": 0.0784313725490196,
+        "f1": 0.10810810810810811
+      },
+      "relation_end_to_end": {
+        "tp": 4,
+        "fp": 3,
+        "fn": 47,
+        "predicted": 7,
+        "gold": 51,
+        "precision": 0.5714285714285714,
+        "recall": 0.0784313725490196,
+        "f1": 0.13793103448275862
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 4,
+        "fp": 0,
+        "fn": 2,
+        "predicted": 4,
+        "gold": 6,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 7,
+        "fn": 51,
+        "predicted": 7,
+        "gold": 51,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 6,
+        "gold": 51,
+        "recall": 0.11764705882352941
+      },
+      "abstention": {
+        "abstained": 561,
+        "candidate_pairs": 568
+      },
+      "accepted_assertions": 7,
+      "raw_proposals": 23,
+      "unsupported_proposals": 0
+    },
+    "D003": {
+      "entity_span": {
+        "tp": 26,
+        "fp": 16,
+        "fn": 43,
+        "predicted": 42,
+        "gold": 69,
+        "precision": 0.6190476190476191,
+        "recall": 0.37681159420289856,
+        "f1": 0.46846846846846846
+      },
+      "entity_typed": {
+        "tp": 21,
+        "fp": 21,
+        "fn": 48,
+        "predicted": 42,
+        "gold": 69,
+        "precision": 0.5,
+        "recall": 0.30434782608695654,
+        "f1": 0.3783783783783784
+      },
+      "relation_raw_end_to_end": {
+        "tp": 0,
+        "fp": 22,
+        "fn": 47,
+        "predicted": 22,
+        "gold": 47,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_end_to_end": {
+        "tp": 0,
+        "fp": 12,
+        "fn": 47,
+        "predicted": 12,
+        "gold": 47,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 5,
+        "predicted": 1,
+        "gold": 5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 12,
+        "fn": 47,
+        "predicted": 12,
+        "gold": 47,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 5,
+        "gold": 47,
+        "recall": 0.10638297872340426
+      },
+      "abstention": {
+        "abstained": 290,
+        "candidate_pairs": 300
+      },
+      "accepted_assertions": 12,
+      "raw_proposals": 22,
+      "unsupported_proposals": 0
+    },
+    "D004": {
+      "entity_span": {
+        "tp": 16,
+        "fp": 39,
+        "fn": 31,
+        "predicted": 55,
+        "gold": 47,
+        "precision": 0.2909090909090909,
+        "recall": 0.3404255319148936,
+        "f1": 0.3137254901960784
+      },
+      "entity_typed": {
+        "tp": 12,
+        "fp": 43,
+        "fn": 35,
+        "predicted": 55,
+        "gold": 47,
+        "precision": 0.21818181818181817,
+        "recall": 0.2553191489361702,
+        "f1": 0.23529411764705882
+      },
+      "relation_raw_end_to_end": {
+        "tp": 1,
+        "fp": 13,
+        "fn": 23,
+        "predicted": 14,
+        "gold": 24,
+        "precision": 0.07142857142857142,
+        "recall": 0.041666666666666664,
+        "f1": 0.05263157894736842
+      },
+      "relation_end_to_end": {
+        "tp": 1,
+        "fp": 2,
+        "fn": 23,
+        "predicted": 3,
+        "gold": 24,
+        "precision": 0.3333333333333333,
+        "recall": 0.041666666666666664,
+        "f1": 0.07407407407407407
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 2,
+        "predicted": 1,
+        "gold": 3,
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 3,
+        "fn": 24,
+        "predicted": 3,
+        "gold": 24,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 3,
+        "gold": 24,
+        "recall": 0.125
+      },
+      "abstention": {
+        "abstained": 523,
+        "candidate_pairs": 526
+      },
+      "accepted_assertions": 3,
+      "raw_proposals": 14,
+      "unsupported_proposals": 0
+    },
+    "D010": {
+      "entity_span": {
+        "tp": 27,
+        "fp": 23,
+        "fn": 78,
+        "predicted": 50,
+        "gold": 105,
+        "precision": 0.54,
+        "recall": 0.2571428571428571,
+        "f1": 0.34838709677419355
+      },
+      "entity_typed": {
+        "tp": 23,
+        "fp": 27,
+        "fn": 82,
+        "predicted": 50,
+        "gold": 105,
+        "precision": 0.46,
+        "recall": 0.21904761904761905,
+        "f1": 0.2967741935483871
+      },
+      "relation_raw_end_to_end": {
+        "tp": 0,
+        "fp": 29,
+        "fn": 99,
+        "predicted": 29,
+        "gold": 99,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_end_to_end": {
+        "tp": 0,
+        "fp": 5,
+        "fn": 99,
+        "predicted": 5,
+        "gold": 99,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 11,
+        "predicted": 1,
+        "gold": 11,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 5,
+        "fn": 99,
+        "predicted": 5,
+        "gold": 99,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 11,
+        "gold": 99,
+        "recall": 0.1111111111111111
+      },
+      "abstention": {
+        "abstained": 345,
+        "candidate_pairs": 350
+      },
+      "accepted_assertions": 5,
+      "raw_proposals": 29,
+      "unsupported_proposals": 0
+    },
+    "D017": {
+      "entity_span": {
+        "tp": 21,
+        "fp": 15,
+        "fn": 16,
+        "predicted": 36,
+        "gold": 37,
+        "precision": 0.5833333333333334,
+        "recall": 0.5675675675675675,
+        "f1": 0.5753424657534246
+      },
+      "entity_typed": {
+        "tp": 20,
+        "fp": 16,
+        "fn": 17,
+        "predicted": 36,
+        "gold": 37,
+        "precision": 0.5555555555555556,
+        "recall": 0.5405405405405406,
+        "f1": 0.547945205479452
+      },
+      "relation_raw_end_to_end": {
+        "tp": 7,
+        "fp": 6,
+        "fn": 21,
+        "predicted": 13,
+        "gold": 28,
+        "precision": 0.5384615384615384,
+        "recall": 0.25,
+        "f1": 0.34146341463414637
+      },
+      "relation_end_to_end": {
+        "tp": 7,
+        "fp": 1,
+        "fn": 21,
+        "predicted": 8,
+        "gold": 28,
+        "precision": 0.875,
+        "recall": 0.25,
+        "f1": 0.3888888888888889
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 7,
+        "fp": 0,
+        "fn": 10,
+        "predicted": 7,
+        "gold": 17,
+        "precision": 1.0,
+        "recall": 0.4117647058823529,
+        "f1": 0.5833333333333334
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 8,
+        "fn": 28,
+        "predicted": 8,
+        "gold": 28,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 17,
+        "gold": 28,
+        "recall": 0.6071428571428571
+      },
+      "abstention": {
+        "abstained": 242,
+        "candidate_pairs": 250
+      },
+      "accepted_assertions": 8,
+      "raw_proposals": 13,
+      "unsupported_proposals": 0
+    },
+    "D024": {
+      "entity_span": {
+        "tp": 18,
+        "fp": 32,
+        "fn": 22,
+        "predicted": 50,
+        "gold": 40,
+        "precision": 0.36,
+        "recall": 0.45,
+        "f1": 0.4
+      },
+      "entity_typed": {
+        "tp": 9,
+        "fp": 41,
+        "fn": 31,
+        "predicted": 50,
+        "gold": 40,
+        "precision": 0.18,
+        "recall": 0.225,
+        "f1": 0.2
+      },
+      "relation_raw_end_to_end": {
+        "tp": 0,
+        "fp": 12,
+        "fn": 20,
+        "predicted": 12,
+        "gold": 20,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_end_to_end": {
+        "tp": 0,
+        "fp": 5,
+        "fn": 20,
+        "predicted": 5,
+        "gold": 20,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 0,
+        "fp": 2,
+        "fn": 1,
+        "predicted": 2,
+        "gold": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 5,
+        "fn": 20,
+        "predicted": 5,
+        "gold": 20,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 1,
+        "gold": 20,
+        "recall": 0.05
+      },
+      "abstention": {
+        "abstained": 343,
+        "candidate_pairs": 348
+      },
+      "accepted_assertions": 5,
+      "raw_proposals": 12,
+      "unsupported_proposals": 0
+    },
+    "D026": {
+      "entity_span": {
+        "tp": 11,
+        "fp": 26,
+        "fn": 20,
+        "predicted": 37,
+        "gold": 31,
+        "precision": 0.2972972972972973,
+        "recall": 0.3548387096774194,
+        "f1": 0.3235294117647059
+      },
+      "entity_typed": {
+        "tp": 8,
+        "fp": 29,
+        "fn": 23,
+        "predicted": 37,
+        "gold": 31,
+        "precision": 0.21621621621621623,
+        "recall": 0.25806451612903225,
+        "f1": 0.23529411764705882
+      },
+      "relation_raw_end_to_end": {
+        "tp": 1,
+        "fp": 12,
+        "fn": 18,
+        "predicted": 13,
+        "gold": 19,
+        "precision": 0.07692307692307693,
+        "recall": 0.05263157894736842,
+        "f1": 0.0625
+      },
+      "relation_end_to_end": {
+        "tp": 1,
+        "fp": 6,
+        "fn": 18,
+        "predicted": 7,
+        "gold": 19,
+        "precision": 0.14285714285714285,
+        "recall": 0.05263157894736842,
+        "f1": 0.07692307692307693
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "predicted": 1,
+        "gold": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 7,
+        "fn": 19,
+        "predicted": 7,
+        "gold": 19,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 1,
+        "gold": 19,
+        "recall": 0.05263157894736842
+      },
+      "abstention": {
+        "abstained": 235,
+        "candidate_pairs": 242
+      },
+      "accepted_assertions": 7,
+      "raw_proposals": 13,
+      "unsupported_proposals": 0
+    },
+    "D035": {
+      "entity_span": {
+        "tp": 10,
+        "fp": 19,
+        "fn": 24,
+        "predicted": 29,
+        "gold": 34,
+        "precision": 0.3448275862068966,
+        "recall": 0.29411764705882354,
+        "f1": 0.31746031746031744
+      },
+      "entity_typed": {
+        "tp": 7,
+        "fp": 22,
+        "fn": 27,
+        "predicted": 29,
+        "gold": 34,
+        "precision": 0.2413793103448276,
+        "recall": 0.20588235294117646,
+        "f1": 0.2222222222222222
+      },
+      "relation_raw_end_to_end": {
+        "tp": 0,
+        "fp": 5,
+        "fn": 15,
+        "predicted": 5,
+        "gold": 15,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_end_to_end": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 15,
+        "predicted": 1,
+        "gold": 15,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "predicted": 0,
+        "gold": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 15,
+        "predicted": 1,
+        "gold": 15,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 0,
+        "gold": 15,
+        "recall": 0.0
+      },
+      "abstention": {
+        "abstained": 203,
+        "candidate_pairs": 204
+      },
+      "accepted_assertions": 1,
+      "raw_proposals": 5,
+      "unsupported_proposals": 0
+    },
+    "D038": {
+      "entity_span": {
+        "tp": 7,
+        "fp": 14,
+        "fn": 20,
+        "predicted": 21,
+        "gold": 27,
+        "precision": 0.3333333333333333,
+        "recall": 0.25925925925925924,
+        "f1": 0.2916666666666667
+      },
+      "entity_typed": {
+        "tp": 5,
+        "fp": 16,
+        "fn": 22,
+        "predicted": 21,
+        "gold": 27,
+        "precision": 0.23809523809523808,
+        "recall": 0.18518518518518517,
+        "f1": 0.20833333333333334
+      },
+      "relation_raw_end_to_end": {
+        "tp": 0,
+        "fp": 3,
+        "fn": 17,
+        "predicted": 3,
+        "gold": 17,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_end_to_end": {
+        "tp": 0,
+        "fp": 2,
+        "fn": 17,
+        "predicted": 2,
+        "gold": 17,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "predicted": 0,
+        "gold": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 2,
+        "fn": 17,
+        "predicted": 2,
+        "gold": 17,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 0,
+        "gold": 17,
+        "recall": 0.0
+      },
+      "abstention": {
+        "abstained": 92,
+        "candidate_pairs": 94
+      },
+      "accepted_assertions": 2,
+      "raw_proposals": 3,
+      "unsupported_proposals": 0
+    },
+    "D060": {
+      "entity_span": {
+        "tp": 7,
+        "fp": 29,
+        "fn": 16,
+        "predicted": 36,
+        "gold": 23,
+        "precision": 0.19444444444444445,
+        "recall": 0.30434782608695654,
+        "f1": 0.23728813559322035
+      },
+      "entity_typed": {
+        "tp": 5,
+        "fp": 31,
+        "fn": 18,
+        "predicted": 36,
+        "gold": 23,
+        "precision": 0.1388888888888889,
+        "recall": 0.21739130434782608,
+        "f1": 0.1694915254237288
+      },
+      "relation_raw_end_to_end": {
+        "tp": 1,
+        "fp": 11,
+        "fn": 11,
+        "predicted": 12,
+        "gold": 12,
+        "precision": 0.08333333333333333,
+        "recall": 0.08333333333333333,
+        "f1": 0.08333333333333333
+      },
+      "relation_end_to_end": {
+        "tp": 1,
+        "fp": 3,
+        "fn": 11,
+        "predicted": 4,
+        "gold": 12,
+        "precision": 0.25,
+        "recall": 0.08333333333333333,
+        "f1": 0.125
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 1,
+        "predicted": 1,
+        "gold": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 4,
+        "fn": 12,
+        "predicted": 4,
+        "gold": 12,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 2,
+        "gold": 12,
+        "recall": 0.16666666666666666
+      },
+      "abstention": {
+        "abstained": 434,
+        "candidate_pairs": 438
+      },
+      "accepted_assertions": 4,
+      "raw_proposals": 12,
+      "unsupported_proposals": 0
+    },
+    "D078": {
+      "entity_span": {
+        "tp": 17,
+        "fp": 39,
+        "fn": 55,
+        "predicted": 56,
+        "gold": 72,
+        "precision": 0.30357142857142855,
+        "recall": 0.2361111111111111,
+        "f1": 0.265625
+      },
+      "entity_typed": {
+        "tp": 13,
+        "fp": 43,
+        "fn": 59,
+        "predicted": 56,
+        "gold": 72,
+        "precision": 0.23214285714285715,
+        "recall": 0.18055555555555555,
+        "f1": 0.203125
+      },
+      "relation_raw_end_to_end": {
+        "tp": 1,
+        "fp": 18,
+        "fn": 38,
+        "predicted": 19,
+        "gold": 39,
+        "precision": 0.05263157894736842,
+        "recall": 0.02564102564102564,
+        "f1": 0.034482758620689655
+      },
+      "relation_end_to_end": {
+        "tp": 1,
+        "fp": 4,
+        "fn": 38,
+        "predicted": 5,
+        "gold": 39,
+        "precision": 0.2,
+        "recall": 0.02564102564102564,
+        "f1": 0.045454545454545456
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 1,
+        "predicted": 1,
+        "gold": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 5,
+        "fn": 39,
+        "predicted": 5,
+        "gold": 39,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 2,
+        "gold": 39,
+        "recall": 0.05128205128205128
+      },
+      "abstention": {
+        "abstained": 519,
+        "candidate_pairs": 524
+      },
+      "accepted_assertions": 5,
+      "raw_proposals": 19,
+      "unsupported_proposals": 0
+    },
+    "D092": {
+      "entity_span": {
+        "tp": 21,
+        "fp": 21,
+        "fn": 22,
+        "predicted": 42,
+        "gold": 43,
+        "precision": 0.5,
+        "recall": 0.4883720930232558,
+        "f1": 0.49411764705882355
+      },
+      "entity_typed": {
+        "tp": 17,
+        "fp": 25,
+        "fn": 26,
+        "predicted": 42,
+        "gold": 43,
+        "precision": 0.40476190476190477,
+        "recall": 0.3953488372093023,
+        "f1": 0.4
+      },
+      "relation_raw_end_to_end": {
+        "tp": 1,
+        "fp": 17,
+        "fn": 18,
+        "predicted": 18,
+        "gold": 19,
+        "precision": 0.05555555555555555,
+        "recall": 0.05263157894736842,
+        "f1": 0.05405405405405406
+      },
+      "relation_end_to_end": {
+        "tp": 1,
+        "fp": 4,
+        "fn": 18,
+        "predicted": 5,
+        "gold": 19,
+        "precision": 0.2,
+        "recall": 0.05263157894736842,
+        "f1": 0.08333333333333333
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 1,
+        "predicted": 1,
+        "gold": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 5,
+        "fn": 19,
+        "predicted": 5,
+        "gold": 19,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 2,
+        "gold": 19,
+        "recall": 0.10526315789473684
+      },
+      "abstention": {
+        "abstained": 219,
+        "candidate_pairs": 224
+      },
+      "accepted_assertions": 5,
+      "raw_proposals": 18,
+      "unsupported_proposals": 0
+    }
+  },
+  "matching_policy": "Exact Unicode spans+kind; directed predicate; multiset one-to-one; no relaxed/coreference substitution",
+  "qualifier_policy": "UNKNOWN qualifier completeness never receives qualified TP; gold qualifiers remain in denominator",
+  "annotation_limitation": "Single owner review, AI-origin annotations; no independent secondary review",
+  "semantic_support_rate": null,
+  "semantic_support_status": "NOT_MEASURED: requires independent review of predictions",
+  "architecture_id": "B-001",
+  "subset": "all",
+  "training_performed": false,
+  "inferential_status": "Exploratory reused DEV; not an independent final test",
+  "relation_metrics_scope": "C-compatible raw metric uses mappable typed endpoints and evidence. raw_all_proposals additionally counts unmappable relation outputs as FP.",
+  "raw_all_proposals": {
+    "tp": 16,
+    "fp": 215,
+    "fn": 374,
+    "gold": 390,
+    "predicted": 231,
+    "precision": 0.06926406926406926,
+    "recall": 0.041025641025641026,
+    "f1": 0.05152979066022544,
+    "unmappable_counted_as_fp": 48
+  },
+  "unmappable_raw_by_relation": {
+    "HAS_COMPONENT": 1,
+    "FABRICATED_BY": 2,
+    "EXPLAINS": 1,
+    "HAS_PERFORMANCE": 5,
+    "USED_FOR": 15,
+    "LOCATED_IN": 2,
+    "HAS_MEMBER": 5,
+    "HAS_PROPERTY": 5,
+    "ACTS_ON": 5,
+    "CHANGES_PARAMETER": 2,
+    "FUNCTIONS_AS": 2,
+    "FACILITATES": 1,
+    "DETECTS": 2
+  },
+  "candidate_policy": "C single-sentence directed pair definition applied to B entities; B itself serves wider windows.",
+  "model_abstention": {
+    "abstained": 36,
+    "structurally_validated_relation_records": 183,
+    "rate": 0.19672131147540983
+  },
+  "rejection_reasons": {
+    "ONTOLOGY_DOMAIN_RANGE": 67,
+    "ONTOLOGY_DOMAIN_RANGE;MODEL_ABSTAIN;UNKNOWN_OR_UNSUPPORTED_POLARITY_MODALITY": 17,
+    "NEGATION_NOT_IN_EVIDENCE": 2,
+    "SURFACE_NOT_AT_OCCURRENCE": 95,
+    "ONTOLOGY_DOMAIN_RANGE;NEGATION_NOT_IN_EVIDENCE": 6,
+    "INVALID_OCCURRENCE_ANCHOR": 66,
+    "MODEL_ABSTAIN;UNKNOWN_OR_UNSUPPORTED_POLARITY_MODALITY": 14,
+    "ONTOLOGY_DOMAIN_RANGE;MODEL_ABSTAIN;NEGATION_NOT_IN_EVIDENCE": 3,
+    "INVALID_EVIDENCE_SENTENCE": 15,
+    "REQUIRED_QUALIFIER_UNSUPPORTED": 1,
+    "ONTOLOGY_DOMAIN_RANGE;NEGATION_NOT_IN_EVIDENCE;REQUIRED_QUALIFIER_UNSUPPORTED": 1,
+    "ONTOLOGY_DOMAIN_RANGE;MODEL_ABSTAIN": 2,
+    "ONTOLOGY_DOMAIN_RANGE;REQUIRED_QUALIFIER_UNSUPPORTED": 2,
+    "ONTOLOGY_DOMAIN_RANGE;UNKNOWN_OR_UNSUPPORTED_POLARITY_MODALITY": 4
+  },
+  "per_relation": {
+    "HAS_PROPERTY": {
+      "raw": {
+        "tp": 0,
+        "fp": 22,
+        "fn": 52,
+        "predicted": 22,
+        "gold": 52,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "final": {
+        "tp": 0,
+        "fp": 8,
+        "fn": 52,
+        "predicted": 8,
+        "gold": 52,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "HAS_PERFORMANCE": {
+      "raw": {
+        "tp": 0,
+        "fp": 21,
+        "fn": 52,
+        "predicted": 21,
+        "gold": 52,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "final": {
+        "tp": 0,
+        "fp": 8,
+        "fn": 52,
+        "predicted": 8,
+        "gold": 52,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "HAS_MORPHOLOGY": {
+      "raw": {
+        "tp": 0,
+        "fp": 8,
+        "fn": 17,
+        "predicted": 8,
+        "gold": 17,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "final": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 17,
+        "predicted": 1,
+        "gold": 17,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "HAS_COMPONENT": {
+      "raw": {
+        "tp": 0,
+        "fp": 6,
+        "fn": 57,
+        "predicted": 6,
+        "gold": 57,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "final": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 57,
+        "predicted": 0,
+        "gold": 57,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "HAS_MEMBER": {
+      "raw": {
+        "tp": 0,
+        "fp": 25,
+        "fn": 44,
+        "predicted": 25,
+        "gold": 44,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "final": {
+        "tp": 0,
+        "fp": 12,
+        "fn": 44,
+        "predicted": 12,
+        "gold": 44,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "USES_MATERIAL": {
+      "raw": {
+        "tp": 3,
+        "fp": 3,
+        "fn": 20,
+        "predicted": 6,
+        "gold": 23,
+        "precision": 0.5,
+        "recall": 0.13043478260869565,
+        "f1": 0.20689655172413793
+      },
+      "final": {
+        "tp": 3,
+        "fp": 1,
+        "fn": 20,
+        "predicted": 4,
+        "gold": 23,
+        "precision": 0.75,
+        "recall": 0.13043478260869565,
+        "f1": 0.2222222222222222
+      }
+    },
+    "FUNCTIONS_AS": {
+      "raw": {
+        "tp": 2,
+        "fp": 3,
+        "fn": 1,
+        "predicted": 5,
+        "gold": 3,
+        "precision": 0.4,
+        "recall": 0.6666666666666666,
+        "f1": 0.5
+      },
+      "final": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 1,
+        "predicted": 3,
+        "gold": 3,
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "f1": 0.6666666666666666
+      }
+    },
+    "DETECTS": {
+      "raw": {
+        "tp": 2,
+        "fp": 16,
+        "fn": 11,
+        "predicted": 18,
+        "gold": 13,
+        "precision": 0.1111111111111111,
+        "recall": 0.15384615384615385,
+        "f1": 0.12903225806451613
+      },
+      "final": {
+        "tp": 2,
+        "fp": 10,
+        "fn": 11,
+        "predicted": 12,
+        "gold": 13,
+        "precision": 0.16666666666666666,
+        "recall": 0.15384615384615385,
+        "f1": 0.16
+      }
+    },
+    "USED_FOR": {
+      "raw": {
+        "tp": 7,
+        "fp": 15,
+        "fn": 40,
+        "predicted": 22,
+        "gold": 47,
+        "precision": 0.3181818181818182,
+        "recall": 0.14893617021276595,
+        "f1": 0.2028985507246377
+      },
+      "final": {
+        "tp": 7,
+        "fp": 3,
+        "fn": 40,
+        "predicted": 10,
+        "gold": 47,
+        "precision": 0.7,
+        "recall": 0.14893617021276595,
+        "f1": 0.24561403508771928
+      }
+    },
+    "FABRICATED_BY": {
+      "raw": {
+        "tp": 1,
+        "fp": 5,
+        "fn": 13,
+        "predicted": 6,
+        "gold": 14,
+        "precision": 0.16666666666666666,
+        "recall": 0.07142857142857142,
+        "f1": 0.1
+      },
+      "final": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 13,
+        "predicted": 2,
+        "gold": 14,
+        "precision": 0.5,
+        "recall": 0.07142857142857142,
+        "f1": 0.125
+      }
+    },
+    "IMPROVES": {
+      "raw": {
+        "tp": 0,
+        "fp": 6,
+        "fn": 7,
+        "predicted": 6,
+        "gold": 7,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "final": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 7,
+        "predicted": 1,
+        "gold": 7,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "ACTS_ON": {
+      "raw": {
+        "tp": 0,
+        "fp": 9,
+        "fn": 13,
+        "predicted": 9,
+        "gold": 13,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "final": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 13,
+        "predicted": 0,
+        "gold": 13,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "INTEGRATED_IN": {
+      "raw": {
+        "tp": 0,
+        "fp": 2,
+        "fn": 1,
+        "predicted": 2,
+        "gold": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "final": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "predicted": 0,
+        "gold": 1,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "HAS_MECHANISM": {
+      "raw": {
+        "tp": 0,
+        "fp": 5,
+        "fn": 6,
+        "predicted": 5,
+        "gold": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "final": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 6,
+        "predicted": 0,
+        "gold": 6,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "MECHANISM_INVOLVES": {
+      "raw": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 9,
+        "predicted": 0,
+        "gold": 9,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "final": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 9,
+        "predicted": 0,
+        "gold": 9,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "LOCATED_IN": {
+      "raw": {
+        "tp": 0,
+        "fp": 5,
+        "fn": 2,
+        "predicted": 5,
+        "gold": 2,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "final": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 2,
+        "predicted": 1,
+        "gold": 2,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "OPTIMIZES": {
+      "raw": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 1,
+        "predicted": 1,
+        "gold": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "final": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "predicted": 0,
+        "gold": 1,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "FACILITATES": {
+      "raw": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 2,
+        "predicted": 1,
+        "gold": 3,
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5
+      },
+      "final": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 2,
+        "predicted": 1,
+        "gold": 3,
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5
+      }
+    },
+    "CAUSES": {
+      "raw": {
+        "tp": 0,
+        "fp": 8,
+        "fn": 3,
+        "predicted": 8,
+        "gold": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "final": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 3,
+        "predicted": 1,
+        "gold": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "EXPLAINS": {
+      "raw": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 11,
+        "predicted": 0,
+        "gold": 11,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "final": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 11,
+        "predicted": 0,
+        "gold": 11,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "CHANGES_PARAMETER": {
+      "raw": {
+        "tp": 0,
+        "fp": 4,
+        "fn": 8,
+        "predicted": 4,
+        "gold": 8,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "final": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 8,
+        "predicted": 0,
+        "gold": 8,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "DEPENDS_ON": {
+      "raw": {
+        "tp": 0,
+        "fp": 3,
+        "fn": 2,
+        "predicted": 3,
+        "gold": 2,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "final": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "predicted": 0,
+        "gold": 2,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "MEETS_REQUIREMENT": {
+      "raw": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "predicted": 0,
+        "gold": 2,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "final": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "predicted": 0,
+        "gold": 2,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    }
+  },
+  "examples": {
+    "matched": [
+      {
+        "document": "D001",
+        "relation": "USES_MATERIAL",
+        "head": "gas sensor",
+        "head_kind": "DEVICE",
+        "tail": "cotton/elastic threads",
+        "tail_kind": "MATERIAL",
+        "polarity": "POSITIVE",
+        "modality": "PROPOSED",
+        "evidence": "The proposed gas sensor is built using commercially available cotton/elastic threads as flexible/stretchable templates and reduced graphene oxide/mesoporous zinc oxide nanosheets as sensing layers to form conducting fibers.",
+        "note": "Exact Gold match"
+      },
+      {
+        "document": "D001",
+        "relation": "USES_MATERIAL",
+        "head": "gas sensor",
+        "head_kind": "DEVICE",
+        "tail": "reduced graphene oxide/mesoporous zinc oxide nanosheets",
+        "tail_kind": "MATERIAL",
+        "polarity": "POSITIVE",
+        "modality": "PROPOSED",
+        "evidence": "The proposed gas sensor is built using commercially available cotton/elastic threads as flexible/stretchable templates and reduced graphene oxide/mesoporous zinc oxide nanosheets as sensing layers to form conducting fibers.",
+        "note": "Exact Gold match"
+      },
+      {
+        "document": "D001",
+        "relation": "FUNCTIONS_AS",
+        "head": "cotton/elastic threads",
+        "head_kind": "MATERIAL",
+        "tail": "flexible/stretchable templates",
+        "tail_kind": "OTHER",
+        "polarity": "POSITIVE",
+        "modality": "PROPOSED",
+        "evidence": "The proposed gas sensor is built using commercially available cotton/elastic threads as flexible/stretchable templates and reduced graphene oxide/mesoporous zinc oxide nanosheets as sensing layers to form conducting fibers.",
+        "note": "Exact Gold match"
+      },
+      {
+        "document": "D001",
+        "relation": "FUNCTIONS_AS",
+        "head": "reduced graphene oxide/mesoporous zinc oxide nanosheets",
+        "head_kind": "MATERIAL",
+        "tail": "sensing layers",
+        "tail_kind": "DEVICE",
+        "polarity": "POSITIVE",
+        "modality": "PROPOSED",
+        "evidence": "The proposed gas sensor is built using commercially available cotton/elastic threads as flexible/stretchable templates and reduced graphene oxide/mesoporous zinc oxide nanosheets as sensing layers to form conducting fibers.",
+        "note": "Exact Gold match"
+      },
+      {
+        "document": "D004",
+        "relation": "FACILITATES",
+        "head": "microwave treatment",
+        "head_kind": "PROCESS",
+        "tail": "evaporation and redeposition of SnO x nanoparticles",
+        "tail_kind": "PROCESS",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": "By the microwave treatment of graphene–SnO 2 nanocomposites, with the graphene promoting efficient transport of the microwave energy, evaporation and redeposition of SnO x nanoparticles were facilitated.",
+        "note": "Exact Gold match"
+      },
+      {
+        "document": "D017",
+        "relation": "USED_FOR",
+        "head": "graphene",
+        "head_kind": "MATERIAL",
+        "tail": "gas-sensing applications",
+        "tail_kind": "APPLICATION",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": "Moreover, we systematically present the current gas-sensing applications based on graphene, graphene oxide (GO), reduced graphene oxide (rGO), functionalized GO or rGO, transition metal dichalcogenides, layered III-VI semiconductors, layered metal oxides, phosphorene, hexagonal boron nitride, etc.",
+        "note": "Exact Gold match"
+      },
+      {
+        "document": "D017",
+        "relation": "USED_FOR",
+        "head": "reduced graphene oxide",
+        "head_kind": "MATERIAL",
+        "tail": "gas-sensing applications",
+        "tail_kind": "APPLICATION",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": "Moreover, we systematically present the current gas-sensing applications based on graphene, graphene oxide (GO), reduced graphene oxide (rGO), functionalized GO or rGO, transition metal dichalcogenides, layered III-VI semiconductors, layered metal oxides, phosphorene, hexagonal boron nitride, etc.",
+        "note": "Exact Gold match"
+      },
+      {
+        "document": "D017",
+        "relation": "USED_FOR",
+        "head": "transition metal dichalcogenides",
+        "head_kind": "MATERIAL",
+        "tail": "gas-sensing applications",
+        "tail_kind": "APPLICATION",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": "Moreover, we systematically present the current gas-sensing applications based on graphene, graphene oxide (GO), reduced graphene oxide (rGO), functionalized GO or rGO, transition metal dichalcogenides, layered III-VI semiconductors, layered metal oxides, phosphorene, hexagonal boron nitride, etc.",
+        "note": "Exact Gold match"
+      },
+      {
+        "document": "D017",
+        "relation": "USED_FOR",
+        "head": "layered III-VI semiconductors",
+        "head_kind": "MATERIAL",
+        "tail": "gas-sensing applications",
+        "tail_kind": "APPLICATION",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": "Moreover, we systematically present the current gas-sensing applications based on graphene, graphene oxide (GO), reduced graphene oxide (rGO), functionalized GO or rGO, transition metal dichalcogenides, layered III-VI semiconductors, layered metal oxides, phosphorene, hexagonal boron nitride, etc.",
+        "note": "Exact Gold match"
+      },
+      {
+        "document": "D017",
+        "relation": "USED_FOR",
+        "head": "layered metal oxides",
+        "head_kind": "MATERIAL",
+        "tail": "gas-sensing applications",
+        "tail_kind": "APPLICATION",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": "Moreover, we systematically present the current gas-sensing applications based on graphene, graphene oxide (GO), reduced graphene oxide (rGO), functionalized GO or rGO, transition metal dichalcogenides, layered III-VI semiconductors, layered metal oxides, phosphorene, hexagonal boron nitride, etc.",
+        "note": "Exact Gold match"
+      },
+      {
+        "document": "D017",
+        "relation": "USED_FOR",
+        "head": "phosphorene",
+        "head_kind": "MATERIAL",
+        "tail": "gas-sensing applications",
+        "tail_kind": "APPLICATION",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": "Moreover, we systematically present the current gas-sensing applications based on graphene, graphene oxide (GO), reduced graphene oxide (rGO), functionalized GO or rGO, transition metal dichalcogenides, layered III-VI semiconductors, layered metal oxides, phosphorene, hexagonal boron nitride, etc.",
+        "note": "Exact Gold match"
+      },
+      {
+        "document": "D017",
+        "relation": "USED_FOR",
+        "head": "hexagonal boron nitride",
+        "head_kind": "MATERIAL",
+        "tail": "gas-sensing applications",
+        "tail_kind": "APPLICATION",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": "Moreover, we systematically present the current gas-sensing applications based on graphene, graphene oxide (GO), reduced graphene oxide (rGO), functionalized GO or rGO, transition metal dichalcogenides, layered III-VI semiconductors, layered metal oxides, phosphorene, hexagonal boron nitride, etc.",
+        "note": "Exact Gold match"
+      },
+      {
+        "document": "D026",
+        "relation": "DETECTS",
+        "head": "Ti3C2Tx MXene gas sensors",
+        "head_kind": "DEVICE",
+        "tail": "VOC gases",
+        "tail_kind": "ANALYTE",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": "Ti3C2Tx MXene gas sensors exhibited a very low limit of detection of 50–100 ppb for VOC gases at room temperature.",
+        "note": "Exact Gold match"
+      },
+      {
+        "document": "D060",
+        "relation": "FABRICATED_BY",
+        "head": "graphene sensors",
+        "head_kind": "DEVICE",
+        "tail": "chemical vapor deposition",
+        "tail_kind": "PROCESS",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": "We report on employing molecular doping to enhance the sensitivity of graphene sensors synthesized via chemical vapor deposition to NH3 molecules at room temperature.",
+        "note": "Exact Gold match"
+      },
+      {
+        "document": "D078",
+        "relation": "DETECTS",
+        "head": "flexible graphene sensor",
+        "head_kind": "DEVICE",
+        "tail": "NO 2",
+        "tail_kind": "ANALYTE",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": "Because the n-channel is easily induced by a top-molecular dopant, a flexible graphene sensor with outstanding NO 2 detection capability was successfully fabricated on plastic without vertical stacks of gate-electrode and gate-dielectric.",
+        "note": "Exact Gold match"
+      },
+      {
+        "document": "D092",
+        "relation": "USES_MATERIAL",
+        "head": "gas sensor",
+        "head_kind": "DEVICE",
+        "tail": "B-doped graphene",
+        "tail_kind": "MATERIAL",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": "The transport behavior of a gas sensor using B-doped graphene shows a sensitivity two orders of magnitude higher than that of pristine graphene.",
+        "note": "Exact Gold match"
+      }
+    ],
+    "unmatched": [
+      {
+        "document": "D001",
+        "relation": "HAS_PERFORMANCE",
+        "head": "fiber",
+        "head_kind": "MATERIAL",
+        "tail": "response",
+        "tail_kind": "PERFORMANCE",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": "The as-prepared fiber demonstrates sensitive sensing response, excellent long-term stability (84 days), low theoretical detection limit (43.5 ppb NO 2 ), great mechanical deformation tolerance (3000 bending cycles, 1000 twisting cycles and 65% strain strength), and washing durability in room-temperature gas detection.",
+        "note": "Unmatched to annotation; not independently adjudicated"
+      },
+      {
+        "document": "D001",
+        "relation": "HAS_PROPERTY",
+        "head": "fiber",
+        "head_kind": "MATERIAL",
+        "tail": "stability",
+        "tail_kind": "PROPERTY",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": "The as-prepared fiber demonstrates sensitive sensing response, excellent long-term stability (84 days), low theoretical detection limit (43.5 ppb NO 2 ), great mechanical deformation tolerance (3000 bending cycles, 1000 twisting cycles and 65% strain strength), and washing durability in room-temperature gas detection.",
+        "note": "Unmatched to annotation; not independently adjudicated"
+      },
+      {
+        "document": "D001",
+        "relation": "HAS_PROPERTY",
+        "head": "fiber",
+        "head_kind": "MATERIAL",
+        "tail": "tolerance",
+        "tail_kind": "PROPERTY",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": "The as-prepared fiber demonstrates sensitive sensing response, excellent long-term stability (84 days), low theoretical detection limit (43.5 ppb NO 2 ), great mechanical deformation tolerance (3000 bending cycles, 1000 twisting cycles and 65% strain strength), and washing durability in room-temperature gas detection.",
+        "note": "Unmatched to annotation; not independently adjudicated"
+      },
+      {
+        "document": "D003",
+        "relation": "DETECTS",
+        "head": "sensor",
+        "head_kind": "DEVICE",
+        "tail": "NO x",
+        "tail_kind": "ANALYTE",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": "This study presents the design and demonstration of a moisture-resistant, stretchable NO x gas sensor based on laser-induced graphene (LIG).",
+        "note": "Unmatched to annotation; not independently adjudicated"
+      },
+      {
+        "document": "D003",
+        "relation": "HAS_PROPERTY",
+        "head": "gas sensor",
+        "head_kind": "DEVICE",
+        "tail": "moisture-resistant",
+        "tail_kind": "PROPERTY",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": "This study presents the design and demonstration of a moisture-resistant, stretchable NO x gas sensor based on laser-induced graphene (LIG).",
+        "note": "Unmatched to annotation; not independently adjudicated"
+      },
+      {
+        "document": "D003",
+        "relation": "HAS_PROPERTY",
+        "head": "gas sensor",
+        "head_kind": "DEVICE",
+        "tail": "stretchable",
+        "tail_kind": "PROPERTY",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": "This study presents the design and demonstration of a moisture-resistant, stretchable NO x gas sensor based on laser-induced graphene (LIG).",
+        "note": "Unmatched to annotation; not independently adjudicated"
+      },
+      {
+        "document": "D003",
+        "relation": "USES_MATERIAL",
+        "head": "gas sensor",
+        "head_kind": "DEVICE",
+        "tail": "LIG",
+        "tail_kind": "MATERIAL",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": "The gas sensor, using a needlelike LIG prepared with optimal laser processing parameters, exhibits a large response of 4.18‰ ppm −1 to NO and 6.66‰ ppm −1 to NO 2 , an ultralow detection limit of 8.3 ppb to NO and 4.0 ppb to NO 2 , fast response/recovery, and excellent selectivity.",
+        "note": "Unmatched to annotation; not independently adjudicated"
+      },
+      {
+        "document": "D003",
+        "relation": "DETECTS",
+        "head": "gas sensor",
+        "head_kind": "DEVICE",
+        "tail": "NO",
+        "tail_kind": "ANALYTE",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": "The gas sensor, using a needlelike LIG prepared with optimal laser processing parameters, exhibits a large response of 4.18‰ ppm −1 to NO and 6.66‰ ppm −1 to NO 2 , an ultralow detection limit of 8.3 ppb to NO and 4.0 ppb to NO 2 , fast response/recovery, and excellent selectivity.",
+        "note": "Unmatched to annotation; not independently adjudicated"
+      },
+      {
+        "document": "D003",
+        "relation": "DETECTS",
+        "head": "gas sensor",
+        "head_kind": "DEVICE",
+        "tail": "NO 2 ",
+        "tail_kind": "ANALYTE",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": "The gas sensor, using a needlelike LIG prepared with optimal laser processing parameters, exhibits a large response of 4.18‰ ppm −1 to NO and 6.66‰ ppm −1 to NO 2 , an ultralow detection limit of 8.3 ppb to NO and 4.0 ppb to NO 2 , fast response/recovery, and excellent selectivity.",
+        "note": "Unmatched to annotation; not independently adjudicated"
+      },
+      {
+        "document": "D003",
+        "relation": "DETECTS",
+        "head": "gas sensor",
+        "head_kind": "DEVICE",
+        "tail": "NO",
+        "tail_kind": "ANALYTE",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": "The gas sensor, using a needlelike LIG prepared with optimal laser processing parameters, exhibits a large response of 4.18‰ ppm −1 to NO and 6.66‰ ppm −1 to NO 2 , an ultralow detection limit of 8.3 ppb to NO and 4.0 ppb to NO 2 , fast response/recovery, and excellent selectivity.",
+        "note": "Unmatched to annotation; not independently adjudicated"
+      },
+      {
+        "document": "D003",
+        "relation": "DETECTS",
+        "head": "gas sensor",
+        "head_kind": "DEVICE",
+        "tail": "NO 2 ",
+        "tail_kind": "ANALYTE",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": "The gas sensor, using a needlelike LIG prepared with optimal laser processing parameters, exhibits a large response of 4.18‰ ppm −1 to NO and 6.66‰ ppm −1 to NO 2 , an ultralow detection limit of 8.3 ppb to NO and 4.0 ppb to NO 2 , fast response/recovery, and excellent selectivity.",
+        "note": "Unmatched to annotation; not independently adjudicated"
+      },
+      {
+        "document": "D003",
+        "relation": "HAS_PERFORMANCE",
+        "head": "gas sensor",
+        "head_kind": "DEVICE",
+        "tail": "30%",
+        "tail_kind": "PERFORMANCE",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": "The design of a stretchable serpentine structure in the LIG electrode and strain isolation from the stiff island allows the gas sensor to be stretched by 30%.",
+        "note": "Unmatched to annotation; not independently adjudicated"
+      },
+      {
+        "document": "D003",
+        "relation": "USED_FOR",
+        "head": "gas sensor",
+        "head_kind": "DEVICE",
+        "tail": "personal local environment",
+        "tail_kind": "APPLICATION",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": "Combined with a moisture-resistant property against a relative humidity of 90%, the reported gas sensor has further been demonstrated to monitor the personal local environment during different times of the day and analyze human breath samples to classify patients with respiratory diseases from healthy volunteers.",
+        "note": "Unmatched to annotation; not independently adjudicated"
+      },
+      {
+        "document": "D003",
+        "relation": "USED_FOR",
+        "head": "gas sensor",
+        "head_kind": "DEVICE",
+        "tail": "human breath samples",
+        "tail_kind": "ANALYTE",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": "Combined with a moisture-resistant property against a relative humidity of 90%, the reported gas sensor has further been demonstrated to monitor the personal local environment during different times of the day and analyze human breath samples to classify patients with respiratory diseases from healthy volunteers.",
+        "note": "Unmatched to annotation; not independently adjudicated"
+      },
+      {
+        "document": "D003",
+        "relation": "DETECTS",
+        "head": "gas sensors",
+        "head_kind": "DEVICE",
+        "tail": "NO x",
+        "tail_kind": "ANALYTE",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": "Moisture-resistant, stretchable NO x gas sensors can expand the capability of wearable devices to detect biomarkers from humans and exposed environments for early disease diagnostics.",
+        "note": "Unmatched to annotation; not independently adjudicated"
+      },
+      {
+        "document": "D004",
+        "relation": "HAS_PERFORMANCE",
+        "head": "graphene",
+        "head_kind": "MATERIAL",
+        "tail": "efficient transport of the microwave energy",
+        "tail_kind": "PERFORMANCE",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": "By the microwave treatment of graphene–SnO 2 nanocomposites, with the graphene promoting efficient transport of the microwave energy, evaporation and redeposition of SnO x nanoparticles were facilitated.",
+        "note": "Unmatched to annotation; not independently adjudicated"
+      },
+      {
+        "document": "D004",
+        "relation": "CAUSES",
+        "head": "SnO x phase in the matrix",
+        "head_kind": "MATERIAL",
+        "tail": "formation of SnO 2 /SnO 2 homojunctions",
+        "tail_kind": "PROCESS",
+        "polarity": "POSITIVE",
+        "modality": "PROPOSED",
+        "evidence": "We suggest that the generation of SnO x nanoparticles and the SnO x phase in the matrix results in the formation of SnO 2 /SnO 2 homojunctions, SnO 2 /SnO x ( x < 2) heterojunctions, and SnO 2 /graphene heterojunctions, which are responsible for the excellent sensitivity of the graphene–SnO 2 nanocomposites to NO 2 gas.",
+        "note": "Unmatched to annotation; not independently adjudicated"
+      },
+      {
+        "document": "D010",
+        "relation": "HAS_MEMBER",
+        "head": "Ti",
+        "head_kind": "ANALYTE",
+        "tail": "C",
+        "tail_kind": "ANALYTE",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": "The Ti 3 C 2 Tx MXene/GO/CuO/ZnO nanocomposite gas sensor exhibited the best NH 3 gas sensor.",
+        "note": "Unmatched to annotation; not independently adjudicated"
+      },
+      {
+        "document": "D010",
+        "relation": "HAS_MEMBER",
+        "head": "Tx",
+        "head_kind": "ANALYTE",
+        "tail": "MXene",
+        "tail_kind": "MATERIAL",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": "The Ti 3 C 2 Tx MXene/GO/CuO/ZnO nanocomposite gas sensor exhibited the best NH 3 gas sensor.",
+        "note": "Unmatched to annotation; not independently adjudicated"
+      },
+      {
+        "document": "D010",
+        "relation": "HAS_MEMBER",
+        "head": "GO",
+        "head_kind": "MATERIAL",
+        "tail": "CuO",
+        "tail_kind": "MATERIAL",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "evidence": "The Ti 3 C 2 Tx MXene/GO/CuO/ZnO nanocomposite gas sensor exhibited the best NH 3 gas sensor.",
+        "note": "Unmatched to annotation; not independently adjudicated"
+      }
+    ]
+  },
+  "performance": {
+    "cost": {
+      "wall_seconds": 8187.69950499991,
+      "sampled_cpu_seconds": 32700.421875,
+      "peak_sampled_rss_bytes": 5128474624,
+      "method": "0.25s sampled sum of client, Ollama server and its descendants; CPU deltas; shared server may include unrelated work",
+      "server_pid": 20864
+    },
+    "llm_calls": 78,
+    "input_tokens": 212272,
+    "output_tokens": 57059,
+    "retries": 0,
+    "json_errors": 1,
+    "request_errors": 0,
+    "windows_total": 78,
+    "windows_successful": 77,
+    "failed_windows": [
+      {
+        "document": "D078",
+        "chunk_id": "8e528f95-22fc-4b9a-8b16-90391b584bc3",
+        "sentence_ids": [
+          4
+        ],
+        "reason": "MODEL_OUTPUT_FAILURE"
+      }
+    ]
+  },
+  "d024_limitation": "D024 relation annotations are incomplete; unmatched predictions are not necessarily semantically false.",
+  "prediction_run_sha256": "655a9501db65c7dd361dc2595f4a273d676d07e0e5ba185a6cb7e8fa6097177e"
+}

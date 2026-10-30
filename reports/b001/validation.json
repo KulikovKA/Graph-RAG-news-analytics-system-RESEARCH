@@ -1,0 +1,25 @@
+{
+  "prediction_run_sha256": "655a9501db65c7dd361dc2595f4a273d676d07e0e5ba185a6cb7e8fa6097177e",
+  "config_file_sha256": "aa0c0b3c1585b177c0d4600f4f2dcf4db7a85b9dacd06742992827d4ce8b8ebb",
+  "ontology_frozen_sha256": "c3c0186ce492560fb27be400194596f70fae66a89daf4b7844636264cd3e3692",
+  "runtime_ontology_sha256": "504fae7e960b3a64c0c3f8277a6355435847821e6963a865e352f792c6f24251",
+  "full_dev_documents": 12,
+  "raw_trace_files": 78,
+  "offline_evaluator_completed": true,
+  "baseline_base": "b368a63",
+  "preserved_refs": {
+    "main": "06f2bac",
+    "c-restart-001-zero-shot": "b368a63",
+    "c-diag-002-pretrained-only": "14a48d4"
+  },
+  "failed_window": {
+    "document": "D078",
+    "chunk_id": "8e528f95-22fc-4b9a-8b16-90391b584bc3",
+    "sentence_ids": [
+      4
+    ],
+    "reason": "MODEL_OUTPUT_FAILURE"
+  },
+  "failed_output_reason": "length",
+  "post_scoring_extraction_changes": false
+}
