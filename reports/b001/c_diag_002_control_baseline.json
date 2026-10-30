@@ -1,0 +1,598 @@
+{
+  "source": "c-diag-002-pretrained-only reports/c_diag_002/control.json",
+  "source_commit": "14a48d4",
+  "source_file_sha256": "d69db4676358d8d40e71372ad3f067c48b20e093c22da95ed0c081039d07d826",
+  "micro": {
+    "entity_span": {
+      "tp": 277,
+      "fp": 201,
+      "fn": 312,
+      "gold": 589,
+      "predicted": 478,
+      "precision": 0.5794979079497908,
+      "recall": 0.4702886247877759,
+      "f1": 0.5192127460168697
+    },
+    "entity_typed": {
+      "tp": 245,
+      "fp": 233,
+      "fn": 344,
+      "gold": 589,
+      "predicted": 478,
+      "precision": 0.5125523012552301,
+      "recall": 0.4159592529711375,
+      "f1": 0.4592314901593252
+    },
+    "relation_raw_end_to_end": {
+      "tp": 50,
+      "fp": 5508,
+      "fn": 340,
+      "gold": 390,
+      "predicted": 5558,
+      "precision": 0.008996041741633681,
+      "recall": 0.1282051282051282,
+      "f1": 0.016812373907195696
+    },
+    "relation_end_to_end": {
+      "tp": 48,
+      "fp": 4455,
+      "fn": 342,
+      "gold": 390,
+      "predicted": 4503,
+      "precision": 0.010659560293137908,
+      "recall": 0.12307692307692308,
+      "f1": 0.019619865113427344
+    },
+    "relation_given_candidate_endpoints": {
+      "tp": 48,
+      "fp": 1141,
+      "fn": 23,
+      "gold": 71,
+      "predicted": 1189,
+      "precision": 0.040370058873002525,
+      "recall": 0.676056338028169,
+      "f1": 0.0761904761904762
+    },
+    "qualified_relation": {
+      "tp": 0,
+      "fp": 4503,
+      "fn": 390,
+      "gold": 390,
+      "predicted": 4503,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "candidate_pair_recall": {
+      "covered": 71,
+      "gold": 390,
+      "recall": 0.18205128205128204
+    },
+    "abstention": {
+      "abstained": 1425,
+      "candidate_pairs": 3942,
+      "rate": 0.3614916286149163
+    }
+  },
+  "per_relation": {
+    "DEPENDS_ON": {
+      "raw": {
+        "tp": 0,
+        "fp": 175,
+        "fn": 2,
+        "gold": 2,
+        "predicted": 175,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "final": {
+        "tp": 0,
+        "fp": 110,
+        "fn": 2,
+        "gold": 2,
+        "predicted": 110,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "HAS_MEMBER": {
+      "raw": {
+        "tp": 0,
+        "fp": 2418,
+        "fn": 44,
+        "gold": 44,
+        "predicted": 2418,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "final": {
+        "tp": 0,
+        "fp": 2069,
+        "fn": 44,
+        "gold": 44,
+        "predicted": 2069,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "ACTS_ON": {
+      "raw": {
+        "tp": 2,
+        "fp": 160,
+        "fn": 11,
+        "gold": 13,
+        "predicted": 162,
+        "precision": 0.012345679012345678,
+        "recall": 0.15384615384615385,
+        "f1": 0.022857142857142857
+      },
+      "final": {
+        "tp": 2,
+        "fp": 86,
+        "fn": 11,
+        "gold": 13,
+        "predicted": 88,
+        "precision": 0.022727272727272728,
+        "recall": 0.15384615384615385,
+        "f1": 0.039603960396039604
+      }
+    },
+    "HAS_PROPERTY": {
+      "raw": {
+        "tp": 7,
+        "fp": 254,
+        "fn": 45,
+        "gold": 52,
+        "predicted": 261,
+        "precision": 0.02681992337164751,
+        "recall": 0.1346153846153846,
+        "f1": 0.04472843450479233
+      },
+      "final": {
+        "tp": 7,
+        "fp": 170,
+        "fn": 45,
+        "gold": 52,
+        "predicted": 177,
+        "precision": 0.03954802259887006,
+        "recall": 0.1346153846153846,
+        "f1": 0.0611353711790393
+      }
+    },
+    "INTEGRATED_IN": {
+      "raw": {
+        "tp": 0,
+        "fp": 13,
+        "fn": 1,
+        "gold": 1,
+        "predicted": 13,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "final": {
+        "tp": 0,
+        "fp": 11,
+        "fn": 1,
+        "gold": 1,
+        "predicted": 11,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "HAS_MORPHOLOGY": {
+      "raw": {
+        "tp": 1,
+        "fp": 3,
+        "fn": 16,
+        "gold": 17,
+        "predicted": 4,
+        "precision": 0.25,
+        "recall": 0.058823529411764705,
+        "f1": 0.09523809523809523
+      },
+      "final": {
+        "tp": 1,
+        "fp": 3,
+        "fn": 16,
+        "gold": 17,
+        "predicted": 4,
+        "precision": 0.25,
+        "recall": 0.058823529411764705,
+        "f1": 0.09523809523809523
+      }
+    },
+    "IMPROVES": {
+      "raw": {
+        "tp": 1,
+        "fp": 9,
+        "fn": 6,
+        "gold": 7,
+        "predicted": 10,
+        "precision": 0.1,
+        "recall": 0.14285714285714285,
+        "f1": 0.11764705882352941
+      },
+      "final": {
+        "tp": 1,
+        "fp": 5,
+        "fn": 6,
+        "gold": 7,
+        "predicted": 6,
+        "precision": 0.16666666666666666,
+        "recall": 0.14285714285714285,
+        "f1": 0.15384615384615385
+      }
+    },
+    "HAS_PERFORMANCE": {
+      "raw": {
+        "tp": 4,
+        "fp": 126,
+        "fn": 48,
+        "gold": 52,
+        "predicted": 130,
+        "precision": 0.03076923076923077,
+        "recall": 0.07692307692307693,
+        "f1": 0.04395604395604396
+      },
+      "final": {
+        "tp": 4,
+        "fp": 64,
+        "fn": 48,
+        "gold": 52,
+        "predicted": 68,
+        "precision": 0.058823529411764705,
+        "recall": 0.07692307692307693,
+        "f1": 0.06666666666666667
+      }
+    },
+    "FABRICATED_BY": {
+      "raw": {
+        "tp": 7,
+        "fp": 149,
+        "fn": 7,
+        "gold": 14,
+        "predicted": 156,
+        "precision": 0.04487179487179487,
+        "recall": 0.5,
+        "f1": 0.08235294117647059
+      },
+      "final": {
+        "tp": 7,
+        "fp": 75,
+        "fn": 7,
+        "gold": 14,
+        "predicted": 82,
+        "precision": 0.08536585365853659,
+        "recall": 0.5,
+        "f1": 0.14583333333333334
+      }
+    },
+    "USES_MATERIAL": {
+      "raw": {
+        "tp": 6,
+        "fp": 26,
+        "fn": 17,
+        "gold": 23,
+        "predicted": 32,
+        "precision": 0.1875,
+        "recall": 0.2608695652173913,
+        "f1": 0.21818181818181817
+      },
+      "final": {
+        "tp": 5,
+        "fp": 24,
+        "fn": 18,
+        "gold": 23,
+        "predicted": 29,
+        "precision": 0.1724137931034483,
+        "recall": 0.21739130434782608,
+        "f1": 0.19230769230769232
+      }
+    },
+    "CHANGES_PARAMETER": {
+      "raw": {
+        "tp": 0,
+        "fp": 22,
+        "fn": 8,
+        "gold": 8,
+        "predicted": 22,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "final": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 8,
+        "gold": 8,
+        "predicted": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "FUNCTIONS_AS": {
+      "raw": {
+        "tp": 0,
+        "fp": 42,
+        "fn": 3,
+        "gold": 3,
+        "predicted": 42,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "final": {
+        "tp": 0,
+        "fp": 36,
+        "fn": 3,
+        "gold": 3,
+        "predicted": 36,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "DETECTS": {
+      "raw": {
+        "tp": 4,
+        "fp": 16,
+        "fn": 9,
+        "gold": 13,
+        "predicted": 20,
+        "precision": 0.2,
+        "recall": 0.3076923076923077,
+        "f1": 0.24242424242424243
+      },
+      "final": {
+        "tp": 3,
+        "fp": 12,
+        "fn": 10,
+        "gold": 13,
+        "predicted": 15,
+        "precision": 0.2,
+        "recall": 0.23076923076923078,
+        "f1": 0.21428571428571427
+      }
+    },
+    "EXPLAINS": {
+      "raw": {
+        "tp": 4,
+        "fp": 168,
+        "fn": 7,
+        "gold": 11,
+        "predicted": 172,
+        "precision": 0.023255813953488372,
+        "recall": 0.36363636363636365,
+        "f1": 0.04371584699453552
+      },
+      "final": {
+        "tp": 4,
+        "fp": 103,
+        "fn": 7,
+        "gold": 11,
+        "predicted": 107,
+        "precision": 0.037383177570093455,
+        "recall": 0.36363636363636365,
+        "f1": 0.06779661016949153
+      }
+    },
+    "OPTIMIZES": {
+      "raw": {
+        "tp": 0,
+        "fp": 22,
+        "fn": 1,
+        "gold": 1,
+        "predicted": 22,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "final": {
+        "tp": 0,
+        "fp": 14,
+        "fn": 1,
+        "gold": 1,
+        "predicted": 14,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "HAS_COMPONENT": {
+      "raw": {
+        "tp": 4,
+        "fp": 1347,
+        "fn": 53,
+        "gold": 57,
+        "predicted": 1351,
+        "precision": 0.0029607698001480384,
+        "recall": 0.07017543859649122,
+        "f1": 0.005681818181818182
+      },
+      "final": {
+        "tp": 4,
+        "fp": 1325,
+        "fn": 53,
+        "gold": 57,
+        "predicted": 1329,
+        "precision": 0.0030097817908201654,
+        "recall": 0.07017543859649122,
+        "f1": 0.005772005772005772
+      }
+    },
+    "USED_FOR": {
+      "raw": {
+        "tp": 10,
+        "fp": 262,
+        "fn": 37,
+        "gold": 47,
+        "predicted": 272,
+        "precision": 0.03676470588235294,
+        "recall": 0.2127659574468085,
+        "f1": 0.06269592476489028
+      },
+      "final": {
+        "tp": 10,
+        "fp": 191,
+        "fn": 37,
+        "gold": 47,
+        "predicted": 201,
+        "precision": 0.04975124378109453,
+        "recall": 0.2127659574468085,
+        "f1": 0.08064516129032258
+      }
+    },
+    "HAS_MECHANISM": {
+      "raw": {
+        "tp": 0,
+        "fp": 22,
+        "fn": 6,
+        "gold": 6,
+        "predicted": 22,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "final": {
+        "tp": 0,
+        "fp": 9,
+        "fn": 6,
+        "gold": 6,
+        "predicted": 9,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "MECHANISM_INVOLVES": {
+      "raw": {
+        "tp": 0,
+        "fp": 3,
+        "fn": 9,
+        "gold": 9,
+        "predicted": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "final": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 9,
+        "gold": 9,
+        "predicted": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "FACILITATES": {
+      "raw": {
+        "tp": 0,
+        "fp": 181,
+        "fn": 3,
+        "gold": 3,
+        "predicted": 181,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "final": {
+        "tp": 0,
+        "fp": 97,
+        "fn": 3,
+        "gold": 3,
+        "predicted": 97,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "CAUSES": {
+      "raw": {
+        "tp": 0,
+        "fp": 88,
+        "fn": 3,
+        "gold": 3,
+        "predicted": 88,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "final": {
+        "tp": 0,
+        "fp": 48,
+        "fn": 3,
+        "gold": 3,
+        "predicted": 48,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "LOCATED_IN": {
+      "raw": {
+        "tp": 0,
+        "fp": 2,
+        "fn": 2,
+        "gold": 2,
+        "predicted": 2,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "final": {
+        "tp": 0,
+        "fp": 2,
+        "fn": 2,
+        "gold": 2,
+        "predicted": 2,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "MEETS_REQUIREMENT": {
+      "raw": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "gold": 2,
+        "predicted": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "final": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "gold": 2,
+        "predicted": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    }
+  },
+  "performance": {
+    "wall_ms": 358585.1690999698,
+    "cpu_ms": 1322156.25,
+    "peak_ram_bytes": 1808670720,
+    "ner_load_ms": 8212.366600055248,
+    "re_load_ms": 1541.6880000848323,
+    "ner_calls": 27,
+    "ner_encoder_calls": 27,
+    "re_calls": 223,
+    "re_encoder_calls": 223
+  },
+  "matching_policy": "Exact Unicode spans+kind; directed predicate; multiset one-to-one; no relaxed/coreference substitution",
+  "note": "GLiNER control; 12 DEV; exploratory."
+}
