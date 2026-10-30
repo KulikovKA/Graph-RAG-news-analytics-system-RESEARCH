@@ -1,6 +1,8 @@
 # Architecture C — pretrained-only research
 
 Финальная ограниченная диагностика: [C_DIAG_002_REPORT.md](reports/C_DIAG_002_REPORT.md).
+Рекомендация: **CLOSE C AND MOVE TO B**. Даже при Gold entities final RE precision
+составляет 0.0537; Qualified Relation F1 = 0. Эксперименты C сохранены как baselines.
 Готовый scientific NER и electrocatalyst NER с оговоркой о происхождении,
 сохранённый GLiNER control, заранее заданный union и отдельный Gold-entity RE
 diagnostic. Обучения, новых heads и генеративных

@@ -1,0 +1,308 @@
+{
+  "architecture_id": "C-DIAG-002",
+  "variant": "control",
+  "mode": "end_to_end",
+  "documents": [
+    "D001",
+    "D003",
+    "D004",
+    "D010",
+    "D017",
+    "D024",
+    "D026",
+    "D035",
+    "D038",
+    "D060",
+    "D078",
+    "D092"
+  ],
+  "wall_ms": 358585.1690999698,
+  "cpu_ms": 1322156.25,
+  "peak_ram_bytes": 1808670720,
+  "peak_ram_method": "Windows PeakWorkingSetSize; full fresh process",
+  "ner_model": {
+    "checkpoint": "urchade/gliner_small-v2.1",
+    "revision": "4e091416cf7c3481db542c2a3d26156916f3a47f",
+    "license": "Apache-2.0",
+    "device": "cpu",
+    "dtype": "float32",
+    "tokenizer_checkpoint": "microsoft/deberta-v3-small",
+    "tokenizer_revision": "a36c739020e01763fe789b4b85e2df55d6180012",
+    "parameters": 152648704,
+    "model_class": "UniEncoderSpanGLiNER",
+    "files": {
+      "config.json": "b0bb1caf90a50aa67d1085130508dfbf8646ac5a11928305e280b07a36e100ae",
+      "gliner_config.json": "68adc2806f8971f3392a054a6a227c0808b59f781e6d608906329b964709bb48",
+      "pytorch_model.bin": "1d4e83e4e4ae4ae0a4fbc81a32ee6de480fb341650d73e808088bb2800312de4",
+      "spm.model": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd",
+      "tokenizer_config.json": "3f3978e0c036f2c2588cac34a6047cbb0af0b0dc1814254e291028529805496d"
+    },
+    "tokenizer_class": "DebertaV2TokenizerFast"
+  },
+  "relation_model": {
+    "backend": "pretrained_nli_zero_shot_re",
+    "checkpoint": "cross-encoder/nli-deberta-v3-xsmall",
+    "revision": "a150876415327c80daeff35ca6f68f5ed8cf5c24",
+    "license": "Apache-2.0",
+    "device": "cpu",
+    "dtype": "float32",
+    "strict_load": true,
+    "parameters": 70831107,
+    "files": {
+      "cross-encoder/nli-deberta-v3-xsmall@a150876415327c80daeff35ca6f68f5ed8cf5c24/config.json": "8d9f07bf7ba54a6fc3b1962483056f94c39dcf188db4cf61843e1c88f94b2342",
+      "cross-encoder/nli-deberta-v3-xsmall@a150876415327c80daeff35ca6f68f5ed8cf5c24/tokenizer_config.json": "f3eecd07c370ef0bf7dd3780d3cd68cf9c8b00c267e21a208ddcd8f82bfec1a6",
+      "cross-encoder/nli-deberta-v3-xsmall@a150876415327c80daeff35ca6f68f5ed8cf5c24/tokenizer.json": "5124ef2ead1a10a717703bc436de7f353da76d6340e4587719b42b1693707964",
+      "cross-encoder/nli-deberta-v3-xsmall@a150876415327c80daeff35ca6f68f5ed8cf5c24/special_tokens_map.json": "ed7c099c988dbb414b18a6980d20cb57b91b7cd119f6f6941eb364b0e892e712",
+      "cross-encoder/nli-deberta-v3-xsmall@a150876415327c80daeff35ca6f68f5ed8cf5c24/added_tokens.json": "a4b6bfe668f2b3cf6f0cd535e98a0663d2d0d4a4a15f13075ad3597d33985a23",
+      "cross-encoder/nli-deberta-v3-xsmall@a150876415327c80daeff35ca6f68f5ed8cf5c24/spm.model": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd",
+      "cross-encoder/nli-deberta-v3-xsmall@a150876415327c80daeff35ca6f68f5ed8cf5c24/pytorch_model.bin": "7bfaa3c5238c1cddcf8a8f76bc82686a653473218f880452dded766a93f41461",
+      "cross-encoder/nli-deberta-v3-xsmall@a150876415327c80daeff35ca6f68f5ed8cf5c24/README.md": "4aeb5585a9eeb71b2d572249f9faa22ef3378c6abee3eeaffaae8c961068a2c6"
+    },
+    "train_documents": [],
+    "training_performed": false,
+    "capabilities": {
+      "HAS_PROPERTY": {
+        "prompt": "has property",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} has the property {tail}."
+      },
+      "HAS_PERFORMANCE": {
+        "prompt": "has performance",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} exhibits {tail}."
+      },
+      "HAS_MORPHOLOGY": {
+        "prompt": "has morphology",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} has the structure {tail}."
+      },
+      "HAS_COMPONENT": {
+        "prompt": "has component",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} contains {tail}."
+      },
+      "HAS_MEMBER": {
+        "prompt": "has member",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} includes {tail} as a member."
+      },
+      "USES_MATERIAL": {
+        "prompt": "uses material",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} uses {tail} as a material."
+      },
+      "FUNCTIONS_AS": {
+        "prompt": "functions as",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} functions as {tail}."
+      },
+      "DETECTS": {
+        "prompt": "detects",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} detects {tail}."
+      },
+      "USED_FOR": {
+        "prompt": "used for",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} is used for {tail}."
+      },
+      "FABRICATED_BY": {
+        "prompt": "fabricated by",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} is fabricated by {tail}."
+      },
+      "IMPROVES": {
+        "prompt": "improves",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} improves {tail}."
+      },
+      "ACTS_ON": {
+        "prompt": "acts on",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} acts on {tail}."
+      },
+      "INTEGRATED_IN": {
+        "prompt": "integrated into",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} is integrated into {tail}."
+      },
+      "HAS_MECHANISM": {
+        "prompt": "has mechanism",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} has the mechanism {tail}."
+      },
+      "MECHANISM_INVOLVES": {
+        "prompt": "mechanism involves",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} involves {tail}."
+      },
+      "LOCATED_IN": {
+        "prompt": "located in",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} is located in {tail}."
+      },
+      "OPTIMIZES": {
+        "prompt": "optimizes",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} optimizes {tail}."
+      },
+      "FACILITATES": {
+        "prompt": "facilitates",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} facilitates {tail}."
+      },
+      "CAUSES": {
+        "prompt": "causes",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} causes {tail}."
+      },
+      "EXPLAINS": {
+        "prompt": "explains",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} explains {tail}."
+      },
+      "CHANGES_PARAMETER": {
+        "prompt": "changes parameter",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} changes {tail}."
+      },
+      "DEPENDS_ON": {
+        "prompt": "depends on",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} depends on {tail}."
+      },
+      "MEETS_REQUIREMENT": {
+        "prompt": null,
+        "status": "UNSUPPORTED",
+        "scientific_semantics_validated": false,
+        "reason": "Joint requirement bundle and collective scope require n-ary attachment unavailable in this checkpoint",
+        "hypothesis": null
+      }
+    },
+    "actual_prediction_heads": {
+      "0": "contradiction",
+      "1": "entailment",
+      "2": "neutral"
+    },
+    "relation_heads_added": 0
+  },
+  "ner_load_ms": 8212.366600055248,
+  "re_load_ms": 1541.6880000848323,
+  "ner_calls": 27,
+  "ner_encoder_calls": 27,
+  "re_calls": 223,
+  "re_encoder_calls": 223,
+  "re_score_summary": {
+    "pair_label_scores": 6841,
+    "above_fixed_threshold": 4701,
+    "max_score": 0.9961667656898499
+  },
+  "ner_max_sequence_tokens": 295,
+  "re_max_sequence_tokens": 128,
+  "scientific_output_counts": {},
+  "config_sha256": "1ebef59ed5968ac14f55be7b68af8b04d01758fca5fabef2554fc262abdc2ed6",
+  "config_file_sha256": "4daef3ec271ae15a23efd8edb5576faccf27a06f451dd07d20762d72741933ae",
+  "protocol_sha256": "589c6b8e9bfb02292604b2852978c8cb87575fd01c93e9ea69217d6493ccf5cd",
+  "source_manifest_sha256": "f83d48044d2bf3657c1000814fb449c6712a0d956242a4e8f2a6d5d0e42b72bb",
+  "dependency_lock_sha256": "48169e76874fe9ceff00919ee3564369657dad909a4515f74997ec4684e1c01e",
+  "source_code_files_sha256": {
+    "config/c_diag_002.json": "4daef3ec271ae15a23efd8edb5576faccf27a06f451dd07d20762d72741933ae",
+    "reports/C_DIAG_002_PROTOCOL.md": "589c6b8e9bfb02292604b2852978c8cb87575fd01c93e9ea69217d6493ccf5cd",
+    "scripts/run_c_diag_002.py": "0af5580fbe7b0702fa15c23a4be9ae17333d88731065ffa300ccf63d1d2554cc",
+    "src/cgraph/__init__.py": "01cea06f35d0274d6d9e22ae9667878f071f881e51087e25fb966915c2210503",
+    "src/cgraph/candidates.py": "4ccf88bc5d3aef91b66dffb25c9b390f18e86e241981e3658b0c6653d2929219",
+    "src/cgraph/cli.py": "96809222cda56de547ce60790e8302e5e654e2d02ec85cbed654959afb50f345",
+    "src/cgraph/common.py": "1b7a2bd9601d22bb86cc0c1d8824d3780d281a9b3b4bfc343352f8d4a3f6191b",
+    "src/cgraph/diagnostic_ner.py": "2102531c5fce21161aa551fe48d826f61e04fb7596d179665f6f1e4ddc5dde6b",
+    "src/cgraph/evaluation.py": "3b0f349936b583758bdc03f1de6bc8480a4347c0ecc2444b51dc50c11ee9f055",
+    "src/cgraph/inputs.py": "47c722d78350b9eff75a38c7e3e53725201d74e2dc32d507cee57bce3ee4b6ae",
+    "src/cgraph/model_setup.py": "51bf38a69d645910130367dc0bb0cae43ddbd03d5ba61c26fe5cc4c2c4b03d49",
+    "src/cgraph/ner.py": "5088c14d9b00db5463bce517e5fd3a7e4c8c69bf665abb7f72c44f0ecdefde6c",
+    "src/cgraph/pipeline.py": "a45027c14d6b5d2b2d5be5c7b632cee85bfa83b7dbb55e296bf7e4317f5a8c8f",
+    "src/cgraph/prepare.py": "81918f957a87662114bd346cf692eebf43d3ff79addd59ab148bcd52f16756fa",
+    "src/cgraph/rules.py": "292b4c024e735f09221cc76c9afc77cf0db298e5ddfd69c02024bedbee1a21b3",
+    "src/cgraph/validation.py": "d862c08b1bc42bd7523ee9da0c87359e0db8e02a40b48057505a884864b2aae4",
+    "src/cgraph/zeroshot_assets.py": "45de6860c5f9f13c94539f8cff9159d8fce9e8cb0bbe30b6d7ac1bf556dc2b0c",
+    "src/cgraph/zeroshot_cli.py": "1ea7c9d0ecd253b7a281ea81c195814a80a7a9f3b252a672438ad66eb7ab5dcf",
+    "src/cgraph/zeroshot_evaluation.py": "0b47df51130ad3909dfeb5b11690b7ee470bd77519a2b0022cf21dbbcba406e0",
+    "src/cgraph/zeroshot_nli.py": "1b4f4320ff0cbd196083db14c8ff7d71ab7466a05aaf88d082428790a9d31a9a",
+    "src/cgraph/zeroshot_pipeline.py": "40db69a7859edd79da81b8b2de27b1f54fa4c433895f313d7a81836e58316789",
+    "src/cgraph/zeroshot_re.py": "04b24bd73c9d89c33c908a311b3e36bdb0cc29c9634b219ee59c3cd8d82f657c",
+    "src/cgraph/zeroshot_rules.py": "186820cafb30ab9c21287af5b26e97e4837220af6c6957b90166cc117a9d53e2"
+  },
+  "prediction_files_sha256": {
+    "D001": "b511dde61755035d831595ccf266139fb173a3f2f926a3e2a8247f97cec1b633",
+    "D003": "5e447fdfe78c9d74172b5e9a01bbee029b236d241cb96c2d6fd6e7b57a87db65",
+    "D004": "81e033abe12979eba4b420d928a201b7c1b0cfafa407271ae6a55de2f7c8dd59",
+    "D010": "42555f1298b6525f8f74a67f07ae7039b713d87b6c871080298d7909ee948aa2",
+    "D017": "d40294f3a16463f6597e49da60f858e7056b8d23e44d2989bd85757617cad021",
+    "D024": "0ddfaf787f9d988fb1b3370daeae1518d50759db0d0451ae9d9a3147f4219583",
+    "D026": "85a048eddd5a3a18d239cacd2c7aaa21b6567ddb28fc64af1b9c702995ebb564",
+    "D035": "ee72ed38bc9d6a6de367c0149db58942a2a9af70f765f91d8042722108add8a7",
+    "D038": "def28d217f6e8f2afb91270c82ecf8e74d47cb38185d6a03c36a768a8621eefd",
+    "D060": "e46403b49a7def6c6311a6f02f4cb1a6665a9be5361eb325218b5e96c8697de1",
+    "D078": "4481b36afb081a1dac0b9f63f43f1946d6fdaf18d23b9d762e1329a2e613fea0",
+    "D092": "957edfaf6b1d7c2a9b28ddb94a4e9f8f36e94932d562720cc93b27fc7e316675"
+  },
+  "code_commit": "6c2be933c2a11ad1ecf812fa41e81f01192a6fee",
+  "code_dirty": true,
+  "runtime": {
+    "torch": "2.11.0",
+    "transformers": "4.51.3",
+    "gliner": "0.2.26",
+    "glirel": "1.0.1",
+    "flair": "0.14.0",
+    "tokenizers": "0.21.4",
+    "psutil": "7.2.2"
+  },
+  "torch_threads": 4,
+  "training_performed": false,
+  "llm_calls": 0,
+  "gold_in_inference": false,
+  "gold_relations_in_inference": false,
+  "regime": "Fresh process CPU float32; includes imports/loading/hashing/serialization; excludes downloads/probes/evaluation"
+}

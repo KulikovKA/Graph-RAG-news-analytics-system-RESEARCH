@@ -21,10 +21,48 @@ def main():
     results = {v: read_json(out / f"{v}.json") for v in names}
     cfg = read_json("config/c_diag_002.json")
     ontology = read_json(cfg["ontology"])
+    control = results["control"]["micro"]
+    union = results["union"]["micro"]
+    gold = results["gold"]["micro"]
+    gained = union["candidate_pair_recall"]["covered"] - control["candidate_pair_recall"]["covered"]
+    conclusions = (
+        "**Рекомендация: CLOSE C AND MOVE TO B.** Проверенный pretrained-only pipeline "
+        "не обеспечивает точности, достаточной для автоматического построения научного графа. "
+        "Это вывод о завершённом ограниченном исследовании, не доказательство невозможности всех "
+        "pretrained NER/RE подходов. B здесь не измерялась и не объявляется доказанно лучшей.\n\n"
+        "1. **Могут ли готовые scientific NER заметно улучшить candidate recall?** "
+        f"В проверенном наборе получен только ограниченный прирост через union: самостоятельные CHEM и battery "
+        f"имеют 0/390 typed relation candidates. Заранее заданный union добавил {gained} edges: "
+        f"71/390 → {union['candidate_pair_recall']['covered']}/390 "
+        f"(+{100*gained/390:.2f} процентного пункта), при падении typed entity F1 "
+        f"{n(control['entity_typed']['f1'])} → {n(union['entity_typed']['f1'])}. "
+        "Union нашёл ещё 20 exact MATERIAL и 9 OPERATING_CONDITION mentions, но не улучшил "
+        "остальные kinds. CHEM — готовый scientific single-class NER; материалы/условия battery "
+        "проверены как опубликованный domain checkpoint с неподтверждённой MatSciBERT lineage. "
+        "Более широкие авторские MatBERT-NER archives остаются непроверенными: обобщать результат "
+        "на весь scientific NER нельзя.\n\n"
+        "2. **Способен ли готовый zero-shot RE извлекать наши 23 типа при правильных entities?** "
+        f"Для проверенного NLI приемлемая точность не показана: Gold diagnostic final P/R/F1 = "
+        f"{n(gold['relation_end_to_end']['precision'])}/{n(gold['relation_end_to_end']['recall'])}/"
+        f"{n(gold['relation_end_to_end']['f1'])}, "
+        f"{gold['relation_end_to_end']['tp']} TP и {gold['relation_end_to_end']['fp']} FP "
+        "при правильных endpoint spans/kinds. Доступны только 22 experimental hypotheses, "
+        "MEETS_REQUIREMENT unsupported; Qualified F1 = 0. GLiREL не воспроизвёл официальный "
+        "control и остановлен, поэтому независимого рабочего RE comparator не получено. "
+        "Нельзя переносить этот отрицательный результат на все существующие RE checkpoints.\n\n"
+        "3. **Продолжать C или перейти к B?** Закрыть текущий pretrained-only C и перейти к "
+        "отдельному протоколу B. Gold entities снимают NER bottleneck, однако 94.63% final "
+        "Gold-mode predictions всё равно не совпадают с annotation. Union потребовал 53.3 минуты "
+        "wall time на CPU против 6.0 минуты control и дал лишь 8 дополнительных TP при 27723 "
+        "дополнительных FP; end-to-end F1 упал 0.0196 → 0.0034. Дальнейшее расширение "
+        "candidate sets не решает семантическую точность RE или полноту qualifiers. "
+        "C-001/C-RESTART-001 и все новые отрицательные результаты сохраняются как исследовательские baselines."
+    )
     parts = ["# C-DIAG-002 — финальная диагностика pretrained-only архитектуры C",
-             "Дата: 2026-10-29, Europe/Moscow. Все пять вариантов реально выполнены на тех же 12 DEV. "
+             "Дата завершения: 2026-10-30, Europe/Moscow; primary inference 29–30 октября. "
+             "Все пять вариантов реально выполнены на тех же 12 DEV. "
              "Результаты exploratory: DEV уже исследован; это не независимый финальный тест.",
-             "<!-- CONCLUSIONS -->",
+             conclusions,
              "## Протокол, данные и доступ",
              "Base `b368a63`; отдельная ветка `c-diag-002-pretrained-only`. "
              "[Протокол](C_DIAG_002_PROTOCOL.md) зафиксирован коммитом `36f2b97` до новых predictions; "
@@ -68,7 +106,7 @@ def main():
               "обнаруженное ограничение. Названия выбранных вариантов и mapping не изменены по Gold.",
               "Оба checkpoint загружены как `BertForTokenClassification` с нулём missing/unexpected/mismatched keys; "
               "num_labels и id2label не переопределялись. Сохранённая NER-head действительно присутствует. "
-              "Это готовые авторские fine-tuned checkpoints; в данном исследовании их параметры не обучались. "
+              "Авторы описывают их как fine-tuned NER checkpoints; в данном исследовании параметры не обучались. "
               "CHEM не определяет target role, поэтому не превращается в ANALYTE. DURATION/CURRENT/FAILURE_MODE "
               "не имеют однозначного kind и не заменяются OTHER. Scientific NER не поддерживают остальные kinds. "
               "Mapping CONDITION → OPERATING_CONDITION является заранее принятой интерпретацией source schema, "
@@ -82,7 +120,13 @@ def main():
               "MaterioMiner checkpoint имеет LABEL_n без опубликованного decoding в model card. "
               "Другие saved heads с неполными cards или иной schema перечислены как untested, без выдуманного mapping. "
               "Наличие готовых scientific NER подтверждено; готовая полноценная поддержка всех 12 kinds не найдена "
-              "в рамках выбранных двух моделей.",
+              "в рамках выбранных двух моделей. Дополнительно подтверждена публикация "
+              "[авторского архива MatBERT-NER](https://figshare.com/articles/software/MatBERT-NER_models/15087276), "
+              "4.65 GB zip, version 1 ([metadata](https://api.figshare.com/v2/articles/15087276)); "
+              "его отдельный [runtime](https://github.com/CederGroupHub/MatBERT_NER) не интегрировался "
+              "в рамках бюджета двух выбранных checkpoints. Он остаётся UNTESTED, а не UNAVAILABLE. "
+              "Поэтому результат нельзя трактовать как доказательство отсутствия материаловедческого NER "
+              "или невозможности улучшить NER другими готовыми моделями.",
               "## Качество NER и candidate recall"]
     rows = []
     for v in ("control", "chem", "battery", "union"):
@@ -107,6 +151,11 @@ def main():
             row.append(f"{k['typed']['tp']}/{k['gold']} ({k['exact_boundary_covered']})")
         rows.append(row)
     parts += [table(["Kind", "Control", "CHEM", "Battery", "Union"], rows),
+              "Положительный локальный NER signal: CHEM нашёл exact границы 57/77 Gold ANALYTE "
+              "против 41/77 у control, но назначает им MATERIAL, поскольку contextual target role "
+              "не входит в его source schema. Поэтому это не 57 typed ANALYTE TP и не готовое решение "
+              "для ontology. В данном протоколе не добавлялись Gold-based role repairs или новые "
+              "contextual typing rules после evaluation.",
               "## RE с предсказанными entities и Gold-диагностика",
               "Один и тот же `cross-encoder/nli-deberta-v3-xsmall@a150876415327c80daeff35ca6f68f5ed8cf5c24`: "
               "готовая трёхклассовая NLI-head, entailment >.5, batch 32, single sentence, 512 subtokens. "
@@ -139,6 +188,12 @@ def main():
     stages = results["control"]["loss_audit"]["order"]
     parts += [table(["Осталось exact Gold edges"] + list(names.values()),
                     [[s] + [results[v]["loss_audit"]["correct_assertions_remaining"][s] for v in names] for s in stages]),
+              "Разложение final FN без двойного счёта: **control** — 304 boundary losses + 10 kind losses "
+              "+ 5 candidate exclusions + 21 RE losses + 2 scope losses = 342 FN. **Union** — "
+              "278 + 22 + 5 + 27 + 2 = 334 FN. **Gold diagnostic** — 0 NER losses, 16 candidate "
+              "exclusions, 1 дополнительный unsupported capability, 70 RE losses, 20 scope losses = 107 FN. "
+              "Всего Gold содержит два MEETS_REQUIREMENT: один уже исключён candidate stage, поэтому "
+              "последовательный capability gate теряет только один дополнительный edge.",
               "Funnel — последовательный учёт доступности exact typed directed Gold edges. "
               "Это не отдельный causal ablation каждого gate. NLI запрашивает только domain/range-compatible "
               "hypotheses, а raw score проецируется на альтернативные kind-гипотезы тех же spans; "
@@ -151,7 +206,10 @@ def main():
                     [[stage, row["total"], row["tp"], row["fp"]] for stage, row in results["gold"]["gate_totals"].items()]),
               "Evidence checks при невалидных offsets/hash прерывают run; в завершённых runs "
               "отдельного удаления assertions за invalid evidence не произошло. Нулевые потери на evidence "
-              "не означают подтверждения смысла relation.",
+              "не означают подтверждения смысла relation. В Gold mode domain/range удалил 44 FP и 0 TP; "
+              "scope удалил 754 FP и 20 TP. Из этих 20 TP: 15 потеряны на NEGATION_ATTACHMENT, "
+              "4 на REQUIRED_DIRECTION, 1 на CROSS_CLAUSE_SCOPE. Финальная precision выросла лишь "
+              "с 4.97% до 5.37%; фильтры не устранили основную массу RE ошибок.",
               "Final FP разложены по first applicable category; правильные endpoints не гарантируют правильного relation. "
               "Категория ‘relation’ включает несовпадение с разметкой и потенциально неаннотированные связи."]
     cats = ["at_least_one_non_gold_boundary", "gold_boundaries_wrong_entity_kind", "exact_gold_endpoints_wrong_or_unannotated_relation"]
@@ -218,7 +276,8 @@ def main():
                       f"{p['predict_cpu_s']:.3f}", f"{p['peak_ram_bytes']/1024**3:.3f}"] for v, p in costs.items()]),
               "## GLiREL: ограниченная проверка воспроизводимости"]
     probe = read_json(out / "glirel_probe.json")
-    parts += [f"Повторён официальный Doctor Who control через `GLiREL.from_pretrained(..., strict=True)` "
+    parts += [f"Повторён [официальный Doctor Who control](https://github.com/jackboyla/GLiREL#usage) "
+              "через `GLiREL.from_pretrained(..., strict=True)` "
               f"для `jackboyla/glirel-large-v0@{probe['revision']}`, pinned runtime "
               "GLiREL 1.0.1 / Flair 0.14.0 / Transformers 4.51.3. "
               "Сохранены исходные tokens/NER/labels, threshold=0, top_k=1. "
@@ -258,6 +317,19 @@ def main():
                       "> " + e["evidence"].replace("\n", " ")]
     parts += ["Примеры выбраны детерминированно после predictions для иллюстрации; они не использованы "
               "для исправления prompts/thresholds. Более подробные examples и chunk IDs — в variant JSON.",
+              "## Проверки",
+              "`python -m pytest -q`: **47 passed, 1 deselected**. Исключён только сохранённый "
+              "historical_training test с C-001 fitting; он не выполнялся. Проверены frozen ontology, "
+              "DEV allowlist/hashes, Unicode/nested spans, directed pairs, scope, strict qualifiers, "
+              "multiset matching, exact union, Gold entity-only projection, запрет закрытых путей и "
+              "различие pair serving от фактической оценки relation label. "
+              "[tests.json](c_diag_002/tests.json). Реальные model runs и NER-only benchmarks — "
+              "отдельные integration measurements, не synthetic fixtures. Evaluator проверил "
+              "prediction/config/source hashes и audits всех пяти runs, полное совпадение control "
+              "с C-RESTART-001 и разбиение всех final FP по причинам. Все четыре NER-only inventories "
+              "точно совпали с основными predictions. Исторические C-001/C-RESTART-001 отчёты, "
+              "код zero-shot pipeline и ontology byte-for-byte сохранены; main остался на 06f2bac, "
+              "c-restart-001-zero-shot — на b368a63.",
               "## Ограничения и воспроизведение",
               "12 повторно использованных DEV, один owner review и AI-origin annotations; независимого "
               "второго annotator и human semantic-support audit нет. D024 имеет incomplete relations, "
@@ -275,7 +347,7 @@ def main():
               "[comparison.json](c_diag_002/comparison.json), [control](c_diag_002/control.json), "
               "[chem](c_diag_002/chem.json), [battery](c_diag_002/battery.json), "
               "[union](c_diag_002/union.json), [Gold diagnostic](c_diag_002/gold.json)."]
-    Path("reports/C_DIAG_002_REPORT.md").write_text("\n\n".join(parts) + "\n", encoding="utf-8")
+    Path("reports/C_DIAG_002_REPORT.md").write_text("\n\n".join(parts) + "\n", encoding="utf-8", newline="\n")
 
 
 if __name__ == "__main__":

@@ -256,5 +256,19 @@
     "fixed-label TACRED/SciERC classifiers": "Their relation classes do not cover the frozen ontology; no newly trained mapping/head allowed"
   },
   "scope": "Bounded discovery; untested candidates are not declared impossible or universally unavailable",
-  "metadata_audit": "metadata_audit.json; battery MatSciBERT lineage not verified because cased vocab 28996 differs from base 31090. Selected before this audit; kept as distributed, no tokenizer repair."
+  "metadata_audit": "metadata_audit.json; battery MatSciBERT lineage not verified because cased vocab 28996 differs from base 31090. Selected before this audit; kept as distributed, no tokenizer repair.",
+  "untested_archival_ner": {
+    "title": "MatBERT-NER models",
+    "version": 1,
+    "url": "https://figshare.com/articles/software/MatBERT-NER_models/15087276",
+    "files": [
+      {
+        "name": "matbert_ner_models.zip",
+        "size": 4650067495,
+        "md5": "9e6f94d334b405930174a644992e099e"
+      }
+    ],
+    "status": "PUBLISHED TRAINED MatBERT-NER ARCHIVES; UNTESTED HERE",
+    "reason": "Separate author runtime and archival packages outside selected two-checkpoint integration budget; not declared unavailable or impossible"
+  }
 }

@@ -1,0 +1,320 @@
+{
+  "architecture_id": "C-DIAG-002",
+  "variant": "chem",
+  "mode": "end_to_end",
+  "documents": [
+    "D001",
+    "D003",
+    "D004",
+    "D010",
+    "D017",
+    "D024",
+    "D026",
+    "D035",
+    "D038",
+    "D060",
+    "D078",
+    "D092"
+  ],
+  "wall_ms": 124178.03359986283,
+  "cpu_ms": 436125.0,
+  "peak_ram_bytes": 1280450560,
+  "peak_ram_method": "Windows PeakWorkingSetSize; full fresh process",
+  "ner_model": {
+    "checkpoint": "teman67/matscibert-chem-ner",
+    "revision": "e8bd203aec2ec59c8705f199c108b976d170d953",
+    "files": {
+      "teman67/matscibert-chem-ner@e8bd203aec2ec59c8705f199c108b976d170d953/README.md": "a2827652ef0f30398b82f2f76bfaf3b499ae1d8157446251b1f30061dbdce21d",
+      "teman67/matscibert-chem-ner@e8bd203aec2ec59c8705f199c108b976d170d953/config.json": "cb600b8b0d5a7b0cafc097df22bae761734addce522bd770546193d9e177f96d",
+      "teman67/matscibert-chem-ner@e8bd203aec2ec59c8705f199c108b976d170d953/model.safetensors": "48b0a377832d60a96498d37bf418cbd755967a27c4fa0ccbd25a60ff7b74e152",
+      "teman67/matscibert-chem-ner@e8bd203aec2ec59c8705f199c108b976d170d953/tokenizer.json": "2c2ade0178836ffebb23c5f151f9898f70881b71123c65474a60891ba002e588",
+      "teman67/matscibert-chem-ner@e8bd203aec2ec59c8705f199c108b976d170d953/tokenizer_config.json": "e96b3ff3551c151c47540e5966e7042918cd28a9ab1dd70c626829bdb2a009b1"
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "strict_load": true,
+    "missing_keys": [],
+    "parameters": 109330179,
+    "classifier_shape": [
+      3,
+      768
+    ],
+    "class_mapping": {
+      "CHEM": "MATERIAL"
+    },
+    "training_performed": false
+  },
+  "relation_model": {
+    "backend": "pretrained_nli_zero_shot_re",
+    "checkpoint": "cross-encoder/nli-deberta-v3-xsmall",
+    "revision": "a150876415327c80daeff35ca6f68f5ed8cf5c24",
+    "license": "Apache-2.0",
+    "device": "cpu",
+    "dtype": "float32",
+    "strict_load": true,
+    "parameters": 70831107,
+    "files": {
+      "cross-encoder/nli-deberta-v3-xsmall@a150876415327c80daeff35ca6f68f5ed8cf5c24/config.json": "8d9f07bf7ba54a6fc3b1962483056f94c39dcf188db4cf61843e1c88f94b2342",
+      "cross-encoder/nli-deberta-v3-xsmall@a150876415327c80daeff35ca6f68f5ed8cf5c24/tokenizer_config.json": "f3eecd07c370ef0bf7dd3780d3cd68cf9c8b00c267e21a208ddcd8f82bfec1a6",
+      "cross-encoder/nli-deberta-v3-xsmall@a150876415327c80daeff35ca6f68f5ed8cf5c24/tokenizer.json": "5124ef2ead1a10a717703bc436de7f353da76d6340e4587719b42b1693707964",
+      "cross-encoder/nli-deberta-v3-xsmall@a150876415327c80daeff35ca6f68f5ed8cf5c24/special_tokens_map.json": "ed7c099c988dbb414b18a6980d20cb57b91b7cd119f6f6941eb364b0e892e712",
+      "cross-encoder/nli-deberta-v3-xsmall@a150876415327c80daeff35ca6f68f5ed8cf5c24/added_tokens.json": "a4b6bfe668f2b3cf6f0cd535e98a0663d2d0d4a4a15f13075ad3597d33985a23",
+      "cross-encoder/nli-deberta-v3-xsmall@a150876415327c80daeff35ca6f68f5ed8cf5c24/spm.model": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd",
+      "cross-encoder/nli-deberta-v3-xsmall@a150876415327c80daeff35ca6f68f5ed8cf5c24/pytorch_model.bin": "7bfaa3c5238c1cddcf8a8f76bc82686a653473218f880452dded766a93f41461",
+      "cross-encoder/nli-deberta-v3-xsmall@a150876415327c80daeff35ca6f68f5ed8cf5c24/README.md": "4aeb5585a9eeb71b2d572249f9faa22ef3378c6abee3eeaffaae8c961068a2c6"
+    },
+    "train_documents": [],
+    "training_performed": false,
+    "capabilities": {
+      "HAS_PROPERTY": {
+        "prompt": "has property",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} has the property {tail}."
+      },
+      "HAS_PERFORMANCE": {
+        "prompt": "has performance",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} exhibits {tail}."
+      },
+      "HAS_MORPHOLOGY": {
+        "prompt": "has morphology",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} has the structure {tail}."
+      },
+      "HAS_COMPONENT": {
+        "prompt": "has component",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} contains {tail}."
+      },
+      "HAS_MEMBER": {
+        "prompt": "has member",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} includes {tail} as a member."
+      },
+      "USES_MATERIAL": {
+        "prompt": "uses material",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} uses {tail} as a material."
+      },
+      "FUNCTIONS_AS": {
+        "prompt": "functions as",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} functions as {tail}."
+      },
+      "DETECTS": {
+        "prompt": "detects",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} detects {tail}."
+      },
+      "USED_FOR": {
+        "prompt": "used for",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} is used for {tail}."
+      },
+      "FABRICATED_BY": {
+        "prompt": "fabricated by",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} is fabricated by {tail}."
+      },
+      "IMPROVES": {
+        "prompt": "improves",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} improves {tail}."
+      },
+      "ACTS_ON": {
+        "prompt": "acts on",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} acts on {tail}."
+      },
+      "INTEGRATED_IN": {
+        "prompt": "integrated into",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} is integrated into {tail}."
+      },
+      "HAS_MECHANISM": {
+        "prompt": "has mechanism",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} has the mechanism {tail}."
+      },
+      "MECHANISM_INVOLVES": {
+        "prompt": "mechanism involves",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} involves {tail}."
+      },
+      "LOCATED_IN": {
+        "prompt": "located in",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} is located in {tail}."
+      },
+      "OPTIMIZES": {
+        "prompt": "optimizes",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} optimizes {tail}."
+      },
+      "FACILITATES": {
+        "prompt": "facilitates",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} facilitates {tail}."
+      },
+      "CAUSES": {
+        "prompt": "causes",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} causes {tail}."
+      },
+      "EXPLAINS": {
+        "prompt": "explains",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} explains {tail}."
+      },
+      "CHANGES_PARAMETER": {
+        "prompt": "changes parameter",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} changes {tail}."
+      },
+      "DEPENDS_ON": {
+        "prompt": "depends on",
+        "status": "EXPERIMENTAL_ZERO_SHOT",
+        "scientific_semantics_validated": false,
+        "reason": "Pretrained three-class entailment applied to frozen ontology verbalization; scientific semantics unvalidated",
+        "hypothesis": "{head} depends on {tail}."
+      },
+      "MEETS_REQUIREMENT": {
+        "prompt": null,
+        "status": "UNSUPPORTED",
+        "scientific_semantics_validated": false,
+        "reason": "Joint requirement bundle and collective scope require n-ary attachment unavailable in this checkpoint",
+        "hypothesis": null
+      }
+    },
+    "actual_prediction_heads": {
+      "0": "contradiction",
+      "1": "entailment",
+      "2": "neutral"
+    },
+    "relation_heads_added": 0
+  },
+  "ner_load_ms": 942.2211002092808,
+  "re_load_ms": 1063.3739999029785,
+  "ner_calls": 66,
+  "ner_encoder_calls": 66,
+  "re_calls": 76,
+  "re_encoder_calls": 76,
+  "re_score_summary": {
+    "pair_label_scores": 2248,
+    "above_fixed_threshold": 1392,
+    "max_score": 0.9955660700798035
+  },
+  "ner_max_sequence_tokens": 102,
+  "re_max_sequence_tokens": 112,
+  "scientific_output_counts": {
+    "0": {
+      "source_label_counts": {
+        "CHEM": 279
+      },
+      "unsupported_window_spans": 0
+    }
+  },
+  "config_sha256": "1ebef59ed5968ac14f55be7b68af8b04d01758fca5fabef2554fc262abdc2ed6",
+  "config_file_sha256": "4daef3ec271ae15a23efd8edb5576faccf27a06f451dd07d20762d72741933ae",
+  "protocol_sha256": "589c6b8e9bfb02292604b2852978c8cb87575fd01c93e9ea69217d6493ccf5cd",
+  "source_manifest_sha256": "f83d48044d2bf3657c1000814fb449c6712a0d956242a4e8f2a6d5d0e42b72bb",
+  "dependency_lock_sha256": "48169e76874fe9ceff00919ee3564369657dad909a4515f74997ec4684e1c01e",
+  "source_code_files_sha256": {
+    "config/c_diag_002.json": "4daef3ec271ae15a23efd8edb5576faccf27a06f451dd07d20762d72741933ae",
+    "reports/C_DIAG_002_PROTOCOL.md": "589c6b8e9bfb02292604b2852978c8cb87575fd01c93e9ea69217d6493ccf5cd",
+    "scripts/run_c_diag_002.py": "0af5580fbe7b0702fa15c23a4be9ae17333d88731065ffa300ccf63d1d2554cc",
+    "src/cgraph/__init__.py": "01cea06f35d0274d6d9e22ae9667878f071f881e51087e25fb966915c2210503",
+    "src/cgraph/candidates.py": "4ccf88bc5d3aef91b66dffb25c9b390f18e86e241981e3658b0c6653d2929219",
+    "src/cgraph/cli.py": "96809222cda56de547ce60790e8302e5e654e2d02ec85cbed654959afb50f345",
+    "src/cgraph/common.py": "1b7a2bd9601d22bb86cc0c1d8824d3780d281a9b3b4bfc343352f8d4a3f6191b",
+    "src/cgraph/diagnostic_ner.py": "2102531c5fce21161aa551fe48d826f61e04fb7596d179665f6f1e4ddc5dde6b",
+    "src/cgraph/evaluation.py": "3b0f349936b583758bdc03f1de6bc8480a4347c0ecc2444b51dc50c11ee9f055",
+    "src/cgraph/inputs.py": "47c722d78350b9eff75a38c7e3e53725201d74e2dc32d507cee57bce3ee4b6ae",
+    "src/cgraph/model_setup.py": "51bf38a69d645910130367dc0bb0cae43ddbd03d5ba61c26fe5cc4c2c4b03d49",
+    "src/cgraph/ner.py": "5088c14d9b00db5463bce517e5fd3a7e4c8c69bf665abb7f72c44f0ecdefde6c",
+    "src/cgraph/pipeline.py": "a45027c14d6b5d2b2d5be5c7b632cee85bfa83b7dbb55e296bf7e4317f5a8c8f",
+    "src/cgraph/prepare.py": "81918f957a87662114bd346cf692eebf43d3ff79addd59ab148bcd52f16756fa",
+    "src/cgraph/rules.py": "292b4c024e735f09221cc76c9afc77cf0db298e5ddfd69c02024bedbee1a21b3",
+    "src/cgraph/validation.py": "d862c08b1bc42bd7523ee9da0c87359e0db8e02a40b48057505a884864b2aae4",
+    "src/cgraph/zeroshot_assets.py": "45de6860c5f9f13c94539f8cff9159d8fce9e8cb0bbe30b6d7ac1bf556dc2b0c",
+    "src/cgraph/zeroshot_cli.py": "1ea7c9d0ecd253b7a281ea81c195814a80a7a9f3b252a672438ad66eb7ab5dcf",
+    "src/cgraph/zeroshot_evaluation.py": "0b47df51130ad3909dfeb5b11690b7ee470bd77519a2b0022cf21dbbcba406e0",
+    "src/cgraph/zeroshot_nli.py": "1b4f4320ff0cbd196083db14c8ff7d71ab7466a05aaf88d082428790a9d31a9a",
+    "src/cgraph/zeroshot_pipeline.py": "40db69a7859edd79da81b8b2de27b1f54fa4c433895f313d7a81836e58316789",
+    "src/cgraph/zeroshot_re.py": "04b24bd73c9d89c33c908a311b3e36bdb0cc29c9634b219ee59c3cd8d82f657c",
+    "src/cgraph/zeroshot_rules.py": "186820cafb30ab9c21287af5b26e97e4837220af6c6957b90166cc117a9d53e2"
+  },
+  "prediction_files_sha256": {
+    "D001": "f58ea3fc57480f4d9dea37854177d69402237c21b1b8bfdd12bae02d4c6ae24e",
+    "D003": "d09233e9f4e88addeb9d8987b421fa3a7bf14164d1f915aae8f346be820ed7ad",
+    "D004": "bec3bfc12594c8e35366d2dd8674ae1b74403b60d19a9c92dcd306e32635eeba",
+    "D010": "89665de5a6ea1e6cfb9308b19b4c351414b0e5130d4bc70895669c4a56f7dd66",
+    "D017": "67210382628046412dcf1eeea928878a09f3c4c65ae9ad0f653dd38b125b9d0e",
+    "D024": "79d868ab9d1efe086ae726c6b165efcca2b2769403754151a773c54c921451f8",
+    "D026": "fe8ad9f7009b2a1140b3dcda09dcbdab9565e78d615f83372404b573965a6941",
+    "D035": "9780235313e9d675b4853f8682fd67b100d62bbe73c26278cb77f41583d10a01",
+    "D038": "9c6e9ad51e446558c0a8909aa1f90df5bc421518c63ffb245024d39047ede3f2",
+    "D060": "6ce78755869fcec9e5a021e93d977a483e23791616821daa43ec013469d128f0",
+    "D078": "e3a42aa14593bb03c7a2635d20be231483c01d966755d84b84541d69110a1890",
+    "D092": "cfb1ff796bb4242853eccd51dc8037f98e0c054cd1b162a3374006cc2a3e4932"
+  },
+  "code_commit": "6c2be933c2a11ad1ecf812fa41e81f01192a6fee",
+  "code_dirty": true,
+  "runtime": {
+    "torch": "2.11.0",
+    "transformers": "4.51.3",
+    "gliner": "0.2.26",
+    "glirel": "1.0.1",
+    "flair": "0.14.0",
+    "tokenizers": "0.21.4",
+    "psutil": "7.2.2"
+  },
+  "torch_threads": 4,
+  "training_performed": false,
+  "llm_calls": 0,
+  "gold_in_inference": false,
+  "gold_relations_in_inference": false,
+  "regime": "Fresh process CPU float32; includes imports/loading/hashing/serialization; excludes downloads/probes/evaluation"
+}

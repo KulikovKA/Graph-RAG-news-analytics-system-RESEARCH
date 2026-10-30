@@ -1,0 +1,2014 @@
+{
+  "micro": {
+    "entity_span": {
+      "tp": 109,
+      "fp": 122,
+      "fn": 480,
+      "gold": 589,
+      "predicted": 231,
+      "precision": 0.47186147186147187,
+      "recall": 0.18505942275042445,
+      "f1": 0.2658536585365854
+    },
+    "entity_typed": {
+      "tp": 52,
+      "fp": 179,
+      "fn": 537,
+      "gold": 589,
+      "predicted": 231,
+      "precision": 0.22510822510822512,
+      "recall": 0.08828522920203735,
+      "f1": 0.12682926829268293
+    },
+    "relation_raw_end_to_end": {
+      "tp": 0,
+      "fp": 1374,
+      "fn": 390,
+      "gold": 390,
+      "predicted": 1374,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "relation_end_to_end": {
+      "tp": 0,
+      "fp": 1306,
+      "fn": 390,
+      "gold": 390,
+      "predicted": 1306,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "relation_given_candidate_endpoints": {
+      "tp": 0,
+      "fp": 253,
+      "fn": 0,
+      "gold": 0,
+      "predicted": 253,
+      "precision": 0.0,
+      "recall": null,
+      "f1": 0.0
+    },
+    "qualified_relation": {
+      "tp": 0,
+      "fp": 1306,
+      "fn": 390,
+      "gold": 390,
+      "predicted": 1306,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "candidate_pair_recall": {
+      "covered": 0,
+      "gold": 390,
+      "recall": 0.0
+    },
+    "abstention": {
+      "abstained": 359,
+      "candidate_pairs": 1110,
+      "rate": 0.32342342342342345
+    }
+  },
+  "macro_document": {
+    "entity_span": {
+      "f1": 0.21340373136810822,
+      "documents": 12
+    },
+    "entity_typed": {
+      "f1": 0.0981066620420203,
+      "documents": 12
+    },
+    "relation_raw_end_to_end": {
+      "f1": 0.0,
+      "documents": 12
+    },
+    "relation_end_to_end": {
+      "f1": 0.0,
+      "documents": 12
+    },
+    "relation_given_candidate_endpoints": {
+      "f1": 0.0,
+      "documents": 3
+    },
+    "qualified_relation": {
+      "f1": 0.0,
+      "documents": 12
+    }
+  },
+  "documents": {
+    "D001": {
+      "entity_span": {
+        "tp": 1,
+        "fp": 2,
+        "fn": 60,
+        "predicted": 3,
+        "gold": 61,
+        "precision": 0.3333333333333333,
+        "recall": 0.01639344262295082,
+        "f1": 0.03125
+      },
+      "entity_typed": {
+        "tp": 0,
+        "fp": 3,
+        "fn": 61,
+        "predicted": 3,
+        "gold": 61,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_raw_end_to_end": {
+        "tp": 0,
+        "fp": 4,
+        "fn": 51,
+        "predicted": 4,
+        "gold": 51,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_end_to_end": {
+        "tp": 0,
+        "fp": 4,
+        "fn": 51,
+        "predicted": 4,
+        "gold": 51,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "predicted": 0,
+        "gold": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 4,
+        "fn": 51,
+        "predicted": 4,
+        "gold": 51,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 0,
+        "gold": 51,
+        "recall": 0.0
+      },
+      "abstention": {
+        "abstained": 0,
+        "candidate_pairs": 2
+      },
+      "accepted_assertions": 4,
+      "raw_proposals": 4,
+      "unsupported_proposals": 0
+    },
+    "D003": {
+      "entity_span": {
+        "tp": 8,
+        "fp": 1,
+        "fn": 61,
+        "predicted": 9,
+        "gold": 69,
+        "precision": 0.8888888888888888,
+        "recall": 0.11594202898550725,
+        "f1": 0.20512820512820512
+      },
+      "entity_typed": {
+        "tp": 0,
+        "fp": 9,
+        "fn": 69,
+        "predicted": 9,
+        "gold": 69,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_raw_end_to_end": {
+        "tp": 0,
+        "fp": 8,
+        "fn": 47,
+        "predicted": 8,
+        "gold": 47,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_end_to_end": {
+        "tp": 0,
+        "fp": 8,
+        "fn": 47,
+        "predicted": 8,
+        "gold": 47,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "predicted": 0,
+        "gold": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 8,
+        "fn": 47,
+        "predicted": 8,
+        "gold": 47,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 0,
+        "gold": 47,
+        "recall": 0.0
+      },
+      "abstention": {
+        "abstained": 12,
+        "candidate_pairs": 16
+      },
+      "accepted_assertions": 8,
+      "raw_proposals": 8,
+      "unsupported_proposals": 0
+    },
+    "D004": {
+      "entity_span": {
+        "tp": 10,
+        "fp": 25,
+        "fn": 37,
+        "predicted": 35,
+        "gold": 47,
+        "precision": 0.2857142857142857,
+        "recall": 0.2127659574468085,
+        "f1": 0.24390243902439024
+      },
+      "entity_typed": {
+        "tp": 2,
+        "fp": 33,
+        "fn": 45,
+        "predicted": 35,
+        "gold": 47,
+        "precision": 0.05714285714285714,
+        "recall": 0.0425531914893617,
+        "f1": 0.04878048780487805
+      },
+      "relation_raw_end_to_end": {
+        "tp": 0,
+        "fp": 252,
+        "fn": 24,
+        "predicted": 252,
+        "gold": 24,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_end_to_end": {
+        "tp": 0,
+        "fp": 252,
+        "fn": 24,
+        "predicted": 252,
+        "gold": 24,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "predicted": 0,
+        "gold": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 252,
+        "fn": 24,
+        "predicted": 252,
+        "gold": 24,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 0,
+        "gold": 24,
+        "recall": 0.0
+      },
+      "abstention": {
+        "abstained": 48,
+        "candidate_pairs": 180
+      },
+      "accepted_assertions": 252,
+      "raw_proposals": 252,
+      "unsupported_proposals": 0
+    },
+    "D010": {
+      "entity_span": {
+        "tp": 45,
+        "fp": 7,
+        "fn": 60,
+        "predicted": 52,
+        "gold": 105,
+        "precision": 0.8653846153846154,
+        "recall": 0.42857142857142855,
+        "f1": 0.5732484076433121
+      },
+      "entity_typed": {
+        "tp": 32,
+        "fp": 20,
+        "fn": 73,
+        "predicted": 52,
+        "gold": 105,
+        "precision": 0.6153846153846154,
+        "recall": 0.3047619047619048,
+        "f1": 0.40764331210191085
+      },
+      "relation_raw_end_to_end": {
+        "tp": 0,
+        "fp": 422,
+        "fn": 99,
+        "predicted": 422,
+        "gold": 99,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_end_to_end": {
+        "tp": 0,
+        "fp": 422,
+        "fn": 99,
+        "predicted": 422,
+        "gold": 99,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 0,
+        "fp": 194,
+        "fn": 0,
+        "predicted": 194,
+        "gold": 0,
+        "precision": 0.0,
+        "recall": null,
+        "f1": 0.0
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 422,
+        "fn": 99,
+        "predicted": 422,
+        "gold": 99,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 0,
+        "gold": 99,
+        "recall": 0.0
+      },
+      "abstention": {
+        "abstained": 194,
+        "candidate_pairs": 448
+      },
+      "accepted_assertions": 422,
+      "raw_proposals": 422,
+      "unsupported_proposals": 0
+    },
+    "D017": {
+      "entity_span": {
+        "tp": 7,
+        "fp": 3,
+        "fn": 30,
+        "predicted": 10,
+        "gold": 37,
+        "precision": 0.7,
+        "recall": 0.1891891891891892,
+        "f1": 0.2978723404255319
+      },
+      "entity_typed": {
+        "tp": 7,
+        "fp": 3,
+        "fn": 30,
+        "predicted": 10,
+        "gold": 37,
+        "precision": 0.7,
+        "recall": 0.1891891891891892,
+        "f1": 0.2978723404255319
+      },
+      "relation_raw_end_to_end": {
+        "tp": 0,
+        "fp": 106,
+        "fn": 28,
+        "predicted": 106,
+        "gold": 28,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_end_to_end": {
+        "tp": 0,
+        "fp": 106,
+        "fn": 28,
+        "predicted": 106,
+        "gold": 28,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 0,
+        "fp": 42,
+        "fn": 0,
+        "predicted": 42,
+        "gold": 0,
+        "precision": 0.0,
+        "recall": null,
+        "f1": 0.0
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 106,
+        "fn": 28,
+        "predicted": 106,
+        "gold": 28,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 0,
+        "gold": 28,
+        "recall": 0.0
+      },
+      "abstention": {
+        "abstained": 10,
+        "candidate_pairs": 72
+      },
+      "accepted_assertions": 106,
+      "raw_proposals": 106,
+      "unsupported_proposals": 0
+    },
+    "D024": {
+      "entity_span": {
+        "tp": 4,
+        "fp": 12,
+        "fn": 36,
+        "predicted": 16,
+        "gold": 40,
+        "precision": 0.25,
+        "recall": 0.1,
+        "f1": 0.14285714285714285
+      },
+      "entity_typed": {
+        "tp": 1,
+        "fp": 15,
+        "fn": 39,
+        "predicted": 16,
+        "gold": 40,
+        "precision": 0.0625,
+        "recall": 0.025,
+        "f1": 0.03571428571428571
+      },
+      "relation_raw_end_to_end": {
+        "tp": 0,
+        "fp": 86,
+        "fn": 20,
+        "predicted": 86,
+        "gold": 20,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_end_to_end": {
+        "tp": 0,
+        "fp": 66,
+        "fn": 20,
+        "predicted": 66,
+        "gold": 20,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "predicted": 0,
+        "gold": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 66,
+        "fn": 20,
+        "predicted": 66,
+        "gold": 20,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 0,
+        "gold": 20,
+        "recall": 0.0
+      },
+      "abstention": {
+        "abstained": 10,
+        "candidate_pairs": 44
+      },
+      "accepted_assertions": 66,
+      "raw_proposals": 86,
+      "unsupported_proposals": 20
+    },
+    "D026": {
+      "entity_span": {
+        "tp": 0,
+        "fp": 4,
+        "fn": 31,
+        "predicted": 4,
+        "gold": 31,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "entity_typed": {
+        "tp": 0,
+        "fp": 4,
+        "fn": 31,
+        "predicted": 4,
+        "gold": 31,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_raw_end_to_end": {
+        "tp": 0,
+        "fp": 7,
+        "fn": 19,
+        "predicted": 7,
+        "gold": 19,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_end_to_end": {
+        "tp": 0,
+        "fp": 7,
+        "fn": 19,
+        "predicted": 7,
+        "gold": 19,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "predicted": 0,
+        "gold": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 7,
+        "fn": 19,
+        "predicted": 7,
+        "gold": 19,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 0,
+        "gold": 19,
+        "recall": 0.0
+      },
+      "abstention": {
+        "abstained": 0,
+        "candidate_pairs": 4
+      },
+      "accepted_assertions": 7,
+      "raw_proposals": 7,
+      "unsupported_proposals": 0
+    },
+    "D035": {
+      "entity_span": {
+        "tp": 9,
+        "fp": 13,
+        "fn": 25,
+        "predicted": 22,
+        "gold": 34,
+        "precision": 0.4090909090909091,
+        "recall": 0.2647058823529412,
+        "f1": 0.32142857142857145
+      },
+      "entity_typed": {
+        "tp": 1,
+        "fp": 21,
+        "fn": 33,
+        "predicted": 22,
+        "gold": 34,
+        "precision": 0.045454545454545456,
+        "recall": 0.029411764705882353,
+        "f1": 0.03571428571428571
+      },
+      "relation_raw_end_to_end": {
+        "tp": 0,
+        "fp": 127,
+        "fn": 15,
+        "predicted": 127,
+        "gold": 15,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_end_to_end": {
+        "tp": 0,
+        "fp": 127,
+        "fn": 15,
+        "predicted": 127,
+        "gold": 15,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "predicted": 0,
+        "gold": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 127,
+        "fn": 15,
+        "predicted": 127,
+        "gold": 15,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 0,
+        "gold": 15,
+        "recall": 0.0
+      },
+      "abstention": {
+        "abstained": 28,
+        "candidate_pairs": 112
+      },
+      "accepted_assertions": 127,
+      "raw_proposals": 127,
+      "unsupported_proposals": 0
+    },
+    "D038": {
+      "entity_span": {
+        "tp": 5,
+        "fp": 10,
+        "fn": 22,
+        "predicted": 15,
+        "gold": 27,
+        "precision": 0.3333333333333333,
+        "recall": 0.18518518518518517,
+        "f1": 0.23809523809523808
+      },
+      "entity_typed": {
+        "tp": 5,
+        "fp": 10,
+        "fn": 22,
+        "predicted": 15,
+        "gold": 27,
+        "precision": 0.3333333333333333,
+        "recall": 0.18518518518518517,
+        "f1": 0.23809523809523808
+      },
+      "relation_raw_end_to_end": {
+        "tp": 0,
+        "fp": 49,
+        "fn": 17,
+        "predicted": 49,
+        "gold": 17,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_end_to_end": {
+        "tp": 0,
+        "fp": 49,
+        "fn": 17,
+        "predicted": 49,
+        "gold": 17,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 0,
+        "fp": 17,
+        "fn": 0,
+        "predicted": 17,
+        "gold": 0,
+        "precision": 0.0,
+        "recall": null,
+        "f1": 0.0
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 49,
+        "fn": 17,
+        "predicted": 49,
+        "gold": 17,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 0,
+        "gold": 17,
+        "recall": 0.0
+      },
+      "abstention": {
+        "abstained": 2,
+        "candidate_pairs": 30
+      },
+      "accepted_assertions": 49,
+      "raw_proposals": 49,
+      "unsupported_proposals": 0
+    },
+    "D060": {
+      "entity_span": {
+        "tp": 1,
+        "fp": 13,
+        "fn": 22,
+        "predicted": 14,
+        "gold": 23,
+        "precision": 0.07142857142857142,
+        "recall": 0.043478260869565216,
+        "f1": 0.05405405405405406
+      },
+      "entity_typed": {
+        "tp": 1,
+        "fp": 13,
+        "fn": 22,
+        "predicted": 14,
+        "gold": 23,
+        "precision": 0.07142857142857142,
+        "recall": 0.043478260869565216,
+        "f1": 0.05405405405405406
+      },
+      "relation_raw_end_to_end": {
+        "tp": 0,
+        "fp": 56,
+        "fn": 12,
+        "predicted": 56,
+        "gold": 12,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_end_to_end": {
+        "tp": 0,
+        "fp": 56,
+        "fn": 12,
+        "predicted": 56,
+        "gold": 12,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "predicted": 0,
+        "gold": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 56,
+        "fn": 12,
+        "predicted": 56,
+        "gold": 12,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 0,
+        "gold": 12,
+        "recall": 0.0
+      },
+      "abstention": {
+        "abstained": 9,
+        "candidate_pairs": 40
+      },
+      "accepted_assertions": 56,
+      "raw_proposals": 56,
+      "unsupported_proposals": 0
+    },
+    "D078": {
+      "entity_span": {
+        "tp": 12,
+        "fp": 17,
+        "fn": 60,
+        "predicted": 29,
+        "gold": 72,
+        "precision": 0.41379310344827586,
+        "recall": 0.16666666666666666,
+        "f1": 0.2376237623762376
+      },
+      "entity_typed": {
+        "tp": 3,
+        "fp": 26,
+        "fn": 69,
+        "predicted": 29,
+        "gold": 72,
+        "precision": 0.10344827586206896,
+        "recall": 0.041666666666666664,
+        "f1": 0.0594059405940594
+      },
+      "relation_raw_end_to_end": {
+        "tp": 0,
+        "fp": 163,
+        "fn": 39,
+        "predicted": 163,
+        "gold": 39,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_end_to_end": {
+        "tp": 0,
+        "fp": 135,
+        "fn": 39,
+        "predicted": 135,
+        "gold": 39,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "predicted": 0,
+        "gold": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 135,
+        "fn": 39,
+        "predicted": 135,
+        "gold": 39,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 0,
+        "gold": 39,
+        "recall": 0.0
+      },
+      "abstention": {
+        "abstained": 18,
+        "candidate_pairs": 90
+      },
+      "accepted_assertions": 135,
+      "raw_proposals": 163,
+      "unsupported_proposals": 28
+    },
+    "D092": {
+      "entity_span": {
+        "tp": 7,
+        "fp": 15,
+        "fn": 36,
+        "predicted": 22,
+        "gold": 43,
+        "precision": 0.3181818181818182,
+        "recall": 0.16279069767441862,
+        "f1": 0.2153846153846154
+      },
+      "entity_typed": {
+        "tp": 0,
+        "fp": 22,
+        "fn": 43,
+        "predicted": 22,
+        "gold": 43,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_raw_end_to_end": {
+        "tp": 0,
+        "fp": 94,
+        "fn": 19,
+        "predicted": 94,
+        "gold": 19,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_end_to_end": {
+        "tp": 0,
+        "fp": 74,
+        "fn": 19,
+        "predicted": 74,
+        "gold": 19,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "relation_given_candidate_endpoints": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "predicted": 0,
+        "gold": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      },
+      "qualified_relation": {
+        "tp": 0,
+        "fp": 74,
+        "fn": 19,
+        "predicted": 74,
+        "gold": 19,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "candidate_pair_recall": {
+        "covered": 0,
+        "gold": 19,
+        "recall": 0.0
+      },
+      "abstention": {
+        "abstained": 28,
+        "candidate_pairs": 72
+      },
+      "accepted_assertions": 74,
+      "raw_proposals": 94,
+      "unsupported_proposals": 20
+    }
+  },
+  "matching_policy": "Exact Unicode spans+kind; directed predicate; multiset one-to-one; no relaxed/coreference substitution",
+  "qualifier_policy": "UNKNOWN qualifier completeness never receives qualified TP; gold qualifiers remain in denominator",
+  "annotation_limitation": "Single owner review, AI-origin annotations; no independent secondary review",
+  "semantic_support_rate": null,
+  "semantic_support_status": "NOT_MEASURED: requires independent review of predictions",
+  "architecture_id": "C-DIAG-002",
+  "variant": "chem",
+  "mode": "end_to_end",
+  "exploratory": true,
+  "gold_entities_diagnostic_only": false,
+  "counts": {
+    "entities": 231,
+    "candidate_pairs": 1110,
+    "raw_proposals": 1374,
+    "assertions": 1306,
+    "skipped_re_contexts": 0
+  },
+  "stage_ms": {
+    "candidates_ms": 2.3727999068796635,
+    "pretrained_re_ms": 99910.13120021671,
+    "scope_evidence_ms": 353.47749991342425,
+    "validation_ms": 22.67679967917502,
+    "ner_ms": 8804.58930041641
+  },
+  "loss_audit": {
+    "order": [
+      "gold",
+      "untyped_endpoints",
+      "typed_endpoints",
+      "candidate_pairs",
+      "model_served",
+      "re_capability",
+      "raw_re",
+      "domain_range",
+      "scope",
+      "evidence",
+      "final"
+    ],
+    "correct_assertions_remaining": {
+      "gold": 390,
+      "untyped_endpoints": 3,
+      "typed_endpoints": 0,
+      "candidate_pairs": 0,
+      "model_served": 0,
+      "re_capability": 0,
+      "raw_re": 0,
+      "domain_range": 0,
+      "scope": 0,
+      "evidence": 0,
+      "final": 0
+    },
+    "correct_assertions_lost": {
+      "untyped_endpoints": 387,
+      "typed_endpoints": 3,
+      "candidate_pairs": 0,
+      "model_served": 0,
+      "re_capability": 0,
+      "raw_re": 0,
+      "domain_range": 0,
+      "scope": 0,
+      "evidence": 0,
+      "final": 0
+    },
+    "documents": {
+      "D001": {
+        "gold": 51,
+        "untyped_endpoints": 0,
+        "typed_endpoints": 0,
+        "candidate_pairs": 0,
+        "model_served": 0,
+        "re_capability": 0,
+        "raw_re": 0,
+        "domain_range": 0,
+        "scope": 0,
+        "evidence": 0,
+        "final": 0
+      },
+      "D003": {
+        "gold": 47,
+        "untyped_endpoints": 0,
+        "typed_endpoints": 0,
+        "candidate_pairs": 0,
+        "model_served": 0,
+        "re_capability": 0,
+        "raw_re": 0,
+        "domain_range": 0,
+        "scope": 0,
+        "evidence": 0,
+        "final": 0
+      },
+      "D004": {
+        "gold": 24,
+        "untyped_endpoints": 0,
+        "typed_endpoints": 0,
+        "candidate_pairs": 0,
+        "model_served": 0,
+        "re_capability": 0,
+        "raw_re": 0,
+        "domain_range": 0,
+        "scope": 0,
+        "evidence": 0,
+        "final": 0
+      },
+      "D010": {
+        "gold": 99,
+        "untyped_endpoints": 3,
+        "typed_endpoints": 0,
+        "candidate_pairs": 0,
+        "model_served": 0,
+        "re_capability": 0,
+        "raw_re": 0,
+        "domain_range": 0,
+        "scope": 0,
+        "evidence": 0,
+        "final": 0
+      },
+      "D017": {
+        "gold": 28,
+        "untyped_endpoints": 0,
+        "typed_endpoints": 0,
+        "candidate_pairs": 0,
+        "model_served": 0,
+        "re_capability": 0,
+        "raw_re": 0,
+        "domain_range": 0,
+        "scope": 0,
+        "evidence": 0,
+        "final": 0
+      },
+      "D024": {
+        "gold": 20,
+        "untyped_endpoints": 0,
+        "typed_endpoints": 0,
+        "candidate_pairs": 0,
+        "model_served": 0,
+        "re_capability": 0,
+        "raw_re": 0,
+        "domain_range": 0,
+        "scope": 0,
+        "evidence": 0,
+        "final": 0
+      },
+      "D026": {
+        "gold": 19,
+        "untyped_endpoints": 0,
+        "typed_endpoints": 0,
+        "candidate_pairs": 0,
+        "model_served": 0,
+        "re_capability": 0,
+        "raw_re": 0,
+        "domain_range": 0,
+        "scope": 0,
+        "evidence": 0,
+        "final": 0
+      },
+      "D035": {
+        "gold": 15,
+        "untyped_endpoints": 0,
+        "typed_endpoints": 0,
+        "candidate_pairs": 0,
+        "model_served": 0,
+        "re_capability": 0,
+        "raw_re": 0,
+        "domain_range": 0,
+        "scope": 0,
+        "evidence": 0,
+        "final": 0
+      },
+      "D038": {
+        "gold": 17,
+        "untyped_endpoints": 0,
+        "typed_endpoints": 0,
+        "candidate_pairs": 0,
+        "model_served": 0,
+        "re_capability": 0,
+        "raw_re": 0,
+        "domain_range": 0,
+        "scope": 0,
+        "evidence": 0,
+        "final": 0
+      },
+      "D060": {
+        "gold": 12,
+        "untyped_endpoints": 0,
+        "typed_endpoints": 0,
+        "candidate_pairs": 0,
+        "model_served": 0,
+        "re_capability": 0,
+        "raw_re": 0,
+        "domain_range": 0,
+        "scope": 0,
+        "evidence": 0,
+        "final": 0
+      },
+      "D078": {
+        "gold": 39,
+        "untyped_endpoints": 0,
+        "typed_endpoints": 0,
+        "candidate_pairs": 0,
+        "model_served": 0,
+        "re_capability": 0,
+        "raw_re": 0,
+        "domain_range": 0,
+        "scope": 0,
+        "evidence": 0,
+        "final": 0
+      },
+      "D092": {
+        "gold": 19,
+        "untyped_endpoints": 0,
+        "typed_endpoints": 0,
+        "candidate_pairs": 0,
+        "model_served": 0,
+        "re_capability": 0,
+        "raw_re": 0,
+        "domain_range": 0,
+        "scope": 0,
+        "evidence": 0,
+        "final": 0
+      }
+    },
+    "per_relation": {
+      "HAS_MEMBER": {
+        "raw": {
+          "tp": 0,
+          "fp": 695,
+          "fn": 44,
+          "gold": 44,
+          "predicted": 695,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 665,
+          "fn": 44,
+          "gold": 44,
+          "predicted": 665,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "FUNCTIONS_AS": {
+        "raw": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 3,
+          "gold": 3,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 3,
+          "gold": 3,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "ACTS_ON": {
+        "raw": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 13,
+          "gold": 13,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 13,
+          "gold": 13,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "HAS_PROPERTY": {
+        "raw": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 52,
+          "gold": 52,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 52,
+          "gold": 52,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "DETECTS": {
+        "raw": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 13,
+          "gold": 13,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 13,
+          "gold": 13,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "INTEGRATED_IN": {
+        "raw": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "gold": 1,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "gold": 1,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "HAS_MORPHOLOGY": {
+        "raw": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 17,
+          "gold": 17,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 17,
+          "gold": 17,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "IMPROVES": {
+        "raw": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 7,
+          "gold": 7,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 7,
+          "gold": 7,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "HAS_PERFORMANCE": {
+        "raw": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 52,
+          "gold": 52,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 52,
+          "gold": 52,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "HAS_COMPONENT": {
+        "raw": {
+          "tp": 0,
+          "fp": 679,
+          "fn": 57,
+          "gold": 57,
+          "predicted": 679,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 641,
+          "fn": 57,
+          "gold": 57,
+          "predicted": 641,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "FABRICATED_BY": {
+        "raw": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 14,
+          "gold": 14,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 14,
+          "gold": 14,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "USED_FOR": {
+        "raw": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 47,
+          "gold": 47,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 47,
+          "gold": 47,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "USES_MATERIAL": {
+        "raw": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 23,
+          "gold": 23,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 23,
+          "gold": 23,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "EXPLAINS": {
+        "raw": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 11,
+          "gold": 11,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 11,
+          "gold": 11,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "MECHANISM_INVOLVES": {
+        "raw": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 9,
+          "gold": 9,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 9,
+          "gold": 9,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "OPTIMIZES": {
+        "raw": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "gold": 1,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "gold": 1,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "HAS_MECHANISM": {
+        "raw": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 6,
+          "gold": 6,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 6,
+          "gold": 6,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "FACILITATES": {
+        "raw": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 3,
+          "gold": 3,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 3,
+          "gold": 3,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "CAUSES": {
+        "raw": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 3,
+          "gold": 3,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 3,
+          "gold": 3,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "LOCATED_IN": {
+        "raw": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "gold": 2,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "gold": 2,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "CHANGES_PARAMETER": {
+        "raw": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 8,
+          "gold": 8,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 8,
+          "gold": 8,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "MEETS_REQUIREMENT": {
+        "raw": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "gold": 2,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "gold": 2,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "DEPENDS_ON": {
+        "raw": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "gold": 2,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "final": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "gold": 2,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "rejected_raw_proposals": {
+      "UNSUPPORTED_CAPABILITY:CROSS_CLAUSE_SCOPE": 40,
+      "UNSUPPORTED_CAPABILITY:NEGATION_ATTACHMENT": 28
+    },
+    "rejected_exact_gold_raw_proposals": {},
+    "note": "Counts match exact typed directed edges; qualified completeness is audited by the separate strict metric"
+  },
+  "entity_per_kind": {
+    "MATERIAL": {
+      "typed": {
+        "tp": 52,
+        "fp": 179,
+        "fn": 109,
+        "predicted": 231,
+        "gold": 161,
+        "precision": 0.22510822510822512,
+        "recall": 0.32298136645962733,
+        "f1": 0.2653061224489796
+      },
+      "exact_boundary_covered": 52,
+      "gold": 161
+    },
+    "DEVICE": {
+      "typed": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 57,
+        "predicted": 0,
+        "gold": 57,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "exact_boundary_covered": 0,
+      "gold": 57
+    },
+    "PROPERTY": {
+      "typed": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 75,
+        "predicted": 0,
+        "gold": 75,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "exact_boundary_covered": 0,
+      "gold": 75
+    },
+    "PERFORMANCE": {
+      "typed": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 63,
+        "predicted": 0,
+        "gold": 63,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "exact_boundary_covered": 0,
+      "gold": 63
+    },
+    "ANALYTE": {
+      "typed": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 77,
+        "predicted": 0,
+        "gold": 77,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "exact_boundary_covered": 57,
+      "gold": 77
+    },
+    "PROCESS": {
+      "typed": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 51,
+        "predicted": 0,
+        "gold": 51,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "exact_boundary_covered": 0,
+      "gold": 51
+    },
+    "MECHANISM": {
+      "typed": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 13,
+        "predicted": 0,
+        "gold": 13,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "exact_boundary_covered": 0,
+      "gold": 13
+    },
+    "OPERATING_CONDITION": {
+      "typed": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 14,
+        "predicted": 0,
+        "gold": 14,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "exact_boundary_covered": 0,
+      "gold": 14
+    },
+    "MORPHOLOGY": {
+      "typed": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 38,
+        "predicted": 0,
+        "gold": 38,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "exact_boundary_covered": 0,
+      "gold": 38
+    },
+    "TECHNOLOGY": {
+      "typed": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 5,
+        "predicted": 0,
+        "gold": 5,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "exact_boundary_covered": 0,
+      "gold": 5
+    },
+    "APPLICATION": {
+      "typed": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 28,
+        "predicted": 0,
+        "gold": 28,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "exact_boundary_covered": 0,
+      "gold": 28
+    },
+    "OTHER": {
+      "typed": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 7,
+        "predicted": 0,
+        "gold": 7,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "exact_boundary_covered": 0,
+      "gold": 7
+    }
+  },
+  "actual_gold_label_query_coverage": {
+    "covered": 0,
+    "gold": 390,
+    "recall": 0.0
+  },
+  "gate_totals": {
+    "raw_re": {
+      "total": 1374,
+      "tp": 0,
+      "fp": 1374
+    },
+    "domain_range": {
+      "total": 1374,
+      "tp": 0,
+      "fp": 1374
+    },
+    "scope": {
+      "total": 1306,
+      "tp": 0,
+      "fp": 1306
+    },
+    "evidence": {
+      "total": 1306,
+      "tp": 0,
+      "fp": 1306
+    },
+    "final": {
+      "total": 1306,
+      "tp": 0,
+      "fp": 1306
+    }
+  },
+  "abstention_or_rejection_pair_reasons": {
+    "NO_SCORE_ABOVE_FIXED_THRESHOLD": 321,
+    "UNSUPPORTED_CAPABILITY:CROSS_CLAUSE_SCOPE": 40,
+    "UNSUPPORTED_CAPABILITY:NEGATION_ATTACHMENT": 28
+  },
+  "final_fp_categories": {
+    "at_least_one_non_gold_boundary": 873,
+    "gold_boundaries_wrong_entity_kind": 180,
+    "exact_gold_endpoints_wrong_or_unannotated_relation": 253
+  },
+  "unsupported_relations": [
+    "MEETS_REQUIREMENT"
+  ],
+  "unsupported_gold_relations": {
+    "MEETS_REQUIREMENT": 2
+  },
+  "selected_examples": {
+    "entity_FP_BOUNDARY": {
+      "document": "D001",
+      "chunk_id": "6319af2d-0fe1-4daa-87c6-131c379a75c9",
+      "surface": "graphene oxide",
+      "start": 516,
+      "end": 530,
+      "predicted_kind": "MATERIAL",
+      "gold_kinds_at_exact_boundary": [],
+      "evidence": "astic threads as flexible/stretchable templates and reduced graphene oxide/mesoporous zinc oxide nanosheets as sensing layers to form "
+    },
+    "entity_FP_KIND": {
+      "document": "D001",
+      "chunk_id": "6319af2d-0fe1-4daa-87c6-131c379a75c9",
+      "surface": "NO 2",
+      "start": 755,
+      "end": 759,
+      "predicted_kind": "MATERIAL",
+      "gold_kinds_at_exact_boundary": [
+        "ANALYTE"
+      ],
+      "evidence": "bility (84 days), low theoretical detection limit (43.5 ppb NO 2 ), great mechanical deformation tolerance (3000 bending cyc"
+    },
+    "relation_FP": {
+      "document": "D001",
+      "chunk_id": "6319af2d-0fe1-4daa-87c6-131c379a75c9",
+      "head": "graphene oxide",
+      "head_kind": "MATERIAL",
+      "tail": "zinc oxide",
+      "tail_kind": "MATERIAL",
+      "relation": "HAS_COMPONENT",
+      "score": 0.9192270040512085,
+      "evidence": "The proposed gas sensor is built using commercially available cotton/elastic threads as flexible/stretchable templates and reduced graphene oxide/mesoporous zinc oxide nanosheets as sensing layers to form conducting fibers."
+    },
+    "relation_FN_NER": {
+      "document": "D001",
+      "chunk_id": "6319af2d-0fe1-4daa-87c6-131c379a75c9",
+      "head": "E-textiles",
+      "head_kind": "DEVICE",
+      "tail": "low cost",
+      "tail_kind": "PROPERTY",
+      "relation": "HAS_PROPERTY",
+      "stage": "NER",
+      "evidence": "E-textiles are gaining growing popularity recently due to low cost, light weight, and conformable compatibility with clothes in wearable"
+    },
+    "entity_TP": {
+      "document": "D004",
+      "chunk_id": "1314b88d-a703-48b5-bb03-e426d5474034",
+      "surface": "graphene",
+      "start": 243,
+      "end": 251,
+      "predicted_kind": "MATERIAL",
+      "gold_kinds_at_exact_boundary": [
+        "MATERIAL"
+      ],
+      "evidence": "hat the products corresponded to agglomerated structures of graphene and SnO 2 particles, with small secondary SnO x ( x ≤ 2) na"
+    }
+  },
+  "performance": {
+    "wall_ms": 124178.03359986283,
+    "cpu_ms": 436125.0,
+    "peak_ram_bytes": 1280450560,
+    "ner_load_ms": 942.2211002092808,
+    "re_load_ms": 1063.3739999029785,
+    "ner_calls": 66,
+    "ner_encoder_calls": 66,
+    "re_calls": 76,
+    "re_encoder_calls": 76
+  },
+  "run_sha256": "72ac1d33f3ade3ff22fe9b6439a2b601d8799d8bf905d7a501f6a56d69592996"
+}

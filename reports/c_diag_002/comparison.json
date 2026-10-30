@@ -1,0 +1,557 @@
+{
+  "variants": {
+    "control": {
+      "micro": {
+        "entity_span": {
+          "tp": 277,
+          "fp": 201,
+          "fn": 312,
+          "gold": 589,
+          "predicted": 478,
+          "precision": 0.5794979079497908,
+          "recall": 0.4702886247877759,
+          "f1": 0.5192127460168697
+        },
+        "entity_typed": {
+          "tp": 245,
+          "fp": 233,
+          "fn": 344,
+          "gold": 589,
+          "predicted": 478,
+          "precision": 0.5125523012552301,
+          "recall": 0.4159592529711375,
+          "f1": 0.4592314901593252
+        },
+        "relation_raw_end_to_end": {
+          "tp": 50,
+          "fp": 5508,
+          "fn": 340,
+          "gold": 390,
+          "predicted": 5558,
+          "precision": 0.008996041741633681,
+          "recall": 0.1282051282051282,
+          "f1": 0.016812373907195696
+        },
+        "relation_end_to_end": {
+          "tp": 48,
+          "fp": 4455,
+          "fn": 342,
+          "gold": 390,
+          "predicted": 4503,
+          "precision": 0.010659560293137908,
+          "recall": 0.12307692307692308,
+          "f1": 0.019619865113427344
+        },
+        "relation_given_candidate_endpoints": {
+          "tp": 48,
+          "fp": 1141,
+          "fn": 23,
+          "gold": 71,
+          "predicted": 1189,
+          "precision": 0.040370058873002525,
+          "recall": 0.676056338028169,
+          "f1": 0.0761904761904762
+        },
+        "qualified_relation": {
+          "tp": 0,
+          "fp": 4503,
+          "fn": 390,
+          "gold": 390,
+          "predicted": 4503,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "candidate_pair_recall": {
+          "covered": 71,
+          "gold": 390,
+          "recall": 0.18205128205128204
+        },
+        "abstention": {
+          "abstained": 1425,
+          "candidate_pairs": 3942,
+          "rate": 0.3614916286149163
+        }
+      },
+      "counts": {
+        "entities": 478,
+        "candidate_pairs": 3942,
+        "raw_proposals": 5558,
+        "assertions": 4503,
+        "skipped_re_contexts": 0
+      },
+      "performance": {
+        "wall_ms": 358585.1690999698,
+        "cpu_ms": 1322156.25,
+        "peak_ram_bytes": 1808670720,
+        "ner_load_ms": 8212.366600055248,
+        "re_load_ms": 1541.6880000848323,
+        "ner_calls": 27,
+        "ner_encoder_calls": 27,
+        "re_calls": 223,
+        "re_encoder_calls": 223
+      },
+      "funnel": {
+        "gold": 390,
+        "untyped_endpoints": 86,
+        "typed_endpoints": 76,
+        "candidate_pairs": 71,
+        "model_served": 71,
+        "re_capability": 71,
+        "raw_re": 50,
+        "domain_range": 50,
+        "scope": 48,
+        "evidence": 48,
+        "final": 48
+      },
+      "final_fp_categories": {
+        "gold_boundaries_wrong_entity_kind": 543,
+        "at_least_one_non_gold_boundary": 2771,
+        "exact_gold_endpoints_wrong_or_unannotated_relation": 1141
+      }
+    },
+    "chem": {
+      "micro": {
+        "entity_span": {
+          "tp": 109,
+          "fp": 122,
+          "fn": 480,
+          "gold": 589,
+          "predicted": 231,
+          "precision": 0.47186147186147187,
+          "recall": 0.18505942275042445,
+          "f1": 0.2658536585365854
+        },
+        "entity_typed": {
+          "tp": 52,
+          "fp": 179,
+          "fn": 537,
+          "gold": 589,
+          "predicted": 231,
+          "precision": 0.22510822510822512,
+          "recall": 0.08828522920203735,
+          "f1": 0.12682926829268293
+        },
+        "relation_raw_end_to_end": {
+          "tp": 0,
+          "fp": 1374,
+          "fn": 390,
+          "gold": 390,
+          "predicted": 1374,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "relation_end_to_end": {
+          "tp": 0,
+          "fp": 1306,
+          "fn": 390,
+          "gold": 390,
+          "predicted": 1306,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "relation_given_candidate_endpoints": {
+          "tp": 0,
+          "fp": 253,
+          "fn": 0,
+          "gold": 0,
+          "predicted": 253,
+          "precision": 0.0,
+          "recall": null,
+          "f1": 0.0
+        },
+        "qualified_relation": {
+          "tp": 0,
+          "fp": 1306,
+          "fn": 390,
+          "gold": 390,
+          "predicted": 1306,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "candidate_pair_recall": {
+          "covered": 0,
+          "gold": 390,
+          "recall": 0.0
+        },
+        "abstention": {
+          "abstained": 359,
+          "candidate_pairs": 1110,
+          "rate": 0.32342342342342345
+        }
+      },
+      "counts": {
+        "entities": 231,
+        "candidate_pairs": 1110,
+        "raw_proposals": 1374,
+        "assertions": 1306,
+        "skipped_re_contexts": 0
+      },
+      "performance": {
+        "wall_ms": 124178.03359986283,
+        "cpu_ms": 436125.0,
+        "peak_ram_bytes": 1280450560,
+        "ner_load_ms": 942.2211002092808,
+        "re_load_ms": 1063.3739999029785,
+        "ner_calls": 66,
+        "ner_encoder_calls": 66,
+        "re_calls": 76,
+        "re_encoder_calls": 76
+      },
+      "funnel": {
+        "gold": 390,
+        "untyped_endpoints": 3,
+        "typed_endpoints": 0,
+        "candidate_pairs": 0,
+        "model_served": 0,
+        "re_capability": 0,
+        "raw_re": 0,
+        "domain_range": 0,
+        "scope": 0,
+        "evidence": 0,
+        "final": 0
+      },
+      "final_fp_categories": {
+        "at_least_one_non_gold_boundary": 873,
+        "gold_boundaries_wrong_entity_kind": 180,
+        "exact_gold_endpoints_wrong_or_unannotated_relation": 253
+      }
+    },
+    "battery": {
+      "micro": {
+        "entity_span": {
+          "tp": 43,
+          "fp": 747,
+          "fn": 546,
+          "gold": 589,
+          "predicted": 790,
+          "precision": 0.05443037974683544,
+          "recall": 0.0730050933786078,
+          "f1": 0.06236403190717912
+        },
+        "entity_typed": {
+          "tp": 18,
+          "fp": 772,
+          "fn": 571,
+          "gold": 589,
+          "predicted": 790,
+          "precision": 0.02278481012658228,
+          "recall": 0.030560271646859084,
+          "f1": 0.02610587382160986
+        },
+        "relation_raw_end_to_end": {
+          "tp": 0,
+          "fp": 9248,
+          "fn": 390,
+          "gold": 390,
+          "predicted": 9248,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "relation_end_to_end": {
+          "tp": 0,
+          "fp": 9002,
+          "fn": 390,
+          "gold": 390,
+          "predicted": 9002,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "relation_given_candidate_endpoints": {
+          "tp": 0,
+          "fp": 25,
+          "fn": 0,
+          "gold": 0,
+          "predicted": 25,
+          "precision": 0.0,
+          "recall": null,
+          "f1": 0.0
+        },
+        "qualified_relation": {
+          "tp": 0,
+          "fp": 9002,
+          "fn": 390,
+          "gold": 390,
+          "predicted": 9002,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "candidate_pair_recall": {
+          "covered": 0,
+          "gold": 390,
+          "recall": 0.0
+        },
+        "abstention": {
+          "abstained": 10751,
+          "candidate_pairs": 16712,
+          "rate": 0.643310196266156
+        }
+      },
+      "counts": {
+        "entities": 790,
+        "candidate_pairs": 16712,
+        "raw_proposals": 9248,
+        "assertions": 9002,
+        "skipped_re_contexts": 0
+      },
+      "performance": {
+        "wall_ms": 1296733.7326998822,
+        "cpu_ms": 4952437.5,
+        "peak_ram_bytes": 1483812864,
+        "ner_load_ms": 1094.717799918726,
+        "re_load_ms": 1264.7810999769717,
+        "ner_calls": 32,
+        "ner_encoder_calls": 32,
+        "re_calls": 890,
+        "re_encoder_calls": 890
+      },
+      "funnel": {
+        "gold": 390,
+        "untyped_endpoints": 0,
+        "typed_endpoints": 0,
+        "candidate_pairs": 0,
+        "model_served": 0,
+        "re_capability": 0,
+        "raw_re": 0,
+        "domain_range": 0,
+        "scope": 0,
+        "evidence": 0,
+        "final": 0
+      },
+      "final_fp_categories": {
+        "at_least_one_non_gold_boundary": 8959,
+        "exact_gold_endpoints_wrong_or_unannotated_relation": 25,
+        "gold_boundaries_wrong_entity_kind": 18
+      }
+    },
+    "union": {
+      "micro": {
+        "entity_span": {
+          "tp": 330,
+          "fp": 1037,
+          "fn": 259,
+          "gold": 589,
+          "predicted": 1367,
+          "precision": 0.24140453547915142,
+          "recall": 0.5602716468590832,
+          "f1": 0.3374233128834356
+        },
+        "entity_typed": {
+          "tp": 274,
+          "fp": 1093,
+          "fn": 315,
+          "gold": 589,
+          "predicted": 1367,
+          "precision": 0.20043891733723482,
+          "recall": 0.46519524617996605,
+          "f1": 0.28016359918200406
+        },
+        "relation_raw_end_to_end": {
+          "tp": 58,
+          "fp": 37063,
+          "fn": 332,
+          "gold": 390,
+          "predicted": 37121,
+          "precision": 0.0015624579079227391,
+          "recall": 0.14871794871794872,
+          "f1": 0.0030924262216416518
+        },
+        "relation_end_to_end": {
+          "tp": 56,
+          "fp": 32178,
+          "fn": 334,
+          "gold": 390,
+          "predicted": 32234,
+          "precision": 0.0017372960228330334,
+          "recall": 0.14358974358974358,
+          "f1": 0.0034330554193231977
+        },
+        "relation_given_candidate_endpoints": {
+          "tp": 56,
+          "fp": 1653,
+          "fn": 29,
+          "gold": 85,
+          "predicted": 1709,
+          "precision": 0.032767700409596257,
+          "recall": 0.6588235294117647,
+          "f1": 0.06243032329988852
+        },
+        "qualified_relation": {
+          "tp": 0,
+          "fp": 32234,
+          "fn": 390,
+          "gold": 390,
+          "predicted": 32234,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "candidate_pair_recall": {
+          "covered": 85,
+          "gold": 390,
+          "recall": 0.21794871794871795
+        },
+        "abstention": {
+          "abstained": 22578,
+          "candidate_pairs": 41590,
+          "rate": 0.5428708824236596
+        }
+      },
+      "counts": {
+        "entities": 1367,
+        "candidate_pairs": 41590,
+        "raw_proposals": 37121,
+        "assertions": 32234,
+        "skipped_re_contexts": 0
+      },
+      "performance": {
+        "wall_ms": 3198087.1957000345,
+        "cpu_ms": 12265000.0,
+        "peak_ram_bytes": 2951651328,
+        "ner_load_ms": 9735.118200071156,
+        "re_load_ms": 1048.8539000507444,
+        "ner_calls": 125,
+        "ner_encoder_calls": 125,
+        "re_calls": 2227,
+        "re_encoder_calls": 2227
+      },
+      "funnel": {
+        "gold": 390,
+        "untyped_endpoints": 112,
+        "typed_endpoints": 90,
+        "candidate_pairs": 85,
+        "model_served": 85,
+        "re_capability": 85,
+        "raw_re": 58,
+        "domain_range": 58,
+        "scope": 56,
+        "evidence": 56,
+        "final": 56
+      },
+      "final_fp_categories": {
+        "at_least_one_non_gold_boundary": 29254,
+        "gold_boundaries_wrong_entity_kind": 1271,
+        "exact_gold_endpoints_wrong_or_unannotated_relation": 1653
+      }
+    },
+    "gold": {
+      "micro": {
+        "entity_span": {
+          "tp": 589,
+          "fp": 0,
+          "fn": 0,
+          "gold": 589,
+          "predicted": 589,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "entity_typed": {
+          "tp": 589,
+          "fp": 0,
+          "fn": 0,
+          "gold": 589,
+          "predicted": 589,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "relation_raw_end_to_end": {
+          "tp": 303,
+          "fp": 5788,
+          "fn": 87,
+          "gold": 390,
+          "predicted": 6091,
+          "precision": 0.04974552618617632,
+          "recall": 0.7769230769230769,
+          "f1": 0.09350408887517359
+        },
+        "relation_end_to_end": {
+          "tp": 283,
+          "fp": 4990,
+          "fn": 107,
+          "gold": 390,
+          "predicted": 5273,
+          "precision": 0.053669637777356345,
+          "recall": 0.7256410256410256,
+          "f1": 0.09994702454529401
+        },
+        "relation_given_candidate_endpoints": {
+          "tp": 283,
+          "fp": 4990,
+          "fn": 91,
+          "gold": 374,
+          "predicted": 5273,
+          "precision": 0.053669637777356345,
+          "recall": 0.7566844919786097,
+          "f1": 0.10023021073136179
+        },
+        "qualified_relation": {
+          "tp": 0,
+          "fp": 5273,
+          "fn": 390,
+          "gold": 390,
+          "predicted": 5273,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "candidate_pair_recall": {
+          "covered": 374,
+          "gold": 390,
+          "recall": 0.958974358974359
+        },
+        "abstention": {
+          "abstained": 2460,
+          "candidate_pairs": 5532,
+          "rate": 0.44468546637744033
+        }
+      },
+      "counts": {
+        "entities": 589,
+        "candidate_pairs": 5532,
+        "raw_proposals": 6091,
+        "assertions": 5273,
+        "skipped_re_contexts": 0
+      },
+      "performance": {
+        "wall_ms": 417645.4996999819,
+        "cpu_ms": 1563468.75,
+        "peak_ram_bytes": 1099726848,
+        "ner_load_ms": 0,
+        "re_load_ms": 1328.2984001562,
+        "ner_calls": 0,
+        "ner_encoder_calls": 0,
+        "re_calls": 298,
+        "re_encoder_calls": 298
+      },
+      "funnel": {
+        "gold": 390,
+        "untyped_endpoints": 390,
+        "typed_endpoints": 390,
+        "candidate_pairs": 374,
+        "model_served": 374,
+        "re_capability": 373,
+        "raw_re": 303,
+        "domain_range": 303,
+        "scope": 283,
+        "evidence": 283,
+        "final": 283
+      },
+      "final_fp_categories": {
+        "exact_gold_endpoints_wrong_or_unannotated_relation": 4990
+      }
+    }
+  },
+  "original_control_reproduced": true,
+  "protocol_sha256": "589c6b8e9bfb02292604b2852978c8cb87575fd01c93e9ea69217d6493ccf5cd",
+  "config_sha256": "1ebef59ed5968ac14f55be7b68af8b04d01758fca5fabef2554fc262abdc2ed6",
+  "evaluation_script_sha256": "dace22213b8be38c3992ae3a1f3e770facfd7c7411ca72c4d600a407a8b97dd1",
+  "inference_completed_before_gold_scoring": true
+}
