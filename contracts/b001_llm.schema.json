@@ -1,0 +1,289 @@
+{
+  "type": "object",
+  "properties": {
+    "entities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "s": {
+            "type": "string",
+            "minLength": 1
+          },
+          "n": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "o": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "k": {
+            "enum": [
+              "MATERIAL",
+              "DEVICE",
+              "PROPERTY",
+              "PERFORMANCE",
+              "ANALYTE",
+              "PROCESS",
+              "MECHANISM",
+              "OPERATING_CONDITION",
+              "MORPHOLOGY",
+              "TECHNOLOGY",
+              "APPLICATION",
+              "OTHER"
+            ]
+          },
+          "r": {
+            "enum": [
+              "TARGET",
+              "COMPONENT",
+              "BEARER",
+              "METHOD",
+              "CONDITION",
+              "UNKNOWN"
+            ]
+          }
+        },
+        "required": [
+          "s",
+          "n",
+          "o",
+          "k",
+          "r"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "h": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "t": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "r": {
+            "enum": [
+              "HAS_PROPERTY",
+              "HAS_PERFORMANCE",
+              "HAS_MORPHOLOGY",
+              "HAS_COMPONENT",
+              "HAS_MEMBER",
+              "USES_MATERIAL",
+              "FUNCTIONS_AS",
+              "DETECTS",
+              "USED_FOR",
+              "FABRICATED_BY",
+              "IMPROVES",
+              "ACTS_ON",
+              "INTEGRATED_IN",
+              "HAS_MECHANISM",
+              "MECHANISM_INVOLVES",
+              "LOCATED_IN",
+              "OPTIMIZES",
+              "FACILITATES",
+              "CAUSES",
+              "EXPLAINS",
+              "CHANGES_PARAMETER",
+              "DEPENDS_ON",
+              "MEETS_REQUIREMENT"
+            ]
+          },
+          "e": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "p": {
+            "enum": [
+              "POSITIVE",
+              "NEGATIVE",
+              "UNKNOWN"
+            ]
+          },
+          "m": {
+            "enum": [
+              "ASSERTED",
+              "PROPOSED",
+              "HYPOTHETICAL",
+              "COMPARED",
+              "UNKNOWN"
+            ]
+          },
+          "q": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "s": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "n": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "o": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "k": {
+                  "enum": [
+                    "duration",
+                    "detection_limit",
+                    "estimation_status",
+                    "temperature",
+                    "bending_cycles",
+                    "twisting_cycles",
+                    "strain",
+                    "layer_position",
+                    "parameter_selection",
+                    "response_per_concentration",
+                    "NO_response_per_concentration",
+                    "NO2_response_per_concentration",
+                    "NO_detection_limit",
+                    "NO2_detection_limit",
+                    "stretch",
+                    "explained_capability",
+                    "isolation_reference",
+                    "relative_humidity",
+                    "monitoring_times",
+                    "equipment",
+                    "location",
+                    "trend",
+                    "associated_change",
+                    "response",
+                    "analyte_concentration",
+                    "temperature_selection",
+                    "comparison",
+                    "mass_ratio",
+                    "optimization_status",
+                    "relative_humidity_range",
+                    "coefficient_of_determination",
+                    "selectivity_comparison",
+                    "dopant",
+                    "improvement_factor",
+                    "doped_detection_limit",
+                    "undoped_detection_limit",
+                    "support_method",
+                    "analyte_scope",
+                    "material_configuration",
+                    "concentration_regime",
+                    "sample_condition",
+                    "epistemic_basis",
+                    "change",
+                    "study_method",
+                    "relative_sensitivity",
+                    "scope_limit",
+                    "process_location",
+                    "comparison_direction",
+                    "comparison_material",
+                    "detection_limit_range",
+                    "SNR_ratio",
+                    "selectivity_order",
+                    "gas_pair",
+                    "pore_configuration",
+                    "CH4_barrier",
+                    "H2_barrier",
+                    "fabrication_techniques",
+                    "direction",
+                    "contribution",
+                    "scope",
+                    "joint_requirement",
+                    "evidence_basis",
+                    "strength",
+                    "target_parameter",
+                    "width",
+                    "explanatory_basis",
+                    "outcome_scope"
+                  ]
+                },
+                "v": {
+                  "type": "string"
+                },
+                "u": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "s",
+                "n",
+                "o",
+                "k",
+                "v",
+                "u"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "d": {
+            "enum": [
+              "ASSERT",
+              "ABSTAIN"
+            ]
+          }
+        },
+        "required": [
+          "h",
+          "t",
+          "r",
+          "e",
+          "p",
+          "m",
+          "q",
+          "d"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "unresolved": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "s": {
+            "type": "string",
+            "minLength": 1
+          },
+          "n": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "o": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "reason": {
+            "enum": [
+              "UNKNOWN",
+              "UNSUPPORTED"
+            ]
+          }
+        },
+        "required": [
+          "s",
+          "n",
+          "o",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "entities",
+    "relations",
+    "unresolved"
+  ],
+  "additionalProperties": false
+}
