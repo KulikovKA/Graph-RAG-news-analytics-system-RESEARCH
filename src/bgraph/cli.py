@@ -29,7 +29,7 @@ def install_guard():
 def extract(cfg, directory):
     install_guard()
     from cgraph.inputs import load_inputs, load_ontology
-    from .backend import Qwen, verify
+    from .backend import InferenceFailure, Qwen, verify
     from .contract import schema, system_prompt
     from .mapping import process, finish_document
     from .resources import Meter
@@ -48,15 +48,22 @@ def extract(cfg, directory):
         Draft202012Validator.check_schema(frozen_schema)
         identity = verify(cfg)
         qwen = Qwen(cfg, frozen_schema, system_prompt(cfg, ontology))
-        output_hashes, trace_hashes = {}, {}
+        output_hashes, trace_hashes, failed_windows = {}, {}, []
+        window_count = 0
         for doc in docs:
             begin, calls = time.perf_counter(), qwen.calls
             chunks = []
             for chunk in doc['chunks']:
                 results = []
                 for rows in windows(chunk['text'], cfg['windows']):
-                    value, attempts = qwen.extract(rows)
-                    results.append((rows, value))
+                    window_count += 1
+                    try:
+                        value, attempts = qwen.extract(rows)
+                        results.append((rows, value))
+                    except InferenceFailure as exc:
+                        value, attempts = None, exc.attempts
+                        failed_windows.append(dict(document=doc['document_code'], chunk_id=chunk['chunk_id'],
+                                                   sentence_ids=[r['id'] for r in rows], reason='MODEL_OUTPUT_FAILURE'))
                     trace_path = path / 'raw' / doc['document_code'] / f"{chunk['chunk_id']}-{rows[0]['id']}.json"
                     write_json(trace_path, dict(chunk_id=chunk['chunk_id'], sentence_ids=[r['id'] for r in rows],
                                                 attempts=attempts, parsed=value))
@@ -79,7 +86,9 @@ def extract(cfg, directory):
                   prediction_files_sha256=output_hashes, raw_files_sha256=trace_hashes,
                   cost=meter.result(), llm_calls=qwen.calls, input_tokens=qwen.input_tokens,
                   output_tokens=qwen.output_tokens, retries=qwen.retries, json_errors=qwen.json_errors,
-                  request_errors=qwen.request_errors, access_guard='Python audit hook: Gold/closed paths forbidden; loopback Ollama only',
+                  request_errors=qwen.request_errors, windows_total=window_count,
+                  windows_successful=window_count-len(failed_windows), failed_windows=failed_windows,
+                  access_guard='Python audit hook: Gold/closed paths forbidden; loopback Ollama only',
                   access_audit_complete=True)
     write_json(path / 'run.json', result)
     return result

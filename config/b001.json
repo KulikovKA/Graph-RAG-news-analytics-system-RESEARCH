@@ -12,7 +12,7 @@
   "model_contract": "contracts/b001_model.json",
   "prompt": "config/b001_prompt.txt",
   "schema": "contracts/b001_llm.schema.json",
-  "windows": {"sentences": 3, "overlap": 1, "max_chars": 1800},
+  "windows": {"sentences": 1, "overlap": 0, "max_chars": 1800},
   "inventory": false,
   "decoding": {
     "seed": 42,
@@ -24,7 +24,7 @@
     "presence_penalty": 0,
     "frequency_penalty": 0,
     "num_ctx": 8192,
-    "num_predict": 3072,
+    "num_predict": 4096,
     "num_thread": 4,
     "num_gpu": 0
   },

@@ -31,6 +31,12 @@ def verify(cfg):
     return dict(ollama_version=version, model=matches[0])
 
 
+class InferenceFailure(RuntimeError):
+    def __init__(self, attempts):
+        super().__init__('Inference failed after fixed failure policy')
+        self.attempts = attempts
+
+
 class Qwen:
     def __init__(self, cfg, schema, prompt):
         self.cfg, self.schema, self.prompt = cfg, schema, prompt
@@ -61,6 +67,9 @@ class Qwen:
             except (ValueError, KeyError, json.JSONDecodeError) as exc:
                 self.json_errors += 1
                 attempts.append({'error': type(exc).__name__, 'detail': str(exc)[:500]})
+                # Greedy decoding of the same truncated response cannot repair it.
+                if str(exc) == 'GENERATION_TRUNCATED':
+                    break
             except Exception as exc:
                 # Includes schema validation and request failures; never silently turn failure into empty predictions.
                 if exc.__class__.__name__ == 'ValidationError':
@@ -68,4 +77,4 @@ class Qwen:
                 else:
                     self.request_errors += 1
                 attempts.append({'error': type(exc).__name__, 'detail': str(exc)[:500]})
-        raise RuntimeError(json.dumps({'message': 'Inference failed after fixed retries', 'attempts': attempts}, ensure_ascii=False))
+        raise InferenceFailure(attempts)

@@ -95,7 +95,7 @@ def evaluate_run(cfg, directory, output):
                       rate=model_abstain/relation_records if relation_records else None),
                   rejection_reasons=dict(rejection),
                   per_relation={k: {s: prf(v['gold'], v[s]) for s in ('raw', 'final')} for k, v in per_relation.items()},
-                  examples=examples, performance={k: run[k] for k in ('cost', 'llm_calls', 'input_tokens', 'output_tokens', 'retries', 'json_errors', 'request_errors')},
+                  examples=examples, performance={k: run[k] for k in ('cost', 'llm_calls', 'input_tokens', 'output_tokens', 'retries', 'json_errors', 'request_errors', 'windows_total', 'windows_successful', 'failed_windows')},
                   d024_limitation='D024 relation annotations are incomplete; unmatched predictions are not necessarily semantically false.',
                   prediction_run_sha256=file_sha256(directory / 'run.json'))
     write_json(output, result)
