@@ -1,0 +1,97 @@
+{
+  "status": "complete",
+  "settings": {
+    "experiment": "NER-V2-PREP",
+    "ontology": "contracts/ner_v2/ontology.v2.json",
+    "model_lock": "contracts/ner_v2/model_lock.json",
+    "model_root": "artifacts/ner_v2/models",
+    "input": "data/ner_v2/openalex_12.jsonl",
+    "seed": 42,
+    "cpu_threads": 4,
+    "threshold": 0.35,
+    "max_window_words": 60,
+    "overlap_words": 20,
+    "max_input_tokens": 512,
+    "flat_ner": false,
+    "multi_label": true,
+    "postprocessing": "exact-span-label-max-score-sorted-v1"
+  },
+  "settings_fingerprint": "2702f709dccf8f67dd1d8991795f90357f63ec8b42fa46aba420b965f0731148",
+  "label_descriptions": {
+    "physical biological technical or digital object, system, component or artifact, not an abstract concept or method": "OBJECT",
+    "person organization institution state or participant acting as a subject in context": "ACTOR",
+    "abstract concept theory mathematical construction scientific category or hypothesis": "CONCEPT",
+    "algorithm procedure technology or experimental technique describing how to perform an action": "METHOD",
+    "action operation event change or sequence of occurring actions, not the method": "PROCESS",
+    "dataset corpus registry archive sample or source of organized information": "DATA_RESOURCE",
+    "property parameter measurable characteristic or metric, not a particular obtained result": "ATTRIBUTE",
+    "observed measured computed or established outcome of research experiment method or process": "RESULT",
+    "explicit experimental observational or applicability condition of a statement": "CONDITION",
+    "task goal problem or application area, not a method for solving it": "TASK",
+    "source-described mechanism explaining how or why a phenomenon occurs, not every process": "MECHANISM"
+  },
+  "input_sha256": "e2859bb8c7d15c62d875a35fbfca72125433dee2ca588ed85f5151490a34ea7d",
+  "ontology_sha256": "248abbec239279ae640e7188a7bb8e68f01f9f116ea8ca671d0da0c815613b14",
+  "model_lock_sha256": "005e49a7048f9565d49a83d69cc9e14b98b35be46e9ec6279825b6b9ded86abf",
+  "libraries": {
+    "gliner": "0.2.26",
+    "torch": "2.11.0",
+    "transformers": "5.1.0",
+    "huggingface-hub": "1.28.0",
+    "tokenizers": "0.22.2",
+    "sentencepiece": "0.2.2",
+    "safetensors": "0.7.0",
+    "spacy": "3.8.18",
+    "en-core-web-sm": "3.8.0",
+    "numpy": "2.4.1",
+    "requests": "2.34.2",
+    "pytest": "8.3.5",
+    "tqdm": "4.70.1"
+  },
+  "models": {
+    "large": {
+      "model_identifier": "urchade/gliner_large-v2.1@abd49a1f1ebc12af1be84d06f6848221cf96dcad",
+      "load_seconds": 14.866053899982944,
+      "detection_and_normalization_seconds": 97.64823479996994,
+      "mentions": 99,
+      "documents_per_second": 0.12289008628350231
+    },
+    "medium": {
+      "model_identifier": "urchade/gliner_medium-v2.1@40ec419335d09393f298636f471328b722c6da9e",
+      "load_seconds": 5.899042299948633,
+      "detection_and_normalization_seconds": 31.788985599996522,
+      "mentions": 54,
+      "documents_per_second": 0.3774892395434384
+    },
+    "small": {
+      "model_identifier": "urchade/gliner_small-v2.1@4e091416cf7c3481db542c2a3d26156916f3a47f",
+      "load_seconds": 3.9178412000183016,
+      "detection_and_normalization_seconds": 15.89454560005106,
+      "mentions": 25,
+      "documents_per_second": 0.7549759711256829
+    }
+  },
+  "agreement": {
+    "large/medium": {
+      "left_spans": 95,
+      "right_spans": 47,
+      "intersection": 32,
+      "union": 110,
+      "jaccard": 0.2909090909090909
+    },
+    "large/small": {
+      "left_spans": 95,
+      "right_spans": 25,
+      "intersection": 18,
+      "union": 102,
+      "jaccard": 0.17647058823529413
+    },
+    "medium/small": {
+      "left_spans": 47,
+      "right_spans": 25,
+      "intersection": 20,
+      "union": 52,
+      "jaccard": 0.38461538461538464
+    }
+  }
+}

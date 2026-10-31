@@ -1,0 +1,114 @@
+{
+  "status": "valid",
+  "origin": "User-executed local benchmark; archived without rerunning inference",
+  "source_directory": "artifacts/ner_v2/benchmark_run1",
+  "source_code_head_at_archive": "2bf9835958ad0f2ab2fe86020d583634dc70981c",
+  "execution_commit_recorded_by_benchmark": false,
+  "manifest_sha256": "0fd03c28f59fe88daec55a4d1a1b374ff7064728d63495392091a1744397e262",
+  "input_hash_matches": true,
+  "ontology_hash_matches": true,
+  "model_lock_hash_matches": true,
+  "span_agreement_recomputed_matches": true,
+  "total_records": 178,
+  "models": {
+    "large": {
+      "records": 99,
+      "unique_spans": 95,
+      "documents_with_mentions": 12,
+      "documents_without_mentions": [],
+      "mentions_per_document": {
+        "W2020268674": 6,
+        "W2057261224": 11,
+        "W2073881503": 2,
+        "W2092571965": 4,
+        "W2130076420": 7,
+        "W2355493570": 19,
+        "W3182220660": 10,
+        "W3195791401": 2,
+        "W4312890372": 3,
+        "W4387756919": 13,
+        "W7130738450": 11,
+        "W7220014427": 11
+      },
+      "ner_label_hints": {
+        "ACTOR": 27,
+        "ATTRIBUTE": 19,
+        "CONCEPT": 15,
+        "CONDITION": 6,
+        "MECHANISM": 1,
+        "OBJECT": 16,
+        "PROCESS": 2,
+        "RESULT": 12,
+        "TASK": 1
+      },
+      "exact_offsets_valid": true,
+      "unique_mention_ids": true,
+      "model_identifier_matches": true,
+      "source_sha256": "29a2591d81ed01ba3ad0da1f3e89b98f77ba0886c2508822e746e7c91bd995aa"
+    },
+    "medium": {
+      "records": 54,
+      "unique_spans": 47,
+      "documents_with_mentions": 10,
+      "documents_without_mentions": [
+        "W2130076420",
+        "W7130738450"
+      ],
+      "mentions_per_document": {
+        "W2020268674": 4,
+        "W2057261224": 4,
+        "W2073881503": 1,
+        "W2092571965": 2,
+        "W2355493570": 14,
+        "W3182220660": 13,
+        "W3195791401": 1,
+        "W4312890372": 4,
+        "W4387756919": 3,
+        "W7220014427": 8
+      },
+      "ner_label_hints": {
+        "ACTOR": 11,
+        "ATTRIBUTE": 18,
+        "CONCEPT": 4,
+        "METHOD": 1,
+        "OBJECT": 20
+      },
+      "exact_offsets_valid": true,
+      "unique_mention_ids": true,
+      "model_identifier_matches": true,
+      "source_sha256": "b56291f7b8304ac6acebdb121aec3683f95f516720cb8a3eeb599d68b08869d2"
+    },
+    "small": {
+      "records": 25,
+      "unique_spans": 25,
+      "documents_with_mentions": 9,
+      "documents_without_mentions": [
+        "W2130076420",
+        "W3195791401",
+        "W7130738450"
+      ],
+      "mentions_per_document": {
+        "W2020268674": 2,
+        "W2057261224": 2,
+        "W2073881503": 1,
+        "W2092571965": 3,
+        "W2355493570": 3,
+        "W3182220660": 2,
+        "W4312890372": 4,
+        "W4387756919": 1,
+        "W7220014427": 7
+      },
+      "ner_label_hints": {
+        "ACTOR": 12,
+        "ATTRIBUTE": 9,
+        "CONCEPT": 2,
+        "METHOD": 1,
+        "OBJECT": 1
+      },
+      "exact_offsets_valid": true,
+      "unique_mention_ids": true,
+      "model_identifier_matches": true,
+      "source_sha256": "8dc8f908545ce6cc5ed3611681566b7a363b9cd37c1a99f8e9247840999971d7"
+    }
+  }
+}
