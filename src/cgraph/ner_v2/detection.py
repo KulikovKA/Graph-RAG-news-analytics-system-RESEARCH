@@ -6,6 +6,7 @@ from cgraph.ner import windows
 from . import CONTRACT_VERSION
 from .io import validate_document, validate_span, validate_mention
 from .normalization import detect_abbreviations
+from .progress import progress
 
 
 def label_descriptions(ontology):
@@ -54,18 +55,20 @@ class MentionDetector:
         self.descriptions = label_descriptions(ontology)
         self.normalizer = normalizer
 
-    def predict(self, document):
+    def predict(self, document, *, progress_position=0):
         validate_document(document)
         text = document["text"]
         raw_windows = []
-        for start, end in windows(text, self.settings["max_window_words"], self.settings["overlap_words"]):
-            window = text[start:end]
-            check_token_budget(self.model, window, self.descriptions, self.settings["max_input_tokens"])
-            output = self.model.predict_entities(window, list(self.descriptions),
-                                                 threshold=self.settings["threshold"],
-                                                 flat_ner=self.settings["flat_ner"],
-                                                 multi_label=self.settings["multi_label"])
-            raw_windows.append((start, output))
+        spans = list(windows(text, self.settings["max_window_words"], self.settings["overlap_words"]))
+        with progress(spans, desc="Windows", unit="window", position=progress_position, leave=False) as window_progress:
+            for start, end in window_progress:
+                window = text[start:end]
+                check_token_budget(self.model, window, self.descriptions, self.settings["max_input_tokens"])
+                output = self.model.predict_entities(window, list(self.descriptions),
+                                                     threshold=self.settings["threshold"],
+                                                     flat_ner=self.settings["flat_ner"],
+                                                     multi_label=self.settings["multi_label"])
+                raw_windows.append((start, output))
         analyzed = self.normalizer.analyze(text)
         abbreviations = detect_abbreviations(text)
         records = []

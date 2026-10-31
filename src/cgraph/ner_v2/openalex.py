@@ -10,6 +10,7 @@ import requests
 
 from cgraph.common import file_sha256, fingerprint, sha256, write_json, read_json
 from .io import validate_document, write_jsonl
+from .progress import progress
 
 API_BASE = "https://api.openalex.org"
 DISCIPLINES = (
@@ -85,7 +86,7 @@ def reconstruct_abstract(index):
 
 def discover_fields(client):
     fields = []
-    for discipline, query, expected in DISCIPLINES:
+    for discipline, query, expected in progress(DISCIPLINES, desc="Discover OpenAlex fields", unit="field"):
         result = client.get("fields", {"search": query, "per_page": 25})
         matches = [x for x in result["results"] if x["display_name"] == expected]
         if discipline == "History" and not matches:
@@ -165,7 +166,7 @@ def prepare_corpus(output="data/ner_v2/openalex_12.jsonl", *, seed=42,
         client = OpenAlexClient()
         fields = discover_fields(client)
         used, selected, pools = set(), [], []
-        for field in fields:
+        for field in progress(fields, desc="Fetch OpenAlex corpus", unit="field"):
             params = {"filter": field["filter"] + ",has_abstract:true,language:en,type:article",
                       "sample": 30, "seed": seed, "per_page": 30, "select": SELECT}
             payload = client.get("works", params)
@@ -186,7 +187,8 @@ def prepare_corpus(output="data/ner_v2/openalex_12.jsonl", *, seed=42,
                  "policy": "sample30-en-article-journal-conference-80to600words-distinct-primary-topics-sort-id-shuffle-v2",
                  "fields": fields, "pools": pools, "selected": selected, "requests": client.requests}
         write_json(snapshot, saved)
-    records = [source_record(item["work"], item["field"]) for item in saved["selected"]]
+    records = [source_record(item["work"], item["field"])
+               for item in progress(saved["selected"], desc="Prepare abstracts", unit="doc")]
     if len(records) != 12 or len({r["document_id"] for r in records}) != 12:
         raise ValueError("Corpus must contain twelve unique OpenAlex works")
     for discipline, _, _ in DISCIPLINES:

@@ -8,6 +8,7 @@ from pathlib import Path
 import requests
 
 from cgraph.common import file_sha256, read_json, write_json
+from .progress import progress
 
 MODEL_ROOT = Path("artifacts/ner_v2/models")
 LOCK_PATH = Path("contracts/ner_v2/model_lock.json")
@@ -38,9 +39,11 @@ def _download(repo, name, spec, destination):
         try:
             with requests.get(url, stream=True, timeout=(20, 60)) as response:
                 response.raise_for_status()
-                with temporary.open("wb") as stream:
+                with temporary.open("wb") as stream, progress(total=spec["size"], desc=name, unit="B",
+                        unit_scale=True, unit_divisor=1024, position=1, leave=False) as downloaded:
                     for block in response.iter_content(4 * 1024 * 1024):
                         stream.write(block)
+                        downloaded.update(len(block))
             if not _matches(temporary, spec):
                 raise ValueError(f"Downloaded file digest mismatch: {repo['repo_id']}/{name}")
             temporary.replace(destination)
@@ -71,12 +74,13 @@ def prepare_models(lock_path=LOCK_PATH, root=MODEL_ROOT):
     if free < required * 3 + 1024 ** 3:
         raise OSError("Insufficient free disk space for NER v2 models")
     print(f"Disk free: {free} bytes; pinned downloads: {required} bytes", flush=True)
-    for key, repo in lock["repositories"].items():
-        directory = root / key
-        for name, spec in repo["files"].items():
-            _download(repo, name, spec, directory / name)
-        print(f"Verified {repo['repo_id']}@{repo['revision']}", flush=True)
-    for size, spec in lock["models"].items():
+    model_files = [(key, repo, name, spec) for key, repo in lock["repositories"].items()
+                   for name, spec in repo["files"].items()]
+    with progress(model_files, desc="Model files", unit="file") as files:
+        for key, repo, name, spec in files:
+            files.set_postfix_str(f"{key}/{name}")
+            _download(repo, name, spec, root / key / name)
+    for size, spec in progress(lock["models"].items(), desc="Offline runtimes", unit="model"):
         checkpoint = root / spec["checkpoint_key"]
         backbone = root / spec["backbone_key"]
         runtime = root / f"runtime_{size}"
@@ -97,13 +101,16 @@ def verify_models(lock_path=LOCK_PATH, root=MODEL_ROOT):
     """Hash every checkpoint, tokenizer and runtime file; no torch deserialization."""
     lock, root = read_json(lock_path), Path(root)
     files = {}
-    for key, repo in lock["repositories"].items():
-        for name, spec in repo["files"].items():
+    model_files = [(key, name, spec) for key, repo in lock["repositories"].items()
+                   for name, spec in repo["files"].items()]
+    with progress(model_files, desc="Verify model files", unit="file") as checked:
+        for key, name, spec in checked:
+            checked.set_postfix_str(f"{key}/{name}")
             path = root / key / name
             if not _matches(path, spec):
                 raise ValueError(f"Missing or corrupt pinned file: {path}")
             files[f"{key}/{name}"] = {"bytes": path.stat().st_size, "sha256": file_sha256(path)}
-    for size, spec in lock["models"].items():
+    for size, spec in progress(lock["models"].items(), desc="Verify offline runtimes", unit="model"):
         runtime = root / f"runtime_{size}"
         expected = read_json(root / spec["checkpoint_key"] / "gliner_config.json")
         expected["encoder_config"] = read_json(root / spec["backbone_key"] / "config.json")
@@ -121,7 +128,7 @@ def verify_models(lock_path=LOCK_PATH, root=MODEL_ROOT):
         }
     versions = {name: importlib.metadata.version(name) for name in (
         "gliner", "torch", "transformers", "huggingface-hub", "tokenizers", "sentencepiece",
-        "safetensors", "spacy", "en-core-web-sm", "numpy", "requests", "pytest",
+        "safetensors", "spacy", "en-core-web-sm", "numpy", "requests", "pytest", "tqdm",
     )}
     return {"status": "files_verified_no_model_loaded", "files": files, "libraries": versions}
 
@@ -145,7 +152,7 @@ def verify_tokenizers(settings):
     from .detection import label_descriptions
     descriptions = label_descriptions(read_json(settings["ontology"]))
     result = {}
-    for size in ("large", "medium", "small"):
+    for size in progress(("large", "medium", "small"), desc="Verify tokenizers", unit="model"):
         path = Path(settings["model_root"]) / f"runtime_{size}"
         config = GLiNERConfig(**read_json(path / "gliner_config.json"))
         # Keep the pinned DeBERTa Unigram/Metaspace tokenizer unchanged. In 5.1.0,

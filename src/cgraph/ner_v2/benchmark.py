@@ -10,6 +10,7 @@ from .detection import MentionDetector, label_descriptions
 from .io import read_documents, save_mentions
 from .model_setup import load_detector, verify_models
 from .normalization import LinguisticNormalizer
+from .progress import progress
 
 
 def span_agreement(left, right):
@@ -43,23 +44,30 @@ def run(settings, output):
                 "libraries": inventory["libraries"], "models": {}, "agreement": {}}
     write_json(root / "manifest.json", manifest)
     outputs = {}
-    for size in ("large", "medium", "small"):
-        repo = lock["repositories"][lock["models"][size]["checkpoint_key"]]
-        started = time.perf_counter()
-        model = load_detector(size, settings["model_root"])
-        load_seconds = time.perf_counter() - started
-        detector = MentionDetector(model, repo["repo_id"] + "@" + repo["revision"], settings, ontology, normalizer)
-        started = time.perf_counter()
-        with torch.inference_mode():
-            mentions = [mention for document in documents for mention in detector.predict(document)]
-        seconds = time.perf_counter() - started
-        save_mentions(root / f"{size}.jsonl", mentions, documents, descriptions.values())
-        manifest["models"][size] = {"model_identifier": detector.model_identifier, "load_seconds": load_seconds,
-                                    "detection_and_normalization_seconds": seconds, "mentions": len(mentions),
-                                    "documents_per_second": len(documents) / seconds}
-        outputs[size] = mentions
-        del detector, model
-        gc.collect()
+    with progress(("large", "medium", "small"), desc="Models", unit="model", position=0) as models:
+        for size in models:
+            models.set_description(f"Models ({size}: loading)")
+            repo = lock["repositories"][lock["models"][size]["checkpoint_key"]]
+            started = time.perf_counter()
+            model = load_detector(size, settings["model_root"])
+            load_seconds = time.perf_counter() - started
+            models.set_description(f"Models ({size})")
+            detector = MentionDetector(model, repo["repo_id"] + "@" + repo["revision"], settings, ontology, normalizer)
+            started = time.perf_counter()
+            mentions = []
+            with torch.inference_mode(), progress(documents, desc=f"{size}: documents", unit="doc",
+                                                   position=1, leave=False) as docs:
+                for document in docs:
+                    docs.set_postfix_str(document["document_id"])
+                    mentions.extend(detector.predict(document, progress_position=2))
+            seconds = time.perf_counter() - started
+            save_mentions(root / f"{size}.jsonl", mentions, documents, descriptions.values())
+            manifest["models"][size] = {"model_identifier": detector.model_identifier, "load_seconds": load_seconds,
+                                        "detection_and_normalization_seconds": seconds, "mentions": len(mentions),
+                                        "documents_per_second": len(documents) / seconds}
+            outputs[size] = mentions
+            del detector, model
+            gc.collect()
     for a, b in (("large", "medium"), ("large", "small"), ("medium", "small")):
         manifest["agreement"][f"{a}/{b}"] = span_agreement(outputs[a], outputs[b])
     manifest["status"] = "complete"
