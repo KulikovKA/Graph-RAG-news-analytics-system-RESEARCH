@@ -1,0 +1,6092 @@
+{
+  "seed": 42,
+  "retrieved_at": "2026-10-31T19:07:55.065579+00:00",
+  "policy": "sample30-en-article-journal-conference-80to600words-distinct-primary-topics-sort-id-shuffle-v2",
+  "fields": [
+    {
+      "discipline": "Computer Science / Machine Learning",
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "filter": "primary_topic.field.id:17"
+    },
+    {
+      "discipline": "Medicine",
+      "field": {
+        "id": "https://openalex.org/fields/27",
+        "display_name": "Medicine"
+      },
+      "filter": "primary_topic.field.id:27"
+    },
+    {
+      "discipline": "Physics",
+      "field": {
+        "id": "https://openalex.org/fields/31",
+        "display_name": "Physics and Astronomy"
+      },
+      "filter": "primary_topic.field.id:31"
+    },
+    {
+      "discipline": "Biology",
+      "field": {
+        "id": "https://openalex.org/fields/13",
+        "display_name": "Biochemistry, Genetics and Molecular Biology"
+      },
+      "filter": "primary_topic.field.id:13"
+    },
+    {
+      "discipline": "Economics",
+      "field": {
+        "id": "https://openalex.org/fields/20",
+        "display_name": "Economics, Econometrics and Finance"
+      },
+      "filter": "primary_topic.field.id:20"
+    },
+    {
+      "discipline": "History",
+      "field": {
+        "id": "https://openalex.org/fields/12",
+        "display_name": "Arts and Humanities"
+      },
+      "subfield": {
+        "id": "https://openalex.org/subfields/1202",
+        "display_name": "History"
+      },
+      "filter": "primary_topic.subfield.id:1202"
+    }
+  ],
+  "pools": [
+    {
+      "discipline": "Computer Science / Machine Learning",
+      "params": {
+        "filter": "primary_topic.field.id:17,has_abstract:true,language:en,type:article",
+        "sample": 30,
+        "seed": 42,
+        "per_page": 30,
+        "select": "id,doi,title,publication_year,language,type,primary_topic,primary_location,abstract_inverted_index,updated_date"
+      },
+      "candidate_ids": [
+        "https://openalex.org/W4393025023",
+        "https://openalex.org/W3201665982",
+        "https://openalex.org/W4318049555",
+        "https://openalex.org/W3004127943",
+        "https://openalex.org/W2317983702",
+        "https://openalex.org/W79026073",
+        "https://openalex.org/W7117410587",
+        "https://openalex.org/W3195791401",
+        "https://openalex.org/W2112940348",
+        "https://openalex.org/W3083243490",
+        "https://openalex.org/W7130823860",
+        "https://openalex.org/W2056431275",
+        "https://openalex.org/W2185512456",
+        "https://openalex.org/W142163931",
+        "https://openalex.org/W4290094997",
+        "https://openalex.org/W151171315",
+        "https://openalex.org/W2738420071",
+        "https://openalex.org/W2170942698",
+        "https://openalex.org/W7165559895",
+        "https://openalex.org/W2347959633",
+        "https://openalex.org/W2015791724",
+        "https://openalex.org/W4312890372",
+        "https://openalex.org/W80939472",
+        "https://openalex.org/W2128629203",
+        "https://openalex.org/W1672931683",
+        "https://openalex.org/W313825178",
+        "https://openalex.org/W2536074490",
+        "https://openalex.org/W4414693462",
+        "https://openalex.org/W4404967062",
+        "https://openalex.org/W2889587173"
+      ],
+      "response_fingerprint": "f110b20418ff2e25122fa01998426f8b80596bc7b4a97a5a3c6e604a1dcc8017"
+    },
+    {
+      "discipline": "Medicine",
+      "params": {
+        "filter": "primary_topic.field.id:27,has_abstract:true,language:en,type:article",
+        "sample": 30,
+        "seed": 42,
+        "per_page": 30,
+        "select": "id,doi,title,publication_year,language,type,primary_topic,primary_location,abstract_inverted_index,updated_date"
+      },
+      "candidate_ids": [
+        "https://openalex.org/W2894253601",
+        "https://openalex.org/W2338573145",
+        "https://openalex.org/W2192273043",
+        "https://openalex.org/W1587114759",
+        "https://openalex.org/W1875479408",
+        "https://openalex.org/W4317508547",
+        "https://openalex.org/W2048885679",
+        "https://openalex.org/W4205473636",
+        "https://openalex.org/W4387756919",
+        "https://openalex.org/W4383559224",
+        "https://openalex.org/W2321914108",
+        "https://openalex.org/W4307866410",
+        "https://openalex.org/W2795527829",
+        "https://openalex.org/W2323676897",
+        "https://openalex.org/W3041981722",
+        "https://openalex.org/W2371283173",
+        "https://openalex.org/W2416019713",
+        "https://openalex.org/W2064345264",
+        "https://openalex.org/W2954558590",
+        "https://openalex.org/W2092571965",
+        "https://openalex.org/W1934097235",
+        "https://openalex.org/W2147747612",
+        "https://openalex.org/W3196746896",
+        "https://openalex.org/W3134818160",
+        "https://openalex.org/W4404129356",
+        "https://openalex.org/W2726961520",
+        "https://openalex.org/W2901067715",
+        "https://openalex.org/W2319668200",
+        "https://openalex.org/W4301392928",
+        "https://openalex.org/W2082494862"
+      ],
+      "response_fingerprint": "bd3348f25b3473b3aada668bf9e980d21b573b06017662f6e7a81b2504b2bfe4"
+    },
+    {
+      "discipline": "Physics",
+      "params": {
+        "filter": "primary_topic.field.id:31,has_abstract:true,language:en,type:article",
+        "sample": 30,
+        "seed": 42,
+        "per_page": 30,
+        "select": "id,doi,title,publication_year,language,type,primary_topic,primary_location,abstract_inverted_index,updated_date"
+      },
+      "candidate_ids": [
+        "https://openalex.org/W2004326812",
+        "https://openalex.org/W1986255046",
+        "https://openalex.org/W1637490599",
+        "https://openalex.org/W7203762403",
+        "https://openalex.org/W2571407521",
+        "https://openalex.org/W2213290360",
+        "https://openalex.org/W2040074921",
+        "https://openalex.org/W2156356225",
+        "https://openalex.org/W2258481509",
+        "https://openalex.org/W162667807",
+        "https://openalex.org/W1891523103",
+        "https://openalex.org/W7205095898",
+        "https://openalex.org/W1973758029",
+        "https://openalex.org/W2315183687",
+        "https://openalex.org/W3199595905",
+        "https://openalex.org/W176374856",
+        "https://openalex.org/W4299609479",
+        "https://openalex.org/W2525402994",
+        "https://openalex.org/W2998930456",
+        "https://openalex.org/W2020860963",
+        "https://openalex.org/W2035522154",
+        "https://openalex.org/W4383503479",
+        "https://openalex.org/W4388496821",
+        "https://openalex.org/W2020268674",
+        "https://openalex.org/W3182687312",
+        "https://openalex.org/W4323669526",
+        "https://openalex.org/W2092022074",
+        "https://openalex.org/W2049996223",
+        "https://openalex.org/W4367317860",
+        "https://openalex.org/W7130738450"
+      ],
+      "response_fingerprint": "ed3f2338fdc542cab4bf49c373e1b51acd7cb9b13ec1d92793978bce1bb3d132"
+    },
+    {
+      "discipline": "Biology",
+      "params": {
+        "filter": "primary_topic.field.id:13,has_abstract:true,language:en,type:article",
+        "sample": 30,
+        "seed": 42,
+        "per_page": 30,
+        "select": "id,doi,title,publication_year,language,type,primary_topic,primary_location,abstract_inverted_index,updated_date"
+      },
+      "candidate_ids": [
+        "https://openalex.org/W1996445550",
+        "https://openalex.org/W1975294526",
+        "https://openalex.org/W7133303757",
+        "https://openalex.org/W2018389905",
+        "https://openalex.org/W2061240329",
+        "https://openalex.org/W2179468475",
+        "https://openalex.org/W4321367748",
+        "https://openalex.org/W2082940318",
+        "https://openalex.org/W2365745475",
+        "https://openalex.org/W3182220660",
+        "https://openalex.org/W1563577165",
+        "https://openalex.org/W1519132671",
+        "https://openalex.org/W2982318837",
+        "https://openalex.org/W4404470064",
+        "https://openalex.org/W2041245044",
+        "https://openalex.org/W2914683588",
+        "https://openalex.org/W4214772869",
+        "https://openalex.org/W2574096145",
+        "https://openalex.org/W2473528593",
+        "https://openalex.org/W4379967561",
+        "https://openalex.org/W4309205630",
+        "https://openalex.org/W2355493570",
+        "https://openalex.org/W1969217591",
+        "https://openalex.org/W3108173825",
+        "https://openalex.org/W4392518793",
+        "https://openalex.org/W7154154440",
+        "https://openalex.org/W2141956066",
+        "https://openalex.org/W2006971112",
+        "https://openalex.org/W2104075967",
+        "https://openalex.org/W2031529249"
+      ],
+      "response_fingerprint": "3df21a388ddb253ff13d561c6881b45ed30a2a241f451f66b714d7ab1930dca1"
+    },
+    {
+      "discipline": "Economics",
+      "params": {
+        "filter": "primary_topic.field.id:20,has_abstract:true,language:en,type:article",
+        "sample": 30,
+        "seed": 42,
+        "per_page": 30,
+        "select": "id,doi,title,publication_year,language,type,primary_topic,primary_location,abstract_inverted_index,updated_date"
+      },
+      "candidate_ids": [
+        "https://openalex.org/W1994293027",
+        "https://openalex.org/W3121957817",
+        "https://openalex.org/W7111822895",
+        "https://openalex.org/W2392763266",
+        "https://openalex.org/W3189766422",
+        "https://openalex.org/W7170214200",
+        "https://openalex.org/W2060359068",
+        "https://openalex.org/W7220014427",
+        "https://openalex.org/W2136432647",
+        "https://openalex.org/W3136538455",
+        "https://openalex.org/W2914688349",
+        "https://openalex.org/W2970004900",
+        "https://openalex.org/W2057536409",
+        "https://openalex.org/W7220310422",
+        "https://openalex.org/W2889646143",
+        "https://openalex.org/W1996340620",
+        "https://openalex.org/W3179283415",
+        "https://openalex.org/W2056402977",
+        "https://openalex.org/W2374325089",
+        "https://openalex.org/W148346683",
+        "https://openalex.org/W2955167323",
+        "https://openalex.org/W4211196257",
+        "https://openalex.org/W2414093980",
+        "https://openalex.org/W2130076420",
+        "https://openalex.org/W2079059691",
+        "https://openalex.org/W2262164561",
+        "https://openalex.org/W4316810245",
+        "https://openalex.org/W2809396786",
+        "https://openalex.org/W993905737",
+        "https://openalex.org/W3188941912"
+      ],
+      "response_fingerprint": "8356efa928db3211966e6032ce408aeb4c65ba1ac42405c87d554495d1838a41"
+    },
+    {
+      "discipline": "History",
+      "params": {
+        "filter": "primary_topic.subfield.id:1202,has_abstract:true,language:en,type:article",
+        "sample": 30,
+        "seed": 42,
+        "per_page": 30,
+        "select": "id,doi,title,publication_year,language,type,primary_topic,primary_location,abstract_inverted_index,updated_date"
+      },
+      "candidate_ids": [
+        "https://openalex.org/W4233962315",
+        "https://openalex.org/W2068452269",
+        "https://openalex.org/W2914566946",
+        "https://openalex.org/W4238309585",
+        "https://openalex.org/W3085413183",
+        "https://openalex.org/W1987023808",
+        "https://openalex.org/W2249635158",
+        "https://openalex.org/W7205061055",
+        "https://openalex.org/W189155444",
+        "https://openalex.org/W2003172677",
+        "https://openalex.org/W7209181837",
+        "https://openalex.org/W2739009489",
+        "https://openalex.org/W2073881503",
+        "https://openalex.org/W7217614294",
+        "https://openalex.org/W2001076607",
+        "https://openalex.org/W4244232245",
+        "https://openalex.org/W2057261224",
+        "https://openalex.org/W7211341122",
+        "https://openalex.org/W4382197908",
+        "https://openalex.org/W1986366003",
+        "https://openalex.org/W2372517839",
+        "https://openalex.org/W4391105238",
+        "https://openalex.org/W1985858957",
+        "https://openalex.org/W2107447300",
+        "https://openalex.org/W2000479693",
+        "https://openalex.org/W2482671201",
+        "https://openalex.org/W2472365287",
+        "https://openalex.org/W4321130899",
+        "https://openalex.org/W2051088028",
+        "https://openalex.org/W4226409868"
+      ],
+      "response_fingerprint": "59c7f4b4c8e260c506fc166be488b3b268e843cbb901289b50498ebad3a094c5"
+    }
+  ],
+  "selected": [
+    {
+      "field": {
+        "discipline": "Computer Science / Machine Learning",
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "filter": "primary_topic.field.id:17"
+      },
+      "work": {
+        "id": "https://openalex.org/W3195791401",
+        "doi": "https://doi.org/10.1142/s0218001421510125",
+        "title": "Hand Gesture Recognition Based on sEMG Signal and Convolutional Neural Network",
+        "publication_year": 2021,
+        "language": "en",
+        "type": "article",
+        "primary_topic": {
+          "id": "https://openalex.org/T11398",
+          "display_name": "Hand Gesture Recognition Systems",
+          "score": 0.9639000296592712,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1709",
+            "display_name": "Human-Computer Interaction"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        "primary_location": {
+          "id": "doi:10.1142/s0218001421510125",
+          "doi": "https://doi.org/10.1142/s0218001421510125",
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1142/s0218001421510125",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S41486457",
+            "display_name": "International Journal of Pattern Recognition and Artificial Intelligence",
+            "issn_l": "0218-0014",
+            "issn": [
+              "0218-0014",
+              "1793-6381"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "listed_in": [
+              "anvur-scientific",
+              "ccf-c",
+              "cwts-core",
+              "dongbi-d",
+              "jufo-1",
+              "norway-1",
+              "poland-40",
+              "russia-white-list-2"
+            ],
+            "host_organization": "https://openalex.org/P4310319815",
+            "host_organization_name": "World Scientific",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319815"
+            ],
+            "host_organization_lineage_names": [
+              "World Scientific"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "International Journal of Pattern Recognition and Artificial Intelligence",
+          "raw_type": "journal-article"
+        },
+        "abstract_inverted_index": {
+          "Recently,": [
+            0
+          ],
+          "deep": [
+            1,
+            36
+          ],
+          "learning": [
+            2,
+            49,
+            119
+          ],
+          "has": [
+            3
+          ],
+          "become": [
+            4
+          ],
+          "a": [
+            5,
+            26,
+            35
+          ],
+          "promising": [
+            6
+          ],
+          "technique": [
+            7
+          ],
+          "for": [
+            8
+          ],
+          "constructing": [
+            9
+          ],
+          "gesture": [
+            10,
+            27
+          ],
+          "recognition": [
+            11,
+            28
+          ],
+          "classifiers": [
+            12
+          ],
+          "from": [
+            13
+          ],
+          "surface": [
+            14
+          ],
+          "electromyography": [
+            15
+          ],
+          "(sEMG)": [
+            16
+          ],
+          "signals": [
+            17,
+            32
+          ],
+          "in": [
+            18,
+            113
+          ],
+          "human–computer": [
+            19
+          ],
+          "interaction.": [
+            20
+          ],
+          "In": [
+            21
+          ],
+          "this": [
+            22
+          ],
+          "paper,": [
+            23
+          ],
+          "we": [
+            24
+          ],
+          "propose": [
+            25
+          ],
+          "method": [
+            29,
+            123
+          ],
+          "with": [
+            30,
+            115
+          ],
+          "sEMG": [
+            31
+          ],
+          "based": [
+            33
+          ],
+          "on": [
+            34
+          ],
+          "multi-parallel": [
+            37,
+            97
+          ],
+          "convolutional": [
+            38
+          ],
+          "neural": [
+            39,
+            71
+          ],
+          "network": [
+            40
+          ],
+          "(CNN),": [
+            41
+          ],
+          "which": [
+            42
+          ],
+          "solves": [
+            43
+          ],
+          "the": [
+            44,
+            67,
+            121
+          ],
+          "problem": [
+            45
+          ],
+          "that": [
+            46,
+            112
+          ],
+          "traditional": [
+            47,
+            117
+          ],
+          "machine": [
+            48,
+            118
+          ],
+          "methods": [
+            50
+          ],
+          "may": [
+            51
+          ],
+          "lose": [
+            52
+          ],
+          "too": [
+            53
+          ],
+          "much": [
+            54
+          ],
+          "useful": [
+            55
+          ],
+          "information": [
+            56
+          ],
+          "during": [
+            57
+          ],
+          "feature": [
+            58,
+            82
+          ],
+          "extraction.": [
+            59
+          ],
+          "CNNs": [
+            60
+          ],
+          "provide": [
+            61
+          ],
+          "an": [
+            62
+          ],
+          "efficient": [
+            63
+          ],
+          "way": [
+            64
+          ],
+          "to": [
+            65,
+            78,
+            85,
+            92,
+            105
+          ],
+          "constrain": [
+            66
+          ],
+          "complexity": [
+            68
+          ],
+          "of": [
+            69
+          ],
+          "feedforward": [
+            70
+          ],
+          "networks": [
+            72
+          ],
+          "by": [
+            73
+          ],
+          "weight": [
+            74
+          ],
+          "sharing": [
+            75
+          ],
+          "and": [
+            76,
+            88,
+            98
+          ],
+          "restriction": [
+            77
+          ],
+          "local": [
+            79
+          ],
+          "connections.": [
+            80
+          ],
+          "Sophisticated": [
+            81
+          ],
+          "extraction": [
+            83
+          ],
+          "is": [
+            84,
+            103
+          ],
+          "be": [
+            86,
+            93
+          ],
+          "avoided": [
+            87
+          ],
+          "hand": [
+            89,
+            107
+          ],
+          "gestures": [
+            90
+          ],
+          "are": [
+            91
+          ],
+          "classified": [
+            94
+          ],
+          "directly.": [
+            95
+          ],
+          "A": [
+            96
+          ],
+          "multi-convolution": [
+            99
+          ],
+          "layer": [
+            100
+          ],
+          "convolution": [
+            101
+          ],
+          "structure": [
+            102
+          ],
+          "proposed": [
+            104,
+            122
+          ],
+          "classify": [
+            106
+          ],
+          "gestures.": [
+            108
+          ],
+          "Experiment": [
+            109
+          ],
+          "results": [
+            110
+          ],
+          "show": [
+            111
+          ],
+          "comparison": [
+            114
+          ],
+          "five": [
+            116
+          ],
+          "methods,": [
+            120
+          ],
+          "could": [
+            124
+          ],
+          "achieve": [
+            125
+          ],
+          "higher": [
+            126
+          ],
+          "accuracy.": [
+            127
+          ]
+        },
+        "updated_date": "2026-10-29T09:56:32.521200"
+      }
+    },
+    {
+      "field": {
+        "discipline": "Computer Science / Machine Learning",
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "filter": "primary_topic.field.id:17"
+      },
+      "work": {
+        "id": "https://openalex.org/W4312890372",
+        "doi": "https://doi.org/10.1109/tit.2022.3227128",
+        "title": "On the Size of Balls and Anticodes of Small Diameter Under the Fixed-Length Levenshtein Metric",
+        "publication_year": 2022,
+        "language": "en",
+        "type": "article",
+        "primary_topic": {
+          "id": "https://openalex.org/T11130",
+          "display_name": "Coding theory and cryptography",
+          "score": 0.7559000253677368,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1702",
+            "display_name": "Artificial Intelligence"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        "primary_location": {
+          "id": "doi:10.1109/tit.2022.3227128",
+          "doi": "https://doi.org/10.1109/tit.2022.3227128",
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1109/tit.2022.3227128",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4502562",
+            "display_name": "IEEE Transactions on Information Theory",
+            "issn_l": "0018-9448",
+            "issn": [
+              "0018-9448",
+              "1557-9654"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "listed_in": [
+              "anvur-class-a",
+              "anvur-scientific",
+              "ccf-a",
+              "cwts-core",
+              "dongbi-a",
+              "jufo-3",
+              "norway-2",
+              "poland-200",
+              "russia-white-list-1"
+            ],
+            "host_organization": "https://openalex.org/P4310319808",
+            "host_organization_name": "Institute of Electrical and Electronics Engineers",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319808"
+            ],
+            "host_organization_lineage_names": [
+              "Institute of Electrical and Electronics Engineers"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "IEEE Transactions on Information Theory",
+          "raw_type": "journal-article"
+        },
+        "abstract_inverted_index": {
+          "The": [
+            0,
+            87
+          ],
+          "rapid": [
+            1
+          ],
+          "development": [
+            2
+          ],
+          "of": [
+            3,
+            17,
+            22,
+            29,
+            45,
+            56,
+            61,
+            77,
+            94
+          ],
+          "DNA": [
+            4
+          ],
+          "storage": [
+            5
+          ],
+          "has": [
+            6
+          ],
+          "brought": [
+            7
+          ],
+          "the": [
+            8,
+            14,
+            20,
+            27,
+            36,
+            40,
+            46,
+            54,
+            62,
+            71,
+            84,
+            91
+          ],
+          "deletion": [
+            9
+          ],
+          "and": [
+            10,
+            74,
+            90
+          ],
+          "insertion": [
+            11
+          ],
+          "channel": [
+            12
+          ],
+          "to": [
+            13,
+            26,
+            50
+          ],
+          "front": [
+            15
+          ],
+          "line": [
+            16
+          ],
+          "research.": [
+            18
+          ],
+          "When": [
+            19
+          ],
+          "number": [
+            21,
+            28
+          ],
+          "deletions": [
+            23
+          ],
+          "is": [
+            24,
+            35,
+            59
+          ],
+          "equal": [
+            25
+          ],
+          "insertions,": [
+            30
+          ],
+          "theFixed": [
+            31
+          ],
+          "Length": [
+            32
+          ],
+          "Levenshtein(FLL)": [
+            33
+          ],
+          "metric": [
+            34
+          ],
+          "right": [
+            37
+          ],
+          "measure": [
+            38
+          ],
+          "for": [
+            39
+          ],
+          "distance": [
+            41
+          ],
+          "between": [
+            42
+          ],
+          "two": [
+            43
+          ],
+          "words": [
+            44
+          ],
+          "same": [
+            47
+          ],
+          "length.": [
+            48
+          ],
+          "Similar": [
+            49
+          ],
+          "any": [
+            51
+          ],
+          "other": [
+            52
+          ],
+          "metric,": [
+            53
+          ],
+          "size": [
+            55,
+            76,
+            93
+          ],
+          "a": [
+            57,
+            78,
+            95
+          ],
+          "ball": [
+            58,
+            79
+          ],
+          "one": [
+            60,
+            100
+          ],
+          "most": [
+            63
+          ],
+          "fundamental": [
+            64
+          ],
+          "parameters.": [
+            65
+          ],
+          "In": [
+            66
+          ],
+          "this": [
+            67
+          ],
+          "work,": [
+            68
+          ],
+          "we": [
+            69
+          ],
+          "consider": [
+            70
+          ],
+          "minimum,": [
+            72
+          ],
+          "maximum,": [
+            73
+          ],
+          "average": [
+            75
+          ],
+          "with": [
+            80,
+            98
+          ],
+          "radius": [
+            81
+          ],
+          "one,": [
+            82
+          ],
+          "in": [
+            83
+          ],
+          "FLL": [
+            85
+          ],
+          "metric.": [
+            86
+          ],
+          "related": [
+            88
+          ],
+          "minimum": [
+            89
+          ],
+          "maximum": [
+            92
+          ],
+          "maximal": [
+            96
+          ],
+          "anticode": [
+            97
+          ],
+          "diameter": [
+            99
+          ],
+          "are": [
+            101
+          ],
+          "also": [
+            102
+          ],
+          "considered.": [
+            103
+          ]
+        },
+        "updated_date": "2026-10-16T09:59:22.235173"
+      }
+    },
+    {
+      "field": {
+        "discipline": "Medicine",
+        "field": {
+          "id": "https://openalex.org/fields/27",
+          "display_name": "Medicine"
+        },
+        "filter": "primary_topic.field.id:27"
+      },
+      "work": {
+        "id": "https://openalex.org/W4387756919",
+        "doi": "https://doi.org/10.4103/jhrs.jhrs_76_23",
+        "title": "Luteal Phase Stimulation in the Same Cycle Is an Effective Strategy to Rescue POSEIDON Poor Responders with No Embryos after the First Follicular Stimulation",
+        "publication_year": 2023,
+        "language": "en",
+        "type": "article",
+        "primary_topic": {
+          "id": "https://openalex.org/T10364",
+          "display_name": "Reproductive Biology and Fertility",
+          "score": 0.9688000082969666,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2739",
+            "display_name": "Public Health, Environmental and Occupational Health"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/27",
+            "display_name": "Medicine"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+          }
+        },
+        "primary_location": {
+          "id": "doi:10.4103/jhrs.jhrs_76_23",
+          "doi": "https://doi.org/10.4103/jhrs.jhrs_76_23",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.4103/jhrs.jhrs_76_23",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S124228550",
+            "display_name": "Journal of Human Reproductive Sciences",
+            "issn_l": "0974-1208",
+            "issn": [
+              "0974-1208",
+              "1998-4766"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "listed_in": [
+              "cwts-core",
+              "doaj",
+              "dongbi-c",
+              "jufo-1",
+              "ki-jl-1",
+              "norway-1",
+              "poland-70",
+              "russia-white-list-2"
+            ],
+            "host_organization": "https://openalex.org/P4310320448",
+            "host_organization_name": "Medknow",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320448",
+              "https://openalex.org/P4310318547"
+            ],
+            "host_organization_lineage_names": [
+              "Medknow",
+              "Wolters Kluwer"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Journal of Human Reproductive Sciences",
+          "raw_type": "journal-article"
+        },
+        "abstract_inverted_index": {
+          "Background:": [
+            0
+          ],
+          "Poor": [
+            1
+          ],
+          "responders": [
+            2,
+            113,
+            485
+          ],
+          "may": [
+            3
+          ],
+          "benefit": [
+            4
+          ],
+          "from": [
+            5,
+            153
+          ],
+          "recruiting": [
+            6
+          ],
+          "a": [
+            7,
+            65,
+            83,
+            140,
+            160,
+            164,
+            176,
+            206,
+            215,
+            372,
+            447
+          ],
+          "‘second": [
+            8
+          ],
+          "wave’": [
+            9
+          ],
+          "of": [
+            10,
+            22,
+            53,
+            79,
+            95,
+            103,
+            144,
+            202,
+            269,
+            276,
+            343,
+            370,
+            415,
+            438,
+            445,
+            454
+          ],
+          "antral": [
+            11
+          ],
+          "follicles": [
+            12
+          ],
+          "within": [
+            13
+          ],
+          "the": [
+            14,
+            20,
+            51,
+            77,
+            88,
+            101,
+            104,
+            120,
+            124,
+            131,
+            181,
+            186,
+            195,
+            199,
+            223,
+            273,
+            290,
+            296,
+            322,
+            327,
+            339,
+            354,
+            368,
+            376,
+            387,
+            405,
+            423,
+            436,
+            443,
+            452,
+            472,
+            490
+          ],
+          "same": [
+            15,
+            132,
+            200,
+            473
+          ],
+          "cycle.": [
+            16,
+            60,
+            134
+          ],
+          "This": [
+            17,
+            31,
+            61,
+            138
+          ],
+          "concept": [
+            18
+          ],
+          "forms": [
+            19
+          ],
+          "basis": [
+            21
+          ],
+          "double": [
+            23
+          ],
+          "stimulation": [
+            24,
+            35,
+            174,
+            189,
+            281,
+            344,
+            408,
+            440,
+            465,
+            470
+          ],
+          "which": [
+            25
+          ],
+          "has": [
+            26
+          ],
+          "been": [
+            27
+          ],
+          "named": [
+            28
+          ],
+          "as": [
+            29,
+            110,
+            293
+          ],
+          "‘DuoStim’.": [
+            30
+          ],
+          "protocol": [
+            32,
+            106,
+            179
+          ],
+          "involves": [
+            33
+          ],
+          "ovarian": [
+            34,
+            73,
+            85
+          ],
+          "in": [
+            36,
+            45,
+            57,
+            82,
+            87,
+            107,
+            115,
+            130,
+            163,
+            221,
+            289,
+            353,
+            375,
+            386,
+            422,
+            431,
+            471
+          ],
+          "both": [
+            37,
+            222,
+            338
+          ],
+          "follicular": [
+            38,
+            125,
+            172,
+            297,
+            389,
+            424,
+            464
+          ],
+          "and": [
+            39,
+            55,
+            126,
+            136,
+            169,
+            240,
+            272,
+            309,
+            326,
+            456
+          ],
+          "luteal": [
+            40,
+            127,
+            187,
+            291,
+            355,
+            377,
+            406,
+            439,
+            468
+          ],
+          "phases": [
+            41,
+            224
+          ],
+          "with": [
+            42,
+            71,
+            198,
+            205,
+            433,
+            486
+          ],
+          "egg": [
+            43
+          ],
+          "retrieval": [
+            44
+          ],
+          "each": [
+            46
+          ],
+          "phase,": [
+            47
+          ],
+          "respectively,": [
+            48
+          ],
+          "to": [
+            49,
+            75,
+            99,
+            149,
+            156,
+            252,
+            285,
+            295,
+            334,
+            347,
+            381,
+            411,
+            463,
+            476,
+            481
+          ],
+          "increase": [
+            50,
+            442
+          ],
+          "number": [
+            52,
+            78,
+            268,
+            275,
+            453
+          ],
+          "oocytes": [
+            54,
+            80,
+            270
+          ],
+          "embryos": [
+            56,
+            458,
+            488
+          ],
+          "one": [
+            58
+          ],
+          "menstrual": [
+            59,
+            133,
+            460
+          ],
+          "can": [
+            62
+          ],
+          "be": [
+            63,
+            286,
+            335,
+            348,
+            382,
+            477
+          ],
+          "considered": [
+            64
+          ],
+          "potentially": [
+            66
+          ],
+          "valuable": [
+            67
+          ],
+          "option": [
+            68
+          ],
+          "for": [
+            69,
+            180,
+            237,
+            245
+          ],
+          "women": [
+            70,
+            108,
+            432
+          ],
+          "poor": [
+            72,
+            112,
+            434,
+            484
+          ],
+          "reserve/response": [
+            74
+          ],
+          "maximise": [
+            76
+          ],
+          "retrieved": [
+            81,
+            271
+          ],
+          "single": [
+            84
+          ],
+          "cycle": [
+            86,
+            282,
+            461,
+            474
+          ],
+          "shortest": [
+            89
+          ],
+          "possible": [
+            90
+          ],
+          "time.": [
+            91
+          ],
+          "Aims:": [
+            92
+          ],
+          "The": [
+            93,
+            171,
+            231,
+            256,
+            266,
+            341
+          ],
+          "aim": [
+            94
+          ],
+          "this": [
+            96
+          ],
+          "study": [
+            97,
+            143
+          ],
+          "was": [
+            98,
+            139,
+            190,
+            235,
+            250,
+            258,
+            345,
+            379,
+            409
+          ],
+          "evaluate": [
+            100
+          ],
+          "efficacy": [
+            102
+          ],
+          "DuoStim": [
+            105,
+            151
+          ],
+          "classified": [
+            109
+          ],
+          "POSEIDON": [
+            111,
+            483
+          ],
+          "undergoing": [
+            114
+          ],
+          "vitro": [
+            116
+          ],
+          "fertilization": [
+            117,
+            324
+          ],
+          "by": [
+            118,
+            214,
+            449
+          ],
+          "comparing": [
+            119,
+            238
+          ],
+          "embryological": [
+            121
+          ],
+          "outcomes": [
+            122
+          ],
+          "between": [
+            123,
+            337
+          ],
+          "phase": [
+            128,
+            173,
+            188,
+            292,
+            298,
+            356,
+            378,
+            390,
+            407,
+            469
+          ],
+          "stimulations": [
+            129
+          ],
+          "Settings": [
+            135
+          ],
+          "Design:": [
+            137
+          ],
+          "retrospective": [
+            141
+          ],
+          "cohort": [
+            142
+          ],
+          "131": [
+            145
+          ],
+          "patients": [
+            146,
+            416
+          ],
+          "who": [
+            147
+          ],
+          "enrolled": [
+            148
+          ],
+          "undergo": [
+            150
+          ],
+          "cycles": [
+            152
+          ],
+          "January": [
+            154
+          ],
+          "2021": [
+            155
+          ],
+          "Sept.": [
+            157
+          ],
+          "2022,": [
+            158
+          ],
+          "at": [
+            159
+          ],
+          "IVF": [
+            161
+          ],
+          "center": [
+            162
+          ],
+          "tertiary": [
+            165
+          ],
+          "care": [
+            166
+          ],
+          "hospital.": [
+            167
+          ],
+          "Materials": [
+            168
+          ],
+          "Methods:": [
+            170
+          ],
+          "used": [
+            175,
+            236,
+            251
+          ],
+          "standard": [
+            177
+          ],
+          "antagonist": [
+            178
+          ],
+          "first": [
+            182,
+            196,
+            491
+          ],
+          "oocyte": [
+            183,
+            217
+          ],
+          "retrieval.": [
+            184,
+            218
+          ],
+          "Thereafter,": [
+            185
+          ],
+          "started": [
+            191
+          ],
+          "3": [
+            192,
+            350
+          ],
+          "days": [
+            193,
+            351
+          ],
+          "after": [
+            194,
+            489
+          ],
+          "retrieval,": [
+            197
+          ],
+          "dose": [
+            201
+          ],
+          "gonadotropin": [
+            203
+          ],
+          "along": [
+            204
+          ],
+          "daily": [
+            207
+          ],
+          "10": [
+            208
+          ],
+          "mg": [
+            209
+          ],
+          "medroxyprogesterone": [
+            210
+          ],
+          "acetate": [
+            211
+          ],
+          "tablet,": [
+            212
+          ],
+          "followed": [
+            213
+          ],
+          "second": [
+            216
+          ],
+          "Blastocysts": [
+            219
+          ],
+          "produced": [
+            220
+          ],
+          "were": [
+            225,
+            283,
+            332,
+            420
+          ],
+          "subsequently": [
+            226
+          ],
+          "vitrified.": [
+            227
+          ],
+          "Statistical": [
+            228
+          ],
+          "Analysis": [
+            229
+          ],
+          "Used:": [
+            230
+          ],
+          "paired": [
+            232,
+            254,
+            388
+          ],
+          "t": [
+            233
+          ],
+          "-test": [
+            234
+          ],
+          "means": [
+            239
+          ],
+          "95%": [
+            241
+          ],
+          "confidence": [
+            242
+          ],
+          "intervals": [
+            243
+          ],
+          "(CIs)": [
+            244
+          ],
+          "different": [
+            246
+          ],
+          "parameters.": [
+            247
+          ],
+          "McNemar’s": [
+            248
+          ],
+          "test": [
+            249
+          ],
+          "compare": [
+            253
+          ],
+          "proportions.": [
+            255
+          ],
+          "analysis": [
+            257
+          ],
+          "conducted": [
+            259
+          ],
+          "using": [
+            260
+          ],
+          "R": [
+            261
+          ],
+          "statistical": [
+            262
+          ],
+          "environment": [
+            263
+          ],
+          "4.2.": [
+            264
+          ],
+          "Results:": [
+            265
+          ],
+          "mean": [
+            267,
+            274,
+            323,
+            328
+          ],
+          "utilizable": [
+            277
+          ],
+          "blastocysts": [
+            278,
+            419
+          ],
+          "frozen": [
+            279
+          ],
+          "per": [
+            280,
+            459
+          ],
+          "found": [
+            284,
+            333,
+            346,
+            380
+          ],
+          "significantly": [
+            287,
+            383,
+            450
+          ],
+          "higher": [
+            288,
+            384
+          ],
+          "compared": [
+            294,
+            462
+          ],
+          "(5.71": [
+            299
+          ],
+          "±": [
+            300,
+            304,
+            311,
+            315,
+            358,
+            362
+          ],
+          "3.95": [
+            301
+          ],
+          "vs.": [
+            302,
+            313,
+            360,
+            392
+          ],
+          "4.87": [
+            303
+          ],
+          "2.79,": [
+            305
+          ],
+          "P": [
+            306,
+            317,
+            364,
+            394
+          ],
+          "=": [
+            307,
+            318,
+            365,
+            395
+          ],
+          "0.02,": [
+            308
+          ],
+          "1.43": [
+            310
+          ],
+          "1.22": [
+            312
+          ],
+          "0.95": [
+            314
+          ],
+          "1,": [
+            316
+          ],
+          "0.001,": [
+            319
+          ],
+          "respectively).": [
+            320
+          ],
+          "However,": [
+            321
+          ],
+          "rate": [
+            325,
+            331
+          ],
+          "blastocyst": [
+            329,
+            374
+          ],
+          "utilization": [
+            330
+          ],
+          "similar": [
+            336
+          ],
+          "phases.": [
+            340
+          ],
+          "length": [
+            342
+          ],
+          "approximately": [
+            349
+          ],
+          "longer": [
+            352
+          ],
+          "(12.63": [
+            357
+          ],
+          "2.43": [
+            359
+          ],
+          "9.75": [
+            361
+          ],
+          "1.85,": [
+            363
+          ],
+          "0.001).": [
+            366
+          ],
+          "Overall,": [
+            367
+          ],
+          "odds": [
+            369,
+            397
+          ],
+          "obtaining": [
+            371
+          ],
+          "usable": [
+            373
+          ],
+          "than": [
+            385
+          ],
+          "(73.9%": [
+            391
+          ],
+          "57.7%,": [
+            393
+          ],
+          "0.012,": [
+            396
+          ],
+          "ratio:": [
+            398
+          ],
+          "2.286": [
+            399
+          ],
+          "[95%": [
+            400
+          ],
+          "CI:": [
+            401
+          ],
+          "1.186–4.636]).": [
+            402
+          ],
+          "Also": [
+            403
+          ],
+          "importantly,": [
+            404
+          ],
+          "able": [
+            410
+          ],
+          "rescue": [
+            412,
+            482
+          ],
+          "68%": [
+            413
+          ],
+          "(32/47)": [
+            414
+          ],
+          "where": [
+            417
+          ],
+          "no": [
+            418,
+            487
+          ],
+          "formed": [
+            421
+          ],
+          "phase.": [
+            425
+          ],
+          "Conclusion:": [
+            426
+          ],
+          "Our": [
+            427
+          ],
+          "data": [
+            428
+          ],
+          "demonstrate": [
+            429
+          ],
+          "that": [
+            430
+          ],
+          "reserve,": [
+            435
+          ],
+          "addition": [
+            437
+          ],
+          "could": [
+            441
+          ],
+          "chances": [
+            444
+          ],
+          "achieving": [
+            446
+          ],
+          "pregnancy": [
+            448
+          ],
+          "increasing": [
+            451
+          ],
+          "eggs": [
+            455
+          ],
+          "transferable": [
+            457
+          ],
+          "alone.": [
+            466
+          ],
+          "Furthermore,": [
+            467
+          ],
+          "proved": [
+            475
+          ],
+          "an": [
+            478
+          ],
+          "effective": [
+            479
+          ],
+          "strategy": [
+            480
+          ],
+          "stimulation.": [
+            492
+          ]
+        },
+        "updated_date": "2026-10-29T09:56:32.521200"
+      }
+    },
+    {
+      "field": {
+        "discipline": "Medicine",
+        "field": {
+          "id": "https://openalex.org/fields/27",
+          "display_name": "Medicine"
+        },
+        "filter": "primary_topic.field.id:27"
+      },
+      "work": {
+        "id": "https://openalex.org/W2092571965",
+        "doi": "https://doi.org/10.1080/07347332.2013.855961",
+        "title": "Multidisciplinary Department of “Return to Work After a Cancer”: A French Experience of Support Groups for Vocational Rehabilitation",
+        "publication_year": 2013,
+        "language": "en",
+        "type": "article",
+        "primary_topic": {
+          "id": "https://openalex.org/T10178",
+          "display_name": "Cancer survivorship and care",
+          "score": 0.9970999956130981,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2730",
+            "display_name": "Oncology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/27",
+            "display_name": "Medicine"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+          }
+        },
+        "primary_location": {
+          "id": "doi:10.1080/07347332.2013.855961",
+          "doi": "https://doi.org/10.1080/07347332.2013.855961",
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1080/07347332.2013.855961",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S150756764",
+            "display_name": "Journal of Psychosocial Oncology",
+            "issn_l": "0734-7332",
+            "issn": [
+              "0734-7332",
+              "1540-7586"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "listed_in": [
+              "cwts-core",
+              "dongbi-c",
+              "jufo-1",
+              "ki-jl-1",
+              "medline",
+              "norway-1",
+              "poland-70",
+              "russia-white-list-2",
+              "vabb-shw"
+            ],
+            "host_organization": "https://openalex.org/P4310320547",
+            "host_organization_name": "Taylor & Francis",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320547",
+              "https://openalex.org/P4310320449"
+            ],
+            "host_organization_lineage_names": [
+              "Taylor & Francis",
+              "Informa"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Journal of Psychosocial Oncology",
+          "raw_type": "journal-article"
+        },
+        "abstract_inverted_index": {
+          "This": [
+            0
+          ],
+          "qualitative": [
+            1
+          ],
+          "pilot": [
+            2
+          ],
+          "exploratory": [
+            3
+          ],
+          "study": [
+            4
+          ],
+          "focuses": [
+            5
+          ],
+          "on": [
+            6
+          ],
+          "support": [
+            7,
+            38,
+            61
+          ],
+          "groups": [
+            8,
+            39,
+            62,
+            79
+          ],
+          "for": [
+            9,
+            69
+          ],
+          "vocational": [
+            10
+          ],
+          "rehabilitation": [
+            11
+          ],
+          "after": [
+            12,
+            26,
+            95
+          ],
+          "cancer": [
+            13
+          ],
+          "implemented": [
+            14
+          ],
+          "in": [
+            15
+          ],
+          "a": [
+            16,
+            27,
+            81
+          ],
+          "French": [
+            17
+          ],
+          "and": [
+            18,
+            68,
+            75,
+            86
+          ],
+          "innovative": [
+            19
+          ],
+          "multidisciplinary": [
+            20
+          ],
+          "department": [
+            21
+          ],
+          "of": [
+            22,
+            40,
+            55,
+            59,
+            89
+          ],
+          "\"Return": [
+            23
+          ],
+          "to": [
+            24,
+            33,
+            35,
+            46,
+            51,
+            66,
+            84,
+            93
+          ],
+          "Work": [
+            25
+          ],
+          "Cancer.\"": [
+            28
+          ],
+          "Sixty-three": [
+            29
+          ],
+          "patients": [
+            30,
+            90
+          ],
+          "were": [
+            31
+          ],
+          "invited": [
+            32
+          ],
+          "participate": [
+            34
+          ],
+          "constitute": [
+            36
+          ],
+          "two": [
+            37
+          ],
+          "20": [
+            41
+          ],
+          "participants.": [
+            42
+          ],
+          "Questionnaires": [
+            43
+          ],
+          "are": [
+            44,
+            80
+          ],
+          "sent": [
+            45
+          ],
+          "assess": [
+            47
+          ],
+          "their": [
+            48
+          ],
+          "benefit": [
+            49
+          ],
+          "according": [
+            50
+          ],
+          "the": [
+            52,
+            64
+          ],
+          "participants'": [
+            53
+          ],
+          "point": [
+            54
+          ],
+          "view.": [
+            56
+          ],
+          "For": [
+            57
+          ],
+          "58%": [
+            58
+          ],
+          "participants,": [
+            60
+          ],
+          "helped": [
+            63
+          ],
+          "return": [
+            65,
+            92
+          ],
+          "work,": [
+            67
+          ],
+          "70%": [
+            70
+          ],
+          "it": [
+            71
+          ],
+          "provided": [
+            72
+          ],
+          "personal,": [
+            73
+          ],
+          "family,": [
+            74
+          ],
+          "relational": [
+            76
+          ],
+          "support.": [
+            77
+          ],
+          "Support": [
+            78
+          ],
+          "relevant": [
+            82
+          ],
+          "response": [
+            83
+          ],
+          "expectations": [
+            85
+          ],
+          "specific": [
+            87
+          ],
+          "issues": [
+            88
+          ],
+          "experiencing": [
+            91
+          ],
+          "work": [
+            94
+          ],
+          "cancer.": [
+            96
+          ]
+        },
+        "updated_date": "2026-10-31T12:09:11.096373"
+      }
+    },
+    {
+      "field": {
+        "discipline": "Physics",
+        "field": {
+          "id": "https://openalex.org/fields/31",
+          "display_name": "Physics and Astronomy"
+        },
+        "filter": "primary_topic.field.id:31"
+      },
+      "work": {
+        "id": "https://openalex.org/W7130738450",
+        "doi": "https://doi.org/10.1049/ntw2.70026",
+        "title": "Steady‐State Spread Bounds for Graph Diffusion via Laplacian Regularisation in Networked Systems",
+        "publication_year": 2026,
+        "language": "en",
+        "type": "article",
+        "primary_topic": {
+          "id": "https://openalex.org/T10064",
+          "display_name": "Complex Network Analysis Techniques",
+          "score": 0.1429000049829483,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3109",
+            "display_name": "Statistical and Nonlinear Physics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/31",
+            "display_name": "Physics and Astronomy"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        "primary_location": {
+          "id": "doi:10.1049/ntw2.70026",
+          "doi": "https://doi.org/10.1049/ntw2.70026",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1049/ntw2.70026",
+          "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1049/ntw2.70026",
+          "source": {
+            "id": "https://openalex.org/S4306418855",
+            "display_name": "IET Networks",
+            "issn_l": "2047-4954",
+            "issn": [
+              "2047-4954",
+              "2047-4962"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "listed_in": [
+              "cwts-core",
+              "doaj",
+              "dongbi-c",
+              "norway-1",
+              "poland-40",
+              "russia-white-list-1"
+            ],
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "IET Networks",
+          "raw_type": "journal-article"
+        },
+        "abstract_inverted_index": {
+          "ABSTRACT": [
+            0
+          ],
+          "We": [
+            1
+          ],
+          "study": [
+            2
+          ],
+          "how": [
+            3
+          ],
+          "far": [
+            4
+          ],
+          "a": [
+            5,
+            9,
+            14,
+            37,
+            75,
+            93,
+            105,
+            147
+          ],
+          "diffusion": [
+            6,
+            145
+          ],
+          "process": [
+            7
+          ],
+          "on": [
+            8,
+            42,
+            100,
+            146
+          ],
+          "graph": [
+            10
+          ],
+          "can": [
+            11,
+            103
+          ],
+          "deviate": [
+            12
+          ],
+          "from": [
+            13
+          ],
+          "designed": [
+            15
+          ],
+          "starting": [
+            16
+          ],
+          "pattern": [
+            17,
+            20,
+            121
+          ],
+          "when": [
+            18
+          ],
+          "the": [
+            19,
+            43,
+            48,
+            52,
+            68,
+            81,
+            119,
+            123,
+            127,
+            150,
+            159
+          ],
+          "is": [
+            21,
+            116,
+            122,
+            152
+          ],
+          "generated": [
+            22
+          ],
+          "via": [
+            23
+          ],
+          "Laplacian": [
+            24,
+            138
+          ],
+          "regularisation.": [
+            25
+          ],
+          "Under": [
+            26
+          ],
+          "standard": [
+            27
+          ],
+          "stability": [
+            28
+          ],
+          "conditions": [
+            29
+          ],
+          "for": [
+            30
+          ],
+          "undirected,": [
+            31
+          ],
+          "entrywise": [
+            32
+          ],
+          "nonnegative": [
+            33
+          ],
+          "graphs,": [
+            34
+          ],
+          "we": [
+            35
+          ],
+          "give": [
+            36
+          ],
+          "closed‐form,": [
+            38
+          ],
+          "instance‐specific": [
+            39
+          ],
+          "upper": [
+            40
+          ],
+          "bound": [
+            41,
+            58
+          ],
+          "steady‐state": [
+            44,
+            161
+          ],
+          "spread,": [
+            45,
+            101
+          ],
+          "measured": [
+            46
+          ],
+          "as": [
+            47,
+            80
+          ],
+          "relative": [
+            49
+          ],
+          "change": [
+            50
+          ],
+          "between": [
+            51
+          ],
+          "final": [
+            53
+          ],
+          "and": [
+            54,
+            73,
+            140,
+            157
+          ],
+          "initial": [
+            55,
+            120
+          ],
+          "profiles.": [
+            56
+          ],
+          "The": [
+            57
+          ],
+          "separates": [
+            59
+          ],
+          "two": [
+            60
+          ],
+          "effects:": [
+            61
+          ],
+          "(i)": [
+            62
+          ],
+          "an": [
+            63,
+            86
+          ],
+          "irreducible": [
+            64
+          ],
+          "term": [
+            65,
+            77
+          ],
+          "determined": [
+            66
+          ],
+          "by": [
+            67,
+            143
+          ],
+          "graph's": [
+            69
+          ],
+          "maximum": [
+            70,
+            160
+          ],
+          "node": [
+            71
+          ],
+          "degree": [
+            72
+          ],
+          "(ii)": [
+            74
+          ],
+          "design‐controlled": [
+            76
+          ],
+          "that": [
+            78,
+            135
+          ],
+          "shrinks": [
+            79
+          ],
+          "regularisation": [
+            82,
+            107
+          ],
+          "strength": [
+            83,
+            108
+          ],
+          "increases": [
+            84
+          ],
+          "(with": [
+            85
+          ],
+          "inverse": [
+            87
+          ],
+          "square": [
+            88
+          ],
+          "law).": [
+            89
+          ],
+          "This": [
+            90
+          ],
+          "leads": [
+            91
+          ],
+          "to": [
+            92,
+            132,
+            155
+          ],
+          "design": [
+            94
+          ],
+          "rule:": [
+            95
+          ],
+          "Given": [
+            96
+          ],
+          "any": [
+            97,
+            133
+          ],
+          "target": [
+            98
+          ],
+          "limit": [
+            99
+          ],
+          "one": [
+            102,
+            113
+          ],
+          "choose": [
+            104
+          ],
+          "sufficient": [
+            106
+          ],
+          "in": [
+            109
+          ],
+          "closed": [
+            110
+          ],
+          "form.": [
+            111
+          ],
+          "Although": [
+            112
+          ],
+          "motivating": [
+            114
+          ],
+          "application": [
+            115
+          ],
+          "array": [
+            117
+          ],
+          "beamforming—where": [
+            118
+          ],
+          "squared": [
+            124
+          ],
+          "magnitude": [
+            125
+          ],
+          "of": [
+            126
+          ],
+          "beamformer": [
+            128
+          ],
+          "weights—the": [
+            129
+          ],
+          "result": [
+            130
+          ],
+          "applies": [
+            131
+          ],
+          "scenario": [
+            134
+          ],
+          "first": [
+            136
+          ],
+          "enforces": [
+            137
+          ],
+          "smoothness": [
+            139
+          ],
+          "then": [
+            141
+          ],
+          "evolves": [
+            142
+          ],
+          "linear": [
+            144
+          ],
+          "graph.": [
+            148
+          ],
+          "Overall,": [
+            149
+          ],
+          "guarantee": [
+            151
+          ],
+          "nonasymptotic,": [
+            153
+          ],
+          "easy": [
+            154
+          ],
+          "compute": [
+            156
+          ],
+          "certifies": [
+            158
+          ],
+          "deviation.": [
+            162
+          ]
+        },
+        "updated_date": "2026-10-23T09:35:12.469056"
+      }
+    },
+    {
+      "field": {
+        "discipline": "Physics",
+        "field": {
+          "id": "https://openalex.org/fields/31",
+          "display_name": "Physics and Astronomy"
+        },
+        "filter": "primary_topic.field.id:31"
+      },
+      "work": {
+        "id": "https://openalex.org/W2020268674",
+        "doi": "https://doi.org/10.1103/physreve.70.056411",
+        "title": "Molecular-dynamic calculation of the inverse-bremsstrahlung heating of non-weakly-coupled plasmas",
+        "publication_year": 2004,
+        "language": "en",
+        "type": "article",
+        "primary_topic": {
+          "id": "https://openalex.org/T10384",
+          "display_name": "Laser-Plasma Interactions and Diagnostics",
+          "score": 0.9560999870300293,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3106",
+            "display_name": "Nuclear and High Energy Physics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/31",
+            "display_name": "Physics and Astronomy"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        "primary_location": {
+          "id": "doi:10.1103/physreve.70.056411",
+          "doi": "https://doi.org/10.1103/physreve.70.056411",
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1103/physreve.70.056411",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S35412551",
+            "display_name": "Physical Review E",
+            "issn_l": "1539-3755",
+            "issn": [
+              "1539-3755",
+              "1550-2376"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "listed_in": [
+              "anvur-scientific",
+              "cwts-core",
+              "vabb-shw"
+            ],
+            "host_organization": "https://openalex.org/P4310320261",
+            "host_organization_name": "American Physical Society",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320261"
+            ],
+            "host_organization_lineage_names": [
+              "American Physical Society"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Physical Review E",
+          "raw_type": "journal-article"
+        },
+        "abstract_inverted_index": {
+          "A": [
+            0
+          ],
+          "molecular": [
+            1
+          ],
+          "dynamic": [
+            2
+          ],
+          "(MD)": [
+            3
+          ],
+          "code": [
+            4,
+            27,
+            42,
+            77
+          ],
+          "is": [
+            5,
+            65,
+            121
+          ],
+          "used": [
+            6
+          ],
+          "to": [
+            7,
+            29,
+            53,
+            68,
+            80,
+            113
+          ],
+          "calculate": [
+            8
+          ],
+          "the": [
+            9,
+            30,
+            36,
+            40,
+            75,
+            105,
+            114,
+            118,
+            129
+          ],
+          "inverse": [
+            10
+          ],
+          "bremsstrahlung": [
+            11
+          ],
+          "(IB)": [
+            12
+          ],
+          "heating": [
+            13,
+            107
+          ],
+          "rates": [
+            14,
+            115
+          ],
+          "of": [
+            15,
+            21,
+            32,
+            74,
+            86,
+            91
+          ],
+          "a": [
+            16,
+            19,
+            61,
+            111
+          ],
+          "plasma": [
+            17,
+            130
+          ],
+          "as": [
+            18
+          ],
+          "function": [
+            20
+          ],
+          "density": [
+            22
+          ],
+          "and": [
+            23,
+            64
+          ],
+          "laser": [
+            24
+          ],
+          "intensity.": [
+            25
+          ],
+          "The": [
+            26,
+            72,
+            89
+          ],
+          "belongs": [
+            28
+          ],
+          "class": [
+            31
+          ],
+          "particle-particle-particle-mesh": [
+            33
+          ],
+          "codes.": [
+            34
+          ],
+          "Since": [
+            35
+          ],
+          "equations": [
+            37
+          ],
+          "solved": [
+            38
+          ],
+          "by": [
+            39,
+            117
+          ],
+          "MD": [
+            41,
+            76,
+            119
+          ],
+          "are": [
+            43,
+            51,
+            78,
+            98
+          ],
+          "fundamental,": [
+            44
+          ],
+          "this": [
+            45
+          ],
+          "approach": [
+            46
+          ],
+          "avoids": [
+            47
+          ],
+          "several": [
+            48
+          ],
+          "assumptions": [
+            49
+          ],
+          "which": [
+            50,
+            59
+          ],
+          "inherent": [
+            52
+          ],
+          "alternative": [
+            54
+          ],
+          "methods,": [
+            55
+          ],
+          "for": [
+            56,
+            84,
+            93,
+            104
+          ],
+          "example": [
+            57
+          ],
+          "those": [
+            58
+          ],
+          "employ": [
+            60
+          ],
+          "Coulomb": [
+            62
+          ],
+          "logarithm,": [
+            63
+          ],
+          "not": [
+            66
+          ],
+          "restricted": [
+            67
+          ],
+          "weakly": [
+            69
+          ],
+          "coupled": [
+            70,
+            96
+          ],
+          "plasmas.": [
+            71
+          ],
+          "results": [
+            73,
+            83,
+            90
+          ],
+          "compared": [
+            79
+          ],
+          "previously": [
+            81
+          ],
+          "published": [
+            82
+          ],
+          "plasmas": [
+            85,
+            97
+          ],
+          "low": [
+            87
+          ],
+          "coupling.": [
+            88
+          ],
+          "calculations": [
+            92
+          ],
+          "dense,": [
+            94
+          ],
+          "moderately": [
+            95
+          ],
+          "also": [
+            99
+          ],
+          "presented.": [
+            100
+          ],
+          "An": [
+            101
+          ],
+          "analytic": [
+            102
+          ],
+          "expression": [
+            103,
+            124
+          ],
+          "IB": [
+            106
+          ],
+          "rate,": [
+            108
+          ],
+          "based": [
+            109
+          ],
+          "on": [
+            110
+          ],
+          "fit": [
+            112
+          ],
+          "calculated": [
+            116
+          ],
+          "code,": [
+            120
+          ],
+          "suggested.": [
+            122
+          ],
+          "This": [
+            123
+          ],
+          "includes": [
+            125
+          ],
+          "terms": [
+            126
+          ],
+          "nonlinear": [
+            127
+          ],
+          "in": [
+            128
+          ],
+          "density.": [
+            131
+          ]
+        },
+        "updated_date": "2026-10-30T12:39:25.321706"
+      }
+    },
+    {
+      "field": {
+        "discipline": "Biology",
+        "field": {
+          "id": "https://openalex.org/fields/13",
+          "display_name": "Biochemistry, Genetics and Molecular Biology"
+        },
+        "filter": "primary_topic.field.id:13"
+      },
+      "work": {
+        "id": "https://openalex.org/W3182220660",
+        "doi": "https://doi.org/10.1111/jeb.13903",
+        "title": "A test of the photoprotection hypothesis for the evolution of autumn colours: Chlorophyll resorption, not anthocyanin production, is correlated with nitrogen translocation",
+        "publication_year": 2021,
+        "language": "en",
+        "type": "article",
+        "primary_topic": {
+          "id": "https://openalex.org/T11237",
+          "display_name": "Plant Gene Expression Analysis",
+          "score": 0.7538999915122986,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        "primary_location": {
+          "id": "doi:10.1111/jeb.13903",
+          "doi": "https://doi.org/10.1111/jeb.13903",
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1111/jeb.13903",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S138169916",
+            "display_name": "Journal of Evolutionary Biology",
+            "issn_l": "1010-061X",
+            "issn": [
+              "1010-061X",
+              "1420-9101"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "listed_in": [
+              "cwts-core",
+              "dongbi-d",
+              "jufo-2",
+              "ki-jl-2",
+              "medline",
+              "norway-2",
+              "poland-70",
+              "russia-white-list-1"
+            ],
+            "host_organization": "https://openalex.org/P4310311648",
+            "host_organization_name": "Oxford University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311648",
+              "https://openalex.org/P4310311647"
+            ],
+            "host_organization_lineage_names": [
+              "Oxford University Press",
+              "University of Oxford"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Journal of Evolutionary Biology",
+          "raw_type": "journal-article"
+        },
+        "abstract_inverted_index": {
+          "A": [
+            0,
+            68
+          ],
+          "prominent": [
+            1
+          ],
+          "hypothesis": [
+            2,
+            170
+          ],
+          "for": [
+            3,
+            171
+          ],
+          "the": [
+            4,
+            11,
+            99,
+            121,
+            126,
+            155,
+            168,
+            172
+          ],
+          "adaptive": [
+            5
+          ],
+          "value": [
+            6
+          ],
+          "of": [
+            7,
+            14,
+            33,
+            102,
+            114,
+            123,
+            128,
+            158,
+            174
+          ],
+          "anthocyanin": [
+            8,
+            78,
+            152
+          ],
+          "production": [
+            9,
+            79
+          ],
+          "in": [
+            10,
+            65,
+            111,
+            140
+          ],
+          "autumn": [
+            12,
+            66,
+            109,
+            144,
+            175
+          ],
+          "leaves": [
+            13,
+            22,
+            106
+          ],
+          "trees": [
+            15
+          ],
+          "and": [
+            16,
+            58,
+            77,
+            88,
+            104,
+            107,
+            125
+          ],
+          "shrubs": [
+            17
+          ],
+          "is": [
+            18,
+            41,
+            48,
+            137
+          ],
+          "that": [
+            19,
+            43,
+            134
+          ],
+          "anthocyanins": [
+            20,
+            44,
+            124
+          ],
+          "protect": [
+            21
+          ],
+          "from": [
+            23
+          ],
+          "photooxidative": [
+            24
+          ],
+          "stress": [
+            25
+          ],
+          "at": [
+            26
+          ],
+          "low": [
+            27
+          ],
+          "temperatures,": [
+            28
+          ],
+          "allowing": [
+            29
+          ],
+          "a": [
+            30
+          ],
+          "better": [
+            31
+          ],
+          "resorption": [
+            32,
+            90,
+            136
+          ],
+          "nutrients-in": [
+            34
+          ],
+          "particular,": [
+            35
+          ],
+          "nitrogen-before": [
+            36
+          ],
+          "leaf": [
+            37
+          ],
+          "fall.": [
+            38
+          ],
+          "While": [
+            39
+          ],
+          "there": [
+            40
+          ],
+          "evidence": [
+            42
+          ],
+          "enable": [
+            45
+          ],
+          "photoprotection,": [
+            46
+          ],
+          "it": [
+            47
+          ],
+          "not": [
+            49,
+            84,
+            166
+          ],
+          "clear": [
+            50
+          ],
+          "whether": [
+            51
+          ],
+          "this": [
+            52,
+            60,
+            95
+          ],
+          "translates": [
+            53
+          ],
+          "to": [
+            54,
+            147
+          ],
+          "improved": [
+            55
+          ],
+          "nitrogen": [
+            56,
+            86,
+            89,
+            100,
+            129,
+            135,
+            159
+          ],
+          "translocation": [
+            57,
+            160
+          ],
+          "how": [
+            59
+          ],
+          "can": [
+            61
+          ],
+          "explain": [
+            62
+          ],
+          "inter-specific": [
+            63
+          ],
+          "variation": [
+            64
+          ],
+          "colours.": [
+            67,
+            176
+          ],
+          "recent": [
+            69
+          ],
+          "comparative": [
+            70
+          ],
+          "analysis": [
+            71
+          ],
+          "showed": [
+            72
+          ],
+          "no": [
+            73,
+            118
+          ],
+          "correlation": [
+            74,
+            119
+          ],
+          "between": [
+            75,
+            120
+          ],
+          "temperature": [
+            76
+          ],
+          "across": [
+            80
+          ],
+          "species": [
+            81,
+            113,
+            141
+          ],
+          "but": [
+            82
+          ],
+          "did": [
+            83
+          ],
+          "analyse": [
+            85
+          ],
+          "content": [
+            87,
+            101
+          ],
+          "efficiency.": [
+            91,
+            161
+          ],
+          "Here,": [
+            92
+          ],
+          "we": [
+            93
+          ],
+          "provide": [
+            94
+          ],
+          "comparison": [
+            96
+          ],
+          "by": [
+            97
+          ],
+          "analysing": [
+            98
+          ],
+          "mature": [
+            103
+          ],
+          "senescent": [
+            105
+          ],
+          "their": [
+            108
+          ],
+          "colours": [
+            110
+          ],
+          "55": [
+            112
+          ],
+          "trees.": [
+            115
+          ],
+          "We": [
+            116,
+            131
+          ],
+          "find": [
+            117
+          ],
+          "presence": [
+            122
+          ],
+          "efficiency": [
+            127
+          ],
+          "resorption.": [
+            130
+          ],
+          "find,": [
+            132
+          ],
+          "instead,": [
+            133
+          ],
+          "more": [
+            138
+          ],
+          "efficient": [
+            139
+          ],
+          "with": [
+            142
+          ],
+          "yellow": [
+            143
+          ],
+          "colours,": [
+            145
+          ],
+          "pointing": [
+            146
+          ],
+          "chlorophyll": [
+            148
+          ],
+          "resorption,": [
+            149
+          ],
+          "rather": [
+            150
+          ],
+          "than": [
+            151
+          ],
+          "synthesis,": [
+            153
+          ],
+          "as": [
+            154
+          ],
+          "main": [
+            156
+          ],
+          "determinant": [
+            157
+          ],
+          "Hence,": [
+            162
+          ],
+          "our": [
+            163
+          ],
+          "results": [
+            164
+          ],
+          "do": [
+            165
+          ],
+          "corroborate": [
+            167
+          ],
+          "photoprotection": [
+            169
+          ],
+          "evolution": [
+            173
+          ]
+        },
+        "updated_date": "2026-10-31T12:09:11.096373"
+      }
+    },
+    {
+      "field": {
+        "discipline": "Biology",
+        "field": {
+          "id": "https://openalex.org/fields/13",
+          "display_name": "Biochemistry, Genetics and Molecular Biology"
+        },
+        "filter": "primary_topic.field.id:13"
+      },
+      "work": {
+        "id": "https://openalex.org/W2355493570",
+        "doi": null,
+        "title": "Optimization of Peanut Protein Enzymolysis Technology by Flavourzyme",
+        "publication_year": 2011,
+        "language": "en",
+        "type": "article",
+        "primary_topic": {
+          "id": "https://openalex.org/T11561",
+          "display_name": "Protein Hydrolysis and Bioactive Peptides",
+          "score": 0.9804999828338623,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        "primary_location": {
+          "id": "mag:2355493570",
+          "doi": null,
+          "is_oa": false,
+          "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-NXNL201107058.htm",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764540493",
+            "display_name": "Ningxia Journal of Agriculture and Forestry Science and Technology",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/P4362643903",
+            "host_organization_name": "Ningxia Academy of Agriculture and Forestry Sciences",
+            "host_organization_lineage": [
+              "https://openalex.org/P4362643903"
+            ],
+            "host_organization_lineage_names": [
+              "Ningxia Academy of Agriculture and Forestry Sciences"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Ningxia Journal of Agriculture and Forestry Science and Technology",
+          "raw_type": null
+        },
+        "abstract_inverted_index": {
+          "[Objective]": [
+            0
+          ],
+          "The": [
+            1
+          ],
+          "aim": [
+            2
+          ],
+          "was": [
+            3,
+            40
+          ],
+          "to": [
+            4,
+            42
+          ],
+          "optimize": [
+            5,
+            43
+          ],
+          "the": [
+            6,
+            14,
+            21,
+            28,
+            33,
+            44,
+            81
+          ],
+          "Peanut": [
+            7
+          ],
+          "Protein": [
+            8
+          ],
+          "Enzymolysis": [
+            9
+          ],
+          "Technology.[Method]": [
+            10
+          ],
+          "some": [
+            11
+          ],
+          "parameters": [
+            12
+          ],
+          "on": [
+            13,
+            80,
+            84
+          ],
+          "effect": [
+            15
+          ],
+          "of": [
+            16,
+            35,
+            49
+          ],
+          "peanut": [
+            17,
+            50,
+            69
+          ],
+          "protein": [
+            18,
+            51
+          ],
+          "hydrolysis": [
+            19,
+            86,
+            92
+          ],
+          "degree,including": [
+            20
+          ],
+          "flavourzyme": [
+            22,
+            55,
+            64
+          ],
+          "concentration,pH,the": [
+            23
+          ],
+          "substrate": [
+            24,
+            71
+          ],
+          "concentration,the": [
+            25
+          ],
+          "temperature": [
+            26,
+            60
+          ],
+          "and": [
+            27
+          ],
+          "enzymolysis": [
+            29,
+            52,
+            74
+          ],
+          "time": [
+            30,
+            75
+          ],
+          "were": [
+            31,
+            56
+          ],
+          "tested.On": [
+            32
+          ],
+          "base": [
+            34
+          ],
+          "above": [
+            36
+          ],
+          "data,the": [
+            37
+          ],
+          "orthogonal": [
+            38
+          ],
+          "experiment": [
+            39
+          ],
+          "adopted": [
+            41
+          ],
+          "all": [
+            45
+          ],
+          "parameters.[Result]": [
+            46
+          ],
+          "Optimum": [
+            47
+          ],
+          "conditions": [
+            48
+          ],
+          "technology": [
+            53
+          ],
+          "by": [
+            54,
+            88
+          ],
+          "as": [
+            57
+          ],
+          "follows": [
+            58
+          ],
+          ":the": [
+            59
+          ],
+          "50": [
+            61
+          ],
+          "℃,pH": [
+            62
+          ],
+          "7.0,the": [
+            63
+          ],
+          "concentration": [
+            65,
+            72
+          ],
+          "0.2": [
+            66
+          ],
+          "g": [
+            67
+          ],
+          "enzyme/g": [
+            68
+          ],
+          "protein,the": [
+            70
+          ],
+          "5%,the": [
+            73
+          ],
+          "6h,hydrolysis": [
+            76
+          ],
+          "degree": [
+            77
+          ],
+          "16.12%.[Conclusion]": [
+            78
+          ],
+          "Temperature": [
+            79
+          ],
+          "biggest": [
+            82
+          ],
+          "influence": [
+            83
+          ],
+          "enzymatic": [
+            85,
+            91
+          ],
+          "reactions,followed": [
+            87
+          ],
+          "enzyme": [
+            89
+          ],
+          "concentrations": [
+            90
+          ],
+          "time,pH.": [
+            93
+          ]
+        },
+        "updated_date": "2025-10-10T17:16:08.811792"
+      }
+    },
+    {
+      "field": {
+        "discipline": "Economics",
+        "field": {
+          "id": "https://openalex.org/fields/20",
+          "display_name": "Economics, Econometrics and Finance"
+        },
+        "filter": "primary_topic.field.id:20"
+      },
+      "work": {
+        "id": "https://openalex.org/W7220014427",
+        "doi": null,
+        "title": "Ripple Effects of War on the Indian Economy",
+        "publication_year": 2025,
+        "language": "en",
+        "type": "article",
+        "primary_topic": {
+          "id": "https://openalex.org/T12825",
+          "display_name": "Defense, Military, and Policy Studies",
+          "score": 0.7153000235557556,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2002",
+            "display_name": "Economics and Econometrics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/20",
+            "display_name": "Economics, Econometrics and Finance"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        },
+        "primary_location": {
+          "id": "pmh:oai:archive.journal.gaee.org:article/13",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://journal.gaee.org/index.php/gjae/article/view/13",
+          "pdf_url": "https://journal.gaee.org/index.php/gjae/article/download/13/9",
+          "source": {
+            "id": "https://openalex.org/S7407080365",
+            "display_name": "Global Journal for Aspiring Economists",
+            "issn_l": "2835-3102",
+            "issn": [
+              "2835-3102"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "2835-3102",
+          "raw_type": "info:eu-repo/semantics/article"
+        },
+        "abstract_inverted_index": {
+          "This": [
+            0
+          ],
+          "topical": [
+            1
+          ],
+          "imprint": [
+            2
+          ],
+          "analyzes": [
+            3
+          ],
+          "the": [
+            4,
+            10,
+            33,
+            44,
+            48,
+            53,
+            60,
+            86,
+            90,
+            119,
+            127,
+            185,
+            216
+          ],
+          "multifaceted": [
+            5
+          ],
+          "impacts": [
+            6
+          ],
+          "of": [
+            7,
+            36,
+            218
+          ],
+          "war": [
+            8
+          ],
+          "on": [
+            9,
+            102,
+            118,
+            206
+          ],
+          "Indian": [
+            11
+          ],
+          "economy,": [
+            12
+          ],
+          "exploring": [
+            13
+          ],
+          "historical": [
+            14,
+            34
+          ],
+          "and": [
+            15,
+            18,
+            29,
+            50,
+            58,
+            76,
+            89,
+            105,
+            137,
+            162,
+            181,
+            189,
+            230,
+            240
+          ],
+          "contemporary": [
+            16,
+            225
+          ],
+          "conflicts": [
+            17,
+            83,
+            143,
+            201
+          ],
+          "their": [
+            19,
+            190
+          ],
+          "economic": [
+            20,
+            74,
+            107,
+            120,
+            194
+          ],
+          "repercussions.": [
+            21
+          ],
+          "The": [
+            22,
+            63,
+            109,
+            150,
+            172,
+            196
+          ],
+          "first": [
+            23
+          ],
+          "article,": [
+            24,
+            111,
+            174
+          ],
+          "authored": [
+            25,
+            112,
+            175
+          ],
+          "by": [
+            26,
+            113,
+            123,
+            176,
+            209
+          ],
+          "Bhavani": [
+            27
+          ],
+          "Bhalla": [
+            28
+          ],
+          "Sejal": [
+            30
+          ],
+          "Goyal,": [
+            31
+          ],
+          "explores": [
+            32
+          ],
+          "context": [
+            35
+          ],
+          "warfare": [
+            37,
+            95
+          ],
+          "in": [
+            38,
+            169
+          ],
+          "India,": [
+            39
+          ],
+          "tracing": [
+            40
+          ],
+          "its": [
+            41
+          ],
+          "effects": [
+            42
+          ],
+          "from": [
+            43,
+            141
+          ],
+          "Vedic": [
+            45
+          ],
+          "period": [
+            46
+          ],
+          "through": [
+            47
+          ],
+          "Maurya": [
+            49
+          ],
+          "Gupta": [
+            51
+          ],
+          "empires,": [
+            52
+          ],
+          "medieval": [
+            54
+          ],
+          "period,": [
+            55
+          ],
+          "colonial": [
+            56
+          ],
+          "rule,": [
+            57
+          ],
+          "into": [
+            59
+          ],
+          "post-independence": [
+            61
+          ],
+          "era.": [
+            62
+          ],
+          "authors": [
+            64,
+            197
+          ],
+          "illustrate": [
+            65
+          ],
+          "how": [
+            66,
+            133,
+            153,
+            224
+          ],
+          "wars": [
+            67,
+            155
+          ],
+          "have": [
+            68,
+            202
+          ],
+          "historically": [
+            69
+          ],
+          "disrupted": [
+            70
+          ],
+          "trade": [
+            71,
+            238
+          ],
+          "routes,": [
+            72
+          ],
+          "altered": [
+            73
+          ],
+          "exchanges,": [
+            75
+          ],
+          "strained": [
+            77
+          ],
+          "local": [
+            78
+          ],
+          "economies.": [
+            79
+          ],
+          "They": [
+            80,
+            222
+          ],
+          "highlight": [
+            81
+          ],
+          "significant": [
+            82,
+            204
+          ],
+          "such": [
+            84,
+            142,
+            227
+          ],
+          "as": [
+            85,
+            228
+          ],
+          "Kalinga": [
+            87
+          ],
+          "War": [
+            88
+          ],
+          "Anglo-Mysore": [
+            91
+          ],
+          "Wars,": [
+            92
+          ],
+          "emphasizing": [
+            93
+          ],
+          "that": [
+            94,
+            199
+          ],
+          "has": [
+            96
+          ],
+          "often": [
+            97
+          ],
+          "led": [
+            98
+          ],
+          "to": [
+            99,
+            157
+          ],
+          "increased": [
+            100
+          ],
+          "taxation": [
+            101
+          ],
+          "agrarian": [
+            103
+          ],
+          "communities": [
+            104
+          ],
+          "profound": [
+            106
+          ],
+          "transformations.": [
+            108
+          ],
+          "second": [
+            110
+          ],
+          "Tharun": [
+            114
+          ],
+          "K": [
+            115,
+            130
+          ],
+          "M,": [
+            116
+          ],
+          "focuses": [
+            117
+          ],
+          "shockwaves": [
+            121
+          ],
+          "caused": [
+            122
+          ],
+          "modern": [
+            124,
+            200
+          ],
+          "conflicts,": [
+            125
+          ],
+          "particularly": [
+            126
+          ],
+          "Russia-Ukraine": [
+            128
+          ],
+          "war.": [
+            129
+          ],
+          "M": [
+            131
+          ],
+          "discusses": [
+            132
+          ],
+          "supply": [
+            134
+          ],
+          "chain": [
+            135
+          ],
+          "disruptions": [
+            136
+          ],
+          "rising": [
+            138
+          ],
+          "energy": [
+            139,
+            241
+          ],
+          "costs": [
+            140,
+            205
+          ],
+          "disproportionately": [
+            144
+          ],
+          "affect": [
+            145
+          ],
+          "developing": [
+            146
+          ],
+          "nations": [
+            147
+          ],
+          "like": [
+            148
+          ],
+          "India.": [
+            149
+          ],
+          "article": [
+            151
+          ],
+          "outlines": [
+            152
+          ],
+          "these": [
+            154
+          ],
+          "lead": [
+            156
+          ],
+          "inflationary": [
+            158
+          ],
+          "pressures,": [
+            159
+          ],
+          "infrastructure": [
+            160
+          ],
+          "damage,": [
+            161
+          ],
+          "food": [
+            163
+          ],
+          "security": [
+            164,
+            242
+          ],
+          "concerns,": [
+            165
+          ],
+          "ultimately": [
+            166
+          ],
+          "exacerbating": [
+            167
+          ],
+          "vulnerabilities": [
+            168
+          ],
+          "India’s": [
+            170,
+            193,
+            207
+          ],
+          "economy.": [
+            171
+          ],
+          "third": [
+            173
+          ],
+          "Janvi": [
+            177
+          ],
+          "Allawadhi,": [
+            178
+          ],
+          "Aanya": [
+            179
+          ],
+          "Jain,": [
+            180
+          ],
+          "Sneha": [
+            182
+          ],
+          "Verma,": [
+            183
+          ],
+          "examines": [
+            184
+          ],
+          "ongoing": [
+            186
+          ],
+          "geopolitical": [
+            187
+          ],
+          "tensions": [
+            188,
+            232
+          ],
+          "implications": [
+            191
+          ],
+          "for": [
+            192
+          ],
+          "stability.": [
+            195
+          ],
+          "argue": [
+            198
+          ],
+          "imposed": [
+            203
+          ],
+          "economy": [
+            208
+          ],
+          "diverting": [
+            210
+          ],
+          "resources": [
+            211
+          ],
+          "towards": [
+            212
+          ],
+          "defense": [
+            213
+          ],
+          "spending": [
+            214
+          ],
+          "at": [
+            215
+          ],
+          "expense": [
+            217
+          ],
+          "social": [
+            219
+          ],
+          "welfare": [
+            220
+          ],
+          "investments.": [
+            221
+          ],
+          "analyze": [
+            223
+          ],
+          "issues": [
+            226
+          ],
+          "terrorism": [
+            229
+          ],
+          "border": [
+            231
+          ],
+          "with": [
+            233
+          ],
+          "neighboring": [
+            234
+          ],
+          "countries": [
+            235
+          ],
+          "further": [
+            236
+          ],
+          "strain": [
+            237
+          ],
+          "relationships": [
+            239
+          ],
+          "while": [
+            243
+          ],
+          "impacting": [
+            244
+          ],
+          "inflation.": [
+            245
+          ]
+        },
+        "updated_date": "2026-10-06T10:28:23.643775"
+      }
+    },
+    {
+      "field": {
+        "discipline": "Economics",
+        "field": {
+          "id": "https://openalex.org/fields/20",
+          "display_name": "Economics, Econometrics and Finance"
+        },
+        "filter": "primary_topic.field.id:20"
+      },
+      "work": {
+        "id": "https://openalex.org/W2130076420",
+        "doi": "https://doi.org/10.17016/ifdp.2001.703",
+        "title": "Permanent and Transitory Components of Business Cycles: Their Relative Importance and Dynamic Relationship",
+        "publication_year": 2001,
+        "language": "en",
+        "type": "article",
+        "primary_topic": {
+          "id": "https://openalex.org/T10007",
+          "display_name": "Monetary Policy and Economic Impact",
+          "score": 0.9955999851226807,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2000",
+            "display_name": "General Economics, Econometrics and Finance"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/20",
+            "display_name": "Economics, Econometrics and Finance"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        },
+        "primary_location": {
+          "id": "doi:10.17016/ifdp.2001.703",
+          "doi": "https://doi.org/10.17016/ifdp.2001.703",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.17016/ifdp.2001.703",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4210204989",
+            "display_name": "International Finance Discussion Paper",
+            "issn_l": "1073-2500",
+            "issn": [
+              "1073-2500",
+              "2767-4509"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "listed_in": [
+              "cwts-core"
+            ],
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": "public-domain",
+          "license_id": "https://openalex.org/licenses/public-domain",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "International Finance Discussion Papers",
+          "raw_type": "journal-article"
+        },
+        "abstract_inverted_index": {
+          "This": [
+            0
+          ],
+          "paper": [
+            1
+          ],
+          "investigates": [
+            2
+          ],
+          "the": [
+            3,
+            42,
+            64,
+            78,
+            87,
+            100,
+            114,
+            120
+          ],
+          "relationship": [
+            4
+          ],
+          "between": [
+            5
+          ],
+          "permanent": [
+            6,
+            38,
+            65,
+            88,
+            115
+          ],
+          "and": [
+            7,
+            31,
+            39,
+            61,
+            66,
+            126
+          ],
+          "transitory": [
+            8,
+            40,
+            67,
+            101,
+            121
+          ],
+          "components": [
+            9
+          ],
+          "of": [
+            10,
+            44,
+            55,
+            80,
+            110
+          ],
+          "U.S.": [
+            11
+          ],
+          "recessions": [
+            12
+          ],
+          "in": [
+            13,
+            48,
+            58,
+            99,
+            113,
+            119
+          ],
+          "an": [
+            14
+          ],
+          "empirical": [
+            15
+          ],
+          "model": [
+            16
+          ],
+          "allowing": [
+            17
+          ],
+          "for": [
+            18,
+            28,
+            77,
+            86
+          ],
+          "business": [
+            19
+          ],
+          "cycle": [
+            20
+          ],
+          "asymmetry.": [
+            21
+          ],
+          "Using": [
+            22
+          ],
+          "a": [
+            23,
+            107
+          ],
+          "common": [
+            24
+          ],
+          "stochastic": [
+            25
+          ],
+          "trend": [
+            26
+          ],
+          "representation": [
+            27
+          ],
+          "real": [
+            29,
+            35
+          ],
+          "GNP": [
+            30,
+            36
+          ],
+          "consumption,": [
+            32
+          ],
+          "we": [
+            33
+          ],
+          "divide": [
+            34
+          ],
+          "into": [
+            37
+          ],
+          "components,": [
+            41
+          ],
+          "dynamics": [
+            43
+          ],
+          "which": [
+            45
+          ],
+          "are": [
+            46
+          ],
+          "different": [
+            47
+          ],
+          "booms": [
+            49
+          ],
+          "vs.": [
+            50
+          ],
+          "recessions.": [
+            51,
+            73,
+            128
+          ],
+          "We": [
+            52,
+            74
+          ],
+          "find": [
+            53
+          ],
+          "evidence": [
+            54
+          ],
+          "substantial": [
+            56
+          ],
+          "asymmetries": [
+            57
+          ],
+          "postwar": [
+            59
+          ],
+          "recessions,": [
+            60
+          ],
+          "that": [
+            62
+          ],
+          "both": [
+            63,
+            123
+          ],
+          "component": [
+            68,
+            89,
+            116,
+            122
+          ],
+          "have": [
+            69
+          ],
+          "contributed": [
+            70
+          ],
+          "to": [
+            71,
+            84,
+            90,
+            97
+          ],
+          "these": [
+            72
+          ],
+          "also": [
+            75
+          ],
+          "allow": [
+            76
+          ],
+          "timing": [
+            79
+          ],
+          "switches": [
+            81,
+            94,
+            112,
+            118
+          ],
+          "from": [
+            82,
+            95
+          ],
+          "boom": [
+            83,
+            96
+          ],
+          "recession": [
+            85,
+            98
+          ],
+          "be": [
+            91
+          ],
+          "correlated": [
+            92
+          ],
+          "with": [
+            93
+          ],
+          "component.": [
+            102
+          ],
+          "The": [
+            103
+          ],
+          "parameter": [
+            104
+          ],
+          "estimates": [
+            105
+          ],
+          "suggest": [
+            106
+          ],
+          "specific": [
+            108
+          ],
+          "pattern": [
+            109
+          ],
+          "recessions:": [
+            111
+          ],
+          "lead": [
+            117
+          ],
+          "when": [
+            124
+          ],
+          "entering": [
+            125
+          ],
+          "leaving": [
+            127
+          ]
+        },
+        "updated_date": "2026-10-14T16:39:01.820549"
+      }
+    },
+    {
+      "field": {
+        "discipline": "History",
+        "field": {
+          "id": "https://openalex.org/fields/12",
+          "display_name": "Arts and Humanities"
+        },
+        "subfield": {
+          "id": "https://openalex.org/subfields/1202",
+          "display_name": "History"
+        },
+        "filter": "primary_topic.subfield.id:1202"
+      },
+      "work": {
+        "id": "https://openalex.org/W2057261224",
+        "doi": "https://doi.org/10.1179/146195711798356692",
+        "title": "Heads and Tails – Minds and Bodies: Reconsidering the Late Bronze Age Vestby Hoard in Light of Symbolist and Body Perspectives",
+        "publication_year": 2011,
+        "language": "en",
+        "type": "article",
+        "primary_topic": {
+          "id": "https://openalex.org/T13593",
+          "display_name": "Historical and Archaeological Studies",
+          "score": 0.7856000065803528,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1202",
+            "display_name": "History"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/12",
+            "display_name": "Arts and Humanities"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        },
+        "primary_location": {
+          "id": "doi:10.1179/146195711798356692",
+          "doi": "https://doi.org/10.1179/146195711798356692",
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1179/146195711798356692",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S162341422",
+            "display_name": "European Journal of Archaeology",
+            "issn_l": "1461-9571",
+            "issn": [
+              "1461-9571",
+              "1741-2722"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "listed_in": [
+              "anvur-class-a",
+              "anvur-scientific",
+              "cwts-core",
+              "erih-plus",
+              "jufo-3",
+              "norway-2",
+              "poland-140",
+              "russia-white-list-1",
+              "vabb-shw"
+            ],
+            "host_organization": "https://openalex.org/P4310311721",
+            "host_organization_name": "Cambridge University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311721",
+              "https://openalex.org/P4310311702"
+            ],
+            "host_organization_lineage_names": [
+              "Cambridge University Press",
+              "University of Cambridge"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "European Journal of Archaeology",
+          "raw_type": "journal-article"
+        },
+        "abstract_inverted_index": {
+          "A": [
+            0
+          ],
+          "pair": [
+            1
+          ],
+          "of": [
+            2,
+            5,
+            14,
+            27,
+            48,
+            57,
+            68,
+            75,
+            81,
+            101,
+            109,
+            143,
+            156,
+            159,
+            167,
+            177
+          ],
+          "animal": [
+            3,
+            41,
+            50
+          ],
+          "heads": [
+            4,
+            32
+          ],
+          "the": [
+            6,
+            15,
+            31,
+            46,
+            49,
+            53,
+            58,
+            66,
+            79,
+            107,
+            126,
+            130,
+            138,
+            144,
+            154,
+            157,
+            175,
+            178
+          ],
+          "Faardal": [
+            7
+          ],
+          "type": [
+            8
+          ],
+          "is": [
+            9
+          ],
+          "central": [
+            10
+          ],
+          "in": [
+            11
+          ],
+          "our": [
+            12
+          ],
+          "reinterpretation": [
+            13
+          ],
+          "Late": [
+            16
+          ],
+          "Bronze": [
+            17,
+            70
+          ],
+          "Age": [
+            18,
+            71
+          ],
+          "Vestby": [
+            19
+          ],
+          "hoard": [
+            20,
+            59
+          ],
+          "from": [
+            21
+          ],
+          "eastern": [
+            22
+          ],
+          "Norway.": [
+            23
+          ],
+          "After": [
+            24
+          ],
+          "a": [
+            25,
+            39,
+            82,
+            90,
+            95,
+            113,
+            165
+          ],
+          "period": [
+            26
+          ],
+          "use": [
+            28
+          ],
+          "and": [
+            29,
+            52,
+            106,
+            121,
+            148,
+            161
+          ],
+          "circulation,": [
+            30
+          ],
+          "were": [
+            33
+          ],
+          "mounted": [
+            34
+          ],
+          "on": [
+            35
+          ],
+          "bodies": [
+            36
+          ],
+          "belonging": [
+            37
+          ],
+          "to": [
+            38,
+            78,
+            133,
+            164,
+            174
+          ],
+          "different": [
+            40
+          ],
+          "species.": [
+            42
+          ],
+          "We": [
+            43,
+            135
+          ],
+          "argue": [
+            44
+          ],
+          "that": [
+            45
+          ],
+          "making": [
+            47
+          ],
+          "figurines": [
+            51
+          ],
+          "other": [
+            54
+          ],
+          "high-quality": [
+            55
+          ],
+          "objects": [
+            56,
+            110
+          ],
+          "can": [
+            60
+          ],
+          "only": [
+            61
+          ],
+          "be": [
+            62
+          ],
+          "properly": [
+            63
+          ],
+          "understood": [
+            64
+          ],
+          "against": [
+            65
+          ],
+          "backdrop": [
+            67
+          ],
+          "Scandinavian": [
+            69
+          ],
+          "cosmology.": [
+            72
+          ],
+          "This": [
+            73,
+            152
+          ],
+          "line": [
+            74
+          ],
+          "thought": [
+            76
+          ],
+          "extends": [
+            77
+          ],
+          "presence": [
+            80
+          ],
+          "tin": [
+            83
+          ],
+          "bead": [
+            84
+          ],
+          "necklace,": [
+            85
+          ],
+          "which": [
+            86
+          ],
+          "we": [
+            87,
+            124
+          ],
+          "interpret": [
+            88
+          ],
+          "as": [
+            89
+          ],
+          "lunar": [
+            91
+          ],
+          "calendar.": [
+            92
+          ],
+          "By": [
+            93
+          ],
+          "combining": [
+            94
+          ],
+          "‘body": [
+            96
+          ],
+          "perspective’": [
+            97,
+            115
+          ],
+          "–": [
+            98,
+            111,
+            116,
+            123
+          ],
+          "including": [
+            99,
+            117
+          ],
+          "understandings": [
+            100
+          ],
+          "body": [
+            102
+          ],
+          "techniques,": [
+            103
+          ],
+          "operational": [
+            104
+          ],
+          "sequences": [
+            105
+          ],
+          "‘sociality’": [
+            108
+          ],
+          "with": [
+            112
+          ],
+          "‘symbolist": [
+            114
+          ],
+          "symbol": [
+            118
+          ],
+          "systems,": [
+            119
+          ],
+          "cosmology": [
+            120
+          ],
+          "intentionality": [
+            122
+          ],
+          "put": [
+            125
+          ],
+          "head": [
+            127
+          ],
+          "back": [
+            128
+          ],
+          "onto": [
+            129
+          ],
+          "body,": [
+            131
+          ],
+          "so": [
+            132
+          ],
+          "speak.": [
+            134
+          ],
+          "also": [
+            136,
+            171
+          ],
+          "scrutinize": [
+            137
+          ],
+          "premises": [
+            139
+          ],
+          "for": [
+            140
+          ],
+          "earlier": [
+            141
+          ],
+          "interpretations": [
+            142
+          ],
+          "objects'": [
+            145
+          ],
+          "‘life": [
+            146
+          ],
+          "stories’": [
+            147
+          ],
+          "reinterpret": [
+            149
+          ],
+          "their": [
+            150
+          ],
+          "trajectories.": [
+            151
+          ],
+          "influences": [
+            153
+          ],
+          "understanding": [
+            155
+          ],
+          "act": [
+            158
+          ],
+          "hoarding,": [
+            160
+          ],
+          "finally": [
+            162
+          ],
+          "leads": [
+            163
+          ],
+          "discussion": [
+            166
+          ],
+          "how": [
+            168
+          ],
+          "hoarding": [
+            169
+          ],
+          "was": [
+            170
+          ],
+          "somehow": [
+            172
+          ],
+          "related": [
+            173
+          ],
+          "‘birth’": [
+            176
+          ],
+          "artefacts.": [
+            179
+          ]
+        },
+        "updated_date": "2026-10-16T09:59:22.235173"
+      }
+    },
+    {
+      "field": {
+        "discipline": "History",
+        "field": {
+          "id": "https://openalex.org/fields/12",
+          "display_name": "Arts and Humanities"
+        },
+        "subfield": {
+          "id": "https://openalex.org/subfields/1202",
+          "display_name": "History"
+        },
+        "filter": "primary_topic.subfield.id:1202"
+      },
+      "work": {
+        "id": "https://openalex.org/W2073881503",
+        "doi": "https://doi.org/10.1136/pmj.79.929.168",
+        "title": "Holistic obstetrics: the origins of “natural childbirth” in Britain",
+        "publication_year": 2003,
+        "language": "en",
+        "type": "article",
+        "primary_topic": {
+          "id": "https://openalex.org/T13332",
+          "display_name": "Historical Studies on Reproduction, Gender, Health, and Societal Changes",
+          "score": 0.9053000211715698,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1202",
+            "display_name": "History"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/12",
+            "display_name": "Arts and Humanities"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        },
+        "primary_location": {
+          "id": "doi:10.1136/pmj.79.929.168",
+          "doi": "https://doi.org/10.1136/pmj.79.929.168",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1136/pmj.79.929.168",
+          "pdf_url": "https://academic.oup.com/pmj/article-pdf/79/929/168/50038806/postgradmedj-79-168.pdf",
+          "source": {
+            "id": "https://openalex.org/S43893605",
+            "display_name": "Postgraduate Medical Journal",
+            "issn_l": "0032-5473",
+            "issn": [
+              "0032-5473",
+              "1469-0756"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "listed_in": [
+              "cwts-core",
+              "dongbi-b",
+              "doyens",
+              "jufo-1",
+              "ki-jl-1",
+              "medline",
+              "norway-1",
+              "poland-70",
+              "russia-white-list-1",
+              "vabb-shw"
+            ],
+            "host_organization": "https://openalex.org/P4310311648",
+            "host_organization_name": "Oxford University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311648",
+              "https://openalex.org/P4310311647"
+            ],
+            "host_organization_lineage_names": [
+              "Oxford University Press",
+              "University of Oxford"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Postgraduate Medical Journal",
+          "raw_type": "journal-article"
+        },
+        "abstract_inverted_index": {
+          "The": [
+            0
+          ],
+          "term": [
+            1
+          ],
+          "\"natural": [
+            2,
+            76
+          ],
+          "childbirth\"": [
+            3,
+            77
+          ],
+          "denotes": [
+            4
+          ],
+          "an": [
+            5
+          ],
+          "approach": [
+            6,
+            59
+          ],
+          "to": [
+            7,
+            37,
+            60
+          ],
+          "childbirth": [
+            8
+          ],
+          "characterised": [
+            9
+          ],
+          "by": [
+            10,
+            106
+          ],
+          "a": [
+            11,
+            35,
+            57,
+            80
+          ],
+          "bias": [
+            12
+          ],
+          "towards": [
+            13
+          ],
+          "physical": [
+            14
+          ],
+          "and": [
+            15,
+            23,
+            89,
+            104
+          ],
+          "mental": [
+            16
+          ],
+          "hygiene": [
+            17
+          ],
+          "in": [
+            18,
+            27,
+            29
+          ],
+          "the": [
+            19,
+            30,
+            38,
+            51,
+            66,
+            69,
+            73,
+            86,
+            93,
+            108
+          ],
+          "management": [
+            20
+          ],
+          "of": [
+            21,
+            41,
+            64,
+            68,
+            82,
+            92,
+            102,
+            110
+          ],
+          "pregnancy": [
+            22
+          ],
+          "labour.": [
+            24
+          ],
+          "It": [
+            25
+          ],
+          "emerged": [
+            26
+          ],
+          "Britain": [
+            28
+          ],
+          "interwar": [
+            31
+          ],
+          "period,": [
+            32
+          ],
+          "partly": [
+            33
+          ],
+          "as": [
+            34
+          ],
+          "response": [
+            36
+          ],
+          "growing": [
+            39
+          ],
+          "interventionism": [
+            40
+          ],
+          "mainstream": [
+            42
+          ],
+          "obstetrics.": [
+            43
+          ],
+          "Its": [
+            44
+          ],
+          "appeal": [
+            45
+          ],
+          "since": [
+            46
+          ],
+          "then": [
+            47
+          ],
+          "has": [
+            48,
+            78
+          ],
+          "rested": [
+            49
+          ],
+          "on": [
+            50
+          ],
+          "belief": [
+            52
+          ],
+          "that": [
+            53
+          ],
+          "it": [
+            54
+          ],
+          "could": [
+            55
+          ],
+          "provide": [
+            56
+          ],
+          "holistic": [
+            58
+          ],
+          "maternity": [
+            61
+          ],
+          "care,": [
+            62
+          ],
+          "capable": [
+            63
+          ],
+          "addressing": [
+            65
+          ],
+          "needs": [
+            67
+          ],
+          "\"whole\"": [
+            70
+          ],
+          "patient.": [
+            71
+          ],
+          "At": [
+            72
+          ],
+          "same": [
+            74
+          ],
+          "time,": [
+            75
+          ],
+          "provided": [
+            79
+          ],
+          "means": [
+            81
+          ],
+          "expressing": [
+            83
+          ],
+          "anxieties": [
+            84
+          ],
+          "about": [
+            85
+          ],
+          "social,": [
+            87
+          ],
+          "economic": [
+            88
+          ],
+          "political": [
+            90
+          ],
+          "upheavals": [
+            91
+          ],
+          "20th": [
+            94
+          ],
+          "century.": [
+            95
+          ],
+          "This": [
+            96
+          ],
+          "paper": [
+            97
+          ],
+          "explores": [
+            98
+          ],
+          "this": [
+            99
+          ],
+          "complex": [
+            100
+          ],
+          "set": [
+            101
+          ],
+          "beliefs": [
+            103
+          ],
+          "practices": [
+            105
+          ],
+          "examining": [
+            107
+          ],
+          "ideas": [
+            109
+          ],
+          "some": [
+            111
+          ],
+          "British": [
+            112
+          ],
+          "pioneers.": [
+            113
+          ]
+        },
+        "updated_date": "2026-10-31T12:09:11.096373"
+      }
+    }
+  ],
+  "requests": [
+    {
+      "endpoint": "fields",
+      "params": {
+        "search": "Computer Science",
+        "per_page": 25
+      },
+      "status": 200
+    },
+    {
+      "endpoint": "fields",
+      "params": {
+        "search": "Medicine",
+        "per_page": 25
+      },
+      "status": 200
+    },
+    {
+      "endpoint": "fields",
+      "params": {
+        "search": "Physics",
+        "per_page": 25
+      },
+      "status": 200
+    },
+    {
+      "endpoint": "fields",
+      "params": {
+        "search": "Biology",
+        "per_page": 25
+      },
+      "status": 200
+    },
+    {
+      "endpoint": "fields",
+      "params": {
+        "search": "Economics",
+        "per_page": 25
+      },
+      "status": 200
+    },
+    {
+      "endpoint": "fields",
+      "params": {
+        "search": "History",
+        "per_page": 25
+      },
+      "status": 200
+    },
+    {
+      "endpoint": "subfields",
+      "params": {
+        "search": "History",
+        "per_page": 25
+      },
+      "status": 200
+    },
+    {
+      "endpoint": "fields/12",
+      "params": {},
+      "status": 200
+    },
+    {
+      "endpoint": "works",
+      "params": {
+        "filter": "primary_topic.field.id:17,has_abstract:true,language:en,type:article",
+        "sample": 30,
+        "seed": 42,
+        "per_page": 30,
+        "select": "id,doi,title,publication_year,language,type,primary_topic,primary_location,abstract_inverted_index,updated_date"
+      },
+      "status": 200
+    },
+    {
+      "endpoint": "works",
+      "params": {
+        "filter": "primary_topic.field.id:27,has_abstract:true,language:en,type:article",
+        "sample": 30,
+        "seed": 42,
+        "per_page": 30,
+        "select": "id,doi,title,publication_year,language,type,primary_topic,primary_location,abstract_inverted_index,updated_date"
+      },
+      "status": 200
+    },
+    {
+      "endpoint": "works",
+      "params": {
+        "filter": "primary_topic.field.id:31,has_abstract:true,language:en,type:article",
+        "sample": 30,
+        "seed": 42,
+        "per_page": 30,
+        "select": "id,doi,title,publication_year,language,type,primary_topic,primary_location,abstract_inverted_index,updated_date"
+      },
+      "status": 200
+    },
+    {
+      "endpoint": "works",
+      "params": {
+        "filter": "primary_topic.field.id:13,has_abstract:true,language:en,type:article",
+        "sample": 30,
+        "seed": 42,
+        "per_page": 30,
+        "select": "id,doi,title,publication_year,language,type,primary_topic,primary_location,abstract_inverted_index,updated_date"
+      },
+      "status": 200
+    },
+    {
+      "endpoint": "works",
+      "params": {
+        "filter": "primary_topic.field.id:20,has_abstract:true,language:en,type:article",
+        "sample": 30,
+        "seed": 42,
+        "per_page": 30,
+        "select": "id,doi,title,publication_year,language,type,primary_topic,primary_location,abstract_inverted_index,updated_date"
+      },
+      "status": 200
+    },
+    {
+      "endpoint": "works",
+      "params": {
+        "filter": "primary_topic.subfield.id:1202,has_abstract:true,language:en,type:article",
+        "sample": 30,
+        "seed": 42,
+        "per_page": 30,
+        "select": "id,doi,title,publication_year,language,type,primary_topic,primary_location,abstract_inverted_index,updated_date"
+      },
+      "status": 200
+    }
+  ]
+}

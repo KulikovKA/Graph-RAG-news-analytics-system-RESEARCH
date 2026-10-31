@@ -1,0 +1,142 @@
+{
+  "schema_version": "ner-v2-model-lock-1",
+  "repositories": {
+    "gliner_large": {
+      "repo_id": "urchade/gliner_large-v2.1",
+      "revision": "abd49a1f1ebc12af1be84d06f6848221cf96dcad",
+      "files": {
+        "README.md": {
+          "size": 4766,
+          "git_blob_sha": "e85f3dd8ea02384776a63391df30afd148965ed5"
+        },
+        "gliner_config.json": {
+          "size": 477,
+          "git_blob_sha": "31d725ce8864f8c45f71f955f3fce0c18e66eaef"
+        },
+        "pytorch_model.bin": {
+          "size": 1782044554,
+          "sha256": "1bf014f5849eb38bcb7b1c95c539b2b0289beff96920b65c2cbfe6db5e9330aa"
+        }
+      }
+    },
+    "backbone_large": {
+      "repo_id": "microsoft/deberta-v3-large",
+      "revision": "64a8c8eab3e352a784c658aef62be1662607476f",
+      "files": {
+        "README.md": {
+          "size": 3266,
+          "git_blob_sha": "5a967796d9eabc9eb149d951253d793ef8931771"
+        },
+        "config.json": {
+          "size": 580,
+          "git_blob_sha": "9d95ab0632a030f501c2e15336123041c556b8a7"
+        },
+        "spm.model": {
+          "size": 2464616,
+          "sha256": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd"
+        },
+        "tokenizer_config.json": {
+          "size": 52,
+          "git_blob_sha": "acfd94e399c5659e4bed75f91b4ee24b111fc7a6"
+        }
+      }
+    },
+    "gliner_medium": {
+      "repo_id": "urchade/gliner_medium-v2.1",
+      "revision": "40ec419335d09393f298636f471328b722c6da9e",
+      "files": {
+        "README.md": {
+          "size": 4757,
+          "git_blob_sha": "eb56e50f47ebc5f0f7c87ffd43479e73d324b5c9"
+        },
+        "gliner_config.json": {
+          "size": 476,
+          "git_blob_sha": "e79565cc6e4eaaafe0dc4ab020d5eb37c324b8e8"
+        },
+        "model.safetensors": {
+          "size": 780735696,
+          "sha256": "922214c0c60f7835bb5c00f52ad1769d38518d5183f85de7bc03893a8403c023"
+        }
+      }
+    },
+    "backbone_medium": {
+      "repo_id": "microsoft/deberta-v3-base",
+      "revision": "8ccc9b6f36199bec6961081d44eb72fb3f7353f3",
+      "files": {
+        "README.md": {
+          "size": 3472,
+          "git_blob_sha": "340cb56cdc9bb884bb1857d8fb5013d8f17a6a82"
+        },
+        "config.json": {
+          "size": 579,
+          "git_blob_sha": "904b7ba900060d5ff61289fb29bee393189716c7"
+        },
+        "spm.model": {
+          "size": 2464616,
+          "sha256": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd"
+        },
+        "tokenizer_config.json": {
+          "size": 52,
+          "git_blob_sha": "acfd94e399c5659e4bed75f91b4ee24b111fc7a6"
+        }
+      }
+    },
+    "gliner_small": {
+      "repo_id": "urchade/gliner_small-v2.1",
+      "revision": "4e091416cf7c3481db542c2a3d26156916f3a47f",
+      "files": {
+        "README.md": {
+          "size": 4756,
+          "git_blob_sha": "09243e0bf8ee5599b94f3be925a8d9d1ec4b3936"
+        },
+        "gliner_config.json": {
+          "size": 477,
+          "git_blob_sha": "73604af13aafe5722fb9d9edda94b8e9cd417d81"
+        },
+        "pytorch_model.bin": {
+          "size": 610652234,
+          "sha256": "1d4e83e4e4ae4ae0a4fbc81a32ee6de480fb341650d73e808088bb2800312de4"
+        }
+      }
+    },
+    "backbone_small": {
+      "repo_id": "microsoft/deberta-v3-small",
+      "revision": "a36c739020e01763fe789b4b85e2df55d6180012",
+      "files": {
+        "README.md": {
+          "size": 3585,
+          "git_blob_sha": "3681ca9941391658e169811eba1ac3a5ee6c6779"
+        },
+        "config.json": {
+          "size": 578,
+          "git_blob_sha": "2d87b358d3c6430b530c793f80aaf091c6dac170"
+        },
+        "spm.model": {
+          "size": 2464616,
+          "sha256": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd"
+        },
+        "tokenizer_config.json": {
+          "size": 52,
+          "git_blob_sha": "acfd94e399c5659e4bed75f91b4ee24b111fc7a6"
+        }
+      }
+    }
+  },
+  "models": {
+    "large": {
+      "checkpoint_key": "gliner_large",
+      "backbone_key": "backbone_large",
+      "weights": "pytorch_model.bin"
+    },
+    "medium": {
+      "checkpoint_key": "gliner_medium",
+      "backbone_key": "backbone_medium",
+      "weights": "model.safetensors"
+    },
+    "small": {
+      "checkpoint_key": "gliner_small",
+      "backbone_key": "backbone_small",
+      "weights": "pytorch_model.bin"
+    }
+  }
+}

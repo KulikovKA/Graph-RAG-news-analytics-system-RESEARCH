@@ -1,0 +1,413 @@
+{
+  "status": "prepared_no_inference",
+  "seed": 42,
+  "snapshot_sha256": "90405980d881a79275fccd41bae8ff94b8c147ddba6c695fe1f7028211db010a",
+  "jsonl_sha256": "e2859bb8c7d15c62d875a35fbfca72125433dee2ca588ed85f5151490a34ea7d",
+  "jsonl": "data/ner_v2/openalex_12.jsonl",
+  "fields": [
+    {
+      "discipline": "Computer Science / Machine Learning",
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "filter": "primary_topic.field.id:17"
+    },
+    {
+      "discipline": "Medicine",
+      "field": {
+        "id": "https://openalex.org/fields/27",
+        "display_name": "Medicine"
+      },
+      "filter": "primary_topic.field.id:27"
+    },
+    {
+      "discipline": "Physics",
+      "field": {
+        "id": "https://openalex.org/fields/31",
+        "display_name": "Physics and Astronomy"
+      },
+      "filter": "primary_topic.field.id:31"
+    },
+    {
+      "discipline": "Biology",
+      "field": {
+        "id": "https://openalex.org/fields/13",
+        "display_name": "Biochemistry, Genetics and Molecular Biology"
+      },
+      "filter": "primary_topic.field.id:13"
+    },
+    {
+      "discipline": "Economics",
+      "field": {
+        "id": "https://openalex.org/fields/20",
+        "display_name": "Economics, Econometrics and Finance"
+      },
+      "filter": "primary_topic.field.id:20"
+    },
+    {
+      "discipline": "History",
+      "field": {
+        "id": "https://openalex.org/fields/12",
+        "display_name": "Arts and Humanities"
+      },
+      "subfield": {
+        "id": "https://openalex.org/subfields/1202",
+        "display_name": "History"
+      },
+      "filter": "primary_topic.subfield.id:1202"
+    }
+  ],
+  "selection_policy": "sample30-en-article-journal-conference-80to600words-distinct-primary-topics-sort-id-shuffle-v2",
+  "retrieved_at": "2026-10-31T19:07:55.065579+00:00",
+  "documents": [
+    {
+      "document_id": "W3195791401",
+      "discipline": "Computer Science / Machine Learning",
+      "title": "Hand Gesture Recognition Based on sEMG Signal and Convolutional Neural Network",
+      "year": 2021,
+      "doi": "https://doi.org/10.1142/s0218001421510125",
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T11398",
+        "display_name": "Hand Gesture Recognition Systems",
+        "score": 0.9639000296592712,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1709",
+          "display_name": "Human-Computer Interaction"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "text_sha256": "a015715eb11490ad44032cf8bf6d21e5b49c238efb6d854cf0eaa610acf87fdf"
+    },
+    {
+      "document_id": "W4312890372",
+      "discipline": "Computer Science / Machine Learning",
+      "title": "On the Size of Balls and Anticodes of Small Diameter Under the Fixed-Length Levenshtein Metric",
+      "year": 2022,
+      "doi": "https://doi.org/10.1109/tit.2022.3227128",
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T11130",
+        "display_name": "Coding theory and cryptography",
+        "score": 0.7559000253677368,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1702",
+          "display_name": "Artificial Intelligence"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "text_sha256": "9f6eaad8fca44e6764d5e9f358941ada3d362c63a30cb13abe4573c2d8e3107a"
+    },
+    {
+      "document_id": "W4387756919",
+      "discipline": "Medicine",
+      "title": "Luteal Phase Stimulation in the Same Cycle Is an Effective Strategy to Rescue POSEIDON Poor Responders with No Embryos after the First Follicular Stimulation",
+      "year": 2023,
+      "doi": "https://doi.org/10.4103/jhrs.jhrs_76_23",
+      "field": {
+        "id": "https://openalex.org/fields/27",
+        "display_name": "Medicine"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T10364",
+        "display_name": "Reproductive Biology and Fertility",
+        "score": 0.9688000082969666,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2739",
+          "display_name": "Public Health, Environmental and Occupational Health"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/27",
+          "display_name": "Medicine"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/4",
+          "display_name": "Health Sciences"
+        }
+      },
+      "text_sha256": "991fb9955cc8a4ff7a07a152d3aed3802143d796a09981fc8a0406d54229bc79"
+    },
+    {
+      "document_id": "W2092571965",
+      "discipline": "Medicine",
+      "title": "Multidisciplinary Department of “Return to Work After a Cancer”: A French Experience of Support Groups for Vocational Rehabilitation",
+      "year": 2013,
+      "doi": "https://doi.org/10.1080/07347332.2013.855961",
+      "field": {
+        "id": "https://openalex.org/fields/27",
+        "display_name": "Medicine"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T10178",
+        "display_name": "Cancer survivorship and care",
+        "score": 0.9970999956130981,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2730",
+          "display_name": "Oncology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/27",
+          "display_name": "Medicine"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/4",
+          "display_name": "Health Sciences"
+        }
+      },
+      "text_sha256": "1682bdc719edcece7f2748de8db3977ac1c018aa471e65e87bf83481bcea3722"
+    },
+    {
+      "document_id": "W7130738450",
+      "discipline": "Physics",
+      "title": "Steady‐State Spread Bounds for Graph Diffusion via Laplacian Regularisation in Networked Systems",
+      "year": 2026,
+      "doi": "https://doi.org/10.1049/ntw2.70026",
+      "field": {
+        "id": "https://openalex.org/fields/31",
+        "display_name": "Physics and Astronomy"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T10064",
+        "display_name": "Complex Network Analysis Techniques",
+        "score": 0.1429000049829483,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3109",
+          "display_name": "Statistical and Nonlinear Physics"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/31",
+          "display_name": "Physics and Astronomy"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "text_sha256": "0235c5454efb6d00fbe00b8cf0e7804d7abc2c7d31be806adc8c4f0a14a2b73a"
+    },
+    {
+      "document_id": "W2020268674",
+      "discipline": "Physics",
+      "title": "Molecular-dynamic calculation of the inverse-bremsstrahlung heating of non-weakly-coupled plasmas",
+      "year": 2004,
+      "doi": "https://doi.org/10.1103/physreve.70.056411",
+      "field": {
+        "id": "https://openalex.org/fields/31",
+        "display_name": "Physics and Astronomy"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T10384",
+        "display_name": "Laser-Plasma Interactions and Diagnostics",
+        "score": 0.9560999870300293,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3106",
+          "display_name": "Nuclear and High Energy Physics"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/31",
+          "display_name": "Physics and Astronomy"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "text_sha256": "f013ef5c2f4707b56de1fd178b1c76d76c3207fadc52cdea35780ef7d6713baa"
+    },
+    {
+      "document_id": "W3182220660",
+      "discipline": "Biology",
+      "title": "A test of the photoprotection hypothesis for the evolution of autumn colours: Chlorophyll resorption, not anthocyanin production, is correlated with nitrogen translocation",
+      "year": 2021,
+      "doi": "https://doi.org/10.1111/jeb.13903",
+      "field": {
+        "id": "https://openalex.org/fields/13",
+        "display_name": "Biochemistry, Genetics and Molecular Biology"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T11237",
+        "display_name": "Plant Gene Expression Analysis",
+        "score": 0.7538999915122986,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1312",
+          "display_name": "Molecular Biology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/13",
+          "display_name": "Biochemistry, Genetics and Molecular Biology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/1",
+          "display_name": "Life Sciences"
+        }
+      },
+      "text_sha256": "dcc7259b450a42e30c26f2e71a1bce6a563f608e51891cf50dd21fcbe0aa3a16"
+    },
+    {
+      "document_id": "W2355493570",
+      "discipline": "Biology",
+      "title": "Optimization of Peanut Protein Enzymolysis Technology by Flavourzyme",
+      "year": 2011,
+      "doi": null,
+      "field": {
+        "id": "https://openalex.org/fields/13",
+        "display_name": "Biochemistry, Genetics and Molecular Biology"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T11561",
+        "display_name": "Protein Hydrolysis and Bioactive Peptides",
+        "score": 0.9804999828338623,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1312",
+          "display_name": "Molecular Biology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/13",
+          "display_name": "Biochemistry, Genetics and Molecular Biology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/1",
+          "display_name": "Life Sciences"
+        }
+      },
+      "text_sha256": "c4e51e87d9db9596673d613c8cbe119fb48d0c3aca1ee0a236e1248d37001be7"
+    },
+    {
+      "document_id": "W7220014427",
+      "discipline": "Economics",
+      "title": "Ripple Effects of War on the Indian Economy",
+      "year": 2025,
+      "doi": null,
+      "field": {
+        "id": "https://openalex.org/fields/20",
+        "display_name": "Economics, Econometrics and Finance"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T12825",
+        "display_name": "Defense, Military, and Policy Studies",
+        "score": 0.7153000235557556,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2002",
+          "display_name": "Economics and Econometrics"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/20",
+          "display_name": "Economics, Econometrics and Finance"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "text_sha256": "29d2daf0e68df94827cd547cafe46c11da439936b33b38a1578491e6dda2481c"
+    },
+    {
+      "document_id": "W2130076420",
+      "discipline": "Economics",
+      "title": "Permanent and Transitory Components of Business Cycles: Their Relative Importance and Dynamic Relationship",
+      "year": 2001,
+      "doi": "https://doi.org/10.17016/ifdp.2001.703",
+      "field": {
+        "id": "https://openalex.org/fields/20",
+        "display_name": "Economics, Econometrics and Finance"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T10007",
+        "display_name": "Monetary Policy and Economic Impact",
+        "score": 0.9955999851226807,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2000",
+          "display_name": "General Economics, Econometrics and Finance"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/20",
+          "display_name": "Economics, Econometrics and Finance"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "text_sha256": "979eaae5aac7af6e88a5802b5b82c06a0d113ad5e19bdee7640b3cd631fcd240"
+    },
+    {
+      "document_id": "W2057261224",
+      "discipline": "History",
+      "title": "Heads and Tails – Minds and Bodies: Reconsidering the Late Bronze Age Vestby Hoard in Light of Symbolist and Body Perspectives",
+      "year": 2011,
+      "doi": "https://doi.org/10.1179/146195711798356692",
+      "field": {
+        "id": "https://openalex.org/fields/12",
+        "display_name": "Arts and Humanities"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T13593",
+        "display_name": "Historical and Archaeological Studies",
+        "score": 0.7856000065803528,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1202",
+          "display_name": "History"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/12",
+          "display_name": "Arts and Humanities"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "text_sha256": "822fb6fec9bdffac1eb9c6ef7be2c483855a13716e53449c4cb8aca239b05964"
+    },
+    {
+      "document_id": "W2073881503",
+      "discipline": "History",
+      "title": "Holistic obstetrics: the origins of “natural childbirth” in Britain",
+      "year": 2003,
+      "doi": "https://doi.org/10.1136/pmj.79.929.168",
+      "field": {
+        "id": "https://openalex.org/fields/12",
+        "display_name": "Arts and Humanities"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T13332",
+        "display_name": "Historical Studies on Reproduction, Gender, Health, and Societal Changes",
+        "score": 0.9053000211715698,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1202",
+          "display_name": "History"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/12",
+          "display_name": "Arts and Humanities"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "text_sha256": "112317606d7301e02056e45aa9081be1b6db8230e645a633b3cb5c783a77d6fd"
+    }
+  ]
+}

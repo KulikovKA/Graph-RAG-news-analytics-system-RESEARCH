@@ -1,0 +1,115 @@
+{
+  "status": "files_verified_no_model_loaded",
+  "files": {
+    "gliner_large/README.md": {
+      "bytes": 4766,
+      "sha256": "bef6f54901dac91ef023c0e343be439ddb222ea7540bf26612feb15bfa2858ac"
+    },
+    "gliner_large/gliner_config.json": {
+      "bytes": 477,
+      "sha256": "499bc1cd3f7bdc2aa2c8c5b446fdc7fccb20773b02d9fe21545887bb067f5bf4"
+    },
+    "gliner_large/pytorch_model.bin": {
+      "bytes": 1782044554,
+      "sha256": "1bf014f5849eb38bcb7b1c95c539b2b0289beff96920b65c2cbfe6db5e9330aa"
+    },
+    "backbone_large/README.md": {
+      "bytes": 3266,
+      "sha256": "f6a88d8dba8986495c8274f7bc142c72919307982bb6b200a81fcf2acd509d17"
+    },
+    "backbone_large/config.json": {
+      "bytes": 580,
+      "sha256": "ddec8b81d079d218ce9e54fc0af5d1d5937d6d53b5d42e70c1f251a1cebc830d"
+    },
+    "backbone_large/spm.model": {
+      "bytes": 2464616,
+      "sha256": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd"
+    },
+    "backbone_large/tokenizer_config.json": {
+      "bytes": 52,
+      "sha256": "3f3978e0c036f2c2588cac34a6047cbb0af0b0dc1814254e291028529805496d"
+    },
+    "gliner_medium/README.md": {
+      "bytes": 4757,
+      "sha256": "c348ab02b410cf00b1b250fede28edbfaf992291c0c06ca26e9e824478ce7e56"
+    },
+    "gliner_medium/gliner_config.json": {
+      "bytes": 476,
+      "sha256": "a8f3c2ecc57deb70077be6940962aa60e82d861a153a5cd2839b91795968ae7d"
+    },
+    "gliner_medium/model.safetensors": {
+      "bytes": 780735696,
+      "sha256": "922214c0c60f7835bb5c00f52ad1769d38518d5183f85de7bc03893a8403c023"
+    },
+    "backbone_medium/README.md": {
+      "bytes": 3472,
+      "sha256": "7e9ea69ca00d0609cc0e0b9cec76f9ba6ae71601244c4136a3f25bd02dce4c4d"
+    },
+    "backbone_medium/config.json": {
+      "bytes": 579,
+      "sha256": "649f6a1ec33c6bdd9a6486d5c66019d461139e54957073eafe9bbc2d34c75b0b"
+    },
+    "backbone_medium/spm.model": {
+      "bytes": 2464616,
+      "sha256": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd"
+    },
+    "backbone_medium/tokenizer_config.json": {
+      "bytes": 52,
+      "sha256": "3f3978e0c036f2c2588cac34a6047cbb0af0b0dc1814254e291028529805496d"
+    },
+    "gliner_small/README.md": {
+      "bytes": 4756,
+      "sha256": "5f665c0a6a0e7431ecf0ff59555a418e27601c4c3e8bc1616087a25490294a30"
+    },
+    "gliner_small/gliner_config.json": {
+      "bytes": 477,
+      "sha256": "eb963bd7182a1eaed4d170a87348ab62de6fc4eb30cfa7130c80846fee43d0ac"
+    },
+    "gliner_small/pytorch_model.bin": {
+      "bytes": 610652234,
+      "sha256": "1d4e83e4e4ae4ae0a4fbc81a32ee6de480fb341650d73e808088bb2800312de4"
+    },
+    "backbone_small/README.md": {
+      "bytes": 3585,
+      "sha256": "9aa2d47666370a87d20422ed68a1ee80d79d66b4447b6f9925d97d11f4605d24"
+    },
+    "backbone_small/config.json": {
+      "bytes": 578,
+      "sha256": "b0bb1caf90a50aa67d1085130508dfbf8646ac5a11928305e280b07a36e100ae"
+    },
+    "backbone_small/spm.model": {
+      "bytes": 2464616,
+      "sha256": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd"
+    },
+    "backbone_small/tokenizer_config.json": {
+      "bytes": 52,
+      "sha256": "3f3978e0c036f2c2588cac34a6047cbb0af0b0dc1814254e291028529805496d"
+    },
+    "runtime_large/gliner_config.json": {
+      "bytes": 1122,
+      "sha256": "5064971aef1f5b9d4a944ea0df47fa52daf58251a8fd4f6063f774394e369dce"
+    },
+    "runtime_medium/gliner_config.json": {
+      "bytes": 1120,
+      "sha256": "87f1fd702e2e8e8ed64d28217ffc50d44b385de75ec72e3a39afa6fc4d38e27d"
+    },
+    "runtime_small/gliner_config.json": {
+      "bytes": 1120,
+      "sha256": "68adc2806f8971f3392a054a6a227c0808b59f781e6d608906329b964709bb48"
+    }
+  },
+  "libraries": {
+    "gliner": "0.2.26",
+    "torch": "2.11.0",
+    "transformers": "5.1.0",
+    "huggingface-hub": "1.28.0",
+    "tokenizers": "0.22.2",
+    "sentencepiece": "0.2.2",
+    "safetensors": "0.7.0",
+    "spacy": "3.8.18",
+    "en-core-web-sm": "3.8.0",
+    "numpy": "2.4.1",
+    "requests": "2.34.2",
+    "pytest": "8.3.5"
+  }
+}

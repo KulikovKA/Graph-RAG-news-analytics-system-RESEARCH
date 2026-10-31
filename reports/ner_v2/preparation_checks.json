@@ -1,0 +1,27 @@
+{
+  "stage": "NER-V2-PREP",
+  "status": "prepared_no_inference",
+  "technical_tests": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "58",
+    "time": "5.334",
+    "timestamp": "2026-10-31T22:21:35.284460+03:00",
+    "hostname": "honor_kirill"
+  },
+  "test_command": ".venv-ner-v2/Scripts/python.exe -m pytest tests/test_ner_v2.py tests/test_contracts.py -q",
+  "dependency_check": "uv pip check: all 80 installed packages compatible",
+  "uv_lock_check": "passed",
+  "input_documents": 12,
+  "corpus_sha256": "e2859bb8c7d15c62d875a35fbfca72125433dee2ca588ed85f5151490a34ea7d",
+  "ner_inference_run": false,
+  "ner_model_instantiated": false,
+  "qwen_run": false,
+  "embedding_inference_run": false,
+  "training_run": false,
+  "gold_created": false,
+  "historical_artifacts_modified": false,
+  "weights_staged": false
+}

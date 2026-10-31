@@ -1,0 +1,16 @@
+{
+  "experiment": "NER-V2-PREP",
+  "ontology": "contracts/ner_v2/ontology.v2.json",
+  "model_lock": "contracts/ner_v2/model_lock.json",
+  "model_root": "artifacts/ner_v2/models",
+  "input": "data/ner_v2/openalex_12.jsonl",
+  "seed": 42,
+  "cpu_threads": 4,
+  "threshold": 0.35,
+  "max_window_words": 60,
+  "overlap_words": 20,
+  "max_input_tokens": 512,
+  "flat_ner": false,
+  "multi_label": true,
+  "postprocessing": "exact-span-label-max-score-sorted-v1"
+}

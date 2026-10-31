@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "title": "NER v2 preliminary mention (not canonical entity)",
+  "required": [
+    "contract_version",
+    "document_id",
+    "mention_id",
+    "surface_text",
+    "start",
+    "end",
+    "normalized_form",
+    "lemma",
+    "ner_label_hint",
+    "score",
+    "model_identifier",
+    "source_reference"
+  ],
+  "properties": {
+    "contract_version": {
+      "const": "ner-v2-mentions-1"
+    },
+    "revision_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "start": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "end": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "ner_label_hint": {
+      "enum": [
+        "OBJECT",
+        "ACTOR",
+        "CONCEPT",
+        "METHOD",
+        "PROCESS",
+        "DATA_RESOURCE",
+        "ATTRIBUTE",
+        "RESULT",
+        "CONDITION",
+        "TASK",
+        "MECHANISM"
+      ]
+    },
+    "score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "source_reference": {
+      "type": "object"
+    },
+    "document_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mention_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "surface_text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "normalized_form": {
+      "type": "string",
+      "minLength": 1
+    },
+    "lemma": {
+      "type": "string",
+      "minLength": 1
+    },
+    "model_identifier": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}
