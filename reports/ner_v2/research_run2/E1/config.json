@@ -1,0 +1,62 @@
+{
+  "experiment": "NER-V2-003",
+  "configuration": "E1",
+  "corpus_seed": 4303,
+  "seed": 42,
+  "cpu_threads": 4,
+  "device": "cpu",
+  "dtype": "float32",
+  "window_words": 60,
+  "overlap_words": 20,
+  "max_input_tokens": 512,
+  "thresholds": [
+    0.15,
+    0.25,
+    0.35,
+    0.45,
+    0.5,
+    0.55,
+    0.6,
+    0.65
+  ],
+  "minimum_inference_threshold": 0.15,
+  "native_all_thresholds": false,
+  "labels": {
+    "OBJECT": "physical, biological or digital object",
+    "ACTOR": "person or organization",
+    "CONCEPT": "scientific concept or theory",
+    "METHOD": "algorithm or research method",
+    "PROCESS": "event or scientific process",
+    "DATA_RESOURCE": "dataset or research corpus",
+    "ATTRIBUTE": "property, parameter or metric",
+    "RESULT": "measured or observed result",
+    "CONDITION": "experimental or contextual condition",
+    "TASK": "research task or application",
+    "MECHANISM": "mechanism explaining a phenomenon"
+  },
+  "normalization": "N3",
+  "flat_ner": false,
+  "multi_label": true,
+  "overlap_policy": "allow",
+  "checkpoint": "urchade/gliner_large-v2.1@abd49a1f1ebc12af1be84d06f6848221cf96dcad",
+  "input_sha256": "684ca3a758a128c6382ab924f5c131f0e27faa9f7625b431ae0d6db975e543b1",
+  "reference_sha256": "ea5eb6d46d70408f675667ae2617d4cea4f15915845c2fe29d78335b1b20a7f7",
+  "ontology_sha256": "248abbec239279ae640e7188a7bb8e68f01f9f116ea8ca671d0da0c815613b14",
+  "normalizer_sha256": "8a3b72cb94425f3deed6ff65e8e9bc9f94c12d102fd5eb3addd97e66b90ae301",
+  "runner_sha256": "6f0058662354fdbdd5e49822d73791e22ebcd4547639ea4678ea9eea2d304266",
+  "timing_repetitions": 1,
+  "warmup": "none; first forward included",
+  "native_check_document_ids": [
+    "W2076293586",
+    "W4230116451",
+    "W2906067930",
+    "W4312422299",
+    "W2791492120",
+    "W2317432785"
+  ],
+  "native_check_thresholds": [
+    0.35,
+    0.5,
+    0.65
+  ]
+}

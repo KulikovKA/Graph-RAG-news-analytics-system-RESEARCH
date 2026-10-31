@@ -1,0 +1,57 @@
+{
+  "status": "PASSED",
+  "corpus_documents": 30,
+  "words": 5744,
+  "reference_spans": 158,
+  "models": {
+    "E1": {
+      "minimum_threshold_mentions": 1778,
+      "raw_window_predictions": 2083,
+      "source_words_covered": 5744,
+      "native_equivalence_checks": 18,
+      "max_encoder_tokens": 185,
+      "windows": 143,
+      "inference_encoder_calls": 143,
+      "score_threshold_equalities": 0
+    },
+    "E2": {
+      "minimum_threshold_mentions": 1140,
+      "raw_window_predictions": 1243,
+      "source_words_covered": 5744,
+      "native_equivalence_checks": 18,
+      "max_encoder_tokens": 265,
+      "windows": 75,
+      "inference_encoder_calls": 75,
+      "score_threshold_equalities": 0
+    },
+    "E3": {
+      "minimum_threshold_mentions": 2114,
+      "raw_window_predictions": 2319,
+      "source_words_covered": 5744,
+      "native_equivalence_checks": 18,
+      "max_encoder_tokens": 333,
+      "windows": 75,
+      "inference_encoder_calls": 75,
+      "score_threshold_equalities": 0
+    }
+  },
+  "audit": {
+    "census_candidates": 433,
+    "stratified_candidates": 120,
+    "assistant_context_reviews": 120,
+    "human_reviewed": 0
+  },
+  "qwen": {
+    "configurations": 24,
+    "batches_saved": 917,
+    "independent_retokenization_checks": 24,
+    "max_prompt_tokens": 3976,
+    "model_loads": 0,
+    "generation_calls": 0
+  },
+  "historical_protection": {
+    "baseline_commit": "0366724d620d076adc8035114424cb06a57ff5d1",
+    "files_checked": 134,
+    "changed": []
+  }
+}

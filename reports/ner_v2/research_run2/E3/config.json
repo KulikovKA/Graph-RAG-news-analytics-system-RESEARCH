@@ -1,0 +1,93 @@
+{
+  "experiment": "NER-V2-003",
+  "configuration": "E3",
+  "corpus_seed": 4303,
+  "seed": 42,
+  "cpu_threads": 4,
+  "device": "cpu",
+  "dtype": "float32",
+  "window_words": 110,
+  "overlap_words": 25,
+  "max_input_tokens": 512,
+  "thresholds": [
+    0.15,
+    0.25,
+    0.35,
+    0.45,
+    0.5,
+    0.55,
+    0.6,
+    0.65
+  ],
+  "minimum_inference_threshold": 0.15,
+  "native_all_thresholds": false,
+  "labels": {
+    "OBJECT": "physical, biological or digital object",
+    "ACTOR": "person or organization",
+    "CONCEPT": "scientific concept or theory",
+    "METHOD": "algorithm or research method",
+    "PROCESS": "event or scientific process",
+    "DATA_RESOURCE": "dataset or research corpus",
+    "ATTRIBUTE": "property, parameter or metric",
+    "RESULT": "measured or observed result",
+    "CONDITION": "experimental or contextual condition",
+    "TASK": "research task or application",
+    "MECHANISM": "mechanism explaining a phenomenon"
+  },
+  "normalization": "N3",
+  "flat_ner": false,
+  "multi_label": true,
+  "overlap_policy": "allow",
+  "checkpoint": {
+    "repo_id": "fastino/gliner2.5-base-v1",
+    "revision": "54785d51df8d86a0d8f2eb212fec15871aad2c4d",
+    "disk_free_before_bytes": 247480340480,
+    "download_size_bytes": 782735800,
+    "files": {
+      "README.md": {
+        "bytes": 21918,
+        "sha256": "1b023a4786371699477e0b635d2a148f10fe5c23ab1e9d36211ff58754289bbe"
+      },
+      "config.json": {
+        "bytes": 4103,
+        "sha256": "d6b515c21ae2100c12267fb42a3f02c1e99ad87580366aebedb161efd74441c7"
+      },
+      "encoder_config/config.json": {
+        "bytes": 857,
+        "sha256": "d36a845b9f25dcaf1ec45a1c4bdf65ea4ac20596537e14530ec9f660a63aeca4"
+      },
+      "model.safetensors": {
+        "bytes": 774366564,
+        "sha256": "7274094de2e0c2a37a386f55fc4e23061a954da5bd7a335e7dfe56f2743c277a"
+      },
+      "tokenizer.json": {
+        "bytes": 8341713,
+        "sha256": "cbc8ae6037812709c9c26f2a160f8dc48b0440bcb79c8141804259ae2d6adac3"
+      },
+      "tokenizer_config.json": {
+        "bytes": 645,
+        "sha256": "0bf3ea0873234bd9bfdd3853c440395009ac6365a925b91654daed5396d655e1"
+      }
+    }
+  },
+  "input_sha256": "684ca3a758a128c6382ab924f5c131f0e27faa9f7625b431ae0d6db975e543b1",
+  "reference_sha256": "ea5eb6d46d70408f675667ae2617d4cea4f15915845c2fe29d78335b1b20a7f7",
+  "ontology_sha256": "248abbec239279ae640e7188a7bb8e68f01f9f116ea8ca671d0da0c815613b14",
+  "normalizer_sha256": "8a3b72cb94425f3deed6ff65e8e9bc9f94c12d102fd5eb3addd97e66b90ae301",
+  "runner_sha256": "6f0058662354fdbdd5e49822d73791e22ebcd4547639ea4678ea9eea2d304266",
+  "timing_repetitions": 1,
+  "warmup": "none; first forward included",
+  "native_check_document_ids": [
+    "W2076293586",
+    "W4230116451",
+    "W2906067930",
+    "W4312422299",
+    "W2791492120",
+    "W2317432785"
+  ],
+  "native_check_thresholds": [
+    0.35,
+    0.5,
+    0.65
+  ]
+}

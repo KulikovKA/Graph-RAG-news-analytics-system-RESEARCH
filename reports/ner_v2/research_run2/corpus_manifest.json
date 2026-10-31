@@ -1,0 +1,918 @@
+{
+  "status": "FROZEN_BEFORE_INFERENCE",
+  "corpus_seed": 4303,
+  "input_sha256": "684ca3a758a128c6382ab924f5c131f0e27faa9f7625b431ae0d6db975e543b1",
+  "snapshot_sha256": "38b617962af13afdcbf7b19f72c94efc2c39288ebe1b2a13a210c6bc52999b36",
+  "words": 5744,
+  "audit_document_ids": [
+    "W2076293586",
+    "W4230116451",
+    "W2906067930",
+    "W4312422299",
+    "W2791492120",
+    "W2317432785"
+  ],
+  "audit_selection": "Random(4303).choice(sorted-by-id five documents) independently in each discipline",
+  "documents": [
+    {
+      "document_id": "W2991563224",
+      "discipline": "Computer Science / Machine Learning",
+      "title": "Energy efficiency of organized cluster election method in wireless sensor networks",
+      "year": 2020,
+      "doi": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T10080",
+        "display_name": "Energy Efficient Wireless Sensor Networks",
+        "score": 1.0,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1705",
+          "display_name": "Computer Networks and Communications"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "source_url": "https://openalex.org/W2991563224",
+      "text_sha256": "f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd"
+    },
+    {
+      "document_id": "W4230116451",
+      "discipline": "Computer Science / Machine Learning",
+      "title": "A GPU parallel optimised blockwise NLM algorithm in a distributed computing system",
+      "year": 2018,
+      "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T10688",
+        "display_name": "Image and Signal Denoising Methods",
+        "score": 0.7900000214576721,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1707",
+          "display_name": "Computer Vision and Pattern Recognition"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "source_url": "https://openalex.org/W4230116451",
+      "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+    },
+    {
+      "document_id": "W4234628002",
+      "discipline": "Computer Science / Machine Learning",
+      "title": "Sistem Informasi Terintegrasi Evaluasi Kegiatan Mengajar Dosen Sebagai Implementasi Sistem Penjaminan Mutu Internal",
+      "year": 2019,
+      "doi": "https://doi.org/10.31940/matrix.v9i1.1243",
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T13681",
+        "display_name": "Engineering and Information Technology",
+        "score": 0.6118000149726868,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1712",
+          "display_name": "Software"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "source_url": "https://openalex.org/W4234628002",
+      "text_sha256": "884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47"
+    },
+    {
+      "document_id": "W3027457624",
+      "discipline": "Computer Science / Machine Learning",
+      "title": "“Shape-Coding”: Morphology-Based Information System for Polymers and Composites",
+      "year": 2020,
+      "doi": "https://doi.org/10.1021/acsami.0c05314",
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T13270",
+        "display_name": "QR Code Applications and Technologies",
+        "score": 0.9761000275611877,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1710",
+          "display_name": "Information Systems"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "source_url": "https://openalex.org/W3027457624",
+      "text_sha256": "e2c9df190288a816f9dd29f08558c97eb10702fd4efc6a6113cbb9934674c583"
+    },
+    {
+      "document_id": "W4389076493",
+      "discipline": "Computer Science / Machine Learning",
+      "title": "An Adaptive Region Proposal Network With Progressive Attention Propagation for Tiny Person Detection From UAV Images",
+      "year": 2023,
+      "doi": "https://doi.org/10.1109/tcsvt.2023.3335157",
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T10036",
+        "display_name": "Advanced Neural Network Applications",
+        "score": 0.9965999722480774,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1707",
+          "display_name": "Computer Vision and Pattern Recognition"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "source_url": "https://openalex.org/W4389076493",
+      "text_sha256": "f4cf0293b69944ea4057fbb9b4935928b2ddc909e1b7e72e7b9ea3e9414ed1fe"
+    },
+    {
+      "document_id": "W3101922761",
+      "discipline": "Medicine",
+      "title": "Ten-Year Outcome of Glaucoma Drainage Device Surgery After Penetrating Keratoplasty",
+      "year": 2020,
+      "doi": "https://doi.org/10.1097/ijg.0000000000001741",
+      "field": {
+        "id": "https://openalex.org/fields/27",
+        "display_name": "Medicine"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T10250",
+        "display_name": "Glaucoma and retinal disorders",
+        "score": 0.8788999915122986,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2731",
+          "display_name": "Ophthalmology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/27",
+          "display_name": "Medicine"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/4",
+          "display_name": "Health Sciences"
+        }
+      },
+      "source_url": "https://openalex.org/W3101922761",
+      "text_sha256": "4ad8779832806262a62448df71e477ddf9e742488e35b3b32cb1551579bfb44b"
+    },
+    {
+      "document_id": "W1979727947",
+      "discipline": "Medicine",
+      "title": "High-throughput mammographic-density measurement: a tool for risk prediction of breast cancer",
+      "year": 2012,
+      "doi": "https://doi.org/10.1186/bcr3238",
+      "field": {
+        "id": "https://openalex.org/fields/27",
+        "display_name": "Medicine"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T11361",
+        "display_name": "Digital Radiography and Breast Imaging",
+        "score": 0.9990000128746033,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2740",
+          "display_name": "Pulmonary and Respiratory Medicine"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/27",
+          "display_name": "Medicine"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/4",
+          "display_name": "Health Sciences"
+        }
+      },
+      "source_url": "https://openalex.org/W1979727947",
+      "text_sha256": "e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505"
+    },
+    {
+      "document_id": "W2791492120",
+      "discipline": "Medicine",
+      "title": "Impact and Modulations of Peripheral and Edaphic B Cell Subpopulations in Chronic Rhinosinusitis With Nasal Polyposis",
+      "year": 2018,
+      "doi": "https://doi.org/10.21053/ceo.2017.01389",
+      "field": {
+        "id": "https://openalex.org/fields/27",
+        "display_name": "Medicine"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T10984",
+        "display_name": "Sinusitis and nasal conditions",
+        "score": 0.9990000128746033,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2733",
+          "display_name": "Otorhinolaryngology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/27",
+          "display_name": "Medicine"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/4",
+          "display_name": "Health Sciences"
+        }
+      },
+      "source_url": "https://openalex.org/W2791492120",
+      "text_sha256": "4508e79f0f2d74bcf709e0c404536b736c62dd03e01ec5aced75810fb984d94b"
+    },
+    {
+      "document_id": "W2761455282",
+      "discipline": "Medicine",
+      "title": "Perioperative Complications of Total Knee Arthroplasty in Dialysis Patients",
+      "year": 2017,
+      "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+      "field": {
+        "id": "https://openalex.org/fields/27",
+        "display_name": "Medicine"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T10562",
+        "display_name": "Total Knee Arthroplasty Outcomes",
+        "score": 0.9994999766349792,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2746",
+          "display_name": "Surgery"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/27",
+          "display_name": "Medicine"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/4",
+          "display_name": "Health Sciences"
+        }
+      },
+      "source_url": "https://openalex.org/W2761455282",
+      "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+    },
+    {
+      "document_id": "W4391351014",
+      "discipline": "Medicine",
+      "title": "Effects of Ionizing Radiation on Cardiac Implantable Electronic Devices (CIEDs) in Patients with Esophageal Cancer Undergoing Radiotherapy: A Pilot Study",
+      "year": 2024,
+      "doi": "https://doi.org/10.3390/cancers16030555",
+      "field": {
+        "id": "https://openalex.org/fields/27",
+        "display_name": "Medicine"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T10598",
+        "display_name": "Cardiac pacing and defibrillation studies",
+        "score": 0.9369999766349792,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2705",
+          "display_name": "Cardiology and Cardiovascular Medicine"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/27",
+          "display_name": "Medicine"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/4",
+          "display_name": "Health Sciences"
+        }
+      },
+      "source_url": "https://openalex.org/W4391351014",
+      "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+    },
+    {
+      "document_id": "W2084709926",
+      "discipline": "Physics",
+      "title": "NSTX tangential divertor camera",
+      "year": 2004,
+      "doi": "https://doi.org/10.1063/1.1789609",
+      "field": {
+        "id": "https://openalex.org/fields/31",
+        "display_name": "Physics and Astronomy"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T10346",
+        "display_name": "Magnetic confinement fusion research",
+        "score": 0.9980000257492065,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3106",
+          "display_name": "Nuclear and High Energy Physics"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/31",
+          "display_name": "Physics and Astronomy"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "source_url": "https://openalex.org/W2084709926",
+      "text_sha256": "89ad5e956f2937ab847f226fda41b82bf0389aa31229ae7c59c95420741fbf9a"
+    },
+    {
+      "document_id": "W2317432785",
+      "discipline": "Physics",
+      "title": "Structural and Magnetic Studies of [Co0.45Fe0.45Zr0.1/a-Si]N Multilayers",
+      "year": 2012,
+      "doi": "https://doi.org/10.1166/jsm.2012.1004",
+      "field": {
+        "id": "https://openalex.org/fields/31",
+        "display_name": "Physics and Astronomy"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T10049",
+        "display_name": "Magnetic properties of thin films",
+        "score": 0.9887999892234802,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3107",
+          "display_name": "Atomic and Molecular Physics, and Optics"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/31",
+          "display_name": "Physics and Astronomy"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "source_url": "https://openalex.org/W2317432785",
+      "text_sha256": "c742c4247bf619005be9c9bb04322d1179e96ef169edd80c38c01254d3cff1e6"
+    },
+    {
+      "document_id": "W2364973104",
+      "discipline": "Physics",
+      "title": "Research on the Influence Factors and Limiting Methods for Lighting Over-Voltage in Military Power Supply",
+      "year": 2012,
+      "doi": null,
+      "field": {
+        "id": "https://openalex.org/fields/31",
+        "display_name": "Physics and Astronomy"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T10787",
+        "display_name": "Lightning and Electromagnetic Phenomena",
+        "score": 0.9940999746322632,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3103",
+          "display_name": "Astronomy and Astrophysics"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/31",
+          "display_name": "Physics and Astronomy"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "source_url": "https://openalex.org/W2364973104",
+      "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+    },
+    {
+      "document_id": "W2096307598",
+      "discipline": "Physics",
+      "title": "New radio observations of the Moon atLband",
+      "year": 2012,
+      "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+      "field": {
+        "id": "https://openalex.org/fields/31",
+        "display_name": "Physics and Astronomy"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T10406",
+        "display_name": "Planetary Science and Exploration",
+        "score": 0.8622999787330627,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3103",
+          "display_name": "Astronomy and Astrophysics"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/31",
+          "display_name": "Physics and Astronomy"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "source_url": "https://openalex.org/W2096307598",
+      "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+    },
+    {
+      "document_id": "W3081936674",
+      "discipline": "Physics",
+      "title": "Optical soliton solutions to a (2+1) dimensional Schrödinger equation using a couple of integration architectures",
+      "year": 2020,
+      "doi": "https://doi.org/10.2478/amns.2020.2.00010",
+      "field": {
+        "id": "https://openalex.org/fields/31",
+        "display_name": "Physics and Astronomy"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T10248",
+        "display_name": "Nonlinear Waves and Solitons",
+        "score": 0.9994999766349792,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3109",
+          "display_name": "Statistical and Nonlinear Physics"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/31",
+          "display_name": "Physics and Astronomy"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "source_url": "https://openalex.org/W3081936674",
+      "text_sha256": "9a0f1e3257cc64d931aa684e38adc3063a1502b60f2d1c43e046ba0c77429695"
+    },
+    {
+      "document_id": "W3123056951",
+      "discipline": "Biology",
+      "title": "Modified recombinant human erythropoietin with potentially reduced immunogenicity",
+      "year": 2021,
+      "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+      "field": {
+        "id": "https://openalex.org/fields/13",
+        "display_name": "Biochemistry, Genetics and Molecular Biology"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T12576",
+        "display_name": "vaccines and immunoinformatics approaches",
+        "score": 0.649399995803833,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1312",
+          "display_name": "Molecular Biology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/13",
+          "display_name": "Biochemistry, Genetics and Molecular Biology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/1",
+          "display_name": "Life Sciences"
+        }
+      },
+      "source_url": "https://openalex.org/W3123056951",
+      "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+    },
+    {
+      "document_id": "W1995028339",
+      "discipline": "Biology",
+      "title": "Conserved Gene Order and Expanded Inverted Repeats Characterize Plastid Genomes of Thalassiosirales",
+      "year": 2014,
+      "doi": "https://doi.org/10.1371/journal.pone.0107854",
+      "field": {
+        "id": "https://openalex.org/fields/13",
+        "display_name": "Biochemistry, Genetics and Molecular Biology"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T11879",
+        "display_name": "Protist diversity and phylogeny",
+        "score": 0.9746000170707703,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1312",
+          "display_name": "Molecular Biology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/13",
+          "display_name": "Biochemistry, Genetics and Molecular Biology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/1",
+          "display_name": "Life Sciences"
+        }
+      },
+      "source_url": "https://openalex.org/W1995028339",
+      "text_sha256": "0d85abeec77604f49039eb07af4a689ef78fe525a61c8f57142214508e4110ac"
+    },
+    {
+      "document_id": "W2076293586",
+      "discipline": "Biology",
+      "title": "Copy number variants in two mouse models of affective disorders",
+      "year": 2011,
+      "doi": "https://doi.org/10.1055/s-0031-1292452",
+      "field": {
+        "id": "https://openalex.org/fields/13",
+        "display_name": "Biochemistry, Genetics and Molecular Biology"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T11213",
+        "display_name": "Genomic variations and chromosomal abnormalities",
+        "score": 0.989300012588501,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1311",
+          "display_name": "Genetics"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/13",
+          "display_name": "Biochemistry, Genetics and Molecular Biology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/1",
+          "display_name": "Life Sciences"
+        }
+      },
+      "source_url": "https://openalex.org/W2076293586",
+      "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+    },
+    {
+      "document_id": "W3138328568",
+      "discipline": "Biology",
+      "title": "Simultaneous Improvement of Limonene Production and Tolerance in Yarrowia lipolytica through Tolerance Engineering and Evolutionary Engineering",
+      "year": 2021,
+      "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+      "field": {
+        "id": "https://openalex.org/fields/13",
+        "display_name": "Biochemistry, Genetics and Molecular Biology"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T10932",
+        "display_name": "Microbial Metabolic Engineering and Bioproduction",
+        "score": 0.9868000149726868,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1312",
+          "display_name": "Molecular Biology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/13",
+          "display_name": "Biochemistry, Genetics and Molecular Biology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/1",
+          "display_name": "Life Sciences"
+        }
+      },
+      "source_url": "https://openalex.org/W3138328568",
+      "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+    },
+    {
+      "document_id": "W2039836112",
+      "discipline": "Biology",
+      "title": "FGF-1 induces ATP release from spinal astrocytes in culture and opens pannexin and connexin hemichannels",
+      "year": 2010,
+      "doi": "https://doi.org/10.1073/pnas.1013793107",
+      "field": {
+        "id": "https://openalex.org/fields/13",
+        "display_name": "Biochemistry, Genetics and Molecular Biology"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T11480",
+        "display_name": "Connexins and lens biology",
+        "score": 0.4828999936580658,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1312",
+          "display_name": "Molecular Biology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/13",
+          "display_name": "Biochemistry, Genetics and Molecular Biology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/1",
+          "display_name": "Life Sciences"
+        }
+      },
+      "source_url": "https://openalex.org/W2039836112",
+      "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+    },
+    {
+      "document_id": "W2906067930",
+      "discipline": "Economics",
+      "title": "Research on the Phenomenon That the Increase of Grain Production Did Not Cause the Harvest Paradox in China from 2003 to 2014",
+      "year": 2018,
+      "doi": "https://doi.org/10.11648/j.ijber.20180706.16",
+      "field": {
+        "id": "https://openalex.org/fields/20",
+        "display_name": "Economics, Econometrics and Finance"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T11898",
+        "display_name": "Economics of Agriculture and Food Markets",
+        "score": 0.9175000190734863,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2002",
+          "display_name": "Economics and Econometrics"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/20",
+          "display_name": "Economics, Econometrics and Finance"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "source_url": "https://openalex.org/W2906067930",
+      "text_sha256": "7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd"
+    },
+    {
+      "document_id": "W2078771716",
+      "discipline": "Economics",
+      "title": "Measuring Economic Convergence",
+      "year": 1997,
+      "doi": "https://doi.org/10.1002/(sici)1099-1158(199704)2:2<131::aid-ijfe42>3.0.co;2-m",
+      "field": {
+        "id": "https://openalex.org/fields/20",
+        "display_name": "Economics, Econometrics and Finance"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T10007",
+        "display_name": "Monetary Policy and Economic Impact",
+        "score": 0.8076000213623047,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2000",
+          "display_name": "General Economics, Econometrics and Finance"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/20",
+          "display_name": "Economics, Econometrics and Finance"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "source_url": "https://openalex.org/W2078771716",
+      "text_sha256": "172a5233fdffe70f136c8575078f653a75467e8f035028e6aac68f3184cd7f3c"
+    },
+    {
+      "document_id": "W4309030044",
+      "discipline": "Economics",
+      "title": "Market competition oriented air-rail ticket fare optimization",
+      "year": 2022,
+      "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+      "field": {
+        "id": "https://openalex.org/fields/20",
+        "display_name": "Economics, Econometrics and Finance"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T11599",
+        "display_name": "Aviation Industry Analysis and Trends",
+        "score": 0.9639000296592712,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2000",
+          "display_name": "General Economics, Econometrics and Finance"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/20",
+          "display_name": "Economics, Econometrics and Finance"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "source_url": "https://openalex.org/W4309030044",
+      "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+    },
+    {
+      "document_id": "W4285525942",
+      "discipline": "Economics",
+      "title": "FEATURES OF FINANCIAL INSTRUMENTS OF GREEN BANKING IN THE GLOBAL MARKET OF BANKING SERVICES",
+      "year": 2021,
+      "doi": "https://doi.org/10.32782/2224-6282/176-4",
+      "field": {
+        "id": "https://openalex.org/fields/20",
+        "display_name": "Economics, Econometrics and Finance"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T13146",
+        "display_name": "Sustainable Finance and Green Bonds",
+        "score": 1.0,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2003",
+          "display_name": "Finance"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/20",
+          "display_name": "Economics, Econometrics and Finance"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "source_url": "https://openalex.org/W4285525942",
+      "text_sha256": "1f59574097e2558bffa2181b837aeef9646420f22490c1079799aaf3060192a9"
+    },
+    {
+      "document_id": "W2130236240",
+      "discipline": "Economics",
+      "title": "The Impact of Advance Notice: A Comment on a Study by Nord and Ting",
+      "year": 1992,
+      "doi": "https://doi.org/10.1177/001979399204500403",
+      "field": {
+        "id": "https://openalex.org/fields/20",
+        "display_name": "Economics, Econometrics and Finance"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T10208",
+        "display_name": "Labor market dynamics and wage inequality",
+        "score": 0.9063000082969666,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2002",
+          "display_name": "Economics and Econometrics"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/20",
+          "display_name": "Economics, Econometrics and Finance"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "source_url": "https://openalex.org/W2130236240",
+      "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+    },
+    {
+      "document_id": "W7215137876",
+      "discipline": "History",
+      "title": "Emotional Maturity in the Light of Synodality: Contributions from Internal Family System Therapy",
+      "year": 2024,
+      "doi": null,
+      "field": {
+        "id": "https://openalex.org/fields/12",
+        "display_name": "Arts and Humanities"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T12862",
+        "display_name": "Catholicism and Religious Studies",
+        "score": 0.7724999785423279,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1202",
+          "display_name": "History"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/12",
+          "display_name": "Arts and Humanities"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "source_url": "https://openalex.org/W7215137876",
+      "text_sha256": "7348a443574c79025e8d91562a546eaddbb34a1731bcfe890d09037c05581a14"
+    },
+    {
+      "document_id": "W4312422299",
+      "discipline": "History",
+      "title": "Land as Regenerative Space in The Book of Mormon",
+      "year": 2018,
+      "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+      "field": {
+        "id": "https://openalex.org/fields/12",
+        "display_name": "Arts and Humanities"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T13750",
+        "display_name": "Mormonism, Religion, and History",
+        "score": 0.9990000128746033,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1202",
+          "display_name": "History"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/12",
+          "display_name": "Arts and Humanities"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "source_url": "https://openalex.org/W4312422299",
+      "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+    },
+    {
+      "document_id": "W2326480042",
+      "discipline": "History",
+      "title": "Between the 30s and the 60s",
+      "year": 1984,
+      "doi": "https://doi.org/10.2307/466552",
+      "field": {
+        "id": "https://openalex.org/fields/12",
+        "display_name": "Arts and Humanities"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T13333",
+        "display_name": "American Political and Social Dynamics",
+        "score": 0.8163999915122986,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1202",
+          "display_name": "History"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/12",
+          "display_name": "Arts and Humanities"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "source_url": "https://openalex.org/W2326480042",
+      "text_sha256": "22b10a66ff08a431db39dce70a17d17784fd9e59e9e10a8ff978d1cb827ceff2"
+    },
+    {
+      "document_id": "W4381572413",
+      "discipline": "History",
+      "title": "“First of all, let’s go learn something”",
+      "year": 2023,
+      "doi": "https://doi.org/10.20318/hn.2023.7620",
+      "field": {
+        "id": "https://openalex.org/fields/12",
+        "display_name": "Arts and Humanities"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T13590",
+        "display_name": "Oral History, Memory, Narrative Analysis",
+        "score": 0.9990000128746033,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1202",
+          "display_name": "History"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/12",
+          "display_name": "Arts and Humanities"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "source_url": "https://openalex.org/W4381572413",
+      "text_sha256": "8c231ed4d765453627674ff77b2912ad48e256fb7a99ee645374b28f220dcb9a"
+    },
+    {
+      "document_id": "W2394633461",
+      "discipline": "History",
+      "title": "Pressing Metal, Pressing Politics: Papal Annual Medals, 1605–1700",
+      "year": 2016,
+      "doi": "https://doi.org/10.3390/rel7050060",
+      "field": {
+        "id": "https://openalex.org/fields/12",
+        "display_name": "Arts and Humanities"
+      },
+      "primary_topic": {
+        "id": "https://openalex.org/T14451",
+        "display_name": "Historical and Religious Studies of Rome",
+        "score": 0.9980000257492065,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1202",
+          "display_name": "History"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/12",
+          "display_name": "Arts and Humanities"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "source_url": "https://openalex.org/W2394633461",
+      "text_sha256": "d5203d9ab3268c0e6f2ba115965411aaed58b46a836a80da8a75c460e5941ef9"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "experiment": "NER-V2-003",
+  "corpus_seed": 4303,
+  "inference_seed": 42,
+  "thresholds": [
+    0.15,
+    0.25,
+    0.35,
+    0.45,
+    0.5,
+    0.55,
+    0.6,
+    0.65
+  ],
+  "cpu_threads": 4,
+  "timing_repetitions": 1,
+  "warmup": "none; first forward included",
+  "timing_limitation": "One successful inference per configuration; no independent timing per postfilter threshold",
+  "audit_selection_seed": 4303,
+  "extra_audit_count": 120,
+  "extra_audit_per_discipline": 20,
+  "stratification": [
+    "discipline",
+    "focal_model",
+    "type_hint",
+    "confidence_bin",
+    "model_agreement"
+  ],
+  "audit_status": "UNREVIEWED",
+  "assisted_reference_status": "ASSISTED_REFERENCE_DRAFT",
+  "recommendation_policy": {
+    "primary": "Largest threshold >=0.35 retaining >=90% of exact reference matches at0.35, >=80% per discipline, all rare type groups with baseline1to4; no increase of draft irrelevant census candidates",
+    "rare_type_groups": "suggested reference types with 1..4 exact matched spans at0.35 within the model",
+    "secondary": "Compare absolute draft reference matching, candidate load, draft noise and measured NER cost; report Pareto limitations, no true optimality claim"
+  },
+  "qwen_batch_policy": {
+    "max_unique_spans": 32,
+    "max_prompt_tokens": 4096,
+    "context": "full immutable abstract in each batch",
+    "thinking": false,
+    "deduplication": "document_id,start,end only; retain all hint alternatives; no semantic merging"
+  }
+}

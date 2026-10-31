@@ -1,0 +1,5900 @@
+{
+  "status": "complete",
+  "config_hash": "7db60aa64858c0eab1d13ee98ca04f46a246ecfba62df74900a51fcc391b5344",
+  "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+  "document_id": "W3138328568",
+  "mentions": [
+    {
+      "start": 62,
+      "end": 91,
+      "surface_text": "food and cosmetics production",
+      "ner_label_hint": "PROCESS",
+      "score": 0.29644113779067993,
+      "normalized_form": "food and cosmetics production",
+      "lemma": "food and cosmetics production",
+      "tokens": [
+        {
+          "text": "food",
+          "start": 62,
+          "end": 66,
+          "lemma": "food",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "and",
+          "start": 67,
+          "end": 70,
+          "lemma": "and",
+          "pos": "CCONJ",
+          "tag": "CC",
+          "morph": {
+            "ConjType": "Cmp"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "cosmetics",
+          "start": 71,
+          "end": 80,
+          "lemma": "cosmetic",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "production",
+          "start": 81,
+          "end": 91,
+          "lemma": "production",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:36078357bf09fe36a81f79c5e0907c4606c54bd170792c3cbd402828bc38718c",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 110,
+      "end": 148,
+      "surface_text": "pharmaceutical and chemical industries",
+      "ner_label_hint": "ACTOR",
+      "score": 0.21340423822402954,
+      "normalized_form": "pharmaceutical and chemical industry",
+      "lemma": "pharmaceutical and chemical industry",
+      "tokens": [
+        {
+          "text": "pharmaceutical",
+          "start": 110,
+          "end": 124,
+          "lemma": "pharmaceutical",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "and",
+          "start": 125,
+          "end": 128,
+          "lemma": "and",
+          "pos": "CCONJ",
+          "tag": "CC",
+          "morph": {
+            "ConjType": "Cmp"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "chemical",
+          "start": 129,
+          "end": 137,
+          "lemma": "chemical",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "industries",
+          "start": 138,
+          "end": 148,
+          "lemma": "industry",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 138,
+          "end": 148,
+          "original": "industries",
+          "replacement": "industry",
+          "rule": "plural_noun_head"
+        }
+      ],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:25330314fdfb8ea9dc838b4a1c86dbfd5d1c1cd542d6218d0fdfe18179590331",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 159,
+      "end": 173,
+      "surface_text": "low efficiency",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.2292391061782837,
+      "normalized_form": "low efficiency",
+      "lemma": "low efficiency",
+      "tokens": [
+        {
+          "text": "low",
+          "start": 159,
+          "end": 162,
+          "lemma": "low",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "efficiency",
+          "start": 163,
+          "end": 173,
+          "lemma": "efficiency",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:d789117e6f60c203e33151a5009856f525e90c7f8e1dafe1c2324be039cf0bd2",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 177,
+      "end": 193,
+      "surface_text": "plant extraction",
+      "ner_label_hint": "PROCESS",
+      "score": 0.3667685389518738,
+      "normalized_form": "plant extraction",
+      "lemma": "plant extraction",
+      "tokens": [
+        {
+          "text": "plant",
+          "start": 177,
+          "end": 182,
+          "lemma": "plant",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "extraction",
+          "start": 183,
+          "end": 193,
+          "lemma": "extraction",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:2b61fff891a02543d0df241c01fdc62c938bdbfa6b9f5d2e005773c9afdae313",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 198,
+      "end": 221,
+      "surface_text": "high energy consumption",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.2474081814289093,
+      "normalized_form": "high energy consumption",
+      "lemma": "high energy consumption",
+      "tokens": [
+        {
+          "text": "high",
+          "start": 198,
+          "end": 202,
+          "lemma": "high",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "energy",
+          "start": 203,
+          "end": 209,
+          "lemma": "energy",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "consumption",
+          "start": 210,
+          "end": 221,
+          "lemma": "consumption",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:5c32a4a1ca27b51b7fc27dbed7fb5edd304eeb70707b95a0dde5b6618df85869",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 203,
+      "end": 221,
+      "surface_text": "energy consumption",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.18333306908607483,
+      "normalized_form": "energy consumption",
+      "lemma": "energy consumption",
+      "tokens": [
+        {
+          "text": "energy",
+          "start": 203,
+          "end": 209,
+          "lemma": "energy",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "consumption",
+          "start": 210,
+          "end": 221,
+          "lemma": "consumption",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:952934b96c6e3deebb64f44cefc9eb94848869f44c5714ac8809e4669a67af4b",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 225,
+      "end": 243,
+      "surface_text": "chemical synthesis",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.1753910630941391,
+      "normalized_form": "chemical synthesis",
+      "lemma": "chemical synthesis",
+      "tokens": [
+        {
+          "text": "chemical",
+          "start": 225,
+          "end": 233,
+          "lemma": "chemical",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "synthesis",
+          "start": 234,
+          "end": 243,
+          "lemma": "synthesis",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:316c2f37269481e2caba08033c2503bf999ba6b882c68beeb493428803a7e02f",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 225,
+      "end": 243,
+      "surface_text": "chemical synthesis",
+      "ner_label_hint": "PROCESS",
+      "score": 0.3727686405181885,
+      "normalized_form": "chemical synthesis",
+      "lemma": "chemical synthesis",
+      "tokens": [
+        {
+          "text": "chemical",
+          "start": 225,
+          "end": 233,
+          "lemma": "chemical",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "synthesis",
+          "start": 234,
+          "end": 243,
+          "lemma": "synthesis",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:58515f61457a386456e337afcae7fa78f615cd7d8bbb0ed95183ee9870dd12ec",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 272,
+      "end": 302,
+      "surface_text": "industrial limonene production",
+      "ner_label_hint": "PROCESS",
+      "score": 0.4328368604183197,
+      "normalized_form": "industrial limonene production",
+      "lemma": "industrial limonene production",
+      "tokens": [
+        {
+          "text": "industrial",
+          "start": 272,
+          "end": 282,
+          "lemma": "industrial",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "limonene",
+          "start": 283,
+          "end": 291,
+          "lemma": "limonene",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "production",
+          "start": 292,
+          "end": 302,
+          "lemma": "production",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:cc602040813cd95f2c6a19c6a22d3b67b5183af7de67b9d286f12bc139a7b39a",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 292,
+      "end": 302,
+      "surface_text": "production",
+      "ner_label_hint": "PROCESS",
+      "score": 0.17099741101264954,
+      "normalized_form": "production",
+      "lemma": "production",
+      "tokens": [
+        {
+          "text": "production",
+          "start": 292,
+          "end": 302,
+          "lemma": "production",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:ccff83998ee0e87768b3afd7acc5d172d011bd81e399916359e40780854dd280",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 318,
+      "end": 329,
+      "surface_text": "advancement",
+      "ner_label_hint": "PROCESS",
+      "score": 0.19593556225299835,
+      "normalized_form": "advancement",
+      "lemma": "advancement",
+      "tokens": [
+        {
+          "text": "advancement",
+          "start": 318,
+          "end": 329,
+          "lemma": "advancement",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:44691b69a2334dbc4f34327624052d94bc68b0119dffbfea31cf4833fcac4921",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 318,
+      "end": 354,
+      "surface_text": "advancement of metabolic engineering",
+      "ner_label_hint": "PROCESS",
+      "score": 0.20879344642162323,
+      "normalized_form": "advancement of metabolic engineering",
+      "lemma": "advancement of metabolic engineering",
+      "tokens": [
+        {
+          "text": "advancement",
+          "start": 318,
+          "end": 329,
+          "lemma": "advancement",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "of",
+          "start": 330,
+          "end": 332,
+          "lemma": "of",
+          "pos": "ADP",
+          "tag": "IN",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "metabolic",
+          "start": 333,
+          "end": 342,
+          "lemma": "metabolic",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "engineering",
+          "start": 343,
+          "end": 354,
+          "lemma": "engineering",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:f6499860c1eae8fef846b60d569feeb26bdd387b04559bc40f988856d43c04c8",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 333,
+      "end": 354,
+      "surface_text": "metabolic engineering",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.6484529376029968,
+      "normalized_form": "metabolic engineering",
+      "lemma": "metabolic engineering",
+      "tokens": [
+        {
+          "text": "metabolic",
+          "start": 333,
+          "end": 342,
+          "lemma": "metabolic",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "engineering",
+          "start": 343,
+          "end": 354,
+          "lemma": "engineering",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:1050cbba1c117d961be79d1b4937dd12c66cf3da9b558098705060d0ddbcf69e",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 333,
+      "end": 376,
+      "surface_text": "metabolic engineering and synthetic biology",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.24356792867183685,
+      "normalized_form": "metabolic engineering and synthetic biology",
+      "lemma": "metabolic engineering and synthetic biology",
+      "tokens": [
+        {
+          "text": "metabolic",
+          "start": 333,
+          "end": 342,
+          "lemma": "metabolic",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "engineering",
+          "start": 343,
+          "end": 354,
+          "lemma": "engineering",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "and",
+          "start": 355,
+          "end": 358,
+          "lemma": "and",
+          "pos": "CCONJ",
+          "tag": "CC",
+          "morph": {
+            "ConjType": "Cmp"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "synthetic",
+          "start": 359,
+          "end": 368,
+          "lemma": "synthetic",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "biology",
+          "start": 369,
+          "end": 376,
+          "lemma": "biology",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:2f24a2759c11874f54652b63ef1c0073601f4fed6688970cb825996597b917f2",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 359,
+      "end": 376,
+      "surface_text": "synthetic biology",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.8172302842140198,
+      "normalized_form": "synthetic biology",
+      "lemma": "synthetic biology",
+      "tokens": [
+        {
+          "text": "synthetic",
+          "start": 359,
+          "end": 368,
+          "lemma": "synthetic",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "biology",
+          "start": 369,
+          "end": 376,
+          "lemma": "biology",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:f11ac3e15d2ba364bc594a25df64850518e7ec8b8bdb9d047d78d7866bbf8c43",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 397,
+      "end": 420,
+      "surface_text": "engineering of microbes",
+      "ner_label_hint": "PROCESS",
+      "score": 0.16943860054016113,
+      "normalized_form": "engineering of microbe",
+      "lemma": "engineering of microbe",
+      "tokens": [
+        {
+          "text": "engineering",
+          "start": 397,
+          "end": 408,
+          "lemma": "engineering",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "of",
+          "start": 409,
+          "end": 411,
+          "lemma": "of",
+          "pos": "ADP",
+          "tag": "IN",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "microbes",
+          "start": 412,
+          "end": 420,
+          "lemma": "microbe",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 412,
+          "end": 420,
+          "original": "microbes",
+          "replacement": "microbe",
+          "rule": "plural_noun_head"
+        }
+      ],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:06466d97e06955ea706bb4cb322d4933f5088d77a533ed642965c8ec0bf89600",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 412,
+      "end": 420,
+      "surface_text": "microbes",
+      "ner_label_hint": "ACTOR",
+      "score": 0.26812422275543213,
+      "normalized_form": "microbe",
+      "lemma": "microbe",
+      "tokens": [
+        {
+          "text": "microbes",
+          "start": 412,
+          "end": 420,
+          "lemma": "microbe",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 412,
+          "end": 420,
+          "original": "microbes",
+          "replacement": "microbe",
+          "rule": "plural_noun_head"
+        }
+      ],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:215be1964e98c32c1b91722570ee199ca0ac231a4e8ebaa01b6d5b6a3c951b44",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 412,
+      "end": 420,
+      "surface_text": "microbes",
+      "ner_label_hint": "OBJECT",
+      "score": 0.2541595697402954,
+      "normalized_form": "microbe",
+      "lemma": "microbe",
+      "tokens": [
+        {
+          "text": "microbes",
+          "start": 412,
+          "end": 420,
+          "lemma": "microbe",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 412,
+          "end": 420,
+          "original": "microbes",
+          "replacement": "microbe",
+          "rule": "plural_noun_head"
+        }
+      ],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:e498185ef2af3b18c73d9d1ed98a2d7bbadcb425882adf6f99f87b8cb37d3088",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 426,
+      "end": 450,
+      "surface_text": "microbial cell factories",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.2447419911623001,
+      "normalized_form": "microbial cell factory",
+      "lemma": "microbial cell factory",
+      "tokens": [
+        {
+          "text": "microbial",
+          "start": 426,
+          "end": 435,
+          "lemma": "microbial",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "cell",
+          "start": 436,
+          "end": 440,
+          "lemma": "cell",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "factories",
+          "start": 441,
+          "end": 450,
+          "lemma": "factory",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 441,
+          "end": 450,
+          "original": "factories",
+          "replacement": "factory",
+          "rule": "plural_noun_head"
+        }
+      ],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:22a08982e195bbd033b288166fa5ab9d6bed5b1cb030ae4db1eca9ed6f811e5c",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 488,
+      "end": 507,
+      "surface_text": "deleterious effects",
+      "ner_label_hint": "CONDITION",
+      "score": 0.1973169893026352,
+      "normalized_form": "deleterious effect",
+      "lemma": "deleterious effect",
+      "tokens": [
+        {
+          "text": "deleterious",
+          "start": 488,
+          "end": 499,
+          "lemma": "deleterious",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "effects",
+          "start": 500,
+          "end": 507,
+          "lemma": "effect",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 500,
+          "end": 507,
+          "original": "effects",
+          "replacement": "effect",
+          "rule": "plural_noun_head"
+        }
+      ],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:3ff88bd97f5e9deca45b4c4e6ffba79e583b9a7f56f2cb5bd9d66fe023d43b96",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 511,
+      "end": 528,
+      "surface_text": "cellular activity",
+      "ner_label_hint": "CONDITION",
+      "score": 0.1592586487531662,
+      "normalized_form": "cellular activity",
+      "lemma": "cellular activity",
+      "tokens": [
+        {
+          "text": "cellular",
+          "start": 511,
+          "end": 519,
+          "lemma": "cellular",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "activity",
+          "start": 520,
+          "end": 528,
+          "lemma": "activity",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:144522de04e50805a13905cdd062da2f2b1ea3d3a2d12c34460143884f261a3b",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 570,
+      "end": 578,
+      "surface_text": "obstacle",
+      "ner_label_hint": "CONDITION",
+      "score": 0.20200154185295105,
+      "normalized_form": "obstacle",
+      "lemma": "obstacle",
+      "tokens": [
+        {
+          "text": "obstacle",
+          "start": 570,
+          "end": 578,
+          "lemma": "obstacle",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:43bcf22c9dabf05806fabc26b70699dc62ba073cbc0601049c7e7e8f462ee56b",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 570,
+      "end": 578,
+      "surface_text": "obstacle",
+      "ner_label_hint": "PROCESS",
+      "score": 0.2660923898220062,
+      "normalized_form": "obstacle",
+      "lemma": "obstacle",
+      "tokens": [
+        {
+          "text": "obstacle",
+          "start": 570,
+          "end": 578,
+          "lemma": "obstacle",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:79ac6bfeaa36a856d1e9da8aba4e299a4358a023b928e1b6e76dd888f1c08b2a",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 592,
+      "end": 613,
+      "surface_text": "high-titer production",
+      "ner_label_hint": "PROCESS",
+      "score": 0.25971654057502747,
+      "normalized_form": "high-titer production",
+      "lemma": "high-titer production",
+      "tokens": [
+        {
+          "text": "high",
+          "start": 592,
+          "end": 596,
+          "lemma": "high",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 596,
+          "end": 597,
+          "lemma": "-",
+          "pos": "PUNCT",
+          "tag": "HYPH",
+          "morph": {
+            "PunctType": "Dash"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "titer",
+          "start": 597,
+          "end": 602,
+          "lemma": "titer",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "production",
+          "start": 603,
+          "end": 613,
+          "lemma": "production",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:e02ec02e922a39ad492306942158a59f0aa4ec2f6f5a9ada63a219a69b230b4c",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 640,
+      "end": 648,
+      "surface_text": "microbes",
+      "ner_label_hint": "ACTOR",
+      "score": 0.416778028011322,
+      "normalized_form": "microbe",
+      "lemma": "microbe",
+      "tokens": [
+        {
+          "text": "microbes",
+          "start": 640,
+          "end": 648,
+          "lemma": "microbe",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 640,
+          "end": 648,
+          "original": "microbes",
+          "replacement": "microbe",
+          "rule": "plural_noun_head"
+        }
+      ],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:87c0cdf1b0696ed3615a96fd9902da7497771d3126ca30d51b8dff821e73b0de",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 650,
+      "end": 663,
+      "surface_text": "In this study",
+      "ner_label_hint": "PROCESS",
+      "score": 0.3334580361843109,
+      "normalized_form": "In this study",
+      "lemma": "In this study",
+      "tokens": [
+        {
+          "text": "In",
+          "start": 650,
+          "end": 652,
+          "lemma": "In",
+          "pos": "ADP",
+          "tag": "IN",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "this",
+          "start": 653,
+          "end": 657,
+          "lemma": "this",
+          "pos": "DET",
+          "tag": "DT",
+          "morph": {
+            "Number": "Sing",
+            "PronType": "Dem"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "study",
+          "start": 658,
+          "end": 663,
+          "lemma": "study",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:6231b9416706a1c64479f2d66a2cd33b8cbdc0387ae77a05c1e602df58492200",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 658,
+      "end": 663,
+      "surface_text": "study",
+      "ner_label_hint": "PROCESS",
+      "score": 0.2695101797580719,
+      "normalized_form": "study",
+      "lemma": "study",
+      "tokens": [
+        {
+          "text": "study",
+          "start": 658,
+          "end": 663,
+          "lemma": "study",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:4270201a7a7b4b54b718683b07ea69cc44c605d816c9fe93b8e3060ec9ebfe3c",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 674,
+      "end": 689,
+      "surface_text": "transcriptomics",
+      "ner_label_hint": "METHOD",
+      "score": 0.18568439781665802,
+      "normalized_form": "transcriptomic",
+      "lemma": "transcriptomic",
+      "tokens": [
+        {
+          "text": "transcriptomics",
+          "start": 674,
+          "end": 689,
+          "lemma": "transcriptomic",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 674,
+          "end": 689,
+          "original": "transcriptomics",
+          "replacement": "transcriptomic",
+          "rule": "plural_noun_head"
+        }
+      ],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:412005ebf8c0d8df3fe8d9d6c87a6809b54c45913d371e3efc84dea00e8fc9ae",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 691,
+      "end": 693,
+      "surface_text": "we",
+      "ner_label_hint": "ACTOR",
+      "score": 0.1804743856191635,
+      "normalized_form": "we",
+      "lemma": "we",
+      "tokens": [
+        {
+          "text": "we",
+          "start": 691,
+          "end": 693,
+          "lemma": "we",
+          "pos": "PRON",
+          "tag": "PRP",
+          "morph": {
+            "Case": "Nom",
+            "Number": "Plur",
+            "Person": "1",
+            "PronType": "Prs"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:4f97c8a53a1f4e174949703698e442cf060c3a49d60ebb752f5074cfd9f65501",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 694,
+      "end": 704,
+      "surface_text": "identified",
+      "ner_label_hint": "PROCESS",
+      "score": 0.23034529387950897,
+      "normalized_form": "identified",
+      "lemma": "identified",
+      "tokens": [
+        {
+          "text": "identified",
+          "start": 694,
+          "end": 704,
+          "lemma": "identify",
+          "pos": "VERB",
+          "tag": "VBD",
+          "morph": {
+            "Tense": "Past",
+            "VerbForm": "Fin"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:1c9cad308c0abb769cd181d4103a4c49c4c8914b584981417ab11236eaaaac6c",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 708,
+      "end": 713,
+      "surface_text": "genes",
+      "ner_label_hint": "OBJECT",
+      "score": 0.20257607102394104,
+      "normalized_form": "gene",
+      "lemma": "gene",
+      "tokens": [
+        {
+          "text": "genes",
+          "start": 708,
+          "end": 713,
+          "lemma": "gene",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 708,
+          "end": 713,
+          "original": "genes",
+          "replacement": "gene",
+          "rule": "plural_noun_head"
+        }
+      ],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:437e460937ae5a7dfbe9b77a59e0b61ac2538cb4827f4c5d190b8c4abfddd126",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 745,
+      "end": 764,
+      "surface_text": "Yarrowia lipolytica",
+      "ner_label_hint": "ACTOR",
+      "score": 0.34697821736335754,
+      "normalized_form": "Yarrowia lipolytica",
+      "lemma": "Yarrowia lipolytica",
+      "tokens": [
+        {
+          "text": "Yarrowia",
+          "start": 745,
+          "end": 753,
+          "lemma": "Yarrowia",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "lipolytica",
+          "start": 754,
+          "end": 764,
+          "lemma": "lipolytica",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:dfd770b35e78dabbd360bd062e6009aec86e6b90eb5dbf69c24616243b177af7",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 765,
+      "end": 787,
+      "surface_text": "that were up-regulated",
+      "ner_label_hint": "PROCESS",
+      "score": 0.2224130779504776,
+      "normalized_form": "that were up-regulated",
+      "lemma": "that were up-regulated",
+      "tokens": [
+        {
+          "text": "that",
+          "start": 765,
+          "end": 769,
+          "lemma": "that",
+          "pos": "PRON",
+          "tag": "WDT",
+          "morph": {
+            "PronType": "Rel"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "were",
+          "start": 770,
+          "end": 774,
+          "lemma": "be",
+          "pos": "AUX",
+          "tag": "VBD",
+          "morph": {
+            "Mood": "Ind",
+            "Tense": "Past",
+            "VerbForm": "Fin"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "up",
+          "start": 775,
+          "end": 777,
+          "lemma": "up",
+          "pos": "ADV",
+          "tag": "RB",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 777,
+          "end": 778,
+          "lemma": "-",
+          "pos": "PUNCT",
+          "tag": "HYPH",
+          "morph": {
+            "PunctType": "Dash"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "regulated",
+          "start": 778,
+          "end": 787,
+          "lemma": "regulated",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:3c1abfdd015aad81397494782e76e93334f11b310332a17e683af6e18b35374d",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 765,
+      "end": 812,
+      "surface_text": "that were up-regulated when exposed to limonene",
+      "ner_label_hint": "CONDITION",
+      "score": 0.2578679621219635,
+      "normalized_form": "that were up-regulated when exposed to limonene",
+      "lemma": "that were up-regulated when exposed to limonene",
+      "tokens": [
+        {
+          "text": "that",
+          "start": 765,
+          "end": 769,
+          "lemma": "that",
+          "pos": "PRON",
+          "tag": "WDT",
+          "morph": {
+            "PronType": "Rel"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "were",
+          "start": 770,
+          "end": 774,
+          "lemma": "be",
+          "pos": "AUX",
+          "tag": "VBD",
+          "morph": {
+            "Mood": "Ind",
+            "Tense": "Past",
+            "VerbForm": "Fin"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "up",
+          "start": 775,
+          "end": 777,
+          "lemma": "up",
+          "pos": "ADV",
+          "tag": "RB",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 777,
+          "end": 778,
+          "lemma": "-",
+          "pos": "PUNCT",
+          "tag": "HYPH",
+          "morph": {
+            "PunctType": "Dash"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "regulated",
+          "start": 778,
+          "end": 787,
+          "lemma": "regulated",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "when",
+          "start": 788,
+          "end": 792,
+          "lemma": "when",
+          "pos": "SCONJ",
+          "tag": "WRB",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "exposed",
+          "start": 793,
+          "end": 800,
+          "lemma": "expose",
+          "pos": "VERB",
+          "tag": "VBN",
+          "morph": {
+            "Aspect": "Perf",
+            "Tense": "Past",
+            "VerbForm": "Part"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "to",
+          "start": 801,
+          "end": 803,
+          "lemma": "to",
+          "pos": "ADP",
+          "tag": "IN",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "limonene",
+          "start": 804,
+          "end": 812,
+          "lemma": "limonene",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:9363d2d8ee3dbbf8bc86a056044d4e3244fb2242d56907071944ae2e477827ef",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 765,
+      "end": 812,
+      "surface_text": "that were up-regulated when exposed to limonene",
+      "ner_label_hint": "PROCESS",
+      "score": 0.2522932291030884,
+      "normalized_form": "that were up-regulated when exposed to limonene",
+      "lemma": "that were up-regulated when exposed to limonene",
+      "tokens": [
+        {
+          "text": "that",
+          "start": 765,
+          "end": 769,
+          "lemma": "that",
+          "pos": "PRON",
+          "tag": "WDT",
+          "morph": {
+            "PronType": "Rel"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "were",
+          "start": 770,
+          "end": 774,
+          "lemma": "be",
+          "pos": "AUX",
+          "tag": "VBD",
+          "morph": {
+            "Mood": "Ind",
+            "Tense": "Past",
+            "VerbForm": "Fin"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "up",
+          "start": 775,
+          "end": 777,
+          "lemma": "up",
+          "pos": "ADV",
+          "tag": "RB",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 777,
+          "end": 778,
+          "lemma": "-",
+          "pos": "PUNCT",
+          "tag": "HYPH",
+          "morph": {
+            "PunctType": "Dash"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "regulated",
+          "start": 778,
+          "end": 787,
+          "lemma": "regulated",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "when",
+          "start": 788,
+          "end": 792,
+          "lemma": "when",
+          "pos": "SCONJ",
+          "tag": "WRB",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "exposed",
+          "start": 793,
+          "end": 800,
+          "lemma": "expose",
+          "pos": "VERB",
+          "tag": "VBN",
+          "morph": {
+            "Aspect": "Perf",
+            "Tense": "Past",
+            "VerbForm": "Part"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "to",
+          "start": 801,
+          "end": 803,
+          "lemma": "to",
+          "pos": "ADP",
+          "tag": "IN",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "limonene",
+          "start": 804,
+          "end": 812,
+          "lemma": "limonene",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:95479cc4f22a86f4135ffd5d69304ac8ca9befd9f1698266df0d362cd5dbb12d",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 775,
+      "end": 787,
+      "surface_text": "up-regulated",
+      "ner_label_hint": "PROCESS",
+      "score": 0.2705608904361725,
+      "normalized_form": "up-regulated",
+      "lemma": "up-regulated",
+      "tokens": [
+        {
+          "text": "up",
+          "start": 775,
+          "end": 777,
+          "lemma": "up",
+          "pos": "ADV",
+          "tag": "RB",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 777,
+          "end": 778,
+          "lemma": "-",
+          "pos": "PUNCT",
+          "tag": "HYPH",
+          "morph": {
+            "PunctType": "Dash"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "regulated",
+          "start": 778,
+          "end": 787,
+          "lemma": "regulated",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:403ac1e4024e6cb386e004585ef0abff023957bfa3cac3dfb04c1f029f4fd4ab",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 788,
+      "end": 812,
+      "surface_text": "when exposed to limonene",
+      "ner_label_hint": "CONDITION",
+      "score": 0.21196146309375763,
+      "normalized_form": "when exposed to limonene",
+      "lemma": "when exposed to limonene",
+      "tokens": [
+        {
+          "text": "when",
+          "start": 788,
+          "end": 792,
+          "lemma": "when",
+          "pos": "SCONJ",
+          "tag": "WRB",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "exposed",
+          "start": 793,
+          "end": 800,
+          "lemma": "expose",
+          "pos": "VERB",
+          "tag": "VBN",
+          "morph": {
+            "Aspect": "Perf",
+            "Tense": "Past",
+            "VerbForm": "Part"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "to",
+          "start": 801,
+          "end": 803,
+          "lemma": "to",
+          "pos": "ADP",
+          "tag": "IN",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "limonene",
+          "start": 804,
+          "end": 812,
+          "lemma": "limonene",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:4ac5a84d3c4de525bcaadf2c82e3ea9d2741a1ddd2f1926a107aa7b0c43c7c47",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 788,
+      "end": 812,
+      "surface_text": "when exposed to limonene",
+      "ner_label_hint": "PROCESS",
+      "score": 0.3875170052051544,
+      "normalized_form": "when exposed to limonene",
+      "lemma": "when exposed to limonene",
+      "tokens": [
+        {
+          "text": "when",
+          "start": 788,
+          "end": 792,
+          "lemma": "when",
+          "pos": "SCONJ",
+          "tag": "WRB",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "exposed",
+          "start": 793,
+          "end": 800,
+          "lemma": "expose",
+          "pos": "VERB",
+          "tag": "VBN",
+          "morph": {
+            "Aspect": "Perf",
+            "Tense": "Past",
+            "VerbForm": "Part"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "to",
+          "start": 801,
+          "end": 803,
+          "lemma": "to",
+          "pos": "ADP",
+          "tag": "IN",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "limonene",
+          "start": 804,
+          "end": 812,
+          "lemma": "limonene",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:df6ef933640cecfc03420475e0c1f5a8e7f9d1e4d47a90e7e6d35490c553968b",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 788,
+      "end": 812,
+      "surface_text": "when exposed to limonene",
+      "ner_label_hint": "TASK",
+      "score": 0.1514815241098404,
+      "normalized_form": "when exposed to limonene",
+      "lemma": "when exposed to limonene",
+      "tokens": [
+        {
+          "text": "when",
+          "start": 788,
+          "end": 792,
+          "lemma": "when",
+          "pos": "SCONJ",
+          "tag": "WRB",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "exposed",
+          "start": 793,
+          "end": 800,
+          "lemma": "expose",
+          "pos": "VERB",
+          "tag": "VBN",
+          "morph": {
+            "Aspect": "Perf",
+            "Tense": "Past",
+            "VerbForm": "Part"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "to",
+          "start": 801,
+          "end": 803,
+          "lemma": "to",
+          "pos": "ADP",
+          "tag": "IN",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "limonene",
+          "start": 804,
+          "end": 812,
+          "lemma": "limonene",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:637ac51588f3b3103ad95b532ed13e8af090d3b8e066671ddfbf19625846c306",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 814,
+      "end": 832,
+      "surface_text": "When overexpressed",
+      "ner_label_hint": "CONDITION",
+      "score": 0.2993422746658325,
+      "normalized_form": "When overexpressed",
+      "lemma": "When overexpressed",
+      "tokens": [
+        {
+          "text": "When",
+          "start": 814,
+          "end": 818,
+          "lemma": "When",
+          "pos": "SCONJ",
+          "tag": "WRB",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "overexpressed",
+          "start": 819,
+          "end": 832,
+          "lemma": "overexpresse",
+          "pos": "VERB",
+          "tag": "VBN",
+          "morph": {
+            "Aspect": "Perf",
+            "Tense": "Past",
+            "VerbForm": "Part"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:b816e2b88e031d3b79b8826d49e7ec148e57099f60f161d8b29579982c29081c",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 814,
+      "end": 832,
+      "surface_text": "When overexpressed",
+      "ner_label_hint": "PROCESS",
+      "score": 0.5153167247772217,
+      "normalized_form": "When overexpressed",
+      "lemma": "When overexpressed",
+      "tokens": [
+        {
+          "text": "When",
+          "start": 814,
+          "end": 818,
+          "lemma": "When",
+          "pos": "SCONJ",
+          "tag": "WRB",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "overexpressed",
+          "start": 819,
+          "end": 832,
+          "lemma": "overexpresse",
+          "pos": "VERB",
+          "tag": "VBN",
+          "morph": {
+            "Aspect": "Perf",
+            "Tense": "Past",
+            "VerbForm": "Part"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:7c42d66e96a2c48c865cbb00d4b3f93f4dc90e5e5cd0ad5ccc78d6929cedd9a6",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 819,
+      "end": 832,
+      "surface_text": "overexpressed",
+      "ner_label_hint": "CONDITION",
+      "score": 0.2192818522453308,
+      "normalized_form": "overexpressed",
+      "lemma": "overexpressed",
+      "tokens": [
+        {
+          "text": "overexpressed",
+          "start": 819,
+          "end": 832,
+          "lemma": "overexpresse",
+          "pos": "VERB",
+          "tag": "VBN",
+          "morph": {
+            "Aspect": "Perf",
+            "Tense": "Past",
+            "VerbForm": "Part"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:91a5eee2f5decf7975d5b5f35db668d473e78fbb75655a340d10aff1dd016cd5",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 819,
+      "end": 832,
+      "surface_text": "overexpressed",
+      "ner_label_hint": "PROCESS",
+      "score": 0.22218553721904755,
+      "normalized_form": "overexpressed",
+      "lemma": "overexpressed",
+      "tokens": [
+        {
+          "text": "overexpressed",
+          "start": 819,
+          "end": 832,
+          "lemma": "overexpresse",
+          "pos": "VERB",
+          "tag": "VBN",
+          "morph": {
+            "Aspect": "Perf",
+            "Tense": "Past",
+            "VerbForm": "Part"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:bf353eea1f4b9ea4157f9a0060a5e5900cf8075bbf9322881d3684fb3797fa8f",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 859,
+      "end": 877,
+      "surface_text": "improved tolerance",
+      "ner_label_hint": "PROCESS",
+      "score": 0.18576154112815857,
+      "normalized_form": "improved tolerance",
+      "lemma": "improved tolerance",
+      "tokens": [
+        {
+          "text": "improved",
+          "start": 859,
+          "end": 867,
+          "lemma": "improve",
+          "pos": "VERB",
+          "tag": "VBD",
+          "morph": {
+            "Tense": "Past",
+            "VerbForm": "Fin"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "tolerance",
+          "start": 868,
+          "end": 877,
+          "lemma": "tolerance",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:4273ad4e3f8eb47b5554130b3df397e1059898b89fa1e0d16cc27e25358dc963",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 859,
+      "end": 921,
+      "surface_text": "improved tolerance of this yeast to exogenously added limonene",
+      "ner_label_hint": "CONDITION",
+      "score": 0.18338845670223236,
+      "normalized_form": "improved tolerance of this yeast to exogenously added limonene",
+      "lemma": "improved tolerance of this yeast to exogenously added limonene",
+      "tokens": [
+        {
+          "text": "improved",
+          "start": 859,
+          "end": 867,
+          "lemma": "improve",
+          "pos": "VERB",
+          "tag": "VBD",
+          "morph": {
+            "Tense": "Past",
+            "VerbForm": "Fin"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "tolerance",
+          "start": 868,
+          "end": 877,
+          "lemma": "tolerance",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "of",
+          "start": 878,
+          "end": 880,
+          "lemma": "of",
+          "pos": "ADP",
+          "tag": "IN",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "this",
+          "start": 881,
+          "end": 885,
+          "lemma": "this",
+          "pos": "DET",
+          "tag": "DT",
+          "morph": {
+            "Number": "Sing",
+            "PronType": "Dem"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "yeast",
+          "start": 886,
+          "end": 891,
+          "lemma": "yeast",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "to",
+          "start": 892,
+          "end": 894,
+          "lemma": "to",
+          "pos": "PART",
+          "tag": "TO",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "exogenously",
+          "start": 895,
+          "end": 906,
+          "lemma": "exogenously",
+          "pos": "ADV",
+          "tag": "RB",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "added",
+          "start": 907,
+          "end": 912,
+          "lemma": "add",
+          "pos": "VERB",
+          "tag": "VBN",
+          "morph": {
+            "Aspect": "Perf",
+            "Tense": "Past",
+            "VerbForm": "Part"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "limonene",
+          "start": 913,
+          "end": 921,
+          "lemma": "limonene",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:3e9dd06de7f1a8181e8d0f0bf135275c87f9bc3982fa89e451dd9631d2eaca0d",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 859,
+      "end": 921,
+      "surface_text": "improved tolerance of this yeast to exogenously added limonene",
+      "ner_label_hint": "PROCESS",
+      "score": 0.2744653522968292,
+      "normalized_form": "improved tolerance of this yeast to exogenously added limonene",
+      "lemma": "improved tolerance of this yeast to exogenously added limonene",
+      "tokens": [
+        {
+          "text": "improved",
+          "start": 859,
+          "end": 867,
+          "lemma": "improve",
+          "pos": "VERB",
+          "tag": "VBD",
+          "morph": {
+            "Tense": "Past",
+            "VerbForm": "Fin"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "tolerance",
+          "start": 868,
+          "end": 877,
+          "lemma": "tolerance",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "of",
+          "start": 878,
+          "end": 880,
+          "lemma": "of",
+          "pos": "ADP",
+          "tag": "IN",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "this",
+          "start": 881,
+          "end": 885,
+          "lemma": "this",
+          "pos": "DET",
+          "tag": "DT",
+          "morph": {
+            "Number": "Sing",
+            "PronType": "Dem"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "yeast",
+          "start": 886,
+          "end": 891,
+          "lemma": "yeast",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "to",
+          "start": 892,
+          "end": 894,
+          "lemma": "to",
+          "pos": "PART",
+          "tag": "TO",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "exogenously",
+          "start": 895,
+          "end": 906,
+          "lemma": "exogenously",
+          "pos": "ADV",
+          "tag": "RB",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "added",
+          "start": 907,
+          "end": 912,
+          "lemma": "add",
+          "pos": "VERB",
+          "tag": "VBN",
+          "morph": {
+            "Aspect": "Perf",
+            "Tense": "Past",
+            "VerbForm": "Part"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "limonene",
+          "start": 913,
+          "end": 921,
+          "lemma": "limonene",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:5216055f816fd4ec5eedea46f66d8f4f7f3a8e952b59edc7936562017bd7a4fe",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 923,
+      "end": 973,
+      "surface_text": "To determine whether overexpression of these genes",
+      "ner_label_hint": "PROCESS",
+      "score": 0.20178894698619843,
+      "normalized_form": "To determine whether overexpression of these gene",
+      "lemma": "To determine whether overexpression of these gene",
+      "tokens": [
+        {
+          "text": "To",
+          "start": 923,
+          "end": 925,
+          "lemma": "To",
+          "pos": "PART",
+          "tag": "TO",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "determine",
+          "start": 926,
+          "end": 935,
+          "lemma": "determine",
+          "pos": "VERB",
+          "tag": "VB",
+          "morph": {
+            "VerbForm": "Inf"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "whether",
+          "start": 936,
+          "end": 943,
+          "lemma": "whether",
+          "pos": "SCONJ",
+          "tag": "IN",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "overexpression",
+          "start": 944,
+          "end": 958,
+          "lemma": "overexpression",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "of",
+          "start": 959,
+          "end": 961,
+          "lemma": "of",
+          "pos": "ADP",
+          "tag": "IN",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "these",
+          "start": 962,
+          "end": 967,
+          "lemma": "these",
+          "pos": "DET",
+          "tag": "DT",
+          "morph": {
+            "Number": "Plur",
+            "PronType": "Dem"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "genes",
+          "start": 968,
+          "end": 973,
+          "lemma": "gene",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 968,
+          "end": 973,
+          "original": "genes",
+          "replacement": "gene",
+          "rule": "plural_noun_head"
+        }
+      ],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:7826ee062115743c80f0817206ae1312d35ff7da38023c651188d068dfc2599b",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 923,
+      "end": 973,
+      "surface_text": "To determine whether overexpression of these genes",
+      "ner_label_hint": "TASK",
+      "score": 0.22224827110767365,
+      "normalized_form": "To determine whether overexpression of these gene",
+      "lemma": "To determine whether overexpression of these gene",
+      "tokens": [
+        {
+          "text": "To",
+          "start": 923,
+          "end": 925,
+          "lemma": "To",
+          "pos": "PART",
+          "tag": "TO",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "determine",
+          "start": 926,
+          "end": 935,
+          "lemma": "determine",
+          "pos": "VERB",
+          "tag": "VB",
+          "morph": {
+            "VerbForm": "Inf"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "whether",
+          "start": 936,
+          "end": 943,
+          "lemma": "whether",
+          "pos": "SCONJ",
+          "tag": "IN",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "overexpression",
+          "start": 944,
+          "end": 958,
+          "lemma": "overexpression",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "of",
+          "start": 959,
+          "end": 961,
+          "lemma": "of",
+          "pos": "ADP",
+          "tag": "IN",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "these",
+          "start": 962,
+          "end": 967,
+          "lemma": "these",
+          "pos": "DET",
+          "tag": "DT",
+          "morph": {
+            "Number": "Plur",
+            "PronType": "Dem"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "genes",
+          "start": 968,
+          "end": 973,
+          "lemma": "gene",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 968,
+          "end": 973,
+          "original": "genes",
+          "replacement": "gene",
+          "rule": "plural_noun_head"
+        }
+      ],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:cdf16f8e09aebad4e757ed488ed1f9a86aaaf9a5d7ef64f47521ab2046ff74b1",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 944,
+      "end": 958,
+      "surface_text": "overexpression",
+      "ner_label_hint": "PROCESS",
+      "score": 0.21754774451255798,
+      "normalized_form": "overexpression",
+      "lemma": "overexpression",
+      "tokens": [
+        {
+          "text": "overexpression",
+          "start": 944,
+          "end": 958,
+          "lemma": "overexpression",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:e8d551593889a88102ceb0e2ea8559f127d7ae68bda0abc9322d723cc8d3a2ea",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 944,
+      "end": 973,
+      "surface_text": "overexpression of these genes",
+      "ner_label_hint": "PROCESS",
+      "score": 0.21670210361480713,
+      "normalized_form": "overexpression of these gene",
+      "lemma": "overexpression of these gene",
+      "tokens": [
+        {
+          "text": "overexpression",
+          "start": 944,
+          "end": 958,
+          "lemma": "overexpression",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "of",
+          "start": 959,
+          "end": 961,
+          "lemma": "of",
+          "pos": "ADP",
+          "tag": "IN",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "these",
+          "start": 962,
+          "end": 967,
+          "lemma": "these",
+          "pos": "DET",
+          "tag": "DT",
+          "morph": {
+            "Number": "Plur",
+            "PronType": "Dem"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "genes",
+          "start": 968,
+          "end": 973,
+          "lemma": "gene",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 968,
+          "end": 973,
+          "original": "genes",
+          "replacement": "gene",
+          "rule": "plural_noun_head"
+        }
+      ],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:6ed4828c4de779f4f1db889c4054fbf983d3a1c47a392cb7297e5e06eb992ac4",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 993,
+      "end": 1012,
+      "surface_text": "limonene production",
+      "ner_label_hint": "PROCESS",
+      "score": 0.5391162633895874,
+      "normalized_form": "limonene production",
+      "lemma": "limonene production",
+      "tokens": [
+        {
+          "text": "limonene",
+          "start": 993,
+          "end": 1001,
+          "lemma": "limonene",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "production",
+          "start": 1002,
+          "end": 1012,
+          "lemma": "production",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:4f9ffe8dc2266f0e805f20f96740c7b0b271aae90f9224bc74976f594308938c",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 1014,
+      "end": 1016,
+      "surface_text": "we",
+      "ner_label_hint": "ACTOR",
+      "score": 0.20229892432689667,
+      "normalized_form": "we",
+      "lemma": "we",
+      "tokens": [
+        {
+          "text": "we",
+          "start": 1014,
+          "end": 1016,
+          "lemma": "we",
+          "pos": "PRON",
+          "tag": "PRP",
+          "morph": {
+            "Case": "Nom",
+            "Number": "Plur",
+            "Person": "1",
+            "PronType": "Prs"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:9d9f7e86932c2bfcf9b2ff1fdfc203e95ee2464f9b0f7e1033a740d842592b23",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 1111,
+      "end": 1151,
+      "surface_text": "expression of 5 of the 8 candidate genes",
+      "ner_label_hint": "PROCESS",
+      "score": 0.3366223871707916,
+      "normalized_form": "expression of 5 of the 8 candidate gene",
+      "lemma": "expression of 5 of the 8 candidate gene",
+      "tokens": [
+        {
+          "text": "expression",
+          "start": 1111,
+          "end": 1121,
+          "lemma": "expression",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "of",
+          "start": 1122,
+          "end": 1124,
+          "lemma": "of",
+          "pos": "ADP",
+          "tag": "IN",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "5",
+          "start": 1125,
+          "end": 1126,
+          "lemma": "5",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "of",
+          "start": 1127,
+          "end": 1129,
+          "lemma": "of",
+          "pos": "ADP",
+          "tag": "IN",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "the",
+          "start": 1130,
+          "end": 1133,
+          "lemma": "the",
+          "pos": "DET",
+          "tag": "DT",
+          "morph": {
+            "Definite": "Def",
+            "PronType": "Art"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "8",
+          "start": 1134,
+          "end": 1135,
+          "lemma": "8",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "candidate",
+          "start": 1136,
+          "end": 1145,
+          "lemma": "candidate",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "genes",
+          "start": 1146,
+          "end": 1151,
+          "lemma": "gene",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1146,
+          "end": 1151,
+          "original": "genes",
+          "replacement": "gene",
+          "rule": "plural_noun_head"
+        }
+      ],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:8126e90c8db46af804620aacde911c8a1e68437917094899ecfa8b3b2c918b57",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 1146,
+      "end": 1151,
+      "surface_text": "genes",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.18944379687309265,
+      "normalized_form": "gene",
+      "lemma": "gene",
+      "tokens": [
+        {
+          "text": "genes",
+          "start": 1146,
+          "end": 1151,
+          "lemma": "gene",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1146,
+          "end": 1151,
+          "original": "genes",
+          "replacement": "gene",
+          "rule": "plural_noun_head"
+        }
+      ],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:a039235b919f9e1a26b0113838fd180abf1244b2f529010f2569d27f0d7ef8d6",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 1146,
+      "end": 1151,
+      "surface_text": "genes",
+      "ner_label_hint": "OBJECT",
+      "score": 0.2563944458961487,
+      "normalized_form": "gene",
+      "lemma": "gene",
+      "tokens": [
+        {
+          "text": "genes",
+          "start": 1146,
+          "end": 1151,
+          "lemma": "gene",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1146,
+          "end": 1151,
+          "original": "genes",
+          "replacement": "gene",
+          "rule": "plural_noun_head"
+        }
+      ],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:26accc81a3cc7f60848598ac3df547afe062a70f3a41309fb92e1ea9e04f3ced",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 1152,
+      "end": 1180,
+      "surface_text": "enhanced limonene production",
+      "ner_label_hint": "PROCESS",
+      "score": 0.25362637639045715,
+      "normalized_form": "enhanced limonene production",
+      "lemma": "enhanced limonene production",
+      "tokens": [
+        {
+          "text": "enhanced",
+          "start": 1152,
+          "end": 1160,
+          "lemma": "enhance",
+          "pos": "VERB",
+          "tag": "VBD",
+          "morph": {
+            "Tense": "Past",
+            "VerbForm": "Fin"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "limonene",
+          "start": 1161,
+          "end": 1169,
+          "lemma": "limonene",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "production",
+          "start": 1170,
+          "end": 1180,
+          "lemma": "production",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:999d61c92fa4ba41baa5fa534090ac62cd18c38fe20c76abbdab6810d5d2a529",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 1161,
+      "end": 1180,
+      "surface_text": "limonene production",
+      "ner_label_hint": "PROCESS",
+      "score": 0.5038325190544128,
+      "normalized_form": "limonene production",
+      "lemma": "limonene production",
+      "tokens": [
+        {
+          "text": "limonene",
+          "start": 1161,
+          "end": 1169,
+          "lemma": "limonene",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "production",
+          "start": 1170,
+          "end": 1180,
+          "lemma": "production",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:42c6b9f3a39d7b0c7c56985abe40dc4da588e00889af39a91ff1a044589b1885",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 1184,
+      "end": 1197,
+      "surface_text": "Y. lipolytica",
+      "ner_label_hint": "ACTOR",
+      "score": 0.6887866854667664,
+      "normalized_form": "Y. lipolytica",
+      "lemma": "Y. lipolytica",
+      "tokens": [
+        {
+          "text": "Y.",
+          "start": 1184,
+          "end": 1186,
+          "lemma": "Y.",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "lipolytica",
+          "start": 1187,
+          "end": 1197,
+          "lemma": "lipolytica",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:c14b286c3830d819366eae4f8bd30d51c7a8466a3549238c1174fe7365cbf44c",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 1214,
+      "end": 1228,
+      "surface_text": "overexpressing",
+      "ner_label_hint": "PROCESS",
+      "score": 0.21329891681671143,
+      "normalized_form": "overexpressing",
+      "lemma": "overexpressing",
+      "tokens": [
+        {
+          "text": "overexpressing",
+          "start": 1214,
+          "end": 1228,
+          "lemma": "overexpresse",
+          "pos": "VERB",
+          "tag": "VBG",
+          "morph": {
+            "Aspect": "Prog",
+            "Tense": "Pres",
+            "VerbForm": "Part"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:4685ae1e005609342f651763411d10dafdb5b5924ecd903a533cc32f6eea0942",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 1214,
+      "end": 1241,
+      "surface_text": "overexpressing YALI0F19492p",
+      "ner_label_hint": "PROCESS",
+      "score": 0.16063788533210754,
+      "normalized_form": "overexpressing YALI0F19492p",
+      "lemma": "overexpressing YALI0F19492p",
+      "tokens": [
+        {
+          "text": "overexpressing",
+          "start": 1214,
+          "end": 1228,
+          "lemma": "overexpresse",
+          "pos": "VERB",
+          "tag": "VBG",
+          "morph": {
+            "Aspect": "Prog",
+            "Tense": "Pres",
+            "VerbForm": "Part"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "YALI0F19492p",
+          "start": 1229,
+          "end": 1241,
+          "lemma": "YALI0F19492p",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:a955245e5f9d2e2ccc65366be83d243a4fdeb893b4a4acb9c43a054bfae41e27",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 1274,
+      "end": 1287,
+      "surface_text": "product titer",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.48361924290657043,
+      "normalized_form": "product titer",
+      "lemma": "product titer",
+      "tokens": [
+        {
+          "text": "product",
+          "start": 1274,
+          "end": 1281,
+          "lemma": "product",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "titer",
+          "start": 1282,
+          "end": 1287,
+          "lemma": "titer",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:ad09f0f0b3c8599d120f288a53b4853d2c9261c53112b3f04c1d8c56deef70f7",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 1274,
+      "end": 1287,
+      "surface_text": "product titer",
+      "ner_label_hint": "RESULT",
+      "score": 0.4816816449165344,
+      "normalized_form": "product titer",
+      "lemma": "product titer",
+      "tokens": [
+        {
+          "text": "product",
+          "start": 1274,
+          "end": 1281,
+          "lemma": "product",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "titer",
+          "start": 1282,
+          "end": 1287,
+          "lemma": "titer",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:da522abf649e3d8c777f5c7f3cb38c5990df5a117b24c5153e46feb3a2af67ff",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 1461,
+      "end": 1481,
+      "surface_text": "underlying mechanism",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.3737347424030304,
+      "normalized_form": "underlying mechanism",
+      "lemma": "underlying mechanism",
+      "tokens": [
+        {
+          "text": "underlying",
+          "start": 1461,
+          "end": 1471,
+          "lemma": "underlying",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "mechanism",
+          "start": 1472,
+          "end": 1481,
+          "lemma": "mechanism",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:8f8c5028343fbccf9d33e3e97210be36e6a9031143e3b74d258756e54e67dcc0",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 1461,
+      "end": 1481,
+      "surface_text": "underlying mechanism",
+      "ner_label_hint": "MECHANISM",
+      "score": 0.33953621983528137,
+      "normalized_form": "underlying mechanism",
+      "lemma": "underlying mechanism",
+      "tokens": [
+        {
+          "text": "underlying",
+          "start": 1461,
+          "end": 1471,
+          "lemma": "underlying",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "mechanism",
+          "start": 1472,
+          "end": 1481,
+          "lemma": "mechanism",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:1fc2420d7d05a5218a64061cc9b550230d8e9ab4df821d85ad42719f5bc1511d",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 1485,
+      "end": 1506,
+      "surface_text": "limonene cytotoxicity",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.18281161785125732,
+      "normalized_form": "limonene cytotoxicity",
+      "lemma": "limonene cytotoxicity",
+      "tokens": [
+        {
+          "text": "limonene",
+          "start": 1485,
+          "end": 1493,
+          "lemma": "limonene",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "cytotoxicity",
+          "start": 1494,
+          "end": 1506,
+          "lemma": "cytotoxicity",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:843514cc9aec18e5c07345a06128b218866800b46e3e4621438df7b9137fe54b",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 1510,
+      "end": 1523,
+      "surface_text": "Y. lipolytica",
+      "ner_label_hint": "ACTOR",
+      "score": 0.6604059338569641,
+      "normalized_form": "Y. lipolytica",
+      "lemma": "Y. lipolytica",
+      "tokens": [
+        {
+          "text": "Y.",
+          "start": 1510,
+          "end": 1512,
+          "lemma": "Y.",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "lipolytica",
+          "start": 1513,
+          "end": 1523,
+          "lemma": "lipolytica",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:d753cd846b6ad9775eccf765e6368317e0077fc5856487dccce981d50f379c12",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 1526,
+      "end": 1536,
+      "surface_text": "This study",
+      "ner_label_hint": "PROCESS",
+      "score": 0.33247044682502747,
+      "normalized_form": "This study",
+      "lemma": "This study",
+      "tokens": [
+        {
+          "text": "This",
+          "start": 1526,
+          "end": 1530,
+          "lemma": "This",
+          "pos": "DET",
+          "tag": "DT",
+          "morph": {
+            "Number": "Sing",
+            "PronType": "Dem"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "study",
+          "start": 1531,
+          "end": 1536,
+          "lemma": "study",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:e04c7badb0055d41afe4ac7d580427cf862285ee8608be98e962ec9b85a1544f",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 1526,
+      "end": 1549,
+      "surface_text": "This study demonstrated",
+      "ner_label_hint": "PROCESS",
+      "score": 0.20188674330711365,
+      "normalized_form": "This study demonstrated",
+      "lemma": "This study demonstrated",
+      "tokens": [
+        {
+          "text": "This",
+          "start": 1526,
+          "end": 1530,
+          "lemma": "This",
+          "pos": "DET",
+          "tag": "DT",
+          "morph": {
+            "Number": "Sing",
+            "PronType": "Dem"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "study",
+          "start": 1531,
+          "end": 1536,
+          "lemma": "study",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "demonstrated",
+          "start": 1537,
+          "end": 1549,
+          "lemma": "demonstrate",
+          "pos": "VERB",
+          "tag": "VBD",
+          "morph": {
+            "Tense": "Past",
+            "VerbForm": "Fin"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:1a065bcbdd5bb3d93a18b28196628bff036eea9cd150a2fd0ba94130c416ec96",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 1531,
+      "end": 1536,
+      "surface_text": "study",
+      "ner_label_hint": "PROCESS",
+      "score": 0.49531522393226624,
+      "normalized_form": "study",
+      "lemma": "study",
+      "tokens": [
+        {
+          "text": "study",
+          "start": 1531,
+          "end": 1536,
+          "lemma": "study",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:76e067eda239e6ec45bfafa11fb897e71b0bc02e596a2a982e795fad29fc3b2c",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 1537,
+      "end": 1549,
+      "surface_text": "demonstrated",
+      "ner_label_hint": "PROCESS",
+      "score": 0.26055648922920227,
+      "normalized_form": "demonstrated",
+      "lemma": "demonstrated",
+      "tokens": [
+        {
+          "text": "demonstrated",
+          "start": 1537,
+          "end": 1549,
+          "lemma": "demonstrate",
+          "pos": "VERB",
+          "tag": "VBD",
+          "morph": {
+            "Tense": "Past",
+            "VerbForm": "Fin"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:bbef6fac376e0aed487eac0c41db851ec735206d4eadd24e7c7586bc0e43fc7a",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 1550,
+      "end": 1571,
+      "surface_text": "an effective strategy",
+      "ner_label_hint": "PROCESS",
+      "score": 0.18629693984985352,
+      "normalized_form": "an effective strategy",
+      "lemma": "an effective strategy",
+      "tokens": [
+        {
+          "text": "an",
+          "start": 1550,
+          "end": 1552,
+          "lemma": "an",
+          "pos": "DET",
+          "tag": "DT",
+          "morph": {
+            "Definite": "Ind",
+            "PronType": "Art"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "effective",
+          "start": 1553,
+          "end": 1562,
+          "lemma": "effective",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "strategy",
+          "start": 1563,
+          "end": 1571,
+          "lemma": "strategy",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:755fdf3009c6944d91d55c451824ce932db1d600ffabc67479ce28075dcea281",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 1553,
+      "end": 1571,
+      "surface_text": "effective strategy",
+      "ner_label_hint": "PROCESS",
+      "score": 0.2623848617076874,
+      "normalized_form": "effective strategy",
+      "lemma": "effective strategy",
+      "tokens": [
+        {
+          "text": "effective",
+          "start": 1553,
+          "end": 1562,
+          "lemma": "effective",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "strategy",
+          "start": 1563,
+          "end": 1571,
+          "lemma": "strategy",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:03c1c7a57b44222b38d0df6eb93f4feeb2c8b0514434da77e6e89a863a7c5c10",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 1563,
+      "end": 1571,
+      "surface_text": "strategy",
+      "ner_label_hint": "PROCESS",
+      "score": 0.1572977751493454,
+      "normalized_form": "strategy",
+      "lemma": "strategy",
+      "tokens": [
+        {
+          "text": "strategy",
+          "start": 1563,
+          "end": 1571,
+          "lemma": "strategy",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:8c12ea302382a99146d3b7feb27c77a0a3ddeb1522f02fd9d67e9483b4884e14",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 1608,
+      "end": 1621,
+      "surface_text": "Y. lipolytica",
+      "ner_label_hint": "ACTOR",
+      "score": 0.7411242723464966,
+      "normalized_form": "Y. lipolytica",
+      "lemma": "Y. lipolytica",
+      "tokens": [
+        {
+          "text": "Y.",
+          "start": 1608,
+          "end": 1610,
+          "lemma": "Y.",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "lipolytica",
+          "start": 1611,
+          "end": 1621,
+          "lemma": "lipolytica",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:2c0f7fed15866ad8e1be2ded99e2d69ea9dd4318e1c83d56c4278a687caef397",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 1626,
+      "end": 1640,
+      "surface_text": "limonene titer",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.3197711110115051,
+      "normalized_form": "limonene titer",
+      "lemma": "limonene titer",
+      "tokens": [
+        {
+          "text": "limonene",
+          "start": 1626,
+          "end": 1634,
+          "lemma": "limonene",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "titer",
+          "start": 1635,
+          "end": 1640,
+          "lemma": "titer",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:802203c5917d6e0e987aaf23904c6beecb37a41561c91b2ac38f1b6d6b47479c",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 1626,
+      "end": 1640,
+      "surface_text": "limonene titer",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.2102440744638443,
+      "normalized_form": "limonene titer",
+      "lemma": "limonene titer",
+      "tokens": [
+        {
+          "text": "limonene",
+          "start": 1626,
+          "end": 1634,
+          "lemma": "limonene",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "titer",
+          "start": 1635,
+          "end": 1640,
+          "lemma": "titer",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:8d8b15b609239936f6c4e1808672af20ff2a3484ee85d75ca762ffa107372e32",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 1626,
+      "end": 1640,
+      "surface_text": "limonene titer",
+      "ner_label_hint": "RESULT",
+      "score": 0.17742444574832916,
+      "normalized_form": "limonene titer",
+      "lemma": "limonene titer",
+      "tokens": [
+        {
+          "text": "limonene",
+          "start": 1626,
+          "end": 1634,
+          "lemma": "limonene",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "titer",
+          "start": 1635,
+          "end": 1640,
+          "lemma": "titer",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:96326d55df56bb53bc8493224d859b44ae9e4cffe16d8abf5b22ff9e9f1bfe19",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 1648,
+      "end": 1659,
+      "surface_text": "host strain",
+      "ner_label_hint": "OBJECT",
+      "score": 0.25382164120674133,
+      "normalized_form": "host strain",
+      "lemma": "host strain",
+      "tokens": [
+        {
+          "text": "host",
+          "start": 1648,
+          "end": 1652,
+          "lemma": "host",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "strain",
+          "start": 1653,
+          "end": 1659,
+          "lemma": "strain",
+          "pos": "VERB",
+          "tag": "VBP",
+          "morph": {
+            "Tense": "Pres",
+            "VerbForm": "Fin"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:01d2beccc8a231ab4d7351db64a9192d6523341647ea95e8b859100d0a5c9248",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 1672,
+      "end": 1689,
+      "surface_text": "combinatorial use",
+      "ner_label_hint": "PROCESS",
+      "score": 0.1802966296672821,
+      "normalized_form": "combinatorial use",
+      "lemma": "combinatorial use",
+      "tokens": [
+        {
+          "text": "combinatorial",
+          "start": 1672,
+          "end": 1685,
+          "lemma": "combinatorial",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "use",
+          "start": 1686,
+          "end": 1689,
+          "lemma": "use",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:71d8ce8c9261166c4121698ea17342fb0a46a1eaf9267c0b30171945a94bcf6c",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    },
+    {
+      "start": 1719,
+      "end": 1743,
+      "surface_text": "evolutionary engineering",
+      "ner_label_hint": "PROCESS",
+      "score": 0.18770341575145721,
+      "normalized_form": "evolutionary engineering",
+      "lemma": "evolutionary engineering",
+      "tokens": [
+        {
+          "text": "evolutionary",
+          "start": 1719,
+          "end": 1731,
+          "lemma": "evolutionary",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "engineering",
+          "start": 1732,
+          "end": 1743,
+          "lemma": "engineering",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [],
+      "document_id": "W3138328568",
+      "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+      "mention_id": "m:46072313b378cb6cfb443e5ee8d09db2e6c57129bdd4d7a58009d6b1adc5e28f",
+      "configuration": "E1",
+      "source_reference": {
+        "api_url": "https://api.openalex.org/works/W3138328568",
+        "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+        "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+        "provider": "openalex",
+        "section": "abstract",
+        "source_updated_date": "2026-10-31T12:09:11.096373",
+        "source_url": "https://openalex.org/W3138328568",
+        "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+      }
+    }
+  ],
+  "native_mentions_by_threshold": null,
+  "raw_windows": [
+    {
+      "document_id": "W3138328568",
+      "window_start": 0,
+      "window_end": 435,
+      "predictions": [
+        {
+          "start": 62,
+          "end": 91,
+          "text": "food and cosmetics production",
+          "label": "event or scientific process",
+          "score": 0.29644113779067993
+        },
+        {
+          "start": 110,
+          "end": 148,
+          "text": "pharmaceutical and chemical industries",
+          "label": "person or organization",
+          "score": 0.21340423822402954
+        },
+        {
+          "start": 159,
+          "end": 173,
+          "text": "low efficiency",
+          "label": "property, parameter or metric",
+          "score": 0.2292391061782837
+        },
+        {
+          "start": 177,
+          "end": 193,
+          "text": "plant extraction",
+          "label": "event or scientific process",
+          "score": 0.3667685389518738
+        },
+        {
+          "start": 198,
+          "end": 221,
+          "text": "high energy consumption",
+          "label": "property, parameter or metric",
+          "score": 0.2474081814289093
+        },
+        {
+          "start": 203,
+          "end": 221,
+          "text": "energy consumption",
+          "label": "property, parameter or metric",
+          "score": 0.18333306908607483
+        },
+        {
+          "start": 225,
+          "end": 243,
+          "text": "chemical synthesis",
+          "label": "event or scientific process",
+          "score": 0.3727686405181885
+        },
+        {
+          "start": 225,
+          "end": 243,
+          "text": "chemical synthesis",
+          "label": "scientific concept or theory",
+          "score": 0.1753910630941391
+        },
+        {
+          "start": 272,
+          "end": 302,
+          "text": "industrial limonene production",
+          "label": "event or scientific process",
+          "score": 0.3493398129940033
+        },
+        {
+          "start": 292,
+          "end": 302,
+          "text": "production",
+          "label": "event or scientific process",
+          "score": 0.17099741101264954
+        },
+        {
+          "start": 318,
+          "end": 354,
+          "text": "advancement of metabolic engineering",
+          "label": "event or scientific process",
+          "score": 0.20879344642162323
+        },
+        {
+          "start": 318,
+          "end": 329,
+          "text": "advancement",
+          "label": "event or scientific process",
+          "score": 0.19593556225299835
+        },
+        {
+          "start": 333,
+          "end": 354,
+          "text": "metabolic engineering",
+          "label": "scientific concept or theory",
+          "score": 0.5828920602798462
+        },
+        {
+          "start": 359,
+          "end": 376,
+          "text": "synthetic biology",
+          "label": "scientific concept or theory",
+          "score": 0.7265835404396057
+        },
+        {
+          "start": 397,
+          "end": 420,
+          "text": "engineering of microbes",
+          "label": "event or scientific process",
+          "score": 0.16943860054016113
+        },
+        {
+          "start": 412,
+          "end": 420,
+          "text": "microbes",
+          "label": "physical, biological or digital object",
+          "score": 0.2541595697402954
+        },
+        {
+          "start": 412,
+          "end": 420,
+          "text": "microbes",
+          "label": "person or organization",
+          "score": 0.1665308177471161
+        }
+      ]
+    },
+    {
+      "document_id": "W3138328568",
+      "window_start": 272,
+      "window_end": 713,
+      "predictions": [
+        {
+          "start": 0,
+          "end": 30,
+          "text": "industrial limonene production",
+          "label": "event or scientific process",
+          "score": 0.4328368604183197
+        },
+        {
+          "start": 46,
+          "end": 57,
+          "text": "advancement",
+          "label": "event or scientific process",
+          "score": 0.16807879507541656
+        },
+        {
+          "start": 61,
+          "end": 82,
+          "text": "metabolic engineering",
+          "label": "scientific concept or theory",
+          "score": 0.6484529376029968
+        },
+        {
+          "start": 61,
+          "end": 104,
+          "text": "metabolic engineering and synthetic biology",
+          "label": "scientific concept or theory",
+          "score": 0.24356792867183685
+        },
+        {
+          "start": 87,
+          "end": 104,
+          "text": "synthetic biology",
+          "label": "scientific concept or theory",
+          "score": 0.8172302842140198
+        },
+        {
+          "start": 125,
+          "end": 148,
+          "text": "engineering of microbes",
+          "label": "event or scientific process",
+          "score": 0.1578931212425232
+        },
+        {
+          "start": 140,
+          "end": 148,
+          "text": "microbes",
+          "label": "person or organization",
+          "score": 0.26812422275543213
+        },
+        {
+          "start": 154,
+          "end": 178,
+          "text": "microbial cell factories",
+          "label": "scientific concept or theory",
+          "score": 0.2447419911623001
+        },
+        {
+          "start": 216,
+          "end": 235,
+          "text": "deleterious effects",
+          "label": "experimental or contextual condition",
+          "score": 0.1973169893026352
+        },
+        {
+          "start": 239,
+          "end": 256,
+          "text": "cellular activity",
+          "label": "experimental or contextual condition",
+          "score": 0.1592586487531662
+        },
+        {
+          "start": 320,
+          "end": 341,
+          "text": "high-titer production",
+          "label": "event or scientific process",
+          "score": 0.25971654057502747
+        },
+        {
+          "start": 368,
+          "end": 376,
+          "text": "microbes",
+          "label": "person or organization",
+          "score": 0.416778028011322
+        },
+        {
+          "start": 386,
+          "end": 391,
+          "text": "study",
+          "label": "event or scientific process",
+          "score": 0.16983556747436523
+        },
+        {
+          "start": 436,
+          "end": 441,
+          "text": "genes",
+          "label": "physical, biological or digital object",
+          "score": 0.1620360016822815
+        }
+      ]
+    },
+    {
+      "document_id": "W3138328568",
+      "window_start": 570,
+      "window_end": 1001,
+      "predictions": [
+        {
+          "start": 0,
+          "end": 8,
+          "text": "obstacle",
+          "label": "event or scientific process",
+          "score": 0.2660923898220062
+        },
+        {
+          "start": 0,
+          "end": 8,
+          "text": "obstacle",
+          "label": "experimental or contextual condition",
+          "score": 0.20200154185295105
+        },
+        {
+          "start": 80,
+          "end": 93,
+          "text": "In this study",
+          "label": "event or scientific process",
+          "score": 0.3334580361843109
+        },
+        {
+          "start": 88,
+          "end": 93,
+          "text": "study",
+          "label": "event or scientific process",
+          "score": 0.2695101797580719
+        },
+        {
+          "start": 104,
+          "end": 119,
+          "text": "transcriptomics",
+          "label": "algorithm or research method",
+          "score": 0.18568439781665802
+        },
+        {
+          "start": 121,
+          "end": 123,
+          "text": "we",
+          "label": "person or organization",
+          "score": 0.1804743856191635
+        },
+        {
+          "start": 124,
+          "end": 134,
+          "text": "identified",
+          "label": "event or scientific process",
+          "score": 0.23034529387950897
+        },
+        {
+          "start": 138,
+          "end": 143,
+          "text": "genes",
+          "label": "physical, biological or digital object",
+          "score": 0.20257607102394104
+        },
+        {
+          "start": 175,
+          "end": 194,
+          "text": "Yarrowia lipolytica",
+          "label": "person or organization",
+          "score": 0.34697821736335754
+        },
+        {
+          "start": 195,
+          "end": 242,
+          "text": "that were up-regulated when exposed to limonene",
+          "label": "experimental or contextual condition",
+          "score": 0.2578679621219635
+        },
+        {
+          "start": 195,
+          "end": 242,
+          "text": "that were up-regulated when exposed to limonene",
+          "label": "event or scientific process",
+          "score": 0.2522932291030884
+        },
+        {
+          "start": 195,
+          "end": 217,
+          "text": "that were up-regulated",
+          "label": "event or scientific process",
+          "score": 0.2224130779504776
+        },
+        {
+          "start": 205,
+          "end": 217,
+          "text": "up-regulated",
+          "label": "event or scientific process",
+          "score": 0.2705608904361725
+        },
+        {
+          "start": 218,
+          "end": 242,
+          "text": "when exposed to limonene",
+          "label": "event or scientific process",
+          "score": 0.3875170052051544
+        },
+        {
+          "start": 218,
+          "end": 242,
+          "text": "when exposed to limonene",
+          "label": "experimental or contextual condition",
+          "score": 0.21196146309375763
+        },
+        {
+          "start": 218,
+          "end": 242,
+          "text": "when exposed to limonene",
+          "label": "research task or application",
+          "score": 0.1514815241098404
+        },
+        {
+          "start": 244,
+          "end": 262,
+          "text": "When overexpressed",
+          "label": "event or scientific process",
+          "score": 0.5153167247772217
+        },
+        {
+          "start": 244,
+          "end": 262,
+          "text": "When overexpressed",
+          "label": "experimental or contextual condition",
+          "score": 0.2993422746658325
+        },
+        {
+          "start": 249,
+          "end": 262,
+          "text": "overexpressed",
+          "label": "event or scientific process",
+          "score": 0.22218553721904755
+        },
+        {
+          "start": 249,
+          "end": 262,
+          "text": "overexpressed",
+          "label": "experimental or contextual condition",
+          "score": 0.2192818522453308
+        },
+        {
+          "start": 289,
+          "end": 351,
+          "text": "improved tolerance of this yeast to exogenously added limonene",
+          "label": "event or scientific process",
+          "score": 0.2744653522968292
+        },
+        {
+          "start": 289,
+          "end": 307,
+          "text": "improved tolerance",
+          "label": "event or scientific process",
+          "score": 0.18576154112815857
+        },
+        {
+          "start": 289,
+          "end": 351,
+          "text": "improved tolerance of this yeast to exogenously added limonene",
+          "label": "experimental or contextual condition",
+          "score": 0.18338845670223236
+        },
+        {
+          "start": 353,
+          "end": 403,
+          "text": "To determine whether overexpression of these genes",
+          "label": "research task or application",
+          "score": 0.22224827110767365
+        },
+        {
+          "start": 353,
+          "end": 403,
+          "text": "To determine whether overexpression of these genes",
+          "label": "event or scientific process",
+          "score": 0.20178894698619843
+        },
+        {
+          "start": 374,
+          "end": 388,
+          "text": "overexpression",
+          "label": "event or scientific process",
+          "score": 0.21754774451255798
+        }
+      ]
+    },
+    {
+      "document_id": "W3138328568",
+      "window_start": 859,
+      "window_end": 1301,
+      "predictions": [
+        {
+          "start": 85,
+          "end": 114,
+          "text": "overexpression of these genes",
+          "label": "event or scientific process",
+          "score": 0.21670210361480713
+        },
+        {
+          "start": 134,
+          "end": 153,
+          "text": "limonene production",
+          "label": "event or scientific process",
+          "score": 0.5391162633895874
+        },
+        {
+          "start": 155,
+          "end": 157,
+          "text": "we",
+          "label": "person or organization",
+          "score": 0.20229892432689667
+        },
+        {
+          "start": 252,
+          "end": 292,
+          "text": "expression of 5 of the 8 candidate genes",
+          "label": "event or scientific process",
+          "score": 0.3366223871707916
+        },
+        {
+          "start": 293,
+          "end": 321,
+          "text": "enhanced limonene production",
+          "label": "event or scientific process",
+          "score": 0.25362637639045715
+        },
+        {
+          "start": 302,
+          "end": 321,
+          "text": "limonene production",
+          "label": "event or scientific process",
+          "score": 0.5038325190544128
+        },
+        {
+          "start": 355,
+          "end": 382,
+          "text": "overexpressing YALI0F19492p",
+          "label": "event or scientific process",
+          "score": 0.16063788533210754
+        },
+        {
+          "start": 415,
+          "end": 428,
+          "text": "product titer",
+          "label": "property, parameter or metric",
+          "score": 0.48361924290657043
+        },
+        {
+          "start": 415,
+          "end": 428,
+          "text": "product titer",
+          "label": "measured or observed result",
+          "score": 0.4816816449165344
+        }
+      ]
+    },
+    {
+      "document_id": "W3138328568",
+      "window_start": 1146,
+      "window_end": 1607,
+      "predictions": [
+        {
+          "start": 0,
+          "end": 5,
+          "text": "genes",
+          "label": "physical, biological or digital object",
+          "score": 0.2563944458961487
+        },
+        {
+          "start": 0,
+          "end": 5,
+          "text": "genes",
+          "label": "scientific concept or theory",
+          "score": 0.18944379687309265
+        },
+        {
+          "start": 6,
+          "end": 34,
+          "text": "enhanced limonene production",
+          "label": "event or scientific process",
+          "score": 0.1678420901298523
+        },
+        {
+          "start": 38,
+          "end": 51,
+          "text": "Y. lipolytica",
+          "label": "person or organization",
+          "score": 0.6887866854667664
+        },
+        {
+          "start": 68,
+          "end": 82,
+          "text": "overexpressing",
+          "label": "event or scientific process",
+          "score": 0.21329891681671143
+        },
+        {
+          "start": 68,
+          "end": 95,
+          "text": "overexpressing YALI0F19492p",
+          "label": "event or scientific process",
+          "score": 0.15878625214099884
+        },
+        {
+          "start": 128,
+          "end": 141,
+          "text": "product titer",
+          "label": "property, parameter or metric",
+          "score": 0.46554768085479736
+        },
+        {
+          "start": 128,
+          "end": 141,
+          "text": "product titer",
+          "label": "measured or observed result",
+          "score": 0.39425796270370483
+        },
+        {
+          "start": 315,
+          "end": 335,
+          "text": "underlying mechanism",
+          "label": "mechanism explaining a phenomenon",
+          "score": 0.33953621983528137
+        },
+        {
+          "start": 315,
+          "end": 335,
+          "text": "underlying mechanism",
+          "label": "scientific concept or theory",
+          "score": 0.3036658763885498
+        },
+        {
+          "start": 339,
+          "end": 360,
+          "text": "limonene cytotoxicity",
+          "label": "scientific concept or theory",
+          "score": 0.18281161785125732
+        },
+        {
+          "start": 364,
+          "end": 377,
+          "text": "Y. lipolytica",
+          "label": "person or organization",
+          "score": 0.6604059338569641
+        },
+        {
+          "start": 385,
+          "end": 390,
+          "text": "study",
+          "label": "event or scientific process",
+          "score": 0.20369532704353333
+        }
+      ]
+    },
+    {
+      "document_id": "W3138328568",
+      "window_start": 1461,
+      "window_end": 1744,
+      "predictions": [
+        {
+          "start": 0,
+          "end": 20,
+          "text": "underlying mechanism",
+          "label": "scientific concept or theory",
+          "score": 0.3737347424030304
+        },
+        {
+          "start": 0,
+          "end": 20,
+          "text": "underlying mechanism",
+          "label": "mechanism explaining a phenomenon",
+          "score": 0.16019287705421448
+        },
+        {
+          "start": 49,
+          "end": 62,
+          "text": "Y. lipolytica",
+          "label": "person or organization",
+          "score": 0.6585791110992432
+        },
+        {
+          "start": 65,
+          "end": 75,
+          "text": "This study",
+          "label": "event or scientific process",
+          "score": 0.33247044682502747
+        },
+        {
+          "start": 65,
+          "end": 88,
+          "text": "This study demonstrated",
+          "label": "event or scientific process",
+          "score": 0.20188674330711365
+        },
+        {
+          "start": 70,
+          "end": 75,
+          "text": "study",
+          "label": "event or scientific process",
+          "score": 0.49531522393226624
+        },
+        {
+          "start": 76,
+          "end": 88,
+          "text": "demonstrated",
+          "label": "event or scientific process",
+          "score": 0.26055648922920227
+        },
+        {
+          "start": 89,
+          "end": 110,
+          "text": "an effective strategy",
+          "label": "event or scientific process",
+          "score": 0.18629693984985352
+        },
+        {
+          "start": 92,
+          "end": 110,
+          "text": "effective strategy",
+          "label": "event or scientific process",
+          "score": 0.2623848617076874
+        },
+        {
+          "start": 102,
+          "end": 110,
+          "text": "strategy",
+          "label": "event or scientific process",
+          "score": 0.1572977751493454
+        },
+        {
+          "start": 147,
+          "end": 160,
+          "text": "Y. lipolytica",
+          "label": "person or organization",
+          "score": 0.7411242723464966
+        },
+        {
+          "start": 165,
+          "end": 179,
+          "text": "limonene titer",
+          "label": "property, parameter or metric",
+          "score": 0.3197711110115051
+        },
+        {
+          "start": 165,
+          "end": 179,
+          "text": "limonene titer",
+          "label": "scientific concept or theory",
+          "score": 0.2102440744638443
+        },
+        {
+          "start": 165,
+          "end": 179,
+          "text": "limonene titer",
+          "label": "measured or observed result",
+          "score": 0.17742444574832916
+        },
+        {
+          "start": 187,
+          "end": 198,
+          "text": "host strain",
+          "label": "physical, biological or digital object",
+          "score": 0.25382164120674133
+        },
+        {
+          "start": 211,
+          "end": 228,
+          "text": "combinatorial use",
+          "label": "event or scientific process",
+          "score": 0.1802966296672821
+        },
+        {
+          "start": 258,
+          "end": 282,
+          "text": "evolutionary engineering",
+          "label": "event or scientific process",
+          "score": 0.18770341575145721
+        }
+      ]
+    }
+  ],
+  "abbreviations": [],
+  "budgets": [
+    {
+      "start": 0,
+      "end": 435,
+      "tokens": 126,
+      "status": "accepted"
+    },
+    {
+      "start": 272,
+      "end": 713,
+      "tokens": 139,
+      "status": "accepted"
+    },
+    {
+      "start": 570,
+      "end": 1001,
+      "tokens": 146,
+      "status": "accepted"
+    },
+    {
+      "start": 859,
+      "end": 1301,
+      "tokens": 151,
+      "status": "accepted"
+    },
+    {
+      "start": 1146,
+      "end": 1607,
+      "tokens": 148,
+      "status": "accepted"
+    },
+    {
+      "start": 1461,
+      "end": 1744,
+      "tokens": 112,
+      "status": "accepted"
+    }
+  ],
+  "threshold_checks": [],
+  "performance": {
+    "inference_seconds": 7.900967799825594,
+    "normalization_seconds": 0.0828468999825418,
+    "preflight_seconds": 0.011049700202420354,
+    "native_check_seconds": 0.0,
+    "processing_seconds": 7.995320300105959,
+    "encoder_calls": 6,
+    "native_check_encoder_calls": 0,
+    "sequence_lengths": [
+      126,
+      139,
+      146,
+      151,
+      148,
+      112
+    ],
+    "windows": 6
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "status": "PRELIMINARY_ASSISTED_WORKING_POINT",
+  "policy": {
+    "primary": "Largest threshold >=0.35 retaining >=90% of exact reference matches at0.35, >=80% per discipline, all rare type groups with baseline1to4; no increase of draft irrelevant census candidates",
+    "rare_type_groups": "suggested reference types with 1..4 exact matched spans at0.35 within the model",
+    "secondary": "Compare absolute draft reference matching, candidate load, draft noise and measured NER cost; report Pareto limitations, no true optimality claim"
+  },
+  "per_model": [
+    {
+      "configuration": "E1",
+      "recommended_threshold": 0.35,
+      "unique_spans": 635,
+      "reference_exact_matches": 49,
+      "qwen_input_tokens": 85155,
+      "qwen_batch_calls": 33,
+      "decisions": [
+        {
+          "threshold": 0.15,
+          "eligible": false,
+          "exact_reference_retention": 1.4081632653061225,
+          "min_discipline_retention": 1.0,
+          "rare_groups_preserved": true,
+          "irrelevant_census": 9
+        },
+        {
+          "threshold": 0.25,
+          "eligible": false,
+          "exact_reference_retention": 1.183673469387755,
+          "min_discipline_retention": 1.0,
+          "rare_groups_preserved": true,
+          "irrelevant_census": 7
+        },
+        {
+          "threshold": 0.35,
+          "eligible": true,
+          "exact_reference_retention": 1.0,
+          "min_discipline_retention": 1.0,
+          "rare_groups_preserved": true,
+          "irrelevant_census": 5
+        },
+        {
+          "threshold": 0.45,
+          "eligible": false,
+          "exact_reference_retention": 0.7142857142857143,
+          "min_discipline_retention": 0.25,
+          "rare_groups_preserved": true,
+          "irrelevant_census": 3
+        },
+        {
+          "threshold": 0.5,
+          "eligible": false,
+          "exact_reference_retention": 0.6326530612244898,
+          "min_discipline_retention": 0.25,
+          "rare_groups_preserved": false,
+          "irrelevant_census": 2
+        },
+        {
+          "threshold": 0.55,
+          "eligible": false,
+          "exact_reference_retention": 0.6122448979591837,
+          "min_discipline_retention": 0.25,
+          "rare_groups_preserved": false,
+          "irrelevant_census": 1
+        },
+        {
+          "threshold": 0.6,
+          "eligible": false,
+          "exact_reference_retention": 0.46938775510204084,
+          "min_discipline_retention": 0.25,
+          "rare_groups_preserved": false,
+          "irrelevant_census": 1
+        },
+        {
+          "threshold": 0.65,
+          "eligible": false,
+          "exact_reference_retention": 0.4489795918367347,
+          "min_discipline_retention": 0.25,
+          "rare_groups_preserved": false,
+          "irrelevant_census": 1
+        }
+      ]
+    },
+    {
+      "configuration": "E2",
+      "recommended_threshold": 0.35,
+      "unique_spans": 413,
+      "reference_exact_matches": 35,
+      "qwen_input_tokens": 65314,
+      "qwen_batch_calls": 30,
+      "decisions": [
+        {
+          "threshold": 0.15,
+          "eligible": false,
+          "exact_reference_retention": 1.5714285714285714,
+          "min_discipline_retention": 1.25,
+          "rare_groups_preserved": true,
+          "irrelevant_census": 8
+        },
+        {
+          "threshold": 0.25,
+          "eligible": false,
+          "exact_reference_retention": 1.2857142857142858,
+          "min_discipline_retention": 1.1428571428571428,
+          "rare_groups_preserved": true,
+          "irrelevant_census": 8
+        },
+        {
+          "threshold": 0.35,
+          "eligible": true,
+          "exact_reference_retention": 1.0,
+          "min_discipline_retention": 1.0,
+          "rare_groups_preserved": true,
+          "irrelevant_census": 5
+        },
+        {
+          "threshold": 0.45,
+          "eligible": false,
+          "exact_reference_retention": 0.6571428571428571,
+          "min_discipline_retention": 0.0,
+          "rare_groups_preserved": false,
+          "irrelevant_census": 3
+        },
+        {
+          "threshold": 0.5,
+          "eligible": false,
+          "exact_reference_retention": 0.6285714285714286,
+          "min_discipline_retention": 0.0,
+          "rare_groups_preserved": false,
+          "irrelevant_census": 3
+        },
+        {
+          "threshold": 0.55,
+          "eligible": false,
+          "exact_reference_retention": 0.5428571428571428,
+          "min_discipline_retention": 0.0,
+          "rare_groups_preserved": false,
+          "irrelevant_census": 3
+        },
+        {
+          "threshold": 0.6,
+          "eligible": false,
+          "exact_reference_retention": 0.5142857142857142,
+          "min_discipline_retention": 0.0,
+          "rare_groups_preserved": false,
+          "irrelevant_census": 2
+        },
+        {
+          "threshold": 0.65,
+          "eligible": false,
+          "exact_reference_retention": 0.45714285714285713,
+          "min_discipline_retention": 0.0,
+          "rare_groups_preserved": false,
+          "irrelevant_census": 1
+        }
+      ]
+    },
+    {
+      "configuration": "E3",
+      "recommended_threshold": 0.35,
+      "unique_spans": 1211,
+      "reference_exact_matches": 106,
+      "qwen_input_tokens": 151572,
+      "qwen_batch_calls": 53,
+      "decisions": [
+        {
+          "threshold": 0.15,
+          "eligible": false,
+          "exact_reference_retention": 1.1037735849056605,
+          "min_discipline_retention": 1.0,
+          "rare_groups_preserved": true,
+          "irrelevant_census": 4
+        },
+        {
+          "threshold": 0.25,
+          "eligible": false,
+          "exact_reference_retention": 1.0471698113207548,
+          "min_discipline_retention": 1.0,
+          "rare_groups_preserved": true,
+          "irrelevant_census": 3
+        },
+        {
+          "threshold": 0.35,
+          "eligible": true,
+          "exact_reference_retention": 1.0,
+          "min_discipline_retention": 1.0,
+          "rare_groups_preserved": true,
+          "irrelevant_census": 3
+        },
+        {
+          "threshold": 0.45,
+          "eligible": false,
+          "exact_reference_retention": 0.9245283018867925,
+          "min_discipline_retention": 0.8181818181818182,
+          "rare_groups_preserved": false,
+          "irrelevant_census": 3
+        },
+        {
+          "threshold": 0.5,
+          "eligible": false,
+          "exact_reference_retention": 0.8679245283018868,
+          "min_discipline_retention": 0.7272727272727273,
+          "rare_groups_preserved": false,
+          "irrelevant_census": 3
+        },
+        {
+          "threshold": 0.55,
+          "eligible": false,
+          "exact_reference_retention": 0.8679245283018868,
+          "min_discipline_retention": 0.7272727272727273,
+          "rare_groups_preserved": false,
+          "irrelevant_census": 3
+        },
+        {
+          "threshold": 0.6,
+          "eligible": false,
+          "exact_reference_retention": 0.7735849056603774,
+          "min_discipline_retention": 0.6363636363636364,
+          "rare_groups_preserved": false,
+          "irrelevant_census": 2
+        },
+        {
+          "threshold": 0.65,
+          "eligible": false,
+          "exact_reference_retention": 0.7169811320754716,
+          "min_discipline_retention": 0.5454545454545454,
+          "rare_groups_preserved": false,
+          "irrelevant_census": 2
+        }
+      ]
+    }
+  ],
+  "primary": "E3",
+  "primary_threshold": 0.35,
+  "limitation": "Selected on the assisted audit set itself; not an independently validated optimum"
+}

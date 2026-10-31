@@ -1,0 +1,75 @@
+{
+  "initial_api_retrieved_at_utc": "2026-10-31T20:25:20.500088+00:00",
+  "final_selection_frozen_at_utc": "2026-10-31T20:26:27.877264+00:00",
+  "actual_api_requests": [
+    {
+      "endpoint": "works",
+      "params": {
+        "filter": "primary_topic.field.id:17,has_abstract:true,language:en,type:article,is_retracted:false",
+        "sample": 150,
+        "seed": 4303,
+        "per_page": 150,
+        "select": "id,doi,title,publication_year,language,type,primary_topic,primary_location,abstract_inverted_index,updated_date,is_retracted"
+      },
+      "status": 200
+    },
+    {
+      "endpoint": "works",
+      "params": {
+        "filter": "primary_topic.field.id:27,has_abstract:true,language:en,type:article,is_retracted:false",
+        "sample": 150,
+        "seed": 4303,
+        "per_page": 150,
+        "select": "id,doi,title,publication_year,language,type,primary_topic,primary_location,abstract_inverted_index,updated_date,is_retracted"
+      },
+      "status": 200
+    },
+    {
+      "endpoint": "works",
+      "params": {
+        "filter": "primary_topic.field.id:31,has_abstract:true,language:en,type:article,is_retracted:false",
+        "sample": 150,
+        "seed": 4303,
+        "per_page": 150,
+        "select": "id,doi,title,publication_year,language,type,primary_topic,primary_location,abstract_inverted_index,updated_date,is_retracted"
+      },
+      "status": 200
+    },
+    {
+      "endpoint": "works",
+      "params": {
+        "filter": "primary_topic.field.id:13,has_abstract:true,language:en,type:article,is_retracted:false",
+        "sample": 150,
+        "seed": 4303,
+        "per_page": 150,
+        "select": "id,doi,title,publication_year,language,type,primary_topic,primary_location,abstract_inverted_index,updated_date,is_retracted"
+      },
+      "status": 200
+    },
+    {
+      "endpoint": "works",
+      "params": {
+        "filter": "primary_topic.field.id:20,has_abstract:true,language:en,type:article,is_retracted:false",
+        "sample": 150,
+        "seed": 4303,
+        "per_page": 150,
+        "select": "id,doi,title,publication_year,language,type,primary_topic,primary_location,abstract_inverted_index,updated_date,is_retracted"
+      },
+      "status": 200
+    },
+    {
+      "endpoint": "works",
+      "params": {
+        "filter": "primary_topic.subfield.id:1202,has_abstract:true,language:en,type:article,is_retracted:false",
+        "sample": 150,
+        "seed": 4303,
+        "per_page": 150,
+        "select": "id,doi,title,publication_year,language,type,primary_topic,primary_location,abstract_inverted_index,updated_date,is_retracted"
+      },
+      "status": 200
+    }
+  ],
+  "successful_api_requests": 6,
+  "candidate_response_hashes_unchanged_after_preflight": true,
+  "note": "Final selection reuses the same six official API responses; the final snapshot request list is empty because no second download was necessary."
+}

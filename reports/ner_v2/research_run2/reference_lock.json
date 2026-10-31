@@ -1,0 +1,29 @@
+{
+  "status": "FROZEN_BEFORE_NER",
+  "reference_sha256": "ea5eb6d46d70408f675667ae2617d4cea4f15915845c2fe29d78335b1b20a7f7",
+  "corpus_sha256": "684ca3a758a128c6382ab924f5c131f0e27faa9f7625b431ae0d6db975e543b1",
+  "audit_document_ids": [
+    "W2076293586",
+    "W4230116451",
+    "W2906067930",
+    "W4312422299",
+    "W2791492120",
+    "W2317432785"
+  ],
+  "references": 158,
+  "by_discipline": {
+    "Biology": 32,
+    "Computer Science / Machine Learning": 15,
+    "Economics": 26,
+    "History": 16,
+    "Medicine": 43,
+    "Physics": 26
+  },
+  "policy": "Source-authored selected expressions, all exact occurrences, nested spans allowed; not exhaustive; draft types separate from boundary matching",
+  "caveats": [
+    "No independent human annotator",
+    "Not Gold",
+    "Humanities include narrative actors and textual sources",
+    "Some source formula strings contain U+FFFD; original text is preserved"
+  ]
+}

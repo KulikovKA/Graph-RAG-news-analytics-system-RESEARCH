@@ -1,0 +1,51 @@
+{
+  "seed": 4303,
+  "total": 553,
+  "census_candidates": 433,
+  "stratified_candidates": 120,
+  "coverage": {
+    "discipline": {
+      "Biology": 20,
+      "Computer Science / Machine Learning": 20,
+      "Economics": 20,
+      "History": 20,
+      "Medicine": 20,
+      "Physics": 20
+    },
+    "focal_model": {
+      "E1": 41,
+      "E3": 42,
+      "E2": 37
+    },
+    "focal_type": {
+      "PROCESS": 13,
+      "OBJECT": 11,
+      "ACTOR": 14,
+      "CONCEPT": 10,
+      "ATTRIBUTE": 11,
+      "CONDITION": 9,
+      "TASK": 12,
+      "RESULT": 11,
+      "METHOD": 10,
+      "MECHANISM": 9,
+      "DATA_RESOURCE": 10
+    },
+    "confidence_stratum": {
+      "0.15-0.25": 21,
+      "0.65-1.00": 16,
+      "0.60-0.65": 13,
+      "0.50-0.55": 12,
+      "0.25-0.35": 17,
+      "0.35-0.45": 15,
+      "0.45-0.50": 14,
+      "0.55-0.60": 12
+    },
+    "agreement_stratum": {
+      "model_specific": 59,
+      "shared": 61
+    }
+  },
+  "ordered_sample_fingerprint": "560f2b484fa4dec760846e5f2299c562fb584fb46edebec9bd01b77b369c83d3",
+  "selection": "Greedy balanced round-robin model,type,confidence,agreement,document; seeded tie order; unique source spans",
+  "statistical_limit": "Purposive multiway stratification; no population error-rate extrapolation or confidence intervals"
+}
