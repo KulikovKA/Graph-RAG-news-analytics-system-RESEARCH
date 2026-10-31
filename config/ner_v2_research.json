@@ -1,0 +1,25 @@
+{
+  "experiment": "NER-V2-002 + NORM-V2-001",
+  "input_lock": "contracts/ner_v2/research_input_lock.json",
+  "normalization_cases": "contracts/ner_v2/research_cases.json",
+  "historical_predictions": "reports/ner_v2/benchmark_run1",
+  "output": "reports/ner_v2/research_run1",
+  "seed": 42,
+  "cpu_threads": 4,
+  "device": "cpu",
+  "dtype": "float32",
+  "thresholds": [0.15, 0.25, 0.35],
+  "primary_comparison_threshold": 0.35,
+  "normalization_variants": ["N0", "N1", "N2", "N3"],
+  "ner_variants": {
+    "E0": {"source": "historical", "window_words": 60, "overlap_words": 20, "labels": "long"},
+    "E1": {"source": "large", "window_words": 60, "overlap_words": 20, "labels": "short"},
+    "E2": {"source": "large", "window_words": 110, "overlap_words": 25, "labels": "short"},
+    "E3": {"source": "gliner25", "window_words": 110, "overlap_words": 25, "labels": "short"},
+    "E4": {"source": "large", "window_words": 110, "overlap_words": 25, "labels": "broad_exploratory"}
+  },
+  "ontology": "contracts/ner_v2/ontology.v2.json",
+  "ontology_policy": "unchanged_11_types_20_relations",
+  "evaluation_policy": "descriptive_only_no_human_gold",
+  "additional_corpus": "not_collected_optional_extension_deferred"
+}

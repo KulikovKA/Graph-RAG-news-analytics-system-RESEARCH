@@ -1,0 +1,34 @@
+{
+  "experiment": "NER-V2-002",
+  "name": "E2",
+  "seed": 42,
+  "cpu_threads": 4,
+  "device": "cpu",
+  "window_words": 110,
+  "overlap_words": 25,
+  "threshold": 0.15,
+  "exploratory_thresholds": [
+    0.15,
+    0.25,
+    0.35
+  ],
+  "max_input_tokens": 512,
+  "flat_ner": false,
+  "multi_label": true,
+  "overlap_policy": "allow",
+  "normalization": "N3",
+  "checkpoint": "urchade/gliner_large-v2.1@abd49a1f1ebc12af1be84d06f6848221cf96dcad",
+  "labels": {
+    "OBJECT": "physical, biological or digital object",
+    "ACTOR": "person or organization",
+    "CONCEPT": "scientific concept or theory",
+    "METHOD": "algorithm or research method",
+    "PROCESS": "event or scientific process",
+    "DATA_RESOURCE": "dataset or research corpus",
+    "ATTRIBUTE": "property, parameter or metric",
+    "RESULT": "measured or observed result",
+    "CONDITION": "experimental or contextual condition",
+    "TASK": "research task or application",
+    "MECHANISM": "mechanism explaining a phenomenon"
+  }
+}

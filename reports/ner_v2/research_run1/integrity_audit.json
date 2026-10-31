@@ -1,0 +1,162 @@
+{
+  "status": "complete",
+  "baseline_commit": "9a8556772a0c24ce80b61e8704683037bcdf150f",
+  "historical_files": {
+    "config/ner_v2.json": {
+      "git_sha256": "81040a4bc447fc2d8cf28b559914d94b3515e86ba082049988cdfcb71282091b",
+      "checkout_sha256": "81040a4bc447fc2d8cf28b559914d94b3515e86ba082049988cdfcb71282091b",
+      "unchanged_text": true,
+      "same_bytes": true
+    },
+    "contracts/ner_v2/model_lock.json": {
+      "git_sha256": "005e49a7048f9565d49a83d69cc9e14b98b35be46e9ec6279825b6b9ded86abf",
+      "checkout_sha256": "005e49a7048f9565d49a83d69cc9e14b98b35be46e9ec6279825b6b9ded86abf",
+      "unchanged_text": true,
+      "same_bytes": true
+    },
+    "contracts/ner_v2/ontology.v2.json": {
+      "git_sha256": "248abbec239279ae640e7188a7bb8e68f01f9f116ea8ca671d0da0c815613b14",
+      "checkout_sha256": "248abbec239279ae640e7188a7bb8e68f01f9f116ea8ca671d0da0c815613b14",
+      "unchanged_text": true,
+      "same_bytes": true
+    },
+    "reports/ner_v2/benchmark_run1/README.md": {
+      "git_sha256": "5a2fa46bf1c6f29eb8a5c650a1c2c681706ab90213537445c9b94eb809085686",
+      "checkout_sha256": "5a2fa46bf1c6f29eb8a5c650a1c2c681706ab90213537445c9b94eb809085686",
+      "unchanged_text": true,
+      "same_bytes": true
+    },
+    "reports/ner_v2/benchmark_run1/article_links.json": {
+      "git_sha256": "656164acda451f7175b8890477cb470c80a2336dacabe12b9407df6fcda83d72",
+      "checkout_sha256": "656164acda451f7175b8890477cb470c80a2336dacabe12b9407df6fcda83d72",
+      "unchanged_text": true,
+      "same_bytes": true
+    },
+    "reports/ner_v2/benchmark_run1/article_links.md": {
+      "git_sha256": "7e296d1ce9e2525ff5ff2be4411de95644069670d11eb3ba2e5e493ec575f680",
+      "checkout_sha256": "7e296d1ce9e2525ff5ff2be4411de95644069670d11eb3ba2e5e493ec575f680",
+      "unchanged_text": true,
+      "same_bytes": true
+    },
+    "reports/ner_v2/benchmark_run1/input_abstracts.jsonl": {
+      "git_sha256": "e2859bb8c7d15c62d875a35fbfca72125433dee2ca588ed85f5151490a34ea7d",
+      "checkout_sha256": "e2859bb8c7d15c62d875a35fbfca72125433dee2ca588ed85f5151490a34ea7d",
+      "unchanged_text": true,
+      "same_bytes": true
+    },
+    "reports/ner_v2/benchmark_run1/large.jsonl": {
+      "git_sha256": "29a2591d81ed01ba3ad0da1f3e89b98f77ba0886c2508822e746e7c91bd995aa",
+      "checkout_sha256": "29a2591d81ed01ba3ad0da1f3e89b98f77ba0886c2508822e746e7c91bd995aa",
+      "unchanged_text": true,
+      "same_bytes": true
+    },
+    "reports/ner_v2/benchmark_run1/manifest.json": {
+      "git_sha256": "0fd03c28f59fe88daec55a4d1a1b374ff7064728d63495392091a1744397e262",
+      "checkout_sha256": "0fd03c28f59fe88daec55a4d1a1b374ff7064728d63495392091a1744397e262",
+      "unchanged_text": true,
+      "same_bytes": true
+    },
+    "reports/ner_v2/benchmark_run1/medium.jsonl": {
+      "git_sha256": "b56291f7b8304ac6acebdb121aec3683f95f516720cb8a3eeb599d68b08869d2",
+      "checkout_sha256": "b56291f7b8304ac6acebdb121aec3683f95f516720cb8a3eeb599d68b08869d2",
+      "unchanged_text": true,
+      "same_bytes": true
+    },
+    "reports/ner_v2/benchmark_run1/small.jsonl": {
+      "git_sha256": "8dc8f908545ce6cc5ed3611681566b7a363b9cd37c1a99f8e9247840999971d7",
+      "checkout_sha256": "8dc8f908545ce6cc5ed3611681566b7a363b9cd37c1a99f8e9247840999971d7",
+      "unchanged_text": true,
+      "same_bytes": true
+    },
+    "reports/ner_v2/benchmark_run1/validation.json": {
+      "git_sha256": "33a4e14a6b423dd9ea33f5b6c739d11f53b8d1644d2bc694a724a3be876d814d",
+      "checkout_sha256": "33a4e14a6b423dd9ea33f5b6c739d11f53b8d1644d2bc694a724a3be876d814d",
+      "unchanged_text": true,
+      "same_bytes": true
+    },
+    "src/cgraph/ner_v2/normalization.py": {
+      "git_sha256": "cb874aceef9af7f1ef1969d0c89245daa6cb892dd0539dcd6ad769cb9b3ab4a2",
+      "checkout_sha256": "cb874aceef9af7f1ef1969d0c89245daa6cb892dd0539dcd6ad769cb9b3ab4a2",
+      "unchanged_text": true,
+      "same_bytes": true
+    }
+  },
+  "normalization": {
+    "large": {
+      "records": 99,
+      "N1_matches_historical_forms": 99,
+      "all_variants_preserve_identity_surface_offsets": true
+    },
+    "medium": {
+      "records": 54,
+      "N1_matches_historical_forms": 54,
+      "all_variants_preserve_identity_surface_offsets": true
+    },
+    "small": {
+      "records": 25,
+      "N1_matches_historical_forms": 25,
+      "all_variants_preserve_identity_surface_offsets": true
+    }
+  },
+  "ner": {
+    "E1": {
+      "raw_records_validated": 761,
+      "words_covered": 2057,
+      "accepted_windows": 49,
+      "split_over_budget": 0,
+      "max_preflight_tokens": 168,
+      "max_actual_encoder_tokens": 168,
+      "scores_equal_threshold": 0,
+      "filtered_files_match": true,
+      "exact_definition_spans": 5
+    },
+    "E2": {
+      "raw_records_validated": 466,
+      "words_covered": 2057,
+      "accepted_windows": 26,
+      "split_over_budget": 0,
+      "max_preflight_tokens": 229,
+      "max_actual_encoder_tokens": 229,
+      "scores_equal_threshold": 0,
+      "filtered_files_match": true,
+      "exact_definition_spans": 5
+    },
+    "E3": {
+      "raw_records_validated": 793,
+      "words_covered": 2057,
+      "accepted_windows": 26,
+      "split_over_budget": 0,
+      "max_preflight_tokens": 294,
+      "max_actual_encoder_tokens": 294,
+      "scores_equal_threshold": 0,
+      "filtered_files_match": true,
+      "exact_definition_spans": 5
+    },
+    "E4": {
+      "raw_records_validated": 579,
+      "words_covered": 2057,
+      "accepted_windows": 26,
+      "split_over_budget": 0,
+      "max_preflight_tokens": 192,
+      "max_actual_encoder_tokens": 192,
+      "scores_equal_threshold": 0,
+      "filtered_files_match": true,
+      "exact_definition_spans": 5
+    }
+  },
+  "lockfile": {
+    "historical_packages_version_changed": {},
+    "new_packages": {
+      "contourpy": "1.3.3",
+      "cycler": "0.12.1",
+      "fonttools": "4.68.0",
+      "kiwisolver": "1.5.1",
+      "matplotlib": "3.10.8",
+      "pillow": "13.0.0",
+      "pyparsing": "3.3.3",
+      "python-dateutil": "3.0.0",
+      "six": "1.17.0",
+      "tzdata": "2026.6"
+    }
+  }
+}

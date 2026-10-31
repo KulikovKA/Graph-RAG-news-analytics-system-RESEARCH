@@ -1,0 +1,65 @@
+{
+  "experiment": "NER-V2-002",
+  "name": "E3",
+  "seed": 42,
+  "cpu_threads": 4,
+  "device": "cpu",
+  "window_words": 110,
+  "overlap_words": 25,
+  "threshold": 0.15,
+  "exploratory_thresholds": [
+    0.15,
+    0.25,
+    0.35
+  ],
+  "max_input_tokens": 512,
+  "flat_ner": false,
+  "multi_label": true,
+  "overlap_policy": "allow",
+  "normalization": "N3",
+  "checkpoint": {
+    "repo_id": "fastino/gliner2.5-base-v1",
+    "revision": "54785d51df8d86a0d8f2eb212fec15871aad2c4d",
+    "disk_free_before_bytes": 247480340480,
+    "download_size_bytes": 782735800,
+    "files": {
+      "README.md": {
+        "bytes": 21918,
+        "sha256": "1b023a4786371699477e0b635d2a148f10fe5c23ab1e9d36211ff58754289bbe"
+      },
+      "config.json": {
+        "bytes": 4103,
+        "sha256": "d6b515c21ae2100c12267fb42a3f02c1e99ad87580366aebedb161efd74441c7"
+      },
+      "encoder_config/config.json": {
+        "bytes": 857,
+        "sha256": "d36a845b9f25dcaf1ec45a1c4bdf65ea4ac20596537e14530ec9f660a63aeca4"
+      },
+      "model.safetensors": {
+        "bytes": 774366564,
+        "sha256": "7274094de2e0c2a37a386f55fc4e23061a954da5bd7a335e7dfe56f2743c277a"
+      },
+      "tokenizer.json": {
+        "bytes": 8341713,
+        "sha256": "cbc8ae6037812709c9c26f2a160f8dc48b0440bcb79c8141804259ae2d6adac3"
+      },
+      "tokenizer_config.json": {
+        "bytes": 645,
+        "sha256": "0bf3ea0873234bd9bfdd3853c440395009ac6365a925b91654daed5396d655e1"
+      }
+    }
+  },
+  "labels": {
+    "OBJECT": "physical, biological or digital object",
+    "ACTOR": "person or organization",
+    "CONCEPT": "scientific concept or theory",
+    "METHOD": "algorithm or research method",
+    "PROCESS": "event or scientific process",
+    "DATA_RESOURCE": "dataset or research corpus",
+    "ATTRIBUTE": "property, parameter or metric",
+    "RESULT": "measured or observed result",
+    "CONDITION": "experimental or contextual condition",
+    "TASK": "research task or application",
+    "MECHANISM": "mechanism explaining a phenomenon"
+  }
+}

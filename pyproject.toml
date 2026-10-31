@@ -24,6 +24,7 @@ dependencies = [
 test = ["pytest==8.3.5"]
 # Retain the historical benchmark extra already present in the original uv.lock.
 benchmark = ["gliner2[local]==2.1.0"]
+research = ["gliner2[local]==2.1.0", "matplotlib==3.10.8"]
 ner-v2 = [
   "spacy==3.8.18",
   "en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl",

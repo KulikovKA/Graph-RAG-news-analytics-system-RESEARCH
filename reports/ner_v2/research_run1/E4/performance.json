@@ -1,0 +1,120 @@
+{
+  "status": "complete",
+  "documents": 12,
+  "words": 2057,
+  "model_load_seconds": 15.630345100071281,
+  "normalizer_load_seconds": 1.8643501999322325,
+  "inference_seconds": 33.21036360040307,
+  "normalization_seconds": 0.6991574997082353,
+  "preflight_seconds": 0.059856799663975835,
+  "processing_wall_seconds": 33.97377669997513,
+  "total_seconds": 51.46847199997865,
+  "documents_per_second": 0.3532136007713497,
+  "words_per_second": 60.54669806555553,
+  "peak_rss_bytes": 4102737920,
+  "baseline_rss_bytes": 273489920,
+  "model_disk_bytes": 1784510924,
+  "model_files": {
+    "config.json": {
+      "bytes": 580,
+      "sha256": "ddec8b81d079d218ce9e54fc0af5d1d5937d6d53b5d42e70c1f251a1cebc830d"
+    },
+    "gliner_config.json": {
+      "bytes": 1122,
+      "sha256": "5064971aef1f5b9d4a944ea0df47fa52daf58251a8fd4f6063f774394e369dce"
+    },
+    "pytorch_model.bin": {
+      "bytes": 1782044554,
+      "sha256": "1bf014f5849eb38bcb7b1c95c539b2b0289beff96920b65c2cbfe6db5e9330aa"
+    },
+    "spm.model": {
+      "bytes": 2464616,
+      "sha256": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd"
+    },
+    "tokenizer_config.json": {
+      "bytes": 52,
+      "sha256": "3f3978e0c036f2c2588cac34a6047cbb0af0b0dc1814254e291028529805496d"
+    }
+  },
+  "encoder_calls": 26,
+  "actual_sequence_lengths": [
+    162,
+    162,
+    162,
+    75,
+    149,
+    156,
+    154,
+    167,
+    182,
+    192,
+    101,
+    137,
+    167,
+    126,
+    161,
+    79,
+    151,
+    130,
+    182,
+    157,
+    167,
+    120,
+    148,
+    72,
+    153,
+    146,
+    150,
+    56
+  ],
+  "threshold_equivalence_check": {
+    "document_id": "W3195791401",
+    "start": 0,
+    "end": 813,
+    "checks": [
+      {
+        "threshold": 0.25,
+        "spans": 39,
+        "matches": true
+      },
+      {
+        "threshold": 0.35,
+        "spans": 17,
+        "matches": true
+      }
+    ],
+    "seconds": 2.8431750000454485,
+    "encoder_calls": 2
+  },
+  "library_source_sha256": {
+    "src\\cgraph\\ner_v2\\research.py": "2b7d365a1dbc820ceaba03d7ed9ead822f51f65bea023a1180b72d1ec9163b61",
+    "src\\cgraph\\ner_v2\\normalization.py": "cb874aceef9af7f1ef1969d0c89245daa6cb892dd0539dcd6ad769cb9b3ab4a2",
+    "src\\cgraph\\ner_v2\\scientific_normalization.py": "8a3b72cb94425f3deed6ff65e8e9bc9f94c12d102fd5eb3addd97e66b90ae301"
+  },
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+    "logical_cpu": 16,
+    "physical_cpu": 8,
+    "ram_bytes": 33618251776,
+    "versions": {
+      "torch": "2.11.0",
+      "gliner": "0.2.26",
+      "gliner2": "2.1.0",
+      "transformers": "5.1.0",
+      "spacy": "3.8.18",
+      "en-core-web-sm": "3.8.0",
+      "numpy": "2.4.1",
+      "psutil": "7.2.2",
+      "huggingface-hub": "1.28.0",
+      "tokenizers": "0.22.2",
+      "peft": "0.21.2",
+      "matplotlib": "3.10.8"
+    },
+    "cpu_threads": 4,
+    "seed": 42,
+    "device": "cpu",
+    "rss_sampling_interval_seconds": 0.01
+  }
+}

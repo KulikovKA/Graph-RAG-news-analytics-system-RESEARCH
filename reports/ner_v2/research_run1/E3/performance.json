@@ -1,0 +1,124 @@
+{
+  "status": "complete",
+  "documents": 12,
+  "words": 2057,
+  "model_load_seconds": 24.86423399997875,
+  "normalizer_load_seconds": 1.754923300119117,
+  "inference_seconds": 14.077402099967003,
+  "normalization_seconds": 0.774863800033927,
+  "preflight_seconds": 0.09017899935133755,
+  "processing_wall_seconds": 14.947317800018936,
+  "total_seconds": 41.566475100116804,
+  "documents_per_second": 0.8028196202521898,
+  "words_per_second": 137.61666323822953,
+  "peak_rss_bytes": 2112937984,
+  "baseline_rss_bytes": 273186816,
+  "model_disk_bytes": 782735800,
+  "model_files": {
+    "config.json": {
+      "bytes": 4103,
+      "sha256": "d6b515c21ae2100c12267fb42a3f02c1e99ad87580366aebedb161efd74441c7"
+    },
+    "model.safetensors": {
+      "bytes": 774366564,
+      "sha256": "7274094de2e0c2a37a386f55fc4e23061a954da5bd7a335e7dfe56f2743c277a"
+    },
+    "README.md": {
+      "bytes": 21918,
+      "sha256": "1b023a4786371699477e0b635d2a148f10fe5c23ab1e9d36211ff58754289bbe"
+    },
+    "tokenizer.json": {
+      "bytes": 8341713,
+      "sha256": "cbc8ae6037812709c9c26f2a160f8dc48b0440bcb79c8141804259ae2d6adac3"
+    },
+    "tokenizer_config.json": {
+      "bytes": 645,
+      "sha256": "0bf3ea0873234bd9bfdd3853c440395009ac6365a925b91654daed5396d655e1"
+    },
+    "encoder_config\\config.json": {
+      "bytes": 857,
+      "sha256": "d36a845b9f25dcaf1ec45a1c4bdf65ea4ac20596537e14530ec9f660a63aeca4"
+    }
+  },
+  "encoder_calls": 26,
+  "actual_sequence_lengths": [
+    264,
+    264,
+    264,
+    176,
+    251,
+    255,
+    254,
+    268,
+    284,
+    294,
+    202,
+    237,
+    269,
+    227,
+    264,
+    180,
+    253,
+    231,
+    283,
+    264,
+    275,
+    225,
+    252,
+    173,
+    256,
+    247,
+    252,
+    157
+  ],
+  "threshold_equivalence_check": {
+    "document_id": "W3195791401",
+    "start": 0,
+    "end": 813,
+    "checks": [
+      {
+        "threshold": 0.25,
+        "spans": 33,
+        "matches": true
+      },
+      {
+        "threshold": 0.35,
+        "spans": 25,
+        "matches": true
+      }
+    ],
+    "seconds": 1.1504663000814617,
+    "encoder_calls": 2
+  },
+  "library_source_sha256": {
+    "src\\cgraph\\ner_v2\\research.py": "2b7d365a1dbc820ceaba03d7ed9ead822f51f65bea023a1180b72d1ec9163b61",
+    "src\\cgraph\\ner_v2\\normalization.py": "cb874aceef9af7f1ef1969d0c89245daa6cb892dd0539dcd6ad769cb9b3ab4a2",
+    "src\\cgraph\\ner_v2\\scientific_normalization.py": "8a3b72cb94425f3deed6ff65e8e9bc9f94c12d102fd5eb3addd97e66b90ae301"
+  },
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+    "logical_cpu": 16,
+    "physical_cpu": 8,
+    "ram_bytes": 33618251776,
+    "versions": {
+      "torch": "2.11.0",
+      "gliner": "0.2.26",
+      "gliner2": "2.1.0",
+      "transformers": "5.1.0",
+      "spacy": "3.8.18",
+      "en-core-web-sm": "3.8.0",
+      "numpy": "2.4.1",
+      "psutil": "7.2.2",
+      "huggingface-hub": "1.28.0",
+      "tokenizers": "0.22.2",
+      "peft": "0.21.2",
+      "matplotlib": "3.10.8"
+    },
+    "cpu_threads": 4,
+    "seed": 42,
+    "device": "cpu",
+    "rss_sampling_interval_seconds": 0.01
+  }
+}
