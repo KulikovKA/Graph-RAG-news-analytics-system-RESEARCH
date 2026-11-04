@@ -59,6 +59,10 @@ uv run --no-sync cgraph import-dev --source-root "C:/Users/Kirill/Desktop/Graph-
 
 `fetch-dev` получает только DEV source snapshot, release manifest и 12 явно перечисленных DEV Gold-файлов с pinned upstream commit. CALIBRATION/HOLDOUT texts, annotations и review packets не загружаются. Ни source clone, ни старая инфраструктура для исполнения не нужны.
 
+## Entity Typing V2
+
+Локальный эксперимент T1 / Qwen thinking OFF / ON / offline hybrid: [инструкция для Windows](docs/ENTITY_TYPING_V2_README.md). Точка входа — `python scripts/run_entity_typing_v2.py`; подготовка и `--dry-run` не выполняют inference.
+
 ## Модели и контракт
 
 - NER: [urchade/gliner_small-v2.1](https://huggingface.co/urchade/gliner_small-v2.1), revision `4e091416cf7c3481db542c2a3d26156916f3a47f`, Apache-2.0. CPU float32, strict загрузка весов, nested mentions сохраняются. Измерено 152 648 704 параметра; это отличается от округлённой таблицы model card.

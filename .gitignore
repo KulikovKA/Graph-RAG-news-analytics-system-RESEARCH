@@ -1,5 +1,6 @@
 .venv/
 .venv-ner-v2/
+.venv-entity-typing/
 __pycache__/
 .pytest_cache/
 .ruff_cache/
@@ -13,3 +14,6 @@ artifacts/
 .env
 .cache/
 reports/diagnostics/*.log
+reports/entity_typing_v2/run1/*_results.zip
+reports/entity_typing_v2/*_results.zip
+reports/entity_typing_v2/**/.run.lock
