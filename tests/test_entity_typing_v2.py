@@ -323,6 +323,11 @@ def test_thinking_only_changes_api_think_and_checkpoint_is_locked(sandbox, confi
         assert off['think'] is False and on['think'] is True
         assert {k: v for k, v in off.items() if k != 'think'} == {k: v for k, v in on.items() if k != 'think'}
     b.model['digest'] = 'different-checkpoint'
+    # A complete resume validates stored provenance offline and does not use a live checkpoint.
+    assert len(runner.run_qwen(output, config, b, 'thinking', resume=True)) == len(rows)
+    (output / runner.MODE_FILES['thinking']).unlink()
+    for path in (output / 'attempts/thinking').glob('*.json'):
+        path.unlink()
     with pytest.raises(ValueError, match='changed'):
         runner.run_qwen(output, config, b, 'thinking', resume=True)
 
@@ -379,7 +384,7 @@ def test_discovery_never_substitutes_other_qwen_models(config):
 def test_config_and_cli_defaults(config):
     validate_config(config)
     args = parser().parse_args(['qwen', '--mode', 'thinking', '--resume', '--num-thread', '3'])
-    assert args.dataset == 'pilot' and args.num_thread == 3 and args.resume
+    assert args.dataset is None and config['default_dataset'] == 'full' and args.num_thread == 3 and args.resume
     config['num_parallel'] = 2
     with pytest.raises(ValueError, match='num_parallel'):
         validate_config(config)

@@ -61,7 +61,7 @@ uv run --no-sync cgraph import-dev --source-root "C:/Users/Kirill/Desktop/Graph-
 
 ## Entity Typing V2
 
-Локальный эксперимент T1 / Qwen thinking OFF / ON / offline hybrid: [инструкция для Windows](docs/ENTITY_TYPING_V2_README.md). Точка входа — `python scripts/run_entity_typing_v2.py`; подготовка и `--dry-run` не выполняют inference.
+Локальный эксперимент T1 / Qwen thinking OFF / ON / offline hybrid: [инструкция для Windows](docs/ENTITY_TYPING_V2_README.md). Ночной launcher — `.\run_all_night.ps1`, основной набор full (1211), автоматический resume, проверка полноты и ZIP. `.\run_all_night.ps1 -DryRun` проверяет полный набор без inference. Python CLI — `python scripts/run_entity_typing_v2.py`.
 
 ## Модели и контракт
 

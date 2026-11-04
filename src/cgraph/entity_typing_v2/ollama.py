@@ -32,6 +32,8 @@ class OllamaClient:
             raise OllamaError(f"HTTP {exc.code}: {exc.read().decode('utf-8', errors='replace')[:2000]}") from exc
         except (OSError, ValueError) as exc:
             raise OllamaError(str(exc)) from exc
+        if not isinstance(result, dict):
+            raise OllamaError("Invalid Ollama response: expected a JSON object")
         if result.get("error"):
             raise OllamaError(str(result["error"]))
         return result

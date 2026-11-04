@@ -72,6 +72,8 @@ def dry_run(output, config, client):
                   planned_output_budget={m: output_budget(config, m) for m in MODE_FILES},
                   runtime_verified=False)
     write_json(output / "dry_run.json", report)
+    manifest["preflight"] = report
+    write_json(output / "manifest.json", manifest)
     write_jsonl(output / "dry_run_batches.jsonl", plans)
     tqdm.write(f"Dry-run: candidates={len(candidates)}, batches={len(batches)}, model_available={report['model_available']}, "
                f"num_ctx={report['selected_num_ctx']}; no loading or inference")
@@ -92,7 +94,11 @@ def _recover(output, mode, run_digest, candidates, labels):
         attempts.append(record)
         raw = record.get("response")
         if raw:
-            valid, recovered_errors = parse_response(raw.get("message", {}).get("content", ""), record["candidate_ids"], labels)
+            message = raw.get("message")
+            if isinstance(message, dict) and isinstance(message.get("content"), str):
+                valid, recovered_errors = parse_response(message["content"], record["candidate_ids"], labels)
+            else:
+                valid, recovered_errors = {}, [{"kind": "invalid_response_envelope"}]
             if record.get("parsed_finalized"):
                 if any(cid not in valid or valid[cid] != row for cid, row in record["parsed"].items()):
                     raise ValueError("Parsed journal differs from raw response")
@@ -130,12 +136,46 @@ def _recover(output, mode, run_digest, candidates, labels):
 def _save_results(output, mode, candidates, completed, run_digest):
     rows = [completed.get(c["candidate_id"], {"candidate_id": c["candidate_id"],
             "processing_status": "NOT_PROCESSED", "entity_type": None,
-            "typing_status": "NOT_PROCESSED", "mode": mode, "run_digest": run_digest}) for c in candidates]
+            "typing_status": "NOT_PROCESSED", "mode": mode, "run_digest": run_digest,
+            "error_reason": "No validated decision; inspect attempt journal or stage error"}) for c in candidates]
     write_jsonl(output / MODE_FILES[mode], rows)
 
 
+def materialize_pending(output, mode, reason):
+    """Give every frozen ID a row even if model discovery/allocation failed."""
+    manifest, candidates, ontology = load_frozen(output)
+    run_digest = digest([manifest["frozen"], manifest["runtime"]]) if manifest.get("runtime") else None
+    completed, _ = _recover(output, mode, run_digest, candidates, ontology["entity_types"])
+    _save_results(output, mode, candidates, completed, run_digest)
+    rows = read_jsonl(output / MODE_FILES[mode])
+    for row in rows:
+        if row["processing_status"] != "COMPLETE":
+            row["error_reason"] = reason
+    write_jsonl(output / MODE_FILES[mode], rows)
+
+
+def completed_mode(output, config, mode):
+    """Validate a completed mode offline; the other mode still verifies live metadata."""
+    manifest, candidates, ontology = load_frozen(output)
+    runtime = manifest.get("runtime")
+    if not runtime:
+        return None
+    saved_model = {"tag": runtime["model"], **{k: runtime[k] for k in
+                   ("digest", "details", "ollama_version", "native_context")}}
+    if runtime != common_settings(config, saved_model, runtime["num_ctx"]):
+        raise ValueError("Frozen settings/code changed; use a new --output")
+    run_digest = digest([manifest["frozen"], runtime])
+    completed, _ = _recover(output, mode, run_digest, candidates, ontology["entity_types"])
+    if len(completed) != len(candidates):
+        return None
+    _save_results(output, mode, candidates, completed, run_digest)
+    rebuild_failure_log(output)
+    tqdm.write(f"{mode}: all {len(candidates)} candidates complete; skipping without Ollama access")
+    return completed
+
+
 def rebuild_failure_log(output):
-    failures = []
+    failures = read_jsonl(output / "stage_errors.jsonl")
     for path in sorted((output / "attempts").glob("*/*.json")):
         attempt = read_json(path)
         for error in attempt.get("errors", []):
@@ -150,6 +190,10 @@ def run_qwen(output, config, client, mode, resume=False):
     existing = (output / MODE_FILES[mode]).exists() or any((output / "attempts" / mode).glob("*.json"))
     if existing and not resume:
         raise ValueError("Results already exist. Use --resume or a new --output directory")
+    if resume:
+        complete = completed_mode(output, config, mode)
+        if complete is not None:
+            return complete
     model, hardware, choices, estimate = metadata_preflight(client, config)
     pinned = manifest["runtime"]["num_ctx"] if manifest.get("runtime") else None
     if pinned is not None:
@@ -196,8 +240,9 @@ def run_qwen(output, config, client, mode, resume=False):
                f"num_ctx={selected} | Thinking {'ON' if mode == 'thinking' else 'OFF'} | Candidates: {len(candidates)}")
     if selected != model["native_context"]:
         tqdm.write(f"Explicit context reduction: native={model['native_context']} -> {selected}; memory/runtime evidence in model_settings.json")
-    candidate_bar = tqdm(total=len(candidates), initial=len(completed), desc=mode + " candidates", unit="candidate")
-    batch_bar = tqdm(total=len(queue), desc=mode + " batches", unit="batch")
+    stage = "T2.2 Thinking ON" if mode == "thinking" else "T2.1 Thinking OFF"
+    candidate_bar = tqdm(total=len(candidates), initial=len(completed), desc=stage + " candidates", unit="candidate")
+    batch_bar = tqdm(total=len(queue), desc=stage + " batches", unit="batch")
     monitor = MemoryMonitor()
     try:
         with monitor:
@@ -230,6 +275,9 @@ def run_qwen(output, config, client, mode, resume=False):
                     record["wall_seconds"] = time.monotonic() - before
                     # Persist raw content/thinking before parsing or materializing canonical outputs.
                     write_json(attempt_path, record)
+                    if (not isinstance(response.get("message"), dict) or
+                            not isinstance(response["message"].get("content"), str)):
+                        raise OllamaError("Invalid /api/chat message envelope; raw response saved")
                     valid, validation_errors = parse_response(response.get("message", {}).get("content", ""),
                                                               plan["candidate_ids"], ontology["entity_types"])
                     record["errors"].extend(validation_errors)

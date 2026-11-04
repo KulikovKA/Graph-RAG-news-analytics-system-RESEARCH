@@ -7,7 +7,7 @@ from tqdm import tqdm
 from .dataset import gliner_rows, load_frozen
 from .prompting import batch_record, plan_batches
 from .runner import MODE_FILES, _recover
-from .storage import (atomic_text, digest, now, read_json, read_jsonl,
+from .storage import (atomic_text, digest, file_hash, now, read_json, read_jsonl,
                       write_csv, write_json, write_jsonl)
 
 
@@ -26,7 +26,10 @@ def predictions(output, manifest, candidates, ontology):
         if len(rows) != len(ids) or {r["candidate_id"] for r in rows} != ids:
             raise ValueError("Qwen output has duplicate, missing, or unexpected IDs")
         if not manifest.get("runtime"):
-            raise ValueError("Qwen output lacks frozen runtime provenance")
+            if any(r.get("processing_status") != "NOT_PROCESSED" or r.get("entity_type") is not None for r in rows):
+                raise ValueError("Qwen output lacks frozen runtime provenance")
+            result["T22" if mode == "thinking" else "T21"] = {}
+            continue
         run_digest = digest([manifest["frozen"], manifest["runtime"]])
         completed, _ = _recover(output, mode, run_digest, candidates, ontology["entity_types"])
         result["T22" if mode == "thinking" else "T21"] = completed
@@ -57,8 +60,8 @@ def hybrid(output, config):
     methods = predictions(output, manifest, candidates, ontology)
     if not all(method in methods for method in ("T1", "T21", "T22")):
         raise ValueError("Hybrid requires saved T1, T21 and T22 (partial Qwen rows remain NOT_PROCESSED)")
-    planning = _planning_config(config, manifest["runtime"])
-    ctx = manifest["runtime"]["num_ctx"]
+    planning = _planning_config(config, manifest["runtime"]) if manifest.get("runtime") else config
+    ctx = manifest["runtime"]["num_ctx"] if manifest.get("runtime") else config["max_model_context"]
     baseline = plan_batches(candidates, ontology, planning, ctx)
     full_input = sum(batch_record(b, ontology, planning)["input_token_upper_bound"] for b in baseline)
     results, estimates = [], []
@@ -82,7 +85,9 @@ def hybrid(output, config):
                             "gliner_margin": g["score_margin"], "qwen_entity_type": q["entity_type"] if q else None,
                             "qwen_typing_status": q["typing_status"] if q else "NOT_PROCESSED",
                             "entity_type": decision["entity_type"] if decision else None,
-                            "typing_status": decision["typing_status"] if decision else "NOT_PROCESSED"})
+                            "typing_status": decision["typing_status"] if decision else "NOT_PROCESSED",
+                            "processing_status": "COMPLETE" if decision else "NOT_PROCESSED",
+                            "error_reason": None if decision else "Routed Qwen candidate has no validated saved decision"})
         repacked = plan_batches(routed, ontology, planning, ctx) if routed else []
         hybrid_input = sum(batch_record(b, ontology, planning)["input_token_upper_bound"] for b in repacked)
         estimates.append({"variant": variant, "routed_candidates": len(routed),
@@ -95,6 +100,11 @@ def hybrid(output, config):
                           "measured_hybrid_inference_latency_seconds": None})
     write_jsonl(output / "T3_hybrid.jsonl", results)
     write_json(output / "T3_plan_estimates.json", estimates)
+    manifest["hybrid_policy"] = {"expected_variants": [e["variant"] for e in estimates],
+                                 "routing_thresholds": config["routing_thresholds"], "risk_margin": config["risk_margin"],
+                                 "source_hashes": {name: file_hash(output / name) for name in
+                                  ("T1_gliner.jsonl", *MODE_FILES.values())}}
+    write_json(output / "manifest.json", manifest)
     return results
 
 
@@ -188,9 +198,12 @@ def summarize(output):
     metrics["json_error_count"] = sum(e["kind"] in ("invalid_json", "json_schema", "record_schema") for e in failures)
     sessions = [read_json(p) for p in (output / "sessions").glob("*.json")]
     commands = [read_json(p) for p in (output / "command_sessions").glob("*.json")]
-    metrics["total_active_experiment_wall_seconds"] = sum(s["wall_seconds"] for s in commands or sessions)
-    metrics["wall_time_source"] = "CLI command sessions" if commands else "direct Qwen sessions"
+    nights = list(manifest.get("execution", {}).get("night_launches", {}).values())
+    metrics["total_active_experiment_wall_seconds"] = sum(s["wall_seconds"] for s in commands) + sum(n["wall_seconds"] for n in nights) if commands or nights else sum(s["wall_seconds"] for s in sessions)
+    metrics["wall_time_source"] = "CLI command and night sessions (without double-counting inner Qwen sessions)" if commands or nights else "direct Qwen sessions"
     metrics["wall_time_note"] = "sum of measured command sessions; excludes pauses between launches; offline hybrid latency is not inference latency"
+    from .completeness import check_completeness
+    metrics["completeness"] = check_completeness(output, validated=methods)
     write_json(output / "metrics.json", metrics)
     flat = []
     def flatten(prefix, value):
@@ -204,7 +217,8 @@ def summarize(output):
     write_csv(output / "metrics.csv", flat, ["metric", "value"])
     write_csv(output / "disagreements.csv", disagreements,
               ["candidate_id", "document_id", "surface_text", "context", "method_a", "method_b", "type_a", "type_b"])
-    text = ["# ENTITY-TYPING-V2-001", "", f"Frozen dataset: {manifest['frozen']['dataset']}; candidates: {len(candidates)}.",
+    text = ["# ENTITY-TYPING-V2-001", "", f"Status: **{metrics['completeness']['status']}**.", "",
+            f"Frozen dataset: {manifest['frozen']['dataset']}; candidates: {len(candidates)}.",
             "", "Agreement is descriptive and does not establish correctness. Qwen confidence estimates are subjective; GLiNER scores are used only for routing.",
             "", "| Method | Complete | Missing |", "|---|---:|---:|"]
     text.extend(f"| {name} | {len(rows)} | {len(all_ids - rows.keys())} |" for name, rows in methods.items())

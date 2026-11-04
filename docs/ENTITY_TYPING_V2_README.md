@@ -1,6 +1,37 @@
 # ENTITY-TYPING-V2-001 — локальный стенд Entity Typing
 
-Стенд сравнивает T1 GLiNER-only, T2.1 Qwen без thinking, T2.2 Qwen с thinking и T3 hybrid на одних замороженных mentions. Подготовка и разработка не требуют генерации Qwen. Запуск `qwen` без `--dry-run` и launcher без `-DryRun` запускают настоящий эксперимент; это делает пользователь.
+Стенд сравнивает T1 GLiNER-only, T2.1 Qwen без thinking, T2.2 Qwen с thinking и T3 hybrid на одних замороженных mentions. **Основной режим по умолчанию — full, все 1211 candidates.** Pilot (240) оставлен для быстрой проверки. Подготовка и разработка не требуют генерации Qwen. Запуск `qwen`/`night` без `--dry-run` и launcher без `-DryRun` запускают настоящий эксперимент; это делает пользователь.
+
+## Ночной запуск
+
+Из корня репозитория:
+
+```powershell
+# Только проверка CLI, метаданных и полного набора, без загрузки/генерации модели
+.\run_all_night.ps1 -DryRun
+
+# Настоящий ночной запуск: full=1211, четыре CPU-потока, resume включён
+.\run_all_night.ps1
+
+# Быстрая проверка на pilot без inference
+.\run_all_night.ps1 -Dataset pilot -DryRun
+```
+
+Порядок: prepare → T1 → T2.1 OFF → T2.2 ON → T3 offline → summarize → completeness → export-results. Команда `python scripts/run_entity_typing_v2.py night` выполняет тот же pipeline. Старый `scripts/run_entity_typing_v2.ps1` перенаправляет в новый launcher и тоже выбирает full по умолчанию. CLI берёт default dataset из `config/entity_typing_v2.json` (`default_dataset=full`); явный `--dataset pilot` переключает набор.
+
+Launcher работает в текущем foreground PowerShell, ждёт Python до завершения, не создаёт detached jobs и не запрашивает подтверждений. На время реального запуска он запрещает автоматический сон Windows через [SetThreadExecutionState](https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-setthreadexecutionstate), затем восстанавливает предыдущее состояние; постоянный план питания не меняется, экран может выключаться. Не закрывайте PowerShell и не отправляйте компьютер в сон вручную: такой пользовательский сон API не блокирует. `-DryRun` состояние питания не меняет.
+
+Полный каталог: `reports/entity_typing_v2/run1/full/`; итоговый ZIP: `reports/entity_typing_v2/run1/full_results.zip`. Технические логи — `full/night_runs/`: PowerShell transcript и Python log (stdout/stderr, tqdm и traceback), отдельные файлы на каждый запуск. `manifest.json` содержит requested config, checkpoint/digest/quantization, фактический context, thinking flags, версии Python/пакетов/Ollama, timings и историю этапов каждого запуска. При model preflight failure фактический контекст остаётся неизвестным — он не подменяется оценочным.
+
+После исчерпания retries неудачного batch сохраняются NOT_PROCESSED, обработка остальных batches продолжается. Неполный T2.1 не блокирует T2.2 и офлайн-отчёты. Ошибки этапов сохраняются в `stage_errors.jsonl` и общем `failure_log.jsonl`. Повторите `.\run_all_night.ps1`, чтобы продолжить: полностью завершённые T2.1/T2.2 проверяются по durable journal и пропускаются **без обращения к Ollama**, незавершённые отправляют только оставшиеся IDs. Между этапами удерживается единый OS lock, поэтому второй launcher не может вмешаться в тот же сервер/checkout.
+
+Итоговые `completeness.json` и `completeness.csv` проверяют каждый из 1211 ID для T1, T2.1, T2.2 и всех 16 T3 policies, включая отсутствующие/дублированные/посторонние ID, согласованность решений и актуальность T3 относительно входов. Строка NOT_PROCESSED обеспечивает учёт ID, но не считается успешным предсказанием. Даже при недоступном Ollama создаются явные строки для всех ID и ZIP с доступными результатами. Status COMPLETE и код 0 выдаются только при полной успешной классификации и успешном экспорте. Код 3 — частичный прогон/ошибка этапа/экспорта; 130 — Ctrl+C с попыткой сохранить офлайн-отчёты и ZIP. Ошибки конфигурации/исходных данных до начала pipeline дают код 1. При неисправности диска/повреждении данных создание полного набора артефактов может оказаться невозможно; подробности останутся в доступном техническом логе.
+
+Параметры launcher: `-Python`, `-Config`, `-Output`, `-NumThread`, `-StrictMaxContext`, `-Dataset`, `-DryRun`. Никаких вызовов Qwen для отчётов, проверки полноты или ZIP нет. Чтобы проверить полноту отдельно:
+
+```powershell
+.\.venv-ner-v2\Scripts\python.exe scripts/run_entity_typing_v2.py check-completeness
+```
 
 ## Установка на Windows
 
@@ -41,8 +72,8 @@ ollama serve
 ## Подготовка и dry-run без загрузки модели
 
 ```powershell
-& $py scripts/run_entity_typing_v2.py prepare --dataset pilot
-& $py scripts/run_entity_typing_v2.py qwen --dataset pilot --dry-run
+& $py scripts/run_entity_typing_v2.py prepare --dataset full
+& $py scripts/run_entity_typing_v2.py qwen --dataset full --dry-run
 ```
 
 Первый шаг читает только `reports/ner_v2/research_run2/input_abstracts.jsonl`, `E3/mentions_035.jsonl`, `E3/config.json` и Ontology v2. Он проверяет исходные SHA-256, provenance каждого hint, N3, точные Unicode codepoint offsets и score ≥0.35. Имеются 30 документов, 1327 hints и 1211 уникальных spans. Несколько hints одного `(document_id,start,end)` объединяются, для каждого типа берётся максимальный score. Нормализованная N3 form переиспользуется; NLP и модели не загружаются. Нижепороговые hints не добавляются: отсутствие top-2 означает `null` margin, а не нулевую альтернативу.
@@ -56,26 +87,26 @@ Dry-run создаёт `dry_run.json` и `dry_run_batches.jsonl`, проверя
 ## Последовательный запуск четырёх тестов
 
 ```powershell
-& $py scripts/run_entity_typing_v2.py gliner --dataset pilot
-& $py scripts/run_entity_typing_v2.py qwen --mode no-thinking --dataset pilot --resume
-& $py scripts/run_entity_typing_v2.py qwen --mode thinking --dataset pilot --resume
-& $py scripts/run_entity_typing_v2.py hybrid --dataset pilot
-& $py scripts/run_entity_typing_v2.py summarize --dataset pilot
+& $py scripts/run_entity_typing_v2.py gliner --dataset full
+& $py scripts/run_entity_typing_v2.py qwen --mode no-thinking --dataset full --resume
+& $py scripts/run_entity_typing_v2.py qwen --mode thinking --dataset full --resume
+& $py scripts/run_entity_typing_v2.py hybrid --dataset full
+& $py scripts/run_entity_typing_v2.py summarize --dataset full
 ```
 
-Либо launcher, который сначала выполняет prepare и dry-run, затем последовательно T1 → T2.1 → T2.2 → T3 → summary:
+Либо ночной launcher с prepare, последовательными этапами, проверкой полноты и ZIP:
 
 ```powershell
-.\scripts\run_entity_typing_v2.ps1 -Python $py -Dataset pilot -NumThread 4
+.\run_all_night.ps1 -Python $py -NumThread 4
 ```
 
 Только безопасная подготовка и dry-run через launcher:
 
 ```powershell
-.\scripts\run_entity_typing_v2.ps1 -Python $py -Dataset pilot -DryRun
+.\run_all_night.ps1 -Python $py -DryRun
 ```
 
-Для всех 1211 mentions замените `--dataset pilot` на `--dataset full` во всех командах или используйте `-Dataset full`. Pilot сохраняется в `reports/entity_typing_v2/run1/`, full — в `reports/entity_typing_v2/run1/full/`; manifests не смешиваются. `--output reports/entity_typing_v2/run2` выбирает новый корень (для full также добавится `full/`). Если ExecutionPolicy запрещает запуск `.ps1`, используйте Python-команды выше.
+Без явного выбора dataset используются все 1211 mentions. Для быстрой проверки задайте `--dataset pilot`/`-Dataset pilot`. Pilot сохраняется в `reports/entity_typing_v2/run1/`, full — в `reports/entity_typing_v2/run1/full/`; manifests не смешиваются. `--output reports/entity_typing_v2/run2` выбирает новый корень (для full также добавится `full/`). Если ExecutionPolicy запрещает запуск `.ps1`, используйте Python-команды выше; временный запрет сна реализован именно PowerShell launcher.
 
 ## Максимальная ёмкость контекста
 
@@ -132,7 +163,7 @@ T3 читает только замороженный набор и сохран
 ```
 
 ```powershell
-& $py scripts/run_entity_typing_v2.py evaluate --dataset pilot --gold .\human_gold.jsonl
+& $py scripts/run_entity_typing_v2.py evaluate --dataset full --gold .\human_gold.jsonl
 ```
 
 Evaluator проверит IDs, допустимые типы и статус review, рассчитает per-type и micro Precision/Recall/F1 на проверенных candidates; missing/abstention дают FN для соответствующего положительного типа. Результат — `human_evaluation.json`. Эти метрики оценивают typing существующих candidates, а не полноту обнаружения mentions во всём корпусе. Предварительные assisted reference не используются как Gold.
@@ -151,7 +182,7 @@ Evaluator проверит IDs, допустимые типы и статус re
 Файлы этапов создаются только после соответствующего запуска; T2 outputs до inference отсутствуют. Все записи UTF-8, offsets — codepoints, end exclusive. Исторические отчёты, Ontology v2, NER-V2 и N3 не изменяются. Relation Extraction, verification и resolution не выполняются.
 
 ```powershell
-& $py scripts/run_entity_typing_v2.py export-results --dataset pilot
+& $py scripts/run_entity_typing_v2.py export-results --dataset full
 & $py scripts/run_entity_typing_v2.py export-results --dataset full --zip .\reports\entity_typing_v2\full_results.zip
 ```
 
