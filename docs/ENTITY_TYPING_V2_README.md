@@ -1,6 +1,20 @@
 # ENTITY-TYPING-V2-001 — локальный стенд Entity Typing
 
-Стенд сравнивает T1 GLiNER-only, T2.1 Qwen без thinking, T2.2 Qwen с thinking и T3 hybrid на одних замороженных mentions. **Основной режим по умолчанию — full, все 1211 candidates.** Pilot (240) оставлен для быстрой проверки. Подготовка и разработка не требуют генерации Qwen. Запуск `qwen`/`night` без `--dry-run` и launcher без `-DryRun` запускают настоящий эксперимент; это делает пользователь.
+Стенд сравнивает T1 GLiNER-only, T2.1 Qwen без thinking, T2.2 Qwen с thinking и T3 hybrid на одних замороженных mentions. **Основной режим по умолчанию — full, все 1211 candidates, два независимых сервера Qwen.** Pilot (240) оставлен для быстрой проверки. Подготовка и разработка не требуют генерации Qwen. Запуск `qwen`/`night` без `--dry-run` и launcher без `-DryRun` запускают настоящий эксперимент; это делает пользователь.
+
+## Два отдельных сервера
+
+По запросу пользователя 05.11.2026 используются `http://localhost:11434` и `http://127.0.0.1:11435`. В [Ollama 0.35.0](https://github.com/ollama/ollama/blob/v0.35.0/server/sched.go#L481-L485) для архитектуры qwen35 принудительно разрешён только один вычислительный слот на сервер. Поэтому два асинхронных запроса здесь адресуются **двум процессам Ollama**, у каждого своя модель и своё окно контекста. Это не два запроса в очередь одного сервера. Общие файлы весов на диске используются из существующего Ollama model store, без повторного скачивания.
+
+Внутри T2.1 одновременно выполняются до двух OFF batches; после завершения всех OFF запросов так же выполняются ON batches. Обе копии обязаны иметь одинаковые tag, digest, quantization, native context и версию Ollama. Каждый candidate отправляется одному серверу на попытку; основной поток единолично обновляет общие JSONL и failure log. Worker сохраняет уникальный attempt journal до отправки и сразу после ответа. Journal содержит server URL, worker index, model digest и точные timings.
+
+При настоящем запуске существующий сервер переиспользуется. Если endpoint отсутствует, Python запускает `ollama serve` скрыто с `OLLAMA_HOST` соответствующего порта, `OLLAMA_NUM_PARALLEL=1` и `OLLAMA_MAX_LOADED_MODELS=1`, ждёт readiness и затем работает с ним. При завершении/ошибке останавливаются только процессы, созданные этим launcher; уже работавший сервер не завершается. Логи серверов — `full/server_logs/`, ownership/PID — `full/server_processes.json`. Дополнительные запросы Qwen для readiness не выполняются. При Ctrl+C клиент закрывает активные HTTP sockets; уже полученные raw ответы остаются в durable journal для resume.
+
+Общий RAM budget учитывает **две модели, два независимых KV cache и резерв runtime для каждой**. Одинаковый `num_ctx` выбирается максимальным из native ladder для обеих копий и затем проверяется на обоих `/api/ps`. Например, два окна по 32768 — два отдельных окна, а не общее окно 65536. Если даже минимальное окно не помещается по RAM или не вмещает полный prompt, эксперимент останавливается; освободите память и повторите dry-run. Тексты не обрезаются. По умолчанию `num_thread=4` на модель, то есть до 8 compute threads для двух серверов; `-NumThread 2` задаёт по два. Ускорение зависит от CPU и памяти, оно не гарантировано.
+
+Новая конфигурация пишет в **`reports/entity_typing_v2/run2_two_servers/`**, оставляя прежнюю попытку `run1` без изменений. Frozen runtime старого прогона не мигрируется и результаты разных настроек не смешиваются. Для полноценного одиночного режима можно создать отдельный config с `server_urls: []` и отдельным `output`.
+
+Dry-run не запускает серверы и не загружает модели. Если 11435 ещё не запущен, он использует метаданные checkpoint с работающего `base_url` (11434), явно отмечает второй сервер как `ready=false` и считает RAM для **двух** копий. Это проверка плана, а не подтверждение фактической аллокации второго экземпляра.
 
 ## Ночной запуск
 
@@ -10,7 +24,7 @@
 # Только проверка CLI, метаданных и полного набора, без загрузки/генерации модели
 .\run_all_night.ps1 -DryRun
 
-# Настоящий ночной запуск: full=1211, четыре CPU-потока, resume включён
+# Настоящий ночной запуск: full=1211, два сервера, по четыре CPU-потока, resume включён
 .\run_all_night.ps1
 
 # Быстрая проверка на pilot без inference
@@ -21,13 +35,13 @@
 
 Launcher работает в текущем foreground PowerShell, ждёт Python до завершения, не создаёт detached jobs и не запрашивает подтверждений. На время реального запуска он запрещает автоматический сон Windows через [SetThreadExecutionState](https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-setthreadexecutionstate), затем восстанавливает предыдущее состояние; постоянный план питания не меняется, экран может выключаться. Не закрывайте PowerShell и не отправляйте компьютер в сон вручную: такой пользовательский сон API не блокирует. `-DryRun` состояние питания не меняет.
 
-Полный каталог: `reports/entity_typing_v2/run1/full/`; итоговый ZIP: `reports/entity_typing_v2/run1/full_results.zip`. Технические логи — `full/night_runs/`: PowerShell transcript и Python log (stdout/stderr, tqdm и traceback), отдельные файлы на каждый запуск. `manifest.json` содержит requested config, checkpoint/digest/quantization, фактический context, thinking flags, версии Python/пакетов/Ollama, timings и историю этапов каждого запуска. При model preflight failure фактический контекст остаётся неизвестным — он не подменяется оценочным.
+Полный каталог: `reports/entity_typing_v2/run2_two_servers/full/`; итоговый ZIP: `reports/entity_typing_v2/run2_two_servers/full_results.zip`. Технические логи — `full/night_runs/`: PowerShell transcript и Python log (stdout/stderr, tqdm и traceback), отдельные файлы на каждый запуск. `manifest.json` содержит requested config, checkpoint/digest/quantization, фактический context, thinking flags, версии Python/пакетов/Ollama, timings и историю этапов каждого запуска. При model preflight failure фактический контекст остаётся неизвестным — он не подменяется оценочным.
 
 После исчерпания retries неудачного batch сохраняются NOT_PROCESSED, обработка остальных batches продолжается. Неполный T2.1 не блокирует T2.2 и офлайн-отчёты. Ошибки этапов сохраняются в `stage_errors.jsonl` и общем `failure_log.jsonl`. Повторите `.\run_all_night.ps1`, чтобы продолжить: полностью завершённые T2.1/T2.2 проверяются по durable journal и пропускаются **без обращения к Ollama**, незавершённые отправляют только оставшиеся IDs. Между этапами удерживается единый OS lock, поэтому второй launcher не может вмешаться в тот же сервер/checkout.
 
 Итоговые `completeness.json` и `completeness.csv` проверяют каждый из 1211 ID для T1, T2.1, T2.2 и всех 16 T3 policies, включая отсутствующие/дублированные/посторонние ID, согласованность решений и актуальность T3 относительно входов. Строка NOT_PROCESSED обеспечивает учёт ID, но не считается успешным предсказанием. Даже при недоступном Ollama создаются явные строки для всех ID и ZIP с доступными результатами. Status COMPLETE и код 0 выдаются только при полной успешной классификации и успешном экспорте. Код 3 — частичный прогон/ошибка этапа/экспорта; 130 — Ctrl+C с попыткой сохранить офлайн-отчёты и ZIP. Ошибки конфигурации/исходных данных до начала pipeline дают код 1. При неисправности диска/повреждении данных создание полного набора артефактов может оказаться невозможно; подробности останутся в доступном техническом логе.
 
-Параметры launcher: `-Python`, `-Config`, `-Output`, `-NumThread`, `-StrictMaxContext`, `-Dataset`, `-DryRun`. Никаких вызовов Qwen для отчётов, проверки полноты или ZIP нет. Чтобы проверить полноту отдельно:
+Параметры launcher: `-Python`, `-Config`, `-Output`, `-NumThread`, `-ServerUrls`, `-StrictMaxContext`, `-Dataset`, `-DryRun`. CLI поддерживает `--server-urls URL1 URL2`. Никаких вызовов Qwen для отчётов, проверки полноты или ZIP нет. Чтобы проверить полноту отдельно:
 
 ```powershell
 .\.venv-ner-v2\Scripts\python.exe scripts/run_entity_typing_v2.py check-completeness
@@ -67,7 +81,7 @@ $env:OLLAMA_NUM_PARALLEL = '1'
 ollama serve
 ```
 
-Клиент всегда отправляет один запрос за раз. OS lock предотвращает одновременный запуск режимов этим стендом даже для разных каталогов/datasets в одном checkout. Если доступный локальный процесс Ollama содержит `OLLAMA_NUM_PARALLEL` со значением, отличным от `1`, запуск отклоняется. Отсутствующая/недоступная переменная явно отмечается как непроверенная: клиентская настройка не может изменить уже запущенный сервер. Во время эксперимента не посылайте сторонние запросы в тот же Ollama.
+Клиент отправляет по одному запросу на каждый независимый сервер, до двух одновременно. OS locks удерживаются для обоих нормализованных endpoint addresses и каталога результатов на весь pipeline, включая переходы между этапами. Если доступный локальный процесс Ollama содержит `OLLAMA_NUM_PARALLEL` со значением, отличным от `1`, запуск отклоняется. Отсутствующая/недоступная переменная явно отмечается как непроверенная: клиентская настройка не может изменить уже запущенный сервер. Во время эксперимента не посылайте сторонние запросы в те же серверы Ollama.
 
 ## Подготовка и dry-run без загрузки модели
 
@@ -106,7 +120,7 @@ Dry-run создаёт `dry_run.json` и `dry_run_batches.jsonl`, проверя
 .\run_all_night.ps1 -Python $py -DryRun
 ```
 
-Без явного выбора dataset используются все 1211 mentions. Для быстрой проверки задайте `--dataset pilot`/`-Dataset pilot`. Pilot сохраняется в `reports/entity_typing_v2/run1/`, full — в `reports/entity_typing_v2/run1/full/`; manifests не смешиваются. `--output reports/entity_typing_v2/run2` выбирает новый корень (для full также добавится `full/`). Если ExecutionPolicy запрещает запуск `.ps1`, используйте Python-команды выше; временный запрет сна реализован именно PowerShell launcher.
+Без явного выбора dataset используются все 1211 mentions. Для быстрой проверки задайте `--dataset pilot`/`-Dataset pilot`. Pilot сохраняется в `reports/entity_typing_v2/run2_two_servers/`, full — в `reports/entity_typing_v2/run2_two_servers/full/`; manifests не смешиваются. `--output reports/entity_typing_v2/run2` выбирает новый корень (для full также добавится `full/`). Если ExecutionPolicy запрещает запуск `.ps1`, используйте Python-команды выше; временный запрет сна реализован именно PowerShell launcher.
 
 ## Максимальная ёмкость контекста
 
@@ -128,7 +142,7 @@ RAM определяется через psutil. Оценка включает п
 
 Общие настройки находятся в `config/entity_typing_v2.json`: temperature 0, seed 42, top_p 1, top_k 0, min_p 0, repeat_penalty 1, presence/frequency_penalty 0, CPU threads 4, num_parallel 1, stream false, keep_alive 30m. Penalties заданы явно, чтобы defaults checkpoint не меняли сравнение. Оба режима используют `/api/chat` с реальным boolean `think=false`/`true` и JSON Schema в `format`. Prompt и исходные batches идентичны, включая все 11 нормативных русских определений и английские descriptions онтологии. В них нет NER score/type, normalized form или оценочных меток.
 
-По умолчанию оба output budget равны 4096; ON резервирует 2048 для thinking при планировании общего batch. Настройки можно менять **до первого inference**, например:
+По умолчанию оба output budget равны 4096; ON резервирует 2048 для thinking при планировании общего batch. Оба сервера используют одинаковые настройки. Настройки можно менять **до первого inference**, например:
 
 ```powershell
 & $py scripts/run_entity_typing_v2.py qwen --dry-run --num-thread 4 --batch-size 6 --num-predict 4096 --num-predict-thinking 8192
@@ -146,7 +160,7 @@ Ctrl+C завершает процесс с кодом 130. Повторите �
 
 JSON Schema проверяет поля/типы/диапазоны, parser дополнительно проверяет IDs, дубликаты и согласованность status/type. Для повреждённого JSON извлекаются только полностью сформированные объекты: тип, ID, confidence и justification никогда не придумываются. Сохраняются корректные записи, остаток помечается NOT_PROCESSED и делится на меньшие batches. По умолчанию максимум 2 дополнительных попытки на candidate за один запуск; повторный явный `--resume` даёт незавершённым ID новый ограниченный retry budget. Timeout 900 секунд на запрос, на метаданные 10 секунд. Ошибки с attempt ID и исходным контекстом попадают в `failure_log.jsonl`; raw content и thinking сохраняются раздельно внутри Ollama message. Если runtime не даёт отдельного thinking token counter, сохраняется null с пояснением; разделение не оценивается выдуманным числом.
 
-tqdm показывает candidates, batches, elapsed/ETA, текущий batch, errors, накопленные input/output tokens и candidates/min; после batch печатается краткая строка validation/timing. Длинное thinking в терминал не выводится. Batch ETA меняется при добавлении retry batches.
+tqdm показывает candidates, batches, elapsed/ETA, текущий batch, количество активных workers, errors, накопленные input/output tokens и candidates/min; после batch печатается worker и краткая строка validation/timing. Длинное thinking в терминал не выводится. Batch ETA меняется при добавлении retry batches. Сумма batch/decode durations при параллельной работе может превышать elapsed wall time: обе величины записываются отдельно, throughput по candidates считается по wall time сессий.
 
 ## T3 и метрики
 
@@ -170,7 +184,7 @@ Evaluator проверит IDs, допустимые типы и статус re
 
 ## Артефакты и ZIP
 
-Общий каталог pilot — `reports/entity_typing_v2/run1/`:
+Общий каталог pilot — `reports/entity_typing_v2/run2_two_servers/`:
 
 - `manifest.json`, `candidate_dataset.jsonl`, `ontology.json` — frozen входы и runtime identity.
 - `T1_gliner.jsonl`, `T21_qwen_no_thinking.jsonl`, `T22_qwen_thinking.jsonl`, `T3_hybrid.jsonl` — решения.
@@ -186,4 +200,4 @@ Evaluator проверит IDs, допустимые типы и статус re
 & $py scripts/run_entity_typing_v2.py export-results --dataset full --zip .\reports\entity_typing_v2\full_results.zip
 ```
 
-Pilot ZIP по умолчанию: `reports/entity_typing_v2/run1_pilot_results.zip`. Он содержит результаты, raw responses/thinking, manifest, метрики, логи, frozen ontology, исходники стенда/конфиг/README для воспроизведения и `archive_sha256_manifest.json`. Веса и caches не включаются; full подкаталог не попадает в pilot ZIP. Можно экспортировать незавершённый эксперимент: summary явно укажет пропущенные результаты. Передайте ZIP для анализа после своего запуска.
+Pilot ZIP по умолчанию: `reports/entity_typing_v2/run2_two_servers_pilot_results.zip`. Он содержит результаты, raw responses/thinking, manifest, метрики, логи, frozen ontology, исходники стенда/конфиг/README для воспроизведения и `archive_sha256_manifest.json`. Веса и caches не включаются; full подкаталог не попадает в pilot ZIP. Можно экспортировать незавершённый эксперимент: summary явно укажет пропущенные результаты. Передайте ZIP для анализа после своего запуска.

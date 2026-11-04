@@ -2,6 +2,7 @@ param(
     [ValidateSet('full', 'pilot')][string]$Dataset = 'full',
     [string]$Python = '.\.venv-ner-v2\Scripts\python.exe',
     [int]$NumThread = 4,
+    [string[]]$ServerUrls = @(),
     [switch]$DryRun,
     [switch]$StrictMaxContext
 )

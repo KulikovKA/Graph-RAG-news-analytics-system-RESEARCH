@@ -2,6 +2,7 @@
 import time
 import uuid
 from collections import deque
+from concurrent.futures import FIRST_COMPLETED, ThreadPoolExecutor, wait
 
 from tqdm import tqdm
 
@@ -32,7 +33,9 @@ def common_settings(config, model, num_ctx):
             "thinking_reserve_tokens": config["thinking_reserve_tokens"],
             "prompt_overhead_tokens": config["prompt_overhead_tokens"],
             "structured_output": config["structured_output"], "keep_alive": config["keep_alive"],
-            "stream": False, "num_parallel": 1}
+            "stream": False, "num_parallel": 1,
+            "server_urls": config.get("server_urls") or [config["base_url"]],
+            "model_instances": len(config.get("server_urls") or [config["base_url"]])}
 
 
 def metadata_preflight(client, config):
@@ -44,7 +47,7 @@ def metadata_preflight(client, config):
 
 def dry_run(output, config, client):
     manifest, candidates, ontology = load_frozen(output)
-    report = {"created_at": now(), "inference_calls": 0, "model_load_calls": 0,
+    report = {"created_at": now(), "inference_calls": 0, "model_load_calls": 0, "server_start_calls": 0,
               "output_directory": str(output.resolve()), "candidate_count": len(candidates),
               "token_count_method": "conservative UTF-8 byte upper bound + schema + renderer reserve"}
     try:
@@ -56,14 +59,18 @@ def dry_run(output, config, client):
         if manifest.get("runtime") and manifest["runtime"] != settings:
             raise ValueError("Runtime settings/checkpoint/code differ from frozen experiment")
         report.update(model_available=True, model=model, selected_num_ctx=ctx, context_selection=estimate,
-                      settings=settings, hardware=hardware, server_concurrency=verify_server_serial())
+                      settings=settings, hardware=hardware, server_concurrency=verify_server_serial(),
+                      preflight_ok=True, servers_ready=all(i.get("ready", True) for i in model.get("instances", [model])))
         write_json(output / "hardware.json", hardware)
         # Proposed settings are explicitly marked; never replace frozen actual settings.
         if not manifest.get("runtime"):
             write_json(output / "model_settings.json", {"status": "DRY_RUN_PROPOSED", **settings})
     except OllamaError as exc:
         ctx = config["max_model_context"]
-        report.update(model_available=False, error=str(exc), selected_num_ctx=None)
+        report.update(model_available=bool(getattr(client, "last_discovery", None)),
+                      preflight_ok=False, error=str(exc), selected_num_ctx=None)
+        if getattr(client, "last_discovery", None):
+            report["model"] = client.last_discovery
     batches = plan_batches(candidates, ontology, config, ctx)
     plans = [batch_record(batch, ontology, config) for batch in batches]
     report.update(batch_count=len(batches), candidate_ids=manifest["frozen"]["candidate_ids"],
@@ -78,6 +85,54 @@ def dry_run(output, config, client):
     tqdm.write(f"Dry-run: candidates={len(candidates)}, batches={len(batches)}, model_available={report['model_available']}, "
                f"num_ctx={report['selected_num_ctx']}; no loading or inference")
     return report
+
+
+def execute_batch(output, config, client, mode, model, selected, ontology, plan, depth, session_id, run_digest, worker):
+    """Only unique attempt files are written by a worker; shared snapshots have one writer."""
+    budget = output_budget(config, mode)
+    attempt_id = uuid.uuid4().hex
+    record = {**plan, "attempt_id": attempt_id, "session_id": session_id, "mode": mode,
+              "run_digest": run_digest, "created_at": now(), "retry_depth": depth,
+              "worker_index": worker, "server_url": getattr(client, "base_url", "mock"),
+              "model_digest": model["digest"], "errors": [], "response": None, "parsed": {}}
+    payload = {"model": model["tag"], "messages": plan["messages"], "think": mode == "thinking",
+               "stream": False, "keep_alive": config["keep_alive"],
+               "options": sampling_options(config, selected, budget),
+               "format": response_schema(ontology["entity_types"]) if config["structured_output"] else "json"}
+    record["request"] = payload
+    attempt_path = output / "attempts" / mode / (attempt_id + ".json")
+    write_json(attempt_path, record)  # an interrupted in-flight request is explicit too
+    before = time.monotonic()
+    valid = {}
+    try:
+        response = client.request("/api/chat", payload)
+        record["response"] = response
+        record["wall_seconds"] = time.monotonic() - before
+        write_json(attempt_path, record)  # durable raw response before parsing
+        if not isinstance(response.get("message"), dict) or not isinstance(response["message"].get("content"), str):
+            raise OllamaError("Invalid /api/chat message envelope; raw response saved")
+        valid, errors = parse_response(response["message"]["content"], plan["candidate_ids"], ontology["entity_types"])
+        record["errors"].extend(errors)
+        if response.get("done_reason") == "length" or response.get("eval_count", 0) >= budget:
+            record["errors"].append({"kind": "output_budget_reached", "budget": budget})
+        if response.get("prompt_eval_count", 0) + budget > selected:
+            record["errors"].append({"kind": "actual_context_overflow"})
+            valid = {}
+        if response.get("prompt_eval_count", 0) > plan["input_token_upper_bound"]:
+            record["errors"].append({"kind": "token_bound_exceeded"})
+            valid = {}
+        if response.get("done") is not True:
+            record["errors"].append({"kind": "incomplete_transport_response"})
+            valid = {}
+        record["thinking_token_count"] = response.get("thinking_eval_count")
+        record["thinking_token_note"] = "separate runtime counter" if "thinking_eval_count" in response else "unavailable; eval_count may include thinking; no fabricated split"
+    except OllamaError as exc:
+        record["wall_seconds"] = time.monotonic() - before
+        record["errors"].append({"kind": "transport", "detail": str(exc)})
+    record["parsed"] = valid
+    record["parsed_finalized"] = True
+    write_json(attempt_path, record)
+    return record, valid
 
 
 def _recover(output, mode, run_digest, candidates, labels):
@@ -212,6 +267,12 @@ def run_qwen(output, config, client, mode, resume=False):
             tqdm.write(f"{mode}: all {len(candidates)} candidates complete; no model load/inference")
             return completed
     selected, allocation = allocate_context(client, model, choices, config, pinned=pinned)
+    # A lower runtime allocation must still fit complete prompts before it is frozen.
+    batches = plan_batches(candidates, ontology, config, selected)
+    plans = [batch_record(batch, ontology, config) for batch in batches]
+    plan_path = output / "batch_plan.jsonl"
+    if plan_path.exists() and read_jsonl(plan_path) != plans:
+        raise ValueError("Frozen batch plan changed")
     settings = common_settings(config, model, selected)
     manifest["runtime"] = settings
     write_json(output / "manifest.json", manifest)  # pinned before the first typing call
@@ -222,11 +283,6 @@ def run_qwen(output, config, client, mode, resume=False):
                "effective_sampling_verification": "Not observable through public Ollama API; exact requested options are saved per call"})
     run_digest = digest([manifest["frozen"], settings])
     completed, previous = _recover(output, mode, run_digest, candidates, ontology["entity_types"])
-    batches = plan_batches(candidates, ontology, config, selected)
-    plans = [batch_record(batch, ontology, config) for batch in batches]
-    plan_path = output / "batch_plan.jsonl"
-    if plan_path.exists() and read_jsonl(plan_path) != plans:
-        raise ValueError("Frozen batch plan changed")
     write_jsonl(plan_path, plans)
     _save_results(output, mode, candidates, completed, run_digest)
     queue = deque((batch, 0) for batch in batches if any(c["candidate_id"] not in completed for c in batch))
@@ -246,85 +302,66 @@ def run_qwen(output, config, client, mode, resume=False):
     monitor = MemoryMonitor()
     try:
         with monitor:
-            while queue:
-                batch, depth = queue.popleft()
-                batch = [c for c in batch if c["candidate_id"] not in completed]
-                if not batch:
-                    batch_bar.update(1)
-                    continue
-                plan = batch_record(batch, ontology, config)
-                budget = output_budget(config, mode)
-                if plan["input_token_upper_bound"] + budget > selected:
-                    raise ValueError("Preflight input + output context overflow")
-                attempt_id = uuid.uuid4().hex
-                record = {**plan, "attempt_id": attempt_id, "session_id": session_id, "mode": mode,
-                          "run_digest": run_digest, "created_at": now(), "retry_depth": depth,
-                          "errors": [], "response": None, "parsed": {}}
-                payload = {"model": model["tag"], "messages": plan["messages"], "think": mode == "thinking",
-                           "stream": False, "keep_alive": config["keep_alive"],
-                           "options": sampling_options(config, selected, budget),
-                           "format": response_schema(ontology["entity_types"]) if config["structured_output"] else "json"}
-                record["request"] = payload
-                attempt_path = output / "attempts" / mode / (attempt_id + ".json")
-                before = time.monotonic()
-                valid = {}
-                candidate_bar.set_postfix(batch=plan["batch_id"], errors=errors, input=input_tokens, output=output_tokens)
-                try:
-                    response = client.request("/api/chat", payload)
-                    record["response"] = response
-                    record["wall_seconds"] = time.monotonic() - before
-                    # Persist raw content/thinking before parsing or materializing canonical outputs.
-                    write_json(attempt_path, record)
-                    if (not isinstance(response.get("message"), dict) or
-                            not isinstance(response["message"].get("content"), str)):
-                        raise OllamaError("Invalid /api/chat message envelope; raw response saved")
-                    valid, validation_errors = parse_response(response.get("message", {}).get("content", ""),
-                                                              plan["candidate_ids"], ontology["entity_types"])
-                    record["errors"].extend(validation_errors)
-                    if response.get("done_reason") == "length" or response.get("eval_count", 0) >= budget:
-                        record["errors"].append({"kind": "output_budget_reached", "budget": budget})
-                    if response.get("prompt_eval_count", 0) + budget > selected:
-                        record["errors"].append({"kind": "actual_context_overflow"})
-                        valid = {}  # cannot trust a context-truncated result
-                    if response.get("prompt_eval_count", 0) > plan["input_token_upper_bound"]:
-                        record["errors"].append({"kind": "token_bound_exceeded"})
-                        valid = {}
-                    if response.get("done") is not True:
-                        record["errors"].append({"kind": "incomplete_transport_response"})
-                        valid = {}
-                    record["thinking_token_count"] = response.get("thinking_eval_count")
-                    record["thinking_token_note"] = "separate runtime counter" if "thinking_eval_count" in response else "unavailable; eval_count may include thinking; no fabricated split"
-                    input_tokens += response.get("prompt_eval_count", 0)
-                    output_tokens += response.get("eval_count", 0)
-                except OllamaError as exc:
-                    record["wall_seconds"] = time.monotonic() - before
-                    record["errors"].append({"kind": "transport", "detail": str(exc)})
-                record["parsed"] = valid
-                record["parsed_finalized"] = True
-                write_json(attempt_path, record)
-                for cid, decision in valid.items():
-                    completed[cid] = {**decision, "processing_status": "COMPLETE", "mode": mode,
-                                      "attempt_id": attempt_id, "run_digest": run_digest,
-                                      "prompt_sha256": plan["prompt_sha256"]}
-                _save_results(output, mode, candidates, completed, run_digest)
-                rebuild_failure_log(output)
-                errors += bool(record["errors"])
-                candidate_bar.update(len(valid))
-                remaining = [c for c in batch if c["candidate_id"] not in valid]
-                if remaining and depth < config["max_retries"]:
-                    middle = max(1, len(remaining) // 2)
-                    children = [remaining[:middle]] + ([remaining[middle:]] if remaining[middle:] else [])
-                    queue.extend((child, depth + 1) for child in children)
-                    batch_bar.total += len(children)
-                    time.sleep(config["retry_delay_seconds"])
-                elapsed = max(time.monotonic() - started, .001)
-                candidate_bar.set_postfix(batch=plan["batch_id"], errors=errors, input=input_tokens, output=output_tokens,
-                                         candidates_min=round((len(completed) - initial_completed) / elapsed * 60, 2))
-                batch_bar.update(1)
-                tqdm.write(f"{plan['batch_id']} | entities={len(valid)}/{len(batch)} | {record['wall_seconds']:.2f}s | "
-                           f"in/out={record.get('response', {}).get('prompt_eval_count', 0) if record['response'] else 0}/"
-                           f"{record.get('response', {}).get('eval_count', 0) if record['response'] else 0} | "
-                           f"thinking={mode == 'thinking'} | JSON={'valid' if not record['errors'] else 'errors saved'}")
+            workers = getattr(client, "clients", [client])
+            executor = ThreadPoolExecutor(max_workers=len(workers), thread_name_prefix="qwen-server")
+            available = deque(range(len(workers)))
+            pending = {}
+            try:
+                while queue or pending:
+                    while queue and available:
+                        batch, depth = queue.popleft()
+                        batch = [c for c in batch if c["candidate_id"] not in completed]
+                        if not batch:
+                            batch_bar.update(1)
+                            continue
+                        plan = batch_record(batch, ontology, config)
+                        if plan["input_token_upper_bound"] + output_budget(config, mode) > selected:
+                            raise ValueError("Preflight input + output context overflow")
+                        worker = available.popleft()
+                        future = executor.submit(execute_batch, output, config, workers[worker], mode, model,
+                            selected, ontology, plan, depth, session_id, run_digest, worker)
+                        pending[future] = (batch, depth, worker, plan)
+                        candidate_bar.set_postfix(active=len(pending), batch=plan["batch_id"], errors=errors,
+                                                  input=input_tokens, output=output_tokens)
+                    done, _ = wait(pending, timeout=.2, return_when=FIRST_COMPLETED)
+                    for future in done:
+                        batch, depth, worker, plan = pending.pop(future)
+                        record, valid = future.result()
+                        available.append(worker)
+                        response = record.get("response") or {}
+                        input_tokens += response.get("prompt_eval_count", 0)
+                        output_tokens += response.get("eval_count", 0)
+                        for cid, decision in valid.items():
+                            completed[cid] = {**decision, "processing_status": "COMPLETE", "mode": mode,
+                                "attempt_id": record["attempt_id"], "run_digest": run_digest,
+                                "prompt_sha256": plan["prompt_sha256"]}
+                        _save_results(output, mode, candidates, completed, run_digest)
+                        rebuild_failure_log(output)
+                        errors += bool(record["errors"])
+                        candidate_bar.update(len(valid))
+                        remaining = [c for c in batch if c["candidate_id"] not in valid]
+                        if remaining and depth < config["max_retries"]:
+                            middle = max(1, len(remaining) // 2)
+                            children = [remaining[:middle]] + ([remaining[middle:]] if remaining[middle:] else [])
+                            queue.extend((child, depth + 1) for child in children)
+                            batch_bar.total += len(children)
+                            time.sleep(config["retry_delay_seconds"])
+                        elapsed = max(time.monotonic() - started, .001)
+                        candidate_bar.set_postfix(active=len(pending), errors=errors, input=input_tokens, output=output_tokens,
+                            candidates_min=round((len(completed) - initial_completed) / elapsed * 60, 2))
+                        batch_bar.update(1)
+                        tqdm.write(f"{plan['batch_id']} | worker={worker + 1} | entities={len(valid)}/{len(batch)} | "
+                            f"{record['wall_seconds']:.2f}s | in/out={response.get('prompt_eval_count', 0)}/{response.get('eval_count', 0)} | "
+                            f"thinking={mode == 'thinking'} | JSON={'valid' if not record['errors'] else 'errors saved'}")
+            except BaseException:
+                for worker_client in workers:
+                    if hasattr(worker_client, "cancel_pending"):
+                        worker_client.cancel_pending()
+                for future in pending:
+                    future.cancel()
+                raise
+            finally:
+                executor.shutdown(wait=True, cancel_futures=True)
     finally:
         candidate_bar.close()
         batch_bar.close()

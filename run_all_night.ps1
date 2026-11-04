@@ -4,6 +4,7 @@ param(
     [string]$Config = 'config/entity_typing_v2.json',
     [string]$Output = '',
     [int]$NumThread = 4,
+    [string[]]$ServerUrls = @(),
     [switch]$DryRun,
     [switch]$StrictMaxContext
 )
@@ -28,6 +29,8 @@ try {
     $transcriptStarted = $true
     Write-Host "Night launcher: dataset=$Dataset, threads=$NumThread, dry-run=$DryRun"
     Write-Host "Results: $runPath"
+    $workerUrls = if ($ServerUrls.Count -gt 0) { $ServerUrls } else { $configuration.server_urls }
+    Write-Host ("Independent Ollama workers: " + ($workerUrls -join ', '))
     Write-Host "PowerShell log: $logPath"
     if (-not $DryRun) {
         # Keep the system active; the display can switch off. No persistent power-plan changes.
@@ -46,6 +49,7 @@ public static class EntityTypingNightPower {
     }
     $cliArgs = @('scripts/run_entity_typing_v2.py', 'night', '--dataset', $Dataset, '--config', $Config, '--num-thread', $NumThread)
     if ($Output) { $cliArgs += @('--output', $Output) }
+    if ($ServerUrls.Count -gt 0) { $cliArgs += @('--server-urls') + $ServerUrls }
     if ($DryRun) { $cliArgs += '--dry-run' }
     if ($StrictMaxContext) { $cliArgs += '--strict-max-context' }
     # Remain attached to the foreground child; no jobs or confirmation prompts.

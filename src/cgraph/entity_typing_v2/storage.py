@@ -3,9 +3,13 @@ import csv
 import hashlib
 import json
 import os
+import threading
+import time
 from contextlib import contextmanager
 from datetime import datetime, timezone
 from pathlib import Path
+
+_file_io_lock = threading.RLock()
 
 
 def now():
@@ -25,25 +29,39 @@ def file_hash(path):
 
 
 def read_json(path):
-    return json.loads(Path(path).read_text(encoding="utf-8"))
+    with _file_io_lock:
+        content = Path(path).read_text(encoding="utf-8")
+    return json.loads(content)
 
 
 def read_jsonl(path):
     path = Path(path)
     if not path.exists():
         return []
-    return [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
+    with _file_io_lock:
+        content = path.read_text(encoding="utf-8")
+    return [json.loads(line) for line in content.splitlines() if line.strip()]
 
 
 def atomic_text(path, content):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
     temporary = path.with_name(path.name + ".partial")
-    with temporary.open("w", encoding="utf-8", newline="\n") as stream:
-        stream.write(content)
-        stream.flush()
-        os.fsync(stream.fileno())
-    os.replace(temporary, path)
+    # Windows readers can prevent os.replace while their handle is open. All local
+    # snapshot reads/writes use one short lock; HTTP work remains concurrent.
+    with _file_io_lock:
+        with temporary.open("w", encoding="utf-8", newline="\n") as stream:
+            stream.write(content)
+            stream.flush()
+            os.fsync(stream.fileno())
+        for attempt in range(8):
+            try:
+                os.replace(temporary, path)
+                break
+            except PermissionError:
+                if attempt == 7:
+                    raise
+                time.sleep(.01 * (attempt + 1))
 
 
 def write_json(path, value):

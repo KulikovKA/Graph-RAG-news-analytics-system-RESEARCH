@@ -149,6 +149,8 @@ def runtime_metrics(output):
                          "client_peak_rss_bytes": max((s["memory"]["client_peak_rss_bytes"] for s in sessions), default=None),
                          "ollama_processes_peak_rss_bytes": max((s["memory"]["ollama_processes_peak_rss_bytes"] for s in sessions), default=None),
                          "active_qwen_session_wall_seconds": sum(s["wall_seconds"] for s in sessions),
+                         "completed_candidates_per_active_minute": _ratio(len(successful) * 60, sum(s["wall_seconds"] for s in sessions)),
+                         "parallel_timing_note": "Attempt/decode durations sum across servers and may overlap; session wall time measures elapsed throughput",
                          "memory_note": "sampled process RSS; Ollama subprocess sums may count shared pages more than once"}
     return metrics
 

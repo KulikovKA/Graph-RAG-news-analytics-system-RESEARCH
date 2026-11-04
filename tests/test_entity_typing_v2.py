@@ -24,12 +24,15 @@ def forbid_real_http(monkeypatch):
     def forbidden(*args, **kwargs):
         raise AssertionError('Unit tests must never contact Ollama or the network')
     monkeypatch.setattr('urllib.request.urlopen', forbidden)
+    monkeypatch.setattr('http.client.HTTPConnection.connect', forbidden)
+    monkeypatch.setattr('http.client.HTTPSConnection.connect', forbidden)
 
 
 @pytest.fixture
 def config():
     cfg = read_json(ROOT / 'config/entity_typing_v2.json')
     cfg['retry_delay_seconds'] = 0
+    cfg['server_urls'] = []  # existing fixtures exercise one deterministic server
     return cfg
 
 

@@ -6,6 +6,7 @@ import sys
 import time
 import uuid
 import zipfile
+from contextlib import ExitStack
 from pathlib import Path
 
 from tqdm import tqdm
@@ -15,6 +16,7 @@ from .completeness import check_completeness
 from .dataset import gliner_rows, load_frozen, prepare
 from .ollama import OllamaClient, hardware_info, validate_config
 from .runner import dry_run, run_qwen
+from .servers import ManagedServers, lock_identity, make_client, server_urls
 from .storage import exclusive_lock, now, read_json, write_json, write_jsonl
 
 
@@ -27,6 +29,7 @@ def parser():
         c.add_argument("--dataset", choices=("pilot", "full"), help="Default: full (1211 candidates), from config")
         c.add_argument("--output", help="Run root; full is stored in its full/ subdirectory")
         c.add_argument("--dry-run", action="store_true", help="Metadata and prompt planning only; never load/generate")
+        c.add_argument("--server-urls", nargs="+", help="One or two distinct Ollama endpoints")
         for flag, kind in (("num-thread", int), ("num-predict", int), ("num-predict-thinking", int),
                            ("batch-size", int), ("max-model-context", int), ("runtime-context-limit", int),
                            ("max-retries", int), ("timeout-seconds", int), ("model", str), ("base-url", str)):
@@ -50,7 +53,8 @@ def export_results(output, destination, root, before_manifest=None):
              if p.is_file() and p.suffix in allowed and not any(part.startswith(".") for part in p.relative_to(output).parts)
              and not (output.name != "full" and p.relative_to(output).parts[0] == "full")]
     reproduction = [root / "config/entity_typing_v2.json", root / "config/entity_typing_v2_requirements.txt",
-                    root / "tests/test_entity_typing_v2.py", root / "scripts/run_entity_typing_v2.py",
+                    root / "tests/test_entity_typing_v2.py", root / "tests/test_entity_typing_v2_servers.py",
+                    root / "scripts/run_entity_typing_v2.py",
                     root / "scripts/run_entity_typing_v2.ps1", root / "run_all_night.ps1",
                     root / "docs/ENTITY_TYPING_V2_README.md"]
     reproduction += sorted((root / "src/cgraph/entity_typing_v2").glob("*.py"))
@@ -83,7 +87,7 @@ def main(argv=None):
     config = read_json(config_path if config_path.is_absolute() else root / config_path)
     args.dataset = args.dataset or config.get("default_dataset", "full")
     for key in ("num_thread", "num_predict", "num_predict_thinking", "batch_size", "max_model_context",
-                "runtime_context_limit", "strict_max_context", "max_retries", "timeout_seconds", "model", "base_url"):
+                "runtime_context_limit", "strict_max_context", "max_retries", "timeout_seconds", "model", "base_url", "server_urls"):
         value = getattr(args, key, None)
         if value is not None:
             config[key] = value
@@ -96,8 +100,11 @@ def main(argv=None):
     try:
         # A server-wide client lock prevents ON/OFF overlap across datasets/output roots.
         # It is also used for dry-run only to avoid reading concurrently changing artifacts.
-        lock_path = root / ".cache/entity_typing_v2" / (hashlib.sha256(config["base_url"].encode()).hexdigest()[:16] + ".lock")
-        with exclusive_lock(lock_path), exclusive_lock(output / ".run.lock"):
+        with ExitStack() as stack:
+            for identity in sorted({lock_identity(url) for url in server_urls(config)}):
+                lock_path = root / ".cache/entity_typing_v2" / (hashlib.sha256(identity.encode()).hexdigest()[:16] + ".lock")
+                stack.enter_context(exclusive_lock(lock_path))
+            stack.enter_context(exclusive_lock(output / ".run.lock"))
             if args.command in ("prepare", "night"):
                 manifest, candidates = prepare(config, root, output, args.dataset)
                 write_json(output / "hardware.json", hardware_info())
@@ -107,19 +114,25 @@ def main(argv=None):
             if manifest["frozen"]["dataset"] != args.dataset:
                 raise ValueError("Dataset flag disagrees with frozen manifest")
             if args.dry_run:
-                report = dry_run(output, config, OllamaClient(config["base_url"], config["timeout_seconds"], config["metadata_timeout_seconds"]))
-                return 0 if report["model_available"] else 2
+                report = dry_run(output, config, make_client(config, dry_run=True))
+                return 0 if report.get("preflight_ok", report["model_available"]) else 2
             if args.command == "night":
                 from .night import run_night
                 destination = Path(args.zip_path) if args.zip_path else output.parent / (args.dataset + "_results.zip")
-                return run_night(output, root, config, args.dataset,
-                                 OllamaClient(config["base_url"], config["timeout_seconds"], config["metadata_timeout_seconds"]),
-                                 destination, export_results)
+                with ManagedServers(config, output):
+                    return run_night(output, root, config, args.dataset, make_client(config), destination, export_results)
             if args.command == "gliner":
                 write_jsonl(output / "T1_gliner.jsonl", tqdm(gliner_rows(candidates), desc="T1 saved GLiNER", unit="candidate"))
             elif args.command == "qwen":
                 try:
-                    run_qwen(output, config, OllamaClient(config["base_url"], config["timeout_seconds"], config["metadata_timeout_seconds"]), args.mode, args.resume)
+                    if args.resume:
+                        from .runner import completed_mode
+                        complete = completed_mode(output, config, args.mode)
+                    else:
+                        complete = None
+                    if complete is None:
+                        with ManagedServers(config, output):
+                            run_qwen(output, config, make_client(config), args.mode, args.resume)
                 finally:
                     # Make partial-run diagnostics reviewable even after Ctrl+C/retry exhaustion.
                     write_json(output / "command_sessions" / (uuid.uuid4().hex + ".json"),

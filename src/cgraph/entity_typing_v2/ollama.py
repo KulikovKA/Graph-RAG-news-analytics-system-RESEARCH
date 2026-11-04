@@ -1,12 +1,15 @@
-"""Ollama metadata, memory-bounded context selection and sequential HTTP calls."""
+"""Ollama metadata, per-instance context selection and cancellable HTTP calls."""
 import json
+import http.client
 import math
 import platform
 import re
+import socket
 import threading
 import time
 import urllib.error
 import urllib.request
+from urllib.parse import urlsplit
 
 import psutil
 from tqdm import tqdm
@@ -21,8 +24,13 @@ class OllamaClient:
         self.base_url = base_url.rstrip("/")
         self.timeout = timeout
         self.metadata_timeout = metadata_timeout
+        self._connections = set()
+        self._connection_lock = threading.Lock()
+        self._cancelled = threading.Event()
 
     def request(self, path, payload=None, metadata=False):
+        if path == "/api/chat":
+            return self._chat_request(path, payload)
         body = json.dumps(payload, allow_nan=False).encode("utf-8") if payload is not None else None
         request = urllib.request.Request(self.base_url + path, body, {"Content-Type": "application/json"})
         try:
@@ -37,6 +45,47 @@ class OllamaClient:
         if result.get("error"):
             raise OllamaError(str(result["error"]))
         return result
+
+    def _chat_request(self, path, payload):
+        """Keep sockets cancellable so Ctrl+C does not wait for the HTTP timeout."""
+        parts = urlsplit(self.base_url)
+        connection_type = http.client.HTTPSConnection if parts.scheme == "https" else http.client.HTTPConnection
+        connection = connection_type(parts.hostname, parts.port, timeout=self.timeout)
+        with self._connection_lock:
+            if self._cancelled.is_set():
+                raise OllamaError("Request cancelled")
+            self._connections.add(connection)
+        try:
+            body = json.dumps(payload, allow_nan=False).encode("utf-8")
+            connection.request("POST", parts.path.rstrip("/") + path, body, {"Content-Type": "application/json"})
+            connection._typing_socket = connection.sock
+            if self._cancelled.is_set():
+                raise OllamaError("Request cancelled")
+            response = connection.getresponse()
+            data = response.read()
+            if response.status >= 400:
+                raise OllamaError(f"HTTP {response.status}: {data.decode('utf-8', errors='replace')[:2000]}")
+            result = json.loads(data)
+            if not isinstance(result, dict) or result.get("error"):
+                raise OllamaError("Invalid/error Ollama response: " + str(result)[:2000])
+            return result
+        except (OSError, ValueError, http.client.HTTPException) as exc:
+            raise OllamaError(str(exc)) from exc
+        finally:
+            with self._connection_lock:
+                self._connections.discard(connection)
+            connection.close()
+
+    def cancel_pending(self):
+        self._cancelled.set()
+        with self._connection_lock:
+            for connection in self._connections:
+                active_socket = connection.sock or getattr(connection, "_typing_socket", None)
+                if active_socket:
+                    try:
+                        active_socket.shutdown(socket.SHUT_RDWR)
+                    except OSError:
+                        pass
 
     def discover(self, config):
         version = self.request("/api/version", metadata=True)
@@ -101,15 +150,22 @@ def context_choices(model, hardware, config):
     kv_bytes_per_token = effective_heads * (head_dim + value_dim) * 2  # f16 K/V, never assume quantized KV
     if kv_bytes_per_token <= 0:
         raise ValueError("Cannot estimate memory without attention metadata")
-    reclaimable = sum(m.get("size", 0) - m.get("size_vram", 0)
-                      for m in model.get("running_models", []) if m.get("digest") == model["digest"])
+    instances = model.get("instances", [model])
+    reclaimable, observed = 0, set()
+    from .servers import lock_identity
+    for instance in instances:
+        identity = lock_identity(instance.get("observed_url", instance.get("base_url", "http://localhost:11434")))
+        if identity not in observed:
+            reclaimable += sum(m.get("size", 0) - m.get("size_vram", 0) for m in instance.get("running_models", [])
+                               if m.get("digest") == instance["digest"])
+            observed.add(identity)
     available = hardware["ram_available_bytes"] + reclaimable
     ceiling = min(model["native_context"], config["max_model_context"],
                   config.get("runtime_context_limit") or config["max_model_context"])
     estimates = []
     for ctx in config["context_ladder"]:
-        estimate = math.ceil(model["size_bytes"] + config["runtime_overhead_bytes"] +
-                             ctx * kv_bytes_per_token * config["kv_safety_factor"])
+        estimate = math.ceil(sum(i["size_bytes"] for i in instances) + len(instances) * config["runtime_overhead_bytes"] +
+                             ctx * kv_bytes_per_token * len(instances) * config["kv_safety_factor"])
         estimates.append({"num_ctx": ctx, "estimated_ram_bytes": estimate,
                           "fits": ctx <= ceiling and estimate <= available * config["memory_fraction"]})
     choices = [e["num_ctx"] for e in estimates if e["fits"]]
@@ -117,7 +173,8 @@ def context_choices(model, hardware, config):
         raise OllamaError("No context >=8192 fits the model/runtime/RAM budget; free RAM and retry")
     if config["strict_max_context"] and choices[0] != model["native_context"]:
         raise OllamaError(f"Strict native context {model['native_context']} unavailable; estimated maximum {choices[0]}")
-    return choices, {"method": "conservative f16 KV + weights + runtime/SSM/scratch reserve",
+    return choices, {"method": "sum of independent model weights + per-instance f16 KV and runtime/SSM/scratch reserve",
+                     "model_instances": len(instances), "context_is_per_instance": True,
                      "kv_bytes_per_token": kv_bytes_per_token, "reclaimable_loaded_model_bytes": reclaimable,
                      "available_plus_reclaimable_bytes": available, "estimates": estimates,
                      "runtime_verification": "pending load-only allocation; dry-run does not allocate"}
@@ -132,6 +189,12 @@ def sampling_options(config, num_ctx, budget):
 def validate_config(config):
     if config["backend"] != "ollama" or config["num_parallel"] != 1 or config["stream"] is not False:
         raise ValueError("Protocol requires Ollama, num_parallel=1, stream=false")
+    from .servers import server_urls, lock_identity
+    urls = server_urls(config)
+    if len(urls) not in (1, 2) or len({lock_identity(url) for url in urls}) != len(urls):
+        raise ValueError("Use one or two distinct Ollama server endpoints")
+    if any(urlsplit(url).scheme not in ("http", "https") or not urlsplit(url).hostname for url in urls):
+        raise ValueError("Invalid Ollama server URL")
     if (config["temperature"] != 0 or config["top_p"] != 1 or config["top_k"] != 0 or config["num_gpu"] != 0):
         raise ValueError("Primary CPU comparison requires temperature=0, top_p=1, top_k=0, num_gpu=0")
     for key in ("num_thread", "num_batch", "num_predict", "num_predict_thinking", "batch_size",
@@ -163,7 +226,7 @@ def verify_server_serial():
         except (psutil.AccessDenied, psutil.NoSuchProcess):
             continue
     return {"observed_local_processes": evidence,
-            "note": "Client sends one request at a time. Server concurrency is an environment setting; null is not verified."}
+            "note": "One request per independent server; two endpoints may run concurrently. Server slot count is an environment setting; null is not verified."}
 
 
 def allocate_context(client, model, choices, config, pinned=None):
@@ -179,10 +242,13 @@ def allocate_context(client, model, choices, config, pinned=None):
             if result.get("eval_count", 0) or result.get("prompt_eval_count", 0):
                 raise OllamaError("Unexpected token evaluation in load-only response")
             running = client.request("/api/ps", metadata=True).get("models", [])
-            matched = next((m for m in running if m["digest"] == model["digest"]), None)
-            if matched is None or matched.get("context_length") != ctx:
-                raise OllamaError(f"Runtime context mismatch: requested {ctx}, observed {matched and matched.get('context_length')}")
+            matched_models = [m for m in running if m["digest"] == model["digest"]]
+            count = len(model.get("instances", [model]))
+            if len(matched_models) != count or any(m.get("context_length") != ctx for m in matched_models):
+                raise OllamaError(f"Runtime context mismatch: requested {ctx} on {count} servers, observed {[m.get('context_length') for m in matched_models]}")
+            matched = matched_models[0]
             return ctx, {"load_only_response": result, "observed_running_model": matched,
+                         "observed_running_models": matched_models,
                          "fallbacks": failures, "context_verified": True,
                          "options_validation": "load endpoint accepted options; sampling settings are not echoed by Ollama"}
         except OllamaError as exc:
