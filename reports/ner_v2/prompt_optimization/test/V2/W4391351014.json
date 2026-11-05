@@ -1,0 +1,2286 @@
+{
+  "config_hash": "10ac92188386a2e74f2c7a63b76130baf40893984415a48f4f034cc9ade1b007",
+  "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+  "mentions": [
+    {
+      "document_id": "W4391351014",
+      "start": 34,
+      "end": 49,
+      "surface_text": "cancer patients",
+      "ner_label_hint": "ACTOR",
+      "score": 0.9888026118278503,
+      "normalized_form": "cancer patient",
+      "lemma": "cancer patient",
+      "tokens": [
+        {
+          "text": "cancer",
+          "start": 34,
+          "end": 40,
+          "lemma": "cancer",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "patients",
+          "start": 41,
+          "end": 49,
+          "lemma": "patient",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 41,
+          "end": 49,
+          "original": "patients",
+          "replacement": "patient",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 58,
+      "end": 105,
+      "surface_text": "on cardiac implantable electronic device (CIED)",
+      "ner_label_hint": "OBJECT",
+      "score": 0.37638795375823975,
+      "normalized_form": "on cardiac implantable electronic device (CIED)",
+      "lemma": "on cardiac implantable electronic device (CIED)",
+      "tokens": [
+        {
+          "text": "on",
+          "start": 58,
+          "end": 60,
+          "lemma": "on",
+          "pos": "ADP",
+          "tag": "IN",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "cardiac",
+          "start": 61,
+          "end": 68,
+          "lemma": "cardiac",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "implantable",
+          "start": 69,
+          "end": 80,
+          "lemma": "implantable",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "electronic",
+          "start": 81,
+          "end": 91,
+          "lemma": "electronic",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "device",
+          "start": 92,
+          "end": 98,
+          "lemma": "device",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "(",
+          "start": 99,
+          "end": 100,
+          "lemma": "(",
+          "pos": "PUNCT",
+          "tag": "-LRB-",
+          "morph": {
+            "PunctSide": "Ini",
+            "PunctType": "Brck"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "CIED",
+          "start": 100,
+          "end": 104,
+          "lemma": "CIED",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": ")",
+          "start": 104,
+          "end": 105,
+          "lemma": ")",
+          "pos": "PUNCT",
+          "tag": "-RRB-",
+          "morph": {
+            "PunctSide": "Fin",
+            "PunctType": "Brck"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 61,
+      "end": 98,
+      "surface_text": "cardiac implantable electronic device",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9211766719818115,
+      "normalized_form": "cardiac implantable electronic device",
+      "lemma": "cardiac implantable electronic device",
+      "tokens": [
+        {
+          "text": "cardiac",
+          "start": 61,
+          "end": 68,
+          "lemma": "cardiac",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "implantable",
+          "start": 69,
+          "end": 80,
+          "lemma": "implantable",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "electronic",
+          "start": 81,
+          "end": 91,
+          "lemma": "electronic",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "device",
+          "start": 92,
+          "end": 98,
+          "lemma": "device",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [
+        {
+          "short_form": "CIED",
+          "long_form": "cardiac implantable electronic device",
+          "short_start": 100,
+          "short_end": 104,
+          "long_start": 61,
+          "long_end": 98,
+          "scope": "document_candidate_only"
+        }
+      ],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 61,
+      "end": 105,
+      "surface_text": "cardiac implantable electronic device (CIED)",
+      "ner_label_hint": "OBJECT",
+      "score": 0.8651072978973389,
+      "normalized_form": "cardiac implantable electronic device (CIED)",
+      "lemma": "cardiac implantable electronic device (CIED)",
+      "tokens": [
+        {
+          "text": "cardiac",
+          "start": 61,
+          "end": 68,
+          "lemma": "cardiac",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "implantable",
+          "start": 69,
+          "end": 80,
+          "lemma": "implantable",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "electronic",
+          "start": 81,
+          "end": 91,
+          "lemma": "electronic",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "device",
+          "start": 92,
+          "end": 98,
+          "lemma": "device",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "(",
+          "start": 99,
+          "end": 100,
+          "lemma": "(",
+          "pos": "PUNCT",
+          "tag": "-LRB-",
+          "morph": {
+            "PunctSide": "Ini",
+            "PunctType": "Brck"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "CIED",
+          "start": 100,
+          "end": 104,
+          "lemma": "CIED",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": ")",
+          "start": 104,
+          "end": 105,
+          "lemma": ")",
+          "pos": "PUNCT",
+          "tag": "-RRB-",
+          "morph": {
+            "PunctSide": "Fin",
+            "PunctType": "Brck"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 69,
+      "end": 98,
+      "surface_text": "implantable electronic device",
+      "ner_label_hint": "OBJECT",
+      "score": 0.47749677300453186,
+      "normalized_form": "implantable electronic device",
+      "lemma": "implantable electronic device",
+      "tokens": [
+        {
+          "text": "implantable",
+          "start": 69,
+          "end": 80,
+          "lemma": "implantable",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "electronic",
+          "start": 81,
+          "end": 91,
+          "lemma": "electronic",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "device",
+          "start": 92,
+          "end": 98,
+          "lemma": "device",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 191,
+      "end": 196,
+      "surface_text": "CIEDs",
+      "ner_label_hint": "ACTOR",
+      "score": 0.9752012491226196,
+      "normalized_form": "CIEDs",
+      "lemma": "CIEDs",
+      "tokens": [
+        {
+          "text": "CIEDs",
+          "start": 191,
+          "end": 196,
+          "lemma": "CIEDs",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 191,
+      "end": 196,
+      "surface_text": "CIEDs",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9869759678840637,
+      "normalized_form": "CIEDs",
+      "lemma": "CIEDs",
+      "tokens": [
+        {
+          "text": "CIEDs",
+          "start": 191,
+          "end": 196,
+          "lemma": "CIEDs",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 214,
+      "end": 237,
+      "surface_text": "retrospectively analyze",
+      "ner_label_hint": "METHOD",
+      "score": 0.9605324268341064,
+      "normalized_form": "retrospectively analyze",
+      "lemma": "retrospectively analyze",
+      "tokens": [
+        {
+          "text": "retrospectively",
+          "start": 214,
+          "end": 229,
+          "lemma": "retrospectively",
+          "pos": "ADV",
+          "tag": "RB",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "analyze",
+          "start": 230,
+          "end": 237,
+          "lemma": "analyze",
+          "pos": "VERB",
+          "tag": "VBP",
+          "morph": {
+            "Tense": "Pres",
+            "VerbForm": "Fin"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 300,
+      "end": 312,
+      "surface_text": "radiotherapy",
+      "ner_label_hint": "METHOD",
+      "score": 0.7499085664749146,
+      "normalized_form": "radiotherapy",
+      "lemma": "radiotherapy",
+      "tokens": [
+        {
+          "text": "radiotherapy",
+          "start": 300,
+          "end": 312,
+          "lemma": "radiotherapy",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 300,
+      "end": 312,
+      "surface_text": "radiotherapy",
+      "ner_label_hint": "PROCESS",
+      "score": 0.9879081845283508,
+      "normalized_form": "radiotherapy",
+      "lemma": "radiotherapy",
+      "tokens": [
+        {
+          "text": "radiotherapy",
+          "start": 300,
+          "end": 312,
+          "lemma": "radiotherapy",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 342,
+      "end": 352,
+      "surface_text": "University",
+      "ner_label_hint": "ACTOR",
+      "score": 0.6071047782897949,
+      "normalized_form": "University",
+      "lemma": "University",
+      "tokens": [
+        {
+          "text": "University",
+          "start": 342,
+          "end": 352,
+          "lemma": "University",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 342,
+      "end": 372,
+      "surface_text": "University Hospital Heidelberg",
+      "ner_label_hint": "ACTOR",
+      "score": 0.9942554831504822,
+      "normalized_form": "University Hospital Heidelberg",
+      "lemma": "University Hospital Heidelberg",
+      "tokens": [
+        {
+          "text": "University",
+          "start": 342,
+          "end": 352,
+          "lemma": "University",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Hospital",
+          "start": 353,
+          "end": 361,
+          "lemma": "Hospital",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Heidelberg",
+          "start": 362,
+          "end": 372,
+          "lemma": "Heidelberg",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 353,
+      "end": 372,
+      "surface_text": "Hospital Heidelberg",
+      "ner_label_hint": "ACTOR",
+      "score": 0.998571515083313,
+      "normalized_form": "Hospital Heidelberg",
+      "lemma": "Hospital Heidelberg",
+      "tokens": [
+        {
+          "text": "Hospital",
+          "start": 353,
+          "end": 361,
+          "lemma": "Hospital",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Heidelberg",
+          "start": 362,
+          "end": 372,
+          "lemma": "Heidelberg",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 397,
+      "end": 416,
+      "surface_text": "systemic evaluation",
+      "ner_label_hint": "METHOD",
+      "score": 0.5538424849510193,
+      "normalized_form": "systemic evaluation",
+      "lemma": "systemic evaluation",
+      "tokens": [
+        {
+          "text": "systemic",
+          "start": 397,
+          "end": 405,
+          "lemma": "systemic",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "evaluation",
+          "start": 406,
+          "end": 416,
+          "lemma": "evaluation",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 397,
+      "end": 416,
+      "surface_text": "systemic evaluation",
+      "ner_label_hint": "PROCESS",
+      "score": 0.9801801443099976,
+      "normalized_form": "systemic evaluation",
+      "lemma": "systemic evaluation",
+      "tokens": [
+        {
+          "text": "systemic",
+          "start": 397,
+          "end": 405,
+          "lemma": "systemic",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "evaluation",
+          "start": 406,
+          "end": 416,
+          "lemma": "evaluation",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 427,
+      "end": 469,
+      "surface_text": "pre-therapeutic cardiological examinations",
+      "ner_label_hint": "METHOD",
+      "score": 0.8471015691757202,
+      "normalized_form": "pre-therapeutic cardiological examination",
+      "lemma": "pre-therapeutic cardiological examination",
+      "tokens": [
+        {
+          "text": "pre",
+          "start": 427,
+          "end": 430,
+          "lemma": "pre",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 430,
+          "end": 431,
+          "lemma": "-",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "therapeutic",
+          "start": 431,
+          "end": 442,
+          "lemma": "therapeutic",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "cardiological",
+          "start": 443,
+          "end": 456,
+          "lemma": "cardiological",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "examinations",
+          "start": 457,
+          "end": 469,
+          "lemma": "examination",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 457,
+          "end": 469,
+          "original": "examinations",
+          "replacement": "examination",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 443,
+      "end": 469,
+      "surface_text": "cardiological examinations",
+      "ner_label_hint": "METHOD",
+      "score": 0.4836810827255249,
+      "normalized_form": "cardiological examination",
+      "lemma": "cardiological examination",
+      "tokens": [
+        {
+          "text": "cardiological",
+          "start": 443,
+          "end": 456,
+          "lemma": "cardiological",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "examinations",
+          "start": 457,
+          "end": 469,
+          "lemma": "examination",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 457,
+          "end": 469,
+          "original": "examinations",
+          "replacement": "examination",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 477,
+      "end": 495,
+      "surface_text": "CIED functionality",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9857482314109802,
+      "normalized_form": "CIED functionality",
+      "lemma": "CIED functionality",
+      "tokens": [
+        {
+          "text": "CIED",
+          "start": 477,
+          "end": 481,
+          "lemma": "CIED",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "functionality",
+          "start": 482,
+          "end": 495,
+          "lemma": "functionality",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 519,
+      "end": 530,
+      "surface_text": "irradiation",
+      "ner_label_hint": "METHOD",
+      "score": 0.36052340269088745,
+      "normalized_form": "irradiation",
+      "lemma": "irradiation",
+      "tokens": [
+        {
+          "text": "irradiation",
+          "start": 519,
+          "end": 530,
+          "lemma": "irradiation",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 519,
+      "end": 530,
+      "surface_text": "irradiation",
+      "ner_label_hint": "PROCESS",
+      "score": 0.9976997971534729,
+      "normalized_form": "irradiation",
+      "lemma": "irradiation",
+      "tokens": [
+        {
+          "text": "irradiation",
+          "start": 519,
+          "end": 530,
+          "lemma": "irradiation",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 545,
+      "end": 561,
+      "surface_text": "Sixteen patients",
+      "ner_label_hint": "RESULT",
+      "score": 0.5413472652435303,
+      "normalized_form": "Sixteen patient",
+      "lemma": "Sixteen patient",
+      "tokens": [
+        {
+          "text": "Sixteen",
+          "start": 545,
+          "end": 552,
+          "lemma": "Sixteen",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "patients",
+          "start": 553,
+          "end": 561,
+          "lemma": "patient",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 553,
+          "end": 561,
+          "original": "patients",
+          "replacement": "patient",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 553,
+      "end": 561,
+      "surface_text": "patients",
+      "ner_label_hint": "ACTOR",
+      "score": 0.8508999943733215,
+      "normalized_form": "patient",
+      "lemma": "patient",
+      "tokens": [
+        {
+          "text": "patients",
+          "start": 553,
+          "end": 561,
+          "lemma": "patient",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 553,
+          "end": 561,
+          "original": "patients",
+          "replacement": "patient",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 553,
+      "end": 561,
+      "surface_text": "patients",
+      "ner_label_hint": "OBJECT",
+      "score": 0.6982970237731934,
+      "normalized_form": "patient",
+      "lemma": "patient",
+      "tokens": [
+        {
+          "text": "patients",
+          "start": 553,
+          "end": 561,
+          "lemma": "patient",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 553,
+          "end": 561,
+          "original": "patients",
+          "replacement": "patient",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 577,
+      "end": 581,
+      "surface_text": "male",
+      "ner_label_hint": "ACTOR",
+      "score": 0.8455763459205627,
+      "normalized_form": "male",
+      "lemma": "male",
+      "tokens": [
+        {
+          "text": "male",
+          "start": 577,
+          "end": 581,
+          "lemma": "male",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 594,
+      "end": 602,
+      "surface_text": "mean age",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.795150101184845,
+      "normalized_form": "mean age",
+      "lemma": "mean age",
+      "tokens": [
+        {
+          "text": "mean",
+          "start": 594,
+          "end": 598,
+          "lemma": "mean",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "age",
+          "start": 599,
+          "end": 602,
+          "lemma": "age",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 649,
+      "end": 657,
+      "surface_text": "patients",
+      "ner_label_hint": "ACTOR",
+      "score": 0.8571639657020569,
+      "normalized_form": "patient",
+      "lemma": "patient",
+      "tokens": [
+        {
+          "text": "patients",
+          "start": 649,
+          "end": 657,
+          "lemma": "patient",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 649,
+          "end": 657,
+          "original": "patients",
+          "replacement": "patient",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 649,
+      "end": 657,
+      "surface_text": "patients",
+      "ner_label_hint": "OBJECT",
+      "score": 0.7069880366325378,
+      "normalized_form": "patient",
+      "lemma": "patient",
+      "tokens": [
+        {
+          "text": "patients",
+          "start": 649,
+          "end": 657,
+          "lemma": "patient",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 649,
+          "end": 657,
+          "original": "patients",
+          "replacement": "patient",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 683,
+      "end": 695,
+      "surface_text": "radiotherapy",
+      "ner_label_hint": "PROCESS",
+      "score": 0.9917728304862976,
+      "normalized_form": "radiotherapy",
+      "lemma": "radiotherapy",
+      "tokens": [
+        {
+          "text": "radiotherapy",
+          "start": 683,
+          "end": 695,
+          "lemma": "radiotherapy",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 703,
+      "end": 724,
+      "surface_text": "cumulative total dose",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.7362640500068665,
+      "normalized_form": "cumulative total dose",
+      "lemma": "cumulative total dose",
+      "tokens": [
+        {
+          "text": "cumulative",
+          "start": 703,
+          "end": 713,
+          "lemma": "cumulative",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "total",
+          "start": 714,
+          "end": 719,
+          "lemma": "total",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "dose",
+          "start": 720,
+          "end": 724,
+          "lemma": "dose",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 720,
+      "end": 724,
+      "surface_text": "dose",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.6395975351333618,
+      "normalized_form": "dose",
+      "lemma": "dose",
+      "tokens": [
+        {
+          "text": "dose",
+          "start": 720,
+          "end": 724,
+          "lemma": "dose",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 738,
+      "end": 742,
+      "surface_text": "mean",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.6153312921524048,
+      "normalized_form": "mean",
+      "lemma": "mean",
+      "tokens": [
+        {
+          "text": "mean",
+          "start": 738,
+          "end": 742,
+          "lemma": "mean",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 751,
+      "end": 755,
+      "surface_text": "dose",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.7046778798103333,
+      "normalized_form": "dose",
+      "lemma": "dose",
+      "tokens": [
+        {
+          "text": "dose",
+          "start": 751,
+          "end": 755,
+          "lemma": "dose",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 763,
+      "end": 768,
+      "surface_text": "CIEDs",
+      "ner_label_hint": "ACTOR",
+      "score": 0.9963048696517944,
+      "normalized_form": "CIEDs",
+      "lemma": "CIEDs",
+      "tokens": [
+        {
+          "text": "CIEDs",
+          "start": 763,
+          "end": 768,
+          "lemma": "CIEDs",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 791,
+      "end": 803,
+      "surface_text": "radiotherapy",
+      "ner_label_hint": "PROCESS",
+      "score": 0.9970589876174927,
+      "normalized_form": "radiotherapy",
+      "lemma": "radiotherapy",
+      "tokens": [
+        {
+          "text": "radiotherapy",
+          "start": 791,
+          "end": 803,
+          "lemma": "radiotherapy",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 819,
+      "end": 859,
+      "surface_text": "one-year post-radiation follow-up period",
+      "ner_label_hint": "PROCESS",
+      "score": 0.3981715440750122,
+      "normalized_form": "one-year post-radiation follow-up period",
+      "lemma": "one-year post-radiation follow-up period",
+      "tokens": [
+        {
+          "text": "one",
+          "start": 819,
+          "end": 822,
+          "lemma": "one",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 822,
+          "end": 823,
+          "lemma": "-",
+          "pos": "PUNCT",
+          "tag": "HYPH",
+          "morph": {
+            "PunctType": "Dash"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "year",
+          "start": 823,
+          "end": 827,
+          "lemma": "year",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "post",
+          "start": 828,
+          "end": 832,
+          "lemma": "post",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 832,
+          "end": 833,
+          "lemma": "-",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "radiation",
+          "start": 833,
+          "end": 842,
+          "lemma": "radiation",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "follow",
+          "start": 843,
+          "end": 849,
+          "lemma": "follow",
+          "pos": "VERB",
+          "tag": "VB",
+          "morph": {
+            "VerbForm": "Inf"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 849,
+          "end": 850,
+          "lemma": "-",
+          "pos": "PUNCT",
+          "tag": "HYPH",
+          "morph": {
+            "PunctType": "Dash"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "up",
+          "start": 850,
+          "end": 852,
+          "lemma": "up",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "period",
+          "start": 853,
+          "end": 859,
+          "lemma": "period",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 913,
+      "end": 922,
+      "surface_text": "treatment",
+      "ner_label_hint": "PROCESS",
+      "score": 0.6781471371650696,
+      "normalized_form": "treatment",
+      "lemma": "treatment",
+      "tokens": [
+        {
+          "text": "treatment",
+          "start": 913,
+          "end": 922,
+          "lemma": "treatment",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 996,
+      "end": 1000,
+      "surface_text": "CIED",
+      "ner_label_hint": "OBJECT",
+      "score": 0.40273234248161316,
+      "normalized_form": "CIED",
+      "lemma": "CIED",
+      "tokens": [
+        {
+          "text": "CIED",
+          "start": 996,
+          "end": 1000,
+          "lemma": "CIED",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [
+        {
+          "short_form": "CIED",
+          "long_form": "cardiac implantable electronic device",
+          "short_start": 100,
+          "short_end": 104,
+          "long_start": 61,
+          "long_end": 98,
+          "scope": "document_candidate_only"
+        }
+      ],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 1029,
+      "end": 1047,
+      "surface_text": "radiation fraction",
+      "ner_label_hint": "PROCESS",
+      "score": 0.9749802350997925,
+      "normalized_form": "radiation fraction",
+      "lemma": "radiation fraction",
+      "tokens": [
+        {
+          "text": "radiation",
+          "start": 1029,
+          "end": 1038,
+          "lemma": "radiation",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "fraction",
+          "start": 1039,
+          "end": 1047,
+          "lemma": "fraction",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 1071,
+      "end": 1073,
+      "surface_text": "RT",
+      "ner_label_hint": "PROCESS",
+      "score": 0.9581703543663025,
+      "normalized_form": "RT",
+      "lemma": "RT",
+      "tokens": [
+        {
+          "text": "RT",
+          "start": 1071,
+          "end": 1073,
+          "lemma": "RT",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 1095,
+      "end": 1108,
+      "surface_text": "photon energy",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.9477825164794922,
+      "normalized_form": "photon energy",
+      "lemma": "photon energy",
+      "tokens": [
+        {
+          "text": "photon",
+          "start": 1095,
+          "end": 1101,
+          "lemma": "photon",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "energy",
+          "start": 1102,
+          "end": 1108,
+          "lemma": "energy",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 1095,
+      "end": 1108,
+      "surface_text": "photon energy",
+      "ner_label_hint": "OBJECT",
+      "score": 0.8946897983551025,
+      "normalized_form": "photon energy",
+      "lemma": "photon energy",
+      "tokens": [
+        {
+          "text": "photon",
+          "start": 1095,
+          "end": 1101,
+          "lemma": "photon",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "energy",
+          "start": 1102,
+          "end": 1108,
+          "lemma": "energy",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 1128,
+      "end": 1164,
+      "surface_text": "manufacturer-recommended dose limits",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.9553036093711853,
+      "normalized_form": "manufacturer-recommended dose limit",
+      "lemma": "manufacturer-recommended dose limit",
+      "tokens": [
+        {
+          "text": "manufacturer",
+          "start": 1128,
+          "end": 1140,
+          "lemma": "manufacturer",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 1140,
+          "end": 1141,
+          "lemma": "-",
+          "pos": "PUNCT",
+          "tag": "HYPH",
+          "morph": {
+            "PunctType": "Dash"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "recommended",
+          "start": 1141,
+          "end": 1152,
+          "lemma": "recommend",
+          "pos": "VERB",
+          "tag": "VBN",
+          "morph": {
+            "Aspect": "Perf",
+            "Tense": "Past",
+            "VerbForm": "Part"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "dose",
+          "start": 1153,
+          "end": 1157,
+          "lemma": "dose",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "limits",
+          "start": 1158,
+          "end": 1164,
+          "lemma": "limit",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1158,
+          "end": 1164,
+          "original": "limits",
+          "replacement": "limit",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 1257,
+      "end": 1273,
+      "surface_text": "pacing threshold",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.9976693987846375,
+      "normalized_form": "pacing threshold",
+      "lemma": "pacing threshold",
+      "tokens": [
+        {
+          "text": "pacing",
+          "start": 1257,
+          "end": 1263,
+          "lemma": "pacing",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "threshold",
+          "start": 1264,
+          "end": 1273,
+          "lemma": "threshold",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 1275,
+      "end": 1292,
+      "surface_text": "sensing threshold",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.9969653487205505,
+      "normalized_form": "sensing threshold",
+      "lemma": "sensing threshold",
+      "tokens": [
+        {
+          "text": "sensing",
+          "start": 1275,
+          "end": 1282,
+          "lemma": "sense",
+          "pos": "VERB",
+          "tag": "VBG",
+          "morph": {
+            "Aspect": "Prog",
+            "Tense": "Pres",
+            "VerbForm": "Part"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "threshold",
+          "start": 1283,
+          "end": 1292,
+          "lemma": "threshold",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 1297,
+      "end": 1311,
+      "surface_text": "lead impedance",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.9955162405967712,
+      "normalized_form": "lead impedance",
+      "lemma": "lead impedance",
+      "tokens": [
+        {
+          "text": "lead",
+          "start": 1297,
+          "end": 1301,
+          "lemma": "lead",
+          "pos": "VERB",
+          "tag": "VB",
+          "morph": {
+            "VerbForm": "Inf"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "impedance",
+          "start": 1302,
+          "end": 1311,
+          "lemma": "impedance",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4391351014",
+      "start": 1318,
+      "end": 1320,
+      "surface_text": "RT",
+      "ner_label_hint": "CONDITION",
+      "score": 0.718999445438385,
+      "normalized_form": "RT",
+      "lemma": "RT",
+      "tokens": [
+        {
+          "text": "RT",
+          "start": 1318,
+          "end": 1320,
+          "lemma": "RT",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    }
+  ],
+  "inference_seconds": 26.164757300633937,
+  "windows": [
+    [
+      0,
+      133,
+      [
+        151,
+        398,
+        501
+      ]
+    ],
+    [
+      109,
+      237,
+      [
+        154,
+        401,
+        504
+      ]
+    ],
+    [
+      155,
+      210,
+      [
+        141,
+        388,
+        491
+      ]
+    ],
+    [
+      188,
+      386,
+      [
+        162,
+        409,
+        512
+      ]
+    ],
+    [
+      353,
+      396,
+      [
+        133,
+        380,
+        483
+      ]
+    ],
+    [
+      342,
+      469,
+      [
+        143,
+        390,
+        493
+      ]
+    ],
+    [
+      313,
+      386,
+      [
+        139,
+        386,
+        489
+      ]
+    ],
+    [
+      353,
+      576,
+      [
+        162,
+        409,
+        512
+      ]
+    ],
+    [
+      496,
+      544,
+      [
+        136,
+        383,
+        486
+      ]
+    ],
+    [
+      512,
+      666,
+      [
+        161,
+        408,
+        511
+      ]
+    ],
+    [
+      624,
+      768,
+      [
+        155,
+        402,
+        505
+      ]
+    ],
+    [
+      617,
+      742,
+      [
+        152,
+        399,
+        502
+      ]
+    ],
+    [
+      725,
+      814,
+      [
+        149,
+        396,
+        499
+      ]
+    ],
+    [
+      763,
+      803,
+      [
+        136,
+        383,
+        486
+      ]
+    ],
+    [
+      773,
+      946,
+      [
+        162,
+        409,
+        512
+      ]
+    ],
+    [
+      926,
+      958,
+      [
+        133,
+        380,
+        483
+      ]
+    ],
+    [
+      926,
+      988,
+      [
+        139,
+        386,
+        489
+      ]
+    ],
+    [
+      886,
+      958,
+      [
+        139,
+        386,
+        489
+      ]
+    ],
+    [
+      926,
+      1108,
+      [
+        159,
+        406,
+        509
+      ]
+    ],
+    [
+      1048,
+      1205,
+      [
+        153,
+        400,
+        503
+      ]
+    ],
+    [
+      1172,
+      1321,
+      [
+        152,
+        399,
+        502
+      ]
+    ]
+  ],
+  "synthetic_punctuation_spans_dropped": 0
+}
