@@ -1,0 +1,4323 @@
+{
+  "config_hash": "10ac92188386a2e74f2c7a63b76130baf40893984415a48f4f034cc9ade1b007",
+  "text_sha256": "1f59574097e2558bffa2181b837aeef9646420f22490c1079799aaf3060192a9",
+  "mentions": [
+    {
+      "document_id": "W4285525942",
+      "start": 68,
+      "end": 95,
+      "surface_text": "green financial instruments",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9988377690315247,
+      "normalized_form": "green financial instrument",
+      "lemma": "green financial instrument",
+      "tokens": [
+        {
+          "text": "green",
+          "start": 68,
+          "end": 73,
+          "lemma": "green",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "financial",
+          "start": 74,
+          "end": 83,
+          "lemma": "financial",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "instruments",
+          "start": 84,
+          "end": 95,
+          "lemma": "instrument",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 84,
+          "end": 95,
+          "original": "instruments",
+          "replacement": "instrument",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 103,
+      "end": 124,
+      "surface_text": "global banking market",
+      "ner_label_hint": "DATA_RESOURCE",
+      "score": 0.6198522448539734,
+      "normalized_form": "global banking market",
+      "lemma": "global banking market",
+      "tokens": [
+        {
+          "text": "global",
+          "start": 103,
+          "end": 109,
+          "lemma": "global",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "banking",
+          "start": 110,
+          "end": 117,
+          "lemma": "banking",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "market",
+          "start": 118,
+          "end": 124,
+          "lemma": "market",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 234,
+      "end": 252,
+      "surface_text": "global coordinates",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.861304759979248,
+      "normalized_form": "global coordinate",
+      "lemma": "global coordinate",
+      "tokens": [
+        {
+          "text": "global",
+          "start": 234,
+          "end": 240,
+          "lemma": "global",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "coordinates",
+          "start": 241,
+          "end": 252,
+          "lemma": "coordinate",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 241,
+          "end": 252,
+          "original": "coordinates",
+          "replacement": "coordinate",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 258,
+      "end": 296,
+      "surface_text": "network-organized green banking system",
+      "ner_label_hint": "OBJECT",
+      "score": 0.5265817046165466,
+      "normalized_form": "network-organized green banking system",
+      "lemma": "network-organized green banking system",
+      "tokens": [
+        {
+          "text": "network",
+          "start": 258,
+          "end": 265,
+          "lemma": "network",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 265,
+          "end": 266,
+          "lemma": "-",
+          "pos": "PUNCT",
+          "tag": "HYPH",
+          "morph": {
+            "PunctType": "Dash"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "organized",
+          "start": 266,
+          "end": 275,
+          "lemma": "organize",
+          "pos": "VERB",
+          "tag": "VBN",
+          "morph": {
+            "Aspect": "Perf",
+            "Tense": "Past",
+            "VerbForm": "Part"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "green",
+          "start": 276,
+          "end": 281,
+          "lemma": "green",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "banking",
+          "start": 282,
+          "end": 289,
+          "lemma": "banking",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "system",
+          "start": 290,
+          "end": 296,
+          "lemma": "system",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 276,
+      "end": 296,
+      "surface_text": "green banking system",
+      "ner_label_hint": "ACTOR",
+      "score": 0.7745493054389954,
+      "normalized_form": "green banking system",
+      "lemma": "green banking system",
+      "tokens": [
+        {
+          "text": "green",
+          "start": 276,
+          "end": 281,
+          "lemma": "green",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "banking",
+          "start": 282,
+          "end": 289,
+          "lemma": "banking",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "system",
+          "start": 290,
+          "end": 296,
+          "lemma": "system",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 276,
+      "end": 296,
+      "surface_text": "green banking system",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9753193855285645,
+      "normalized_form": "green banking system",
+      "lemma": "green banking system",
+      "tokens": [
+        {
+          "text": "green",
+          "start": 276,
+          "end": 281,
+          "lemma": "green",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "banking",
+          "start": 282,
+          "end": 289,
+          "lemma": "banking",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "system",
+          "start": 290,
+          "end": 296,
+          "lemma": "system",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 282,
+      "end": 296,
+      "surface_text": "banking system",
+      "ner_label_hint": "ACTOR",
+      "score": 0.9027780294418335,
+      "normalized_form": "banking system",
+      "lemma": "banking system",
+      "tokens": [
+        {
+          "text": "banking",
+          "start": 282,
+          "end": 289,
+          "lemma": "banking",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "system",
+          "start": 290,
+          "end": 296,
+          "lemma": "system",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 282,
+      "end": 296,
+      "surface_text": "banking system",
+      "ner_label_hint": "OBJECT",
+      "score": 0.8661938905715942,
+      "normalized_form": "banking system",
+      "lemma": "banking system",
+      "tokens": [
+        {
+          "text": "banking",
+          "start": 282,
+          "end": 289,
+          "lemma": "banking",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "system",
+          "start": 290,
+          "end": 296,
+          "lemma": "system",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 290,
+      "end": 296,
+      "surface_text": "system",
+      "ner_label_hint": "OBJECT",
+      "score": 0.7246774435043335,
+      "normalized_form": "system",
+      "lemma": "system",
+      "tokens": [
+        {
+          "text": "system",
+          "start": 290,
+          "end": 296,
+          "lemma": "system",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 366,
+      "end": 380,
+      "surface_text": "global capital",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.43894341588020325,
+      "normalized_form": "global capital",
+      "lemma": "global capital",
+      "tokens": [
+        {
+          "text": "global",
+          "start": 366,
+          "end": 372,
+          "lemma": "global",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "capital",
+          "start": 373,
+          "end": 380,
+          "lemma": "capital",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 366,
+      "end": 380,
+      "surface_text": "global capital",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.9030961394309998,
+      "normalized_form": "global capital",
+      "lemma": "global capital",
+      "tokens": [
+        {
+          "text": "global",
+          "start": 366,
+          "end": 372,
+          "lemma": "global",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "capital",
+          "start": 373,
+          "end": 380,
+          "lemma": "capital",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 384,
+      "end": 404,
+      "surface_text": "green infrastructure",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9955442547798157,
+      "normalized_form": "green infrastructure",
+      "lemma": "green infrastructure",
+      "tokens": [
+        {
+          "text": "green",
+          "start": 384,
+          "end": 389,
+          "lemma": "green",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "infrastructure",
+          "start": 390,
+          "end": 404,
+          "lemma": "infrastructure",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 456,
+      "end": 467,
+      "surface_text": "cooperation",
+      "ner_label_hint": "PROCESS",
+      "score": 0.5498780608177185,
+      "normalized_form": "cooperation",
+      "lemma": "cooperation",
+      "tokens": [
+        {
+          "text": "cooperation",
+          "start": 456,
+          "end": 467,
+          "lemma": "cooperation",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 468,
+      "end": 525,
+      "surface_text": "between private investors and developers with green banks",
+      "ner_label_hint": "ACTOR",
+      "score": 0.365861177444458,
+      "normalized_form": "between private investors and developers with green bank",
+      "lemma": "between private investors and developers with green bank",
+      "tokens": [
+        {
+          "text": "between",
+          "start": 468,
+          "end": 475,
+          "lemma": "between",
+          "pos": "ADP",
+          "tag": "IN",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "private",
+          "start": 476,
+          "end": 483,
+          "lemma": "private",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "investors",
+          "start": 484,
+          "end": 493,
+          "lemma": "investor",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "and",
+          "start": 494,
+          "end": 497,
+          "lemma": "and",
+          "pos": "CCONJ",
+          "tag": "CC",
+          "morph": {
+            "ConjType": "Cmp"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "developers",
+          "start": 498,
+          "end": 508,
+          "lemma": "developer",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "with",
+          "start": 509,
+          "end": 513,
+          "lemma": "with",
+          "pos": "ADP",
+          "tag": "IN",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "green",
+          "start": 514,
+          "end": 519,
+          "lemma": "green",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "banks",
+          "start": 520,
+          "end": 525,
+          "lemma": "bank",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 520,
+          "end": 525,
+          "original": "banks",
+          "replacement": "bank",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 476,
+      "end": 493,
+      "surface_text": "private investors",
+      "ner_label_hint": "ACTOR",
+      "score": 0.9979097247123718,
+      "normalized_form": "private investor",
+      "lemma": "private investor",
+      "tokens": [
+        {
+          "text": "private",
+          "start": 476,
+          "end": 483,
+          "lemma": "private",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "investors",
+          "start": 484,
+          "end": 493,
+          "lemma": "investor",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 484,
+          "end": 493,
+          "original": "investors",
+          "replacement": "investor",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 498,
+      "end": 508,
+      "surface_text": "developers",
+      "ner_label_hint": "ACTOR",
+      "score": 0.9910411238670349,
+      "normalized_form": "developer",
+      "lemma": "developer",
+      "tokens": [
+        {
+          "text": "developers",
+          "start": 498,
+          "end": 508,
+          "lemma": "developer",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 498,
+          "end": 508,
+          "original": "developers",
+          "replacement": "developer",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 514,
+      "end": 525,
+      "surface_text": "green banks",
+      "ner_label_hint": "ACTOR",
+      "score": 0.9587884545326233,
+      "normalized_form": "green bank",
+      "lemma": "green bank",
+      "tokens": [
+        {
+          "text": "green",
+          "start": 514,
+          "end": 519,
+          "lemma": "green",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "banks",
+          "start": 520,
+          "end": 525,
+          "lemma": "bank",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 520,
+          "end": 525,
+          "original": "banks",
+          "replacement": "bank",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 514,
+      "end": 525,
+      "surface_text": "green banks",
+      "ner_label_hint": "OBJECT",
+      "score": 0.548705518245697,
+      "normalized_form": "green bank",
+      "lemma": "green bank",
+      "tokens": [
+        {
+          "text": "green",
+          "start": 514,
+          "end": 519,
+          "lemma": "green",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "banks",
+          "start": 520,
+          "end": 525,
+          "lemma": "bank",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 520,
+          "end": 525,
+          "original": "banks",
+          "replacement": "bank",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 563,
+      "end": 574,
+      "surface_text": "cooperation",
+      "ner_label_hint": "PROCESS",
+      "score": 0.5643692016601562,
+      "normalized_form": "cooperation",
+      "lemma": "cooperation",
+      "tokens": [
+        {
+          "text": "cooperation",
+          "start": 563,
+          "end": 574,
+          "lemma": "cooperation",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 594,
+      "end": 606,
+      "surface_text": "transparency",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.9554919600486755,
+      "normalized_form": "transparency",
+      "lemma": "transparency",
+      "tokens": [
+        {
+          "text": "transparency",
+          "start": 594,
+          "end": 606,
+          "lemma": "transparency",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 610,
+      "end": 636,
+      "surface_text": "green banking institutions",
+      "ner_label_hint": "ACTOR",
+      "score": 0.9897873401641846,
+      "normalized_form": "green banking institution",
+      "lemma": "green banking institution",
+      "tokens": [
+        {
+          "text": "green",
+          "start": 610,
+          "end": 615,
+          "lemma": "green",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "banking",
+          "start": 616,
+          "end": 623,
+          "lemma": "banking",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "institutions",
+          "start": 624,
+          "end": 636,
+          "lemma": "institution",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 624,
+          "end": 636,
+          "original": "institutions",
+          "replacement": "institution",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 610,
+      "end": 636,
+      "surface_text": "green banking institutions",
+      "ner_label_hint": "DATA_RESOURCE",
+      "score": 0.859218418598175,
+      "normalized_form": "green banking institution",
+      "lemma": "green banking institution",
+      "tokens": [
+        {
+          "text": "green",
+          "start": 610,
+          "end": 615,
+          "lemma": "green",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "banking",
+          "start": 616,
+          "end": 623,
+          "lemma": "banking",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "institutions",
+          "start": 624,
+          "end": 636,
+          "lemma": "institution",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 624,
+          "end": 636,
+          "original": "institutions",
+          "replacement": "institution",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 610,
+      "end": 636,
+      "surface_text": "green banking institutions",
+      "ner_label_hint": "OBJECT",
+      "score": 0.6966755390167236,
+      "normalized_form": "green banking institution",
+      "lemma": "green banking institution",
+      "tokens": [
+        {
+          "text": "green",
+          "start": 610,
+          "end": 615,
+          "lemma": "green",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "banking",
+          "start": 616,
+          "end": 623,
+          "lemma": "banking",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "institutions",
+          "start": 624,
+          "end": 636,
+          "lemma": "institution",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 624,
+          "end": 636,
+          "original": "institutions",
+          "replacement": "institution",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 616,
+      "end": 636,
+      "surface_text": "banking institutions",
+      "ner_label_hint": "ACTOR",
+      "score": 0.9524121284484863,
+      "normalized_form": "banking institution",
+      "lemma": "banking institution",
+      "tokens": [
+        {
+          "text": "banking",
+          "start": 616,
+          "end": 623,
+          "lemma": "banking",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "institutions",
+          "start": 624,
+          "end": 636,
+          "lemma": "institution",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 624,
+          "end": 636,
+          "original": "institutions",
+          "replacement": "institution",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 624,
+      "end": 636,
+      "surface_text": "institutions",
+      "ner_label_hint": "ACTOR",
+      "score": 0.8861345052719116,
+      "normalized_form": "institution",
+      "lemma": "institution",
+      "tokens": [
+        {
+          "text": "institutions",
+          "start": 624,
+          "end": 636,
+          "lemma": "institution",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 624,
+          "end": 636,
+          "original": "institutions",
+          "replacement": "institution",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 642,
+      "end": 649,
+      "surface_text": "article",
+      "ner_label_hint": "DATA_RESOURCE",
+      "score": 0.3600233793258667,
+      "normalized_form": "article",
+      "lemma": "article",
+      "tokens": [
+        {
+          "text": "article",
+          "start": 642,
+          "end": 649,
+          "lemma": "article",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 668,
+      "end": 677,
+      "surface_text": "financial",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.4787803888320923,
+      "normalized_form": "financial",
+      "lemma": "financial",
+      "tokens": [
+        {
+          "text": "financial",
+          "start": 668,
+          "end": 677,
+          "lemma": "financial",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 708,
+      "end": 713,
+      "surface_text": "green",
+      "ner_label_hint": "OBJECT",
+      "score": 0.43381989002227783,
+      "normalized_form": "green",
+      "lemma": "green",
+      "tokens": [
+        {
+          "text": "green",
+          "start": 708,
+          "end": 713,
+          "lemma": "green",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 708,
+      "end": 718,
+      "surface_text": "green bank",
+      "ner_label_hint": "OBJECT",
+      "score": 0.42166373133659363,
+      "normalized_form": "green bank",
+      "lemma": "green bank",
+      "tokens": [
+        {
+          "text": "green",
+          "start": 708,
+          "end": 713,
+          "lemma": "green",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "bank",
+          "start": 714,
+          "end": 718,
+          "lemma": "bank",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 708,
+      "end": 726,
+      "surface_text": "green bank lending",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9257445335388184,
+      "normalized_form": "green bank lending",
+      "lemma": "green bank lending",
+      "tokens": [
+        {
+          "text": "green",
+          "start": 708,
+          "end": 713,
+          "lemma": "green",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "bank",
+          "start": 714,
+          "end": 718,
+          "lemma": "bank",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "lending",
+          "start": 719,
+          "end": 726,
+          "lemma": "lending",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 728,
+      "end": 743,
+      "surface_text": "green mortgages",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9781304597854614,
+      "normalized_form": "green mortgage",
+      "lemma": "green mortgage",
+      "tokens": [
+        {
+          "text": "green",
+          "start": 728,
+          "end": 733,
+          "lemma": "green",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "mortgages",
+          "start": 734,
+          "end": 743,
+          "lemma": "mortgage",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 734,
+          "end": 743,
+          "original": "mortgages",
+          "replacement": "mortgage",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 734,
+      "end": 743,
+      "surface_text": "mortgages",
+      "ner_label_hint": "OBJECT",
+      "score": 0.7652470469474792,
+      "normalized_form": "mortgage",
+      "lemma": "mortgage",
+      "tokens": [
+        {
+          "text": "mortgages",
+          "start": 734,
+          "end": 743,
+          "lemma": "mortgage",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 734,
+          "end": 743,
+          "original": "mortgages",
+          "replacement": "mortgage",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 745,
+      "end": 756,
+      "surface_text": "green bonds",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9842411875724792,
+      "normalized_form": "green bond",
+      "lemma": "green bond",
+      "tokens": [
+        {
+          "text": "green",
+          "start": 745,
+          "end": 750,
+          "lemma": "green",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "bonds",
+          "start": 751,
+          "end": 756,
+          "lemma": "bond",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 751,
+          "end": 756,
+          "original": "bonds",
+          "replacement": "bond",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 758,
+      "end": 774,
+      "surface_text": "co-investment of",
+      "ner_label_hint": "OBJECT",
+      "score": 0.8203325867652893,
+      "normalized_form": "co-investment of",
+      "lemma": "co-investment of",
+      "tokens": [
+        {
+          "text": "co",
+          "start": 758,
+          "end": 760,
+          "lemma": "co",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 760,
+          "end": 761,
+          "lemma": "-",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "investment",
+          "start": 761,
+          "end": 771,
+          "lemma": "investment",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "of",
+          "start": 772,
+          "end": 774,
+          "lemma": "of",
+          "pos": "ADP",
+          "tag": "IN",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 758,
+      "end": 786,
+      "surface_text": "co-investment of green banks",
+      "ner_label_hint": "OBJECT",
+      "score": 0.7417439818382263,
+      "normalized_form": "co-investment of green bank",
+      "lemma": "co-investment of green bank",
+      "tokens": [
+        {
+          "text": "co",
+          "start": 758,
+          "end": 760,
+          "lemma": "co",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 760,
+          "end": 761,
+          "lemma": "-",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "investment",
+          "start": 761,
+          "end": 771,
+          "lemma": "investment",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "of",
+          "start": 772,
+          "end": 774,
+          "lemma": "of",
+          "pos": "ADP",
+          "tag": "IN",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "green",
+          "start": 775,
+          "end": 780,
+          "lemma": "green",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "banks",
+          "start": 781,
+          "end": 786,
+          "lemma": "bank",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 781,
+          "end": 786,
+          "original": "banks",
+          "replacement": "bank",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 772,
+      "end": 786,
+      "surface_text": "of green banks",
+      "ner_label_hint": "OBJECT",
+      "score": 0.5741610527038574,
+      "normalized_form": "of green bank",
+      "lemma": "of green bank",
+      "tokens": [
+        {
+          "text": "of",
+          "start": 772,
+          "end": 774,
+          "lemma": "of",
+          "pos": "ADP",
+          "tag": "IN",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "green",
+          "start": 775,
+          "end": 780,
+          "lemma": "green",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "banks",
+          "start": 781,
+          "end": 786,
+          "lemma": "bank",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 781,
+          "end": 786,
+          "original": "banks",
+          "replacement": "bank",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 775,
+      "end": 786,
+      "surface_text": "green banks",
+      "ner_label_hint": "OBJECT",
+      "score": 0.752162516117096,
+      "normalized_form": "green bank",
+      "lemma": "green bank",
+      "tokens": [
+        {
+          "text": "green",
+          "start": 775,
+          "end": 780,
+          "lemma": "green",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "banks",
+          "start": 781,
+          "end": 786,
+          "lemma": "bank",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 781,
+          "end": 786,
+          "original": "banks",
+          "replacement": "bank",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 781,
+      "end": 786,
+      "surface_text": "banks",
+      "ner_label_hint": "OBJECT",
+      "score": 0.47458523511886597,
+      "normalized_form": "bank",
+      "lemma": "bank",
+      "tokens": [
+        {
+          "text": "banks",
+          "start": 781,
+          "end": 786,
+          "lemma": "bank",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 781,
+          "end": 786,
+          "original": "banks",
+          "replacement": "bank",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 788,
+      "end": 823,
+      "surface_text": "securitization of green bank assets",
+      "ner_label_hint": "OBJECT",
+      "score": 0.6442446708679199,
+      "normalized_form": "securitization of green bank asset",
+      "lemma": "securitization of green bank asset",
+      "tokens": [
+        {
+          "text": "securitization",
+          "start": 788,
+          "end": 802,
+          "lemma": "securitization",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "of",
+          "start": 803,
+          "end": 805,
+          "lemma": "of",
+          "pos": "ADP",
+          "tag": "IN",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "green",
+          "start": 806,
+          "end": 811,
+          "lemma": "green",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "bank",
+          "start": 812,
+          "end": 816,
+          "lemma": "bank",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "assets",
+          "start": 817,
+          "end": 823,
+          "lemma": "asset",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 817,
+          "end": 823,
+          "original": "assets",
+          "replacement": "asset",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 803,
+      "end": 823,
+      "surface_text": "of green bank assets",
+      "ner_label_hint": "OBJECT",
+      "score": 0.3898724615573883,
+      "normalized_form": "of green bank asset",
+      "lemma": "of green bank asset",
+      "tokens": [
+        {
+          "text": "of",
+          "start": 803,
+          "end": 805,
+          "lemma": "of",
+          "pos": "ADP",
+          "tag": "IN",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "green",
+          "start": 806,
+          "end": 811,
+          "lemma": "green",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "bank",
+          "start": 812,
+          "end": 816,
+          "lemma": "bank",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "assets",
+          "start": 817,
+          "end": 823,
+          "lemma": "asset",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 817,
+          "end": 823,
+          "original": "assets",
+          "replacement": "asset",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 806,
+      "end": 816,
+      "surface_text": "green bank",
+      "ner_label_hint": "OBJECT",
+      "score": 0.7643262147903442,
+      "normalized_form": "green bank",
+      "lemma": "green bank",
+      "tokens": [
+        {
+          "text": "green",
+          "start": 806,
+          "end": 811,
+          "lemma": "green",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "bank",
+          "start": 812,
+          "end": 816,
+          "lemma": "bank",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 806,
+      "end": 823,
+      "surface_text": "green bank assets",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9801003336906433,
+      "normalized_form": "green bank asset",
+      "lemma": "green bank asset",
+      "tokens": [
+        {
+          "text": "green",
+          "start": 806,
+          "end": 811,
+          "lemma": "green",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "bank",
+          "start": 812,
+          "end": 816,
+          "lemma": "bank",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "assets",
+          "start": 817,
+          "end": 823,
+          "lemma": "asset",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 817,
+          "end": 823,
+          "original": "assets",
+          "replacement": "asset",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 812,
+      "end": 823,
+      "surface_text": "bank assets",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9975256323814392,
+      "normalized_form": "bank asset",
+      "lemma": "bank asset",
+      "tokens": [
+        {
+          "text": "bank",
+          "start": 812,
+          "end": 816,
+          "lemma": "bank",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "assets",
+          "start": 817,
+          "end": 823,
+          "lemma": "asset",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 817,
+          "end": 823,
+          "original": "assets",
+          "replacement": "asset",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 817,
+      "end": 823,
+      "surface_text": "assets",
+      "ner_label_hint": "OBJECT",
+      "score": 0.42087677121162415,
+      "normalized_form": "asset",
+      "lemma": "asset",
+      "tokens": [
+        {
+          "text": "assets",
+          "start": 817,
+          "end": 823,
+          "lemma": "asset",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 817,
+          "end": 823,
+          "original": "assets",
+          "replacement": "asset",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 841,
+      "end": 855,
+      "surface_text": "characteristic",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.9893622994422913,
+      "normalized_form": "characteristic",
+      "lemma": "characteristic",
+      "tokens": [
+        {
+          "text": "characteristic",
+          "start": 841,
+          "end": 855,
+          "lemma": "characteristic",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 841,
+      "end": 864,
+      "surface_text": "characteristic features",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.8405500650405884,
+      "normalized_form": "characteristic feature",
+      "lemma": "characteristic feature",
+      "tokens": [
+        {
+          "text": "characteristic",
+          "start": 841,
+          "end": 855,
+          "lemma": "characteristic",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "features",
+          "start": 856,
+          "end": 864,
+          "lemma": "feature",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 856,
+          "end": 864,
+          "original": "features",
+          "replacement": "feature",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 907,
+      "end": 928,
+      "surface_text": "financial instruments",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9900049567222595,
+      "normalized_form": "financial instrument",
+      "lemma": "financial instrument",
+      "tokens": [
+        {
+          "text": "financial",
+          "start": 907,
+          "end": 916,
+          "lemma": "financial",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "instruments",
+          "start": 917,
+          "end": 928,
+          "lemma": "instrument",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 917,
+          "end": 928,
+          "original": "instruments",
+          "replacement": "instrument",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 978,
+      "end": 989,
+      "surface_text": "total value",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.8877740502357483,
+      "normalized_form": "total value",
+      "lemma": "total value",
+      "tokens": [
+        {
+          "text": "total",
+          "start": 978,
+          "end": 983,
+          "lemma": "total",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "value",
+          "start": 984,
+          "end": 989,
+          "lemma": "value",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 993,
+      "end": 1003,
+      "surface_text": "green bank",
+      "ner_label_hint": "OBJECT",
+      "score": 0.8360376954078674,
+      "normalized_form": "green bank",
+      "lemma": "green bank",
+      "tokens": [
+        {
+          "text": "green",
+          "start": 993,
+          "end": 998,
+          "lemma": "green",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "bank",
+          "start": 999,
+          "end": 1003,
+          "lemma": "bank",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 993,
+      "end": 1009,
+      "surface_text": "green bank loans",
+      "ner_label_hint": "OBJECT",
+      "score": 0.996452808380127,
+      "normalized_form": "green bank loan",
+      "lemma": "green bank loan",
+      "tokens": [
+        {
+          "text": "green",
+          "start": 993,
+          "end": 998,
+          "lemma": "green",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "bank",
+          "start": 999,
+          "end": 1003,
+          "lemma": "bank",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "loans",
+          "start": 1004,
+          "end": 1009,
+          "lemma": "loan",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1004,
+          "end": 1009,
+          "original": "loans",
+          "replacement": "loan",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 1128,
+      "end": 1135,
+      "surface_text": "article",
+      "ner_label_hint": "DATA_RESOURCE",
+      "score": 0.536923885345459,
+      "normalized_form": "article",
+      "lemma": "article",
+      "tokens": [
+        {
+          "text": "article",
+          "start": 1128,
+          "end": 1135,
+          "lemma": "article",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 1150,
+      "end": 1159,
+      "surface_text": "structure",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.9864386320114136,
+      "normalized_form": "structure",
+      "lemma": "structure",
+      "tokens": [
+        {
+          "text": "structure",
+          "start": 1150,
+          "end": 1159,
+          "lemma": "structure",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 1173,
+      "end": 1192,
+      "surface_text": "sustainable lending",
+      "ner_label_hint": "METHOD",
+      "score": 0.44398048520088196,
+      "normalized_form": "sustainable lending",
+      "lemma": "sustainable lending",
+      "tokens": [
+        {
+          "text": "sustainable",
+          "start": 1173,
+          "end": 1184,
+          "lemma": "sustainable",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "lending",
+          "start": 1185,
+          "end": 1192,
+          "lemma": "lending",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 1196,
+      "end": 1216,
+      "surface_text": "banking institutions",
+      "ner_label_hint": "ACTOR",
+      "score": 0.9920973777770996,
+      "normalized_form": "banking institution",
+      "lemma": "banking institution",
+      "tokens": [
+        {
+          "text": "banking",
+          "start": 1196,
+          "end": 1203,
+          "lemma": "banking",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "institutions",
+          "start": 1204,
+          "end": 1216,
+          "lemma": "institution",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1204,
+          "end": 1216,
+          "original": "institutions",
+          "replacement": "institution",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 1222,
+      "end": 1231,
+      "surface_text": "existence",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.8778383135795593,
+      "normalized_form": "existence",
+      "lemma": "existence",
+      "tokens": [
+        {
+          "text": "existence",
+          "start": 1222,
+          "end": 1231,
+          "lemma": "existence",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 1247,
+      "end": 1277,
+      "surface_text": "interregional differentiations",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.8674315810203552,
+      "normalized_form": "interregional differentiation",
+      "lemma": "interregional differentiation",
+      "tokens": [
+        {
+          "text": "interregional",
+          "start": 1247,
+          "end": 1260,
+          "lemma": "interregional",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "differentiations",
+          "start": 1261,
+          "end": 1277,
+          "lemma": "differentiation",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1261,
+          "end": 1277,
+          "original": "differentiations",
+          "replacement": "differentiation",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 1345,
+      "end": 1350,
+      "surface_text": "green",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9878504872322083,
+      "normalized_form": "green",
+      "lemma": "green",
+      "tokens": [
+        {
+          "text": "green",
+          "start": 1345,
+          "end": 1350,
+          "lemma": "green",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 1345,
+      "end": 1367,
+      "surface_text": "green banking industry",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9655435085296631,
+      "normalized_form": "green banking industry",
+      "lemma": "green banking industry",
+      "tokens": [
+        {
+          "text": "green",
+          "start": 1345,
+          "end": 1350,
+          "lemma": "green",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "banking",
+          "start": 1351,
+          "end": 1358,
+          "lemma": "banking",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "industry",
+          "start": 1359,
+          "end": 1367,
+          "lemma": "industry",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 1351,
+      "end": 1367,
+      "surface_text": "banking industry",
+      "ner_label_hint": "ACTOR",
+      "score": 0.9565207958221436,
+      "normalized_form": "banking industry",
+      "lemma": "banking industry",
+      "tokens": [
+        {
+          "text": "banking",
+          "start": 1351,
+          "end": 1358,
+          "lemma": "banking",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "industry",
+          "start": 1359,
+          "end": 1367,
+          "lemma": "industry",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 1351,
+      "end": 1367,
+      "surface_text": "banking industry",
+      "ner_label_hint": "OBJECT",
+      "score": 0.6483330726623535,
+      "normalized_form": "banking industry",
+      "lemma": "banking industry",
+      "tokens": [
+        {
+          "text": "banking",
+          "start": 1351,
+          "end": 1358,
+          "lemma": "banking",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "industry",
+          "start": 1359,
+          "end": 1367,
+          "lemma": "industry",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 1389,
+      "end": 1395,
+      "surface_text": "author",
+      "ner_label_hint": "ACTOR",
+      "score": 0.8036262392997742,
+      "normalized_form": "author",
+      "lemma": "author",
+      "tokens": [
+        {
+          "text": "author",
+          "start": 1389,
+          "end": 1395,
+          "lemma": "author",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 1428,
+      "end": 1443,
+      "surface_text": "green mortgages",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9754316806793213,
+      "normalized_form": "green mortgage",
+      "lemma": "green mortgage",
+      "tokens": [
+        {
+          "text": "green",
+          "start": 1428,
+          "end": 1433,
+          "lemma": "green",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "mortgages",
+          "start": 1434,
+          "end": 1443,
+          "lemma": "mortgage",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1434,
+          "end": 1443,
+          "original": "mortgages",
+          "replacement": "mortgage",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 1482,
+      "end": 1495,
+      "surface_text": "green banking",
+      "ner_label_hint": "TASK",
+      "score": 0.5015522837638855,
+      "normalized_form": "green banking",
+      "lemma": "green banking",
+      "tokens": [
+        {
+          "text": "green",
+          "start": 1482,
+          "end": 1487,
+          "lemma": "green",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "banking",
+          "start": 1488,
+          "end": 1495,
+          "lemma": "banking",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 1547,
+      "end": 1553,
+      "surface_text": "volume",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.9798690676689148,
+      "normalized_form": "volume",
+      "lemma": "volume",
+      "tokens": [
+        {
+          "text": "volume",
+          "start": 1547,
+          "end": 1553,
+          "lemma": "volume",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 1557,
+      "end": 1568,
+      "surface_text": "green bonds",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9899442195892334,
+      "normalized_form": "green bond",
+      "lemma": "green bond",
+      "tokens": [
+        {
+          "text": "green",
+          "start": 1557,
+          "end": 1562,
+          "lemma": "green",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "bonds",
+          "start": 1563,
+          "end": 1568,
+          "lemma": "bond",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1563,
+          "end": 1568,
+          "original": "bonds",
+          "replacement": "bond",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 1574,
+      "end": 1590,
+      "surface_text": "joint investment",
+      "ner_label_hint": "ACTOR",
+      "score": 0.5642750859260559,
+      "normalized_form": "joint investment",
+      "lemma": "joint investment",
+      "tokens": [
+        {
+          "text": "joint",
+          "start": 1574,
+          "end": 1579,
+          "lemma": "joint",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "investment",
+          "start": 1580,
+          "end": 1590,
+          "lemma": "investment",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 1594,
+      "end": 1605,
+      "surface_text": "green banks",
+      "ner_label_hint": "ACTOR",
+      "score": 0.9960162043571472,
+      "normalized_form": "green bank",
+      "lemma": "green bank",
+      "tokens": [
+        {
+          "text": "green",
+          "start": 1594,
+          "end": 1599,
+          "lemma": "green",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "banks",
+          "start": 1600,
+          "end": 1605,
+          "lemma": "bank",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1600,
+          "end": 1605,
+          "original": "banks",
+          "replacement": "bank",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 1614,
+      "end": 1621,
+      "surface_text": "essence",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.7062002420425415,
+      "normalized_form": "essence",
+      "lemma": "essence",
+      "tokens": [
+        {
+          "text": "essence",
+          "start": 1614,
+          "end": 1621,
+          "lemma": "essence",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 1648,
+      "end": 1655,
+      "surface_text": "article",
+      "ner_label_hint": "DATA_RESOURCE",
+      "score": 0.941169261932373,
+      "normalized_form": "article",
+      "lemma": "article",
+      "tokens": [
+        {
+          "text": "article",
+          "start": 1648,
+          "end": 1655,
+          "lemma": "article",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 1661,
+      "end": 1667,
+      "surface_text": "author",
+      "ner_label_hint": "ACTOR",
+      "score": 0.9098672866821289,
+      "normalized_form": "author",
+      "lemma": "author",
+      "tokens": [
+        {
+          "text": "author",
+          "start": 1661,
+          "end": 1667,
+          "lemma": "author",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 1740,
+      "end": 1754,
+      "surface_text": "global economy",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.99543297290802,
+      "normalized_form": "global economy",
+      "lemma": "global economy",
+      "tokens": [
+        {
+          "text": "global",
+          "start": 1740,
+          "end": 1746,
+          "lemma": "global",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "economy",
+          "start": 1747,
+          "end": 1754,
+          "lemma": "economy",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 1787,
+      "end": 1810,
+      "surface_text": "sustainable development",
+      "ner_label_hint": "PROCESS",
+      "score": 0.8417248725891113,
+      "normalized_form": "sustainable development",
+      "lemma": "sustainable development",
+      "tokens": [
+        {
+          "text": "sustainable",
+          "start": 1787,
+          "end": 1798,
+          "lemma": "sustainable",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "development",
+          "start": 1799,
+          "end": 1810,
+          "lemma": "development",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 1816,
+      "end": 1830,
+      "surface_text": "securitization",
+      "ner_label_hint": "METHOD",
+      "score": 0.6200822591781616,
+      "normalized_form": "securitization",
+      "lemma": "securitization",
+      "tokens": [
+        {
+          "text": "securitization",
+          "start": 1816,
+          "end": 1830,
+          "lemma": "securitization",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 1834,
+      "end": 1851,
+      "surface_text": "green bank assets",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9905157089233398,
+      "normalized_form": "green bank asset",
+      "lemma": "green bank asset",
+      "tokens": [
+        {
+          "text": "green",
+          "start": 1834,
+          "end": 1839,
+          "lemma": "green",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "bank",
+          "start": 1840,
+          "end": 1844,
+          "lemma": "bank",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "assets",
+          "start": 1845,
+          "end": 1851,
+          "lemma": "asset",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1845,
+          "end": 1851,
+          "original": "assets",
+          "replacement": "asset",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 1925,
+      "end": 1945,
+      "surface_text": "financial instrument",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9773475527763367,
+      "normalized_form": "financial instrument",
+      "lemma": "financial instrument",
+      "tokens": [
+        {
+          "text": "financial",
+          "start": 1925,
+          "end": 1934,
+          "lemma": "financial",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "instrument",
+          "start": 1935,
+          "end": 1945,
+          "lemma": "instrument",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 1953,
+      "end": 1977,
+      "surface_text": "global green loan market",
+      "ner_label_hint": "DATA_RESOURCE",
+      "score": 0.6491374373435974,
+      "normalized_form": "global green loan market",
+      "lemma": "global green loan market",
+      "tokens": [
+        {
+          "text": "global",
+          "start": 1953,
+          "end": 1959,
+          "lemma": "global",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "green",
+          "start": 1960,
+          "end": 1965,
+          "lemma": "green",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "loan",
+          "start": 1966,
+          "end": 1970,
+          "lemma": "loan",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "market",
+          "start": 1971,
+          "end": 1977,
+          "lemma": "market",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 1960,
+      "end": 1977,
+      "surface_text": "green loan market",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.7387959361076355,
+      "normalized_form": "green loan market",
+      "lemma": "green loan market",
+      "tokens": [
+        {
+          "text": "green",
+          "start": 1960,
+          "end": 1965,
+          "lemma": "green",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "loan",
+          "start": 1966,
+          "end": 1970,
+          "lemma": "loan",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "market",
+          "start": 1971,
+          "end": 1977,
+          "lemma": "market",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 1960,
+      "end": 1977,
+      "surface_text": "green loan market",
+      "ner_label_hint": "OBJECT",
+      "score": 0.39314091205596924,
+      "normalized_form": "green loan market",
+      "lemma": "green loan market",
+      "tokens": [
+        {
+          "text": "green",
+          "start": 1960,
+          "end": 1965,
+          "lemma": "green",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "loan",
+          "start": 1966,
+          "end": 1970,
+          "lemma": "loan",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "market",
+          "start": 1971,
+          "end": 1977,
+          "lemma": "market",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 1999,
+      "end": 2005,
+      "surface_text": "author",
+      "ner_label_hint": "ACTOR",
+      "score": 0.6134001016616821,
+      "normalized_form": "author",
+      "lemma": "author",
+      "tokens": [
+        {
+          "text": "author",
+          "start": 1999,
+          "end": 2005,
+          "lemma": "author",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 2063,
+      "end": 2071,
+      "surface_text": "monetary",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.9786584377288818,
+      "normalized_form": "monetary",
+      "lemma": "monetary",
+      "tokens": [
+        {
+          "text": "monetary",
+          "start": 2063,
+          "end": 2071,
+          "lemma": "monetary",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 2073,
+      "end": 2081,
+      "surface_text": "monetary",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.9848345518112183,
+      "normalized_form": "monetary",
+      "lemma": "monetary",
+      "tokens": [
+        {
+          "text": "monetary",
+          "start": 2073,
+          "end": 2081,
+          "lemma": "monetary",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 2086,
+      "end": 2105,
+      "surface_text": "prudential policies",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.8871081471443176,
+      "normalized_form": "prudential policy",
+      "lemma": "prudential policy",
+      "tokens": [
+        {
+          "text": "prudential",
+          "start": 2086,
+          "end": 2096,
+          "lemma": "prudential",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "policies",
+          "start": 2097,
+          "end": 2105,
+          "lemma": "policy",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 2097,
+          "end": 2105,
+          "original": "policies",
+          "replacement": "policy",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 2204,
+      "end": 2232,
+      "surface_text": "systemic environmental risks",
+      "ner_label_hint": "PROCESS",
+      "score": 0.5231004953384399,
+      "normalized_form": "systemic environmental risk",
+      "lemma": "systemic environmental risk",
+      "tokens": [
+        {
+          "text": "systemic",
+          "start": 2204,
+          "end": 2212,
+          "lemma": "systemic",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "environmental",
+          "start": 2213,
+          "end": 2226,
+          "lemma": "environmental",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "risks",
+          "start": 2227,
+          "end": 2232,
+          "lemma": "risk",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 2227,
+          "end": 2232,
+          "original": "risks",
+          "replacement": "risk",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W4285525942",
+      "start": 2240,
+      "end": 2254,
+      "surface_text": "banking sector",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9915744662284851,
+      "normalized_form": "banking sector",
+      "lemma": "banking sector",
+      "tokens": [
+        {
+          "text": "banking",
+          "start": 2240,
+          "end": 2247,
+          "lemma": "banking",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "sector",
+          "start": 2248,
+          "end": 2254,
+          "lemma": "sector",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    }
+  ],
+  "inference_seconds": 58.380794499767944,
+  "windows": [
+    [
+      0,
+      204,
+      [
+        162,
+        409,
+        512
+      ]
+    ],
+    [
+      163,
+      365,
+      [
+        159,
+        406,
+        509
+      ]
+    ],
+    [
+      231,
+      319,
+      [
+        141,
+        388,
+        491
+      ]
+    ],
+    [
+      258,
+      319,
+      [
+        136,
+        383,
+        486
+      ]
+    ],
+    [
+      276,
+      319,
+      [
+        133,
+        380,
+        483
+      ]
+    ],
+    [
+      282,
+      319,
+      [
+        132,
+        379,
+        482
+      ]
+    ],
+    [
+      290,
+      314,
+      [
+        130,
+        377,
+        480
+      ]
+    ],
+    [
+      298,
+      493,
+      [
+        151,
+        398,
+        501
+      ]
+    ],
+    [
+      445,
+      637,
+      [
+        153,
+        400,
+        503
+      ]
+    ],
+    [
+      610,
+      641,
+      [
+        130,
+        377,
+        480
+      ]
+    ],
+    [
+      610,
+      649,
+      [
+        131,
+        378,
+        481
+      ]
+    ],
+    [
+      607,
+      658,
+      [
+        133,
+        380,
+        483
+      ]
+    ],
+    [
+      607,
+      662,
+      [
+        134,
+        381,
+        484
+      ]
+    ],
+    [
+      607,
+      677,
+      [
+        136,
+        383,
+        486
+      ]
+    ],
+    [
+      590,
+      774,
+      [
+        157,
+        404,
+        507
+      ]
+    ],
+    [
+      590,
+      658,
+      [
+        135,
+        382,
+        485
+      ]
+    ],
+    [
+      610,
+      649,
+      [
+        131,
+        378,
+        481
+      ]
+    ],
+    [
+      616,
+      649,
+      [
+        130,
+        377,
+        480
+      ]
+    ],
+    [
+      624,
+      649,
+      [
+        129,
+        376,
+        479
+      ]
+    ],
+    [
+      638,
+      837,
+      [
+        161,
+        408,
+        511
+      ]
+    ],
+    [
+      812,
+      855,
+      [
+        132,
+        379,
+        482
+      ]
+    ],
+    [
+      803,
+      1003,
+      [
+        157,
+        404,
+        507
+      ]
+    ],
+    [
+      886,
+      973,
+      [
+        138,
+        385,
+        488
+      ]
+    ],
+    [
+      933,
+      1145,
+      [
+        162,
+        409,
+        512
+      ]
+    ],
+    [
+      1104,
+      1159,
+      [
+        134,
+        381,
+        484
+      ]
+    ],
+    [
+      1090,
+      1234,
+      [
+        148,
+        395,
+        498
+      ]
+    ],
+    [
+      1193,
+      1350,
+      [
+        151,
+        398,
+        501
+      ]
+    ],
+    [
+      1169,
+      1231,
+      [
+        134,
+        381,
+        484
+      ]
+    ],
+    [
+      1196,
+      1416,
+      [
+        161,
+        408,
+        511
+      ]
+    ],
+    [
+      1351,
+      1404,
+      [
+        134,
+        381,
+        484
+      ]
+    ],
+    [
+      1368,
+      1395,
+      [
+        131,
+        378,
+        481
+      ]
+    ],
+    [
+      1372,
+      1579,
+      [
+        162,
+        409,
+        512
+      ]
+    ],
+    [
+      1554,
+      1590,
+      [
+        132,
+        379,
+        482
+      ]
+    ],
+    [
+      1554,
+      1621,
+      [
+        138,
+        385,
+        488
+      ]
+    ],
+    [
+      1516,
+      1681,
+      [
+        155,
+        402,
+        505
+      ]
+    ],
+    [
+      1631,
+      1676,
+      [
+        133,
+        380,
+        483
+      ]
+    ],
+    [
+      1641,
+      1676,
+      [
+        132,
+        379,
+        482
+      ]
+    ],
+    [
+      1644,
+      1676,
+      [
+        131,
+        378,
+        481
+      ]
+    ],
+    [
+      1648,
+      1676,
+      [
+        130,
+        377,
+        480
+      ]
+    ],
+    [
+      1657,
+      1866,
+      [
+        161,
+        408,
+        511
+      ]
+    ],
+    [
+      1720,
+      1904,
+      [
+        158,
+        405,
+        508
+      ]
+    ],
+    [
+      1856,
+      2034,
+      [
+        155,
+        402,
+        505
+      ]
+    ],
+    [
+      1960,
+      2016,
+      [
+        135,
+        382,
+        485
+      ]
+    ],
+    [
+      1978,
+      2016,
+      [
+        132,
+        379,
+        482
+      ]
+    ],
+    [
+      1982,
+      2016,
+      [
+        131,
+        378,
+        481
+      ]
+    ],
+    [
+      1987,
+      2016,
+      [
+        130,
+        377,
+        480
+      ]
+    ],
+    [
+      1995,
+      2141,
+      [
+        146,
+        393,
+        496
+      ]
+    ],
+    [
+      2106,
+      2255,
+      [
+        150,
+        397,
+        500
+      ]
+    ]
+  ],
+  "synthetic_punctuation_spans_dropped": 0
+}

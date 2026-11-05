@@ -1,0 +1,4847 @@
+{
+  "config_hash": "10ac92188386a2e74f2c7a63b76130baf40893984415a48f4f034cc9ade1b007",
+  "text_sha256": "c742c4247bf619005be9c9bb04322d1179e96ef169edd80c38c01254d3cff1e6",
+  "mentions": [
+    {
+      "document_id": "W2317432785",
+      "start": 28,
+      "end": 48,
+      "surface_text": "electronic structure",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.9644360542297363,
+      "normalized_form": "electronic structure",
+      "lemma": "electronic structure",
+      "tokens": [
+        {
+          "text": "electronic",
+          "start": 28,
+          "end": 38,
+          "lemma": "electronic",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "structure",
+          "start": 39,
+          "end": 48,
+          "lemma": "structure",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 53,
+      "end": 72,
+      "surface_text": "magnetic properties",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.9922103881835938,
+      "normalized_form": "magnetic property",
+      "lemma": "magnetic property",
+      "tokens": [
+        {
+          "text": "magnetic",
+          "start": 53,
+          "end": 61,
+          "lemma": "magnetic",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "properties",
+          "start": 62,
+          "end": 72,
+          "lemma": "property",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 62,
+          "end": 72,
+          "original": "properties",
+          "replacement": "property",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 94,
+      "end": 113,
+      "surface_text": "[Co0� 45Fe0� 45Zr0�",
+      "ner_label_hint": "DATA_RESOURCE",
+      "score": 0.9792207479476929,
+      "normalized_form": "[Co0� 45Fe0� 45Zr0�",
+      "lemma": "[Co0� 45Fe0� 45Zr0�",
+      "tokens": [
+        {
+          "text": "[",
+          "start": 94,
+          "end": 95,
+          "lemma": "[",
+          "pos": "X",
+          "tag": "XX",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Co0",
+          "start": 95,
+          "end": 98,
+          "lemma": "Co0",
+          "pos": "VERB",
+          "tag": "VBN",
+          "morph": {
+            "Aspect": "Perf",
+            "Tense": "Past",
+            "VerbForm": "Part"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 98,
+          "end": 99,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "45Fe0",
+          "start": 100,
+          "end": 105,
+          "lemma": "45Fe0",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 105,
+          "end": 106,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "45Zr0",
+          "start": 107,
+          "end": 112,
+          "lemma": "45Zr0",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 112,
+          "end": 113,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 94,
+      "end": 113,
+      "surface_text": "[Co0� 45Fe0� 45Zr0�",
+      "ner_label_hint": "OBJECT",
+      "score": 0.5940119624137878,
+      "normalized_form": "[Co0� 45Fe0� 45Zr0�",
+      "lemma": "[Co0� 45Fe0� 45Zr0�",
+      "tokens": [
+        {
+          "text": "[",
+          "start": 94,
+          "end": 95,
+          "lemma": "[",
+          "pos": "X",
+          "tag": "XX",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Co0",
+          "start": 95,
+          "end": 98,
+          "lemma": "Co0",
+          "pos": "VERB",
+          "tag": "VBN",
+          "morph": {
+            "Aspect": "Perf",
+            "Tense": "Past",
+            "VerbForm": "Part"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 98,
+          "end": 99,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "45Fe0",
+          "start": 100,
+          "end": 105,
+          "lemma": "45Fe0",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 105,
+          "end": 106,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "45Zr0",
+          "start": 107,
+          "end": 112,
+          "lemma": "45Zr0",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 112,
+          "end": 113,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 123,
+      "end": 134,
+      "surface_text": "multilayers",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9215087890625,
+      "normalized_form": "multilayer",
+      "lemma": "multilayer",
+      "tokens": [
+        {
+          "text": "multilayers",
+          "start": 123,
+          "end": 134,
+          "lemma": "multilayer",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 123,
+          "end": 134,
+          "original": "multilayers",
+          "replacement": "multilayer",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 150,
+      "end": 161,
+      "surface_text": "thicknesses",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.9845597743988037,
+      "normalized_form": "thickness",
+      "lemma": "thickness",
+      "tokens": [
+        {
+          "text": "thicknesses",
+          "start": 150,
+          "end": 161,
+          "lemma": "thickness",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 150,
+          "end": 161,
+          "original": "thicknesses",
+          "replacement": "thickness",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 165,
+      "end": 174,
+      "surface_text": "sublayers",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.4518006443977356,
+      "normalized_form": "sublayer",
+      "lemma": "sublayer",
+      "tokens": [
+        {
+          "text": "sublayers",
+          "start": 165,
+          "end": 174,
+          "lemma": "sublayer",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 165,
+          "end": 174,
+          "original": "sublayers",
+          "replacement": "sublayer",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 165,
+      "end": 174,
+      "surface_text": "sublayers",
+      "ner_label_hint": "OBJECT",
+      "score": 0.954785943031311,
+      "normalized_form": "sublayer",
+      "lemma": "sublayer",
+      "tokens": [
+        {
+          "text": "sublayers",
+          "start": 165,
+          "end": 174,
+          "lemma": "sublayer",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 165,
+          "end": 174,
+          "original": "sublayers",
+          "replacement": "sublayer",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 179,
+      "end": 197,
+      "surface_text": "repetition periods",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.5040755867958069,
+      "normalized_form": "repetition period",
+      "lemma": "repetition period",
+      "tokens": [
+        {
+          "text": "repetition",
+          "start": 179,
+          "end": 189,
+          "lemma": "repetition",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "periods",
+          "start": 190,
+          "end": 197,
+          "lemma": "period",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 190,
+          "end": 197,
+          "original": "periods",
+          "replacement": "period",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 179,
+      "end": 197,
+      "surface_text": "repetition periods",
+      "ner_label_hint": "CONDITION",
+      "score": 0.8784187436103821,
+      "normalized_form": "repetition period",
+      "lemma": "repetition period",
+      "tokens": [
+        {
+          "text": "repetition",
+          "start": 179,
+          "end": 189,
+          "lemma": "repetition",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "periods",
+          "start": 190,
+          "end": 197,
+          "lemma": "period",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 190,
+          "end": 197,
+          "original": "periods",
+          "replacement": "period",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 179,
+      "end": 197,
+      "surface_text": "repetition periods",
+      "ner_label_hint": "PROCESS",
+      "score": 0.9196300506591797,
+      "normalized_form": "repetition period",
+      "lemma": "repetition period",
+      "tokens": [
+        {
+          "text": "repetition",
+          "start": 179,
+          "end": 189,
+          "lemma": "repetition",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "periods",
+          "start": 190,
+          "end": 197,
+          "lemma": "period",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 190,
+          "end": 197,
+          "original": "periods",
+          "replacement": "period",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 199,
+      "end": 210,
+      "surface_text": "Multilayers",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.9249250888824463,
+      "normalized_form": "Multilayers",
+      "lemma": "Multilayers",
+      "tokens": [
+        {
+          "text": "Multilayers",
+          "start": 199,
+          "end": 210,
+          "lemma": "Multilayers",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 199,
+      "end": 210,
+      "surface_text": "Multilayers",
+      "ner_label_hint": "MECHANISM",
+      "score": 0.41901978850364685,
+      "normalized_form": "Multilayers",
+      "lemma": "Multilayers",
+      "tokens": [
+        {
+          "text": "Multilayers",
+          "start": 199,
+          "end": 210,
+          "lemma": "Multilayers",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 199,
+      "end": 210,
+      "surface_text": "Multilayers",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9988489151000977,
+      "normalized_form": "Multilayers",
+      "lemma": "Multilayers",
+      "tokens": [
+        {
+          "text": "Multilayers",
+          "start": 199,
+          "end": 210,
+          "lemma": "Multilayers",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 236,
+      "end": 247,
+      "surface_text": "macroscopic",
+      "ner_label_hint": "METHOD",
+      "score": 0.8349258899688721,
+      "normalized_form": "macroscopic",
+      "lemma": "macroscopic",
+      "tokens": [
+        {
+          "text": "macroscopic",
+          "start": 236,
+          "end": 247,
+          "lemma": "macroscopic",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 236,
+      "end": 287,
+      "surface_text": "macroscopic magneto-optical transversal Kerr effect",
+      "ner_label_hint": "METHOD",
+      "score": 0.8572662472724915,
+      "normalized_form": "macroscopic magneto-optical transversal Kerr effect",
+      "lemma": "macroscopic magneto-optical transversal Kerr effect",
+      "tokens": [
+        {
+          "text": "macroscopic",
+          "start": 236,
+          "end": 247,
+          "lemma": "macroscopic",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "magneto",
+          "start": 248,
+          "end": 255,
+          "lemma": "magneto",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 255,
+          "end": 256,
+          "lemma": "-",
+          "pos": "PUNCT",
+          "tag": "HYPH",
+          "morph": {
+            "PunctType": "Dash"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "optical",
+          "start": 256,
+          "end": 263,
+          "lemma": "optical",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "transversal",
+          "start": 264,
+          "end": 275,
+          "lemma": "transversal",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Kerr",
+          "start": 276,
+          "end": 280,
+          "lemma": "Kerr",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "effect",
+          "start": 281,
+          "end": 287,
+          "lemma": "effect",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 236,
+      "end": 293,
+      "surface_text": "macroscopic magneto-optical transversal Kerr effect (TKE)",
+      "ner_label_hint": "METHOD",
+      "score": 0.6890900731086731,
+      "normalized_form": "macroscopic magneto-optical transversal Kerr effect (TKE)",
+      "lemma": "macroscopic magneto-optical transversal Kerr effect (TKE)",
+      "tokens": [
+        {
+          "text": "macroscopic",
+          "start": 236,
+          "end": 247,
+          "lemma": "macroscopic",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "magneto",
+          "start": 248,
+          "end": 255,
+          "lemma": "magneto",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 255,
+          "end": 256,
+          "lemma": "-",
+          "pos": "PUNCT",
+          "tag": "HYPH",
+          "morph": {
+            "PunctType": "Dash"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "optical",
+          "start": 256,
+          "end": 263,
+          "lemma": "optical",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "transversal",
+          "start": 264,
+          "end": 275,
+          "lemma": "transversal",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Kerr",
+          "start": 276,
+          "end": 280,
+          "lemma": "Kerr",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "effect",
+          "start": 281,
+          "end": 287,
+          "lemma": "effect",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "(",
+          "start": 288,
+          "end": 289,
+          "lemma": "(",
+          "pos": "PUNCT",
+          "tag": "-LRB-",
+          "morph": {
+            "PunctSide": "Ini",
+            "PunctType": "Brck"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "TKE",
+          "start": 289,
+          "end": 292,
+          "lemma": "TKE",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": ")",
+          "start": 292,
+          "end": 293,
+          "lemma": ")",
+          "pos": "PUNCT",
+          "tag": "-RRB-",
+          "morph": {
+            "PunctSide": "Fin",
+            "PunctType": "Brck"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 295,
+      "end": 350,
+      "surface_text": "structure sensitive low-angle X-ray reflectivity method",
+      "ner_label_hint": "METHOD",
+      "score": 0.9271106123924255,
+      "normalized_form": "structure sensitive low-angle X-ray reflectivity method",
+      "lemma": "structure sensitive low-angle X-ray reflectivity method",
+      "tokens": [
+        {
+          "text": "structure",
+          "start": 295,
+          "end": 304,
+          "lemma": "structure",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "sensitive",
+          "start": 305,
+          "end": 314,
+          "lemma": "sensitive",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "low",
+          "start": 315,
+          "end": 318,
+          "lemma": "low",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 318,
+          "end": 319,
+          "lemma": "-",
+          "pos": "PUNCT",
+          "tag": "HYPH",
+          "morph": {
+            "PunctType": "Dash"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "angle",
+          "start": 319,
+          "end": 324,
+          "lemma": "angle",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "X",
+          "start": 325,
+          "end": 326,
+          "lemma": "X",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 326,
+          "end": 327,
+          "lemma": "-",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "ray",
+          "start": 327,
+          "end": 330,
+          "lemma": "ray",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "reflectivity",
+          "start": 331,
+          "end": 343,
+          "lemma": "reflectivity",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "method",
+          "start": 344,
+          "end": 350,
+          "lemma": "method",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 325,
+      "end": 350,
+      "surface_text": "X-ray reflectivity method",
+      "ner_label_hint": "METHOD",
+      "score": 0.9831370711326599,
+      "normalized_form": "X-ray reflectivity method",
+      "lemma": "X-ray reflectivity method",
+      "tokens": [
+        {
+          "text": "X",
+          "start": 325,
+          "end": 326,
+          "lemma": "X",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 326,
+          "end": 327,
+          "lemma": "-",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "ray",
+          "start": 327,
+          "end": 330,
+          "lemma": "ray",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "reflectivity",
+          "start": 331,
+          "end": 343,
+          "lemma": "reflectivity",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "method",
+          "start": 344,
+          "end": 350,
+          "lemma": "method",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 352,
+      "end": 386,
+      "surface_text": "element-selective X-ray absorption",
+      "ner_label_hint": "METHOD",
+      "score": 0.9600768089294434,
+      "normalized_form": "element-selective X-ray absorption",
+      "lemma": "element-selective X-ray absorption",
+      "tokens": [
+        {
+          "text": "element",
+          "start": 352,
+          "end": 359,
+          "lemma": "element",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 359,
+          "end": 360,
+          "lemma": "-",
+          "pos": "PUNCT",
+          "tag": "HYPH",
+          "morph": {
+            "PunctType": "Dash"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "selective",
+          "start": 360,
+          "end": 369,
+          "lemma": "selective",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "X",
+          "start": 370,
+          "end": 371,
+          "lemma": "X",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 371,
+          "end": 372,
+          "lemma": "-",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "ray",
+          "start": 372,
+          "end": 375,
+          "lemma": "ray",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "absorption",
+          "start": 376,
+          "end": 386,
+          "lemma": "absorption",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 352,
+      "end": 399,
+      "surface_text": "element-selective X-ray absorption spectroscopy",
+      "ner_label_hint": "METHOD",
+      "score": 0.8460481762886047,
+      "normalized_form": "element-selective X-ray absorption spectroscopy",
+      "lemma": "element-selective X-ray absorption spectroscopy",
+      "tokens": [
+        {
+          "text": "element",
+          "start": 352,
+          "end": 359,
+          "lemma": "element",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 359,
+          "end": 360,
+          "lemma": "-",
+          "pos": "PUNCT",
+          "tag": "HYPH",
+          "morph": {
+            "PunctType": "Dash"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "selective",
+          "start": 360,
+          "end": 369,
+          "lemma": "selective",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "X",
+          "start": 370,
+          "end": 371,
+          "lemma": "X",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 371,
+          "end": 372,
+          "lemma": "-",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "ray",
+          "start": 372,
+          "end": 375,
+          "lemma": "ray",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "absorption",
+          "start": 376,
+          "end": 386,
+          "lemma": "absorption",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "spectroscopy",
+          "start": 387,
+          "end": 399,
+          "lemma": "spectroscopy",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 352,
+      "end": 407,
+      "surface_text": "element-selective X-ray absorption spectroscopy (XANES)",
+      "ner_label_hint": "METHOD",
+      "score": 0.37725216150283813,
+      "normalized_form": "element-selective X-ray absorption spectroscopy (XANES)",
+      "lemma": "element-selective X-ray absorption spectroscopy (XANES)",
+      "tokens": [
+        {
+          "text": "element",
+          "start": 352,
+          "end": 359,
+          "lemma": "element",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 359,
+          "end": 360,
+          "lemma": "-",
+          "pos": "PUNCT",
+          "tag": "HYPH",
+          "morph": {
+            "PunctType": "Dash"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "selective",
+          "start": 360,
+          "end": 369,
+          "lemma": "selective",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "X",
+          "start": 370,
+          "end": 371,
+          "lemma": "X",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 371,
+          "end": 372,
+          "lemma": "-",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "ray",
+          "start": 372,
+          "end": 375,
+          "lemma": "ray",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "absorption",
+          "start": 376,
+          "end": 386,
+          "lemma": "absorption",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "spectroscopy",
+          "start": 387,
+          "end": 399,
+          "lemma": "spectroscopy",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "(",
+          "start": 400,
+          "end": 401,
+          "lemma": "(",
+          "pos": "PUNCT",
+          "tag": "-LRB-",
+          "morph": {
+            "PunctSide": "Ini",
+            "PunctType": "Brck"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "XANES",
+          "start": 401,
+          "end": 406,
+          "lemma": "XANES",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": ")",
+          "start": 406,
+          "end": 407,
+          "lemma": ")",
+          "pos": "PUNCT",
+          "tag": "-RRB-",
+          "morph": {
+            "PunctSide": "Fin",
+            "PunctType": "Brck"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 401,
+      "end": 406,
+      "surface_text": "XANES",
+      "ner_label_hint": "ACTOR",
+      "score": 0.9927021265029907,
+      "normalized_form": "XANES",
+      "lemma": "XANES",
+      "tokens": [
+        {
+          "text": "XANES",
+          "start": 401,
+          "end": 406,
+          "lemma": "XANES",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [
+        {
+          "short_form": "XANES",
+          "long_form": "X-ray absorption spectroscopy",
+          "short_start": 401,
+          "short_end": 406,
+          "long_start": 370,
+          "long_end": 399,
+          "scope": "document_candidate_only"
+        }
+      ],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 412,
+      "end": 426,
+      "surface_text": "X-ray magnetic",
+      "ner_label_hint": "METHOD",
+      "score": 0.8229607343673706,
+      "normalized_form": "X-ray magnetic",
+      "lemma": "X-ray magnetic",
+      "tokens": [
+        {
+          "text": "X",
+          "start": 412,
+          "end": 413,
+          "lemma": "X",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 413,
+          "end": 414,
+          "lemma": "-",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "ray",
+          "start": 414,
+          "end": 417,
+          "lemma": "ray",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "magnetic",
+          "start": 418,
+          "end": 426,
+          "lemma": "magnetic",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 412,
+      "end": 426,
+      "surface_text": "X-ray magnetic",
+      "ner_label_hint": "OBJECT",
+      "score": 0.6074168086051941,
+      "normalized_form": "X-ray magnetic",
+      "lemma": "X-ray magnetic",
+      "tokens": [
+        {
+          "text": "X",
+          "start": 412,
+          "end": 413,
+          "lemma": "X",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 413,
+          "end": 414,
+          "lemma": "-",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "ray",
+          "start": 414,
+          "end": 417,
+          "lemma": "ray",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "magnetic",
+          "start": 418,
+          "end": 426,
+          "lemma": "magnetic",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 412,
+      "end": 445,
+      "surface_text": "X-ray magnetic circular dichroism",
+      "ner_label_hint": "PROCESS",
+      "score": 0.5698643922805786,
+      "normalized_form": "X-ray magnetic circular dichroism",
+      "lemma": "X-ray magnetic circular dichroism",
+      "tokens": [
+        {
+          "text": "X",
+          "start": 412,
+          "end": 413,
+          "lemma": "X",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 413,
+          "end": 414,
+          "lemma": "-",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "ray",
+          "start": 414,
+          "end": 417,
+          "lemma": "ray",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "magnetic",
+          "start": 418,
+          "end": 426,
+          "lemma": "magnetic",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "circular",
+          "start": 427,
+          "end": 435,
+          "lemma": "circular",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "dichroism",
+          "start": 436,
+          "end": 445,
+          "lemma": "dichroism",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [
+        {
+          "short_form": "XMCD",
+          "long_form": "X-ray magnetic circular dichroism",
+          "short_start": 447,
+          "short_end": 451,
+          "long_start": 412,
+          "long_end": 445,
+          "scope": "document_candidate_only"
+        }
+      ],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 447,
+      "end": 451,
+      "surface_text": "XMCD",
+      "ner_label_hint": "METHOD",
+      "score": 0.6591538190841675,
+      "normalized_form": "XMCD",
+      "lemma": "XMCD",
+      "tokens": [
+        {
+          "text": "XMCD",
+          "start": 447,
+          "end": 451,
+          "lemma": "XMCD",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [
+        {
+          "short_form": "XMCD",
+          "long_form": "X-ray magnetic circular dichroism",
+          "short_start": 447,
+          "short_end": 451,
+          "long_start": 412,
+          "long_end": 445,
+          "scope": "document_candidate_only"
+        }
+      ],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 460,
+      "end": 468,
+      "surface_text": "Zr L2� 3",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.3800688683986664,
+      "normalized_form": "Zr L2� 3",
+      "lemma": "Zr L2� 3",
+      "tokens": [
+        {
+          "text": "Zr",
+          "start": 460,
+          "end": 462,
+          "lemma": "Zr",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "L2",
+          "start": 463,
+          "end": 465,
+          "lemma": "L2",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 465,
+          "end": 466,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "3",
+          "start": 467,
+          "end": 468,
+          "lemma": "3",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 460,
+      "end": 468,
+      "surface_text": "Zr L2� 3",
+      "ner_label_hint": "OBJECT",
+      "score": 0.8343640565872192,
+      "normalized_form": "Zr L2� 3",
+      "lemma": "Zr L2� 3",
+      "tokens": [
+        {
+          "text": "Zr",
+          "start": 460,
+          "end": 462,
+          "lemma": "Zr",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "L2",
+          "start": 463,
+          "end": 465,
+          "lemma": "L2",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 465,
+          "end": 466,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "3",
+          "start": 467,
+          "end": 468,
+          "lemma": "3",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 473,
+      "end": 491,
+      "surface_text": "K absorption edges",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.5865625739097595,
+      "normalized_form": "K absorption edge",
+      "lemma": "K absorption edge",
+      "tokens": [
+        {
+          "text": "K",
+          "start": 473,
+          "end": 474,
+          "lemma": "K",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "absorption",
+          "start": 475,
+          "end": 485,
+          "lemma": "absorption",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "edges",
+          "start": 486,
+          "end": 491,
+          "lemma": "edge",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 486,
+          "end": 491,
+          "original": "edges",
+          "replacement": "edge",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 495,
+      "end": 497,
+      "surface_text": "Fe",
+      "ner_label_hint": "ACTOR",
+      "score": 0.9811752438545227,
+      "normalized_form": "Fe",
+      "lemma": "Fe",
+      "tokens": [
+        {
+          "text": "Fe",
+          "start": 495,
+          "end": 497,
+          "lemma": "Fe",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 495,
+      "end": 497,
+      "surface_text": "Fe",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9968507885932922,
+      "normalized_form": "Fe",
+      "lemma": "Fe",
+      "tokens": [
+        {
+          "text": "Fe",
+          "start": 495,
+          "end": 497,
+          "lemma": "Fe",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 495,
+      "end": 505,
+      "surface_text": "Fe and Co.",
+      "ner_label_hint": "ACTOR",
+      "score": 0.7886500358581543,
+      "normalized_form": "Fe and Co.",
+      "lemma": "Fe and Co.",
+      "tokens": [
+        {
+          "text": "Fe",
+          "start": 495,
+          "end": 497,
+          "lemma": "Fe",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "and",
+          "start": 498,
+          "end": 501,
+          "lemma": "and",
+          "pos": "CCONJ",
+          "tag": "CC",
+          "morph": {
+            "ConjType": "Cmp"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Co.",
+          "start": 502,
+          "end": 505,
+          "lemma": "Co.",
+          "pos": "PUNCT",
+          "tag": ".",
+          "morph": {
+            "PunctType": "Peri"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 502,
+      "end": 504,
+      "surface_text": "Co",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9635012745857239,
+      "normalized_form": "Co",
+      "lemma": "Co",
+      "tokens": [
+        {
+          "text": "Co",
+          "start": 502,
+          "end": 504,
+          "lemma": "Co",
+          "pos": "PUNCT",
+          "tag": ".",
+          "morph": {
+            "PunctType": "Peri"
+          },
+          "partial_token": true,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 502,
+      "end": 505,
+      "surface_text": "Co.",
+      "ner_label_hint": "ACTOR",
+      "score": 0.583354115486145,
+      "normalized_form": "Co.",
+      "lemma": "Co.",
+      "tokens": [
+        {
+          "text": "Co.",
+          "start": 502,
+          "end": 505,
+          "lemma": "Co.",
+          "pos": "PUNCT",
+          "tag": ".",
+          "morph": {
+            "PunctType": "Peri"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 502,
+      "end": 505,
+      "surface_text": "Co.",
+      "ner_label_hint": "OBJECT",
+      "score": 0.7221862077713013,
+      "normalized_form": "Co.",
+      "lemma": "Co.",
+      "tokens": [
+        {
+          "text": "Co.",
+          "start": 502,
+          "end": 505,
+          "lemma": "Co.",
+          "pos": "PUNCT",
+          "tag": ".",
+          "morph": {
+            "PunctType": "Peri"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 510,
+      "end": 522,
+      "surface_text": "local probes",
+      "ner_label_hint": "OBJECT",
+      "score": 0.8579665422439575,
+      "normalized_form": "local probe",
+      "lemma": "local probe",
+      "tokens": [
+        {
+          "text": "local",
+          "start": 510,
+          "end": 515,
+          "lemma": "local",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "probes",
+          "start": 516,
+          "end": 522,
+          "lemma": "probe",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 516,
+          "end": 522,
+          "original": "probes",
+          "replacement": "probe",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 516,
+      "end": 522,
+      "surface_text": "probes",
+      "ner_label_hint": "OBJECT",
+      "score": 0.3966892659664154,
+      "normalized_form": "probe",
+      "lemma": "probe",
+      "tokens": [
+        {
+          "text": "probes",
+          "start": 516,
+          "end": 522,
+          "lemma": "probe",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 516,
+          "end": 522,
+          "original": "probes",
+          "replacement": "probe",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 526,
+      "end": 536,
+      "surface_text": "electronic",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.9863856434822083,
+      "normalized_form": "electronic",
+      "lemma": "electronic",
+      "tokens": [
+        {
+          "text": "electronic",
+          "start": 526,
+          "end": 536,
+          "lemma": "electronic",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 541,
+      "end": 549,
+      "surface_text": "magnetic",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.9419596791267395,
+      "normalized_form": "magnetic",
+      "lemma": "magnetic",
+      "tokens": [
+        {
+          "text": "magnetic",
+          "start": 541,
+          "end": 549,
+          "lemma": "magnetic",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 541,
+      "end": 560,
+      "surface_text": "magnetic properties",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.7956982851028442,
+      "normalized_form": "magnetic property",
+      "lemma": "magnetic property",
+      "tokens": [
+        {
+          "text": "magnetic",
+          "start": 541,
+          "end": 549,
+          "lemma": "magnetic",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "properties",
+          "start": 550,
+          "end": 560,
+          "lemma": "property",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 550,
+          "end": 560,
+          "original": "properties",
+          "replacement": "property",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 587,
+      "end": 603,
+      "surface_text": "macroscopic data",
+      "ner_label_hint": "DATA_RESOURCE",
+      "score": 0.9877041578292847,
+      "normalized_form": "macroscopic datum",
+      "lemma": "macroscopic datum",
+      "tokens": [
+        {
+          "text": "macroscopic",
+          "start": 587,
+          "end": 598,
+          "lemma": "macroscopic",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "data",
+          "start": 599,
+          "end": 603,
+          "lemma": "datum",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 599,
+          "end": 603,
+          "original": "data",
+          "replacement": "datum",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 621,
+      "end": 636,
+      "surface_text": "grain formation",
+      "ner_label_hint": "PROCESS",
+      "score": 0.9928434491157532,
+      "normalized_form": "grain formation",
+      "lemma": "grain formation",
+      "tokens": [
+        {
+          "text": "grain",
+          "start": 621,
+          "end": 626,
+          "lemma": "grain",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "formation",
+          "start": 627,
+          "end": 636,
+          "lemma": "formation",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 627,
+      "end": 636,
+      "surface_text": "formation",
+      "ner_label_hint": "PROCESS",
+      "score": 0.8315856456756592,
+      "normalized_form": "formation",
+      "lemma": "formation",
+      "tokens": [
+        {
+          "text": "formation",
+          "start": 627,
+          "end": 636,
+          "lemma": "formation",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 650,
+      "end": 694,
+      "surface_text": "ferromagnetic Co0� 45Fe0� 45Zr0� 1 sublayers",
+      "ner_label_hint": "OBJECT",
+      "score": 0.7492940425872803,
+      "normalized_form": "ferromagnetic Co0� 45Fe0� 45Zr0� 1 sublayer",
+      "lemma": "ferromagnetic Co0� 45Fe0� 45Zr0� 1 sublayer",
+      "tokens": [
+        {
+          "text": "ferromagnetic",
+          "start": 650,
+          "end": 663,
+          "lemma": "ferromagnetic",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Co0",
+          "start": 664,
+          "end": 667,
+          "lemma": "Co0",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 667,
+          "end": 668,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "45Fe0",
+          "start": 669,
+          "end": 674,
+          "lemma": "45Fe0",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 674,
+          "end": 675,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "45Zr0",
+          "start": 676,
+          "end": 681,
+          "lemma": "45Zr0",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 681,
+          "end": 682,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "1",
+          "start": 683,
+          "end": 684,
+          "lemma": "1",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "sublayers",
+          "start": 685,
+          "end": 694,
+          "lemma": "sublayer",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 685,
+          "end": 694,
+          "original": "sublayers",
+          "replacement": "sublayer",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 664,
+      "end": 682,
+      "surface_text": "Co0� 45Fe0� 45Zr0�",
+      "ner_label_hint": "OBJECT",
+      "score": 0.40827906131744385,
+      "normalized_form": "Co0� 45Fe0� 45Zr0�",
+      "lemma": "Co0� 45Fe0� 45Zr0�",
+      "tokens": [
+        {
+          "text": "Co0",
+          "start": 664,
+          "end": 667,
+          "lemma": "Co0",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 667,
+          "end": 668,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "45Fe0",
+          "start": 669,
+          "end": 674,
+          "lemma": "45Fe0",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 674,
+          "end": 675,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "45Zr0",
+          "start": 676,
+          "end": 681,
+          "lemma": "45Zr0",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 681,
+          "end": 682,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 664,
+      "end": 684,
+      "surface_text": "Co0� 45Fe0� 45Zr0� 1",
+      "ner_label_hint": "OBJECT",
+      "score": 0.4044552743434906,
+      "normalized_form": "Co0� 45Fe0� 45Zr0� 1",
+      "lemma": "Co0� 45Fe0� 45Zr0� 1",
+      "tokens": [
+        {
+          "text": "Co0",
+          "start": 664,
+          "end": 667,
+          "lemma": "Co0",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 667,
+          "end": 668,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "45Fe0",
+          "start": 669,
+          "end": 674,
+          "lemma": "45Fe0",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 674,
+          "end": 675,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "45Zr0",
+          "start": 676,
+          "end": 681,
+          "lemma": "45Zr0",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 681,
+          "end": 682,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "1",
+          "start": 683,
+          "end": 684,
+          "lemma": "1",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 667,
+      "end": 681,
+      "surface_text": "� 45Fe0� 45Zr0",
+      "ner_label_hint": "OBJECT",
+      "score": 0.4123757779598236,
+      "normalized_form": "� 45Fe0� 45Zr0",
+      "lemma": "� 45Fe0� 45Zr0",
+      "tokens": [
+        {
+          "text": "�",
+          "start": 667,
+          "end": 668,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "45Fe0",
+          "start": 669,
+          "end": 674,
+          "lemma": "45Fe0",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 674,
+          "end": 675,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "45Zr0",
+          "start": 676,
+          "end": 681,
+          "lemma": "45Zr0",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 667,
+      "end": 682,
+      "surface_text": "� 45Fe0� 45Zr0�",
+      "ner_label_hint": "OBJECT",
+      "score": 0.5380532145500183,
+      "normalized_form": "� 45Fe0� 45Zr0�",
+      "lemma": "� 45Fe0� 45Zr0�",
+      "tokens": [
+        {
+          "text": "�",
+          "start": 667,
+          "end": 668,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "45Fe0",
+          "start": 669,
+          "end": 674,
+          "lemma": "45Fe0",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 674,
+          "end": 675,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "45Zr0",
+          "start": 676,
+          "end": 681,
+          "lemma": "45Zr0",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 681,
+          "end": 682,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 669,
+      "end": 682,
+      "surface_text": "45Fe0� 45Zr0�",
+      "ner_label_hint": "OBJECT",
+      "score": 0.4112256169319153,
+      "normalized_form": "45Fe0� 45Zr0�",
+      "lemma": "45Fe0� 45Zr0�",
+      "tokens": [
+        {
+          "text": "45Fe0",
+          "start": 669,
+          "end": 674,
+          "lemma": "45Fe0",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 674,
+          "end": 675,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "45Zr0",
+          "start": 676,
+          "end": 681,
+          "lemma": "45Zr0",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 681,
+          "end": 682,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 669,
+      "end": 684,
+      "surface_text": "45Fe0� 45Zr0� 1",
+      "ner_label_hint": "OBJECT",
+      "score": 0.44364455342292786,
+      "normalized_form": "45Fe0� 45Zr0� 1",
+      "lemma": "45Fe0� 45Zr0� 1",
+      "tokens": [
+        {
+          "text": "45Fe0",
+          "start": 669,
+          "end": 674,
+          "lemma": "45Fe0",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 674,
+          "end": 675,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "45Zr0",
+          "start": 676,
+          "end": 681,
+          "lemma": "45Zr0",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 681,
+          "end": 682,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "1",
+          "start": 683,
+          "end": 684,
+          "lemma": "1",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 685,
+      "end": 694,
+      "surface_text": "sublayers",
+      "ner_label_hint": "OBJECT",
+      "score": 0.8952130079269409,
+      "normalized_form": "sublayer",
+      "lemma": "sublayer",
+      "tokens": [
+        {
+          "text": "sublayers",
+          "start": 685,
+          "end": 694,
+          "lemma": "sublayer",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 685,
+          "end": 694,
+          "original": "sublayers",
+          "replacement": "sublayer",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 706,
+      "end": 715,
+      "surface_text": "silicides",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9983958601951599,
+      "normalized_form": "silicides",
+      "lemma": "silicides",
+      "tokens": [
+        {
+          "text": "silicides",
+          "start": 706,
+          "end": 715,
+          "lemma": "silicides",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 720,
+      "end": 726,
+      "surface_text": "grains",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9983964562416077,
+      "normalized_form": "grain",
+      "lemma": "grain",
+      "tokens": [
+        {
+          "text": "grains",
+          "start": 720,
+          "end": 726,
+          "lemma": "grain",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 720,
+          "end": 726,
+          "original": "grains",
+          "replacement": "grain",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 730,
+      "end": 741,
+      "surface_text": "Co0� 45Fe0�",
+      "ner_label_hint": "OBJECT",
+      "score": 0.44713306427001953,
+      "normalized_form": "Co0� 45Fe0�",
+      "lemma": "Co0� 45Fe0�",
+      "tokens": [
+        {
+          "text": "Co0",
+          "start": 730,
+          "end": 733,
+          "lemma": "Co0",
+          "pos": "VERB",
+          "tag": "VBN",
+          "morph": {
+            "Aspect": "Perf",
+            "Tense": "Past",
+            "VerbForm": "Part"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 733,
+          "end": 734,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "45Fe0",
+          "start": 735,
+          "end": 740,
+          "lemma": "45Fe0",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 740,
+          "end": 741,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 730,
+      "end": 747,
+      "surface_text": "Co0� 45Fe0� 45Zr0",
+      "ner_label_hint": "OBJECT",
+      "score": 0.5398982763290405,
+      "normalized_form": "Co0� 45Fe0� 45Zr0",
+      "lemma": "Co0� 45Fe0� 45Zr0",
+      "tokens": [
+        {
+          "text": "Co0",
+          "start": 730,
+          "end": 733,
+          "lemma": "Co0",
+          "pos": "VERB",
+          "tag": "VBN",
+          "morph": {
+            "Aspect": "Perf",
+            "Tense": "Past",
+            "VerbForm": "Part"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 733,
+          "end": 734,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "45Fe0",
+          "start": 735,
+          "end": 740,
+          "lemma": "45Fe0",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 740,
+          "end": 741,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "45Zr0",
+          "start": 742,
+          "end": 747,
+          "lemma": "45Zr0",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 730,
+      "end": 748,
+      "surface_text": "Co0� 45Fe0� 45Zr0�",
+      "ner_label_hint": "OBJECT",
+      "score": 0.6930282115936279,
+      "normalized_form": "Co0� 45Fe0� 45Zr0�",
+      "lemma": "Co0� 45Fe0� 45Zr0�",
+      "tokens": [
+        {
+          "text": "Co0",
+          "start": 730,
+          "end": 733,
+          "lemma": "Co0",
+          "pos": "VERB",
+          "tag": "VBN",
+          "morph": {
+            "Aspect": "Perf",
+            "Tense": "Past",
+            "VerbForm": "Part"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 733,
+          "end": 734,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "45Fe0",
+          "start": 735,
+          "end": 740,
+          "lemma": "45Fe0",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 740,
+          "end": 741,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "45Zr0",
+          "start": 742,
+          "end": 747,
+          "lemma": "45Zr0",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 747,
+          "end": 748,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 730,
+      "end": 750,
+      "surface_text": "Co0� 45Fe0� 45Zr0� 1",
+      "ner_label_hint": "OBJECT",
+      "score": 0.987539529800415,
+      "normalized_form": "Co0� 45Fe0� 45Zr0� 1",
+      "lemma": "Co0� 45Fe0� 45Zr0� 1",
+      "tokens": [
+        {
+          "text": "Co0",
+          "start": 730,
+          "end": 733,
+          "lemma": "Co0",
+          "pos": "VERB",
+          "tag": "VBN",
+          "morph": {
+            "Aspect": "Perf",
+            "Tense": "Past",
+            "VerbForm": "Part"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 733,
+          "end": 734,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "45Fe0",
+          "start": 735,
+          "end": 740,
+          "lemma": "45Fe0",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 740,
+          "end": 741,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "45Zr0",
+          "start": 742,
+          "end": 747,
+          "lemma": "45Zr0",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 747,
+          "end": 748,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "1",
+          "start": 749,
+          "end": 750,
+          "lemma": "1",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 776,
+      "end": 796,
+      "surface_text": "sublayer thicknesses",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.9914782643318176,
+      "normalized_form": "sublayer thickness",
+      "lemma": "sublayer thickness",
+      "tokens": [
+        {
+          "text": "sublayer",
+          "start": 776,
+          "end": 784,
+          "lemma": "sublayer",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "thicknesses",
+          "start": 785,
+          "end": 796,
+          "lemma": "thickness",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 785,
+          "end": 796,
+          "original": "thicknesses",
+          "replacement": "thickness",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 811,
+      "end": 828,
+      "surface_text": "interface regions",
+      "ner_label_hint": "OBJECT",
+      "score": 0.41112980246543884,
+      "normalized_form": "interface region",
+      "lemma": "interface region",
+      "tokens": [
+        {
+          "text": "interface",
+          "start": 811,
+          "end": 820,
+          "lemma": "interface",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "regions",
+          "start": 821,
+          "end": 828,
+          "lemma": "region",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 821,
+          "end": 828,
+          "original": "regions",
+          "replacement": "region",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 834,
+      "end": 844,
+      "surface_text": "a-Si layer",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9927659034729004,
+      "normalized_form": "a-Si layer",
+      "lemma": "a-Si layer",
+      "tokens": [
+        {
+          "text": "a",
+          "start": 834,
+          "end": 835,
+          "lemma": "a",
+          "pos": "DET",
+          "tag": "DT",
+          "morph": {
+            "Definite": "Ind",
+            "PronType": "Art"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 835,
+          "end": 836,
+          "lemma": "-",
+          "pos": "PUNCT",
+          "tag": "HYPH",
+          "morph": {
+            "PunctType": "Dash"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Si",
+          "start": 836,
+          "end": 838,
+          "lemma": "Si",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "layer",
+          "start": 839,
+          "end": 844,
+          "lemma": "layer",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 872,
+      "end": 901,
+      "surface_text": "Co0� 45Fe0� 45Zr0� 1 sublayer",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9912961721420288,
+      "normalized_form": "Co0� 45Fe0� 45Zr0� 1 sublayer",
+      "lemma": "Co0� 45Fe0� 45Zr0� 1 sublayer",
+      "tokens": [
+        {
+          "text": "Co0",
+          "start": 872,
+          "end": 875,
+          "lemma": "Co0",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 875,
+          "end": 876,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "45Fe0",
+          "start": 877,
+          "end": 882,
+          "lemma": "45Fe0",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 882,
+          "end": 883,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "45Zr0",
+          "start": 884,
+          "end": 889,
+          "lemma": "45Zr0",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 889,
+          "end": 890,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "1",
+          "start": 891,
+          "end": 892,
+          "lemma": "1",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "sublayer",
+          "start": 893,
+          "end": 901,
+          "lemma": "sublayer",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 875,
+      "end": 892,
+      "surface_text": "� 45Fe0� 45Zr0� 1",
+      "ner_label_hint": "OBJECT",
+      "score": 0.39507219195365906,
+      "normalized_form": "� 45Fe0� 45Zr0� 1",
+      "lemma": "� 45Fe0� 45Zr0� 1",
+      "tokens": [
+        {
+          "text": "�",
+          "start": 875,
+          "end": 876,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "45Fe0",
+          "start": 877,
+          "end": 882,
+          "lemma": "45Fe0",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 882,
+          "end": 883,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "45Zr0",
+          "start": 884,
+          "end": 889,
+          "lemma": "45Zr0",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 889,
+          "end": 890,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "1",
+          "start": 891,
+          "end": 892,
+          "lemma": "1",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 877,
+      "end": 892,
+      "surface_text": "45Fe0� 45Zr0� 1",
+      "ner_label_hint": "OBJECT",
+      "score": 0.3767460584640503,
+      "normalized_form": "45Fe0� 45Zr0� 1",
+      "lemma": "45Fe0� 45Zr0� 1",
+      "tokens": [
+        {
+          "text": "45Fe0",
+          "start": 877,
+          "end": 882,
+          "lemma": "45Fe0",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 882,
+          "end": 883,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "45Zr0",
+          "start": 884,
+          "end": 889,
+          "lemma": "45Zr0",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 889,
+          "end": 890,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "1",
+          "start": 891,
+          "end": 892,
+          "lemma": "1",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 884,
+      "end": 901,
+      "surface_text": "45Zr0� 1 sublayer",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9497246146202087,
+      "normalized_form": "45Zr0� 1 sublayer",
+      "lemma": "45Zr0� 1 sublayer",
+      "tokens": [
+        {
+          "text": "45Zr0",
+          "start": 884,
+          "end": 889,
+          "lemma": "45Zr0",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "�",
+          "start": 889,
+          "end": 890,
+          "lemma": "�",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "1",
+          "start": 891,
+          "end": 892,
+          "lemma": "1",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "sublayer",
+          "start": 893,
+          "end": 901,
+          "lemma": "sublayer",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 893,
+      "end": 901,
+      "surface_text": "sublayer",
+      "ner_label_hint": "OBJECT",
+      "score": 0.4447672665119171,
+      "normalized_form": "sublayer",
+      "lemma": "sublayer",
+      "tokens": [
+        {
+          "text": "sublayer",
+          "start": 893,
+          "end": 901,
+          "lemma": "sublayer",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 913,
+      "end": 919,
+      "surface_text": "models",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.5574225187301636,
+      "normalized_form": "model",
+      "lemma": "model",
+      "tokens": [
+        {
+          "text": "models",
+          "start": 913,
+          "end": 919,
+          "lemma": "model",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 913,
+          "end": 919,
+          "original": "models",
+          "replacement": "model",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 951,
+      "end": 977,
+      "surface_text": "magneto-optical TKE effect",
+      "ner_label_hint": "MECHANISM",
+      "score": 0.5941158533096313,
+      "normalized_form": "magneto-optical TKE effect",
+      "lemma": "magneto-optical TKE effect",
+      "tokens": [
+        {
+          "text": "magneto",
+          "start": 951,
+          "end": 958,
+          "lemma": "magneto",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 958,
+          "end": 959,
+          "lemma": "-",
+          "pos": "PUNCT",
+          "tag": "HYPH",
+          "morph": {
+            "PunctType": "Dash"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "optical",
+          "start": 959,
+          "end": 966,
+          "lemma": "optical",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "TKE",
+          "start": 967,
+          "end": 970,
+          "lemma": "TKE",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "effect",
+          "start": 971,
+          "end": 977,
+          "lemma": "effect",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 1003,
+      "end": 1012,
+      "surface_text": "reduction",
+      "ner_label_hint": "PROCESS",
+      "score": 0.7481769919395447,
+      "normalized_form": "reduction",
+      "lemma": "reduction",
+      "tokens": [
+        {
+          "text": "reduction",
+          "start": 1003,
+          "end": 1012,
+          "lemma": "reduction",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 1020,
+      "end": 1030,
+      "surface_text": "multilayer",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9821817278862,
+      "normalized_form": "multilayer",
+      "lemma": "multilayer",
+      "tokens": [
+        {
+          "text": "multilayer",
+          "start": 1020,
+          "end": 1030,
+          "lemma": "multilayer",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 1055,
+      "end": 1063,
+      "surface_text": "sublayer",
+      "ner_label_hint": "OBJECT",
+      "score": 0.4431779682636261,
+      "normalized_form": "sublayer",
+      "lemma": "sublayer",
+      "tokens": [
+        {
+          "text": "sublayer",
+          "start": 1055,
+          "end": 1063,
+          "lemma": "sublayer",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2317432785",
+      "start": 1055,
+      "end": 1075,
+      "surface_text": "sublayer thicknesses",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.909994900226593,
+      "normalized_form": "sublayer thickness",
+      "lemma": "sublayer thickness",
+      "tokens": [
+        {
+          "text": "sublayer",
+          "start": 1055,
+          "end": 1063,
+          "lemma": "sublayer",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "thicknesses",
+          "start": 1064,
+          "end": 1075,
+          "lemma": "thickness",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1064,
+          "end": 1075,
+          "original": "thicknesses",
+          "replacement": "thickness",
+          "rule": "plural_noun_head"
+        }
+      ]
+    }
+  ],
+  "inference_seconds": 33.66824479959905,
+  "windows": [
+    [
+      0,
+      113,
+      [
+        153,
+        400,
+        503
+      ]
+    ],
+    [
+      91,
+      198,
+      [
+        159,
+        406,
+        509
+      ]
+    ],
+    [
+      179,
+      210,
+      [
+        130,
+        377,
+        480
+      ]
+    ],
+    [
+      179,
+      215,
+      [
+        131,
+        378,
+        481
+      ]
+    ],
+    [
+      179,
+      247,
+      [
+        135,
+        382,
+        485
+      ]
+    ],
+    [
+      150,
+      231,
+      [
+        138,
+        385,
+        488
+      ]
+    ],
+    [
+      165,
+      231,
+      [
+        136,
+        383,
+        486
+      ]
+    ],
+    [
+      175,
+      231,
+      [
+        134,
+        381,
+        484
+      ]
+    ],
+    [
+      179,
+      228,
+      [
+        132,
+        379,
+        482
+      ]
+    ],
+    [
+      190,
+      228,
+      [
+        131,
+        378,
+        481
+      ]
+    ],
+    [
+      199,
+      386,
+      [
+        162,
+        409,
+        512
+      ]
+    ],
+    [
+      325,
+      426,
+      [
+        149,
+        396,
+        499
+      ]
+    ],
+    [
+      400,
+      505,
+      [
+        161,
+        408,
+        511
+      ]
+    ],
+    [
+      495,
+      509,
+      [
+        130,
+        377,
+        480
+      ]
+    ],
+    [
+      495,
+      515,
+      [
+        131,
+        378,
+        481
+      ]
+    ],
+    [
+      495,
+      522,
+      [
+        132,
+        379,
+        482
+      ]
+    ],
+    [
+      495,
+      525,
+      [
+        133,
+        380,
+        483
+      ]
+    ],
+    [
+      492,
+      564,
+      [
+        139,
+        386,
+        489
+      ]
+    ],
+    [
+      467,
+      522,
+      [
+        138,
+        385,
+        488
+      ]
+    ],
+    [
+      495,
+      515,
+      [
+        131,
+        378,
+        481
+      ]
+    ],
+    [
+      498,
+      515,
+      [
+        130,
+        377,
+        480
+      ]
+    ],
+    [
+      502,
+      515,
+      [
+        129,
+        376,
+        479
+      ]
+    ],
+    [
+      506,
+      606,
+      [
+        140,
+        387,
+        490
+      ]
+    ],
+    [
+      582,
+      695,
+      [
+        153,
+        400,
+        503
+      ]
+    ],
+    [
+      683,
+      705,
+      [
+        130,
+        377,
+        480
+      ]
+    ],
+    [
+      683,
+      715,
+      [
+        133,
+        380,
+        483
+      ]
+    ],
+    [
+      683,
+      726,
+      [
+        135,
+        382,
+        485
+      ]
+    ],
+    [
+      669,
+      705,
+      [
+        140,
+        387,
+        490
+      ]
+    ],
+    [
+      685,
+      803,
+      [
+        158,
+        405,
+        508
+      ]
+    ],
+    [
+      627,
+      719,
+      [
+        152,
+        399,
+        502
+      ]
+    ],
+    [
+      676,
+      719,
+      [
+        139,
+        386,
+        489
+      ]
+    ],
+    [
+      683,
+      719,
+      [
+        134,
+        381,
+        484
+      ]
+    ],
+    [
+      685,
+      719,
+      [
+        133,
+        380,
+        483
+      ]
+    ],
+    [
+      696,
+      806,
+      [
+        156,
+        403,
+        506
+      ]
+    ],
+    [
+      776,
+      902,
+      [
+        160,
+        407,
+        510
+      ]
+    ],
+    [
+      891,
+      908,
+      [
+        130,
+        377,
+        480
+      ]
+    ],
+    [
+      891,
+      912,
+      [
+        131,
+        378,
+        481
+      ]
+    ],
+    [
+      884,
+      919,
+      [
+        137,
+        384,
+        487
+      ]
+    ],
+    [
+      884,
+      926,
+      [
+        139,
+        386,
+        489
+      ]
+    ],
+    [
+      872,
+      912,
+      [
+        145,
+        392,
+        495
+      ]
+    ],
+    [
+      891,
+      1089,
+      [
+        160,
+        407,
+        510
+      ]
+    ]
+  ],
+  "synthetic_punctuation_spans_dropped": 0
+}

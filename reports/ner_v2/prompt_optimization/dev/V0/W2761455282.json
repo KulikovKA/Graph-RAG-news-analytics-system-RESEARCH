@@ -1,0 +1,4663 @@
+{
+  "config_hash": "075480b38f256e2e0285be758595c096bdd4b69144367bbbad16941a997a4c6e",
+  "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+  "mentions": [
+    {
+      "document_id": "W2761455282",
+      "start": 12,
+      "end": 34,
+      "surface_text": "Total hip arthroplasty",
+      "ner_label_hint": "METHOD",
+      "score": 0.7723291516304016,
+      "normalized_form": "Total hip arthroplasty",
+      "lemma": "Total hip arthroplasty",
+      "tokens": [
+        {
+          "text": "Total",
+          "start": 12,
+          "end": 17,
+          "lemma": "Total",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "hip",
+          "start": 18,
+          "end": 21,
+          "lemma": "hip",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "arthroplasty",
+          "start": 22,
+          "end": 34,
+          "lemma": "arthroplasty",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 38,
+      "end": 46,
+      "surface_text": "patients",
+      "ner_label_hint": "ACTOR",
+      "score": 0.7409722805023193,
+      "normalized_form": "patient",
+      "lemma": "patient",
+      "tokens": [
+        {
+          "text": "patients",
+          "start": 38,
+          "end": 46,
+          "lemma": "patient",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 38,
+          "end": 46,
+          "original": "patients",
+          "replacement": "patient",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 52,
+      "end": 75,
+      "surface_text": "end-stage renal disease",
+      "ner_label_hint": "CONDITION",
+      "score": 0.9735901951789856,
+      "normalized_form": "end-stage renal disease",
+      "lemma": "end-stage renal disease",
+      "tokens": [
+        {
+          "text": "end",
+          "start": 52,
+          "end": 55,
+          "lemma": "end",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 55,
+          "end": 56,
+          "lemma": "-",
+          "pos": "PUNCT",
+          "tag": "HYPH",
+          "morph": {
+            "PunctType": "Dash"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "stage",
+          "start": 56,
+          "end": 61,
+          "lemma": "stage",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "renal",
+          "start": 62,
+          "end": 67,
+          "lemma": "renal",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "disease",
+          "start": 68,
+          "end": 75,
+          "lemma": "disease",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [
+        {
+          "short_form": "ESRD",
+          "long_form": "end-stage renal disease",
+          "short_start": 77,
+          "short_end": 81,
+          "long_start": 52,
+          "long_end": 75,
+          "scope": "document_candidate_only"
+        }
+      ],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 113,
+      "end": 130,
+      "surface_text": "complication rate",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.8812142610549927,
+      "normalized_form": "complication rate",
+      "lemma": "complication rate",
+      "tokens": [
+        {
+          "text": "complication",
+          "start": 113,
+          "end": 125,
+          "lemma": "complication",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "rate",
+          "start": 126,
+          "end": 130,
+          "lemma": "rate",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 113,
+      "end": 130,
+      "surface_text": "complication rate",
+      "ner_label_hint": "RESULT",
+      "score": 0.9090098142623901,
+      "normalized_form": "complication rate",
+      "lemma": "complication rate",
+      "tokens": [
+        {
+          "text": "complication",
+          "start": 113,
+          "end": 125,
+          "lemma": "complication",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "rate",
+          "start": 126,
+          "end": 130,
+          "lemma": "rate",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 145,
+      "end": 158,
+      "surface_text": "perioperative",
+      "ner_label_hint": "PROCESS",
+      "score": 0.3724384605884552,
+      "normalized_form": "perioperative",
+      "lemma": "perioperative",
+      "tokens": [
+        {
+          "text": "perioperative",
+          "start": 145,
+          "end": 158,
+          "lemma": "perioperative",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 145,
+      "end": 171,
+      "surface_text": "perioperative complication",
+      "ner_label_hint": "CONDITION",
+      "score": 0.9519246816635132,
+      "normalized_form": "perioperative complication",
+      "lemma": "perioperative complication",
+      "tokens": [
+        {
+          "text": "perioperative",
+          "start": 145,
+          "end": 158,
+          "lemma": "perioperative",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "complication",
+          "start": 159,
+          "end": 171,
+          "lemma": "complication",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 176,
+      "end": 185,
+      "surface_text": "mortality",
+      "ner_label_hint": "CONDITION",
+      "score": 0.41841816902160645,
+      "normalized_form": "mortality",
+      "lemma": "mortality",
+      "tokens": [
+        {
+          "text": "mortality",
+          "start": 176,
+          "end": 185,
+          "lemma": "mortality",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 176,
+      "end": 185,
+      "surface_text": "mortality",
+      "ner_label_hint": "RESULT",
+      "score": 0.45857495069503784,
+      "normalized_form": "mortality",
+      "lemma": "mortality",
+      "tokens": [
+        {
+          "text": "mortality",
+          "start": 176,
+          "end": 185,
+          "lemma": "mortality",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 201,
+      "end": 209,
+      "surface_text": "patients",
+      "ner_label_hint": "ACTOR",
+      "score": 0.9461771845817566,
+      "normalized_form": "patient",
+      "lemma": "patient",
+      "tokens": [
+        {
+          "text": "patients",
+          "start": 201,
+          "end": 209,
+          "lemma": "patient",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 201,
+          "end": 209,
+          "original": "patients",
+          "replacement": "patient",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 216,
+      "end": 239,
+      "surface_text": "total knee arthroplasty",
+      "ner_label_hint": "MECHANISM",
+      "score": 0.5158659219741821,
+      "normalized_form": "total knee arthroplasty",
+      "lemma": "total knee arthroplasty",
+      "tokens": [
+        {
+          "text": "total",
+          "start": 216,
+          "end": 221,
+          "lemma": "total",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "knee",
+          "start": 222,
+          "end": 226,
+          "lemma": "knee",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "arthroplasty",
+          "start": 227,
+          "end": 239,
+          "lemma": "arthroplasty",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [
+        {
+          "short_form": "TKA",
+          "long_form": "total knee arthroplasty",
+          "short_start": 241,
+          "short_end": 244,
+          "long_start": 216,
+          "long_end": 239,
+          "scope": "document_candidate_only"
+        }
+      ],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 263,
+      "end": 275,
+      "surface_text": "investigated",
+      "ner_label_hint": "PROCESS",
+      "score": 0.788186252117157,
+      "normalized_form": "investigated",
+      "lemma": "investigated",
+      "tokens": [
+        {
+          "text": "investigated",
+          "start": 263,
+          "end": 275,
+          "lemma": "investigate",
+          "pos": "VERB",
+          "tag": "VBN",
+          "morph": {
+            "Aspect": "Perf",
+            "Tense": "Past",
+            "VerbForm": "Part"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 298,
+      "end": 303,
+      "surface_text": "study",
+      "ner_label_hint": "TASK",
+      "score": 0.8436228632926941,
+      "normalized_form": "study",
+      "lemma": "study",
+      "tokens": [
+        {
+          "text": "study",
+          "start": 298,
+          "end": 303,
+          "lemma": "study",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 324,
+      "end": 333,
+      "surface_text": "mortality",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.49269989132881165,
+      "normalized_form": "mortality",
+      "lemma": "mortality",
+      "tokens": [
+        {
+          "text": "mortality",
+          "start": 324,
+          "end": 333,
+          "lemma": "mortality",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 324,
+      "end": 333,
+      "surface_text": "mortality",
+      "ner_label_hint": "CONDITION",
+      "score": 0.7371970415115356,
+      "normalized_form": "mortality",
+      "lemma": "mortality",
+      "tokens": [
+        {
+          "text": "mortality",
+          "start": 324,
+          "end": 333,
+          "lemma": "mortality",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 338,
+      "end": 350,
+      "surface_text": "complication",
+      "ner_label_hint": "CONDITION",
+      "score": 0.7091786861419678,
+      "normalized_form": "complication",
+      "lemma": "complication",
+      "tokens": [
+        {
+          "text": "complication",
+          "start": 338,
+          "end": 350,
+          "lemma": "complication",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 391,
+      "end": 407,
+      "surface_text": "clinical outcome",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.433748334646225,
+      "normalized_form": "clinical outcome",
+      "lemma": "clinical outcome",
+      "tokens": [
+        {
+          "text": "clinical",
+          "start": 391,
+          "end": 399,
+          "lemma": "clinical",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "outcome",
+          "start": 400,
+          "end": 407,
+          "lemma": "outcome",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 391,
+      "end": 407,
+      "surface_text": "clinical outcome",
+      "ner_label_hint": "RESULT",
+      "score": 0.722872257232666,
+      "normalized_form": "clinical outcome",
+      "lemma": "clinical outcome",
+      "tokens": [
+        {
+          "text": "clinical",
+          "start": 391,
+          "end": 399,
+          "lemma": "clinical",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "outcome",
+          "start": 400,
+          "end": 407,
+          "lemma": "outcome",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 411,
+      "end": 414,
+      "surface_text": "TKA",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.977627158164978,
+      "normalized_form": "TKA",
+      "lemma": "TKA",
+      "tokens": [
+        {
+          "text": "TKA",
+          "start": 411,
+          "end": 414,
+          "lemma": "TKA",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [
+        {
+          "short_form": "TKA",
+          "long_form": "total knee arthroplasty",
+          "short_start": 241,
+          "short_end": 244,
+          "long_start": 216,
+          "long_end": 239,
+          "scope": "document_candidate_only"
+        }
+      ],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 418,
+      "end": 435,
+      "surface_text": "dialysis patients",
+      "ner_label_hint": "ACTOR",
+      "score": 0.7736010551452637,
+      "normalized_form": "dialysis patient",
+      "lemma": "dialysis patient",
+      "tokens": [
+        {
+          "text": "dialysis",
+          "start": 418,
+          "end": 426,
+          "lemma": "dialysis",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "patients",
+          "start": 427,
+          "end": 435,
+          "lemma": "patient",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 427,
+          "end": 435,
+          "original": "patients",
+          "replacement": "patient",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 443,
+      "end": 451,
+      "surface_text": "hospital",
+      "ner_label_hint": "ACTOR",
+      "score": 0.6839390397071838,
+      "normalized_form": "hospital",
+      "lemma": "hospital",
+      "tokens": [
+        {
+          "text": "hospital",
+          "start": 443,
+          "end": 451,
+          "lemma": "hospital",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 485,
+      "end": 487,
+      "surface_text": "We",
+      "ner_label_hint": "ACTOR",
+      "score": 0.6161275506019592,
+      "normalized_form": "We",
+      "lemma": "We",
+      "tokens": [
+        {
+          "text": "We",
+          "start": 485,
+          "end": 487,
+          "lemma": "We",
+          "pos": "PRON",
+          "tag": "PRP",
+          "morph": {
+            "Case": "Nom",
+            "Number": "Plur",
+            "Person": "1",
+            "PronType": "Prs"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 485,
+      "end": 487,
+      "surface_text": "We",
+      "ner_label_hint": "METHOD",
+      "score": 0.7419754266738892,
+      "normalized_form": "We",
+      "lemma": "We",
+      "tokens": [
+        {
+          "text": "We",
+          "start": 485,
+          "end": 487,
+          "lemma": "We",
+          "pos": "PRON",
+          "tag": "PRP",
+          "morph": {
+            "Case": "Nom",
+            "Number": "Plur",
+            "Person": "1",
+            "PronType": "Prs"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 488,
+      "end": 503,
+      "surface_text": "retrospectively",
+      "ner_label_hint": "METHOD",
+      "score": 0.7776811718940735,
+      "normalized_form": "retrospectively",
+      "lemma": "retrospectively",
+      "tokens": [
+        {
+          "text": "retrospectively",
+          "start": 488,
+          "end": 503,
+          "lemma": "retrospectively",
+          "pos": "ADV",
+          "tag": "RB",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 516,
+      "end": 524,
+      "surface_text": "patients",
+      "ner_label_hint": "ACTOR",
+      "score": 0.8300865888595581,
+      "normalized_form": "patient",
+      "lemma": "patient",
+      "tokens": [
+        {
+          "text": "patients",
+          "start": 516,
+          "end": 524,
+          "lemma": "patient",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 516,
+          "end": 524,
+          "original": "patients",
+          "replacement": "patient",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 529,
+      "end": 534,
+      "surface_text": "knees",
+      "ner_label_hint": "OBJECT",
+      "score": 0.502922534942627,
+      "normalized_form": "knee",
+      "lemma": "knee",
+      "tokens": [
+        {
+          "text": "knees",
+          "start": 529,
+          "end": 534,
+          "lemma": "knee",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 529,
+          "end": 534,
+          "original": "knees",
+          "replacement": "knee",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 541,
+      "end": 545,
+      "surface_text": "ESRD",
+      "ner_label_hint": "METHOD",
+      "score": 0.3900974988937378,
+      "normalized_form": "ESRD",
+      "lemma": "ESRD",
+      "tokens": [
+        {
+          "text": "ESRD",
+          "start": 541,
+          "end": 545,
+          "lemma": "ESRD",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [
+        {
+          "short_form": "ESRD",
+          "long_form": "end-stage renal disease",
+          "short_start": 77,
+          "short_end": 81,
+          "long_start": 52,
+          "long_end": 75,
+          "scope": "document_candidate_only"
+        }
+      ],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 560,
+      "end": 571,
+      "surface_text": "primary TKA",
+      "ner_label_hint": "PROCESS",
+      "score": 0.8807856440544128,
+      "normalized_form": "primary TKA",
+      "lemma": "primary TKA",
+      "tokens": [
+        {
+          "text": "primary",
+          "start": 560,
+          "end": 567,
+          "lemma": "primary",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "TKA",
+          "start": 568,
+          "end": 571,
+          "lemma": "TKA",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 597,
+      "end": 617,
+      "surface_text": "preoperative medical",
+      "ner_label_hint": "CONDITION",
+      "score": 0.8789051175117493,
+      "normalized_form": "preoperative medical",
+      "lemma": "preoperative medical",
+      "tokens": [
+        {
+          "text": "preoperative",
+          "start": 597,
+          "end": 609,
+          "lemma": "preoperative",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "medical",
+          "start": 610,
+          "end": 617,
+          "lemma": "medical",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 597,
+      "end": 628,
+      "surface_text": "preoperative medical evaluation",
+      "ner_label_hint": "METHOD",
+      "score": 0.5378661751747131,
+      "normalized_form": "preoperative medical evaluation",
+      "lemma": "preoperative medical evaluation",
+      "tokens": [
+        {
+          "text": "preoperative",
+          "start": 597,
+          "end": 609,
+          "lemma": "preoperative",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "medical",
+          "start": 610,
+          "end": 617,
+          "lemma": "medical",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "evaluation",
+          "start": 618,
+          "end": 628,
+          "lemma": "evaluation",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 597,
+      "end": 628,
+      "surface_text": "preoperative medical evaluation",
+      "ner_label_hint": "PROCESS",
+      "score": 0.6652623414993286,
+      "normalized_form": "preoperative medical evaluation",
+      "lemma": "preoperative medical evaluation",
+      "tokens": [
+        {
+          "text": "preoperative",
+          "start": 597,
+          "end": 609,
+          "lemma": "preoperative",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "medical",
+          "start": 610,
+          "end": 617,
+          "lemma": "medical",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "evaluation",
+          "start": 618,
+          "end": 628,
+          "lemma": "evaluation",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 650,
+      "end": 658,
+      "surface_text": "patients",
+      "ner_label_hint": "ACTOR",
+      "score": 0.9888442158699036,
+      "normalized_form": "patient",
+      "lemma": "patient",
+      "tokens": [
+        {
+          "text": "patients",
+          "start": 650,
+          "end": 658,
+          "lemma": "patient",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 650,
+          "end": 658,
+          "original": "patients",
+          "replacement": "patient",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 673,
+      "end": 677,
+      "surface_text": "risk",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.8622647523880005,
+      "normalized_form": "risk",
+      "lemma": "risk",
+      "tokens": [
+        {
+          "text": "risk",
+          "start": 673,
+          "end": 677,
+          "lemma": "risk",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 673,
+      "end": 677,
+      "surface_text": "risk",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.36500978469848633,
+      "normalized_form": "risk",
+      "lemma": "risk",
+      "tokens": [
+        {
+          "text": "risk",
+          "start": 673,
+          "end": 677,
+          "lemma": "risk",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 673,
+      "end": 688,
+      "surface_text": "risk of surgery",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.7020197510719299,
+      "normalized_form": "risk of surgery",
+      "lemma": "risk of surgery",
+      "tokens": [
+        {
+          "text": "risk",
+          "start": 673,
+          "end": 677,
+          "lemma": "risk",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "of",
+          "start": 678,
+          "end": 680,
+          "lemma": "of",
+          "pos": "ADP",
+          "tag": "IN",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "surgery",
+          "start": 681,
+          "end": 688,
+          "lemma": "surgery",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 681,
+      "end": 688,
+      "surface_text": "surgery",
+      "ner_label_hint": "PROCESS",
+      "score": 0.9913523197174072,
+      "normalized_form": "surgery",
+      "lemma": "surgery",
+      "tokens": [
+        {
+          "text": "surgery",
+          "start": 681,
+          "end": 688,
+          "lemma": "surgery",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 694,
+      "end": 702,
+      "surface_text": "patients",
+      "ner_label_hint": "ACTOR",
+      "score": 0.989300549030304,
+      "normalized_form": "patient",
+      "lemma": "patient",
+      "tokens": [
+        {
+          "text": "patients",
+          "start": 694,
+          "end": 702,
+          "lemma": "patient",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 694,
+          "end": 702,
+          "original": "patients",
+          "replacement": "patient",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 707,
+      "end": 724,
+      "surface_text": "complete clinical",
+      "ner_label_hint": "CONDITION",
+      "score": 0.8218762278556824,
+      "normalized_form": "complete clinical",
+      "lemma": "complete clinical",
+      "tokens": [
+        {
+          "text": "complete",
+          "start": 707,
+          "end": 715,
+          "lemma": "complete",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "clinical",
+          "start": 716,
+          "end": 724,
+          "lemma": "clinical",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 716,
+      "end": 724,
+      "surface_text": "clinical",
+      "ner_label_hint": "CONDITION",
+      "score": 0.38176414370536804,
+      "normalized_form": "clinical",
+      "lemma": "clinical",
+      "tokens": [
+        {
+          "text": "clinical",
+          "start": 716,
+          "end": 724,
+          "lemma": "clinical",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 763,
+      "end": 770,
+      "surface_text": "outcome",
+      "ner_label_hint": "RESULT",
+      "score": 0.9782178997993469,
+      "normalized_form": "outcome",
+      "lemma": "outcome",
+      "tokens": [
+        {
+          "text": "outcome",
+          "start": 763,
+          "end": 770,
+          "lemma": "outcome",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 788,
+      "end": 809,
+      "surface_text": "American Knee Society",
+      "ner_label_hint": "DATA_RESOURCE",
+      "score": 0.7882623076438904,
+      "normalized_form": "American Knee Society",
+      "lemma": "American Knee Society",
+      "tokens": [
+        {
+          "text": "American",
+          "start": 788,
+          "end": 796,
+          "lemma": "American",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Knee",
+          "start": 797,
+          "end": 801,
+          "lemma": "Knee",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Society",
+          "start": 802,
+          "end": 809,
+          "lemma": "Society",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 788,
+      "end": 816,
+      "surface_text": "American Knee Society Scores",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.7312288284301758,
+      "normalized_form": "American Knee Society Scores",
+      "lemma": "American Knee Society Scores",
+      "tokens": [
+        {
+          "text": "American",
+          "start": 788,
+          "end": 796,
+          "lemma": "American",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Knee",
+          "start": 797,
+          "end": 801,
+          "lemma": "Knee",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Society",
+          "start": 802,
+          "end": 809,
+          "lemma": "Society",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Scores",
+          "start": 810,
+          "end": 816,
+          "lemma": "Scores",
+          "pos": "PROPN",
+          "tag": "NNPS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 788,
+      "end": 816,
+      "surface_text": "American Knee Society Scores",
+      "ner_label_hint": "DATA_RESOURCE",
+      "score": 0.4552809000015259,
+      "normalized_form": "American Knee Society Scores",
+      "lemma": "American Knee Society Scores",
+      "tokens": [
+        {
+          "text": "American",
+          "start": 788,
+          "end": 796,
+          "lemma": "American",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Knee",
+          "start": 797,
+          "end": 801,
+          "lemma": "Knee",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Society",
+          "start": 802,
+          "end": 809,
+          "lemma": "Society",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Scores",
+          "start": 810,
+          "end": 816,
+          "lemma": "Scores",
+          "pos": "PROPN",
+          "tag": "NNPS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 825,
+      "end": 882,
+      "surface_text": "Western Ontario and McMaster Universities Arthritis Index",
+      "ner_label_hint": "DATA_RESOURCE",
+      "score": 0.6303815245628357,
+      "normalized_form": "Western Ontario and McMaster Universities Arthritis Index",
+      "lemma": "Western Ontario and McMaster Universities Arthritis Index",
+      "tokens": [
+        {
+          "text": "Western",
+          "start": 825,
+          "end": 832,
+          "lemma": "Western",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Ontario",
+          "start": 833,
+          "end": 840,
+          "lemma": "Ontario",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "and",
+          "start": 841,
+          "end": 844,
+          "lemma": "and",
+          "pos": "CCONJ",
+          "tag": "CC",
+          "morph": {
+            "ConjType": "Cmp"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "McMaster",
+          "start": 845,
+          "end": 853,
+          "lemma": "McMaster",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Universities",
+          "start": 854,
+          "end": 866,
+          "lemma": "Universities",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Arthritis",
+          "start": 867,
+          "end": 876,
+          "lemma": "Arthritis",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Index",
+          "start": 877,
+          "end": 882,
+          "lemma": "Index",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 854,
+      "end": 866,
+      "surface_text": "Universities",
+      "ner_label_hint": "ACTOR",
+      "score": 0.4955283999443054,
+      "normalized_form": "Universities",
+      "lemma": "Universities",
+      "tokens": [
+        {
+          "text": "Universities",
+          "start": 854,
+          "end": 866,
+          "lemma": "Universities",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 854,
+      "end": 882,
+      "surface_text": "Universities Arthritis Index",
+      "ner_label_hint": "DATA_RESOURCE",
+      "score": 0.7303825616836548,
+      "normalized_form": "Universities Arthritis Index",
+      "lemma": "Universities Arthritis Index",
+      "tokens": [
+        {
+          "text": "Universities",
+          "start": 854,
+          "end": 866,
+          "lemma": "Universities",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Arthritis",
+          "start": 867,
+          "end": 876,
+          "lemma": "Arthritis",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Index",
+          "start": 877,
+          "end": 882,
+          "lemma": "Index",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 867,
+      "end": 882,
+      "surface_text": "Arthritis Index",
+      "ner_label_hint": "OBJECT",
+      "score": 0.413485050201416,
+      "normalized_form": "Arthritis Index",
+      "lemma": "Arthritis Index",
+      "tokens": [
+        {
+          "text": "Arthritis",
+          "start": 867,
+          "end": 876,
+          "lemma": "Arthritis",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Index",
+          "start": 877,
+          "end": 882,
+          "lemma": "Index",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 884,
+      "end": 911,
+      "surface_text": "Perioperative complications",
+      "ner_label_hint": "CONDITION",
+      "score": 0.9947032332420349,
+      "normalized_form": "Perioperative complication",
+      "lemma": "Perioperative complication",
+      "tokens": [
+        {
+          "text": "Perioperative",
+          "start": 884,
+          "end": 897,
+          "lemma": "Perioperative",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "complications",
+          "start": 898,
+          "end": 911,
+          "lemma": "complication",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 898,
+          "end": 911,
+          "original": "complications",
+          "replacement": "complication",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 884,
+      "end": 911,
+      "surface_text": "Perioperative complications",
+      "ner_label_hint": "PROCESS",
+      "score": 0.3674319386482239,
+      "normalized_form": "Perioperative complication",
+      "lemma": "Perioperative complication",
+      "tokens": [
+        {
+          "text": "Perioperative",
+          "start": 884,
+          "end": 897,
+          "lemma": "Perioperative",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "complications",
+          "start": 898,
+          "end": 911,
+          "lemma": "complication",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 898,
+          "end": 911,
+          "original": "complications",
+          "replacement": "complication",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 916,
+      "end": 925,
+      "surface_text": "mortality",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.9561126232147217,
+      "normalized_form": "mortality",
+      "lemma": "mortality",
+      "tokens": [
+        {
+          "text": "mortality",
+          "start": 916,
+          "end": 925,
+          "lemma": "mortality",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 916,
+      "end": 925,
+      "surface_text": "mortality",
+      "ner_label_hint": "CONDITION",
+      "score": 0.7398894429206848,
+      "normalized_form": "mortality",
+      "lemma": "mortality",
+      "tokens": [
+        {
+          "text": "mortality",
+          "start": 916,
+          "end": 925,
+          "lemma": "mortality",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 954,
+      "end": 961,
+      "surface_text": "patient",
+      "ner_label_hint": "ACTOR",
+      "score": 0.7919902801513672,
+      "normalized_form": "patient",
+      "lemma": "patient",
+      "tokens": [
+        {
+          "text": "patient",
+          "start": 954,
+          "end": 961,
+          "lemma": "patient",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 954,
+      "end": 961,
+      "surface_text": "patient",
+      "ner_label_hint": "OBJECT",
+      "score": 0.3504289388656616,
+      "normalized_form": "patient",
+      "lemma": "patient",
+      "tokens": [
+        {
+          "text": "patient",
+          "start": 954,
+          "end": 961,
+          "lemma": "patient",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 970,
+      "end": 976,
+      "surface_text": "stroke",
+      "ner_label_hint": "CONDITION",
+      "score": 0.9683722853660583,
+      "normalized_form": "stroke",
+      "lemma": "stroke",
+      "tokens": [
+        {
+          "text": "stroke",
+          "start": 970,
+          "end": 976,
+          "lemma": "stroke",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 990,
+      "end": 997,
+      "surface_text": "surgery",
+      "ner_label_hint": "PROCESS",
+      "score": 0.9917450547218323,
+      "normalized_form": "surgery",
+      "lemma": "surgery",
+      "tokens": [
+        {
+          "text": "surgery",
+          "start": 990,
+          "end": 997,
+          "lemma": "surgery",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1004,
+      "end": 1013,
+      "surface_text": "mortality",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.944304883480072,
+      "normalized_form": "mortality",
+      "lemma": "mortality",
+      "tokens": [
+        {
+          "text": "mortality",
+          "start": 1004,
+          "end": 1013,
+          "lemma": "mortality",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1004,
+      "end": 1013,
+      "surface_text": "mortality",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.9111325740814209,
+      "normalized_form": "mortality",
+      "lemma": "mortality",
+      "tokens": [
+        {
+          "text": "mortality",
+          "start": 1004,
+          "end": 1013,
+          "lemma": "mortality",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1004,
+      "end": 1013,
+      "surface_text": "mortality",
+      "ner_label_hint": "CONDITION",
+      "score": 0.7059296369552612,
+      "normalized_form": "mortality",
+      "lemma": "mortality",
+      "tokens": [
+        {
+          "text": "mortality",
+          "start": 1004,
+          "end": 1013,
+          "lemma": "mortality",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1020,
+      "end": 1034,
+      "surface_text": "mean follow-up",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.49835070967674255,
+      "normalized_form": "mean follow-up",
+      "lemma": "mean follow-up",
+      "tokens": [
+        {
+          "text": "mean",
+          "start": 1020,
+          "end": 1024,
+          "lemma": "mean",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "follow",
+          "start": 1025,
+          "end": 1031,
+          "lemma": "follow",
+          "pos": "VERB",
+          "tag": "VB",
+          "morph": {
+            "VerbForm": "Inf"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 1031,
+          "end": 1032,
+          "lemma": "-",
+          "pos": "PUNCT",
+          "tag": "HYPH",
+          "morph": {
+            "PunctType": "Dash"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "up",
+          "start": 1032,
+          "end": 1034,
+          "lemma": "up",
+          "pos": "ADP",
+          "tag": "RP",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1025,
+      "end": 1034,
+      "surface_text": "follow-up",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.49316102266311646,
+      "normalized_form": "follow-up",
+      "lemma": "follow-up",
+      "tokens": [
+        {
+          "text": "follow",
+          "start": 1025,
+          "end": 1031,
+          "lemma": "follow",
+          "pos": "VERB",
+          "tag": "VB",
+          "morph": {
+            "VerbForm": "Inf"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 1031,
+          "end": 1032,
+          "lemma": "-",
+          "pos": "PUNCT",
+          "tag": "HYPH",
+          "morph": {
+            "PunctType": "Dash"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "up",
+          "start": 1032,
+          "end": 1034,
+          "lemma": "up",
+          "pos": "ADP",
+          "tag": "RP",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1025,
+      "end": 1041,
+      "surface_text": "follow-up period",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.7887549996376038,
+      "normalized_form": "follow-up period",
+      "lemma": "follow-up period",
+      "tokens": [
+        {
+          "text": "follow",
+          "start": 1025,
+          "end": 1031,
+          "lemma": "follow",
+          "pos": "VERB",
+          "tag": "VB",
+          "morph": {
+            "VerbForm": "Inf"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 1031,
+          "end": 1032,
+          "lemma": "-",
+          "pos": "PUNCT",
+          "tag": "HYPH",
+          "morph": {
+            "PunctType": "Dash"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "up",
+          "start": 1032,
+          "end": 1034,
+          "lemma": "up",
+          "pos": "ADP",
+          "tag": "RP",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "period",
+          "start": 1035,
+          "end": 1041,
+          "lemma": "period",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1054,
+      "end": 1062,
+      "surface_text": "patients",
+      "ner_label_hint": "ACTOR",
+      "score": 0.8228997588157654,
+      "normalized_form": "patient",
+      "lemma": "patient",
+      "tokens": [
+        {
+          "text": "patients",
+          "start": 1054,
+          "end": 1062,
+          "lemma": "patient",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1054,
+          "end": 1062,
+          "original": "patients",
+          "replacement": "patient",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1114,
+      "end": 1122,
+      "surface_text": "patients",
+      "ner_label_hint": "ACTOR",
+      "score": 0.9789895415306091,
+      "normalized_form": "patient",
+      "lemma": "patient",
+      "tokens": [
+        {
+          "text": "patients",
+          "start": 1114,
+          "end": 1122,
+          "lemma": "patient",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1114,
+          "end": 1122,
+          "original": "patients",
+          "replacement": "patient",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1135,
+      "end": 1142,
+      "surface_text": "medical",
+      "ner_label_hint": "CONDITION",
+      "score": 0.9616016745567322,
+      "normalized_form": "medical",
+      "lemma": "medical",
+      "tokens": [
+        {
+          "text": "medical",
+          "start": 1135,
+          "end": 1142,
+          "lemma": "medical",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1135,
+      "end": 1156,
+      "surface_text": "medical complications",
+      "ner_label_hint": "CONDITION",
+      "score": 0.9212658405303955,
+      "normalized_form": "medical complication",
+      "lemma": "medical complication",
+      "tokens": [
+        {
+          "text": "medical",
+          "start": 1135,
+          "end": 1142,
+          "lemma": "medical",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "complications",
+          "start": 1143,
+          "end": 1156,
+          "lemma": "complication",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1143,
+          "end": 1156,
+          "original": "complications",
+          "replacement": "complication",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1168,
+      "end": 1177,
+      "surface_text": "pneumonia",
+      "ner_label_hint": "CONDITION",
+      "score": 0.9881324172019958,
+      "normalized_form": "pneumonia",
+      "lemma": "pneumonia",
+      "tokens": [
+        {
+          "text": "pneumonia",
+          "start": 1168,
+          "end": 1177,
+          "lemma": "pneumonia",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1187,
+      "end": 1193,
+      "surface_text": "stroke",
+      "ner_label_hint": "CONDITION",
+      "score": 0.9873600602149963,
+      "normalized_form": "stroke",
+      "lemma": "stroke",
+      "tokens": [
+        {
+          "text": "stroke",
+          "start": 1187,
+          "end": 1193,
+          "lemma": "stroke",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1207,
+      "end": 1228,
+      "surface_text": "cardiovascular events",
+      "ner_label_hint": "CONDITION",
+      "score": 0.9136297106742859,
+      "normalized_form": "cardiovascular event",
+      "lemma": "cardiovascular event",
+      "tokens": [
+        {
+          "text": "cardiovascular",
+          "start": 1207,
+          "end": 1221,
+          "lemma": "cardiovascular",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "events",
+          "start": 1222,
+          "end": 1228,
+          "lemma": "event",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1222,
+          "end": 1228,
+          "original": "events",
+          "replacement": "event",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1244,
+      "end": 1253,
+      "surface_text": "discharge",
+      "ner_label_hint": "PROCESS",
+      "score": 0.9226183891296387,
+      "normalized_form": "discharge",
+      "lemma": "discharge",
+      "tokens": [
+        {
+          "text": "discharge",
+          "start": 1244,
+          "end": 1253,
+          "lemma": "discharge",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1259,
+      "end": 1267,
+      "surface_text": "hospital",
+      "ner_label_hint": "ACTOR",
+      "score": 0.921326220035553,
+      "normalized_form": "hospital",
+      "lemma": "hospital",
+      "tokens": [
+        {
+          "text": "hospital",
+          "start": 1259,
+          "end": 1267,
+          "lemma": "hospital",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1259,
+      "end": 1267,
+      "surface_text": "hospital",
+      "ner_label_hint": "DATA_RESOURCE",
+      "score": 0.7792119383811951,
+      "normalized_form": "hospital",
+      "lemma": "hospital",
+      "tokens": [
+        {
+          "text": "hospital",
+          "start": 1259,
+          "end": 1267,
+          "lemma": "hospital",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1259,
+      "end": 1267,
+      "surface_text": "hospital",
+      "ner_label_hint": "OBJECT",
+      "score": 0.4237271547317505,
+      "normalized_form": "hospital",
+      "lemma": "hospital",
+      "tokens": [
+        {
+          "text": "hospital",
+          "start": 1259,
+          "end": 1267,
+          "lemma": "hospital",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1297,
+      "end": 1305,
+      "surface_text": "patients",
+      "ner_label_hint": "ACTOR",
+      "score": 0.9741805195808411,
+      "normalized_form": "patient",
+      "lemma": "patient",
+      "tokens": [
+        {
+          "text": "patients",
+          "start": 1297,
+          "end": 1305,
+          "lemma": "patient",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1297,
+          "end": 1305,
+          "original": "patients",
+          "replacement": "patient",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1327,
+      "end": 1344,
+      "surface_text": "clinical outcomes",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.5586800575256348,
+      "normalized_form": "clinical outcome",
+      "lemma": "clinical outcome",
+      "tokens": [
+        {
+          "text": "clinical",
+          "start": 1327,
+          "end": 1335,
+          "lemma": "clinical",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "outcomes",
+          "start": 1336,
+          "end": 1344,
+          "lemma": "outcome",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1336,
+          "end": 1344,
+          "original": "outcomes",
+          "replacement": "outcome",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1327,
+      "end": 1344,
+      "surface_text": "clinical outcomes",
+      "ner_label_hint": "RESULT",
+      "score": 0.904062807559967,
+      "normalized_form": "clinical outcome",
+      "lemma": "clinical outcome",
+      "tokens": [
+        {
+          "text": "clinical",
+          "start": 1327,
+          "end": 1335,
+          "lemma": "clinical",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "outcomes",
+          "start": 1336,
+          "end": 1344,
+          "lemma": "outcome",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1336,
+          "end": 1344,
+          "original": "outcomes",
+          "replacement": "outcome",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1352,
+      "end": 1356,
+      "surface_text": "knee",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9403219223022461,
+      "normalized_form": "knee",
+      "lemma": "knee",
+      "tokens": [
+        {
+          "text": "knee",
+          "start": 1352,
+          "end": 1356,
+          "lemma": "knee",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1363,
+      "end": 1366,
+      "surface_text": "TKA",
+      "ner_label_hint": "METHOD",
+      "score": 0.7529898881912231,
+      "normalized_form": "TKA",
+      "lemma": "TKA",
+      "tokens": [
+        {
+          "text": "TKA",
+          "start": 1363,
+          "end": 1366,
+          "lemma": "TKA",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [
+        {
+          "short_form": "TKA",
+          "long_form": "total knee arthroplasty",
+          "short_start": 241,
+          "short_end": 244,
+          "long_start": 216,
+          "long_end": 239,
+          "scope": "document_candidate_only"
+        }
+      ],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1363,
+      "end": 1366,
+      "surface_text": "TKA",
+      "ner_label_hint": "PROCESS",
+      "score": 0.765947163105011,
+      "normalized_form": "TKA",
+      "lemma": "TKA",
+      "tokens": [
+        {
+          "text": "TKA",
+          "start": 1363,
+          "end": 1366,
+          "lemma": "TKA",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [
+        {
+          "short_form": "TKA",
+          "long_form": "total knee arthroplasty",
+          "short_start": 241,
+          "short_end": 244,
+          "long_start": 216,
+          "long_end": 239,
+          "scope": "document_candidate_only"
+        }
+      ],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1384,
+      "end": 1405,
+      "surface_text": "American Knee Society",
+      "ner_label_hint": "ACTOR",
+      "score": 0.9514768123626709,
+      "normalized_form": "American Knee Society",
+      "lemma": "American Knee Society",
+      "tokens": [
+        {
+          "text": "American",
+          "start": 1384,
+          "end": 1392,
+          "lemma": "American",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Knee",
+          "start": 1393,
+          "end": 1397,
+          "lemma": "Knee",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Society",
+          "start": 1398,
+          "end": 1405,
+          "lemma": "Society",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1384,
+      "end": 1405,
+      "surface_text": "American Knee Society",
+      "ner_label_hint": "DATA_RESOURCE",
+      "score": 0.44119277596473694,
+      "normalized_form": "American Knee Society",
+      "lemma": "American Knee Society",
+      "tokens": [
+        {
+          "text": "American",
+          "start": 1384,
+          "end": 1392,
+          "lemma": "American",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Knee",
+          "start": 1393,
+          "end": 1397,
+          "lemma": "Knee",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Society",
+          "start": 1398,
+          "end": 1405,
+          "lemma": "Society",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1393,
+      "end": 1397,
+      "surface_text": "Knee",
+      "ner_label_hint": "OBJECT",
+      "score": 0.8328800797462463,
+      "normalized_form": "Knee",
+      "lemma": "Knee",
+      "tokens": [
+        {
+          "text": "Knee",
+          "start": 1393,
+          "end": 1397,
+          "lemma": "Knee",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1427,
+      "end": 1442,
+      "surface_text": "Western Ontario",
+      "ner_label_hint": "ACTOR",
+      "score": 0.5965731739997864,
+      "normalized_form": "Western Ontario",
+      "lemma": "Western Ontario",
+      "tokens": [
+        {
+          "text": "Western",
+          "start": 1427,
+          "end": 1434,
+          "lemma": "Western",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Ontario",
+          "start": 1435,
+          "end": 1442,
+          "lemma": "Ontario",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1427,
+      "end": 1442,
+      "surface_text": "Western Ontario",
+      "ner_label_hint": "DATA_RESOURCE",
+      "score": 0.7453795671463013,
+      "normalized_form": "Western Ontario",
+      "lemma": "Western Ontario",
+      "tokens": [
+        {
+          "text": "Western",
+          "start": 1427,
+          "end": 1434,
+          "lemma": "Western",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Ontario",
+          "start": 1435,
+          "end": 1442,
+          "lemma": "Ontario",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1447,
+      "end": 1468,
+      "surface_text": "McMaster Universities",
+      "ner_label_hint": "ACTOR",
+      "score": 0.9597410559654236,
+      "normalized_form": "McMaster Universities",
+      "lemma": "McMaster Universities",
+      "tokens": [
+        {
+          "text": "McMaster",
+          "start": 1447,
+          "end": 1455,
+          "lemma": "McMaster",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Universities",
+          "start": 1456,
+          "end": 1468,
+          "lemma": "Universities",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1447,
+      "end": 1468,
+      "surface_text": "McMaster Universities",
+      "ner_label_hint": "DATA_RESOURCE",
+      "score": 0.5200939178466797,
+      "normalized_form": "McMaster Universities",
+      "lemma": "McMaster Universities",
+      "tokens": [
+        {
+          "text": "McMaster",
+          "start": 1447,
+          "end": 1455,
+          "lemma": "McMaster",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Universities",
+          "start": 1456,
+          "end": 1468,
+          "lemma": "Universities",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1469,
+      "end": 1484,
+      "surface_text": "Arthritis Index",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.5977696180343628,
+      "normalized_form": "Arthritis Index",
+      "lemma": "Arthritis Index",
+      "tokens": [
+        {
+          "text": "Arthritis",
+          "start": 1469,
+          "end": 1478,
+          "lemma": "Arthritis",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Index",
+          "start": 1479,
+          "end": 1484,
+          "lemma": "Index",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1469,
+      "end": 1491,
+      "surface_text": "Arthritis Index scores",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.5808618664741516,
+      "normalized_form": "Arthritis Index score",
+      "lemma": "Arthritis Index score",
+      "tokens": [
+        {
+          "text": "Arthritis",
+          "start": 1469,
+          "end": 1478,
+          "lemma": "Arthritis",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Index",
+          "start": 1479,
+          "end": 1484,
+          "lemma": "Index",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "scores",
+          "start": 1485,
+          "end": 1491,
+          "lemma": "score",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1485,
+          "end": 1491,
+          "original": "scores",
+          "replacement": "score",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1485,
+      "end": 1491,
+      "surface_text": "scores",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.7961010932922363,
+      "normalized_form": "score",
+      "lemma": "score",
+      "tokens": [
+        {
+          "text": "scores",
+          "start": 1485,
+          "end": 1491,
+          "lemma": "score",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1485,
+          "end": 1491,
+          "original": "scores",
+          "replacement": "score",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1537,
+      "end": 1540,
+      "surface_text": "TKA",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.9863643050193787,
+      "normalized_form": "TKA",
+      "lemma": "TKA",
+      "tokens": [
+        {
+          "text": "TKA",
+          "start": 1537,
+          "end": 1540,
+          "lemma": "TKA",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [
+        {
+          "short_form": "TKA",
+          "long_form": "total knee arthroplasty",
+          "short_start": 241,
+          "short_end": 244,
+          "long_start": 216,
+          "long_end": 239,
+          "scope": "document_candidate_only"
+        }
+      ],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1564,
+      "end": 1581,
+      "surface_text": "dialysis patients",
+      "ner_label_hint": "ACTOR",
+      "score": 0.8523980975151062,
+      "normalized_form": "dialysis patient",
+      "lemma": "dialysis patient",
+      "tokens": [
+        {
+          "text": "dialysis",
+          "start": 1564,
+          "end": 1572,
+          "lemma": "dialysis",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "patients",
+          "start": 1573,
+          "end": 1581,
+          "lemma": "patient",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1573,
+          "end": 1581,
+          "original": "patients",
+          "replacement": "patient",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1564,
+      "end": 1581,
+      "surface_text": "dialysis patients",
+      "ner_label_hint": "OBJECT",
+      "score": 0.42491814494132996,
+      "normalized_form": "dialysis patient",
+      "lemma": "dialysis patient",
+      "tokens": [
+        {
+          "text": "dialysis",
+          "start": 1564,
+          "end": 1572,
+          "lemma": "dialysis",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "patients",
+          "start": 1573,
+          "end": 1581,
+          "lemma": "patient",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1573,
+          "end": 1581,
+          "original": "patients",
+          "replacement": "patient",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1573,
+      "end": 1581,
+      "surface_text": "patients",
+      "ner_label_hint": "ACTOR",
+      "score": 0.4519374370574951,
+      "normalized_form": "patient",
+      "lemma": "patient",
+      "tokens": [
+        {
+          "text": "patients",
+          "start": 1573,
+          "end": 1581,
+          "lemma": "patient",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1573,
+          "end": 1581,
+          "original": "patients",
+          "replacement": "patient",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1596,
+      "end": 1619,
+      "surface_text": "preoperative evaluation",
+      "ner_label_hint": "METHOD",
+      "score": 0.8578251600265503,
+      "normalized_form": "preoperative evaluation",
+      "lemma": "preoperative evaluation",
+      "tokens": [
+        {
+          "text": "preoperative",
+          "start": 1596,
+          "end": 1608,
+          "lemma": "preoperative",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "evaluation",
+          "start": 1609,
+          "end": 1619,
+          "lemma": "evaluation",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1596,
+      "end": 1619,
+      "surface_text": "preoperative evaluation",
+      "ner_label_hint": "PROCESS",
+      "score": 0.8972415924072266,
+      "normalized_form": "preoperative evaluation",
+      "lemma": "preoperative evaluation",
+      "tokens": [
+        {
+          "text": "preoperative",
+          "start": 1596,
+          "end": 1608,
+          "lemma": "preoperative",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "evaluation",
+          "start": 1609,
+          "end": 1619,
+          "lemma": "evaluation",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1626,
+      "end": 1634,
+      "surface_text": "patients",
+      "ner_label_hint": "ACTOR",
+      "score": 0.9751596450805664,
+      "normalized_form": "patient",
+      "lemma": "patient",
+      "tokens": [
+        {
+          "text": "patients",
+          "start": 1626,
+          "end": 1634,
+          "lemma": "patient",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1626,
+          "end": 1634,
+          "original": "patients",
+          "replacement": "patient",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1651,
+      "end": 1667,
+      "surface_text": "clinical outcome",
+      "ner_label_hint": "RESULT",
+      "score": 0.9844740629196167,
+      "normalized_form": "clinical outcome",
+      "lemma": "clinical outcome",
+      "tokens": [
+        {
+          "text": "clinical",
+          "start": 1651,
+          "end": 1659,
+          "lemma": "clinical",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "outcome",
+          "start": 1660,
+          "end": 1667,
+          "lemma": "outcome",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1696,
+      "end": 1716,
+      "surface_text": "prosthetic loosening",
+      "ner_label_hint": "CONDITION",
+      "score": 0.9469720721244812,
+      "normalized_form": "prosthetic loosening",
+      "lemma": "prosthetic loosening",
+      "tokens": [
+        {
+          "text": "prosthetic",
+          "start": 1696,
+          "end": 1706,
+          "lemma": "prosthetic",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "loosening",
+          "start": 1707,
+          "end": 1716,
+          "lemma": "loosening",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1696,
+      "end": 1716,
+      "surface_text": "prosthetic loosening",
+      "ner_label_hint": "OBJECT",
+      "score": 0.4850855767726898,
+      "normalized_form": "prosthetic loosening",
+      "lemma": "prosthetic loosening",
+      "tokens": [
+        {
+          "text": "prosthetic",
+          "start": 1696,
+          "end": 1706,
+          "lemma": "prosthetic",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "loosening",
+          "start": 1707,
+          "end": 1716,
+          "lemma": "loosening",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1720,
+      "end": 1734,
+      "surface_text": "deep infection",
+      "ner_label_hint": "CONDITION",
+      "score": 0.9803739786148071,
+      "normalized_form": "deep infection",
+      "lemma": "deep infection",
+      "tokens": [
+        {
+          "text": "deep",
+          "start": 1720,
+          "end": 1724,
+          "lemma": "deep",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "infection",
+          "start": 1725,
+          "end": 1734,
+          "lemma": "infection",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1745,
+      "end": 1762,
+      "surface_text": "dialysis patients",
+      "ner_label_hint": "ACTOR",
+      "score": 0.9901044964790344,
+      "normalized_form": "dialysis patient",
+      "lemma": "dialysis patient",
+      "tokens": [
+        {
+          "text": "dialysis",
+          "start": 1745,
+          "end": 1753,
+          "lemma": "dialysis",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "patients",
+          "start": 1754,
+          "end": 1762,
+          "lemma": "patient",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1754,
+          "end": 1762,
+          "original": "patients",
+          "replacement": "patient",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1754,
+      "end": 1762,
+      "surface_text": "patients",
+      "ner_label_hint": "ACTOR",
+      "score": 0.6966924667358398,
+      "normalized_form": "patient",
+      "lemma": "patient",
+      "tokens": [
+        {
+          "text": "patients",
+          "start": 1754,
+          "end": 1762,
+          "lemma": "patient",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1754,
+          "end": 1762,
+          "original": "patients",
+          "replacement": "patient",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1787,
+      "end": 1790,
+      "surface_text": "TKA",
+      "ner_label_hint": "METHOD",
+      "score": 0.7124171853065491,
+      "normalized_form": "TKA",
+      "lemma": "TKA",
+      "tokens": [
+        {
+          "text": "TKA",
+          "start": 1787,
+          "end": 1790,
+          "lemma": "TKA",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [
+        {
+          "short_form": "TKA",
+          "long_form": "total knee arthroplasty",
+          "short_start": 241,
+          "short_end": 244,
+          "long_start": 216,
+          "long_end": 239,
+          "scope": "document_candidate_only"
+        }
+      ],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1818,
+      "end": 1822,
+      "surface_text": "risk",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.914455235004425,
+      "normalized_form": "risk",
+      "lemma": "risk",
+      "tokens": [
+        {
+          "text": "risk",
+          "start": 1818,
+          "end": 1822,
+          "lemma": "risk",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1835,
+      "end": 1856,
+      "surface_text": "medical complications",
+      "ner_label_hint": "CONDITION",
+      "score": 0.8535866141319275,
+      "normalized_form": "medical complication",
+      "lemma": "medical complication",
+      "tokens": [
+        {
+          "text": "medical",
+          "start": 1835,
+          "end": 1842,
+          "lemma": "medical",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "complications",
+          "start": 1843,
+          "end": 1856,
+          "lemma": "complication",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1843,
+          "end": 1856,
+          "original": "complications",
+          "replacement": "complication",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2761455282",
+      "start": 1878,
+      "end": 1882,
+      "surface_text": "ESRD",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.9524179697036743,
+      "normalized_form": "ESRD",
+      "lemma": "ESRD",
+      "tokens": [
+        {
+          "text": "ESRD",
+          "start": 1878,
+          "end": 1882,
+          "lemma": "ESRD",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [
+        {
+          "short_form": "ESRD",
+          "long_form": "end-stage renal disease",
+          "short_start": 77,
+          "short_end": 81,
+          "long_start": 52,
+          "long_end": 75,
+          "scope": "document_candidate_only"
+        }
+      ],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    }
+  ],
+  "inference_seconds": 19.07687629922293,
+  "windows": [
+    [
+      0,
+      158,
+      [
+        155,
+        402,
+        505
+      ]
+    ],
+    [
+      108,
+      323,
+      [
+        162,
+        409,
+        512
+      ]
+    ],
+    [
+      210,
+      297,
+      [
+        142,
+        389,
+        492
+      ]
+    ],
+    [
+      246,
+      292,
+      [
+        133,
+        380,
+        483
+      ]
+    ],
+    [
+      251,
+      292,
+      [
+        132,
+        379,
+        482
+      ]
+    ],
+    [
+      258,
+      292,
+      [
+        131,
+        378,
+        481
+      ]
+    ],
+    [
+      263,
+      292,
+      [
+        130,
+        377,
+        480
+      ]
+    ],
+    [
+      277,
+      382,
+      [
+        145,
+        392,
+        495
+      ]
+    ],
+    [
+      364,
+      475,
+      [
+        148,
+        395,
+        498
+      ]
+    ],
+    [
+      463,
+      484,
+      [
+        130,
+        377,
+        480
+      ]
+    ],
+    [
+      459,
+      487,
+      [
+        132,
+        379,
+        482
+      ]
+    ],
+    [
+      459,
+      503,
+      [
+        133,
+        380,
+        483
+      ]
+    ],
+    [
+      459,
+      524,
+      [
+        136,
+        383,
+        486
+      ]
+    ],
+    [
+      439,
+      617,
+      [
+        159,
+        406,
+        509
+      ]
+    ],
+    [
+      580,
+      724,
+      [
+        150,
+        397,
+        500
+      ]
+    ],
+    [
+      568,
+      724,
+      [
+        153,
+        400,
+        503
+      ]
+    ],
+    [
+      662,
+      702,
+      [
+        133,
+        380,
+        483
+      ]
+    ],
+    [
+      678,
+      911,
+      [
+        160,
+        407,
+        510
+      ]
+    ],
+    [
+      867,
+      915,
+      [
+        131,
+        378,
+        481
+      ]
+    ],
+    [
+      854,
+      989,
+      [
+        146,
+        393,
+        496
+      ]
+    ],
+    [
+      854,
+      1034,
+      [
+        160,
+        407,
+        510
+      ]
+    ],
+    [
+      990,
+      1019,
+      [
+        135,
+        382,
+        485
+      ]
+    ],
+    [
+      1004,
+      1122,
+      [
+        157,
+        404,
+        507
+      ]
+    ],
+    [
+      1097,
+      1142,
+      [
+        139,
+        386,
+        489
+      ]
+    ],
+    [
+      1083,
+      1122,
+      [
+        135,
+        382,
+        485
+      ]
+    ],
+    [
+      1097,
+      1122,
+      [
+        131,
+        378,
+        481
+      ]
+    ],
+    [
+      1101,
+      1122,
+      [
+        130,
+        377,
+        480
+      ]
+    ],
+    [
+      1110,
+      1196,
+      [
+        148,
+        395,
+        498
+      ]
+    ],
+    [
+      1181,
+      1268,
+      [
+        149,
+        396,
+        499
+      ]
+    ],
+    [
+      1254,
+      1271,
+      [
+        129,
+        376,
+        479
+      ]
+    ],
+    [
+      1254,
+      1275,
+      [
+        130,
+        377,
+        480
+      ]
+    ],
+    [
+      1254,
+      1282,
+      [
+        131,
+        378,
+        481
+      ]
+    ],
+    [
+      1131,
+      1275,
+      [
+        160,
+        407,
+        510
+      ]
+    ],
+    [
+      1254,
+      1296,
+      [
+        136,
+        383,
+        486
+      ]
+    ],
+    [
+      1234,
+      1282,
+      [
+        136,
+        383,
+        486
+      ]
+    ],
+    [
+      1244,
+      1282,
+      [
+        132,
+        379,
+        482
+      ]
+    ],
+    [
+      1254,
+      1282,
+      [
+        131,
+        378,
+        481
+      ]
+    ],
+    [
+      1259,
+      1282,
+      [
+        130,
+        377,
+        480
+      ]
+    ],
+    [
+      1269,
+      1405,
+      [
+        156,
+        403,
+        506
+      ]
+    ],
+    [
+      1367,
+      1502,
+      [
+        154,
+        401,
+        504
+      ]
+    ],
+    [
+      1492,
+      1514,
+      [
+        134,
+        381,
+        484
+      ]
+    ],
+    [
+      1492,
+      1518,
+      [
+        135,
+        382,
+        485
+      ]
+    ],
+    [
+      1492,
+      1524,
+      [
+        136,
+        383,
+        486
+      ]
+    ],
+    [
+      1492,
+      1531,
+      [
+        137,
+        384,
+        487
+      ]
+    ],
+    [
+      1485,
+      1552,
+      [
+        144,
+        391,
+        494
+      ]
+    ],
+    [
+      1443,
+      1518,
+      [
+        142,
+        389,
+        492
+      ]
+    ],
+    [
+      1495,
+      1641,
+      [
+        154,
+        401,
+        504
+      ]
+    ],
+    [
+      1582,
+      1762,
+      [
+        153,
+        400,
+        503
+      ]
+    ],
+    [
+      1717,
+      1834,
+      [
+        147,
+        394,
+        497
+      ]
+    ],
+    [
+      1675,
+      1883,
+      [
+        162,
+        409,
+        512
+      ]
+    ]
+  ],
+  "synthetic_punctuation_spans_dropped": 1
+}

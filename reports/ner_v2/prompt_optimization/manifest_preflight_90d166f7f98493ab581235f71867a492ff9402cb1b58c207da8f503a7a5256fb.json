@@ -1,0 +1,127 @@
+{
+  "splits": {
+    "W3138328568": "test",
+    "W1995028339": "dev",
+    "W2039836112": "dev",
+    "W2076293586": "dev",
+    "W3123056951": "dev",
+    "W4389076493": "test",
+    "W2991563224": "dev",
+    "W3027457624": "dev",
+    "W4230116451": "dev",
+    "W4234628002": "dev",
+    "W4309030044": "test",
+    "W2078771716": "dev",
+    "W2130236240": "dev",
+    "W2906067930": "dev",
+    "W4285525942": "dev",
+    "W7215137876": "test",
+    "W2326480042": "dev",
+    "W2394633461": "dev",
+    "W4312422299": "dev",
+    "W4381572413": "dev",
+    "W4391351014": "test",
+    "W1979727947": "dev",
+    "W2761455282": "dev",
+    "W2791492120": "dev",
+    "W3101922761": "dev",
+    "W3081936674": "test",
+    "W2084709926": "dev",
+    "W2096307598": "dev",
+    "W2317432785": "dev",
+    "W2364973104": "dev"
+  },
+  "split_rule": "per discipline, sorted IDs shuffled with seed 4004; first test, remaining development",
+  "schemas": {
+    "V0": {
+      "OBJECT": "physical, biological or digital object",
+      "ACTOR": "person or organization",
+      "CONCEPT": "scientific concept or theory",
+      "METHOD": "algorithm or research method",
+      "PROCESS": "event or scientific process",
+      "DATA_RESOURCE": "dataset or research corpus",
+      "ATTRIBUTE": "property, parameter or metric",
+      "RESULT": "measured or observed result",
+      "CONDITION": "experimental or contextual condition",
+      "TASK": "research task or application",
+      "MECHANISM": "mechanism explaining a phenomenon"
+    },
+    "V1": {
+      "OBJECT": "A physical, biological, technical or digital object, system, component or artifact; a concrete entity rather than an abstract concept or method.",
+      "ACTOR": "A person, organization, institution, state or other participant acting as a subject in context; a physical object causing change is not automatically an actor.",
+      "CONCEPT": "An abstract concept, theory, mathematical construction, scientific category or hypothesis, rather than a concrete object or method.",
+      "METHOD": "A defined way to perform, study, analyze or compute something: an algorithm, procedure, technology or experimental technique; the way to solve a task rather than the task or its execution.",
+      "PROCESS": "An action, operation, event, change or sequence of occurring actions; the occurrence itself, rather than a method, object or necessarily an explanatory mechanism.",
+      "DATA_RESOURCE": "A dataset, corpus, registry, archive, sample or source of organized information, distinct from the object described by the information.",
+      "ATTRIBUTE": "A property, parameter, measurable characteristic or metric; the characteristic itself rather than a particular obtained result or an explicit condition.",
+      "RESULT": "An observed, measured, computed or established outcome of a study, experiment, method or process; a particular obtained outcome rather than the metric itself.",
+      "CONDITION": "An explicit experimental, observational or applicability condition under which a statement holds; not simply an abstract concept or a characteristic.",
+      "TASK": "A task, goal, problem or application area to be addressed, rather than the method used to solve it.",
+      "MECHANISM": "A mechanism described in the source that explains how or why a phenomenon occurs; not every process and not merely an object involved."
+    },
+    "V2": {
+      "OBJECT": "A physical, biological, technical or digital object, system, component or artifact; a concrete entity rather than an abstract concept or method. Examples: a robot; a concrete neural network model.",
+      "ACTOR": "A person, organization, institution, state or other participant acting as a subject in context; a physical object causing change is not automatically an actor. Examples: a university; a government.",
+      "CONCEPT": "An abstract concept, theory, mathematical construction, scientific category or hypothesis, rather than a concrete object or method. Examples: game theory; a topological space.",
+      "METHOD": "A defined way to perform, study, analyze or compute something: an algorithm, procedure, technology or experimental technique; the way to solve a task rather than the task or its execution. Examples: spectroscopy; the Monte Carlo method.",
+      "PROCESS": "An action, operation, event, change or sequence of occurring actions; the occurrence itself, rather than a method, object or necessarily an explanatory mechanism. Examples: cell division; chemical reaction.",
+      "DATA_RESOURCE": "A dataset, corpus, registry, archive, sample or source of organized information, distinct from the object described by the information. Examples: a text corpus; a medical registry.",
+      "ATTRIBUTE": "A property, parameter, measurable characteristic or metric; the characteristic itself rather than a particular obtained result or an explicit condition. Examples: mass; classification accuracy as a metric.",
+      "RESULT": "An observed, measured, computed or established outcome of a study, experiment, method or process; a particular obtained outcome rather than the metric itself. Examples: 94% accuracy; a measured reduction in mortality.",
+      "CONDITION": "An explicit experimental, observational or applicability condition under which a statement holds; not simply an abstract concept or a characteristic. Examples: room temperature; fasting state.",
+      "TASK": "A task, goal, problem or application area to be addressed, rather than the method used to solve it. Examples: image classification; route optimization.",
+      "MECHANISM": "A mechanism described in the source that explains how or why a phenomenon occurs; not every process and not merely an object involved. Examples: immune response mechanism; disease causal mechanism."
+    }
+  },
+  "corpus_sha256": "684ca3a758a128c6382ab924f5c131f0e27faa9f7625b431ae0d6db975e543b1",
+  "candidates_sha256": "495027052bf560b66c4a0aef1a2342c63aa40a3359566d0571b554234ddc5dbf",
+  "ontology_sha256": "248abbec239279ae640e7188a7bb8e68f01f9f116ea8ca671d0da0c815613b14",
+  "model_lock": {
+    "repo_id": "fastino/gliner2.5-base-v1",
+    "revision": "54785d51df8d86a0d8f2eb212fec15871aad2c4d",
+    "disk_free_before_bytes": 247480340480,
+    "download_size_bytes": 782735800,
+    "files": {
+      "README.md": {
+        "bytes": 21918,
+        "sha256": "1b023a4786371699477e0b635d2a148f10fe5c23ab1e9d36211ff58754289bbe"
+      },
+      "config.json": {
+        "bytes": 4103,
+        "sha256": "d6b515c21ae2100c12267fb42a3f02c1e99ad87580366aebedb161efd74441c7"
+      },
+      "encoder_config/config.json": {
+        "bytes": 857,
+        "sha256": "d36a845b9f25dcaf1ec45a1c4bdf65ea4ac20596537e14530ec9f660a63aeca4"
+      },
+      "model.safetensors": {
+        "bytes": 774366564,
+        "sha256": "7274094de2e0c2a37a386f55fc4e23061a954da5bd7a335e7dfe56f2743c277a"
+      },
+      "tokenizer.json": {
+        "bytes": 8341713,
+        "sha256": "cbc8ae6037812709c9c26f2a160f8dc48b0440bcb79c8141804259ae2d6adac3"
+      },
+      "tokenizer_config.json": {
+        "bytes": 645,
+        "sha256": "0bf3ea0873234bd9bfdd3853c440395009ac6365a925b91654daed5396d655e1"
+      }
+    }
+  },
+  "threshold": 0.35,
+  "threads": 4,
+  "window_words": 110,
+  "overlap_words": 25,
+  "shared_adaptive_windows": true,
+  "gold_sha256": "161456569c044f5489f3b1569c4f8c69294400878399c00dd7f7c871768a5553",
+  "script_sha256": "a0fda94f0835fbc16178d0deb19636681f42bbcb40f2d2a4a2ecb9b35317f88f",
+  "config_hash": "90d166f7f98493ab581235f71867a492ff9402cb1b58c207da8f503a7a5256fb",
+  "package_versions": {
+    "gliner2": "2.1.0",
+    "torch": "2.11.0",
+    "transformers": "5.1.0",
+    "spacy": "3.8.18",
+    "tqdm": "4.70.1",
+    "psutil": "7.2.2"
+  }
+}

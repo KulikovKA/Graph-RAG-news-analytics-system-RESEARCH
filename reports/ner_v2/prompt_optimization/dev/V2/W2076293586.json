@@ -1,0 +1,2296 @@
+{
+  "config_hash": "10ac92188386a2e74f2c7a63b76130baf40893984415a48f4f034cc9ade1b007",
+  "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+  "mentions": [
+    {
+      "document_id": "W2076293586",
+      "start": 30,
+      "end": 49,
+      "surface_text": "inbred mouse models",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9404935240745544,
+      "normalized_form": "inbred mouse model",
+      "lemma": "inbred mouse model",
+      "tokens": [
+        {
+          "text": "inbred",
+          "start": 30,
+          "end": 36,
+          "lemma": "inbreed",
+          "pos": "VERB",
+          "tag": "VBN",
+          "morph": {
+            "Aspect": "Perf",
+            "Tense": "Past",
+            "VerbForm": "Part"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "mouse",
+          "start": 37,
+          "end": 42,
+          "lemma": "mouse",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "models",
+          "start": 43,
+          "end": 49,
+          "lemma": "model",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 43,
+          "end": 49,
+          "original": "models",
+          "replacement": "model",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 63,
+      "end": 86,
+      "surface_text": "molecular underpinnings",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.8073152303695679,
+      "normalized_form": "molecular underpinning",
+      "lemma": "molecular underpinning",
+      "tokens": [
+        {
+          "text": "molecular",
+          "start": 63,
+          "end": 72,
+          "lemma": "molecular",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "underpinnings",
+          "start": 73,
+          "end": 86,
+          "lemma": "underpinning",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 73,
+          "end": 86,
+          "original": "underpinnings",
+          "replacement": "underpinning",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 90,
+      "end": 110,
+      "surface_text": "psychiatric diseases",
+      "ner_label_hint": "CONDITION",
+      "score": 0.8752718567848206,
+      "normalized_form": "psychiatric disease",
+      "lemma": "psychiatric disease",
+      "tokens": [
+        {
+          "text": "psychiatric",
+          "start": 90,
+          "end": 101,
+          "lemma": "psychiatric",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "diseases",
+          "start": 102,
+          "end": 110,
+          "lemma": "disease",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 102,
+          "end": 110,
+          "original": "diseases",
+          "replacement": "disease",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 116,
+      "end": 126,
+      "surface_text": "depression",
+      "ner_label_hint": "CONDITION",
+      "score": 0.986354410648346,
+      "normalized_form": "depression",
+      "lemma": "depression",
+      "tokens": [
+        {
+          "text": "depression",
+          "start": 116,
+          "end": 126,
+          "lemma": "depression",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 128,
+      "end": 145,
+      "surface_text": "anxiety disorders",
+      "ner_label_hint": "CONDITION",
+      "score": 0.9751012921333313,
+      "normalized_form": "anxiety disorder",
+      "lemma": "anxiety disorder",
+      "tokens": [
+        {
+          "text": "anxiety",
+          "start": 128,
+          "end": 135,
+          "lemma": "anxiety",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "disorders",
+          "start": 136,
+          "end": 145,
+          "lemma": "disorder",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 136,
+          "end": 145,
+          "original": "disorders",
+          "replacement": "disorder",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 150,
+      "end": 180,
+      "surface_text": "pathological stress reactivity",
+      "ner_label_hint": "CONDITION",
+      "score": 0.9232876300811768,
+      "normalized_form": "pathological stress reactivity",
+      "lemma": "pathological stress reactivity",
+      "tokens": [
+        {
+          "text": "pathological",
+          "start": 150,
+          "end": 162,
+          "lemma": "pathological",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "stress",
+          "start": 163,
+          "end": 169,
+          "lemma": "stress",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "reactivity",
+          "start": 170,
+          "end": 180,
+          "lemma": "reactivity",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 163,
+      "end": 180,
+      "surface_text": "stress reactivity",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.7919689416885376,
+      "normalized_form": "stress reactivity",
+      "lemma": "stress reactivity",
+      "tokens": [
+        {
+          "text": "stress",
+          "start": 163,
+          "end": 169,
+          "lemma": "stress",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "reactivity",
+          "start": 170,
+          "end": 180,
+          "lemma": "reactivity",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 198,
+      "end": 216,
+      "surface_text": "heterogeneous CD-1",
+      "ner_label_hint": "OBJECT",
+      "score": 0.7954766154289246,
+      "normalized_form": "heterogeneous CD-1",
+      "lemma": "heterogeneous CD-1",
+      "tokens": [
+        {
+          "text": "heterogeneous",
+          "start": 198,
+          "end": 211,
+          "lemma": "heterogeneous",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "CD-1",
+          "start": 212,
+          "end": 216,
+          "lemma": "CD-1",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 212,
+      "end": 216,
+      "surface_text": "CD-1",
+      "ner_label_hint": "OBJECT",
+      "score": 0.7545574903488159,
+      "normalized_form": "CD-1",
+      "lemma": "CD-1",
+      "tokens": [
+        {
+          "text": "CD-1",
+          "start": 212,
+          "end": 216,
+          "lemma": "CD-1",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 212,
+      "end": 235,
+      "surface_text": "CD-1 outbred population",
+      "ner_label_hint": "OBJECT",
+      "score": 0.5420590043067932,
+      "normalized_form": "CD-1 outbred population",
+      "lemma": "CD-1 outbred population",
+      "tokens": [
+        {
+          "text": "CD-1",
+          "start": 212,
+          "end": 216,
+          "lemma": "CD-1",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "outbred",
+          "start": 217,
+          "end": 224,
+          "lemma": "outbred",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "population",
+          "start": 225,
+          "end": 235,
+          "lemma": "population",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 237,
+      "end": 244,
+      "surface_text": "animals",
+      "ner_label_hint": "OBJECT",
+      "score": 0.6249231100082397,
+      "normalized_form": "animal",
+      "lemma": "animal",
+      "tokens": [
+        {
+          "text": "animals",
+          "start": 237,
+          "end": 244,
+          "lemma": "animal",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 237,
+          "end": 244,
+          "original": "animals",
+          "replacement": "animal",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 271,
+      "end": 295,
+      "surface_text": "anxiety-related behavior",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.8566237688064575,
+      "normalized_form": "anxiety-related behavior",
+      "lemma": "anxiety-related behavior",
+      "tokens": [
+        {
+          "text": "anxiety",
+          "start": 271,
+          "end": 278,
+          "lemma": "anxiety",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "-",
+          "start": 278,
+          "end": 279,
+          "lemma": "-",
+          "pos": "PUNCT",
+          "tag": "HYPH",
+          "morph": {
+            "PunctType": "Dash"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "related",
+          "start": 279,
+          "end": 286,
+          "lemma": "relate",
+          "pos": "VERB",
+          "tag": "VBN",
+          "morph": {
+            "Aspect": "Perf",
+            "Tense": "Past",
+            "VerbForm": "Part"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "behavior",
+          "start": 287,
+          "end": 295,
+          "lemma": "behavior",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 312,
+      "end": 329,
+      "surface_text": "stress reactivity",
+      "ner_label_hint": "ACTOR",
+      "score": 0.5972321629524231,
+      "normalized_form": "stress reactivity",
+      "lemma": "stress reactivity",
+      "tokens": [
+        {
+          "text": "stress",
+          "start": 312,
+          "end": 318,
+          "lemma": "stress",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "reactivity",
+          "start": 319,
+          "end": 329,
+          "lemma": "reactivity",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 312,
+      "end": 329,
+      "surface_text": "stress reactivity",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.8644358515739441,
+      "normalized_form": "stress reactivity",
+      "lemma": "stress reactivity",
+      "tokens": [
+        {
+          "text": "stress",
+          "start": 312,
+          "end": 318,
+          "lemma": "stress",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "reactivity",
+          "start": 319,
+          "end": 329,
+          "lemma": "reactivity",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 364,
+      "end": 383,
+      "surface_text": "inbreeding protocol",
+      "ner_label_hint": "METHOD",
+      "score": 0.7894556522369385,
+      "normalized_form": "inbreeding protocol",
+      "lemma": "inbreeding protocol",
+      "tokens": [
+        {
+          "text": "inbreeding",
+          "start": 364,
+          "end": 374,
+          "lemma": "inbreede",
+          "pos": "VERB",
+          "tag": "VBG",
+          "morph": {
+            "Aspect": "Prog",
+            "Tense": "Pres",
+            "VerbForm": "Part"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "protocol",
+          "start": 375,
+          "end": 383,
+          "lemma": "protocol",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 390,
+      "end": 396,
+      "surface_text": "models",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9388141632080078,
+      "normalized_form": "model",
+      "lemma": "model",
+      "tokens": [
+        {
+          "text": "models",
+          "start": 390,
+          "end": 396,
+          "lemma": "model",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 390,
+          "end": 396,
+          "original": "models",
+          "replacement": "model",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 449,
+      "end": 459,
+      "surface_text": "behavioral",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.9932398796081543,
+      "normalized_form": "behavioral",
+      "lemma": "behavioral",
+      "tokens": [
+        {
+          "text": "behavioral",
+          "start": 449,
+          "end": 459,
+          "lemma": "behavioral",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 449,
+      "end": 459,
+      "surface_text": "behavioral",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.6443138718605042,
+      "normalized_form": "behavioral",
+      "lemma": "behavioral",
+      "tokens": [
+        {
+          "text": "behavioral",
+          "start": 449,
+          "end": 459,
+          "lemma": "behavioral",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 461,
+      "end": 475,
+      "surface_text": "neuroendocrine",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.9970493316650391,
+      "normalized_form": "neuroendocrine",
+      "lemma": "neuroendocrine",
+      "tokens": [
+        {
+          "text": "neuroendocrine",
+          "start": 461,
+          "end": 475,
+          "lemma": "neuroendocrine",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 461,
+      "end": 475,
+      "surface_text": "neuroendocrine",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.6713893413543701,
+      "normalized_form": "neuroendocrine",
+      "lemma": "neuroendocrine",
+      "tokens": [
+        {
+          "text": "neuroendocrine",
+          "start": 461,
+          "end": 475,
+          "lemma": "neuroendocrine",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 481,
+      "end": 488,
+      "surface_text": "genetic",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.9764150381088257,
+      "normalized_form": "genetic",
+      "lemma": "genetic",
+      "tokens": [
+        {
+          "text": "genetic",
+          "start": 481,
+          "end": 488,
+          "lemma": "genetic",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 481,
+      "end": 488,
+      "surface_text": "genetic",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.5160964131355286,
+      "normalized_form": "genetic",
+      "lemma": "genetic",
+      "tokens": [
+        {
+          "text": "genetic",
+          "start": 481,
+          "end": 488,
+          "lemma": "genetic",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 481,
+      "end": 497,
+      "surface_text": "genetic features",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.5991865992546082,
+      "normalized_form": "genetic feature",
+      "lemma": "genetic feature",
+      "tokens": [
+        {
+          "text": "genetic",
+          "start": 481,
+          "end": 488,
+          "lemma": "genetic",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "features",
+          "start": 489,
+          "end": 497,
+          "lemma": "feature",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 489,
+          "end": 497,
+          "original": "features",
+          "replacement": "feature",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 627,
+      "end": 641,
+      "surface_text": "endophenotypes",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.9562983512878418,
+      "normalized_form": "endophenotype",
+      "lemma": "endophenotype",
+      "tokens": [
+        {
+          "text": "endophenotypes",
+          "start": 627,
+          "end": 641,
+          "lemma": "endophenotype",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 627,
+          "end": 641,
+          "original": "endophenotypes",
+          "replacement": "endophenotype",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 651,
+      "end": 658,
+      "surface_text": "animals",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9612077474594116,
+      "normalized_form": "animal",
+      "lemma": "animal",
+      "tokens": [
+        {
+          "text": "animals",
+          "start": 651,
+          "end": 658,
+          "lemma": "animal",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 651,
+          "end": 658,
+          "original": "animals",
+          "replacement": "animal",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 660,
+      "end": 669,
+      "surface_text": "Two array",
+      "ner_label_hint": "OBJECT",
+      "score": 0.43719571828842163,
+      "normalized_form": "Two array",
+      "lemma": "Two array",
+      "tokens": [
+        {
+          "text": "Two",
+          "start": 660,
+          "end": 663,
+          "lemma": "Two",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "array",
+          "start": 664,
+          "end": 669,
+          "lemma": "array",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 664,
+      "end": 669,
+      "surface_text": "array",
+      "ner_label_hint": "OBJECT",
+      "score": 0.40277886390686035,
+      "normalized_form": "array",
+      "lemma": "array",
+      "tokens": [
+        {
+          "text": "array",
+          "start": 664,
+          "end": 669,
+          "lemma": "array",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 664,
+      "end": 680,
+      "surface_text": "array approaches",
+      "ner_label_hint": "METHOD",
+      "score": 0.6277713179588318,
+      "normalized_form": "array approach",
+      "lemma": "array approach",
+      "tokens": [
+        {
+          "text": "array",
+          "start": 664,
+          "end": 669,
+          "lemma": "array",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "approaches",
+          "start": 670,
+          "end": 680,
+          "lemma": "approach",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 670,
+          "end": 680,
+          "original": "approaches",
+          "replacement": "approach",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 712,
+      "end": 716,
+      "surface_text": "CNVs",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.9612321853637695,
+      "normalized_form": "CNVs",
+      "lemma": "CNVs",
+      "tokens": [
+        {
+          "text": "CNVs",
+          "start": 712,
+          "end": 716,
+          "lemma": "CNVs",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [
+        {
+          "short_form": "CNVs",
+          "long_form": "copy number variants",
+          "short_start": 591,
+          "short_end": 595,
+          "long_start": 569,
+          "long_end": 589,
+          "scope": "document_candidate_only"
+        }
+      ],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 712,
+      "end": 716,
+      "surface_text": "CNVs",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.8728818297386169,
+      "normalized_form": "CNVs",
+      "lemma": "CNVs",
+      "tokens": [
+        {
+          "text": "CNVs",
+          "start": 712,
+          "end": 716,
+          "lemma": "CNVs",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [
+        {
+          "short_form": "CNVs",
+          "long_form": "copy number variants",
+          "short_start": 591,
+          "short_end": 595,
+          "long_start": 569,
+          "long_end": 589,
+          "scope": "document_candidate_only"
+        }
+      ],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 768,
+      "end": 773,
+      "surface_text": "mouse",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9972134232521057,
+      "normalized_form": "mouse",
+      "lemma": "mouse",
+      "tokens": [
+        {
+          "text": "mouse",
+          "start": 768,
+          "end": 773,
+          "lemma": "mouse",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 768,
+      "end": 779,
+      "surface_text": "mouse lines",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9723889827728271,
+      "normalized_form": "mouse line",
+      "lemma": "mouse line",
+      "tokens": [
+        {
+          "text": "mouse",
+          "start": 768,
+          "end": 773,
+          "lemma": "mouse",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "lines",
+          "start": 774,
+          "end": 779,
+          "lemma": "line",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 774,
+          "end": 779,
+          "original": "lines",
+          "replacement": "line",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 781,
+      "end": 785,
+      "surface_text": "aCGH",
+      "ner_label_hint": "ACTOR",
+      "score": 0.9484260082244873,
+      "normalized_form": "aCGH",
+      "lemma": "aCGH",
+      "tokens": [
+        {
+          "text": "aCGH",
+          "start": 781,
+          "end": 785,
+          "lemma": "aCGH",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 787,
+      "end": 796,
+      "surface_text": "NimbleGen",
+      "ner_label_hint": "OBJECT",
+      "score": 0.5903372168540955,
+      "normalized_form": "NimbleGen",
+      "lemma": "NimbleGen",
+      "tokens": [
+        {
+          "text": "NimbleGen",
+          "start": 787,
+          "end": 796,
+          "lemma": "NimbleGen",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 818,
+      "end": 832,
+      "surface_text": "genomic probes",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9575923681259155,
+      "normalized_form": "genomic probe",
+      "lemma": "genomic probe",
+      "tokens": [
+        {
+          "text": "genomic",
+          "start": 818,
+          "end": 825,
+          "lemma": "genomic",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "probes",
+          "start": 826,
+          "end": 832,
+          "lemma": "probe",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 826,
+          "end": 832,
+          "original": "probes",
+          "replacement": "probe",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 834,
+      "end": 854,
+      "surface_text": "Jackson Laboratories",
+      "ner_label_hint": "ACTOR",
+      "score": 0.9988288283348083,
+      "normalized_form": "Jackson Laboratories",
+      "lemma": "Jackson Laboratories",
+      "tokens": [
+        {
+          "text": "Jackson",
+          "start": 834,
+          "end": 841,
+          "lemma": "Jackson",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Laboratories",
+          "start": 842,
+          "end": 854,
+          "lemma": "Laboratories",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 899,
+      "end": 902,
+      "surface_text": "CNV",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.5560327172279358,
+      "normalized_form": "CNV",
+      "lemma": "CNV",
+      "tokens": [
+        {
+          "text": "CNV",
+          "start": 899,
+          "end": 902,
+          "lemma": "CNV",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 1019,
+      "end": 1031,
+      "surface_text": "copy numbers",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.9951308965682983,
+      "normalized_form": "copy number",
+      "lemma": "copy number",
+      "tokens": [
+        {
+          "text": "copy",
+          "start": 1019,
+          "end": 1023,
+          "lemma": "copy",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "numbers",
+          "start": 1024,
+          "end": 1031,
+          "lemma": "number",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1024,
+          "end": 1031,
+          "original": "numbers",
+          "replacement": "number",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 1048,
+      "end": 1063,
+      "surface_text": "gene expression",
+      "ner_label_hint": "PROCESS",
+      "score": 0.9998552799224854,
+      "normalized_form": "gene expression",
+      "lemma": "gene expression",
+      "tokens": [
+        {
+          "text": "gene",
+          "start": 1048,
+          "end": 1052,
+          "lemma": "gene",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "expression",
+          "start": 1053,
+          "end": 1063,
+          "lemma": "expression",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 1094,
+      "end": 1105,
+      "surface_text": "gene dosage",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.9886957406997681,
+      "normalized_form": "gene dosage",
+      "lemma": "gene dosage",
+      "tokens": [
+        {
+          "text": "gene",
+          "start": 1094,
+          "end": 1098,
+          "lemma": "gene",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "dosage",
+          "start": 1099,
+          "end": 1105,
+          "lemma": "dosage",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 1110,
+      "end": 1125,
+      "surface_text": "gene expression",
+      "ner_label_hint": "PROCESS",
+      "score": 0.9997783303260803,
+      "normalized_form": "gene expression",
+      "lemma": "gene expression",
+      "tokens": [
+        {
+          "text": "gene",
+          "start": 1110,
+          "end": 1114,
+          "lemma": "gene",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "expression",
+          "start": 1115,
+          "end": 1125,
+          "lemma": "expression",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 1172,
+      "end": 1179,
+      "surface_text": "genomic",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.9271418452262878,
+      "normalized_form": "genomic",
+      "lemma": "genomic",
+      "tokens": [
+        {
+          "text": "genomic",
+          "start": 1172,
+          "end": 1179,
+          "lemma": "genomic",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 1172,
+      "end": 1179,
+      "surface_text": "genomic",
+      "ner_label_hint": "OBJECT",
+      "score": 0.7050696015357971,
+      "normalized_form": "genomic",
+      "lemma": "genomic",
+      "tokens": [
+        {
+          "text": "genomic",
+          "start": 1172,
+          "end": 1179,
+          "lemma": "genomic",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 1172,
+      "end": 1184,
+      "surface_text": "genomic loci",
+      "ner_label_hint": "OBJECT",
+      "score": 0.999271810054779,
+      "normalized_form": "genomic loci",
+      "lemma": "genomic loci",
+      "tokens": [
+        {
+          "text": "genomic",
+          "start": 1172,
+          "end": 1179,
+          "lemma": "genomic",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "loci",
+          "start": 1180,
+          "end": 1184,
+          "lemma": "loci",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 1209,
+      "end": 1228,
+      "surface_text": "association studies",
+      "ner_label_hint": "METHOD",
+      "score": 0.9318152666091919,
+      "normalized_form": "association study",
+      "lemma": "association study",
+      "tokens": [
+        {
+          "text": "association",
+          "start": 1209,
+          "end": 1220,
+          "lemma": "association",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "studies",
+          "start": 1221,
+          "end": 1228,
+          "lemma": "study",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1221,
+          "end": 1228,
+          "original": "studies",
+          "replacement": "study",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 1291,
+      "end": 1305,
+      "surface_text": "endophenotypes",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.4265437722206116,
+      "normalized_form": "endophenotype",
+      "lemma": "endophenotype",
+      "tokens": [
+        {
+          "text": "endophenotypes",
+          "start": 1291,
+          "end": 1305,
+          "lemma": "endophenotype",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1291,
+          "end": 1305,
+          "original": "endophenotypes",
+          "replacement": "endophenotype",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 1291,
+      "end": 1305,
+      "surface_text": "endophenotypes",
+      "ner_label_hint": "MECHANISM",
+      "score": 0.629828691482544,
+      "normalized_form": "endophenotype",
+      "lemma": "endophenotype",
+      "tokens": [
+        {
+          "text": "endophenotypes",
+          "start": 1291,
+          "end": 1305,
+          "lemma": "endophenotype",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1291,
+          "end": 1305,
+          "original": "endophenotypes",
+          "replacement": "endophenotype",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 1328,
+      "end": 1331,
+      "surface_text": "CNV",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.9864620566368103,
+      "normalized_form": "CNV",
+      "lemma": "CNV",
+      "tokens": [
+        {
+          "text": "CNV",
+          "start": 1328,
+          "end": 1331,
+          "lemma": "CNV",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 1328,
+      "end": 1341,
+      "surface_text": "CNV data sets",
+      "ner_label_hint": "DATA_RESOURCE",
+      "score": 0.9975564479827881,
+      "normalized_form": "CNV data set",
+      "lemma": "CNV data set",
+      "tokens": [
+        {
+          "text": "CNV",
+          "start": 1328,
+          "end": 1331,
+          "lemma": "CNV",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "data",
+          "start": 1332,
+          "end": 1336,
+          "lemma": "data",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "sets",
+          "start": 1337,
+          "end": 1341,
+          "lemma": "set",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1337,
+          "end": 1341,
+          "original": "sets",
+          "replacement": "set",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 1389,
+      "end": 1393,
+      "surface_text": "CNVs",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.6395812034606934,
+      "normalized_form": "CNVs",
+      "lemma": "CNVs",
+      "tokens": [
+        {
+          "text": "CNVs",
+          "start": 1389,
+          "end": 1393,
+          "lemma": "CNVs",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [
+        {
+          "short_form": "CNVs",
+          "long_form": "copy number variants",
+          "short_start": 591,
+          "short_end": 595,
+          "long_start": 569,
+          "long_end": 589,
+          "scope": "document_candidate_only"
+        }
+      ],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2076293586",
+      "start": 1397,
+      "end": 1412,
+      "surface_text": "gene expression",
+      "ner_label_hint": "PROCESS",
+      "score": 0.9993159770965576,
+      "normalized_form": "gene expression",
+      "lemma": "gene expression",
+      "tokens": [
+        {
+          "text": "gene",
+          "start": 1397,
+          "end": 1401,
+          "lemma": "gene",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "expression",
+          "start": 1402,
+          "end": 1412,
+          "lemma": "expression",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    }
+  ],
+  "inference_seconds": 31.279912400292233,
+  "windows": [
+    [
+      0,
+      216,
+      [
+        160,
+        407,
+        510
+      ]
+    ],
+    [
+      136,
+      195,
+      [
+        133,
+        380,
+        483
+      ]
+    ],
+    [
+      163,
+      195,
+      [
+        130,
+        377,
+        480
+      ]
+    ],
+    [
+      170,
+      195,
+      [
+        129,
+        376,
+        479
+      ]
+    ],
+    [
+      182,
+      389,
+      [
+        162,
+        409,
+        512
+      ]
+    ],
+    [
+      364,
+      396,
+      [
+        131,
+        378,
+        481
+      ]
+    ],
+    [
+      364,
+      401,
+      [
+        132,
+        379,
+        482
+      ]
+    ],
+    [
+      357,
+      448,
+      [
+        139,
+        386,
+        489
+      ]
+    ],
+    [
+      309,
+      525,
+      [
+        160,
+        407,
+        510
+      ]
+    ],
+    [
+      449,
+      504,
+      [
+        135,
+        382,
+        485
+      ]
+    ],
+    [
+      481,
+      669,
+      [
+        162,
+        409,
+        512
+      ]
+    ],
+    [
+      645,
+      685,
+      [
+        132,
+        379,
+        482
+      ]
+    ],
+    [
+      627,
+      779,
+      [
+        154,
+        401,
+        504
+      ]
+    ],
+    [
+      623,
+      680,
+      [
+        136,
+        383,
+        486
+      ]
+    ],
+    [
+      642,
+      669,
+      [
+        131,
+        378,
+        481
+      ]
+    ],
+    [
+      645,
+      669,
+      [
+        130,
+        377,
+        480
+      ]
+    ],
+    [
+      651,
+      669,
+      [
+        129,
+        376,
+        479
+      ]
+    ],
+    [
+      660,
+      773,
+      [
+        146,
+        393,
+        496
+      ]
+    ],
+    [
+      750,
+      856,
+      [
+        148,
+        395,
+        498
+      ]
+    ],
+    [
+      834,
+      859,
+      [
+        130,
+        377,
+        480
+      ]
+    ],
+    [
+      834,
+      866,
+      [
+        132,
+        379,
+        482
+      ]
+    ],
+    [
+      834,
+      880,
+      [
+        134,
+        381,
+        484
+      ]
+    ],
+    [
+      818,
+      953,
+      [
+        153,
+        400,
+        503
+      ]
+    ],
+    [
+      940,
+      996,
+      [
+        140,
+        387,
+        490
+      ]
+    ],
+    [
+      903,
+      1093,
+      [
+        162,
+        409,
+        512
+      ]
+    ],
+    [
+      1037,
+      1196,
+      [
+        154,
+        401,
+        504
+      ]
+    ],
+    [
+      1136,
+      1179,
+      [
+        134,
+        381,
+        484
+      ]
+    ],
+    [
+      1148,
+      1331,
+      [
+        160,
+        407,
+        510
+      ]
+    ],
+    [
+      1172,
+      1361,
+      [
+        161,
+        408,
+        511
+      ]
+    ],
+    [
+      1328,
+      1436,
+      [
+        148,
+        395,
+        498
+      ]
+    ]
+  ],
+  "synthetic_punctuation_spans_dropped": 0
+}

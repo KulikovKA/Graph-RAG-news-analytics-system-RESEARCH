@@ -1,0 +1,2662 @@
+{
+  "config_hash": "10ac92188386a2e74f2c7a63b76130baf40893984415a48f4f034cc9ade1b007",
+  "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+  "mentions": [
+    {
+      "document_id": "W2096307598",
+      "start": 26,
+      "end": 44,
+      "surface_text": "radio observations",
+      "ner_label_hint": "PROCESS",
+      "score": 0.9824438691139221,
+      "normalized_form": "radio observation",
+      "lemma": "radio observation",
+      "tokens": [
+        {
+          "text": "radio",
+          "start": 26,
+          "end": 31,
+          "lemma": "radio",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "observations",
+          "start": 32,
+          "end": 44,
+          "lemma": "observation",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 32,
+          "end": 44,
+          "original": "observations",
+          "replacement": "observation",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 52,
+      "end": 56,
+      "surface_text": "Moon",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9946094751358032,
+      "normalized_form": "Moon",
+      "lemma": "Moon",
+      "tokens": [
+        {
+          "text": "Moon",
+          "start": 52,
+          "end": 56,
+          "lemma": "Moon",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 76,
+      "end": 95,
+      "surface_text": "synthesis telescope",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9256204962730408,
+      "normalized_form": "synthesis telescope",
+      "lemma": "synthesis telescope",
+      "tokens": [
+        {
+          "text": "synthesis",
+          "start": 76,
+          "end": 85,
+          "lemma": "synthesis",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "telescope",
+          "start": 86,
+          "end": 95,
+          "lemma": "telescope",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 103,
+      "end": 111,
+      "surface_text": "Dominion",
+      "ner_label_hint": "ACTOR",
+      "score": 0.5486233830451965,
+      "normalized_form": "Dominion",
+      "lemma": "Dominion",
+      "tokens": [
+        {
+          "text": "Dominion",
+          "start": 103,
+          "end": 111,
+          "lemma": "Dominion",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 103,
+      "end": 143,
+      "surface_text": "Dominion Radio Astrophysical Observatory",
+      "ner_label_hint": "ACTOR",
+      "score": 0.8950947523117065,
+      "normalized_form": "Dominion Radio Astrophysical Observatory",
+      "lemma": "Dominion Radio Astrophysical Observatory",
+      "tokens": [
+        {
+          "text": "Dominion",
+          "start": 103,
+          "end": 111,
+          "lemma": "Dominion",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Radio",
+          "start": 112,
+          "end": 117,
+          "lemma": "Radio",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Astrophysical",
+          "start": 118,
+          "end": 131,
+          "lemma": "Astrophysical",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Observatory",
+          "start": 132,
+          "end": 143,
+          "lemma": "Observatory",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 118,
+      "end": 163,
+      "surface_text": "Astrophysical Observatory Synthesis Telescope",
+      "ner_label_hint": "OBJECT",
+      "score": 0.6792381405830383,
+      "normalized_form": "Astrophysical Observatory Synthesis Telescope",
+      "lemma": "Astrophysical Observatory Synthesis Telescope",
+      "tokens": [
+        {
+          "text": "Astrophysical",
+          "start": 118,
+          "end": 131,
+          "lemma": "Astrophysical",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Observatory",
+          "start": 132,
+          "end": 143,
+          "lemma": "Observatory",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Synthesis",
+          "start": 144,
+          "end": 153,
+          "lemma": "Synthesis",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Telescope",
+          "start": 154,
+          "end": 163,
+          "lemma": "Telescope",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 144,
+      "end": 163,
+      "surface_text": "Synthesis Telescope",
+      "ner_label_hint": "OBJECT",
+      "score": 0.8713619709014893,
+      "normalized_form": "Synthesis Telescope",
+      "lemma": "Synthesis Telescope",
+      "tokens": [
+        {
+          "text": "Synthesis",
+          "start": 144,
+          "end": 153,
+          "lemma": "Synthesis",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "Telescope",
+          "start": 154,
+          "end": 163,
+          "lemma": "Telescope",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 169,
+      "end": 179,
+      "surface_text": "resolution",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.9982702732086182,
+      "normalized_form": "resolution",
+      "lemma": "resolution",
+      "tokens": [
+        {
+          "text": "resolution",
+          "start": 169,
+          "end": 179,
+          "lemma": "resolution",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 184,
+      "end": 195,
+      "surface_text": "temperature",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.9978814721107483,
+      "normalized_form": "temperature",
+      "lemma": "temperature",
+      "tokens": [
+        {
+          "text": "temperature",
+          "start": 184,
+          "end": 195,
+          "lemma": "temperature",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 184,
+      "end": 207,
+      "surface_text": "temperature sensitivity",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.991439700126648,
+      "normalized_form": "temperature sensitivity",
+      "lemma": "temperature sensitivity",
+      "tokens": [
+        {
+          "text": "temperature",
+          "start": 184,
+          "end": 195,
+          "lemma": "temperature",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "sensitivity",
+          "start": 196,
+          "end": 207,
+          "lemma": "sensitivity",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 299,
+      "end": 304,
+      "surface_text": "lunar",
+      "ner_label_hint": "OBJECT",
+      "score": 0.6596367359161377,
+      "normalized_form": "lunar",
+      "lemma": "lunar",
+      "tokens": [
+        {
+          "text": "lunar",
+          "start": 299,
+          "end": 304,
+          "lemma": "lunar",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 299,
+      "end": 327,
+      "surface_text": "lunar brightness temperature",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.6999800205230713,
+      "normalized_form": "lunar brightness temperature",
+      "lemma": "lunar brightness temperature",
+      "tokens": [
+        {
+          "text": "lunar",
+          "start": 299,
+          "end": 304,
+          "lemma": "lunar",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "brightness",
+          "start": 305,
+          "end": 315,
+          "lemma": "brightness",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "temperature",
+          "start": 316,
+          "end": 327,
+          "lemma": "temperature",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 299,
+      "end": 327,
+      "surface_text": "lunar brightness temperature",
+      "ner_label_hint": "OBJECT",
+      "score": 0.42273423075675964,
+      "normalized_form": "lunar brightness temperature",
+      "lemma": "lunar brightness temperature",
+      "tokens": [
+        {
+          "text": "lunar",
+          "start": 299,
+          "end": 304,
+          "lemma": "lunar",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "brightness",
+          "start": 305,
+          "end": 315,
+          "lemma": "brightness",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "temperature",
+          "start": 316,
+          "end": 327,
+          "lemma": "temperature",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 305,
+      "end": 327,
+      "surface_text": "brightness temperature",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.9383883476257324,
+      "normalized_form": "brightness temperature",
+      "lemma": "brightness temperature",
+      "tokens": [
+        {
+          "text": "brightness",
+          "start": 305,
+          "end": 315,
+          "lemma": "brightness",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "temperature",
+          "start": 316,
+          "end": 327,
+          "lemma": "temperature",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 352,
+      "end": 356,
+      "surface_text": "disk",
+      "ner_label_hint": "OBJECT",
+      "score": 0.7886996865272522,
+      "normalized_form": "disk",
+      "lemma": "disk",
+      "tokens": [
+        {
+          "text": "disk",
+          "start": 352,
+          "end": 356,
+          "lemma": "disk",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 390,
+      "end": 412,
+      "surface_text": "brightness temperature",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.9757429957389832,
+      "normalized_form": "brightness temperature",
+      "lemma": "brightness temperature",
+      "tokens": [
+        {
+          "text": "brightness",
+          "start": 390,
+          "end": 400,
+          "lemma": "brightness",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "temperature",
+          "start": 401,
+          "end": 412,
+          "lemma": "temperature",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 421,
+      "end": 435,
+      "surface_text": "four quadrants",
+      "ner_label_hint": "OBJECT",
+      "score": 0.7609367370605469,
+      "normalized_form": "four quadrant",
+      "lemma": "four quadrant",
+      "tokens": [
+        {
+          "text": "four",
+          "start": 421,
+          "end": 425,
+          "lemma": "four",
+          "pos": "NUM",
+          "tag": "CD",
+          "morph": {
+            "NumType": "Card"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "quadrants",
+          "start": 426,
+          "end": 435,
+          "lemma": "quadrant",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 426,
+          "end": 435,
+          "original": "quadrants",
+          "replacement": "quadrant",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 426,
+      "end": 435,
+      "surface_text": "quadrants",
+      "ner_label_hint": "OBJECT",
+      "score": 0.6449063420295715,
+      "normalized_form": "quadrant",
+      "lemma": "quadrant",
+      "tokens": [
+        {
+          "text": "quadrants",
+          "start": 426,
+          "end": 435,
+          "lemma": "quadrant",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 426,
+          "end": 435,
+          "original": "quadrants",
+          "replacement": "quadrant",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 461,
+      "end": 463,
+      "surface_text": "NW",
+      "ner_label_hint": "OBJECT",
+      "score": 0.4210156500339508,
+      "normalized_form": "NW",
+      "lemma": "NW",
+      "tokens": [
+        {
+          "text": "NW",
+          "start": 461,
+          "end": 463,
+          "lemma": "NW",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 474,
+      "end": 476,
+      "surface_text": "SW",
+      "ner_label_hint": "OBJECT",
+      "score": 0.6669636964797974,
+      "normalized_form": "SW",
+      "lemma": "SW",
+      "tokens": [
+        {
+          "text": "SW",
+          "start": 474,
+          "end": 476,
+          "lemma": "SW",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 490,
+      "end": 492,
+      "surface_text": "SE",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.8759446144104004,
+      "normalized_form": "SE",
+      "lemma": "SE",
+      "tokens": [
+        {
+          "text": "SE",
+          "start": 490,
+          "end": 492,
+          "lemma": "SE",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 490,
+      "end": 492,
+      "surface_text": "SE",
+      "ner_label_hint": "OBJECT",
+      "score": 0.6374363899230957,
+      "normalized_form": "SE",
+      "lemma": "SE",
+      "tokens": [
+        {
+          "text": "SE",
+          "start": 490,
+          "end": 492,
+          "lemma": "SE",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 525,
+      "end": 536,
+      "surface_text": "temperature",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.775969922542572,
+      "normalized_form": "temperature",
+      "lemma": "temperature",
+      "tokens": [
+        {
+          "text": "temperature",
+          "start": 525,
+          "end": 536,
+          "lemma": "temperature",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 525,
+      "end": 536,
+      "surface_text": "temperature",
+      "ner_label_hint": "CONDITION",
+      "score": 0.6089116334915161,
+      "normalized_form": "temperature",
+      "lemma": "temperature",
+      "tokens": [
+        {
+          "text": "temperature",
+          "start": 525,
+          "end": 536,
+          "lemma": "temperature",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 567,
+      "end": 571,
+      "surface_text": "Moon",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9995490908622742,
+      "normalized_form": "Moon",
+      "lemma": "Moon",
+      "tokens": [
+        {
+          "text": "Moon",
+          "start": 567,
+          "end": 571,
+          "lemma": "Moon",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 604,
+      "end": 614,
+      "surface_text": "brightness",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.9896588921546936,
+      "normalized_form": "brightness",
+      "lemma": "brightness",
+      "tokens": [
+        {
+          "text": "brightness",
+          "start": 604,
+          "end": 614,
+          "lemma": "brightness",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 604,
+      "end": 626,
+      "surface_text": "brightness temperature",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.8763876557350159,
+      "normalized_form": "brightness temperature",
+      "lemma": "brightness temperature",
+      "tokens": [
+        {
+          "text": "brightness",
+          "start": 604,
+          "end": 614,
+          "lemma": "brightness",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "temperature",
+          "start": 615,
+          "end": 626,
+          "lemma": "temperature",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 670,
+      "end": 683,
+      "surface_text": "lunar equator",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9659016132354736,
+      "normalized_form": "lunar equator",
+      "lemma": "lunar equator",
+      "tokens": [
+        {
+          "text": "lunar",
+          "start": 670,
+          "end": 675,
+          "lemma": "lunar",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "equator",
+          "start": 676,
+          "end": 683,
+          "lemma": "equator",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 702,
+      "end": 707,
+      "surface_text": "total",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.5409352779388428,
+      "normalized_form": "total",
+      "lemma": "total",
+      "tokens": [
+        {
+          "text": "total",
+          "start": 702,
+          "end": 707,
+          "lemma": "total",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 702,
+      "end": 719,
+      "surface_text": "total uncertainty",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.4171394407749176,
+      "normalized_form": "total uncertainty",
+      "lemma": "total uncertainty",
+      "tokens": [
+        {
+          "text": "total",
+          "start": 702,
+          "end": 707,
+          "lemma": "total",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "uncertainty",
+          "start": 708,
+          "end": 719,
+          "lemma": "uncertainty",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 708,
+      "end": 719,
+      "surface_text": "uncertainty",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.49608054757118225,
+      "normalized_form": "uncertainty",
+      "lemma": "uncertainty",
+      "tokens": [
+        {
+          "text": "uncertainty",
+          "start": 708,
+          "end": 719,
+          "lemma": "uncertainty",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 708,
+      "end": 719,
+      "surface_text": "uncertainty",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.6218633651733398,
+      "normalized_form": "uncertainty",
+      "lemma": "uncertainty",
+      "tokens": [
+        {
+          "text": "uncertainty",
+          "start": 708,
+          "end": 719,
+          "lemma": "uncertainty",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 743,
+      "end": 760,
+      "surface_text": "absolute accuracy",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.7766222953796387,
+      "normalized_form": "absolute accuracy",
+      "lemma": "absolute accuracy",
+      "tokens": [
+        {
+          "text": "absolute",
+          "start": 743,
+          "end": 751,
+          "lemma": "absolute",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "accuracy",
+          "start": 752,
+          "end": 760,
+          "lemma": "accuracy",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 782,
+      "end": 801,
+      "surface_text": "primary calibrators",
+      "ner_label_hint": "OBJECT",
+      "score": 0.6371106505393982,
+      "normalized_form": "primary calibrator",
+      "lemma": "primary calibrator",
+      "tokens": [
+        {
+          "text": "primary",
+          "start": 782,
+          "end": 789,
+          "lemma": "primary",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "calibrators",
+          "start": 790,
+          "end": 801,
+          "lemma": "calibrator",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 790,
+          "end": 801,
+          "original": "calibrators",
+          "replacement": "calibrator",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 811,
+      "end": 839,
+      "surface_text": "total degree of polarization",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.9228293895721436,
+      "normalized_form": "total degree of polarization",
+      "lemma": "total degree of polarization",
+      "tokens": [
+        {
+          "text": "total",
+          "start": 811,
+          "end": 816,
+          "lemma": "total",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "degree",
+          "start": 817,
+          "end": 823,
+          "lemma": "degree",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "of",
+          "start": 824,
+          "end": 826,
+          "lemma": "of",
+          "pos": "ADP",
+          "tag": "IN",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "polarization",
+          "start": 827,
+          "end": 839,
+          "lemma": "polarization",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 817,
+      "end": 823,
+      "surface_text": "degree",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.9902874231338501,
+      "normalized_form": "degree",
+      "lemma": "degree",
+      "tokens": [
+        {
+          "text": "degree",
+          "start": 817,
+          "end": 823,
+          "lemma": "degree",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 827,
+      "end": 839,
+      "surface_text": "polarization",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.44572341442108154,
+      "normalized_form": "polarization",
+      "lemma": "polarization",
+      "tokens": [
+        {
+          "text": "polarization",
+          "start": 827,
+          "end": 839,
+          "lemma": "polarization",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 827,
+      "end": 839,
+      "surface_text": "polarization",
+      "ner_label_hint": "OBJECT",
+      "score": 0.8259767889976501,
+      "normalized_form": "polarization",
+      "lemma": "polarization",
+      "tokens": [
+        {
+          "text": "polarization",
+          "start": 827,
+          "end": 839,
+          "lemma": "polarization",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 858,
+      "end": 870,
+      "surface_text": "polarization",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.5662981867790222,
+      "normalized_form": "polarization",
+      "lemma": "polarization",
+      "tokens": [
+        {
+          "text": "polarization",
+          "start": 858,
+          "end": 870,
+          "lemma": "polarization",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 858,
+      "end": 870,
+      "surface_text": "polarization",
+      "ner_label_hint": "CONCEPT",
+      "score": 0.7756235599517822,
+      "normalized_form": "polarization",
+      "lemma": "polarization",
+      "tokens": [
+        {
+          "text": "polarization",
+          "start": 858,
+          "end": 870,
+          "lemma": "polarization",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 858,
+      "end": 870,
+      "surface_text": "polarization",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9584944248199463,
+      "normalized_form": "polarization",
+      "lemma": "polarization",
+      "tokens": [
+        {
+          "text": "polarization",
+          "start": 858,
+          "end": 870,
+          "lemma": "polarization",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 858,
+      "end": 880,
+      "surface_text": "polarization intensity",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.99687260389328,
+      "normalized_form": "polarization intensity",
+      "lemma": "polarization intensity",
+      "tokens": [
+        {
+          "text": "polarization",
+          "start": 858,
+          "end": 870,
+          "lemma": "polarization",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "intensity",
+          "start": 871,
+          "end": 880,
+          "lemma": "intensity",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 885,
+      "end": 891,
+      "surface_text": "degree",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.9902735352516174,
+      "normalized_form": "degree",
+      "lemma": "degree",
+      "tokens": [
+        {
+          "text": "degree",
+          "start": 885,
+          "end": 891,
+          "lemma": "degree",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 885,
+      "end": 894,
+      "surface_text": "degree of",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.4593140184879303,
+      "normalized_form": "degree of",
+      "lemma": "degree of",
+      "tokens": [
+        {
+          "text": "degree",
+          "start": 885,
+          "end": 891,
+          "lemma": "degree",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "of",
+          "start": 892,
+          "end": 894,
+          "lemma": "of",
+          "pos": "ADP",
+          "tag": "IN",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 885,
+      "end": 907,
+      "surface_text": "degree of polarization",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.9933596253395081,
+      "normalized_form": "degree of polarization",
+      "lemma": "degree of polarization",
+      "tokens": [
+        {
+          "text": "degree",
+          "start": 885,
+          "end": 891,
+          "lemma": "degree",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "of",
+          "start": 892,
+          "end": 894,
+          "lemma": "of",
+          "pos": "ADP",
+          "tag": "IN",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "polarization",
+          "start": 895,
+          "end": 907,
+          "lemma": "polarization",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 926,
+      "end": 930,
+      "surface_text": "disk",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9848148822784424,
+      "normalized_form": "disk",
+      "lemma": "disk",
+      "tokens": [
+        {
+          "text": "disk",
+          "start": 926,
+          "end": 930,
+          "lemma": "disk",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 947,
+      "end": 951,
+      "surface_text": "limb",
+      "ner_label_hint": "OBJECT",
+      "score": 0.8248115181922913,
+      "normalized_form": "limb",
+      "lemma": "limb",
+      "tokens": [
+        {
+          "text": "limb",
+          "start": 947,
+          "end": 951,
+          "lemma": "limb",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 981,
+      "end": 987,
+      "surface_text": "degree",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.4903782308101654,
+      "normalized_form": "degree",
+      "lemma": "degree",
+      "tokens": [
+        {
+          "text": "degree",
+          "start": 981,
+          "end": 987,
+          "lemma": "degree",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 981,
+      "end": 990,
+      "surface_text": "degree of",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.6762466430664062,
+      "normalized_form": "degree of",
+      "lemma": "degree of",
+      "tokens": [
+        {
+          "text": "degree",
+          "start": 981,
+          "end": 987,
+          "lemma": "degree",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "of",
+          "start": 988,
+          "end": 990,
+          "lemma": "of",
+          "pos": "ADP",
+          "tag": "IN",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 981,
+      "end": 1003,
+      "surface_text": "degree of polarization",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.9925411939620972,
+      "normalized_form": "degree of polarization",
+      "lemma": "degree of polarization",
+      "tokens": [
+        {
+          "text": "degree",
+          "start": 981,
+          "end": 987,
+          "lemma": "degree",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "of",
+          "start": 988,
+          "end": 990,
+          "lemma": "of",
+          "pos": "ADP",
+          "tag": "IN",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "polarization",
+          "start": 991,
+          "end": 1003,
+          "lemma": "polarization",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 988,
+      "end": 1003,
+      "surface_text": "of polarization",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.3833036422729492,
+      "normalized_form": "of polarization",
+      "lemma": "of polarization",
+      "tokens": [
+        {
+          "text": "of",
+          "start": 988,
+          "end": 990,
+          "lemma": "of",
+          "pos": "ADP",
+          "tag": "IN",
+          "morph": {},
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "polarization",
+          "start": 991,
+          "end": 1003,
+          "lemma": "polarization",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 1014,
+      "end": 1018,
+      "surface_text": "limb",
+      "ner_label_hint": "OBJECT",
+      "score": 0.8842151165008545,
+      "normalized_form": "limb",
+      "lemma": "limb",
+      "tokens": [
+        {
+          "text": "limb",
+          "start": 1014,
+          "end": 1018,
+          "lemma": "limb",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 1043,
+      "end": 1051,
+      "surface_text": "new data",
+      "ner_label_hint": "DATA_RESOURCE",
+      "score": 0.9554492831230164,
+      "normalized_form": "new datum",
+      "lemma": "new datum",
+      "tokens": [
+        {
+          "text": "new",
+          "start": 1043,
+          "end": 1046,
+          "lemma": "new",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "data",
+          "start": 1047,
+          "end": 1051,
+          "lemma": "datum",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1047,
+          "end": 1051,
+          "original": "data",
+          "replacement": "datum",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 1047,
+      "end": 1051,
+      "surface_text": "data",
+      "ner_label_hint": "DATA_RESOURCE",
+      "score": 0.6555192470550537,
+      "normalized_form": "datum",
+      "lemma": "datum",
+      "tokens": [
+        {
+          "text": "data",
+          "start": 1047,
+          "end": 1051,
+          "lemma": "datum",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1047,
+          "end": 1051,
+          "original": "data",
+          "replacement": "datum",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 1088,
+      "end": 1096,
+      "surface_text": "regolith",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9965420365333557,
+      "normalized_form": "regolith",
+      "lemma": "regolith",
+      "tokens": [
+        {
+          "text": "regolith",
+          "start": 1088,
+          "end": 1096,
+          "lemma": "regolith",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 1106,
+      "end": 1125,
+      "surface_text": "dielectric constant",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.9991723299026489,
+      "normalized_form": "dielectric constant",
+      "lemma": "dielectric constant",
+      "tokens": [
+        {
+          "text": "dielectric",
+          "start": 1106,
+          "end": 1116,
+          "lemma": "dielectric",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "constant",
+          "start": 1117,
+          "end": 1125,
+          "lemma": "constant",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 1130,
+      "end": 1139,
+      "surface_text": "thickness",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.8820751905441284,
+      "normalized_form": "thickness",
+      "lemma": "thickness",
+      "tokens": [
+        {
+          "text": "thickness",
+          "start": 1130,
+          "end": 1139,
+          "lemma": "thickness",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 1130,
+      "end": 1152,
+      "surface_text": "thickness distribution",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.999315619468689,
+      "normalized_form": "thickness distribution",
+      "lemma": "thickness distribution",
+      "tokens": [
+        {
+          "text": "thickness",
+          "start": 1130,
+          "end": 1139,
+          "lemma": "thickness",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "distribution",
+          "start": 1140,
+          "end": 1152,
+          "lemma": "distribution",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 1158,
+      "end": 1165,
+      "surface_text": "results",
+      "ner_label_hint": "RESULT",
+      "score": 0.8616604208946228,
+      "normalized_form": "result",
+      "lemma": "result",
+      "tokens": [
+        {
+          "text": "results",
+          "start": 1158,
+          "end": 1165,
+          "lemma": "result",
+          "pos": "NOUN",
+          "tag": "NNS",
+          "morph": {
+            "Number": "Plur"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": [
+        {
+          "start": 1158,
+          "end": 1165,
+          "original": "results",
+          "replacement": "result",
+          "rule": "plural_noun_head"
+        }
+      ]
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 1180,
+      "end": 1194,
+      "surface_text": "lunar regolith",
+      "ner_label_hint": "OBJECT",
+      "score": 0.9976221919059753,
+      "normalized_form": "lunar regolith",
+      "lemma": "lunar regolith",
+      "tokens": [
+        {
+          "text": "lunar",
+          "start": 1180,
+          "end": 1185,
+          "lemma": "lunar",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "regolith",
+          "start": 1186,
+          "end": 1194,
+          "lemma": "regolith",
+          "pos": "PROPN",
+          "tag": "NNP",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 1197,
+      "end": 1206,
+      "surface_text": "thickness",
+      "ner_label_hint": "ATTRIBUTE",
+      "score": 0.8523492217063904,
+      "normalized_form": "thickness",
+      "lemma": "thickness",
+      "tokens": [
+        {
+          "text": "thickness",
+          "start": 1197,
+          "end": 1206,
+          "lemma": "thickness",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    },
+    {
+      "document_id": "W2096307598",
+      "start": 1282,
+      "end": 1295,
+      "surface_text": "lunar surface",
+      "ner_label_hint": "OBJECT",
+      "score": 0.6413356065750122,
+      "normalized_form": "lunar surface",
+      "lemma": "lunar surface",
+      "tokens": [
+        {
+          "text": "lunar",
+          "start": 1282,
+          "end": 1287,
+          "lemma": "lunar",
+          "pos": "ADJ",
+          "tag": "JJ",
+          "morph": {
+            "Degree": "Pos"
+          },
+          "partial_token": false,
+          "possessive": false
+        },
+        {
+          "text": "surface",
+          "start": 1288,
+          "end": 1295,
+          "lemma": "surface",
+          "pos": "NOUN",
+          "tag": "NN",
+          "morph": {
+            "Number": "Sing"
+          },
+          "partial_token": false,
+          "possessive": false
+        }
+      ],
+      "abbreviation_candidates": [],
+      "normalizer_version": "scientific-noun-head-nfc-v1",
+      "changes": []
+    }
+  ],
+  "inference_seconds": 60.76700370013714,
+  "windows": [
+    [
+      0,
+      195,
+      [
+        155,
+        402,
+        505
+      ]
+    ],
+    [
+      118,
+      277,
+      [
+        156,
+        403,
+        506
+      ]
+    ],
+    [
+      249,
+      327,
+      [
+        144,
+        391,
+        494
+      ]
+    ],
+    [
+      211,
+      290,
+      [
+        148,
+        395,
+        498
+      ]
+    ],
+    [
+      240,
+      285,
+      [
+        139,
+        386,
+        489
+      ]
+    ],
+    [
+      245,
+      285,
+      [
+        136,
+        383,
+        486
+      ]
+    ],
+    [
+      249,
+      285,
+      [
+        135,
+        382,
+        485
+      ]
+    ],
+    [
+      255,
+      285,
+      [
+        130,
+        377,
+        480
+      ]
+    ],
+    [
+      269,
+      412,
+      [
+        151,
+        398,
+        501
+      ]
+    ],
+    [
+      370,
+      439,
+      [
+        137,
+        384,
+        487
+      ]
+    ],
+    [
+      426,
+      494,
+      [
+        159,
+        406,
+        509
+      ]
+    ],
+    [
+      478,
+      498,
+      [
+        135,
+        382,
+        485
+      ]
+    ],
+    [
+      478,
+      511,
+      [
+        136,
+        383,
+        486
+      ]
+    ],
+    [
+      478,
+      518,
+      [
+        137,
+        384,
+        487
+      ]
+    ],
+    [
+      478,
+      540,
+      [
+        140,
+        387,
+        490
+      ]
+    ],
+    [
+      460,
+      511,
+      [
+        147,
+        394,
+        497
+      ]
+    ],
+    [
+      482,
+      614,
+      [
+        152,
+        399,
+        502
+      ]
+    ],
+    [
+      576,
+      691,
+      [
+        148,
+        395,
+        498
+      ]
+    ],
+    [
+      560,
+      728,
+      [
+        159,
+        406,
+        509
+      ]
+    ],
+    [
+      670,
+      707,
+      [
+        134,
+        381,
+        484
+      ]
+    ],
+    [
+      688,
+      707,
+      [
+        130,
+        377,
+        480
+      ]
+    ],
+    [
+      692,
+      707,
+      [
+        129,
+        376,
+        479
+      ]
+    ],
+    [
+      698,
+      857,
+      [
+        161,
+        408,
+        511
+      ]
+    ],
+    [
+      843,
+      870,
+      [
+        131,
+        378,
+        481
+      ]
+    ],
+    [
+      843,
+      880,
+      [
+        132,
+        379,
+        482
+      ]
+    ],
+    [
+      840,
+      921,
+      [
+        139,
+        386,
+        489
+      ]
+    ],
+    [
+      803,
+      891,
+      [
+        143,
+        390,
+        493
+      ]
+    ],
+    [
+      824,
+      884,
+      [
+        136,
+        383,
+        486
+      ]
+    ],
+    [
+      827,
+      884,
+      [
+        135,
+        382,
+        485
+      ]
+    ],
+    [
+      840,
+      884,
+      [
+        134,
+        381,
+        484
+      ]
+    ],
+    [
+      843,
+      884,
+      [
+        133,
+        380,
+        483
+      ]
+    ],
+    [
+      849,
+      884,
+      [
+        132,
+        379,
+        482
+      ]
+    ],
+    [
+      853,
+      1021,
+      [
+        155,
+        402,
+        505
+      ]
+    ],
+    [
+      977,
+      1153,
+      [
+        159,
+        406,
+        509
+      ]
+    ],
+    [
+      1117,
+      1157,
+      [
+        131,
+        378,
+        481
+      ]
+    ],
+    [
+      1117,
+      1165,
+      [
+        132,
+        379,
+        482
+      ]
+    ],
+    [
+      1117,
+      1170,
+      [
+        133,
+        380,
+        483
+      ]
+    ],
+    [
+      1117,
+      1175,
+      [
+        134,
+        381,
+        484
+      ]
+    ],
+    [
+      1117,
+      1179,
+      [
+        135,
+        382,
+        485
+      ]
+    ],
+    [
+      1106,
+      1216,
+      [
+        143,
+        390,
+        493
+      ]
+    ],
+    [
+      1047,
+      1170,
+      [
+        147,
+        394,
+        497
+      ]
+    ],
+    [
+      1126,
+      1296,
+      [
+        160,
+        407,
+        510
+      ]
+    ]
+  ],
+  "synthetic_punctuation_spans_dropped": 0
+}
