@@ -1,0 +1,1413 @@
+{
+  "fingerprint": "c79845cf50e55b434eab0bcd7d45fb6779c27e093e96fa9a77b4c2f1b311bf99",
+  "document_id": "W1979727947",
+  "model": "knowledgator/gliner-relex-base-v1.0",
+  "mode": "joint",
+  "raw_windows": [
+    {
+      "window": {
+        "window_id": "w:f0a3878f321afbc4c4e6e2033f50ffd41a40684831472e6fec11c7676db0395d",
+        "document_id": "W1979727947",
+        "start": 0,
+        "end": 1679,
+        "text": "INTRODUCTION: Mammographic density (MD) is a strong, independent risk factor for breast cancer, but measuring MD is time consuming and reader dependent. Objective MD measurement in a high-throughput fashion would enable its wider use as a biomarker for breast cancer. We use a public domain image-processing software for the fully automated analysis of MD and penalized regression to construct a measure that mimics a well-established semiautomated measure (Cumulus). We also describe measures that incorporate additional features of mammographic images for improving the risk associations of MD and breast cancer risk. METHODS: We randomly partitioned our dataset into a training set for model building (733 cases, 748 controls) and a test set for model assessment (765 cases, 747 controls). The Pearson product-moment correlation coefficient (r) was used to compare the MD measurements by Cumulus and our automated measure, which mimics Cumulus. The likelihood ratio test was used to validate the performance of logistic regression models for breast cancer risk, which included our measure capturing additional information in mammographic images. RESULTS: We observed a high correlation between the Cumulus measure and our measure mimicking Cumulus (r = 0.884; 95% CI, 0.872 to 0.894) in an external test set. Adding a variable, which includes extra information to percentage density, significantly improved the fit of the logistic regression model of breast cancer risk (P = 0.0002). CONCLUSIONS: Our results demonstrate the potential to facilitate the integration of mammographic density measurements into large-scale research studies and subsequently into clinical practice.",
+        "entity_ids": []
+      },
+      "entities": [
+        {
+          "start": 14,
+          "end": 39,
+          "text": "Mammographic density (MD)",
+          "label": "concept",
+          "score": 0.3465676009654999
+        },
+        {
+          "start": 65,
+          "end": 76,
+          "text": "risk factor",
+          "label": "attribute",
+          "score": 0.3743753731250763
+        },
+        {
+          "start": 81,
+          "end": 94,
+          "text": "breast cancer",
+          "label": "condition",
+          "score": 0.9199392795562744
+        },
+        {
+          "start": 116,
+          "end": 130,
+          "text": "time consuming",
+          "label": "attribute",
+          "score": 0.6548587083816528
+        },
+        {
+          "start": 135,
+          "end": 151,
+          "text": "reader dependent",
+          "label": "attribute",
+          "score": 0.7423981428146362
+        },
+        {
+          "start": 135,
+          "end": 151,
+          "text": "reader dependent",
+          "label": "condition",
+          "score": 0.4158566892147064
+        },
+        {
+          "start": 277,
+          "end": 316,
+          "text": "public domain image-processing software",
+          "label": "method",
+          "score": 0.6083425283432007
+        },
+        {
+          "start": 291,
+          "end": 316,
+          "text": "image-processing software",
+          "label": "method",
+          "score": 0.35978737473487854
+        },
+        {
+          "start": 360,
+          "end": 380,
+          "text": "penalized regression",
+          "label": "method",
+          "score": 0.6133040189743042
+        },
+        {
+          "start": 534,
+          "end": 553,
+          "text": "mammographic images",
+          "label": "data resource",
+          "score": 0.8798546195030212
+        },
+        {
+          "start": 672,
+          "end": 684,
+          "text": "training set",
+          "label": "data resource",
+          "score": 0.7723016738891602
+        },
+        {
+          "start": 689,
+          "end": 703,
+          "text": "model building",
+          "label": "task",
+          "score": 0.64098060131073
+        },
+        {
+          "start": 736,
+          "end": 744,
+          "text": "test set",
+          "label": "data resource",
+          "score": 0.700435221195221
+        },
+        {
+          "start": 749,
+          "end": 765,
+          "text": "model assessment",
+          "label": "task",
+          "score": 0.6197544932365417
+        },
+        {
+          "start": 797,
+          "end": 847,
+          "text": "Pearson product-moment correlation coefficient (r)",
+          "label": "method",
+          "score": 0.6242454648017883
+        },
+        {
+          "start": 797,
+          "end": 843,
+          "text": "Pearson product-moment correlation coefficient",
+          "label": "method",
+          "score": 0.369354248046875
+        },
+        {
+          "start": 952,
+          "end": 973,
+          "text": "likelihood ratio test",
+          "label": "method",
+          "score": 0.8370034694671631
+        },
+        {
+          "start": 1014,
+          "end": 1040,
+          "text": "logistic regression models",
+          "label": "method",
+          "score": 0.39384880661964417
+        },
+        {
+          "start": 1172,
+          "end": 1188,
+          "text": "high correlation",
+          "label": "result",
+          "score": 0.7259232997894287
+        },
+        {
+          "start": 1252,
+          "end": 1261,
+          "text": "r = 0.884",
+          "label": "result",
+          "score": 0.48879456520080566
+        },
+        {
+          "start": 1293,
+          "end": 1310,
+          "text": "external test set",
+          "label": "data resource",
+          "score": 0.3858707547187805
+        },
+        {
+          "start": 1474,
+          "end": 1484,
+          "text": "P = 0.0002",
+          "label": "result",
+          "score": 0.3312072157859802
+        }
+      ],
+      "predictions": [
+        {
+          "head": {
+            "start": 14,
+            "end": 39,
+            "text": "Mammographic density (MD)",
+            "type": "concept",
+            "entity_idx": 0
+          },
+          "tail": {
+            "start": 65,
+            "end": 76,
+            "text": "risk factor",
+            "type": "attribute",
+            "entity_idx": 1
+          },
+          "relation": "is a",
+          "score": 0.9300814270973206
+        },
+        {
+          "head": {
+            "start": 14,
+            "end": 39,
+            "text": "Mammographic density (MD)",
+            "type": "concept",
+            "entity_idx": 0
+          },
+          "tail": {
+            "start": 81,
+            "end": 94,
+            "text": "breast cancer",
+            "type": "condition",
+            "entity_idx": 2
+          },
+          "relation": "associated with",
+          "score": 0.7508252859115601
+        },
+        {
+          "head": {
+            "start": 14,
+            "end": 39,
+            "text": "Mammographic density (MD)",
+            "type": "concept",
+            "entity_idx": 0
+          },
+          "tail": {
+            "start": 116,
+            "end": 130,
+            "text": "time consuming",
+            "type": "attribute",
+            "entity_idx": 3
+          },
+          "relation": "has attribute",
+          "score": 0.8456985354423523
+        },
+        {
+          "head": {
+            "start": 14,
+            "end": 39,
+            "text": "Mammographic density (MD)",
+            "type": "concept",
+            "entity_idx": 0
+          },
+          "tail": {
+            "start": 135,
+            "end": 151,
+            "text": "reader dependent",
+            "type": "attribute",
+            "entity_idx": 4
+          },
+          "relation": "depends on",
+          "score": 0.7715861797332764
+        },
+        {
+          "head": {
+            "start": 14,
+            "end": 39,
+            "text": "Mammographic density (MD)",
+            "type": "concept",
+            "entity_idx": 0
+          },
+          "tail": {
+            "start": 135,
+            "end": 151,
+            "text": "reader dependent",
+            "type": "attribute",
+            "entity_idx": 4
+          },
+          "relation": "depends on",
+          "score": 0.7715861797332764
+        },
+        {
+          "head": {
+            "start": 952,
+            "end": 973,
+            "text": "likelihood ratio test",
+            "type": "method",
+            "entity_idx": 16
+          },
+          "tail": {
+            "start": 1252,
+            "end": 1261,
+            "text": "r = 0.884",
+            "type": "result",
+            "entity_idx": 19
+          },
+          "relation": "has result",
+          "score": 0.7158452868461609
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "e:19eefe21e67b45ea9edf518e1329b5e91e0773c17f93fec8b77d7a1cc5801778",
+      "document_id": "W1979727947",
+      "start": 14,
+      "end": 39,
+      "surface_text": "Mammographic density (MD)",
+      "entity_types": [
+        "CONCEPT"
+      ],
+      "normalized_forms": [
+        "mammographic density (md)"
+      ],
+      "confidence": 0.3465676009654999,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1979727947",
+          "start": 14,
+          "end": 39,
+          "surface_text": "Mammographic density (MD)",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.3465676009654999,
+          "normalized_form": "mammographic density (md)",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:f0a3878f321afbc4c4e6e2033f50ffd41a40684831472e6fec11c7676db0395d",
+          "revision_id": "sha256:e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1979727947",
+            "doi": "https://doi.org/10.1186/bcr3238",
+            "landing_page_url": "https://doi.org/10.1186/bcr3238",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1979727947",
+            "text_sha256": "e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505"
+          },
+          "raw_prediction": {
+            "start": 14,
+            "end": 39,
+            "text": "Mammographic density (MD)",
+            "label": "concept",
+            "score": 0.3465676009654999
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:08d4f6bd31a9dd073cce38e2d233e44652dd1470c7ea428fc87c313cd28b3940",
+      "document_id": "W1979727947",
+      "start": 65,
+      "end": 76,
+      "surface_text": "risk factor",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "risk factor"
+      ],
+      "confidence": 0.3743753731250763,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1979727947",
+          "start": 65,
+          "end": 76,
+          "surface_text": "risk factor",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.3743753731250763,
+          "normalized_form": "risk factor",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:f0a3878f321afbc4c4e6e2033f50ffd41a40684831472e6fec11c7676db0395d",
+          "revision_id": "sha256:e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1979727947",
+            "doi": "https://doi.org/10.1186/bcr3238",
+            "landing_page_url": "https://doi.org/10.1186/bcr3238",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1979727947",
+            "text_sha256": "e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505"
+          },
+          "raw_prediction": {
+            "start": 65,
+            "end": 76,
+            "text": "risk factor",
+            "label": "attribute",
+            "score": 0.3743753731250763
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:3672e490ca33a01c30e986dbba5361d462d9fab9c2117e240b4808d672343264",
+      "document_id": "W1979727947",
+      "start": 81,
+      "end": 94,
+      "surface_text": "breast cancer",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "breast cancer"
+      ],
+      "confidence": 0.9199392795562744,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1979727947",
+          "start": 81,
+          "end": 94,
+          "surface_text": "breast cancer",
+          "ner_label_hint": "CONDITION",
+          "score": 0.9199392795562744,
+          "normalized_form": "breast cancer",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:f0a3878f321afbc4c4e6e2033f50ffd41a40684831472e6fec11c7676db0395d",
+          "revision_id": "sha256:e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1979727947",
+            "doi": "https://doi.org/10.1186/bcr3238",
+            "landing_page_url": "https://doi.org/10.1186/bcr3238",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1979727947",
+            "text_sha256": "e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505"
+          },
+          "raw_prediction": {
+            "start": 81,
+            "end": 94,
+            "text": "breast cancer",
+            "label": "condition",
+            "score": 0.9199392795562744
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a6d7dd4b4d226ac396796aac9b576f2c32b317ad7b1c58599794bacb68146b36",
+      "document_id": "W1979727947",
+      "start": 116,
+      "end": 130,
+      "surface_text": "time consuming",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "time consuming"
+      ],
+      "confidence": 0.6548587083816528,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1979727947",
+          "start": 116,
+          "end": 130,
+          "surface_text": "time consuming",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.6548587083816528,
+          "normalized_form": "time consuming",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:f0a3878f321afbc4c4e6e2033f50ffd41a40684831472e6fec11c7676db0395d",
+          "revision_id": "sha256:e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1979727947",
+            "doi": "https://doi.org/10.1186/bcr3238",
+            "landing_page_url": "https://doi.org/10.1186/bcr3238",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1979727947",
+            "text_sha256": "e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505"
+          },
+          "raw_prediction": {
+            "start": 116,
+            "end": 130,
+            "text": "time consuming",
+            "label": "attribute",
+            "score": 0.6548587083816528
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:fc002228f66c9a315f2eb08f9cacf95280798f3c29ae4c2b965349604ea522a0",
+      "document_id": "W1979727947",
+      "start": 135,
+      "end": 151,
+      "surface_text": "reader dependent",
+      "entity_types": [
+        "ATTRIBUTE",
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "reader dependent"
+      ],
+      "confidence": 0.7423981428146362,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1979727947",
+          "start": 135,
+          "end": 151,
+          "surface_text": "reader dependent",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.7423981428146362,
+          "normalized_form": "reader dependent",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:f0a3878f321afbc4c4e6e2033f50ffd41a40684831472e6fec11c7676db0395d",
+          "revision_id": "sha256:e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1979727947",
+            "doi": "https://doi.org/10.1186/bcr3238",
+            "landing_page_url": "https://doi.org/10.1186/bcr3238",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1979727947",
+            "text_sha256": "e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505"
+          },
+          "raw_prediction": {
+            "start": 135,
+            "end": 151,
+            "text": "reader dependent",
+            "label": "attribute",
+            "score": 0.7423981428146362
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1979727947",
+          "start": 135,
+          "end": 151,
+          "surface_text": "reader dependent",
+          "ner_label_hint": "CONDITION",
+          "score": 0.4158566892147064,
+          "normalized_form": "reader dependent",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:f0a3878f321afbc4c4e6e2033f50ffd41a40684831472e6fec11c7676db0395d",
+          "revision_id": "sha256:e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1979727947",
+            "doi": "https://doi.org/10.1186/bcr3238",
+            "landing_page_url": "https://doi.org/10.1186/bcr3238",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1979727947",
+            "text_sha256": "e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505"
+          },
+          "raw_prediction": {
+            "start": 135,
+            "end": 151,
+            "text": "reader dependent",
+            "label": "condition",
+            "score": 0.4158566892147064
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a25f7a97c0469d6bab96643b988cd10d696e57dc32cfac09d2074248e789468f",
+      "document_id": "W1979727947",
+      "start": 277,
+      "end": 316,
+      "surface_text": "public domain image-processing software",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "public domain image-processing software"
+      ],
+      "confidence": 0.6083425283432007,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1979727947",
+          "start": 277,
+          "end": 316,
+          "surface_text": "public domain image-processing software",
+          "ner_label_hint": "METHOD",
+          "score": 0.6083425283432007,
+          "normalized_form": "public domain image-processing software",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:f0a3878f321afbc4c4e6e2033f50ffd41a40684831472e6fec11c7676db0395d",
+          "revision_id": "sha256:e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1979727947",
+            "doi": "https://doi.org/10.1186/bcr3238",
+            "landing_page_url": "https://doi.org/10.1186/bcr3238",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1979727947",
+            "text_sha256": "e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505"
+          },
+          "raw_prediction": {
+            "start": 277,
+            "end": 316,
+            "text": "public domain image-processing software",
+            "label": "method",
+            "score": 0.6083425283432007
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:c389bcff0a52f5dd3b6e56d445836d477e21ef1a5f070c747b4754a6c37bfb72",
+      "document_id": "W1979727947",
+      "start": 291,
+      "end": 316,
+      "surface_text": "image-processing software",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "image-processing software"
+      ],
+      "confidence": 0.35978737473487854,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1979727947",
+          "start": 291,
+          "end": 316,
+          "surface_text": "image-processing software",
+          "ner_label_hint": "METHOD",
+          "score": 0.35978737473487854,
+          "normalized_form": "image-processing software",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:f0a3878f321afbc4c4e6e2033f50ffd41a40684831472e6fec11c7676db0395d",
+          "revision_id": "sha256:e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1979727947",
+            "doi": "https://doi.org/10.1186/bcr3238",
+            "landing_page_url": "https://doi.org/10.1186/bcr3238",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1979727947",
+            "text_sha256": "e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505"
+          },
+          "raw_prediction": {
+            "start": 291,
+            "end": 316,
+            "text": "image-processing software",
+            "label": "method",
+            "score": 0.35978737473487854
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:dc4ce0d9df156b8064c23dfa261029d42467f19017c9044ed7923ed714e2c5d9",
+      "document_id": "W1979727947",
+      "start": 360,
+      "end": 380,
+      "surface_text": "penalized regression",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "penalized regression"
+      ],
+      "confidence": 0.6133040189743042,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1979727947",
+          "start": 360,
+          "end": 380,
+          "surface_text": "penalized regression",
+          "ner_label_hint": "METHOD",
+          "score": 0.6133040189743042,
+          "normalized_form": "penalized regression",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:f0a3878f321afbc4c4e6e2033f50ffd41a40684831472e6fec11c7676db0395d",
+          "revision_id": "sha256:e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1979727947",
+            "doi": "https://doi.org/10.1186/bcr3238",
+            "landing_page_url": "https://doi.org/10.1186/bcr3238",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1979727947",
+            "text_sha256": "e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505"
+          },
+          "raw_prediction": {
+            "start": 360,
+            "end": 380,
+            "text": "penalized regression",
+            "label": "method",
+            "score": 0.6133040189743042
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:dc52a47fab2d448cb9d9efef32571569d6d6cdf1fbd85e5cf95c49b1234840e0",
+      "document_id": "W1979727947",
+      "start": 534,
+      "end": 553,
+      "surface_text": "mammographic images",
+      "entity_types": [
+        "DATA_RESOURCE"
+      ],
+      "normalized_forms": [
+        "mammographic images"
+      ],
+      "confidence": 0.8798546195030212,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1979727947",
+          "start": 534,
+          "end": 553,
+          "surface_text": "mammographic images",
+          "ner_label_hint": "DATA_RESOURCE",
+          "score": 0.8798546195030212,
+          "normalized_form": "mammographic images",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:f0a3878f321afbc4c4e6e2033f50ffd41a40684831472e6fec11c7676db0395d",
+          "revision_id": "sha256:e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1979727947",
+            "doi": "https://doi.org/10.1186/bcr3238",
+            "landing_page_url": "https://doi.org/10.1186/bcr3238",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1979727947",
+            "text_sha256": "e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505"
+          },
+          "raw_prediction": {
+            "start": 534,
+            "end": 553,
+            "text": "mammographic images",
+            "label": "data resource",
+            "score": 0.8798546195030212
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:c53a1fd08d2671a4e92fc4c812dfc08514c8b98540221f7060864abb3beb2ceb",
+      "document_id": "W1979727947",
+      "start": 672,
+      "end": 684,
+      "surface_text": "training set",
+      "entity_types": [
+        "DATA_RESOURCE"
+      ],
+      "normalized_forms": [
+        "training set"
+      ],
+      "confidence": 0.7723016738891602,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1979727947",
+          "start": 672,
+          "end": 684,
+          "surface_text": "training set",
+          "ner_label_hint": "DATA_RESOURCE",
+          "score": 0.7723016738891602,
+          "normalized_form": "training set",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:f0a3878f321afbc4c4e6e2033f50ffd41a40684831472e6fec11c7676db0395d",
+          "revision_id": "sha256:e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1979727947",
+            "doi": "https://doi.org/10.1186/bcr3238",
+            "landing_page_url": "https://doi.org/10.1186/bcr3238",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1979727947",
+            "text_sha256": "e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505"
+          },
+          "raw_prediction": {
+            "start": 672,
+            "end": 684,
+            "text": "training set",
+            "label": "data resource",
+            "score": 0.7723016738891602
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:b1d1a02c95a284c87f03f65c2634dab8f866903b6a8adcaacb9ca06b1d61d3c0",
+      "document_id": "W1979727947",
+      "start": 689,
+      "end": 703,
+      "surface_text": "model building",
+      "entity_types": [
+        "TASK"
+      ],
+      "normalized_forms": [
+        "model building"
+      ],
+      "confidence": 0.64098060131073,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1979727947",
+          "start": 689,
+          "end": 703,
+          "surface_text": "model building",
+          "ner_label_hint": "TASK",
+          "score": 0.64098060131073,
+          "normalized_form": "model building",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:f0a3878f321afbc4c4e6e2033f50ffd41a40684831472e6fec11c7676db0395d",
+          "revision_id": "sha256:e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1979727947",
+            "doi": "https://doi.org/10.1186/bcr3238",
+            "landing_page_url": "https://doi.org/10.1186/bcr3238",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1979727947",
+            "text_sha256": "e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505"
+          },
+          "raw_prediction": {
+            "start": 689,
+            "end": 703,
+            "text": "model building",
+            "label": "task",
+            "score": 0.64098060131073
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:455c0bc878c16fd308a42f96896b796133ec1bd07e5b00cf34106ac48901111f",
+      "document_id": "W1979727947",
+      "start": 736,
+      "end": 744,
+      "surface_text": "test set",
+      "entity_types": [
+        "DATA_RESOURCE"
+      ],
+      "normalized_forms": [
+        "test set"
+      ],
+      "confidence": 0.700435221195221,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1979727947",
+          "start": 736,
+          "end": 744,
+          "surface_text": "test set",
+          "ner_label_hint": "DATA_RESOURCE",
+          "score": 0.700435221195221,
+          "normalized_form": "test set",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:f0a3878f321afbc4c4e6e2033f50ffd41a40684831472e6fec11c7676db0395d",
+          "revision_id": "sha256:e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1979727947",
+            "doi": "https://doi.org/10.1186/bcr3238",
+            "landing_page_url": "https://doi.org/10.1186/bcr3238",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1979727947",
+            "text_sha256": "e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505"
+          },
+          "raw_prediction": {
+            "start": 736,
+            "end": 744,
+            "text": "test set",
+            "label": "data resource",
+            "score": 0.700435221195221
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:65eea954b38bda3fcc6b61b95f56378c752ae5a11bbdea4423685beeae47c829",
+      "document_id": "W1979727947",
+      "start": 749,
+      "end": 765,
+      "surface_text": "model assessment",
+      "entity_types": [
+        "TASK"
+      ],
+      "normalized_forms": [
+        "model assessment"
+      ],
+      "confidence": 0.6197544932365417,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1979727947",
+          "start": 749,
+          "end": 765,
+          "surface_text": "model assessment",
+          "ner_label_hint": "TASK",
+          "score": 0.6197544932365417,
+          "normalized_form": "model assessment",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:f0a3878f321afbc4c4e6e2033f50ffd41a40684831472e6fec11c7676db0395d",
+          "revision_id": "sha256:e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1979727947",
+            "doi": "https://doi.org/10.1186/bcr3238",
+            "landing_page_url": "https://doi.org/10.1186/bcr3238",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1979727947",
+            "text_sha256": "e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505"
+          },
+          "raw_prediction": {
+            "start": 749,
+            "end": 765,
+            "text": "model assessment",
+            "label": "task",
+            "score": 0.6197544932365417
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:9385937fb3b8f4a1a8027764002ec59ee02f2b838af0568ff4a664ed2d5043a1",
+      "document_id": "W1979727947",
+      "start": 797,
+      "end": 843,
+      "surface_text": "Pearson product-moment correlation coefficient",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "pearson product-moment correlation coefficient"
+      ],
+      "confidence": 0.369354248046875,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1979727947",
+          "start": 797,
+          "end": 843,
+          "surface_text": "Pearson product-moment correlation coefficient",
+          "ner_label_hint": "METHOD",
+          "score": 0.369354248046875,
+          "normalized_form": "pearson product-moment correlation coefficient",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:f0a3878f321afbc4c4e6e2033f50ffd41a40684831472e6fec11c7676db0395d",
+          "revision_id": "sha256:e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1979727947",
+            "doi": "https://doi.org/10.1186/bcr3238",
+            "landing_page_url": "https://doi.org/10.1186/bcr3238",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1979727947",
+            "text_sha256": "e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505"
+          },
+          "raw_prediction": {
+            "start": 797,
+            "end": 843,
+            "text": "Pearson product-moment correlation coefficient",
+            "label": "method",
+            "score": 0.369354248046875
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:bd96ae787c1f217b8ab3b6676c9be26c2c645450f5cb93e801b08a9eacd9d280",
+      "document_id": "W1979727947",
+      "start": 797,
+      "end": 847,
+      "surface_text": "Pearson product-moment correlation coefficient (r)",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "pearson product-moment correlation coefficient (r)"
+      ],
+      "confidence": 0.6242454648017883,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1979727947",
+          "start": 797,
+          "end": 847,
+          "surface_text": "Pearson product-moment correlation coefficient (r)",
+          "ner_label_hint": "METHOD",
+          "score": 0.6242454648017883,
+          "normalized_form": "pearson product-moment correlation coefficient (r)",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:f0a3878f321afbc4c4e6e2033f50ffd41a40684831472e6fec11c7676db0395d",
+          "revision_id": "sha256:e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1979727947",
+            "doi": "https://doi.org/10.1186/bcr3238",
+            "landing_page_url": "https://doi.org/10.1186/bcr3238",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1979727947",
+            "text_sha256": "e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505"
+          },
+          "raw_prediction": {
+            "start": 797,
+            "end": 847,
+            "text": "Pearson product-moment correlation coefficient (r)",
+            "label": "method",
+            "score": 0.6242454648017883
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:f1aa5a687e2882c4fb9daf5a7be7565a5986beffd8ff8e8978aa0c6053d1d500",
+      "document_id": "W1979727947",
+      "start": 952,
+      "end": 973,
+      "surface_text": "likelihood ratio test",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "likelihood ratio test"
+      ],
+      "confidence": 0.8370034694671631,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1979727947",
+          "start": 952,
+          "end": 973,
+          "surface_text": "likelihood ratio test",
+          "ner_label_hint": "METHOD",
+          "score": 0.8370034694671631,
+          "normalized_form": "likelihood ratio test",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:f0a3878f321afbc4c4e6e2033f50ffd41a40684831472e6fec11c7676db0395d",
+          "revision_id": "sha256:e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1979727947",
+            "doi": "https://doi.org/10.1186/bcr3238",
+            "landing_page_url": "https://doi.org/10.1186/bcr3238",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1979727947",
+            "text_sha256": "e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505"
+          },
+          "raw_prediction": {
+            "start": 952,
+            "end": 973,
+            "text": "likelihood ratio test",
+            "label": "method",
+            "score": 0.8370034694671631
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:f120ebf4fe957a9028cee92ff584636ff3237e497d7cb86ddd2b5409fa1c3c55",
+      "document_id": "W1979727947",
+      "start": 1014,
+      "end": 1040,
+      "surface_text": "logistic regression models",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "logistic regression models"
+      ],
+      "confidence": 0.39384880661964417,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1979727947",
+          "start": 1014,
+          "end": 1040,
+          "surface_text": "logistic regression models",
+          "ner_label_hint": "METHOD",
+          "score": 0.39384880661964417,
+          "normalized_form": "logistic regression models",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:f0a3878f321afbc4c4e6e2033f50ffd41a40684831472e6fec11c7676db0395d",
+          "revision_id": "sha256:e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1979727947",
+            "doi": "https://doi.org/10.1186/bcr3238",
+            "landing_page_url": "https://doi.org/10.1186/bcr3238",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1979727947",
+            "text_sha256": "e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505"
+          },
+          "raw_prediction": {
+            "start": 1014,
+            "end": 1040,
+            "text": "logistic regression models",
+            "label": "method",
+            "score": 0.39384880661964417
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:0ea130b91e3a2685adbe6ddd8a4acafbed5866a3cec2061bebccc7ebf53a44b7",
+      "document_id": "W1979727947",
+      "start": 1172,
+      "end": 1188,
+      "surface_text": "high correlation",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "high correlation"
+      ],
+      "confidence": 0.7259232997894287,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1979727947",
+          "start": 1172,
+          "end": 1188,
+          "surface_text": "high correlation",
+          "ner_label_hint": "RESULT",
+          "score": 0.7259232997894287,
+          "normalized_form": "high correlation",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:f0a3878f321afbc4c4e6e2033f50ffd41a40684831472e6fec11c7676db0395d",
+          "revision_id": "sha256:e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1979727947",
+            "doi": "https://doi.org/10.1186/bcr3238",
+            "landing_page_url": "https://doi.org/10.1186/bcr3238",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1979727947",
+            "text_sha256": "e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505"
+          },
+          "raw_prediction": {
+            "start": 1172,
+            "end": 1188,
+            "text": "high correlation",
+            "label": "result",
+            "score": 0.7259232997894287
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:65e211326357bae33ee436f78998d35209fec8174ebf4824ac5b65bd0428b5d7",
+      "document_id": "W1979727947",
+      "start": 1252,
+      "end": 1261,
+      "surface_text": "r = 0.884",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "r = 0.884"
+      ],
+      "confidence": 0.48879456520080566,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1979727947",
+          "start": 1252,
+          "end": 1261,
+          "surface_text": "r = 0.884",
+          "ner_label_hint": "RESULT",
+          "score": 0.48879456520080566,
+          "normalized_form": "r = 0.884",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:f0a3878f321afbc4c4e6e2033f50ffd41a40684831472e6fec11c7676db0395d",
+          "revision_id": "sha256:e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1979727947",
+            "doi": "https://doi.org/10.1186/bcr3238",
+            "landing_page_url": "https://doi.org/10.1186/bcr3238",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1979727947",
+            "text_sha256": "e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505"
+          },
+          "raw_prediction": {
+            "start": 1252,
+            "end": 1261,
+            "text": "r = 0.884",
+            "label": "result",
+            "score": 0.48879456520080566
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:dc9ad50067f51d5c9b5adb30ad71ed025daa293bb047b26547da65f2fb409072",
+      "document_id": "W1979727947",
+      "start": 1293,
+      "end": 1310,
+      "surface_text": "external test set",
+      "entity_types": [
+        "DATA_RESOURCE"
+      ],
+      "normalized_forms": [
+        "external test set"
+      ],
+      "confidence": 0.3858707547187805,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1979727947",
+          "start": 1293,
+          "end": 1310,
+          "surface_text": "external test set",
+          "ner_label_hint": "DATA_RESOURCE",
+          "score": 0.3858707547187805,
+          "normalized_form": "external test set",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:f0a3878f321afbc4c4e6e2033f50ffd41a40684831472e6fec11c7676db0395d",
+          "revision_id": "sha256:e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1979727947",
+            "doi": "https://doi.org/10.1186/bcr3238",
+            "landing_page_url": "https://doi.org/10.1186/bcr3238",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1979727947",
+            "text_sha256": "e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505"
+          },
+          "raw_prediction": {
+            "start": 1293,
+            "end": 1310,
+            "text": "external test set",
+            "label": "data resource",
+            "score": 0.3858707547187805
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:54b3123d770c226db7ff9e6a09ce1be0d7e1604a117aeb0ebaef0d42c9b1afa2",
+      "document_id": "W1979727947",
+      "start": 1474,
+      "end": 1484,
+      "surface_text": "P = 0.0002",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "p = 0.0002"
+      ],
+      "confidence": 0.3312072157859802,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1979727947",
+          "start": 1474,
+          "end": 1484,
+          "surface_text": "P = 0.0002",
+          "ner_label_hint": "RESULT",
+          "score": 0.3312072157859802,
+          "normalized_form": "p = 0.0002",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:f0a3878f321afbc4c4e6e2033f50ffd41a40684831472e6fec11c7676db0395d",
+          "revision_id": "sha256:e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1979727947",
+            "doi": "https://doi.org/10.1186/bcr3238",
+            "landing_page_url": "https://doi.org/10.1186/bcr3238",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1979727947",
+            "text_sha256": "e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505"
+          },
+          "raw_prediction": {
+            "start": 1474,
+            "end": 1484,
+            "text": "P = 0.0002",
+            "label": "result",
+            "score": 0.3312072157859802
+          }
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "triple_id": "t:1b36975ffab84bea437361827d6f843f9ca582c0e0e16b4c53cc014e55b1a330",
+      "document_id": "W1979727947",
+      "head_id": "e:19eefe21e67b45ea9edf518e1329b5e91e0773c17f93fec8b77d7a1cc5801778",
+      "tail_id": "e:08d4f6bd31a9dd073cce38e2d233e44652dd1470c7ea428fc87c313cd28b3940",
+      "head_types": [
+        "CONCEPT"
+      ],
+      "tail_types": [
+        "ATTRIBUTE"
+      ],
+      "relation_type": "IS_A",
+      "confidence": 0.9300814270973206,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:f0a3878f321afbc4c4e6e2033f50ffd41a40684831472e6fec11c7676db0395d",
+          "document_id": "W1979727947",
+          "start": 0,
+          "end": 1679,
+          "text": "INTRODUCTION: Mammographic density (MD) is a strong, independent risk factor for breast cancer, but measuring MD is time consuming and reader dependent. Objective MD measurement in a high-throughput fashion would enable its wider use as a biomarker for breast cancer. We use a public domain image-processing software for the fully automated analysis of MD and penalized regression to construct a measure that mimics a well-established semiautomated measure (Cumulus). We also describe measures that incorporate additional features of mammographic images for improving the risk associations of MD and breast cancer risk. METHODS: We randomly partitioned our dataset into a training set for model building (733 cases, 748 controls) and a test set for model assessment (765 cases, 747 controls). The Pearson product-moment correlation coefficient (r) was used to compare the MD measurements by Cumulus and our automated measure, which mimics Cumulus. The likelihood ratio test was used to validate the performance of logistic regression models for breast cancer risk, which included our measure capturing additional information in mammographic images. RESULTS: We observed a high correlation between the Cumulus measure and our measure mimicking Cumulus (r = 0.884; 95% CI, 0.872 to 0.894) in an external test set. Adding a variable, which includes extra information to percentage density, significantly improved the fit of the logistic regression model of breast cancer risk (P = 0.0002). CONCLUSIONS: Our results demonstrate the potential to facilitate the integration of mammographic density measurements into large-scale research studies and subsequently into clinical practice.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:6e3381f00f012c80f03b6a90596b239b7f63b694037d9668ff441ae29d22a1bd",
+      "document_id": "W1979727947",
+      "head_id": "e:19eefe21e67b45ea9edf518e1329b5e91e0773c17f93fec8b77d7a1cc5801778",
+      "tail_id": "e:fc002228f66c9a315f2eb08f9cacf95280798f3c29ae4c2b965349604ea522a0",
+      "head_types": [
+        "CONCEPT"
+      ],
+      "tail_types": [
+        "ATTRIBUTE",
+        "CONDITION"
+      ],
+      "relation_type": "DEPENDS_ON",
+      "confidence": 0.7715861797332764,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:f0a3878f321afbc4c4e6e2033f50ffd41a40684831472e6fec11c7676db0395d",
+          "document_id": "W1979727947",
+          "start": 0,
+          "end": 1679,
+          "text": "INTRODUCTION: Mammographic density (MD) is a strong, independent risk factor for breast cancer, but measuring MD is time consuming and reader dependent. Objective MD measurement in a high-throughput fashion would enable its wider use as a biomarker for breast cancer. We use a public domain image-processing software for the fully automated analysis of MD and penalized regression to construct a measure that mimics a well-established semiautomated measure (Cumulus). We also describe measures that incorporate additional features of mammographic images for improving the risk associations of MD and breast cancer risk. METHODS: We randomly partitioned our dataset into a training set for model building (733 cases, 748 controls) and a test set for model assessment (765 cases, 747 controls). The Pearson product-moment correlation coefficient (r) was used to compare the MD measurements by Cumulus and our automated measure, which mimics Cumulus. The likelihood ratio test was used to validate the performance of logistic regression models for breast cancer risk, which included our measure capturing additional information in mammographic images. RESULTS: We observed a high correlation between the Cumulus measure and our measure mimicking Cumulus (r = 0.884; 95% CI, 0.872 to 0.894) in an external test set. Adding a variable, which includes extra information to percentage density, significantly improved the fit of the logistic regression model of breast cancer risk (P = 0.0002). CONCLUSIONS: Our results demonstrate the potential to facilitate the integration of mammographic density measurements into large-scale research studies and subsequently into clinical practice.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:a8193d1677c048ed2d89549622fdd3caf16bf0ff82120b9d98f28e2db7c108c5",
+      "document_id": "W1979727947",
+      "head_id": "e:19eefe21e67b45ea9edf518e1329b5e91e0773c17f93fec8b77d7a1cc5801778",
+      "tail_id": "e:a6d7dd4b4d226ac396796aac9b576f2c32b317ad7b1c58599794bacb68146b36",
+      "head_types": [
+        "CONCEPT"
+      ],
+      "tail_types": [
+        "ATTRIBUTE"
+      ],
+      "relation_type": "HAS_ATTRIBUTE",
+      "confidence": 0.8456985354423523,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:f0a3878f321afbc4c4e6e2033f50ffd41a40684831472e6fec11c7676db0395d",
+          "document_id": "W1979727947",
+          "start": 0,
+          "end": 1679,
+          "text": "INTRODUCTION: Mammographic density (MD) is a strong, independent risk factor for breast cancer, but measuring MD is time consuming and reader dependent. Objective MD measurement in a high-throughput fashion would enable its wider use as a biomarker for breast cancer. We use a public domain image-processing software for the fully automated analysis of MD and penalized regression to construct a measure that mimics a well-established semiautomated measure (Cumulus). We also describe measures that incorporate additional features of mammographic images for improving the risk associations of MD and breast cancer risk. METHODS: We randomly partitioned our dataset into a training set for model building (733 cases, 748 controls) and a test set for model assessment (765 cases, 747 controls). The Pearson product-moment correlation coefficient (r) was used to compare the MD measurements by Cumulus and our automated measure, which mimics Cumulus. The likelihood ratio test was used to validate the performance of logistic regression models for breast cancer risk, which included our measure capturing additional information in mammographic images. RESULTS: We observed a high correlation between the Cumulus measure and our measure mimicking Cumulus (r = 0.884; 95% CI, 0.872 to 0.894) in an external test set. Adding a variable, which includes extra information to percentage density, significantly improved the fit of the logistic regression model of breast cancer risk (P = 0.0002). CONCLUSIONS: Our results demonstrate the potential to facilitate the integration of mammographic density measurements into large-scale research studies and subsequently into clinical practice.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:b60b7c5deba6cb060aedf5ad485daa9dbdc30826a70c697f2170a5e74a63cc56",
+      "document_id": "W1979727947",
+      "head_id": "e:19eefe21e67b45ea9edf518e1329b5e91e0773c17f93fec8b77d7a1cc5801778",
+      "tail_id": "e:3672e490ca33a01c30e986dbba5361d462d9fab9c2117e240b4808d672343264",
+      "head_types": [
+        "CONCEPT"
+      ],
+      "tail_types": [
+        "CONDITION"
+      ],
+      "relation_type": "ASSOCIATED_WITH",
+      "confidence": 0.7508252859115601,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:f0a3878f321afbc4c4e6e2033f50ffd41a40684831472e6fec11c7676db0395d",
+          "document_id": "W1979727947",
+          "start": 0,
+          "end": 1679,
+          "text": "INTRODUCTION: Mammographic density (MD) is a strong, independent risk factor for breast cancer, but measuring MD is time consuming and reader dependent. Objective MD measurement in a high-throughput fashion would enable its wider use as a biomarker for breast cancer. We use a public domain image-processing software for the fully automated analysis of MD and penalized regression to construct a measure that mimics a well-established semiautomated measure (Cumulus). We also describe measures that incorporate additional features of mammographic images for improving the risk associations of MD and breast cancer risk. METHODS: We randomly partitioned our dataset into a training set for model building (733 cases, 748 controls) and a test set for model assessment (765 cases, 747 controls). The Pearson product-moment correlation coefficient (r) was used to compare the MD measurements by Cumulus and our automated measure, which mimics Cumulus. The likelihood ratio test was used to validate the performance of logistic regression models for breast cancer risk, which included our measure capturing additional information in mammographic images. RESULTS: We observed a high correlation between the Cumulus measure and our measure mimicking Cumulus (r = 0.884; 95% CI, 0.872 to 0.894) in an external test set. Adding a variable, which includes extra information to percentage density, significantly improved the fit of the logistic regression model of breast cancer risk (P = 0.0002). CONCLUSIONS: Our results demonstrate the potential to facilitate the integration of mammographic density measurements into large-scale research studies and subsequently into clinical practice.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:b63e16901bcc10392561da185f77a86d4c5fb9ac1fb99ba4bab3d8748d0f8d66",
+      "document_id": "W1979727947",
+      "head_id": "e:f1aa5a687e2882c4fb9daf5a7be7565a5986beffd8ff8e8978aa0c6053d1d500",
+      "tail_id": "e:65e211326357bae33ee436f78998d35209fec8174ebf4824ac5b65bd0428b5d7",
+      "head_types": [
+        "METHOD"
+      ],
+      "tail_types": [
+        "RESULT"
+      ],
+      "relation_type": "HAS_RESULT",
+      "confidence": 0.7158452868461609,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:f0a3878f321afbc4c4e6e2033f50ffd41a40684831472e6fec11c7676db0395d",
+          "document_id": "W1979727947",
+          "start": 0,
+          "end": 1679,
+          "text": "INTRODUCTION: Mammographic density (MD) is a strong, independent risk factor for breast cancer, but measuring MD is time consuming and reader dependent. Objective MD measurement in a high-throughput fashion would enable its wider use as a biomarker for breast cancer. We use a public domain image-processing software for the fully automated analysis of MD and penalized regression to construct a measure that mimics a well-established semiautomated measure (Cumulus). We also describe measures that incorporate additional features of mammographic images for improving the risk associations of MD and breast cancer risk. METHODS: We randomly partitioned our dataset into a training set for model building (733 cases, 748 controls) and a test set for model assessment (765 cases, 747 controls). The Pearson product-moment correlation coefficient (r) was used to compare the MD measurements by Cumulus and our automated measure, which mimics Cumulus. The likelihood ratio test was used to validate the performance of logistic regression models for breast cancer risk, which included our measure capturing additional information in mammographic images. RESULTS: We observed a high correlation between the Cumulus measure and our measure mimicking Cumulus (r = 0.884; 95% CI, 0.872 to 0.894) in an external test set. Adding a variable, which includes extra information to percentage density, significantly improved the fit of the logistic regression model of breast cancer risk (P = 0.0002). CONCLUSIONS: Our results demonstrate the potential to facilitate the integration of mammographic density measurements into large-scale research studies and subsequently into clinical practice.",
+          "entity_ids": []
+        }
+      ]
+    }
+  ],
+  "raw_relation_count": 6,
+  "seconds": 2.1729341000318527
+}

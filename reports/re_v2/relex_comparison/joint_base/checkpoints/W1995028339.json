@@ -1,0 +1,859 @@
+{
+  "fingerprint": "c79845cf50e55b434eab0bcd7d45fb6779c27e093e96fa9a77b4c2f1b311bf99",
+  "document_id": "W1995028339",
+  "model": "knowledgator/gliner-relex-base-v1.0",
+  "mode": "joint",
+  "raw_windows": [
+    {
+      "window": {
+        "window_id": "w:fef542d0df3c7ddc1366b0e3c1f29e4004f1bfcb7199adb44b2ca70b4df4b7e5",
+        "document_id": "W1995028339",
+        "start": 0,
+        "end": 1960,
+        "text": "Diatoms are mostly photosynthetic eukaryotes within the heterokont lineage. Variable plastid genome sizes and extensive genome rearrangements have been observed across the diatom phylogeny, but little is known about plastid genome evolution within order- or family-level clades. The Thalassiosirales is one of the more comprehensively studied orders in terms of both genetics and morphology. Seven complete diatom plastid genomes are reported here including four Thalassiosirales: Thalassiosira weissflogii, Roundia cardiophora, Cyclotella sp. WC03_2, Cyclotella sp. L04_2, and three additional non-Thalassiosirales species Chaetoceros simplex, Cerataulina daemon, and Rhizosolenia imbricata. The sizes of the seven genomes vary from 116,459 to 129,498 bp, and their genomes are compact and lack introns. The larger size of the plastid genomes of Thalassiosirales compared to other diatoms is due primarily to expansion of the inverted repeat. Gene content within Thalassiosirales is more conserved compared to other diatom lineages. Gene order within Thalassiosirales is highly conserved except for the extensive genome rearrangement in Thalassiosira oceanica. Cyclotella nana, Thalassiosira weissflogii and Roundia cardiophora share an identical gene order, which is inferred to be the ancestral order for the Thalassiosirales, differing from that of the other two Cyclotella species by a single inversion. The genes ilvB and ilvH are missing in all six diatom plastid genomes except for Cerataulina daemon, suggesting an independent gain of these genes in this species. The acpP1 gene is missing in all Thalassiosirales, suggesting that its loss may be a synapomorphy for the order and this gene may have been functionally transferred to the nucleus. Three genes involved in photosynthesis, psaE, psaI, psaM, are missing in Rhizosolenia imbricata, which represents the first documented instance of the loss of photosynthetic genes in diatom plastid genomes.",
+        "entity_ids": []
+      },
+      "entities": [
+        {
+          "start": 85,
+          "end": 105,
+          "text": "plastid genome sizes",
+          "label": "attribute",
+          "score": 0.8961750268936157
+        },
+        {
+          "start": 110,
+          "end": 141,
+          "text": "extensive genome rearrangements",
+          "label": "attribute",
+          "score": 0.49131762981414795
+        },
+        {
+          "start": 120,
+          "end": 141,
+          "text": "genome rearrangements",
+          "label": "attribute",
+          "score": 0.6141018867492676
+        },
+        {
+          "start": 910,
+          "end": 942,
+          "text": "expansion of the inverted repeat",
+          "label": "attribute",
+          "score": 0.6343262195587158
+        },
+        {
+          "start": 927,
+          "end": 942,
+          "text": "inverted repeat",
+          "label": "attribute",
+          "score": 0.3797420263290405
+        },
+        {
+          "start": 944,
+          "end": 956,
+          "text": "Gene content",
+          "label": "attribute",
+          "score": 0.6243661046028137
+        },
+        {
+          "start": 1034,
+          "end": 1044,
+          "text": "Gene order",
+          "label": "attribute",
+          "score": 0.6434851884841919
+        },
+        {
+          "start": 1419,
+          "end": 1423,
+          "text": "ilvB",
+          "label": "attribute",
+          "score": 0.6755011081695557
+        },
+        {
+          "start": 1428,
+          "end": 1432,
+          "text": "ilvH",
+          "label": "attribute",
+          "score": 0.5027875304222107
+        },
+        {
+          "start": 1577,
+          "end": 1587,
+          "text": "acpP1 gene",
+          "label": "attribute",
+          "score": 0.4444006383419037
+        },
+        {
+          "start": 1577,
+          "end": 1582,
+          "text": "acpP1",
+          "label": "attribute",
+          "score": 0.4146769046783447
+        },
+        {
+          "start": 1778,
+          "end": 1792,
+          "text": "photosynthesis",
+          "label": "attribute",
+          "score": 0.4164588749408722
+        },
+        {
+          "start": 1778,
+          "end": 1792,
+          "text": "photosynthesis",
+          "label": "process",
+          "score": 0.35559165477752686
+        },
+        {
+          "start": 1794,
+          "end": 1798,
+          "text": "psaE",
+          "label": "attribute",
+          "score": 0.6650723814964294
+        },
+        {
+          "start": 1800,
+          "end": 1804,
+          "text": "psaI",
+          "label": "attribute",
+          "score": 0.5736319422721863
+        },
+        {
+          "start": 1806,
+          "end": 1810,
+          "text": "psaM",
+          "label": "attribute",
+          "score": 0.5578333139419556
+        }
+      ],
+      "predictions": []
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "e:200a45240716ae4e98d338a98b269800e6b3f6552fed0dacc5fe926528fe190c",
+      "document_id": "W1995028339",
+      "start": 85,
+      "end": 105,
+      "surface_text": "plastid genome sizes",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "plastid genome sizes"
+      ],
+      "confidence": 0.8961750268936157,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1995028339",
+          "start": 85,
+          "end": 105,
+          "surface_text": "plastid genome sizes",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.8961750268936157,
+          "normalized_form": "plastid genome sizes",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:fef542d0df3c7ddc1366b0e3c1f29e4004f1bfcb7199adb44b2ca70b4df4b7e5",
+          "revision_id": "sha256:0d85abeec77604f49039eb07af4a689ef78fe525a61c8f57142214508e4110ac",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1995028339",
+            "doi": "https://doi.org/10.1371/journal.pone.0107854",
+            "landing_page_url": "https://doi.org/10.1371/journal.pone.0107854",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1995028339",
+            "text_sha256": "0d85abeec77604f49039eb07af4a689ef78fe525a61c8f57142214508e4110ac"
+          },
+          "raw_prediction": {
+            "start": 85,
+            "end": 105,
+            "text": "plastid genome sizes",
+            "label": "attribute",
+            "score": 0.8961750268936157
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:3f4ca6985fb0e347fe57e1feb422edfa14c961b0ff48f7e2344e237e1d967f04",
+      "document_id": "W1995028339",
+      "start": 110,
+      "end": 141,
+      "surface_text": "extensive genome rearrangements",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "extensive genome rearrangements"
+      ],
+      "confidence": 0.49131762981414795,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1995028339",
+          "start": 110,
+          "end": 141,
+          "surface_text": "extensive genome rearrangements",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.49131762981414795,
+          "normalized_form": "extensive genome rearrangements",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:fef542d0df3c7ddc1366b0e3c1f29e4004f1bfcb7199adb44b2ca70b4df4b7e5",
+          "revision_id": "sha256:0d85abeec77604f49039eb07af4a689ef78fe525a61c8f57142214508e4110ac",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1995028339",
+            "doi": "https://doi.org/10.1371/journal.pone.0107854",
+            "landing_page_url": "https://doi.org/10.1371/journal.pone.0107854",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1995028339",
+            "text_sha256": "0d85abeec77604f49039eb07af4a689ef78fe525a61c8f57142214508e4110ac"
+          },
+          "raw_prediction": {
+            "start": 110,
+            "end": 141,
+            "text": "extensive genome rearrangements",
+            "label": "attribute",
+            "score": 0.49131762981414795
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:5192cb45d93429fe595d94ddc1ce7909106d7c62f33df0f97e3d391d1d7e2e16",
+      "document_id": "W1995028339",
+      "start": 120,
+      "end": 141,
+      "surface_text": "genome rearrangements",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "genome rearrangements"
+      ],
+      "confidence": 0.6141018867492676,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1995028339",
+          "start": 120,
+          "end": 141,
+          "surface_text": "genome rearrangements",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.6141018867492676,
+          "normalized_form": "genome rearrangements",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:fef542d0df3c7ddc1366b0e3c1f29e4004f1bfcb7199adb44b2ca70b4df4b7e5",
+          "revision_id": "sha256:0d85abeec77604f49039eb07af4a689ef78fe525a61c8f57142214508e4110ac",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1995028339",
+            "doi": "https://doi.org/10.1371/journal.pone.0107854",
+            "landing_page_url": "https://doi.org/10.1371/journal.pone.0107854",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1995028339",
+            "text_sha256": "0d85abeec77604f49039eb07af4a689ef78fe525a61c8f57142214508e4110ac"
+          },
+          "raw_prediction": {
+            "start": 120,
+            "end": 141,
+            "text": "genome rearrangements",
+            "label": "attribute",
+            "score": 0.6141018867492676
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:58d18cfbb9e203e9a3232460cd3af80ea393e711ab5fbe2083c916ce4a0ea806",
+      "document_id": "W1995028339",
+      "start": 910,
+      "end": 942,
+      "surface_text": "expansion of the inverted repeat",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "expansion of the inverted repeat"
+      ],
+      "confidence": 0.6343262195587158,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1995028339",
+          "start": 910,
+          "end": 942,
+          "surface_text": "expansion of the inverted repeat",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.6343262195587158,
+          "normalized_form": "expansion of the inverted repeat",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:fef542d0df3c7ddc1366b0e3c1f29e4004f1bfcb7199adb44b2ca70b4df4b7e5",
+          "revision_id": "sha256:0d85abeec77604f49039eb07af4a689ef78fe525a61c8f57142214508e4110ac",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1995028339",
+            "doi": "https://doi.org/10.1371/journal.pone.0107854",
+            "landing_page_url": "https://doi.org/10.1371/journal.pone.0107854",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1995028339",
+            "text_sha256": "0d85abeec77604f49039eb07af4a689ef78fe525a61c8f57142214508e4110ac"
+          },
+          "raw_prediction": {
+            "start": 910,
+            "end": 942,
+            "text": "expansion of the inverted repeat",
+            "label": "attribute",
+            "score": 0.6343262195587158
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:b2976ab05c592c44c43e1bf22e6b936ce91e3f49658d9e6114a20377ffeefa36",
+      "document_id": "W1995028339",
+      "start": 927,
+      "end": 942,
+      "surface_text": "inverted repeat",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "inverted repeat"
+      ],
+      "confidence": 0.3797420263290405,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1995028339",
+          "start": 927,
+          "end": 942,
+          "surface_text": "inverted repeat",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.3797420263290405,
+          "normalized_form": "inverted repeat",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:fef542d0df3c7ddc1366b0e3c1f29e4004f1bfcb7199adb44b2ca70b4df4b7e5",
+          "revision_id": "sha256:0d85abeec77604f49039eb07af4a689ef78fe525a61c8f57142214508e4110ac",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1995028339",
+            "doi": "https://doi.org/10.1371/journal.pone.0107854",
+            "landing_page_url": "https://doi.org/10.1371/journal.pone.0107854",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1995028339",
+            "text_sha256": "0d85abeec77604f49039eb07af4a689ef78fe525a61c8f57142214508e4110ac"
+          },
+          "raw_prediction": {
+            "start": 927,
+            "end": 942,
+            "text": "inverted repeat",
+            "label": "attribute",
+            "score": 0.3797420263290405
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:2b97e70e8e77c802502d5e7474908108d8f23f31d6633878c9cf45a0cd82defa",
+      "document_id": "W1995028339",
+      "start": 944,
+      "end": 956,
+      "surface_text": "Gene content",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "gene content"
+      ],
+      "confidence": 0.6243661046028137,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1995028339",
+          "start": 944,
+          "end": 956,
+          "surface_text": "Gene content",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.6243661046028137,
+          "normalized_form": "gene content",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:fef542d0df3c7ddc1366b0e3c1f29e4004f1bfcb7199adb44b2ca70b4df4b7e5",
+          "revision_id": "sha256:0d85abeec77604f49039eb07af4a689ef78fe525a61c8f57142214508e4110ac",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1995028339",
+            "doi": "https://doi.org/10.1371/journal.pone.0107854",
+            "landing_page_url": "https://doi.org/10.1371/journal.pone.0107854",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1995028339",
+            "text_sha256": "0d85abeec77604f49039eb07af4a689ef78fe525a61c8f57142214508e4110ac"
+          },
+          "raw_prediction": {
+            "start": 944,
+            "end": 956,
+            "text": "Gene content",
+            "label": "attribute",
+            "score": 0.6243661046028137
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a2f07995df9397264d5213cc969700ad10588b8879964e5c5d65744e4f78dd05",
+      "document_id": "W1995028339",
+      "start": 1034,
+      "end": 1044,
+      "surface_text": "Gene order",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "gene order"
+      ],
+      "confidence": 0.6434851884841919,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1995028339",
+          "start": 1034,
+          "end": 1044,
+          "surface_text": "Gene order",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.6434851884841919,
+          "normalized_form": "gene order",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:fef542d0df3c7ddc1366b0e3c1f29e4004f1bfcb7199adb44b2ca70b4df4b7e5",
+          "revision_id": "sha256:0d85abeec77604f49039eb07af4a689ef78fe525a61c8f57142214508e4110ac",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1995028339",
+            "doi": "https://doi.org/10.1371/journal.pone.0107854",
+            "landing_page_url": "https://doi.org/10.1371/journal.pone.0107854",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1995028339",
+            "text_sha256": "0d85abeec77604f49039eb07af4a689ef78fe525a61c8f57142214508e4110ac"
+          },
+          "raw_prediction": {
+            "start": 1034,
+            "end": 1044,
+            "text": "Gene order",
+            "label": "attribute",
+            "score": 0.6434851884841919
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:7089c4fd370a2590ab01eabde325ba8d5bc84dd413d59e69be6894776bcd991d",
+      "document_id": "W1995028339",
+      "start": 1419,
+      "end": 1423,
+      "surface_text": "ilvB",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "ilvb"
+      ],
+      "confidence": 0.6755011081695557,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1995028339",
+          "start": 1419,
+          "end": 1423,
+          "surface_text": "ilvB",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.6755011081695557,
+          "normalized_form": "ilvb",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:fef542d0df3c7ddc1366b0e3c1f29e4004f1bfcb7199adb44b2ca70b4df4b7e5",
+          "revision_id": "sha256:0d85abeec77604f49039eb07af4a689ef78fe525a61c8f57142214508e4110ac",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1995028339",
+            "doi": "https://doi.org/10.1371/journal.pone.0107854",
+            "landing_page_url": "https://doi.org/10.1371/journal.pone.0107854",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1995028339",
+            "text_sha256": "0d85abeec77604f49039eb07af4a689ef78fe525a61c8f57142214508e4110ac"
+          },
+          "raw_prediction": {
+            "start": 1419,
+            "end": 1423,
+            "text": "ilvB",
+            "label": "attribute",
+            "score": 0.6755011081695557
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:971d30254b17322021099b641c6a2488745cd4b16bc495de9c73544cdc774a65",
+      "document_id": "W1995028339",
+      "start": 1428,
+      "end": 1432,
+      "surface_text": "ilvH",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "ilvh"
+      ],
+      "confidence": 0.5027875304222107,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1995028339",
+          "start": 1428,
+          "end": 1432,
+          "surface_text": "ilvH",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.5027875304222107,
+          "normalized_form": "ilvh",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:fef542d0df3c7ddc1366b0e3c1f29e4004f1bfcb7199adb44b2ca70b4df4b7e5",
+          "revision_id": "sha256:0d85abeec77604f49039eb07af4a689ef78fe525a61c8f57142214508e4110ac",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1995028339",
+            "doi": "https://doi.org/10.1371/journal.pone.0107854",
+            "landing_page_url": "https://doi.org/10.1371/journal.pone.0107854",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1995028339",
+            "text_sha256": "0d85abeec77604f49039eb07af4a689ef78fe525a61c8f57142214508e4110ac"
+          },
+          "raw_prediction": {
+            "start": 1428,
+            "end": 1432,
+            "text": "ilvH",
+            "label": "attribute",
+            "score": 0.5027875304222107
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:baa0d06a5a29121a35213a50b5829b702bf5393ec17f3fdd7033e0d6154d5239",
+      "document_id": "W1995028339",
+      "start": 1577,
+      "end": 1582,
+      "surface_text": "acpP1",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "acpp1"
+      ],
+      "confidence": 0.4146769046783447,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1995028339",
+          "start": 1577,
+          "end": 1582,
+          "surface_text": "acpP1",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.4146769046783447,
+          "normalized_form": "acpp1",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:fef542d0df3c7ddc1366b0e3c1f29e4004f1bfcb7199adb44b2ca70b4df4b7e5",
+          "revision_id": "sha256:0d85abeec77604f49039eb07af4a689ef78fe525a61c8f57142214508e4110ac",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1995028339",
+            "doi": "https://doi.org/10.1371/journal.pone.0107854",
+            "landing_page_url": "https://doi.org/10.1371/journal.pone.0107854",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1995028339",
+            "text_sha256": "0d85abeec77604f49039eb07af4a689ef78fe525a61c8f57142214508e4110ac"
+          },
+          "raw_prediction": {
+            "start": 1577,
+            "end": 1582,
+            "text": "acpP1",
+            "label": "attribute",
+            "score": 0.4146769046783447
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:b9a8c3c64d4d443e08339142d1811a97a6cb51dc4dd7ae6a894f248c3e3720c2",
+      "document_id": "W1995028339",
+      "start": 1577,
+      "end": 1587,
+      "surface_text": "acpP1 gene",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "acpp1 gene"
+      ],
+      "confidence": 0.4444006383419037,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1995028339",
+          "start": 1577,
+          "end": 1587,
+          "surface_text": "acpP1 gene",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.4444006383419037,
+          "normalized_form": "acpp1 gene",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:fef542d0df3c7ddc1366b0e3c1f29e4004f1bfcb7199adb44b2ca70b4df4b7e5",
+          "revision_id": "sha256:0d85abeec77604f49039eb07af4a689ef78fe525a61c8f57142214508e4110ac",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1995028339",
+            "doi": "https://doi.org/10.1371/journal.pone.0107854",
+            "landing_page_url": "https://doi.org/10.1371/journal.pone.0107854",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1995028339",
+            "text_sha256": "0d85abeec77604f49039eb07af4a689ef78fe525a61c8f57142214508e4110ac"
+          },
+          "raw_prediction": {
+            "start": 1577,
+            "end": 1587,
+            "text": "acpP1 gene",
+            "label": "attribute",
+            "score": 0.4444006383419037
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:f69983f8bceb0f1a50639bcf12e7d7825b0bffd34f2080d30ecbb004487b38fa",
+      "document_id": "W1995028339",
+      "start": 1778,
+      "end": 1792,
+      "surface_text": "photosynthesis",
+      "entity_types": [
+        "ATTRIBUTE",
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "photosynthesis"
+      ],
+      "confidence": 0.4164588749408722,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1995028339",
+          "start": 1778,
+          "end": 1792,
+          "surface_text": "photosynthesis",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.4164588749408722,
+          "normalized_form": "photosynthesis",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:fef542d0df3c7ddc1366b0e3c1f29e4004f1bfcb7199adb44b2ca70b4df4b7e5",
+          "revision_id": "sha256:0d85abeec77604f49039eb07af4a689ef78fe525a61c8f57142214508e4110ac",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1995028339",
+            "doi": "https://doi.org/10.1371/journal.pone.0107854",
+            "landing_page_url": "https://doi.org/10.1371/journal.pone.0107854",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1995028339",
+            "text_sha256": "0d85abeec77604f49039eb07af4a689ef78fe525a61c8f57142214508e4110ac"
+          },
+          "raw_prediction": {
+            "start": 1778,
+            "end": 1792,
+            "text": "photosynthesis",
+            "label": "attribute",
+            "score": 0.4164588749408722
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1995028339",
+          "start": 1778,
+          "end": 1792,
+          "surface_text": "photosynthesis",
+          "ner_label_hint": "PROCESS",
+          "score": 0.35559165477752686,
+          "normalized_form": "photosynthesis",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:fef542d0df3c7ddc1366b0e3c1f29e4004f1bfcb7199adb44b2ca70b4df4b7e5",
+          "revision_id": "sha256:0d85abeec77604f49039eb07af4a689ef78fe525a61c8f57142214508e4110ac",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1995028339",
+            "doi": "https://doi.org/10.1371/journal.pone.0107854",
+            "landing_page_url": "https://doi.org/10.1371/journal.pone.0107854",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1995028339",
+            "text_sha256": "0d85abeec77604f49039eb07af4a689ef78fe525a61c8f57142214508e4110ac"
+          },
+          "raw_prediction": {
+            "start": 1778,
+            "end": 1792,
+            "text": "photosynthesis",
+            "label": "process",
+            "score": 0.35559165477752686
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:6b1f131cfcf46fb32dab403bdae8f000f71c109872aceada13f63fecb198f8ca",
+      "document_id": "W1995028339",
+      "start": 1794,
+      "end": 1798,
+      "surface_text": "psaE",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "psae"
+      ],
+      "confidence": 0.6650723814964294,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1995028339",
+          "start": 1794,
+          "end": 1798,
+          "surface_text": "psaE",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.6650723814964294,
+          "normalized_form": "psae",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:fef542d0df3c7ddc1366b0e3c1f29e4004f1bfcb7199adb44b2ca70b4df4b7e5",
+          "revision_id": "sha256:0d85abeec77604f49039eb07af4a689ef78fe525a61c8f57142214508e4110ac",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1995028339",
+            "doi": "https://doi.org/10.1371/journal.pone.0107854",
+            "landing_page_url": "https://doi.org/10.1371/journal.pone.0107854",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1995028339",
+            "text_sha256": "0d85abeec77604f49039eb07af4a689ef78fe525a61c8f57142214508e4110ac"
+          },
+          "raw_prediction": {
+            "start": 1794,
+            "end": 1798,
+            "text": "psaE",
+            "label": "attribute",
+            "score": 0.6650723814964294
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:467e00db1c4a18c0bfad1b2b891e3d7e9b1a482a47037b9d45977c382959673c",
+      "document_id": "W1995028339",
+      "start": 1800,
+      "end": 1804,
+      "surface_text": "psaI",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "psai"
+      ],
+      "confidence": 0.5736319422721863,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1995028339",
+          "start": 1800,
+          "end": 1804,
+          "surface_text": "psaI",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.5736319422721863,
+          "normalized_form": "psai",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:fef542d0df3c7ddc1366b0e3c1f29e4004f1bfcb7199adb44b2ca70b4df4b7e5",
+          "revision_id": "sha256:0d85abeec77604f49039eb07af4a689ef78fe525a61c8f57142214508e4110ac",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1995028339",
+            "doi": "https://doi.org/10.1371/journal.pone.0107854",
+            "landing_page_url": "https://doi.org/10.1371/journal.pone.0107854",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1995028339",
+            "text_sha256": "0d85abeec77604f49039eb07af4a689ef78fe525a61c8f57142214508e4110ac"
+          },
+          "raw_prediction": {
+            "start": 1800,
+            "end": 1804,
+            "text": "psaI",
+            "label": "attribute",
+            "score": 0.5736319422721863
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:0f54646930da3aca4eac0a92cce64e5b004f8a3f0f808a1eea199bd2ecb58b44",
+      "document_id": "W1995028339",
+      "start": 1806,
+      "end": 1810,
+      "surface_text": "psaM",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "psam"
+      ],
+      "confidence": 0.5578333139419556,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W1995028339",
+          "start": 1806,
+          "end": 1810,
+          "surface_text": "psaM",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.5578333139419556,
+          "normalized_form": "psam",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:fef542d0df3c7ddc1366b0e3c1f29e4004f1bfcb7199adb44b2ca70b4df4b7e5",
+          "revision_id": "sha256:0d85abeec77604f49039eb07af4a689ef78fe525a61c8f57142214508e4110ac",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W1995028339",
+            "doi": "https://doi.org/10.1371/journal.pone.0107854",
+            "landing_page_url": "https://doi.org/10.1371/journal.pone.0107854",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W1995028339",
+            "text_sha256": "0d85abeec77604f49039eb07af4a689ef78fe525a61c8f57142214508e4110ac"
+          },
+          "raw_prediction": {
+            "start": 1806,
+            "end": 1810,
+            "text": "psaM",
+            "label": "attribute",
+            "score": 0.5578333139419556
+          }
+        }
+      ]
+    }
+  ],
+  "relations": [],
+  "raw_relation_count": 0,
+  "seconds": 2.7275471000466496
+}

@@ -1,0 +1,4541 @@
+{
+  "fingerprint": "68877d1a9d3e60c95fa0f80b22849e687e090d57cd2766f6c7948ec7306fc75d",
+  "document_id": "W2364973104",
+  "model": "knowledgator/gliner-relex-large-v1.0",
+  "mode": "e3",
+  "raw_windows": [
+    {
+      "window": {
+        "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+        "document_id": "W2364973104",
+        "start": 0,
+        "end": 1158,
+        "text": "Considering the characteristics of lightning protection for military motor power station and low technical performance of military power station lightning protection and weak objective etc.,this paper,based on typical low-noise motor lightning in military power station,establishes the electromagnetic transient model containing key parts in the lighting protection,such as generator,control unit,and cables by the PSCAD/EMTDC power simulation software.The action mechanism and influence laws of indirect lighting over-voltage in the military power supply are discussed,and a technical proposal of the indirect lightning protection for the military power system is presented.This proposal is realized mainly by installing the SPD on the parts of the electric supply line,power supply line and signal line to provide shielding and filtering for the indirect lightning protection.This lighting protection module device is of high reliability and safety,and can overcome the barriers of the conventional lightening protection device,and helps to improve the indirect lighting protection capability and anti-weather fighting ability of the military power supply.",
+        "entity_ids": [
+          "e:c6511cda2cec167f94600bbdcd4975f96f346215c7e171c8c85408dcddd000fe",
+          "e:cc2cee8f508e7d37dd5cb96ec96c7f0f013b37c52f6b558beb4798dec9024c2c",
+          "e:5e949c26b9556406cf14df6c053ba611f99717b123b8e45770f5cee5d8558316",
+          "e:f69ce2636d00ca6810c63da8ce52c9eff466ba292e903dab2f00d3d7d3115f30",
+          "e:6194d7ac2c9424881213860d505f552f49c06e89f293368e5ac3e4b8794192e8",
+          "e:382c345fe0d4942f3c49891433e99132621d74a4ee5962cb3abebf1d4ca56e01",
+          "e:d7845a190d415f0e5e387e8627fee5487d260eb18eb5557c371288bfc92ff584",
+          "e:068e2d2444b961ba1241a1ae8f7f00caddfd11b9cb1d5c078215360d32cffd64",
+          "e:3bf32df04659bfa45379dec5753c100088fb826dd89825b197a129f7ab0731cb",
+          "e:78db0568e069c46642eb7dd28358926123487c6122891443bcd174c9ae11f5d1",
+          "e:dbe56e7e1218f4be8c70d47aa93c40573e58b021ed11530563fa43cf86e4b3f0",
+          "e:e48137eddd681a3d333e552a0a00b189d7c700f7a58ceaef2ffedb3d62134f35",
+          "e:041c74c144abb67df08375536963a8edd04614ffcfae24e81a0212ed45bab6e7",
+          "e:d57569e86e48434a1dd44abe27b5f550ae4d55272539758f461814b1a3e0ac57",
+          "e:36285854574954987afb483139ac119bf8ce2ae49e258165f2a4585f1fcae0ec",
+          "e:cbc4992e0502870a61ddaa474edbae00eea23ebee31155eb97875590f755d75c",
+          "e:93a82df2d81adeafcd098a2225aebf91887db2dfb10db78842470ce45d38a386",
+          "e:bec5f679723541855750b529385ca3e7f512cdd25ca2c2717e231e6a6c7d8339",
+          "e:58bd51f6cc4551211f79bd7f9fcf8c956dbb957225930dce7dc5b746d5d72d13",
+          "e:c4a00d0fcf944b2e763261b5bea19a2ccb4aa764e6de8fda4857b976287c4e7b",
+          "e:33d0710d9d3ce603d834edc8a8411a025e37ba69b39968ee141ac1bc4e6d1c51",
+          "e:669ae2376373a496a814243c1f51c5ff69d3f58b831f5d629924a1b8cb564525",
+          "e:1ee0f4c18edfdf5ac9f268d8c7ab746c86c5db350e6a818394fa779263acd7de",
+          "e:6c614f5f1a59017019104964bb59bb0b7eebb62bc1647f9b5fcd3d2b2df3abdb",
+          "e:12207688860e52b6e9cff80185d6c6c0271e9436205a522d9481b8c9f100f7d5",
+          "e:c9bd42fb51487a76b4f342b4a0a1844a8f4f806bb12ff7fb654a70ce2864642f",
+          "e:1c3831a81a6b1b1c84e6420964eae7fdd700f1e4ae94b910d30b0d9baa3b5188",
+          "e:b372ff5eac770f50263590dbeeb5692d84e8a9ae925921653125934e9561f05a",
+          "e:a8cf7f03bc1ec5598c0f8b5966e5e75e5ffbb0e85cd540b7570ea1efa0085139",
+          "e:3f2ee011f1a8f873e923450d45fb97d68144e41aa83871a0844cf3a0ecb943e5",
+          "e:40ed6134387236dd71465bf54232f90ab25bdf27a3dff84cd1b966e1ff191f13",
+          "e:b3e30ffda1d11e7c2d2a88b6befb2116fe4dce4f32a3bcb4221db19492ae1632",
+          "e:03f8e1834848da4b2437d29660f0126334f6accb2d3f1b3a6a363253751d37a6",
+          "e:7a85516bcc450f8e9cebb3a3bfdd70d59754867a031bdd1e0270e342151b7914",
+          "e:a1d72abe58f6574548c84a4c27f3e98de051a95edc250a1964d06db4ac9b1a95",
+          "e:89d523be3967733e616c7795614f0d46b96a3d1f64dc5225c1844aa7cb617d0e",
+          "e:81f4083b1d4c7e5cf53c736ba621632eb75c8f003c0f8de7af8938bcf7bb0ba7",
+          "e:3ef25123194e2aaef468d3f990fc9081f0a857c49443281f59701c42b411c997",
+          "e:da1b59403aafa837744c6248ea6154b7827e50b6a0d06b96bb9af9d433973ab8",
+          "e:4c523f9bea42c631badb64c769b6692d2fe5e45a4356c6617c9bf36d197c8b1d",
+          "e:88884d2344491a059eec658e69cc7f681c573457c9d1755e7d8d195a83809f59",
+          "e:e60723edabc89964ba25efd7a453da60e7a10aa6e54fb21b8a8ee81cb5fa5120"
+        ]
+      },
+      "audit": {
+        "tokens": 273,
+        "spans": 42,
+        "pairs": 1722,
+        "supplied_word_spans": [
+          [
+            4,
+            5
+          ],
+          [
+            7,
+            10
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            16,
+            18
+          ],
+          [
+            16,
+            20
+          ],
+          [
+            19,
+            20
+          ],
+          [
+            33,
+            35
+          ],
+          [
+            37,
+            39
+          ],
+          [
+            43,
+            45
+          ],
+          [
+            51,
+            52
+          ],
+          [
+            56,
+            56
+          ],
+          [
+            58,
+            59
+          ],
+          [
+            62,
+            62
+          ],
+          [
+            65,
+            67
+          ],
+          [
+            65,
+            70
+          ],
+          [
+            67,
+            67
+          ],
+          [
+            67,
+            70
+          ],
+          [
+            73,
+            74
+          ],
+          [
+            79,
+            81
+          ],
+          [
+            84,
+            86
+          ],
+          [
+            92,
+            93
+          ],
+          [
+            96,
+            98
+          ],
+          [
+            97,
+            98
+          ],
+          [
+            101,
+            103
+          ],
+          [
+            113,
+            113
+          ],
+          [
+            115,
+            115
+          ],
+          [
+            118,
+            118
+          ],
+          [
+            121,
+            123
+          ],
+          [
+            125,
+            127
+          ],
+          [
+            129,
+            130
+          ],
+          [
+            135,
+            135
+          ],
+          [
+            138,
+            140
+          ],
+          [
+            143,
+            146
+          ],
+          [
+            145,
+            146
+          ],
+          [
+            150,
+            150
+          ],
+          [
+            152,
+            152
+          ],
+          [
+            158,
+            158
+          ],
+          [
+            161,
+            164
+          ],
+          [
+            162,
+            164
+          ],
+          [
+            171,
+            173
+          ],
+          [
+            174,
+            174
+          ],
+          [
+            181,
+            183
+          ]
+        ]
+      },
+      "predictions": [
+        {
+          "head": {
+            "start": 122,
+            "end": 144,
+            "text": "military power station"
+          },
+          "tail": {
+            "start": 401,
+            "end": 407,
+            "text": "cables"
+          },
+          "relation": "has part",
+          "score": 0.7267842888832092
+        },
+        {
+          "head": {
+            "start": 286,
+            "end": 317,
+            "text": "electromagnetic transient model"
+          },
+          "tail": {
+            "start": 218,
+            "end": 243,
+            "text": "low-noise motor lightning"
+          },
+          "relation": "derived from",
+          "score": 0.902002215385437
+        },
+        {
+          "head": {
+            "start": 726,
+            "end": 729,
+            "text": "SPD"
+          },
+          "tail": {
+            "start": 750,
+            "end": 770,
+            "text": "electric supply line"
+          },
+          "relation": "applied to",
+          "score": 0.8626444935798645
+        },
+        {
+          "head": {
+            "start": 726,
+            "end": 729,
+            "text": "SPD"
+          },
+          "tail": {
+            "start": 771,
+            "end": 788,
+            "text": "power supply line"
+          },
+          "relation": "applied to",
+          "score": 0.76719069480896
+        },
+        {
+          "head": {
+            "start": 726,
+            "end": 729,
+            "text": "SPD"
+          },
+          "tail": {
+            "start": 793,
+            "end": 804,
+            "text": "signal line"
+          },
+          "relation": "applied to",
+          "score": 0.7305343151092529
+        },
+        {
+          "head": {
+            "start": 726,
+            "end": 729,
+            "text": "SPD"
+          },
+          "tail": {
+            "start": 830,
+            "end": 839,
+            "text": "filtering"
+          },
+          "relation": "performs",
+          "score": 0.8605042099952698
+        },
+        {
+          "head": {
+            "start": 883,
+            "end": 916,
+            "text": "lighting protection module device"
+          },
+          "tail": {
+            "start": 928,
+            "end": 939,
+            "text": "reliability"
+          },
+          "relation": "has attribute",
+          "score": 0.8561009764671326
+        },
+        {
+          "head": {
+            "start": 883,
+            "end": 916,
+            "text": "lighting protection module device"
+          },
+          "tail": {
+            "start": 944,
+            "end": 950,
+            "text": "safety"
+          },
+          "relation": "has attribute",
+          "score": 0.8865104913711548
+        },
+        {
+          "head": {
+            "start": 883,
+            "end": 916,
+            "text": "lighting protection module device"
+          },
+          "tail": {
+            "start": 988,
+            "end": 1029,
+            "text": "conventional lightening protection device"
+          },
+          "relation": "compared with",
+          "score": 0.7784853577613831
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "e:c6511cda2cec167f94600bbdcd4975f96f346215c7e171c8c85408dcddd000fe",
+      "document_id": "W2364973104",
+      "start": 35,
+      "end": 55,
+      "surface_text": "lightning protection",
+      "entity_types": [
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "lightning protection"
+      ],
+      "confidence": 0.7525572180747986,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 55,
+          "lemma": "lightning protection",
+          "mention_id": "m:25f05754b32fb576ecb22ba3a7e9a90b175e0e594e876ac8465045f8d7c04545",
+          "ner_label_hint": "CONCEPT",
+          "normalized_form": "lightning protection",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.7525572180747986,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 35,
+          "surface_text": "lightning protection",
+          "tokens": [
+            {
+              "end": 44,
+              "lemma": "lightning",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 35,
+              "tag": "NN",
+              "text": "lightning"
+            },
+            {
+              "end": 55,
+              "lemma": "protection",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 45,
+              "tag": "NN",
+              "text": "protection"
+            }
+          ]
+        },
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 55,
+          "lemma": "lightning protection",
+          "mention_id": "m:e76d38f9b81b864142c02ba2ac693d5e09436f603120744d3c4eda057436fcf6",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "lightning protection",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.5288347601890564,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 35,
+          "surface_text": "lightning protection",
+          "tokens": [
+            {
+              "end": 44,
+              "lemma": "lightning",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 35,
+              "tag": "NN",
+              "text": "lightning"
+            },
+            {
+              "end": 55,
+              "lemma": "protection",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 45,
+              "tag": "NN",
+              "text": "protection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:cc2cee8f508e7d37dd5cb96ec96c7f0f013b37c52f6b558beb4798dec9024c2c",
+      "document_id": "W2364973104",
+      "start": 60,
+      "end": 88,
+      "surface_text": "military motor power station",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "military motor power station"
+      ],
+      "confidence": 0.9214234948158264,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 88,
+          "lemma": "military motor power station",
+          "mention_id": "m:f773a41734dd7d3d4bbd2c6ad76a0f3ebd5318203d7418b5dec285de93ccf33a",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "military motor power station",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.9214234948158264,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 60,
+          "surface_text": "military motor power station",
+          "tokens": [
+            {
+              "end": 68,
+              "lemma": "military",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 60,
+              "tag": "JJ",
+              "text": "military"
+            },
+            {
+              "end": 74,
+              "lemma": "motor",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 69,
+              "tag": "NN",
+              "text": "motor"
+            },
+            {
+              "end": 80,
+              "lemma": "power",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 75,
+              "tag": "NN",
+              "text": "power"
+            },
+            {
+              "end": 88,
+              "lemma": "station",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 81,
+              "tag": "NN",
+              "text": "station"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:5e949c26b9556406cf14df6c053ba611f99717b123b8e45770f5cee5d8558316",
+      "document_id": "W2364973104",
+      "start": 97,
+      "end": 118,
+      "surface_text": "technical performance",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "technical performance"
+      ],
+      "confidence": 0.4432116150856018,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 118,
+          "lemma": "technical performance",
+          "mention_id": "m:348784bb23f7193f12c19c21748eb2b45e687084e8149ca4a053c605727cd63c",
+          "ner_label_hint": "ATTRIBUTE",
+          "normalized_form": "technical performance",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.4432116150856018,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 97,
+          "surface_text": "technical performance",
+          "tokens": [
+            {
+              "end": 106,
+              "lemma": "technical",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 97,
+              "tag": "JJ",
+              "text": "technical"
+            },
+            {
+              "end": 118,
+              "lemma": "performance",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 107,
+              "tag": "NN",
+              "text": "performance"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:f69ce2636d00ca6810c63da8ce52c9eff466ba292e903dab2f00d3d7d3115f30",
+      "document_id": "W2364973104",
+      "start": 122,
+      "end": 144,
+      "surface_text": "military power station",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "military power station"
+      ],
+      "confidence": 0.9193512797355652,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 144,
+          "lemma": "military power station",
+          "mention_id": "m:bf28543f7e3e270906f27f0670dc55412a3ff1f0c60869a1e9f5b9d78445819b",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "military power station",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.9193512797355652,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 122,
+          "surface_text": "military power station",
+          "tokens": [
+            {
+              "end": 130,
+              "lemma": "military",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 122,
+              "tag": "JJ",
+              "text": "military"
+            },
+            {
+              "end": 136,
+              "lemma": "power",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 131,
+              "tag": "NN",
+              "text": "power"
+            },
+            {
+              "end": 144,
+              "lemma": "station",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 137,
+              "tag": "NN",
+              "text": "station"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:6194d7ac2c9424881213860d505f552f49c06e89f293368e5ac3e4b8794192e8",
+      "document_id": "W2364973104",
+      "start": 122,
+      "end": 165,
+      "surface_text": "military power station lightning protection",
+      "entity_types": [
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "military power station lightning protection"
+      ],
+      "confidence": 0.7796963453292847,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 165,
+          "lemma": "military power station lightning protection",
+          "mention_id": "m:1ccd0bbb1150666722c17b387671a0333db7f83331e07ecead9f35a079efd2ff",
+          "ner_label_hint": "CONCEPT",
+          "normalized_form": "military power station lightning protection",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.411350280046463,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 122,
+          "surface_text": "military power station lightning protection",
+          "tokens": [
+            {
+              "end": 130,
+              "lemma": "military",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 122,
+              "tag": "JJ",
+              "text": "military"
+            },
+            {
+              "end": 136,
+              "lemma": "power",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 131,
+              "tag": "NN",
+              "text": "power"
+            },
+            {
+              "end": 144,
+              "lemma": "station",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 137,
+              "tag": "NN",
+              "text": "station"
+            },
+            {
+              "end": 154,
+              "lemma": "lightning",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 145,
+              "tag": "NN",
+              "text": "lightning"
+            },
+            {
+              "end": 165,
+              "lemma": "protection",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 155,
+              "tag": "NN",
+              "text": "protection"
+            }
+          ]
+        },
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 165,
+          "lemma": "military power station lightning protection",
+          "mention_id": "m:bef47181677b64e830b99e9ec3ba142f7aa5f6ed04a796955b49806f8cf13d98",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "military power station lightning protection",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.7796963453292847,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 122,
+          "surface_text": "military power station lightning protection",
+          "tokens": [
+            {
+              "end": 130,
+              "lemma": "military",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 122,
+              "tag": "JJ",
+              "text": "military"
+            },
+            {
+              "end": 136,
+              "lemma": "power",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 131,
+              "tag": "NN",
+              "text": "power"
+            },
+            {
+              "end": 144,
+              "lemma": "station",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 137,
+              "tag": "NN",
+              "text": "station"
+            },
+            {
+              "end": 154,
+              "lemma": "lightning",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 145,
+              "tag": "NN",
+              "text": "lightning"
+            },
+            {
+              "end": 165,
+              "lemma": "protection",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 155,
+              "tag": "NN",
+              "text": "protection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:382c345fe0d4942f3c49891433e99132621d74a4ee5962cb3abebf1d4ca56e01",
+      "document_id": "W2364973104",
+      "start": 145,
+      "end": 165,
+      "surface_text": "lightning protection",
+      "entity_types": [
+        "CONCEPT"
+      ],
+      "normalized_forms": [
+        "lightning protection"
+      ],
+      "confidence": 0.8654477000236511,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 165,
+          "lemma": "lightning protection",
+          "mention_id": "m:c9f3fd8ad5ddd1b18369812195b881f13764d45c0ee5edb7d6685c8f0b79fc38",
+          "ner_label_hint": "CONCEPT",
+          "normalized_form": "lightning protection",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.8654477000236511,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 145,
+          "surface_text": "lightning protection",
+          "tokens": [
+            {
+              "end": 154,
+              "lemma": "lightning",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 145,
+              "tag": "NN",
+              "text": "lightning"
+            },
+            {
+              "end": 165,
+              "lemma": "protection",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 155,
+              "tag": "NN",
+              "text": "protection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d7845a190d415f0e5e387e8627fee5487d260eb18eb5557c371288bfc92ff584",
+      "document_id": "W2364973104",
+      "start": 218,
+      "end": 243,
+      "surface_text": "low-noise motor lightning",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "low-noise motor lightning"
+      ],
+      "confidence": 0.45261338353157043,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 243,
+          "lemma": "low-noise motor lightning",
+          "mention_id": "m:3115febdf2ec2c2c02c5dcd069eec5e6df4fee55f007bead8eda03fb619a9329",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "low-noise motor lightning",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.45261338353157043,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 218,
+          "surface_text": "low-noise motor lightning",
+          "tokens": [
+            {
+              "end": 221,
+              "lemma": "low",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 218,
+              "tag": "JJ",
+              "text": "low"
+            },
+            {
+              "end": 222,
+              "lemma": "-",
+              "morph": {
+                "PunctType": "Dash"
+              },
+              "partial_token": false,
+              "pos": "PUNCT",
+              "possessive": false,
+              "start": 221,
+              "tag": "HYPH",
+              "text": "-"
+            },
+            {
+              "end": 227,
+              "lemma": "noise",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 222,
+              "tag": "NN",
+              "text": "noise"
+            },
+            {
+              "end": 233,
+              "lemma": "motor",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 228,
+              "tag": "NN",
+              "text": "motor"
+            },
+            {
+              "end": 243,
+              "lemma": "lightning",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 234,
+              "tag": "NN",
+              "text": "lightning"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:068e2d2444b961ba1241a1ae8f7f00caddfd11b9cb1d5c078215360d32cffd64",
+      "document_id": "W2364973104",
+      "start": 247,
+      "end": 269,
+      "surface_text": "military power station",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "military power station"
+      ],
+      "confidence": 0.9018766283988953,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 269,
+          "lemma": "military power station",
+          "mention_id": "m:1059979f2a70748df9f12c81bea74dafa2e3743d37cbcfded0e31af699b48f6f",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "military power station",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.9018766283988953,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 247,
+          "surface_text": "military power station",
+          "tokens": [
+            {
+              "end": 255,
+              "lemma": "military",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 247,
+              "tag": "JJ",
+              "text": "military"
+            },
+            {
+              "end": 261,
+              "lemma": "power",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 256,
+              "tag": "NN",
+              "text": "power"
+            },
+            {
+              "end": 269,
+              "lemma": "station",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 262,
+              "tag": "NN",
+              "text": "station"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:3bf32df04659bfa45379dec5753c100088fb826dd89825b197a129f7ab0731cb",
+      "document_id": "W2364973104",
+      "start": 286,
+      "end": 317,
+      "surface_text": "electromagnetic transient model",
+      "entity_types": [
+        "CONCEPT"
+      ],
+      "normalized_forms": [
+        "electromagnetic transient model"
+      ],
+      "confidence": 0.746171772480011,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 317,
+          "lemma": "electromagnetic transient model",
+          "mention_id": "m:5f137ed419428ae2086f4470c44feaf90609ac12fad5c91efec7cf73f846e95f",
+          "ner_label_hint": "CONCEPT",
+          "normalized_form": "electromagnetic transient model",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.746171772480011,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 286,
+          "surface_text": "electromagnetic transient model",
+          "tokens": [
+            {
+              "end": 301,
+              "lemma": "electromagnetic",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 286,
+              "tag": "JJ",
+              "text": "electromagnetic"
+            },
+            {
+              "end": 311,
+              "lemma": "transient",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 302,
+              "tag": "JJ",
+              "text": "transient"
+            },
+            {
+              "end": 317,
+              "lemma": "model",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 312,
+              "tag": "NN",
+              "text": "model"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:78db0568e069c46642eb7dd28358926123487c6122891443bcd174c9ae11f5d1",
+      "document_id": "W2364973104",
+      "start": 346,
+      "end": 365,
+      "surface_text": "lighting protection",
+      "entity_types": [
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "lighting protection"
+      ],
+      "confidence": 0.6622327566146851,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 365,
+          "lemma": "lighting protection",
+          "mention_id": "m:7e76368e87eadbb3e13642759dbaacb6d9633fdd77b67ba5cbf329bdab8c1c82",
+          "ner_label_hint": "CONCEPT",
+          "normalized_form": "lighting protection",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.6064938902854919,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 346,
+          "surface_text": "lighting protection",
+          "tokens": [
+            {
+              "end": 354,
+              "lemma": "lighting",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 346,
+              "tag": "NN",
+              "text": "lighting"
+            },
+            {
+              "end": 365,
+              "lemma": "protection",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 355,
+              "tag": "NN",
+              "text": "protection"
+            }
+          ]
+        },
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 365,
+          "lemma": "lighting protection",
+          "mention_id": "m:676c4bbd975d0770a932b7faa3249b6f7399a96a3a9bef7599288bf4026aa79b",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "lighting protection",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.6622327566146851,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 346,
+          "surface_text": "lighting protection",
+          "tokens": [
+            {
+              "end": 354,
+              "lemma": "lighting",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 346,
+              "tag": "NN",
+              "text": "lighting"
+            },
+            {
+              "end": 365,
+              "lemma": "protection",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 355,
+              "tag": "NN",
+              "text": "protection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:dbe56e7e1218f4be8c70d47aa93c40573e58b021ed11530563fa43cf86e4b3f0",
+      "document_id": "W2364973104",
+      "start": 374,
+      "end": 383,
+      "surface_text": "generator",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "generator"
+      ],
+      "confidence": 0.9936398863792419,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 383,
+          "lemma": "generator",
+          "mention_id": "m:167a54e90912b350da7b638393435b2da37fac05f3ca1908073b9f8dc98785b1",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "generator",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.9936398863792419,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 374,
+          "surface_text": "generator",
+          "tokens": [
+            {
+              "end": 383,
+              "lemma": "generator",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 374,
+              "tag": "NN",
+              "text": "generator"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:e48137eddd681a3d333e552a0a00b189d7c700f7a58ceaef2ffedb3d62134f35",
+      "document_id": "W2364973104",
+      "start": 384,
+      "end": 396,
+      "surface_text": "control unit",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "control unit"
+      ],
+      "confidence": 0.9924289584159851,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 396,
+          "lemma": "control unit",
+          "mention_id": "m:2f54d19754d8270ab26534f28538ce893172100d1f01d804be8c19269ca56d93",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "control unit",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.9924289584159851,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 384,
+          "surface_text": "control unit",
+          "tokens": [
+            {
+              "end": 391,
+              "lemma": "control",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 384,
+              "tag": "NN",
+              "text": "control"
+            },
+            {
+              "end": 396,
+              "lemma": "unit",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 392,
+              "tag": "NN",
+              "text": "unit"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:041c74c144abb67df08375536963a8edd04614ffcfae24e81a0212ed45bab6e7",
+      "document_id": "W2364973104",
+      "start": 401,
+      "end": 407,
+      "surface_text": "cables",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "cable"
+      ],
+      "confidence": 0.9884970188140869,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 407,
+              "original": "cables",
+              "replacement": "cable",
+              "rule": "plural_noun_head",
+              "start": 401
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 407,
+          "lemma": "cable",
+          "mention_id": "m:737c4ee9b10648f602c8f60e59ed7dd2f8fb570e693a8007c96ec0d63fe0ee1e",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "cable",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.9884970188140869,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 401,
+          "surface_text": "cables",
+          "tokens": [
+            {
+              "end": 407,
+              "lemma": "cable",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 401,
+              "tag": "NNS",
+              "text": "cables"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d57569e86e48434a1dd44abe27b5f550ae4d55272539758f461814b1a3e0ac57",
+      "document_id": "W2364973104",
+      "start": 415,
+      "end": 426,
+      "surface_text": "PSCAD/EMTDC",
+      "entity_types": [
+        "DATA_RESOURCE"
+      ],
+      "normalized_forms": [
+        "PSCAD/EMTDC"
+      ],
+      "confidence": 0.4629570543766022,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 426,
+          "lemma": "PSCAD/EMTDC",
+          "mention_id": "m:fa548fd572c7729eb8fcff06a8d2a6e41cb30a76fd419470df892428bdb0005c",
+          "ner_label_hint": "DATA_RESOURCE",
+          "normalized_form": "PSCAD/EMTDC",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.4629570543766022,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 415,
+          "surface_text": "PSCAD/EMTDC",
+          "tokens": [
+            {
+              "end": 420,
+              "lemma": "PSCAD",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 415,
+              "tag": "NNP",
+              "text": "PSCAD"
+            },
+            {
+              "end": 421,
+              "lemma": "/",
+              "morph": {},
+              "partial_token": false,
+              "pos": "SYM",
+              "possessive": false,
+              "start": 420,
+              "tag": "SYM",
+              "text": "/"
+            },
+            {
+              "end": 426,
+              "lemma": "EMTDC",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 421,
+              "tag": "NNP",
+              "text": "EMTDC"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:36285854574954987afb483139ac119bf8ce2ae49e258165f2a4585f1fcae0ec",
+      "document_id": "W2364973104",
+      "start": 415,
+      "end": 452,
+      "surface_text": "PSCAD/EMTDC power simulation software",
+      "entity_types": [
+        "DATA_RESOURCE"
+      ],
+      "normalized_forms": [
+        "PSCAD/EMTDC power simulation software"
+      ],
+      "confidence": 0.6172881722450256,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 452,
+          "lemma": "PSCAD/EMTDC power simulation software",
+          "mention_id": "m:7f948550a70ea05421cfac21f86909491589c115c742e6dcebecc1110c9e065f",
+          "ner_label_hint": "DATA_RESOURCE",
+          "normalized_form": "PSCAD/EMTDC power simulation software",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.6172881722450256,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 415,
+          "surface_text": "PSCAD/EMTDC power simulation software",
+          "tokens": [
+            {
+              "end": 420,
+              "lemma": "PSCAD",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 415,
+              "tag": "NNP",
+              "text": "PSCAD"
+            },
+            {
+              "end": 421,
+              "lemma": "/",
+              "morph": {},
+              "partial_token": false,
+              "pos": "SYM",
+              "possessive": false,
+              "start": 420,
+              "tag": "SYM",
+              "text": "/"
+            },
+            {
+              "end": 426,
+              "lemma": "EMTDC",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 421,
+              "tag": "NNP",
+              "text": "EMTDC"
+            },
+            {
+              "end": 432,
+              "lemma": "power",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 427,
+              "tag": "NN",
+              "text": "power"
+            },
+            {
+              "end": 443,
+              "lemma": "simulation",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 433,
+              "tag": "NN",
+              "text": "simulation"
+            },
+            {
+              "end": 452,
+              "lemma": "software",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 444,
+              "tag": "NN",
+              "text": "software"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:cbc4992e0502870a61ddaa474edbae00eea23ebee31155eb97875590f755d75c",
+      "document_id": "W2364973104",
+      "start": 421,
+      "end": 426,
+      "surface_text": "EMTDC",
+      "entity_types": [
+        "DATA_RESOURCE"
+      ],
+      "normalized_forms": [
+        "EMTDC"
+      ],
+      "confidence": 0.4272169768810272,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 426,
+          "lemma": "EMTDC",
+          "mention_id": "m:262c3514dfc735d0ee86f01dc4947cfbfdd0bd05d7ac15c25bf0e4e588dc3e93",
+          "ner_label_hint": "DATA_RESOURCE",
+          "normalized_form": "EMTDC",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.4272169768810272,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 421,
+          "surface_text": "EMTDC",
+          "tokens": [
+            {
+              "end": 426,
+              "lemma": "EMTDC",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 421,
+              "tag": "NNP",
+              "text": "EMTDC"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:93a82df2d81adeafcd098a2225aebf91887db2dfb10db78842470ce45d38a386",
+      "document_id": "W2364973104",
+      "start": 421,
+      "end": 452,
+      "surface_text": "EMTDC power simulation software",
+      "entity_types": [
+        "DATA_RESOURCE"
+      ],
+      "normalized_forms": [
+        "EMTDC power simulation software"
+      ],
+      "confidence": 0.3996419608592987,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 452,
+          "lemma": "EMTDC power simulation software",
+          "mention_id": "m:52f38295fc4a8198e92869b5c820a5de4fb4d13f6d92e8b91b35c6f4627b5bd3",
+          "ner_label_hint": "DATA_RESOURCE",
+          "normalized_form": "EMTDC power simulation software",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.3996419608592987,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 421,
+          "surface_text": "EMTDC power simulation software",
+          "tokens": [
+            {
+              "end": 426,
+              "lemma": "EMTDC",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 421,
+              "tag": "NNP",
+              "text": "EMTDC"
+            },
+            {
+              "end": 432,
+              "lemma": "power",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 427,
+              "tag": "NN",
+              "text": "power"
+            },
+            {
+              "end": 443,
+              "lemma": "simulation",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 433,
+              "tag": "NN",
+              "text": "simulation"
+            },
+            {
+              "end": 452,
+              "lemma": "software",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 444,
+              "tag": "NN",
+              "text": "software"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:bec5f679723541855750b529385ca3e7f512cdd25ca2c2717e231e6a6c7d8339",
+      "document_id": "W2364973104",
+      "start": 457,
+      "end": 473,
+      "surface_text": "action mechanism",
+      "entity_types": [
+        "MECHANISM"
+      ],
+      "normalized_forms": [
+        "action mechanism"
+      ],
+      "confidence": 0.6218848824501038,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 473,
+          "lemma": "action mechanism",
+          "mention_id": "m:70e56a58ab3161dc43c780760530d69d70108b6d968582de65830a4f590b0967",
+          "ner_label_hint": "MECHANISM",
+          "normalized_form": "action mechanism",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.6218848824501038,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 457,
+          "surface_text": "action mechanism",
+          "tokens": [
+            {
+              "end": 463,
+              "lemma": "action",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 457,
+              "tag": "NN",
+              "text": "action"
+            },
+            {
+              "end": 473,
+              "lemma": "mechanism",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 464,
+              "tag": "NN",
+              "text": "mechanism"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:58bd51f6cc4551211f79bd7f9fcf8c956dbb957225930dce7dc5b746d5d72d13",
+      "document_id": "W2364973104",
+      "start": 496,
+      "end": 526,
+      "surface_text": "indirect lighting over-voltage",
+      "entity_types": [
+        "MECHANISM"
+      ],
+      "normalized_forms": [
+        "indirect lighting over-voltage"
+      ],
+      "confidence": 0.6950075626373291,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 526,
+          "lemma": "indirect lighting over-voltage",
+          "mention_id": "m:09ab7eb6804ec1c29017455a4d0d5b159cfaa17b18fb17f95e88ad9e952d5dea",
+          "ner_label_hint": "MECHANISM",
+          "normalized_form": "indirect lighting over-voltage",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.6950075626373291,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 496,
+          "surface_text": "indirect lighting over-voltage",
+          "tokens": [
+            {
+              "end": 504,
+              "lemma": "indirect",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 496,
+              "tag": "JJ",
+              "text": "indirect"
+            },
+            {
+              "end": 513,
+              "lemma": "lighting",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 505,
+              "tag": "NN",
+              "text": "lighting"
+            },
+            {
+              "end": 518,
+              "lemma": "over",
+              "morph": {},
+              "partial_token": false,
+              "pos": "ADP",
+              "possessive": false,
+              "start": 514,
+              "tag": "IN",
+              "text": "over"
+            },
+            {
+              "end": 519,
+              "lemma": "-",
+              "morph": {
+                "PunctType": "Dash"
+              },
+              "partial_token": false,
+              "pos": "PUNCT",
+              "possessive": false,
+              "start": 518,
+              "tag": "HYPH",
+              "text": "-"
+            },
+            {
+              "end": 526,
+              "lemma": "voltage",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 519,
+              "tag": "NN",
+              "text": "voltage"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:c4a00d0fcf944b2e763261b5bea19a2ccb4aa764e6de8fda4857b976287c4e7b",
+      "document_id": "W2364973104",
+      "start": 534,
+      "end": 555,
+      "surface_text": "military power supply",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "military power supply"
+      ],
+      "confidence": 0.9037354588508606,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 555,
+          "lemma": "military power supply",
+          "mention_id": "m:037e2d9f71114e4d6a79180154a2fbcda77554932d30c66348ac448a2c9563cb",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "military power supply",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.9037354588508606,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 534,
+          "surface_text": "military power supply",
+          "tokens": [
+            {
+              "end": 542,
+              "lemma": "military",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 534,
+              "tag": "JJ",
+              "text": "military"
+            },
+            {
+              "end": 548,
+              "lemma": "power",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 543,
+              "tag": "NN",
+              "text": "power"
+            },
+            {
+              "end": 555,
+              "lemma": "supply",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 549,
+              "tag": "NN",
+              "text": "supply"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:33d0710d9d3ce603d834edc8a8411a025e37ba69b39968ee141ac1bc4e6d1c51",
+      "document_id": "W2364973104",
+      "start": 576,
+      "end": 594,
+      "surface_text": "technical proposal",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "technical proposal"
+      ],
+      "confidence": 0.4357067346572876,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 594,
+          "lemma": "technical proposal",
+          "mention_id": "m:f3ae39fefcd38138dc658fb37f50071bb8e2189f533ad4ef9436f59c0d1d8fc9",
+          "ner_label_hint": "METHOD",
+          "normalized_form": "technical proposal",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.4357067346572876,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 576,
+          "surface_text": "technical proposal",
+          "tokens": [
+            {
+              "end": 585,
+              "lemma": "technical",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 576,
+              "tag": "JJ",
+              "text": "technical"
+            },
+            {
+              "end": 594,
+              "lemma": "proposal",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 586,
+              "tag": "NN",
+              "text": "proposal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:669ae2376373a496a814243c1f51c5ff69d3f58b831f5d629924a1b8cb564525",
+      "document_id": "W2364973104",
+      "start": 602,
+      "end": 631,
+      "surface_text": "indirect lightning protection",
+      "entity_types": [
+        "CONCEPT"
+      ],
+      "normalized_forms": [
+        "indirect lightning protection"
+      ],
+      "confidence": 0.5329107046127319,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 631,
+          "lemma": "indirect lightning protection",
+          "mention_id": "m:57262c47f566a3a3b43c91a7b0d940c775eb9cae02fe420fb0afd988caf0dc1e",
+          "ner_label_hint": "CONCEPT",
+          "normalized_form": "indirect lightning protection",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.5329107046127319,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 602,
+          "surface_text": "indirect lightning protection",
+          "tokens": [
+            {
+              "end": 610,
+              "lemma": "indirect",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 602,
+              "tag": "JJ",
+              "text": "indirect"
+            },
+            {
+              "end": 620,
+              "lemma": "lightning",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 611,
+              "tag": "NN",
+              "text": "lightning"
+            },
+            {
+              "end": 631,
+              "lemma": "protection",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 621,
+              "tag": "NN",
+              "text": "protection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:1ee0f4c18edfdf5ac9f268d8c7ab746c86c5db350e6a818394fa779263acd7de",
+      "document_id": "W2364973104",
+      "start": 611,
+      "end": 631,
+      "surface_text": "lightning protection",
+      "entity_types": [
+        "CONCEPT"
+      ],
+      "normalized_forms": [
+        "lightning protection"
+      ],
+      "confidence": 0.8068159818649292,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 631,
+          "lemma": "lightning protection",
+          "mention_id": "m:d125f9d65c10ac1e312e5bd0b5da9ee2dc3da941be266434bd57561628e26069",
+          "ner_label_hint": "CONCEPT",
+          "normalized_form": "lightning protection",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.8068159818649292,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 611,
+          "surface_text": "lightning protection",
+          "tokens": [
+            {
+              "end": 620,
+              "lemma": "lightning",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 611,
+              "tag": "NN",
+              "text": "lightning"
+            },
+            {
+              "end": 631,
+              "lemma": "protection",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 621,
+              "tag": "NN",
+              "text": "protection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:6c614f5f1a59017019104964bb59bb0b7eebb62bc1647f9b5fcd3d2b2df3abdb",
+      "document_id": "W2364973104",
+      "start": 640,
+      "end": 661,
+      "surface_text": "military power system",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "military power system"
+      ],
+      "confidence": 0.8911567330360413,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 661,
+          "lemma": "military power system",
+          "mention_id": "m:4249c0595a120d3d139702d1decf3461c2de4163a1a6e6b0afc4fc37fe6db944",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "military power system",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.8911567330360413,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 640,
+          "surface_text": "military power system",
+          "tokens": [
+            {
+              "end": 648,
+              "lemma": "military",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 640,
+              "tag": "JJ",
+              "text": "military"
+            },
+            {
+              "end": 654,
+              "lemma": "power",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 649,
+              "tag": "NN",
+              "text": "power"
+            },
+            {
+              "end": 661,
+              "lemma": "system",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 655,
+              "tag": "NN",
+              "text": "system"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:12207688860e52b6e9cff80185d6c6c0271e9436205a522d9481b8c9f100f7d5",
+      "document_id": "W2364973104",
+      "start": 711,
+      "end": 721,
+      "surface_text": "installing",
+      "entity_types": [
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "installing"
+      ],
+      "confidence": 0.6276082396507263,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 721,
+          "lemma": "installing",
+          "mention_id": "m:8f0fe9358b06980fc449ff2da8bc32c19369bd53457ead2ca7c5bf38b1a114b5",
+          "ner_label_hint": "PROCESS",
+          "normalized_form": "installing",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.6276082396507263,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 711,
+          "surface_text": "installing",
+          "tokens": [
+            {
+              "end": 721,
+              "lemma": "instal",
+              "morph": {
+                "Aspect": "Prog",
+                "Tense": "Pres",
+                "VerbForm": "Part"
+              },
+              "partial_token": false,
+              "pos": "VERB",
+              "possessive": false,
+              "start": 711,
+              "tag": "VBG",
+              "text": "installing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:c9bd42fb51487a76b4f342b4a0a1844a8f4f806bb12ff7fb654a70ce2864642f",
+      "document_id": "W2364973104",
+      "start": 726,
+      "end": 729,
+      "surface_text": "SPD",
+      "entity_types": [
+        "DATA_RESOURCE",
+        "METHOD",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "SPD"
+      ],
+      "confidence": 0.6759936213493347,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 729,
+          "lemma": "SPD",
+          "mention_id": "m:d7d06d8da48d1f44c42032e3215acac8aa63f0c5fe713503ffc39563b3c085ed",
+          "ner_label_hint": "DATA_RESOURCE",
+          "normalized_form": "SPD",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.35373455286026,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 726,
+          "surface_text": "SPD",
+          "tokens": [
+            {
+              "end": 729,
+              "lemma": "SPD",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 726,
+              "tag": "NNP",
+              "text": "SPD"
+            }
+          ]
+        },
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 729,
+          "lemma": "SPD",
+          "mention_id": "m:bf99a1815b48332e7c573e186668856199b687765fcbf53fa43f7f0a82d07570",
+          "ner_label_hint": "METHOD",
+          "normalized_form": "SPD",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.6759936213493347,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 726,
+          "surface_text": "SPD",
+          "tokens": [
+            {
+              "end": 729,
+              "lemma": "SPD",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 726,
+              "tag": "NNP",
+              "text": "SPD"
+            }
+          ]
+        },
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 729,
+          "lemma": "SPD",
+          "mention_id": "m:cbe1a2b3a437ddf6ca0a39632aa5f6a52648a900b353dd76e3fd297aeea635d3",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "SPD",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.6438107490539551,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 726,
+          "surface_text": "SPD",
+          "tokens": [
+            {
+              "end": 729,
+              "lemma": "SPD",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 726,
+              "tag": "NNP",
+              "text": "SPD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:1c3831a81a6b1b1c84e6420964eae7fdd700f1e4ae94b910d30b0d9baa3b5188",
+      "document_id": "W2364973104",
+      "start": 737,
+      "end": 742,
+      "surface_text": "parts",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "part"
+      ],
+      "confidence": 0.8542013764381409,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 742,
+              "original": "parts",
+              "replacement": "part",
+              "rule": "plural_noun_head",
+              "start": 737
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 742,
+          "lemma": "part",
+          "mention_id": "m:7b761c74a7e96672ebaa70aa371cfedff388e606861397db5280f92805fc0e20",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "part",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.8542013764381409,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 737,
+          "surface_text": "parts",
+          "tokens": [
+            {
+              "end": 742,
+              "lemma": "part",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 737,
+              "tag": "NNS",
+              "text": "parts"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:b372ff5eac770f50263590dbeeb5692d84e8a9ae925921653125934e9561f05a",
+      "document_id": "W2364973104",
+      "start": 750,
+      "end": 770,
+      "surface_text": "electric supply line",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "electric supply line"
+      ],
+      "confidence": 0.9937157034873962,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 770,
+          "lemma": "electric supply line",
+          "mention_id": "m:6863b43cb19e22798329737b67f74e3cb2f15d46e28a7355d4e4c9f48ba0de97",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "electric supply line",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.9937157034873962,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 750,
+          "surface_text": "electric supply line",
+          "tokens": [
+            {
+              "end": 758,
+              "lemma": "electric",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 750,
+              "tag": "JJ",
+              "text": "electric"
+            },
+            {
+              "end": 765,
+              "lemma": "supply",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 759,
+              "tag": "NN",
+              "text": "supply"
+            },
+            {
+              "end": 770,
+              "lemma": "line",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 766,
+              "tag": "NN",
+              "text": "line"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a8cf7f03bc1ec5598c0f8b5966e5e75e5ffbb0e85cd540b7570ea1efa0085139",
+      "document_id": "W2364973104",
+      "start": 771,
+      "end": 788,
+      "surface_text": "power supply line",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "power supply line"
+      ],
+      "confidence": 0.9927753210067749,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 788,
+          "lemma": "power supply line",
+          "mention_id": "m:f7d58dab550b399b0b9983f8ae173fb3f8a65efb339b8ceb13ab26e1484d6677",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "power supply line",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.9927753210067749,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 771,
+          "surface_text": "power supply line",
+          "tokens": [
+            {
+              "end": 776,
+              "lemma": "power",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 771,
+              "tag": "NN",
+              "text": "power"
+            },
+            {
+              "end": 783,
+              "lemma": "supply",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 777,
+              "tag": "NN",
+              "text": "supply"
+            },
+            {
+              "end": 788,
+              "lemma": "line",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 784,
+              "tag": "NN",
+              "text": "line"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:3f2ee011f1a8f873e923450d45fb97d68144e41aa83871a0844cf3a0ecb943e5",
+      "document_id": "W2364973104",
+      "start": 793,
+      "end": 804,
+      "surface_text": "signal line",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "signal line"
+      ],
+      "confidence": 0.9902644157409668,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 804,
+          "lemma": "signal line",
+          "mention_id": "m:6e0e380ce701444c07856408a3b3cfe06af70b1ea8bd63ec8a8862db8ca3eaee",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "signal line",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.9902644157409668,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 793,
+          "surface_text": "signal line",
+          "tokens": [
+            {
+              "end": 799,
+              "lemma": "signal",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 793,
+              "tag": "NN",
+              "text": "signal"
+            },
+            {
+              "end": 804,
+              "lemma": "line",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 800,
+              "tag": "NN",
+              "text": "line"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:40ed6134387236dd71465bf54232f90ab25bdf27a3dff84cd1b966e1ff191f13",
+      "document_id": "W2364973104",
+      "start": 830,
+      "end": 839,
+      "surface_text": "filtering",
+      "entity_types": [
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "filtering"
+      ],
+      "confidence": 0.3613772392272949,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 839,
+          "lemma": "filtering",
+          "mention_id": "m:d0f866afb5a3226cc5f821f346da955a374d370d8eced089b17d9b7396c6404e",
+          "ner_label_hint": "PROCESS",
+          "normalized_form": "filtering",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.3613772392272949,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 830,
+          "surface_text": "filtering",
+          "tokens": [
+            {
+              "end": 839,
+              "lemma": "filtering",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 830,
+              "tag": "NN",
+              "text": "filtering"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:b3e30ffda1d11e7c2d2a88b6befb2116fe4dce4f32a3bcb4221db19492ae1632",
+      "document_id": "W2364973104",
+      "start": 848,
+      "end": 877,
+      "surface_text": "indirect lightning protection",
+      "entity_types": [
+        "MECHANISM"
+      ],
+      "normalized_forms": [
+        "indirect lightning protection"
+      ],
+      "confidence": 0.9149434566497803,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 877,
+          "lemma": "indirect lightning protection",
+          "mention_id": "m:727b753bffbc234a4dd7628753825c0250343a6717c01ae8191156a1aa3ce745",
+          "ner_label_hint": "MECHANISM",
+          "normalized_form": "indirect lightning protection",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.9149434566497803,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 848,
+          "surface_text": "indirect lightning protection",
+          "tokens": [
+            {
+              "end": 856,
+              "lemma": "indirect",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 848,
+              "tag": "JJ",
+              "text": "indirect"
+            },
+            {
+              "end": 866,
+              "lemma": "lightning",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 857,
+              "tag": "NN",
+              "text": "lightning"
+            },
+            {
+              "end": 877,
+              "lemma": "protection",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 867,
+              "tag": "NN",
+              "text": "protection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:03f8e1834848da4b2437d29660f0126334f6accb2d3f1b3a6a363253751d37a6",
+      "document_id": "W2364973104",
+      "start": 883,
+      "end": 916,
+      "surface_text": "lighting protection module device",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "lighting protection module device"
+      ],
+      "confidence": 0.9045930504798889,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 916,
+          "lemma": "lighting protection module device",
+          "mention_id": "m:22b97703d44faced6967616f65c206f9bda89bcd21c23b69fe7536412df2de9a",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "lighting protection module device",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.9045930504798889,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 883,
+          "surface_text": "lighting protection module device",
+          "tokens": [
+            {
+              "end": 891,
+              "lemma": "lighting",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 883,
+              "tag": "NN",
+              "text": "lighting"
+            },
+            {
+              "end": 902,
+              "lemma": "protection",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 892,
+              "tag": "NN",
+              "text": "protection"
+            },
+            {
+              "end": 909,
+              "lemma": "module",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 903,
+              "tag": "NN",
+              "text": "module"
+            },
+            {
+              "end": 916,
+              "lemma": "device",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 910,
+              "tag": "NN",
+              "text": "device"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:7a85516bcc450f8e9cebb3a3bfdd70d59754867a031bdd1e0270e342151b7914",
+      "document_id": "W2364973104",
+      "start": 903,
+      "end": 916,
+      "surface_text": "module device",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "module device"
+      ],
+      "confidence": 0.49379271268844604,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 916,
+          "lemma": "module device",
+          "mention_id": "m:c4a7e30448637b4ecd4c8c7d6044c135f5a62d8ae50cff366f2d7b5a99c0d4ba",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "module device",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.49379271268844604,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 903,
+          "surface_text": "module device",
+          "tokens": [
+            {
+              "end": 909,
+              "lemma": "module",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 903,
+              "tag": "NN",
+              "text": "module"
+            },
+            {
+              "end": 916,
+              "lemma": "device",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 910,
+              "tag": "NN",
+              "text": "device"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a1d72abe58f6574548c84a4c27f3e98de051a95edc250a1964d06db4ac9b1a95",
+      "document_id": "W2364973104",
+      "start": 928,
+      "end": 939,
+      "surface_text": "reliability",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "reliability"
+      ],
+      "confidence": 0.8680207133293152,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 939,
+          "lemma": "reliability",
+          "mention_id": "m:bcc8a7a32c5c22f32451c9174544340e8835b5501ed312092523e0a0b72a1df2",
+          "ner_label_hint": "ATTRIBUTE",
+          "normalized_form": "reliability",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.8680207133293152,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 928,
+          "surface_text": "reliability",
+          "tokens": [
+            {
+              "end": 939,
+              "lemma": "reliability",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 928,
+              "tag": "NN",
+              "text": "reliability"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:89d523be3967733e616c7795614f0d46b96a3d1f64dc5225c1844aa7cb617d0e",
+      "document_id": "W2364973104",
+      "start": 944,
+      "end": 950,
+      "surface_text": "safety",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "safety"
+      ],
+      "confidence": 0.9444621801376343,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 950,
+          "lemma": "safety",
+          "mention_id": "m:20282a439b868b539b3a703e9c34498af2afc648fc006e1ebf3f879d7fff7c30",
+          "ner_label_hint": "ATTRIBUTE",
+          "normalized_form": "safety",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.9444621801376343,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 944,
+          "surface_text": "safety",
+          "tokens": [
+            {
+              "end": 950,
+              "lemma": "safety",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 944,
+              "tag": "NN",
+              "text": "safety"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:81f4083b1d4c7e5cf53c736ba621632eb75c8f003c0f8de7af8938bcf7bb0ba7",
+      "document_id": "W2364973104",
+      "start": 972,
+      "end": 980,
+      "surface_text": "barriers",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "barrier"
+      ],
+      "confidence": 0.5836920142173767,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 980,
+              "original": "barriers",
+              "replacement": "barrier",
+              "rule": "plural_noun_head",
+              "start": 972
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 980,
+          "lemma": "barrier",
+          "mention_id": "m:7965942a173bc96370ce11fbe18e030720b97855844f26614b2c65fa56582ec6",
+          "ner_label_hint": "CONDITION",
+          "normalized_form": "barrier",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.5836920142173767,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 972,
+          "surface_text": "barriers",
+          "tokens": [
+            {
+              "end": 980,
+              "lemma": "barrier",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 972,
+              "tag": "NNS",
+              "text": "barriers"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:3ef25123194e2aaef468d3f990fc9081f0a857c49443281f59701c42b411c997",
+      "document_id": "W2364973104",
+      "start": 988,
+      "end": 1029,
+      "surface_text": "conventional lightening protection device",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "conventional lightening protection device"
+      ],
+      "confidence": 0.8588836193084717,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 1029,
+          "lemma": "conventional lightening protection device",
+          "mention_id": "m:870a552ebd13b5b712b6364fa0e46f2e6690c3b5233b79a007b7762b56fee472",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "conventional lightening protection device",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.8588836193084717,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 988,
+          "surface_text": "conventional lightening protection device",
+          "tokens": [
+            {
+              "end": 1000,
+              "lemma": "conventional",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 988,
+              "tag": "JJ",
+              "text": "conventional"
+            },
+            {
+              "end": 1011,
+              "lemma": "lighten",
+              "morph": {
+                "Aspect": "Prog",
+                "Tense": "Pres",
+                "VerbForm": "Part"
+              },
+              "partial_token": false,
+              "pos": "VERB",
+              "possessive": false,
+              "start": 1001,
+              "tag": "VBG",
+              "text": "lightening"
+            },
+            {
+              "end": 1022,
+              "lemma": "protection",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 1012,
+              "tag": "NN",
+              "text": "protection"
+            },
+            {
+              "end": 1029,
+              "lemma": "device",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 1023,
+              "tag": "NN",
+              "text": "device"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:da1b59403aafa837744c6248ea6154b7827e50b6a0d06b96bb9af9d433973ab8",
+      "document_id": "W2364973104",
+      "start": 1001,
+      "end": 1029,
+      "surface_text": "lightening protection device",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "lightening protection device"
+      ],
+      "confidence": 0.4598785638809204,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 1029,
+          "lemma": "lightening protection device",
+          "mention_id": "m:741c737aeba3a0a4c9d548ba03053a696c860e5e1de257cbedd1c93e444775a2",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "lightening protection device",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.4598785638809204,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 1001,
+          "surface_text": "lightening protection device",
+          "tokens": [
+            {
+              "end": 1011,
+              "lemma": "lighten",
+              "morph": {
+                "Aspect": "Prog",
+                "Tense": "Pres",
+                "VerbForm": "Part"
+              },
+              "partial_token": false,
+              "pos": "VERB",
+              "possessive": false,
+              "start": 1001,
+              "tag": "VBG",
+              "text": "lightening"
+            },
+            {
+              "end": 1022,
+              "lemma": "protection",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 1012,
+              "tag": "NN",
+              "text": "protection"
+            },
+            {
+              "end": 1029,
+              "lemma": "device",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 1023,
+              "tag": "NN",
+              "text": "device"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:4c523f9bea42c631badb64c769b6692d2fe5e45a4356c6617c9bf36d197c8b1d",
+      "document_id": "W2364973104",
+      "start": 1055,
+      "end": 1083,
+      "surface_text": "indirect lighting protection",
+      "entity_types": [
+        "MECHANISM"
+      ],
+      "normalized_forms": [
+        "indirect lighting protection"
+      ],
+      "confidence": 0.9281173944473267,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 1083,
+          "lemma": "indirect lighting protection",
+          "mention_id": "m:54411c0332a8410367ef81fa4b98c501794f3ffa0fb8603465520ba3518b4df9",
+          "ner_label_hint": "MECHANISM",
+          "normalized_form": "indirect lighting protection",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.9281173944473267,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 1055,
+          "surface_text": "indirect lighting protection",
+          "tokens": [
+            {
+              "end": 1063,
+              "lemma": "indirect",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 1055,
+              "tag": "JJ",
+              "text": "indirect"
+            },
+            {
+              "end": 1072,
+              "lemma": "lighting",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 1064,
+              "tag": "NN",
+              "text": "lighting"
+            },
+            {
+              "end": 1083,
+              "lemma": "protection",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 1073,
+              "tag": "NN",
+              "text": "protection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:88884d2344491a059eec658e69cc7f681c573457c9d1755e7d8d195a83809f59",
+      "document_id": "W2364973104",
+      "start": 1084,
+      "end": 1094,
+      "surface_text": "capability",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "capability"
+      ],
+      "confidence": 0.46978631615638733,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 1094,
+          "lemma": "capability",
+          "mention_id": "m:c7fdd2d2d5809efa7061e5009ef942f1d2440ede654bbf7c7614928707582879",
+          "ner_label_hint": "ATTRIBUTE",
+          "normalized_form": "capability",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.46978631615638733,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 1084,
+          "surface_text": "capability",
+          "tokens": [
+            {
+              "end": 1094,
+              "lemma": "capability",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 1084,
+              "tag": "NN",
+              "text": "capability"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:e60723edabc89964ba25efd7a453da60e7a10aa6e54fb21b8a8ee81cb5fa5120",
+      "document_id": "W2364973104",
+      "start": 1136,
+      "end": 1157,
+      "surface_text": "military power supply",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "military power supply"
+      ],
+      "confidence": 0.9832540154457092,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2364973104",
+          "end": 1157,
+          "lemma": "military power supply",
+          "mention_id": "m:387db4bafcbbbd10989b28b52eeac650c95dddd62a197cb2460c4a18c0d93608",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "military power supply",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "score": 0.9832540154457092,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "start": 1136,
+          "surface_text": "military power supply",
+          "tokens": [
+            {
+              "end": 1144,
+              "lemma": "military",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 1136,
+              "tag": "JJ",
+              "text": "military"
+            },
+            {
+              "end": 1150,
+              "lemma": "power",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 1145,
+              "tag": "NN",
+              "text": "power"
+            },
+            {
+              "end": 1157,
+              "lemma": "supply",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 1151,
+              "tag": "NN",
+              "text": "supply"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "triple_id": "t:1916a12d1954b7a7446f170aff241c2008dc970081e1e1348e3a38620f3d3bae",
+      "document_id": "W2364973104",
+      "head_id": "e:03f8e1834848da4b2437d29660f0126334f6accb2d3f1b3a6a363253751d37a6",
+      "tail_id": "e:3ef25123194e2aaef468d3f990fc9081f0a857c49443281f59701c42b411c997",
+      "head_types": [
+        "OBJECT"
+      ],
+      "tail_types": [
+        "OBJECT"
+      ],
+      "relation_type": "COMPARED_WITH",
+      "confidence": 0.7784853577613831,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "document_id": "W2364973104",
+          "start": 0,
+          "end": 1158,
+          "text": "Considering the characteristics of lightning protection for military motor power station and low technical performance of military power station lightning protection and weak objective etc.,this paper,based on typical low-noise motor lightning in military power station,establishes the electromagnetic transient model containing key parts in the lighting protection,such as generator,control unit,and cables by the PSCAD/EMTDC power simulation software.The action mechanism and influence laws of indirect lighting over-voltage in the military power supply are discussed,and a technical proposal of the indirect lightning protection for the military power system is presented.This proposal is realized mainly by installing the SPD on the parts of the electric supply line,power supply line and signal line to provide shielding and filtering for the indirect lightning protection.This lighting protection module device is of high reliability and safety,and can overcome the barriers of the conventional lightening protection device,and helps to improve the indirect lighting protection capability and anti-weather fighting ability of the military power supply.",
+          "entity_ids": [
+            "e:c6511cda2cec167f94600bbdcd4975f96f346215c7e171c8c85408dcddd000fe",
+            "e:cc2cee8f508e7d37dd5cb96ec96c7f0f013b37c52f6b558beb4798dec9024c2c",
+            "e:5e949c26b9556406cf14df6c053ba611f99717b123b8e45770f5cee5d8558316",
+            "e:f69ce2636d00ca6810c63da8ce52c9eff466ba292e903dab2f00d3d7d3115f30",
+            "e:6194d7ac2c9424881213860d505f552f49c06e89f293368e5ac3e4b8794192e8",
+            "e:382c345fe0d4942f3c49891433e99132621d74a4ee5962cb3abebf1d4ca56e01",
+            "e:d7845a190d415f0e5e387e8627fee5487d260eb18eb5557c371288bfc92ff584",
+            "e:068e2d2444b961ba1241a1ae8f7f00caddfd11b9cb1d5c078215360d32cffd64",
+            "e:3bf32df04659bfa45379dec5753c100088fb826dd89825b197a129f7ab0731cb",
+            "e:78db0568e069c46642eb7dd28358926123487c6122891443bcd174c9ae11f5d1",
+            "e:dbe56e7e1218f4be8c70d47aa93c40573e58b021ed11530563fa43cf86e4b3f0",
+            "e:e48137eddd681a3d333e552a0a00b189d7c700f7a58ceaef2ffedb3d62134f35",
+            "e:041c74c144abb67df08375536963a8edd04614ffcfae24e81a0212ed45bab6e7",
+            "e:d57569e86e48434a1dd44abe27b5f550ae4d55272539758f461814b1a3e0ac57",
+            "e:36285854574954987afb483139ac119bf8ce2ae49e258165f2a4585f1fcae0ec",
+            "e:cbc4992e0502870a61ddaa474edbae00eea23ebee31155eb97875590f755d75c",
+            "e:93a82df2d81adeafcd098a2225aebf91887db2dfb10db78842470ce45d38a386",
+            "e:bec5f679723541855750b529385ca3e7f512cdd25ca2c2717e231e6a6c7d8339",
+            "e:58bd51f6cc4551211f79bd7f9fcf8c956dbb957225930dce7dc5b746d5d72d13",
+            "e:c4a00d0fcf944b2e763261b5bea19a2ccb4aa764e6de8fda4857b976287c4e7b",
+            "e:33d0710d9d3ce603d834edc8a8411a025e37ba69b39968ee141ac1bc4e6d1c51",
+            "e:669ae2376373a496a814243c1f51c5ff69d3f58b831f5d629924a1b8cb564525",
+            "e:1ee0f4c18edfdf5ac9f268d8c7ab746c86c5db350e6a818394fa779263acd7de",
+            "e:6c614f5f1a59017019104964bb59bb0b7eebb62bc1647f9b5fcd3d2b2df3abdb",
+            "e:12207688860e52b6e9cff80185d6c6c0271e9436205a522d9481b8c9f100f7d5",
+            "e:c9bd42fb51487a76b4f342b4a0a1844a8f4f806bb12ff7fb654a70ce2864642f",
+            "e:1c3831a81a6b1b1c84e6420964eae7fdd700f1e4ae94b910d30b0d9baa3b5188",
+            "e:b372ff5eac770f50263590dbeeb5692d84e8a9ae925921653125934e9561f05a",
+            "e:a8cf7f03bc1ec5598c0f8b5966e5e75e5ffbb0e85cd540b7570ea1efa0085139",
+            "e:3f2ee011f1a8f873e923450d45fb97d68144e41aa83871a0844cf3a0ecb943e5",
+            "e:40ed6134387236dd71465bf54232f90ab25bdf27a3dff84cd1b966e1ff191f13",
+            "e:b3e30ffda1d11e7c2d2a88b6befb2116fe4dce4f32a3bcb4221db19492ae1632",
+            "e:03f8e1834848da4b2437d29660f0126334f6accb2d3f1b3a6a363253751d37a6",
+            "e:7a85516bcc450f8e9cebb3a3bfdd70d59754867a031bdd1e0270e342151b7914",
+            "e:a1d72abe58f6574548c84a4c27f3e98de051a95edc250a1964d06db4ac9b1a95",
+            "e:89d523be3967733e616c7795614f0d46b96a3d1f64dc5225c1844aa7cb617d0e",
+            "e:81f4083b1d4c7e5cf53c736ba621632eb75c8f003c0f8de7af8938bcf7bb0ba7",
+            "e:3ef25123194e2aaef468d3f990fc9081f0a857c49443281f59701c42b411c997",
+            "e:da1b59403aafa837744c6248ea6154b7827e50b6a0d06b96bb9af9d433973ab8",
+            "e:4c523f9bea42c631badb64c769b6692d2fe5e45a4356c6617c9bf36d197c8b1d",
+            "e:88884d2344491a059eec658e69cc7f681c573457c9d1755e7d8d195a83809f59",
+            "e:e60723edabc89964ba25efd7a453da60e7a10aa6e54fb21b8a8ee81cb5fa5120"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:244620462190cc4c118c0eddc29c8ea4e8e2022c37881393b6ff4bc5f7d473ab",
+      "document_id": "W2364973104",
+      "head_id": "e:c9bd42fb51487a76b4f342b4a0a1844a8f4f806bb12ff7fb654a70ce2864642f",
+      "tail_id": "e:b372ff5eac770f50263590dbeeb5692d84e8a9ae925921653125934e9561f05a",
+      "head_types": [
+        "DATA_RESOURCE",
+        "METHOD",
+        "OBJECT"
+      ],
+      "tail_types": [
+        "OBJECT"
+      ],
+      "relation_type": "APPLIED_TO",
+      "confidence": 0.8626444935798645,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "document_id": "W2364973104",
+          "start": 0,
+          "end": 1158,
+          "text": "Considering the characteristics of lightning protection for military motor power station and low technical performance of military power station lightning protection and weak objective etc.,this paper,based on typical low-noise motor lightning in military power station,establishes the electromagnetic transient model containing key parts in the lighting protection,such as generator,control unit,and cables by the PSCAD/EMTDC power simulation software.The action mechanism and influence laws of indirect lighting over-voltage in the military power supply are discussed,and a technical proposal of the indirect lightning protection for the military power system is presented.This proposal is realized mainly by installing the SPD on the parts of the electric supply line,power supply line and signal line to provide shielding and filtering for the indirect lightning protection.This lighting protection module device is of high reliability and safety,and can overcome the barriers of the conventional lightening protection device,and helps to improve the indirect lighting protection capability and anti-weather fighting ability of the military power supply.",
+          "entity_ids": [
+            "e:c6511cda2cec167f94600bbdcd4975f96f346215c7e171c8c85408dcddd000fe",
+            "e:cc2cee8f508e7d37dd5cb96ec96c7f0f013b37c52f6b558beb4798dec9024c2c",
+            "e:5e949c26b9556406cf14df6c053ba611f99717b123b8e45770f5cee5d8558316",
+            "e:f69ce2636d00ca6810c63da8ce52c9eff466ba292e903dab2f00d3d7d3115f30",
+            "e:6194d7ac2c9424881213860d505f552f49c06e89f293368e5ac3e4b8794192e8",
+            "e:382c345fe0d4942f3c49891433e99132621d74a4ee5962cb3abebf1d4ca56e01",
+            "e:d7845a190d415f0e5e387e8627fee5487d260eb18eb5557c371288bfc92ff584",
+            "e:068e2d2444b961ba1241a1ae8f7f00caddfd11b9cb1d5c078215360d32cffd64",
+            "e:3bf32df04659bfa45379dec5753c100088fb826dd89825b197a129f7ab0731cb",
+            "e:78db0568e069c46642eb7dd28358926123487c6122891443bcd174c9ae11f5d1",
+            "e:dbe56e7e1218f4be8c70d47aa93c40573e58b021ed11530563fa43cf86e4b3f0",
+            "e:e48137eddd681a3d333e552a0a00b189d7c700f7a58ceaef2ffedb3d62134f35",
+            "e:041c74c144abb67df08375536963a8edd04614ffcfae24e81a0212ed45bab6e7",
+            "e:d57569e86e48434a1dd44abe27b5f550ae4d55272539758f461814b1a3e0ac57",
+            "e:36285854574954987afb483139ac119bf8ce2ae49e258165f2a4585f1fcae0ec",
+            "e:cbc4992e0502870a61ddaa474edbae00eea23ebee31155eb97875590f755d75c",
+            "e:93a82df2d81adeafcd098a2225aebf91887db2dfb10db78842470ce45d38a386",
+            "e:bec5f679723541855750b529385ca3e7f512cdd25ca2c2717e231e6a6c7d8339",
+            "e:58bd51f6cc4551211f79bd7f9fcf8c956dbb957225930dce7dc5b746d5d72d13",
+            "e:c4a00d0fcf944b2e763261b5bea19a2ccb4aa764e6de8fda4857b976287c4e7b",
+            "e:33d0710d9d3ce603d834edc8a8411a025e37ba69b39968ee141ac1bc4e6d1c51",
+            "e:669ae2376373a496a814243c1f51c5ff69d3f58b831f5d629924a1b8cb564525",
+            "e:1ee0f4c18edfdf5ac9f268d8c7ab746c86c5db350e6a818394fa779263acd7de",
+            "e:6c614f5f1a59017019104964bb59bb0b7eebb62bc1647f9b5fcd3d2b2df3abdb",
+            "e:12207688860e52b6e9cff80185d6c6c0271e9436205a522d9481b8c9f100f7d5",
+            "e:c9bd42fb51487a76b4f342b4a0a1844a8f4f806bb12ff7fb654a70ce2864642f",
+            "e:1c3831a81a6b1b1c84e6420964eae7fdd700f1e4ae94b910d30b0d9baa3b5188",
+            "e:b372ff5eac770f50263590dbeeb5692d84e8a9ae925921653125934e9561f05a",
+            "e:a8cf7f03bc1ec5598c0f8b5966e5e75e5ffbb0e85cd540b7570ea1efa0085139",
+            "e:3f2ee011f1a8f873e923450d45fb97d68144e41aa83871a0844cf3a0ecb943e5",
+            "e:40ed6134387236dd71465bf54232f90ab25bdf27a3dff84cd1b966e1ff191f13",
+            "e:b3e30ffda1d11e7c2d2a88b6befb2116fe4dce4f32a3bcb4221db19492ae1632",
+            "e:03f8e1834848da4b2437d29660f0126334f6accb2d3f1b3a6a363253751d37a6",
+            "e:7a85516bcc450f8e9cebb3a3bfdd70d59754867a031bdd1e0270e342151b7914",
+            "e:a1d72abe58f6574548c84a4c27f3e98de051a95edc250a1964d06db4ac9b1a95",
+            "e:89d523be3967733e616c7795614f0d46b96a3d1f64dc5225c1844aa7cb617d0e",
+            "e:81f4083b1d4c7e5cf53c736ba621632eb75c8f003c0f8de7af8938bcf7bb0ba7",
+            "e:3ef25123194e2aaef468d3f990fc9081f0a857c49443281f59701c42b411c997",
+            "e:da1b59403aafa837744c6248ea6154b7827e50b6a0d06b96bb9af9d433973ab8",
+            "e:4c523f9bea42c631badb64c769b6692d2fe5e45a4356c6617c9bf36d197c8b1d",
+            "e:88884d2344491a059eec658e69cc7f681c573457c9d1755e7d8d195a83809f59",
+            "e:e60723edabc89964ba25efd7a453da60e7a10aa6e54fb21b8a8ee81cb5fa5120"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:5ee282fcaa883af7be8008857f0f933b61be9df61739a720fb75d3a4ae1aef0f",
+      "document_id": "W2364973104",
+      "head_id": "e:c9bd42fb51487a76b4f342b4a0a1844a8f4f806bb12ff7fb654a70ce2864642f",
+      "tail_id": "e:3f2ee011f1a8f873e923450d45fb97d68144e41aa83871a0844cf3a0ecb943e5",
+      "head_types": [
+        "DATA_RESOURCE",
+        "METHOD",
+        "OBJECT"
+      ],
+      "tail_types": [
+        "OBJECT"
+      ],
+      "relation_type": "APPLIED_TO",
+      "confidence": 0.7305343151092529,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "document_id": "W2364973104",
+          "start": 0,
+          "end": 1158,
+          "text": "Considering the characteristics of lightning protection for military motor power station and low technical performance of military power station lightning protection and weak objective etc.,this paper,based on typical low-noise motor lightning in military power station,establishes the electromagnetic transient model containing key parts in the lighting protection,such as generator,control unit,and cables by the PSCAD/EMTDC power simulation software.The action mechanism and influence laws of indirect lighting over-voltage in the military power supply are discussed,and a technical proposal of the indirect lightning protection for the military power system is presented.This proposal is realized mainly by installing the SPD on the parts of the electric supply line,power supply line and signal line to provide shielding and filtering for the indirect lightning protection.This lighting protection module device is of high reliability and safety,and can overcome the barriers of the conventional lightening protection device,and helps to improve the indirect lighting protection capability and anti-weather fighting ability of the military power supply.",
+          "entity_ids": [
+            "e:c6511cda2cec167f94600bbdcd4975f96f346215c7e171c8c85408dcddd000fe",
+            "e:cc2cee8f508e7d37dd5cb96ec96c7f0f013b37c52f6b558beb4798dec9024c2c",
+            "e:5e949c26b9556406cf14df6c053ba611f99717b123b8e45770f5cee5d8558316",
+            "e:f69ce2636d00ca6810c63da8ce52c9eff466ba292e903dab2f00d3d7d3115f30",
+            "e:6194d7ac2c9424881213860d505f552f49c06e89f293368e5ac3e4b8794192e8",
+            "e:382c345fe0d4942f3c49891433e99132621d74a4ee5962cb3abebf1d4ca56e01",
+            "e:d7845a190d415f0e5e387e8627fee5487d260eb18eb5557c371288bfc92ff584",
+            "e:068e2d2444b961ba1241a1ae8f7f00caddfd11b9cb1d5c078215360d32cffd64",
+            "e:3bf32df04659bfa45379dec5753c100088fb826dd89825b197a129f7ab0731cb",
+            "e:78db0568e069c46642eb7dd28358926123487c6122891443bcd174c9ae11f5d1",
+            "e:dbe56e7e1218f4be8c70d47aa93c40573e58b021ed11530563fa43cf86e4b3f0",
+            "e:e48137eddd681a3d333e552a0a00b189d7c700f7a58ceaef2ffedb3d62134f35",
+            "e:041c74c144abb67df08375536963a8edd04614ffcfae24e81a0212ed45bab6e7",
+            "e:d57569e86e48434a1dd44abe27b5f550ae4d55272539758f461814b1a3e0ac57",
+            "e:36285854574954987afb483139ac119bf8ce2ae49e258165f2a4585f1fcae0ec",
+            "e:cbc4992e0502870a61ddaa474edbae00eea23ebee31155eb97875590f755d75c",
+            "e:93a82df2d81adeafcd098a2225aebf91887db2dfb10db78842470ce45d38a386",
+            "e:bec5f679723541855750b529385ca3e7f512cdd25ca2c2717e231e6a6c7d8339",
+            "e:58bd51f6cc4551211f79bd7f9fcf8c956dbb957225930dce7dc5b746d5d72d13",
+            "e:c4a00d0fcf944b2e763261b5bea19a2ccb4aa764e6de8fda4857b976287c4e7b",
+            "e:33d0710d9d3ce603d834edc8a8411a025e37ba69b39968ee141ac1bc4e6d1c51",
+            "e:669ae2376373a496a814243c1f51c5ff69d3f58b831f5d629924a1b8cb564525",
+            "e:1ee0f4c18edfdf5ac9f268d8c7ab746c86c5db350e6a818394fa779263acd7de",
+            "e:6c614f5f1a59017019104964bb59bb0b7eebb62bc1647f9b5fcd3d2b2df3abdb",
+            "e:12207688860e52b6e9cff80185d6c6c0271e9436205a522d9481b8c9f100f7d5",
+            "e:c9bd42fb51487a76b4f342b4a0a1844a8f4f806bb12ff7fb654a70ce2864642f",
+            "e:1c3831a81a6b1b1c84e6420964eae7fdd700f1e4ae94b910d30b0d9baa3b5188",
+            "e:b372ff5eac770f50263590dbeeb5692d84e8a9ae925921653125934e9561f05a",
+            "e:a8cf7f03bc1ec5598c0f8b5966e5e75e5ffbb0e85cd540b7570ea1efa0085139",
+            "e:3f2ee011f1a8f873e923450d45fb97d68144e41aa83871a0844cf3a0ecb943e5",
+            "e:40ed6134387236dd71465bf54232f90ab25bdf27a3dff84cd1b966e1ff191f13",
+            "e:b3e30ffda1d11e7c2d2a88b6befb2116fe4dce4f32a3bcb4221db19492ae1632",
+            "e:03f8e1834848da4b2437d29660f0126334f6accb2d3f1b3a6a363253751d37a6",
+            "e:7a85516bcc450f8e9cebb3a3bfdd70d59754867a031bdd1e0270e342151b7914",
+            "e:a1d72abe58f6574548c84a4c27f3e98de051a95edc250a1964d06db4ac9b1a95",
+            "e:89d523be3967733e616c7795614f0d46b96a3d1f64dc5225c1844aa7cb617d0e",
+            "e:81f4083b1d4c7e5cf53c736ba621632eb75c8f003c0f8de7af8938bcf7bb0ba7",
+            "e:3ef25123194e2aaef468d3f990fc9081f0a857c49443281f59701c42b411c997",
+            "e:da1b59403aafa837744c6248ea6154b7827e50b6a0d06b96bb9af9d433973ab8",
+            "e:4c523f9bea42c631badb64c769b6692d2fe5e45a4356c6617c9bf36d197c8b1d",
+            "e:88884d2344491a059eec658e69cc7f681c573457c9d1755e7d8d195a83809f59",
+            "e:e60723edabc89964ba25efd7a453da60e7a10aa6e54fb21b8a8ee81cb5fa5120"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:739140b6fb2b5c3c48bd1c1ffc0720ccd7cd05fe06a86cce1f13c69fa0b95bfb",
+      "document_id": "W2364973104",
+      "head_id": "e:03f8e1834848da4b2437d29660f0126334f6accb2d3f1b3a6a363253751d37a6",
+      "tail_id": "e:89d523be3967733e616c7795614f0d46b96a3d1f64dc5225c1844aa7cb617d0e",
+      "head_types": [
+        "OBJECT"
+      ],
+      "tail_types": [
+        "ATTRIBUTE"
+      ],
+      "relation_type": "HAS_ATTRIBUTE",
+      "confidence": 0.8865104913711548,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "document_id": "W2364973104",
+          "start": 0,
+          "end": 1158,
+          "text": "Considering the characteristics of lightning protection for military motor power station and low technical performance of military power station lightning protection and weak objective etc.,this paper,based on typical low-noise motor lightning in military power station,establishes the electromagnetic transient model containing key parts in the lighting protection,such as generator,control unit,and cables by the PSCAD/EMTDC power simulation software.The action mechanism and influence laws of indirect lighting over-voltage in the military power supply are discussed,and a technical proposal of the indirect lightning protection for the military power system is presented.This proposal is realized mainly by installing the SPD on the parts of the electric supply line,power supply line and signal line to provide shielding and filtering for the indirect lightning protection.This lighting protection module device is of high reliability and safety,and can overcome the barriers of the conventional lightening protection device,and helps to improve the indirect lighting protection capability and anti-weather fighting ability of the military power supply.",
+          "entity_ids": [
+            "e:c6511cda2cec167f94600bbdcd4975f96f346215c7e171c8c85408dcddd000fe",
+            "e:cc2cee8f508e7d37dd5cb96ec96c7f0f013b37c52f6b558beb4798dec9024c2c",
+            "e:5e949c26b9556406cf14df6c053ba611f99717b123b8e45770f5cee5d8558316",
+            "e:f69ce2636d00ca6810c63da8ce52c9eff466ba292e903dab2f00d3d7d3115f30",
+            "e:6194d7ac2c9424881213860d505f552f49c06e89f293368e5ac3e4b8794192e8",
+            "e:382c345fe0d4942f3c49891433e99132621d74a4ee5962cb3abebf1d4ca56e01",
+            "e:d7845a190d415f0e5e387e8627fee5487d260eb18eb5557c371288bfc92ff584",
+            "e:068e2d2444b961ba1241a1ae8f7f00caddfd11b9cb1d5c078215360d32cffd64",
+            "e:3bf32df04659bfa45379dec5753c100088fb826dd89825b197a129f7ab0731cb",
+            "e:78db0568e069c46642eb7dd28358926123487c6122891443bcd174c9ae11f5d1",
+            "e:dbe56e7e1218f4be8c70d47aa93c40573e58b021ed11530563fa43cf86e4b3f0",
+            "e:e48137eddd681a3d333e552a0a00b189d7c700f7a58ceaef2ffedb3d62134f35",
+            "e:041c74c144abb67df08375536963a8edd04614ffcfae24e81a0212ed45bab6e7",
+            "e:d57569e86e48434a1dd44abe27b5f550ae4d55272539758f461814b1a3e0ac57",
+            "e:36285854574954987afb483139ac119bf8ce2ae49e258165f2a4585f1fcae0ec",
+            "e:cbc4992e0502870a61ddaa474edbae00eea23ebee31155eb97875590f755d75c",
+            "e:93a82df2d81adeafcd098a2225aebf91887db2dfb10db78842470ce45d38a386",
+            "e:bec5f679723541855750b529385ca3e7f512cdd25ca2c2717e231e6a6c7d8339",
+            "e:58bd51f6cc4551211f79bd7f9fcf8c956dbb957225930dce7dc5b746d5d72d13",
+            "e:c4a00d0fcf944b2e763261b5bea19a2ccb4aa764e6de8fda4857b976287c4e7b",
+            "e:33d0710d9d3ce603d834edc8a8411a025e37ba69b39968ee141ac1bc4e6d1c51",
+            "e:669ae2376373a496a814243c1f51c5ff69d3f58b831f5d629924a1b8cb564525",
+            "e:1ee0f4c18edfdf5ac9f268d8c7ab746c86c5db350e6a818394fa779263acd7de",
+            "e:6c614f5f1a59017019104964bb59bb0b7eebb62bc1647f9b5fcd3d2b2df3abdb",
+            "e:12207688860e52b6e9cff80185d6c6c0271e9436205a522d9481b8c9f100f7d5",
+            "e:c9bd42fb51487a76b4f342b4a0a1844a8f4f806bb12ff7fb654a70ce2864642f",
+            "e:1c3831a81a6b1b1c84e6420964eae7fdd700f1e4ae94b910d30b0d9baa3b5188",
+            "e:b372ff5eac770f50263590dbeeb5692d84e8a9ae925921653125934e9561f05a",
+            "e:a8cf7f03bc1ec5598c0f8b5966e5e75e5ffbb0e85cd540b7570ea1efa0085139",
+            "e:3f2ee011f1a8f873e923450d45fb97d68144e41aa83871a0844cf3a0ecb943e5",
+            "e:40ed6134387236dd71465bf54232f90ab25bdf27a3dff84cd1b966e1ff191f13",
+            "e:b3e30ffda1d11e7c2d2a88b6befb2116fe4dce4f32a3bcb4221db19492ae1632",
+            "e:03f8e1834848da4b2437d29660f0126334f6accb2d3f1b3a6a363253751d37a6",
+            "e:7a85516bcc450f8e9cebb3a3bfdd70d59754867a031bdd1e0270e342151b7914",
+            "e:a1d72abe58f6574548c84a4c27f3e98de051a95edc250a1964d06db4ac9b1a95",
+            "e:89d523be3967733e616c7795614f0d46b96a3d1f64dc5225c1844aa7cb617d0e",
+            "e:81f4083b1d4c7e5cf53c736ba621632eb75c8f003c0f8de7af8938bcf7bb0ba7",
+            "e:3ef25123194e2aaef468d3f990fc9081f0a857c49443281f59701c42b411c997",
+            "e:da1b59403aafa837744c6248ea6154b7827e50b6a0d06b96bb9af9d433973ab8",
+            "e:4c523f9bea42c631badb64c769b6692d2fe5e45a4356c6617c9bf36d197c8b1d",
+            "e:88884d2344491a059eec658e69cc7f681c573457c9d1755e7d8d195a83809f59",
+            "e:e60723edabc89964ba25efd7a453da60e7a10aa6e54fb21b8a8ee81cb5fa5120"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:97fdef0fb5187eb55d5dca4fcd8638f169ea520cc5c2d3fc20bc872448067dc5",
+      "document_id": "W2364973104",
+      "head_id": "e:c9bd42fb51487a76b4f342b4a0a1844a8f4f806bb12ff7fb654a70ce2864642f",
+      "tail_id": "e:a8cf7f03bc1ec5598c0f8b5966e5e75e5ffbb0e85cd540b7570ea1efa0085139",
+      "head_types": [
+        "DATA_RESOURCE",
+        "METHOD",
+        "OBJECT"
+      ],
+      "tail_types": [
+        "OBJECT"
+      ],
+      "relation_type": "APPLIED_TO",
+      "confidence": 0.76719069480896,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "document_id": "W2364973104",
+          "start": 0,
+          "end": 1158,
+          "text": "Considering the characteristics of lightning protection for military motor power station and low technical performance of military power station lightning protection and weak objective etc.,this paper,based on typical low-noise motor lightning in military power station,establishes the electromagnetic transient model containing key parts in the lighting protection,such as generator,control unit,and cables by the PSCAD/EMTDC power simulation software.The action mechanism and influence laws of indirect lighting over-voltage in the military power supply are discussed,and a technical proposal of the indirect lightning protection for the military power system is presented.This proposal is realized mainly by installing the SPD on the parts of the electric supply line,power supply line and signal line to provide shielding and filtering for the indirect lightning protection.This lighting protection module device is of high reliability and safety,and can overcome the barriers of the conventional lightening protection device,and helps to improve the indirect lighting protection capability and anti-weather fighting ability of the military power supply.",
+          "entity_ids": [
+            "e:c6511cda2cec167f94600bbdcd4975f96f346215c7e171c8c85408dcddd000fe",
+            "e:cc2cee8f508e7d37dd5cb96ec96c7f0f013b37c52f6b558beb4798dec9024c2c",
+            "e:5e949c26b9556406cf14df6c053ba611f99717b123b8e45770f5cee5d8558316",
+            "e:f69ce2636d00ca6810c63da8ce52c9eff466ba292e903dab2f00d3d7d3115f30",
+            "e:6194d7ac2c9424881213860d505f552f49c06e89f293368e5ac3e4b8794192e8",
+            "e:382c345fe0d4942f3c49891433e99132621d74a4ee5962cb3abebf1d4ca56e01",
+            "e:d7845a190d415f0e5e387e8627fee5487d260eb18eb5557c371288bfc92ff584",
+            "e:068e2d2444b961ba1241a1ae8f7f00caddfd11b9cb1d5c078215360d32cffd64",
+            "e:3bf32df04659bfa45379dec5753c100088fb826dd89825b197a129f7ab0731cb",
+            "e:78db0568e069c46642eb7dd28358926123487c6122891443bcd174c9ae11f5d1",
+            "e:dbe56e7e1218f4be8c70d47aa93c40573e58b021ed11530563fa43cf86e4b3f0",
+            "e:e48137eddd681a3d333e552a0a00b189d7c700f7a58ceaef2ffedb3d62134f35",
+            "e:041c74c144abb67df08375536963a8edd04614ffcfae24e81a0212ed45bab6e7",
+            "e:d57569e86e48434a1dd44abe27b5f550ae4d55272539758f461814b1a3e0ac57",
+            "e:36285854574954987afb483139ac119bf8ce2ae49e258165f2a4585f1fcae0ec",
+            "e:cbc4992e0502870a61ddaa474edbae00eea23ebee31155eb97875590f755d75c",
+            "e:93a82df2d81adeafcd098a2225aebf91887db2dfb10db78842470ce45d38a386",
+            "e:bec5f679723541855750b529385ca3e7f512cdd25ca2c2717e231e6a6c7d8339",
+            "e:58bd51f6cc4551211f79bd7f9fcf8c956dbb957225930dce7dc5b746d5d72d13",
+            "e:c4a00d0fcf944b2e763261b5bea19a2ccb4aa764e6de8fda4857b976287c4e7b",
+            "e:33d0710d9d3ce603d834edc8a8411a025e37ba69b39968ee141ac1bc4e6d1c51",
+            "e:669ae2376373a496a814243c1f51c5ff69d3f58b831f5d629924a1b8cb564525",
+            "e:1ee0f4c18edfdf5ac9f268d8c7ab746c86c5db350e6a818394fa779263acd7de",
+            "e:6c614f5f1a59017019104964bb59bb0b7eebb62bc1647f9b5fcd3d2b2df3abdb",
+            "e:12207688860e52b6e9cff80185d6c6c0271e9436205a522d9481b8c9f100f7d5",
+            "e:c9bd42fb51487a76b4f342b4a0a1844a8f4f806bb12ff7fb654a70ce2864642f",
+            "e:1c3831a81a6b1b1c84e6420964eae7fdd700f1e4ae94b910d30b0d9baa3b5188",
+            "e:b372ff5eac770f50263590dbeeb5692d84e8a9ae925921653125934e9561f05a",
+            "e:a8cf7f03bc1ec5598c0f8b5966e5e75e5ffbb0e85cd540b7570ea1efa0085139",
+            "e:3f2ee011f1a8f873e923450d45fb97d68144e41aa83871a0844cf3a0ecb943e5",
+            "e:40ed6134387236dd71465bf54232f90ab25bdf27a3dff84cd1b966e1ff191f13",
+            "e:b3e30ffda1d11e7c2d2a88b6befb2116fe4dce4f32a3bcb4221db19492ae1632",
+            "e:03f8e1834848da4b2437d29660f0126334f6accb2d3f1b3a6a363253751d37a6",
+            "e:7a85516bcc450f8e9cebb3a3bfdd70d59754867a031bdd1e0270e342151b7914",
+            "e:a1d72abe58f6574548c84a4c27f3e98de051a95edc250a1964d06db4ac9b1a95",
+            "e:89d523be3967733e616c7795614f0d46b96a3d1f64dc5225c1844aa7cb617d0e",
+            "e:81f4083b1d4c7e5cf53c736ba621632eb75c8f003c0f8de7af8938bcf7bb0ba7",
+            "e:3ef25123194e2aaef468d3f990fc9081f0a857c49443281f59701c42b411c997",
+            "e:da1b59403aafa837744c6248ea6154b7827e50b6a0d06b96bb9af9d433973ab8",
+            "e:4c523f9bea42c631badb64c769b6692d2fe5e45a4356c6617c9bf36d197c8b1d",
+            "e:88884d2344491a059eec658e69cc7f681c573457c9d1755e7d8d195a83809f59",
+            "e:e60723edabc89964ba25efd7a453da60e7a10aa6e54fb21b8a8ee81cb5fa5120"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:a1602c0dd6a016324a160dcb52daac750ec011df24cfae8d69199ee0ef6574c2",
+      "document_id": "W2364973104",
+      "head_id": "e:03f8e1834848da4b2437d29660f0126334f6accb2d3f1b3a6a363253751d37a6",
+      "tail_id": "e:a1d72abe58f6574548c84a4c27f3e98de051a95edc250a1964d06db4ac9b1a95",
+      "head_types": [
+        "OBJECT"
+      ],
+      "tail_types": [
+        "ATTRIBUTE"
+      ],
+      "relation_type": "HAS_ATTRIBUTE",
+      "confidence": 0.8561009764671326,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "document_id": "W2364973104",
+          "start": 0,
+          "end": 1158,
+          "text": "Considering the characteristics of lightning protection for military motor power station and low technical performance of military power station lightning protection and weak objective etc.,this paper,based on typical low-noise motor lightning in military power station,establishes the electromagnetic transient model containing key parts in the lighting protection,such as generator,control unit,and cables by the PSCAD/EMTDC power simulation software.The action mechanism and influence laws of indirect lighting over-voltage in the military power supply are discussed,and a technical proposal of the indirect lightning protection for the military power system is presented.This proposal is realized mainly by installing the SPD on the parts of the electric supply line,power supply line and signal line to provide shielding and filtering for the indirect lightning protection.This lighting protection module device is of high reliability and safety,and can overcome the barriers of the conventional lightening protection device,and helps to improve the indirect lighting protection capability and anti-weather fighting ability of the military power supply.",
+          "entity_ids": [
+            "e:c6511cda2cec167f94600bbdcd4975f96f346215c7e171c8c85408dcddd000fe",
+            "e:cc2cee8f508e7d37dd5cb96ec96c7f0f013b37c52f6b558beb4798dec9024c2c",
+            "e:5e949c26b9556406cf14df6c053ba611f99717b123b8e45770f5cee5d8558316",
+            "e:f69ce2636d00ca6810c63da8ce52c9eff466ba292e903dab2f00d3d7d3115f30",
+            "e:6194d7ac2c9424881213860d505f552f49c06e89f293368e5ac3e4b8794192e8",
+            "e:382c345fe0d4942f3c49891433e99132621d74a4ee5962cb3abebf1d4ca56e01",
+            "e:d7845a190d415f0e5e387e8627fee5487d260eb18eb5557c371288bfc92ff584",
+            "e:068e2d2444b961ba1241a1ae8f7f00caddfd11b9cb1d5c078215360d32cffd64",
+            "e:3bf32df04659bfa45379dec5753c100088fb826dd89825b197a129f7ab0731cb",
+            "e:78db0568e069c46642eb7dd28358926123487c6122891443bcd174c9ae11f5d1",
+            "e:dbe56e7e1218f4be8c70d47aa93c40573e58b021ed11530563fa43cf86e4b3f0",
+            "e:e48137eddd681a3d333e552a0a00b189d7c700f7a58ceaef2ffedb3d62134f35",
+            "e:041c74c144abb67df08375536963a8edd04614ffcfae24e81a0212ed45bab6e7",
+            "e:d57569e86e48434a1dd44abe27b5f550ae4d55272539758f461814b1a3e0ac57",
+            "e:36285854574954987afb483139ac119bf8ce2ae49e258165f2a4585f1fcae0ec",
+            "e:cbc4992e0502870a61ddaa474edbae00eea23ebee31155eb97875590f755d75c",
+            "e:93a82df2d81adeafcd098a2225aebf91887db2dfb10db78842470ce45d38a386",
+            "e:bec5f679723541855750b529385ca3e7f512cdd25ca2c2717e231e6a6c7d8339",
+            "e:58bd51f6cc4551211f79bd7f9fcf8c956dbb957225930dce7dc5b746d5d72d13",
+            "e:c4a00d0fcf944b2e763261b5bea19a2ccb4aa764e6de8fda4857b976287c4e7b",
+            "e:33d0710d9d3ce603d834edc8a8411a025e37ba69b39968ee141ac1bc4e6d1c51",
+            "e:669ae2376373a496a814243c1f51c5ff69d3f58b831f5d629924a1b8cb564525",
+            "e:1ee0f4c18edfdf5ac9f268d8c7ab746c86c5db350e6a818394fa779263acd7de",
+            "e:6c614f5f1a59017019104964bb59bb0b7eebb62bc1647f9b5fcd3d2b2df3abdb",
+            "e:12207688860e52b6e9cff80185d6c6c0271e9436205a522d9481b8c9f100f7d5",
+            "e:c9bd42fb51487a76b4f342b4a0a1844a8f4f806bb12ff7fb654a70ce2864642f",
+            "e:1c3831a81a6b1b1c84e6420964eae7fdd700f1e4ae94b910d30b0d9baa3b5188",
+            "e:b372ff5eac770f50263590dbeeb5692d84e8a9ae925921653125934e9561f05a",
+            "e:a8cf7f03bc1ec5598c0f8b5966e5e75e5ffbb0e85cd540b7570ea1efa0085139",
+            "e:3f2ee011f1a8f873e923450d45fb97d68144e41aa83871a0844cf3a0ecb943e5",
+            "e:40ed6134387236dd71465bf54232f90ab25bdf27a3dff84cd1b966e1ff191f13",
+            "e:b3e30ffda1d11e7c2d2a88b6befb2116fe4dce4f32a3bcb4221db19492ae1632",
+            "e:03f8e1834848da4b2437d29660f0126334f6accb2d3f1b3a6a363253751d37a6",
+            "e:7a85516bcc450f8e9cebb3a3bfdd70d59754867a031bdd1e0270e342151b7914",
+            "e:a1d72abe58f6574548c84a4c27f3e98de051a95edc250a1964d06db4ac9b1a95",
+            "e:89d523be3967733e616c7795614f0d46b96a3d1f64dc5225c1844aa7cb617d0e",
+            "e:81f4083b1d4c7e5cf53c736ba621632eb75c8f003c0f8de7af8938bcf7bb0ba7",
+            "e:3ef25123194e2aaef468d3f990fc9081f0a857c49443281f59701c42b411c997",
+            "e:da1b59403aafa837744c6248ea6154b7827e50b6a0d06b96bb9af9d433973ab8",
+            "e:4c523f9bea42c631badb64c769b6692d2fe5e45a4356c6617c9bf36d197c8b1d",
+            "e:88884d2344491a059eec658e69cc7f681c573457c9d1755e7d8d195a83809f59",
+            "e:e60723edabc89964ba25efd7a453da60e7a10aa6e54fb21b8a8ee81cb5fa5120"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:ac0db3af4b4c0e90ffbef7142e16261e2ff81e24d909c7a4eaef3d508b2c4d47",
+      "document_id": "W2364973104",
+      "head_id": "e:3bf32df04659bfa45379dec5753c100088fb826dd89825b197a129f7ab0731cb",
+      "tail_id": "e:d7845a190d415f0e5e387e8627fee5487d260eb18eb5557c371288bfc92ff584",
+      "head_types": [
+        "CONCEPT"
+      ],
+      "tail_types": [
+        "OBJECT"
+      ],
+      "relation_type": "DERIVED_FROM",
+      "confidence": 0.902002215385437,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "document_id": "W2364973104",
+          "start": 0,
+          "end": 1158,
+          "text": "Considering the characteristics of lightning protection for military motor power station and low technical performance of military power station lightning protection and weak objective etc.,this paper,based on typical low-noise motor lightning in military power station,establishes the electromagnetic transient model containing key parts in the lighting protection,such as generator,control unit,and cables by the PSCAD/EMTDC power simulation software.The action mechanism and influence laws of indirect lighting over-voltage in the military power supply are discussed,and a technical proposal of the indirect lightning protection for the military power system is presented.This proposal is realized mainly by installing the SPD on the parts of the electric supply line,power supply line and signal line to provide shielding and filtering for the indirect lightning protection.This lighting protection module device is of high reliability and safety,and can overcome the barriers of the conventional lightening protection device,and helps to improve the indirect lighting protection capability and anti-weather fighting ability of the military power supply.",
+          "entity_ids": [
+            "e:c6511cda2cec167f94600bbdcd4975f96f346215c7e171c8c85408dcddd000fe",
+            "e:cc2cee8f508e7d37dd5cb96ec96c7f0f013b37c52f6b558beb4798dec9024c2c",
+            "e:5e949c26b9556406cf14df6c053ba611f99717b123b8e45770f5cee5d8558316",
+            "e:f69ce2636d00ca6810c63da8ce52c9eff466ba292e903dab2f00d3d7d3115f30",
+            "e:6194d7ac2c9424881213860d505f552f49c06e89f293368e5ac3e4b8794192e8",
+            "e:382c345fe0d4942f3c49891433e99132621d74a4ee5962cb3abebf1d4ca56e01",
+            "e:d7845a190d415f0e5e387e8627fee5487d260eb18eb5557c371288bfc92ff584",
+            "e:068e2d2444b961ba1241a1ae8f7f00caddfd11b9cb1d5c078215360d32cffd64",
+            "e:3bf32df04659bfa45379dec5753c100088fb826dd89825b197a129f7ab0731cb",
+            "e:78db0568e069c46642eb7dd28358926123487c6122891443bcd174c9ae11f5d1",
+            "e:dbe56e7e1218f4be8c70d47aa93c40573e58b021ed11530563fa43cf86e4b3f0",
+            "e:e48137eddd681a3d333e552a0a00b189d7c700f7a58ceaef2ffedb3d62134f35",
+            "e:041c74c144abb67df08375536963a8edd04614ffcfae24e81a0212ed45bab6e7",
+            "e:d57569e86e48434a1dd44abe27b5f550ae4d55272539758f461814b1a3e0ac57",
+            "e:36285854574954987afb483139ac119bf8ce2ae49e258165f2a4585f1fcae0ec",
+            "e:cbc4992e0502870a61ddaa474edbae00eea23ebee31155eb97875590f755d75c",
+            "e:93a82df2d81adeafcd098a2225aebf91887db2dfb10db78842470ce45d38a386",
+            "e:bec5f679723541855750b529385ca3e7f512cdd25ca2c2717e231e6a6c7d8339",
+            "e:58bd51f6cc4551211f79bd7f9fcf8c956dbb957225930dce7dc5b746d5d72d13",
+            "e:c4a00d0fcf944b2e763261b5bea19a2ccb4aa764e6de8fda4857b976287c4e7b",
+            "e:33d0710d9d3ce603d834edc8a8411a025e37ba69b39968ee141ac1bc4e6d1c51",
+            "e:669ae2376373a496a814243c1f51c5ff69d3f58b831f5d629924a1b8cb564525",
+            "e:1ee0f4c18edfdf5ac9f268d8c7ab746c86c5db350e6a818394fa779263acd7de",
+            "e:6c614f5f1a59017019104964bb59bb0b7eebb62bc1647f9b5fcd3d2b2df3abdb",
+            "e:12207688860e52b6e9cff80185d6c6c0271e9436205a522d9481b8c9f100f7d5",
+            "e:c9bd42fb51487a76b4f342b4a0a1844a8f4f806bb12ff7fb654a70ce2864642f",
+            "e:1c3831a81a6b1b1c84e6420964eae7fdd700f1e4ae94b910d30b0d9baa3b5188",
+            "e:b372ff5eac770f50263590dbeeb5692d84e8a9ae925921653125934e9561f05a",
+            "e:a8cf7f03bc1ec5598c0f8b5966e5e75e5ffbb0e85cd540b7570ea1efa0085139",
+            "e:3f2ee011f1a8f873e923450d45fb97d68144e41aa83871a0844cf3a0ecb943e5",
+            "e:40ed6134387236dd71465bf54232f90ab25bdf27a3dff84cd1b966e1ff191f13",
+            "e:b3e30ffda1d11e7c2d2a88b6befb2116fe4dce4f32a3bcb4221db19492ae1632",
+            "e:03f8e1834848da4b2437d29660f0126334f6accb2d3f1b3a6a363253751d37a6",
+            "e:7a85516bcc450f8e9cebb3a3bfdd70d59754867a031bdd1e0270e342151b7914",
+            "e:a1d72abe58f6574548c84a4c27f3e98de051a95edc250a1964d06db4ac9b1a95",
+            "e:89d523be3967733e616c7795614f0d46b96a3d1f64dc5225c1844aa7cb617d0e",
+            "e:81f4083b1d4c7e5cf53c736ba621632eb75c8f003c0f8de7af8938bcf7bb0ba7",
+            "e:3ef25123194e2aaef468d3f990fc9081f0a857c49443281f59701c42b411c997",
+            "e:da1b59403aafa837744c6248ea6154b7827e50b6a0d06b96bb9af9d433973ab8",
+            "e:4c523f9bea42c631badb64c769b6692d2fe5e45a4356c6617c9bf36d197c8b1d",
+            "e:88884d2344491a059eec658e69cc7f681c573457c9d1755e7d8d195a83809f59",
+            "e:e60723edabc89964ba25efd7a453da60e7a10aa6e54fb21b8a8ee81cb5fa5120"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:c020d3d0e796c84564a56eff37c8754968a18f63132fd4fcd9a7dbbb9a453c0d",
+      "document_id": "W2364973104",
+      "head_id": "e:c9bd42fb51487a76b4f342b4a0a1844a8f4f806bb12ff7fb654a70ce2864642f",
+      "tail_id": "e:40ed6134387236dd71465bf54232f90ab25bdf27a3dff84cd1b966e1ff191f13",
+      "head_types": [
+        "DATA_RESOURCE",
+        "METHOD",
+        "OBJECT"
+      ],
+      "tail_types": [
+        "PROCESS"
+      ],
+      "relation_type": "PERFORMS",
+      "confidence": 0.8605042099952698,
+      "suspicious_type_hint": true,
+      "evidence": [
+        {
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "document_id": "W2364973104",
+          "start": 0,
+          "end": 1158,
+          "text": "Considering the characteristics of lightning protection for military motor power station and low technical performance of military power station lightning protection and weak objective etc.,this paper,based on typical low-noise motor lightning in military power station,establishes the electromagnetic transient model containing key parts in the lighting protection,such as generator,control unit,and cables by the PSCAD/EMTDC power simulation software.The action mechanism and influence laws of indirect lighting over-voltage in the military power supply are discussed,and a technical proposal of the indirect lightning protection for the military power system is presented.This proposal is realized mainly by installing the SPD on the parts of the electric supply line,power supply line and signal line to provide shielding and filtering for the indirect lightning protection.This lighting protection module device is of high reliability and safety,and can overcome the barriers of the conventional lightening protection device,and helps to improve the indirect lighting protection capability and anti-weather fighting ability of the military power supply.",
+          "entity_ids": [
+            "e:c6511cda2cec167f94600bbdcd4975f96f346215c7e171c8c85408dcddd000fe",
+            "e:cc2cee8f508e7d37dd5cb96ec96c7f0f013b37c52f6b558beb4798dec9024c2c",
+            "e:5e949c26b9556406cf14df6c053ba611f99717b123b8e45770f5cee5d8558316",
+            "e:f69ce2636d00ca6810c63da8ce52c9eff466ba292e903dab2f00d3d7d3115f30",
+            "e:6194d7ac2c9424881213860d505f552f49c06e89f293368e5ac3e4b8794192e8",
+            "e:382c345fe0d4942f3c49891433e99132621d74a4ee5962cb3abebf1d4ca56e01",
+            "e:d7845a190d415f0e5e387e8627fee5487d260eb18eb5557c371288bfc92ff584",
+            "e:068e2d2444b961ba1241a1ae8f7f00caddfd11b9cb1d5c078215360d32cffd64",
+            "e:3bf32df04659bfa45379dec5753c100088fb826dd89825b197a129f7ab0731cb",
+            "e:78db0568e069c46642eb7dd28358926123487c6122891443bcd174c9ae11f5d1",
+            "e:dbe56e7e1218f4be8c70d47aa93c40573e58b021ed11530563fa43cf86e4b3f0",
+            "e:e48137eddd681a3d333e552a0a00b189d7c700f7a58ceaef2ffedb3d62134f35",
+            "e:041c74c144abb67df08375536963a8edd04614ffcfae24e81a0212ed45bab6e7",
+            "e:d57569e86e48434a1dd44abe27b5f550ae4d55272539758f461814b1a3e0ac57",
+            "e:36285854574954987afb483139ac119bf8ce2ae49e258165f2a4585f1fcae0ec",
+            "e:cbc4992e0502870a61ddaa474edbae00eea23ebee31155eb97875590f755d75c",
+            "e:93a82df2d81adeafcd098a2225aebf91887db2dfb10db78842470ce45d38a386",
+            "e:bec5f679723541855750b529385ca3e7f512cdd25ca2c2717e231e6a6c7d8339",
+            "e:58bd51f6cc4551211f79bd7f9fcf8c956dbb957225930dce7dc5b746d5d72d13",
+            "e:c4a00d0fcf944b2e763261b5bea19a2ccb4aa764e6de8fda4857b976287c4e7b",
+            "e:33d0710d9d3ce603d834edc8a8411a025e37ba69b39968ee141ac1bc4e6d1c51",
+            "e:669ae2376373a496a814243c1f51c5ff69d3f58b831f5d629924a1b8cb564525",
+            "e:1ee0f4c18edfdf5ac9f268d8c7ab746c86c5db350e6a818394fa779263acd7de",
+            "e:6c614f5f1a59017019104964bb59bb0b7eebb62bc1647f9b5fcd3d2b2df3abdb",
+            "e:12207688860e52b6e9cff80185d6c6c0271e9436205a522d9481b8c9f100f7d5",
+            "e:c9bd42fb51487a76b4f342b4a0a1844a8f4f806bb12ff7fb654a70ce2864642f",
+            "e:1c3831a81a6b1b1c84e6420964eae7fdd700f1e4ae94b910d30b0d9baa3b5188",
+            "e:b372ff5eac770f50263590dbeeb5692d84e8a9ae925921653125934e9561f05a",
+            "e:a8cf7f03bc1ec5598c0f8b5966e5e75e5ffbb0e85cd540b7570ea1efa0085139",
+            "e:3f2ee011f1a8f873e923450d45fb97d68144e41aa83871a0844cf3a0ecb943e5",
+            "e:40ed6134387236dd71465bf54232f90ab25bdf27a3dff84cd1b966e1ff191f13",
+            "e:b3e30ffda1d11e7c2d2a88b6befb2116fe4dce4f32a3bcb4221db19492ae1632",
+            "e:03f8e1834848da4b2437d29660f0126334f6accb2d3f1b3a6a363253751d37a6",
+            "e:7a85516bcc450f8e9cebb3a3bfdd70d59754867a031bdd1e0270e342151b7914",
+            "e:a1d72abe58f6574548c84a4c27f3e98de051a95edc250a1964d06db4ac9b1a95",
+            "e:89d523be3967733e616c7795614f0d46b96a3d1f64dc5225c1844aa7cb617d0e",
+            "e:81f4083b1d4c7e5cf53c736ba621632eb75c8f003c0f8de7af8938bcf7bb0ba7",
+            "e:3ef25123194e2aaef468d3f990fc9081f0a857c49443281f59701c42b411c997",
+            "e:da1b59403aafa837744c6248ea6154b7827e50b6a0d06b96bb9af9d433973ab8",
+            "e:4c523f9bea42c631badb64c769b6692d2fe5e45a4356c6617c9bf36d197c8b1d",
+            "e:88884d2344491a059eec658e69cc7f681c573457c9d1755e7d8d195a83809f59",
+            "e:e60723edabc89964ba25efd7a453da60e7a10aa6e54fb21b8a8ee81cb5fa5120"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:e352d6fd14668709c83437610e2c267b410762f8266f054a294da2e97b7dd80b",
+      "document_id": "W2364973104",
+      "head_id": "e:f69ce2636d00ca6810c63da8ce52c9eff466ba292e903dab2f00d3d7d3115f30",
+      "tail_id": "e:041c74c144abb67df08375536963a8edd04614ffcfae24e81a0212ed45bab6e7",
+      "head_types": [
+        "OBJECT"
+      ],
+      "tail_types": [
+        "OBJECT"
+      ],
+      "relation_type": "HAS_PART",
+      "confidence": 0.7267842888832092,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "document_id": "W2364973104",
+          "start": 0,
+          "end": 1158,
+          "text": "Considering the characteristics of lightning protection for military motor power station and low technical performance of military power station lightning protection and weak objective etc.,this paper,based on typical low-noise motor lightning in military power station,establishes the electromagnetic transient model containing key parts in the lighting protection,such as generator,control unit,and cables by the PSCAD/EMTDC power simulation software.The action mechanism and influence laws of indirect lighting over-voltage in the military power supply are discussed,and a technical proposal of the indirect lightning protection for the military power system is presented.This proposal is realized mainly by installing the SPD on the parts of the electric supply line,power supply line and signal line to provide shielding and filtering for the indirect lightning protection.This lighting protection module device is of high reliability and safety,and can overcome the barriers of the conventional lightening protection device,and helps to improve the indirect lighting protection capability and anti-weather fighting ability of the military power supply.",
+          "entity_ids": [
+            "e:c6511cda2cec167f94600bbdcd4975f96f346215c7e171c8c85408dcddd000fe",
+            "e:cc2cee8f508e7d37dd5cb96ec96c7f0f013b37c52f6b558beb4798dec9024c2c",
+            "e:5e949c26b9556406cf14df6c053ba611f99717b123b8e45770f5cee5d8558316",
+            "e:f69ce2636d00ca6810c63da8ce52c9eff466ba292e903dab2f00d3d7d3115f30",
+            "e:6194d7ac2c9424881213860d505f552f49c06e89f293368e5ac3e4b8794192e8",
+            "e:382c345fe0d4942f3c49891433e99132621d74a4ee5962cb3abebf1d4ca56e01",
+            "e:d7845a190d415f0e5e387e8627fee5487d260eb18eb5557c371288bfc92ff584",
+            "e:068e2d2444b961ba1241a1ae8f7f00caddfd11b9cb1d5c078215360d32cffd64",
+            "e:3bf32df04659bfa45379dec5753c100088fb826dd89825b197a129f7ab0731cb",
+            "e:78db0568e069c46642eb7dd28358926123487c6122891443bcd174c9ae11f5d1",
+            "e:dbe56e7e1218f4be8c70d47aa93c40573e58b021ed11530563fa43cf86e4b3f0",
+            "e:e48137eddd681a3d333e552a0a00b189d7c700f7a58ceaef2ffedb3d62134f35",
+            "e:041c74c144abb67df08375536963a8edd04614ffcfae24e81a0212ed45bab6e7",
+            "e:d57569e86e48434a1dd44abe27b5f550ae4d55272539758f461814b1a3e0ac57",
+            "e:36285854574954987afb483139ac119bf8ce2ae49e258165f2a4585f1fcae0ec",
+            "e:cbc4992e0502870a61ddaa474edbae00eea23ebee31155eb97875590f755d75c",
+            "e:93a82df2d81adeafcd098a2225aebf91887db2dfb10db78842470ce45d38a386",
+            "e:bec5f679723541855750b529385ca3e7f512cdd25ca2c2717e231e6a6c7d8339",
+            "e:58bd51f6cc4551211f79bd7f9fcf8c956dbb957225930dce7dc5b746d5d72d13",
+            "e:c4a00d0fcf944b2e763261b5bea19a2ccb4aa764e6de8fda4857b976287c4e7b",
+            "e:33d0710d9d3ce603d834edc8a8411a025e37ba69b39968ee141ac1bc4e6d1c51",
+            "e:669ae2376373a496a814243c1f51c5ff69d3f58b831f5d629924a1b8cb564525",
+            "e:1ee0f4c18edfdf5ac9f268d8c7ab746c86c5db350e6a818394fa779263acd7de",
+            "e:6c614f5f1a59017019104964bb59bb0b7eebb62bc1647f9b5fcd3d2b2df3abdb",
+            "e:12207688860e52b6e9cff80185d6c6c0271e9436205a522d9481b8c9f100f7d5",
+            "e:c9bd42fb51487a76b4f342b4a0a1844a8f4f806bb12ff7fb654a70ce2864642f",
+            "e:1c3831a81a6b1b1c84e6420964eae7fdd700f1e4ae94b910d30b0d9baa3b5188",
+            "e:b372ff5eac770f50263590dbeeb5692d84e8a9ae925921653125934e9561f05a",
+            "e:a8cf7f03bc1ec5598c0f8b5966e5e75e5ffbb0e85cd540b7570ea1efa0085139",
+            "e:3f2ee011f1a8f873e923450d45fb97d68144e41aa83871a0844cf3a0ecb943e5",
+            "e:40ed6134387236dd71465bf54232f90ab25bdf27a3dff84cd1b966e1ff191f13",
+            "e:b3e30ffda1d11e7c2d2a88b6befb2116fe4dce4f32a3bcb4221db19492ae1632",
+            "e:03f8e1834848da4b2437d29660f0126334f6accb2d3f1b3a6a363253751d37a6",
+            "e:7a85516bcc450f8e9cebb3a3bfdd70d59754867a031bdd1e0270e342151b7914",
+            "e:a1d72abe58f6574548c84a4c27f3e98de051a95edc250a1964d06db4ac9b1a95",
+            "e:89d523be3967733e616c7795614f0d46b96a3d1f64dc5225c1844aa7cb617d0e",
+            "e:81f4083b1d4c7e5cf53c736ba621632eb75c8f003c0f8de7af8938bcf7bb0ba7",
+            "e:3ef25123194e2aaef468d3f990fc9081f0a857c49443281f59701c42b411c997",
+            "e:da1b59403aafa837744c6248ea6154b7827e50b6a0d06b96bb9af9d433973ab8",
+            "e:4c523f9bea42c631badb64c769b6692d2fe5e45a4356c6617c9bf36d197c8b1d",
+            "e:88884d2344491a059eec658e69cc7f681c573457c9d1755e7d8d195a83809f59",
+            "e:e60723edabc89964ba25efd7a453da60e7a10aa6e54fb21b8a8ee81cb5fa5120"
+          ]
+        }
+      ]
+    }
+  ],
+  "raw_relation_count": 9,
+  "seconds": 3.755664500175044
+}

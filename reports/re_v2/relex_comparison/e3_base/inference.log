@@ -5,3 +5,117 @@ Traceback (most recent call last):
   File "C:\Users\Kirill\Desktop\Graph-RAG-news-analytics-system-RESEARCH\scripts\build_relex_graphs.py", line 513, in connect_neo4j
     raise ValueError("Set NEO4J_PASSWORD (or use --neo4j-env with the existing project's .env)")
 ValueError: Set NEO4J_PASSWORD (or use --neo4j-env with the existing project's .env)
+Traceback (most recent call last):
+  File "C:\Users\Kirill\Desktop\Graph-RAG-news-analytics-system-RESEARCH\scripts\relex_experiment.py", line 322, in run
+    driver, database = core.connect_neo4j(args.neo4j_env)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kirill\Desktop\Graph-RAG-news-analytics-system-RESEARCH\scripts\build_relex_graphs.py", line 513, in connect_neo4j
+    raise ValueError("Set NEO4J_PASSWORD (or use --neo4j-env with the existing project's .env)")
+ValueError: Set NEO4J_PASSWORD (or use --neo4j-env with the existing project's .env)
+Traceback (most recent call last):
+  File "C:\Users\Kirill\Desktop\Graph-RAG-news-analytics-system-RESEARCH\scripts\relex_experiment.py", line 322, in run
+    driver, database = core.connect_neo4j(args.neo4j_env)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kirill\Desktop\Graph-RAG-news-analytics-system-RESEARCH\scripts\build_relex_graphs.py", line 516, in connect_neo4j
+    driver.verify_connectivity()
+  File "C:\Users\Kirill\Desktop\Graph-RAG-news-analytics-system-RESEARCH\.venv\Lib\site-packages\neo4j\_sync\driver.py", line 1060, in verify_connectivity
+    self._get_server_info(session_config)
+  File "C:\Users\Kirill\Desktop\Graph-RAG-news-analytics-system-RESEARCH\.venv\Lib\site-packages\neo4j\_sync\driver.py", line 1289, in _get_server_info
+    return session._get_server_info()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kirill\Desktop\Graph-RAG-news-analytics-system-RESEARCH\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 173, in _get_server_info
+    self._connect(
+  File "C:\Users\Kirill\Desktop\Graph-RAG-news-analytics-system-RESEARCH\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 126, in _connect
+    super()._connect(
+  File "C:\Users\Kirill\Desktop\Graph-RAG-news-analytics-system-RESEARCH\.venv\Lib\site-packages\neo4j\_sync\work\workspace.py", line 181, in _connect
+    self._connection = self._pool.acquire(**acquire_kwargs_)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kirill\Desktop\Graph-RAG-news-analytics-system-RESEARCH\.venv\Lib\site-packages\neo4j\_sync\io\_pool.py", line 678, in acquire
+    return self._acquire(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Kirill\Desktop\Graph-RAG-news-analytics-system-RESEARCH\.venv\Lib\site-packages\neo4j\_sync\io\_pool.py", line 418, in _acquire
+    return connection_creator()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kirill\Desktop\Graph-RAG-news-analytics-system-RESEARCH\.venv\Lib\site-packages\neo4j\_sync\io\_pool.py", line 231, in connection_creator
+    connection = self.opener(
+                 ^^^^^^^^^^^^
+  File "C:\Users\Kirill\Desktop\Graph-RAG-news-analytics-system-RESEARCH\.venv\Lib\site-packages\neo4j\_sync\io\_pool.py", line 638, in opener
+    return Bolt.open(
+           ^^^^^^^^^^
+  File "C:\Users\Kirill\Desktop\Graph-RAG-news-analytics-system-RESEARCH\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 425, in open
+    connection.hello()
+  File "C:\Users\Kirill\Desktop\Graph-RAG-news-analytics-system-RESEARCH\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 185, in hello
+    self.fetch_all()
+  File "C:\Users\Kirill\Desktop\Graph-RAG-news-analytics-system-RESEARCH\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 882, in fetch_all
+    detail_delta, summary_delta = self.fetch_message()
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kirill\Desktop\Graph-RAG-news-analytics-system-RESEARCH\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 867, in fetch_message
+    res = self._process_message(tag, fields)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kirill\Desktop\Graph-RAG-news-analytics-system-RESEARCH\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 548, in _process_message
+    response.on_failure(summary_metadata or {})
+  File "C:\Users\Kirill\Desktop\Graph-RAG-news-analytics-system-RESEARCH\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 304, in on_failure
+    raise self._hydrate_error(metadata)
+neo4j.exceptions.AuthError: {neo4j_code: Neo.ClientError.Security.Unauthorized} {message: The client is unauthorized due to authentication failure.} {gql_status: 42NFF} {gql_status_description: error: syntax error or access rule violation - permission/access denied. Access denied, see the security logs for details.}
+Traceback (most recent call last):
+  File "C:\Users\Kirill\Desktop\Graph-RAG-news-analytics-system-RESEARCH\scripts\relex_experiment.py", line 333, in run
+    windows, labels, budget = core.plan_windows(documents, input_entities, paths, ontology, 512, .25)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kirill\Desktop\Graph-RAG-news-analytics-system-RESEARCH\scripts\build_relex_graphs.py", line 164, in plan_windows
+    tokenizer = AutoTokenizer.from_pretrained(str(path), local_files_only=True, use_fast=False)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kirill\Desktop\Graph-RAG-news-analytics-system-RESEARCH\.venv\Lib\site-packages\transformers\models\auto\tokenization_auto.py", line 701, in from_pretrained
+    return tokenizer_class.from_pretrained(pretrained_model_name_or_path, *inputs, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kirill\Desktop\Graph-RAG-news-analytics-system-RESEARCH\.venv\Lib\site-packages\transformers\tokenization_utils_base.py", line 1712, in from_pretrained
+    return cls._from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kirill\Desktop\Graph-RAG-news-analytics-system-RESEARCH\.venv\Lib\site-packages\transformers\tokenization_utils_base.py", line 1897, in _from_pretrained
+    init_kwargs = cls.convert_to_native_format(**init_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kirill\Desktop\Graph-RAG-news-analytics-system-RESEARCH\.venv\Lib\site-packages\transformers\tokenization_utils_tokenizers.py", line 121, in convert_to_native_format
+    tokenizer_json = json.load(tokenizer_handle)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kirill\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Kirill\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kirill\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kirill\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:\Users\Kirill\Desktop\Graph-RAG-news-analytics-system-RESEARCH\scripts\relex_experiment.py", line 376, in run
+    timings = execute_workers(mode, variant, config, documents)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kirill\Desktop\Graph-RAG-news-analytics-system-RESEARCH\scripts\relex_experiment.py", line 217, in execute_workers
+    worker_id, event, value = events.get(timeout=.25)
+                              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kirill\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\queues.py", line 113, in get
+    if not self._poll(timeout):
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kirill\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\connection.py", line 257, in poll
+    return self._poll(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kirill\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\connection.py", line 346, in _poll
+    return bool(wait([self], timeout))
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kirill\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\connection.py", line 896, in wait
+    ready_handles = _exhaustive_wait(waithandle_to_obj.keys(), timeout)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kirill\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\connection.py", line 828, in _exhaustive_wait
+    res = _winapi.WaitForMultipleObjects(L, False, timeout)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:\Users\Kirill\Desktop\Graph-RAG-news-analytics-system-RESEARCH\scripts\relex_experiment.py", line 322, in run
+    driver, database = core.connect_neo4j(args.neo4j_env)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kirill\Desktop\Graph-RAG-news-analytics-system-RESEARCH\scripts\build_relex_graphs.py", line 518, in connect_neo4j
+    raise ValueError("Set NEO4J_PASSWORD (or use --neo4j-env with the existing project's .env)")
+ValueError: Set NEO4J_PASSWORD (or use --neo4j-env with the existing project's .env)

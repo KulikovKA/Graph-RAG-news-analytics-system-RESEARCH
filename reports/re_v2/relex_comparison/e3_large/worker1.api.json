@@ -1,0 +1,6 @@
+{
+  "mode": "e3",
+  "class": "UniEncoderSpanRelexGLiNER",
+  "inference_signature": "(texts: Union[str, List[str]], labels: List[str], relations: List[str] = [], flat_ner: bool = True, threshold: float = 0.5, adjacency_threshold: Optional[float] = None, relation_threshold: Optional[float] = None, multi_label: bool = False, batch_size: int = 8, packing_config: Optional[gliner.infer_packing.InferencePackingConfig] = None, input_spans: List[List[Dict]] = None, return_relations: bool = True, return_class_probs: bool = False) -> Union[List[List[Dict[str, Any]]], Tuple[List[List[Dict[str, Any]]], List[List[Dict[str, Any]]]]]",
+  "entity_source": "original E3"
+}

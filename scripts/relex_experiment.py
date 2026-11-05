@@ -404,6 +404,9 @@ def run(mode, variant, argv=None):
             metrics = write_report(out, config, documents, ordered, graph_counts, time.perf_counter() - started,
                                    model_seconds, max(memory.peak, memory.process.memory_info().rss), resumed)
             print(f"{mode}_{variant}: {metrics['entities']} entities, {metrics['unique_triples']} triples; report: {out / 'report.md'}")
+        except core.Neo4jConnectionError as exc:
+            print(str(exc), file=log)
+            raise SystemExit(str(exc)) from None
         except BaseException:
             traceback.print_exc(file=log)
             raise

@@ -186,3 +186,42 @@ def test_parallel_model_timing_uses_longest_worker():
     assert combined["inference_wall_seconds"] == 6
     assert combined["processed_documents"] == 28
     assert combined["resumed_documents"] == 2
+
+
+@pytest.mark.parametrize("code,expected", [
+    ("Neo.ClientError.Security.Unauthorized", "rejected"),
+    ("Neo.ClientError.Security.AuthenticationRateLimit", "temporarily blocked"),
+])
+def test_auth_errors_close_driver_and_explain_environment_priority(monkeypatch, tmp_path, code, expected):
+    from neo4j import GraphDatabase
+
+    class ConnectionFailure(Exception):
+        pass
+
+    error = ConnectionFailure("sensitive server details")
+    error.code = code
+    attempts, closed, credentials = [], [], []
+
+    def verify():
+        attempts.append(True)
+        raise error
+
+    fake_driver = SimpleNamespace(verify_connectivity=verify, close=lambda: closed.append(True))
+
+    def make_driver(uri, *, auth, connection_timeout):
+        credentials.append(auth)
+        return fake_driver
+
+    monkeypatch.setattr(GraphDatabase, "driver", make_driver)
+    monkeypatch.setenv("NEO4J_PASSWORD", "process-only-secret")
+    monkeypatch.setenv("NEO4J_USER", "neo4j")
+    env_file = tmp_path / ".env"
+    env_file.write_text("NEO4J_PASSWORD=file-only-secret\n", encoding="utf-8")
+    with pytest.raises(build.Neo4jConnectionError) as caught:
+        build.connect_neo4j(env_file)
+    message = str(caught.value)
+    assert expected in message and "override --neo4j-env" in message
+    assert "process-only-secret" not in message and "file-only-secret" not in message
+    assert "sensitive server details" not in message
+    assert credentials == [("neo4j", "process-only-secret")]
+    assert attempts == closed == [True]  # One attempt, no credential fallback or retry loop.

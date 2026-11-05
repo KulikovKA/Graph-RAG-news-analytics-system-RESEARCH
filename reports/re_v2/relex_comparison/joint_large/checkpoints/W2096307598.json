@@ -1,0 +1,3220 @@
+{
+  "fingerprint": "c79845cf50e55b434eab0bcd7d45fb6779c27e093e96fa9a77b4c2f1b311bf99",
+  "document_id": "W2096307598",
+  "model": "knowledgator/gliner-relex-large-v1.0",
+  "mode": "joint",
+  "raw_windows": [
+    {
+      "window": {
+        "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+        "document_id": "W2096307598",
+        "start": 0,
+        "end": 1296,
+        "text": "We present results of new radio observations of the Moon at L band with the synthesis telescope of the Dominion Radio Astrophysical Observatory Synthesis Telescope. The resolution and temperature sensitivity of the observations are 159'' × 87'' and 1.7K, respectively. The main results are: (1) the lunar brightness temperature averaged over the whole disk is about 233 K while the average brightness temperature for the four quadrants are 228.1K (NE), 239.7K (NW), 233.9K (SW) and 228.8K (SE). The observations reveal large temperature and spatial variations on the Moon for the first time. The highest brightness temperature is about 257 K and it is located along the lunar equator, to the west. The total uncertainty is about 5% due to the absolute accuracy of the fluxes of the primary calibrators; (2) the total degree of polarization is about 6%. Both polarization intensity and degree of polarization increase from the disk's center to the limb, and the distribution of the degree of polarization along the limb is not uniform; (3) the new data are used to study the properties of regolith, such as dielectric constant and thickness distribution. The results show that the lunar regolith's thickness increases from the NW (mare area) to the SE (highland area) regions on the lunar surface.",
+        "entity_ids": []
+      },
+      "entities": [
+        {
+          "start": 22,
+          "end": 44,
+          "text": "new radio observations",
+          "label": "method",
+          "score": 0.6272616982460022
+        },
+        {
+          "start": 26,
+          "end": 44,
+          "text": "radio observations",
+          "label": "method",
+          "score": 0.8685581088066101
+        },
+        {
+          "start": 26,
+          "end": 44,
+          "text": "radio observations",
+          "label": "object",
+          "score": 0.34700846672058105
+        },
+        {
+          "start": 52,
+          "end": 56,
+          "text": "Moon",
+          "label": "object",
+          "score": 0.9858437776565552
+        },
+        {
+          "start": 76,
+          "end": 95,
+          "text": "synthesis telescope",
+          "label": "object",
+          "score": 0.8200133442878723
+        },
+        {
+          "start": 103,
+          "end": 163,
+          "text": "Dominion Radio Astrophysical Observatory Synthesis Telescope",
+          "label": "object",
+          "score": 0.892158031463623
+        },
+        {
+          "start": 103,
+          "end": 163,
+          "text": "Dominion Radio Astrophysical Observatory Synthesis Telescope",
+          "label": "method",
+          "score": 0.3291967809200287
+        },
+        {
+          "start": 169,
+          "end": 179,
+          "text": "resolution",
+          "label": "attribute",
+          "score": 0.9163722395896912
+        },
+        {
+          "start": 184,
+          "end": 207,
+          "text": "temperature sensitivity",
+          "label": "attribute",
+          "score": 0.8451882004737854
+        },
+        {
+          "start": 232,
+          "end": 244,
+          "text": "159'' × 87''",
+          "label": "attribute",
+          "score": 0.5626637935638428
+        },
+        {
+          "start": 232,
+          "end": 244,
+          "text": "159'' × 87''",
+          "label": "result",
+          "score": 0.4139631986618042
+        },
+        {
+          "start": 249,
+          "end": 253,
+          "text": "1.7K",
+          "label": "attribute",
+          "score": 0.5401200652122498
+        },
+        {
+          "start": 249,
+          "end": 253,
+          "text": "1.7K",
+          "label": "result",
+          "score": 0.4507516026496887
+        },
+        {
+          "start": 299,
+          "end": 327,
+          "text": "lunar brightness temperature",
+          "label": "attribute",
+          "score": 0.5979792475700378
+        },
+        {
+          "start": 299,
+          "end": 327,
+          "text": "lunar brightness temperature",
+          "label": "condition",
+          "score": 0.46144944429397583
+        },
+        {
+          "start": 299,
+          "end": 327,
+          "text": "lunar brightness temperature",
+          "label": "object",
+          "score": 0.33953341841697693
+        },
+        {
+          "start": 360,
+          "end": 371,
+          "text": "about 233 K",
+          "label": "result",
+          "score": 0.49586114287376404
+        },
+        {
+          "start": 366,
+          "end": 371,
+          "text": "233 K",
+          "label": "result",
+          "score": 0.9598029851913452
+        },
+        {
+          "start": 382,
+          "end": 412,
+          "text": "average brightness temperature",
+          "label": "attribute",
+          "score": 0.5538918972015381
+        },
+        {
+          "start": 440,
+          "end": 446,
+          "text": "228.1K",
+          "label": "result",
+          "score": 0.8056077361106873
+        },
+        {
+          "start": 440,
+          "end": 446,
+          "text": "228.1K",
+          "label": "attribute",
+          "score": 0.43580031394958496
+        },
+        {
+          "start": 453,
+          "end": 459,
+          "text": "239.7K",
+          "label": "result",
+          "score": 0.6125509142875671
+        },
+        {
+          "start": 453,
+          "end": 459,
+          "text": "239.7K",
+          "label": "attribute",
+          "score": 0.35844090580940247
+        },
+        {
+          "start": 466,
+          "end": 472,
+          "text": "233.9K",
+          "label": "result",
+          "score": 0.5534688234329224
+        },
+        {
+          "start": 482,
+          "end": 488,
+          "text": "228.8K",
+          "label": "result",
+          "score": 0.7027182579040527
+        },
+        {
+          "start": 482,
+          "end": 493,
+          "text": "228.8K (SE)",
+          "label": "result",
+          "score": 0.34120509028434753
+        },
+        {
+          "start": 636,
+          "end": 641,
+          "text": "257 K",
+          "label": "result",
+          "score": 0.7778129577636719
+        },
+        {
+          "start": 636,
+          "end": 641,
+          "text": "257 K",
+          "label": "attribute",
+          "score": 0.30286329984664917
+        },
+        {
+          "start": 670,
+          "end": 683,
+          "text": "lunar equator",
+          "label": "object",
+          "score": 0.9380981922149658
+        },
+        {
+          "start": 702,
+          "end": 719,
+          "text": "total uncertainty",
+          "label": "attribute",
+          "score": 0.794026255607605
+        },
+        {
+          "start": 702,
+          "end": 719,
+          "text": "total uncertainty",
+          "label": "result",
+          "score": 0.7645848393440247
+        },
+        {
+          "start": 723,
+          "end": 731,
+          "text": "about 5%",
+          "label": "result",
+          "score": 0.48536068201065063
+        },
+        {
+          "start": 729,
+          "end": 731,
+          "text": "5%",
+          "label": "result",
+          "score": 0.9045414328575134
+        },
+        {
+          "start": 743,
+          "end": 760,
+          "text": "absolute accuracy",
+          "label": "attribute",
+          "score": 0.6008948683738708
+        },
+        {
+          "start": 743,
+          "end": 760,
+          "text": "absolute accuracy",
+          "label": "object",
+          "score": 0.3862641751766205
+        },
+        {
+          "start": 768,
+          "end": 774,
+          "text": "fluxes",
+          "label": "object",
+          "score": 0.3398715555667877
+        },
+        {
+          "start": 768,
+          "end": 801,
+          "text": "fluxes of the primary calibrators",
+          "label": "object",
+          "score": 0.3189834654331207
+        },
+        {
+          "start": 782,
+          "end": 801,
+          "text": "primary calibrators",
+          "label": "object",
+          "score": 0.751214861869812
+        },
+        {
+          "start": 811,
+          "end": 839,
+          "text": "total degree of polarization",
+          "label": "attribute",
+          "score": 0.6377943754196167
+        },
+        {
+          "start": 811,
+          "end": 839,
+          "text": "total degree of polarization",
+          "label": "condition",
+          "score": 0.577233076095581
+        },
+        {
+          "start": 817,
+          "end": 839,
+          "text": "degree of polarization",
+          "label": "attribute",
+          "score": 0.7327176928520203
+        },
+        {
+          "start": 817,
+          "end": 839,
+          "text": "degree of polarization",
+          "label": "condition",
+          "score": 0.605237603187561
+        },
+        {
+          "start": 843,
+          "end": 851,
+          "text": "about 6%",
+          "label": "result",
+          "score": 0.774778425693512
+        },
+        {
+          "start": 849,
+          "end": 851,
+          "text": "6%",
+          "label": "result",
+          "score": 0.9699863791465759
+        },
+        {
+          "start": 849,
+          "end": 851,
+          "text": "6%",
+          "label": "attribute",
+          "score": 0.3083309531211853
+        },
+        {
+          "start": 858,
+          "end": 880,
+          "text": "polarization intensity",
+          "label": "attribute",
+          "score": 0.8928676843643188
+        },
+        {
+          "start": 858,
+          "end": 880,
+          "text": "polarization intensity",
+          "label": "condition",
+          "score": 0.344343364238739
+        },
+        {
+          "start": 1043,
+          "end": 1051,
+          "text": "new data",
+          "label": "data resource",
+          "score": 0.7593062520027161
+        },
+        {
+          "start": 1043,
+          "end": 1051,
+          "text": "new data",
+          "label": "method",
+          "score": 0.5458515882492065
+        },
+        {
+          "start": 1043,
+          "end": 1051,
+          "text": "new data",
+          "label": "object",
+          "score": 0.36563214659690857
+        },
+        {
+          "start": 1074,
+          "end": 1096,
+          "text": "properties of regolith",
+          "label": "object",
+          "score": 0.35514846444129944
+        },
+        {
+          "start": 1088,
+          "end": 1096,
+          "text": "regolith",
+          "label": "object",
+          "score": 0.926999032497406
+        },
+        {
+          "start": 1088,
+          "end": 1096,
+          "text": "regolith",
+          "label": "condition",
+          "score": 0.3948010504245758
+        },
+        {
+          "start": 1106,
+          "end": 1125,
+          "text": "dielectric constant",
+          "label": "attribute",
+          "score": 0.9696938395500183
+        },
+        {
+          "start": 1106,
+          "end": 1125,
+          "text": "dielectric constant",
+          "label": "condition",
+          "score": 0.36164164543151855
+        },
+        {
+          "start": 1130,
+          "end": 1152,
+          "text": "thickness distribution",
+          "label": "attribute",
+          "score": 0.9267224073410034
+        },
+        {
+          "start": 1130,
+          "end": 1139,
+          "text": "thickness",
+          "label": "attribute",
+          "score": 0.8698951005935669
+        },
+        {
+          "start": 1282,
+          "end": 1295,
+          "text": "lunar surface",
+          "label": "object",
+          "score": 0.6631510853767395
+        }
+      ],
+      "predictions": [
+        {
+          "head": {
+            "start": 22,
+            "end": 44,
+            "text": "new radio observations",
+            "type": "method",
+            "entity_idx": 0
+          },
+          "tail": {
+            "start": 299,
+            "end": 327,
+            "text": "lunar brightness temperature",
+            "type": "attribute",
+            "entity_idx": 13
+          },
+          "relation": "measures",
+          "score": 0.7226282954216003
+        },
+        {
+          "head": {
+            "start": 26,
+            "end": 44,
+            "text": "radio observations",
+            "type": "method",
+            "entity_idx": 1
+          },
+          "tail": {
+            "start": 299,
+            "end": 327,
+            "text": "lunar brightness temperature",
+            "type": "attribute",
+            "entity_idx": 13
+          },
+          "relation": "measures",
+          "score": 0.7653378248214722
+        },
+        {
+          "head": {
+            "start": 299,
+            "end": 327,
+            "text": "lunar brightness temperature",
+            "type": "attribute",
+            "entity_idx": 13
+          },
+          "tail": {
+            "start": 360,
+            "end": 371,
+            "text": "about 233 K",
+            "type": "result",
+            "entity_idx": 16
+          },
+          "relation": "has result",
+          "score": 0.939655601978302
+        },
+        {
+          "head": {
+            "start": 299,
+            "end": 327,
+            "text": "lunar brightness temperature",
+            "type": "attribute",
+            "entity_idx": 13
+          },
+          "tail": {
+            "start": 366,
+            "end": 371,
+            "text": "233 K",
+            "type": "result",
+            "entity_idx": 17
+          },
+          "relation": "has result",
+          "score": 0.9558926224708557
+        },
+        {
+          "head": {
+            "start": 382,
+            "end": 412,
+            "text": "average brightness temperature",
+            "type": "attribute",
+            "entity_idx": 18
+          },
+          "tail": {
+            "start": 440,
+            "end": 446,
+            "text": "228.1K",
+            "type": "result",
+            "entity_idx": 19
+          },
+          "relation": "has result",
+          "score": 0.8527127504348755
+        },
+        {
+          "head": {
+            "start": 382,
+            "end": 412,
+            "text": "average brightness temperature",
+            "type": "attribute",
+            "entity_idx": 18
+          },
+          "tail": {
+            "start": 453,
+            "end": 459,
+            "text": "239.7K",
+            "type": "result",
+            "entity_idx": 21
+          },
+          "relation": "has result",
+          "score": 0.7337621450424194
+        },
+        {
+          "head": {
+            "start": 702,
+            "end": 719,
+            "text": "total uncertainty",
+            "type": "attribute",
+            "entity_idx": 29
+          },
+          "tail": {
+            "start": 743,
+            "end": 760,
+            "text": "absolute accuracy",
+            "type": "attribute",
+            "entity_idx": 33
+          },
+          "relation": "depends on",
+          "score": 0.7588193416595459
+        },
+        {
+          "head": {
+            "start": 811,
+            "end": 839,
+            "text": "total degree of polarization",
+            "type": "attribute",
+            "entity_idx": 38
+          },
+          "tail": {
+            "start": 843,
+            "end": 851,
+            "text": "about 6%",
+            "type": "result",
+            "entity_idx": 42
+          },
+          "relation": "has result",
+          "score": 0.9115121364593506
+        },
+        {
+          "head": {
+            "start": 811,
+            "end": 839,
+            "text": "total degree of polarization",
+            "type": "attribute",
+            "entity_idx": 38
+          },
+          "tail": {
+            "start": 849,
+            "end": 851,
+            "text": "6%",
+            "type": "result",
+            "entity_idx": 43
+          },
+          "relation": "has result",
+          "score": 0.9087937474250793
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "e:cc4a5443842b4cc7fb6fcb14fe917b43f611e53bdfe898abb1d5b3362fdf54c8",
+      "document_id": "W2096307598",
+      "start": 22,
+      "end": 44,
+      "surface_text": "new radio observations",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "new radio observations"
+      ],
+      "confidence": 0.6272616982460022,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 22,
+          "end": 44,
+          "surface_text": "new radio observations",
+          "ner_label_hint": "METHOD",
+          "score": 0.6272616982460022,
+          "normalized_form": "new radio observations",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 22,
+            "end": 44,
+            "text": "new radio observations",
+            "label": "method",
+            "score": 0.6272616982460022
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:e8a93a3ca932a222e5d1cecc508b0e08b24a26127fbf1f535e51af6439335b0d",
+      "document_id": "W2096307598",
+      "start": 26,
+      "end": 44,
+      "surface_text": "radio observations",
+      "entity_types": [
+        "METHOD",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "radio observations"
+      ],
+      "confidence": 0.8685581088066101,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 26,
+          "end": 44,
+          "surface_text": "radio observations",
+          "ner_label_hint": "METHOD",
+          "score": 0.8685581088066101,
+          "normalized_form": "radio observations",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 26,
+            "end": 44,
+            "text": "radio observations",
+            "label": "method",
+            "score": 0.8685581088066101
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 26,
+          "end": 44,
+          "surface_text": "radio observations",
+          "ner_label_hint": "OBJECT",
+          "score": 0.34700846672058105,
+          "normalized_form": "radio observations",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 26,
+            "end": 44,
+            "text": "radio observations",
+            "label": "object",
+            "score": 0.34700846672058105
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:2dd34a98095b172881a8b346f12101b73278973b999b78142155f44898c29a9b",
+      "document_id": "W2096307598",
+      "start": 52,
+      "end": 56,
+      "surface_text": "Moon",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "moon"
+      ],
+      "confidence": 0.9858437776565552,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 52,
+          "end": 56,
+          "surface_text": "Moon",
+          "ner_label_hint": "OBJECT",
+          "score": 0.9858437776565552,
+          "normalized_form": "moon",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 52,
+            "end": 56,
+            "text": "Moon",
+            "label": "object",
+            "score": 0.9858437776565552
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:57b6d8787ac6e44f3eeeeac99f67840858e7905f81d097f20215cd93078aca46",
+      "document_id": "W2096307598",
+      "start": 76,
+      "end": 95,
+      "surface_text": "synthesis telescope",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "synthesis telescope"
+      ],
+      "confidence": 0.8200133442878723,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 76,
+          "end": 95,
+          "surface_text": "synthesis telescope",
+          "ner_label_hint": "OBJECT",
+          "score": 0.8200133442878723,
+          "normalized_form": "synthesis telescope",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 76,
+            "end": 95,
+            "text": "synthesis telescope",
+            "label": "object",
+            "score": 0.8200133442878723
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:dccefa5aaf2d4525ef47fb9db39b57e91df8cfbb065aebf69c14bd8f98ccd2f7",
+      "document_id": "W2096307598",
+      "start": 103,
+      "end": 163,
+      "surface_text": "Dominion Radio Astrophysical Observatory Synthesis Telescope",
+      "entity_types": [
+        "METHOD",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "dominion radio astrophysical observatory synthesis telescope"
+      ],
+      "confidence": 0.892158031463623,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 103,
+          "end": 163,
+          "surface_text": "Dominion Radio Astrophysical Observatory Synthesis Telescope",
+          "ner_label_hint": "OBJECT",
+          "score": 0.892158031463623,
+          "normalized_form": "dominion radio astrophysical observatory synthesis telescope",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 103,
+            "end": 163,
+            "text": "Dominion Radio Astrophysical Observatory Synthesis Telescope",
+            "label": "object",
+            "score": 0.892158031463623
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 103,
+          "end": 163,
+          "surface_text": "Dominion Radio Astrophysical Observatory Synthesis Telescope",
+          "ner_label_hint": "METHOD",
+          "score": 0.3291967809200287,
+          "normalized_form": "dominion radio astrophysical observatory synthesis telescope",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 103,
+            "end": 163,
+            "text": "Dominion Radio Astrophysical Observatory Synthesis Telescope",
+            "label": "method",
+            "score": 0.3291967809200287
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:06a4eee4d8f9050033ddeea511ac8df0541f1e0c3c390f04543ad61525154b2f",
+      "document_id": "W2096307598",
+      "start": 169,
+      "end": 179,
+      "surface_text": "resolution",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "resolution"
+      ],
+      "confidence": 0.9163722395896912,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 169,
+          "end": 179,
+          "surface_text": "resolution",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.9163722395896912,
+          "normalized_form": "resolution",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 169,
+            "end": 179,
+            "text": "resolution",
+            "label": "attribute",
+            "score": 0.9163722395896912
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:f03021ad94aeefb7af3e2183fa92bb13d3fd8f10bab25bb549144654197e8481",
+      "document_id": "W2096307598",
+      "start": 184,
+      "end": 207,
+      "surface_text": "temperature sensitivity",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "temperature sensitivity"
+      ],
+      "confidence": 0.8451882004737854,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 184,
+          "end": 207,
+          "surface_text": "temperature sensitivity",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.8451882004737854,
+          "normalized_form": "temperature sensitivity",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 184,
+            "end": 207,
+            "text": "temperature sensitivity",
+            "label": "attribute",
+            "score": 0.8451882004737854
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:4b82378176a134cfedeaadf2cca7879eb4fc392d87b8c603b336894bd0992118",
+      "document_id": "W2096307598",
+      "start": 232,
+      "end": 244,
+      "surface_text": "159'' × 87''",
+      "entity_types": [
+        "ATTRIBUTE",
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "159'' × 87''"
+      ],
+      "confidence": 0.5626637935638428,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 232,
+          "end": 244,
+          "surface_text": "159'' × 87''",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.5626637935638428,
+          "normalized_form": "159'' × 87''",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 232,
+            "end": 244,
+            "text": "159'' × 87''",
+            "label": "attribute",
+            "score": 0.5626637935638428
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 232,
+          "end": 244,
+          "surface_text": "159'' × 87''",
+          "ner_label_hint": "RESULT",
+          "score": 0.4139631986618042,
+          "normalized_form": "159'' × 87''",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 232,
+            "end": 244,
+            "text": "159'' × 87''",
+            "label": "result",
+            "score": 0.4139631986618042
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:2966add5f1338212da007e2d625eb1d074f1b0c703d4c9ecfb4708fb4184307b",
+      "document_id": "W2096307598",
+      "start": 249,
+      "end": 253,
+      "surface_text": "1.7K",
+      "entity_types": [
+        "ATTRIBUTE",
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "1.7k"
+      ],
+      "confidence": 0.5401200652122498,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 249,
+          "end": 253,
+          "surface_text": "1.7K",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.5401200652122498,
+          "normalized_form": "1.7k",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 249,
+            "end": 253,
+            "text": "1.7K",
+            "label": "attribute",
+            "score": 0.5401200652122498
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 249,
+          "end": 253,
+          "surface_text": "1.7K",
+          "ner_label_hint": "RESULT",
+          "score": 0.4507516026496887,
+          "normalized_form": "1.7k",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 249,
+            "end": 253,
+            "text": "1.7K",
+            "label": "result",
+            "score": 0.4507516026496887
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:c97724cfd8db26e39c075481cd123c4a8318f59f1c76f3d19e221f135149b14d",
+      "document_id": "W2096307598",
+      "start": 299,
+      "end": 327,
+      "surface_text": "lunar brightness temperature",
+      "entity_types": [
+        "ATTRIBUTE",
+        "CONDITION",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "lunar brightness temperature"
+      ],
+      "confidence": 0.5979792475700378,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 299,
+          "end": 327,
+          "surface_text": "lunar brightness temperature",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.5979792475700378,
+          "normalized_form": "lunar brightness temperature",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 299,
+            "end": 327,
+            "text": "lunar brightness temperature",
+            "label": "attribute",
+            "score": 0.5979792475700378
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 299,
+          "end": 327,
+          "surface_text": "lunar brightness temperature",
+          "ner_label_hint": "CONDITION",
+          "score": 0.46144944429397583,
+          "normalized_form": "lunar brightness temperature",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 299,
+            "end": 327,
+            "text": "lunar brightness temperature",
+            "label": "condition",
+            "score": 0.46144944429397583
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 299,
+          "end": 327,
+          "surface_text": "lunar brightness temperature",
+          "ner_label_hint": "OBJECT",
+          "score": 0.33953341841697693,
+          "normalized_form": "lunar brightness temperature",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 299,
+            "end": 327,
+            "text": "lunar brightness temperature",
+            "label": "object",
+            "score": 0.33953341841697693
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:e603cd88c3ddddf22b4500528d191017fc0849c357048ebde77ce021b0a053ab",
+      "document_id": "W2096307598",
+      "start": 360,
+      "end": 371,
+      "surface_text": "about 233 K",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "about 233 k"
+      ],
+      "confidence": 0.49586114287376404,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 360,
+          "end": 371,
+          "surface_text": "about 233 K",
+          "ner_label_hint": "RESULT",
+          "score": 0.49586114287376404,
+          "normalized_form": "about 233 k",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 360,
+            "end": 371,
+            "text": "about 233 K",
+            "label": "result",
+            "score": 0.49586114287376404
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:f79a0abf86e64f21509383c48b00520f6ac82996e690093b34d5bef80b34e41d",
+      "document_id": "W2096307598",
+      "start": 366,
+      "end": 371,
+      "surface_text": "233 K",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "233 k"
+      ],
+      "confidence": 0.9598029851913452,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 366,
+          "end": 371,
+          "surface_text": "233 K",
+          "ner_label_hint": "RESULT",
+          "score": 0.9598029851913452,
+          "normalized_form": "233 k",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 366,
+            "end": 371,
+            "text": "233 K",
+            "label": "result",
+            "score": 0.9598029851913452
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a4bbd85c9fb9d89663bac178f29f593ed5cf0eb3a14c2ed97cdd5ad88e556793",
+      "document_id": "W2096307598",
+      "start": 382,
+      "end": 412,
+      "surface_text": "average brightness temperature",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "average brightness temperature"
+      ],
+      "confidence": 0.5538918972015381,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 382,
+          "end": 412,
+          "surface_text": "average brightness temperature",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.5538918972015381,
+          "normalized_form": "average brightness temperature",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 382,
+            "end": 412,
+            "text": "average brightness temperature",
+            "label": "attribute",
+            "score": 0.5538918972015381
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:7397084bdfc42224ab6e9fd157e6c6da5006e8b75cbd6ee7d08caf6796bd3f5a",
+      "document_id": "W2096307598",
+      "start": 440,
+      "end": 446,
+      "surface_text": "228.1K",
+      "entity_types": [
+        "ATTRIBUTE",
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "228.1k"
+      ],
+      "confidence": 0.8056077361106873,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 440,
+          "end": 446,
+          "surface_text": "228.1K",
+          "ner_label_hint": "RESULT",
+          "score": 0.8056077361106873,
+          "normalized_form": "228.1k",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 440,
+            "end": 446,
+            "text": "228.1K",
+            "label": "result",
+            "score": 0.8056077361106873
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 440,
+          "end": 446,
+          "surface_text": "228.1K",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.43580031394958496,
+          "normalized_form": "228.1k",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 440,
+            "end": 446,
+            "text": "228.1K",
+            "label": "attribute",
+            "score": 0.43580031394958496
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:299d892d26312052f1bc40eb51ddb64471ffaceb46f2a0680f717a81daf387bc",
+      "document_id": "W2096307598",
+      "start": 453,
+      "end": 459,
+      "surface_text": "239.7K",
+      "entity_types": [
+        "ATTRIBUTE",
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "239.7k"
+      ],
+      "confidence": 0.6125509142875671,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 453,
+          "end": 459,
+          "surface_text": "239.7K",
+          "ner_label_hint": "RESULT",
+          "score": 0.6125509142875671,
+          "normalized_form": "239.7k",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 453,
+            "end": 459,
+            "text": "239.7K",
+            "label": "result",
+            "score": 0.6125509142875671
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 453,
+          "end": 459,
+          "surface_text": "239.7K",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.35844090580940247,
+          "normalized_form": "239.7k",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 453,
+            "end": 459,
+            "text": "239.7K",
+            "label": "attribute",
+            "score": 0.35844090580940247
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:c50bd7cf2824f75e416a8d55b115a7b777bd2760a6a7316402f157d03b572045",
+      "document_id": "W2096307598",
+      "start": 466,
+      "end": 472,
+      "surface_text": "233.9K",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "233.9k"
+      ],
+      "confidence": 0.5534688234329224,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 466,
+          "end": 472,
+          "surface_text": "233.9K",
+          "ner_label_hint": "RESULT",
+          "score": 0.5534688234329224,
+          "normalized_form": "233.9k",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 466,
+            "end": 472,
+            "text": "233.9K",
+            "label": "result",
+            "score": 0.5534688234329224
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:9199e933d315ac9daa639fd7b9321418750a85c2588e0ce4f6ef5272a6c50f02",
+      "document_id": "W2096307598",
+      "start": 482,
+      "end": 488,
+      "surface_text": "228.8K",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "228.8k"
+      ],
+      "confidence": 0.7027182579040527,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 482,
+          "end": 488,
+          "surface_text": "228.8K",
+          "ner_label_hint": "RESULT",
+          "score": 0.7027182579040527,
+          "normalized_form": "228.8k",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 482,
+            "end": 488,
+            "text": "228.8K",
+            "label": "result",
+            "score": 0.7027182579040527
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:978598feed851758185727114e353e33b0e88062726b7fd71d86c288bd6de6c6",
+      "document_id": "W2096307598",
+      "start": 482,
+      "end": 493,
+      "surface_text": "228.8K (SE)",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "228.8k (se)"
+      ],
+      "confidence": 0.34120509028434753,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 482,
+          "end": 493,
+          "surface_text": "228.8K (SE)",
+          "ner_label_hint": "RESULT",
+          "score": 0.34120509028434753,
+          "normalized_form": "228.8k (se)",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 482,
+            "end": 493,
+            "text": "228.8K (SE)",
+            "label": "result",
+            "score": 0.34120509028434753
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:5c46ed99e054f23315825ac7b11d0f40d3d97d78c4a91464f6ebe30b3bb226d1",
+      "document_id": "W2096307598",
+      "start": 636,
+      "end": 641,
+      "surface_text": "257 K",
+      "entity_types": [
+        "ATTRIBUTE",
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "257 k"
+      ],
+      "confidence": 0.7778129577636719,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 636,
+          "end": 641,
+          "surface_text": "257 K",
+          "ner_label_hint": "RESULT",
+          "score": 0.7778129577636719,
+          "normalized_form": "257 k",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 636,
+            "end": 641,
+            "text": "257 K",
+            "label": "result",
+            "score": 0.7778129577636719
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 636,
+          "end": 641,
+          "surface_text": "257 K",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.30286329984664917,
+          "normalized_form": "257 k",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 636,
+            "end": 641,
+            "text": "257 K",
+            "label": "attribute",
+            "score": 0.30286329984664917
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:dbddb7d8ceec7b7004d1c6f619da2132f907d23c18525f73943022bea24de6b7",
+      "document_id": "W2096307598",
+      "start": 670,
+      "end": 683,
+      "surface_text": "lunar equator",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "lunar equator"
+      ],
+      "confidence": 0.9380981922149658,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 670,
+          "end": 683,
+          "surface_text": "lunar equator",
+          "ner_label_hint": "OBJECT",
+          "score": 0.9380981922149658,
+          "normalized_form": "lunar equator",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 670,
+            "end": 683,
+            "text": "lunar equator",
+            "label": "object",
+            "score": 0.9380981922149658
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:b98bff18bec5cb4a6f1f6dc0014e80d0eacffb271d9b33d1cdcdea4d3d98f716",
+      "document_id": "W2096307598",
+      "start": 702,
+      "end": 719,
+      "surface_text": "total uncertainty",
+      "entity_types": [
+        "ATTRIBUTE",
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "total uncertainty"
+      ],
+      "confidence": 0.794026255607605,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 702,
+          "end": 719,
+          "surface_text": "total uncertainty",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.794026255607605,
+          "normalized_form": "total uncertainty",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 702,
+            "end": 719,
+            "text": "total uncertainty",
+            "label": "attribute",
+            "score": 0.794026255607605
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 702,
+          "end": 719,
+          "surface_text": "total uncertainty",
+          "ner_label_hint": "RESULT",
+          "score": 0.7645848393440247,
+          "normalized_form": "total uncertainty",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 702,
+            "end": 719,
+            "text": "total uncertainty",
+            "label": "result",
+            "score": 0.7645848393440247
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:39959efb2b1cbbea56b77d45824d3c882c76543324c3ebadba00638e054a3be9",
+      "document_id": "W2096307598",
+      "start": 723,
+      "end": 731,
+      "surface_text": "about 5%",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "about 5%"
+      ],
+      "confidence": 0.48536068201065063,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 723,
+          "end": 731,
+          "surface_text": "about 5%",
+          "ner_label_hint": "RESULT",
+          "score": 0.48536068201065063,
+          "normalized_form": "about 5%",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 723,
+            "end": 731,
+            "text": "about 5%",
+            "label": "result",
+            "score": 0.48536068201065063
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:39fd05316007e484bc5082e70957af10f3920f39773e3c2c66f1e83bc91b7023",
+      "document_id": "W2096307598",
+      "start": 729,
+      "end": 731,
+      "surface_text": "5%",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "5%"
+      ],
+      "confidence": 0.9045414328575134,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 729,
+          "end": 731,
+          "surface_text": "5%",
+          "ner_label_hint": "RESULT",
+          "score": 0.9045414328575134,
+          "normalized_form": "5%",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 729,
+            "end": 731,
+            "text": "5%",
+            "label": "result",
+            "score": 0.9045414328575134
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:7d8a97017b1f41482115fd1aed8da252cacb672b3d150470690ca6d74200fc1b",
+      "document_id": "W2096307598",
+      "start": 743,
+      "end": 760,
+      "surface_text": "absolute accuracy",
+      "entity_types": [
+        "ATTRIBUTE",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "absolute accuracy"
+      ],
+      "confidence": 0.6008948683738708,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 743,
+          "end": 760,
+          "surface_text": "absolute accuracy",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.6008948683738708,
+          "normalized_form": "absolute accuracy",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 743,
+            "end": 760,
+            "text": "absolute accuracy",
+            "label": "attribute",
+            "score": 0.6008948683738708
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 743,
+          "end": 760,
+          "surface_text": "absolute accuracy",
+          "ner_label_hint": "OBJECT",
+          "score": 0.3862641751766205,
+          "normalized_form": "absolute accuracy",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 743,
+            "end": 760,
+            "text": "absolute accuracy",
+            "label": "object",
+            "score": 0.3862641751766205
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:511965dfbc579edde2a494528f4b01bc2f2a0c2ea6e20eed8995974c994ee5b3",
+      "document_id": "W2096307598",
+      "start": 768,
+      "end": 774,
+      "surface_text": "fluxes",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "fluxes"
+      ],
+      "confidence": 0.3398715555667877,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 768,
+          "end": 774,
+          "surface_text": "fluxes",
+          "ner_label_hint": "OBJECT",
+          "score": 0.3398715555667877,
+          "normalized_form": "fluxes",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 768,
+            "end": 774,
+            "text": "fluxes",
+            "label": "object",
+            "score": 0.3398715555667877
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:fb93422cc483f68a28bee786f55f3e078a31793723383828b1a9c181aa3e71e7",
+      "document_id": "W2096307598",
+      "start": 768,
+      "end": 801,
+      "surface_text": "fluxes of the primary calibrators",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "fluxes of the primary calibrators"
+      ],
+      "confidence": 0.3189834654331207,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 768,
+          "end": 801,
+          "surface_text": "fluxes of the primary calibrators",
+          "ner_label_hint": "OBJECT",
+          "score": 0.3189834654331207,
+          "normalized_form": "fluxes of the primary calibrators",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 768,
+            "end": 801,
+            "text": "fluxes of the primary calibrators",
+            "label": "object",
+            "score": 0.3189834654331207
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:43f2325fa6bb4c24090016a26ee5d9d861b8f4ec03bb3d2dcfc5f211031daf83",
+      "document_id": "W2096307598",
+      "start": 782,
+      "end": 801,
+      "surface_text": "primary calibrators",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "primary calibrators"
+      ],
+      "confidence": 0.751214861869812,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 782,
+          "end": 801,
+          "surface_text": "primary calibrators",
+          "ner_label_hint": "OBJECT",
+          "score": 0.751214861869812,
+          "normalized_form": "primary calibrators",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 782,
+            "end": 801,
+            "text": "primary calibrators",
+            "label": "object",
+            "score": 0.751214861869812
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:b491ca4d94f58afbfcf8cf8d796ad9bd18f0d52a27f7945d4061dfd9eb371500",
+      "document_id": "W2096307598",
+      "start": 811,
+      "end": 839,
+      "surface_text": "total degree of polarization",
+      "entity_types": [
+        "ATTRIBUTE",
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "total degree of polarization"
+      ],
+      "confidence": 0.6377943754196167,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 811,
+          "end": 839,
+          "surface_text": "total degree of polarization",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.6377943754196167,
+          "normalized_form": "total degree of polarization",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 811,
+            "end": 839,
+            "text": "total degree of polarization",
+            "label": "attribute",
+            "score": 0.6377943754196167
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 811,
+          "end": 839,
+          "surface_text": "total degree of polarization",
+          "ner_label_hint": "CONDITION",
+          "score": 0.577233076095581,
+          "normalized_form": "total degree of polarization",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 811,
+            "end": 839,
+            "text": "total degree of polarization",
+            "label": "condition",
+            "score": 0.577233076095581
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:df482374fbb6dc185a33a082e5c37fc406e3048786fc8541b135b3c1d3b72508",
+      "document_id": "W2096307598",
+      "start": 817,
+      "end": 839,
+      "surface_text": "degree of polarization",
+      "entity_types": [
+        "ATTRIBUTE",
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "degree of polarization"
+      ],
+      "confidence": 0.7327176928520203,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 817,
+          "end": 839,
+          "surface_text": "degree of polarization",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.7327176928520203,
+          "normalized_form": "degree of polarization",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 817,
+            "end": 839,
+            "text": "degree of polarization",
+            "label": "attribute",
+            "score": 0.7327176928520203
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 817,
+          "end": 839,
+          "surface_text": "degree of polarization",
+          "ner_label_hint": "CONDITION",
+          "score": 0.605237603187561,
+          "normalized_form": "degree of polarization",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 817,
+            "end": 839,
+            "text": "degree of polarization",
+            "label": "condition",
+            "score": 0.605237603187561
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:207b9447ea43f94cea623c4dd576a0b0de07fcb64518456a974719fbe959fdba",
+      "document_id": "W2096307598",
+      "start": 843,
+      "end": 851,
+      "surface_text": "about 6%",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "about 6%"
+      ],
+      "confidence": 0.774778425693512,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 843,
+          "end": 851,
+          "surface_text": "about 6%",
+          "ner_label_hint": "RESULT",
+          "score": 0.774778425693512,
+          "normalized_form": "about 6%",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 843,
+            "end": 851,
+            "text": "about 6%",
+            "label": "result",
+            "score": 0.774778425693512
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:c1222e6278b31c7ac705ca8028f9b688e048b3458de5711ca1ab727467275fb5",
+      "document_id": "W2096307598",
+      "start": 849,
+      "end": 851,
+      "surface_text": "6%",
+      "entity_types": [
+        "ATTRIBUTE",
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "6%"
+      ],
+      "confidence": 0.9699863791465759,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 849,
+          "end": 851,
+          "surface_text": "6%",
+          "ner_label_hint": "RESULT",
+          "score": 0.9699863791465759,
+          "normalized_form": "6%",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 849,
+            "end": 851,
+            "text": "6%",
+            "label": "result",
+            "score": 0.9699863791465759
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 849,
+          "end": 851,
+          "surface_text": "6%",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.3083309531211853,
+          "normalized_form": "6%",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 849,
+            "end": 851,
+            "text": "6%",
+            "label": "attribute",
+            "score": 0.3083309531211853
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:f7e63617c4feaae92828730d4ca7529de05b5fa320dab660cd09a10b4247d03a",
+      "document_id": "W2096307598",
+      "start": 858,
+      "end": 880,
+      "surface_text": "polarization intensity",
+      "entity_types": [
+        "ATTRIBUTE",
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "polarization intensity"
+      ],
+      "confidence": 0.8928676843643188,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 858,
+          "end": 880,
+          "surface_text": "polarization intensity",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.8928676843643188,
+          "normalized_form": "polarization intensity",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 858,
+            "end": 880,
+            "text": "polarization intensity",
+            "label": "attribute",
+            "score": 0.8928676843643188
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 858,
+          "end": 880,
+          "surface_text": "polarization intensity",
+          "ner_label_hint": "CONDITION",
+          "score": 0.344343364238739,
+          "normalized_form": "polarization intensity",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 858,
+            "end": 880,
+            "text": "polarization intensity",
+            "label": "condition",
+            "score": 0.344343364238739
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:13290e4c3b8a8e94824c859c42592ea119bf4af085af86fdd0e132863d95427a",
+      "document_id": "W2096307598",
+      "start": 1043,
+      "end": 1051,
+      "surface_text": "new data",
+      "entity_types": [
+        "DATA_RESOURCE",
+        "METHOD",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "new data"
+      ],
+      "confidence": 0.7593062520027161,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 1043,
+          "end": 1051,
+          "surface_text": "new data",
+          "ner_label_hint": "DATA_RESOURCE",
+          "score": 0.7593062520027161,
+          "normalized_form": "new data",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 1043,
+            "end": 1051,
+            "text": "new data",
+            "label": "data resource",
+            "score": 0.7593062520027161
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 1043,
+          "end": 1051,
+          "surface_text": "new data",
+          "ner_label_hint": "METHOD",
+          "score": 0.5458515882492065,
+          "normalized_form": "new data",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 1043,
+            "end": 1051,
+            "text": "new data",
+            "label": "method",
+            "score": 0.5458515882492065
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 1043,
+          "end": 1051,
+          "surface_text": "new data",
+          "ner_label_hint": "OBJECT",
+          "score": 0.36563214659690857,
+          "normalized_form": "new data",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 1043,
+            "end": 1051,
+            "text": "new data",
+            "label": "object",
+            "score": 0.36563214659690857
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:502754a82e161915ae9d2c5160d116523ffde3ad2947886be655556da67f7987",
+      "document_id": "W2096307598",
+      "start": 1074,
+      "end": 1096,
+      "surface_text": "properties of regolith",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "properties of regolith"
+      ],
+      "confidence": 0.35514846444129944,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 1074,
+          "end": 1096,
+          "surface_text": "properties of regolith",
+          "ner_label_hint": "OBJECT",
+          "score": 0.35514846444129944,
+          "normalized_form": "properties of regolith",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 1074,
+            "end": 1096,
+            "text": "properties of regolith",
+            "label": "object",
+            "score": 0.35514846444129944
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:44b10dedc236c1a7ffe5ba3aacb6db8ca9c89695f2bdf7f68642eee70d3521ba",
+      "document_id": "W2096307598",
+      "start": 1088,
+      "end": 1096,
+      "surface_text": "regolith",
+      "entity_types": [
+        "CONDITION",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "regolith"
+      ],
+      "confidence": 0.926999032497406,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 1088,
+          "end": 1096,
+          "surface_text": "regolith",
+          "ner_label_hint": "OBJECT",
+          "score": 0.926999032497406,
+          "normalized_form": "regolith",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 1088,
+            "end": 1096,
+            "text": "regolith",
+            "label": "object",
+            "score": 0.926999032497406
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 1088,
+          "end": 1096,
+          "surface_text": "regolith",
+          "ner_label_hint": "CONDITION",
+          "score": 0.3948010504245758,
+          "normalized_form": "regolith",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 1088,
+            "end": 1096,
+            "text": "regolith",
+            "label": "condition",
+            "score": 0.3948010504245758
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:61f7318b2c5713f04c16e9f7f7e68e4a49180bad57790db2c340d9510aa943fe",
+      "document_id": "W2096307598",
+      "start": 1106,
+      "end": 1125,
+      "surface_text": "dielectric constant",
+      "entity_types": [
+        "ATTRIBUTE",
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "dielectric constant"
+      ],
+      "confidence": 0.9696938395500183,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 1106,
+          "end": 1125,
+          "surface_text": "dielectric constant",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.9696938395500183,
+          "normalized_form": "dielectric constant",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 1106,
+            "end": 1125,
+            "text": "dielectric constant",
+            "label": "attribute",
+            "score": 0.9696938395500183
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 1106,
+          "end": 1125,
+          "surface_text": "dielectric constant",
+          "ner_label_hint": "CONDITION",
+          "score": 0.36164164543151855,
+          "normalized_form": "dielectric constant",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 1106,
+            "end": 1125,
+            "text": "dielectric constant",
+            "label": "condition",
+            "score": 0.36164164543151855
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:f2f5c1edbb8e38fedf8081432b836edb6fe9d7017c728b9cad3f7cf1e2ca0393",
+      "document_id": "W2096307598",
+      "start": 1130,
+      "end": 1139,
+      "surface_text": "thickness",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "thickness"
+      ],
+      "confidence": 0.8698951005935669,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 1130,
+          "end": 1139,
+          "surface_text": "thickness",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.8698951005935669,
+          "normalized_form": "thickness",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 1130,
+            "end": 1139,
+            "text": "thickness",
+            "label": "attribute",
+            "score": 0.8698951005935669
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:73cd83c7b9bf13ae364181b8cb98f17ff30dfdb7827e47abe03f8912ff5a3ade",
+      "document_id": "W2096307598",
+      "start": 1130,
+      "end": 1152,
+      "surface_text": "thickness distribution",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "thickness distribution"
+      ],
+      "confidence": 0.9267224073410034,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 1130,
+          "end": 1152,
+          "surface_text": "thickness distribution",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.9267224073410034,
+          "normalized_form": "thickness distribution",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 1130,
+            "end": 1152,
+            "text": "thickness distribution",
+            "label": "attribute",
+            "score": 0.9267224073410034
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:80a15ff294e1a59ae9ce3c2887c1cf8bfa43a67b6bfc3fbb29fb10ed6ac410be",
+      "document_id": "W2096307598",
+      "start": 1282,
+      "end": 1295,
+      "surface_text": "lunar surface",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "lunar surface"
+      ],
+      "confidence": 0.6631510853767395,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 1282,
+          "end": 1295,
+          "surface_text": "lunar surface",
+          "ner_label_hint": "OBJECT",
+          "score": 0.6631510853767395,
+          "normalized_form": "lunar surface",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 1282,
+            "end": 1295,
+            "text": "lunar surface",
+            "label": "object",
+            "score": 0.6631510853767395
+          }
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "triple_id": "t:0b795a57a116a3fa3f5a765120f3d5c1d3c61d44e3f191d0e04badfe420a50a2",
+      "document_id": "W2096307598",
+      "head_id": "e:c97724cfd8db26e39c075481cd123c4a8318f59f1c76f3d19e221f135149b14d",
+      "tail_id": "e:f79a0abf86e64f21509383c48b00520f6ac82996e690093b34d5bef80b34e41d",
+      "head_types": [
+        "ATTRIBUTE",
+        "CONDITION",
+        "OBJECT"
+      ],
+      "tail_types": [
+        "RESULT"
+      ],
+      "relation_type": "HAS_RESULT",
+      "confidence": 0.9558926224708557,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "document_id": "W2096307598",
+          "start": 0,
+          "end": 1296,
+          "text": "We present results of new radio observations of the Moon at L band with the synthesis telescope of the Dominion Radio Astrophysical Observatory Synthesis Telescope. The resolution and temperature sensitivity of the observations are 159'' × 87'' and 1.7K, respectively. The main results are: (1) the lunar brightness temperature averaged over the whole disk is about 233 K while the average brightness temperature for the four quadrants are 228.1K (NE), 239.7K (NW), 233.9K (SW) and 228.8K (SE). The observations reveal large temperature and spatial variations on the Moon for the first time. The highest brightness temperature is about 257 K and it is located along the lunar equator, to the west. The total uncertainty is about 5% due to the absolute accuracy of the fluxes of the primary calibrators; (2) the total degree of polarization is about 6%. Both polarization intensity and degree of polarization increase from the disk's center to the limb, and the distribution of the degree of polarization along the limb is not uniform; (3) the new data are used to study the properties of regolith, such as dielectric constant and thickness distribution. The results show that the lunar regolith's thickness increases from the NW (mare area) to the SE (highland area) regions on the lunar surface.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:36168426bfbdf6d591e6e4daaf95f1baf0828d5fb87a966dd21bfd0aced9deea",
+      "document_id": "W2096307598",
+      "head_id": "e:b491ca4d94f58afbfcf8cf8d796ad9bd18f0d52a27f7945d4061dfd9eb371500",
+      "tail_id": "e:207b9447ea43f94cea623c4dd576a0b0de07fcb64518456a974719fbe959fdba",
+      "head_types": [
+        "ATTRIBUTE",
+        "CONDITION"
+      ],
+      "tail_types": [
+        "RESULT"
+      ],
+      "relation_type": "HAS_RESULT",
+      "confidence": 0.9115121364593506,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "document_id": "W2096307598",
+          "start": 0,
+          "end": 1296,
+          "text": "We present results of new radio observations of the Moon at L band with the synthesis telescope of the Dominion Radio Astrophysical Observatory Synthesis Telescope. The resolution and temperature sensitivity of the observations are 159'' × 87'' and 1.7K, respectively. The main results are: (1) the lunar brightness temperature averaged over the whole disk is about 233 K while the average brightness temperature for the four quadrants are 228.1K (NE), 239.7K (NW), 233.9K (SW) and 228.8K (SE). The observations reveal large temperature and spatial variations on the Moon for the first time. The highest brightness temperature is about 257 K and it is located along the lunar equator, to the west. The total uncertainty is about 5% due to the absolute accuracy of the fluxes of the primary calibrators; (2) the total degree of polarization is about 6%. Both polarization intensity and degree of polarization increase from the disk's center to the limb, and the distribution of the degree of polarization along the limb is not uniform; (3) the new data are used to study the properties of regolith, such as dielectric constant and thickness distribution. The results show that the lunar regolith's thickness increases from the NW (mare area) to the SE (highland area) regions on the lunar surface.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:38939119181ea732054c368ef11ecb21eac98bb008f8620db1d5bb0398632e9d",
+      "document_id": "W2096307598",
+      "head_id": "e:b491ca4d94f58afbfcf8cf8d796ad9bd18f0d52a27f7945d4061dfd9eb371500",
+      "tail_id": "e:c1222e6278b31c7ac705ca8028f9b688e048b3458de5711ca1ab727467275fb5",
+      "head_types": [
+        "ATTRIBUTE",
+        "CONDITION"
+      ],
+      "tail_types": [
+        "ATTRIBUTE",
+        "RESULT"
+      ],
+      "relation_type": "HAS_RESULT",
+      "confidence": 0.9087937474250793,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "document_id": "W2096307598",
+          "start": 0,
+          "end": 1296,
+          "text": "We present results of new radio observations of the Moon at L band with the synthesis telescope of the Dominion Radio Astrophysical Observatory Synthesis Telescope. The resolution and temperature sensitivity of the observations are 159'' × 87'' and 1.7K, respectively. The main results are: (1) the lunar brightness temperature averaged over the whole disk is about 233 K while the average brightness temperature for the four quadrants are 228.1K (NE), 239.7K (NW), 233.9K (SW) and 228.8K (SE). The observations reveal large temperature and spatial variations on the Moon for the first time. The highest brightness temperature is about 257 K and it is located along the lunar equator, to the west. The total uncertainty is about 5% due to the absolute accuracy of the fluxes of the primary calibrators; (2) the total degree of polarization is about 6%. Both polarization intensity and degree of polarization increase from the disk's center to the limb, and the distribution of the degree of polarization along the limb is not uniform; (3) the new data are used to study the properties of regolith, such as dielectric constant and thickness distribution. The results show that the lunar regolith's thickness increases from the NW (mare area) to the SE (highland area) regions on the lunar surface.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:45f12ef430cc522fb6286f8edb64866253786145dd54b639b51720879122b9a8",
+      "document_id": "W2096307598",
+      "head_id": "e:b98bff18bec5cb4a6f1f6dc0014e80d0eacffb271d9b33d1cdcdea4d3d98f716",
+      "tail_id": "e:7d8a97017b1f41482115fd1aed8da252cacb672b3d150470690ca6d74200fc1b",
+      "head_types": [
+        "ATTRIBUTE",
+        "RESULT"
+      ],
+      "tail_types": [
+        "ATTRIBUTE",
+        "OBJECT"
+      ],
+      "relation_type": "DEPENDS_ON",
+      "confidence": 0.7588193416595459,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "document_id": "W2096307598",
+          "start": 0,
+          "end": 1296,
+          "text": "We present results of new radio observations of the Moon at L band with the synthesis telescope of the Dominion Radio Astrophysical Observatory Synthesis Telescope. The resolution and temperature sensitivity of the observations are 159'' × 87'' and 1.7K, respectively. The main results are: (1) the lunar brightness temperature averaged over the whole disk is about 233 K while the average brightness temperature for the four quadrants are 228.1K (NE), 239.7K (NW), 233.9K (SW) and 228.8K (SE). The observations reveal large temperature and spatial variations on the Moon for the first time. The highest brightness temperature is about 257 K and it is located along the lunar equator, to the west. The total uncertainty is about 5% due to the absolute accuracy of the fluxes of the primary calibrators; (2) the total degree of polarization is about 6%. Both polarization intensity and degree of polarization increase from the disk's center to the limb, and the distribution of the degree of polarization along the limb is not uniform; (3) the new data are used to study the properties of regolith, such as dielectric constant and thickness distribution. The results show that the lunar regolith's thickness increases from the NW (mare area) to the SE (highland area) regions on the lunar surface.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:59a726e58613bfb57b7c94d6db75282ba974e09f8cccb60c5062fa4838a401d6",
+      "document_id": "W2096307598",
+      "head_id": "e:c97724cfd8db26e39c075481cd123c4a8318f59f1c76f3d19e221f135149b14d",
+      "tail_id": "e:e603cd88c3ddddf22b4500528d191017fc0849c357048ebde77ce021b0a053ab",
+      "head_types": [
+        "ATTRIBUTE",
+        "CONDITION",
+        "OBJECT"
+      ],
+      "tail_types": [
+        "RESULT"
+      ],
+      "relation_type": "HAS_RESULT",
+      "confidence": 0.939655601978302,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "document_id": "W2096307598",
+          "start": 0,
+          "end": 1296,
+          "text": "We present results of new radio observations of the Moon at L band with the synthesis telescope of the Dominion Radio Astrophysical Observatory Synthesis Telescope. The resolution and temperature sensitivity of the observations are 159'' × 87'' and 1.7K, respectively. The main results are: (1) the lunar brightness temperature averaged over the whole disk is about 233 K while the average brightness temperature for the four quadrants are 228.1K (NE), 239.7K (NW), 233.9K (SW) and 228.8K (SE). The observations reveal large temperature and spatial variations on the Moon for the first time. The highest brightness temperature is about 257 K and it is located along the lunar equator, to the west. The total uncertainty is about 5% due to the absolute accuracy of the fluxes of the primary calibrators; (2) the total degree of polarization is about 6%. Both polarization intensity and degree of polarization increase from the disk's center to the limb, and the distribution of the degree of polarization along the limb is not uniform; (3) the new data are used to study the properties of regolith, such as dielectric constant and thickness distribution. The results show that the lunar regolith's thickness increases from the NW (mare area) to the SE (highland area) regions on the lunar surface.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:6918839da64b2d55ced3aa5d7aeab96834e8a1875b1cbb021d06fb4f816030b2",
+      "document_id": "W2096307598",
+      "head_id": "e:a4bbd85c9fb9d89663bac178f29f593ed5cf0eb3a14c2ed97cdd5ad88e556793",
+      "tail_id": "e:7397084bdfc42224ab6e9fd157e6c6da5006e8b75cbd6ee7d08caf6796bd3f5a",
+      "head_types": [
+        "ATTRIBUTE"
+      ],
+      "tail_types": [
+        "ATTRIBUTE",
+        "RESULT"
+      ],
+      "relation_type": "HAS_RESULT",
+      "confidence": 0.8527127504348755,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "document_id": "W2096307598",
+          "start": 0,
+          "end": 1296,
+          "text": "We present results of new radio observations of the Moon at L band with the synthesis telescope of the Dominion Radio Astrophysical Observatory Synthesis Telescope. The resolution and temperature sensitivity of the observations are 159'' × 87'' and 1.7K, respectively. The main results are: (1) the lunar brightness temperature averaged over the whole disk is about 233 K while the average brightness temperature for the four quadrants are 228.1K (NE), 239.7K (NW), 233.9K (SW) and 228.8K (SE). The observations reveal large temperature and spatial variations on the Moon for the first time. The highest brightness temperature is about 257 K and it is located along the lunar equator, to the west. The total uncertainty is about 5% due to the absolute accuracy of the fluxes of the primary calibrators; (2) the total degree of polarization is about 6%. Both polarization intensity and degree of polarization increase from the disk's center to the limb, and the distribution of the degree of polarization along the limb is not uniform; (3) the new data are used to study the properties of regolith, such as dielectric constant and thickness distribution. The results show that the lunar regolith's thickness increases from the NW (mare area) to the SE (highland area) regions on the lunar surface.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:8629f3b4f6bdbbe3ee27f6cf56c4322d12074075b8c3d10ab6da54adc809db40",
+      "document_id": "W2096307598",
+      "head_id": "e:e8a93a3ca932a222e5d1cecc508b0e08b24a26127fbf1f535e51af6439335b0d",
+      "tail_id": "e:c97724cfd8db26e39c075481cd123c4a8318f59f1c76f3d19e221f135149b14d",
+      "head_types": [
+        "METHOD",
+        "OBJECT"
+      ],
+      "tail_types": [
+        "ATTRIBUTE",
+        "CONDITION",
+        "OBJECT"
+      ],
+      "relation_type": "MEASURES",
+      "confidence": 0.7653378248214722,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "document_id": "W2096307598",
+          "start": 0,
+          "end": 1296,
+          "text": "We present results of new radio observations of the Moon at L band with the synthesis telescope of the Dominion Radio Astrophysical Observatory Synthesis Telescope. The resolution and temperature sensitivity of the observations are 159'' × 87'' and 1.7K, respectively. The main results are: (1) the lunar brightness temperature averaged over the whole disk is about 233 K while the average brightness temperature for the four quadrants are 228.1K (NE), 239.7K (NW), 233.9K (SW) and 228.8K (SE). The observations reveal large temperature and spatial variations on the Moon for the first time. The highest brightness temperature is about 257 K and it is located along the lunar equator, to the west. The total uncertainty is about 5% due to the absolute accuracy of the fluxes of the primary calibrators; (2) the total degree of polarization is about 6%. Both polarization intensity and degree of polarization increase from the disk's center to the limb, and the distribution of the degree of polarization along the limb is not uniform; (3) the new data are used to study the properties of regolith, such as dielectric constant and thickness distribution. The results show that the lunar regolith's thickness increases from the NW (mare area) to the SE (highland area) regions on the lunar surface.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:87047576bfb7d49a6ad1b0f1227d4e459827ead2ca69e02d0f30799146987f46",
+      "document_id": "W2096307598",
+      "head_id": "e:a4bbd85c9fb9d89663bac178f29f593ed5cf0eb3a14c2ed97cdd5ad88e556793",
+      "tail_id": "e:299d892d26312052f1bc40eb51ddb64471ffaceb46f2a0680f717a81daf387bc",
+      "head_types": [
+        "ATTRIBUTE"
+      ],
+      "tail_types": [
+        "ATTRIBUTE",
+        "RESULT"
+      ],
+      "relation_type": "HAS_RESULT",
+      "confidence": 0.7337621450424194,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "document_id": "W2096307598",
+          "start": 0,
+          "end": 1296,
+          "text": "We present results of new radio observations of the Moon at L band with the synthesis telescope of the Dominion Radio Astrophysical Observatory Synthesis Telescope. The resolution and temperature sensitivity of the observations are 159'' × 87'' and 1.7K, respectively. The main results are: (1) the lunar brightness temperature averaged over the whole disk is about 233 K while the average brightness temperature for the four quadrants are 228.1K (NE), 239.7K (NW), 233.9K (SW) and 228.8K (SE). The observations reveal large temperature and spatial variations on the Moon for the first time. The highest brightness temperature is about 257 K and it is located along the lunar equator, to the west. The total uncertainty is about 5% due to the absolute accuracy of the fluxes of the primary calibrators; (2) the total degree of polarization is about 6%. Both polarization intensity and degree of polarization increase from the disk's center to the limb, and the distribution of the degree of polarization along the limb is not uniform; (3) the new data are used to study the properties of regolith, such as dielectric constant and thickness distribution. The results show that the lunar regolith's thickness increases from the NW (mare area) to the SE (highland area) regions on the lunar surface.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:8dfb76d03d125cca6985e6f567605684f9141968b566e101ae6713d03e93b36f",
+      "document_id": "W2096307598",
+      "head_id": "e:cc4a5443842b4cc7fb6fcb14fe917b43f611e53bdfe898abb1d5b3362fdf54c8",
+      "tail_id": "e:c97724cfd8db26e39c075481cd123c4a8318f59f1c76f3d19e221f135149b14d",
+      "head_types": [
+        "METHOD"
+      ],
+      "tail_types": [
+        "ATTRIBUTE",
+        "CONDITION",
+        "OBJECT"
+      ],
+      "relation_type": "MEASURES",
+      "confidence": 0.7226282954216003,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "document_id": "W2096307598",
+          "start": 0,
+          "end": 1296,
+          "text": "We present results of new radio observations of the Moon at L band with the synthesis telescope of the Dominion Radio Astrophysical Observatory Synthesis Telescope. The resolution and temperature sensitivity of the observations are 159'' × 87'' and 1.7K, respectively. The main results are: (1) the lunar brightness temperature averaged over the whole disk is about 233 K while the average brightness temperature for the four quadrants are 228.1K (NE), 239.7K (NW), 233.9K (SW) and 228.8K (SE). The observations reveal large temperature and spatial variations on the Moon for the first time. The highest brightness temperature is about 257 K and it is located along the lunar equator, to the west. The total uncertainty is about 5% due to the absolute accuracy of the fluxes of the primary calibrators; (2) the total degree of polarization is about 6%. Both polarization intensity and degree of polarization increase from the disk's center to the limb, and the distribution of the degree of polarization along the limb is not uniform; (3) the new data are used to study the properties of regolith, such as dielectric constant and thickness distribution. The results show that the lunar regolith's thickness increases from the NW (mare area) to the SE (highland area) regions on the lunar surface.",
+          "entity_ids": []
+        }
+      ]
+    }
+  ],
+  "raw_relation_count": 9,
+  "seconds": 5.420236699981615
+}

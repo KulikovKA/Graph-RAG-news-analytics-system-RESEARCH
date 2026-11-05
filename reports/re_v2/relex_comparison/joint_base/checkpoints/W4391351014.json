@@ -1,0 +1,1316 @@
+{
+  "fingerprint": "c79845cf50e55b434eab0bcd7d45fb6779c27e093e96fa9a77b4c2f1b311bf99",
+  "document_id": "W4391351014",
+  "model": "knowledgator/gliner-relex-base-v1.0",
+  "mode": "joint",
+  "raw_windows": [
+    {
+      "window": {
+        "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+        "document_id": "W4391351014",
+        "start": 0,
+        "end": 1321,
+        "text": "(1) Background: The prevalence of cancer patients relying on cardiac implantable electronic device (CIED) is steadily rising. The aim of this study was to evaluate RT-related malfunctions of CIEDs. (2) Methods: We retrospectively analyze sixteen patients with esophageal cancer who were treated with radiotherapy between 2012 and 2022 at the University Hospital Heidelberg. All patients underwent systemic evaluation including pre-therapeutic cardiological examinations of the CIED functionality and after every single irradiation. (3) Results: Sixteen patients, predominantly male (14) with a mean age of 77 (range: 56-85) years were enrolled. All patients received 28 fractions of radiotherapy with a cumulative total dose 58.8 Gy. The mean maximum dose at the CIEDs was 1.8 Gy. Following radiotherapy and during the one-year post-radiation follow-up period, there were no registered events associated with the treatment in this evaluation. (4) Conclusion: The study did not observe any severe CIED malfunctions following each radiation fraction or after completion of RT. Strict selection of photon energy and alignment with manufacturer-recommended dose limits appear to be important. Our study showed no major differences in the measured values of the pacing threshold, sensing threshold and lead impedance after RT.",
+        "entity_ids": []
+      },
+      "entities": [
+        {
+          "start": 20,
+          "end": 30,
+          "text": "prevalence",
+          "label": "attribute",
+          "score": 0.3204621970653534
+        },
+        {
+          "start": 34,
+          "end": 49,
+          "text": "cancer patients",
+          "label": "condition",
+          "score": 0.7059282064437866
+        },
+        {
+          "start": 61,
+          "end": 104,
+          "text": "cardiac implantable electronic device (CIED",
+          "label": "object",
+          "score": 0.3641979992389679
+        },
+        {
+          "start": 61,
+          "end": 105,
+          "text": "cardiac implantable electronic device (CIED)",
+          "label": "object",
+          "score": 0.3344905972480774
+        },
+        {
+          "start": 260,
+          "end": 277,
+          "text": "esophageal cancer",
+          "label": "condition",
+          "score": 0.9035972356796265
+        },
+        {
+          "start": 300,
+          "end": 312,
+          "text": "radiotherapy",
+          "label": "method",
+          "score": 0.9686591029167175
+        },
+        {
+          "start": 594,
+          "end": 602,
+          "text": "mean age",
+          "label": "attribute",
+          "score": 0.5584136247634888
+        },
+        {
+          "start": 599,
+          "end": 602,
+          "text": "age",
+          "label": "attribute",
+          "score": 0.3009464740753174
+        },
+        {
+          "start": 703,
+          "end": 724,
+          "text": "cumulative total dose",
+          "label": "attribute",
+          "score": 0.504949152469635
+        },
+        {
+          "start": 703,
+          "end": 732,
+          "text": "cumulative total dose 58.8 Gy",
+          "label": "attribute",
+          "score": 0.380664587020874
+        },
+        {
+          "start": 725,
+          "end": 732,
+          "text": "58.8 Gy",
+          "label": "attribute",
+          "score": 0.380664587020874
+        },
+        {
+          "start": 738,
+          "end": 755,
+          "text": "mean maximum dose",
+          "label": "attribute",
+          "score": 0.5871797800064087
+        },
+        {
+          "start": 872,
+          "end": 892,
+          "text": "no registered events",
+          "label": "result",
+          "score": 0.7225915193557739
+        },
+        {
+          "start": 1095,
+          "end": 1108,
+          "text": "photon energy",
+          "label": "attribute",
+          "score": 0.44785699248313904
+        },
+        {
+          "start": 1257,
+          "end": 1273,
+          "text": "pacing threshold",
+          "label": "attribute",
+          "score": 0.8980607986450195
+        },
+        {
+          "start": 1275,
+          "end": 1292,
+          "text": "sensing threshold",
+          "label": "attribute",
+          "score": 0.9423946142196655
+        },
+        {
+          "start": 1297,
+          "end": 1311,
+          "text": "lead impedance",
+          "label": "attribute",
+          "score": 0.9385567307472229
+        }
+      ],
+      "predictions": [
+        {
+          "head": {
+            "start": 34,
+            "end": 49,
+            "text": "cancer patients",
+            "type": "condition",
+            "entity_idx": 1
+          },
+          "tail": {
+            "start": 61,
+            "end": 104,
+            "text": "cardiac implantable electronic device (CIED",
+            "type": "object",
+            "entity_idx": 2
+          },
+          "relation": "uses",
+          "score": 0.8828132748603821
+        },
+        {
+          "head": {
+            "start": 34,
+            "end": 49,
+            "text": "cancer patients",
+            "type": "condition",
+            "entity_idx": 1
+          },
+          "tail": {
+            "start": 61,
+            "end": 104,
+            "text": "cardiac implantable electronic device (CIED",
+            "type": "object",
+            "entity_idx": 2
+          },
+          "relation": "depends on",
+          "score": 0.7740738391876221
+        },
+        {
+          "head": {
+            "start": 34,
+            "end": 49,
+            "text": "cancer patients",
+            "type": "condition",
+            "entity_idx": 1
+          },
+          "tail": {
+            "start": 61,
+            "end": 105,
+            "text": "cardiac implantable electronic device (CIED)",
+            "type": "object",
+            "entity_idx": 3
+          },
+          "relation": "uses",
+          "score": 0.9098160862922668
+        },
+        {
+          "head": {
+            "start": 34,
+            "end": 49,
+            "text": "cancer patients",
+            "type": "condition",
+            "entity_idx": 1
+          },
+          "tail": {
+            "start": 61,
+            "end": 105,
+            "text": "cardiac implantable electronic device (CIED)",
+            "type": "object",
+            "entity_idx": 3
+          },
+          "relation": "depends on",
+          "score": 0.8086282014846802
+        },
+        {
+          "head": {
+            "start": 260,
+            "end": 277,
+            "text": "esophageal cancer",
+            "type": "condition",
+            "entity_idx": 4
+          },
+          "tail": {
+            "start": 61,
+            "end": 104,
+            "text": "cardiac implantable electronic device (CIED",
+            "type": "object",
+            "entity_idx": 2
+          },
+          "relation": "depends on",
+          "score": 0.7472205758094788
+        },
+        {
+          "head": {
+            "start": 260,
+            "end": 277,
+            "text": "esophageal cancer",
+            "type": "condition",
+            "entity_idx": 4
+          },
+          "tail": {
+            "start": 61,
+            "end": 105,
+            "text": "cardiac implantable electronic device (CIED)",
+            "type": "object",
+            "entity_idx": 3
+          },
+          "relation": "depends on",
+          "score": 0.7244372963905334
+        },
+        {
+          "head": {
+            "start": 300,
+            "end": 312,
+            "text": "radiotherapy",
+            "type": "method",
+            "entity_idx": 5
+          },
+          "tail": {
+            "start": 1257,
+            "end": 1273,
+            "text": "pacing threshold",
+            "type": "attribute",
+            "entity_idx": 14
+          },
+          "relation": "measures",
+          "score": 0.8725973963737488
+        },
+        {
+          "head": {
+            "start": 300,
+            "end": 312,
+            "text": "radiotherapy",
+            "type": "method",
+            "entity_idx": 5
+          },
+          "tail": {
+            "start": 1275,
+            "end": 1292,
+            "text": "sensing threshold",
+            "type": "attribute",
+            "entity_idx": 15
+          },
+          "relation": "measures",
+          "score": 0.8232377171516418
+        },
+        {
+          "head": {
+            "start": 300,
+            "end": 312,
+            "text": "radiotherapy",
+            "type": "method",
+            "entity_idx": 5
+          },
+          "tail": {
+            "start": 1297,
+            "end": 1311,
+            "text": "lead impedance",
+            "type": "attribute",
+            "entity_idx": 16
+          },
+          "relation": "measures",
+          "score": 0.8331949710845947
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "e:b4592066f4996d126a1a54a9e486c332f866ae55f1cb7ec551304ff5be6655e1",
+      "document_id": "W4391351014",
+      "start": 20,
+      "end": 30,
+      "surface_text": "prevalence",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "prevalence"
+      ],
+      "confidence": 0.3204621970653534,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 20,
+          "end": 30,
+          "surface_text": "prevalence",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.3204621970653534,
+          "normalized_form": "prevalence",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 20,
+            "end": 30,
+            "text": "prevalence",
+            "label": "attribute",
+            "score": 0.3204621970653534
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:0ef4a4de19459269d610232b0387bbd142f840739613983a8fb61924a91edd32",
+      "document_id": "W4391351014",
+      "start": 34,
+      "end": 49,
+      "surface_text": "cancer patients",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "cancer patients"
+      ],
+      "confidence": 0.7059282064437866,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 34,
+          "end": 49,
+          "surface_text": "cancer patients",
+          "ner_label_hint": "CONDITION",
+          "score": 0.7059282064437866,
+          "normalized_form": "cancer patients",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 34,
+            "end": 49,
+            "text": "cancer patients",
+            "label": "condition",
+            "score": 0.7059282064437866
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:f4d33de66c42245e42ba60664a81139b330352ce9df93185af9af7077025de70",
+      "document_id": "W4391351014",
+      "start": 61,
+      "end": 104,
+      "surface_text": "cardiac implantable electronic device (CIED",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "cardiac implantable electronic device (cied"
+      ],
+      "confidence": 0.3641979992389679,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 61,
+          "end": 104,
+          "surface_text": "cardiac implantable electronic device (CIED",
+          "ner_label_hint": "OBJECT",
+          "score": 0.3641979992389679,
+          "normalized_form": "cardiac implantable electronic device (cied",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 61,
+            "end": 104,
+            "text": "cardiac implantable electronic device (CIED",
+            "label": "object",
+            "score": 0.3641979992389679
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:0b948f1fcf84cac30d3dba50e093b26a4b1597c93ace9b2adeea935263df977a",
+      "document_id": "W4391351014",
+      "start": 61,
+      "end": 105,
+      "surface_text": "cardiac implantable electronic device (CIED)",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "cardiac implantable electronic device (cied)"
+      ],
+      "confidence": 0.3344905972480774,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 61,
+          "end": 105,
+          "surface_text": "cardiac implantable electronic device (CIED)",
+          "ner_label_hint": "OBJECT",
+          "score": 0.3344905972480774,
+          "normalized_form": "cardiac implantable electronic device (cied)",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 61,
+            "end": 105,
+            "text": "cardiac implantable electronic device (CIED)",
+            "label": "object",
+            "score": 0.3344905972480774
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:ccd5bfc2d0ef4e9dc4c16866e6fec948265556e721263c42963445e72fd68ba2",
+      "document_id": "W4391351014",
+      "start": 260,
+      "end": 277,
+      "surface_text": "esophageal cancer",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "esophageal cancer"
+      ],
+      "confidence": 0.9035972356796265,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 260,
+          "end": 277,
+          "surface_text": "esophageal cancer",
+          "ner_label_hint": "CONDITION",
+          "score": 0.9035972356796265,
+          "normalized_form": "esophageal cancer",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 260,
+            "end": 277,
+            "text": "esophageal cancer",
+            "label": "condition",
+            "score": 0.9035972356796265
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:f1b7e26849d139768fb0d1e3c944c279c2e34b910af12f8e48f117bd8c9f7643",
+      "document_id": "W4391351014",
+      "start": 300,
+      "end": 312,
+      "surface_text": "radiotherapy",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "radiotherapy"
+      ],
+      "confidence": 0.9686591029167175,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 300,
+          "end": 312,
+          "surface_text": "radiotherapy",
+          "ner_label_hint": "METHOD",
+          "score": 0.9686591029167175,
+          "normalized_form": "radiotherapy",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 300,
+            "end": 312,
+            "text": "radiotherapy",
+            "label": "method",
+            "score": 0.9686591029167175
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:6e66ea32e1388d2ff5608acee38b00e3dfa1a243f38a8d971dbb83a99c569648",
+      "document_id": "W4391351014",
+      "start": 594,
+      "end": 602,
+      "surface_text": "mean age",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "mean age"
+      ],
+      "confidence": 0.5584136247634888,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 594,
+          "end": 602,
+          "surface_text": "mean age",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.5584136247634888,
+          "normalized_form": "mean age",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 594,
+            "end": 602,
+            "text": "mean age",
+            "label": "attribute",
+            "score": 0.5584136247634888
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:55b9514d1afa54c57314f6565d53da5311d1ed3c704c02aece4636dca16812da",
+      "document_id": "W4391351014",
+      "start": 599,
+      "end": 602,
+      "surface_text": "age",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "age"
+      ],
+      "confidence": 0.3009464740753174,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 599,
+          "end": 602,
+          "surface_text": "age",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.3009464740753174,
+          "normalized_form": "age",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 599,
+            "end": 602,
+            "text": "age",
+            "label": "attribute",
+            "score": 0.3009464740753174
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:3bdcce356ebba157e3e941ce135228870a8db6effe13d2c3ef0a4ed62840f940",
+      "document_id": "W4391351014",
+      "start": 703,
+      "end": 724,
+      "surface_text": "cumulative total dose",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "cumulative total dose"
+      ],
+      "confidence": 0.504949152469635,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 703,
+          "end": 724,
+          "surface_text": "cumulative total dose",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.504949152469635,
+          "normalized_form": "cumulative total dose",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 703,
+            "end": 724,
+            "text": "cumulative total dose",
+            "label": "attribute",
+            "score": 0.504949152469635
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d64a8292f31021242e986a6d642a3c7c97c409aea7ac1ce4400292d35c45e8bb",
+      "document_id": "W4391351014",
+      "start": 703,
+      "end": 732,
+      "surface_text": "cumulative total dose 58.8 Gy",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "cumulative total dose 58.8 gy"
+      ],
+      "confidence": 0.380664587020874,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 703,
+          "end": 732,
+          "surface_text": "cumulative total dose 58.8 Gy",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.380664587020874,
+          "normalized_form": "cumulative total dose 58.8 gy",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 703,
+            "end": 732,
+            "text": "cumulative total dose 58.8 Gy",
+            "label": "attribute",
+            "score": 0.380664587020874
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:18a3350f317f8a609c4c868e605aa342dcdec7db69f6307e460b2b6eba7fe876",
+      "document_id": "W4391351014",
+      "start": 725,
+      "end": 732,
+      "surface_text": "58.8 Gy",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "58.8 gy"
+      ],
+      "confidence": 0.380664587020874,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 725,
+          "end": 732,
+          "surface_text": "58.8 Gy",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.380664587020874,
+          "normalized_form": "58.8 gy",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 725,
+            "end": 732,
+            "text": "58.8 Gy",
+            "label": "attribute",
+            "score": 0.380664587020874
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:2b5bea5ecc7e8545c73228037fece2ccf09a699384cbaaa35547ee6f199b8ba6",
+      "document_id": "W4391351014",
+      "start": 738,
+      "end": 755,
+      "surface_text": "mean maximum dose",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "mean maximum dose"
+      ],
+      "confidence": 0.5871797800064087,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 738,
+          "end": 755,
+          "surface_text": "mean maximum dose",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.5871797800064087,
+          "normalized_form": "mean maximum dose",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 738,
+            "end": 755,
+            "text": "mean maximum dose",
+            "label": "attribute",
+            "score": 0.5871797800064087
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:153cc009129988eece4becf3eeadf2610e9adac20857784b25a5948e9ee04e3c",
+      "document_id": "W4391351014",
+      "start": 872,
+      "end": 892,
+      "surface_text": "no registered events",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "no registered events"
+      ],
+      "confidence": 0.7225915193557739,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 872,
+          "end": 892,
+          "surface_text": "no registered events",
+          "ner_label_hint": "RESULT",
+          "score": 0.7225915193557739,
+          "normalized_form": "no registered events",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 872,
+            "end": 892,
+            "text": "no registered events",
+            "label": "result",
+            "score": 0.7225915193557739
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a88c822ebd5aca4f93c9f288a4100d057207efc51b096c435cc90a385ec51a0e",
+      "document_id": "W4391351014",
+      "start": 1095,
+      "end": 1108,
+      "surface_text": "photon energy",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "photon energy"
+      ],
+      "confidence": 0.44785699248313904,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 1095,
+          "end": 1108,
+          "surface_text": "photon energy",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.44785699248313904,
+          "normalized_form": "photon energy",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 1095,
+            "end": 1108,
+            "text": "photon energy",
+            "label": "attribute",
+            "score": 0.44785699248313904
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:6b6007df4b4679c4505500766947924bb548fa59c1f5120e5819ddd3469bffa7",
+      "document_id": "W4391351014",
+      "start": 1257,
+      "end": 1273,
+      "surface_text": "pacing threshold",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "pacing threshold"
+      ],
+      "confidence": 0.8980607986450195,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 1257,
+          "end": 1273,
+          "surface_text": "pacing threshold",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.8980607986450195,
+          "normalized_form": "pacing threshold",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 1257,
+            "end": 1273,
+            "text": "pacing threshold",
+            "label": "attribute",
+            "score": 0.8980607986450195
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d595deff7edb030c530a65d6b1210450ff9bc6debcf1463cbd74473278466414",
+      "document_id": "W4391351014",
+      "start": 1275,
+      "end": 1292,
+      "surface_text": "sensing threshold",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "sensing threshold"
+      ],
+      "confidence": 0.9423946142196655,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 1275,
+          "end": 1292,
+          "surface_text": "sensing threshold",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.9423946142196655,
+          "normalized_form": "sensing threshold",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 1275,
+            "end": 1292,
+            "text": "sensing threshold",
+            "label": "attribute",
+            "score": 0.9423946142196655
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d0ada13285037a258deef2d51adb0c2978ab03e80b3ce5a3c5508a639a5dbf4c",
+      "document_id": "W4391351014",
+      "start": 1297,
+      "end": 1311,
+      "surface_text": "lead impedance",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "lead impedance"
+      ],
+      "confidence": 0.9385567307472229,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 1297,
+          "end": 1311,
+          "surface_text": "lead impedance",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.9385567307472229,
+          "normalized_form": "lead impedance",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 1297,
+            "end": 1311,
+            "text": "lead impedance",
+            "label": "attribute",
+            "score": 0.9385567307472229
+          }
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "triple_id": "t:07ad1a61c2c2311af30cf6201154fe2ac62e3737489448f095fca924b454688e",
+      "document_id": "W4391351014",
+      "head_id": "e:0ef4a4de19459269d610232b0387bbd142f840739613983a8fb61924a91edd32",
+      "tail_id": "e:f4d33de66c42245e42ba60664a81139b330352ce9df93185af9af7077025de70",
+      "head_types": [
+        "CONDITION"
+      ],
+      "tail_types": [
+        "OBJECT"
+      ],
+      "relation_type": "DEPENDS_ON",
+      "confidence": 0.7740738391876221,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "document_id": "W4391351014",
+          "start": 0,
+          "end": 1321,
+          "text": "(1) Background: The prevalence of cancer patients relying on cardiac implantable electronic device (CIED) is steadily rising. The aim of this study was to evaluate RT-related malfunctions of CIEDs. (2) Methods: We retrospectively analyze sixteen patients with esophageal cancer who were treated with radiotherapy between 2012 and 2022 at the University Hospital Heidelberg. All patients underwent systemic evaluation including pre-therapeutic cardiological examinations of the CIED functionality and after every single irradiation. (3) Results: Sixteen patients, predominantly male (14) with a mean age of 77 (range: 56-85) years were enrolled. All patients received 28 fractions of radiotherapy with a cumulative total dose 58.8 Gy. The mean maximum dose at the CIEDs was 1.8 Gy. Following radiotherapy and during the one-year post-radiation follow-up period, there were no registered events associated with the treatment in this evaluation. (4) Conclusion: The study did not observe any severe CIED malfunctions following each radiation fraction or after completion of RT. Strict selection of photon energy and alignment with manufacturer-recommended dose limits appear to be important. Our study showed no major differences in the measured values of the pacing threshold, sensing threshold and lead impedance after RT.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:0d1f1de74232f2f007ec5c1a771e4cb22794369ddda65e59e683c5a700f8285e",
+      "document_id": "W4391351014",
+      "head_id": "e:f1b7e26849d139768fb0d1e3c944c279c2e34b910af12f8e48f117bd8c9f7643",
+      "tail_id": "e:d0ada13285037a258deef2d51adb0c2978ab03e80b3ce5a3c5508a639a5dbf4c",
+      "head_types": [
+        "METHOD"
+      ],
+      "tail_types": [
+        "ATTRIBUTE"
+      ],
+      "relation_type": "MEASURES",
+      "confidence": 0.8331949710845947,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "document_id": "W4391351014",
+          "start": 0,
+          "end": 1321,
+          "text": "(1) Background: The prevalence of cancer patients relying on cardiac implantable electronic device (CIED) is steadily rising. The aim of this study was to evaluate RT-related malfunctions of CIEDs. (2) Methods: We retrospectively analyze sixteen patients with esophageal cancer who were treated with radiotherapy between 2012 and 2022 at the University Hospital Heidelberg. All patients underwent systemic evaluation including pre-therapeutic cardiological examinations of the CIED functionality and after every single irradiation. (3) Results: Sixteen patients, predominantly male (14) with a mean age of 77 (range: 56-85) years were enrolled. All patients received 28 fractions of radiotherapy with a cumulative total dose 58.8 Gy. The mean maximum dose at the CIEDs was 1.8 Gy. Following radiotherapy and during the one-year post-radiation follow-up period, there were no registered events associated with the treatment in this evaluation. (4) Conclusion: The study did not observe any severe CIED malfunctions following each radiation fraction or after completion of RT. Strict selection of photon energy and alignment with manufacturer-recommended dose limits appear to be important. Our study showed no major differences in the measured values of the pacing threshold, sensing threshold and lead impedance after RT.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:0f7c2409c1bc3ebbc150c0041d8b78738df6a3354d91093f6b58369c539d80c4",
+      "document_id": "W4391351014",
+      "head_id": "e:ccd5bfc2d0ef4e9dc4c16866e6fec948265556e721263c42963445e72fd68ba2",
+      "tail_id": "e:0b948f1fcf84cac30d3dba50e093b26a4b1597c93ace9b2adeea935263df977a",
+      "head_types": [
+        "CONDITION"
+      ],
+      "tail_types": [
+        "OBJECT"
+      ],
+      "relation_type": "DEPENDS_ON",
+      "confidence": 0.7244372963905334,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "document_id": "W4391351014",
+          "start": 0,
+          "end": 1321,
+          "text": "(1) Background: The prevalence of cancer patients relying on cardiac implantable electronic device (CIED) is steadily rising. The aim of this study was to evaluate RT-related malfunctions of CIEDs. (2) Methods: We retrospectively analyze sixteen patients with esophageal cancer who were treated with radiotherapy between 2012 and 2022 at the University Hospital Heidelberg. All patients underwent systemic evaluation including pre-therapeutic cardiological examinations of the CIED functionality and after every single irradiation. (3) Results: Sixteen patients, predominantly male (14) with a mean age of 77 (range: 56-85) years were enrolled. All patients received 28 fractions of radiotherapy with a cumulative total dose 58.8 Gy. The mean maximum dose at the CIEDs was 1.8 Gy. Following radiotherapy and during the one-year post-radiation follow-up period, there were no registered events associated with the treatment in this evaluation. (4) Conclusion: The study did not observe any severe CIED malfunctions following each radiation fraction or after completion of RT. Strict selection of photon energy and alignment with manufacturer-recommended dose limits appear to be important. Our study showed no major differences in the measured values of the pacing threshold, sensing threshold and lead impedance after RT.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:26f26456b2de4d6ea6bc9834eb4c16598397b2a8118857f0ebb6a2e062f458bf",
+      "document_id": "W4391351014",
+      "head_id": "e:ccd5bfc2d0ef4e9dc4c16866e6fec948265556e721263c42963445e72fd68ba2",
+      "tail_id": "e:f4d33de66c42245e42ba60664a81139b330352ce9df93185af9af7077025de70",
+      "head_types": [
+        "CONDITION"
+      ],
+      "tail_types": [
+        "OBJECT"
+      ],
+      "relation_type": "DEPENDS_ON",
+      "confidence": 0.7472205758094788,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "document_id": "W4391351014",
+          "start": 0,
+          "end": 1321,
+          "text": "(1) Background: The prevalence of cancer patients relying on cardiac implantable electronic device (CIED) is steadily rising. The aim of this study was to evaluate RT-related malfunctions of CIEDs. (2) Methods: We retrospectively analyze sixteen patients with esophageal cancer who were treated with radiotherapy between 2012 and 2022 at the University Hospital Heidelberg. All patients underwent systemic evaluation including pre-therapeutic cardiological examinations of the CIED functionality and after every single irradiation. (3) Results: Sixteen patients, predominantly male (14) with a mean age of 77 (range: 56-85) years were enrolled. All patients received 28 fractions of radiotherapy with a cumulative total dose 58.8 Gy. The mean maximum dose at the CIEDs was 1.8 Gy. Following radiotherapy and during the one-year post-radiation follow-up period, there were no registered events associated with the treatment in this evaluation. (4) Conclusion: The study did not observe any severe CIED malfunctions following each radiation fraction or after completion of RT. Strict selection of photon energy and alignment with manufacturer-recommended dose limits appear to be important. Our study showed no major differences in the measured values of the pacing threshold, sensing threshold and lead impedance after RT.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:510be9a99f25c51733aba7af0f05f72b57ed3b49649460b5ab252afd5d6337f9",
+      "document_id": "W4391351014",
+      "head_id": "e:f1b7e26849d139768fb0d1e3c944c279c2e34b910af12f8e48f117bd8c9f7643",
+      "tail_id": "e:d595deff7edb030c530a65d6b1210450ff9bc6debcf1463cbd74473278466414",
+      "head_types": [
+        "METHOD"
+      ],
+      "tail_types": [
+        "ATTRIBUTE"
+      ],
+      "relation_type": "MEASURES",
+      "confidence": 0.8232377171516418,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "document_id": "W4391351014",
+          "start": 0,
+          "end": 1321,
+          "text": "(1) Background: The prevalence of cancer patients relying on cardiac implantable electronic device (CIED) is steadily rising. The aim of this study was to evaluate RT-related malfunctions of CIEDs. (2) Methods: We retrospectively analyze sixteen patients with esophageal cancer who were treated with radiotherapy between 2012 and 2022 at the University Hospital Heidelberg. All patients underwent systemic evaluation including pre-therapeutic cardiological examinations of the CIED functionality and after every single irradiation. (3) Results: Sixteen patients, predominantly male (14) with a mean age of 77 (range: 56-85) years were enrolled. All patients received 28 fractions of radiotherapy with a cumulative total dose 58.8 Gy. The mean maximum dose at the CIEDs was 1.8 Gy. Following radiotherapy and during the one-year post-radiation follow-up period, there were no registered events associated with the treatment in this evaluation. (4) Conclusion: The study did not observe any severe CIED malfunctions following each radiation fraction or after completion of RT. Strict selection of photon energy and alignment with manufacturer-recommended dose limits appear to be important. Our study showed no major differences in the measured values of the pacing threshold, sensing threshold and lead impedance after RT.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:9f001726377d7b7d59b50922f8fd9cda68377032db3c4735c4a825ebb50fd350",
+      "document_id": "W4391351014",
+      "head_id": "e:f1b7e26849d139768fb0d1e3c944c279c2e34b910af12f8e48f117bd8c9f7643",
+      "tail_id": "e:6b6007df4b4679c4505500766947924bb548fa59c1f5120e5819ddd3469bffa7",
+      "head_types": [
+        "METHOD"
+      ],
+      "tail_types": [
+        "ATTRIBUTE"
+      ],
+      "relation_type": "MEASURES",
+      "confidence": 0.8725973963737488,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "document_id": "W4391351014",
+          "start": 0,
+          "end": 1321,
+          "text": "(1) Background: The prevalence of cancer patients relying on cardiac implantable electronic device (CIED) is steadily rising. The aim of this study was to evaluate RT-related malfunctions of CIEDs. (2) Methods: We retrospectively analyze sixteen patients with esophageal cancer who were treated with radiotherapy between 2012 and 2022 at the University Hospital Heidelberg. All patients underwent systemic evaluation including pre-therapeutic cardiological examinations of the CIED functionality and after every single irradiation. (3) Results: Sixteen patients, predominantly male (14) with a mean age of 77 (range: 56-85) years were enrolled. All patients received 28 fractions of radiotherapy with a cumulative total dose 58.8 Gy. The mean maximum dose at the CIEDs was 1.8 Gy. Following radiotherapy and during the one-year post-radiation follow-up period, there were no registered events associated with the treatment in this evaluation. (4) Conclusion: The study did not observe any severe CIED malfunctions following each radiation fraction or after completion of RT. Strict selection of photon energy and alignment with manufacturer-recommended dose limits appear to be important. Our study showed no major differences in the measured values of the pacing threshold, sensing threshold and lead impedance after RT.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:a637ad54c4d765208edf8907d9e4288e56bf3e0863b7811ca6f765ea66a06945",
+      "document_id": "W4391351014",
+      "head_id": "e:0ef4a4de19459269d610232b0387bbd142f840739613983a8fb61924a91edd32",
+      "tail_id": "e:0b948f1fcf84cac30d3dba50e093b26a4b1597c93ace9b2adeea935263df977a",
+      "head_types": [
+        "CONDITION"
+      ],
+      "tail_types": [
+        "OBJECT"
+      ],
+      "relation_type": "DEPENDS_ON",
+      "confidence": 0.8086282014846802,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "document_id": "W4391351014",
+          "start": 0,
+          "end": 1321,
+          "text": "(1) Background: The prevalence of cancer patients relying on cardiac implantable electronic device (CIED) is steadily rising. The aim of this study was to evaluate RT-related malfunctions of CIEDs. (2) Methods: We retrospectively analyze sixteen patients with esophageal cancer who were treated with radiotherapy between 2012 and 2022 at the University Hospital Heidelberg. All patients underwent systemic evaluation including pre-therapeutic cardiological examinations of the CIED functionality and after every single irradiation. (3) Results: Sixteen patients, predominantly male (14) with a mean age of 77 (range: 56-85) years were enrolled. All patients received 28 fractions of radiotherapy with a cumulative total dose 58.8 Gy. The mean maximum dose at the CIEDs was 1.8 Gy. Following radiotherapy and during the one-year post-radiation follow-up period, there were no registered events associated with the treatment in this evaluation. (4) Conclusion: The study did not observe any severe CIED malfunctions following each radiation fraction or after completion of RT. Strict selection of photon energy and alignment with manufacturer-recommended dose limits appear to be important. Our study showed no major differences in the measured values of the pacing threshold, sensing threshold and lead impedance after RT.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:d1a60569d8458c4ec9810e37f05a5cb8de97af93dd0da2ec5d1d5d8be96ba0c7",
+      "document_id": "W4391351014",
+      "head_id": "e:0ef4a4de19459269d610232b0387bbd142f840739613983a8fb61924a91edd32",
+      "tail_id": "e:f4d33de66c42245e42ba60664a81139b330352ce9df93185af9af7077025de70",
+      "head_types": [
+        "CONDITION"
+      ],
+      "tail_types": [
+        "OBJECT"
+      ],
+      "relation_type": "USES",
+      "confidence": 0.8828132748603821,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "document_id": "W4391351014",
+          "start": 0,
+          "end": 1321,
+          "text": "(1) Background: The prevalence of cancer patients relying on cardiac implantable electronic device (CIED) is steadily rising. The aim of this study was to evaluate RT-related malfunctions of CIEDs. (2) Methods: We retrospectively analyze sixteen patients with esophageal cancer who were treated with radiotherapy between 2012 and 2022 at the University Hospital Heidelberg. All patients underwent systemic evaluation including pre-therapeutic cardiological examinations of the CIED functionality and after every single irradiation. (3) Results: Sixteen patients, predominantly male (14) with a mean age of 77 (range: 56-85) years were enrolled. All patients received 28 fractions of radiotherapy with a cumulative total dose 58.8 Gy. The mean maximum dose at the CIEDs was 1.8 Gy. Following radiotherapy and during the one-year post-radiation follow-up period, there were no registered events associated with the treatment in this evaluation. (4) Conclusion: The study did not observe any severe CIED malfunctions following each radiation fraction or after completion of RT. Strict selection of photon energy and alignment with manufacturer-recommended dose limits appear to be important. Our study showed no major differences in the measured values of the pacing threshold, sensing threshold and lead impedance after RT.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:fd59430ff4514750b46cac7df97235895f89002912a912985cd306a811814ef1",
+      "document_id": "W4391351014",
+      "head_id": "e:0ef4a4de19459269d610232b0387bbd142f840739613983a8fb61924a91edd32",
+      "tail_id": "e:0b948f1fcf84cac30d3dba50e093b26a4b1597c93ace9b2adeea935263df977a",
+      "head_types": [
+        "CONDITION"
+      ],
+      "tail_types": [
+        "OBJECT"
+      ],
+      "relation_type": "USES",
+      "confidence": 0.9098160862922668,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "document_id": "W4391351014",
+          "start": 0,
+          "end": 1321,
+          "text": "(1) Background: The prevalence of cancer patients relying on cardiac implantable electronic device (CIED) is steadily rising. The aim of this study was to evaluate RT-related malfunctions of CIEDs. (2) Methods: We retrospectively analyze sixteen patients with esophageal cancer who were treated with radiotherapy between 2012 and 2022 at the University Hospital Heidelberg. All patients underwent systemic evaluation including pre-therapeutic cardiological examinations of the CIED functionality and after every single irradiation. (3) Results: Sixteen patients, predominantly male (14) with a mean age of 77 (range: 56-85) years were enrolled. All patients received 28 fractions of radiotherapy with a cumulative total dose 58.8 Gy. The mean maximum dose at the CIEDs was 1.8 Gy. Following radiotherapy and during the one-year post-radiation follow-up period, there were no registered events associated with the treatment in this evaluation. (4) Conclusion: The study did not observe any severe CIED malfunctions following each radiation fraction or after completion of RT. Strict selection of photon energy and alignment with manufacturer-recommended dose limits appear to be important. Our study showed no major differences in the measured values of the pacing threshold, sensing threshold and lead impedance after RT.",
+          "entity_ids": []
+        }
+      ]
+    }
+  ],
+  "raw_relation_count": 9,
+  "seconds": 1.7571123000234365
+}

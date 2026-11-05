@@ -1,0 +1,1512 @@
+{
+  "fingerprint": "c79845cf50e55b434eab0bcd7d45fb6779c27e093e96fa9a77b4c2f1b311bf99",
+  "document_id": "W2364973104",
+  "model": "knowledgator/gliner-relex-base-v1.0",
+  "mode": "joint",
+  "raw_windows": [
+    {
+      "window": {
+        "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+        "document_id": "W2364973104",
+        "start": 0,
+        "end": 1158,
+        "text": "Considering the characteristics of lightning protection for military motor power station and low technical performance of military power station lightning protection and weak objective etc.,this paper,based on typical low-noise motor lightning in military power station,establishes the electromagnetic transient model containing key parts in the lighting protection,such as generator,control unit,and cables by the PSCAD/EMTDC power simulation software.The action mechanism and influence laws of indirect lighting over-voltage in the military power supply are discussed,and a technical proposal of the indirect lightning protection for the military power system is presented.This proposal is realized mainly by installing the SPD on the parts of the electric supply line,power supply line and signal line to provide shielding and filtering for the indirect lightning protection.This lighting protection module device is of high reliability and safety,and can overcome the barriers of the conventional lightening protection device,and helps to improve the indirect lighting protection capability and anti-weather fighting ability of the military power supply.",
+        "entity_ids": []
+      },
+      "entities": [
+        {
+          "start": 35,
+          "end": 55,
+          "text": "lightning protection",
+          "label": "task",
+          "score": 0.4960709810256958
+        },
+        {
+          "start": 35,
+          "end": 55,
+          "text": "lightning protection",
+          "label": "concept",
+          "score": 0.4144766628742218
+        },
+        {
+          "start": 60,
+          "end": 88,
+          "text": "military motor power station",
+          "label": "object",
+          "score": 0.5976120233535767
+        },
+        {
+          "start": 210,
+          "end": 243,
+          "text": "typical low-noise motor lightning",
+          "label": "concept",
+          "score": 0.31646886467933655
+        },
+        {
+          "start": 218,
+          "end": 243,
+          "text": "low-noise motor lightning",
+          "label": "condition",
+          "score": 0.6017972826957703
+        },
+        {
+          "start": 218,
+          "end": 243,
+          "text": "low-noise motor lightning",
+          "label": "concept",
+          "score": 0.507129967212677
+        },
+        {
+          "start": 286,
+          "end": 317,
+          "text": "electromagnetic transient model",
+          "label": "concept",
+          "score": 0.8232883214950562
+        },
+        {
+          "start": 374,
+          "end": 383,
+          "text": "generator",
+          "label": "object",
+          "score": 0.3446016013622284
+        },
+        {
+          "start": 401,
+          "end": 407,
+          "text": "cables",
+          "label": "object",
+          "score": 0.332518994808197
+        },
+        {
+          "start": 415,
+          "end": 452,
+          "text": "PSCAD/EMTDC power simulation software",
+          "label": "concept",
+          "score": 0.3045428395271301
+        },
+        {
+          "start": 457,
+          "end": 473,
+          "text": "action mechanism",
+          "label": "mechanism",
+          "score": 0.716221272945404
+        },
+        {
+          "start": 496,
+          "end": 526,
+          "text": "indirect lighting over-voltage",
+          "label": "condition",
+          "score": 0.6932764649391174
+        },
+        {
+          "start": 496,
+          "end": 526,
+          "text": "indirect lighting over-voltage",
+          "label": "concept",
+          "score": 0.5980790853500366
+        },
+        {
+          "start": 534,
+          "end": 555,
+          "text": "military power supply",
+          "label": "object",
+          "score": 0.37682637572288513
+        },
+        {
+          "start": 602,
+          "end": 631,
+          "text": "indirect lightning protection",
+          "label": "concept",
+          "score": 0.3810103237628937
+        },
+        {
+          "start": 602,
+          "end": 631,
+          "text": "indirect lightning protection",
+          "label": "task",
+          "score": 0.3206668496131897
+        },
+        {
+          "start": 726,
+          "end": 729,
+          "text": "SPD",
+          "label": "object",
+          "score": 0.350248247385025
+        },
+        {
+          "start": 726,
+          "end": 729,
+          "text": "SPD",
+          "label": "concept",
+          "score": 0.3428196907043457
+        },
+        {
+          "start": 750,
+          "end": 770,
+          "text": "electric supply line",
+          "label": "object",
+          "score": 0.512692928314209
+        },
+        {
+          "start": 771,
+          "end": 788,
+          "text": "power supply line",
+          "label": "object",
+          "score": 0.3562312424182892
+        },
+        {
+          "start": 793,
+          "end": 804,
+          "text": "signal line",
+          "label": "object",
+          "score": 0.4165978729724884
+        },
+        {
+          "start": 923,
+          "end": 939,
+          "text": "high reliability",
+          "label": "attribute",
+          "score": 0.8266902565956116
+        },
+        {
+          "start": 923,
+          "end": 950,
+          "text": "high reliability and safety",
+          "label": "attribute",
+          "score": 0.6272045969963074
+        },
+        {
+          "start": 944,
+          "end": 950,
+          "text": "safety",
+          "label": "attribute",
+          "score": 0.6193332076072693
+        },
+        {
+          "start": 988,
+          "end": 1029,
+          "text": "conventional lightening protection device",
+          "label": "object",
+          "score": 0.30774813890457153
+        }
+      ],
+      "predictions": [
+        {
+          "head": {
+            "start": 60,
+            "end": 88,
+            "text": "military motor power station",
+            "type": "object",
+            "entity_idx": 2
+          },
+          "tail": {
+            "start": 374,
+            "end": 383,
+            "text": "generator",
+            "type": "object",
+            "entity_idx": 7
+          },
+          "relation": "has part",
+          "score": 0.843831479549408
+        },
+        {
+          "head": {
+            "start": 60,
+            "end": 88,
+            "text": "military motor power station",
+            "type": "object",
+            "entity_idx": 2
+          },
+          "tail": {
+            "start": 401,
+            "end": 407,
+            "text": "cables",
+            "type": "object",
+            "entity_idx": 8
+          },
+          "relation": "has part",
+          "score": 0.8157506585121155
+        },
+        {
+          "head": {
+            "start": 286,
+            "end": 317,
+            "text": "electromagnetic transient model",
+            "type": "concept",
+            "entity_idx": 6
+          },
+          "tail": {
+            "start": 210,
+            "end": 243,
+            "text": "typical low-noise motor lightning",
+            "type": "concept",
+            "entity_idx": 3
+          },
+          "relation": "derived from",
+          "score": 0.7877741456031799
+        },
+        {
+          "head": {
+            "start": 534,
+            "end": 555,
+            "text": "military power supply",
+            "type": "object",
+            "entity_idx": 13
+          },
+          "tail": {
+            "start": 374,
+            "end": 383,
+            "text": "generator",
+            "type": "object",
+            "entity_idx": 7
+          },
+          "relation": "has part",
+          "score": 0.7323293685913086
+        },
+        {
+          "head": {
+            "start": 602,
+            "end": 631,
+            "text": "indirect lightning protection",
+            "type": "concept",
+            "entity_idx": 14
+          },
+          "tail": {
+            "start": 534,
+            "end": 555,
+            "text": "military power supply",
+            "type": "object",
+            "entity_idx": 13
+          },
+          "relation": "applied to",
+          "score": 0.7236831784248352
+        },
+        {
+          "head": {
+            "start": 602,
+            "end": 631,
+            "text": "indirect lightning protection",
+            "type": "concept",
+            "entity_idx": 14
+          },
+          "tail": {
+            "start": 534,
+            "end": 555,
+            "text": "military power supply",
+            "type": "object",
+            "entity_idx": 13
+          },
+          "relation": "applied to",
+          "score": 0.7236831784248352
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "e:c6511cda2cec167f94600bbdcd4975f96f346215c7e171c8c85408dcddd000fe",
+      "document_id": "W2364973104",
+      "start": 35,
+      "end": 55,
+      "surface_text": "lightning protection",
+      "entity_types": [
+        "CONCEPT",
+        "TASK"
+      ],
+      "normalized_forms": [
+        "lightning protection"
+      ],
+      "confidence": 0.4960709810256958,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2364973104",
+          "start": 35,
+          "end": 55,
+          "surface_text": "lightning protection",
+          "ner_label_hint": "TASK",
+          "score": 0.4960709810256958,
+          "normalized_form": "lightning protection",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "raw_prediction": {
+            "start": 35,
+            "end": 55,
+            "text": "lightning protection",
+            "label": "task",
+            "score": 0.4960709810256958
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2364973104",
+          "start": 35,
+          "end": 55,
+          "surface_text": "lightning protection",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.4144766628742218,
+          "normalized_form": "lightning protection",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "raw_prediction": {
+            "start": 35,
+            "end": 55,
+            "text": "lightning protection",
+            "label": "concept",
+            "score": 0.4144766628742218
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:cc2cee8f508e7d37dd5cb96ec96c7f0f013b37c52f6b558beb4798dec9024c2c",
+      "document_id": "W2364973104",
+      "start": 60,
+      "end": 88,
+      "surface_text": "military motor power station",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "military motor power station"
+      ],
+      "confidence": 0.5976120233535767,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2364973104",
+          "start": 60,
+          "end": 88,
+          "surface_text": "military motor power station",
+          "ner_label_hint": "OBJECT",
+          "score": 0.5976120233535767,
+          "normalized_form": "military motor power station",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "raw_prediction": {
+            "start": 60,
+            "end": 88,
+            "text": "military motor power station",
+            "label": "object",
+            "score": 0.5976120233535767
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:1aa14395032d5cda541488f069534866f662c90b50c21a9592380e5cb3bc3d77",
+      "document_id": "W2364973104",
+      "start": 210,
+      "end": 243,
+      "surface_text": "typical low-noise motor lightning",
+      "entity_types": [
+        "CONCEPT"
+      ],
+      "normalized_forms": [
+        "typical low-noise motor lightning"
+      ],
+      "confidence": 0.31646886467933655,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2364973104",
+          "start": 210,
+          "end": 243,
+          "surface_text": "typical low-noise motor lightning",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.31646886467933655,
+          "normalized_form": "typical low-noise motor lightning",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "raw_prediction": {
+            "start": 210,
+            "end": 243,
+            "text": "typical low-noise motor lightning",
+            "label": "concept",
+            "score": 0.31646886467933655
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d7845a190d415f0e5e387e8627fee5487d260eb18eb5557c371288bfc92ff584",
+      "document_id": "W2364973104",
+      "start": 218,
+      "end": 243,
+      "surface_text": "low-noise motor lightning",
+      "entity_types": [
+        "CONCEPT",
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "low-noise motor lightning"
+      ],
+      "confidence": 0.6017972826957703,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2364973104",
+          "start": 218,
+          "end": 243,
+          "surface_text": "low-noise motor lightning",
+          "ner_label_hint": "CONDITION",
+          "score": 0.6017972826957703,
+          "normalized_form": "low-noise motor lightning",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "raw_prediction": {
+            "start": 218,
+            "end": 243,
+            "text": "low-noise motor lightning",
+            "label": "condition",
+            "score": 0.6017972826957703
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2364973104",
+          "start": 218,
+          "end": 243,
+          "surface_text": "low-noise motor lightning",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.507129967212677,
+          "normalized_form": "low-noise motor lightning",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "raw_prediction": {
+            "start": 218,
+            "end": 243,
+            "text": "low-noise motor lightning",
+            "label": "concept",
+            "score": 0.507129967212677
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:3bf32df04659bfa45379dec5753c100088fb826dd89825b197a129f7ab0731cb",
+      "document_id": "W2364973104",
+      "start": 286,
+      "end": 317,
+      "surface_text": "electromagnetic transient model",
+      "entity_types": [
+        "CONCEPT"
+      ],
+      "normalized_forms": [
+        "electromagnetic transient model"
+      ],
+      "confidence": 0.8232883214950562,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2364973104",
+          "start": 286,
+          "end": 317,
+          "surface_text": "electromagnetic transient model",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.8232883214950562,
+          "normalized_form": "electromagnetic transient model",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "raw_prediction": {
+            "start": 286,
+            "end": 317,
+            "text": "electromagnetic transient model",
+            "label": "concept",
+            "score": 0.8232883214950562
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:dbe56e7e1218f4be8c70d47aa93c40573e58b021ed11530563fa43cf86e4b3f0",
+      "document_id": "W2364973104",
+      "start": 374,
+      "end": 383,
+      "surface_text": "generator",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "generator"
+      ],
+      "confidence": 0.3446016013622284,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2364973104",
+          "start": 374,
+          "end": 383,
+          "surface_text": "generator",
+          "ner_label_hint": "OBJECT",
+          "score": 0.3446016013622284,
+          "normalized_form": "generator",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "raw_prediction": {
+            "start": 374,
+            "end": 383,
+            "text": "generator",
+            "label": "object",
+            "score": 0.3446016013622284
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:041c74c144abb67df08375536963a8edd04614ffcfae24e81a0212ed45bab6e7",
+      "document_id": "W2364973104",
+      "start": 401,
+      "end": 407,
+      "surface_text": "cables",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "cables"
+      ],
+      "confidence": 0.332518994808197,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2364973104",
+          "start": 401,
+          "end": 407,
+          "surface_text": "cables",
+          "ner_label_hint": "OBJECT",
+          "score": 0.332518994808197,
+          "normalized_form": "cables",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "raw_prediction": {
+            "start": 401,
+            "end": 407,
+            "text": "cables",
+            "label": "object",
+            "score": 0.332518994808197
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:36285854574954987afb483139ac119bf8ce2ae49e258165f2a4585f1fcae0ec",
+      "document_id": "W2364973104",
+      "start": 415,
+      "end": 452,
+      "surface_text": "PSCAD/EMTDC power simulation software",
+      "entity_types": [
+        "CONCEPT"
+      ],
+      "normalized_forms": [
+        "pscad/emtdc power simulation software"
+      ],
+      "confidence": 0.3045428395271301,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2364973104",
+          "start": 415,
+          "end": 452,
+          "surface_text": "PSCAD/EMTDC power simulation software",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.3045428395271301,
+          "normalized_form": "pscad/emtdc power simulation software",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "raw_prediction": {
+            "start": 415,
+            "end": 452,
+            "text": "PSCAD/EMTDC power simulation software",
+            "label": "concept",
+            "score": 0.3045428395271301
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:bec5f679723541855750b529385ca3e7f512cdd25ca2c2717e231e6a6c7d8339",
+      "document_id": "W2364973104",
+      "start": 457,
+      "end": 473,
+      "surface_text": "action mechanism",
+      "entity_types": [
+        "MECHANISM"
+      ],
+      "normalized_forms": [
+        "action mechanism"
+      ],
+      "confidence": 0.716221272945404,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2364973104",
+          "start": 457,
+          "end": 473,
+          "surface_text": "action mechanism",
+          "ner_label_hint": "MECHANISM",
+          "score": 0.716221272945404,
+          "normalized_form": "action mechanism",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "raw_prediction": {
+            "start": 457,
+            "end": 473,
+            "text": "action mechanism",
+            "label": "mechanism",
+            "score": 0.716221272945404
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:58bd51f6cc4551211f79bd7f9fcf8c956dbb957225930dce7dc5b746d5d72d13",
+      "document_id": "W2364973104",
+      "start": 496,
+      "end": 526,
+      "surface_text": "indirect lighting over-voltage",
+      "entity_types": [
+        "CONCEPT",
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "indirect lighting over-voltage"
+      ],
+      "confidence": 0.6932764649391174,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2364973104",
+          "start": 496,
+          "end": 526,
+          "surface_text": "indirect lighting over-voltage",
+          "ner_label_hint": "CONDITION",
+          "score": 0.6932764649391174,
+          "normalized_form": "indirect lighting over-voltage",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "raw_prediction": {
+            "start": 496,
+            "end": 526,
+            "text": "indirect lighting over-voltage",
+            "label": "condition",
+            "score": 0.6932764649391174
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2364973104",
+          "start": 496,
+          "end": 526,
+          "surface_text": "indirect lighting over-voltage",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.5980790853500366,
+          "normalized_form": "indirect lighting over-voltage",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "raw_prediction": {
+            "start": 496,
+            "end": 526,
+            "text": "indirect lighting over-voltage",
+            "label": "concept",
+            "score": 0.5980790853500366
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:c4a00d0fcf944b2e763261b5bea19a2ccb4aa764e6de8fda4857b976287c4e7b",
+      "document_id": "W2364973104",
+      "start": 534,
+      "end": 555,
+      "surface_text": "military power supply",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "military power supply"
+      ],
+      "confidence": 0.37682637572288513,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2364973104",
+          "start": 534,
+          "end": 555,
+          "surface_text": "military power supply",
+          "ner_label_hint": "OBJECT",
+          "score": 0.37682637572288513,
+          "normalized_form": "military power supply",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "raw_prediction": {
+            "start": 534,
+            "end": 555,
+            "text": "military power supply",
+            "label": "object",
+            "score": 0.37682637572288513
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:669ae2376373a496a814243c1f51c5ff69d3f58b831f5d629924a1b8cb564525",
+      "document_id": "W2364973104",
+      "start": 602,
+      "end": 631,
+      "surface_text": "indirect lightning protection",
+      "entity_types": [
+        "CONCEPT",
+        "TASK"
+      ],
+      "normalized_forms": [
+        "indirect lightning protection"
+      ],
+      "confidence": 0.3810103237628937,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2364973104",
+          "start": 602,
+          "end": 631,
+          "surface_text": "indirect lightning protection",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.3810103237628937,
+          "normalized_form": "indirect lightning protection",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "raw_prediction": {
+            "start": 602,
+            "end": 631,
+            "text": "indirect lightning protection",
+            "label": "concept",
+            "score": 0.3810103237628937
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2364973104",
+          "start": 602,
+          "end": 631,
+          "surface_text": "indirect lightning protection",
+          "ner_label_hint": "TASK",
+          "score": 0.3206668496131897,
+          "normalized_form": "indirect lightning protection",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "raw_prediction": {
+            "start": 602,
+            "end": 631,
+            "text": "indirect lightning protection",
+            "label": "task",
+            "score": 0.3206668496131897
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:c9bd42fb51487a76b4f342b4a0a1844a8f4f806bb12ff7fb654a70ce2864642f",
+      "document_id": "W2364973104",
+      "start": 726,
+      "end": 729,
+      "surface_text": "SPD",
+      "entity_types": [
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "spd"
+      ],
+      "confidence": 0.350248247385025,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2364973104",
+          "start": 726,
+          "end": 729,
+          "surface_text": "SPD",
+          "ner_label_hint": "OBJECT",
+          "score": 0.350248247385025,
+          "normalized_form": "spd",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "raw_prediction": {
+            "start": 726,
+            "end": 729,
+            "text": "SPD",
+            "label": "object",
+            "score": 0.350248247385025
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2364973104",
+          "start": 726,
+          "end": 729,
+          "surface_text": "SPD",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.3428196907043457,
+          "normalized_form": "spd",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "raw_prediction": {
+            "start": 726,
+            "end": 729,
+            "text": "SPD",
+            "label": "concept",
+            "score": 0.3428196907043457
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:b372ff5eac770f50263590dbeeb5692d84e8a9ae925921653125934e9561f05a",
+      "document_id": "W2364973104",
+      "start": 750,
+      "end": 770,
+      "surface_text": "electric supply line",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "electric supply line"
+      ],
+      "confidence": 0.512692928314209,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2364973104",
+          "start": 750,
+          "end": 770,
+          "surface_text": "electric supply line",
+          "ner_label_hint": "OBJECT",
+          "score": 0.512692928314209,
+          "normalized_form": "electric supply line",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "raw_prediction": {
+            "start": 750,
+            "end": 770,
+            "text": "electric supply line",
+            "label": "object",
+            "score": 0.512692928314209
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a8cf7f03bc1ec5598c0f8b5966e5e75e5ffbb0e85cd540b7570ea1efa0085139",
+      "document_id": "W2364973104",
+      "start": 771,
+      "end": 788,
+      "surface_text": "power supply line",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "power supply line"
+      ],
+      "confidence": 0.3562312424182892,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2364973104",
+          "start": 771,
+          "end": 788,
+          "surface_text": "power supply line",
+          "ner_label_hint": "OBJECT",
+          "score": 0.3562312424182892,
+          "normalized_form": "power supply line",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "raw_prediction": {
+            "start": 771,
+            "end": 788,
+            "text": "power supply line",
+            "label": "object",
+            "score": 0.3562312424182892
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:3f2ee011f1a8f873e923450d45fb97d68144e41aa83871a0844cf3a0ecb943e5",
+      "document_id": "W2364973104",
+      "start": 793,
+      "end": 804,
+      "surface_text": "signal line",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "signal line"
+      ],
+      "confidence": 0.4165978729724884,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2364973104",
+          "start": 793,
+          "end": 804,
+          "surface_text": "signal line",
+          "ner_label_hint": "OBJECT",
+          "score": 0.4165978729724884,
+          "normalized_form": "signal line",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "raw_prediction": {
+            "start": 793,
+            "end": 804,
+            "text": "signal line",
+            "label": "object",
+            "score": 0.4165978729724884
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:b7fddca0411e286ad96c6bb026d96e3e29efc336877ca7ca7e5ab0402cb393c2",
+      "document_id": "W2364973104",
+      "start": 923,
+      "end": 939,
+      "surface_text": "high reliability",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "high reliability"
+      ],
+      "confidence": 0.8266902565956116,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2364973104",
+          "start": 923,
+          "end": 939,
+          "surface_text": "high reliability",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.8266902565956116,
+          "normalized_form": "high reliability",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "raw_prediction": {
+            "start": 923,
+            "end": 939,
+            "text": "high reliability",
+            "label": "attribute",
+            "score": 0.8266902565956116
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:f07fb4b3944a3531d2b65c2145595a611b3195f828c6c90db63fedd4ac8241c3",
+      "document_id": "W2364973104",
+      "start": 923,
+      "end": 950,
+      "surface_text": "high reliability and safety",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "high reliability and safety"
+      ],
+      "confidence": 0.6272045969963074,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2364973104",
+          "start": 923,
+          "end": 950,
+          "surface_text": "high reliability and safety",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.6272045969963074,
+          "normalized_form": "high reliability and safety",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "raw_prediction": {
+            "start": 923,
+            "end": 950,
+            "text": "high reliability and safety",
+            "label": "attribute",
+            "score": 0.6272045969963074
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:89d523be3967733e616c7795614f0d46b96a3d1f64dc5225c1844aa7cb617d0e",
+      "document_id": "W2364973104",
+      "start": 944,
+      "end": 950,
+      "surface_text": "safety",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "safety"
+      ],
+      "confidence": 0.6193332076072693,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2364973104",
+          "start": 944,
+          "end": 950,
+          "surface_text": "safety",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.6193332076072693,
+          "normalized_form": "safety",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "raw_prediction": {
+            "start": 944,
+            "end": 950,
+            "text": "safety",
+            "label": "attribute",
+            "score": 0.6193332076072693
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:3ef25123194e2aaef468d3f990fc9081f0a857c49443281f59701c42b411c997",
+      "document_id": "W2364973104",
+      "start": 988,
+      "end": 1029,
+      "surface_text": "conventional lightening protection device",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "conventional lightening protection device"
+      ],
+      "confidence": 0.30774813890457153,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2364973104",
+          "start": 988,
+          "end": 1029,
+          "surface_text": "conventional lightening protection device",
+          "ner_label_hint": "OBJECT",
+          "score": 0.30774813890457153,
+          "normalized_form": "conventional lightening protection device",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "revision_id": "sha256:c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2364973104",
+            "doi": null,
+            "landing_page_url": "https://en.cnki.com.cn/Article_en/CJFDTOTAL-SXFD201203005.htm",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2025-10-10T17:16:08.811792",
+            "source_url": "https://openalex.org/W2364973104",
+            "text_sha256": "c5e143f3d69dc7ca232226044216bb6b65e4a571a448cf4ee9eba8c746ea440c"
+          },
+          "raw_prediction": {
+            "start": 988,
+            "end": 1029,
+            "text": "conventional lightening protection device",
+            "label": "object",
+            "score": 0.30774813890457153
+          }
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "triple_id": "t:1b5ba751245aab2bd69c661847b6e21b7d1287ce6b65ce53bc72cbaf35483669",
+      "document_id": "W2364973104",
+      "head_id": "e:c4a00d0fcf944b2e763261b5bea19a2ccb4aa764e6de8fda4857b976287c4e7b",
+      "tail_id": "e:dbe56e7e1218f4be8c70d47aa93c40573e58b021ed11530563fa43cf86e4b3f0",
+      "head_types": [
+        "OBJECT"
+      ],
+      "tail_types": [
+        "OBJECT"
+      ],
+      "relation_type": "HAS_PART",
+      "confidence": 0.7323293685913086,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "document_id": "W2364973104",
+          "start": 0,
+          "end": 1158,
+          "text": "Considering the characteristics of lightning protection for military motor power station and low technical performance of military power station lightning protection and weak objective etc.,this paper,based on typical low-noise motor lightning in military power station,establishes the electromagnetic transient model containing key parts in the lighting protection,such as generator,control unit,and cables by the PSCAD/EMTDC power simulation software.The action mechanism and influence laws of indirect lighting over-voltage in the military power supply are discussed,and a technical proposal of the indirect lightning protection for the military power system is presented.This proposal is realized mainly by installing the SPD on the parts of the electric supply line,power supply line and signal line to provide shielding and filtering for the indirect lightning protection.This lighting protection module device is of high reliability and safety,and can overcome the barriers of the conventional lightening protection device,and helps to improve the indirect lighting protection capability and anti-weather fighting ability of the military power supply.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:4d6ad808d64b0985737b1ec1e2415a4928d5f21f8745ea91a1ed04c6f5120623",
+      "document_id": "W2364973104",
+      "head_id": "e:3bf32df04659bfa45379dec5753c100088fb826dd89825b197a129f7ab0731cb",
+      "tail_id": "e:1aa14395032d5cda541488f069534866f662c90b50c21a9592380e5cb3bc3d77",
+      "head_types": [
+        "CONCEPT"
+      ],
+      "tail_types": [
+        "CONCEPT"
+      ],
+      "relation_type": "DERIVED_FROM",
+      "confidence": 0.7877741456031799,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "document_id": "W2364973104",
+          "start": 0,
+          "end": 1158,
+          "text": "Considering the characteristics of lightning protection for military motor power station and low technical performance of military power station lightning protection and weak objective etc.,this paper,based on typical low-noise motor lightning in military power station,establishes the electromagnetic transient model containing key parts in the lighting protection,such as generator,control unit,and cables by the PSCAD/EMTDC power simulation software.The action mechanism and influence laws of indirect lighting over-voltage in the military power supply are discussed,and a technical proposal of the indirect lightning protection for the military power system is presented.This proposal is realized mainly by installing the SPD on the parts of the electric supply line,power supply line and signal line to provide shielding and filtering for the indirect lightning protection.This lighting protection module device is of high reliability and safety,and can overcome the barriers of the conventional lightening protection device,and helps to improve the indirect lighting protection capability and anti-weather fighting ability of the military power supply.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:6cb10e95bd13ca783a29577c4c3aebb75082558a41c0b0adf88b095532bcda10",
+      "document_id": "W2364973104",
+      "head_id": "e:669ae2376373a496a814243c1f51c5ff69d3f58b831f5d629924a1b8cb564525",
+      "tail_id": "e:c4a00d0fcf944b2e763261b5bea19a2ccb4aa764e6de8fda4857b976287c4e7b",
+      "head_types": [
+        "CONCEPT",
+        "TASK"
+      ],
+      "tail_types": [
+        "OBJECT"
+      ],
+      "relation_type": "APPLIED_TO",
+      "confidence": 0.7236831784248352,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "document_id": "W2364973104",
+          "start": 0,
+          "end": 1158,
+          "text": "Considering the characteristics of lightning protection for military motor power station and low technical performance of military power station lightning protection and weak objective etc.,this paper,based on typical low-noise motor lightning in military power station,establishes the electromagnetic transient model containing key parts in the lighting protection,such as generator,control unit,and cables by the PSCAD/EMTDC power simulation software.The action mechanism and influence laws of indirect lighting over-voltage in the military power supply are discussed,and a technical proposal of the indirect lightning protection for the military power system is presented.This proposal is realized mainly by installing the SPD on the parts of the electric supply line,power supply line and signal line to provide shielding and filtering for the indirect lightning protection.This lighting protection module device is of high reliability and safety,and can overcome the barriers of the conventional lightening protection device,and helps to improve the indirect lighting protection capability and anti-weather fighting ability of the military power supply.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:ac24286d59b6f484ca68091bd42ee5432179898e734254ad187676773f2652da",
+      "document_id": "W2364973104",
+      "head_id": "e:cc2cee8f508e7d37dd5cb96ec96c7f0f013b37c52f6b558beb4798dec9024c2c",
+      "tail_id": "e:041c74c144abb67df08375536963a8edd04614ffcfae24e81a0212ed45bab6e7",
+      "head_types": [
+        "OBJECT"
+      ],
+      "tail_types": [
+        "OBJECT"
+      ],
+      "relation_type": "HAS_PART",
+      "confidence": 0.8157506585121155,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "document_id": "W2364973104",
+          "start": 0,
+          "end": 1158,
+          "text": "Considering the characteristics of lightning protection for military motor power station and low technical performance of military power station lightning protection and weak objective etc.,this paper,based on typical low-noise motor lightning in military power station,establishes the electromagnetic transient model containing key parts in the lighting protection,such as generator,control unit,and cables by the PSCAD/EMTDC power simulation software.The action mechanism and influence laws of indirect lighting over-voltage in the military power supply are discussed,and a technical proposal of the indirect lightning protection for the military power system is presented.This proposal is realized mainly by installing the SPD on the parts of the electric supply line,power supply line and signal line to provide shielding and filtering for the indirect lightning protection.This lighting protection module device is of high reliability and safety,and can overcome the barriers of the conventional lightening protection device,and helps to improve the indirect lighting protection capability and anti-weather fighting ability of the military power supply.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:f722d5a61e63c5afc421237ddb3f6754178c2b300da12c4736f4b8db7315e8c0",
+      "document_id": "W2364973104",
+      "head_id": "e:cc2cee8f508e7d37dd5cb96ec96c7f0f013b37c52f6b558beb4798dec9024c2c",
+      "tail_id": "e:dbe56e7e1218f4be8c70d47aa93c40573e58b021ed11530563fa43cf86e4b3f0",
+      "head_types": [
+        "OBJECT"
+      ],
+      "tail_types": [
+        "OBJECT"
+      ],
+      "relation_type": "HAS_PART",
+      "confidence": 0.843831479549408,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:c9338aeb5e61fbb82c10c463ed8ac732ac503982897211cf6d120ce48afb885a",
+          "document_id": "W2364973104",
+          "start": 0,
+          "end": 1158,
+          "text": "Considering the characteristics of lightning protection for military motor power station and low technical performance of military power station lightning protection and weak objective etc.,this paper,based on typical low-noise motor lightning in military power station,establishes the electromagnetic transient model containing key parts in the lighting protection,such as generator,control unit,and cables by the PSCAD/EMTDC power simulation software.The action mechanism and influence laws of indirect lighting over-voltage in the military power supply are discussed,and a technical proposal of the indirect lightning protection for the military power system is presented.This proposal is realized mainly by installing the SPD on the parts of the electric supply line,power supply line and signal line to provide shielding and filtering for the indirect lightning protection.This lighting protection module device is of high reliability and safety,and can overcome the barriers of the conventional lightening protection device,and helps to improve the indirect lighting protection capability and anti-weather fighting ability of the military power supply.",
+          "entity_ids": []
+        }
+      ]
+    }
+  ],
+  "raw_relation_count": 6,
+  "seconds": 1.5639446000568569
+}

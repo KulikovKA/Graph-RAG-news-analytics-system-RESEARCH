@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\Users\Kirill\Desktop\Graph-RAG-news-analytics-system-RESEARCH\scripts\relex_experiment.py", line 322, in run
+    driver, database = core.connect_neo4j(args.neo4j_env)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kirill\Desktop\Graph-RAG-news-analytics-system-RESEARCH\scripts\build_relex_graphs.py", line 513, in connect_neo4j
+    raise ValueError("Set NEO4J_PASSWORD (or use --neo4j-env with the existing project's .env)")
+ValueError: Set NEO4J_PASSWORD (or use --neo4j-env with the existing project's .env)

@@ -1,0 +1,28 @@
+{
+  "metrics": {
+    "experiment": "joint_base",
+    "workers": 2,
+    "documents": 30,
+    "entities": 685,
+    "source_mentions": 840,
+    "extracted_relations": 271,
+    "unique_triples": 178,
+    "involved_entities": 191,
+    "entity_coverage": 0.27883211678832115,
+    "endpoint_violations": 0,
+    "suspicious_type_hint_fraction": 0.028089887640449437,
+    "confidence_mean": 0.7940095204315828,
+    "document_inference_seconds": 61.52712159999646,
+    "model_load_seconds": 20.97563360002823,
+    "total_run_seconds": 86.27554939989932,
+    "peak_sampled_rss_mib": 4554.4296875,
+    "resumed_documents": 0
+  },
+  "neo4j": {
+    "documents": 30,
+    "entities": 685,
+    "relations": 178,
+    "mentions": 685,
+    "cross_namespace_edges": 0
+  }
+}

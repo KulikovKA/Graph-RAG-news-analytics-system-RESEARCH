@@ -1,0 +1,3347 @@
+{
+  "fingerprint": "c79845cf50e55b434eab0bcd7d45fb6779c27e093e96fa9a77b4c2f1b311bf99",
+  "document_id": "W2076293586",
+  "model": "knowledgator/gliner-relex-large-v1.0",
+  "mode": "joint",
+  "raw_windows": [
+    {
+      "window": {
+        "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+        "document_id": "W2076293586",
+        "start": 0,
+        "end": 1436,
+        "text": "In our lab we established two inbred mouse models to study the molecular underpinnings of psychiatric diseases like depression, anxiety disorders and pathological stress reactivity. Starting from a heterogeneous CD-1 outbred population, animals were bred for extremes in anxiety-related behavior and extremes in stress reactivity, respectively, following a strict inbreeding protocol. Both models were subjected to extensive studies regarding their behavioral, neuroendocrine, and genetic features. In an unbiased approach we are currently focusing on the discovery of copy number variants (CNVs) and their implications in the endophenotypes of these animals. Two array approaches were used to reveal regions of CNVs that differ between the extremes of the respective mouse lines (aCGH, NimbleGen; SNP-based invariant genomic probes, Jackson Laboratories). In total, we identified approximately 100 CNV regions ranging from around 10 kb to 7 Mb. To test the functional relevance of these CNVs, we associated changes in copy numbers with changes in gene expression. A simple correlation between gene dosage and gene expression could not be found in all cases. Furthermore, genomic loci, which were detected in association studies and therefore are of special interest in the context of these endophenotypes, were compared to the CNV data sets. Further studies to define the precise role of CNVs on gene expression remain to be conducted.",
+        "entity_ids": []
+      },
+      "entities": [
+        {
+          "start": 30,
+          "end": 49,
+          "text": "inbred mouse models",
+          "label": "data resource",
+          "score": 0.72865229845047
+        },
+        {
+          "start": 30,
+          "end": 49,
+          "text": "inbred mouse models",
+          "label": "object",
+          "score": 0.6213671565055847
+        },
+        {
+          "start": 30,
+          "end": 49,
+          "text": "inbred mouse models",
+          "label": "actor",
+          "score": 0.329803466796875
+        },
+        {
+          "start": 30,
+          "end": 49,
+          "text": "inbred mouse models",
+          "label": "concept",
+          "score": 0.32972264289855957
+        },
+        {
+          "start": 63,
+          "end": 86,
+          "text": "molecular underpinnings",
+          "label": "concept",
+          "score": 0.6086377501487732
+        },
+        {
+          "start": 63,
+          "end": 86,
+          "text": "molecular underpinnings",
+          "label": "task",
+          "score": 0.4395771920681
+        },
+        {
+          "start": 63,
+          "end": 86,
+          "text": "molecular underpinnings",
+          "label": "attribute",
+          "score": 0.37848955392837524
+        },
+        {
+          "start": 90,
+          "end": 110,
+          "text": "psychiatric diseases",
+          "label": "condition",
+          "score": 0.9079616665840149
+        },
+        {
+          "start": 116,
+          "end": 126,
+          "text": "depression",
+          "label": "condition",
+          "score": 0.8875102996826172
+        },
+        {
+          "start": 128,
+          "end": 145,
+          "text": "anxiety disorders",
+          "label": "condition",
+          "score": 0.9186291098594666
+        },
+        {
+          "start": 150,
+          "end": 180,
+          "text": "pathological stress reactivity",
+          "label": "condition",
+          "score": 0.9243612289428711
+        },
+        {
+          "start": 163,
+          "end": 180,
+          "text": "stress reactivity",
+          "label": "condition",
+          "score": 0.6409687399864197
+        },
+        {
+          "start": 198,
+          "end": 235,
+          "text": "heterogeneous CD-1 outbred population",
+          "label": "data resource",
+          "score": 0.49243253469467163
+        },
+        {
+          "start": 212,
+          "end": 235,
+          "text": "CD-1 outbred population",
+          "label": "data resource",
+          "score": 0.8220736980438232
+        },
+        {
+          "start": 212,
+          "end": 235,
+          "text": "CD-1 outbred population",
+          "label": "object",
+          "score": 0.34159746766090393
+        },
+        {
+          "start": 237,
+          "end": 244,
+          "text": "animals",
+          "label": "object",
+          "score": 0.3360234498977661
+        },
+        {
+          "start": 259,
+          "end": 295,
+          "text": "extremes in anxiety-related behavior",
+          "label": "attribute",
+          "score": 0.5943133234977722
+        },
+        {
+          "start": 271,
+          "end": 295,
+          "text": "anxiety-related behavior",
+          "label": "attribute",
+          "score": 0.8645509481430054
+        },
+        {
+          "start": 271,
+          "end": 295,
+          "text": "anxiety-related behavior",
+          "label": "concept",
+          "score": 0.3207240104675293
+        },
+        {
+          "start": 300,
+          "end": 329,
+          "text": "extremes in stress reactivity",
+          "label": "attribute",
+          "score": 0.36477959156036377
+        },
+        {
+          "start": 357,
+          "end": 383,
+          "text": "strict inbreeding protocol",
+          "label": "method",
+          "score": 0.3317676782608032
+        },
+        {
+          "start": 364,
+          "end": 383,
+          "text": "inbreeding protocol",
+          "label": "method",
+          "score": 0.808564305305481
+        },
+        {
+          "start": 364,
+          "end": 383,
+          "text": "inbreeding protocol",
+          "label": "task",
+          "score": 0.4766433835029602
+        },
+        {
+          "start": 449,
+          "end": 459,
+          "text": "behavioral",
+          "label": "attribute",
+          "score": 0.7542678117752075
+        },
+        {
+          "start": 461,
+          "end": 475,
+          "text": "neuroendocrine",
+          "label": "attribute",
+          "score": 0.8517235517501831
+        },
+        {
+          "start": 481,
+          "end": 497,
+          "text": "genetic features",
+          "label": "attribute",
+          "score": 0.7578673362731934
+        },
+        {
+          "start": 481,
+          "end": 488,
+          "text": "genetic",
+          "label": "attribute",
+          "score": 0.6652476787567139
+        },
+        {
+          "start": 569,
+          "end": 589,
+          "text": "copy number variants",
+          "label": "concept",
+          "score": 0.6441391110420227
+        },
+        {
+          "start": 569,
+          "end": 589,
+          "text": "copy number variants",
+          "label": "object",
+          "score": 0.5016701221466064
+        },
+        {
+          "start": 569,
+          "end": 589,
+          "text": "copy number variants",
+          "label": "process",
+          "score": 0.4624355137348175
+        },
+        {
+          "start": 569,
+          "end": 589,
+          "text": "copy number variants",
+          "label": "mechanism",
+          "score": 0.3020145297050476
+        },
+        {
+          "start": 591,
+          "end": 595,
+          "text": "CNVs",
+          "label": "object",
+          "score": 0.527272641658783
+        },
+        {
+          "start": 591,
+          "end": 595,
+          "text": "CNVs",
+          "label": "concept",
+          "score": 0.5085075497627258
+        },
+        {
+          "start": 591,
+          "end": 595,
+          "text": "CNVs",
+          "label": "process",
+          "score": 0.30635499954223633
+        },
+        {
+          "start": 627,
+          "end": 641,
+          "text": "endophenotypes",
+          "label": "concept",
+          "score": 0.5485765933990479
+        },
+        {
+          "start": 627,
+          "end": 641,
+          "text": "endophenotypes",
+          "label": "process",
+          "score": 0.36248207092285156
+        },
+        {
+          "start": 627,
+          "end": 641,
+          "text": "endophenotypes",
+          "label": "attribute",
+          "score": 0.3178514242172241
+        },
+        {
+          "start": 660,
+          "end": 680,
+          "text": "Two array approaches",
+          "label": "method",
+          "score": 0.6939939260482788
+        },
+        {
+          "start": 664,
+          "end": 680,
+          "text": "array approaches",
+          "label": "method",
+          "score": 0.8662885427474976
+        },
+        {
+          "start": 701,
+          "end": 716,
+          "text": "regions of CNVs",
+          "label": "concept",
+          "score": 0.4343322515487671
+        },
+        {
+          "start": 701,
+          "end": 716,
+          "text": "regions of CNVs",
+          "label": "object",
+          "score": 0.4045683741569519
+        },
+        {
+          "start": 781,
+          "end": 785,
+          "text": "aCGH",
+          "label": "method",
+          "score": 0.9540836811065674
+        },
+        {
+          "start": 781,
+          "end": 785,
+          "text": "aCGH",
+          "label": "object",
+          "score": 0.40026411414146423
+        },
+        {
+          "start": 798,
+          "end": 832,
+          "text": "SNP-based invariant genomic probes",
+          "label": "method",
+          "score": 0.9872083067893982
+        },
+        {
+          "start": 798,
+          "end": 832,
+          "text": "SNP-based invariant genomic probes",
+          "label": "object",
+          "score": 0.3442806303501129
+        },
+        {
+          "start": 899,
+          "end": 910,
+          "text": "CNV regions",
+          "label": "concept",
+          "score": 0.5044859647750854
+        },
+        {
+          "start": 899,
+          "end": 910,
+          "text": "CNV regions",
+          "label": "object",
+          "score": 0.42236873507499695
+        },
+        {
+          "start": 958,
+          "end": 978,
+          "text": "functional relevance",
+          "label": "concept",
+          "score": 0.4451160430908203
+        },
+        {
+          "start": 958,
+          "end": 978,
+          "text": "functional relevance",
+          "label": "attribute",
+          "score": 0.41541147232055664
+        },
+        {
+          "start": 958,
+          "end": 978,
+          "text": "functional relevance",
+          "label": "result",
+          "score": 0.33614325523376465
+        },
+        {
+          "start": 1019,
+          "end": 1031,
+          "text": "copy numbers",
+          "label": "concept",
+          "score": 0.5523000955581665
+        },
+        {
+          "start": 1019,
+          "end": 1031,
+          "text": "copy numbers",
+          "label": "process",
+          "score": 0.35796305537223816
+        },
+        {
+          "start": 1019,
+          "end": 1031,
+          "text": "copy numbers",
+          "label": "attribute",
+          "score": 0.329967200756073
+        },
+        {
+          "start": 1048,
+          "end": 1063,
+          "text": "gene expression",
+          "label": "process",
+          "score": 0.8471754193305969
+        },
+        {
+          "start": 1048,
+          "end": 1063,
+          "text": "gene expression",
+          "label": "concept",
+          "score": 0.8305578827857971
+        },
+        {
+          "start": 1048,
+          "end": 1063,
+          "text": "gene expression",
+          "label": "condition",
+          "score": 0.6546708345413208
+        },
+        {
+          "start": 1048,
+          "end": 1063,
+          "text": "gene expression",
+          "label": "object",
+          "score": 0.5346506237983704
+        },
+        {
+          "start": 1048,
+          "end": 1063,
+          "text": "gene expression",
+          "label": "mechanism",
+          "score": 0.3941149413585663
+        },
+        {
+          "start": 1094,
+          "end": 1105,
+          "text": "gene dosage",
+          "label": "attribute",
+          "score": 0.7649115920066833
+        },
+        {
+          "start": 1094,
+          "end": 1105,
+          "text": "gene dosage",
+          "label": "concept",
+          "score": 0.6544694900512695
+        },
+        {
+          "start": 1094,
+          "end": 1105,
+          "text": "gene dosage",
+          "label": "object",
+          "score": 0.4304932951927185
+        },
+        {
+          "start": 1094,
+          "end": 1105,
+          "text": "gene dosage",
+          "label": "process",
+          "score": 0.4222189784049988
+        },
+        {
+          "start": 1172,
+          "end": 1184,
+          "text": "genomic loci",
+          "label": "data resource",
+          "score": 0.9119049310684204
+        },
+        {
+          "start": 1172,
+          "end": 1184,
+          "text": "genomic loci",
+          "label": "object",
+          "score": 0.854059100151062
+        },
+        {
+          "start": 1172,
+          "end": 1184,
+          "text": "genomic loci",
+          "label": "concept",
+          "score": 0.7023747563362122
+        },
+        {
+          "start": 1209,
+          "end": 1228,
+          "text": "association studies",
+          "label": "task",
+          "score": 0.42526882886886597
+        },
+        {
+          "start": 1209,
+          "end": 1228,
+          "text": "association studies",
+          "label": "concept",
+          "score": 0.4206199645996094
+        },
+        {
+          "start": 1209,
+          "end": 1228,
+          "text": "association studies",
+          "label": "method",
+          "score": 0.39272424578666687
+        },
+        {
+          "start": 1328,
+          "end": 1341,
+          "text": "CNV data sets",
+          "label": "data resource",
+          "score": 0.9874159693717957
+        },
+        {
+          "start": 1328,
+          "end": 1341,
+          "text": "CNV data sets",
+          "label": "object",
+          "score": 0.37055104970932007
+        }
+      ],
+      "predictions": [
+        {
+          "head": {
+            "start": 660,
+            "end": 680,
+            "text": "Two array approaches",
+            "type": "method",
+            "entity_idx": 37
+          },
+          "tail": {
+            "start": 798,
+            "end": 832,
+            "text": "SNP-based invariant genomic probes",
+            "type": "method",
+            "entity_idx": 43
+          },
+          "relation": "uses",
+          "score": 0.7657946348190308
+        },
+        {
+          "head": {
+            "start": 664,
+            "end": 680,
+            "text": "array approaches",
+            "type": "method",
+            "entity_idx": 38
+          },
+          "tail": {
+            "start": 798,
+            "end": 832,
+            "text": "SNP-based invariant genomic probes",
+            "type": "method",
+            "entity_idx": 43
+          },
+          "relation": "uses",
+          "score": 0.7132397890090942
+        },
+        {
+          "head": {
+            "start": 1172,
+            "end": 1184,
+            "text": "genomic loci",
+            "type": "data resource",
+            "entity_idx": 62
+          },
+          "tail": {
+            "start": 1328,
+            "end": 1341,
+            "text": "CNV data sets",
+            "type": "data resource",
+            "entity_idx": 68
+          },
+          "relation": "compared with",
+          "score": 0.9165022969245911
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "e:2fc97458d4df33f694feb04a72fd87a5f794568387147af76640aa314acb8d27",
+      "document_id": "W2076293586",
+      "start": 30,
+      "end": 49,
+      "surface_text": "inbred mouse models",
+      "entity_types": [
+        "ACTOR",
+        "CONCEPT",
+        "DATA_RESOURCE",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "inbred mouse models"
+      ],
+      "confidence": 0.72865229845047,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 30,
+          "end": 49,
+          "surface_text": "inbred mouse models",
+          "ner_label_hint": "DATA_RESOURCE",
+          "score": 0.72865229845047,
+          "normalized_form": "inbred mouse models",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 30,
+            "end": 49,
+            "text": "inbred mouse models",
+            "label": "data resource",
+            "score": 0.72865229845047
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 30,
+          "end": 49,
+          "surface_text": "inbred mouse models",
+          "ner_label_hint": "OBJECT",
+          "score": 0.6213671565055847,
+          "normalized_form": "inbred mouse models",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 30,
+            "end": 49,
+            "text": "inbred mouse models",
+            "label": "object",
+            "score": 0.6213671565055847
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 30,
+          "end": 49,
+          "surface_text": "inbred mouse models",
+          "ner_label_hint": "ACTOR",
+          "score": 0.329803466796875,
+          "normalized_form": "inbred mouse models",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 30,
+            "end": 49,
+            "text": "inbred mouse models",
+            "label": "actor",
+            "score": 0.329803466796875
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 30,
+          "end": 49,
+          "surface_text": "inbred mouse models",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.32972264289855957,
+          "normalized_form": "inbred mouse models",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 30,
+            "end": 49,
+            "text": "inbred mouse models",
+            "label": "concept",
+            "score": 0.32972264289855957
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:86219d5a7591ce6ca7e518129ea41e3fdb8d05e8c886bf176d974dfaaaf2cb8a",
+      "document_id": "W2076293586",
+      "start": 63,
+      "end": 86,
+      "surface_text": "molecular underpinnings",
+      "entity_types": [
+        "ATTRIBUTE",
+        "CONCEPT",
+        "TASK"
+      ],
+      "normalized_forms": [
+        "molecular underpinnings"
+      ],
+      "confidence": 0.6086377501487732,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 63,
+          "end": 86,
+          "surface_text": "molecular underpinnings",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.6086377501487732,
+          "normalized_form": "molecular underpinnings",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 63,
+            "end": 86,
+            "text": "molecular underpinnings",
+            "label": "concept",
+            "score": 0.6086377501487732
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 63,
+          "end": 86,
+          "surface_text": "molecular underpinnings",
+          "ner_label_hint": "TASK",
+          "score": 0.4395771920681,
+          "normalized_form": "molecular underpinnings",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 63,
+            "end": 86,
+            "text": "molecular underpinnings",
+            "label": "task",
+            "score": 0.4395771920681
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 63,
+          "end": 86,
+          "surface_text": "molecular underpinnings",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.37848955392837524,
+          "normalized_form": "molecular underpinnings",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 63,
+            "end": 86,
+            "text": "molecular underpinnings",
+            "label": "attribute",
+            "score": 0.37848955392837524
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:c9c4903be20af694a59a01ea7c5f4fff02fbda26f1e8b06389aa6f4bdb881fa6",
+      "document_id": "W2076293586",
+      "start": 90,
+      "end": 110,
+      "surface_text": "psychiatric diseases",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "psychiatric diseases"
+      ],
+      "confidence": 0.9079616665840149,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 90,
+          "end": 110,
+          "surface_text": "psychiatric diseases",
+          "ner_label_hint": "CONDITION",
+          "score": 0.9079616665840149,
+          "normalized_form": "psychiatric diseases",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 90,
+            "end": 110,
+            "text": "psychiatric diseases",
+            "label": "condition",
+            "score": 0.9079616665840149
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:fdf2c7fb8f42d3a7dc11f655bc3eddc4ec0ff2ca2137b3c4ae8d76852d611684",
+      "document_id": "W2076293586",
+      "start": 116,
+      "end": 126,
+      "surface_text": "depression",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "depression"
+      ],
+      "confidence": 0.8875102996826172,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 116,
+          "end": 126,
+          "surface_text": "depression",
+          "ner_label_hint": "CONDITION",
+          "score": 0.8875102996826172,
+          "normalized_form": "depression",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 116,
+            "end": 126,
+            "text": "depression",
+            "label": "condition",
+            "score": 0.8875102996826172
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:c93eb5dcbebdc607ce0374bc965fe8fa9393e270343c995727616caa100a0ab3",
+      "document_id": "W2076293586",
+      "start": 128,
+      "end": 145,
+      "surface_text": "anxiety disorders",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "anxiety disorders"
+      ],
+      "confidence": 0.9186291098594666,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 128,
+          "end": 145,
+          "surface_text": "anxiety disorders",
+          "ner_label_hint": "CONDITION",
+          "score": 0.9186291098594666,
+          "normalized_form": "anxiety disorders",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 128,
+            "end": 145,
+            "text": "anxiety disorders",
+            "label": "condition",
+            "score": 0.9186291098594666
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:200188d44f991fb2c9ab7cb84ca386f784b53b7fe424f1792bb06e52b950f19e",
+      "document_id": "W2076293586",
+      "start": 150,
+      "end": 180,
+      "surface_text": "pathological stress reactivity",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "pathological stress reactivity"
+      ],
+      "confidence": 0.9243612289428711,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 150,
+          "end": 180,
+          "surface_text": "pathological stress reactivity",
+          "ner_label_hint": "CONDITION",
+          "score": 0.9243612289428711,
+          "normalized_form": "pathological stress reactivity",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 150,
+            "end": 180,
+            "text": "pathological stress reactivity",
+            "label": "condition",
+            "score": 0.9243612289428711
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:22b0008fdb7ced5e4821a1cd5a45e4773c4a94c2b1530c931798096aabba4fa8",
+      "document_id": "W2076293586",
+      "start": 163,
+      "end": 180,
+      "surface_text": "stress reactivity",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "stress reactivity"
+      ],
+      "confidence": 0.6409687399864197,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 163,
+          "end": 180,
+          "surface_text": "stress reactivity",
+          "ner_label_hint": "CONDITION",
+          "score": 0.6409687399864197,
+          "normalized_form": "stress reactivity",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 163,
+            "end": 180,
+            "text": "stress reactivity",
+            "label": "condition",
+            "score": 0.6409687399864197
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:32986b39f1f774f911a70ef8b83a2cbaffeea60e539a1f7ccde1d52902aec6f2",
+      "document_id": "W2076293586",
+      "start": 198,
+      "end": 235,
+      "surface_text": "heterogeneous CD-1 outbred population",
+      "entity_types": [
+        "DATA_RESOURCE"
+      ],
+      "normalized_forms": [
+        "heterogeneous cd-1 outbred population"
+      ],
+      "confidence": 0.49243253469467163,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 198,
+          "end": 235,
+          "surface_text": "heterogeneous CD-1 outbred population",
+          "ner_label_hint": "DATA_RESOURCE",
+          "score": 0.49243253469467163,
+          "normalized_form": "heterogeneous cd-1 outbred population",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 198,
+            "end": 235,
+            "text": "heterogeneous CD-1 outbred population",
+            "label": "data resource",
+            "score": 0.49243253469467163
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:9af3fcd2fc784396773be87184bde6fa49f818fed78be804f44a78c6e94283f1",
+      "document_id": "W2076293586",
+      "start": 212,
+      "end": 235,
+      "surface_text": "CD-1 outbred population",
+      "entity_types": [
+        "DATA_RESOURCE",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "cd-1 outbred population"
+      ],
+      "confidence": 0.8220736980438232,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 212,
+          "end": 235,
+          "surface_text": "CD-1 outbred population",
+          "ner_label_hint": "DATA_RESOURCE",
+          "score": 0.8220736980438232,
+          "normalized_form": "cd-1 outbred population",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 212,
+            "end": 235,
+            "text": "CD-1 outbred population",
+            "label": "data resource",
+            "score": 0.8220736980438232
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 212,
+          "end": 235,
+          "surface_text": "CD-1 outbred population",
+          "ner_label_hint": "OBJECT",
+          "score": 0.34159746766090393,
+          "normalized_form": "cd-1 outbred population",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 212,
+            "end": 235,
+            "text": "CD-1 outbred population",
+            "label": "object",
+            "score": 0.34159746766090393
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:10ecc39e9ffa7ae2a5ce21f4e9ef0b8adf9c82626cd2bd1346f29c54e36861c5",
+      "document_id": "W2076293586",
+      "start": 237,
+      "end": 244,
+      "surface_text": "animals",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "animals"
+      ],
+      "confidence": 0.3360234498977661,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 237,
+          "end": 244,
+          "surface_text": "animals",
+          "ner_label_hint": "OBJECT",
+          "score": 0.3360234498977661,
+          "normalized_form": "animals",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 237,
+            "end": 244,
+            "text": "animals",
+            "label": "object",
+            "score": 0.3360234498977661
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:76315b4dc1f6d8a3c2c0cb195d3969f4107e6ca2f1df1fd5c19ecc7a26b07a3e",
+      "document_id": "W2076293586",
+      "start": 259,
+      "end": 295,
+      "surface_text": "extremes in anxiety-related behavior",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "extremes in anxiety-related behavior"
+      ],
+      "confidence": 0.5943133234977722,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 259,
+          "end": 295,
+          "surface_text": "extremes in anxiety-related behavior",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.5943133234977722,
+          "normalized_form": "extremes in anxiety-related behavior",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 259,
+            "end": 295,
+            "text": "extremes in anxiety-related behavior",
+            "label": "attribute",
+            "score": 0.5943133234977722
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d99373d2d3fbbe9a532110809a4b072c2e82a061aaa67c64a112dcd63db6eb32",
+      "document_id": "W2076293586",
+      "start": 271,
+      "end": 295,
+      "surface_text": "anxiety-related behavior",
+      "entity_types": [
+        "ATTRIBUTE",
+        "CONCEPT"
+      ],
+      "normalized_forms": [
+        "anxiety-related behavior"
+      ],
+      "confidence": 0.8645509481430054,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 271,
+          "end": 295,
+          "surface_text": "anxiety-related behavior",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.8645509481430054,
+          "normalized_form": "anxiety-related behavior",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 271,
+            "end": 295,
+            "text": "anxiety-related behavior",
+            "label": "attribute",
+            "score": 0.8645509481430054
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 271,
+          "end": 295,
+          "surface_text": "anxiety-related behavior",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.3207240104675293,
+          "normalized_form": "anxiety-related behavior",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 271,
+            "end": 295,
+            "text": "anxiety-related behavior",
+            "label": "concept",
+            "score": 0.3207240104675293
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:29ea468e9911f4d35d012017d68c52e848824b9fffdb21dc42e26c573c2708df",
+      "document_id": "W2076293586",
+      "start": 300,
+      "end": 329,
+      "surface_text": "extremes in stress reactivity",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "extremes in stress reactivity"
+      ],
+      "confidence": 0.36477959156036377,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 300,
+          "end": 329,
+          "surface_text": "extremes in stress reactivity",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.36477959156036377,
+          "normalized_form": "extremes in stress reactivity",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 300,
+            "end": 329,
+            "text": "extremes in stress reactivity",
+            "label": "attribute",
+            "score": 0.36477959156036377
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:b17362141deca8f8a4977ed65c13b9bd5ef947e805b245522ad0900a16d797ba",
+      "document_id": "W2076293586",
+      "start": 357,
+      "end": 383,
+      "surface_text": "strict inbreeding protocol",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "strict inbreeding protocol"
+      ],
+      "confidence": 0.3317676782608032,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 357,
+          "end": 383,
+          "surface_text": "strict inbreeding protocol",
+          "ner_label_hint": "METHOD",
+          "score": 0.3317676782608032,
+          "normalized_form": "strict inbreeding protocol",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 357,
+            "end": 383,
+            "text": "strict inbreeding protocol",
+            "label": "method",
+            "score": 0.3317676782608032
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:77b76795a0b503872bf923c06ba8f0eac9a8e4c8309c84c6d21ef17fe81c2182",
+      "document_id": "W2076293586",
+      "start": 364,
+      "end": 383,
+      "surface_text": "inbreeding protocol",
+      "entity_types": [
+        "METHOD",
+        "TASK"
+      ],
+      "normalized_forms": [
+        "inbreeding protocol"
+      ],
+      "confidence": 0.808564305305481,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 364,
+          "end": 383,
+          "surface_text": "inbreeding protocol",
+          "ner_label_hint": "METHOD",
+          "score": 0.808564305305481,
+          "normalized_form": "inbreeding protocol",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 364,
+            "end": 383,
+            "text": "inbreeding protocol",
+            "label": "method",
+            "score": 0.808564305305481
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 364,
+          "end": 383,
+          "surface_text": "inbreeding protocol",
+          "ner_label_hint": "TASK",
+          "score": 0.4766433835029602,
+          "normalized_form": "inbreeding protocol",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 364,
+            "end": 383,
+            "text": "inbreeding protocol",
+            "label": "task",
+            "score": 0.4766433835029602
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:1d23688583a98d9d96a73b2a9e43a36f00a1792b53315b81a992ca0e654671e1",
+      "document_id": "W2076293586",
+      "start": 449,
+      "end": 459,
+      "surface_text": "behavioral",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "behavioral"
+      ],
+      "confidence": 0.7542678117752075,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 449,
+          "end": 459,
+          "surface_text": "behavioral",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.7542678117752075,
+          "normalized_form": "behavioral",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 449,
+            "end": 459,
+            "text": "behavioral",
+            "label": "attribute",
+            "score": 0.7542678117752075
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:6ad0a9019f6d619216bb68184aeb9a5ebb37f0bbe21990ee6cc2979c0626afa7",
+      "document_id": "W2076293586",
+      "start": 461,
+      "end": 475,
+      "surface_text": "neuroendocrine",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "neuroendocrine"
+      ],
+      "confidence": 0.8517235517501831,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 461,
+          "end": 475,
+          "surface_text": "neuroendocrine",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.8517235517501831,
+          "normalized_form": "neuroendocrine",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 461,
+            "end": 475,
+            "text": "neuroendocrine",
+            "label": "attribute",
+            "score": 0.8517235517501831
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d2231d8470581d26bf06487537b7764877a6076ba58494d37b384e57c505a8ee",
+      "document_id": "W2076293586",
+      "start": 481,
+      "end": 488,
+      "surface_text": "genetic",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "genetic"
+      ],
+      "confidence": 0.6652476787567139,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 481,
+          "end": 488,
+          "surface_text": "genetic",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.6652476787567139,
+          "normalized_form": "genetic",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 481,
+            "end": 488,
+            "text": "genetic",
+            "label": "attribute",
+            "score": 0.6652476787567139
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d78470c81d9c2556471caa80ed3aec0bcead5358eda0894cba755ea71e954654",
+      "document_id": "W2076293586",
+      "start": 481,
+      "end": 497,
+      "surface_text": "genetic features",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "genetic features"
+      ],
+      "confidence": 0.7578673362731934,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 481,
+          "end": 497,
+          "surface_text": "genetic features",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.7578673362731934,
+          "normalized_form": "genetic features",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 481,
+            "end": 497,
+            "text": "genetic features",
+            "label": "attribute",
+            "score": 0.7578673362731934
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:9fd95042d28a2349c73e84fa1f27cc933f6acfd5c816f2210b1d02f6913b6add",
+      "document_id": "W2076293586",
+      "start": 569,
+      "end": 589,
+      "surface_text": "copy number variants",
+      "entity_types": [
+        "CONCEPT",
+        "MECHANISM",
+        "OBJECT",
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "copy number variants"
+      ],
+      "confidence": 0.6441391110420227,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 569,
+          "end": 589,
+          "surface_text": "copy number variants",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.6441391110420227,
+          "normalized_form": "copy number variants",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 569,
+            "end": 589,
+            "text": "copy number variants",
+            "label": "concept",
+            "score": 0.6441391110420227
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 569,
+          "end": 589,
+          "surface_text": "copy number variants",
+          "ner_label_hint": "OBJECT",
+          "score": 0.5016701221466064,
+          "normalized_form": "copy number variants",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 569,
+            "end": 589,
+            "text": "copy number variants",
+            "label": "object",
+            "score": 0.5016701221466064
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 569,
+          "end": 589,
+          "surface_text": "copy number variants",
+          "ner_label_hint": "PROCESS",
+          "score": 0.4624355137348175,
+          "normalized_form": "copy number variants",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 569,
+            "end": 589,
+            "text": "copy number variants",
+            "label": "process",
+            "score": 0.4624355137348175
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 569,
+          "end": 589,
+          "surface_text": "copy number variants",
+          "ner_label_hint": "MECHANISM",
+          "score": 0.3020145297050476,
+          "normalized_form": "copy number variants",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 569,
+            "end": 589,
+            "text": "copy number variants",
+            "label": "mechanism",
+            "score": 0.3020145297050476
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:98d78509b483bd8f064a0dc1eacf842d1c7f7cd7644b00d6144f161874f73ebb",
+      "document_id": "W2076293586",
+      "start": 591,
+      "end": 595,
+      "surface_text": "CNVs",
+      "entity_types": [
+        "CONCEPT",
+        "OBJECT",
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "cnvs"
+      ],
+      "confidence": 0.527272641658783,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 591,
+          "end": 595,
+          "surface_text": "CNVs",
+          "ner_label_hint": "OBJECT",
+          "score": 0.527272641658783,
+          "normalized_form": "cnvs",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 591,
+            "end": 595,
+            "text": "CNVs",
+            "label": "object",
+            "score": 0.527272641658783
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 591,
+          "end": 595,
+          "surface_text": "CNVs",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.5085075497627258,
+          "normalized_form": "cnvs",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 591,
+            "end": 595,
+            "text": "CNVs",
+            "label": "concept",
+            "score": 0.5085075497627258
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 591,
+          "end": 595,
+          "surface_text": "CNVs",
+          "ner_label_hint": "PROCESS",
+          "score": 0.30635499954223633,
+          "normalized_form": "cnvs",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 591,
+            "end": 595,
+            "text": "CNVs",
+            "label": "process",
+            "score": 0.30635499954223633
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a6a68d647f4c9f6c5f350fbe35d29eb8f273e4aa24ea2eb5ab66229639950840",
+      "document_id": "W2076293586",
+      "start": 627,
+      "end": 641,
+      "surface_text": "endophenotypes",
+      "entity_types": [
+        "ATTRIBUTE",
+        "CONCEPT",
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "endophenotypes"
+      ],
+      "confidence": 0.5485765933990479,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 627,
+          "end": 641,
+          "surface_text": "endophenotypes",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.5485765933990479,
+          "normalized_form": "endophenotypes",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 627,
+            "end": 641,
+            "text": "endophenotypes",
+            "label": "concept",
+            "score": 0.5485765933990479
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 627,
+          "end": 641,
+          "surface_text": "endophenotypes",
+          "ner_label_hint": "PROCESS",
+          "score": 0.36248207092285156,
+          "normalized_form": "endophenotypes",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 627,
+            "end": 641,
+            "text": "endophenotypes",
+            "label": "process",
+            "score": 0.36248207092285156
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 627,
+          "end": 641,
+          "surface_text": "endophenotypes",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.3178514242172241,
+          "normalized_form": "endophenotypes",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 627,
+            "end": 641,
+            "text": "endophenotypes",
+            "label": "attribute",
+            "score": 0.3178514242172241
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:332ecf01331468de704aabe89365b0e876c11c754ff84e9d3e8cde0cbd2d4377",
+      "document_id": "W2076293586",
+      "start": 660,
+      "end": 680,
+      "surface_text": "Two array approaches",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "two array approaches"
+      ],
+      "confidence": 0.6939939260482788,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 660,
+          "end": 680,
+          "surface_text": "Two array approaches",
+          "ner_label_hint": "METHOD",
+          "score": 0.6939939260482788,
+          "normalized_form": "two array approaches",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 660,
+            "end": 680,
+            "text": "Two array approaches",
+            "label": "method",
+            "score": 0.6939939260482788
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:473030b17a44221f315776581ea58884dfcec0976bb7c119abb3da3a1c77f85c",
+      "document_id": "W2076293586",
+      "start": 664,
+      "end": 680,
+      "surface_text": "array approaches",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "array approaches"
+      ],
+      "confidence": 0.8662885427474976,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 664,
+          "end": 680,
+          "surface_text": "array approaches",
+          "ner_label_hint": "METHOD",
+          "score": 0.8662885427474976,
+          "normalized_form": "array approaches",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 664,
+            "end": 680,
+            "text": "array approaches",
+            "label": "method",
+            "score": 0.8662885427474976
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:e60880b0a291092b40c5f829fafe10d4661ea8298421a1fedb70a247a32d6cae",
+      "document_id": "W2076293586",
+      "start": 701,
+      "end": 716,
+      "surface_text": "regions of CNVs",
+      "entity_types": [
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "regions of cnvs"
+      ],
+      "confidence": 0.4343322515487671,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 701,
+          "end": 716,
+          "surface_text": "regions of CNVs",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.4343322515487671,
+          "normalized_form": "regions of cnvs",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 701,
+            "end": 716,
+            "text": "regions of CNVs",
+            "label": "concept",
+            "score": 0.4343322515487671
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 701,
+          "end": 716,
+          "surface_text": "regions of CNVs",
+          "ner_label_hint": "OBJECT",
+          "score": 0.4045683741569519,
+          "normalized_form": "regions of cnvs",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 701,
+            "end": 716,
+            "text": "regions of CNVs",
+            "label": "object",
+            "score": 0.4045683741569519
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:fcb56578de0590ac132a03f05f797ba3e74ced8df35e73771e7959891641230f",
+      "document_id": "W2076293586",
+      "start": 781,
+      "end": 785,
+      "surface_text": "aCGH",
+      "entity_types": [
+        "METHOD",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "acgh"
+      ],
+      "confidence": 0.9540836811065674,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 781,
+          "end": 785,
+          "surface_text": "aCGH",
+          "ner_label_hint": "METHOD",
+          "score": 0.9540836811065674,
+          "normalized_form": "acgh",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 781,
+            "end": 785,
+            "text": "aCGH",
+            "label": "method",
+            "score": 0.9540836811065674
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 781,
+          "end": 785,
+          "surface_text": "aCGH",
+          "ner_label_hint": "OBJECT",
+          "score": 0.40026411414146423,
+          "normalized_form": "acgh",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 781,
+            "end": 785,
+            "text": "aCGH",
+            "label": "object",
+            "score": 0.40026411414146423
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:9233c1047d44d5462a401444e59afd68110e996fcbf526149dc6248de1efad2d",
+      "document_id": "W2076293586",
+      "start": 798,
+      "end": 832,
+      "surface_text": "SNP-based invariant genomic probes",
+      "entity_types": [
+        "METHOD",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "snp-based invariant genomic probes"
+      ],
+      "confidence": 0.9872083067893982,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 798,
+          "end": 832,
+          "surface_text": "SNP-based invariant genomic probes",
+          "ner_label_hint": "METHOD",
+          "score": 0.9872083067893982,
+          "normalized_form": "snp-based invariant genomic probes",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 798,
+            "end": 832,
+            "text": "SNP-based invariant genomic probes",
+            "label": "method",
+            "score": 0.9872083067893982
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 798,
+          "end": 832,
+          "surface_text": "SNP-based invariant genomic probes",
+          "ner_label_hint": "OBJECT",
+          "score": 0.3442806303501129,
+          "normalized_form": "snp-based invariant genomic probes",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 798,
+            "end": 832,
+            "text": "SNP-based invariant genomic probes",
+            "label": "object",
+            "score": 0.3442806303501129
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:681aa7573e3f53b0c97ac9cc6bba453ba6f869a7030e9ca1f8ba908ba26ee446",
+      "document_id": "W2076293586",
+      "start": 899,
+      "end": 910,
+      "surface_text": "CNV regions",
+      "entity_types": [
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "cnv regions"
+      ],
+      "confidence": 0.5044859647750854,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 899,
+          "end": 910,
+          "surface_text": "CNV regions",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.5044859647750854,
+          "normalized_form": "cnv regions",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 899,
+            "end": 910,
+            "text": "CNV regions",
+            "label": "concept",
+            "score": 0.5044859647750854
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 899,
+          "end": 910,
+          "surface_text": "CNV regions",
+          "ner_label_hint": "OBJECT",
+          "score": 0.42236873507499695,
+          "normalized_form": "cnv regions",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 899,
+            "end": 910,
+            "text": "CNV regions",
+            "label": "object",
+            "score": 0.42236873507499695
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:cae4531c306e12e261ab400f2e915b666c78107363835f7ba8dfdfb90f81ea90",
+      "document_id": "W2076293586",
+      "start": 958,
+      "end": 978,
+      "surface_text": "functional relevance",
+      "entity_types": [
+        "ATTRIBUTE",
+        "CONCEPT",
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "functional relevance"
+      ],
+      "confidence": 0.4451160430908203,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 958,
+          "end": 978,
+          "surface_text": "functional relevance",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.4451160430908203,
+          "normalized_form": "functional relevance",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 958,
+            "end": 978,
+            "text": "functional relevance",
+            "label": "concept",
+            "score": 0.4451160430908203
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 958,
+          "end": 978,
+          "surface_text": "functional relevance",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.41541147232055664,
+          "normalized_form": "functional relevance",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 958,
+            "end": 978,
+            "text": "functional relevance",
+            "label": "attribute",
+            "score": 0.41541147232055664
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 958,
+          "end": 978,
+          "surface_text": "functional relevance",
+          "ner_label_hint": "RESULT",
+          "score": 0.33614325523376465,
+          "normalized_form": "functional relevance",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 958,
+            "end": 978,
+            "text": "functional relevance",
+            "label": "result",
+            "score": 0.33614325523376465
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:207cd088b84417d60f640783b81515a6b4ce94a870810e1e38d2148fd6f9e737",
+      "document_id": "W2076293586",
+      "start": 1019,
+      "end": 1031,
+      "surface_text": "copy numbers",
+      "entity_types": [
+        "ATTRIBUTE",
+        "CONCEPT",
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "copy numbers"
+      ],
+      "confidence": 0.5523000955581665,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 1019,
+          "end": 1031,
+          "surface_text": "copy numbers",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.5523000955581665,
+          "normalized_form": "copy numbers",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 1019,
+            "end": 1031,
+            "text": "copy numbers",
+            "label": "concept",
+            "score": 0.5523000955581665
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 1019,
+          "end": 1031,
+          "surface_text": "copy numbers",
+          "ner_label_hint": "PROCESS",
+          "score": 0.35796305537223816,
+          "normalized_form": "copy numbers",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 1019,
+            "end": 1031,
+            "text": "copy numbers",
+            "label": "process",
+            "score": 0.35796305537223816
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 1019,
+          "end": 1031,
+          "surface_text": "copy numbers",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.329967200756073,
+          "normalized_form": "copy numbers",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 1019,
+            "end": 1031,
+            "text": "copy numbers",
+            "label": "attribute",
+            "score": 0.329967200756073
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:32cafce69973a11092238fa1c2dd94bdb38aaeca4d61e48dfdccadf57525d07f",
+      "document_id": "W2076293586",
+      "start": 1048,
+      "end": 1063,
+      "surface_text": "gene expression",
+      "entity_types": [
+        "CONCEPT",
+        "CONDITION",
+        "MECHANISM",
+        "OBJECT",
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "gene expression"
+      ],
+      "confidence": 0.8471754193305969,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 1048,
+          "end": 1063,
+          "surface_text": "gene expression",
+          "ner_label_hint": "PROCESS",
+          "score": 0.8471754193305969,
+          "normalized_form": "gene expression",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 1048,
+            "end": 1063,
+            "text": "gene expression",
+            "label": "process",
+            "score": 0.8471754193305969
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 1048,
+          "end": 1063,
+          "surface_text": "gene expression",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.8305578827857971,
+          "normalized_form": "gene expression",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 1048,
+            "end": 1063,
+            "text": "gene expression",
+            "label": "concept",
+            "score": 0.8305578827857971
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 1048,
+          "end": 1063,
+          "surface_text": "gene expression",
+          "ner_label_hint": "CONDITION",
+          "score": 0.6546708345413208,
+          "normalized_form": "gene expression",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 1048,
+            "end": 1063,
+            "text": "gene expression",
+            "label": "condition",
+            "score": 0.6546708345413208
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 1048,
+          "end": 1063,
+          "surface_text": "gene expression",
+          "ner_label_hint": "OBJECT",
+          "score": 0.5346506237983704,
+          "normalized_form": "gene expression",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 1048,
+            "end": 1063,
+            "text": "gene expression",
+            "label": "object",
+            "score": 0.5346506237983704
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 1048,
+          "end": 1063,
+          "surface_text": "gene expression",
+          "ner_label_hint": "MECHANISM",
+          "score": 0.3941149413585663,
+          "normalized_form": "gene expression",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 1048,
+            "end": 1063,
+            "text": "gene expression",
+            "label": "mechanism",
+            "score": 0.3941149413585663
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d6865472734154b5d99fea40920498b610d6f698328100b7604c55eee9c0d5de",
+      "document_id": "W2076293586",
+      "start": 1094,
+      "end": 1105,
+      "surface_text": "gene dosage",
+      "entity_types": [
+        "ATTRIBUTE",
+        "CONCEPT",
+        "OBJECT",
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "gene dosage"
+      ],
+      "confidence": 0.7649115920066833,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 1094,
+          "end": 1105,
+          "surface_text": "gene dosage",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.7649115920066833,
+          "normalized_form": "gene dosage",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 1094,
+            "end": 1105,
+            "text": "gene dosage",
+            "label": "attribute",
+            "score": 0.7649115920066833
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 1094,
+          "end": 1105,
+          "surface_text": "gene dosage",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.6544694900512695,
+          "normalized_form": "gene dosage",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 1094,
+            "end": 1105,
+            "text": "gene dosage",
+            "label": "concept",
+            "score": 0.6544694900512695
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 1094,
+          "end": 1105,
+          "surface_text": "gene dosage",
+          "ner_label_hint": "OBJECT",
+          "score": 0.4304932951927185,
+          "normalized_form": "gene dosage",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 1094,
+            "end": 1105,
+            "text": "gene dosage",
+            "label": "object",
+            "score": 0.4304932951927185
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 1094,
+          "end": 1105,
+          "surface_text": "gene dosage",
+          "ner_label_hint": "PROCESS",
+          "score": 0.4222189784049988,
+          "normalized_form": "gene dosage",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 1094,
+            "end": 1105,
+            "text": "gene dosage",
+            "label": "process",
+            "score": 0.4222189784049988
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:8adc7da2169c1be50b3e639aed5556d5312cec2e54132231ac075b56ec7f35ad",
+      "document_id": "W2076293586",
+      "start": 1172,
+      "end": 1184,
+      "surface_text": "genomic loci",
+      "entity_types": [
+        "CONCEPT",
+        "DATA_RESOURCE",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "genomic loci"
+      ],
+      "confidence": 0.9119049310684204,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 1172,
+          "end": 1184,
+          "surface_text": "genomic loci",
+          "ner_label_hint": "DATA_RESOURCE",
+          "score": 0.9119049310684204,
+          "normalized_form": "genomic loci",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 1172,
+            "end": 1184,
+            "text": "genomic loci",
+            "label": "data resource",
+            "score": 0.9119049310684204
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 1172,
+          "end": 1184,
+          "surface_text": "genomic loci",
+          "ner_label_hint": "OBJECT",
+          "score": 0.854059100151062,
+          "normalized_form": "genomic loci",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 1172,
+            "end": 1184,
+            "text": "genomic loci",
+            "label": "object",
+            "score": 0.854059100151062
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 1172,
+          "end": 1184,
+          "surface_text": "genomic loci",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.7023747563362122,
+          "normalized_form": "genomic loci",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 1172,
+            "end": 1184,
+            "text": "genomic loci",
+            "label": "concept",
+            "score": 0.7023747563362122
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:ac3b3ef15b1f08be2448617f66dc738666dcf01d7ed147841d4c470d1ce552c8",
+      "document_id": "W2076293586",
+      "start": 1209,
+      "end": 1228,
+      "surface_text": "association studies",
+      "entity_types": [
+        "CONCEPT",
+        "METHOD",
+        "TASK"
+      ],
+      "normalized_forms": [
+        "association studies"
+      ],
+      "confidence": 0.42526882886886597,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 1209,
+          "end": 1228,
+          "surface_text": "association studies",
+          "ner_label_hint": "TASK",
+          "score": 0.42526882886886597,
+          "normalized_form": "association studies",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 1209,
+            "end": 1228,
+            "text": "association studies",
+            "label": "task",
+            "score": 0.42526882886886597
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 1209,
+          "end": 1228,
+          "surface_text": "association studies",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.4206199645996094,
+          "normalized_form": "association studies",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 1209,
+            "end": 1228,
+            "text": "association studies",
+            "label": "concept",
+            "score": 0.4206199645996094
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 1209,
+          "end": 1228,
+          "surface_text": "association studies",
+          "ner_label_hint": "METHOD",
+          "score": 0.39272424578666687,
+          "normalized_form": "association studies",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 1209,
+            "end": 1228,
+            "text": "association studies",
+            "label": "method",
+            "score": 0.39272424578666687
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:411a50795c4e9ba203eb38b0f24bd00a0192b9535c06a4f68bc936ace21fb44c",
+      "document_id": "W2076293586",
+      "start": 1328,
+      "end": 1341,
+      "surface_text": "CNV data sets",
+      "entity_types": [
+        "DATA_RESOURCE",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "cnv data sets"
+      ],
+      "confidence": 0.9874159693717957,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 1328,
+          "end": 1341,
+          "surface_text": "CNV data sets",
+          "ner_label_hint": "DATA_RESOURCE",
+          "score": 0.9874159693717957,
+          "normalized_form": "cnv data sets",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 1328,
+            "end": 1341,
+            "text": "CNV data sets",
+            "label": "data resource",
+            "score": 0.9874159693717957
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2076293586",
+          "start": 1328,
+          "end": 1341,
+          "surface_text": "CNV data sets",
+          "ner_label_hint": "OBJECT",
+          "score": 0.37055104970932007,
+          "normalized_form": "cnv data sets",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "revision_id": "sha256:cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2076293586",
+            "doi": "https://doi.org/10.1055/s-0031-1292452",
+            "landing_page_url": "https://doi.org/10.1055/s-0031-1292452",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-09-11T09:22:31.653822",
+            "source_url": "https://openalex.org/W2076293586",
+            "text_sha256": "cfea73ac727094f3729f0a5102f832e50fad3813546b3c3fe2b4957e6e90463b"
+          },
+          "raw_prediction": {
+            "start": 1328,
+            "end": 1341,
+            "text": "CNV data sets",
+            "label": "object",
+            "score": 0.37055104970932007
+          }
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "triple_id": "t:460e0d8ef5769a4037063838b663443beb7fb50b154f6f179916e1953f91ac05",
+      "document_id": "W2076293586",
+      "head_id": "e:8adc7da2169c1be50b3e639aed5556d5312cec2e54132231ac075b56ec7f35ad",
+      "tail_id": "e:411a50795c4e9ba203eb38b0f24bd00a0192b9535c06a4f68bc936ace21fb44c",
+      "head_types": [
+        "CONCEPT",
+        "DATA_RESOURCE",
+        "OBJECT"
+      ],
+      "tail_types": [
+        "DATA_RESOURCE",
+        "OBJECT"
+      ],
+      "relation_type": "COMPARED_WITH",
+      "confidence": 0.9165022969245911,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "document_id": "W2076293586",
+          "start": 0,
+          "end": 1436,
+          "text": "In our lab we established two inbred mouse models to study the molecular underpinnings of psychiatric diseases like depression, anxiety disorders and pathological stress reactivity. Starting from a heterogeneous CD-1 outbred population, animals were bred for extremes in anxiety-related behavior and extremes in stress reactivity, respectively, following a strict inbreeding protocol. Both models were subjected to extensive studies regarding their behavioral, neuroendocrine, and genetic features. In an unbiased approach we are currently focusing on the discovery of copy number variants (CNVs) and their implications in the endophenotypes of these animals. Two array approaches were used to reveal regions of CNVs that differ between the extremes of the respective mouse lines (aCGH, NimbleGen; SNP-based invariant genomic probes, Jackson Laboratories). In total, we identified approximately 100 CNV regions ranging from around 10 kb to 7 Mb. To test the functional relevance of these CNVs, we associated changes in copy numbers with changes in gene expression. A simple correlation between gene dosage and gene expression could not be found in all cases. Furthermore, genomic loci, which were detected in association studies and therefore are of special interest in the context of these endophenotypes, were compared to the CNV data sets. Further studies to define the precise role of CNVs on gene expression remain to be conducted.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:627a015953343bc3bce00c73618ca47ca09c900d8bf40ccdb5b940ca20cf0f20",
+      "document_id": "W2076293586",
+      "head_id": "e:332ecf01331468de704aabe89365b0e876c11c754ff84e9d3e8cde0cbd2d4377",
+      "tail_id": "e:9233c1047d44d5462a401444e59afd68110e996fcbf526149dc6248de1efad2d",
+      "head_types": [
+        "METHOD"
+      ],
+      "tail_types": [
+        "METHOD",
+        "OBJECT"
+      ],
+      "relation_type": "USES",
+      "confidence": 0.7657946348190308,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "document_id": "W2076293586",
+          "start": 0,
+          "end": 1436,
+          "text": "In our lab we established two inbred mouse models to study the molecular underpinnings of psychiatric diseases like depression, anxiety disorders and pathological stress reactivity. Starting from a heterogeneous CD-1 outbred population, animals were bred for extremes in anxiety-related behavior and extremes in stress reactivity, respectively, following a strict inbreeding protocol. Both models were subjected to extensive studies regarding their behavioral, neuroendocrine, and genetic features. In an unbiased approach we are currently focusing on the discovery of copy number variants (CNVs) and their implications in the endophenotypes of these animals. Two array approaches were used to reveal regions of CNVs that differ between the extremes of the respective mouse lines (aCGH, NimbleGen; SNP-based invariant genomic probes, Jackson Laboratories). In total, we identified approximately 100 CNV regions ranging from around 10 kb to 7 Mb. To test the functional relevance of these CNVs, we associated changes in copy numbers with changes in gene expression. A simple correlation between gene dosage and gene expression could not be found in all cases. Furthermore, genomic loci, which were detected in association studies and therefore are of special interest in the context of these endophenotypes, were compared to the CNV data sets. Further studies to define the precise role of CNVs on gene expression remain to be conducted.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:a312158eac8c73a13bbdd018cfef920aee41e6daca77cab9f731bec9238a5f0e",
+      "document_id": "W2076293586",
+      "head_id": "e:473030b17a44221f315776581ea58884dfcec0976bb7c119abb3da3a1c77f85c",
+      "tail_id": "e:9233c1047d44d5462a401444e59afd68110e996fcbf526149dc6248de1efad2d",
+      "head_types": [
+        "METHOD"
+      ],
+      "tail_types": [
+        "METHOD",
+        "OBJECT"
+      ],
+      "relation_type": "USES",
+      "confidence": 0.7132397890090942,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:d43f8830831148bb0c3d93bc3627f67d0007c825628cd1579ba6d2dbcc127702",
+          "document_id": "W2076293586",
+          "start": 0,
+          "end": 1436,
+          "text": "In our lab we established two inbred mouse models to study the molecular underpinnings of psychiatric diseases like depression, anxiety disorders and pathological stress reactivity. Starting from a heterogeneous CD-1 outbred population, animals were bred for extremes in anxiety-related behavior and extremes in stress reactivity, respectively, following a strict inbreeding protocol. Both models were subjected to extensive studies regarding their behavioral, neuroendocrine, and genetic features. In an unbiased approach we are currently focusing on the discovery of copy number variants (CNVs) and their implications in the endophenotypes of these animals. Two array approaches were used to reveal regions of CNVs that differ between the extremes of the respective mouse lines (aCGH, NimbleGen; SNP-based invariant genomic probes, Jackson Laboratories). In total, we identified approximately 100 CNV regions ranging from around 10 kb to 7 Mb. To test the functional relevance of these CNVs, we associated changes in copy numbers with changes in gene expression. A simple correlation between gene dosage and gene expression could not be found in all cases. Furthermore, genomic loci, which were detected in association studies and therefore are of special interest in the context of these endophenotypes, were compared to the CNV data sets. Further studies to define the precise role of CNVs on gene expression remain to be conducted.",
+          "entity_ids": []
+        }
+      ]
+    }
+  ],
+  "raw_relation_count": 3,
+  "seconds": 5.411762000061572
+}

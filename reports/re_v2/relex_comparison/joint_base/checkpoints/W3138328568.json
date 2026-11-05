@@ -1,0 +1,2196 @@
+{
+  "fingerprint": "c79845cf50e55b434eab0bcd7d45fb6779c27e093e96fa9a77b4c2f1b311bf99",
+  "document_id": "W3138328568",
+  "model": "knowledgator/gliner-relex-base-v1.0",
+  "mode": "joint",
+  "raw_windows": [
+    {
+      "window": {
+        "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+        "document_id": "W3138328568",
+        "start": 0,
+        "end": 1744,
+        "text": "Limonene is an important plant natural product widely used in food and cosmetics production as well as in the pharmaceutical and chemical industries. However, low efficiency of plant extraction and high energy consumption in chemical synthesis limit the sustainability of industrial limonene production. Recently, the advancement of metabolic engineering and synthetic biology has facilitated the engineering of microbes into microbial cell factories for producing limonene. However, the deleterious effects on cellular activity by the toxicity of limonene is the major obstacle in achieving high-titer production of limonene in engineered microbes. In this study, by using transcriptomics, we identified 82 genes from the nonconventional yeast Yarrowia lipolytica that were up-regulated when exposed to limonene. When overexpressed, 8 of the gene candidates improved tolerance of this yeast to exogenously added limonene. To determine whether overexpression of these genes could also improve limonene production, we individually coexpressed the tolerance-enhancing genes with a limonene synthase gene. Indeed, expression of 5 of the 8 candidate genes enhanced limonene production in Y. lipolytica . Particularly, overexpressing YALI0F19492p led to an 8-fold improvement in product titer. Furthermore, through short-term adaptive laboratory evolution strategy, in combination with morphological and cytoplasmic membrane integrity analysis, we shed light on the underlying mechanism of limonene cytotoxicity to Y. lipolytica . This study demonstrated an effective strategy for improving limonene tolerance of Y. lipolytica and limonene titer in the host strain through the combinatorial use of tolerance engineering and evolutionary engineering.",
+        "entity_ids": []
+      },
+      "entities": [
+        {
+          "start": 0,
+          "end": 8,
+          "text": "Limonene",
+          "label": "object",
+          "score": 0.8265480399131775
+        },
+        {
+          "start": 25,
+          "end": 46,
+          "text": "plant natural product",
+          "label": "object",
+          "score": 0.7099899053573608
+        },
+        {
+          "start": 25,
+          "end": 46,
+          "text": "plant natural product",
+          "label": "attribute",
+          "score": 0.3514426350593567
+        },
+        {
+          "start": 62,
+          "end": 91,
+          "text": "food and cosmetics production",
+          "label": "process",
+          "score": 0.9067648649215698
+        },
+        {
+          "start": 110,
+          "end": 148,
+          "text": "pharmaceutical and chemical industries",
+          "label": "process",
+          "score": 0.33602502942085266
+        },
+        {
+          "start": 159,
+          "end": 173,
+          "text": "low efficiency",
+          "label": "attribute",
+          "score": 0.4852387607097626
+        },
+        {
+          "start": 159,
+          "end": 193,
+          "text": "low efficiency of plant extraction",
+          "label": "attribute",
+          "score": 0.3508084714412689
+        },
+        {
+          "start": 177,
+          "end": 193,
+          "text": "plant extraction",
+          "label": "process",
+          "score": 0.5000529289245605
+        },
+        {
+          "start": 198,
+          "end": 221,
+          "text": "high energy consumption",
+          "label": "attribute",
+          "score": 0.551369309425354
+        },
+        {
+          "start": 198,
+          "end": 221,
+          "text": "high energy consumption",
+          "label": "condition",
+          "score": 0.38944920897483826
+        },
+        {
+          "start": 225,
+          "end": 243,
+          "text": "chemical synthesis",
+          "label": "process",
+          "score": 0.4840906858444214
+        },
+        {
+          "start": 272,
+          "end": 302,
+          "text": "industrial limonene production",
+          "label": "process",
+          "score": 0.4323066473007202
+        },
+        {
+          "start": 283,
+          "end": 291,
+          "text": "limonene",
+          "label": "object",
+          "score": 0.8033286929130554
+        },
+        {
+          "start": 283,
+          "end": 302,
+          "text": "limonene production",
+          "label": "process",
+          "score": 0.5599861145019531
+        },
+        {
+          "start": 333,
+          "end": 354,
+          "text": "metabolic engineering",
+          "label": "process",
+          "score": 0.5251955389976501
+        },
+        {
+          "start": 333,
+          "end": 354,
+          "text": "metabolic engineering",
+          "label": "method",
+          "score": 0.44030675292015076
+        },
+        {
+          "start": 359,
+          "end": 376,
+          "text": "synthetic biology",
+          "label": "process",
+          "score": 0.3010339140892029
+        },
+        {
+          "start": 397,
+          "end": 420,
+          "text": "engineering of microbes",
+          "label": "process",
+          "score": 0.342151403427124
+        },
+        {
+          "start": 488,
+          "end": 507,
+          "text": "deleterious effects",
+          "label": "attribute",
+          "score": 0.6315523982048035
+        },
+        {
+          "start": 511,
+          "end": 528,
+          "text": "cellular activity",
+          "label": "attribute",
+          "score": 0.5211738348007202
+        },
+        {
+          "start": 536,
+          "end": 544,
+          "text": "toxicity",
+          "label": "attribute",
+          "score": 0.6885864734649658
+        },
+        {
+          "start": 536,
+          "end": 556,
+          "text": "toxicity of limonene",
+          "label": "attribute",
+          "score": 0.4101512134075165
+        },
+        {
+          "start": 674,
+          "end": 689,
+          "text": "transcriptomics",
+          "label": "method",
+          "score": 0.7937966585159302
+        },
+        {
+          "start": 745,
+          "end": 764,
+          "text": "Yarrowia lipolytica",
+          "label": "object",
+          "score": 0.44023391604423523
+        },
+        {
+          "start": 745,
+          "end": 764,
+          "text": "Yarrowia lipolytica",
+          "label": "actor",
+          "score": 0.41445282101631165
+        },
+        {
+          "start": 1229,
+          "end": 1241,
+          "text": "YALI0F19492p",
+          "label": "object",
+          "score": 0.32588112354278564
+        },
+        {
+          "start": 1252,
+          "end": 1270,
+          "text": "8-fold improvement",
+          "label": "result",
+          "score": 0.726369321346283
+        },
+        {
+          "start": 1252,
+          "end": 1287,
+          "text": "8-fold improvement in product titer",
+          "label": "result",
+          "score": 0.6053817868232727
+        },
+        {
+          "start": 1274,
+          "end": 1287,
+          "text": "product titer",
+          "label": "attribute",
+          "score": 0.35520368814468384
+        },
+        {
+          "start": 1310,
+          "end": 1359,
+          "text": "short-term adaptive laboratory evolution strategy",
+          "label": "method",
+          "score": 0.8575284481048584
+        },
+        {
+          "start": 1381,
+          "end": 1438,
+          "text": "morphological and cytoplasmic membrane integrity analysis",
+          "label": "method",
+          "score": 0.86783367395401
+        },
+        {
+          "start": 1399,
+          "end": 1438,
+          "text": "cytoplasmic membrane integrity analysis",
+          "label": "method",
+          "score": 0.3474482297897339
+        },
+        {
+          "start": 1461,
+          "end": 1506,
+          "text": "underlying mechanism of limonene cytotoxicity",
+          "label": "mechanism",
+          "score": 0.4643694758415222
+        },
+        {
+          "start": 1461,
+          "end": 1481,
+          "text": "underlying mechanism",
+          "label": "mechanism",
+          "score": 0.40749797224998474
+        },
+        {
+          "start": 1485,
+          "end": 1506,
+          "text": "limonene cytotoxicity",
+          "label": "attribute",
+          "score": 0.4748378098011017
+        },
+        {
+          "start": 1485,
+          "end": 1506,
+          "text": "limonene cytotoxicity",
+          "label": "mechanism",
+          "score": 0.46242624521255493
+        },
+        {
+          "start": 1693,
+          "end": 1714,
+          "text": "tolerance engineering",
+          "label": "method",
+          "score": 0.6389537453651428
+        },
+        {
+          "start": 1693,
+          "end": 1714,
+          "text": "tolerance engineering",
+          "label": "process",
+          "score": 0.4069969654083252
+        },
+        {
+          "start": 1719,
+          "end": 1743,
+          "text": "evolutionary engineering",
+          "label": "method",
+          "score": 0.5694190263748169
+        }
+      ],
+      "predictions": [
+        {
+          "head": {
+            "start": 0,
+            "end": 8,
+            "text": "Limonene",
+            "type": "object",
+            "entity_idx": 0
+          },
+          "tail": {
+            "start": 25,
+            "end": 46,
+            "text": "plant natural product",
+            "type": "object",
+            "entity_idx": 1
+          },
+          "relation": "is a",
+          "score": 0.9810447096824646
+        },
+        {
+          "head": {
+            "start": 0,
+            "end": 8,
+            "text": "Limonene",
+            "type": "object",
+            "entity_idx": 0
+          },
+          "tail": {
+            "start": 25,
+            "end": 46,
+            "text": "plant natural product",
+            "type": "object",
+            "entity_idx": 1
+          },
+          "relation": "is a",
+          "score": 0.9810447096824646
+        },
+        {
+          "head": {
+            "start": 1229,
+            "end": 1241,
+            "text": "YALI0F19492p",
+            "type": "object",
+            "entity_idx": 25
+          },
+          "tail": {
+            "start": 1252,
+            "end": 1270,
+            "text": "8-fold improvement",
+            "type": "result",
+            "entity_idx": 26
+          },
+          "relation": "has result",
+          "score": 0.7850536108016968
+        },
+        {
+          "head": {
+            "start": 1229,
+            "end": 1241,
+            "text": "YALI0F19492p",
+            "type": "object",
+            "entity_idx": 25
+          },
+          "tail": {
+            "start": 1252,
+            "end": 1287,
+            "text": "8-fold improvement in product titer",
+            "type": "result",
+            "entity_idx": 27
+          },
+          "relation": "has result",
+          "score": 0.7077493667602539
+        },
+        {
+          "head": {
+            "start": 1310,
+            "end": 1359,
+            "text": "short-term adaptive laboratory evolution strategy",
+            "type": "method",
+            "entity_idx": 29
+          },
+          "tail": {
+            "start": 1461,
+            "end": 1506,
+            "text": "underlying mechanism of limonene cytotoxicity",
+            "type": "mechanism",
+            "entity_idx": 32
+          },
+          "relation": "explains",
+          "score": 0.7476816177368164
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "e:1d05cadd8a7c4335cbe9a8c2eead3a4d40855753b3d88a436000d1bba2adabd5",
+      "document_id": "W3138328568",
+      "start": 0,
+      "end": 8,
+      "surface_text": "Limonene",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "limonene"
+      ],
+      "confidence": 0.8265480399131775,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 0,
+          "end": 8,
+          "surface_text": "Limonene",
+          "ner_label_hint": "OBJECT",
+          "score": 0.8265480399131775,
+          "normalized_form": "limonene",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 0,
+            "end": 8,
+            "text": "Limonene",
+            "label": "object",
+            "score": 0.8265480399131775
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d60d95451989cd5d286fbff4dd5ef4df7ba2cd2dbeecadc33f0c751629b7f4c4",
+      "document_id": "W3138328568",
+      "start": 25,
+      "end": 46,
+      "surface_text": "plant natural product",
+      "entity_types": [
+        "ATTRIBUTE",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "plant natural product"
+      ],
+      "confidence": 0.7099899053573608,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 25,
+          "end": 46,
+          "surface_text": "plant natural product",
+          "ner_label_hint": "OBJECT",
+          "score": 0.7099899053573608,
+          "normalized_form": "plant natural product",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 25,
+            "end": 46,
+            "text": "plant natural product",
+            "label": "object",
+            "score": 0.7099899053573608
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 25,
+          "end": 46,
+          "surface_text": "plant natural product",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.3514426350593567,
+          "normalized_form": "plant natural product",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 25,
+            "end": 46,
+            "text": "plant natural product",
+            "label": "attribute",
+            "score": 0.3514426350593567
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:fb8f85439afc2c773aa5ea3e03e4a5b48c85541439ca724cc2ce14a2bc7909a9",
+      "document_id": "W3138328568",
+      "start": 62,
+      "end": 91,
+      "surface_text": "food and cosmetics production",
+      "entity_types": [
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "food and cosmetics production"
+      ],
+      "confidence": 0.9067648649215698,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 62,
+          "end": 91,
+          "surface_text": "food and cosmetics production",
+          "ner_label_hint": "PROCESS",
+          "score": 0.9067648649215698,
+          "normalized_form": "food and cosmetics production",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 62,
+            "end": 91,
+            "text": "food and cosmetics production",
+            "label": "process",
+            "score": 0.9067648649215698
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:5e94d2d55b8994a1473d00ffb113daf6b39842f2e3a1b4f3104eb2f496b7be79",
+      "document_id": "W3138328568",
+      "start": 110,
+      "end": 148,
+      "surface_text": "pharmaceutical and chemical industries",
+      "entity_types": [
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "pharmaceutical and chemical industries"
+      ],
+      "confidence": 0.33602502942085266,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 110,
+          "end": 148,
+          "surface_text": "pharmaceutical and chemical industries",
+          "ner_label_hint": "PROCESS",
+          "score": 0.33602502942085266,
+          "normalized_form": "pharmaceutical and chemical industries",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 110,
+            "end": 148,
+            "text": "pharmaceutical and chemical industries",
+            "label": "process",
+            "score": 0.33602502942085266
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:cd567a041b6b4adc38e9b7490b1e54117d38ac6296ba5aa244989a7d9fd5e16f",
+      "document_id": "W3138328568",
+      "start": 159,
+      "end": 173,
+      "surface_text": "low efficiency",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "low efficiency"
+      ],
+      "confidence": 0.4852387607097626,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 159,
+          "end": 173,
+          "surface_text": "low efficiency",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.4852387607097626,
+          "normalized_form": "low efficiency",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 159,
+            "end": 173,
+            "text": "low efficiency",
+            "label": "attribute",
+            "score": 0.4852387607097626
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:78e69ddec93ebd94b404bfd9b5cd1c382bfac5be37c7c62f726d4832b86b5d3d",
+      "document_id": "W3138328568",
+      "start": 159,
+      "end": 193,
+      "surface_text": "low efficiency of plant extraction",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "low efficiency of plant extraction"
+      ],
+      "confidence": 0.3508084714412689,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 159,
+          "end": 193,
+          "surface_text": "low efficiency of plant extraction",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.3508084714412689,
+          "normalized_form": "low efficiency of plant extraction",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 159,
+            "end": 193,
+            "text": "low efficiency of plant extraction",
+            "label": "attribute",
+            "score": 0.3508084714412689
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:c92b92e8242d04f5b46cd2dbbcdab00fbaa48d31f0065c87a211ab62c3051b95",
+      "document_id": "W3138328568",
+      "start": 177,
+      "end": 193,
+      "surface_text": "plant extraction",
+      "entity_types": [
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "plant extraction"
+      ],
+      "confidence": 0.5000529289245605,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 177,
+          "end": 193,
+          "surface_text": "plant extraction",
+          "ner_label_hint": "PROCESS",
+          "score": 0.5000529289245605,
+          "normalized_form": "plant extraction",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 177,
+            "end": 193,
+            "text": "plant extraction",
+            "label": "process",
+            "score": 0.5000529289245605
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:4408047ccd9776803faafc296a92cec5d96a1b9c36de818cbabb2af438fb78ae",
+      "document_id": "W3138328568",
+      "start": 198,
+      "end": 221,
+      "surface_text": "high energy consumption",
+      "entity_types": [
+        "ATTRIBUTE",
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "high energy consumption"
+      ],
+      "confidence": 0.551369309425354,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 198,
+          "end": 221,
+          "surface_text": "high energy consumption",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.551369309425354,
+          "normalized_form": "high energy consumption",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 198,
+            "end": 221,
+            "text": "high energy consumption",
+            "label": "attribute",
+            "score": 0.551369309425354
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 198,
+          "end": 221,
+          "surface_text": "high energy consumption",
+          "ner_label_hint": "CONDITION",
+          "score": 0.38944920897483826,
+          "normalized_form": "high energy consumption",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 198,
+            "end": 221,
+            "text": "high energy consumption",
+            "label": "condition",
+            "score": 0.38944920897483826
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:c28d288c02dfcd79b1a9a7c3d6c69a9b265e7d540d0b64085f2390f79cb4d01f",
+      "document_id": "W3138328568",
+      "start": 225,
+      "end": 243,
+      "surface_text": "chemical synthesis",
+      "entity_types": [
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "chemical synthesis"
+      ],
+      "confidence": 0.4840906858444214,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 225,
+          "end": 243,
+          "surface_text": "chemical synthesis",
+          "ner_label_hint": "PROCESS",
+          "score": 0.4840906858444214,
+          "normalized_form": "chemical synthesis",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 225,
+            "end": 243,
+            "text": "chemical synthesis",
+            "label": "process",
+            "score": 0.4840906858444214
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:8415a72d75193d383038d56794be10e6b96a5da8b20faf336671819782792e29",
+      "document_id": "W3138328568",
+      "start": 272,
+      "end": 302,
+      "surface_text": "industrial limonene production",
+      "entity_types": [
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "industrial limonene production"
+      ],
+      "confidence": 0.4323066473007202,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 272,
+          "end": 302,
+          "surface_text": "industrial limonene production",
+          "ner_label_hint": "PROCESS",
+          "score": 0.4323066473007202,
+          "normalized_form": "industrial limonene production",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 272,
+            "end": 302,
+            "text": "industrial limonene production",
+            "label": "process",
+            "score": 0.4323066473007202
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:e326378c0e76a77640c06113da6d72a5e7b207ad2039485fb6e716c58aa30fcf",
+      "document_id": "W3138328568",
+      "start": 283,
+      "end": 291,
+      "surface_text": "limonene",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "limonene"
+      ],
+      "confidence": 0.8033286929130554,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 283,
+          "end": 291,
+          "surface_text": "limonene",
+          "ner_label_hint": "OBJECT",
+          "score": 0.8033286929130554,
+          "normalized_form": "limonene",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 283,
+            "end": 291,
+            "text": "limonene",
+            "label": "object",
+            "score": 0.8033286929130554
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:b92811a9d78d9fc8fed019e4012c21d6ebcca27f787082cd7b2392e6daaa663b",
+      "document_id": "W3138328568",
+      "start": 283,
+      "end": 302,
+      "surface_text": "limonene production",
+      "entity_types": [
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "limonene production"
+      ],
+      "confidence": 0.5599861145019531,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 283,
+          "end": 302,
+          "surface_text": "limonene production",
+          "ner_label_hint": "PROCESS",
+          "score": 0.5599861145019531,
+          "normalized_form": "limonene production",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 283,
+            "end": 302,
+            "text": "limonene production",
+            "label": "process",
+            "score": 0.5599861145019531
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:14c6c0035b4bdf6b9bb83ea0d020d52d05dc07158f026afa136d224153fb9d7a",
+      "document_id": "W3138328568",
+      "start": 333,
+      "end": 354,
+      "surface_text": "metabolic engineering",
+      "entity_types": [
+        "METHOD",
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "metabolic engineering"
+      ],
+      "confidence": 0.5251955389976501,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 333,
+          "end": 354,
+          "surface_text": "metabolic engineering",
+          "ner_label_hint": "PROCESS",
+          "score": 0.5251955389976501,
+          "normalized_form": "metabolic engineering",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 333,
+            "end": 354,
+            "text": "metabolic engineering",
+            "label": "process",
+            "score": 0.5251955389976501
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 333,
+          "end": 354,
+          "surface_text": "metabolic engineering",
+          "ner_label_hint": "METHOD",
+          "score": 0.44030675292015076,
+          "normalized_form": "metabolic engineering",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 333,
+            "end": 354,
+            "text": "metabolic engineering",
+            "label": "method",
+            "score": 0.44030675292015076
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:413c8d1a16fa5704a8f41b911a3c3a65e770df4ef9f456481fa98245ad09b0ab",
+      "document_id": "W3138328568",
+      "start": 359,
+      "end": 376,
+      "surface_text": "synthetic biology",
+      "entity_types": [
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "synthetic biology"
+      ],
+      "confidence": 0.3010339140892029,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 359,
+          "end": 376,
+          "surface_text": "synthetic biology",
+          "ner_label_hint": "PROCESS",
+          "score": 0.3010339140892029,
+          "normalized_form": "synthetic biology",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 359,
+            "end": 376,
+            "text": "synthetic biology",
+            "label": "process",
+            "score": 0.3010339140892029
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:e30f1f8183e5251ac6dae53ef9afbdd99f408f7df2ec35a83d0357d4fa57ae16",
+      "document_id": "W3138328568",
+      "start": 397,
+      "end": 420,
+      "surface_text": "engineering of microbes",
+      "entity_types": [
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "engineering of microbes"
+      ],
+      "confidence": 0.342151403427124,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 397,
+          "end": 420,
+          "surface_text": "engineering of microbes",
+          "ner_label_hint": "PROCESS",
+          "score": 0.342151403427124,
+          "normalized_form": "engineering of microbes",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 397,
+            "end": 420,
+            "text": "engineering of microbes",
+            "label": "process",
+            "score": 0.342151403427124
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:c45da0f85925fe9ca79b65e2787f98c651b6626aa121c1bf76d9f6879ba0eb95",
+      "document_id": "W3138328568",
+      "start": 488,
+      "end": 507,
+      "surface_text": "deleterious effects",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "deleterious effects"
+      ],
+      "confidence": 0.6315523982048035,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 488,
+          "end": 507,
+          "surface_text": "deleterious effects",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.6315523982048035,
+          "normalized_form": "deleterious effects",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 488,
+            "end": 507,
+            "text": "deleterious effects",
+            "label": "attribute",
+            "score": 0.6315523982048035
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a8c038e1128ea25dca09969fa99386f32247b7cbad19b5d69325b6fadbb09132",
+      "document_id": "W3138328568",
+      "start": 511,
+      "end": 528,
+      "surface_text": "cellular activity",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "cellular activity"
+      ],
+      "confidence": 0.5211738348007202,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 511,
+          "end": 528,
+          "surface_text": "cellular activity",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.5211738348007202,
+          "normalized_form": "cellular activity",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 511,
+            "end": 528,
+            "text": "cellular activity",
+            "label": "attribute",
+            "score": 0.5211738348007202
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:b824ab0d69d2bf7a133699dd337a72628a04321e8ab7a2d8c2661d319a7bb402",
+      "document_id": "W3138328568",
+      "start": 536,
+      "end": 544,
+      "surface_text": "toxicity",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "toxicity"
+      ],
+      "confidence": 0.6885864734649658,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 536,
+          "end": 544,
+          "surface_text": "toxicity",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.6885864734649658,
+          "normalized_form": "toxicity",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 536,
+            "end": 544,
+            "text": "toxicity",
+            "label": "attribute",
+            "score": 0.6885864734649658
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:5c9875bd85179c2d171ab15e636073cd50a8fd4710f9256c7b444b91a85d1a68",
+      "document_id": "W3138328568",
+      "start": 536,
+      "end": 556,
+      "surface_text": "toxicity of limonene",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "toxicity of limonene"
+      ],
+      "confidence": 0.4101512134075165,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 536,
+          "end": 556,
+          "surface_text": "toxicity of limonene",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.4101512134075165,
+          "normalized_form": "toxicity of limonene",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 536,
+            "end": 556,
+            "text": "toxicity of limonene",
+            "label": "attribute",
+            "score": 0.4101512134075165
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:223a8312186b5266525ea22513b37127c803e800615906b75dff9a18094c5966",
+      "document_id": "W3138328568",
+      "start": 674,
+      "end": 689,
+      "surface_text": "transcriptomics",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "transcriptomics"
+      ],
+      "confidence": 0.7937966585159302,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 674,
+          "end": 689,
+          "surface_text": "transcriptomics",
+          "ner_label_hint": "METHOD",
+          "score": 0.7937966585159302,
+          "normalized_form": "transcriptomics",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 674,
+            "end": 689,
+            "text": "transcriptomics",
+            "label": "method",
+            "score": 0.7937966585159302
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:8c897a21a138b7d18aeb4e07092cbdbd09409531f2f630abc2c42760e58b2b57",
+      "document_id": "W3138328568",
+      "start": 745,
+      "end": 764,
+      "surface_text": "Yarrowia lipolytica",
+      "entity_types": [
+        "ACTOR",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "yarrowia lipolytica"
+      ],
+      "confidence": 0.44023391604423523,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 745,
+          "end": 764,
+          "surface_text": "Yarrowia lipolytica",
+          "ner_label_hint": "OBJECT",
+          "score": 0.44023391604423523,
+          "normalized_form": "yarrowia lipolytica",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 745,
+            "end": 764,
+            "text": "Yarrowia lipolytica",
+            "label": "object",
+            "score": 0.44023391604423523
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 745,
+          "end": 764,
+          "surface_text": "Yarrowia lipolytica",
+          "ner_label_hint": "ACTOR",
+          "score": 0.41445282101631165,
+          "normalized_form": "yarrowia lipolytica",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 745,
+            "end": 764,
+            "text": "Yarrowia lipolytica",
+            "label": "actor",
+            "score": 0.41445282101631165
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:053ae9c35bd48da9d2f393920c07ca3ac0b689951a744632d9d8f6036016a088",
+      "document_id": "W3138328568",
+      "start": 1229,
+      "end": 1241,
+      "surface_text": "YALI0F19492p",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "yali0f19492p"
+      ],
+      "confidence": 0.32588112354278564,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 1229,
+          "end": 1241,
+          "surface_text": "YALI0F19492p",
+          "ner_label_hint": "OBJECT",
+          "score": 0.32588112354278564,
+          "normalized_form": "yali0f19492p",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 1229,
+            "end": 1241,
+            "text": "YALI0F19492p",
+            "label": "object",
+            "score": 0.32588112354278564
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:f9f97b9bcdbf3c7f93e6bf6fbb280ab4cb30e0d8ebc05b3f14760ea3339c8482",
+      "document_id": "W3138328568",
+      "start": 1252,
+      "end": 1270,
+      "surface_text": "8-fold improvement",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "8-fold improvement"
+      ],
+      "confidence": 0.726369321346283,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 1252,
+          "end": 1270,
+          "surface_text": "8-fold improvement",
+          "ner_label_hint": "RESULT",
+          "score": 0.726369321346283,
+          "normalized_form": "8-fold improvement",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 1252,
+            "end": 1270,
+            "text": "8-fold improvement",
+            "label": "result",
+            "score": 0.726369321346283
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:3018bd5e55f144a85a8ce8b4cdd8e99bd1b6679a4877c3e1c3db3c6d9122751f",
+      "document_id": "W3138328568",
+      "start": 1252,
+      "end": 1287,
+      "surface_text": "8-fold improvement in product titer",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "8-fold improvement in product titer"
+      ],
+      "confidence": 0.6053817868232727,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 1252,
+          "end": 1287,
+          "surface_text": "8-fold improvement in product titer",
+          "ner_label_hint": "RESULT",
+          "score": 0.6053817868232727,
+          "normalized_form": "8-fold improvement in product titer",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 1252,
+            "end": 1287,
+            "text": "8-fold improvement in product titer",
+            "label": "result",
+            "score": 0.6053817868232727
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:63d033f231f61cf748fbf83f84411169cd33132a894103498c5a7ff6d58b1d80",
+      "document_id": "W3138328568",
+      "start": 1274,
+      "end": 1287,
+      "surface_text": "product titer",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "product titer"
+      ],
+      "confidence": 0.35520368814468384,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 1274,
+          "end": 1287,
+          "surface_text": "product titer",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.35520368814468384,
+          "normalized_form": "product titer",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 1274,
+            "end": 1287,
+            "text": "product titer",
+            "label": "attribute",
+            "score": 0.35520368814468384
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:2750b642a2b98ccb6d388766806ef5e914098a012f8d71c0d3798049d2c4077c",
+      "document_id": "W3138328568",
+      "start": 1310,
+      "end": 1359,
+      "surface_text": "short-term adaptive laboratory evolution strategy",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "short-term adaptive laboratory evolution strategy"
+      ],
+      "confidence": 0.8575284481048584,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 1310,
+          "end": 1359,
+          "surface_text": "short-term adaptive laboratory evolution strategy",
+          "ner_label_hint": "METHOD",
+          "score": 0.8575284481048584,
+          "normalized_form": "short-term adaptive laboratory evolution strategy",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 1310,
+            "end": 1359,
+            "text": "short-term adaptive laboratory evolution strategy",
+            "label": "method",
+            "score": 0.8575284481048584
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:00a4fcf6b98af0352ab70d492f6b408b8df9aac60e29bb368d080193ae5aee0c",
+      "document_id": "W3138328568",
+      "start": 1381,
+      "end": 1438,
+      "surface_text": "morphological and cytoplasmic membrane integrity analysis",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "morphological and cytoplasmic membrane integrity analysis"
+      ],
+      "confidence": 0.86783367395401,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 1381,
+          "end": 1438,
+          "surface_text": "morphological and cytoplasmic membrane integrity analysis",
+          "ner_label_hint": "METHOD",
+          "score": 0.86783367395401,
+          "normalized_form": "morphological and cytoplasmic membrane integrity analysis",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 1381,
+            "end": 1438,
+            "text": "morphological and cytoplasmic membrane integrity analysis",
+            "label": "method",
+            "score": 0.86783367395401
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:cc6a6ae1eb24ea35b3b51e6cef9fe7d0211187294e9febb9843c62c9483f7ef7",
+      "document_id": "W3138328568",
+      "start": 1399,
+      "end": 1438,
+      "surface_text": "cytoplasmic membrane integrity analysis",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "cytoplasmic membrane integrity analysis"
+      ],
+      "confidence": 0.3474482297897339,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 1399,
+          "end": 1438,
+          "surface_text": "cytoplasmic membrane integrity analysis",
+          "ner_label_hint": "METHOD",
+          "score": 0.3474482297897339,
+          "normalized_form": "cytoplasmic membrane integrity analysis",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 1399,
+            "end": 1438,
+            "text": "cytoplasmic membrane integrity analysis",
+            "label": "method",
+            "score": 0.3474482297897339
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:05d268c449c5d4531c8007e09460b4cc39f0f2db899672093291eac107b13851",
+      "document_id": "W3138328568",
+      "start": 1461,
+      "end": 1481,
+      "surface_text": "underlying mechanism",
+      "entity_types": [
+        "MECHANISM"
+      ],
+      "normalized_forms": [
+        "underlying mechanism"
+      ],
+      "confidence": 0.40749797224998474,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 1461,
+          "end": 1481,
+          "surface_text": "underlying mechanism",
+          "ner_label_hint": "MECHANISM",
+          "score": 0.40749797224998474,
+          "normalized_form": "underlying mechanism",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 1461,
+            "end": 1481,
+            "text": "underlying mechanism",
+            "label": "mechanism",
+            "score": 0.40749797224998474
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d79bd409471a6df1e61425536323ac4e61d2de7912ec284c880da6d37a9ec010",
+      "document_id": "W3138328568",
+      "start": 1461,
+      "end": 1506,
+      "surface_text": "underlying mechanism of limonene cytotoxicity",
+      "entity_types": [
+        "MECHANISM"
+      ],
+      "normalized_forms": [
+        "underlying mechanism of limonene cytotoxicity"
+      ],
+      "confidence": 0.4643694758415222,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 1461,
+          "end": 1506,
+          "surface_text": "underlying mechanism of limonene cytotoxicity",
+          "ner_label_hint": "MECHANISM",
+          "score": 0.4643694758415222,
+          "normalized_form": "underlying mechanism of limonene cytotoxicity",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 1461,
+            "end": 1506,
+            "text": "underlying mechanism of limonene cytotoxicity",
+            "label": "mechanism",
+            "score": 0.4643694758415222
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:3f25356633b00252b44ea3923bbef3c7d6d01e4e649659bd0f7de923ed236fb2",
+      "document_id": "W3138328568",
+      "start": 1485,
+      "end": 1506,
+      "surface_text": "limonene cytotoxicity",
+      "entity_types": [
+        "ATTRIBUTE",
+        "MECHANISM"
+      ],
+      "normalized_forms": [
+        "limonene cytotoxicity"
+      ],
+      "confidence": 0.4748378098011017,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 1485,
+          "end": 1506,
+          "surface_text": "limonene cytotoxicity",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.4748378098011017,
+          "normalized_form": "limonene cytotoxicity",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 1485,
+            "end": 1506,
+            "text": "limonene cytotoxicity",
+            "label": "attribute",
+            "score": 0.4748378098011017
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 1485,
+          "end": 1506,
+          "surface_text": "limonene cytotoxicity",
+          "ner_label_hint": "MECHANISM",
+          "score": 0.46242624521255493,
+          "normalized_form": "limonene cytotoxicity",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 1485,
+            "end": 1506,
+            "text": "limonene cytotoxicity",
+            "label": "mechanism",
+            "score": 0.46242624521255493
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a08fa46e2cfaaacc24884b36405847dfd0b65c164a776fc42ae52e363516c647",
+      "document_id": "W3138328568",
+      "start": 1693,
+      "end": 1714,
+      "surface_text": "tolerance engineering",
+      "entity_types": [
+        "METHOD",
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "tolerance engineering"
+      ],
+      "confidence": 0.6389537453651428,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 1693,
+          "end": 1714,
+          "surface_text": "tolerance engineering",
+          "ner_label_hint": "METHOD",
+          "score": 0.6389537453651428,
+          "normalized_form": "tolerance engineering",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 1693,
+            "end": 1714,
+            "text": "tolerance engineering",
+            "label": "method",
+            "score": 0.6389537453651428
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 1693,
+          "end": 1714,
+          "surface_text": "tolerance engineering",
+          "ner_label_hint": "PROCESS",
+          "score": 0.4069969654083252,
+          "normalized_form": "tolerance engineering",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 1693,
+            "end": 1714,
+            "text": "tolerance engineering",
+            "label": "process",
+            "score": 0.4069969654083252
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:40fa23d4e5b9b5d6d9574f2522c1f8834b38063a88831bb903989c03eafa02dc",
+      "document_id": "W3138328568",
+      "start": 1719,
+      "end": 1743,
+      "surface_text": "evolutionary engineering",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "evolutionary engineering"
+      ],
+      "confidence": 0.5694190263748169,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3138328568",
+          "start": 1719,
+          "end": 1743,
+          "surface_text": "evolutionary engineering",
+          "ner_label_hint": "METHOD",
+          "score": 0.5694190263748169,
+          "normalized_form": "evolutionary engineering",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3138328568",
+            "doi": "https://doi.org/10.1021/acssynbio.1c00052",
+            "landing_page_url": "https://doi.org/10.1021/acssynbio.1c00052",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3138328568",
+            "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25"
+          },
+          "raw_prediction": {
+            "start": 1719,
+            "end": 1743,
+            "text": "evolutionary engineering",
+            "label": "method",
+            "score": 0.5694190263748169
+          }
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "triple_id": "t:1afc1120b7a8858eb9ce3bafc7fc9e1fde408491c88d6ed5ecad4ed6742960dc",
+      "document_id": "W3138328568",
+      "head_id": "e:053ae9c35bd48da9d2f393920c07ca3ac0b689951a744632d9d8f6036016a088",
+      "tail_id": "e:f9f97b9bcdbf3c7f93e6bf6fbb280ab4cb30e0d8ebc05b3f14760ea3339c8482",
+      "head_types": [
+        "OBJECT"
+      ],
+      "tail_types": [
+        "RESULT"
+      ],
+      "relation_type": "HAS_RESULT",
+      "confidence": 0.7850536108016968,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "document_id": "W3138328568",
+          "start": 0,
+          "end": 1744,
+          "text": "Limonene is an important plant natural product widely used in food and cosmetics production as well as in the pharmaceutical and chemical industries. However, low efficiency of plant extraction and high energy consumption in chemical synthesis limit the sustainability of industrial limonene production. Recently, the advancement of metabolic engineering and synthetic biology has facilitated the engineering of microbes into microbial cell factories for producing limonene. However, the deleterious effects on cellular activity by the toxicity of limonene is the major obstacle in achieving high-titer production of limonene in engineered microbes. In this study, by using transcriptomics, we identified 82 genes from the nonconventional yeast Yarrowia lipolytica that were up-regulated when exposed to limonene. When overexpressed, 8 of the gene candidates improved tolerance of this yeast to exogenously added limonene. To determine whether overexpression of these genes could also improve limonene production, we individually coexpressed the tolerance-enhancing genes with a limonene synthase gene. Indeed, expression of 5 of the 8 candidate genes enhanced limonene production in Y. lipolytica . Particularly, overexpressing YALI0F19492p led to an 8-fold improvement in product titer. Furthermore, through short-term adaptive laboratory evolution strategy, in combination with morphological and cytoplasmic membrane integrity analysis, we shed light on the underlying mechanism of limonene cytotoxicity to Y. lipolytica . This study demonstrated an effective strategy for improving limonene tolerance of Y. lipolytica and limonene titer in the host strain through the combinatorial use of tolerance engineering and evolutionary engineering.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:302ec717807184ed860275fbb061887c40da1abd41dab7083608c422c7496c60",
+      "document_id": "W3138328568",
+      "head_id": "e:1d05cadd8a7c4335cbe9a8c2eead3a4d40855753b3d88a436000d1bba2adabd5",
+      "tail_id": "e:d60d95451989cd5d286fbff4dd5ef4df7ba2cd2dbeecadc33f0c751629b7f4c4",
+      "head_types": [
+        "OBJECT"
+      ],
+      "tail_types": [
+        "ATTRIBUTE",
+        "OBJECT"
+      ],
+      "relation_type": "IS_A",
+      "confidence": 0.9810447096824646,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "document_id": "W3138328568",
+          "start": 0,
+          "end": 1744,
+          "text": "Limonene is an important plant natural product widely used in food and cosmetics production as well as in the pharmaceutical and chemical industries. However, low efficiency of plant extraction and high energy consumption in chemical synthesis limit the sustainability of industrial limonene production. Recently, the advancement of metabolic engineering and synthetic biology has facilitated the engineering of microbes into microbial cell factories for producing limonene. However, the deleterious effects on cellular activity by the toxicity of limonene is the major obstacle in achieving high-titer production of limonene in engineered microbes. In this study, by using transcriptomics, we identified 82 genes from the nonconventional yeast Yarrowia lipolytica that were up-regulated when exposed to limonene. When overexpressed, 8 of the gene candidates improved tolerance of this yeast to exogenously added limonene. To determine whether overexpression of these genes could also improve limonene production, we individually coexpressed the tolerance-enhancing genes with a limonene synthase gene. Indeed, expression of 5 of the 8 candidate genes enhanced limonene production in Y. lipolytica . Particularly, overexpressing YALI0F19492p led to an 8-fold improvement in product titer. Furthermore, through short-term adaptive laboratory evolution strategy, in combination with morphological and cytoplasmic membrane integrity analysis, we shed light on the underlying mechanism of limonene cytotoxicity to Y. lipolytica . This study demonstrated an effective strategy for improving limonene tolerance of Y. lipolytica and limonene titer in the host strain through the combinatorial use of tolerance engineering and evolutionary engineering.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:57a0628832aff955d4ee88425eb37d1266d38aad6a6593896e9bdfe643fedddc",
+      "document_id": "W3138328568",
+      "head_id": "e:2750b642a2b98ccb6d388766806ef5e914098a012f8d71c0d3798049d2c4077c",
+      "tail_id": "e:d79bd409471a6df1e61425536323ac4e61d2de7912ec284c880da6d37a9ec010",
+      "head_types": [
+        "METHOD"
+      ],
+      "tail_types": [
+        "MECHANISM"
+      ],
+      "relation_type": "EXPLAINS",
+      "confidence": 0.7476816177368164,
+      "suspicious_type_hint": true,
+      "evidence": [
+        {
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "document_id": "W3138328568",
+          "start": 0,
+          "end": 1744,
+          "text": "Limonene is an important plant natural product widely used in food and cosmetics production as well as in the pharmaceutical and chemical industries. However, low efficiency of plant extraction and high energy consumption in chemical synthesis limit the sustainability of industrial limonene production. Recently, the advancement of metabolic engineering and synthetic biology has facilitated the engineering of microbes into microbial cell factories for producing limonene. However, the deleterious effects on cellular activity by the toxicity of limonene is the major obstacle in achieving high-titer production of limonene in engineered microbes. In this study, by using transcriptomics, we identified 82 genes from the nonconventional yeast Yarrowia lipolytica that were up-regulated when exposed to limonene. When overexpressed, 8 of the gene candidates improved tolerance of this yeast to exogenously added limonene. To determine whether overexpression of these genes could also improve limonene production, we individually coexpressed the tolerance-enhancing genes with a limonene synthase gene. Indeed, expression of 5 of the 8 candidate genes enhanced limonene production in Y. lipolytica . Particularly, overexpressing YALI0F19492p led to an 8-fold improvement in product titer. Furthermore, through short-term adaptive laboratory evolution strategy, in combination with morphological and cytoplasmic membrane integrity analysis, we shed light on the underlying mechanism of limonene cytotoxicity to Y. lipolytica . This study demonstrated an effective strategy for improving limonene tolerance of Y. lipolytica and limonene titer in the host strain through the combinatorial use of tolerance engineering and evolutionary engineering.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:934f71fd70325acf2e754980f18943c875614cd3125c5dbc631c881f4b046313",
+      "document_id": "W3138328568",
+      "head_id": "e:053ae9c35bd48da9d2f393920c07ca3ac0b689951a744632d9d8f6036016a088",
+      "tail_id": "e:3018bd5e55f144a85a8ce8b4cdd8e99bd1b6679a4877c3e1c3db3c6d9122751f",
+      "head_types": [
+        "OBJECT"
+      ],
+      "tail_types": [
+        "RESULT"
+      ],
+      "relation_type": "HAS_RESULT",
+      "confidence": 0.7077493667602539,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+          "document_id": "W3138328568",
+          "start": 0,
+          "end": 1744,
+          "text": "Limonene is an important plant natural product widely used in food and cosmetics production as well as in the pharmaceutical and chemical industries. However, low efficiency of plant extraction and high energy consumption in chemical synthesis limit the sustainability of industrial limonene production. Recently, the advancement of metabolic engineering and synthetic biology has facilitated the engineering of microbes into microbial cell factories for producing limonene. However, the deleterious effects on cellular activity by the toxicity of limonene is the major obstacle in achieving high-titer production of limonene in engineered microbes. In this study, by using transcriptomics, we identified 82 genes from the nonconventional yeast Yarrowia lipolytica that were up-regulated when exposed to limonene. When overexpressed, 8 of the gene candidates improved tolerance of this yeast to exogenously added limonene. To determine whether overexpression of these genes could also improve limonene production, we individually coexpressed the tolerance-enhancing genes with a limonene synthase gene. Indeed, expression of 5 of the 8 candidate genes enhanced limonene production in Y. lipolytica . Particularly, overexpressing YALI0F19492p led to an 8-fold improvement in product titer. Furthermore, through short-term adaptive laboratory evolution strategy, in combination with morphological and cytoplasmic membrane integrity analysis, we shed light on the underlying mechanism of limonene cytotoxicity to Y. lipolytica . This study demonstrated an effective strategy for improving limonene tolerance of Y. lipolytica and limonene titer in the host strain through the combinatorial use of tolerance engineering and evolutionary engineering.",
+          "entity_ids": []
+        }
+      ]
+    }
+  ],
+  "raw_relation_count": 5,
+  "seconds": 2.2903783000074327
+}

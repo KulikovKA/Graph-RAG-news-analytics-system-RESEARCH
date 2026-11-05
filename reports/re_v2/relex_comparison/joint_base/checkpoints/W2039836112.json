@@ -1,0 +1,503 @@
+{
+  "fingerprint": "c79845cf50e55b434eab0bcd7d45fb6779c27e093e96fa9a77b4c2f1b311bf99",
+  "document_id": "W2039836112",
+  "model": "knowledgator/gliner-relex-base-v1.0",
+  "mode": "joint",
+  "raw_windows": [
+    {
+      "window": {
+        "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+        "document_id": "W2039836112",
+        "start": 0,
+        "end": 1668,
+        "text": "Spinal astrocytes are coupled by connexin (Cx) gap junctions and express pannexin 1 (Px1) and purinergic receptors. Fibroblast growth factor 1 (FGF-1), which is released in spinal cord injury, activated spinal astrocytes in culture, induced secretion of ATP, and permeabilized them to relatively large fluorescent tracers [ethidium (Etd) and lucifer yellow (LY)] through \"hemichannels\" (HCs). HCs can be formed by connexins or pannexins; they can open to extracellular space or can form gap junction (GJ) channels, one HC from each cell. (Pannexins may not form gap junctions in mammalian tissues, but they do in invertebrates). HC types were differentiated pharmacologically and by Px1 knockdown with siRNA and by use of astrocytes from Cx43 knockout mice. Permeabilization was reduced by apyrase (APY), an ATPase, and by P2X(7) receptor antagonists, implicating secretion of ATP and autocrine and/or paracrine action. Increased permeability of cells exposed to FGF-1 or ATP for 2 h was mediated largely by Px1 HCs activated by P2X(7) receptors. After a 7-h treatment, the permeability was mediated by both Cx43 and Px1 HCs. FGF-1 also caused reduction in gap junctional communication. Botulinum neurotoxin A, a blocker of vesicular release, reduced permeabilization when given 30 min before FGF-1 application, but not when given 1 h after FGF-1. We infer that ATP is initially released from vesicles and then it mediates continued release by action on P2X(7) receptors and opening of HCs. These changes in HCs and gap junction channels may promote inflammation and deprive neurons of astrocyte-mediated protection in spinal cord trauma and neurodegenerative disease.",
+        "entity_ids": []
+      },
+      "entities": [
+        {
+          "start": 0,
+          "end": 17,
+          "text": "Spinal astrocytes",
+          "label": "actor",
+          "score": 0.4798564016819
+        },
+        {
+          "start": 7,
+          "end": 17,
+          "text": "astrocytes",
+          "label": "actor",
+          "score": 0.34457409381866455
+        },
+        {
+          "start": 173,
+          "end": 191,
+          "text": "spinal cord injury",
+          "label": "condition",
+          "score": 0.9770772457122803
+        },
+        {
+          "start": 738,
+          "end": 756,
+          "text": "Cx43 knockout mice",
+          "label": "actor",
+          "score": 0.3520164489746094
+        },
+        {
+          "start": 758,
+          "end": 774,
+          "text": "Permeabilization",
+          "label": "mechanism",
+          "score": 0.3612939417362213
+        },
+        {
+          "start": 1144,
+          "end": 1185,
+          "text": "reduction in gap junctional communication",
+          "label": "mechanism",
+          "score": 0.33578526973724365
+        },
+        {
+          "start": 1550,
+          "end": 1562,
+          "text": "inflammation",
+          "label": "condition",
+          "score": 0.8759278059005737
+        },
+        {
+          "start": 1619,
+          "end": 1637,
+          "text": "spinal cord trauma",
+          "label": "condition",
+          "score": 0.753401517868042
+        },
+        {
+          "start": 1642,
+          "end": 1667,
+          "text": "neurodegenerative disease",
+          "label": "condition",
+          "score": 0.8068743348121643
+        }
+      ],
+      "predictions": []
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "e:1c11cd5aa1707c898f7283a169c34b4a218edea1837ba12077462b751068323f",
+      "document_id": "W2039836112",
+      "start": 0,
+      "end": 17,
+      "surface_text": "Spinal astrocytes",
+      "entity_types": [
+        "ACTOR"
+      ],
+      "normalized_forms": [
+        "spinal astrocytes"
+      ],
+      "confidence": 0.4798564016819,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 0,
+          "end": 17,
+          "surface_text": "Spinal astrocytes",
+          "ner_label_hint": "ACTOR",
+          "score": 0.4798564016819,
+          "normalized_form": "spinal astrocytes",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 0,
+            "end": 17,
+            "text": "Spinal astrocytes",
+            "label": "actor",
+            "score": 0.4798564016819
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:86c5c809181e4e816803ef3775b90adbc35db52a1287650baf87bb6914c8ff43",
+      "document_id": "W2039836112",
+      "start": 7,
+      "end": 17,
+      "surface_text": "astrocytes",
+      "entity_types": [
+        "ACTOR"
+      ],
+      "normalized_forms": [
+        "astrocytes"
+      ],
+      "confidence": 0.34457409381866455,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 7,
+          "end": 17,
+          "surface_text": "astrocytes",
+          "ner_label_hint": "ACTOR",
+          "score": 0.34457409381866455,
+          "normalized_form": "astrocytes",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 7,
+            "end": 17,
+            "text": "astrocytes",
+            "label": "actor",
+            "score": 0.34457409381866455
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:b8e81c854cdb240beb6d6deb9a0f3f04dbfa533925782164f52ff2c44b2dd4dc",
+      "document_id": "W2039836112",
+      "start": 173,
+      "end": 191,
+      "surface_text": "spinal cord injury",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "spinal cord injury"
+      ],
+      "confidence": 0.9770772457122803,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 173,
+          "end": 191,
+          "surface_text": "spinal cord injury",
+          "ner_label_hint": "CONDITION",
+          "score": 0.9770772457122803,
+          "normalized_form": "spinal cord injury",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 173,
+            "end": 191,
+            "text": "spinal cord injury",
+            "label": "condition",
+            "score": 0.9770772457122803
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d6a2ee2168dd7072f23a59a1cd7121e7d5b753fee41bc502722e9c0ed8b42aa6",
+      "document_id": "W2039836112",
+      "start": 738,
+      "end": 756,
+      "surface_text": "Cx43 knockout mice",
+      "entity_types": [
+        "ACTOR"
+      ],
+      "normalized_forms": [
+        "cx43 knockout mice"
+      ],
+      "confidence": 0.3520164489746094,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 738,
+          "end": 756,
+          "surface_text": "Cx43 knockout mice",
+          "ner_label_hint": "ACTOR",
+          "score": 0.3520164489746094,
+          "normalized_form": "cx43 knockout mice",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 738,
+            "end": 756,
+            "text": "Cx43 knockout mice",
+            "label": "actor",
+            "score": 0.3520164489746094
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:35bdc82c4177e77b058d2c522bafea2acb206c3630e84e810b8958777fb718a4",
+      "document_id": "W2039836112",
+      "start": 758,
+      "end": 774,
+      "surface_text": "Permeabilization",
+      "entity_types": [
+        "MECHANISM"
+      ],
+      "normalized_forms": [
+        "permeabilization"
+      ],
+      "confidence": 0.3612939417362213,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 758,
+          "end": 774,
+          "surface_text": "Permeabilization",
+          "ner_label_hint": "MECHANISM",
+          "score": 0.3612939417362213,
+          "normalized_form": "permeabilization",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 758,
+            "end": 774,
+            "text": "Permeabilization",
+            "label": "mechanism",
+            "score": 0.3612939417362213
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:e4bc206b4271de90311a28b8f3804e3008b92ad1fb53b46da7ef41686eafb11b",
+      "document_id": "W2039836112",
+      "start": 1144,
+      "end": 1185,
+      "surface_text": "reduction in gap junctional communication",
+      "entity_types": [
+        "MECHANISM"
+      ],
+      "normalized_forms": [
+        "reduction in gap junctional communication"
+      ],
+      "confidence": 0.33578526973724365,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 1144,
+          "end": 1185,
+          "surface_text": "reduction in gap junctional communication",
+          "ner_label_hint": "MECHANISM",
+          "score": 0.33578526973724365,
+          "normalized_form": "reduction in gap junctional communication",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 1144,
+            "end": 1185,
+            "text": "reduction in gap junctional communication",
+            "label": "mechanism",
+            "score": 0.33578526973724365
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:65454103943f33677b25410a54cbc8c3d5bd465d82506fce9dfb7673e29d9d50",
+      "document_id": "W2039836112",
+      "start": 1550,
+      "end": 1562,
+      "surface_text": "inflammation",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "inflammation"
+      ],
+      "confidence": 0.8759278059005737,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 1550,
+          "end": 1562,
+          "surface_text": "inflammation",
+          "ner_label_hint": "CONDITION",
+          "score": 0.8759278059005737,
+          "normalized_form": "inflammation",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 1550,
+            "end": 1562,
+            "text": "inflammation",
+            "label": "condition",
+            "score": 0.8759278059005737
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:dd27009f26606fb0b756345dd8ebfb74b4feea287816cb2c5b499317d42ac3e2",
+      "document_id": "W2039836112",
+      "start": 1619,
+      "end": 1637,
+      "surface_text": "spinal cord trauma",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "spinal cord trauma"
+      ],
+      "confidence": 0.753401517868042,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 1619,
+          "end": 1637,
+          "surface_text": "spinal cord trauma",
+          "ner_label_hint": "CONDITION",
+          "score": 0.753401517868042,
+          "normalized_form": "spinal cord trauma",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 1619,
+            "end": 1637,
+            "text": "spinal cord trauma",
+            "label": "condition",
+            "score": 0.753401517868042
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:635bdaaea999a3c5532814e245380b1832a4a976143ba183fa44962c7805ec61",
+      "document_id": "W2039836112",
+      "start": 1642,
+      "end": 1667,
+      "surface_text": "neurodegenerative disease",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "neurodegenerative disease"
+      ],
+      "confidence": 0.8068743348121643,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 1642,
+          "end": 1667,
+          "surface_text": "neurodegenerative disease",
+          "ner_label_hint": "CONDITION",
+          "score": 0.8068743348121643,
+          "normalized_form": "neurodegenerative disease",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 1642,
+            "end": 1667,
+            "text": "neurodegenerative disease",
+            "label": "condition",
+            "score": 0.8068743348121643
+          }
+        }
+      ]
+    }
+  ],
+  "relations": [],
+  "raw_relation_count": 0,
+  "seconds": 2.3957044000271708
+}

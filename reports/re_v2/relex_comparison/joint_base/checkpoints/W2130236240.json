@@ -1,0 +1,1234 @@
+{
+  "fingerprint": "c79845cf50e55b434eab0bcd7d45fb6779c27e093e96fa9a77b4c2f1b311bf99",
+  "document_id": "W2130236240",
+  "model": "knowledgator/gliner-relex-base-v1.0",
+  "mode": "joint",
+  "raw_windows": [
+    {
+      "window": {
+        "window_id": "w:776609d0cfb3584593925faa622a1b020e1fd169da98e6da38a01cd649f2f5c7",
+        "document_id": "W2130236240",
+        "start": 0,
+        "end": 700,
+        "text": "In their analysis of the effects of advance notification of plant closings, Nord and Ting (ILR Review, July 1991) claim that much can be expected of current legislation that mandates a 60-day prenotification standard because the outcomes of voluntary arrangements, in an interval preceding implementation of the legislation, point to substantial reductions in both joblessness and earnings losses for workers given over two months' warning of their impending layoff. They also suggest that many of the disparate results reported in the earlier plant closing literature reflect the inability to distinguish between formal and informal notice on the basis of the 1984 and 1986 Displaced Worker Surveys.",
+        "entity_ids": []
+      },
+      "entities": [
+        {
+          "start": 36,
+          "end": 74,
+          "text": "advance notification of plant closings",
+          "label": "process",
+          "score": 0.49570032954216003
+        },
+        {
+          "start": 36,
+          "end": 56,
+          "text": "advance notification",
+          "label": "process",
+          "score": 0.4780687987804413
+        },
+        {
+          "start": 36,
+          "end": 56,
+          "text": "advance notification",
+          "label": "mechanism",
+          "score": 0.46912238001823425
+        },
+        {
+          "start": 36,
+          "end": 74,
+          "text": "advance notification of plant closings",
+          "label": "mechanism",
+          "score": 0.3219941258430481
+        },
+        {
+          "start": 76,
+          "end": 89,
+          "text": "Nord and Ting",
+          "label": "actor",
+          "score": 0.8057323098182678
+        },
+        {
+          "start": 76,
+          "end": 80,
+          "text": "Nord",
+          "label": "actor",
+          "score": 0.7216865420341492
+        },
+        {
+          "start": 85,
+          "end": 89,
+          "text": "Ting",
+          "label": "actor",
+          "score": 0.4876358211040497
+        },
+        {
+          "start": 185,
+          "end": 216,
+          "text": "60-day prenotification standard",
+          "label": "mechanism",
+          "score": 0.5450014472007751
+        },
+        {
+          "start": 185,
+          "end": 216,
+          "text": "60-day prenotification standard",
+          "label": "concept",
+          "score": 0.469072163105011
+        },
+        {
+          "start": 241,
+          "end": 263,
+          "text": "voluntary arrangements",
+          "label": "mechanism",
+          "score": 0.7480719685554504
+        },
+        {
+          "start": 241,
+          "end": 263,
+          "text": "voluntary arrangements",
+          "label": "process",
+          "score": 0.5662389397621155
+        },
+        {
+          "start": 334,
+          "end": 356,
+          "text": "substantial reductions",
+          "label": "result",
+          "score": 0.9188694357872009
+        },
+        {
+          "start": 365,
+          "end": 376,
+          "text": "joblessness",
+          "label": "condition",
+          "score": 0.8912858963012695
+        },
+        {
+          "start": 381,
+          "end": 396,
+          "text": "earnings losses",
+          "label": "condition",
+          "score": 0.7801061868667603
+        },
+        {
+          "start": 381,
+          "end": 396,
+          "text": "earnings losses",
+          "label": "result",
+          "score": 0.7329034209251404
+        },
+        {
+          "start": 401,
+          "end": 408,
+          "text": "workers",
+          "label": "actor",
+          "score": 0.6159729361534119
+        },
+        {
+          "start": 502,
+          "end": 519,
+          "text": "disparate results",
+          "label": "result",
+          "score": 0.8633260130882263
+        },
+        {
+          "start": 536,
+          "end": 568,
+          "text": "earlier plant closing literature",
+          "label": "data resource",
+          "score": 0.600279688835144
+        },
+        {
+          "start": 544,
+          "end": 568,
+          "text": "plant closing literature",
+          "label": "data resource",
+          "score": 0.47414225339889526
+        },
+        {
+          "start": 614,
+          "end": 640,
+          "text": "formal and informal notice",
+          "label": "mechanism",
+          "score": 0.389940083026886
+        },
+        {
+          "start": 661,
+          "end": 699,
+          "text": "1984 and 1986 Displaced Worker Surveys",
+          "label": "data resource",
+          "score": 0.6746293306350708
+        },
+        {
+          "start": 670,
+          "end": 699,
+          "text": "1986 Displaced Worker Surveys",
+          "label": "data resource",
+          "score": 0.3285727798938751
+        },
+        {
+          "start": 675,
+          "end": 699,
+          "text": "Displaced Worker Surveys",
+          "label": "data resource",
+          "score": 0.7184541821479797
+        }
+      ],
+      "predictions": [
+        {
+          "head": {
+            "start": 76,
+            "end": 89,
+            "text": "Nord and Ting",
+            "type": "actor",
+            "entity_idx": 4
+          },
+          "tail": {
+            "start": 36,
+            "end": 74,
+            "text": "advance notification of plant closings",
+            "type": "process",
+            "entity_idx": 0
+          },
+          "relation": "performs",
+          "score": 0.7264597415924072
+        },
+        {
+          "head": {
+            "start": 76,
+            "end": 89,
+            "text": "Nord and Ting",
+            "type": "actor",
+            "entity_idx": 4
+          },
+          "tail": {
+            "start": 36,
+            "end": 74,
+            "text": "advance notification of plant closings",
+            "type": "process",
+            "entity_idx": 0
+          },
+          "relation": "performs",
+          "score": 0.7264597415924072
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "e:3fca24ee21f3ef1738f75c8682161fb1aae7da8dd11b90e6e963af32eed9f538",
+      "document_id": "W2130236240",
+      "start": 36,
+      "end": 56,
+      "surface_text": "advance notification",
+      "entity_types": [
+        "MECHANISM",
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "advance notification"
+      ],
+      "confidence": 0.4780687987804413,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2130236240",
+          "start": 36,
+          "end": 56,
+          "surface_text": "advance notification",
+          "ner_label_hint": "PROCESS",
+          "score": 0.4780687987804413,
+          "normalized_form": "advance notification",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:776609d0cfb3584593925faa622a1b020e1fd169da98e6da38a01cd649f2f5c7",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "raw_prediction": {
+            "start": 36,
+            "end": 56,
+            "text": "advance notification",
+            "label": "process",
+            "score": 0.4780687987804413
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2130236240",
+          "start": 36,
+          "end": 56,
+          "surface_text": "advance notification",
+          "ner_label_hint": "MECHANISM",
+          "score": 0.46912238001823425,
+          "normalized_form": "advance notification",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:776609d0cfb3584593925faa622a1b020e1fd169da98e6da38a01cd649f2f5c7",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "raw_prediction": {
+            "start": 36,
+            "end": 56,
+            "text": "advance notification",
+            "label": "mechanism",
+            "score": 0.46912238001823425
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:5afd2eb306b3ffbbcccbe162f4dc4c0b66e40deeafecab3c522ee71ec049b142",
+      "document_id": "W2130236240",
+      "start": 36,
+      "end": 74,
+      "surface_text": "advance notification of plant closings",
+      "entity_types": [
+        "MECHANISM",
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "advance notification of plant closings"
+      ],
+      "confidence": 0.49570032954216003,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2130236240",
+          "start": 36,
+          "end": 74,
+          "surface_text": "advance notification of plant closings",
+          "ner_label_hint": "PROCESS",
+          "score": 0.49570032954216003,
+          "normalized_form": "advance notification of plant closings",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:776609d0cfb3584593925faa622a1b020e1fd169da98e6da38a01cd649f2f5c7",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "raw_prediction": {
+            "start": 36,
+            "end": 74,
+            "text": "advance notification of plant closings",
+            "label": "process",
+            "score": 0.49570032954216003
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2130236240",
+          "start": 36,
+          "end": 74,
+          "surface_text": "advance notification of plant closings",
+          "ner_label_hint": "MECHANISM",
+          "score": 0.3219941258430481,
+          "normalized_form": "advance notification of plant closings",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:776609d0cfb3584593925faa622a1b020e1fd169da98e6da38a01cd649f2f5c7",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "raw_prediction": {
+            "start": 36,
+            "end": 74,
+            "text": "advance notification of plant closings",
+            "label": "mechanism",
+            "score": 0.3219941258430481
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:378351ea14e310d3c5b670f889e8c6cfcf3fa8402aa6f8f351a5aa2fd51ff0ab",
+      "document_id": "W2130236240",
+      "start": 76,
+      "end": 80,
+      "surface_text": "Nord",
+      "entity_types": [
+        "ACTOR"
+      ],
+      "normalized_forms": [
+        "nord"
+      ],
+      "confidence": 0.7216865420341492,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2130236240",
+          "start": 76,
+          "end": 80,
+          "surface_text": "Nord",
+          "ner_label_hint": "ACTOR",
+          "score": 0.7216865420341492,
+          "normalized_form": "nord",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:776609d0cfb3584593925faa622a1b020e1fd169da98e6da38a01cd649f2f5c7",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "raw_prediction": {
+            "start": 76,
+            "end": 80,
+            "text": "Nord",
+            "label": "actor",
+            "score": 0.7216865420341492
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:2189c7466e8f1cc9c1171c22d65e457ae9ba1725078746adb372a5c1760034e0",
+      "document_id": "W2130236240",
+      "start": 76,
+      "end": 89,
+      "surface_text": "Nord and Ting",
+      "entity_types": [
+        "ACTOR"
+      ],
+      "normalized_forms": [
+        "nord and ting"
+      ],
+      "confidence": 0.8057323098182678,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2130236240",
+          "start": 76,
+          "end": 89,
+          "surface_text": "Nord and Ting",
+          "ner_label_hint": "ACTOR",
+          "score": 0.8057323098182678,
+          "normalized_form": "nord and ting",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:776609d0cfb3584593925faa622a1b020e1fd169da98e6da38a01cd649f2f5c7",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "raw_prediction": {
+            "start": 76,
+            "end": 89,
+            "text": "Nord and Ting",
+            "label": "actor",
+            "score": 0.8057323098182678
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:6eea9212a9a4c6ec03ecb8f4d74c94e7dd08fedb70b6fa3173f1da612d45e1e2",
+      "document_id": "W2130236240",
+      "start": 85,
+      "end": 89,
+      "surface_text": "Ting",
+      "entity_types": [
+        "ACTOR"
+      ],
+      "normalized_forms": [
+        "ting"
+      ],
+      "confidence": 0.4876358211040497,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2130236240",
+          "start": 85,
+          "end": 89,
+          "surface_text": "Ting",
+          "ner_label_hint": "ACTOR",
+          "score": 0.4876358211040497,
+          "normalized_form": "ting",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:776609d0cfb3584593925faa622a1b020e1fd169da98e6da38a01cd649f2f5c7",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "raw_prediction": {
+            "start": 85,
+            "end": 89,
+            "text": "Ting",
+            "label": "actor",
+            "score": 0.4876358211040497
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:5ed3a85f56245b8632a0507e39b5e4d21ae610391d1c2f3627e6009cde478631",
+      "document_id": "W2130236240",
+      "start": 185,
+      "end": 216,
+      "surface_text": "60-day prenotification standard",
+      "entity_types": [
+        "CONCEPT",
+        "MECHANISM"
+      ],
+      "normalized_forms": [
+        "60-day prenotification standard"
+      ],
+      "confidence": 0.5450014472007751,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2130236240",
+          "start": 185,
+          "end": 216,
+          "surface_text": "60-day prenotification standard",
+          "ner_label_hint": "MECHANISM",
+          "score": 0.5450014472007751,
+          "normalized_form": "60-day prenotification standard",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:776609d0cfb3584593925faa622a1b020e1fd169da98e6da38a01cd649f2f5c7",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "raw_prediction": {
+            "start": 185,
+            "end": 216,
+            "text": "60-day prenotification standard",
+            "label": "mechanism",
+            "score": 0.5450014472007751
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2130236240",
+          "start": 185,
+          "end": 216,
+          "surface_text": "60-day prenotification standard",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.469072163105011,
+          "normalized_form": "60-day prenotification standard",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:776609d0cfb3584593925faa622a1b020e1fd169da98e6da38a01cd649f2f5c7",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "raw_prediction": {
+            "start": 185,
+            "end": 216,
+            "text": "60-day prenotification standard",
+            "label": "concept",
+            "score": 0.469072163105011
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:cd2b5d6e478228e893b5476f45aba068a0db059f0717e2369bcbe56c03addbf4",
+      "document_id": "W2130236240",
+      "start": 241,
+      "end": 263,
+      "surface_text": "voluntary arrangements",
+      "entity_types": [
+        "MECHANISM",
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "voluntary arrangements"
+      ],
+      "confidence": 0.7480719685554504,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2130236240",
+          "start": 241,
+          "end": 263,
+          "surface_text": "voluntary arrangements",
+          "ner_label_hint": "MECHANISM",
+          "score": 0.7480719685554504,
+          "normalized_form": "voluntary arrangements",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:776609d0cfb3584593925faa622a1b020e1fd169da98e6da38a01cd649f2f5c7",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "raw_prediction": {
+            "start": 241,
+            "end": 263,
+            "text": "voluntary arrangements",
+            "label": "mechanism",
+            "score": 0.7480719685554504
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2130236240",
+          "start": 241,
+          "end": 263,
+          "surface_text": "voluntary arrangements",
+          "ner_label_hint": "PROCESS",
+          "score": 0.5662389397621155,
+          "normalized_form": "voluntary arrangements",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:776609d0cfb3584593925faa622a1b020e1fd169da98e6da38a01cd649f2f5c7",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "raw_prediction": {
+            "start": 241,
+            "end": 263,
+            "text": "voluntary arrangements",
+            "label": "process",
+            "score": 0.5662389397621155
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:76b5b0e3e11337d0b30ea73acc6d99a2ef3c9d3084d9c362d51403f033eee06d",
+      "document_id": "W2130236240",
+      "start": 334,
+      "end": 356,
+      "surface_text": "substantial reductions",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "substantial reductions"
+      ],
+      "confidence": 0.9188694357872009,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2130236240",
+          "start": 334,
+          "end": 356,
+          "surface_text": "substantial reductions",
+          "ner_label_hint": "RESULT",
+          "score": 0.9188694357872009,
+          "normalized_form": "substantial reductions",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:776609d0cfb3584593925faa622a1b020e1fd169da98e6da38a01cd649f2f5c7",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "raw_prediction": {
+            "start": 334,
+            "end": 356,
+            "text": "substantial reductions",
+            "label": "result",
+            "score": 0.9188694357872009
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:0431e6502a81b2e98cfc388689b44bd2a7906f7bed97928916b27119004902a0",
+      "document_id": "W2130236240",
+      "start": 365,
+      "end": 376,
+      "surface_text": "joblessness",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "joblessness"
+      ],
+      "confidence": 0.8912858963012695,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2130236240",
+          "start": 365,
+          "end": 376,
+          "surface_text": "joblessness",
+          "ner_label_hint": "CONDITION",
+          "score": 0.8912858963012695,
+          "normalized_form": "joblessness",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:776609d0cfb3584593925faa622a1b020e1fd169da98e6da38a01cd649f2f5c7",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "raw_prediction": {
+            "start": 365,
+            "end": 376,
+            "text": "joblessness",
+            "label": "condition",
+            "score": 0.8912858963012695
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a5b35eaa5d1795ccb41ad06538713c49fdf1a53531a9090d541a474af1ae83ce",
+      "document_id": "W2130236240",
+      "start": 381,
+      "end": 396,
+      "surface_text": "earnings losses",
+      "entity_types": [
+        "CONDITION",
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "earnings losses"
+      ],
+      "confidence": 0.7801061868667603,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2130236240",
+          "start": 381,
+          "end": 396,
+          "surface_text": "earnings losses",
+          "ner_label_hint": "CONDITION",
+          "score": 0.7801061868667603,
+          "normalized_form": "earnings losses",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:776609d0cfb3584593925faa622a1b020e1fd169da98e6da38a01cd649f2f5c7",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "raw_prediction": {
+            "start": 381,
+            "end": 396,
+            "text": "earnings losses",
+            "label": "condition",
+            "score": 0.7801061868667603
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2130236240",
+          "start": 381,
+          "end": 396,
+          "surface_text": "earnings losses",
+          "ner_label_hint": "RESULT",
+          "score": 0.7329034209251404,
+          "normalized_form": "earnings losses",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:776609d0cfb3584593925faa622a1b020e1fd169da98e6da38a01cd649f2f5c7",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "raw_prediction": {
+            "start": 381,
+            "end": 396,
+            "text": "earnings losses",
+            "label": "result",
+            "score": 0.7329034209251404
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:52a586186bf0e3582ed1b2889fbf5c6da7b3052b55e70cba942ba2e2dd9d9747",
+      "document_id": "W2130236240",
+      "start": 401,
+      "end": 408,
+      "surface_text": "workers",
+      "entity_types": [
+        "ACTOR"
+      ],
+      "normalized_forms": [
+        "workers"
+      ],
+      "confidence": 0.6159729361534119,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2130236240",
+          "start": 401,
+          "end": 408,
+          "surface_text": "workers",
+          "ner_label_hint": "ACTOR",
+          "score": 0.6159729361534119,
+          "normalized_form": "workers",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:776609d0cfb3584593925faa622a1b020e1fd169da98e6da38a01cd649f2f5c7",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "raw_prediction": {
+            "start": 401,
+            "end": 408,
+            "text": "workers",
+            "label": "actor",
+            "score": 0.6159729361534119
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:540d7e1c068300fa7273ad662b61585e77a651eef03afc5aedec429c7e84ebd4",
+      "document_id": "W2130236240",
+      "start": 502,
+      "end": 519,
+      "surface_text": "disparate results",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "disparate results"
+      ],
+      "confidence": 0.8633260130882263,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2130236240",
+          "start": 502,
+          "end": 519,
+          "surface_text": "disparate results",
+          "ner_label_hint": "RESULT",
+          "score": 0.8633260130882263,
+          "normalized_form": "disparate results",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:776609d0cfb3584593925faa622a1b020e1fd169da98e6da38a01cd649f2f5c7",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "raw_prediction": {
+            "start": 502,
+            "end": 519,
+            "text": "disparate results",
+            "label": "result",
+            "score": 0.8633260130882263
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:2462ef63c4e08c5329dd2ea55144d10903b70ccdb282596faf696d123a54c132",
+      "document_id": "W2130236240",
+      "start": 536,
+      "end": 568,
+      "surface_text": "earlier plant closing literature",
+      "entity_types": [
+        "DATA_RESOURCE"
+      ],
+      "normalized_forms": [
+        "earlier plant closing literature"
+      ],
+      "confidence": 0.600279688835144,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2130236240",
+          "start": 536,
+          "end": 568,
+          "surface_text": "earlier plant closing literature",
+          "ner_label_hint": "DATA_RESOURCE",
+          "score": 0.600279688835144,
+          "normalized_form": "earlier plant closing literature",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:776609d0cfb3584593925faa622a1b020e1fd169da98e6da38a01cd649f2f5c7",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "raw_prediction": {
+            "start": 536,
+            "end": 568,
+            "text": "earlier plant closing literature",
+            "label": "data resource",
+            "score": 0.600279688835144
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a6f0956a6abf2873db299584554cf49cc5fc3c66780bbd83b14632742d0da16b",
+      "document_id": "W2130236240",
+      "start": 544,
+      "end": 568,
+      "surface_text": "plant closing literature",
+      "entity_types": [
+        "DATA_RESOURCE"
+      ],
+      "normalized_forms": [
+        "plant closing literature"
+      ],
+      "confidence": 0.47414225339889526,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2130236240",
+          "start": 544,
+          "end": 568,
+          "surface_text": "plant closing literature",
+          "ner_label_hint": "DATA_RESOURCE",
+          "score": 0.47414225339889526,
+          "normalized_form": "plant closing literature",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:776609d0cfb3584593925faa622a1b020e1fd169da98e6da38a01cd649f2f5c7",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "raw_prediction": {
+            "start": 544,
+            "end": 568,
+            "text": "plant closing literature",
+            "label": "data resource",
+            "score": 0.47414225339889526
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:114c017067e06a98050df53ea756b39c7141d886a2a4af6c155c734cdf571a12",
+      "document_id": "W2130236240",
+      "start": 614,
+      "end": 640,
+      "surface_text": "formal and informal notice",
+      "entity_types": [
+        "MECHANISM"
+      ],
+      "normalized_forms": [
+        "formal and informal notice"
+      ],
+      "confidence": 0.389940083026886,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2130236240",
+          "start": 614,
+          "end": 640,
+          "surface_text": "formal and informal notice",
+          "ner_label_hint": "MECHANISM",
+          "score": 0.389940083026886,
+          "normalized_form": "formal and informal notice",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:776609d0cfb3584593925faa622a1b020e1fd169da98e6da38a01cd649f2f5c7",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "raw_prediction": {
+            "start": 614,
+            "end": 640,
+            "text": "formal and informal notice",
+            "label": "mechanism",
+            "score": 0.389940083026886
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:9550d192e3ef804acea31f1e44e254f285edff96efe5794bf938a3edc1154828",
+      "document_id": "W2130236240",
+      "start": 661,
+      "end": 699,
+      "surface_text": "1984 and 1986 Displaced Worker Surveys",
+      "entity_types": [
+        "DATA_RESOURCE"
+      ],
+      "normalized_forms": [
+        "1984 and 1986 displaced worker surveys"
+      ],
+      "confidence": 0.6746293306350708,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2130236240",
+          "start": 661,
+          "end": 699,
+          "surface_text": "1984 and 1986 Displaced Worker Surveys",
+          "ner_label_hint": "DATA_RESOURCE",
+          "score": 0.6746293306350708,
+          "normalized_form": "1984 and 1986 displaced worker surveys",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:776609d0cfb3584593925faa622a1b020e1fd169da98e6da38a01cd649f2f5c7",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "raw_prediction": {
+            "start": 661,
+            "end": 699,
+            "text": "1984 and 1986 Displaced Worker Surveys",
+            "label": "data resource",
+            "score": 0.6746293306350708
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:67ab53a9bab0a0dab1607e4aeacff3476ed939d9cf51b8121dd76942894c004f",
+      "document_id": "W2130236240",
+      "start": 670,
+      "end": 699,
+      "surface_text": "1986 Displaced Worker Surveys",
+      "entity_types": [
+        "DATA_RESOURCE"
+      ],
+      "normalized_forms": [
+        "1986 displaced worker surveys"
+      ],
+      "confidence": 0.3285727798938751,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2130236240",
+          "start": 670,
+          "end": 699,
+          "surface_text": "1986 Displaced Worker Surveys",
+          "ner_label_hint": "DATA_RESOURCE",
+          "score": 0.3285727798938751,
+          "normalized_form": "1986 displaced worker surveys",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:776609d0cfb3584593925faa622a1b020e1fd169da98e6da38a01cd649f2f5c7",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "raw_prediction": {
+            "start": 670,
+            "end": 699,
+            "text": "1986 Displaced Worker Surveys",
+            "label": "data resource",
+            "score": 0.3285727798938751
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:846f2810c905b06a7232a177494e0fa907c1df6c0ac1cd5b88f9caef45e00d0d",
+      "document_id": "W2130236240",
+      "start": 675,
+      "end": 699,
+      "surface_text": "Displaced Worker Surveys",
+      "entity_types": [
+        "DATA_RESOURCE"
+      ],
+      "normalized_forms": [
+        "displaced worker surveys"
+      ],
+      "confidence": 0.7184541821479797,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2130236240",
+          "start": 675,
+          "end": 699,
+          "surface_text": "Displaced Worker Surveys",
+          "ner_label_hint": "DATA_RESOURCE",
+          "score": 0.7184541821479797,
+          "normalized_form": "displaced worker surveys",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:776609d0cfb3584593925faa622a1b020e1fd169da98e6da38a01cd649f2f5c7",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "raw_prediction": {
+            "start": 675,
+            "end": 699,
+            "text": "Displaced Worker Surveys",
+            "label": "data resource",
+            "score": 0.7184541821479797
+          }
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "triple_id": "t:29fba067586bc8b8f811d6088d409c8d03924dc75939ac4b412cfcd041b7a1e9",
+      "document_id": "W2130236240",
+      "head_id": "e:2189c7466e8f1cc9c1171c22d65e457ae9ba1725078746adb372a5c1760034e0",
+      "tail_id": "e:5afd2eb306b3ffbbcccbe162f4dc4c0b66e40deeafecab3c522ee71ec049b142",
+      "head_types": [
+        "ACTOR"
+      ],
+      "tail_types": [
+        "MECHANISM",
+        "PROCESS"
+      ],
+      "relation_type": "PERFORMS",
+      "confidence": 0.7264597415924072,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:776609d0cfb3584593925faa622a1b020e1fd169da98e6da38a01cd649f2f5c7",
+          "document_id": "W2130236240",
+          "start": 0,
+          "end": 700,
+          "text": "In their analysis of the effects of advance notification of plant closings, Nord and Ting (ILR Review, July 1991) claim that much can be expected of current legislation that mandates a 60-day prenotification standard because the outcomes of voluntary arrangements, in an interval preceding implementation of the legislation, point to substantial reductions in both joblessness and earnings losses for workers given over two months' warning of their impending layoff. They also suggest that many of the disparate results reported in the earlier plant closing literature reflect the inability to distinguish between formal and informal notice on the basis of the 1984 and 1986 Displaced Worker Surveys.",
+          "entity_ids": []
+        }
+      ]
+    }
+  ],
+  "raw_relation_count": 2,
+  "seconds": 1.1766511001624167
+}

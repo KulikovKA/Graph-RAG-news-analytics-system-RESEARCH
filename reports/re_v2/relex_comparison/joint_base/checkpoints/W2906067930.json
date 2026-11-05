@@ -1,0 +1,1334 @@
+{
+  "fingerprint": "c79845cf50e55b434eab0bcd7d45fb6779c27e093e96fa9a77b4c2f1b311bf99",
+  "document_id": "W2906067930",
+  "model": "knowledgator/gliner-relex-base-v1.0",
+  "mode": "joint",
+  "raw_windows": [
+    {
+      "window": {
+        "window_id": "w:0cb1721d318db3732e2e8d8f4b020b251797b464e81bbce20c96f17547d63e99",
+        "document_id": "W2906067930",
+        "start": 0,
+        "end": 1222,
+        "text": "The phenomenon that China's increase of grain production didn’t cause the Harvest Paradox from 2003 to 2014 occurred in the context of significant increase in domestic residents’ income and food demand, as well as loosening price and the market of grain purchase and sales. Research on the phenomenon not only enhances the understanding of the condition and mechanism for the Harvest Paradox, but also maybe offers some little reference values in solving food problems of China. Following the methods of Samuelson and Nordhaus, this paper utilizes the supply and demand theorem to study the phenomenon. The phenomenon was found it didn’t cause the loss of farmers' total income that the grain production in China had increased for 11 years from 2003 to 2014, which was inconsistent with the Harvest Paradox in economics. It resulted from non-grain price factors which caused the demand line moved in excess of the supply line. Thus the grain price rose. Grain supply policies taken by Chinese government such as the four subsidies were conducive to the Harvest Paradox. To ensure that farmers’ income increase, the demand line should get sharper move towards the upper right via the power of market or government policies.",
+        "entity_ids": []
+      },
+      "entities": [
+        {
+          "start": 40,
+          "end": 56,
+          "text": "grain production",
+          "label": "object",
+          "score": 0.5836479663848877
+        },
+        {
+          "start": 40,
+          "end": 56,
+          "text": "grain production",
+          "label": "concept",
+          "score": 0.4830838441848755
+        },
+        {
+          "start": 74,
+          "end": 89,
+          "text": "Harvest Paradox",
+          "label": "concept",
+          "score": 0.7731676697731018
+        },
+        {
+          "start": 74,
+          "end": 89,
+          "text": "Harvest Paradox",
+          "label": "condition",
+          "score": 0.31170934438705444
+        },
+        {
+          "start": 159,
+          "end": 185,
+          "text": "domestic residents’ income",
+          "label": "condition",
+          "score": 0.3249994218349457
+        },
+        {
+          "start": 190,
+          "end": 201,
+          "text": "food demand",
+          "label": "condition",
+          "score": 0.587022602558136
+        },
+        {
+          "start": 214,
+          "end": 229,
+          "text": "loosening price",
+          "label": "condition",
+          "score": 0.37780430912971497
+        },
+        {
+          "start": 274,
+          "end": 282,
+          "text": "Research",
+          "label": "method",
+          "score": 0.7148206830024719
+        },
+        {
+          "start": 274,
+          "end": 282,
+          "text": "Research",
+          "label": "task",
+          "score": 0.6888175010681152
+        },
+        {
+          "start": 447,
+          "end": 468,
+          "text": "solving food problems",
+          "label": "task",
+          "score": 0.4487280249595642
+        },
+        {
+          "start": 447,
+          "end": 477,
+          "text": "solving food problems of China",
+          "label": "task",
+          "score": 0.41067782044410706
+        },
+        {
+          "start": 504,
+          "end": 513,
+          "text": "Samuelson",
+          "label": "actor",
+          "score": 0.8636638522148132
+        },
+        {
+          "start": 504,
+          "end": 526,
+          "text": "Samuelson and Nordhaus",
+          "label": "actor",
+          "score": 0.3113473951816559
+        },
+        {
+          "start": 518,
+          "end": 526,
+          "text": "Nordhaus",
+          "label": "actor",
+          "score": 0.8002472519874573
+        },
+        {
+          "start": 552,
+          "end": 577,
+          "text": "supply and demand theorem",
+          "label": "method",
+          "score": 0.8097283840179443
+        },
+        {
+          "start": 552,
+          "end": 577,
+          "text": "supply and demand theorem",
+          "label": "concept",
+          "score": 0.5667368173599243
+        },
+        {
+          "start": 656,
+          "end": 663,
+          "text": "farmers",
+          "label": "actor",
+          "score": 0.4895322620868683
+        },
+        {
+          "start": 838,
+          "end": 861,
+          "text": "non-grain price factors",
+          "label": "condition",
+          "score": 0.9025925993919373
+        },
+        {
+          "start": 838,
+          "end": 861,
+          "text": "non-grain price factors",
+          "label": "concept",
+          "score": 0.4805099368095398
+        },
+        {
+          "start": 879,
+          "end": 890,
+          "text": "demand line",
+          "label": "concept",
+          "score": 0.42295369505882263
+        },
+        {
+          "start": 879,
+          "end": 890,
+          "text": "demand line",
+          "label": "mechanism",
+          "score": 0.41045081615448
+        },
+        {
+          "start": 936,
+          "end": 947,
+          "text": "grain price",
+          "label": "condition",
+          "score": 0.3498340845108032
+        },
+        {
+          "start": 954,
+          "end": 975,
+          "text": "Grain supply policies",
+          "label": "concept",
+          "score": 0.3117252290248871
+        },
+        {
+          "start": 985,
+          "end": 1003,
+          "text": "Chinese government",
+          "label": "actor",
+          "score": 0.6751366257667542
+        }
+      ],
+      "predictions": [
+        {
+          "head": {
+            "start": 504,
+            "end": 513,
+            "text": "Samuelson",
+            "type": "actor",
+            "entity_idx": 11
+          },
+          "tail": {
+            "start": 552,
+            "end": 577,
+            "text": "supply and demand theorem",
+            "type": "method",
+            "entity_idx": 14
+          },
+          "relation": "uses",
+          "score": 0.7674276232719421
+        },
+        {
+          "head": {
+            "start": 504,
+            "end": 513,
+            "text": "Samuelson",
+            "type": "actor",
+            "entity_idx": 11
+          },
+          "tail": {
+            "start": 552,
+            "end": 577,
+            "text": "supply and demand theorem",
+            "type": "method",
+            "entity_idx": 14
+          },
+          "relation": "uses",
+          "score": 0.7674276232719421
+        },
+        {
+          "head": {
+            "start": 504,
+            "end": 526,
+            "text": "Samuelson and Nordhaus",
+            "type": "actor",
+            "entity_idx": 12
+          },
+          "tail": {
+            "start": 552,
+            "end": 577,
+            "text": "supply and demand theorem",
+            "type": "method",
+            "entity_idx": 14
+          },
+          "relation": "uses",
+          "score": 0.7773498892784119
+        },
+        {
+          "head": {
+            "start": 504,
+            "end": 526,
+            "text": "Samuelson and Nordhaus",
+            "type": "actor",
+            "entity_idx": 12
+          },
+          "tail": {
+            "start": 552,
+            "end": 577,
+            "text": "supply and demand theorem",
+            "type": "method",
+            "entity_idx": 14
+          },
+          "relation": "uses",
+          "score": 0.7773498892784119
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "e:75ed85a03ed27120794499993ee90469b2bef823c12ea68de8d9ba0de8dc73be",
+      "document_id": "W2906067930",
+      "start": 40,
+      "end": 56,
+      "surface_text": "grain production",
+      "entity_types": [
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "grain production"
+      ],
+      "confidence": 0.5836479663848877,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2906067930",
+          "start": 40,
+          "end": 56,
+          "surface_text": "grain production",
+          "ner_label_hint": "OBJECT",
+          "score": 0.5836479663848877,
+          "normalized_form": "grain production",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:0cb1721d318db3732e2e8d8f4b020b251797b464e81bbce20c96f17547d63e99",
+          "revision_id": "sha256:7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2906067930",
+            "doi": "https://doi.org/10.11648/j.ijber.20180706.16",
+            "landing_page_url": "https://article.sciencepublishinggroup.com/pdf/10.11648.j.ijber.20180706.16.pdf",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W2906067930",
+            "text_sha256": "7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd"
+          },
+          "raw_prediction": {
+            "start": 40,
+            "end": 56,
+            "text": "grain production",
+            "label": "object",
+            "score": 0.5836479663848877
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2906067930",
+          "start": 40,
+          "end": 56,
+          "surface_text": "grain production",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.4830838441848755,
+          "normalized_form": "grain production",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:0cb1721d318db3732e2e8d8f4b020b251797b464e81bbce20c96f17547d63e99",
+          "revision_id": "sha256:7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2906067930",
+            "doi": "https://doi.org/10.11648/j.ijber.20180706.16",
+            "landing_page_url": "https://article.sciencepublishinggroup.com/pdf/10.11648.j.ijber.20180706.16.pdf",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W2906067930",
+            "text_sha256": "7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd"
+          },
+          "raw_prediction": {
+            "start": 40,
+            "end": 56,
+            "text": "grain production",
+            "label": "concept",
+            "score": 0.4830838441848755
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:e51c4d3ebfe6df80119a8a6b8f72726d306bf1876375bfeba12e3372805dc9e5",
+      "document_id": "W2906067930",
+      "start": 74,
+      "end": 89,
+      "surface_text": "Harvest Paradox",
+      "entity_types": [
+        "CONCEPT",
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "harvest paradox"
+      ],
+      "confidence": 0.7731676697731018,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2906067930",
+          "start": 74,
+          "end": 89,
+          "surface_text": "Harvest Paradox",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.7731676697731018,
+          "normalized_form": "harvest paradox",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:0cb1721d318db3732e2e8d8f4b020b251797b464e81bbce20c96f17547d63e99",
+          "revision_id": "sha256:7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2906067930",
+            "doi": "https://doi.org/10.11648/j.ijber.20180706.16",
+            "landing_page_url": "https://article.sciencepublishinggroup.com/pdf/10.11648.j.ijber.20180706.16.pdf",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W2906067930",
+            "text_sha256": "7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd"
+          },
+          "raw_prediction": {
+            "start": 74,
+            "end": 89,
+            "text": "Harvest Paradox",
+            "label": "concept",
+            "score": 0.7731676697731018
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2906067930",
+          "start": 74,
+          "end": 89,
+          "surface_text": "Harvest Paradox",
+          "ner_label_hint": "CONDITION",
+          "score": 0.31170934438705444,
+          "normalized_form": "harvest paradox",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:0cb1721d318db3732e2e8d8f4b020b251797b464e81bbce20c96f17547d63e99",
+          "revision_id": "sha256:7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2906067930",
+            "doi": "https://doi.org/10.11648/j.ijber.20180706.16",
+            "landing_page_url": "https://article.sciencepublishinggroup.com/pdf/10.11648.j.ijber.20180706.16.pdf",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W2906067930",
+            "text_sha256": "7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd"
+          },
+          "raw_prediction": {
+            "start": 74,
+            "end": 89,
+            "text": "Harvest Paradox",
+            "label": "condition",
+            "score": 0.31170934438705444
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:5cff38b9ff4650a7462f7c1746dfde8122a2742ed25470e0056cd9efb51e9ba0",
+      "document_id": "W2906067930",
+      "start": 159,
+      "end": 185,
+      "surface_text": "domestic residents’ income",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "domestic residents’ income"
+      ],
+      "confidence": 0.3249994218349457,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2906067930",
+          "start": 159,
+          "end": 185,
+          "surface_text": "domestic residents’ income",
+          "ner_label_hint": "CONDITION",
+          "score": 0.3249994218349457,
+          "normalized_form": "domestic residents’ income",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:0cb1721d318db3732e2e8d8f4b020b251797b464e81bbce20c96f17547d63e99",
+          "revision_id": "sha256:7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2906067930",
+            "doi": "https://doi.org/10.11648/j.ijber.20180706.16",
+            "landing_page_url": "https://article.sciencepublishinggroup.com/pdf/10.11648.j.ijber.20180706.16.pdf",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W2906067930",
+            "text_sha256": "7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd"
+          },
+          "raw_prediction": {
+            "start": 159,
+            "end": 185,
+            "text": "domestic residents’ income",
+            "label": "condition",
+            "score": 0.3249994218349457
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:fb922444e6fc015bc2513b6ed9567b76231d8b62d45f3101d7e691e4b981bc40",
+      "document_id": "W2906067930",
+      "start": 190,
+      "end": 201,
+      "surface_text": "food demand",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "food demand"
+      ],
+      "confidence": 0.587022602558136,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2906067930",
+          "start": 190,
+          "end": 201,
+          "surface_text": "food demand",
+          "ner_label_hint": "CONDITION",
+          "score": 0.587022602558136,
+          "normalized_form": "food demand",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:0cb1721d318db3732e2e8d8f4b020b251797b464e81bbce20c96f17547d63e99",
+          "revision_id": "sha256:7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2906067930",
+            "doi": "https://doi.org/10.11648/j.ijber.20180706.16",
+            "landing_page_url": "https://article.sciencepublishinggroup.com/pdf/10.11648.j.ijber.20180706.16.pdf",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W2906067930",
+            "text_sha256": "7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd"
+          },
+          "raw_prediction": {
+            "start": 190,
+            "end": 201,
+            "text": "food demand",
+            "label": "condition",
+            "score": 0.587022602558136
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a1889131bf005310546a81c8abe56bfe08b83c3aa5b1fd572636cd8b4e40bdda",
+      "document_id": "W2906067930",
+      "start": 214,
+      "end": 229,
+      "surface_text": "loosening price",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "loosening price"
+      ],
+      "confidence": 0.37780430912971497,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2906067930",
+          "start": 214,
+          "end": 229,
+          "surface_text": "loosening price",
+          "ner_label_hint": "CONDITION",
+          "score": 0.37780430912971497,
+          "normalized_form": "loosening price",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:0cb1721d318db3732e2e8d8f4b020b251797b464e81bbce20c96f17547d63e99",
+          "revision_id": "sha256:7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2906067930",
+            "doi": "https://doi.org/10.11648/j.ijber.20180706.16",
+            "landing_page_url": "https://article.sciencepublishinggroup.com/pdf/10.11648.j.ijber.20180706.16.pdf",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W2906067930",
+            "text_sha256": "7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd"
+          },
+          "raw_prediction": {
+            "start": 214,
+            "end": 229,
+            "text": "loosening price",
+            "label": "condition",
+            "score": 0.37780430912971497
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:aa7a76d93220c6ff0b49689f2fa91a8c61f29372cf6d079c4b2c6c34fd6c4263",
+      "document_id": "W2906067930",
+      "start": 274,
+      "end": 282,
+      "surface_text": "Research",
+      "entity_types": [
+        "METHOD",
+        "TASK"
+      ],
+      "normalized_forms": [
+        "research"
+      ],
+      "confidence": 0.7148206830024719,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2906067930",
+          "start": 274,
+          "end": 282,
+          "surface_text": "Research",
+          "ner_label_hint": "METHOD",
+          "score": 0.7148206830024719,
+          "normalized_form": "research",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:0cb1721d318db3732e2e8d8f4b020b251797b464e81bbce20c96f17547d63e99",
+          "revision_id": "sha256:7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2906067930",
+            "doi": "https://doi.org/10.11648/j.ijber.20180706.16",
+            "landing_page_url": "https://article.sciencepublishinggroup.com/pdf/10.11648.j.ijber.20180706.16.pdf",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W2906067930",
+            "text_sha256": "7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd"
+          },
+          "raw_prediction": {
+            "start": 274,
+            "end": 282,
+            "text": "Research",
+            "label": "method",
+            "score": 0.7148206830024719
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2906067930",
+          "start": 274,
+          "end": 282,
+          "surface_text": "Research",
+          "ner_label_hint": "TASK",
+          "score": 0.6888175010681152,
+          "normalized_form": "research",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:0cb1721d318db3732e2e8d8f4b020b251797b464e81bbce20c96f17547d63e99",
+          "revision_id": "sha256:7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2906067930",
+            "doi": "https://doi.org/10.11648/j.ijber.20180706.16",
+            "landing_page_url": "https://article.sciencepublishinggroup.com/pdf/10.11648.j.ijber.20180706.16.pdf",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W2906067930",
+            "text_sha256": "7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd"
+          },
+          "raw_prediction": {
+            "start": 274,
+            "end": 282,
+            "text": "Research",
+            "label": "task",
+            "score": 0.6888175010681152
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:9b5530a36a0f0bc94e7f8e986a27ab8b34f887947d52d818679ad14bcaba73ba",
+      "document_id": "W2906067930",
+      "start": 447,
+      "end": 468,
+      "surface_text": "solving food problems",
+      "entity_types": [
+        "TASK"
+      ],
+      "normalized_forms": [
+        "solving food problems"
+      ],
+      "confidence": 0.4487280249595642,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2906067930",
+          "start": 447,
+          "end": 468,
+          "surface_text": "solving food problems",
+          "ner_label_hint": "TASK",
+          "score": 0.4487280249595642,
+          "normalized_form": "solving food problems",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:0cb1721d318db3732e2e8d8f4b020b251797b464e81bbce20c96f17547d63e99",
+          "revision_id": "sha256:7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2906067930",
+            "doi": "https://doi.org/10.11648/j.ijber.20180706.16",
+            "landing_page_url": "https://article.sciencepublishinggroup.com/pdf/10.11648.j.ijber.20180706.16.pdf",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W2906067930",
+            "text_sha256": "7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd"
+          },
+          "raw_prediction": {
+            "start": 447,
+            "end": 468,
+            "text": "solving food problems",
+            "label": "task",
+            "score": 0.4487280249595642
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:ea89d79ca5575087bc364415bde1b5e1d9bf9044ada8ef4d1e036f6e77541544",
+      "document_id": "W2906067930",
+      "start": 447,
+      "end": 477,
+      "surface_text": "solving food problems of China",
+      "entity_types": [
+        "TASK"
+      ],
+      "normalized_forms": [
+        "solving food problems of china"
+      ],
+      "confidence": 0.41067782044410706,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2906067930",
+          "start": 447,
+          "end": 477,
+          "surface_text": "solving food problems of China",
+          "ner_label_hint": "TASK",
+          "score": 0.41067782044410706,
+          "normalized_form": "solving food problems of china",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:0cb1721d318db3732e2e8d8f4b020b251797b464e81bbce20c96f17547d63e99",
+          "revision_id": "sha256:7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2906067930",
+            "doi": "https://doi.org/10.11648/j.ijber.20180706.16",
+            "landing_page_url": "https://article.sciencepublishinggroup.com/pdf/10.11648.j.ijber.20180706.16.pdf",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W2906067930",
+            "text_sha256": "7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd"
+          },
+          "raw_prediction": {
+            "start": 447,
+            "end": 477,
+            "text": "solving food problems of China",
+            "label": "task",
+            "score": 0.41067782044410706
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:45d9a10871713271353e32f779564374b42ad4e45291d26069639392737c75a4",
+      "document_id": "W2906067930",
+      "start": 504,
+      "end": 513,
+      "surface_text": "Samuelson",
+      "entity_types": [
+        "ACTOR"
+      ],
+      "normalized_forms": [
+        "samuelson"
+      ],
+      "confidence": 0.8636638522148132,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2906067930",
+          "start": 504,
+          "end": 513,
+          "surface_text": "Samuelson",
+          "ner_label_hint": "ACTOR",
+          "score": 0.8636638522148132,
+          "normalized_form": "samuelson",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:0cb1721d318db3732e2e8d8f4b020b251797b464e81bbce20c96f17547d63e99",
+          "revision_id": "sha256:7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2906067930",
+            "doi": "https://doi.org/10.11648/j.ijber.20180706.16",
+            "landing_page_url": "https://article.sciencepublishinggroup.com/pdf/10.11648.j.ijber.20180706.16.pdf",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W2906067930",
+            "text_sha256": "7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd"
+          },
+          "raw_prediction": {
+            "start": 504,
+            "end": 513,
+            "text": "Samuelson",
+            "label": "actor",
+            "score": 0.8636638522148132
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:13204ef720da15d6ed2db03010377f35053b962d856c85b55a8d4fb0cd8d84f1",
+      "document_id": "W2906067930",
+      "start": 504,
+      "end": 526,
+      "surface_text": "Samuelson and Nordhaus",
+      "entity_types": [
+        "ACTOR"
+      ],
+      "normalized_forms": [
+        "samuelson and nordhaus"
+      ],
+      "confidence": 0.3113473951816559,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2906067930",
+          "start": 504,
+          "end": 526,
+          "surface_text": "Samuelson and Nordhaus",
+          "ner_label_hint": "ACTOR",
+          "score": 0.3113473951816559,
+          "normalized_form": "samuelson and nordhaus",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:0cb1721d318db3732e2e8d8f4b020b251797b464e81bbce20c96f17547d63e99",
+          "revision_id": "sha256:7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2906067930",
+            "doi": "https://doi.org/10.11648/j.ijber.20180706.16",
+            "landing_page_url": "https://article.sciencepublishinggroup.com/pdf/10.11648.j.ijber.20180706.16.pdf",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W2906067930",
+            "text_sha256": "7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd"
+          },
+          "raw_prediction": {
+            "start": 504,
+            "end": 526,
+            "text": "Samuelson and Nordhaus",
+            "label": "actor",
+            "score": 0.3113473951816559
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:1acd5b7f893b52bd3dd0c13d8f62980f3ca58ebc3cf46e3bd863b72d2d83b18f",
+      "document_id": "W2906067930",
+      "start": 518,
+      "end": 526,
+      "surface_text": "Nordhaus",
+      "entity_types": [
+        "ACTOR"
+      ],
+      "normalized_forms": [
+        "nordhaus"
+      ],
+      "confidence": 0.8002472519874573,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2906067930",
+          "start": 518,
+          "end": 526,
+          "surface_text": "Nordhaus",
+          "ner_label_hint": "ACTOR",
+          "score": 0.8002472519874573,
+          "normalized_form": "nordhaus",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:0cb1721d318db3732e2e8d8f4b020b251797b464e81bbce20c96f17547d63e99",
+          "revision_id": "sha256:7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2906067930",
+            "doi": "https://doi.org/10.11648/j.ijber.20180706.16",
+            "landing_page_url": "https://article.sciencepublishinggroup.com/pdf/10.11648.j.ijber.20180706.16.pdf",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W2906067930",
+            "text_sha256": "7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd"
+          },
+          "raw_prediction": {
+            "start": 518,
+            "end": 526,
+            "text": "Nordhaus",
+            "label": "actor",
+            "score": 0.8002472519874573
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:87a8f0fe54a1859d65036e695ec1e5d0c81c3e1dc6d1450d501b8593c5a07b93",
+      "document_id": "W2906067930",
+      "start": 552,
+      "end": 577,
+      "surface_text": "supply and demand theorem",
+      "entity_types": [
+        "CONCEPT",
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "supply and demand theorem"
+      ],
+      "confidence": 0.8097283840179443,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2906067930",
+          "start": 552,
+          "end": 577,
+          "surface_text": "supply and demand theorem",
+          "ner_label_hint": "METHOD",
+          "score": 0.8097283840179443,
+          "normalized_form": "supply and demand theorem",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:0cb1721d318db3732e2e8d8f4b020b251797b464e81bbce20c96f17547d63e99",
+          "revision_id": "sha256:7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2906067930",
+            "doi": "https://doi.org/10.11648/j.ijber.20180706.16",
+            "landing_page_url": "https://article.sciencepublishinggroup.com/pdf/10.11648.j.ijber.20180706.16.pdf",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W2906067930",
+            "text_sha256": "7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd"
+          },
+          "raw_prediction": {
+            "start": 552,
+            "end": 577,
+            "text": "supply and demand theorem",
+            "label": "method",
+            "score": 0.8097283840179443
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2906067930",
+          "start": 552,
+          "end": 577,
+          "surface_text": "supply and demand theorem",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.5667368173599243,
+          "normalized_form": "supply and demand theorem",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:0cb1721d318db3732e2e8d8f4b020b251797b464e81bbce20c96f17547d63e99",
+          "revision_id": "sha256:7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2906067930",
+            "doi": "https://doi.org/10.11648/j.ijber.20180706.16",
+            "landing_page_url": "https://article.sciencepublishinggroup.com/pdf/10.11648.j.ijber.20180706.16.pdf",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W2906067930",
+            "text_sha256": "7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd"
+          },
+          "raw_prediction": {
+            "start": 552,
+            "end": 577,
+            "text": "supply and demand theorem",
+            "label": "concept",
+            "score": 0.5667368173599243
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:1a707af151fa45fd244632076f025619ab58d483b857b1affc21a3948fc6e0ed",
+      "document_id": "W2906067930",
+      "start": 656,
+      "end": 663,
+      "surface_text": "farmers",
+      "entity_types": [
+        "ACTOR"
+      ],
+      "normalized_forms": [
+        "farmers"
+      ],
+      "confidence": 0.4895322620868683,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2906067930",
+          "start": 656,
+          "end": 663,
+          "surface_text": "farmers",
+          "ner_label_hint": "ACTOR",
+          "score": 0.4895322620868683,
+          "normalized_form": "farmers",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:0cb1721d318db3732e2e8d8f4b020b251797b464e81bbce20c96f17547d63e99",
+          "revision_id": "sha256:7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2906067930",
+            "doi": "https://doi.org/10.11648/j.ijber.20180706.16",
+            "landing_page_url": "https://article.sciencepublishinggroup.com/pdf/10.11648.j.ijber.20180706.16.pdf",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W2906067930",
+            "text_sha256": "7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd"
+          },
+          "raw_prediction": {
+            "start": 656,
+            "end": 663,
+            "text": "farmers",
+            "label": "actor",
+            "score": 0.4895322620868683
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:ee9924fa0282d2c52fcea8eb1a2ad265ae7614c5fa99c2607961d52fe3109497",
+      "document_id": "W2906067930",
+      "start": 838,
+      "end": 861,
+      "surface_text": "non-grain price factors",
+      "entity_types": [
+        "CONCEPT",
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "non-grain price factors"
+      ],
+      "confidence": 0.9025925993919373,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2906067930",
+          "start": 838,
+          "end": 861,
+          "surface_text": "non-grain price factors",
+          "ner_label_hint": "CONDITION",
+          "score": 0.9025925993919373,
+          "normalized_form": "non-grain price factors",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:0cb1721d318db3732e2e8d8f4b020b251797b464e81bbce20c96f17547d63e99",
+          "revision_id": "sha256:7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2906067930",
+            "doi": "https://doi.org/10.11648/j.ijber.20180706.16",
+            "landing_page_url": "https://article.sciencepublishinggroup.com/pdf/10.11648.j.ijber.20180706.16.pdf",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W2906067930",
+            "text_sha256": "7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd"
+          },
+          "raw_prediction": {
+            "start": 838,
+            "end": 861,
+            "text": "non-grain price factors",
+            "label": "condition",
+            "score": 0.9025925993919373
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2906067930",
+          "start": 838,
+          "end": 861,
+          "surface_text": "non-grain price factors",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.4805099368095398,
+          "normalized_form": "non-grain price factors",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:0cb1721d318db3732e2e8d8f4b020b251797b464e81bbce20c96f17547d63e99",
+          "revision_id": "sha256:7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2906067930",
+            "doi": "https://doi.org/10.11648/j.ijber.20180706.16",
+            "landing_page_url": "https://article.sciencepublishinggroup.com/pdf/10.11648.j.ijber.20180706.16.pdf",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W2906067930",
+            "text_sha256": "7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd"
+          },
+          "raw_prediction": {
+            "start": 838,
+            "end": 861,
+            "text": "non-grain price factors",
+            "label": "concept",
+            "score": 0.4805099368095398
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d50cd1d9ce13e25008350629d99a717b86d879ae9c5673551d0dee49ef7ccd6d",
+      "document_id": "W2906067930",
+      "start": 879,
+      "end": 890,
+      "surface_text": "demand line",
+      "entity_types": [
+        "CONCEPT",
+        "MECHANISM"
+      ],
+      "normalized_forms": [
+        "demand line"
+      ],
+      "confidence": 0.42295369505882263,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2906067930",
+          "start": 879,
+          "end": 890,
+          "surface_text": "demand line",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.42295369505882263,
+          "normalized_form": "demand line",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:0cb1721d318db3732e2e8d8f4b020b251797b464e81bbce20c96f17547d63e99",
+          "revision_id": "sha256:7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2906067930",
+            "doi": "https://doi.org/10.11648/j.ijber.20180706.16",
+            "landing_page_url": "https://article.sciencepublishinggroup.com/pdf/10.11648.j.ijber.20180706.16.pdf",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W2906067930",
+            "text_sha256": "7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd"
+          },
+          "raw_prediction": {
+            "start": 879,
+            "end": 890,
+            "text": "demand line",
+            "label": "concept",
+            "score": 0.42295369505882263
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2906067930",
+          "start": 879,
+          "end": 890,
+          "surface_text": "demand line",
+          "ner_label_hint": "MECHANISM",
+          "score": 0.41045081615448,
+          "normalized_form": "demand line",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:0cb1721d318db3732e2e8d8f4b020b251797b464e81bbce20c96f17547d63e99",
+          "revision_id": "sha256:7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2906067930",
+            "doi": "https://doi.org/10.11648/j.ijber.20180706.16",
+            "landing_page_url": "https://article.sciencepublishinggroup.com/pdf/10.11648.j.ijber.20180706.16.pdf",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W2906067930",
+            "text_sha256": "7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd"
+          },
+          "raw_prediction": {
+            "start": 879,
+            "end": 890,
+            "text": "demand line",
+            "label": "mechanism",
+            "score": 0.41045081615448
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:7c0a7acd907e30a5cc5ae5829c04664923786167f9e9702f48f9e2132f766ea1",
+      "document_id": "W2906067930",
+      "start": 936,
+      "end": 947,
+      "surface_text": "grain price",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "grain price"
+      ],
+      "confidence": 0.3498340845108032,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2906067930",
+          "start": 936,
+          "end": 947,
+          "surface_text": "grain price",
+          "ner_label_hint": "CONDITION",
+          "score": 0.3498340845108032,
+          "normalized_form": "grain price",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:0cb1721d318db3732e2e8d8f4b020b251797b464e81bbce20c96f17547d63e99",
+          "revision_id": "sha256:7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2906067930",
+            "doi": "https://doi.org/10.11648/j.ijber.20180706.16",
+            "landing_page_url": "https://article.sciencepublishinggroup.com/pdf/10.11648.j.ijber.20180706.16.pdf",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W2906067930",
+            "text_sha256": "7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd"
+          },
+          "raw_prediction": {
+            "start": 936,
+            "end": 947,
+            "text": "grain price",
+            "label": "condition",
+            "score": 0.3498340845108032
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:8a436d6cc9b36a82bb65adbec131e3bacb861c3b5097f1dc98a3ec1e5bf791ca",
+      "document_id": "W2906067930",
+      "start": 954,
+      "end": 975,
+      "surface_text": "Grain supply policies",
+      "entity_types": [
+        "CONCEPT"
+      ],
+      "normalized_forms": [
+        "grain supply policies"
+      ],
+      "confidence": 0.3117252290248871,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2906067930",
+          "start": 954,
+          "end": 975,
+          "surface_text": "Grain supply policies",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.3117252290248871,
+          "normalized_form": "grain supply policies",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:0cb1721d318db3732e2e8d8f4b020b251797b464e81bbce20c96f17547d63e99",
+          "revision_id": "sha256:7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2906067930",
+            "doi": "https://doi.org/10.11648/j.ijber.20180706.16",
+            "landing_page_url": "https://article.sciencepublishinggroup.com/pdf/10.11648.j.ijber.20180706.16.pdf",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W2906067930",
+            "text_sha256": "7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd"
+          },
+          "raw_prediction": {
+            "start": 954,
+            "end": 975,
+            "text": "Grain supply policies",
+            "label": "concept",
+            "score": 0.3117252290248871
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:6d29c9d21254a6771ae3c36ab2eff7d091515ab72cbaa34b8a28f94acb5ce3ea",
+      "document_id": "W2906067930",
+      "start": 985,
+      "end": 1003,
+      "surface_text": "Chinese government",
+      "entity_types": [
+        "ACTOR"
+      ],
+      "normalized_forms": [
+        "chinese government"
+      ],
+      "confidence": 0.6751366257667542,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2906067930",
+          "start": 985,
+          "end": 1003,
+          "surface_text": "Chinese government",
+          "ner_label_hint": "ACTOR",
+          "score": 0.6751366257667542,
+          "normalized_form": "chinese government",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:0cb1721d318db3732e2e8d8f4b020b251797b464e81bbce20c96f17547d63e99",
+          "revision_id": "sha256:7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2906067930",
+            "doi": "https://doi.org/10.11648/j.ijber.20180706.16",
+            "landing_page_url": "https://article.sciencepublishinggroup.com/pdf/10.11648.j.ijber.20180706.16.pdf",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W2906067930",
+            "text_sha256": "7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd"
+          },
+          "raw_prediction": {
+            "start": 985,
+            "end": 1003,
+            "text": "Chinese government",
+            "label": "actor",
+            "score": 0.6751366257667542
+          }
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "triple_id": "t:009b3a484a6c6b04f8b071c6bd6e21dc0bb04d4da1b7f91ba3297581e34c8162",
+      "document_id": "W2906067930",
+      "head_id": "e:13204ef720da15d6ed2db03010377f35053b962d856c85b55a8d4fb0cd8d84f1",
+      "tail_id": "e:87a8f0fe54a1859d65036e695ec1e5d0c81c3e1dc6d1450d501b8593c5a07b93",
+      "head_types": [
+        "ACTOR"
+      ],
+      "tail_types": [
+        "CONCEPT",
+        "METHOD"
+      ],
+      "relation_type": "USES",
+      "confidence": 0.7773498892784119,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:0cb1721d318db3732e2e8d8f4b020b251797b464e81bbce20c96f17547d63e99",
+          "document_id": "W2906067930",
+          "start": 0,
+          "end": 1222,
+          "text": "The phenomenon that China's increase of grain production didn’t cause the Harvest Paradox from 2003 to 2014 occurred in the context of significant increase in domestic residents’ income and food demand, as well as loosening price and the market of grain purchase and sales. Research on the phenomenon not only enhances the understanding of the condition and mechanism for the Harvest Paradox, but also maybe offers some little reference values in solving food problems of China. Following the methods of Samuelson and Nordhaus, this paper utilizes the supply and demand theorem to study the phenomenon. The phenomenon was found it didn’t cause the loss of farmers' total income that the grain production in China had increased for 11 years from 2003 to 2014, which was inconsistent with the Harvest Paradox in economics. It resulted from non-grain price factors which caused the demand line moved in excess of the supply line. Thus the grain price rose. Grain supply policies taken by Chinese government such as the four subsidies were conducive to the Harvest Paradox. To ensure that farmers’ income increase, the demand line should get sharper move towards the upper right via the power of market or government policies.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:2621a893eb10fd45bb04be7ae691de4fa8c5f8b8dda9f5d82bcde29faa73aff4",
+      "document_id": "W2906067930",
+      "head_id": "e:45d9a10871713271353e32f779564374b42ad4e45291d26069639392737c75a4",
+      "tail_id": "e:87a8f0fe54a1859d65036e695ec1e5d0c81c3e1dc6d1450d501b8593c5a07b93",
+      "head_types": [
+        "ACTOR"
+      ],
+      "tail_types": [
+        "CONCEPT",
+        "METHOD"
+      ],
+      "relation_type": "USES",
+      "confidence": 0.7674276232719421,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:0cb1721d318db3732e2e8d8f4b020b251797b464e81bbce20c96f17547d63e99",
+          "document_id": "W2906067930",
+          "start": 0,
+          "end": 1222,
+          "text": "The phenomenon that China's increase of grain production didn’t cause the Harvest Paradox from 2003 to 2014 occurred in the context of significant increase in domestic residents’ income and food demand, as well as loosening price and the market of grain purchase and sales. Research on the phenomenon not only enhances the understanding of the condition and mechanism for the Harvest Paradox, but also maybe offers some little reference values in solving food problems of China. Following the methods of Samuelson and Nordhaus, this paper utilizes the supply and demand theorem to study the phenomenon. The phenomenon was found it didn’t cause the loss of farmers' total income that the grain production in China had increased for 11 years from 2003 to 2014, which was inconsistent with the Harvest Paradox in economics. It resulted from non-grain price factors which caused the demand line moved in excess of the supply line. Thus the grain price rose. Grain supply policies taken by Chinese government such as the four subsidies were conducive to the Harvest Paradox. To ensure that farmers’ income increase, the demand line should get sharper move towards the upper right via the power of market or government policies.",
+          "entity_ids": []
+        }
+      ]
+    }
+  ],
+  "raw_relation_count": 4,
+  "seconds": 1.8464759001508355
+}

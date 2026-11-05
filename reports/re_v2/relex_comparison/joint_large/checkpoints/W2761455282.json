@@ -1,0 +1,1995 @@
+{
+  "fingerprint": "c79845cf50e55b434eab0bcd7d45fb6779c27e093e96fa9a77b4c2f1b311bf99",
+  "document_id": "W2761455282",
+  "model": "knowledgator/gliner-relex-large-v1.0",
+  "mode": "joint",
+  "raw_windows": [
+    {
+      "window": {
+        "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+        "document_id": "W2761455282",
+        "start": 0,
+        "end": 1883,
+        "text": "BACKGROUND: Total hip arthroplasty in patients with end-stage renal disease (ESRD) may be associated with a high complication rate. However, the perioperative complication and mortality rates in these patients after total knee arthroplasty (TKA) have rarely been investigated. The purposes of this study were to measure the mortality and complication rates and to evaluate the 2- to 10-year clinical outcome of TKA in dialysis patients at our hospital during the past decade. METHODS: We retrospectively assessed 21 patients (26 knees) with ESRD who underwent primary TKA between 2007 and 2015. A preoperative medical evaluation was performed in all patients to assess the risk of surgery. All patients had complete clinical and radiographic evaluations, and the outcome was scored using American Knee Society Scores and the Western Ontario and McMaster Universities Arthritis Index. Perioperative complications and mortality were recorded. RESULTS: One patient died of stroke 1 year after surgery (4.8% mortality). The mean follow-up period of other 20 patients was 5.8 years (69.7 months, 24 to 119 months). Six patients (28.5%) had medical complications, including pneumonia (n = 3), stroke (n = 2), and cardiovascular events (n = 3), after discharge from hospital. At the latest follow-up, 19 patients (90.5%) had improved clinical outcomes of the knee after TKA according to the American Knee Society Scores (P < .01) and Western Ontario and McMaster Universities Arthritis Index scores (P < .01). CONCLUSION: Our study showed that TKA was a valid option for dialysis patients after careful preoperative evaluation. Most patients had an improved clinical outcome. There were no instances of prosthetic loosening or deep infection. However, dialysis patients under consideration for TKA need to be informed of the risk of possible medical complications due to the nature of ESRD.",
+        "entity_ids": []
+      },
+      "entities": [
+        {
+          "start": 12,
+          "end": 34,
+          "text": "Total hip arthroplasty",
+          "label": "condition",
+          "score": 0.925154983997345
+        },
+        {
+          "start": 12,
+          "end": 34,
+          "text": "Total hip arthroplasty",
+          "label": "process",
+          "score": 0.34844449162483215
+        },
+        {
+          "start": 52,
+          "end": 82,
+          "text": "end-stage renal disease (ESRD)",
+          "label": "condition",
+          "score": 0.9880267381668091
+        },
+        {
+          "start": 52,
+          "end": 75,
+          "text": "end-stage renal disease",
+          "label": "condition",
+          "score": 0.6588958501815796
+        },
+        {
+          "start": 77,
+          "end": 81,
+          "text": "ESRD",
+          "label": "condition",
+          "score": 0.81793212890625
+        },
+        {
+          "start": 77,
+          "end": 82,
+          "text": "ESRD)",
+          "label": "condition",
+          "score": 0.4159298241138458
+        },
+        {
+          "start": 108,
+          "end": 130,
+          "text": "high complication rate",
+          "label": "condition",
+          "score": 0.9543327689170837
+        },
+        {
+          "start": 108,
+          "end": 130,
+          "text": "high complication rate",
+          "label": "attribute",
+          "score": 0.6013980507850647
+        },
+        {
+          "start": 108,
+          "end": 130,
+          "text": "high complication rate",
+          "label": "result",
+          "score": 0.3277044892311096
+        },
+        {
+          "start": 176,
+          "end": 185,
+          "text": "mortality",
+          "label": "result",
+          "score": 0.5605513453483582
+        },
+        {
+          "start": 176,
+          "end": 191,
+          "text": "mortality rates",
+          "label": "result",
+          "score": 0.42700764536857605
+        },
+        {
+          "start": 216,
+          "end": 245,
+          "text": "total knee arthroplasty (TKA)",
+          "label": "condition",
+          "score": 0.7747416496276855
+        },
+        {
+          "start": 216,
+          "end": 239,
+          "text": "total knee arthroplasty",
+          "label": "condition",
+          "score": 0.5258415937423706
+        },
+        {
+          "start": 241,
+          "end": 244,
+          "text": "TKA",
+          "label": "process",
+          "score": 0.36700302362442017
+        },
+        {
+          "start": 560,
+          "end": 571,
+          "text": "primary TKA",
+          "label": "process",
+          "score": 0.4271318018436432
+        },
+        {
+          "start": 597,
+          "end": 628,
+          "text": "preoperative medical evaluation",
+          "label": "process",
+          "score": 0.7305869460105896
+        },
+        {
+          "start": 788,
+          "end": 816,
+          "text": "American Knee Society Scores",
+          "label": "method",
+          "score": 0.9941065311431885
+        },
+        {
+          "start": 788,
+          "end": 816,
+          "text": "American Knee Society Scores",
+          "label": "data resource",
+          "score": 0.5419604778289795
+        },
+        {
+          "start": 825,
+          "end": 882,
+          "text": "Western Ontario and McMaster Universities Arthritis Index",
+          "label": "method",
+          "score": 0.9820265173912048
+        },
+        {
+          "start": 825,
+          "end": 882,
+          "text": "Western Ontario and McMaster Universities Arthritis Index",
+          "label": "data resource",
+          "score": 0.6405404210090637
+        },
+        {
+          "start": 970,
+          "end": 976,
+          "text": "stroke",
+          "label": "condition",
+          "score": 0.9194528460502625
+        },
+        {
+          "start": 999,
+          "end": 1003,
+          "text": "4.8%",
+          "label": "result",
+          "score": 0.9018737077713013
+        },
+        {
+          "start": 999,
+          "end": 1013,
+          "text": "4.8% mortality",
+          "label": "result",
+          "score": 0.8307051062583923
+        },
+        {
+          "start": 1067,
+          "end": 1076,
+          "text": "5.8 years",
+          "label": "result",
+          "score": 0.49803319573402405
+        },
+        {
+          "start": 1078,
+          "end": 1089,
+          "text": "69.7 months",
+          "label": "result",
+          "score": 0.4691242575645447
+        },
+        {
+          "start": 1124,
+          "end": 1129,
+          "text": "28.5%",
+          "label": "result",
+          "score": 0.39311859011650085
+        },
+        {
+          "start": 1135,
+          "end": 1156,
+          "text": "medical complications",
+          "label": "condition",
+          "score": 0.3353426456451416
+        },
+        {
+          "start": 1168,
+          "end": 1177,
+          "text": "pneumonia",
+          "label": "condition",
+          "score": 0.7976112961769104
+        },
+        {
+          "start": 1207,
+          "end": 1228,
+          "text": "cardiovascular events",
+          "label": "condition",
+          "score": 0.6901031136512756
+        },
+        {
+          "start": 1307,
+          "end": 1312,
+          "text": "90.5%",
+          "label": "result",
+          "score": 0.3534901440143585
+        },
+        {
+          "start": 1318,
+          "end": 1344,
+          "text": "improved clinical outcomes",
+          "label": "result",
+          "score": 0.42672136425971985
+        },
+        {
+          "start": 1414,
+          "end": 1421,
+          "text": "P < .01",
+          "label": "result",
+          "score": 0.9124718904495239
+        },
+        {
+          "start": 1427,
+          "end": 1491,
+          "text": "Western Ontario and McMaster Universities Arthritis Index scores",
+          "label": "method",
+          "score": 0.7574019432067871
+        },
+        {
+          "start": 1696,
+          "end": 1716,
+          "text": "prosthetic loosening",
+          "label": "condition",
+          "score": 0.4179091155529022
+        },
+        {
+          "start": 1720,
+          "end": 1734,
+          "text": "deep infection",
+          "label": "condition",
+          "score": 0.3005817234516144
+        },
+        {
+          "start": 1868,
+          "end": 1882,
+          "text": "nature of ESRD",
+          "label": "condition",
+          "score": 0.4703928530216217
+        }
+      ],
+      "predictions": [
+        {
+          "head": {
+            "start": 12,
+            "end": 34,
+            "text": "Total hip arthroplasty",
+            "type": "condition",
+            "entity_idx": 0
+          },
+          "tail": {
+            "start": 52,
+            "end": 82,
+            "text": "end-stage renal disease (ESRD)",
+            "type": "condition",
+            "entity_idx": 2
+          },
+          "relation": "associated with",
+          "score": 0.7178308367729187
+        },
+        {
+          "head": {
+            "start": 12,
+            "end": 34,
+            "text": "Total hip arthroplasty",
+            "type": "condition",
+            "entity_idx": 0
+          },
+          "tail": {
+            "start": 108,
+            "end": 130,
+            "text": "high complication rate",
+            "type": "condition",
+            "entity_idx": 6
+          },
+          "relation": "associated with",
+          "score": 0.8220934867858887
+        },
+        {
+          "head": {
+            "start": 241,
+            "end": 244,
+            "text": "TKA",
+            "type": "process",
+            "entity_idx": 13
+          },
+          "tail": {
+            "start": 788,
+            "end": 816,
+            "text": "American Knee Society Scores",
+            "type": "method",
+            "entity_idx": 16
+          },
+          "relation": "uses",
+          "score": 0.7508677244186401
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "e:8f877fcdbe06afa1b57dffd42b2ac12e7611790c544e63e35d0415a99f14832b",
+      "document_id": "W2761455282",
+      "start": 12,
+      "end": 34,
+      "surface_text": "Total hip arthroplasty",
+      "entity_types": [
+        "CONDITION",
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "total hip arthroplasty"
+      ],
+      "confidence": 0.925154983997345,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 12,
+          "end": 34,
+          "surface_text": "Total hip arthroplasty",
+          "ner_label_hint": "CONDITION",
+          "score": 0.925154983997345,
+          "normalized_form": "total hip arthroplasty",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 12,
+            "end": 34,
+            "text": "Total hip arthroplasty",
+            "label": "condition",
+            "score": 0.925154983997345
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 12,
+          "end": 34,
+          "surface_text": "Total hip arthroplasty",
+          "ner_label_hint": "PROCESS",
+          "score": 0.34844449162483215,
+          "normalized_form": "total hip arthroplasty",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 12,
+            "end": 34,
+            "text": "Total hip arthroplasty",
+            "label": "process",
+            "score": 0.34844449162483215
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a66fa8c5529f8692ed65e6a50ea322e93ecaca391fa2d520995982d517f605d1",
+      "document_id": "W2761455282",
+      "start": 52,
+      "end": 75,
+      "surface_text": "end-stage renal disease",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "end-stage renal disease"
+      ],
+      "confidence": 0.6588958501815796,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 52,
+          "end": 75,
+          "surface_text": "end-stage renal disease",
+          "ner_label_hint": "CONDITION",
+          "score": 0.6588958501815796,
+          "normalized_form": "end-stage renal disease",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 52,
+            "end": 75,
+            "text": "end-stage renal disease",
+            "label": "condition",
+            "score": 0.6588958501815796
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:2dc4178c1b786ca06d2a47f27a7242b6a49f68a76e582bf38deee12c8deabadd",
+      "document_id": "W2761455282",
+      "start": 52,
+      "end": 82,
+      "surface_text": "end-stage renal disease (ESRD)",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "end-stage renal disease (esrd)"
+      ],
+      "confidence": 0.9880267381668091,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 52,
+          "end": 82,
+          "surface_text": "end-stage renal disease (ESRD)",
+          "ner_label_hint": "CONDITION",
+          "score": 0.9880267381668091,
+          "normalized_form": "end-stage renal disease (esrd)",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 52,
+            "end": 82,
+            "text": "end-stage renal disease (ESRD)",
+            "label": "condition",
+            "score": 0.9880267381668091
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:bdd9c4d671616840192d3d85b83b77125e6c9b9e286daedaad574f3851a194e6",
+      "document_id": "W2761455282",
+      "start": 77,
+      "end": 81,
+      "surface_text": "ESRD",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "esrd"
+      ],
+      "confidence": 0.81793212890625,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 77,
+          "end": 81,
+          "surface_text": "ESRD",
+          "ner_label_hint": "CONDITION",
+          "score": 0.81793212890625,
+          "normalized_form": "esrd",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 77,
+            "end": 81,
+            "text": "ESRD",
+            "label": "condition",
+            "score": 0.81793212890625
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:e873432d7fbf70fb9a044dfe05e65f1ffdc3defcc2e3855a66686f5298c8572e",
+      "document_id": "W2761455282",
+      "start": 77,
+      "end": 82,
+      "surface_text": "ESRD)",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "esrd)"
+      ],
+      "confidence": 0.4159298241138458,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 77,
+          "end": 82,
+          "surface_text": "ESRD)",
+          "ner_label_hint": "CONDITION",
+          "score": 0.4159298241138458,
+          "normalized_form": "esrd)",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 77,
+            "end": 82,
+            "text": "ESRD)",
+            "label": "condition",
+            "score": 0.4159298241138458
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:b04c53df9631202962144adf62f19cb9bc7c50cf5b39ca3ffbd469dce2027282",
+      "document_id": "W2761455282",
+      "start": 108,
+      "end": 130,
+      "surface_text": "high complication rate",
+      "entity_types": [
+        "ATTRIBUTE",
+        "CONDITION",
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "high complication rate"
+      ],
+      "confidence": 0.9543327689170837,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 108,
+          "end": 130,
+          "surface_text": "high complication rate",
+          "ner_label_hint": "CONDITION",
+          "score": 0.9543327689170837,
+          "normalized_form": "high complication rate",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 108,
+            "end": 130,
+            "text": "high complication rate",
+            "label": "condition",
+            "score": 0.9543327689170837
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 108,
+          "end": 130,
+          "surface_text": "high complication rate",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.6013980507850647,
+          "normalized_form": "high complication rate",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 108,
+            "end": 130,
+            "text": "high complication rate",
+            "label": "attribute",
+            "score": 0.6013980507850647
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 108,
+          "end": 130,
+          "surface_text": "high complication rate",
+          "ner_label_hint": "RESULT",
+          "score": 0.3277044892311096,
+          "normalized_form": "high complication rate",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 108,
+            "end": 130,
+            "text": "high complication rate",
+            "label": "result",
+            "score": 0.3277044892311096
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:cdad848a6cb6110c63dc08d8b7e36a962e304530642fada6092f2ff8d66425ff",
+      "document_id": "W2761455282",
+      "start": 176,
+      "end": 185,
+      "surface_text": "mortality",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "mortality"
+      ],
+      "confidence": 0.5605513453483582,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 176,
+          "end": 185,
+          "surface_text": "mortality",
+          "ner_label_hint": "RESULT",
+          "score": 0.5605513453483582,
+          "normalized_form": "mortality",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 176,
+            "end": 185,
+            "text": "mortality",
+            "label": "result",
+            "score": 0.5605513453483582
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:fb6de4122a69d651237483a5b0486b373ddf724f72cba6a976f4fa20c739539d",
+      "document_id": "W2761455282",
+      "start": 176,
+      "end": 191,
+      "surface_text": "mortality rates",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "mortality rates"
+      ],
+      "confidence": 0.42700764536857605,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 176,
+          "end": 191,
+          "surface_text": "mortality rates",
+          "ner_label_hint": "RESULT",
+          "score": 0.42700764536857605,
+          "normalized_form": "mortality rates",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 176,
+            "end": 191,
+            "text": "mortality rates",
+            "label": "result",
+            "score": 0.42700764536857605
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a74d56d825620f06e7dfa76130a8cb77c7013f5d9f3e6c0103698018cc2b5ad3",
+      "document_id": "W2761455282",
+      "start": 216,
+      "end": 239,
+      "surface_text": "total knee arthroplasty",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "total knee arthroplasty"
+      ],
+      "confidence": 0.5258415937423706,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 216,
+          "end": 239,
+          "surface_text": "total knee arthroplasty",
+          "ner_label_hint": "CONDITION",
+          "score": 0.5258415937423706,
+          "normalized_form": "total knee arthroplasty",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 216,
+            "end": 239,
+            "text": "total knee arthroplasty",
+            "label": "condition",
+            "score": 0.5258415937423706
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a4933589a8e285ee131ef45c0e6061b8b7f23f175cd58c26c540c9fd065569a7",
+      "document_id": "W2761455282",
+      "start": 216,
+      "end": 245,
+      "surface_text": "total knee arthroplasty (TKA)",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "total knee arthroplasty (tka)"
+      ],
+      "confidence": 0.7747416496276855,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 216,
+          "end": 245,
+          "surface_text": "total knee arthroplasty (TKA)",
+          "ner_label_hint": "CONDITION",
+          "score": 0.7747416496276855,
+          "normalized_form": "total knee arthroplasty (tka)",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 216,
+            "end": 245,
+            "text": "total knee arthroplasty (TKA)",
+            "label": "condition",
+            "score": 0.7747416496276855
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:15a3d673f9f2486feffcf1d883697e195ffa1f17571ed109590dc1dcd9713f12",
+      "document_id": "W2761455282",
+      "start": 241,
+      "end": 244,
+      "surface_text": "TKA",
+      "entity_types": [
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "tka"
+      ],
+      "confidence": 0.36700302362442017,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 241,
+          "end": 244,
+          "surface_text": "TKA",
+          "ner_label_hint": "PROCESS",
+          "score": 0.36700302362442017,
+          "normalized_form": "tka",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 241,
+            "end": 244,
+            "text": "TKA",
+            "label": "process",
+            "score": 0.36700302362442017
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a0defd15ac7b45f51345a3d7db57c03d733aa62f2eaca42c6db40e7fd5581348",
+      "document_id": "W2761455282",
+      "start": 560,
+      "end": 571,
+      "surface_text": "primary TKA",
+      "entity_types": [
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "primary tka"
+      ],
+      "confidence": 0.4271318018436432,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 560,
+          "end": 571,
+          "surface_text": "primary TKA",
+          "ner_label_hint": "PROCESS",
+          "score": 0.4271318018436432,
+          "normalized_form": "primary tka",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 560,
+            "end": 571,
+            "text": "primary TKA",
+            "label": "process",
+            "score": 0.4271318018436432
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d3ec4fb8d4e251c1697123928393930f39c54fc3f57b65f61262e34fc257f50d",
+      "document_id": "W2761455282",
+      "start": 597,
+      "end": 628,
+      "surface_text": "preoperative medical evaluation",
+      "entity_types": [
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "preoperative medical evaluation"
+      ],
+      "confidence": 0.7305869460105896,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 597,
+          "end": 628,
+          "surface_text": "preoperative medical evaluation",
+          "ner_label_hint": "PROCESS",
+          "score": 0.7305869460105896,
+          "normalized_form": "preoperative medical evaluation",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 597,
+            "end": 628,
+            "text": "preoperative medical evaluation",
+            "label": "process",
+            "score": 0.7305869460105896
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:017ff55918cfcbc620e02a79962cd976071c3081b96d8da7862ab4d0adef5637",
+      "document_id": "W2761455282",
+      "start": 788,
+      "end": 816,
+      "surface_text": "American Knee Society Scores",
+      "entity_types": [
+        "DATA_RESOURCE",
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "american knee society scores"
+      ],
+      "confidence": 0.9941065311431885,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 788,
+          "end": 816,
+          "surface_text": "American Knee Society Scores",
+          "ner_label_hint": "METHOD",
+          "score": 0.9941065311431885,
+          "normalized_form": "american knee society scores",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 788,
+            "end": 816,
+            "text": "American Knee Society Scores",
+            "label": "method",
+            "score": 0.9941065311431885
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 788,
+          "end": 816,
+          "surface_text": "American Knee Society Scores",
+          "ner_label_hint": "DATA_RESOURCE",
+          "score": 0.5419604778289795,
+          "normalized_form": "american knee society scores",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 788,
+            "end": 816,
+            "text": "American Knee Society Scores",
+            "label": "data resource",
+            "score": 0.5419604778289795
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:3fa923d54308e8bf6e4aac99da3f3393738a0bd74ba5cfcccb9665ce328ea9bc",
+      "document_id": "W2761455282",
+      "start": 825,
+      "end": 882,
+      "surface_text": "Western Ontario and McMaster Universities Arthritis Index",
+      "entity_types": [
+        "DATA_RESOURCE",
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "western ontario and mcmaster universities arthritis index"
+      ],
+      "confidence": 0.9820265173912048,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 825,
+          "end": 882,
+          "surface_text": "Western Ontario and McMaster Universities Arthritis Index",
+          "ner_label_hint": "METHOD",
+          "score": 0.9820265173912048,
+          "normalized_form": "western ontario and mcmaster universities arthritis index",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 825,
+            "end": 882,
+            "text": "Western Ontario and McMaster Universities Arthritis Index",
+            "label": "method",
+            "score": 0.9820265173912048
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 825,
+          "end": 882,
+          "surface_text": "Western Ontario and McMaster Universities Arthritis Index",
+          "ner_label_hint": "DATA_RESOURCE",
+          "score": 0.6405404210090637,
+          "normalized_form": "western ontario and mcmaster universities arthritis index",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 825,
+            "end": 882,
+            "text": "Western Ontario and McMaster Universities Arthritis Index",
+            "label": "data resource",
+            "score": 0.6405404210090637
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:0419a3fbfc0a5ec1383c4a75dc9e8acef24e257864166be0dbca9a39b0104c46",
+      "document_id": "W2761455282",
+      "start": 970,
+      "end": 976,
+      "surface_text": "stroke",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "stroke"
+      ],
+      "confidence": 0.9194528460502625,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 970,
+          "end": 976,
+          "surface_text": "stroke",
+          "ner_label_hint": "CONDITION",
+          "score": 0.9194528460502625,
+          "normalized_form": "stroke",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 970,
+            "end": 976,
+            "text": "stroke",
+            "label": "condition",
+            "score": 0.9194528460502625
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:befd2488805eb143f1d3408b03657d51a24e536604ec81973a030d3ef5487f7d",
+      "document_id": "W2761455282",
+      "start": 999,
+      "end": 1003,
+      "surface_text": "4.8%",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "4.8%"
+      ],
+      "confidence": 0.9018737077713013,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 999,
+          "end": 1003,
+          "surface_text": "4.8%",
+          "ner_label_hint": "RESULT",
+          "score": 0.9018737077713013,
+          "normalized_form": "4.8%",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 999,
+            "end": 1003,
+            "text": "4.8%",
+            "label": "result",
+            "score": 0.9018737077713013
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:342da87d4c1782cf045bc736e50bad2d70a283771c8b17c7edb5a55a89fd9df3",
+      "document_id": "W2761455282",
+      "start": 999,
+      "end": 1013,
+      "surface_text": "4.8% mortality",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "4.8% mortality"
+      ],
+      "confidence": 0.8307051062583923,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 999,
+          "end": 1013,
+          "surface_text": "4.8% mortality",
+          "ner_label_hint": "RESULT",
+          "score": 0.8307051062583923,
+          "normalized_form": "4.8% mortality",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 999,
+            "end": 1013,
+            "text": "4.8% mortality",
+            "label": "result",
+            "score": 0.8307051062583923
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:708eff1c0f573639b7b5486766148c0345d2e1abb8c5d7c685efe814b352d817",
+      "document_id": "W2761455282",
+      "start": 1067,
+      "end": 1076,
+      "surface_text": "5.8 years",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "5.8 years"
+      ],
+      "confidence": 0.49803319573402405,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 1067,
+          "end": 1076,
+          "surface_text": "5.8 years",
+          "ner_label_hint": "RESULT",
+          "score": 0.49803319573402405,
+          "normalized_form": "5.8 years",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 1067,
+            "end": 1076,
+            "text": "5.8 years",
+            "label": "result",
+            "score": 0.49803319573402405
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:68692cb89933b7b5bbf0880f4081decf20844e1cb2a34922d197504fb0dd39ad",
+      "document_id": "W2761455282",
+      "start": 1078,
+      "end": 1089,
+      "surface_text": "69.7 months",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "69.7 months"
+      ],
+      "confidence": 0.4691242575645447,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 1078,
+          "end": 1089,
+          "surface_text": "69.7 months",
+          "ner_label_hint": "RESULT",
+          "score": 0.4691242575645447,
+          "normalized_form": "69.7 months",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 1078,
+            "end": 1089,
+            "text": "69.7 months",
+            "label": "result",
+            "score": 0.4691242575645447
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:46b695d51b297c2b816190883a987d9d1e093e3b2386475698a9b594b8a512b7",
+      "document_id": "W2761455282",
+      "start": 1124,
+      "end": 1129,
+      "surface_text": "28.5%",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "28.5%"
+      ],
+      "confidence": 0.39311859011650085,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 1124,
+          "end": 1129,
+          "surface_text": "28.5%",
+          "ner_label_hint": "RESULT",
+          "score": 0.39311859011650085,
+          "normalized_form": "28.5%",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 1124,
+            "end": 1129,
+            "text": "28.5%",
+            "label": "result",
+            "score": 0.39311859011650085
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:04dd94984e538820ef8a8ce3f66d37a005dc216ace6ada4f7fe6777b16e32f2e",
+      "document_id": "W2761455282",
+      "start": 1135,
+      "end": 1156,
+      "surface_text": "medical complications",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "medical complications"
+      ],
+      "confidence": 0.3353426456451416,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 1135,
+          "end": 1156,
+          "surface_text": "medical complications",
+          "ner_label_hint": "CONDITION",
+          "score": 0.3353426456451416,
+          "normalized_form": "medical complications",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 1135,
+            "end": 1156,
+            "text": "medical complications",
+            "label": "condition",
+            "score": 0.3353426456451416
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:efdebb48ff4b229049a793d5f4cf157865a67cef619f7313ade2301c5236fde8",
+      "document_id": "W2761455282",
+      "start": 1168,
+      "end": 1177,
+      "surface_text": "pneumonia",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "pneumonia"
+      ],
+      "confidence": 0.7976112961769104,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 1168,
+          "end": 1177,
+          "surface_text": "pneumonia",
+          "ner_label_hint": "CONDITION",
+          "score": 0.7976112961769104,
+          "normalized_form": "pneumonia",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 1168,
+            "end": 1177,
+            "text": "pneumonia",
+            "label": "condition",
+            "score": 0.7976112961769104
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:9b6520567883de517aedc487e7172f7bad5c2855cc10f4cf8f6b56ae77451f9d",
+      "document_id": "W2761455282",
+      "start": 1207,
+      "end": 1228,
+      "surface_text": "cardiovascular events",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "cardiovascular events"
+      ],
+      "confidence": 0.6901031136512756,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 1207,
+          "end": 1228,
+          "surface_text": "cardiovascular events",
+          "ner_label_hint": "CONDITION",
+          "score": 0.6901031136512756,
+          "normalized_form": "cardiovascular events",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 1207,
+            "end": 1228,
+            "text": "cardiovascular events",
+            "label": "condition",
+            "score": 0.6901031136512756
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:7f5fecb7ae173c6c98689a09c2c1811ad26d9ff670870ddc189d2feda8eba207",
+      "document_id": "W2761455282",
+      "start": 1307,
+      "end": 1312,
+      "surface_text": "90.5%",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "90.5%"
+      ],
+      "confidence": 0.3534901440143585,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 1307,
+          "end": 1312,
+          "surface_text": "90.5%",
+          "ner_label_hint": "RESULT",
+          "score": 0.3534901440143585,
+          "normalized_form": "90.5%",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 1307,
+            "end": 1312,
+            "text": "90.5%",
+            "label": "result",
+            "score": 0.3534901440143585
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:cbb7abc4752bbe483034956fac5ec02459e88f18ff6768b017afc8655f354cf4",
+      "document_id": "W2761455282",
+      "start": 1318,
+      "end": 1344,
+      "surface_text": "improved clinical outcomes",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "improved clinical outcomes"
+      ],
+      "confidence": 0.42672136425971985,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 1318,
+          "end": 1344,
+          "surface_text": "improved clinical outcomes",
+          "ner_label_hint": "RESULT",
+          "score": 0.42672136425971985,
+          "normalized_form": "improved clinical outcomes",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 1318,
+            "end": 1344,
+            "text": "improved clinical outcomes",
+            "label": "result",
+            "score": 0.42672136425971985
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:336539184b0b8932ceea0a8d5a3ca41e3729efb38773393ca034651052314644",
+      "document_id": "W2761455282",
+      "start": 1414,
+      "end": 1421,
+      "surface_text": "P < .01",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "p < .01"
+      ],
+      "confidence": 0.9124718904495239,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 1414,
+          "end": 1421,
+          "surface_text": "P < .01",
+          "ner_label_hint": "RESULT",
+          "score": 0.9124718904495239,
+          "normalized_form": "p < .01",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 1414,
+            "end": 1421,
+            "text": "P < .01",
+            "label": "result",
+            "score": 0.9124718904495239
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:62ab263beca8c23688cf624969c47c1c71826bcb5372aadc87664f0e7527c364",
+      "document_id": "W2761455282",
+      "start": 1427,
+      "end": 1491,
+      "surface_text": "Western Ontario and McMaster Universities Arthritis Index scores",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "western ontario and mcmaster universities arthritis index scores"
+      ],
+      "confidence": 0.7574019432067871,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 1427,
+          "end": 1491,
+          "surface_text": "Western Ontario and McMaster Universities Arthritis Index scores",
+          "ner_label_hint": "METHOD",
+          "score": 0.7574019432067871,
+          "normalized_form": "western ontario and mcmaster universities arthritis index scores",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 1427,
+            "end": 1491,
+            "text": "Western Ontario and McMaster Universities Arthritis Index scores",
+            "label": "method",
+            "score": 0.7574019432067871
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:735be92c78d72f398b994609ad9f929b46d58d6162eaa520f56f108fc848fb18",
+      "document_id": "W2761455282",
+      "start": 1696,
+      "end": 1716,
+      "surface_text": "prosthetic loosening",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "prosthetic loosening"
+      ],
+      "confidence": 0.4179091155529022,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 1696,
+          "end": 1716,
+          "surface_text": "prosthetic loosening",
+          "ner_label_hint": "CONDITION",
+          "score": 0.4179091155529022,
+          "normalized_form": "prosthetic loosening",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 1696,
+            "end": 1716,
+            "text": "prosthetic loosening",
+            "label": "condition",
+            "score": 0.4179091155529022
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:692421f71bd2de45f752d632c8e4af6f8586ecfdc55b468e217137c0fe866e16",
+      "document_id": "W2761455282",
+      "start": 1720,
+      "end": 1734,
+      "surface_text": "deep infection",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "deep infection"
+      ],
+      "confidence": 0.3005817234516144,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 1720,
+          "end": 1734,
+          "surface_text": "deep infection",
+          "ner_label_hint": "CONDITION",
+          "score": 0.3005817234516144,
+          "normalized_form": "deep infection",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 1720,
+            "end": 1734,
+            "text": "deep infection",
+            "label": "condition",
+            "score": 0.3005817234516144
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:00c576b9c91b8858276adf34585cf8bcc2686ed6301cb9d68c3f6039364726dd",
+      "document_id": "W2761455282",
+      "start": 1868,
+      "end": 1882,
+      "surface_text": "nature of ESRD",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "nature of esrd"
+      ],
+      "confidence": 0.4703928530216217,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2761455282",
+          "start": 1868,
+          "end": 1882,
+          "surface_text": "nature of ESRD",
+          "ner_label_hint": "CONDITION",
+          "score": 0.4703928530216217,
+          "normalized_form": "nature of esrd",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "revision_id": "sha256:f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2761455282",
+            "doi": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "landing_page_url": "https://doi.org/10.1016/j.arth.2017.09.058",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2761455282",
+            "text_sha256": "f9d06039150fe307bf30002731fdd81b94f576d1a641bab8cb4e7b06e3ed0584"
+          },
+          "raw_prediction": {
+            "start": 1868,
+            "end": 1882,
+            "text": "nature of ESRD",
+            "label": "condition",
+            "score": 0.4703928530216217
+          }
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "triple_id": "t:65192264bfce94e7bda7819c0c09835e34efd3218e68ea4bbc8dc5860e56a434",
+      "document_id": "W2761455282",
+      "head_id": "e:8f877fcdbe06afa1b57dffd42b2ac12e7611790c544e63e35d0415a99f14832b",
+      "tail_id": "e:b04c53df9631202962144adf62f19cb9bc7c50cf5b39ca3ffbd469dce2027282",
+      "head_types": [
+        "CONDITION",
+        "PROCESS"
+      ],
+      "tail_types": [
+        "ATTRIBUTE",
+        "CONDITION",
+        "RESULT"
+      ],
+      "relation_type": "ASSOCIATED_WITH",
+      "confidence": 0.8220934867858887,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "document_id": "W2761455282",
+          "start": 0,
+          "end": 1883,
+          "text": "BACKGROUND: Total hip arthroplasty in patients with end-stage renal disease (ESRD) may be associated with a high complication rate. However, the perioperative complication and mortality rates in these patients after total knee arthroplasty (TKA) have rarely been investigated. The purposes of this study were to measure the mortality and complication rates and to evaluate the 2- to 10-year clinical outcome of TKA in dialysis patients at our hospital during the past decade. METHODS: We retrospectively assessed 21 patients (26 knees) with ESRD who underwent primary TKA between 2007 and 2015. A preoperative medical evaluation was performed in all patients to assess the risk of surgery. All patients had complete clinical and radiographic evaluations, and the outcome was scored using American Knee Society Scores and the Western Ontario and McMaster Universities Arthritis Index. Perioperative complications and mortality were recorded. RESULTS: One patient died of stroke 1 year after surgery (4.8% mortality). The mean follow-up period of other 20 patients was 5.8 years (69.7 months, 24 to 119 months). Six patients (28.5%) had medical complications, including pneumonia (n = 3), stroke (n = 2), and cardiovascular events (n = 3), after discharge from hospital. At the latest follow-up, 19 patients (90.5%) had improved clinical outcomes of the knee after TKA according to the American Knee Society Scores (P < .01) and Western Ontario and McMaster Universities Arthritis Index scores (P < .01). CONCLUSION: Our study showed that TKA was a valid option for dialysis patients after careful preoperative evaluation. Most patients had an improved clinical outcome. There were no instances of prosthetic loosening or deep infection. However, dialysis patients under consideration for TKA need to be informed of the risk of possible medical complications due to the nature of ESRD.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:680fbec6271232991e09f263f02c1a84a15e1f6b9a8f048eb340f224f32382e9",
+      "document_id": "W2761455282",
+      "head_id": "e:8f877fcdbe06afa1b57dffd42b2ac12e7611790c544e63e35d0415a99f14832b",
+      "tail_id": "e:2dc4178c1b786ca06d2a47f27a7242b6a49f68a76e582bf38deee12c8deabadd",
+      "head_types": [
+        "CONDITION",
+        "PROCESS"
+      ],
+      "tail_types": [
+        "CONDITION"
+      ],
+      "relation_type": "ASSOCIATED_WITH",
+      "confidence": 0.7178308367729187,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "document_id": "W2761455282",
+          "start": 0,
+          "end": 1883,
+          "text": "BACKGROUND: Total hip arthroplasty in patients with end-stage renal disease (ESRD) may be associated with a high complication rate. However, the perioperative complication and mortality rates in these patients after total knee arthroplasty (TKA) have rarely been investigated. The purposes of this study were to measure the mortality and complication rates and to evaluate the 2- to 10-year clinical outcome of TKA in dialysis patients at our hospital during the past decade. METHODS: We retrospectively assessed 21 patients (26 knees) with ESRD who underwent primary TKA between 2007 and 2015. A preoperative medical evaluation was performed in all patients to assess the risk of surgery. All patients had complete clinical and radiographic evaluations, and the outcome was scored using American Knee Society Scores and the Western Ontario and McMaster Universities Arthritis Index. Perioperative complications and mortality were recorded. RESULTS: One patient died of stroke 1 year after surgery (4.8% mortality). The mean follow-up period of other 20 patients was 5.8 years (69.7 months, 24 to 119 months). Six patients (28.5%) had medical complications, including pneumonia (n = 3), stroke (n = 2), and cardiovascular events (n = 3), after discharge from hospital. At the latest follow-up, 19 patients (90.5%) had improved clinical outcomes of the knee after TKA according to the American Knee Society Scores (P < .01) and Western Ontario and McMaster Universities Arthritis Index scores (P < .01). CONCLUSION: Our study showed that TKA was a valid option for dialysis patients after careful preoperative evaluation. Most patients had an improved clinical outcome. There were no instances of prosthetic loosening or deep infection. However, dialysis patients under consideration for TKA need to be informed of the risk of possible medical complications due to the nature of ESRD.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:cc838871da43ffb8cca1c9c043e6b08f91aa7a72b0cbeb8cec03cbe9649b68c7",
+      "document_id": "W2761455282",
+      "head_id": "e:15a3d673f9f2486feffcf1d883697e195ffa1f17571ed109590dc1dcd9713f12",
+      "tail_id": "e:017ff55918cfcbc620e02a79962cd976071c3081b96d8da7862ab4d0adef5637",
+      "head_types": [
+        "PROCESS"
+      ],
+      "tail_types": [
+        "DATA_RESOURCE",
+        "METHOD"
+      ],
+      "relation_type": "USES",
+      "confidence": 0.7508677244186401,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:3d3f9f5508710452dadb24c2c2ffe3cde66a5d56293b26117d03786daf6ebc98",
+          "document_id": "W2761455282",
+          "start": 0,
+          "end": 1883,
+          "text": "BACKGROUND: Total hip arthroplasty in patients with end-stage renal disease (ESRD) may be associated with a high complication rate. However, the perioperative complication and mortality rates in these patients after total knee arthroplasty (TKA) have rarely been investigated. The purposes of this study were to measure the mortality and complication rates and to evaluate the 2- to 10-year clinical outcome of TKA in dialysis patients at our hospital during the past decade. METHODS: We retrospectively assessed 21 patients (26 knees) with ESRD who underwent primary TKA between 2007 and 2015. A preoperative medical evaluation was performed in all patients to assess the risk of surgery. All patients had complete clinical and radiographic evaluations, and the outcome was scored using American Knee Society Scores and the Western Ontario and McMaster Universities Arthritis Index. Perioperative complications and mortality were recorded. RESULTS: One patient died of stroke 1 year after surgery (4.8% mortality). The mean follow-up period of other 20 patients was 5.8 years (69.7 months, 24 to 119 months). Six patients (28.5%) had medical complications, including pneumonia (n = 3), stroke (n = 2), and cardiovascular events (n = 3), after discharge from hospital. At the latest follow-up, 19 patients (90.5%) had improved clinical outcomes of the knee after TKA according to the American Knee Society Scores (P < .01) and Western Ontario and McMaster Universities Arthritis Index scores (P < .01). CONCLUSION: Our study showed that TKA was a valid option for dialysis patients after careful preoperative evaluation. Most patients had an improved clinical outcome. There were no instances of prosthetic loosening or deep infection. However, dialysis patients under consideration for TKA need to be informed of the risk of possible medical complications due to the nature of ESRD.",
+          "entity_ids": []
+        }
+      ]
+    }
+  ],
+  "raw_relation_count": 3,
+  "seconds": 6.824098800076172
+}

@@ -1,0 +1,897 @@
+{
+  "fingerprint": "c79845cf50e55b434eab0bcd7d45fb6779c27e093e96fa9a77b4c2f1b311bf99",
+  "document_id": "W4234628002",
+  "model": "knowledgator/gliner-relex-base-v1.0",
+  "mode": "joint",
+  "raw_windows": [
+    {
+      "window": {
+        "window_id": "w:fb6d8010f0460c604f42de58232843b0f74f44dca40e58edbf6dd9609e054e97",
+        "document_id": "W4234628002",
+        "start": 0,
+        "end": 1399,
+        "text": "The aim of Quality Assurance System of Higher Education is to ensure the fulfillment of Standards of Higher Education systemically and continuously for growing and developing the quality culture. Politeknik Negeri Madiun is obliged to apply Internal Quality Assurance System (SPMI). To realize the objectives of SPMI Dikti, it is needed an information technology based system that can manage the result of quality control from PNM which can be accessed via online by students privately and allows the students to evaluate the teaching and learning process of the lecturers. A special access for PNM's Center for Education Quality Assurance and Development (P4MP) to manage and define the results as decision support materials, as part of the SPMI activity cycle at the end of each semester. The information system is built using a PHP framework Laravel with Rapid Application Development software (RAD) software development method so that it uses a component-based construction approach for faster development process as well as more flexible changes in system design in the middle of the process. As a result, the system was built in an integrated manner and being used for the the activity of SPMI in PNM which consisted of two pages; http://student.pnm.ac.id as the evaluation questionnaire page for students and http://imonev.pnm.ac.id as management evaluation results page accessed by PNM P4MP.",
+        "entity_ids": []
+      },
+      "entities": [
+        {
+          "start": 11,
+          "end": 55,
+          "text": "Quality Assurance System of Higher Education",
+          "label": "concept",
+          "score": 0.33008873462677
+        },
+        {
+          "start": 88,
+          "end": 117,
+          "text": "Standards of Higher Education",
+          "label": "concept",
+          "score": 0.44279518723487854
+        },
+        {
+          "start": 396,
+          "end": 421,
+          "text": "result of quality control",
+          "label": "result",
+          "score": 0.516402006149292
+        },
+        {
+          "start": 396,
+          "end": 402,
+          "text": "result",
+          "label": "result",
+          "score": 0.37086188793182373
+        },
+        {
+          "start": 406,
+          "end": 421,
+          "text": "quality control",
+          "label": "task",
+          "score": 0.5764036178588867
+        },
+        {
+          "start": 467,
+          "end": 475,
+          "text": "students",
+          "label": "actor",
+          "score": 0.6358359456062317
+        },
+        {
+          "start": 526,
+          "end": 555,
+          "text": "teaching and learning process",
+          "label": "task",
+          "score": 0.7421579957008362
+        },
+        {
+          "start": 526,
+          "end": 555,
+          "text": "teaching and learning process",
+          "label": "process",
+          "score": 0.45994874835014343
+        },
+        {
+          "start": 563,
+          "end": 572,
+          "text": "lecturers",
+          "label": "actor",
+          "score": 0.6489536166191101
+        },
+        {
+          "start": 688,
+          "end": 695,
+          "text": "results",
+          "label": "result",
+          "score": 0.34842634201049805
+        },
+        {
+          "start": 699,
+          "end": 725,
+          "text": "decision support materials",
+          "label": "data resource",
+          "score": 0.4956815838813782
+        },
+        {
+          "start": 742,
+          "end": 761,
+          "text": "SPMI activity cycle",
+          "label": "process",
+          "score": 0.5360289812088013
+        },
+        {
+          "start": 858,
+          "end": 902,
+          "text": "Rapid Application Development software (RAD)",
+          "label": "method",
+          "score": 0.32251206040382385
+        },
+        {
+          "start": 949,
+          "end": 986,
+          "text": "component-based construction approach",
+          "label": "method",
+          "score": 0.8814976811408997
+        },
+        {
+          "start": 1054,
+          "end": 1067,
+          "text": "system design",
+          "label": "concept",
+          "score": 0.5013083815574646
+        },
+        {
+          "start": 1054,
+          "end": 1067,
+          "text": "system design",
+          "label": "attribute",
+          "score": 0.4671647250652313
+        },
+        {
+          "start": 1269,
+          "end": 1298,
+          "text": "evaluation questionnaire page",
+          "label": "data resource",
+          "score": 0.5128322839736938
+        }
+      ],
+      "predictions": []
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "e:ddf74ebcf67e6153da713b1554aeac283cfc6382e60380f54fae83eb913401d0",
+      "document_id": "W4234628002",
+      "start": 11,
+      "end": 55,
+      "surface_text": "Quality Assurance System of Higher Education",
+      "entity_types": [
+        "CONCEPT"
+      ],
+      "normalized_forms": [
+        "quality assurance system of higher education"
+      ],
+      "confidence": 0.33008873462677,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4234628002",
+          "start": 11,
+          "end": 55,
+          "surface_text": "Quality Assurance System of Higher Education",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.33008873462677,
+          "normalized_form": "quality assurance system of higher education",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:fb6d8010f0460c604f42de58232843b0f74f44dca40e58edbf6dd9609e054e97",
+          "revision_id": "sha256:884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4234628002",
+            "doi": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "landing_page_url": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W4234628002",
+            "text_sha256": "884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47"
+          },
+          "raw_prediction": {
+            "start": 11,
+            "end": 55,
+            "text": "Quality Assurance System of Higher Education",
+            "label": "concept",
+            "score": 0.33008873462677
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:bede38a88cb6929931c1cf9f222aa82fc33159d5bb1543d1baa5bb1ad62ece4e",
+      "document_id": "W4234628002",
+      "start": 88,
+      "end": 117,
+      "surface_text": "Standards of Higher Education",
+      "entity_types": [
+        "CONCEPT"
+      ],
+      "normalized_forms": [
+        "standards of higher education"
+      ],
+      "confidence": 0.44279518723487854,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4234628002",
+          "start": 88,
+          "end": 117,
+          "surface_text": "Standards of Higher Education",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.44279518723487854,
+          "normalized_form": "standards of higher education",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:fb6d8010f0460c604f42de58232843b0f74f44dca40e58edbf6dd9609e054e97",
+          "revision_id": "sha256:884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4234628002",
+            "doi": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "landing_page_url": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W4234628002",
+            "text_sha256": "884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47"
+          },
+          "raw_prediction": {
+            "start": 88,
+            "end": 117,
+            "text": "Standards of Higher Education",
+            "label": "concept",
+            "score": 0.44279518723487854
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:6a2befabe315f741de8282c2f7b818db66499ea33b40afab586e855ea60c2941",
+      "document_id": "W4234628002",
+      "start": 396,
+      "end": 402,
+      "surface_text": "result",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "result"
+      ],
+      "confidence": 0.37086188793182373,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4234628002",
+          "start": 396,
+          "end": 402,
+          "surface_text": "result",
+          "ner_label_hint": "RESULT",
+          "score": 0.37086188793182373,
+          "normalized_form": "result",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:fb6d8010f0460c604f42de58232843b0f74f44dca40e58edbf6dd9609e054e97",
+          "revision_id": "sha256:884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4234628002",
+            "doi": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "landing_page_url": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W4234628002",
+            "text_sha256": "884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47"
+          },
+          "raw_prediction": {
+            "start": 396,
+            "end": 402,
+            "text": "result",
+            "label": "result",
+            "score": 0.37086188793182373
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:e227a90f5d936df26e5acd6888f177c7352e051bf0534c4a1f01fdce6554b8f8",
+      "document_id": "W4234628002",
+      "start": 396,
+      "end": 421,
+      "surface_text": "result of quality control",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "result of quality control"
+      ],
+      "confidence": 0.516402006149292,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4234628002",
+          "start": 396,
+          "end": 421,
+          "surface_text": "result of quality control",
+          "ner_label_hint": "RESULT",
+          "score": 0.516402006149292,
+          "normalized_form": "result of quality control",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:fb6d8010f0460c604f42de58232843b0f74f44dca40e58edbf6dd9609e054e97",
+          "revision_id": "sha256:884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4234628002",
+            "doi": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "landing_page_url": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W4234628002",
+            "text_sha256": "884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47"
+          },
+          "raw_prediction": {
+            "start": 396,
+            "end": 421,
+            "text": "result of quality control",
+            "label": "result",
+            "score": 0.516402006149292
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:b9c83ab94967e59a5cb9f9e1ce1ac56343ddf87055f640fe56b53f6aec509c2f",
+      "document_id": "W4234628002",
+      "start": 406,
+      "end": 421,
+      "surface_text": "quality control",
+      "entity_types": [
+        "TASK"
+      ],
+      "normalized_forms": [
+        "quality control"
+      ],
+      "confidence": 0.5764036178588867,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4234628002",
+          "start": 406,
+          "end": 421,
+          "surface_text": "quality control",
+          "ner_label_hint": "TASK",
+          "score": 0.5764036178588867,
+          "normalized_form": "quality control",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:fb6d8010f0460c604f42de58232843b0f74f44dca40e58edbf6dd9609e054e97",
+          "revision_id": "sha256:884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4234628002",
+            "doi": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "landing_page_url": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W4234628002",
+            "text_sha256": "884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47"
+          },
+          "raw_prediction": {
+            "start": 406,
+            "end": 421,
+            "text": "quality control",
+            "label": "task",
+            "score": 0.5764036178588867
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:6fe47b576c9d4d8684d4925e8468f7073cc86423523824f671f2e7761add1f20",
+      "document_id": "W4234628002",
+      "start": 467,
+      "end": 475,
+      "surface_text": "students",
+      "entity_types": [
+        "ACTOR"
+      ],
+      "normalized_forms": [
+        "students"
+      ],
+      "confidence": 0.6358359456062317,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4234628002",
+          "start": 467,
+          "end": 475,
+          "surface_text": "students",
+          "ner_label_hint": "ACTOR",
+          "score": 0.6358359456062317,
+          "normalized_form": "students",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:fb6d8010f0460c604f42de58232843b0f74f44dca40e58edbf6dd9609e054e97",
+          "revision_id": "sha256:884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4234628002",
+            "doi": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "landing_page_url": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W4234628002",
+            "text_sha256": "884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47"
+          },
+          "raw_prediction": {
+            "start": 467,
+            "end": 475,
+            "text": "students",
+            "label": "actor",
+            "score": 0.6358359456062317
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:b132365bfe646046f4e9035cd79027a854fab6b41aba513a979a994cd8282a06",
+      "document_id": "W4234628002",
+      "start": 526,
+      "end": 555,
+      "surface_text": "teaching and learning process",
+      "entity_types": [
+        "PROCESS",
+        "TASK"
+      ],
+      "normalized_forms": [
+        "teaching and learning process"
+      ],
+      "confidence": 0.7421579957008362,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4234628002",
+          "start": 526,
+          "end": 555,
+          "surface_text": "teaching and learning process",
+          "ner_label_hint": "TASK",
+          "score": 0.7421579957008362,
+          "normalized_form": "teaching and learning process",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:fb6d8010f0460c604f42de58232843b0f74f44dca40e58edbf6dd9609e054e97",
+          "revision_id": "sha256:884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4234628002",
+            "doi": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "landing_page_url": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W4234628002",
+            "text_sha256": "884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47"
+          },
+          "raw_prediction": {
+            "start": 526,
+            "end": 555,
+            "text": "teaching and learning process",
+            "label": "task",
+            "score": 0.7421579957008362
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4234628002",
+          "start": 526,
+          "end": 555,
+          "surface_text": "teaching and learning process",
+          "ner_label_hint": "PROCESS",
+          "score": 0.45994874835014343,
+          "normalized_form": "teaching and learning process",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:fb6d8010f0460c604f42de58232843b0f74f44dca40e58edbf6dd9609e054e97",
+          "revision_id": "sha256:884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4234628002",
+            "doi": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "landing_page_url": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W4234628002",
+            "text_sha256": "884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47"
+          },
+          "raw_prediction": {
+            "start": 526,
+            "end": 555,
+            "text": "teaching and learning process",
+            "label": "process",
+            "score": 0.45994874835014343
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d946b1038bedd00b837e9959730e07b0884c82d4c96f503907522f2a3eab2c26",
+      "document_id": "W4234628002",
+      "start": 563,
+      "end": 572,
+      "surface_text": "lecturers",
+      "entity_types": [
+        "ACTOR"
+      ],
+      "normalized_forms": [
+        "lecturers"
+      ],
+      "confidence": 0.6489536166191101,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4234628002",
+          "start": 563,
+          "end": 572,
+          "surface_text": "lecturers",
+          "ner_label_hint": "ACTOR",
+          "score": 0.6489536166191101,
+          "normalized_form": "lecturers",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:fb6d8010f0460c604f42de58232843b0f74f44dca40e58edbf6dd9609e054e97",
+          "revision_id": "sha256:884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4234628002",
+            "doi": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "landing_page_url": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W4234628002",
+            "text_sha256": "884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47"
+          },
+          "raw_prediction": {
+            "start": 563,
+            "end": 572,
+            "text": "lecturers",
+            "label": "actor",
+            "score": 0.6489536166191101
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:3d4a4f2fecf7ccac637f98123f7d7e0cf47d01b1a8a246425bab744d4e603d31",
+      "document_id": "W4234628002",
+      "start": 688,
+      "end": 695,
+      "surface_text": "results",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "results"
+      ],
+      "confidence": 0.34842634201049805,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4234628002",
+          "start": 688,
+          "end": 695,
+          "surface_text": "results",
+          "ner_label_hint": "RESULT",
+          "score": 0.34842634201049805,
+          "normalized_form": "results",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:fb6d8010f0460c604f42de58232843b0f74f44dca40e58edbf6dd9609e054e97",
+          "revision_id": "sha256:884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4234628002",
+            "doi": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "landing_page_url": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W4234628002",
+            "text_sha256": "884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47"
+          },
+          "raw_prediction": {
+            "start": 688,
+            "end": 695,
+            "text": "results",
+            "label": "result",
+            "score": 0.34842634201049805
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d6d01d9a1fbb4631897a1f976b1057b8329dd21f86b9746e7f763477a57f915d",
+      "document_id": "W4234628002",
+      "start": 699,
+      "end": 725,
+      "surface_text": "decision support materials",
+      "entity_types": [
+        "DATA_RESOURCE"
+      ],
+      "normalized_forms": [
+        "decision support materials"
+      ],
+      "confidence": 0.4956815838813782,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4234628002",
+          "start": 699,
+          "end": 725,
+          "surface_text": "decision support materials",
+          "ner_label_hint": "DATA_RESOURCE",
+          "score": 0.4956815838813782,
+          "normalized_form": "decision support materials",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:fb6d8010f0460c604f42de58232843b0f74f44dca40e58edbf6dd9609e054e97",
+          "revision_id": "sha256:884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4234628002",
+            "doi": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "landing_page_url": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W4234628002",
+            "text_sha256": "884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47"
+          },
+          "raw_prediction": {
+            "start": 699,
+            "end": 725,
+            "text": "decision support materials",
+            "label": "data resource",
+            "score": 0.4956815838813782
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:bfdac5ea1e6a89c7b312cab056066616d4f309420a9829d5c139f34046dace4f",
+      "document_id": "W4234628002",
+      "start": 742,
+      "end": 761,
+      "surface_text": "SPMI activity cycle",
+      "entity_types": [
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "spmi activity cycle"
+      ],
+      "confidence": 0.5360289812088013,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4234628002",
+          "start": 742,
+          "end": 761,
+          "surface_text": "SPMI activity cycle",
+          "ner_label_hint": "PROCESS",
+          "score": 0.5360289812088013,
+          "normalized_form": "spmi activity cycle",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:fb6d8010f0460c604f42de58232843b0f74f44dca40e58edbf6dd9609e054e97",
+          "revision_id": "sha256:884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4234628002",
+            "doi": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "landing_page_url": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W4234628002",
+            "text_sha256": "884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47"
+          },
+          "raw_prediction": {
+            "start": 742,
+            "end": 761,
+            "text": "SPMI activity cycle",
+            "label": "process",
+            "score": 0.5360289812088013
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:25f13ed55653f3f6a4906c5b5753fd52adbbad1b786f1e2725a1cae607b0941c",
+      "document_id": "W4234628002",
+      "start": 858,
+      "end": 902,
+      "surface_text": "Rapid Application Development software (RAD)",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "rapid application development software (rad)"
+      ],
+      "confidence": 0.32251206040382385,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4234628002",
+          "start": 858,
+          "end": 902,
+          "surface_text": "Rapid Application Development software (RAD)",
+          "ner_label_hint": "METHOD",
+          "score": 0.32251206040382385,
+          "normalized_form": "rapid application development software (rad)",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:fb6d8010f0460c604f42de58232843b0f74f44dca40e58edbf6dd9609e054e97",
+          "revision_id": "sha256:884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4234628002",
+            "doi": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "landing_page_url": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W4234628002",
+            "text_sha256": "884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47"
+          },
+          "raw_prediction": {
+            "start": 858,
+            "end": 902,
+            "text": "Rapid Application Development software (RAD)",
+            "label": "method",
+            "score": 0.32251206040382385
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:7f1ec055ebc82a116cc012a9f1b80a3714446f28b71b5948b0e24404890c058b",
+      "document_id": "W4234628002",
+      "start": 949,
+      "end": 986,
+      "surface_text": "component-based construction approach",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "component-based construction approach"
+      ],
+      "confidence": 0.8814976811408997,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4234628002",
+          "start": 949,
+          "end": 986,
+          "surface_text": "component-based construction approach",
+          "ner_label_hint": "METHOD",
+          "score": 0.8814976811408997,
+          "normalized_form": "component-based construction approach",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:fb6d8010f0460c604f42de58232843b0f74f44dca40e58edbf6dd9609e054e97",
+          "revision_id": "sha256:884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4234628002",
+            "doi": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "landing_page_url": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W4234628002",
+            "text_sha256": "884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47"
+          },
+          "raw_prediction": {
+            "start": 949,
+            "end": 986,
+            "text": "component-based construction approach",
+            "label": "method",
+            "score": 0.8814976811408997
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:e6eb74a52ee44ee15885bb32afbdf87b0948f54f9e72337091d55cc760c55701",
+      "document_id": "W4234628002",
+      "start": 1054,
+      "end": 1067,
+      "surface_text": "system design",
+      "entity_types": [
+        "ATTRIBUTE",
+        "CONCEPT"
+      ],
+      "normalized_forms": [
+        "system design"
+      ],
+      "confidence": 0.5013083815574646,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4234628002",
+          "start": 1054,
+          "end": 1067,
+          "surface_text": "system design",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.5013083815574646,
+          "normalized_form": "system design",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:fb6d8010f0460c604f42de58232843b0f74f44dca40e58edbf6dd9609e054e97",
+          "revision_id": "sha256:884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4234628002",
+            "doi": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "landing_page_url": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W4234628002",
+            "text_sha256": "884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47"
+          },
+          "raw_prediction": {
+            "start": 1054,
+            "end": 1067,
+            "text": "system design",
+            "label": "concept",
+            "score": 0.5013083815574646
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4234628002",
+          "start": 1054,
+          "end": 1067,
+          "surface_text": "system design",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.4671647250652313,
+          "normalized_form": "system design",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:fb6d8010f0460c604f42de58232843b0f74f44dca40e58edbf6dd9609e054e97",
+          "revision_id": "sha256:884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4234628002",
+            "doi": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "landing_page_url": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W4234628002",
+            "text_sha256": "884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47"
+          },
+          "raw_prediction": {
+            "start": 1054,
+            "end": 1067,
+            "text": "system design",
+            "label": "attribute",
+            "score": 0.4671647250652313
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d31b00ebb3a5bace4a485f3ea2619ec1be931f29e3340b30706528df13838bbd",
+      "document_id": "W4234628002",
+      "start": 1269,
+      "end": 1298,
+      "surface_text": "evaluation questionnaire page",
+      "entity_types": [
+        "DATA_RESOURCE"
+      ],
+      "normalized_forms": [
+        "evaluation questionnaire page"
+      ],
+      "confidence": 0.5128322839736938,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4234628002",
+          "start": 1269,
+          "end": 1298,
+          "surface_text": "evaluation questionnaire page",
+          "ner_label_hint": "DATA_RESOURCE",
+          "score": 0.5128322839736938,
+          "normalized_form": "evaluation questionnaire page",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:fb6d8010f0460c604f42de58232843b0f74f44dca40e58edbf6dd9609e054e97",
+          "revision_id": "sha256:884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4234628002",
+            "doi": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "landing_page_url": "https://doi.org/10.31940/matrix.v9i1.1243",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-28T10:33:24.094632",
+            "source_url": "https://openalex.org/W4234628002",
+            "text_sha256": "884a49c84f4b71814e4b064ce4b04e94e91e16ec2abd50deb975942e8458be47"
+          },
+          "raw_prediction": {
+            "start": 1269,
+            "end": 1298,
+            "text": "evaluation questionnaire page",
+            "label": "data resource",
+            "score": 0.5128322839736938
+          }
+        }
+      ]
+    }
+  ],
+  "relations": [],
+  "raw_relation_count": 0,
+  "seconds": 2.7618943999987096
+}

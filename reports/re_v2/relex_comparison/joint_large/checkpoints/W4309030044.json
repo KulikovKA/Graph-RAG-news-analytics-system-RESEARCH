@@ -1,0 +1,3394 @@
+{
+  "fingerprint": "c79845cf50e55b434eab0bcd7d45fb6779c27e093e96fa9a77b4c2f1b311bf99",
+  "document_id": "W4309030044",
+  "model": "knowledgator/gliner-relex-large-v1.0",
+  "mode": "joint",
+  "raw_windows": [
+    {
+      "window": {
+        "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+        "document_id": "W4309030044",
+        "start": 0,
+        "end": 944,
+        "text": "In the business of intermodal passenger transport, fare optimization of intermodal products has significant effects on corporate revenue and passenger travel convenience. This study takes the competitive relationship between high-speed rail (HSR) and airlines as well as carrier connectivity as the starting point, analyzes the advantages and disadvantages of different carriers in the different markets, and researches the optimization of fares. The stochastic user equilibrium model based on elastic demand is used to establish a bi-level programming model for the optimization of fares; the upper and lower models are solved using the particle swarm algorithm and method of successive averages, respectively. The results suggest that airlines are willing to cooperate with the HSR sector and improve the connectivity between aviation and HSR, and a reasonable pricing strategy is more likely to motivate cooperation between aviation and HSR.",
+        "entity_ids": []
+      },
+      "entities": [
+        {
+          "start": 51,
+          "end": 68,
+          "text": "fare optimization",
+          "label": "process",
+          "score": 0.9350962042808533
+        },
+        {
+          "start": 51,
+          "end": 68,
+          "text": "fare optimization",
+          "label": "task",
+          "score": 0.7220314741134644
+        },
+        {
+          "start": 51,
+          "end": 68,
+          "text": "fare optimization",
+          "label": "concept",
+          "score": 0.624434769153595
+        },
+        {
+          "start": 56,
+          "end": 68,
+          "text": "optimization",
+          "label": "process",
+          "score": 0.4100932478904724
+        },
+        {
+          "start": 72,
+          "end": 91,
+          "text": "intermodal products",
+          "label": "concept",
+          "score": 0.5200400352478027
+        },
+        {
+          "start": 72,
+          "end": 91,
+          "text": "intermodal products",
+          "label": "object",
+          "score": 0.4743175804615021
+        },
+        {
+          "start": 72,
+          "end": 91,
+          "text": "intermodal products",
+          "label": "actor",
+          "score": 0.44116663932800293
+        },
+        {
+          "start": 119,
+          "end": 136,
+          "text": "corporate revenue",
+          "label": "concept",
+          "score": 0.8910512924194336
+        },
+        {
+          "start": 119,
+          "end": 136,
+          "text": "corporate revenue",
+          "label": "attribute",
+          "score": 0.7621484398841858
+        },
+        {
+          "start": 119,
+          "end": 136,
+          "text": "corporate revenue",
+          "label": "condition",
+          "score": 0.5162670016288757
+        },
+        {
+          "start": 119,
+          "end": 136,
+          "text": "corporate revenue",
+          "label": "object",
+          "score": 0.3779650330543518
+        },
+        {
+          "start": 141,
+          "end": 169,
+          "text": "passenger travel convenience",
+          "label": "concept",
+          "score": 0.8792983293533325
+        },
+        {
+          "start": 141,
+          "end": 169,
+          "text": "passenger travel convenience",
+          "label": "attribute",
+          "score": 0.7789559960365295
+        },
+        {
+          "start": 141,
+          "end": 169,
+          "text": "passenger travel convenience",
+          "label": "condition",
+          "score": 0.44678670167922974
+        },
+        {
+          "start": 141,
+          "end": 169,
+          "text": "passenger travel convenience",
+          "label": "object",
+          "score": 0.3111564815044403
+        },
+        {
+          "start": 192,
+          "end": 216,
+          "text": "competitive relationship",
+          "label": "concept",
+          "score": 0.6951659917831421
+        },
+        {
+          "start": 192,
+          "end": 216,
+          "text": "competitive relationship",
+          "label": "condition",
+          "score": 0.5013926029205322
+        },
+        {
+          "start": 225,
+          "end": 246,
+          "text": "high-speed rail (HSR)",
+          "label": "actor",
+          "score": 0.4800400733947754
+        },
+        {
+          "start": 225,
+          "end": 246,
+          "text": "high-speed rail (HSR)",
+          "label": "concept",
+          "score": 0.44990381598472595
+        },
+        {
+          "start": 225,
+          "end": 240,
+          "text": "high-speed rail",
+          "label": "actor",
+          "score": 0.38997703790664673
+        },
+        {
+          "start": 242,
+          "end": 245,
+          "text": "HSR",
+          "label": "actor",
+          "score": 0.4377177357673645
+        },
+        {
+          "start": 251,
+          "end": 259,
+          "text": "airlines",
+          "label": "actor",
+          "score": 0.9853742122650146
+        },
+        {
+          "start": 251,
+          "end": 259,
+          "text": "airlines",
+          "label": "concept",
+          "score": 0.3445174992084503
+        },
+        {
+          "start": 251,
+          "end": 259,
+          "text": "airlines",
+          "label": "object",
+          "score": 0.3406500518321991
+        },
+        {
+          "start": 271,
+          "end": 291,
+          "text": "carrier connectivity",
+          "label": "concept",
+          "score": 0.8363802433013916
+        },
+        {
+          "start": 271,
+          "end": 291,
+          "text": "carrier connectivity",
+          "label": "condition",
+          "score": 0.581199586391449
+        },
+        {
+          "start": 271,
+          "end": 291,
+          "text": "carrier connectivity",
+          "label": "object",
+          "score": 0.48135679960250854
+        },
+        {
+          "start": 279,
+          "end": 291,
+          "text": "connectivity",
+          "label": "concept",
+          "score": 0.4376315772533417
+        },
+        {
+          "start": 328,
+          "end": 338,
+          "text": "advantages",
+          "label": "attribute",
+          "score": 0.8401520848274231
+        },
+        {
+          "start": 328,
+          "end": 338,
+          "text": "advantages",
+          "label": "concept",
+          "score": 0.4200070798397064
+        },
+        {
+          "start": 343,
+          "end": 356,
+          "text": "disadvantages",
+          "label": "attribute",
+          "score": 0.8876587748527527
+        },
+        {
+          "start": 343,
+          "end": 356,
+          "text": "disadvantages",
+          "label": "concept",
+          "score": 0.48793479800224304
+        },
+        {
+          "start": 360,
+          "end": 378,
+          "text": "different carriers",
+          "label": "actor",
+          "score": 0.7089191675186157
+        },
+        {
+          "start": 370,
+          "end": 378,
+          "text": "carriers",
+          "label": "actor",
+          "score": 0.4478272497653961
+        },
+        {
+          "start": 386,
+          "end": 403,
+          "text": "different markets",
+          "label": "concept",
+          "score": 0.34953001141548157
+        },
+        {
+          "start": 386,
+          "end": 403,
+          "text": "different markets",
+          "label": "condition",
+          "score": 0.3212830424308777
+        },
+        {
+          "start": 424,
+          "end": 445,
+          "text": "optimization of fares",
+          "label": "process",
+          "score": 0.8066845536231995
+        },
+        {
+          "start": 424,
+          "end": 445,
+          "text": "optimization of fares",
+          "label": "task",
+          "score": 0.6428157091140747
+        },
+        {
+          "start": 424,
+          "end": 445,
+          "text": "optimization of fares",
+          "label": "concept",
+          "score": 0.43787550926208496
+        },
+        {
+          "start": 451,
+          "end": 484,
+          "text": "stochastic user equilibrium model",
+          "label": "method",
+          "score": 0.9083231091499329
+        },
+        {
+          "start": 451,
+          "end": 484,
+          "text": "stochastic user equilibrium model",
+          "label": "mechanism",
+          "score": 0.8322976231575012
+        },
+        {
+          "start": 451,
+          "end": 484,
+          "text": "stochastic user equilibrium model",
+          "label": "concept",
+          "score": 0.6450188159942627
+        },
+        {
+          "start": 494,
+          "end": 508,
+          "text": "elastic demand",
+          "label": "concept",
+          "score": 0.8528631329536438
+        },
+        {
+          "start": 494,
+          "end": 508,
+          "text": "elastic demand",
+          "label": "mechanism",
+          "score": 0.5532167553901672
+        },
+        {
+          "start": 494,
+          "end": 508,
+          "text": "elastic demand",
+          "label": "condition",
+          "score": 0.37835749983787537
+        },
+        {
+          "start": 532,
+          "end": 558,
+          "text": "bi-level programming model",
+          "label": "method",
+          "score": 0.8852052092552185
+        },
+        {
+          "start": 532,
+          "end": 558,
+          "text": "bi-level programming model",
+          "label": "concept",
+          "score": 0.7627083659172058
+        },
+        {
+          "start": 532,
+          "end": 558,
+          "text": "bi-level programming model",
+          "label": "mechanism",
+          "score": 0.7229469418525696
+        },
+        {
+          "start": 532,
+          "end": 558,
+          "text": "bi-level programming model",
+          "label": "process",
+          "score": 0.6785822510719299
+        },
+        {
+          "start": 594,
+          "end": 616,
+          "text": "upper and lower models",
+          "label": "concept",
+          "score": 0.4883294403553009
+        },
+        {
+          "start": 604,
+          "end": 616,
+          "text": "lower models",
+          "label": "concept",
+          "score": 0.5324462652206421
+        },
+        {
+          "start": 638,
+          "end": 662,
+          "text": "particle swarm algorithm",
+          "label": "method",
+          "score": 0.9763798117637634
+        },
+        {
+          "start": 667,
+          "end": 696,
+          "text": "method of successive averages",
+          "label": "method",
+          "score": 0.9796591997146606
+        },
+        {
+          "start": 667,
+          "end": 696,
+          "text": "method of successive averages",
+          "label": "mechanism",
+          "score": 0.34240099787712097
+        },
+        {
+          "start": 677,
+          "end": 696,
+          "text": "successive averages",
+          "label": "method",
+          "score": 0.5939028859138489
+        },
+        {
+          "start": 716,
+          "end": 723,
+          "text": "results",
+          "label": "result",
+          "score": 0.5267044305801392
+        },
+        {
+          "start": 716,
+          "end": 723,
+          "text": "results",
+          "label": "concept",
+          "score": 0.40418532490730286
+        },
+        {
+          "start": 761,
+          "end": 770,
+          "text": "cooperate",
+          "label": "process",
+          "score": 0.49039679765701294
+        },
+        {
+          "start": 761,
+          "end": 770,
+          "text": "cooperate",
+          "label": "task",
+          "score": 0.31211066246032715
+        },
+        {
+          "start": 828,
+          "end": 836,
+          "text": "aviation",
+          "label": "actor",
+          "score": 0.5177099704742432
+        },
+        {
+          "start": 852,
+          "end": 879,
+          "text": "reasonable pricing strategy",
+          "label": "concept",
+          "score": 0.6289956569671631
+        },
+        {
+          "start": 852,
+          "end": 879,
+          "text": "reasonable pricing strategy",
+          "label": "condition",
+          "score": 0.39292246103286743
+        },
+        {
+          "start": 863,
+          "end": 879,
+          "text": "pricing strategy",
+          "label": "concept",
+          "score": 0.8329232335090637
+        },
+        {
+          "start": 863,
+          "end": 879,
+          "text": "pricing strategy",
+          "label": "condition",
+          "score": 0.6061896085739136
+        },
+        {
+          "start": 863,
+          "end": 879,
+          "text": "pricing strategy",
+          "label": "object",
+          "score": 0.40228524804115295
+        },
+        {
+          "start": 863,
+          "end": 879,
+          "text": "pricing strategy",
+          "label": "process",
+          "score": 0.31343623995780945
+        },
+        {
+          "start": 907,
+          "end": 918,
+          "text": "cooperation",
+          "label": "process",
+          "score": 0.5236852169036865
+        },
+        {
+          "start": 907,
+          "end": 943,
+          "text": "cooperation between aviation and HSR",
+          "label": "process",
+          "score": 0.4562045931816101
+        },
+        {
+          "start": 907,
+          "end": 918,
+          "text": "cooperation",
+          "label": "task",
+          "score": 0.4323864281177521
+        },
+        {
+          "start": 907,
+          "end": 943,
+          "text": "cooperation between aviation and HSR",
+          "label": "concept",
+          "score": 0.417065292596817
+        },
+        {
+          "start": 907,
+          "end": 918,
+          "text": "cooperation",
+          "label": "concept",
+          "score": 0.40476542711257935
+        },
+        {
+          "start": 907,
+          "end": 943,
+          "text": "cooperation between aviation and HSR",
+          "label": "task",
+          "score": 0.31005144119262695
+        }
+      ],
+      "predictions": [
+        {
+          "head": {
+            "start": 360,
+            "end": 378,
+            "text": "different carriers",
+            "type": "actor",
+            "entity_idx": 32
+          },
+          "tail": {
+            "start": 328,
+            "end": 338,
+            "text": "advantages",
+            "type": "attribute",
+            "entity_idx": 28
+          },
+          "relation": "has attribute",
+          "score": 0.7081342935562134
+        },
+        {
+          "head": {
+            "start": 360,
+            "end": 378,
+            "text": "different carriers",
+            "type": "actor",
+            "entity_idx": 32
+          },
+          "tail": {
+            "start": 343,
+            "end": 356,
+            "text": "disadvantages",
+            "type": "attribute",
+            "entity_idx": 30
+          },
+          "relation": "has attribute",
+          "score": 0.7103753089904785
+        },
+        {
+          "head": {
+            "start": 451,
+            "end": 484,
+            "text": "stochastic user equilibrium model",
+            "type": "method",
+            "entity_idx": 39
+          },
+          "tail": {
+            "start": 494,
+            "end": 508,
+            "text": "elastic demand",
+            "type": "concept",
+            "entity_idx": 42
+          },
+          "relation": "derived from",
+          "score": 0.9240729808807373
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "e:8a53490d1a4cc8f912020a0421c48cc877b7873e522321e2864bba5a234f6784",
+      "document_id": "W4309030044",
+      "start": 51,
+      "end": 68,
+      "surface_text": "fare optimization",
+      "entity_types": [
+        "CONCEPT",
+        "PROCESS",
+        "TASK"
+      ],
+      "normalized_forms": [
+        "fare optimization"
+      ],
+      "confidence": 0.9350962042808533,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 51,
+          "end": 68,
+          "surface_text": "fare optimization",
+          "ner_label_hint": "PROCESS",
+          "score": 0.9350962042808533,
+          "normalized_form": "fare optimization",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 51,
+            "end": 68,
+            "text": "fare optimization",
+            "label": "process",
+            "score": 0.9350962042808533
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 51,
+          "end": 68,
+          "surface_text": "fare optimization",
+          "ner_label_hint": "TASK",
+          "score": 0.7220314741134644,
+          "normalized_form": "fare optimization",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 51,
+            "end": 68,
+            "text": "fare optimization",
+            "label": "task",
+            "score": 0.7220314741134644
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 51,
+          "end": 68,
+          "surface_text": "fare optimization",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.624434769153595,
+          "normalized_form": "fare optimization",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 51,
+            "end": 68,
+            "text": "fare optimization",
+            "label": "concept",
+            "score": 0.624434769153595
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:5f0942400fb9aea54b509540ed405cdebbef13e99a831e22cf9a2809ec4cecb9",
+      "document_id": "W4309030044",
+      "start": 56,
+      "end": 68,
+      "surface_text": "optimization",
+      "entity_types": [
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "optimization"
+      ],
+      "confidence": 0.4100932478904724,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 56,
+          "end": 68,
+          "surface_text": "optimization",
+          "ner_label_hint": "PROCESS",
+          "score": 0.4100932478904724,
+          "normalized_form": "optimization",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 56,
+            "end": 68,
+            "text": "optimization",
+            "label": "process",
+            "score": 0.4100932478904724
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:7fb978ea2f6a971786a970940c694da5d4c840983934adb7d983c8b150b7e5aa",
+      "document_id": "W4309030044",
+      "start": 72,
+      "end": 91,
+      "surface_text": "intermodal products",
+      "entity_types": [
+        "ACTOR",
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "intermodal products"
+      ],
+      "confidence": 0.5200400352478027,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 72,
+          "end": 91,
+          "surface_text": "intermodal products",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.5200400352478027,
+          "normalized_form": "intermodal products",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 72,
+            "end": 91,
+            "text": "intermodal products",
+            "label": "concept",
+            "score": 0.5200400352478027
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 72,
+          "end": 91,
+          "surface_text": "intermodal products",
+          "ner_label_hint": "OBJECT",
+          "score": 0.4743175804615021,
+          "normalized_form": "intermodal products",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 72,
+            "end": 91,
+            "text": "intermodal products",
+            "label": "object",
+            "score": 0.4743175804615021
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 72,
+          "end": 91,
+          "surface_text": "intermodal products",
+          "ner_label_hint": "ACTOR",
+          "score": 0.44116663932800293,
+          "normalized_form": "intermodal products",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 72,
+            "end": 91,
+            "text": "intermodal products",
+            "label": "actor",
+            "score": 0.44116663932800293
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:9593e09a01f422ecdf7c1a6cf5874f8b818c334efc7c16ac556eec29157eac3a",
+      "document_id": "W4309030044",
+      "start": 119,
+      "end": 136,
+      "surface_text": "corporate revenue",
+      "entity_types": [
+        "ATTRIBUTE",
+        "CONCEPT",
+        "CONDITION",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "corporate revenue"
+      ],
+      "confidence": 0.8910512924194336,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 119,
+          "end": 136,
+          "surface_text": "corporate revenue",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.8910512924194336,
+          "normalized_form": "corporate revenue",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 119,
+            "end": 136,
+            "text": "corporate revenue",
+            "label": "concept",
+            "score": 0.8910512924194336
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 119,
+          "end": 136,
+          "surface_text": "corporate revenue",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.7621484398841858,
+          "normalized_form": "corporate revenue",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 119,
+            "end": 136,
+            "text": "corporate revenue",
+            "label": "attribute",
+            "score": 0.7621484398841858
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 119,
+          "end": 136,
+          "surface_text": "corporate revenue",
+          "ner_label_hint": "CONDITION",
+          "score": 0.5162670016288757,
+          "normalized_form": "corporate revenue",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 119,
+            "end": 136,
+            "text": "corporate revenue",
+            "label": "condition",
+            "score": 0.5162670016288757
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 119,
+          "end": 136,
+          "surface_text": "corporate revenue",
+          "ner_label_hint": "OBJECT",
+          "score": 0.3779650330543518,
+          "normalized_form": "corporate revenue",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 119,
+            "end": 136,
+            "text": "corporate revenue",
+            "label": "object",
+            "score": 0.3779650330543518
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:2ac5eada8a64c9e56a36d3a3cf94b56eebdc519ce3723c77cc556c2039f40e29",
+      "document_id": "W4309030044",
+      "start": 141,
+      "end": 169,
+      "surface_text": "passenger travel convenience",
+      "entity_types": [
+        "ATTRIBUTE",
+        "CONCEPT",
+        "CONDITION",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "passenger travel convenience"
+      ],
+      "confidence": 0.8792983293533325,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 141,
+          "end": 169,
+          "surface_text": "passenger travel convenience",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.8792983293533325,
+          "normalized_form": "passenger travel convenience",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 141,
+            "end": 169,
+            "text": "passenger travel convenience",
+            "label": "concept",
+            "score": 0.8792983293533325
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 141,
+          "end": 169,
+          "surface_text": "passenger travel convenience",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.7789559960365295,
+          "normalized_form": "passenger travel convenience",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 141,
+            "end": 169,
+            "text": "passenger travel convenience",
+            "label": "attribute",
+            "score": 0.7789559960365295
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 141,
+          "end": 169,
+          "surface_text": "passenger travel convenience",
+          "ner_label_hint": "CONDITION",
+          "score": 0.44678670167922974,
+          "normalized_form": "passenger travel convenience",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 141,
+            "end": 169,
+            "text": "passenger travel convenience",
+            "label": "condition",
+            "score": 0.44678670167922974
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 141,
+          "end": 169,
+          "surface_text": "passenger travel convenience",
+          "ner_label_hint": "OBJECT",
+          "score": 0.3111564815044403,
+          "normalized_form": "passenger travel convenience",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 141,
+            "end": 169,
+            "text": "passenger travel convenience",
+            "label": "object",
+            "score": 0.3111564815044403
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:3ead4ef5ff4008ab2e1920c0609ecd42ca33357a2ffbef2a9eb956ccfb448aed",
+      "document_id": "W4309030044",
+      "start": 192,
+      "end": 216,
+      "surface_text": "competitive relationship",
+      "entity_types": [
+        "CONCEPT",
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "competitive relationship"
+      ],
+      "confidence": 0.6951659917831421,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 192,
+          "end": 216,
+          "surface_text": "competitive relationship",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.6951659917831421,
+          "normalized_form": "competitive relationship",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 192,
+            "end": 216,
+            "text": "competitive relationship",
+            "label": "concept",
+            "score": 0.6951659917831421
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 192,
+          "end": 216,
+          "surface_text": "competitive relationship",
+          "ner_label_hint": "CONDITION",
+          "score": 0.5013926029205322,
+          "normalized_form": "competitive relationship",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 192,
+            "end": 216,
+            "text": "competitive relationship",
+            "label": "condition",
+            "score": 0.5013926029205322
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a0fd83bf3465134e855fb7de50584367abdb98f1fdbe59aea6f242202743d89d",
+      "document_id": "W4309030044",
+      "start": 225,
+      "end": 240,
+      "surface_text": "high-speed rail",
+      "entity_types": [
+        "ACTOR"
+      ],
+      "normalized_forms": [
+        "high-speed rail"
+      ],
+      "confidence": 0.38997703790664673,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 225,
+          "end": 240,
+          "surface_text": "high-speed rail",
+          "ner_label_hint": "ACTOR",
+          "score": 0.38997703790664673,
+          "normalized_form": "high-speed rail",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 225,
+            "end": 240,
+            "text": "high-speed rail",
+            "label": "actor",
+            "score": 0.38997703790664673
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:0be9a05e02501ad818d7cad8e087c2f7958cb1ef74237d7140c3ccdc1124c2e8",
+      "document_id": "W4309030044",
+      "start": 225,
+      "end": 246,
+      "surface_text": "high-speed rail (HSR)",
+      "entity_types": [
+        "ACTOR",
+        "CONCEPT"
+      ],
+      "normalized_forms": [
+        "high-speed rail (hsr)"
+      ],
+      "confidence": 0.4800400733947754,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 225,
+          "end": 246,
+          "surface_text": "high-speed rail (HSR)",
+          "ner_label_hint": "ACTOR",
+          "score": 0.4800400733947754,
+          "normalized_form": "high-speed rail (hsr)",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 225,
+            "end": 246,
+            "text": "high-speed rail (HSR)",
+            "label": "actor",
+            "score": 0.4800400733947754
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 225,
+          "end": 246,
+          "surface_text": "high-speed rail (HSR)",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.44990381598472595,
+          "normalized_form": "high-speed rail (hsr)",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 225,
+            "end": 246,
+            "text": "high-speed rail (HSR)",
+            "label": "concept",
+            "score": 0.44990381598472595
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:6fe68844d2467447a58dc2baf41bd3c7b6d5fcc01133a8d24f139b57f91730c6",
+      "document_id": "W4309030044",
+      "start": 242,
+      "end": 245,
+      "surface_text": "HSR",
+      "entity_types": [
+        "ACTOR"
+      ],
+      "normalized_forms": [
+        "hsr"
+      ],
+      "confidence": 0.4377177357673645,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 242,
+          "end": 245,
+          "surface_text": "HSR",
+          "ner_label_hint": "ACTOR",
+          "score": 0.4377177357673645,
+          "normalized_form": "hsr",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 242,
+            "end": 245,
+            "text": "HSR",
+            "label": "actor",
+            "score": 0.4377177357673645
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:8f73ea6468b3e5aad9ed634882e81a1d8aa9f5a50063535943b933cf26c5cd1d",
+      "document_id": "W4309030044",
+      "start": 251,
+      "end": 259,
+      "surface_text": "airlines",
+      "entity_types": [
+        "ACTOR",
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "airlines"
+      ],
+      "confidence": 0.9853742122650146,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 251,
+          "end": 259,
+          "surface_text": "airlines",
+          "ner_label_hint": "ACTOR",
+          "score": 0.9853742122650146,
+          "normalized_form": "airlines",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 251,
+            "end": 259,
+            "text": "airlines",
+            "label": "actor",
+            "score": 0.9853742122650146
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 251,
+          "end": 259,
+          "surface_text": "airlines",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.3445174992084503,
+          "normalized_form": "airlines",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 251,
+            "end": 259,
+            "text": "airlines",
+            "label": "concept",
+            "score": 0.3445174992084503
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 251,
+          "end": 259,
+          "surface_text": "airlines",
+          "ner_label_hint": "OBJECT",
+          "score": 0.3406500518321991,
+          "normalized_form": "airlines",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 251,
+            "end": 259,
+            "text": "airlines",
+            "label": "object",
+            "score": 0.3406500518321991
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:8b4f67f763c75324ba7328685d28755a80ce0f40cc0faa9e440af061d276d336",
+      "document_id": "W4309030044",
+      "start": 271,
+      "end": 291,
+      "surface_text": "carrier connectivity",
+      "entity_types": [
+        "CONCEPT",
+        "CONDITION",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "carrier connectivity"
+      ],
+      "confidence": 0.8363802433013916,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 271,
+          "end": 291,
+          "surface_text": "carrier connectivity",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.8363802433013916,
+          "normalized_form": "carrier connectivity",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 271,
+            "end": 291,
+            "text": "carrier connectivity",
+            "label": "concept",
+            "score": 0.8363802433013916
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 271,
+          "end": 291,
+          "surface_text": "carrier connectivity",
+          "ner_label_hint": "CONDITION",
+          "score": 0.581199586391449,
+          "normalized_form": "carrier connectivity",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 271,
+            "end": 291,
+            "text": "carrier connectivity",
+            "label": "condition",
+            "score": 0.581199586391449
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 271,
+          "end": 291,
+          "surface_text": "carrier connectivity",
+          "ner_label_hint": "OBJECT",
+          "score": 0.48135679960250854,
+          "normalized_form": "carrier connectivity",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 271,
+            "end": 291,
+            "text": "carrier connectivity",
+            "label": "object",
+            "score": 0.48135679960250854
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:2d8b6ff0dc2ec1ce710f1fbabb303efb4df67ecae58a872a2be5caab614cfddf",
+      "document_id": "W4309030044",
+      "start": 279,
+      "end": 291,
+      "surface_text": "connectivity",
+      "entity_types": [
+        "CONCEPT"
+      ],
+      "normalized_forms": [
+        "connectivity"
+      ],
+      "confidence": 0.4376315772533417,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 279,
+          "end": 291,
+          "surface_text": "connectivity",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.4376315772533417,
+          "normalized_form": "connectivity",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 279,
+            "end": 291,
+            "text": "connectivity",
+            "label": "concept",
+            "score": 0.4376315772533417
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:383e8d641d1825d676f1b4797d961a2d6b5a8f26605ea0a46923a3b8a041d395",
+      "document_id": "W4309030044",
+      "start": 328,
+      "end": 338,
+      "surface_text": "advantages",
+      "entity_types": [
+        "ATTRIBUTE",
+        "CONCEPT"
+      ],
+      "normalized_forms": [
+        "advantages"
+      ],
+      "confidence": 0.8401520848274231,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 328,
+          "end": 338,
+          "surface_text": "advantages",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.8401520848274231,
+          "normalized_form": "advantages",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 328,
+            "end": 338,
+            "text": "advantages",
+            "label": "attribute",
+            "score": 0.8401520848274231
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 328,
+          "end": 338,
+          "surface_text": "advantages",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.4200070798397064,
+          "normalized_form": "advantages",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 328,
+            "end": 338,
+            "text": "advantages",
+            "label": "concept",
+            "score": 0.4200070798397064
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:957fc189d0b7d88a9f2cf063dee2b25f4c992b3db8a687b91abce5e96831d3ca",
+      "document_id": "W4309030044",
+      "start": 343,
+      "end": 356,
+      "surface_text": "disadvantages",
+      "entity_types": [
+        "ATTRIBUTE",
+        "CONCEPT"
+      ],
+      "normalized_forms": [
+        "disadvantages"
+      ],
+      "confidence": 0.8876587748527527,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 343,
+          "end": 356,
+          "surface_text": "disadvantages",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.8876587748527527,
+          "normalized_form": "disadvantages",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 343,
+            "end": 356,
+            "text": "disadvantages",
+            "label": "attribute",
+            "score": 0.8876587748527527
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 343,
+          "end": 356,
+          "surface_text": "disadvantages",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.48793479800224304,
+          "normalized_form": "disadvantages",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 343,
+            "end": 356,
+            "text": "disadvantages",
+            "label": "concept",
+            "score": 0.48793479800224304
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:bd70b2e6da75de58f5877a4877bb2d210146d9795f2475f7bcd024016af2e2b6",
+      "document_id": "W4309030044",
+      "start": 360,
+      "end": 378,
+      "surface_text": "different carriers",
+      "entity_types": [
+        "ACTOR"
+      ],
+      "normalized_forms": [
+        "different carriers"
+      ],
+      "confidence": 0.7089191675186157,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 360,
+          "end": 378,
+          "surface_text": "different carriers",
+          "ner_label_hint": "ACTOR",
+          "score": 0.7089191675186157,
+          "normalized_form": "different carriers",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 360,
+            "end": 378,
+            "text": "different carriers",
+            "label": "actor",
+            "score": 0.7089191675186157
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:641a416885a91b5aedb97a2c01f474548885d2339b59742c75d4afe01a5ff526",
+      "document_id": "W4309030044",
+      "start": 370,
+      "end": 378,
+      "surface_text": "carriers",
+      "entity_types": [
+        "ACTOR"
+      ],
+      "normalized_forms": [
+        "carriers"
+      ],
+      "confidence": 0.4478272497653961,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 370,
+          "end": 378,
+          "surface_text": "carriers",
+          "ner_label_hint": "ACTOR",
+          "score": 0.4478272497653961,
+          "normalized_form": "carriers",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 370,
+            "end": 378,
+            "text": "carriers",
+            "label": "actor",
+            "score": 0.4478272497653961
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:5af75d87b86cc626af32eed72c03178f7f8bed355a6f274f50bb025f9fc56e5a",
+      "document_id": "W4309030044",
+      "start": 386,
+      "end": 403,
+      "surface_text": "different markets",
+      "entity_types": [
+        "CONCEPT",
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "different markets"
+      ],
+      "confidence": 0.34953001141548157,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 386,
+          "end": 403,
+          "surface_text": "different markets",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.34953001141548157,
+          "normalized_form": "different markets",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 386,
+            "end": 403,
+            "text": "different markets",
+            "label": "concept",
+            "score": 0.34953001141548157
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 386,
+          "end": 403,
+          "surface_text": "different markets",
+          "ner_label_hint": "CONDITION",
+          "score": 0.3212830424308777,
+          "normalized_form": "different markets",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 386,
+            "end": 403,
+            "text": "different markets",
+            "label": "condition",
+            "score": 0.3212830424308777
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:21499566fe1ae0ac9a1dbbc13afac1025e891a7e26617e4740269ac81b3c37a2",
+      "document_id": "W4309030044",
+      "start": 424,
+      "end": 445,
+      "surface_text": "optimization of fares",
+      "entity_types": [
+        "CONCEPT",
+        "PROCESS",
+        "TASK"
+      ],
+      "normalized_forms": [
+        "optimization of fares"
+      ],
+      "confidence": 0.8066845536231995,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 424,
+          "end": 445,
+          "surface_text": "optimization of fares",
+          "ner_label_hint": "PROCESS",
+          "score": 0.8066845536231995,
+          "normalized_form": "optimization of fares",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 424,
+            "end": 445,
+            "text": "optimization of fares",
+            "label": "process",
+            "score": 0.8066845536231995
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 424,
+          "end": 445,
+          "surface_text": "optimization of fares",
+          "ner_label_hint": "TASK",
+          "score": 0.6428157091140747,
+          "normalized_form": "optimization of fares",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 424,
+            "end": 445,
+            "text": "optimization of fares",
+            "label": "task",
+            "score": 0.6428157091140747
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 424,
+          "end": 445,
+          "surface_text": "optimization of fares",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.43787550926208496,
+          "normalized_form": "optimization of fares",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 424,
+            "end": 445,
+            "text": "optimization of fares",
+            "label": "concept",
+            "score": 0.43787550926208496
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:6607f6ef1bd4a1a2dca461a69158126a3035d84869a33a91262edb508ff36d20",
+      "document_id": "W4309030044",
+      "start": 451,
+      "end": 484,
+      "surface_text": "stochastic user equilibrium model",
+      "entity_types": [
+        "CONCEPT",
+        "MECHANISM",
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "stochastic user equilibrium model"
+      ],
+      "confidence": 0.9083231091499329,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 451,
+          "end": 484,
+          "surface_text": "stochastic user equilibrium model",
+          "ner_label_hint": "METHOD",
+          "score": 0.9083231091499329,
+          "normalized_form": "stochastic user equilibrium model",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 451,
+            "end": 484,
+            "text": "stochastic user equilibrium model",
+            "label": "method",
+            "score": 0.9083231091499329
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 451,
+          "end": 484,
+          "surface_text": "stochastic user equilibrium model",
+          "ner_label_hint": "MECHANISM",
+          "score": 0.8322976231575012,
+          "normalized_form": "stochastic user equilibrium model",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 451,
+            "end": 484,
+            "text": "stochastic user equilibrium model",
+            "label": "mechanism",
+            "score": 0.8322976231575012
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 451,
+          "end": 484,
+          "surface_text": "stochastic user equilibrium model",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.6450188159942627,
+          "normalized_form": "stochastic user equilibrium model",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 451,
+            "end": 484,
+            "text": "stochastic user equilibrium model",
+            "label": "concept",
+            "score": 0.6450188159942627
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:9b2826fd994d2017a008ecda6d070e42856c2a0421caa1485fa66230c39861ef",
+      "document_id": "W4309030044",
+      "start": 494,
+      "end": 508,
+      "surface_text": "elastic demand",
+      "entity_types": [
+        "CONCEPT",
+        "CONDITION",
+        "MECHANISM"
+      ],
+      "normalized_forms": [
+        "elastic demand"
+      ],
+      "confidence": 0.8528631329536438,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 494,
+          "end": 508,
+          "surface_text": "elastic demand",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.8528631329536438,
+          "normalized_form": "elastic demand",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 494,
+            "end": 508,
+            "text": "elastic demand",
+            "label": "concept",
+            "score": 0.8528631329536438
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 494,
+          "end": 508,
+          "surface_text": "elastic demand",
+          "ner_label_hint": "MECHANISM",
+          "score": 0.5532167553901672,
+          "normalized_form": "elastic demand",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 494,
+            "end": 508,
+            "text": "elastic demand",
+            "label": "mechanism",
+            "score": 0.5532167553901672
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 494,
+          "end": 508,
+          "surface_text": "elastic demand",
+          "ner_label_hint": "CONDITION",
+          "score": 0.37835749983787537,
+          "normalized_form": "elastic demand",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 494,
+            "end": 508,
+            "text": "elastic demand",
+            "label": "condition",
+            "score": 0.37835749983787537
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:afee8f672f05c9cd0ca340176d3ec922ed5a775afd58411da305f11ac8fbb401",
+      "document_id": "W4309030044",
+      "start": 532,
+      "end": 558,
+      "surface_text": "bi-level programming model",
+      "entity_types": [
+        "CONCEPT",
+        "MECHANISM",
+        "METHOD",
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "bi-level programming model"
+      ],
+      "confidence": 0.8852052092552185,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 532,
+          "end": 558,
+          "surface_text": "bi-level programming model",
+          "ner_label_hint": "METHOD",
+          "score": 0.8852052092552185,
+          "normalized_form": "bi-level programming model",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 532,
+            "end": 558,
+            "text": "bi-level programming model",
+            "label": "method",
+            "score": 0.8852052092552185
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 532,
+          "end": 558,
+          "surface_text": "bi-level programming model",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.7627083659172058,
+          "normalized_form": "bi-level programming model",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 532,
+            "end": 558,
+            "text": "bi-level programming model",
+            "label": "concept",
+            "score": 0.7627083659172058
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 532,
+          "end": 558,
+          "surface_text": "bi-level programming model",
+          "ner_label_hint": "MECHANISM",
+          "score": 0.7229469418525696,
+          "normalized_form": "bi-level programming model",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 532,
+            "end": 558,
+            "text": "bi-level programming model",
+            "label": "mechanism",
+            "score": 0.7229469418525696
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 532,
+          "end": 558,
+          "surface_text": "bi-level programming model",
+          "ner_label_hint": "PROCESS",
+          "score": 0.6785822510719299,
+          "normalized_form": "bi-level programming model",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 532,
+            "end": 558,
+            "text": "bi-level programming model",
+            "label": "process",
+            "score": 0.6785822510719299
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:2ad51904c95f9f61e32335d9e58ffbe8bad14a1c0c5ea54dc87b3d18edec235e",
+      "document_id": "W4309030044",
+      "start": 594,
+      "end": 616,
+      "surface_text": "upper and lower models",
+      "entity_types": [
+        "CONCEPT"
+      ],
+      "normalized_forms": [
+        "upper and lower models"
+      ],
+      "confidence": 0.4883294403553009,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 594,
+          "end": 616,
+          "surface_text": "upper and lower models",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.4883294403553009,
+          "normalized_form": "upper and lower models",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 594,
+            "end": 616,
+            "text": "upper and lower models",
+            "label": "concept",
+            "score": 0.4883294403553009
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:da0036089c9f3d21a9dc1e7b8022208210698d7f0aac173722ac1bc4e8133129",
+      "document_id": "W4309030044",
+      "start": 604,
+      "end": 616,
+      "surface_text": "lower models",
+      "entity_types": [
+        "CONCEPT"
+      ],
+      "normalized_forms": [
+        "lower models"
+      ],
+      "confidence": 0.5324462652206421,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 604,
+          "end": 616,
+          "surface_text": "lower models",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.5324462652206421,
+          "normalized_form": "lower models",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 604,
+            "end": 616,
+            "text": "lower models",
+            "label": "concept",
+            "score": 0.5324462652206421
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:091f466970618ef72b5d99ce2e715e05109e16a64b106656e385cf15348adbe9",
+      "document_id": "W4309030044",
+      "start": 638,
+      "end": 662,
+      "surface_text": "particle swarm algorithm",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "particle swarm algorithm"
+      ],
+      "confidence": 0.9763798117637634,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 638,
+          "end": 662,
+          "surface_text": "particle swarm algorithm",
+          "ner_label_hint": "METHOD",
+          "score": 0.9763798117637634,
+          "normalized_form": "particle swarm algorithm",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 638,
+            "end": 662,
+            "text": "particle swarm algorithm",
+            "label": "method",
+            "score": 0.9763798117637634
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:35c9adcf60176ff329506571408631827a7c7681d08fc463a64afbc456dd58f3",
+      "document_id": "W4309030044",
+      "start": 667,
+      "end": 696,
+      "surface_text": "method of successive averages",
+      "entity_types": [
+        "MECHANISM",
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "method of successive averages"
+      ],
+      "confidence": 0.9796591997146606,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 667,
+          "end": 696,
+          "surface_text": "method of successive averages",
+          "ner_label_hint": "METHOD",
+          "score": 0.9796591997146606,
+          "normalized_form": "method of successive averages",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 667,
+            "end": 696,
+            "text": "method of successive averages",
+            "label": "method",
+            "score": 0.9796591997146606
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 667,
+          "end": 696,
+          "surface_text": "method of successive averages",
+          "ner_label_hint": "MECHANISM",
+          "score": 0.34240099787712097,
+          "normalized_form": "method of successive averages",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 667,
+            "end": 696,
+            "text": "method of successive averages",
+            "label": "mechanism",
+            "score": 0.34240099787712097
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:00c27c413889406c14f24be9b1840d7286728df59a4ff65276e7af4e48065007",
+      "document_id": "W4309030044",
+      "start": 677,
+      "end": 696,
+      "surface_text": "successive averages",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "successive averages"
+      ],
+      "confidence": 0.5939028859138489,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 677,
+          "end": 696,
+          "surface_text": "successive averages",
+          "ner_label_hint": "METHOD",
+          "score": 0.5939028859138489,
+          "normalized_form": "successive averages",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 677,
+            "end": 696,
+            "text": "successive averages",
+            "label": "method",
+            "score": 0.5939028859138489
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:faeff65b959a7e73286bb724ae956e1a6ea1ca87f984db5cd370da32cae76f72",
+      "document_id": "W4309030044",
+      "start": 716,
+      "end": 723,
+      "surface_text": "results",
+      "entity_types": [
+        "CONCEPT",
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "results"
+      ],
+      "confidence": 0.5267044305801392,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 716,
+          "end": 723,
+          "surface_text": "results",
+          "ner_label_hint": "RESULT",
+          "score": 0.5267044305801392,
+          "normalized_form": "results",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 716,
+            "end": 723,
+            "text": "results",
+            "label": "result",
+            "score": 0.5267044305801392
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 716,
+          "end": 723,
+          "surface_text": "results",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.40418532490730286,
+          "normalized_form": "results",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 716,
+            "end": 723,
+            "text": "results",
+            "label": "concept",
+            "score": 0.40418532490730286
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:b6b74c686e303339af6a107c536f78a725af3fed3f9ffd513c145611b10915b7",
+      "document_id": "W4309030044",
+      "start": 761,
+      "end": 770,
+      "surface_text": "cooperate",
+      "entity_types": [
+        "PROCESS",
+        "TASK"
+      ],
+      "normalized_forms": [
+        "cooperate"
+      ],
+      "confidence": 0.49039679765701294,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 761,
+          "end": 770,
+          "surface_text": "cooperate",
+          "ner_label_hint": "PROCESS",
+          "score": 0.49039679765701294,
+          "normalized_form": "cooperate",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 761,
+            "end": 770,
+            "text": "cooperate",
+            "label": "process",
+            "score": 0.49039679765701294
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 761,
+          "end": 770,
+          "surface_text": "cooperate",
+          "ner_label_hint": "TASK",
+          "score": 0.31211066246032715,
+          "normalized_form": "cooperate",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 761,
+            "end": 770,
+            "text": "cooperate",
+            "label": "task",
+            "score": 0.31211066246032715
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:1d5568575a34be75704d5b87f2e95b8cce56faf48cc2008de4b09fee6c6f257e",
+      "document_id": "W4309030044",
+      "start": 828,
+      "end": 836,
+      "surface_text": "aviation",
+      "entity_types": [
+        "ACTOR"
+      ],
+      "normalized_forms": [
+        "aviation"
+      ],
+      "confidence": 0.5177099704742432,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 828,
+          "end": 836,
+          "surface_text": "aviation",
+          "ner_label_hint": "ACTOR",
+          "score": 0.5177099704742432,
+          "normalized_form": "aviation",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 828,
+            "end": 836,
+            "text": "aviation",
+            "label": "actor",
+            "score": 0.5177099704742432
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:1decd7d3b0611c6eaac45d40004822c0bab1e995008eda8ffa0961a21bc29194",
+      "document_id": "W4309030044",
+      "start": 852,
+      "end": 879,
+      "surface_text": "reasonable pricing strategy",
+      "entity_types": [
+        "CONCEPT",
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "reasonable pricing strategy"
+      ],
+      "confidence": 0.6289956569671631,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 852,
+          "end": 879,
+          "surface_text": "reasonable pricing strategy",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.6289956569671631,
+          "normalized_form": "reasonable pricing strategy",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 852,
+            "end": 879,
+            "text": "reasonable pricing strategy",
+            "label": "concept",
+            "score": 0.6289956569671631
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 852,
+          "end": 879,
+          "surface_text": "reasonable pricing strategy",
+          "ner_label_hint": "CONDITION",
+          "score": 0.39292246103286743,
+          "normalized_form": "reasonable pricing strategy",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 852,
+            "end": 879,
+            "text": "reasonable pricing strategy",
+            "label": "condition",
+            "score": 0.39292246103286743
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:77b21912fb9f93403999678a70245bdae14630bd06c9980c630171b3a945e0fa",
+      "document_id": "W4309030044",
+      "start": 863,
+      "end": 879,
+      "surface_text": "pricing strategy",
+      "entity_types": [
+        "CONCEPT",
+        "CONDITION",
+        "OBJECT",
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "pricing strategy"
+      ],
+      "confidence": 0.8329232335090637,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 863,
+          "end": 879,
+          "surface_text": "pricing strategy",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.8329232335090637,
+          "normalized_form": "pricing strategy",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 863,
+            "end": 879,
+            "text": "pricing strategy",
+            "label": "concept",
+            "score": 0.8329232335090637
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 863,
+          "end": 879,
+          "surface_text": "pricing strategy",
+          "ner_label_hint": "CONDITION",
+          "score": 0.6061896085739136,
+          "normalized_form": "pricing strategy",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 863,
+            "end": 879,
+            "text": "pricing strategy",
+            "label": "condition",
+            "score": 0.6061896085739136
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 863,
+          "end": 879,
+          "surface_text": "pricing strategy",
+          "ner_label_hint": "OBJECT",
+          "score": 0.40228524804115295,
+          "normalized_form": "pricing strategy",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 863,
+            "end": 879,
+            "text": "pricing strategy",
+            "label": "object",
+            "score": 0.40228524804115295
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 863,
+          "end": 879,
+          "surface_text": "pricing strategy",
+          "ner_label_hint": "PROCESS",
+          "score": 0.31343623995780945,
+          "normalized_form": "pricing strategy",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 863,
+            "end": 879,
+            "text": "pricing strategy",
+            "label": "process",
+            "score": 0.31343623995780945
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:e1bad6d3bf1476fb0078122cdfa93e5a8f8f2dc26d180475c1aedfbd3779f5f0",
+      "document_id": "W4309030044",
+      "start": 907,
+      "end": 918,
+      "surface_text": "cooperation",
+      "entity_types": [
+        "CONCEPT",
+        "PROCESS",
+        "TASK"
+      ],
+      "normalized_forms": [
+        "cooperation"
+      ],
+      "confidence": 0.5236852169036865,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 907,
+          "end": 918,
+          "surface_text": "cooperation",
+          "ner_label_hint": "PROCESS",
+          "score": 0.5236852169036865,
+          "normalized_form": "cooperation",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 907,
+            "end": 918,
+            "text": "cooperation",
+            "label": "process",
+            "score": 0.5236852169036865
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 907,
+          "end": 918,
+          "surface_text": "cooperation",
+          "ner_label_hint": "TASK",
+          "score": 0.4323864281177521,
+          "normalized_form": "cooperation",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 907,
+            "end": 918,
+            "text": "cooperation",
+            "label": "task",
+            "score": 0.4323864281177521
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 907,
+          "end": 918,
+          "surface_text": "cooperation",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.40476542711257935,
+          "normalized_form": "cooperation",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 907,
+            "end": 918,
+            "text": "cooperation",
+            "label": "concept",
+            "score": 0.40476542711257935
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:e98082cbf46f01530bac23a5011c4f13862860d0bdd5b8668008573e54d35309",
+      "document_id": "W4309030044",
+      "start": 907,
+      "end": 943,
+      "surface_text": "cooperation between aviation and HSR",
+      "entity_types": [
+        "CONCEPT",
+        "PROCESS",
+        "TASK"
+      ],
+      "normalized_forms": [
+        "cooperation between aviation and hsr"
+      ],
+      "confidence": 0.4562045931816101,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 907,
+          "end": 943,
+          "surface_text": "cooperation between aviation and HSR",
+          "ner_label_hint": "PROCESS",
+          "score": 0.4562045931816101,
+          "normalized_form": "cooperation between aviation and hsr",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 907,
+            "end": 943,
+            "text": "cooperation between aviation and HSR",
+            "label": "process",
+            "score": 0.4562045931816101
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 907,
+          "end": 943,
+          "surface_text": "cooperation between aviation and HSR",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.417065292596817,
+          "normalized_form": "cooperation between aviation and hsr",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 907,
+            "end": 943,
+            "text": "cooperation between aviation and HSR",
+            "label": "concept",
+            "score": 0.417065292596817
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4309030044",
+          "start": 907,
+          "end": 943,
+          "surface_text": "cooperation between aviation and HSR",
+          "ner_label_hint": "TASK",
+          "score": 0.31005144119262695,
+          "normalized_form": "cooperation between aviation and hsr",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "revision_id": "sha256:148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4309030044",
+            "doi": "https://doi.org/10.1016/j.multra.2022.100053",
+            "landing_page_url": "https://doi.org/10.1016/j.multra.2022.100053",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-21T09:56:26.102985",
+            "source_url": "https://openalex.org/W4309030044",
+            "text_sha256": "148e40e3759e1995c899fa0f1be30517e1afc6f52a71c05c1f74bf3d79b05217"
+          },
+          "raw_prediction": {
+            "start": 907,
+            "end": 943,
+            "text": "cooperation between aviation and HSR",
+            "label": "task",
+            "score": 0.31005144119262695
+          }
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "triple_id": "t:3bf93f642bb49335fb4da7fdfdf55129f8fbb06c591013d099610a740b6dd40d",
+      "document_id": "W4309030044",
+      "head_id": "e:bd70b2e6da75de58f5877a4877bb2d210146d9795f2475f7bcd024016af2e2b6",
+      "tail_id": "e:957fc189d0b7d88a9f2cf063dee2b25f4c992b3db8a687b91abce5e96831d3ca",
+      "head_types": [
+        "ACTOR"
+      ],
+      "tail_types": [
+        "ATTRIBUTE",
+        "CONCEPT"
+      ],
+      "relation_type": "HAS_ATTRIBUTE",
+      "confidence": 0.7103753089904785,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "document_id": "W4309030044",
+          "start": 0,
+          "end": 944,
+          "text": "In the business of intermodal passenger transport, fare optimization of intermodal products has significant effects on corporate revenue and passenger travel convenience. This study takes the competitive relationship between high-speed rail (HSR) and airlines as well as carrier connectivity as the starting point, analyzes the advantages and disadvantages of different carriers in the different markets, and researches the optimization of fares. The stochastic user equilibrium model based on elastic demand is used to establish a bi-level programming model for the optimization of fares; the upper and lower models are solved using the particle swarm algorithm and method of successive averages, respectively. The results suggest that airlines are willing to cooperate with the HSR sector and improve the connectivity between aviation and HSR, and a reasonable pricing strategy is more likely to motivate cooperation between aviation and HSR.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:6ed4d6045a591a4767ea57abb495fa9802416e26a6cfe9e6317c5c3524d283bc",
+      "document_id": "W4309030044",
+      "head_id": "e:bd70b2e6da75de58f5877a4877bb2d210146d9795f2475f7bcd024016af2e2b6",
+      "tail_id": "e:383e8d641d1825d676f1b4797d961a2d6b5a8f26605ea0a46923a3b8a041d395",
+      "head_types": [
+        "ACTOR"
+      ],
+      "tail_types": [
+        "ATTRIBUTE",
+        "CONCEPT"
+      ],
+      "relation_type": "HAS_ATTRIBUTE",
+      "confidence": 0.7081342935562134,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "document_id": "W4309030044",
+          "start": 0,
+          "end": 944,
+          "text": "In the business of intermodal passenger transport, fare optimization of intermodal products has significant effects on corporate revenue and passenger travel convenience. This study takes the competitive relationship between high-speed rail (HSR) and airlines as well as carrier connectivity as the starting point, analyzes the advantages and disadvantages of different carriers in the different markets, and researches the optimization of fares. The stochastic user equilibrium model based on elastic demand is used to establish a bi-level programming model for the optimization of fares; the upper and lower models are solved using the particle swarm algorithm and method of successive averages, respectively. The results suggest that airlines are willing to cooperate with the HSR sector and improve the connectivity between aviation and HSR, and a reasonable pricing strategy is more likely to motivate cooperation between aviation and HSR.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:cfd7a4f776f50a478aa9f0c3de2ba3181036c559a65d39146ea393df35296a1e",
+      "document_id": "W4309030044",
+      "head_id": "e:6607f6ef1bd4a1a2dca461a69158126a3035d84869a33a91262edb508ff36d20",
+      "tail_id": "e:9b2826fd994d2017a008ecda6d070e42856c2a0421caa1485fa66230c39861ef",
+      "head_types": [
+        "CONCEPT",
+        "MECHANISM",
+        "METHOD"
+      ],
+      "tail_types": [
+        "CONCEPT",
+        "CONDITION",
+        "MECHANISM"
+      ],
+      "relation_type": "DERIVED_FROM",
+      "confidence": 0.9240729808807373,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:ccc6a913d03d948f1435c41858bcfc57fc685be4bf8ff4ee31215080e9101cce",
+          "document_id": "W4309030044",
+          "start": 0,
+          "end": 944,
+          "text": "In the business of intermodal passenger transport, fare optimization of intermodal products has significant effects on corporate revenue and passenger travel convenience. This study takes the competitive relationship between high-speed rail (HSR) and airlines as well as carrier connectivity as the starting point, analyzes the advantages and disadvantages of different carriers in the different markets, and researches the optimization of fares. The stochastic user equilibrium model based on elastic demand is used to establish a bi-level programming model for the optimization of fares; the upper and lower models are solved using the particle swarm algorithm and method of successive averages, respectively. The results suggest that airlines are willing to cooperate with the HSR sector and improve the connectivity between aviation and HSR, and a reasonable pricing strategy is more likely to motivate cooperation between aviation and HSR.",
+          "entity_ids": []
+        }
+      ]
+    }
+  ],
+  "raw_relation_count": 3,
+  "seconds": 3.766536899842322
+}

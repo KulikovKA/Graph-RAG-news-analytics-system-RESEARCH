@@ -1,0 +1,2712 @@
+{
+  "fingerprint": "c79845cf50e55b434eab0bcd7d45fb6779c27e093e96fa9a77b4c2f1b311bf99",
+  "document_id": "W4391351014",
+  "model": "knowledgator/gliner-relex-large-v1.0",
+  "mode": "joint",
+  "raw_windows": [
+    {
+      "window": {
+        "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+        "document_id": "W4391351014",
+        "start": 0,
+        "end": 1321,
+        "text": "(1) Background: The prevalence of cancer patients relying on cardiac implantable electronic device (CIED) is steadily rising. The aim of this study was to evaluate RT-related malfunctions of CIEDs. (2) Methods: We retrospectively analyze sixteen patients with esophageal cancer who were treated with radiotherapy between 2012 and 2022 at the University Hospital Heidelberg. All patients underwent systemic evaluation including pre-therapeutic cardiological examinations of the CIED functionality and after every single irradiation. (3) Results: Sixteen patients, predominantly male (14) with a mean age of 77 (range: 56-85) years were enrolled. All patients received 28 fractions of radiotherapy with a cumulative total dose 58.8 Gy. The mean maximum dose at the CIEDs was 1.8 Gy. Following radiotherapy and during the one-year post-radiation follow-up period, there were no registered events associated with the treatment in this evaluation. (4) Conclusion: The study did not observe any severe CIED malfunctions following each radiation fraction or after completion of RT. Strict selection of photon energy and alignment with manufacturer-recommended dose limits appear to be important. Our study showed no major differences in the measured values of the pacing threshold, sensing threshold and lead impedance after RT.",
+        "entity_ids": []
+      },
+      "entities": [
+        {
+          "start": 20,
+          "end": 30,
+          "text": "prevalence",
+          "label": "attribute",
+          "score": 0.3439440429210663
+        },
+        {
+          "start": 34,
+          "end": 40,
+          "text": "cancer",
+          "label": "condition",
+          "score": 0.5742142796516418
+        },
+        {
+          "start": 34,
+          "end": 49,
+          "text": "cancer patients",
+          "label": "actor",
+          "score": 0.3110915422439575
+        },
+        {
+          "start": 61,
+          "end": 105,
+          "text": "cardiac implantable electronic device (CIED)",
+          "label": "object",
+          "score": 0.8988756537437439
+        },
+        {
+          "start": 61,
+          "end": 98,
+          "text": "cardiac implantable electronic device",
+          "label": "object",
+          "score": 0.7645153999328613
+        },
+        {
+          "start": 100,
+          "end": 104,
+          "text": "CIED",
+          "label": "object",
+          "score": 0.661226212978363
+        },
+        {
+          "start": 164,
+          "end": 187,
+          "text": "RT-related malfunctions",
+          "label": "mechanism",
+          "score": 0.7641680836677551
+        },
+        {
+          "start": 164,
+          "end": 187,
+          "text": "RT-related malfunctions",
+          "label": "condition",
+          "score": 0.45420974493026733
+        },
+        {
+          "start": 164,
+          "end": 174,
+          "text": "RT-related",
+          "label": "mechanism",
+          "score": 0.4341448247432709
+        },
+        {
+          "start": 164,
+          "end": 174,
+          "text": "RT-related",
+          "label": "process",
+          "score": 0.38507285714149475
+        },
+        {
+          "start": 191,
+          "end": 196,
+          "text": "CIEDs",
+          "label": "object",
+          "score": 0.8237938284873962
+        },
+        {
+          "start": 238,
+          "end": 254,
+          "text": "sixteen patients",
+          "label": "object",
+          "score": 0.4809013903141022
+        },
+        {
+          "start": 238,
+          "end": 254,
+          "text": "sixteen patients",
+          "label": "actor",
+          "score": 0.3895004093647003
+        },
+        {
+          "start": 260,
+          "end": 277,
+          "text": "esophageal cancer",
+          "label": "condition",
+          "score": 0.9509121179580688
+        },
+        {
+          "start": 260,
+          "end": 277,
+          "text": "esophageal cancer",
+          "label": "object",
+          "score": 0.4323177635669708
+        },
+        {
+          "start": 300,
+          "end": 312,
+          "text": "radiotherapy",
+          "label": "object",
+          "score": 0.6905525922775269
+        },
+        {
+          "start": 300,
+          "end": 312,
+          "text": "radiotherapy",
+          "label": "method",
+          "score": 0.5968984365463257
+        },
+        {
+          "start": 300,
+          "end": 312,
+          "text": "radiotherapy",
+          "label": "process",
+          "score": 0.5359632968902588
+        },
+        {
+          "start": 300,
+          "end": 312,
+          "text": "radiotherapy",
+          "label": "mechanism",
+          "score": 0.3704768419265747
+        },
+        {
+          "start": 342,
+          "end": 372,
+          "text": "University Hospital Heidelberg",
+          "label": "object",
+          "score": 0.407545804977417
+        },
+        {
+          "start": 427,
+          "end": 469,
+          "text": "pre-therapeutic cardiological examinations",
+          "label": "method",
+          "score": 0.5544148087501526
+        },
+        {
+          "start": 427,
+          "end": 469,
+          "text": "pre-therapeutic cardiological examinations",
+          "label": "process",
+          "score": 0.4262907803058624
+        },
+        {
+          "start": 427,
+          "end": 469,
+          "text": "pre-therapeutic cardiological examinations",
+          "label": "object",
+          "score": 0.3791145980358124
+        },
+        {
+          "start": 443,
+          "end": 469,
+          "text": "cardiological examinations",
+          "label": "method",
+          "score": 0.3516536056995392
+        },
+        {
+          "start": 477,
+          "end": 495,
+          "text": "CIED functionality",
+          "label": "attribute",
+          "score": 0.7420253157615662
+        },
+        {
+          "start": 477,
+          "end": 495,
+          "text": "CIED functionality",
+          "label": "object",
+          "score": 0.677682638168335
+        },
+        {
+          "start": 594,
+          "end": 602,
+          "text": "mean age",
+          "label": "attribute",
+          "score": 0.8248557448387146
+        },
+        {
+          "start": 599,
+          "end": 602,
+          "text": "age",
+          "label": "attribute",
+          "score": 0.5300384163856506
+        },
+        {
+          "start": 703,
+          "end": 724,
+          "text": "cumulative total dose",
+          "label": "attribute",
+          "score": 0.5574837327003479
+        },
+        {
+          "start": 703,
+          "end": 732,
+          "text": "cumulative total dose 58.8 Gy",
+          "label": "result",
+          "score": 0.5486975908279419
+        },
+        {
+          "start": 703,
+          "end": 724,
+          "text": "cumulative total dose",
+          "label": "result",
+          "score": 0.5299030542373657
+        },
+        {
+          "start": 725,
+          "end": 732,
+          "text": "58.8 Gy",
+          "label": "result",
+          "score": 0.9186296463012695
+        },
+        {
+          "start": 725,
+          "end": 732,
+          "text": "58.8 Gy",
+          "label": "attribute",
+          "score": 0.4883456528186798
+        },
+        {
+          "start": 738,
+          "end": 755,
+          "text": "mean maximum dose",
+          "label": "attribute",
+          "score": 0.6055222749710083
+        },
+        {
+          "start": 738,
+          "end": 755,
+          "text": "mean maximum dose",
+          "label": "result",
+          "score": 0.32145559787750244
+        },
+        {
+          "start": 773,
+          "end": 779,
+          "text": "1.8 Gy",
+          "label": "result",
+          "score": 0.7676417827606201
+        },
+        {
+          "start": 773,
+          "end": 779,
+          "text": "1.8 Gy",
+          "label": "attribute",
+          "score": 0.6199511289596558
+        },
+        {
+          "start": 872,
+          "end": 892,
+          "text": "no registered events",
+          "label": "condition",
+          "score": 0.6625279188156128
+        },
+        {
+          "start": 872,
+          "end": 892,
+          "text": "no registered events",
+          "label": "result",
+          "score": 0.6444671154022217
+        },
+        {
+          "start": 875,
+          "end": 892,
+          "text": "registered events",
+          "label": "condition",
+          "score": 0.5634382367134094
+        },
+        {
+          "start": 996,
+          "end": 1013,
+          "text": "CIED malfunctions",
+          "label": "condition",
+          "score": 0.3093007504940033
+        },
+        {
+          "start": 1095,
+          "end": 1108,
+          "text": "photon energy",
+          "label": "object",
+          "score": 0.7132859230041504
+        },
+        {
+          "start": 1095,
+          "end": 1108,
+          "text": "photon energy",
+          "label": "attribute",
+          "score": 0.6639389991760254
+        },
+        {
+          "start": 1128,
+          "end": 1164,
+          "text": "manufacturer-recommended dose limits",
+          "label": "attribute",
+          "score": 0.5103622674942017
+        },
+        {
+          "start": 1128,
+          "end": 1164,
+          "text": "manufacturer-recommended dose limits",
+          "label": "object",
+          "score": 0.49684372544288635
+        },
+        {
+          "start": 1153,
+          "end": 1164,
+          "text": "dose limits",
+          "label": "attribute",
+          "score": 0.3811153471469879
+        },
+        {
+          "start": 1206,
+          "end": 1226,
+          "text": "no major differences",
+          "label": "result",
+          "score": 0.4186634123325348
+        },
+        {
+          "start": 1257,
+          "end": 1273,
+          "text": "pacing threshold",
+          "label": "attribute",
+          "score": 0.8635560870170593
+        },
+        {
+          "start": 1257,
+          "end": 1273,
+          "text": "pacing threshold",
+          "label": "object",
+          "score": 0.7702365517616272
+        },
+        {
+          "start": 1257,
+          "end": 1273,
+          "text": "pacing threshold",
+          "label": "concept",
+          "score": 0.3129191994667053
+        },
+        {
+          "start": 1275,
+          "end": 1292,
+          "text": "sensing threshold",
+          "label": "attribute",
+          "score": 0.8512511253356934
+        },
+        {
+          "start": 1275,
+          "end": 1292,
+          "text": "sensing threshold",
+          "label": "object",
+          "score": 0.7657508254051208
+        },
+        {
+          "start": 1297,
+          "end": 1311,
+          "text": "lead impedance",
+          "label": "attribute",
+          "score": 0.8714845776557922
+        },
+        {
+          "start": 1297,
+          "end": 1311,
+          "text": "lead impedance",
+          "label": "object",
+          "score": 0.750225305557251
+        }
+      ],
+      "predictions": [
+        {
+          "head": {
+            "start": 238,
+            "end": 254,
+            "text": "sixteen patients",
+            "type": "object",
+            "entity_idx": 11
+          },
+          "tail": {
+            "start": 594,
+            "end": 602,
+            "text": "mean age",
+            "type": "attribute",
+            "entity_idx": 26
+          },
+          "relation": "has attribute",
+          "score": 0.7189548015594482
+        },
+        {
+          "head": {
+            "start": 300,
+            "end": 312,
+            "text": "radiotherapy",
+            "type": "object",
+            "entity_idx": 15
+          },
+          "tail": {
+            "start": 703,
+            "end": 732,
+            "text": "cumulative total dose 58.8 Gy",
+            "type": "result",
+            "entity_idx": 29
+          },
+          "relation": "has result",
+          "score": 0.7508872747421265
+        },
+        {
+          "head": {
+            "start": 300,
+            "end": 312,
+            "text": "radiotherapy",
+            "type": "object",
+            "entity_idx": 15
+          },
+          "tail": {
+            "start": 725,
+            "end": 732,
+            "text": "58.8 Gy",
+            "type": "result",
+            "entity_idx": 31
+          },
+          "relation": "has result",
+          "score": 0.8304716944694519
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "e:b4592066f4996d126a1a54a9e486c332f866ae55f1cb7ec551304ff5be6655e1",
+      "document_id": "W4391351014",
+      "start": 20,
+      "end": 30,
+      "surface_text": "prevalence",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "prevalence"
+      ],
+      "confidence": 0.3439440429210663,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 20,
+          "end": 30,
+          "surface_text": "prevalence",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.3439440429210663,
+          "normalized_form": "prevalence",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 20,
+            "end": 30,
+            "text": "prevalence",
+            "label": "attribute",
+            "score": 0.3439440429210663
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:355b6368861f7d796e0ba93b06866467b772bbd7362573358c7e4e2c01c39dd9",
+      "document_id": "W4391351014",
+      "start": 34,
+      "end": 40,
+      "surface_text": "cancer",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "cancer"
+      ],
+      "confidence": 0.5742142796516418,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 34,
+          "end": 40,
+          "surface_text": "cancer",
+          "ner_label_hint": "CONDITION",
+          "score": 0.5742142796516418,
+          "normalized_form": "cancer",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 34,
+            "end": 40,
+            "text": "cancer",
+            "label": "condition",
+            "score": 0.5742142796516418
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:0ef4a4de19459269d610232b0387bbd142f840739613983a8fb61924a91edd32",
+      "document_id": "W4391351014",
+      "start": 34,
+      "end": 49,
+      "surface_text": "cancer patients",
+      "entity_types": [
+        "ACTOR"
+      ],
+      "normalized_forms": [
+        "cancer patients"
+      ],
+      "confidence": 0.3110915422439575,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 34,
+          "end": 49,
+          "surface_text": "cancer patients",
+          "ner_label_hint": "ACTOR",
+          "score": 0.3110915422439575,
+          "normalized_form": "cancer patients",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 34,
+            "end": 49,
+            "text": "cancer patients",
+            "label": "actor",
+            "score": 0.3110915422439575
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:08b9d2ad6ed9077a9992901cd451178cd23ba0ad375a1df47284718df7f0d9a2",
+      "document_id": "W4391351014",
+      "start": 61,
+      "end": 98,
+      "surface_text": "cardiac implantable electronic device",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "cardiac implantable electronic device"
+      ],
+      "confidence": 0.7645153999328613,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 61,
+          "end": 98,
+          "surface_text": "cardiac implantable electronic device",
+          "ner_label_hint": "OBJECT",
+          "score": 0.7645153999328613,
+          "normalized_form": "cardiac implantable electronic device",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 61,
+            "end": 98,
+            "text": "cardiac implantable electronic device",
+            "label": "object",
+            "score": 0.7645153999328613
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:0b948f1fcf84cac30d3dba50e093b26a4b1597c93ace9b2adeea935263df977a",
+      "document_id": "W4391351014",
+      "start": 61,
+      "end": 105,
+      "surface_text": "cardiac implantable electronic device (CIED)",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "cardiac implantable electronic device (cied)"
+      ],
+      "confidence": 0.8988756537437439,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 61,
+          "end": 105,
+          "surface_text": "cardiac implantable electronic device (CIED)",
+          "ner_label_hint": "OBJECT",
+          "score": 0.8988756537437439,
+          "normalized_form": "cardiac implantable electronic device (cied)",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 61,
+            "end": 105,
+            "text": "cardiac implantable electronic device (CIED)",
+            "label": "object",
+            "score": 0.8988756537437439
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:3366345b7c4d2568a73bc8eface9b10aa1094f2e3591217ae8190cf279a1d33c",
+      "document_id": "W4391351014",
+      "start": 100,
+      "end": 104,
+      "surface_text": "CIED",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "cied"
+      ],
+      "confidence": 0.661226212978363,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 100,
+          "end": 104,
+          "surface_text": "CIED",
+          "ner_label_hint": "OBJECT",
+          "score": 0.661226212978363,
+          "normalized_form": "cied",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 100,
+            "end": 104,
+            "text": "CIED",
+            "label": "object",
+            "score": 0.661226212978363
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d97ab53e791ef451d3ccad716d309a201ce1af60e91c68d376482d76e2da845a",
+      "document_id": "W4391351014",
+      "start": 164,
+      "end": 174,
+      "surface_text": "RT-related",
+      "entity_types": [
+        "MECHANISM",
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "rt-related"
+      ],
+      "confidence": 0.4341448247432709,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 164,
+          "end": 174,
+          "surface_text": "RT-related",
+          "ner_label_hint": "MECHANISM",
+          "score": 0.4341448247432709,
+          "normalized_form": "rt-related",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 164,
+            "end": 174,
+            "text": "RT-related",
+            "label": "mechanism",
+            "score": 0.4341448247432709
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 164,
+          "end": 174,
+          "surface_text": "RT-related",
+          "ner_label_hint": "PROCESS",
+          "score": 0.38507285714149475,
+          "normalized_form": "rt-related",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 164,
+            "end": 174,
+            "text": "RT-related",
+            "label": "process",
+            "score": 0.38507285714149475
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:ba9014f86dd966fb99edef8354dcac618318ba4eb024fe8a45dbd1ebe1f07b46",
+      "document_id": "W4391351014",
+      "start": 164,
+      "end": 187,
+      "surface_text": "RT-related malfunctions",
+      "entity_types": [
+        "CONDITION",
+        "MECHANISM"
+      ],
+      "normalized_forms": [
+        "rt-related malfunctions"
+      ],
+      "confidence": 0.7641680836677551,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 164,
+          "end": 187,
+          "surface_text": "RT-related malfunctions",
+          "ner_label_hint": "MECHANISM",
+          "score": 0.7641680836677551,
+          "normalized_form": "rt-related malfunctions",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 164,
+            "end": 187,
+            "text": "RT-related malfunctions",
+            "label": "mechanism",
+            "score": 0.7641680836677551
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 164,
+          "end": 187,
+          "surface_text": "RT-related malfunctions",
+          "ner_label_hint": "CONDITION",
+          "score": 0.45420974493026733,
+          "normalized_form": "rt-related malfunctions",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 164,
+            "end": 187,
+            "text": "RT-related malfunctions",
+            "label": "condition",
+            "score": 0.45420974493026733
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:68be158a79ebb613699657f96c635c49499539c9195a5abe36eb07d155a052cf",
+      "document_id": "W4391351014",
+      "start": 191,
+      "end": 196,
+      "surface_text": "CIEDs",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "cieds"
+      ],
+      "confidence": 0.8237938284873962,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 191,
+          "end": 196,
+          "surface_text": "CIEDs",
+          "ner_label_hint": "OBJECT",
+          "score": 0.8237938284873962,
+          "normalized_form": "cieds",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 191,
+            "end": 196,
+            "text": "CIEDs",
+            "label": "object",
+            "score": 0.8237938284873962
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:c8e8de8101f2bb60ca0af91912e0f53bda1014f6b77fad3f545c656317135af4",
+      "document_id": "W4391351014",
+      "start": 238,
+      "end": 254,
+      "surface_text": "sixteen patients",
+      "entity_types": [
+        "ACTOR",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "sixteen patients"
+      ],
+      "confidence": 0.4809013903141022,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 238,
+          "end": 254,
+          "surface_text": "sixteen patients",
+          "ner_label_hint": "OBJECT",
+          "score": 0.4809013903141022,
+          "normalized_form": "sixteen patients",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 238,
+            "end": 254,
+            "text": "sixteen patients",
+            "label": "object",
+            "score": 0.4809013903141022
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 238,
+          "end": 254,
+          "surface_text": "sixteen patients",
+          "ner_label_hint": "ACTOR",
+          "score": 0.3895004093647003,
+          "normalized_form": "sixteen patients",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 238,
+            "end": 254,
+            "text": "sixteen patients",
+            "label": "actor",
+            "score": 0.3895004093647003
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:ccd5bfc2d0ef4e9dc4c16866e6fec948265556e721263c42963445e72fd68ba2",
+      "document_id": "W4391351014",
+      "start": 260,
+      "end": 277,
+      "surface_text": "esophageal cancer",
+      "entity_types": [
+        "CONDITION",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "esophageal cancer"
+      ],
+      "confidence": 0.9509121179580688,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 260,
+          "end": 277,
+          "surface_text": "esophageal cancer",
+          "ner_label_hint": "CONDITION",
+          "score": 0.9509121179580688,
+          "normalized_form": "esophageal cancer",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 260,
+            "end": 277,
+            "text": "esophageal cancer",
+            "label": "condition",
+            "score": 0.9509121179580688
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 260,
+          "end": 277,
+          "surface_text": "esophageal cancer",
+          "ner_label_hint": "OBJECT",
+          "score": 0.4323177635669708,
+          "normalized_form": "esophageal cancer",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 260,
+            "end": 277,
+            "text": "esophageal cancer",
+            "label": "object",
+            "score": 0.4323177635669708
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:f1b7e26849d139768fb0d1e3c944c279c2e34b910af12f8e48f117bd8c9f7643",
+      "document_id": "W4391351014",
+      "start": 300,
+      "end": 312,
+      "surface_text": "radiotherapy",
+      "entity_types": [
+        "MECHANISM",
+        "METHOD",
+        "OBJECT",
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "radiotherapy"
+      ],
+      "confidence": 0.6905525922775269,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 300,
+          "end": 312,
+          "surface_text": "radiotherapy",
+          "ner_label_hint": "OBJECT",
+          "score": 0.6905525922775269,
+          "normalized_form": "radiotherapy",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 300,
+            "end": 312,
+            "text": "radiotherapy",
+            "label": "object",
+            "score": 0.6905525922775269
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 300,
+          "end": 312,
+          "surface_text": "radiotherapy",
+          "ner_label_hint": "METHOD",
+          "score": 0.5968984365463257,
+          "normalized_form": "radiotherapy",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 300,
+            "end": 312,
+            "text": "radiotherapy",
+            "label": "method",
+            "score": 0.5968984365463257
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 300,
+          "end": 312,
+          "surface_text": "radiotherapy",
+          "ner_label_hint": "PROCESS",
+          "score": 0.5359632968902588,
+          "normalized_form": "radiotherapy",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 300,
+            "end": 312,
+            "text": "radiotherapy",
+            "label": "process",
+            "score": 0.5359632968902588
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 300,
+          "end": 312,
+          "surface_text": "radiotherapy",
+          "ner_label_hint": "MECHANISM",
+          "score": 0.3704768419265747,
+          "normalized_form": "radiotherapy",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 300,
+            "end": 312,
+            "text": "radiotherapy",
+            "label": "mechanism",
+            "score": 0.3704768419265747
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:2929e210c569eb81851414341176b1d23328cb0ae157410a684280e17db98858",
+      "document_id": "W4391351014",
+      "start": 342,
+      "end": 372,
+      "surface_text": "University Hospital Heidelberg",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "university hospital heidelberg"
+      ],
+      "confidence": 0.407545804977417,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 342,
+          "end": 372,
+          "surface_text": "University Hospital Heidelberg",
+          "ner_label_hint": "OBJECT",
+          "score": 0.407545804977417,
+          "normalized_form": "university hospital heidelberg",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 342,
+            "end": 372,
+            "text": "University Hospital Heidelberg",
+            "label": "object",
+            "score": 0.407545804977417
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:33d057680c5fef81d2cb410e9e39c2b9a9d891829a4b0663acd44f4d5f15b983",
+      "document_id": "W4391351014",
+      "start": 427,
+      "end": 469,
+      "surface_text": "pre-therapeutic cardiological examinations",
+      "entity_types": [
+        "METHOD",
+        "OBJECT",
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "pre-therapeutic cardiological examinations"
+      ],
+      "confidence": 0.5544148087501526,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 427,
+          "end": 469,
+          "surface_text": "pre-therapeutic cardiological examinations",
+          "ner_label_hint": "METHOD",
+          "score": 0.5544148087501526,
+          "normalized_form": "pre-therapeutic cardiological examinations",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 427,
+            "end": 469,
+            "text": "pre-therapeutic cardiological examinations",
+            "label": "method",
+            "score": 0.5544148087501526
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 427,
+          "end": 469,
+          "surface_text": "pre-therapeutic cardiological examinations",
+          "ner_label_hint": "PROCESS",
+          "score": 0.4262907803058624,
+          "normalized_form": "pre-therapeutic cardiological examinations",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 427,
+            "end": 469,
+            "text": "pre-therapeutic cardiological examinations",
+            "label": "process",
+            "score": 0.4262907803058624
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 427,
+          "end": 469,
+          "surface_text": "pre-therapeutic cardiological examinations",
+          "ner_label_hint": "OBJECT",
+          "score": 0.3791145980358124,
+          "normalized_form": "pre-therapeutic cardiological examinations",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 427,
+            "end": 469,
+            "text": "pre-therapeutic cardiological examinations",
+            "label": "object",
+            "score": 0.3791145980358124
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:7e2b1edff5f00aae4ff6d493f85f299dbecaa26fddfdf0746a1b737edb23b75b",
+      "document_id": "W4391351014",
+      "start": 443,
+      "end": 469,
+      "surface_text": "cardiological examinations",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "cardiological examinations"
+      ],
+      "confidence": 0.3516536056995392,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 443,
+          "end": 469,
+          "surface_text": "cardiological examinations",
+          "ner_label_hint": "METHOD",
+          "score": 0.3516536056995392,
+          "normalized_form": "cardiological examinations",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 443,
+            "end": 469,
+            "text": "cardiological examinations",
+            "label": "method",
+            "score": 0.3516536056995392
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:31d719b0cc21ecc0b999b22d55071e2ddca7915120b60939893560680c4a28c0",
+      "document_id": "W4391351014",
+      "start": 477,
+      "end": 495,
+      "surface_text": "CIED functionality",
+      "entity_types": [
+        "ATTRIBUTE",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "cied functionality"
+      ],
+      "confidence": 0.7420253157615662,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 477,
+          "end": 495,
+          "surface_text": "CIED functionality",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.7420253157615662,
+          "normalized_form": "cied functionality",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 477,
+            "end": 495,
+            "text": "CIED functionality",
+            "label": "attribute",
+            "score": 0.7420253157615662
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 477,
+          "end": 495,
+          "surface_text": "CIED functionality",
+          "ner_label_hint": "OBJECT",
+          "score": 0.677682638168335,
+          "normalized_form": "cied functionality",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 477,
+            "end": 495,
+            "text": "CIED functionality",
+            "label": "object",
+            "score": 0.677682638168335
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:6e66ea32e1388d2ff5608acee38b00e3dfa1a243f38a8d971dbb83a99c569648",
+      "document_id": "W4391351014",
+      "start": 594,
+      "end": 602,
+      "surface_text": "mean age",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "mean age"
+      ],
+      "confidence": 0.8248557448387146,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 594,
+          "end": 602,
+          "surface_text": "mean age",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.8248557448387146,
+          "normalized_form": "mean age",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 594,
+            "end": 602,
+            "text": "mean age",
+            "label": "attribute",
+            "score": 0.8248557448387146
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:55b9514d1afa54c57314f6565d53da5311d1ed3c704c02aece4636dca16812da",
+      "document_id": "W4391351014",
+      "start": 599,
+      "end": 602,
+      "surface_text": "age",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "age"
+      ],
+      "confidence": 0.5300384163856506,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 599,
+          "end": 602,
+          "surface_text": "age",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.5300384163856506,
+          "normalized_form": "age",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 599,
+            "end": 602,
+            "text": "age",
+            "label": "attribute",
+            "score": 0.5300384163856506
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:3bdcce356ebba157e3e941ce135228870a8db6effe13d2c3ef0a4ed62840f940",
+      "document_id": "W4391351014",
+      "start": 703,
+      "end": 724,
+      "surface_text": "cumulative total dose",
+      "entity_types": [
+        "ATTRIBUTE",
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "cumulative total dose"
+      ],
+      "confidence": 0.5574837327003479,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 703,
+          "end": 724,
+          "surface_text": "cumulative total dose",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.5574837327003479,
+          "normalized_form": "cumulative total dose",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 703,
+            "end": 724,
+            "text": "cumulative total dose",
+            "label": "attribute",
+            "score": 0.5574837327003479
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 703,
+          "end": 724,
+          "surface_text": "cumulative total dose",
+          "ner_label_hint": "RESULT",
+          "score": 0.5299030542373657,
+          "normalized_form": "cumulative total dose",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 703,
+            "end": 724,
+            "text": "cumulative total dose",
+            "label": "result",
+            "score": 0.5299030542373657
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d64a8292f31021242e986a6d642a3c7c97c409aea7ac1ce4400292d35c45e8bb",
+      "document_id": "W4391351014",
+      "start": 703,
+      "end": 732,
+      "surface_text": "cumulative total dose 58.8 Gy",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "cumulative total dose 58.8 gy"
+      ],
+      "confidence": 0.5486975908279419,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 703,
+          "end": 732,
+          "surface_text": "cumulative total dose 58.8 Gy",
+          "ner_label_hint": "RESULT",
+          "score": 0.5486975908279419,
+          "normalized_form": "cumulative total dose 58.8 gy",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 703,
+            "end": 732,
+            "text": "cumulative total dose 58.8 Gy",
+            "label": "result",
+            "score": 0.5486975908279419
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:18a3350f317f8a609c4c868e605aa342dcdec7db69f6307e460b2b6eba7fe876",
+      "document_id": "W4391351014",
+      "start": 725,
+      "end": 732,
+      "surface_text": "58.8 Gy",
+      "entity_types": [
+        "ATTRIBUTE",
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "58.8 gy"
+      ],
+      "confidence": 0.9186296463012695,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 725,
+          "end": 732,
+          "surface_text": "58.8 Gy",
+          "ner_label_hint": "RESULT",
+          "score": 0.9186296463012695,
+          "normalized_form": "58.8 gy",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 725,
+            "end": 732,
+            "text": "58.8 Gy",
+            "label": "result",
+            "score": 0.9186296463012695
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 725,
+          "end": 732,
+          "surface_text": "58.8 Gy",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.4883456528186798,
+          "normalized_form": "58.8 gy",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 725,
+            "end": 732,
+            "text": "58.8 Gy",
+            "label": "attribute",
+            "score": 0.4883456528186798
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:2b5bea5ecc7e8545c73228037fece2ccf09a699384cbaaa35547ee6f199b8ba6",
+      "document_id": "W4391351014",
+      "start": 738,
+      "end": 755,
+      "surface_text": "mean maximum dose",
+      "entity_types": [
+        "ATTRIBUTE",
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "mean maximum dose"
+      ],
+      "confidence": 0.6055222749710083,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 738,
+          "end": 755,
+          "surface_text": "mean maximum dose",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.6055222749710083,
+          "normalized_form": "mean maximum dose",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 738,
+            "end": 755,
+            "text": "mean maximum dose",
+            "label": "attribute",
+            "score": 0.6055222749710083
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 738,
+          "end": 755,
+          "surface_text": "mean maximum dose",
+          "ner_label_hint": "RESULT",
+          "score": 0.32145559787750244,
+          "normalized_form": "mean maximum dose",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 738,
+            "end": 755,
+            "text": "mean maximum dose",
+            "label": "result",
+            "score": 0.32145559787750244
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:3ee4af96758413d1d15e85361c4f91a743c1b965bd4768d1ac81e014f734e740",
+      "document_id": "W4391351014",
+      "start": 773,
+      "end": 779,
+      "surface_text": "1.8 Gy",
+      "entity_types": [
+        "ATTRIBUTE",
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "1.8 gy"
+      ],
+      "confidence": 0.7676417827606201,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 773,
+          "end": 779,
+          "surface_text": "1.8 Gy",
+          "ner_label_hint": "RESULT",
+          "score": 0.7676417827606201,
+          "normalized_form": "1.8 gy",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 773,
+            "end": 779,
+            "text": "1.8 Gy",
+            "label": "result",
+            "score": 0.7676417827606201
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 773,
+          "end": 779,
+          "surface_text": "1.8 Gy",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.6199511289596558,
+          "normalized_form": "1.8 gy",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 773,
+            "end": 779,
+            "text": "1.8 Gy",
+            "label": "attribute",
+            "score": 0.6199511289596558
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:153cc009129988eece4becf3eeadf2610e9adac20857784b25a5948e9ee04e3c",
+      "document_id": "W4391351014",
+      "start": 872,
+      "end": 892,
+      "surface_text": "no registered events",
+      "entity_types": [
+        "CONDITION",
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "no registered events"
+      ],
+      "confidence": 0.6625279188156128,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 872,
+          "end": 892,
+          "surface_text": "no registered events",
+          "ner_label_hint": "CONDITION",
+          "score": 0.6625279188156128,
+          "normalized_form": "no registered events",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 872,
+            "end": 892,
+            "text": "no registered events",
+            "label": "condition",
+            "score": 0.6625279188156128
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 872,
+          "end": 892,
+          "surface_text": "no registered events",
+          "ner_label_hint": "RESULT",
+          "score": 0.6444671154022217,
+          "normalized_form": "no registered events",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 872,
+            "end": 892,
+            "text": "no registered events",
+            "label": "result",
+            "score": 0.6444671154022217
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:5929b71b31a1f7faf8b248956805b74859c465034eb3c909eab9a1774eb9740f",
+      "document_id": "W4391351014",
+      "start": 875,
+      "end": 892,
+      "surface_text": "registered events",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "registered events"
+      ],
+      "confidence": 0.5634382367134094,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 875,
+          "end": 892,
+          "surface_text": "registered events",
+          "ner_label_hint": "CONDITION",
+          "score": 0.5634382367134094,
+          "normalized_form": "registered events",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 875,
+            "end": 892,
+            "text": "registered events",
+            "label": "condition",
+            "score": 0.5634382367134094
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:2d24445a8ef568d606c25d715663d1b2ec66877dce454c1d4a9a4f59b6afc617",
+      "document_id": "W4391351014",
+      "start": 996,
+      "end": 1013,
+      "surface_text": "CIED malfunctions",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "cied malfunctions"
+      ],
+      "confidence": 0.3093007504940033,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 996,
+          "end": 1013,
+          "surface_text": "CIED malfunctions",
+          "ner_label_hint": "CONDITION",
+          "score": 0.3093007504940033,
+          "normalized_form": "cied malfunctions",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 996,
+            "end": 1013,
+            "text": "CIED malfunctions",
+            "label": "condition",
+            "score": 0.3093007504940033
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a88c822ebd5aca4f93c9f288a4100d057207efc51b096c435cc90a385ec51a0e",
+      "document_id": "W4391351014",
+      "start": 1095,
+      "end": 1108,
+      "surface_text": "photon energy",
+      "entity_types": [
+        "ATTRIBUTE",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "photon energy"
+      ],
+      "confidence": 0.7132859230041504,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 1095,
+          "end": 1108,
+          "surface_text": "photon energy",
+          "ner_label_hint": "OBJECT",
+          "score": 0.7132859230041504,
+          "normalized_form": "photon energy",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 1095,
+            "end": 1108,
+            "text": "photon energy",
+            "label": "object",
+            "score": 0.7132859230041504
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 1095,
+          "end": 1108,
+          "surface_text": "photon energy",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.6639389991760254,
+          "normalized_form": "photon energy",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 1095,
+            "end": 1108,
+            "text": "photon energy",
+            "label": "attribute",
+            "score": 0.6639389991760254
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:21918d60eba40d775b0b8881e382f9fad157f05acde913ae2b10a470ad821a53",
+      "document_id": "W4391351014",
+      "start": 1128,
+      "end": 1164,
+      "surface_text": "manufacturer-recommended dose limits",
+      "entity_types": [
+        "ATTRIBUTE",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "manufacturer-recommended dose limits"
+      ],
+      "confidence": 0.5103622674942017,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 1128,
+          "end": 1164,
+          "surface_text": "manufacturer-recommended dose limits",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.5103622674942017,
+          "normalized_form": "manufacturer-recommended dose limits",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 1128,
+            "end": 1164,
+            "text": "manufacturer-recommended dose limits",
+            "label": "attribute",
+            "score": 0.5103622674942017
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 1128,
+          "end": 1164,
+          "surface_text": "manufacturer-recommended dose limits",
+          "ner_label_hint": "OBJECT",
+          "score": 0.49684372544288635,
+          "normalized_form": "manufacturer-recommended dose limits",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 1128,
+            "end": 1164,
+            "text": "manufacturer-recommended dose limits",
+            "label": "object",
+            "score": 0.49684372544288635
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:1fee2fce9e408c3774c07914fd28f71619737fc6f885926384015858a0fcf2a2",
+      "document_id": "W4391351014",
+      "start": 1153,
+      "end": 1164,
+      "surface_text": "dose limits",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "dose limits"
+      ],
+      "confidence": 0.3811153471469879,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 1153,
+          "end": 1164,
+          "surface_text": "dose limits",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.3811153471469879,
+          "normalized_form": "dose limits",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 1153,
+            "end": 1164,
+            "text": "dose limits",
+            "label": "attribute",
+            "score": 0.3811153471469879
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:151a63774e8162f240486991d409822baf34ccab46cb694d32cfc3aff7accff5",
+      "document_id": "W4391351014",
+      "start": 1206,
+      "end": 1226,
+      "surface_text": "no major differences",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "no major differences"
+      ],
+      "confidence": 0.4186634123325348,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 1206,
+          "end": 1226,
+          "surface_text": "no major differences",
+          "ner_label_hint": "RESULT",
+          "score": 0.4186634123325348,
+          "normalized_form": "no major differences",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 1206,
+            "end": 1226,
+            "text": "no major differences",
+            "label": "result",
+            "score": 0.4186634123325348
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:6b6007df4b4679c4505500766947924bb548fa59c1f5120e5819ddd3469bffa7",
+      "document_id": "W4391351014",
+      "start": 1257,
+      "end": 1273,
+      "surface_text": "pacing threshold",
+      "entity_types": [
+        "ATTRIBUTE",
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "pacing threshold"
+      ],
+      "confidence": 0.8635560870170593,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 1257,
+          "end": 1273,
+          "surface_text": "pacing threshold",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.8635560870170593,
+          "normalized_form": "pacing threshold",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 1257,
+            "end": 1273,
+            "text": "pacing threshold",
+            "label": "attribute",
+            "score": 0.8635560870170593
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 1257,
+          "end": 1273,
+          "surface_text": "pacing threshold",
+          "ner_label_hint": "OBJECT",
+          "score": 0.7702365517616272,
+          "normalized_form": "pacing threshold",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 1257,
+            "end": 1273,
+            "text": "pacing threshold",
+            "label": "object",
+            "score": 0.7702365517616272
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 1257,
+          "end": 1273,
+          "surface_text": "pacing threshold",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.3129191994667053,
+          "normalized_form": "pacing threshold",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 1257,
+            "end": 1273,
+            "text": "pacing threshold",
+            "label": "concept",
+            "score": 0.3129191994667053
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d595deff7edb030c530a65d6b1210450ff9bc6debcf1463cbd74473278466414",
+      "document_id": "W4391351014",
+      "start": 1275,
+      "end": 1292,
+      "surface_text": "sensing threshold",
+      "entity_types": [
+        "ATTRIBUTE",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "sensing threshold"
+      ],
+      "confidence": 0.8512511253356934,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 1275,
+          "end": 1292,
+          "surface_text": "sensing threshold",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.8512511253356934,
+          "normalized_form": "sensing threshold",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 1275,
+            "end": 1292,
+            "text": "sensing threshold",
+            "label": "attribute",
+            "score": 0.8512511253356934
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 1275,
+          "end": 1292,
+          "surface_text": "sensing threshold",
+          "ner_label_hint": "OBJECT",
+          "score": 0.7657508254051208,
+          "normalized_form": "sensing threshold",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 1275,
+            "end": 1292,
+            "text": "sensing threshold",
+            "label": "object",
+            "score": 0.7657508254051208
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d0ada13285037a258deef2d51adb0c2978ab03e80b3ce5a3c5508a639a5dbf4c",
+      "document_id": "W4391351014",
+      "start": 1297,
+      "end": 1311,
+      "surface_text": "lead impedance",
+      "entity_types": [
+        "ATTRIBUTE",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "lead impedance"
+      ],
+      "confidence": 0.8714845776557922,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 1297,
+          "end": 1311,
+          "surface_text": "lead impedance",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.8714845776557922,
+          "normalized_form": "lead impedance",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 1297,
+            "end": 1311,
+            "text": "lead impedance",
+            "label": "attribute",
+            "score": 0.8714845776557922
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4391351014",
+          "start": 1297,
+          "end": 1311,
+          "surface_text": "lead impedance",
+          "ner_label_hint": "OBJECT",
+          "score": 0.750225305557251,
+          "normalized_form": "lead impedance",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "revision_id": "sha256:6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4391351014",
+            "doi": "https://doi.org/10.3390/cancers16030555",
+            "landing_page_url": "http://dx.doi.org/10.3390/cancers16030555",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-29T09:56:32.521200",
+            "source_url": "https://openalex.org/W4391351014",
+            "text_sha256": "6685fb1fcac700267e0e5d147571e87c246ae22ffbc81c8811aa051eb0b16a12"
+          },
+          "raw_prediction": {
+            "start": 1297,
+            "end": 1311,
+            "text": "lead impedance",
+            "label": "object",
+            "score": 0.750225305557251
+          }
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "triple_id": "t:531efd4270e476be4e6670f7d5d3942d05a77410521a844aafbba01dbce02f68",
+      "document_id": "W4391351014",
+      "head_id": "e:f1b7e26849d139768fb0d1e3c944c279c2e34b910af12f8e48f117bd8c9f7643",
+      "tail_id": "e:d64a8292f31021242e986a6d642a3c7c97c409aea7ac1ce4400292d35c45e8bb",
+      "head_types": [
+        "MECHANISM",
+        "METHOD",
+        "OBJECT",
+        "PROCESS"
+      ],
+      "tail_types": [
+        "RESULT"
+      ],
+      "relation_type": "HAS_RESULT",
+      "confidence": 0.7508872747421265,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "document_id": "W4391351014",
+          "start": 0,
+          "end": 1321,
+          "text": "(1) Background: The prevalence of cancer patients relying on cardiac implantable electronic device (CIED) is steadily rising. The aim of this study was to evaluate RT-related malfunctions of CIEDs. (2) Methods: We retrospectively analyze sixteen patients with esophageal cancer who were treated with radiotherapy between 2012 and 2022 at the University Hospital Heidelberg. All patients underwent systemic evaluation including pre-therapeutic cardiological examinations of the CIED functionality and after every single irradiation. (3) Results: Sixteen patients, predominantly male (14) with a mean age of 77 (range: 56-85) years were enrolled. All patients received 28 fractions of radiotherapy with a cumulative total dose 58.8 Gy. The mean maximum dose at the CIEDs was 1.8 Gy. Following radiotherapy and during the one-year post-radiation follow-up period, there were no registered events associated with the treatment in this evaluation. (4) Conclusion: The study did not observe any severe CIED malfunctions following each radiation fraction or after completion of RT. Strict selection of photon energy and alignment with manufacturer-recommended dose limits appear to be important. Our study showed no major differences in the measured values of the pacing threshold, sensing threshold and lead impedance after RT.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:acfa13895815d56b6482b7d770ececb9d8c6d99789da5bf1c333bf4588d28886",
+      "document_id": "W4391351014",
+      "head_id": "e:c8e8de8101f2bb60ca0af91912e0f53bda1014f6b77fad3f545c656317135af4",
+      "tail_id": "e:6e66ea32e1388d2ff5608acee38b00e3dfa1a243f38a8d971dbb83a99c569648",
+      "head_types": [
+        "ACTOR",
+        "OBJECT"
+      ],
+      "tail_types": [
+        "ATTRIBUTE"
+      ],
+      "relation_type": "HAS_ATTRIBUTE",
+      "confidence": 0.7189548015594482,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "document_id": "W4391351014",
+          "start": 0,
+          "end": 1321,
+          "text": "(1) Background: The prevalence of cancer patients relying on cardiac implantable electronic device (CIED) is steadily rising. The aim of this study was to evaluate RT-related malfunctions of CIEDs. (2) Methods: We retrospectively analyze sixteen patients with esophageal cancer who were treated with radiotherapy between 2012 and 2022 at the University Hospital Heidelberg. All patients underwent systemic evaluation including pre-therapeutic cardiological examinations of the CIED functionality and after every single irradiation. (3) Results: Sixteen patients, predominantly male (14) with a mean age of 77 (range: 56-85) years were enrolled. All patients received 28 fractions of radiotherapy with a cumulative total dose 58.8 Gy. The mean maximum dose at the CIEDs was 1.8 Gy. Following radiotherapy and during the one-year post-radiation follow-up period, there were no registered events associated with the treatment in this evaluation. (4) Conclusion: The study did not observe any severe CIED malfunctions following each radiation fraction or after completion of RT. Strict selection of photon energy and alignment with manufacturer-recommended dose limits appear to be important. Our study showed no major differences in the measured values of the pacing threshold, sensing threshold and lead impedance after RT.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:dddc542aee143eeb153cd8117b1a53c26d670476a58982eaf66fc37ce5b8179e",
+      "document_id": "W4391351014",
+      "head_id": "e:f1b7e26849d139768fb0d1e3c944c279c2e34b910af12f8e48f117bd8c9f7643",
+      "tail_id": "e:18a3350f317f8a609c4c868e605aa342dcdec7db69f6307e460b2b6eba7fe876",
+      "head_types": [
+        "MECHANISM",
+        "METHOD",
+        "OBJECT",
+        "PROCESS"
+      ],
+      "tail_types": [
+        "ATTRIBUTE",
+        "RESULT"
+      ],
+      "relation_type": "HAS_RESULT",
+      "confidence": 0.8304716944694519,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:cddd1299bd7492dacee317991e1d07c40523cfd28207177d8a3f6453755bd97c",
+          "document_id": "W4391351014",
+          "start": 0,
+          "end": 1321,
+          "text": "(1) Background: The prevalence of cancer patients relying on cardiac implantable electronic device (CIED) is steadily rising. The aim of this study was to evaluate RT-related malfunctions of CIEDs. (2) Methods: We retrospectively analyze sixteen patients with esophageal cancer who were treated with radiotherapy between 2012 and 2022 at the University Hospital Heidelberg. All patients underwent systemic evaluation including pre-therapeutic cardiological examinations of the CIED functionality and after every single irradiation. (3) Results: Sixteen patients, predominantly male (14) with a mean age of 77 (range: 56-85) years were enrolled. All patients received 28 fractions of radiotherapy with a cumulative total dose 58.8 Gy. The mean maximum dose at the CIEDs was 1.8 Gy. Following radiotherapy and during the one-year post-radiation follow-up period, there were no registered events associated with the treatment in this evaluation. (4) Conclusion: The study did not observe any severe CIED malfunctions following each radiation fraction or after completion of RT. Strict selection of photon energy and alignment with manufacturer-recommended dose limits appear to be important. Our study showed no major differences in the measured values of the pacing threshold, sensing threshold and lead impedance after RT.",
+          "entity_ids": []
+        }
+      ]
+    }
+  ],
+  "raw_relation_count": 3,
+  "seconds": 4.927202699938789
+}

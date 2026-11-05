@@ -1,0 +1,3780 @@
+{
+  "fingerprint": "c79845cf50e55b434eab0bcd7d45fb6779c27e093e96fa9a77b4c2f1b311bf99",
+  "document_id": "W3123056951",
+  "model": "knowledgator/gliner-relex-large-v1.0",
+  "mode": "joint",
+  "raw_windows": [
+    {
+      "window": {
+        "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+        "document_id": "W3123056951",
+        "start": 0,
+        "end": 1243,
+        "text": "Recombinant human erythropoietin (rHuEPO) is a biopharmaceutical drug given to patients who have a low hemoglobin related to chronic kidney disease, cancer or anemia. However, some patients repeatedly receiving rHuEPO develop anti-rHuEPO neutralizing antibodies leading to the development of pure red cell aplasia (PRCA). The immunogenic antibody response activated by rHuEPO is believed to be triggered by T-cells recognizing EPO epitopes bound to MHC molecules displayed on the cell surface of APCs. Previous studies have reported an association between the development of anti-rHuEpo-associated PRCA and the HLA-DRB1*09 gene, which is reported to be entrenched in the Thai population. In this study, we used computational design to screen for immunogenic hotspots recognized by HLA-DRB1*09, and predicted seventeen mutants having anywhere between one through four mutations that reduce affinity for the allele, without disrupting the structural integrity and bioactivity. Five out of seventeen mutants were less immunogenic in vitro while retaining similar or slightly reduced bioactivity than rHuEPO. These engineered proteins could be the potential candidates to treat patients who are rHuEpo-dependent and express the HLA-DRB1*09 allele.",
+        "entity_ids": []
+      },
+      "entities": [
+        {
+          "start": 0,
+          "end": 41,
+          "text": "Recombinant human erythropoietin (rHuEPO)",
+          "label": "object",
+          "score": 0.5057802796363831
+        },
+        {
+          "start": 0,
+          "end": 41,
+          "text": "Recombinant human erythropoietin (rHuEPO)",
+          "label": "condition",
+          "score": 0.4342802166938782
+        },
+        {
+          "start": 0,
+          "end": 32,
+          "text": "Recombinant human erythropoietin",
+          "label": "object",
+          "score": 0.31923267245292664
+        },
+        {
+          "start": 34,
+          "end": 40,
+          "text": "rHuEPO",
+          "label": "object",
+          "score": 0.6364408731460571
+        },
+        {
+          "start": 47,
+          "end": 69,
+          "text": "biopharmaceutical drug",
+          "label": "object",
+          "score": 0.6258490681648254
+        },
+        {
+          "start": 47,
+          "end": 69,
+          "text": "biopharmaceutical drug",
+          "label": "condition",
+          "score": 0.5678332448005676
+        },
+        {
+          "start": 47,
+          "end": 69,
+          "text": "biopharmaceutical drug",
+          "label": "concept",
+          "score": 0.4729660451412201
+        },
+        {
+          "start": 79,
+          "end": 87,
+          "text": "patients",
+          "label": "actor",
+          "score": 0.7037081718444824
+        },
+        {
+          "start": 99,
+          "end": 113,
+          "text": "low hemoglobin",
+          "label": "condition",
+          "score": 0.6610540151596069
+        },
+        {
+          "start": 99,
+          "end": 113,
+          "text": "low hemoglobin",
+          "label": "object",
+          "score": 0.36641815304756165
+        },
+        {
+          "start": 99,
+          "end": 113,
+          "text": "low hemoglobin",
+          "label": "attribute",
+          "score": 0.34636470675468445
+        },
+        {
+          "start": 125,
+          "end": 147,
+          "text": "chronic kidney disease",
+          "label": "condition",
+          "score": 0.6824071407318115
+        },
+        {
+          "start": 149,
+          "end": 155,
+          "text": "cancer",
+          "label": "condition",
+          "score": 0.641166090965271
+        },
+        {
+          "start": 159,
+          "end": 165,
+          "text": "anemia",
+          "label": "condition",
+          "score": 0.7864286303520203
+        },
+        {
+          "start": 226,
+          "end": 261,
+          "text": "anti-rHuEPO neutralizing antibodies",
+          "label": "condition",
+          "score": 0.8192923069000244
+        },
+        {
+          "start": 226,
+          "end": 261,
+          "text": "anti-rHuEPO neutralizing antibodies",
+          "label": "object",
+          "score": 0.6366849541664124
+        },
+        {
+          "start": 226,
+          "end": 261,
+          "text": "anti-rHuEPO neutralizing antibodies",
+          "label": "concept",
+          "score": 0.4084556996822357
+        },
+        {
+          "start": 226,
+          "end": 261,
+          "text": "anti-rHuEPO neutralizing antibodies",
+          "label": "process",
+          "score": 0.33035019040107727
+        },
+        {
+          "start": 292,
+          "end": 313,
+          "text": "pure red cell aplasia",
+          "label": "condition",
+          "score": 0.9275822639465332
+        },
+        {
+          "start": 292,
+          "end": 320,
+          "text": "pure red cell aplasia (PRCA)",
+          "label": "condition",
+          "score": 0.8878568410873413
+        },
+        {
+          "start": 315,
+          "end": 319,
+          "text": "PRCA",
+          "label": "condition",
+          "score": 0.5820376873016357
+        },
+        {
+          "start": 315,
+          "end": 319,
+          "text": "PRCA",
+          "label": "object",
+          "score": 0.3036558926105499
+        },
+        {
+          "start": 326,
+          "end": 355,
+          "text": "immunogenic antibody response",
+          "label": "process",
+          "score": 0.6323229074478149
+        },
+        {
+          "start": 326,
+          "end": 355,
+          "text": "immunogenic antibody response",
+          "label": "condition",
+          "score": 0.5743018388748169
+        },
+        {
+          "start": 326,
+          "end": 355,
+          "text": "immunogenic antibody response",
+          "label": "object",
+          "score": 0.45828813314437866
+        },
+        {
+          "start": 326,
+          "end": 355,
+          "text": "immunogenic antibody response",
+          "label": "concept",
+          "score": 0.4439845085144043
+        },
+        {
+          "start": 326,
+          "end": 355,
+          "text": "immunogenic antibody response",
+          "label": "mechanism",
+          "score": 0.41141754388809204
+        },
+        {
+          "start": 407,
+          "end": 439,
+          "text": "T-cells recognizing EPO epitopes",
+          "label": "mechanism",
+          "score": 0.7660162448883057
+        },
+        {
+          "start": 407,
+          "end": 414,
+          "text": "T-cells",
+          "label": "mechanism",
+          "score": 0.6089146733283997
+        },
+        {
+          "start": 407,
+          "end": 414,
+          "text": "T-cells",
+          "label": "object",
+          "score": 0.5263490676879883
+        },
+        {
+          "start": 407,
+          "end": 439,
+          "text": "T-cells recognizing EPO epitopes",
+          "label": "object",
+          "score": 0.34160205721855164
+        },
+        {
+          "start": 427,
+          "end": 439,
+          "text": "EPO epitopes",
+          "label": "object",
+          "score": 0.4866095781326294
+        },
+        {
+          "start": 449,
+          "end": 462,
+          "text": "MHC molecules",
+          "label": "object",
+          "score": 0.7290412783622742
+        },
+        {
+          "start": 496,
+          "end": 500,
+          "text": "APCs",
+          "label": "object",
+          "score": 0.5218661427497864
+        },
+        {
+          "start": 502,
+          "end": 518,
+          "text": "Previous studies",
+          "label": "object",
+          "score": 0.32005903124809265
+        },
+        {
+          "start": 560,
+          "end": 602,
+          "text": "development of anti-rHuEpo-associated PRCA",
+          "label": "condition",
+          "score": 0.3976002037525177
+        },
+        {
+          "start": 575,
+          "end": 602,
+          "text": "anti-rHuEpo-associated PRCA",
+          "label": "condition",
+          "score": 0.7584447264671326
+        },
+        {
+          "start": 575,
+          "end": 602,
+          "text": "anti-rHuEpo-associated PRCA",
+          "label": "object",
+          "score": 0.5561148524284363
+        },
+        {
+          "start": 611,
+          "end": 627,
+          "text": "HLA-DRB1*09 gene",
+          "label": "object",
+          "score": 0.8825116157531738
+        },
+        {
+          "start": 611,
+          "end": 622,
+          "text": "HLA-DRB1*09",
+          "label": "object",
+          "score": 0.7115616798400879
+        },
+        {
+          "start": 611,
+          "end": 627,
+          "text": "HLA-DRB1*09 gene",
+          "label": "condition",
+          "score": 0.5455994009971619
+        },
+        {
+          "start": 671,
+          "end": 686,
+          "text": "Thai population",
+          "label": "object",
+          "score": 0.7820443511009216
+        },
+        {
+          "start": 671,
+          "end": 686,
+          "text": "Thai population",
+          "label": "data resource",
+          "score": 0.755574107170105
+        },
+        {
+          "start": 671,
+          "end": 686,
+          "text": "Thai population",
+          "label": "condition",
+          "score": 0.4702015519142151
+        },
+        {
+          "start": 711,
+          "end": 731,
+          "text": "computational design",
+          "label": "method",
+          "score": 0.983223557472229
+        },
+        {
+          "start": 735,
+          "end": 766,
+          "text": "screen for immunogenic hotspots",
+          "label": "process",
+          "score": 0.3151870369911194
+        },
+        {
+          "start": 746,
+          "end": 766,
+          "text": "immunogenic hotspots",
+          "label": "object",
+          "score": 0.5566354990005493
+        },
+        {
+          "start": 746,
+          "end": 766,
+          "text": "immunogenic hotspots",
+          "label": "condition",
+          "score": 0.5001993179321289
+        },
+        {
+          "start": 746,
+          "end": 766,
+          "text": "immunogenic hotspots",
+          "label": "concept",
+          "score": 0.41762077808380127
+        },
+        {
+          "start": 808,
+          "end": 825,
+          "text": "seventeen mutants",
+          "label": "object",
+          "score": 0.5789536237716675
+        },
+        {
+          "start": 808,
+          "end": 825,
+          "text": "seventeen mutants",
+          "label": "concept",
+          "score": 0.4600771963596344
+        },
+        {
+          "start": 818,
+          "end": 825,
+          "text": "mutants",
+          "label": "object",
+          "score": 0.5040926933288574
+        },
+        {
+          "start": 818,
+          "end": 825,
+          "text": "mutants",
+          "label": "concept",
+          "score": 0.3330894112586975
+        },
+        {
+          "start": 850,
+          "end": 876,
+          "text": "one through four mutations",
+          "label": "object",
+          "score": 0.33607974648475647
+        },
+        {
+          "start": 882,
+          "end": 912,
+          "text": "reduce affinity for the allele",
+          "label": "attribute",
+          "score": 0.4083681106567383
+        },
+        {
+          "start": 889,
+          "end": 897,
+          "text": "affinity",
+          "label": "attribute",
+          "score": 0.5991917848587036
+        },
+        {
+          "start": 889,
+          "end": 912,
+          "text": "affinity for the allele",
+          "label": "attribute",
+          "score": 0.5125417113304138
+        },
+        {
+          "start": 906,
+          "end": 912,
+          "text": "allele",
+          "label": "object",
+          "score": 0.4751374125480652
+        },
+        {
+          "start": 937,
+          "end": 957,
+          "text": "structural integrity",
+          "label": "attribute",
+          "score": 0.7863491773605347
+        },
+        {
+          "start": 962,
+          "end": 973,
+          "text": "bioactivity",
+          "label": "attribute",
+          "score": 0.7878310680389404
+        },
+        {
+          "start": 975,
+          "end": 1004,
+          "text": "Five out of seventeen mutants",
+          "label": "result",
+          "score": 0.5704024434089661
+        },
+        {
+          "start": 975,
+          "end": 1004,
+          "text": "Five out of seventeen mutants",
+          "label": "object",
+          "score": 0.5604416131973267
+        },
+        {
+          "start": 975,
+          "end": 1004,
+          "text": "Five out of seventeen mutants",
+          "label": "concept",
+          "score": 0.5352233648300171
+        },
+        {
+          "start": 975,
+          "end": 1004,
+          "text": "Five out of seventeen mutants",
+          "label": "process",
+          "score": 0.3635748028755188
+        },
+        {
+          "start": 1010,
+          "end": 1035,
+          "text": "less immunogenic in vitro",
+          "label": "result",
+          "score": 0.7178714871406555
+        },
+        {
+          "start": 1010,
+          "end": 1026,
+          "text": "less immunogenic",
+          "label": "result",
+          "score": 0.4238497018814087
+        },
+        {
+          "start": 1010,
+          "end": 1035,
+          "text": "less immunogenic in vitro",
+          "label": "concept",
+          "score": 0.30413007736206055
+        },
+        {
+          "start": 1052,
+          "end": 1091,
+          "text": "similar or slightly reduced bioactivity",
+          "label": "attribute",
+          "score": 0.42900311946868896
+        },
+        {
+          "start": 1111,
+          "end": 1130,
+          "text": "engineered proteins",
+          "label": "object",
+          "score": 0.5812400579452515
+        },
+        {
+          "start": 1111,
+          "end": 1130,
+          "text": "engineered proteins",
+          "label": "concept",
+          "score": 0.43841564655303955
+        },
+        {
+          "start": 1191,
+          "end": 1207,
+          "text": "rHuEpo-dependent",
+          "label": "object",
+          "score": 0.6722731590270996
+        },
+        {
+          "start": 1191,
+          "end": 1207,
+          "text": "rHuEpo-dependent",
+          "label": "condition",
+          "score": 0.47717007994651794
+        },
+        {
+          "start": 1191,
+          "end": 1207,
+          "text": "rHuEpo-dependent",
+          "label": "concept",
+          "score": 0.40034857392311096
+        },
+        {
+          "start": 1212,
+          "end": 1242,
+          "text": "express the HLA-DRB1*09 allele",
+          "label": "object",
+          "score": 0.3446029722690582
+        },
+        {
+          "start": 1224,
+          "end": 1242,
+          "text": "HLA-DRB1*09 allele",
+          "label": "object",
+          "score": 0.7278885841369629
+        }
+      ],
+      "predictions": [
+        {
+          "head": {
+            "start": 0,
+            "end": 32,
+            "text": "Recombinant human erythropoietin",
+            "type": "object",
+            "entity_idx": 2
+          },
+          "tail": {
+            "start": 47,
+            "end": 69,
+            "text": "biopharmaceutical drug",
+            "type": "object",
+            "entity_idx": 4
+          },
+          "relation": "is a",
+          "score": 0.9121217727661133
+        },
+        {
+          "head": {
+            "start": 0,
+            "end": 41,
+            "text": "Recombinant human erythropoietin (rHuEPO)",
+            "type": "object",
+            "entity_idx": 0
+          },
+          "tail": {
+            "start": 47,
+            "end": 69,
+            "text": "biopharmaceutical drug",
+            "type": "object",
+            "entity_idx": 4
+          },
+          "relation": "is a",
+          "score": 0.972496509552002
+        },
+        {
+          "head": {
+            "start": 575,
+            "end": 602,
+            "text": "anti-rHuEpo-associated PRCA",
+            "type": "condition",
+            "entity_idx": 36
+          },
+          "tail": {
+            "start": 611,
+            "end": 627,
+            "text": "HLA-DRB1*09 gene",
+            "type": "object",
+            "entity_idx": 38
+          },
+          "relation": "associated with",
+          "score": 0.7567886710166931
+        },
+        {
+          "head": {
+            "start": 611,
+            "end": 622,
+            "text": "HLA-DRB1*09",
+            "type": "object",
+            "entity_idx": 39
+          },
+          "tail": {
+            "start": 671,
+            "end": 686,
+            "text": "Thai population",
+            "type": "object",
+            "entity_idx": 41
+          },
+          "relation": "located in",
+          "score": 0.8401183485984802
+        },
+        {
+          "head": {
+            "start": 611,
+            "end": 627,
+            "text": "HLA-DRB1*09 gene",
+            "type": "object",
+            "entity_idx": 38
+          },
+          "tail": {
+            "start": 671,
+            "end": 686,
+            "text": "Thai population",
+            "type": "object",
+            "entity_idx": 41
+          },
+          "relation": "located in",
+          "score": 0.9640107750892639
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "e:498d2e043b17b7584de73784321081f070e71403c7d6e4e3c6594678603997a4",
+      "document_id": "W3123056951",
+      "start": 0,
+      "end": 32,
+      "surface_text": "Recombinant human erythropoietin",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "recombinant human erythropoietin"
+      ],
+      "confidence": 0.31923267245292664,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 0,
+          "end": 32,
+          "surface_text": "Recombinant human erythropoietin",
+          "ner_label_hint": "OBJECT",
+          "score": 0.31923267245292664,
+          "normalized_form": "recombinant human erythropoietin",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 0,
+            "end": 32,
+            "text": "Recombinant human erythropoietin",
+            "label": "object",
+            "score": 0.31923267245292664
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:0c28165d5cc4994bee10b595a33030a448dd7ab270983b6ae1cd76cc7dc9ba38",
+      "document_id": "W3123056951",
+      "start": 0,
+      "end": 41,
+      "surface_text": "Recombinant human erythropoietin (rHuEPO)",
+      "entity_types": [
+        "CONDITION",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "recombinant human erythropoietin (rhuepo)"
+      ],
+      "confidence": 0.5057802796363831,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 0,
+          "end": 41,
+          "surface_text": "Recombinant human erythropoietin (rHuEPO)",
+          "ner_label_hint": "OBJECT",
+          "score": 0.5057802796363831,
+          "normalized_form": "recombinant human erythropoietin (rhuepo)",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 0,
+            "end": 41,
+            "text": "Recombinant human erythropoietin (rHuEPO)",
+            "label": "object",
+            "score": 0.5057802796363831
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 0,
+          "end": 41,
+          "surface_text": "Recombinant human erythropoietin (rHuEPO)",
+          "ner_label_hint": "CONDITION",
+          "score": 0.4342802166938782,
+          "normalized_form": "recombinant human erythropoietin (rhuepo)",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 0,
+            "end": 41,
+            "text": "Recombinant human erythropoietin (rHuEPO)",
+            "label": "condition",
+            "score": 0.4342802166938782
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:c8b5dadbe7a0dc11ddfe249e131800ad9580ff157bee02cea29867fbadb8ee87",
+      "document_id": "W3123056951",
+      "start": 34,
+      "end": 40,
+      "surface_text": "rHuEPO",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "rhuepo"
+      ],
+      "confidence": 0.6364408731460571,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 34,
+          "end": 40,
+          "surface_text": "rHuEPO",
+          "ner_label_hint": "OBJECT",
+          "score": 0.6364408731460571,
+          "normalized_form": "rhuepo",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 34,
+            "end": 40,
+            "text": "rHuEPO",
+            "label": "object",
+            "score": 0.6364408731460571
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:0748b4395ddf95750c2e9a8365d4ae37a5f39d5df9593da367d5cccfa01f5969",
+      "document_id": "W3123056951",
+      "start": 47,
+      "end": 69,
+      "surface_text": "biopharmaceutical drug",
+      "entity_types": [
+        "CONCEPT",
+        "CONDITION",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "biopharmaceutical drug"
+      ],
+      "confidence": 0.6258490681648254,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 47,
+          "end": 69,
+          "surface_text": "biopharmaceutical drug",
+          "ner_label_hint": "OBJECT",
+          "score": 0.6258490681648254,
+          "normalized_form": "biopharmaceutical drug",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 47,
+            "end": 69,
+            "text": "biopharmaceutical drug",
+            "label": "object",
+            "score": 0.6258490681648254
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 47,
+          "end": 69,
+          "surface_text": "biopharmaceutical drug",
+          "ner_label_hint": "CONDITION",
+          "score": 0.5678332448005676,
+          "normalized_form": "biopharmaceutical drug",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 47,
+            "end": 69,
+            "text": "biopharmaceutical drug",
+            "label": "condition",
+            "score": 0.5678332448005676
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 47,
+          "end": 69,
+          "surface_text": "biopharmaceutical drug",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.4729660451412201,
+          "normalized_form": "biopharmaceutical drug",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 47,
+            "end": 69,
+            "text": "biopharmaceutical drug",
+            "label": "concept",
+            "score": 0.4729660451412201
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:f6e4ef94482c38f4faebd6c584474f7eba5c03647a8476ed400594e1125897c8",
+      "document_id": "W3123056951",
+      "start": 79,
+      "end": 87,
+      "surface_text": "patients",
+      "entity_types": [
+        "ACTOR"
+      ],
+      "normalized_forms": [
+        "patients"
+      ],
+      "confidence": 0.7037081718444824,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 79,
+          "end": 87,
+          "surface_text": "patients",
+          "ner_label_hint": "ACTOR",
+          "score": 0.7037081718444824,
+          "normalized_form": "patients",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 79,
+            "end": 87,
+            "text": "patients",
+            "label": "actor",
+            "score": 0.7037081718444824
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:8735f423999836c8985b8a7ce73b82e23d208fc10dc4f34b98c29b6b126b322d",
+      "document_id": "W3123056951",
+      "start": 99,
+      "end": 113,
+      "surface_text": "low hemoglobin",
+      "entity_types": [
+        "ATTRIBUTE",
+        "CONDITION",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "low hemoglobin"
+      ],
+      "confidence": 0.6610540151596069,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 99,
+          "end": 113,
+          "surface_text": "low hemoglobin",
+          "ner_label_hint": "CONDITION",
+          "score": 0.6610540151596069,
+          "normalized_form": "low hemoglobin",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 99,
+            "end": 113,
+            "text": "low hemoglobin",
+            "label": "condition",
+            "score": 0.6610540151596069
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 99,
+          "end": 113,
+          "surface_text": "low hemoglobin",
+          "ner_label_hint": "OBJECT",
+          "score": 0.36641815304756165,
+          "normalized_form": "low hemoglobin",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 99,
+            "end": 113,
+            "text": "low hemoglobin",
+            "label": "object",
+            "score": 0.36641815304756165
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 99,
+          "end": 113,
+          "surface_text": "low hemoglobin",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.34636470675468445,
+          "normalized_form": "low hemoglobin",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 99,
+            "end": 113,
+            "text": "low hemoglobin",
+            "label": "attribute",
+            "score": 0.34636470675468445
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:dcbe03525e58d5738409185db8cde990e2d49155a54a571fa2bf92c4b1bcefe7",
+      "document_id": "W3123056951",
+      "start": 125,
+      "end": 147,
+      "surface_text": "chronic kidney disease",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "chronic kidney disease"
+      ],
+      "confidence": 0.6824071407318115,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 125,
+          "end": 147,
+          "surface_text": "chronic kidney disease",
+          "ner_label_hint": "CONDITION",
+          "score": 0.6824071407318115,
+          "normalized_form": "chronic kidney disease",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 125,
+            "end": 147,
+            "text": "chronic kidney disease",
+            "label": "condition",
+            "score": 0.6824071407318115
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:f5d6e1f28e7e14102074fbed128ce69450ca65513ae55bb12c317b166659e815",
+      "document_id": "W3123056951",
+      "start": 149,
+      "end": 155,
+      "surface_text": "cancer",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "cancer"
+      ],
+      "confidence": 0.641166090965271,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 149,
+          "end": 155,
+          "surface_text": "cancer",
+          "ner_label_hint": "CONDITION",
+          "score": 0.641166090965271,
+          "normalized_form": "cancer",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 149,
+            "end": 155,
+            "text": "cancer",
+            "label": "condition",
+            "score": 0.641166090965271
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:411a7f6c8fd96a98b774401fc6e833bc14c4bd92cea6058fe5983b5ab35bc869",
+      "document_id": "W3123056951",
+      "start": 159,
+      "end": 165,
+      "surface_text": "anemia",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "anemia"
+      ],
+      "confidence": 0.7864286303520203,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 159,
+          "end": 165,
+          "surface_text": "anemia",
+          "ner_label_hint": "CONDITION",
+          "score": 0.7864286303520203,
+          "normalized_form": "anemia",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 159,
+            "end": 165,
+            "text": "anemia",
+            "label": "condition",
+            "score": 0.7864286303520203
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:e63b755e17649cb646d5b8fd463e67708677f90d5c2b00c59a529ceb153fdc5b",
+      "document_id": "W3123056951",
+      "start": 226,
+      "end": 261,
+      "surface_text": "anti-rHuEPO neutralizing antibodies",
+      "entity_types": [
+        "CONCEPT",
+        "CONDITION",
+        "OBJECT",
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "anti-rhuepo neutralizing antibodies"
+      ],
+      "confidence": 0.8192923069000244,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 226,
+          "end": 261,
+          "surface_text": "anti-rHuEPO neutralizing antibodies",
+          "ner_label_hint": "CONDITION",
+          "score": 0.8192923069000244,
+          "normalized_form": "anti-rhuepo neutralizing antibodies",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 226,
+            "end": 261,
+            "text": "anti-rHuEPO neutralizing antibodies",
+            "label": "condition",
+            "score": 0.8192923069000244
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 226,
+          "end": 261,
+          "surface_text": "anti-rHuEPO neutralizing antibodies",
+          "ner_label_hint": "OBJECT",
+          "score": 0.6366849541664124,
+          "normalized_form": "anti-rhuepo neutralizing antibodies",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 226,
+            "end": 261,
+            "text": "anti-rHuEPO neutralizing antibodies",
+            "label": "object",
+            "score": 0.6366849541664124
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 226,
+          "end": 261,
+          "surface_text": "anti-rHuEPO neutralizing antibodies",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.4084556996822357,
+          "normalized_form": "anti-rhuepo neutralizing antibodies",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 226,
+            "end": 261,
+            "text": "anti-rHuEPO neutralizing antibodies",
+            "label": "concept",
+            "score": 0.4084556996822357
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 226,
+          "end": 261,
+          "surface_text": "anti-rHuEPO neutralizing antibodies",
+          "ner_label_hint": "PROCESS",
+          "score": 0.33035019040107727,
+          "normalized_form": "anti-rhuepo neutralizing antibodies",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 226,
+            "end": 261,
+            "text": "anti-rHuEPO neutralizing antibodies",
+            "label": "process",
+            "score": 0.33035019040107727
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d9dc8318cbfb9b59f303d416074fd10b7c191935907843d2eb9dbf0609cb0cda",
+      "document_id": "W3123056951",
+      "start": 292,
+      "end": 313,
+      "surface_text": "pure red cell aplasia",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "pure red cell aplasia"
+      ],
+      "confidence": 0.9275822639465332,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 292,
+          "end": 313,
+          "surface_text": "pure red cell aplasia",
+          "ner_label_hint": "CONDITION",
+          "score": 0.9275822639465332,
+          "normalized_form": "pure red cell aplasia",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 292,
+            "end": 313,
+            "text": "pure red cell aplasia",
+            "label": "condition",
+            "score": 0.9275822639465332
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:0e2e4f0f4c715bfc88dc5748e42bdf0d60a8e32f6ff0c41d9fe0eca4e135f399",
+      "document_id": "W3123056951",
+      "start": 292,
+      "end": 320,
+      "surface_text": "pure red cell aplasia (PRCA)",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "pure red cell aplasia (prca)"
+      ],
+      "confidence": 0.8878568410873413,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 292,
+          "end": 320,
+          "surface_text": "pure red cell aplasia (PRCA)",
+          "ner_label_hint": "CONDITION",
+          "score": 0.8878568410873413,
+          "normalized_form": "pure red cell aplasia (prca)",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 292,
+            "end": 320,
+            "text": "pure red cell aplasia (PRCA)",
+            "label": "condition",
+            "score": 0.8878568410873413
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:9f78cec67733c758b3ea293b7e5b1c84569cea1112c2c137c1cdc647be8a03cd",
+      "document_id": "W3123056951",
+      "start": 315,
+      "end": 319,
+      "surface_text": "PRCA",
+      "entity_types": [
+        "CONDITION",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "prca"
+      ],
+      "confidence": 0.5820376873016357,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 315,
+          "end": 319,
+          "surface_text": "PRCA",
+          "ner_label_hint": "CONDITION",
+          "score": 0.5820376873016357,
+          "normalized_form": "prca",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 315,
+            "end": 319,
+            "text": "PRCA",
+            "label": "condition",
+            "score": 0.5820376873016357
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 315,
+          "end": 319,
+          "surface_text": "PRCA",
+          "ner_label_hint": "OBJECT",
+          "score": 0.3036558926105499,
+          "normalized_form": "prca",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 315,
+            "end": 319,
+            "text": "PRCA",
+            "label": "object",
+            "score": 0.3036558926105499
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:64ca7801bb250c8257b4c926a2d5fbd24f695bfa34c845e70543f0caea6603e7",
+      "document_id": "W3123056951",
+      "start": 326,
+      "end": 355,
+      "surface_text": "immunogenic antibody response",
+      "entity_types": [
+        "CONCEPT",
+        "CONDITION",
+        "MECHANISM",
+        "OBJECT",
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "immunogenic antibody response"
+      ],
+      "confidence": 0.6323229074478149,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 326,
+          "end": 355,
+          "surface_text": "immunogenic antibody response",
+          "ner_label_hint": "PROCESS",
+          "score": 0.6323229074478149,
+          "normalized_form": "immunogenic antibody response",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 326,
+            "end": 355,
+            "text": "immunogenic antibody response",
+            "label": "process",
+            "score": 0.6323229074478149
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 326,
+          "end": 355,
+          "surface_text": "immunogenic antibody response",
+          "ner_label_hint": "CONDITION",
+          "score": 0.5743018388748169,
+          "normalized_form": "immunogenic antibody response",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 326,
+            "end": 355,
+            "text": "immunogenic antibody response",
+            "label": "condition",
+            "score": 0.5743018388748169
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 326,
+          "end": 355,
+          "surface_text": "immunogenic antibody response",
+          "ner_label_hint": "OBJECT",
+          "score": 0.45828813314437866,
+          "normalized_form": "immunogenic antibody response",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 326,
+            "end": 355,
+            "text": "immunogenic antibody response",
+            "label": "object",
+            "score": 0.45828813314437866
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 326,
+          "end": 355,
+          "surface_text": "immunogenic antibody response",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.4439845085144043,
+          "normalized_form": "immunogenic antibody response",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 326,
+            "end": 355,
+            "text": "immunogenic antibody response",
+            "label": "concept",
+            "score": 0.4439845085144043
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 326,
+          "end": 355,
+          "surface_text": "immunogenic antibody response",
+          "ner_label_hint": "MECHANISM",
+          "score": 0.41141754388809204,
+          "normalized_form": "immunogenic antibody response",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 326,
+            "end": 355,
+            "text": "immunogenic antibody response",
+            "label": "mechanism",
+            "score": 0.41141754388809204
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:ac3b2ddcbcf862d44eac73d81b160cef0645087378e63b177e3aa5489f3f83cb",
+      "document_id": "W3123056951",
+      "start": 407,
+      "end": 414,
+      "surface_text": "T-cells",
+      "entity_types": [
+        "MECHANISM",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "t-cells"
+      ],
+      "confidence": 0.6089146733283997,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 407,
+          "end": 414,
+          "surface_text": "T-cells",
+          "ner_label_hint": "MECHANISM",
+          "score": 0.6089146733283997,
+          "normalized_form": "t-cells",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 407,
+            "end": 414,
+            "text": "T-cells",
+            "label": "mechanism",
+            "score": 0.6089146733283997
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 407,
+          "end": 414,
+          "surface_text": "T-cells",
+          "ner_label_hint": "OBJECT",
+          "score": 0.5263490676879883,
+          "normalized_form": "t-cells",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 407,
+            "end": 414,
+            "text": "T-cells",
+            "label": "object",
+            "score": 0.5263490676879883
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:4f44000f780a13b8f464c0283f332d91e233ae094764409d91be6c5c3b60ed2e",
+      "document_id": "W3123056951",
+      "start": 407,
+      "end": 439,
+      "surface_text": "T-cells recognizing EPO epitopes",
+      "entity_types": [
+        "MECHANISM",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "t-cells recognizing epo epitopes"
+      ],
+      "confidence": 0.7660162448883057,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 407,
+          "end": 439,
+          "surface_text": "T-cells recognizing EPO epitopes",
+          "ner_label_hint": "MECHANISM",
+          "score": 0.7660162448883057,
+          "normalized_form": "t-cells recognizing epo epitopes",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 407,
+            "end": 439,
+            "text": "T-cells recognizing EPO epitopes",
+            "label": "mechanism",
+            "score": 0.7660162448883057
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 407,
+          "end": 439,
+          "surface_text": "T-cells recognizing EPO epitopes",
+          "ner_label_hint": "OBJECT",
+          "score": 0.34160205721855164,
+          "normalized_form": "t-cells recognizing epo epitopes",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 407,
+            "end": 439,
+            "text": "T-cells recognizing EPO epitopes",
+            "label": "object",
+            "score": 0.34160205721855164
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:5e24a03d9bf60444f203890235102624d6ef990e27ff4e4d166cdd78882e1c53",
+      "document_id": "W3123056951",
+      "start": 427,
+      "end": 439,
+      "surface_text": "EPO epitopes",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "epo epitopes"
+      ],
+      "confidence": 0.4866095781326294,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 427,
+          "end": 439,
+          "surface_text": "EPO epitopes",
+          "ner_label_hint": "OBJECT",
+          "score": 0.4866095781326294,
+          "normalized_form": "epo epitopes",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 427,
+            "end": 439,
+            "text": "EPO epitopes",
+            "label": "object",
+            "score": 0.4866095781326294
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:cbb092f39ec68fad4847ab4a27f2194f19c63c36b433495237d8d5fab9a5f1cb",
+      "document_id": "W3123056951",
+      "start": 449,
+      "end": 462,
+      "surface_text": "MHC molecules",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "mhc molecules"
+      ],
+      "confidence": 0.7290412783622742,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 449,
+          "end": 462,
+          "surface_text": "MHC molecules",
+          "ner_label_hint": "OBJECT",
+          "score": 0.7290412783622742,
+          "normalized_form": "mhc molecules",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 449,
+            "end": 462,
+            "text": "MHC molecules",
+            "label": "object",
+            "score": 0.7290412783622742
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:30c293414927449fefb37cbd6295d11b099806229f8a9ae360fb18a233a78a70",
+      "document_id": "W3123056951",
+      "start": 496,
+      "end": 500,
+      "surface_text": "APCs",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "apcs"
+      ],
+      "confidence": 0.5218661427497864,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 496,
+          "end": 500,
+          "surface_text": "APCs",
+          "ner_label_hint": "OBJECT",
+          "score": 0.5218661427497864,
+          "normalized_form": "apcs",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 496,
+            "end": 500,
+            "text": "APCs",
+            "label": "object",
+            "score": 0.5218661427497864
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:3de6be6c3dc38e978119b9bbfde94d990e86b5c2e81018030d193cca164bf07f",
+      "document_id": "W3123056951",
+      "start": 502,
+      "end": 518,
+      "surface_text": "Previous studies",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "previous studies"
+      ],
+      "confidence": 0.32005903124809265,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 502,
+          "end": 518,
+          "surface_text": "Previous studies",
+          "ner_label_hint": "OBJECT",
+          "score": 0.32005903124809265,
+          "normalized_form": "previous studies",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 502,
+            "end": 518,
+            "text": "Previous studies",
+            "label": "object",
+            "score": 0.32005903124809265
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:47f6203bd7b804c1609ec6c599f00e85cd3efa4a3bb4bf0ce8d98600b77fcacf",
+      "document_id": "W3123056951",
+      "start": 560,
+      "end": 602,
+      "surface_text": "development of anti-rHuEpo-associated PRCA",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "development of anti-rhuepo-associated prca"
+      ],
+      "confidence": 0.3976002037525177,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 560,
+          "end": 602,
+          "surface_text": "development of anti-rHuEpo-associated PRCA",
+          "ner_label_hint": "CONDITION",
+          "score": 0.3976002037525177,
+          "normalized_form": "development of anti-rhuepo-associated prca",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 560,
+            "end": 602,
+            "text": "development of anti-rHuEpo-associated PRCA",
+            "label": "condition",
+            "score": 0.3976002037525177
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:29e2965a24944da4b5e19609554aaeb050dfad4c98dff90bb17de80f73857299",
+      "document_id": "W3123056951",
+      "start": 575,
+      "end": 602,
+      "surface_text": "anti-rHuEpo-associated PRCA",
+      "entity_types": [
+        "CONDITION",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "anti-rhuepo-associated prca"
+      ],
+      "confidence": 0.7584447264671326,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 575,
+          "end": 602,
+          "surface_text": "anti-rHuEpo-associated PRCA",
+          "ner_label_hint": "CONDITION",
+          "score": 0.7584447264671326,
+          "normalized_form": "anti-rhuepo-associated prca",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 575,
+            "end": 602,
+            "text": "anti-rHuEpo-associated PRCA",
+            "label": "condition",
+            "score": 0.7584447264671326
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 575,
+          "end": 602,
+          "surface_text": "anti-rHuEpo-associated PRCA",
+          "ner_label_hint": "OBJECT",
+          "score": 0.5561148524284363,
+          "normalized_form": "anti-rhuepo-associated prca",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 575,
+            "end": 602,
+            "text": "anti-rHuEpo-associated PRCA",
+            "label": "object",
+            "score": 0.5561148524284363
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:696cd04fc9d27fc700ef7e1ae3f5b50774d1fa8f36cca132ac11c225506ffbae",
+      "document_id": "W3123056951",
+      "start": 611,
+      "end": 622,
+      "surface_text": "HLA-DRB1*09",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "hla-drb1*09"
+      ],
+      "confidence": 0.7115616798400879,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 611,
+          "end": 622,
+          "surface_text": "HLA-DRB1*09",
+          "ner_label_hint": "OBJECT",
+          "score": 0.7115616798400879,
+          "normalized_form": "hla-drb1*09",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 611,
+            "end": 622,
+            "text": "HLA-DRB1*09",
+            "label": "object",
+            "score": 0.7115616798400879
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:bbe1f7a9ce1e846d104afb65f6ff0395575393ace74eff5c9db405bfcab3b457",
+      "document_id": "W3123056951",
+      "start": 611,
+      "end": 627,
+      "surface_text": "HLA-DRB1*09 gene",
+      "entity_types": [
+        "CONDITION",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "hla-drb1*09 gene"
+      ],
+      "confidence": 0.8825116157531738,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 611,
+          "end": 627,
+          "surface_text": "HLA-DRB1*09 gene",
+          "ner_label_hint": "OBJECT",
+          "score": 0.8825116157531738,
+          "normalized_form": "hla-drb1*09 gene",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 611,
+            "end": 627,
+            "text": "HLA-DRB1*09 gene",
+            "label": "object",
+            "score": 0.8825116157531738
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 611,
+          "end": 627,
+          "surface_text": "HLA-DRB1*09 gene",
+          "ner_label_hint": "CONDITION",
+          "score": 0.5455994009971619,
+          "normalized_form": "hla-drb1*09 gene",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 611,
+            "end": 627,
+            "text": "HLA-DRB1*09 gene",
+            "label": "condition",
+            "score": 0.5455994009971619
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d42b1895368f12e6c1081f3e2006134da78913515d802038ccef3e04c96fbc52",
+      "document_id": "W3123056951",
+      "start": 671,
+      "end": 686,
+      "surface_text": "Thai population",
+      "entity_types": [
+        "CONDITION",
+        "DATA_RESOURCE",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "thai population"
+      ],
+      "confidence": 0.7820443511009216,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 671,
+          "end": 686,
+          "surface_text": "Thai population",
+          "ner_label_hint": "OBJECT",
+          "score": 0.7820443511009216,
+          "normalized_form": "thai population",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 671,
+            "end": 686,
+            "text": "Thai population",
+            "label": "object",
+            "score": 0.7820443511009216
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 671,
+          "end": 686,
+          "surface_text": "Thai population",
+          "ner_label_hint": "DATA_RESOURCE",
+          "score": 0.755574107170105,
+          "normalized_form": "thai population",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 671,
+            "end": 686,
+            "text": "Thai population",
+            "label": "data resource",
+            "score": 0.755574107170105
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 671,
+          "end": 686,
+          "surface_text": "Thai population",
+          "ner_label_hint": "CONDITION",
+          "score": 0.4702015519142151,
+          "normalized_form": "thai population",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 671,
+            "end": 686,
+            "text": "Thai population",
+            "label": "condition",
+            "score": 0.4702015519142151
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:4b4ace3fcac1c880857237816d762cbfa52b33086fd96286ee9fb3d962039534",
+      "document_id": "W3123056951",
+      "start": 711,
+      "end": 731,
+      "surface_text": "computational design",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "computational design"
+      ],
+      "confidence": 0.983223557472229,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 711,
+          "end": 731,
+          "surface_text": "computational design",
+          "ner_label_hint": "METHOD",
+          "score": 0.983223557472229,
+          "normalized_form": "computational design",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 711,
+            "end": 731,
+            "text": "computational design",
+            "label": "method",
+            "score": 0.983223557472229
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:5c089e48ed4c7a1e5b7ed80494cc0607ce12a32853ee1f54814886da48ff88bf",
+      "document_id": "W3123056951",
+      "start": 735,
+      "end": 766,
+      "surface_text": "screen for immunogenic hotspots",
+      "entity_types": [
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "screen for immunogenic hotspots"
+      ],
+      "confidence": 0.3151870369911194,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 735,
+          "end": 766,
+          "surface_text": "screen for immunogenic hotspots",
+          "ner_label_hint": "PROCESS",
+          "score": 0.3151870369911194,
+          "normalized_form": "screen for immunogenic hotspots",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 735,
+            "end": 766,
+            "text": "screen for immunogenic hotspots",
+            "label": "process",
+            "score": 0.3151870369911194
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:05e1eb3533486f54345311549e59b88957fce028d654c866736743bb2f85f379",
+      "document_id": "W3123056951",
+      "start": 746,
+      "end": 766,
+      "surface_text": "immunogenic hotspots",
+      "entity_types": [
+        "CONCEPT",
+        "CONDITION",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "immunogenic hotspots"
+      ],
+      "confidence": 0.5566354990005493,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 746,
+          "end": 766,
+          "surface_text": "immunogenic hotspots",
+          "ner_label_hint": "OBJECT",
+          "score": 0.5566354990005493,
+          "normalized_form": "immunogenic hotspots",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 746,
+            "end": 766,
+            "text": "immunogenic hotspots",
+            "label": "object",
+            "score": 0.5566354990005493
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 746,
+          "end": 766,
+          "surface_text": "immunogenic hotspots",
+          "ner_label_hint": "CONDITION",
+          "score": 0.5001993179321289,
+          "normalized_form": "immunogenic hotspots",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 746,
+            "end": 766,
+            "text": "immunogenic hotspots",
+            "label": "condition",
+            "score": 0.5001993179321289
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 746,
+          "end": 766,
+          "surface_text": "immunogenic hotspots",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.41762077808380127,
+          "normalized_form": "immunogenic hotspots",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 746,
+            "end": 766,
+            "text": "immunogenic hotspots",
+            "label": "concept",
+            "score": 0.41762077808380127
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:2746dda9839353c641759747a967769c5901ab693bec8ab93a9d2055f7b4c7d2",
+      "document_id": "W3123056951",
+      "start": 808,
+      "end": 825,
+      "surface_text": "seventeen mutants",
+      "entity_types": [
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "seventeen mutants"
+      ],
+      "confidence": 0.5789536237716675,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 808,
+          "end": 825,
+          "surface_text": "seventeen mutants",
+          "ner_label_hint": "OBJECT",
+          "score": 0.5789536237716675,
+          "normalized_form": "seventeen mutants",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 808,
+            "end": 825,
+            "text": "seventeen mutants",
+            "label": "object",
+            "score": 0.5789536237716675
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 808,
+          "end": 825,
+          "surface_text": "seventeen mutants",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.4600771963596344,
+          "normalized_form": "seventeen mutants",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 808,
+            "end": 825,
+            "text": "seventeen mutants",
+            "label": "concept",
+            "score": 0.4600771963596344
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:b50960bc1d73d289f54cbbf5538acac7f3192c5bf986149aaa01297e1b5b2b4a",
+      "document_id": "W3123056951",
+      "start": 818,
+      "end": 825,
+      "surface_text": "mutants",
+      "entity_types": [
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "mutants"
+      ],
+      "confidence": 0.5040926933288574,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 818,
+          "end": 825,
+          "surface_text": "mutants",
+          "ner_label_hint": "OBJECT",
+          "score": 0.5040926933288574,
+          "normalized_form": "mutants",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 818,
+            "end": 825,
+            "text": "mutants",
+            "label": "object",
+            "score": 0.5040926933288574
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 818,
+          "end": 825,
+          "surface_text": "mutants",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.3330894112586975,
+          "normalized_form": "mutants",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 818,
+            "end": 825,
+            "text": "mutants",
+            "label": "concept",
+            "score": 0.3330894112586975
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:53b293ef4c480b24ce7e9fe3f78b481675dd48b8f7310996be86a153f2093340",
+      "document_id": "W3123056951",
+      "start": 850,
+      "end": 876,
+      "surface_text": "one through four mutations",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "one through four mutations"
+      ],
+      "confidence": 0.33607974648475647,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 850,
+          "end": 876,
+          "surface_text": "one through four mutations",
+          "ner_label_hint": "OBJECT",
+          "score": 0.33607974648475647,
+          "normalized_form": "one through four mutations",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 850,
+            "end": 876,
+            "text": "one through four mutations",
+            "label": "object",
+            "score": 0.33607974648475647
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:9ff2067117aeea4a87e064332d1b76499eda7604368f44c0d8b7f38993b24838",
+      "document_id": "W3123056951",
+      "start": 882,
+      "end": 912,
+      "surface_text": "reduce affinity for the allele",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "reduce affinity for the allele"
+      ],
+      "confidence": 0.4083681106567383,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 882,
+          "end": 912,
+          "surface_text": "reduce affinity for the allele",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.4083681106567383,
+          "normalized_form": "reduce affinity for the allele",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 882,
+            "end": 912,
+            "text": "reduce affinity for the allele",
+            "label": "attribute",
+            "score": 0.4083681106567383
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:6a548ca41d58d948902a5ec4149c8cc9e7d239c618a4c84b550c5fafae0c3677",
+      "document_id": "W3123056951",
+      "start": 889,
+      "end": 897,
+      "surface_text": "affinity",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "affinity"
+      ],
+      "confidence": 0.5991917848587036,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 889,
+          "end": 897,
+          "surface_text": "affinity",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.5991917848587036,
+          "normalized_form": "affinity",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 889,
+            "end": 897,
+            "text": "affinity",
+            "label": "attribute",
+            "score": 0.5991917848587036
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:479c58b30a8d2b808bfe72890841e57b8a9bbd125d9581a3156d099a66acd21b",
+      "document_id": "W3123056951",
+      "start": 889,
+      "end": 912,
+      "surface_text": "affinity for the allele",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "affinity for the allele"
+      ],
+      "confidence": 0.5125417113304138,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 889,
+          "end": 912,
+          "surface_text": "affinity for the allele",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.5125417113304138,
+          "normalized_form": "affinity for the allele",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 889,
+            "end": 912,
+            "text": "affinity for the allele",
+            "label": "attribute",
+            "score": 0.5125417113304138
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a37175599aef926c7613589cdad3321631e8550218096d2a6938f32a9d1b67ad",
+      "document_id": "W3123056951",
+      "start": 906,
+      "end": 912,
+      "surface_text": "allele",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "allele"
+      ],
+      "confidence": 0.4751374125480652,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 906,
+          "end": 912,
+          "surface_text": "allele",
+          "ner_label_hint": "OBJECT",
+          "score": 0.4751374125480652,
+          "normalized_form": "allele",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 906,
+            "end": 912,
+            "text": "allele",
+            "label": "object",
+            "score": 0.4751374125480652
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:c5038cdea1d7ff9033981a557abbe6369078d4f8e615d93622fb22364f7764b7",
+      "document_id": "W3123056951",
+      "start": 937,
+      "end": 957,
+      "surface_text": "structural integrity",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "structural integrity"
+      ],
+      "confidence": 0.7863491773605347,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 937,
+          "end": 957,
+          "surface_text": "structural integrity",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.7863491773605347,
+          "normalized_form": "structural integrity",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 937,
+            "end": 957,
+            "text": "structural integrity",
+            "label": "attribute",
+            "score": 0.7863491773605347
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:70f3ba3e266beabd8f0b401b3727ad29c787c5d898e0f4dffb189d6df7de0892",
+      "document_id": "W3123056951",
+      "start": 962,
+      "end": 973,
+      "surface_text": "bioactivity",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "bioactivity"
+      ],
+      "confidence": 0.7878310680389404,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 962,
+          "end": 973,
+          "surface_text": "bioactivity",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.7878310680389404,
+          "normalized_form": "bioactivity",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 962,
+            "end": 973,
+            "text": "bioactivity",
+            "label": "attribute",
+            "score": 0.7878310680389404
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:3217f291382ace62a2a8265672c8c8a707ca24111d4abcab17262f6e4f94e359",
+      "document_id": "W3123056951",
+      "start": 975,
+      "end": 1004,
+      "surface_text": "Five out of seventeen mutants",
+      "entity_types": [
+        "CONCEPT",
+        "OBJECT",
+        "PROCESS",
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "five out of seventeen mutants"
+      ],
+      "confidence": 0.5704024434089661,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 975,
+          "end": 1004,
+          "surface_text": "Five out of seventeen mutants",
+          "ner_label_hint": "RESULT",
+          "score": 0.5704024434089661,
+          "normalized_form": "five out of seventeen mutants",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 975,
+            "end": 1004,
+            "text": "Five out of seventeen mutants",
+            "label": "result",
+            "score": 0.5704024434089661
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 975,
+          "end": 1004,
+          "surface_text": "Five out of seventeen mutants",
+          "ner_label_hint": "OBJECT",
+          "score": 0.5604416131973267,
+          "normalized_form": "five out of seventeen mutants",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 975,
+            "end": 1004,
+            "text": "Five out of seventeen mutants",
+            "label": "object",
+            "score": 0.5604416131973267
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 975,
+          "end": 1004,
+          "surface_text": "Five out of seventeen mutants",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.5352233648300171,
+          "normalized_form": "five out of seventeen mutants",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 975,
+            "end": 1004,
+            "text": "Five out of seventeen mutants",
+            "label": "concept",
+            "score": 0.5352233648300171
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 975,
+          "end": 1004,
+          "surface_text": "Five out of seventeen mutants",
+          "ner_label_hint": "PROCESS",
+          "score": 0.3635748028755188,
+          "normalized_form": "five out of seventeen mutants",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 975,
+            "end": 1004,
+            "text": "Five out of seventeen mutants",
+            "label": "process",
+            "score": 0.3635748028755188
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:18de610f67af38e8bd6e2fa16141de9454163e7798e124f69feff92d1f60c761",
+      "document_id": "W3123056951",
+      "start": 1010,
+      "end": 1026,
+      "surface_text": "less immunogenic",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "less immunogenic"
+      ],
+      "confidence": 0.4238497018814087,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 1010,
+          "end": 1026,
+          "surface_text": "less immunogenic",
+          "ner_label_hint": "RESULT",
+          "score": 0.4238497018814087,
+          "normalized_form": "less immunogenic",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 1010,
+            "end": 1026,
+            "text": "less immunogenic",
+            "label": "result",
+            "score": 0.4238497018814087
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:14a2b6f3b25e8013821f09b96758bdfef30aea0738c445c75c145c2f847f9319",
+      "document_id": "W3123056951",
+      "start": 1010,
+      "end": 1035,
+      "surface_text": "less immunogenic in vitro",
+      "entity_types": [
+        "CONCEPT",
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "less immunogenic in vitro"
+      ],
+      "confidence": 0.7178714871406555,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 1010,
+          "end": 1035,
+          "surface_text": "less immunogenic in vitro",
+          "ner_label_hint": "RESULT",
+          "score": 0.7178714871406555,
+          "normalized_form": "less immunogenic in vitro",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 1010,
+            "end": 1035,
+            "text": "less immunogenic in vitro",
+            "label": "result",
+            "score": 0.7178714871406555
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 1010,
+          "end": 1035,
+          "surface_text": "less immunogenic in vitro",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.30413007736206055,
+          "normalized_form": "less immunogenic in vitro",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 1010,
+            "end": 1035,
+            "text": "less immunogenic in vitro",
+            "label": "concept",
+            "score": 0.30413007736206055
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:90967c603e434ab4c356d6ab25cf1e7916c4672be9f53b4994cb0cc67b1d7cf4",
+      "document_id": "W3123056951",
+      "start": 1052,
+      "end": 1091,
+      "surface_text": "similar or slightly reduced bioactivity",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "similar or slightly reduced bioactivity"
+      ],
+      "confidence": 0.42900311946868896,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 1052,
+          "end": 1091,
+          "surface_text": "similar or slightly reduced bioactivity",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.42900311946868896,
+          "normalized_form": "similar or slightly reduced bioactivity",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 1052,
+            "end": 1091,
+            "text": "similar or slightly reduced bioactivity",
+            "label": "attribute",
+            "score": 0.42900311946868896
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:84ec69994f70c54476a52f5a4753be91e9c0d60cdb003bdee5b5c6504e2ea515",
+      "document_id": "W3123056951",
+      "start": 1111,
+      "end": 1130,
+      "surface_text": "engineered proteins",
+      "entity_types": [
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "engineered proteins"
+      ],
+      "confidence": 0.5812400579452515,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 1111,
+          "end": 1130,
+          "surface_text": "engineered proteins",
+          "ner_label_hint": "OBJECT",
+          "score": 0.5812400579452515,
+          "normalized_form": "engineered proteins",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 1111,
+            "end": 1130,
+            "text": "engineered proteins",
+            "label": "object",
+            "score": 0.5812400579452515
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 1111,
+          "end": 1130,
+          "surface_text": "engineered proteins",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.43841564655303955,
+          "normalized_form": "engineered proteins",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 1111,
+            "end": 1130,
+            "text": "engineered proteins",
+            "label": "concept",
+            "score": 0.43841564655303955
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:2d2ea0650b172acb14d26d5a7e8a5c7978fe41b9b3fb730ee7cea97900519ad2",
+      "document_id": "W3123056951",
+      "start": 1191,
+      "end": 1207,
+      "surface_text": "rHuEpo-dependent",
+      "entity_types": [
+        "CONCEPT",
+        "CONDITION",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "rhuepo-dependent"
+      ],
+      "confidence": 0.6722731590270996,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 1191,
+          "end": 1207,
+          "surface_text": "rHuEpo-dependent",
+          "ner_label_hint": "OBJECT",
+          "score": 0.6722731590270996,
+          "normalized_form": "rhuepo-dependent",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 1191,
+            "end": 1207,
+            "text": "rHuEpo-dependent",
+            "label": "object",
+            "score": 0.6722731590270996
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 1191,
+          "end": 1207,
+          "surface_text": "rHuEpo-dependent",
+          "ner_label_hint": "CONDITION",
+          "score": 0.47717007994651794,
+          "normalized_form": "rhuepo-dependent",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 1191,
+            "end": 1207,
+            "text": "rHuEpo-dependent",
+            "label": "condition",
+            "score": 0.47717007994651794
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 1191,
+          "end": 1207,
+          "surface_text": "rHuEpo-dependent",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.40034857392311096,
+          "normalized_form": "rhuepo-dependent",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 1191,
+            "end": 1207,
+            "text": "rHuEpo-dependent",
+            "label": "concept",
+            "score": 0.40034857392311096
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:35bfd43175c464c0fa1dc956f4e51a779ae25df78880f80732bb707b48eb4e01",
+      "document_id": "W3123056951",
+      "start": 1212,
+      "end": 1242,
+      "surface_text": "express the HLA-DRB1*09 allele",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "express the hla-drb1*09 allele"
+      ],
+      "confidence": 0.3446029722690582,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 1212,
+          "end": 1242,
+          "surface_text": "express the HLA-DRB1*09 allele",
+          "ner_label_hint": "OBJECT",
+          "score": 0.3446029722690582,
+          "normalized_form": "express the hla-drb1*09 allele",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 1212,
+            "end": 1242,
+            "text": "express the HLA-DRB1*09 allele",
+            "label": "object",
+            "score": 0.3446029722690582
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:b53b7503bc4287341025bd1dd86d2addd33287c12efbca8950eb4117a8fe266a",
+      "document_id": "W3123056951",
+      "start": 1224,
+      "end": 1242,
+      "surface_text": "HLA-DRB1*09 allele",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "hla-drb1*09 allele"
+      ],
+      "confidence": 0.7278885841369629,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W3123056951",
+          "start": 1224,
+          "end": 1242,
+          "surface_text": "HLA-DRB1*09 allele",
+          "ner_label_hint": "OBJECT",
+          "score": 0.7278885841369629,
+          "normalized_form": "hla-drb1*09 allele",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "raw_prediction": {
+            "start": 1224,
+            "end": 1242,
+            "text": "HLA-DRB1*09 allele",
+            "label": "object",
+            "score": 0.7278885841369629
+          }
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "triple_id": "t:052b12e5bc1aa8133869f88fa151119dc5d94dfe1e68a823a0b0771cae0ffafc",
+      "document_id": "W3123056951",
+      "head_id": "e:29e2965a24944da4b5e19609554aaeb050dfad4c98dff90bb17de80f73857299",
+      "tail_id": "e:bbe1f7a9ce1e846d104afb65f6ff0395575393ace74eff5c9db405bfcab3b457",
+      "head_types": [
+        "CONDITION",
+        "OBJECT"
+      ],
+      "tail_types": [
+        "CONDITION",
+        "OBJECT"
+      ],
+      "relation_type": "ASSOCIATED_WITH",
+      "confidence": 0.7567886710166931,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "document_id": "W3123056951",
+          "start": 0,
+          "end": 1243,
+          "text": "Recombinant human erythropoietin (rHuEPO) is a biopharmaceutical drug given to patients who have a low hemoglobin related to chronic kidney disease, cancer or anemia. However, some patients repeatedly receiving rHuEPO develop anti-rHuEPO neutralizing antibodies leading to the development of pure red cell aplasia (PRCA). The immunogenic antibody response activated by rHuEPO is believed to be triggered by T-cells recognizing EPO epitopes bound to MHC molecules displayed on the cell surface of APCs. Previous studies have reported an association between the development of anti-rHuEpo-associated PRCA and the HLA-DRB1*09 gene, which is reported to be entrenched in the Thai population. In this study, we used computational design to screen for immunogenic hotspots recognized by HLA-DRB1*09, and predicted seventeen mutants having anywhere between one through four mutations that reduce affinity for the allele, without disrupting the structural integrity and bioactivity. Five out of seventeen mutants were less immunogenic in vitro while retaining similar or slightly reduced bioactivity than rHuEPO. These engineered proteins could be the potential candidates to treat patients who are rHuEpo-dependent and express the HLA-DRB1*09 allele.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:23e57348c141c1f72e8072e556f879c991c9eb2139c63eef84ffce9c14217c70",
+      "document_id": "W3123056951",
+      "head_id": "e:bbe1f7a9ce1e846d104afb65f6ff0395575393ace74eff5c9db405bfcab3b457",
+      "tail_id": "e:d42b1895368f12e6c1081f3e2006134da78913515d802038ccef3e04c96fbc52",
+      "head_types": [
+        "CONDITION",
+        "OBJECT"
+      ],
+      "tail_types": [
+        "CONDITION",
+        "DATA_RESOURCE",
+        "OBJECT"
+      ],
+      "relation_type": "LOCATED_IN",
+      "confidence": 0.9640107750892639,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "document_id": "W3123056951",
+          "start": 0,
+          "end": 1243,
+          "text": "Recombinant human erythropoietin (rHuEPO) is a biopharmaceutical drug given to patients who have a low hemoglobin related to chronic kidney disease, cancer or anemia. However, some patients repeatedly receiving rHuEPO develop anti-rHuEPO neutralizing antibodies leading to the development of pure red cell aplasia (PRCA). The immunogenic antibody response activated by rHuEPO is believed to be triggered by T-cells recognizing EPO epitopes bound to MHC molecules displayed on the cell surface of APCs. Previous studies have reported an association between the development of anti-rHuEpo-associated PRCA and the HLA-DRB1*09 gene, which is reported to be entrenched in the Thai population. In this study, we used computational design to screen for immunogenic hotspots recognized by HLA-DRB1*09, and predicted seventeen mutants having anywhere between one through four mutations that reduce affinity for the allele, without disrupting the structural integrity and bioactivity. Five out of seventeen mutants were less immunogenic in vitro while retaining similar or slightly reduced bioactivity than rHuEPO. These engineered proteins could be the potential candidates to treat patients who are rHuEpo-dependent and express the HLA-DRB1*09 allele.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:44f8d5ce57d0139e381254ae6e4f3877220ebedf081dab4603e7ec9a3eb2f185",
+      "document_id": "W3123056951",
+      "head_id": "e:0c28165d5cc4994bee10b595a33030a448dd7ab270983b6ae1cd76cc7dc9ba38",
+      "tail_id": "e:0748b4395ddf95750c2e9a8365d4ae37a5f39d5df9593da367d5cccfa01f5969",
+      "head_types": [
+        "CONDITION",
+        "OBJECT"
+      ],
+      "tail_types": [
+        "CONCEPT",
+        "CONDITION",
+        "OBJECT"
+      ],
+      "relation_type": "IS_A",
+      "confidence": 0.972496509552002,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "document_id": "W3123056951",
+          "start": 0,
+          "end": 1243,
+          "text": "Recombinant human erythropoietin (rHuEPO) is a biopharmaceutical drug given to patients who have a low hemoglobin related to chronic kidney disease, cancer or anemia. However, some patients repeatedly receiving rHuEPO develop anti-rHuEPO neutralizing antibodies leading to the development of pure red cell aplasia (PRCA). The immunogenic antibody response activated by rHuEPO is believed to be triggered by T-cells recognizing EPO epitopes bound to MHC molecules displayed on the cell surface of APCs. Previous studies have reported an association between the development of anti-rHuEpo-associated PRCA and the HLA-DRB1*09 gene, which is reported to be entrenched in the Thai population. In this study, we used computational design to screen for immunogenic hotspots recognized by HLA-DRB1*09, and predicted seventeen mutants having anywhere between one through four mutations that reduce affinity for the allele, without disrupting the structural integrity and bioactivity. Five out of seventeen mutants were less immunogenic in vitro while retaining similar or slightly reduced bioactivity than rHuEPO. These engineered proteins could be the potential candidates to treat patients who are rHuEpo-dependent and express the HLA-DRB1*09 allele.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:5714167e2870d4a086e9a4fed1d75425fcb2b61d069039d0db27819390e96007",
+      "document_id": "W3123056951",
+      "head_id": "e:498d2e043b17b7584de73784321081f070e71403c7d6e4e3c6594678603997a4",
+      "tail_id": "e:0748b4395ddf95750c2e9a8365d4ae37a5f39d5df9593da367d5cccfa01f5969",
+      "head_types": [
+        "OBJECT"
+      ],
+      "tail_types": [
+        "CONCEPT",
+        "CONDITION",
+        "OBJECT"
+      ],
+      "relation_type": "IS_A",
+      "confidence": 0.9121217727661133,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "document_id": "W3123056951",
+          "start": 0,
+          "end": 1243,
+          "text": "Recombinant human erythropoietin (rHuEPO) is a biopharmaceutical drug given to patients who have a low hemoglobin related to chronic kidney disease, cancer or anemia. However, some patients repeatedly receiving rHuEPO develop anti-rHuEPO neutralizing antibodies leading to the development of pure red cell aplasia (PRCA). The immunogenic antibody response activated by rHuEPO is believed to be triggered by T-cells recognizing EPO epitopes bound to MHC molecules displayed on the cell surface of APCs. Previous studies have reported an association between the development of anti-rHuEpo-associated PRCA and the HLA-DRB1*09 gene, which is reported to be entrenched in the Thai population. In this study, we used computational design to screen for immunogenic hotspots recognized by HLA-DRB1*09, and predicted seventeen mutants having anywhere between one through four mutations that reduce affinity for the allele, without disrupting the structural integrity and bioactivity. Five out of seventeen mutants were less immunogenic in vitro while retaining similar or slightly reduced bioactivity than rHuEPO. These engineered proteins could be the potential candidates to treat patients who are rHuEpo-dependent and express the HLA-DRB1*09 allele.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:b5dbe730176e45746b5846af0e6c2434f44d13fce4ea740e5b46d99445d5c0f3",
+      "document_id": "W3123056951",
+      "head_id": "e:696cd04fc9d27fc700ef7e1ae3f5b50774d1fa8f36cca132ac11c225506ffbae",
+      "tail_id": "e:d42b1895368f12e6c1081f3e2006134da78913515d802038ccef3e04c96fbc52",
+      "head_types": [
+        "OBJECT"
+      ],
+      "tail_types": [
+        "CONDITION",
+        "DATA_RESOURCE",
+        "OBJECT"
+      ],
+      "relation_type": "LOCATED_IN",
+      "confidence": 0.8401183485984802,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "document_id": "W3123056951",
+          "start": 0,
+          "end": 1243,
+          "text": "Recombinant human erythropoietin (rHuEPO) is a biopharmaceutical drug given to patients who have a low hemoglobin related to chronic kidney disease, cancer or anemia. However, some patients repeatedly receiving rHuEPO develop anti-rHuEPO neutralizing antibodies leading to the development of pure red cell aplasia (PRCA). The immunogenic antibody response activated by rHuEPO is believed to be triggered by T-cells recognizing EPO epitopes bound to MHC molecules displayed on the cell surface of APCs. Previous studies have reported an association between the development of anti-rHuEpo-associated PRCA and the HLA-DRB1*09 gene, which is reported to be entrenched in the Thai population. In this study, we used computational design to screen for immunogenic hotspots recognized by HLA-DRB1*09, and predicted seventeen mutants having anywhere between one through four mutations that reduce affinity for the allele, without disrupting the structural integrity and bioactivity. Five out of seventeen mutants were less immunogenic in vitro while retaining similar or slightly reduced bioactivity than rHuEPO. These engineered proteins could be the potential candidates to treat patients who are rHuEpo-dependent and express the HLA-DRB1*09 allele.",
+          "entity_ids": []
+        }
+      ]
+    }
+  ],
+  "raw_relation_count": 5,
+  "seconds": 5.114054000005126
+}

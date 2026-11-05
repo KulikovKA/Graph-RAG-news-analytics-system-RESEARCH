@@ -1,0 +1,1480 @@
+{
+  "fingerprint": "c79845cf50e55b434eab0bcd7d45fb6779c27e093e96fa9a77b4c2f1b311bf99",
+  "document_id": "W2096307598",
+  "model": "knowledgator/gliner-relex-base-v1.0",
+  "mode": "joint",
+  "raw_windows": [
+    {
+      "window": {
+        "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+        "document_id": "W2096307598",
+        "start": 0,
+        "end": 1296,
+        "text": "We present results of new radio observations of the Moon at L band with the synthesis telescope of the Dominion Radio Astrophysical Observatory Synthesis Telescope. The resolution and temperature sensitivity of the observations are 159'' × 87'' and 1.7K, respectively. The main results are: (1) the lunar brightness temperature averaged over the whole disk is about 233 K while the average brightness temperature for the four quadrants are 228.1K (NE), 239.7K (NW), 233.9K (SW) and 228.8K (SE). The observations reveal large temperature and spatial variations on the Moon for the first time. The highest brightness temperature is about 257 K and it is located along the lunar equator, to the west. The total uncertainty is about 5% due to the absolute accuracy of the fluxes of the primary calibrators; (2) the total degree of polarization is about 6%. Both polarization intensity and degree of polarization increase from the disk's center to the limb, and the distribution of the degree of polarization along the limb is not uniform; (3) the new data are used to study the properties of regolith, such as dielectric constant and thickness distribution. The results show that the lunar regolith's thickness increases from the NW (mare area) to the SE (highland area) regions on the lunar surface.",
+        "entity_ids": []
+      },
+      "entities": [
+        {
+          "start": 22,
+          "end": 44,
+          "text": "new radio observations",
+          "label": "method",
+          "score": 0.34693148732185364
+        },
+        {
+          "start": 26,
+          "end": 44,
+          "text": "radio observations",
+          "label": "method",
+          "score": 0.3658503592014313
+        },
+        {
+          "start": 52,
+          "end": 56,
+          "text": "Moon",
+          "label": "object",
+          "score": 0.9692422151565552
+        },
+        {
+          "start": 76,
+          "end": 95,
+          "text": "synthesis telescope",
+          "label": "object",
+          "score": 0.524584174156189
+        },
+        {
+          "start": 103,
+          "end": 163,
+          "text": "Dominion Radio Astrophysical Observatory Synthesis Telescope",
+          "label": "object",
+          "score": 0.7482295632362366
+        },
+        {
+          "start": 169,
+          "end": 179,
+          "text": "resolution",
+          "label": "attribute",
+          "score": 0.7744524478912354
+        },
+        {
+          "start": 184,
+          "end": 207,
+          "text": "temperature sensitivity",
+          "label": "attribute",
+          "score": 0.7493556141853333
+        },
+        {
+          "start": 299,
+          "end": 327,
+          "text": "lunar brightness temperature",
+          "label": "attribute",
+          "score": 0.6464654207229614
+        },
+        {
+          "start": 382,
+          "end": 412,
+          "text": "average brightness temperature",
+          "label": "attribute",
+          "score": 0.42222902178764343
+        },
+        {
+          "start": 670,
+          "end": 683,
+          "text": "lunar equator",
+          "label": "object",
+          "score": 0.6824864745140076
+        },
+        {
+          "start": 702,
+          "end": 719,
+          "text": "total uncertainty",
+          "label": "attribute",
+          "score": 0.6445649266242981
+        },
+        {
+          "start": 743,
+          "end": 760,
+          "text": "absolute accuracy",
+          "label": "attribute",
+          "score": 0.3561866879463196
+        },
+        {
+          "start": 768,
+          "end": 774,
+          "text": "fluxes",
+          "label": "attribute",
+          "score": 0.36153051257133484
+        },
+        {
+          "start": 811,
+          "end": 839,
+          "text": "total degree of polarization",
+          "label": "attribute",
+          "score": 0.7021514773368835
+        },
+        {
+          "start": 811,
+          "end": 839,
+          "text": "total degree of polarization",
+          "label": "result",
+          "score": 0.35867929458618164
+        },
+        {
+          "start": 858,
+          "end": 880,
+          "text": "polarization intensity",
+          "label": "attribute",
+          "score": 0.45206519961357117
+        },
+        {
+          "start": 1043,
+          "end": 1051,
+          "text": "new data",
+          "label": "data resource",
+          "score": 0.8632208108901978
+        },
+        {
+          "start": 1064,
+          "end": 1096,
+          "text": "study the properties of regolith",
+          "label": "task",
+          "score": 0.35151228308677673
+        },
+        {
+          "start": 1088,
+          "end": 1096,
+          "text": "regolith",
+          "label": "object",
+          "score": 0.6300522685050964
+        },
+        {
+          "start": 1106,
+          "end": 1125,
+          "text": "dielectric constant",
+          "label": "attribute",
+          "score": 0.6565887331962585
+        },
+        {
+          "start": 1130,
+          "end": 1152,
+          "text": "thickness distribution",
+          "label": "attribute",
+          "score": 0.6135190725326538
+        },
+        {
+          "start": 1282,
+          "end": 1295,
+          "text": "lunar surface",
+          "label": "object",
+          "score": 0.5648407936096191
+        }
+      ],
+      "predictions": [
+        {
+          "head": {
+            "start": 22,
+            "end": 44,
+            "text": "new radio observations",
+            "type": "method",
+            "entity_idx": 0
+          },
+          "tail": {
+            "start": 52,
+            "end": 56,
+            "text": "Moon",
+            "type": "object",
+            "entity_idx": 2
+          },
+          "relation": "applied to",
+          "score": 0.9310259222984314
+        },
+        {
+          "head": {
+            "start": 22,
+            "end": 44,
+            "text": "new radio observations",
+            "type": "method",
+            "entity_idx": 0
+          },
+          "tail": {
+            "start": 76,
+            "end": 95,
+            "text": "synthesis telescope",
+            "type": "object",
+            "entity_idx": 3
+          },
+          "relation": "uses",
+          "score": 0.7604942321777344
+        },
+        {
+          "head": {
+            "start": 22,
+            "end": 44,
+            "text": "new radio observations",
+            "type": "method",
+            "entity_idx": 0
+          },
+          "tail": {
+            "start": 103,
+            "end": 163,
+            "text": "Dominion Radio Astrophysical Observatory Synthesis Telescope",
+            "type": "object",
+            "entity_idx": 4
+          },
+          "relation": "uses",
+          "score": 0.7155993580818176
+        },
+        {
+          "head": {
+            "start": 26,
+            "end": 44,
+            "text": "radio observations",
+            "type": "method",
+            "entity_idx": 1
+          },
+          "tail": {
+            "start": 52,
+            "end": 56,
+            "text": "Moon",
+            "type": "object",
+            "entity_idx": 2
+          },
+          "relation": "applied to",
+          "score": 0.9441893696784973
+        },
+        {
+          "head": {
+            "start": 26,
+            "end": 44,
+            "text": "radio observations",
+            "type": "method",
+            "entity_idx": 1
+          },
+          "tail": {
+            "start": 76,
+            "end": 95,
+            "text": "synthesis telescope",
+            "type": "object",
+            "entity_idx": 3
+          },
+          "relation": "uses",
+          "score": 0.7698805928230286
+        },
+        {
+          "head": {
+            "start": 26,
+            "end": 44,
+            "text": "radio observations",
+            "type": "method",
+            "entity_idx": 1
+          },
+          "tail": {
+            "start": 103,
+            "end": 163,
+            "text": "Dominion Radio Astrophysical Observatory Synthesis Telescope",
+            "type": "object",
+            "entity_idx": 4
+          },
+          "relation": "uses",
+          "score": 0.7263529300689697
+        },
+        {
+          "head": {
+            "start": 1043,
+            "end": 1051,
+            "text": "new data",
+            "type": "data resource",
+            "entity_idx": 16
+          },
+          "tail": {
+            "start": 1064,
+            "end": 1096,
+            "text": "study the properties of regolith",
+            "type": "task",
+            "entity_idx": 17
+          },
+          "relation": "used for",
+          "score": 0.8885093927383423
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "e:cc4a5443842b4cc7fb6fcb14fe917b43f611e53bdfe898abb1d5b3362fdf54c8",
+      "document_id": "W2096307598",
+      "start": 22,
+      "end": 44,
+      "surface_text": "new radio observations",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "new radio observations"
+      ],
+      "confidence": 0.34693148732185364,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 22,
+          "end": 44,
+          "surface_text": "new radio observations",
+          "ner_label_hint": "METHOD",
+          "score": 0.34693148732185364,
+          "normalized_form": "new radio observations",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 22,
+            "end": 44,
+            "text": "new radio observations",
+            "label": "method",
+            "score": 0.34693148732185364
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:e8a93a3ca932a222e5d1cecc508b0e08b24a26127fbf1f535e51af6439335b0d",
+      "document_id": "W2096307598",
+      "start": 26,
+      "end": 44,
+      "surface_text": "radio observations",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "radio observations"
+      ],
+      "confidence": 0.3658503592014313,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 26,
+          "end": 44,
+          "surface_text": "radio observations",
+          "ner_label_hint": "METHOD",
+          "score": 0.3658503592014313,
+          "normalized_form": "radio observations",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 26,
+            "end": 44,
+            "text": "radio observations",
+            "label": "method",
+            "score": 0.3658503592014313
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:2dd34a98095b172881a8b346f12101b73278973b999b78142155f44898c29a9b",
+      "document_id": "W2096307598",
+      "start": 52,
+      "end": 56,
+      "surface_text": "Moon",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "moon"
+      ],
+      "confidence": 0.9692422151565552,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 52,
+          "end": 56,
+          "surface_text": "Moon",
+          "ner_label_hint": "OBJECT",
+          "score": 0.9692422151565552,
+          "normalized_form": "moon",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 52,
+            "end": 56,
+            "text": "Moon",
+            "label": "object",
+            "score": 0.9692422151565552
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:57b6d8787ac6e44f3eeeeac99f67840858e7905f81d097f20215cd93078aca46",
+      "document_id": "W2096307598",
+      "start": 76,
+      "end": 95,
+      "surface_text": "synthesis telescope",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "synthesis telescope"
+      ],
+      "confidence": 0.524584174156189,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 76,
+          "end": 95,
+          "surface_text": "synthesis telescope",
+          "ner_label_hint": "OBJECT",
+          "score": 0.524584174156189,
+          "normalized_form": "synthesis telescope",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 76,
+            "end": 95,
+            "text": "synthesis telescope",
+            "label": "object",
+            "score": 0.524584174156189
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:dccefa5aaf2d4525ef47fb9db39b57e91df8cfbb065aebf69c14bd8f98ccd2f7",
+      "document_id": "W2096307598",
+      "start": 103,
+      "end": 163,
+      "surface_text": "Dominion Radio Astrophysical Observatory Synthesis Telescope",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "dominion radio astrophysical observatory synthesis telescope"
+      ],
+      "confidence": 0.7482295632362366,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 103,
+          "end": 163,
+          "surface_text": "Dominion Radio Astrophysical Observatory Synthesis Telescope",
+          "ner_label_hint": "OBJECT",
+          "score": 0.7482295632362366,
+          "normalized_form": "dominion radio astrophysical observatory synthesis telescope",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 103,
+            "end": 163,
+            "text": "Dominion Radio Astrophysical Observatory Synthesis Telescope",
+            "label": "object",
+            "score": 0.7482295632362366
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:06a4eee4d8f9050033ddeea511ac8df0541f1e0c3c390f04543ad61525154b2f",
+      "document_id": "W2096307598",
+      "start": 169,
+      "end": 179,
+      "surface_text": "resolution",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "resolution"
+      ],
+      "confidence": 0.7744524478912354,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 169,
+          "end": 179,
+          "surface_text": "resolution",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.7744524478912354,
+          "normalized_form": "resolution",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 169,
+            "end": 179,
+            "text": "resolution",
+            "label": "attribute",
+            "score": 0.7744524478912354
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:f03021ad94aeefb7af3e2183fa92bb13d3fd8f10bab25bb549144654197e8481",
+      "document_id": "W2096307598",
+      "start": 184,
+      "end": 207,
+      "surface_text": "temperature sensitivity",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "temperature sensitivity"
+      ],
+      "confidence": 0.7493556141853333,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 184,
+          "end": 207,
+          "surface_text": "temperature sensitivity",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.7493556141853333,
+          "normalized_form": "temperature sensitivity",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 184,
+            "end": 207,
+            "text": "temperature sensitivity",
+            "label": "attribute",
+            "score": 0.7493556141853333
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:c97724cfd8db26e39c075481cd123c4a8318f59f1c76f3d19e221f135149b14d",
+      "document_id": "W2096307598",
+      "start": 299,
+      "end": 327,
+      "surface_text": "lunar brightness temperature",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "lunar brightness temperature"
+      ],
+      "confidence": 0.6464654207229614,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 299,
+          "end": 327,
+          "surface_text": "lunar brightness temperature",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.6464654207229614,
+          "normalized_form": "lunar brightness temperature",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 299,
+            "end": 327,
+            "text": "lunar brightness temperature",
+            "label": "attribute",
+            "score": 0.6464654207229614
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a4bbd85c9fb9d89663bac178f29f593ed5cf0eb3a14c2ed97cdd5ad88e556793",
+      "document_id": "W2096307598",
+      "start": 382,
+      "end": 412,
+      "surface_text": "average brightness temperature",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "average brightness temperature"
+      ],
+      "confidence": 0.42222902178764343,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 382,
+          "end": 412,
+          "surface_text": "average brightness temperature",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.42222902178764343,
+          "normalized_form": "average brightness temperature",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 382,
+            "end": 412,
+            "text": "average brightness temperature",
+            "label": "attribute",
+            "score": 0.42222902178764343
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:dbddb7d8ceec7b7004d1c6f619da2132f907d23c18525f73943022bea24de6b7",
+      "document_id": "W2096307598",
+      "start": 670,
+      "end": 683,
+      "surface_text": "lunar equator",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "lunar equator"
+      ],
+      "confidence": 0.6824864745140076,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 670,
+          "end": 683,
+          "surface_text": "lunar equator",
+          "ner_label_hint": "OBJECT",
+          "score": 0.6824864745140076,
+          "normalized_form": "lunar equator",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 670,
+            "end": 683,
+            "text": "lunar equator",
+            "label": "object",
+            "score": 0.6824864745140076
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:b98bff18bec5cb4a6f1f6dc0014e80d0eacffb271d9b33d1cdcdea4d3d98f716",
+      "document_id": "W2096307598",
+      "start": 702,
+      "end": 719,
+      "surface_text": "total uncertainty",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "total uncertainty"
+      ],
+      "confidence": 0.6445649266242981,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 702,
+          "end": 719,
+          "surface_text": "total uncertainty",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.6445649266242981,
+          "normalized_form": "total uncertainty",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 702,
+            "end": 719,
+            "text": "total uncertainty",
+            "label": "attribute",
+            "score": 0.6445649266242981
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:7d8a97017b1f41482115fd1aed8da252cacb672b3d150470690ca6d74200fc1b",
+      "document_id": "W2096307598",
+      "start": 743,
+      "end": 760,
+      "surface_text": "absolute accuracy",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "absolute accuracy"
+      ],
+      "confidence": 0.3561866879463196,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 743,
+          "end": 760,
+          "surface_text": "absolute accuracy",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.3561866879463196,
+          "normalized_form": "absolute accuracy",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 743,
+            "end": 760,
+            "text": "absolute accuracy",
+            "label": "attribute",
+            "score": 0.3561866879463196
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:511965dfbc579edde2a494528f4b01bc2f2a0c2ea6e20eed8995974c994ee5b3",
+      "document_id": "W2096307598",
+      "start": 768,
+      "end": 774,
+      "surface_text": "fluxes",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "fluxes"
+      ],
+      "confidence": 0.36153051257133484,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 768,
+          "end": 774,
+          "surface_text": "fluxes",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.36153051257133484,
+          "normalized_form": "fluxes",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 768,
+            "end": 774,
+            "text": "fluxes",
+            "label": "attribute",
+            "score": 0.36153051257133484
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:b491ca4d94f58afbfcf8cf8d796ad9bd18f0d52a27f7945d4061dfd9eb371500",
+      "document_id": "W2096307598",
+      "start": 811,
+      "end": 839,
+      "surface_text": "total degree of polarization",
+      "entity_types": [
+        "ATTRIBUTE",
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "total degree of polarization"
+      ],
+      "confidence": 0.7021514773368835,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 811,
+          "end": 839,
+          "surface_text": "total degree of polarization",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.7021514773368835,
+          "normalized_form": "total degree of polarization",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 811,
+            "end": 839,
+            "text": "total degree of polarization",
+            "label": "attribute",
+            "score": 0.7021514773368835
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 811,
+          "end": 839,
+          "surface_text": "total degree of polarization",
+          "ner_label_hint": "RESULT",
+          "score": 0.35867929458618164,
+          "normalized_form": "total degree of polarization",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 811,
+            "end": 839,
+            "text": "total degree of polarization",
+            "label": "result",
+            "score": 0.35867929458618164
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:f7e63617c4feaae92828730d4ca7529de05b5fa320dab660cd09a10b4247d03a",
+      "document_id": "W2096307598",
+      "start": 858,
+      "end": 880,
+      "surface_text": "polarization intensity",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "polarization intensity"
+      ],
+      "confidence": 0.45206519961357117,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 858,
+          "end": 880,
+          "surface_text": "polarization intensity",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.45206519961357117,
+          "normalized_form": "polarization intensity",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 858,
+            "end": 880,
+            "text": "polarization intensity",
+            "label": "attribute",
+            "score": 0.45206519961357117
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:13290e4c3b8a8e94824c859c42592ea119bf4af085af86fdd0e132863d95427a",
+      "document_id": "W2096307598",
+      "start": 1043,
+      "end": 1051,
+      "surface_text": "new data",
+      "entity_types": [
+        "DATA_RESOURCE"
+      ],
+      "normalized_forms": [
+        "new data"
+      ],
+      "confidence": 0.8632208108901978,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 1043,
+          "end": 1051,
+          "surface_text": "new data",
+          "ner_label_hint": "DATA_RESOURCE",
+          "score": 0.8632208108901978,
+          "normalized_form": "new data",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 1043,
+            "end": 1051,
+            "text": "new data",
+            "label": "data resource",
+            "score": 0.8632208108901978
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:09b2758488739fb1833556e56aa2f30c5823d253d8e1d872a50e814a4e932963",
+      "document_id": "W2096307598",
+      "start": 1064,
+      "end": 1096,
+      "surface_text": "study the properties of regolith",
+      "entity_types": [
+        "TASK"
+      ],
+      "normalized_forms": [
+        "study the properties of regolith"
+      ],
+      "confidence": 0.35151228308677673,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 1064,
+          "end": 1096,
+          "surface_text": "study the properties of regolith",
+          "ner_label_hint": "TASK",
+          "score": 0.35151228308677673,
+          "normalized_form": "study the properties of regolith",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 1064,
+            "end": 1096,
+            "text": "study the properties of regolith",
+            "label": "task",
+            "score": 0.35151228308677673
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:44b10dedc236c1a7ffe5ba3aacb6db8ca9c89695f2bdf7f68642eee70d3521ba",
+      "document_id": "W2096307598",
+      "start": 1088,
+      "end": 1096,
+      "surface_text": "regolith",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "regolith"
+      ],
+      "confidence": 0.6300522685050964,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 1088,
+          "end": 1096,
+          "surface_text": "regolith",
+          "ner_label_hint": "OBJECT",
+          "score": 0.6300522685050964,
+          "normalized_form": "regolith",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 1088,
+            "end": 1096,
+            "text": "regolith",
+            "label": "object",
+            "score": 0.6300522685050964
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:61f7318b2c5713f04c16e9f7f7e68e4a49180bad57790db2c340d9510aa943fe",
+      "document_id": "W2096307598",
+      "start": 1106,
+      "end": 1125,
+      "surface_text": "dielectric constant",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "dielectric constant"
+      ],
+      "confidence": 0.6565887331962585,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 1106,
+          "end": 1125,
+          "surface_text": "dielectric constant",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.6565887331962585,
+          "normalized_form": "dielectric constant",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 1106,
+            "end": 1125,
+            "text": "dielectric constant",
+            "label": "attribute",
+            "score": 0.6565887331962585
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:73cd83c7b9bf13ae364181b8cb98f17ff30dfdb7827e47abe03f8912ff5a3ade",
+      "document_id": "W2096307598",
+      "start": 1130,
+      "end": 1152,
+      "surface_text": "thickness distribution",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "thickness distribution"
+      ],
+      "confidence": 0.6135190725326538,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 1130,
+          "end": 1152,
+          "surface_text": "thickness distribution",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.6135190725326538,
+          "normalized_form": "thickness distribution",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 1130,
+            "end": 1152,
+            "text": "thickness distribution",
+            "label": "attribute",
+            "score": 0.6135190725326538
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:80a15ff294e1a59ae9ce3c2887c1cf8bfa43a67b6bfc3fbb29fb10ed6ac410be",
+      "document_id": "W2096307598",
+      "start": 1282,
+      "end": 1295,
+      "surface_text": "lunar surface",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "lunar surface"
+      ],
+      "confidence": 0.5648407936096191,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2096307598",
+          "start": 1282,
+          "end": 1295,
+          "surface_text": "lunar surface",
+          "ner_label_hint": "OBJECT",
+          "score": 0.5648407936096191,
+          "normalized_form": "lunar surface",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "revision_id": "sha256:10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2096307598",
+            "doi": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "landing_page_url": "https://doi.org/10.1088/1674-4527/12/9/010",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2096307598",
+            "text_sha256": "10fc278cebea8bfe80c4c66ab01d21e88833a68cbd4c3913b86a0525d1d856bd"
+          },
+          "raw_prediction": {
+            "start": 1282,
+            "end": 1295,
+            "text": "lunar surface",
+            "label": "object",
+            "score": 0.5648407936096191
+          }
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "triple_id": "t:0971dce1c629bc42153c531391db082c601ac3af19a830cbe07633e08fd278b3",
+      "document_id": "W2096307598",
+      "head_id": "e:e8a93a3ca932a222e5d1cecc508b0e08b24a26127fbf1f535e51af6439335b0d",
+      "tail_id": "e:dccefa5aaf2d4525ef47fb9db39b57e91df8cfbb065aebf69c14bd8f98ccd2f7",
+      "head_types": [
+        "METHOD"
+      ],
+      "tail_types": [
+        "OBJECT"
+      ],
+      "relation_type": "USES",
+      "confidence": 0.7263529300689697,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "document_id": "W2096307598",
+          "start": 0,
+          "end": 1296,
+          "text": "We present results of new radio observations of the Moon at L band with the synthesis telescope of the Dominion Radio Astrophysical Observatory Synthesis Telescope. The resolution and temperature sensitivity of the observations are 159'' × 87'' and 1.7K, respectively. The main results are: (1) the lunar brightness temperature averaged over the whole disk is about 233 K while the average brightness temperature for the four quadrants are 228.1K (NE), 239.7K (NW), 233.9K (SW) and 228.8K (SE). The observations reveal large temperature and spatial variations on the Moon for the first time. The highest brightness temperature is about 257 K and it is located along the lunar equator, to the west. The total uncertainty is about 5% due to the absolute accuracy of the fluxes of the primary calibrators; (2) the total degree of polarization is about 6%. Both polarization intensity and degree of polarization increase from the disk's center to the limb, and the distribution of the degree of polarization along the limb is not uniform; (3) the new data are used to study the properties of regolith, such as dielectric constant and thickness distribution. The results show that the lunar regolith's thickness increases from the NW (mare area) to the SE (highland area) regions on the lunar surface.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:2657a37cfd537a2ddb298630d3297462cae4536e4f11054b44603bb020bfb5d7",
+      "document_id": "W2096307598",
+      "head_id": "e:cc4a5443842b4cc7fb6fcb14fe917b43f611e53bdfe898abb1d5b3362fdf54c8",
+      "tail_id": "e:57b6d8787ac6e44f3eeeeac99f67840858e7905f81d097f20215cd93078aca46",
+      "head_types": [
+        "METHOD"
+      ],
+      "tail_types": [
+        "OBJECT"
+      ],
+      "relation_type": "USES",
+      "confidence": 0.7604942321777344,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "document_id": "W2096307598",
+          "start": 0,
+          "end": 1296,
+          "text": "We present results of new radio observations of the Moon at L band with the synthesis telescope of the Dominion Radio Astrophysical Observatory Synthesis Telescope. The resolution and temperature sensitivity of the observations are 159'' × 87'' and 1.7K, respectively. The main results are: (1) the lunar brightness temperature averaged over the whole disk is about 233 K while the average brightness temperature for the four quadrants are 228.1K (NE), 239.7K (NW), 233.9K (SW) and 228.8K (SE). The observations reveal large temperature and spatial variations on the Moon for the first time. The highest brightness temperature is about 257 K and it is located along the lunar equator, to the west. The total uncertainty is about 5% due to the absolute accuracy of the fluxes of the primary calibrators; (2) the total degree of polarization is about 6%. Both polarization intensity and degree of polarization increase from the disk's center to the limb, and the distribution of the degree of polarization along the limb is not uniform; (3) the new data are used to study the properties of regolith, such as dielectric constant and thickness distribution. The results show that the lunar regolith's thickness increases from the NW (mare area) to the SE (highland area) regions on the lunar surface.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:2ad823cada3079d383f4ba9a94b8e15ff1534e1e144afd0443b5c03f65749413",
+      "document_id": "W2096307598",
+      "head_id": "e:e8a93a3ca932a222e5d1cecc508b0e08b24a26127fbf1f535e51af6439335b0d",
+      "tail_id": "e:2dd34a98095b172881a8b346f12101b73278973b999b78142155f44898c29a9b",
+      "head_types": [
+        "METHOD"
+      ],
+      "tail_types": [
+        "OBJECT"
+      ],
+      "relation_type": "APPLIED_TO",
+      "confidence": 0.9441893696784973,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "document_id": "W2096307598",
+          "start": 0,
+          "end": 1296,
+          "text": "We present results of new radio observations of the Moon at L band with the synthesis telescope of the Dominion Radio Astrophysical Observatory Synthesis Telescope. The resolution and temperature sensitivity of the observations are 159'' × 87'' and 1.7K, respectively. The main results are: (1) the lunar brightness temperature averaged over the whole disk is about 233 K while the average brightness temperature for the four quadrants are 228.1K (NE), 239.7K (NW), 233.9K (SW) and 228.8K (SE). The observations reveal large temperature and spatial variations on the Moon for the first time. The highest brightness temperature is about 257 K and it is located along the lunar equator, to the west. The total uncertainty is about 5% due to the absolute accuracy of the fluxes of the primary calibrators; (2) the total degree of polarization is about 6%. Both polarization intensity and degree of polarization increase from the disk's center to the limb, and the distribution of the degree of polarization along the limb is not uniform; (3) the new data are used to study the properties of regolith, such as dielectric constant and thickness distribution. The results show that the lunar regolith's thickness increases from the NW (mare area) to the SE (highland area) regions on the lunar surface.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:4cc72ade0cfa5af7c7fc9cccaf3cd4a5f6f418408ed5c5810c2700896bc19c4f",
+      "document_id": "W2096307598",
+      "head_id": "e:e8a93a3ca932a222e5d1cecc508b0e08b24a26127fbf1f535e51af6439335b0d",
+      "tail_id": "e:57b6d8787ac6e44f3eeeeac99f67840858e7905f81d097f20215cd93078aca46",
+      "head_types": [
+        "METHOD"
+      ],
+      "tail_types": [
+        "OBJECT"
+      ],
+      "relation_type": "USES",
+      "confidence": 0.7698805928230286,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "document_id": "W2096307598",
+          "start": 0,
+          "end": 1296,
+          "text": "We present results of new radio observations of the Moon at L band with the synthesis telescope of the Dominion Radio Astrophysical Observatory Synthesis Telescope. The resolution and temperature sensitivity of the observations are 159'' × 87'' and 1.7K, respectively. The main results are: (1) the lunar brightness temperature averaged over the whole disk is about 233 K while the average brightness temperature for the four quadrants are 228.1K (NE), 239.7K (NW), 233.9K (SW) and 228.8K (SE). The observations reveal large temperature and spatial variations on the Moon for the first time. The highest brightness temperature is about 257 K and it is located along the lunar equator, to the west. The total uncertainty is about 5% due to the absolute accuracy of the fluxes of the primary calibrators; (2) the total degree of polarization is about 6%. Both polarization intensity and degree of polarization increase from the disk's center to the limb, and the distribution of the degree of polarization along the limb is not uniform; (3) the new data are used to study the properties of regolith, such as dielectric constant and thickness distribution. The results show that the lunar regolith's thickness increases from the NW (mare area) to the SE (highland area) regions on the lunar surface.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:6ac50348e3fb181a6154e4e32bacea15c9b689558120240e356e38384d3a65a8",
+      "document_id": "W2096307598",
+      "head_id": "e:13290e4c3b8a8e94824c859c42592ea119bf4af085af86fdd0e132863d95427a",
+      "tail_id": "e:09b2758488739fb1833556e56aa2f30c5823d253d8e1d872a50e814a4e932963",
+      "head_types": [
+        "DATA_RESOURCE"
+      ],
+      "tail_types": [
+        "TASK"
+      ],
+      "relation_type": "USED_FOR",
+      "confidence": 0.8885093927383423,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "document_id": "W2096307598",
+          "start": 0,
+          "end": 1296,
+          "text": "We present results of new radio observations of the Moon at L band with the synthesis telescope of the Dominion Radio Astrophysical Observatory Synthesis Telescope. The resolution and temperature sensitivity of the observations are 159'' × 87'' and 1.7K, respectively. The main results are: (1) the lunar brightness temperature averaged over the whole disk is about 233 K while the average brightness temperature for the four quadrants are 228.1K (NE), 239.7K (NW), 233.9K (SW) and 228.8K (SE). The observations reveal large temperature and spatial variations on the Moon for the first time. The highest brightness temperature is about 257 K and it is located along the lunar equator, to the west. The total uncertainty is about 5% due to the absolute accuracy of the fluxes of the primary calibrators; (2) the total degree of polarization is about 6%. Both polarization intensity and degree of polarization increase from the disk's center to the limb, and the distribution of the degree of polarization along the limb is not uniform; (3) the new data are used to study the properties of regolith, such as dielectric constant and thickness distribution. The results show that the lunar regolith's thickness increases from the NW (mare area) to the SE (highland area) regions on the lunar surface.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:88851304c12674ca9fefcea2a697787c52c1cba0c3f92313aa5cfb6374261b40",
+      "document_id": "W2096307598",
+      "head_id": "e:cc4a5443842b4cc7fb6fcb14fe917b43f611e53bdfe898abb1d5b3362fdf54c8",
+      "tail_id": "e:dccefa5aaf2d4525ef47fb9db39b57e91df8cfbb065aebf69c14bd8f98ccd2f7",
+      "head_types": [
+        "METHOD"
+      ],
+      "tail_types": [
+        "OBJECT"
+      ],
+      "relation_type": "USES",
+      "confidence": 0.7155993580818176,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "document_id": "W2096307598",
+          "start": 0,
+          "end": 1296,
+          "text": "We present results of new radio observations of the Moon at L band with the synthesis telescope of the Dominion Radio Astrophysical Observatory Synthesis Telescope. The resolution and temperature sensitivity of the observations are 159'' × 87'' and 1.7K, respectively. The main results are: (1) the lunar brightness temperature averaged over the whole disk is about 233 K while the average brightness temperature for the four quadrants are 228.1K (NE), 239.7K (NW), 233.9K (SW) and 228.8K (SE). The observations reveal large temperature and spatial variations on the Moon for the first time. The highest brightness temperature is about 257 K and it is located along the lunar equator, to the west. The total uncertainty is about 5% due to the absolute accuracy of the fluxes of the primary calibrators; (2) the total degree of polarization is about 6%. Both polarization intensity and degree of polarization increase from the disk's center to the limb, and the distribution of the degree of polarization along the limb is not uniform; (3) the new data are used to study the properties of regolith, such as dielectric constant and thickness distribution. The results show that the lunar regolith's thickness increases from the NW (mare area) to the SE (highland area) regions on the lunar surface.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:f9e90181dfb03446c96bb3414fc14a0b55986d943a24887055db2a0b8923eec0",
+      "document_id": "W2096307598",
+      "head_id": "e:cc4a5443842b4cc7fb6fcb14fe917b43f611e53bdfe898abb1d5b3362fdf54c8",
+      "tail_id": "e:2dd34a98095b172881a8b346f12101b73278973b999b78142155f44898c29a9b",
+      "head_types": [
+        "METHOD"
+      ],
+      "tail_types": [
+        "OBJECT"
+      ],
+      "relation_type": "APPLIED_TO",
+      "confidence": 0.9310259222984314,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:c8d8d07419ca1dcae0edd80f6dceca2acb40d2676affb09217326a13c4dfceef",
+          "document_id": "W2096307598",
+          "start": 0,
+          "end": 1296,
+          "text": "We present results of new radio observations of the Moon at L band with the synthesis telescope of the Dominion Radio Astrophysical Observatory Synthesis Telescope. The resolution and temperature sensitivity of the observations are 159'' × 87'' and 1.7K, respectively. The main results are: (1) the lunar brightness temperature averaged over the whole disk is about 233 K while the average brightness temperature for the four quadrants are 228.1K (NE), 239.7K (NW), 233.9K (SW) and 228.8K (SE). The observations reveal large temperature and spatial variations on the Moon for the first time. The highest brightness temperature is about 257 K and it is located along the lunar equator, to the west. The total uncertainty is about 5% due to the absolute accuracy of the fluxes of the primary calibrators; (2) the total degree of polarization is about 6%. Both polarization intensity and degree of polarization increase from the disk's center to the limb, and the distribution of the degree of polarization along the limb is not uniform; (3) the new data are used to study the properties of regolith, such as dielectric constant and thickness distribution. The results show that the lunar regolith's thickness increases from the NW (mare area) to the SE (highland area) regions on the lunar surface.",
+          "entity_ids": []
+        }
+      ]
+    }
+  ],
+  "raw_relation_count": 7,
+  "seconds": 1.992177699925378
+}

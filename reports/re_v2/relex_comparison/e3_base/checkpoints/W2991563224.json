@@ -1,0 +1,1784 @@
+{
+  "fingerprint": "68877d1a9d3e60c95fa0f80b22849e687e090d57cd2766f6c7948ec7306fc75d",
+  "document_id": "W2991563224",
+  "model": "knowledgator/gliner-relex-base-v1.0",
+  "mode": "e3",
+  "raw_windows": [
+    {
+      "window": {
+        "window_id": "w:4a04d4833853bbc6656ed41bb894030a65b74ac5986e75d6f4e84a94786e4bb6",
+        "document_id": "W2991563224",
+        "start": 0,
+        "end": 800,
+        "text": "In this paper, we propose a new approach to improve the protocol LEACH performance. It has been accomplished by increasing the energy balancing in clusters among all nodes to minimize the energy dissipation during network communications. The improved method is based on an optimized selection of cluster head. The development of this approach has indicated progress in terms of network lifetime, energy consumption and number of packets transferred to base station, compared to LEACH or other related extended spaces protocols. Mathematical analysis and simulations results show the effectiveness of the proposed approach. The energy consumption of WSN has been reduced up to about 3.5 %. The network life cycle is prolonged by 44 %. The number of packets sent has been increased by 185 % than LEACH.",
+        "entity_ids": [
+          "e:13a3a3d720801d4918e2591ff595807742db3bb7a63c60b299a94e05e35f174e",
+          "e:ec77da065ebe3d0b507ac227f1b21e92d236b6fba6bc8e05a67e85ee0908b76b",
+          "e:f3afee2aabe07cd0a2b336385fb9232603e080bb90ddcc8f0cf1f777c96e3657",
+          "e:869ac0060bdaeaa8c1d3ab8db0cd436361830ecde7e51e1b589672c1ba10f38f",
+          "e:fd4ff5293039d54f5eecf359ec6de0019deb59dbc8ee7a4e03ec9c1ce6fd4a93",
+          "e:83b0e3fbb905da6d726e50dc8ffe0fc26a78ef2c0f5665a87a99e5e319a0593d",
+          "e:1bc4ad46a55b0609da14977f2ad182166e908fbfb686379e5d9087da89596385",
+          "e:725f112a18aaabd03f3b1003d9cdeb9f57996d74b98bc6a57c779c05f91c69ee",
+          "e:566ff9d0a6e357fc2316e6bf8dd66548ef5c762e4c4b4f21d506e741bfbf690c",
+          "e:2e6f291d5bd3a5aee20c5ddc0a2ade392f8ad972f212d9733174124cae77b268",
+          "e:cc4bb9ef388bd2e456bde8d114ea2aec73a5badf6939f5717f99095b91b012a2",
+          "e:bd3e46331f9ed794e2bdac2f561b5f3e33e19a2ade37e44f9566eeb2954ea4a2",
+          "e:d090de7f3d97c76d0d0d37acdc13eb2e4e386d3314367768b51902c4be420088",
+          "e:492dbd7aa432b0334c0cf70aa504d7e055b0432bb6132c5a262933efc8f676cd",
+          "e:7ee27f03f07c76345bff6848557cd73edb12b467ddb536880c9489a642c46b65",
+          "e:b37205f91664d380454ee6aa26f110db4c32343e5c0372b7c416666de56e37cc",
+          "e:f3d9114eeafb4c22a482ae6786fede754359b137d4bcb9c855b49f16bbec7386",
+          "e:e8d6dc1188ddee5726c359775f7d5dba1609da774a275f6c757b8bf8ec5c3a08"
+        ]
+      },
+      "audit": {
+        "tokens": 224,
+        "spans": 18,
+        "pairs": 306,
+        "supplied_word_spans": [
+          [
+            2,
+            2
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            29,
+            29
+          ],
+          [
+            36,
+            37
+          ],
+          [
+            46,
+            47
+          ],
+          [
+            63,
+            64
+          ],
+          [
+            66,
+            67
+          ],
+          [
+            69,
+            71
+          ],
+          [
+            69,
+            72
+          ],
+          [
+            74,
+            75
+          ],
+          [
+            97,
+            98
+          ],
+          [
+            101,
+            102
+          ],
+          [
+            104,
+            104
+          ],
+          [
+            117,
+            119
+          ],
+          [
+            127,
+            129
+          ],
+          [
+            129,
+            129
+          ],
+          [
+            138,
+            138
+          ]
+        ]
+      },
+      "predictions": [
+        {
+          "head": {
+            "start": 32,
+            "end": 40,
+            "text": "approach"
+          },
+          "tail": {
+            "start": 794,
+            "end": 799,
+            "text": "LEACH"
+          },
+          "relation": "compared with",
+          "score": 0.7435984015464783
+        },
+        {
+          "head": {
+            "start": 604,
+            "end": 621,
+            "text": "proposed approach"
+          },
+          "tail": {
+            "start": 649,
+            "end": 652,
+            "text": "WSN"
+          },
+          "relation": "compared with",
+          "score": 0.7306411266326904
+        },
+        {
+          "head": {
+            "start": 604,
+            "end": 621,
+            "text": "proposed approach"
+          },
+          "tail": {
+            "start": 794,
+            "end": 799,
+            "text": "LEACH"
+          },
+          "relation": "compared with",
+          "score": 0.7568150162696838
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "e:13a3a3d720801d4918e2591ff595807742db3bb7a63c60b299a94e05e35f174e",
+      "document_id": "W2991563224",
+      "start": 8,
+      "end": 13,
+      "surface_text": "paper",
+      "entity_types": [
+        "DATA_RESOURCE"
+      ],
+      "normalized_forms": [
+        "paper"
+      ],
+      "confidence": 0.4754942059516907,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2991563224",
+          "end": 13,
+          "lemma": "paper",
+          "mention_id": "m:f1dbb33a4fde14f4e819ae04efec5a1fb83ca05718b802cb774ed105f6f3dd27",
+          "ner_label_hint": "DATA_RESOURCE",
+          "normalized_form": "paper",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd",
+          "score": 0.4754942059516907,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2991563224",
+            "doi": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "landing_page_url": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-16T09:59:22.235173",
+            "source_url": "https://openalex.org/W2991563224",
+            "text_sha256": "f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd"
+          },
+          "start": 8,
+          "surface_text": "paper",
+          "tokens": [
+            {
+              "end": 13,
+              "lemma": "paper",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 8,
+              "tag": "NN",
+              "text": "paper"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:ec77da065ebe3d0b507ac227f1b21e92d236b6fba6bc8e05a67e85ee0908b76b",
+      "document_id": "W2991563224",
+      "start": 28,
+      "end": 40,
+      "surface_text": "new approach",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "new approach"
+      ],
+      "confidence": 0.38606390357017517,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2991563224",
+          "end": 40,
+          "lemma": "new approach",
+          "mention_id": "m:511e77c9138a69cbadb31411ca8d00f7059c2486499ad2fa71eee4989627a343",
+          "ner_label_hint": "METHOD",
+          "normalized_form": "new approach",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd",
+          "score": 0.38606390357017517,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2991563224",
+            "doi": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "landing_page_url": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-16T09:59:22.235173",
+            "source_url": "https://openalex.org/W2991563224",
+            "text_sha256": "f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd"
+          },
+          "start": 28,
+          "surface_text": "new approach",
+          "tokens": [
+            {
+              "end": 31,
+              "lemma": "new",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 28,
+              "tag": "JJ",
+              "text": "new"
+            },
+            {
+              "end": 40,
+              "lemma": "approach",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 32,
+              "tag": "NN",
+              "text": "approach"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:f3afee2aabe07cd0a2b336385fb9232603e080bb90ddcc8f0cf1f777c96e3657",
+      "document_id": "W2991563224",
+      "start": 32,
+      "end": 40,
+      "surface_text": "approach",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "approach"
+      ],
+      "confidence": 0.35378599166870117,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2991563224",
+          "end": 40,
+          "lemma": "approach",
+          "mention_id": "m:83bbcf90d2dfd052c79707e1f5eb6e3b83b7041c37b1feb759e3d03ab710d472",
+          "ner_label_hint": "METHOD",
+          "normalized_form": "approach",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd",
+          "score": 0.35378599166870117,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2991563224",
+            "doi": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "landing_page_url": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-16T09:59:22.235173",
+            "source_url": "https://openalex.org/W2991563224",
+            "text_sha256": "f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd"
+          },
+          "start": 32,
+          "surface_text": "approach",
+          "tokens": [
+            {
+              "end": 40,
+              "lemma": "approach",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 32,
+              "tag": "NN",
+              "text": "approach"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:869ac0060bdaeaa8c1d3ab8db0cd436361830ecde7e51e1b589672c1ba10f38f",
+      "document_id": "W2991563224",
+      "start": 166,
+      "end": 171,
+      "surface_text": "nodes",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "node"
+      ],
+      "confidence": 0.55204838514328,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 171,
+              "original": "nodes",
+              "replacement": "node",
+              "rule": "plural_noun_head",
+              "start": 166
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W2991563224",
+          "end": 171,
+          "lemma": "node",
+          "mention_id": "m:5fc5de2961630bcd10758b61ab907d7ff685e72c268aec8d6b368af3a7f772b9",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "node",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd",
+          "score": 0.55204838514328,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2991563224",
+            "doi": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "landing_page_url": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-16T09:59:22.235173",
+            "source_url": "https://openalex.org/W2991563224",
+            "text_sha256": "f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd"
+          },
+          "start": 166,
+          "surface_text": "nodes",
+          "tokens": [
+            {
+              "end": 171,
+              "lemma": "node",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 166,
+              "tag": "NNS",
+              "text": "nodes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:fd4ff5293039d54f5eecf359ec6de0019deb59dbc8ee7a4e03ec9c1ce6fd4a93",
+      "document_id": "W2991563224",
+      "start": 214,
+      "end": 236,
+      "surface_text": "network communications",
+      "entity_types": [
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "network communication"
+      ],
+      "confidence": 0.7038446664810181,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 236,
+              "original": "communications",
+              "replacement": "communication",
+              "rule": "plural_noun_head",
+              "start": 222
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W2991563224",
+          "end": 236,
+          "lemma": "network communication",
+          "mention_id": "m:bfaf26e315d80277ad6d5d19591427361f610cd2599366ad041a13e6b9cb99f6",
+          "ner_label_hint": "PROCESS",
+          "normalized_form": "network communication",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd",
+          "score": 0.7038446664810181,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2991563224",
+            "doi": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "landing_page_url": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-16T09:59:22.235173",
+            "source_url": "https://openalex.org/W2991563224",
+            "text_sha256": "f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd"
+          },
+          "start": 214,
+          "surface_text": "network communications",
+          "tokens": [
+            {
+              "end": 221,
+              "lemma": "network",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 214,
+              "tag": "NN",
+              "text": "network"
+            },
+            {
+              "end": 236,
+              "lemma": "communication",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 222,
+              "tag": "NNS",
+              "text": "communications"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:83b0e3fbb905da6d726e50dc8ffe0fc26a78ef2c0f5665a87a99e5e319a0593d",
+      "document_id": "W2991563224",
+      "start": 273,
+      "end": 292,
+      "surface_text": "optimized selection",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "optimized selection"
+      ],
+      "confidence": 0.4120692312717438,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2991563224",
+          "end": 292,
+          "lemma": "optimized selection",
+          "mention_id": "m:9cd927b0d6732e532142fbb214f27ef924d853061b95eaf14fce17f1b80f9164",
+          "ner_label_hint": "METHOD",
+          "normalized_form": "optimized selection",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd",
+          "score": 0.4120692312717438,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2991563224",
+            "doi": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "landing_page_url": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-16T09:59:22.235173",
+            "source_url": "https://openalex.org/W2991563224",
+            "text_sha256": "f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd"
+          },
+          "start": 273,
+          "surface_text": "optimized selection",
+          "tokens": [
+            {
+              "end": 282,
+              "lemma": "optimize",
+              "morph": {
+                "Aspect": "Perf",
+                "Tense": "Past",
+                "VerbForm": "Part"
+              },
+              "partial_token": false,
+              "pos": "VERB",
+              "possessive": false,
+              "start": 273,
+              "tag": "VBN",
+              "text": "optimized"
+            },
+            {
+              "end": 292,
+              "lemma": "selection",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 283,
+              "tag": "NN",
+              "text": "selection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:1bc4ad46a55b0609da14977f2ad182166e908fbfb686379e5d9087da89596385",
+      "document_id": "W2991563224",
+      "start": 378,
+      "end": 394,
+      "surface_text": "network lifetime",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "network lifetime"
+      ],
+      "confidence": 0.9537079334259033,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2991563224",
+          "end": 394,
+          "lemma": "network lifetime",
+          "mention_id": "m:0a97cf66d299d9cc0c97453bbff7d625609a67f38f86933be3c2ab22525e6e51",
+          "ner_label_hint": "ATTRIBUTE",
+          "normalized_form": "network lifetime",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd",
+          "score": 0.9537079334259033,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2991563224",
+            "doi": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "landing_page_url": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-16T09:59:22.235173",
+            "source_url": "https://openalex.org/W2991563224",
+            "text_sha256": "f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd"
+          },
+          "start": 378,
+          "surface_text": "network lifetime",
+          "tokens": [
+            {
+              "end": 385,
+              "lemma": "network",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 378,
+              "tag": "NN",
+              "text": "network"
+            },
+            {
+              "end": 394,
+              "lemma": "lifetime",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 386,
+              "tag": "NN",
+              "text": "lifetime"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:725f112a18aaabd03f3b1003d9cdeb9f57996d74b98bc6a57c779c05f91c69ee",
+      "document_id": "W2991563224",
+      "start": 396,
+      "end": 414,
+      "surface_text": "energy consumption",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "energy consumption"
+      ],
+      "confidence": 0.97563236951828,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2991563224",
+          "end": 414,
+          "lemma": "energy consumption",
+          "mention_id": "m:52ea1ca128cf5bb2def3e48ba19d3966b9f703a5c15bd9d11d64b29ef18bb103",
+          "ner_label_hint": "ATTRIBUTE",
+          "normalized_form": "energy consumption",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd",
+          "score": 0.97563236951828,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2991563224",
+            "doi": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "landing_page_url": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-16T09:59:22.235173",
+            "source_url": "https://openalex.org/W2991563224",
+            "text_sha256": "f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd"
+          },
+          "start": 396,
+          "surface_text": "energy consumption",
+          "tokens": [
+            {
+              "end": 402,
+              "lemma": "energy",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 396,
+              "tag": "NN",
+              "text": "energy"
+            },
+            {
+              "end": 414,
+              "lemma": "consumption",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 403,
+              "tag": "NN",
+              "text": "consumption"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:566ff9d0a6e357fc2316e6bf8dd66548ef5c762e4c4b4f21d506e741bfbf690c",
+      "document_id": "W2991563224",
+      "start": 419,
+      "end": 436,
+      "surface_text": "number of packets",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "number of packet"
+      ],
+      "confidence": 0.6351193189620972,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 436,
+              "original": "packets",
+              "replacement": "packet",
+              "rule": "plural_noun_head",
+              "start": 429
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W2991563224",
+          "end": 436,
+          "lemma": "number of packet",
+          "mention_id": "m:07bb013c88c6709ea4e34864833c0e065a8b8278b3d1ef3f75bb9f02c4ff11b1",
+          "ner_label_hint": "ATTRIBUTE",
+          "normalized_form": "number of packet",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd",
+          "score": 0.6351193189620972,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2991563224",
+            "doi": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "landing_page_url": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-16T09:59:22.235173",
+            "source_url": "https://openalex.org/W2991563224",
+            "text_sha256": "f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd"
+          },
+          "start": 419,
+          "surface_text": "number of packets",
+          "tokens": [
+            {
+              "end": 425,
+              "lemma": "number",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 419,
+              "tag": "NN",
+              "text": "number"
+            },
+            {
+              "end": 428,
+              "lemma": "of",
+              "morph": {},
+              "partial_token": false,
+              "pos": "ADP",
+              "possessive": false,
+              "start": 426,
+              "tag": "IN",
+              "text": "of"
+            },
+            {
+              "end": 436,
+              "lemma": "packet",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 429,
+              "tag": "NNS",
+              "text": "packets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:2e6f291d5bd3a5aee20c5ddc0a2ade392f8ad972f212d9733174124cae77b268",
+      "document_id": "W2991563224",
+      "start": 419,
+      "end": 448,
+      "surface_text": "number of packets transferred",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "number of packets transferred"
+      ],
+      "confidence": 0.6421949863433838,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2991563224",
+          "end": 448,
+          "lemma": "number of packets transferred",
+          "mention_id": "m:f752d9cf05aec27d8aed2a7c5b922394a5e184fce4eba85cd8bf4b105cd04d4a",
+          "ner_label_hint": "ATTRIBUTE",
+          "normalized_form": "number of packets transferred",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd",
+          "score": 0.6421949863433838,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2991563224",
+            "doi": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "landing_page_url": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-16T09:59:22.235173",
+            "source_url": "https://openalex.org/W2991563224",
+            "text_sha256": "f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd"
+          },
+          "start": 419,
+          "surface_text": "number of packets transferred",
+          "tokens": [
+            {
+              "end": 425,
+              "lemma": "number",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 419,
+              "tag": "NN",
+              "text": "number"
+            },
+            {
+              "end": 428,
+              "lemma": "of",
+              "morph": {},
+              "partial_token": false,
+              "pos": "ADP",
+              "possessive": false,
+              "start": 426,
+              "tag": "IN",
+              "text": "of"
+            },
+            {
+              "end": 436,
+              "lemma": "packet",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 429,
+              "tag": "NNS",
+              "text": "packets"
+            },
+            {
+              "end": 448,
+              "lemma": "transfer",
+              "morph": {
+                "Aspect": "Perf",
+                "Tense": "Past",
+                "VerbForm": "Part"
+              },
+              "partial_token": false,
+              "pos": "VERB",
+              "possessive": false,
+              "start": 437,
+              "tag": "VBN",
+              "text": "transferred"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:cc4bb9ef388bd2e456bde8d114ea2aec73a5badf6939f5717f99095b91b012a2",
+      "document_id": "W2991563224",
+      "start": 452,
+      "end": 464,
+      "surface_text": "base station",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "base station"
+      ],
+      "confidence": 0.6108450293540955,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2991563224",
+          "end": 464,
+          "lemma": "base station",
+          "mention_id": "m:032b66b2954caba294533899da832d6910b1c0ab7dac9bc382feb432597c2222",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "base station",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd",
+          "score": 0.6108450293540955,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2991563224",
+            "doi": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "landing_page_url": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-16T09:59:22.235173",
+            "source_url": "https://openalex.org/W2991563224",
+            "text_sha256": "f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd"
+          },
+          "start": 452,
+          "surface_text": "base station",
+          "tokens": [
+            {
+              "end": 456,
+              "lemma": "base",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 452,
+              "tag": "NN",
+              "text": "base"
+            },
+            {
+              "end": 464,
+              "lemma": "station",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 457,
+              "tag": "NN",
+              "text": "station"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:bd3e46331f9ed794e2bdac2f561b5f3e33e19a2ade37e44f9566eeb2954ea4a2",
+      "document_id": "W2991563224",
+      "start": 604,
+      "end": 621,
+      "surface_text": "proposed approach",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "proposed approach"
+      ],
+      "confidence": 0.8910096287727356,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2991563224",
+          "end": 621,
+          "lemma": "proposed approach",
+          "mention_id": "m:357e13fd0601ef07631d5a9ba7ec044bda3fba9cdbf6b187111421688eab4270",
+          "ner_label_hint": "METHOD",
+          "normalized_form": "proposed approach",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd",
+          "score": 0.8910096287727356,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2991563224",
+            "doi": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "landing_page_url": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-16T09:59:22.235173",
+            "source_url": "https://openalex.org/W2991563224",
+            "text_sha256": "f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd"
+          },
+          "start": 604,
+          "surface_text": "proposed approach",
+          "tokens": [
+            {
+              "end": 612,
+              "lemma": "propose",
+              "morph": {
+                "Aspect": "Perf",
+                "Tense": "Past",
+                "VerbForm": "Part"
+              },
+              "partial_token": false,
+              "pos": "VERB",
+              "possessive": false,
+              "start": 604,
+              "tag": "VBN",
+              "text": "proposed"
+            },
+            {
+              "end": 621,
+              "lemma": "approach",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 613,
+              "tag": "NN",
+              "text": "approach"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d090de7f3d97c76d0d0d37acdc13eb2e4e386d3314367768b51902c4be420088",
+      "document_id": "W2991563224",
+      "start": 627,
+      "end": 645,
+      "surface_text": "energy consumption",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "energy consumption"
+      ],
+      "confidence": 0.9826092720031738,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2991563224",
+          "end": 645,
+          "lemma": "energy consumption",
+          "mention_id": "m:c654b9df8a823c1497990423ac9ca9b9c8f0451bf1d256191664cba364334b24",
+          "ner_label_hint": "ATTRIBUTE",
+          "normalized_form": "energy consumption",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd",
+          "score": 0.9826092720031738,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2991563224",
+            "doi": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "landing_page_url": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-16T09:59:22.235173",
+            "source_url": "https://openalex.org/W2991563224",
+            "text_sha256": "f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd"
+          },
+          "start": 627,
+          "surface_text": "energy consumption",
+          "tokens": [
+            {
+              "end": 633,
+              "lemma": "energy",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 627,
+              "tag": "NN",
+              "text": "energy"
+            },
+            {
+              "end": 645,
+              "lemma": "consumption",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 634,
+              "tag": "NN",
+              "text": "consumption"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:492dbd7aa432b0334c0cf70aa504d7e055b0432bb6132c5a262933efc8f676cd",
+      "document_id": "W2991563224",
+      "start": 649,
+      "end": 652,
+      "surface_text": "WSN",
+      "entity_types": [
+        "ACTOR",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "WSN"
+      ],
+      "confidence": 0.919552743434906,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2991563224",
+          "end": 652,
+          "lemma": "WSN",
+          "mention_id": "m:ba4fb798d01941eec5470a583fd68bf25bc4db80a7ad332fafdcdd70727d0305",
+          "ner_label_hint": "ACTOR",
+          "normalized_form": "WSN",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd",
+          "score": 0.919552743434906,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2991563224",
+            "doi": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "landing_page_url": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-16T09:59:22.235173",
+            "source_url": "https://openalex.org/W2991563224",
+            "text_sha256": "f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd"
+          },
+          "start": 649,
+          "surface_text": "WSN",
+          "tokens": [
+            {
+              "end": 652,
+              "lemma": "WSN",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 649,
+              "tag": "NNP",
+              "text": "WSN"
+            }
+          ]
+        },
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2991563224",
+          "end": 652,
+          "lemma": "WSN",
+          "mention_id": "m:34d5898ccd93780da97a2484bb7487e6bd6d80242ca53c239a6df03a4c3e1360",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "WSN",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd",
+          "score": 0.8807770013809204,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2991563224",
+            "doi": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "landing_page_url": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-16T09:59:22.235173",
+            "source_url": "https://openalex.org/W2991563224",
+            "text_sha256": "f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd"
+          },
+          "start": 649,
+          "surface_text": "WSN",
+          "tokens": [
+            {
+              "end": 652,
+              "lemma": "WSN",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 649,
+              "tag": "NNP",
+              "text": "WSN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:7ee27f03f07c76345bff6848557cd73edb12b467ddb536880c9489a642c46b65",
+      "document_id": "W2991563224",
+      "start": 693,
+      "end": 711,
+      "surface_text": "network life cycle",
+      "entity_types": [
+        "ATTRIBUTE",
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "network life cycle"
+      ],
+      "confidence": 0.8108110427856445,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2991563224",
+          "end": 711,
+          "lemma": "network life cycle",
+          "mention_id": "m:53d884fbf741f317948addb1788b80661da1a06113a0414a24bb2a3169364459",
+          "ner_label_hint": "ATTRIBUTE",
+          "normalized_form": "network life cycle",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd",
+          "score": 0.8108110427856445,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2991563224",
+            "doi": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "landing_page_url": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-16T09:59:22.235173",
+            "source_url": "https://openalex.org/W2991563224",
+            "text_sha256": "f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd"
+          },
+          "start": 693,
+          "surface_text": "network life cycle",
+          "tokens": [
+            {
+              "end": 700,
+              "lemma": "network",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 693,
+              "tag": "NN",
+              "text": "network"
+            },
+            {
+              "end": 705,
+              "lemma": "life",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 701,
+              "tag": "NN",
+              "text": "life"
+            },
+            {
+              "end": 711,
+              "lemma": "cycle",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 706,
+              "tag": "NN",
+              "text": "cycle"
+            }
+          ]
+        },
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2991563224",
+          "end": 711,
+          "lemma": "network life cycle",
+          "mention_id": "m:b03e27bfaa498b27e09e046a7cfc0e9a5837c7836103494e258a0e028c1c59cc",
+          "ner_label_hint": "CONDITION",
+          "normalized_form": "network life cycle",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd",
+          "score": 0.5238027572631836,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2991563224",
+            "doi": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "landing_page_url": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-16T09:59:22.235173",
+            "source_url": "https://openalex.org/W2991563224",
+            "text_sha256": "f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd"
+          },
+          "start": 693,
+          "surface_text": "network life cycle",
+          "tokens": [
+            {
+              "end": 700,
+              "lemma": "network",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 693,
+              "tag": "NN",
+              "text": "network"
+            },
+            {
+              "end": 705,
+              "lemma": "life",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 701,
+              "tag": "NN",
+              "text": "life"
+            },
+            {
+              "end": 711,
+              "lemma": "cycle",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 706,
+              "tag": "NN",
+              "text": "cycle"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:b37205f91664d380454ee6aa26f110db4c32343e5c0372b7c416666de56e37cc",
+      "document_id": "W2991563224",
+      "start": 738,
+      "end": 755,
+      "surface_text": "number of packets",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "number of packet"
+      ],
+      "confidence": 0.3588968813419342,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 755,
+              "original": "packets",
+              "replacement": "packet",
+              "rule": "plural_noun_head",
+              "start": 748
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W2991563224",
+          "end": 755,
+          "lemma": "number of packet",
+          "mention_id": "m:6f4e36966b8468df49e46d4a57268e382d2c4876a5eb152626340a47c533af02",
+          "ner_label_hint": "ATTRIBUTE",
+          "normalized_form": "number of packet",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd",
+          "score": 0.3588968813419342,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2991563224",
+            "doi": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "landing_page_url": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-16T09:59:22.235173",
+            "source_url": "https://openalex.org/W2991563224",
+            "text_sha256": "f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd"
+          },
+          "start": 738,
+          "surface_text": "number of packets",
+          "tokens": [
+            {
+              "end": 744,
+              "lemma": "number",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 738,
+              "tag": "NN",
+              "text": "number"
+            },
+            {
+              "end": 747,
+              "lemma": "of",
+              "morph": {},
+              "partial_token": false,
+              "pos": "ADP",
+              "possessive": false,
+              "start": 745,
+              "tag": "IN",
+              "text": "of"
+            },
+            {
+              "end": 755,
+              "lemma": "packet",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 748,
+              "tag": "NNS",
+              "text": "packets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:f3d9114eeafb4c22a482ae6786fede754359b137d4bcb9c855b49f16bbec7386",
+      "document_id": "W2991563224",
+      "start": 748,
+      "end": 755,
+      "surface_text": "packets",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "packet"
+      ],
+      "confidence": 0.4394373595714569,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 755,
+              "original": "packets",
+              "replacement": "packet",
+              "rule": "plural_noun_head",
+              "start": 748
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W2991563224",
+          "end": 755,
+          "lemma": "packet",
+          "mention_id": "m:8f131363637a6596c6c6d0e5bf2d4d94dfc3e267f1f1e941b6a57d9ace5b4b46",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "packet",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd",
+          "score": 0.4394373595714569,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2991563224",
+            "doi": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "landing_page_url": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-16T09:59:22.235173",
+            "source_url": "https://openalex.org/W2991563224",
+            "text_sha256": "f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd"
+          },
+          "start": 748,
+          "surface_text": "packets",
+          "tokens": [
+            {
+              "end": 755,
+              "lemma": "packet",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 748,
+              "tag": "NNS",
+              "text": "packets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:e8d6dc1188ddee5726c359775f7d5dba1609da774a275f6c757b8bf8ec5c3a08",
+      "document_id": "W2991563224",
+      "start": 794,
+      "end": 799,
+      "surface_text": "LEACH",
+      "entity_types": [
+        "ACTOR",
+        "DATA_RESOURCE",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "LEACH"
+      ],
+      "confidence": 0.6887187957763672,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2991563224",
+          "end": 799,
+          "lemma": "LEACH",
+          "mention_id": "m:7a959938bdea586f12ead9811aea0bcb5d4aec05505fe141bc911dcd6a858d36",
+          "ner_label_hint": "ACTOR",
+          "normalized_form": "LEACH",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd",
+          "score": 0.6887187957763672,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2991563224",
+            "doi": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "landing_page_url": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-16T09:59:22.235173",
+            "source_url": "https://openalex.org/W2991563224",
+            "text_sha256": "f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd"
+          },
+          "start": 794,
+          "surface_text": "LEACH",
+          "tokens": [
+            {
+              "end": 799,
+              "lemma": "LEACH",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 794,
+              "tag": "NN",
+              "text": "LEACH"
+            }
+          ]
+        },
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2991563224",
+          "end": 799,
+          "lemma": "LEACH",
+          "mention_id": "m:1a2a570b181695dccb33bc8681bcc19f4804e9dbf92e44584b277ed8a29dec10",
+          "ner_label_hint": "DATA_RESOURCE",
+          "normalized_form": "LEACH",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd",
+          "score": 0.6145159006118774,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2991563224",
+            "doi": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "landing_page_url": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-16T09:59:22.235173",
+            "source_url": "https://openalex.org/W2991563224",
+            "text_sha256": "f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd"
+          },
+          "start": 794,
+          "surface_text": "LEACH",
+          "tokens": [
+            {
+              "end": 799,
+              "lemma": "LEACH",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 794,
+              "tag": "NN",
+              "text": "LEACH"
+            }
+          ]
+        },
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2991563224",
+          "end": 799,
+          "lemma": "LEACH",
+          "mention_id": "m:bf5f83df834fe45e86e19114a7e3a526e6d7cdc7eb25494a8a3e9b1c54bdfd9b",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "LEACH",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd",
+          "score": 0.520991861820221,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2991563224",
+            "doi": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "landing_page_url": "https://doi.org/10.11591/ijeecs.v18.i1.pp218-226",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-16T09:59:22.235173",
+            "source_url": "https://openalex.org/W2991563224",
+            "text_sha256": "f5626ce38fed5e64846696dc2fe4c1da711561d42bfc116ad1cfe850e3f618fd"
+          },
+          "start": 794,
+          "surface_text": "LEACH",
+          "tokens": [
+            {
+              "end": 799,
+              "lemma": "LEACH",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 794,
+              "tag": "NN",
+              "text": "LEACH"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "triple_id": "t:0fb030adf6481e717b2afed50eb118b8fbfd01cf039a47b66fb9d4098b94d839",
+      "document_id": "W2991563224",
+      "head_id": "e:f3afee2aabe07cd0a2b336385fb9232603e080bb90ddcc8f0cf1f777c96e3657",
+      "tail_id": "e:e8d6dc1188ddee5726c359775f7d5dba1609da774a275f6c757b8bf8ec5c3a08",
+      "head_types": [
+        "METHOD"
+      ],
+      "tail_types": [
+        "ACTOR",
+        "DATA_RESOURCE",
+        "OBJECT"
+      ],
+      "relation_type": "COMPARED_WITH",
+      "confidence": 0.7435984015464783,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:4a04d4833853bbc6656ed41bb894030a65b74ac5986e75d6f4e84a94786e4bb6",
+          "document_id": "W2991563224",
+          "start": 0,
+          "end": 800,
+          "text": "In this paper, we propose a new approach to improve the protocol LEACH performance. It has been accomplished by increasing the energy balancing in clusters among all nodes to minimize the energy dissipation during network communications. The improved method is based on an optimized selection of cluster head. The development of this approach has indicated progress in terms of network lifetime, energy consumption and number of packets transferred to base station, compared to LEACH or other related extended spaces protocols. Mathematical analysis and simulations results show the effectiveness of the proposed approach. The energy consumption of WSN has been reduced up to about 3.5 %. The network life cycle is prolonged by 44 %. The number of packets sent has been increased by 185 % than LEACH.",
+          "entity_ids": [
+            "e:13a3a3d720801d4918e2591ff595807742db3bb7a63c60b299a94e05e35f174e",
+            "e:ec77da065ebe3d0b507ac227f1b21e92d236b6fba6bc8e05a67e85ee0908b76b",
+            "e:f3afee2aabe07cd0a2b336385fb9232603e080bb90ddcc8f0cf1f777c96e3657",
+            "e:869ac0060bdaeaa8c1d3ab8db0cd436361830ecde7e51e1b589672c1ba10f38f",
+            "e:fd4ff5293039d54f5eecf359ec6de0019deb59dbc8ee7a4e03ec9c1ce6fd4a93",
+            "e:83b0e3fbb905da6d726e50dc8ffe0fc26a78ef2c0f5665a87a99e5e319a0593d",
+            "e:1bc4ad46a55b0609da14977f2ad182166e908fbfb686379e5d9087da89596385",
+            "e:725f112a18aaabd03f3b1003d9cdeb9f57996d74b98bc6a57c779c05f91c69ee",
+            "e:566ff9d0a6e357fc2316e6bf8dd66548ef5c762e4c4b4f21d506e741bfbf690c",
+            "e:2e6f291d5bd3a5aee20c5ddc0a2ade392f8ad972f212d9733174124cae77b268",
+            "e:cc4bb9ef388bd2e456bde8d114ea2aec73a5badf6939f5717f99095b91b012a2",
+            "e:bd3e46331f9ed794e2bdac2f561b5f3e33e19a2ade37e44f9566eeb2954ea4a2",
+            "e:d090de7f3d97c76d0d0d37acdc13eb2e4e386d3314367768b51902c4be420088",
+            "e:492dbd7aa432b0334c0cf70aa504d7e055b0432bb6132c5a262933efc8f676cd",
+            "e:7ee27f03f07c76345bff6848557cd73edb12b467ddb536880c9489a642c46b65",
+            "e:b37205f91664d380454ee6aa26f110db4c32343e5c0372b7c416666de56e37cc",
+            "e:f3d9114eeafb4c22a482ae6786fede754359b137d4bcb9c855b49f16bbec7386",
+            "e:e8d6dc1188ddee5726c359775f7d5dba1609da774a275f6c757b8bf8ec5c3a08"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:3ce30989b056b02a1dfa1a7e627949daee6ce1c369116baa2268f0797f1249f9",
+      "document_id": "W2991563224",
+      "head_id": "e:bd3e46331f9ed794e2bdac2f561b5f3e33e19a2ade37e44f9566eeb2954ea4a2",
+      "tail_id": "e:492dbd7aa432b0334c0cf70aa504d7e055b0432bb6132c5a262933efc8f676cd",
+      "head_types": [
+        "METHOD"
+      ],
+      "tail_types": [
+        "ACTOR",
+        "OBJECT"
+      ],
+      "relation_type": "COMPARED_WITH",
+      "confidence": 0.7306411266326904,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:4a04d4833853bbc6656ed41bb894030a65b74ac5986e75d6f4e84a94786e4bb6",
+          "document_id": "W2991563224",
+          "start": 0,
+          "end": 800,
+          "text": "In this paper, we propose a new approach to improve the protocol LEACH performance. It has been accomplished by increasing the energy balancing in clusters among all nodes to minimize the energy dissipation during network communications. The improved method is based on an optimized selection of cluster head. The development of this approach has indicated progress in terms of network lifetime, energy consumption and number of packets transferred to base station, compared to LEACH or other related extended spaces protocols. Mathematical analysis and simulations results show the effectiveness of the proposed approach. The energy consumption of WSN has been reduced up to about 3.5 %. The network life cycle is prolonged by 44 %. The number of packets sent has been increased by 185 % than LEACH.",
+          "entity_ids": [
+            "e:13a3a3d720801d4918e2591ff595807742db3bb7a63c60b299a94e05e35f174e",
+            "e:ec77da065ebe3d0b507ac227f1b21e92d236b6fba6bc8e05a67e85ee0908b76b",
+            "e:f3afee2aabe07cd0a2b336385fb9232603e080bb90ddcc8f0cf1f777c96e3657",
+            "e:869ac0060bdaeaa8c1d3ab8db0cd436361830ecde7e51e1b589672c1ba10f38f",
+            "e:fd4ff5293039d54f5eecf359ec6de0019deb59dbc8ee7a4e03ec9c1ce6fd4a93",
+            "e:83b0e3fbb905da6d726e50dc8ffe0fc26a78ef2c0f5665a87a99e5e319a0593d",
+            "e:1bc4ad46a55b0609da14977f2ad182166e908fbfb686379e5d9087da89596385",
+            "e:725f112a18aaabd03f3b1003d9cdeb9f57996d74b98bc6a57c779c05f91c69ee",
+            "e:566ff9d0a6e357fc2316e6bf8dd66548ef5c762e4c4b4f21d506e741bfbf690c",
+            "e:2e6f291d5bd3a5aee20c5ddc0a2ade392f8ad972f212d9733174124cae77b268",
+            "e:cc4bb9ef388bd2e456bde8d114ea2aec73a5badf6939f5717f99095b91b012a2",
+            "e:bd3e46331f9ed794e2bdac2f561b5f3e33e19a2ade37e44f9566eeb2954ea4a2",
+            "e:d090de7f3d97c76d0d0d37acdc13eb2e4e386d3314367768b51902c4be420088",
+            "e:492dbd7aa432b0334c0cf70aa504d7e055b0432bb6132c5a262933efc8f676cd",
+            "e:7ee27f03f07c76345bff6848557cd73edb12b467ddb536880c9489a642c46b65",
+            "e:b37205f91664d380454ee6aa26f110db4c32343e5c0372b7c416666de56e37cc",
+            "e:f3d9114eeafb4c22a482ae6786fede754359b137d4bcb9c855b49f16bbec7386",
+            "e:e8d6dc1188ddee5726c359775f7d5dba1609da774a275f6c757b8bf8ec5c3a08"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:3fef9efbfe45ad1cff68ab710e880d46e300814f8d3cb43a78ae3c6fe422879e",
+      "document_id": "W2991563224",
+      "head_id": "e:bd3e46331f9ed794e2bdac2f561b5f3e33e19a2ade37e44f9566eeb2954ea4a2",
+      "tail_id": "e:e8d6dc1188ddee5726c359775f7d5dba1609da774a275f6c757b8bf8ec5c3a08",
+      "head_types": [
+        "METHOD"
+      ],
+      "tail_types": [
+        "ACTOR",
+        "DATA_RESOURCE",
+        "OBJECT"
+      ],
+      "relation_type": "COMPARED_WITH",
+      "confidence": 0.7568150162696838,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:4a04d4833853bbc6656ed41bb894030a65b74ac5986e75d6f4e84a94786e4bb6",
+          "document_id": "W2991563224",
+          "start": 0,
+          "end": 800,
+          "text": "In this paper, we propose a new approach to improve the protocol LEACH performance. It has been accomplished by increasing the energy balancing in clusters among all nodes to minimize the energy dissipation during network communications. The improved method is based on an optimized selection of cluster head. The development of this approach has indicated progress in terms of network lifetime, energy consumption and number of packets transferred to base station, compared to LEACH or other related extended spaces protocols. Mathematical analysis and simulations results show the effectiveness of the proposed approach. The energy consumption of WSN has been reduced up to about 3.5 %. The network life cycle is prolonged by 44 %. The number of packets sent has been increased by 185 % than LEACH.",
+          "entity_ids": [
+            "e:13a3a3d720801d4918e2591ff595807742db3bb7a63c60b299a94e05e35f174e",
+            "e:ec77da065ebe3d0b507ac227f1b21e92d236b6fba6bc8e05a67e85ee0908b76b",
+            "e:f3afee2aabe07cd0a2b336385fb9232603e080bb90ddcc8f0cf1f777c96e3657",
+            "e:869ac0060bdaeaa8c1d3ab8db0cd436361830ecde7e51e1b589672c1ba10f38f",
+            "e:fd4ff5293039d54f5eecf359ec6de0019deb59dbc8ee7a4e03ec9c1ce6fd4a93",
+            "e:83b0e3fbb905da6d726e50dc8ffe0fc26a78ef2c0f5665a87a99e5e319a0593d",
+            "e:1bc4ad46a55b0609da14977f2ad182166e908fbfb686379e5d9087da89596385",
+            "e:725f112a18aaabd03f3b1003d9cdeb9f57996d74b98bc6a57c779c05f91c69ee",
+            "e:566ff9d0a6e357fc2316e6bf8dd66548ef5c762e4c4b4f21d506e741bfbf690c",
+            "e:2e6f291d5bd3a5aee20c5ddc0a2ade392f8ad972f212d9733174124cae77b268",
+            "e:cc4bb9ef388bd2e456bde8d114ea2aec73a5badf6939f5717f99095b91b012a2",
+            "e:bd3e46331f9ed794e2bdac2f561b5f3e33e19a2ade37e44f9566eeb2954ea4a2",
+            "e:d090de7f3d97c76d0d0d37acdc13eb2e4e386d3314367768b51902c4be420088",
+            "e:492dbd7aa432b0334c0cf70aa504d7e055b0432bb6132c5a262933efc8f676cd",
+            "e:7ee27f03f07c76345bff6848557cd73edb12b467ddb536880c9489a642c46b65",
+            "e:b37205f91664d380454ee6aa26f110db4c32343e5c0372b7c416666de56e37cc",
+            "e:f3d9114eeafb4c22a482ae6786fede754359b137d4bcb9c855b49f16bbec7386",
+            "e:e8d6dc1188ddee5726c359775f7d5dba1609da774a275f6c757b8bf8ec5c3a08"
+          ]
+        }
+      ]
+    }
+  ],
+  "raw_relation_count": 3,
+  "seconds": 1.2843194999732077
+}

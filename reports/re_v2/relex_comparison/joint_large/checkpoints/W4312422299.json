@@ -1,0 +1,2993 @@
+{
+  "fingerprint": "c79845cf50e55b434eab0bcd7d45fb6779c27e093e96fa9a77b4c2f1b311bf99",
+  "document_id": "W4312422299",
+  "model": "knowledgator/gliner-relex-large-v1.0",
+  "mode": "joint",
+  "raw_windows": [
+    {
+      "window": {
+        "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+        "document_id": "W4312422299",
+        "start": 0,
+        "end": 617,
+        "text": "The Book of Mormon presents a tale of the plight and flight of a family from biblical Jerusalem, stitched together through a variety of narrators. As the title page claims, this book contains the record of the Nephite people, descendants of Lehi, who was commanded by God to leave Jerusalem in order to save his family from destruction. From that command, the text becomes one of movement and escape, so that the Nephite race can avoid destruction. As this story is one about avoiding annihilation, it necessarily becomes one of reproduction: How do the Nephites reproduce the people of God to spread the word of God?",
+        "entity_ids": []
+      },
+      "entities": [
+        {
+          "start": 0,
+          "end": 18,
+          "text": "The Book of Mormon",
+          "label": "concept",
+          "score": 0.7002139091491699
+        },
+        {
+          "start": 0,
+          "end": 18,
+          "text": "The Book of Mormon",
+          "label": "object",
+          "score": 0.6741516590118408
+        },
+        {
+          "start": 4,
+          "end": 18,
+          "text": "Book of Mormon",
+          "label": "concept",
+          "score": 0.6106027364730835
+        },
+        {
+          "start": 4,
+          "end": 18,
+          "text": "Book of Mormon",
+          "label": "object",
+          "score": 0.5605637431144714
+        },
+        {
+          "start": 65,
+          "end": 71,
+          "text": "family",
+          "label": "concept",
+          "score": 0.46334078907966614
+        },
+        {
+          "start": 65,
+          "end": 71,
+          "text": "family",
+          "label": "object",
+          "score": 0.3228311836719513
+        },
+        {
+          "start": 77,
+          "end": 95,
+          "text": "biblical Jerusalem",
+          "label": "concept",
+          "score": 0.5721348524093628
+        },
+        {
+          "start": 77,
+          "end": 95,
+          "text": "biblical Jerusalem",
+          "label": "object",
+          "score": 0.3911251127719879
+        },
+        {
+          "start": 86,
+          "end": 95,
+          "text": "Jerusalem",
+          "label": "concept",
+          "score": 0.47885987162590027
+        },
+        {
+          "start": 86,
+          "end": 95,
+          "text": "Jerusalem",
+          "label": "object",
+          "score": 0.3232865631580353
+        },
+        {
+          "start": 136,
+          "end": 145,
+          "text": "narrators",
+          "label": "actor",
+          "score": 0.6658204793930054
+        },
+        {
+          "start": 136,
+          "end": 145,
+          "text": "narrators",
+          "label": "object",
+          "score": 0.3970038592815399
+        },
+        {
+          "start": 136,
+          "end": 145,
+          "text": "narrators",
+          "label": "concept",
+          "score": 0.39457884430885315
+        },
+        {
+          "start": 154,
+          "end": 164,
+          "text": "title page",
+          "label": "object",
+          "score": 0.3620072305202484
+        },
+        {
+          "start": 154,
+          "end": 164,
+          "text": "title page",
+          "label": "concept",
+          "score": 0.3041709065437317
+        },
+        {
+          "start": 210,
+          "end": 224,
+          "text": "Nephite people",
+          "label": "concept",
+          "score": 0.6274762153625488
+        },
+        {
+          "start": 210,
+          "end": 224,
+          "text": "Nephite people",
+          "label": "actor",
+          "score": 0.6030470132827759
+        },
+        {
+          "start": 210,
+          "end": 224,
+          "text": "Nephite people",
+          "label": "object",
+          "score": 0.4041292667388916
+        },
+        {
+          "start": 226,
+          "end": 245,
+          "text": "descendants of Lehi",
+          "label": "actor",
+          "score": 0.42338642477989197
+        },
+        {
+          "start": 241,
+          "end": 245,
+          "text": "Lehi",
+          "label": "actor",
+          "score": 0.8747159242630005
+        },
+        {
+          "start": 241,
+          "end": 245,
+          "text": "Lehi",
+          "label": "concept",
+          "score": 0.5524647235870361
+        },
+        {
+          "start": 241,
+          "end": 245,
+          "text": "Lehi",
+          "label": "object",
+          "score": 0.5377721190452576
+        },
+        {
+          "start": 255,
+          "end": 271,
+          "text": "commanded by God",
+          "label": "concept",
+          "score": 0.5974555611610413
+        },
+        {
+          "start": 255,
+          "end": 271,
+          "text": "commanded by God",
+          "label": "object",
+          "score": 0.5966581702232361
+        },
+        {
+          "start": 268,
+          "end": 271,
+          "text": "God",
+          "label": "actor",
+          "score": 0.6890802383422852
+        },
+        {
+          "start": 268,
+          "end": 271,
+          "text": "God",
+          "label": "concept",
+          "score": 0.5612699389457703
+        },
+        {
+          "start": 268,
+          "end": 271,
+          "text": "God",
+          "label": "object",
+          "score": 0.5307235717773438
+        },
+        {
+          "start": 275,
+          "end": 290,
+          "text": "leave Jerusalem",
+          "label": "concept",
+          "score": 0.3078274726867676
+        },
+        {
+          "start": 324,
+          "end": 335,
+          "text": "destruction",
+          "label": "concept",
+          "score": 0.8238310813903809
+        },
+        {
+          "start": 324,
+          "end": 335,
+          "text": "destruction",
+          "label": "condition",
+          "score": 0.5737790465354919
+        },
+        {
+          "start": 324,
+          "end": 335,
+          "text": "destruction",
+          "label": "object",
+          "score": 0.4723818004131317
+        },
+        {
+          "start": 347,
+          "end": 354,
+          "text": "command",
+          "label": "object",
+          "score": 0.4485638737678528
+        },
+        {
+          "start": 347,
+          "end": 354,
+          "text": "command",
+          "label": "concept",
+          "score": 0.44248512387275696
+        },
+        {
+          "start": 356,
+          "end": 364,
+          "text": "the text",
+          "label": "concept",
+          "score": 0.4250500798225403
+        },
+        {
+          "start": 356,
+          "end": 364,
+          "text": "the text",
+          "label": "object",
+          "score": 0.39077919721603394
+        },
+        {
+          "start": 360,
+          "end": 364,
+          "text": "text",
+          "label": "concept",
+          "score": 0.6860306262969971
+        },
+        {
+          "start": 360,
+          "end": 364,
+          "text": "text",
+          "label": "object",
+          "score": 0.5937452912330627
+        },
+        {
+          "start": 380,
+          "end": 399,
+          "text": "movement and escape",
+          "label": "concept",
+          "score": 0.6529160737991333
+        },
+        {
+          "start": 380,
+          "end": 388,
+          "text": "movement",
+          "label": "concept",
+          "score": 0.5750990509986877
+        },
+        {
+          "start": 380,
+          "end": 399,
+          "text": "movement and escape",
+          "label": "object",
+          "score": 0.4380143880844116
+        },
+        {
+          "start": 380,
+          "end": 399,
+          "text": "movement and escape",
+          "label": "process",
+          "score": 0.4190012514591217
+        },
+        {
+          "start": 380,
+          "end": 388,
+          "text": "movement",
+          "label": "object",
+          "score": 0.3642181158065796
+        },
+        {
+          "start": 380,
+          "end": 388,
+          "text": "movement",
+          "label": "process",
+          "score": 0.30302664637565613
+        },
+        {
+          "start": 393,
+          "end": 399,
+          "text": "escape",
+          "label": "concept",
+          "score": 0.6011349558830261
+        },
+        {
+          "start": 393,
+          "end": 399,
+          "text": "escape",
+          "label": "object",
+          "score": 0.39275288581848145
+        },
+        {
+          "start": 413,
+          "end": 425,
+          "text": "Nephite race",
+          "label": "concept",
+          "score": 0.7482213377952576
+        },
+        {
+          "start": 413,
+          "end": 425,
+          "text": "Nephite race",
+          "label": "object",
+          "score": 0.4618239998817444
+        },
+        {
+          "start": 476,
+          "end": 497,
+          "text": "avoiding annihilation",
+          "label": "concept",
+          "score": 0.4047715663909912
+        },
+        {
+          "start": 485,
+          "end": 497,
+          "text": "annihilation",
+          "label": "concept",
+          "score": 0.4456929564476013
+        },
+        {
+          "start": 529,
+          "end": 541,
+          "text": "reproduction",
+          "label": "concept",
+          "score": 0.7841429710388184
+        },
+        {
+          "start": 529,
+          "end": 541,
+          "text": "reproduction",
+          "label": "process",
+          "score": 0.7287173867225647
+        },
+        {
+          "start": 529,
+          "end": 541,
+          "text": "reproduction",
+          "label": "object",
+          "score": 0.4545918107032776
+        },
+        {
+          "start": 529,
+          "end": 590,
+          "text": "reproduction: How do the Nephites reproduce the people of God",
+          "label": "concept",
+          "score": 0.37146469950675964
+        },
+        {
+          "start": 554,
+          "end": 562,
+          "text": "Nephites",
+          "label": "actor",
+          "score": 0.858245313167572
+        },
+        {
+          "start": 554,
+          "end": 562,
+          "text": "Nephites",
+          "label": "concept",
+          "score": 0.6069421172142029
+        },
+        {
+          "start": 554,
+          "end": 562,
+          "text": "Nephites",
+          "label": "object",
+          "score": 0.4482470452785492
+        },
+        {
+          "start": 563,
+          "end": 590,
+          "text": "reproduce the people of God",
+          "label": "process",
+          "score": 0.342037558555603
+        },
+        {
+          "start": 577,
+          "end": 590,
+          "text": "people of God",
+          "label": "concept",
+          "score": 0.6149598956108093
+        },
+        {
+          "start": 577,
+          "end": 590,
+          "text": "people of God",
+          "label": "object",
+          "score": 0.38049569725990295
+        },
+        {
+          "start": 577,
+          "end": 590,
+          "text": "people of God",
+          "label": "actor",
+          "score": 0.33355242013931274
+        },
+        {
+          "start": 594,
+          "end": 616,
+          "text": "spread the word of God",
+          "label": "concept",
+          "score": 0.8544750213623047
+        },
+        {
+          "start": 594,
+          "end": 616,
+          "text": "spread the word of God",
+          "label": "task",
+          "score": 0.7683587670326233
+        },
+        {
+          "start": 594,
+          "end": 616,
+          "text": "spread the word of God",
+          "label": "object",
+          "score": 0.5812498927116394
+        },
+        {
+          "start": 594,
+          "end": 616,
+          "text": "spread the word of God",
+          "label": "process",
+          "score": 0.4122858941555023
+        },
+        {
+          "start": 605,
+          "end": 616,
+          "text": "word of God",
+          "label": "concept",
+          "score": 0.3741278648376465
+        }
+      ],
+      "predictions": [
+        {
+          "head": {
+            "start": 554,
+            "end": 562,
+            "text": "Nephites",
+            "type": "actor",
+            "entity_idx": 53
+          },
+          "tail": {
+            "start": 563,
+            "end": 590,
+            "text": "reproduce the people of God",
+            "type": "process",
+            "entity_idx": 56
+          },
+          "relation": "performs",
+          "score": 0.7704083323478699
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "e:3ca161c5267b97d62b134beffa3fbdd0e7c9da4ad98f68dd0fb19fdaf0902d25",
+      "document_id": "W4312422299",
+      "start": 0,
+      "end": 18,
+      "surface_text": "The Book of Mormon",
+      "entity_types": [
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "the book of mormon"
+      ],
+      "confidence": 0.7002139091491699,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 0,
+          "end": 18,
+          "surface_text": "The Book of Mormon",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.7002139091491699,
+          "normalized_form": "the book of mormon",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 0,
+            "end": 18,
+            "text": "The Book of Mormon",
+            "label": "concept",
+            "score": 0.7002139091491699
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 0,
+          "end": 18,
+          "surface_text": "The Book of Mormon",
+          "ner_label_hint": "OBJECT",
+          "score": 0.6741516590118408,
+          "normalized_form": "the book of mormon",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 0,
+            "end": 18,
+            "text": "The Book of Mormon",
+            "label": "object",
+            "score": 0.6741516590118408
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:4dec9fdb8a4286a57789d0ef25935187814f32a78530f9dbdce6d0638983d301",
+      "document_id": "W4312422299",
+      "start": 4,
+      "end": 18,
+      "surface_text": "Book of Mormon",
+      "entity_types": [
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "book of mormon"
+      ],
+      "confidence": 0.6106027364730835,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 4,
+          "end": 18,
+          "surface_text": "Book of Mormon",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.6106027364730835,
+          "normalized_form": "book of mormon",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 4,
+            "end": 18,
+            "text": "Book of Mormon",
+            "label": "concept",
+            "score": 0.6106027364730835
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 4,
+          "end": 18,
+          "surface_text": "Book of Mormon",
+          "ner_label_hint": "OBJECT",
+          "score": 0.5605637431144714,
+          "normalized_form": "book of mormon",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 4,
+            "end": 18,
+            "text": "Book of Mormon",
+            "label": "object",
+            "score": 0.5605637431144714
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:6955c56994de9ab05e34c3dbe51de1414e17c1852ad4a6f0e23686c416871144",
+      "document_id": "W4312422299",
+      "start": 65,
+      "end": 71,
+      "surface_text": "family",
+      "entity_types": [
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "family"
+      ],
+      "confidence": 0.46334078907966614,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 65,
+          "end": 71,
+          "surface_text": "family",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.46334078907966614,
+          "normalized_form": "family",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 65,
+            "end": 71,
+            "text": "family",
+            "label": "concept",
+            "score": 0.46334078907966614
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 65,
+          "end": 71,
+          "surface_text": "family",
+          "ner_label_hint": "OBJECT",
+          "score": 0.3228311836719513,
+          "normalized_form": "family",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 65,
+            "end": 71,
+            "text": "family",
+            "label": "object",
+            "score": 0.3228311836719513
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:ccb8785017e7bb338219cf8db91a19592a77c980d7938393d6e6a054e5621009",
+      "document_id": "W4312422299",
+      "start": 77,
+      "end": 95,
+      "surface_text": "biblical Jerusalem",
+      "entity_types": [
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "biblical jerusalem"
+      ],
+      "confidence": 0.5721348524093628,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 77,
+          "end": 95,
+          "surface_text": "biblical Jerusalem",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.5721348524093628,
+          "normalized_form": "biblical jerusalem",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 77,
+            "end": 95,
+            "text": "biblical Jerusalem",
+            "label": "concept",
+            "score": 0.5721348524093628
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 77,
+          "end": 95,
+          "surface_text": "biblical Jerusalem",
+          "ner_label_hint": "OBJECT",
+          "score": 0.3911251127719879,
+          "normalized_form": "biblical jerusalem",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 77,
+            "end": 95,
+            "text": "biblical Jerusalem",
+            "label": "object",
+            "score": 0.3911251127719879
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:57d80e745725aa7fac3d3f3c67ddf1308d982a1b3b6fa13fec0ba7b34d5cd26d",
+      "document_id": "W4312422299",
+      "start": 86,
+      "end": 95,
+      "surface_text": "Jerusalem",
+      "entity_types": [
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "jerusalem"
+      ],
+      "confidence": 0.47885987162590027,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 86,
+          "end": 95,
+          "surface_text": "Jerusalem",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.47885987162590027,
+          "normalized_form": "jerusalem",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 86,
+            "end": 95,
+            "text": "Jerusalem",
+            "label": "concept",
+            "score": 0.47885987162590027
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 86,
+          "end": 95,
+          "surface_text": "Jerusalem",
+          "ner_label_hint": "OBJECT",
+          "score": 0.3232865631580353,
+          "normalized_form": "jerusalem",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 86,
+            "end": 95,
+            "text": "Jerusalem",
+            "label": "object",
+            "score": 0.3232865631580353
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:e5767096268acd7bfb4f102bbd9e9497c725c27782c55f4db2af6c509295b152",
+      "document_id": "W4312422299",
+      "start": 136,
+      "end": 145,
+      "surface_text": "narrators",
+      "entity_types": [
+        "ACTOR",
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "narrators"
+      ],
+      "confidence": 0.6658204793930054,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 136,
+          "end": 145,
+          "surface_text": "narrators",
+          "ner_label_hint": "ACTOR",
+          "score": 0.6658204793930054,
+          "normalized_form": "narrators",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 136,
+            "end": 145,
+            "text": "narrators",
+            "label": "actor",
+            "score": 0.6658204793930054
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 136,
+          "end": 145,
+          "surface_text": "narrators",
+          "ner_label_hint": "OBJECT",
+          "score": 0.3970038592815399,
+          "normalized_form": "narrators",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 136,
+            "end": 145,
+            "text": "narrators",
+            "label": "object",
+            "score": 0.3970038592815399
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 136,
+          "end": 145,
+          "surface_text": "narrators",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.39457884430885315,
+          "normalized_form": "narrators",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 136,
+            "end": 145,
+            "text": "narrators",
+            "label": "concept",
+            "score": 0.39457884430885315
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:4c11bd1ecad1ea894c2adb958db22f5dd3aa8485fc24070422ddeee4056c53c8",
+      "document_id": "W4312422299",
+      "start": 154,
+      "end": 164,
+      "surface_text": "title page",
+      "entity_types": [
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "title page"
+      ],
+      "confidence": 0.3620072305202484,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 154,
+          "end": 164,
+          "surface_text": "title page",
+          "ner_label_hint": "OBJECT",
+          "score": 0.3620072305202484,
+          "normalized_form": "title page",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 154,
+            "end": 164,
+            "text": "title page",
+            "label": "object",
+            "score": 0.3620072305202484
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 154,
+          "end": 164,
+          "surface_text": "title page",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.3041709065437317,
+          "normalized_form": "title page",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 154,
+            "end": 164,
+            "text": "title page",
+            "label": "concept",
+            "score": 0.3041709065437317
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:91817fd77a9f3b2ca806734985cf61d0bc1f754ff3f0a5fb1592c642f44962f0",
+      "document_id": "W4312422299",
+      "start": 210,
+      "end": 224,
+      "surface_text": "Nephite people",
+      "entity_types": [
+        "ACTOR",
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "nephite people"
+      ],
+      "confidence": 0.6274762153625488,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 210,
+          "end": 224,
+          "surface_text": "Nephite people",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.6274762153625488,
+          "normalized_form": "nephite people",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 210,
+            "end": 224,
+            "text": "Nephite people",
+            "label": "concept",
+            "score": 0.6274762153625488
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 210,
+          "end": 224,
+          "surface_text": "Nephite people",
+          "ner_label_hint": "ACTOR",
+          "score": 0.6030470132827759,
+          "normalized_form": "nephite people",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 210,
+            "end": 224,
+            "text": "Nephite people",
+            "label": "actor",
+            "score": 0.6030470132827759
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 210,
+          "end": 224,
+          "surface_text": "Nephite people",
+          "ner_label_hint": "OBJECT",
+          "score": 0.4041292667388916,
+          "normalized_form": "nephite people",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 210,
+            "end": 224,
+            "text": "Nephite people",
+            "label": "object",
+            "score": 0.4041292667388916
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:74fe0e3b5d4a4a5a3e8047bcf5d60427fd29ad15bafe50ed7aa35f82a38da5e4",
+      "document_id": "W4312422299",
+      "start": 226,
+      "end": 245,
+      "surface_text": "descendants of Lehi",
+      "entity_types": [
+        "ACTOR"
+      ],
+      "normalized_forms": [
+        "descendants of lehi"
+      ],
+      "confidence": 0.42338642477989197,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 226,
+          "end": 245,
+          "surface_text": "descendants of Lehi",
+          "ner_label_hint": "ACTOR",
+          "score": 0.42338642477989197,
+          "normalized_form": "descendants of lehi",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 226,
+            "end": 245,
+            "text": "descendants of Lehi",
+            "label": "actor",
+            "score": 0.42338642477989197
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:90f4ae579737d612fa333d6472c18a9b83a358184634251e19d40d5e6da27df8",
+      "document_id": "W4312422299",
+      "start": 241,
+      "end": 245,
+      "surface_text": "Lehi",
+      "entity_types": [
+        "ACTOR",
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "lehi"
+      ],
+      "confidence": 0.8747159242630005,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 241,
+          "end": 245,
+          "surface_text": "Lehi",
+          "ner_label_hint": "ACTOR",
+          "score": 0.8747159242630005,
+          "normalized_form": "lehi",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 241,
+            "end": 245,
+            "text": "Lehi",
+            "label": "actor",
+            "score": 0.8747159242630005
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 241,
+          "end": 245,
+          "surface_text": "Lehi",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.5524647235870361,
+          "normalized_form": "lehi",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 241,
+            "end": 245,
+            "text": "Lehi",
+            "label": "concept",
+            "score": 0.5524647235870361
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 241,
+          "end": 245,
+          "surface_text": "Lehi",
+          "ner_label_hint": "OBJECT",
+          "score": 0.5377721190452576,
+          "normalized_form": "lehi",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 241,
+            "end": 245,
+            "text": "Lehi",
+            "label": "object",
+            "score": 0.5377721190452576
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:21620554396c00f2d5800d2ad66f7f3dc393143832b389a6a50db064a7b0d790",
+      "document_id": "W4312422299",
+      "start": 255,
+      "end": 271,
+      "surface_text": "commanded by God",
+      "entity_types": [
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "commanded by god"
+      ],
+      "confidence": 0.5974555611610413,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 255,
+          "end": 271,
+          "surface_text": "commanded by God",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.5974555611610413,
+          "normalized_form": "commanded by god",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 255,
+            "end": 271,
+            "text": "commanded by God",
+            "label": "concept",
+            "score": 0.5974555611610413
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 255,
+          "end": 271,
+          "surface_text": "commanded by God",
+          "ner_label_hint": "OBJECT",
+          "score": 0.5966581702232361,
+          "normalized_form": "commanded by god",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 255,
+            "end": 271,
+            "text": "commanded by God",
+            "label": "object",
+            "score": 0.5966581702232361
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:03fb82dbde693602b45fad31585063d57003f0664ca49539a7e3b21750481ab7",
+      "document_id": "W4312422299",
+      "start": 268,
+      "end": 271,
+      "surface_text": "God",
+      "entity_types": [
+        "ACTOR",
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "god"
+      ],
+      "confidence": 0.6890802383422852,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 268,
+          "end": 271,
+          "surface_text": "God",
+          "ner_label_hint": "ACTOR",
+          "score": 0.6890802383422852,
+          "normalized_form": "god",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 268,
+            "end": 271,
+            "text": "God",
+            "label": "actor",
+            "score": 0.6890802383422852
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 268,
+          "end": 271,
+          "surface_text": "God",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.5612699389457703,
+          "normalized_form": "god",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 268,
+            "end": 271,
+            "text": "God",
+            "label": "concept",
+            "score": 0.5612699389457703
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 268,
+          "end": 271,
+          "surface_text": "God",
+          "ner_label_hint": "OBJECT",
+          "score": 0.5307235717773438,
+          "normalized_form": "god",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 268,
+            "end": 271,
+            "text": "God",
+            "label": "object",
+            "score": 0.5307235717773438
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:5058a5fbbcf710beb258b5ea0c3c4f4014ad0f9fbe87515945c40ad15c246c5d",
+      "document_id": "W4312422299",
+      "start": 275,
+      "end": 290,
+      "surface_text": "leave Jerusalem",
+      "entity_types": [
+        "CONCEPT"
+      ],
+      "normalized_forms": [
+        "leave jerusalem"
+      ],
+      "confidence": 0.3078274726867676,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 275,
+          "end": 290,
+          "surface_text": "leave Jerusalem",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.3078274726867676,
+          "normalized_form": "leave jerusalem",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 275,
+            "end": 290,
+            "text": "leave Jerusalem",
+            "label": "concept",
+            "score": 0.3078274726867676
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d645ca76abde19d9c147501d106ee280f4c5d1474f7b0622e7357801bcea7a7e",
+      "document_id": "W4312422299",
+      "start": 324,
+      "end": 335,
+      "surface_text": "destruction",
+      "entity_types": [
+        "CONCEPT",
+        "CONDITION",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "destruction"
+      ],
+      "confidence": 0.8238310813903809,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 324,
+          "end": 335,
+          "surface_text": "destruction",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.8238310813903809,
+          "normalized_form": "destruction",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 324,
+            "end": 335,
+            "text": "destruction",
+            "label": "concept",
+            "score": 0.8238310813903809
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 324,
+          "end": 335,
+          "surface_text": "destruction",
+          "ner_label_hint": "CONDITION",
+          "score": 0.5737790465354919,
+          "normalized_form": "destruction",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 324,
+            "end": 335,
+            "text": "destruction",
+            "label": "condition",
+            "score": 0.5737790465354919
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 324,
+          "end": 335,
+          "surface_text": "destruction",
+          "ner_label_hint": "OBJECT",
+          "score": 0.4723818004131317,
+          "normalized_form": "destruction",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 324,
+            "end": 335,
+            "text": "destruction",
+            "label": "object",
+            "score": 0.4723818004131317
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:116220891997c18206788e7f930ccf6e526640f55b3603a2ab021a242eeb5f7e",
+      "document_id": "W4312422299",
+      "start": 347,
+      "end": 354,
+      "surface_text": "command",
+      "entity_types": [
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "command"
+      ],
+      "confidence": 0.4485638737678528,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 347,
+          "end": 354,
+          "surface_text": "command",
+          "ner_label_hint": "OBJECT",
+          "score": 0.4485638737678528,
+          "normalized_form": "command",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 347,
+            "end": 354,
+            "text": "command",
+            "label": "object",
+            "score": 0.4485638737678528
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 347,
+          "end": 354,
+          "surface_text": "command",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.44248512387275696,
+          "normalized_form": "command",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 347,
+            "end": 354,
+            "text": "command",
+            "label": "concept",
+            "score": 0.44248512387275696
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:380be512069d65ce619c84c966cdea83c9fda5b87fc5a0d77f0dcc4ce5af9230",
+      "document_id": "W4312422299",
+      "start": 356,
+      "end": 364,
+      "surface_text": "the text",
+      "entity_types": [
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "the text"
+      ],
+      "confidence": 0.4250500798225403,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 356,
+          "end": 364,
+          "surface_text": "the text",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.4250500798225403,
+          "normalized_form": "the text",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 356,
+            "end": 364,
+            "text": "the text",
+            "label": "concept",
+            "score": 0.4250500798225403
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 356,
+          "end": 364,
+          "surface_text": "the text",
+          "ner_label_hint": "OBJECT",
+          "score": 0.39077919721603394,
+          "normalized_form": "the text",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 356,
+            "end": 364,
+            "text": "the text",
+            "label": "object",
+            "score": 0.39077919721603394
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:6ba6c52dd15c39316dcc955719af6a27c3cfac09ed895d66a7eeca2bfab44f18",
+      "document_id": "W4312422299",
+      "start": 360,
+      "end": 364,
+      "surface_text": "text",
+      "entity_types": [
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "text"
+      ],
+      "confidence": 0.6860306262969971,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 360,
+          "end": 364,
+          "surface_text": "text",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.6860306262969971,
+          "normalized_form": "text",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 360,
+            "end": 364,
+            "text": "text",
+            "label": "concept",
+            "score": 0.6860306262969971
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 360,
+          "end": 364,
+          "surface_text": "text",
+          "ner_label_hint": "OBJECT",
+          "score": 0.5937452912330627,
+          "normalized_form": "text",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 360,
+            "end": 364,
+            "text": "text",
+            "label": "object",
+            "score": 0.5937452912330627
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:9d2b4c4df91cf40792feb08ac5e739c24d54535bfde68ac0dca98ac241451660",
+      "document_id": "W4312422299",
+      "start": 380,
+      "end": 388,
+      "surface_text": "movement",
+      "entity_types": [
+        "CONCEPT",
+        "OBJECT",
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "movement"
+      ],
+      "confidence": 0.5750990509986877,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 380,
+          "end": 388,
+          "surface_text": "movement",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.5750990509986877,
+          "normalized_form": "movement",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 380,
+            "end": 388,
+            "text": "movement",
+            "label": "concept",
+            "score": 0.5750990509986877
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 380,
+          "end": 388,
+          "surface_text": "movement",
+          "ner_label_hint": "OBJECT",
+          "score": 0.3642181158065796,
+          "normalized_form": "movement",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 380,
+            "end": 388,
+            "text": "movement",
+            "label": "object",
+            "score": 0.3642181158065796
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 380,
+          "end": 388,
+          "surface_text": "movement",
+          "ner_label_hint": "PROCESS",
+          "score": 0.30302664637565613,
+          "normalized_form": "movement",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 380,
+            "end": 388,
+            "text": "movement",
+            "label": "process",
+            "score": 0.30302664637565613
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a7cabee993e47f2086401c5c307167eddb40f210ad2016a64d6f2623f0962fd0",
+      "document_id": "W4312422299",
+      "start": 380,
+      "end": 399,
+      "surface_text": "movement and escape",
+      "entity_types": [
+        "CONCEPT",
+        "OBJECT",
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "movement and escape"
+      ],
+      "confidence": 0.6529160737991333,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 380,
+          "end": 399,
+          "surface_text": "movement and escape",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.6529160737991333,
+          "normalized_form": "movement and escape",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 380,
+            "end": 399,
+            "text": "movement and escape",
+            "label": "concept",
+            "score": 0.6529160737991333
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 380,
+          "end": 399,
+          "surface_text": "movement and escape",
+          "ner_label_hint": "OBJECT",
+          "score": 0.4380143880844116,
+          "normalized_form": "movement and escape",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 380,
+            "end": 399,
+            "text": "movement and escape",
+            "label": "object",
+            "score": 0.4380143880844116
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 380,
+          "end": 399,
+          "surface_text": "movement and escape",
+          "ner_label_hint": "PROCESS",
+          "score": 0.4190012514591217,
+          "normalized_form": "movement and escape",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 380,
+            "end": 399,
+            "text": "movement and escape",
+            "label": "process",
+            "score": 0.4190012514591217
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a8438fe731392c7f76a05bcb0512808a75b9bdfed9875079c7aa7f3a8e01a349",
+      "document_id": "W4312422299",
+      "start": 393,
+      "end": 399,
+      "surface_text": "escape",
+      "entity_types": [
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "escape"
+      ],
+      "confidence": 0.6011349558830261,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 393,
+          "end": 399,
+          "surface_text": "escape",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.6011349558830261,
+          "normalized_form": "escape",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 393,
+            "end": 399,
+            "text": "escape",
+            "label": "concept",
+            "score": 0.6011349558830261
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 393,
+          "end": 399,
+          "surface_text": "escape",
+          "ner_label_hint": "OBJECT",
+          "score": 0.39275288581848145,
+          "normalized_form": "escape",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 393,
+            "end": 399,
+            "text": "escape",
+            "label": "object",
+            "score": 0.39275288581848145
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:fb41271f712e7fa9a3f927a28b75235d8c37e8409ff2ee69e8774aa6cd45fdf5",
+      "document_id": "W4312422299",
+      "start": 413,
+      "end": 425,
+      "surface_text": "Nephite race",
+      "entity_types": [
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "nephite race"
+      ],
+      "confidence": 0.7482213377952576,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 413,
+          "end": 425,
+          "surface_text": "Nephite race",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.7482213377952576,
+          "normalized_form": "nephite race",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 413,
+            "end": 425,
+            "text": "Nephite race",
+            "label": "concept",
+            "score": 0.7482213377952576
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 413,
+          "end": 425,
+          "surface_text": "Nephite race",
+          "ner_label_hint": "OBJECT",
+          "score": 0.4618239998817444,
+          "normalized_form": "nephite race",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 413,
+            "end": 425,
+            "text": "Nephite race",
+            "label": "object",
+            "score": 0.4618239998817444
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:55de8147bf07a36921c8b3426803f4d9153279b8a9b6e8350b155f3b0b3a8604",
+      "document_id": "W4312422299",
+      "start": 476,
+      "end": 497,
+      "surface_text": "avoiding annihilation",
+      "entity_types": [
+        "CONCEPT"
+      ],
+      "normalized_forms": [
+        "avoiding annihilation"
+      ],
+      "confidence": 0.4047715663909912,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 476,
+          "end": 497,
+          "surface_text": "avoiding annihilation",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.4047715663909912,
+          "normalized_form": "avoiding annihilation",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 476,
+            "end": 497,
+            "text": "avoiding annihilation",
+            "label": "concept",
+            "score": 0.4047715663909912
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:fea033e1822fe725e85b527cf1879e9b83ccb5b179d893049076872d48a3af16",
+      "document_id": "W4312422299",
+      "start": 485,
+      "end": 497,
+      "surface_text": "annihilation",
+      "entity_types": [
+        "CONCEPT"
+      ],
+      "normalized_forms": [
+        "annihilation"
+      ],
+      "confidence": 0.4456929564476013,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 485,
+          "end": 497,
+          "surface_text": "annihilation",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.4456929564476013,
+          "normalized_form": "annihilation",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 485,
+            "end": 497,
+            "text": "annihilation",
+            "label": "concept",
+            "score": 0.4456929564476013
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:aaf72b0c489808c065ce0c466aa42c74381e7fc794c8ad43890b7ed37f1bb858",
+      "document_id": "W4312422299",
+      "start": 529,
+      "end": 541,
+      "surface_text": "reproduction",
+      "entity_types": [
+        "CONCEPT",
+        "OBJECT",
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "reproduction"
+      ],
+      "confidence": 0.7841429710388184,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 529,
+          "end": 541,
+          "surface_text": "reproduction",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.7841429710388184,
+          "normalized_form": "reproduction",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 529,
+            "end": 541,
+            "text": "reproduction",
+            "label": "concept",
+            "score": 0.7841429710388184
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 529,
+          "end": 541,
+          "surface_text": "reproduction",
+          "ner_label_hint": "PROCESS",
+          "score": 0.7287173867225647,
+          "normalized_form": "reproduction",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 529,
+            "end": 541,
+            "text": "reproduction",
+            "label": "process",
+            "score": 0.7287173867225647
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 529,
+          "end": 541,
+          "surface_text": "reproduction",
+          "ner_label_hint": "OBJECT",
+          "score": 0.4545918107032776,
+          "normalized_form": "reproduction",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 529,
+            "end": 541,
+            "text": "reproduction",
+            "label": "object",
+            "score": 0.4545918107032776
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:c4bfdce3aa35c2189960836ffb3f6511c0b7e9870731adbba512c5c8c10cd255",
+      "document_id": "W4312422299",
+      "start": 529,
+      "end": 590,
+      "surface_text": "reproduction: How do the Nephites reproduce the people of God",
+      "entity_types": [
+        "CONCEPT"
+      ],
+      "normalized_forms": [
+        "reproduction: how do the nephites reproduce the people of god"
+      ],
+      "confidence": 0.37146469950675964,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 529,
+          "end": 590,
+          "surface_text": "reproduction: How do the Nephites reproduce the people of God",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.37146469950675964,
+          "normalized_form": "reproduction: how do the nephites reproduce the people of god",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 529,
+            "end": 590,
+            "text": "reproduction: How do the Nephites reproduce the people of God",
+            "label": "concept",
+            "score": 0.37146469950675964
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:4df0e2163bf665aaabdfa962bf14e155e1c2f86138f92cd0b2672a6c9f87b0ad",
+      "document_id": "W4312422299",
+      "start": 554,
+      "end": 562,
+      "surface_text": "Nephites",
+      "entity_types": [
+        "ACTOR",
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "nephites"
+      ],
+      "confidence": 0.858245313167572,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 554,
+          "end": 562,
+          "surface_text": "Nephites",
+          "ner_label_hint": "ACTOR",
+          "score": 0.858245313167572,
+          "normalized_form": "nephites",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 554,
+            "end": 562,
+            "text": "Nephites",
+            "label": "actor",
+            "score": 0.858245313167572
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 554,
+          "end": 562,
+          "surface_text": "Nephites",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.6069421172142029,
+          "normalized_form": "nephites",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 554,
+            "end": 562,
+            "text": "Nephites",
+            "label": "concept",
+            "score": 0.6069421172142029
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 554,
+          "end": 562,
+          "surface_text": "Nephites",
+          "ner_label_hint": "OBJECT",
+          "score": 0.4482470452785492,
+          "normalized_form": "nephites",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 554,
+            "end": 562,
+            "text": "Nephites",
+            "label": "object",
+            "score": 0.4482470452785492
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:ed1a4612f2872008865c3f16709d2e726691ddf7cfcdfbfc9c0e4a3a17194903",
+      "document_id": "W4312422299",
+      "start": 563,
+      "end": 590,
+      "surface_text": "reproduce the people of God",
+      "entity_types": [
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "reproduce the people of god"
+      ],
+      "confidence": 0.342037558555603,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 563,
+          "end": 590,
+          "surface_text": "reproduce the people of God",
+          "ner_label_hint": "PROCESS",
+          "score": 0.342037558555603,
+          "normalized_form": "reproduce the people of god",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 563,
+            "end": 590,
+            "text": "reproduce the people of God",
+            "label": "process",
+            "score": 0.342037558555603
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:928faf5ee94db8b2dedae3e783afacd24dc42061dc7ca196212808c12de55940",
+      "document_id": "W4312422299",
+      "start": 577,
+      "end": 590,
+      "surface_text": "people of God",
+      "entity_types": [
+        "ACTOR",
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "people of god"
+      ],
+      "confidence": 0.6149598956108093,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 577,
+          "end": 590,
+          "surface_text": "people of God",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.6149598956108093,
+          "normalized_form": "people of god",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 577,
+            "end": 590,
+            "text": "people of God",
+            "label": "concept",
+            "score": 0.6149598956108093
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 577,
+          "end": 590,
+          "surface_text": "people of God",
+          "ner_label_hint": "OBJECT",
+          "score": 0.38049569725990295,
+          "normalized_form": "people of god",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 577,
+            "end": 590,
+            "text": "people of God",
+            "label": "object",
+            "score": 0.38049569725990295
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 577,
+          "end": 590,
+          "surface_text": "people of God",
+          "ner_label_hint": "ACTOR",
+          "score": 0.33355242013931274,
+          "normalized_form": "people of god",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 577,
+            "end": 590,
+            "text": "people of God",
+            "label": "actor",
+            "score": 0.33355242013931274
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:2cd6dbfacbebd7c0c995ee13783fcee30cfc34bc20f17ab13196f29abdcb3699",
+      "document_id": "W4312422299",
+      "start": 594,
+      "end": 616,
+      "surface_text": "spread the word of God",
+      "entity_types": [
+        "CONCEPT",
+        "OBJECT",
+        "PROCESS",
+        "TASK"
+      ],
+      "normalized_forms": [
+        "spread the word of god"
+      ],
+      "confidence": 0.8544750213623047,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 594,
+          "end": 616,
+          "surface_text": "spread the word of God",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.8544750213623047,
+          "normalized_form": "spread the word of god",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 594,
+            "end": 616,
+            "text": "spread the word of God",
+            "label": "concept",
+            "score": 0.8544750213623047
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 594,
+          "end": 616,
+          "surface_text": "spread the word of God",
+          "ner_label_hint": "TASK",
+          "score": 0.7683587670326233,
+          "normalized_form": "spread the word of god",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 594,
+            "end": 616,
+            "text": "spread the word of God",
+            "label": "task",
+            "score": 0.7683587670326233
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 594,
+          "end": 616,
+          "surface_text": "spread the word of God",
+          "ner_label_hint": "OBJECT",
+          "score": 0.5812498927116394,
+          "normalized_form": "spread the word of god",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 594,
+            "end": 616,
+            "text": "spread the word of God",
+            "label": "object",
+            "score": 0.5812498927116394
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 594,
+          "end": 616,
+          "surface_text": "spread the word of God",
+          "ner_label_hint": "PROCESS",
+          "score": 0.4122858941555023,
+          "normalized_form": "spread the word of god",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 594,
+            "end": 616,
+            "text": "spread the word of God",
+            "label": "process",
+            "score": 0.4122858941555023
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a793913f255a1fd871e76bc42bf907b2d8fb8ac958526a584ed2dffa05e3875c",
+      "document_id": "W4312422299",
+      "start": 605,
+      "end": 616,
+      "surface_text": "word of God",
+      "entity_types": [
+        "CONCEPT"
+      ],
+      "normalized_forms": [
+        "word of god"
+      ],
+      "confidence": 0.3741278648376465,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4312422299",
+          "start": 605,
+          "end": 616,
+          "surface_text": "word of God",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.3741278648376465,
+          "normalized_form": "word of god",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "revision_id": "sha256:fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4312422299",
+            "doi": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "landing_page_url": "https://doi.org/10.5406/jbookmormstud2.27.2018.0187",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-27T15:51:10.671819",
+            "source_url": "https://openalex.org/W4312422299",
+            "text_sha256": "fe5c937534750dc1a8835106222989c570bd7f2f820233f97e69c429a61c4c52"
+          },
+          "raw_prediction": {
+            "start": 605,
+            "end": 616,
+            "text": "word of God",
+            "label": "concept",
+            "score": 0.3741278648376465
+          }
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "triple_id": "t:da500fadb7cc73ea98c2f235f040bdb6c79a847a3ba5d9023d9a918388fa2713",
+      "document_id": "W4312422299",
+      "head_id": "e:4df0e2163bf665aaabdfa962bf14e155e1c2f86138f92cd0b2672a6c9f87b0ad",
+      "tail_id": "e:ed1a4612f2872008865c3f16709d2e726691ddf7cfcdfbfc9c0e4a3a17194903",
+      "head_types": [
+        "ACTOR",
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "tail_types": [
+        "PROCESS"
+      ],
+      "relation_type": "PERFORMS",
+      "confidence": 0.7704083323478699,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:ec1b112260589ff9754a876bdd4d8717a90df550484c3c22de46db0782c6c7d3",
+          "document_id": "W4312422299",
+          "start": 0,
+          "end": 617,
+          "text": "The Book of Mormon presents a tale of the plight and flight of a family from biblical Jerusalem, stitched together through a variety of narrators. As the title page claims, this book contains the record of the Nephite people, descendants of Lehi, who was commanded by God to leave Jerusalem in order to save his family from destruction. From that command, the text becomes one of movement and escape, so that the Nephite race can avoid destruction. As this story is one about avoiding annihilation, it necessarily becomes one of reproduction: How do the Nephites reproduce the people of God to spread the word of God?",
+          "entity_ids": []
+        }
+      ]
+    }
+  ],
+  "raw_relation_count": 1,
+  "seconds": 4.296793499961495
+}

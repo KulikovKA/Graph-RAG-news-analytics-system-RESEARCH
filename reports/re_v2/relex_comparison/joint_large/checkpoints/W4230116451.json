@@ -1,0 +1,2348 @@
+{
+  "fingerprint": "c79845cf50e55b434eab0bcd7d45fb6779c27e093e96fa9a77b4c2f1b311bf99",
+  "document_id": "W4230116451",
+  "model": "knowledgator/gliner-relex-large-v1.0",
+  "mode": "joint",
+  "raw_windows": [
+    {
+      "window": {
+        "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+        "document_id": "W4230116451",
+        "start": 0,
+        "end": 791,
+        "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+        "entity_ids": []
+      },
+      "entities": [
+        {
+          "start": 10,
+          "end": 36,
+          "text": "advanced computing systems",
+          "label": "object",
+          "score": 0.5328105688095093
+        },
+        {
+          "start": 10,
+          "end": 36,
+          "text": "advanced computing systems",
+          "label": "concept",
+          "score": 0.3311000466346741
+        },
+        {
+          "start": 107,
+          "end": 122,
+          "text": "biomedical data",
+          "label": "data resource",
+          "score": 0.8499624729156494
+        },
+        {
+          "start": 107,
+          "end": 122,
+          "text": "biomedical data",
+          "label": "condition",
+          "score": 0.43180009722709656
+        },
+        {
+          "start": 185,
+          "end": 204,
+          "text": "real-time diagnosis",
+          "label": "task",
+          "score": 0.9407013058662415
+        },
+        {
+          "start": 185,
+          "end": 204,
+          "text": "real-time diagnosis",
+          "label": "process",
+          "score": 0.837044894695282
+        },
+        {
+          "start": 217,
+          "end": 251,
+          "text": "complex computational environments",
+          "label": "condition",
+          "score": 0.47108179330825806
+        },
+        {
+          "start": 217,
+          "end": 251,
+          "text": "complex computational environments",
+          "label": "object",
+          "score": 0.42487940192222595
+        },
+        {
+          "start": 296,
+          "end": 321,
+          "text": "computationally expensive",
+          "label": "attribute",
+          "score": 0.5128146409988403
+        },
+        {
+          "start": 296,
+          "end": 338,
+          "text": "computationally expensive processing steps",
+          "label": "task",
+          "score": 0.42236942052841187
+        },
+        {
+          "start": 322,
+          "end": 338,
+          "text": "processing steps",
+          "label": "task",
+          "score": 0.4749566316604614
+        },
+        {
+          "start": 322,
+          "end": 338,
+          "text": "processing steps",
+          "label": "process",
+          "score": 0.34126824140548706
+        },
+        {
+          "start": 344,
+          "end": 377,
+          "text": "distributed cloud e-health system",
+          "label": "object",
+          "score": 0.34522926807403564
+        },
+        {
+          "start": 392,
+          "end": 417,
+          "text": "graphics processing units",
+          "label": "object",
+          "score": 0.46910789608955383
+        },
+        {
+          "start": 392,
+          "end": 424,
+          "text": "graphics processing units (GPUs)",
+          "label": "object",
+          "score": 0.3080541491508484
+        },
+        {
+          "start": 419,
+          "end": 423,
+          "text": "GPUs",
+          "label": "object",
+          "score": 0.3119530975818634
+        },
+        {
+          "start": 451,
+          "end": 477,
+          "text": "magnetic resonance imaging",
+          "label": "condition",
+          "score": 0.7160467505455017
+        },
+        {
+          "start": 451,
+          "end": 483,
+          "text": "magnetic resonance imaging (MRI)",
+          "label": "condition",
+          "score": 0.6744443774223328
+        },
+        {
+          "start": 451,
+          "end": 477,
+          "text": "magnetic resonance imaging",
+          "label": "object",
+          "score": 0.5761052370071411
+        },
+        {
+          "start": 451,
+          "end": 483,
+          "text": "magnetic resonance imaging (MRI)",
+          "label": "object",
+          "score": 0.512381374835968
+        },
+        {
+          "start": 489,
+          "end": 523,
+          "text": "improving the quality of denoising",
+          "label": "task",
+          "score": 0.305733859539032
+        },
+        {
+          "start": 503,
+          "end": 523,
+          "text": "quality of denoising",
+          "label": "task",
+          "score": 0.4596640467643738
+        },
+        {
+          "start": 514,
+          "end": 523,
+          "text": "denoising",
+          "label": "task",
+          "score": 0.8327507376670837
+        },
+        {
+          "start": 514,
+          "end": 523,
+          "text": "denoising",
+          "label": "process",
+          "score": 0.7582311630249023
+        },
+        {
+          "start": 583,
+          "end": 605,
+          "text": "GPU parallel algorithm",
+          "label": "method",
+          "score": 0.9625101685523987
+        },
+        {
+          "start": 583,
+          "end": 605,
+          "text": "GPU parallel algorithm",
+          "label": "object",
+          "score": 0.511936366558075
+        },
+        {
+          "start": 583,
+          "end": 605,
+          "text": "GPU parallel algorithm",
+          "label": "process",
+          "score": 0.49194657802581787
+        },
+        {
+          "start": 583,
+          "end": 605,
+          "text": "GPU parallel algorithm",
+          "label": "concept",
+          "score": 0.3831905424594879
+        },
+        {
+          "start": 619,
+          "end": 670,
+          "text": "optimised blockwise non-local means (OB-NLM) method",
+          "label": "method",
+          "score": 0.5357963442802429
+        },
+        {
+          "start": 629,
+          "end": 670,
+          "text": "blockwise non-local means (OB-NLM) method",
+          "label": "method",
+          "score": 0.7531383037567139
+        },
+        {
+          "start": 629,
+          "end": 654,
+          "text": "blockwise non-local means",
+          "label": "method",
+          "score": 0.7259698510169983
+        },
+        {
+          "start": 656,
+          "end": 662,
+          "text": "OB-NLM",
+          "label": "method",
+          "score": 0.7773869633674622
+        },
+        {
+          "start": 672,
+          "end": 692,
+          "text": "Experimental results",
+          "label": "result",
+          "score": 0.8763576745986938
+        },
+        {
+          "start": 672,
+          "end": 692,
+          "text": "Experimental results",
+          "label": "condition",
+          "score": 0.47904452681541443
+        },
+        {
+          "start": 706,
+          "end": 729,
+          "text": "significant improvement",
+          "label": "task",
+          "score": 0.546168327331543
+        },
+        {
+          "start": 706,
+          "end": 729,
+          "text": "significant improvement",
+          "label": "result",
+          "score": 0.49302375316619873
+        },
+        {
+          "start": 733,
+          "end": 763,
+          "text": "healthcare processing practice",
+          "label": "process",
+          "score": 0.7425433993339539
+        },
+        {
+          "start": 733,
+          "end": 763,
+          "text": "healthcare processing practice",
+          "label": "task",
+          "score": 0.6453051567077637
+        },
+        {
+          "start": 733,
+          "end": 763,
+          "text": "healthcare processing practice",
+          "label": "condition",
+          "score": 0.5383802652359009
+        },
+        {
+          "start": 733,
+          "end": 763,
+          "text": "healthcare processing practice",
+          "label": "concept",
+          "score": 0.5284535884857178
+        },
+        {
+          "start": 733,
+          "end": 763,
+          "text": "healthcare processing practice",
+          "label": "object",
+          "score": 0.4718615710735321
+        },
+        {
+          "start": 776,
+          "end": 790,
+          "text": "execution time",
+          "label": "attribute",
+          "score": 0.9031783938407898
+        },
+        {
+          "start": 776,
+          "end": 790,
+          "text": "execution time",
+          "label": "condition",
+          "score": 0.4668399691581726
+        },
+        {
+          "start": 776,
+          "end": 790,
+          "text": "execution time",
+          "label": "task",
+          "score": 0.32649490237236023
+        }
+      ],
+      "predictions": [
+        {
+          "head": {
+            "start": 10,
+            "end": 36,
+            "text": "advanced computing systems",
+            "type": "object",
+            "entity_idx": 0
+          },
+          "tail": {
+            "start": 107,
+            "end": 122,
+            "text": "biomedical data",
+            "type": "data resource",
+            "entity_idx": 2
+          },
+          "relation": "produces",
+          "score": 0.7729268670082092
+        },
+        {
+          "head": {
+            "start": 392,
+            "end": 424,
+            "text": "graphics processing units (GPUs)",
+            "type": "object",
+            "entity_idx": 14
+          },
+          "tail": {
+            "start": 322,
+            "end": 338,
+            "text": "processing steps",
+            "type": "task",
+            "entity_idx": 10
+          },
+          "relation": "used for",
+          "score": 0.702842652797699
+        },
+        {
+          "head": {
+            "start": 583,
+            "end": 605,
+            "text": "GPU parallel algorithm",
+            "type": "method",
+            "entity_idx": 24
+          },
+          "tail": {
+            "start": 619,
+            "end": 670,
+            "text": "optimised blockwise non-local means (OB-NLM) method",
+            "type": "method",
+            "entity_idx": 28
+          },
+          "relation": "derived from",
+          "score": 0.7810620069503784
+        },
+        {
+          "head": {
+            "start": 583,
+            "end": 605,
+            "text": "GPU parallel algorithm",
+            "type": "method",
+            "entity_idx": 24
+          },
+          "tail": {
+            "start": 629,
+            "end": 654,
+            "text": "blockwise non-local means",
+            "type": "method",
+            "entity_idx": 30
+          },
+          "relation": "derived from",
+          "score": 0.8998945355415344
+        },
+        {
+          "head": {
+            "start": 583,
+            "end": 605,
+            "text": "GPU parallel algorithm",
+            "type": "method",
+            "entity_idx": 24
+          },
+          "tail": {
+            "start": 629,
+            "end": 670,
+            "text": "blockwise non-local means (OB-NLM) method",
+            "type": "method",
+            "entity_idx": 29
+          },
+          "relation": "derived from",
+          "score": 0.9207437634468079
+        },
+        {
+          "head": {
+            "start": 583,
+            "end": 605,
+            "text": "GPU parallel algorithm",
+            "type": "method",
+            "entity_idx": 24
+          },
+          "tail": {
+            "start": 656,
+            "end": 662,
+            "text": "OB-NLM",
+            "type": "method",
+            "entity_idx": 31
+          },
+          "relation": "derived from",
+          "score": 0.865771472454071
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "e:1c69d063f1ff9152c495a7a1748627e29c8ac48f5bd4740383b11c0afd7ba7de",
+      "document_id": "W4230116451",
+      "start": 10,
+      "end": 36,
+      "surface_text": "advanced computing systems",
+      "entity_types": [
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "advanced computing systems"
+      ],
+      "confidence": 0.5328105688095093,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 10,
+          "end": 36,
+          "surface_text": "advanced computing systems",
+          "ner_label_hint": "OBJECT",
+          "score": 0.5328105688095093,
+          "normalized_form": "advanced computing systems",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 10,
+            "end": 36,
+            "text": "advanced computing systems",
+            "label": "object",
+            "score": 0.5328105688095093
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 10,
+          "end": 36,
+          "surface_text": "advanced computing systems",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.3311000466346741,
+          "normalized_form": "advanced computing systems",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 10,
+            "end": 36,
+            "text": "advanced computing systems",
+            "label": "concept",
+            "score": 0.3311000466346741
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:54f09db3e2d9e7264ffd3fe0c2ccaf4730d4bc539646f506ada5ba9e004f69a8",
+      "document_id": "W4230116451",
+      "start": 107,
+      "end": 122,
+      "surface_text": "biomedical data",
+      "entity_types": [
+        "CONDITION",
+        "DATA_RESOURCE"
+      ],
+      "normalized_forms": [
+        "biomedical data"
+      ],
+      "confidence": 0.8499624729156494,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 107,
+          "end": 122,
+          "surface_text": "biomedical data",
+          "ner_label_hint": "DATA_RESOURCE",
+          "score": 0.8499624729156494,
+          "normalized_form": "biomedical data",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 107,
+            "end": 122,
+            "text": "biomedical data",
+            "label": "data resource",
+            "score": 0.8499624729156494
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 107,
+          "end": 122,
+          "surface_text": "biomedical data",
+          "ner_label_hint": "CONDITION",
+          "score": 0.43180009722709656,
+          "normalized_form": "biomedical data",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 107,
+            "end": 122,
+            "text": "biomedical data",
+            "label": "condition",
+            "score": 0.43180009722709656
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a",
+      "document_id": "W4230116451",
+      "start": 185,
+      "end": 204,
+      "surface_text": "real-time diagnosis",
+      "entity_types": [
+        "PROCESS",
+        "TASK"
+      ],
+      "normalized_forms": [
+        "real-time diagnosis"
+      ],
+      "confidence": 0.9407013058662415,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 185,
+          "end": 204,
+          "surface_text": "real-time diagnosis",
+          "ner_label_hint": "TASK",
+          "score": 0.9407013058662415,
+          "normalized_form": "real-time diagnosis",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 185,
+            "end": 204,
+            "text": "real-time diagnosis",
+            "label": "task",
+            "score": 0.9407013058662415
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 185,
+          "end": 204,
+          "surface_text": "real-time diagnosis",
+          "ner_label_hint": "PROCESS",
+          "score": 0.837044894695282,
+          "normalized_form": "real-time diagnosis",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 185,
+            "end": 204,
+            "text": "real-time diagnosis",
+            "label": "process",
+            "score": 0.837044894695282
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:dfa62891c45caaad0430a5ca197acdc26a2a74011e696e4de73f113b131d97a6",
+      "document_id": "W4230116451",
+      "start": 217,
+      "end": 251,
+      "surface_text": "complex computational environments",
+      "entity_types": [
+        "CONDITION",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "complex computational environments"
+      ],
+      "confidence": 0.47108179330825806,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 217,
+          "end": 251,
+          "surface_text": "complex computational environments",
+          "ner_label_hint": "CONDITION",
+          "score": 0.47108179330825806,
+          "normalized_form": "complex computational environments",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 217,
+            "end": 251,
+            "text": "complex computational environments",
+            "label": "condition",
+            "score": 0.47108179330825806
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 217,
+          "end": 251,
+          "surface_text": "complex computational environments",
+          "ner_label_hint": "OBJECT",
+          "score": 0.42487940192222595,
+          "normalized_form": "complex computational environments",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 217,
+            "end": 251,
+            "text": "complex computational environments",
+            "label": "object",
+            "score": 0.42487940192222595
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:7c7fcd89afc7f81935133fbb3528a123896a76f3f640914781b4a280dd4ea520",
+      "document_id": "W4230116451",
+      "start": 296,
+      "end": 321,
+      "surface_text": "computationally expensive",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "computationally expensive"
+      ],
+      "confidence": 0.5128146409988403,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 296,
+          "end": 321,
+          "surface_text": "computationally expensive",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.5128146409988403,
+          "normalized_form": "computationally expensive",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 296,
+            "end": 321,
+            "text": "computationally expensive",
+            "label": "attribute",
+            "score": 0.5128146409988403
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:518bd63faaf4b8b8d135d67f6da762880cd4cbf067211e0bb019007e050c4408",
+      "document_id": "W4230116451",
+      "start": 296,
+      "end": 338,
+      "surface_text": "computationally expensive processing steps",
+      "entity_types": [
+        "TASK"
+      ],
+      "normalized_forms": [
+        "computationally expensive processing steps"
+      ],
+      "confidence": 0.42236942052841187,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 296,
+          "end": 338,
+          "surface_text": "computationally expensive processing steps",
+          "ner_label_hint": "TASK",
+          "score": 0.42236942052841187,
+          "normalized_form": "computationally expensive processing steps",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 296,
+            "end": 338,
+            "text": "computationally expensive processing steps",
+            "label": "task",
+            "score": 0.42236942052841187
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:8b3c36b55e3849577a5a701dea4abb7b9b900c855790bffe7d43915645e1665f",
+      "document_id": "W4230116451",
+      "start": 322,
+      "end": 338,
+      "surface_text": "processing steps",
+      "entity_types": [
+        "PROCESS",
+        "TASK"
+      ],
+      "normalized_forms": [
+        "processing steps"
+      ],
+      "confidence": 0.4749566316604614,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 322,
+          "end": 338,
+          "surface_text": "processing steps",
+          "ner_label_hint": "TASK",
+          "score": 0.4749566316604614,
+          "normalized_form": "processing steps",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 322,
+            "end": 338,
+            "text": "processing steps",
+            "label": "task",
+            "score": 0.4749566316604614
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 322,
+          "end": 338,
+          "surface_text": "processing steps",
+          "ner_label_hint": "PROCESS",
+          "score": 0.34126824140548706,
+          "normalized_form": "processing steps",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 322,
+            "end": 338,
+            "text": "processing steps",
+            "label": "process",
+            "score": 0.34126824140548706
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:ef0326aa41bb08767db52f38d4dd5da5c39dd6a13f6cb097563e4dd1099e0673",
+      "document_id": "W4230116451",
+      "start": 344,
+      "end": 377,
+      "surface_text": "distributed cloud e-health system",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "distributed cloud e-health system"
+      ],
+      "confidence": 0.34522926807403564,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 344,
+          "end": 377,
+          "surface_text": "distributed cloud e-health system",
+          "ner_label_hint": "OBJECT",
+          "score": 0.34522926807403564,
+          "normalized_form": "distributed cloud e-health system",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 344,
+            "end": 377,
+            "text": "distributed cloud e-health system",
+            "label": "object",
+            "score": 0.34522926807403564
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:1089bf670c142b4a18644fcad47f9074e82420710e0858fbac9c55bf345fcca5",
+      "document_id": "W4230116451",
+      "start": 392,
+      "end": 417,
+      "surface_text": "graphics processing units",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "graphics processing units"
+      ],
+      "confidence": 0.46910789608955383,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 392,
+          "end": 417,
+          "surface_text": "graphics processing units",
+          "ner_label_hint": "OBJECT",
+          "score": 0.46910789608955383,
+          "normalized_form": "graphics processing units",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 392,
+            "end": 417,
+            "text": "graphics processing units",
+            "label": "object",
+            "score": 0.46910789608955383
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:9fe5931155612ce4903b4afb954f82d0386ab3fbeb91b508edc0f3806f1e8627",
+      "document_id": "W4230116451",
+      "start": 392,
+      "end": 424,
+      "surface_text": "graphics processing units (GPUs)",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "graphics processing units (gpus)"
+      ],
+      "confidence": 0.3080541491508484,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 392,
+          "end": 424,
+          "surface_text": "graphics processing units (GPUs)",
+          "ner_label_hint": "OBJECT",
+          "score": 0.3080541491508484,
+          "normalized_form": "graphics processing units (gpus)",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 392,
+            "end": 424,
+            "text": "graphics processing units (GPUs)",
+            "label": "object",
+            "score": 0.3080541491508484
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:81bb2cc6c999f00f45048e46233a85d93c604c510fa962bf1cd78db163978f1f",
+      "document_id": "W4230116451",
+      "start": 419,
+      "end": 423,
+      "surface_text": "GPUs",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "gpus"
+      ],
+      "confidence": 0.3119530975818634,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 419,
+          "end": 423,
+          "surface_text": "GPUs",
+          "ner_label_hint": "OBJECT",
+          "score": 0.3119530975818634,
+          "normalized_form": "gpus",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 419,
+            "end": 423,
+            "text": "GPUs",
+            "label": "object",
+            "score": 0.3119530975818634
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:55f096f9222ef594500635ef0503900d77c3d7a538340168d68a5d3539f65bc5",
+      "document_id": "W4230116451",
+      "start": 451,
+      "end": 477,
+      "surface_text": "magnetic resonance imaging",
+      "entity_types": [
+        "CONDITION",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "magnetic resonance imaging"
+      ],
+      "confidence": 0.7160467505455017,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 451,
+          "end": 477,
+          "surface_text": "magnetic resonance imaging",
+          "ner_label_hint": "CONDITION",
+          "score": 0.7160467505455017,
+          "normalized_form": "magnetic resonance imaging",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 451,
+            "end": 477,
+            "text": "magnetic resonance imaging",
+            "label": "condition",
+            "score": 0.7160467505455017
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 451,
+          "end": 477,
+          "surface_text": "magnetic resonance imaging",
+          "ner_label_hint": "OBJECT",
+          "score": 0.5761052370071411,
+          "normalized_form": "magnetic resonance imaging",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 451,
+            "end": 477,
+            "text": "magnetic resonance imaging",
+            "label": "object",
+            "score": 0.5761052370071411
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:62633e6122fbe836cf019c2ced82b969a66515e263d8bb3a82944c22641fad28",
+      "document_id": "W4230116451",
+      "start": 451,
+      "end": 483,
+      "surface_text": "magnetic resonance imaging (MRI)",
+      "entity_types": [
+        "CONDITION",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "magnetic resonance imaging (mri)"
+      ],
+      "confidence": 0.6744443774223328,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 451,
+          "end": 483,
+          "surface_text": "magnetic resonance imaging (MRI)",
+          "ner_label_hint": "CONDITION",
+          "score": 0.6744443774223328,
+          "normalized_form": "magnetic resonance imaging (mri)",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 451,
+            "end": 483,
+            "text": "magnetic resonance imaging (MRI)",
+            "label": "condition",
+            "score": 0.6744443774223328
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 451,
+          "end": 483,
+          "surface_text": "magnetic resonance imaging (MRI)",
+          "ner_label_hint": "OBJECT",
+          "score": 0.512381374835968,
+          "normalized_form": "magnetic resonance imaging (mri)",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 451,
+            "end": 483,
+            "text": "magnetic resonance imaging (MRI)",
+            "label": "object",
+            "score": 0.512381374835968
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:ee31efee771f47022714a94acd024e2bff7a4aa629404ade154e51e9fd30cb85",
+      "document_id": "W4230116451",
+      "start": 489,
+      "end": 523,
+      "surface_text": "improving the quality of denoising",
+      "entity_types": [
+        "TASK"
+      ],
+      "normalized_forms": [
+        "improving the quality of denoising"
+      ],
+      "confidence": 0.305733859539032,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 489,
+          "end": 523,
+          "surface_text": "improving the quality of denoising",
+          "ner_label_hint": "TASK",
+          "score": 0.305733859539032,
+          "normalized_form": "improving the quality of denoising",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 489,
+            "end": 523,
+            "text": "improving the quality of denoising",
+            "label": "task",
+            "score": 0.305733859539032
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:29846b868670adbcba64f9304380ff43ef856f84719d1dace5554b97f57c9ba9",
+      "document_id": "W4230116451",
+      "start": 503,
+      "end": 523,
+      "surface_text": "quality of denoising",
+      "entity_types": [
+        "TASK"
+      ],
+      "normalized_forms": [
+        "quality of denoising"
+      ],
+      "confidence": 0.4596640467643738,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 503,
+          "end": 523,
+          "surface_text": "quality of denoising",
+          "ner_label_hint": "TASK",
+          "score": 0.4596640467643738,
+          "normalized_form": "quality of denoising",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 503,
+            "end": 523,
+            "text": "quality of denoising",
+            "label": "task",
+            "score": 0.4596640467643738
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:114d9bd4197e9e8afa140239a2f43adecd5fdf4018a781d4887655ebdf8fb6c2",
+      "document_id": "W4230116451",
+      "start": 514,
+      "end": 523,
+      "surface_text": "denoising",
+      "entity_types": [
+        "PROCESS",
+        "TASK"
+      ],
+      "normalized_forms": [
+        "denoising"
+      ],
+      "confidence": 0.8327507376670837,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 514,
+          "end": 523,
+          "surface_text": "denoising",
+          "ner_label_hint": "TASK",
+          "score": 0.8327507376670837,
+          "normalized_form": "denoising",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 514,
+            "end": 523,
+            "text": "denoising",
+            "label": "task",
+            "score": 0.8327507376670837
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 514,
+          "end": 523,
+          "surface_text": "denoising",
+          "ner_label_hint": "PROCESS",
+          "score": 0.7582311630249023,
+          "normalized_form": "denoising",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 514,
+            "end": 523,
+            "text": "denoising",
+            "label": "process",
+            "score": 0.7582311630249023
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+      "document_id": "W4230116451",
+      "start": 583,
+      "end": 605,
+      "surface_text": "GPU parallel algorithm",
+      "entity_types": [
+        "CONCEPT",
+        "METHOD",
+        "OBJECT",
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "gpu parallel algorithm"
+      ],
+      "confidence": 0.9625101685523987,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 583,
+          "end": 605,
+          "surface_text": "GPU parallel algorithm",
+          "ner_label_hint": "METHOD",
+          "score": 0.9625101685523987,
+          "normalized_form": "gpu parallel algorithm",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 583,
+            "end": 605,
+            "text": "GPU parallel algorithm",
+            "label": "method",
+            "score": 0.9625101685523987
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 583,
+          "end": 605,
+          "surface_text": "GPU parallel algorithm",
+          "ner_label_hint": "OBJECT",
+          "score": 0.511936366558075,
+          "normalized_form": "gpu parallel algorithm",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 583,
+            "end": 605,
+            "text": "GPU parallel algorithm",
+            "label": "object",
+            "score": 0.511936366558075
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 583,
+          "end": 605,
+          "surface_text": "GPU parallel algorithm",
+          "ner_label_hint": "PROCESS",
+          "score": 0.49194657802581787,
+          "normalized_form": "gpu parallel algorithm",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 583,
+            "end": 605,
+            "text": "GPU parallel algorithm",
+            "label": "process",
+            "score": 0.49194657802581787
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 583,
+          "end": 605,
+          "surface_text": "GPU parallel algorithm",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.3831905424594879,
+          "normalized_form": "gpu parallel algorithm",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 583,
+            "end": 605,
+            "text": "GPU parallel algorithm",
+            "label": "concept",
+            "score": 0.3831905424594879
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:34cb59c49eb76cc3e6ea759b4a737017af09a5ba91987aa7d82bbe8b3ff85b56",
+      "document_id": "W4230116451",
+      "start": 619,
+      "end": 670,
+      "surface_text": "optimised blockwise non-local means (OB-NLM) method",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "optimised blockwise non-local means (ob-nlm) method"
+      ],
+      "confidence": 0.5357963442802429,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 619,
+          "end": 670,
+          "surface_text": "optimised blockwise non-local means (OB-NLM) method",
+          "ner_label_hint": "METHOD",
+          "score": 0.5357963442802429,
+          "normalized_form": "optimised blockwise non-local means (ob-nlm) method",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 619,
+            "end": 670,
+            "text": "optimised blockwise non-local means (OB-NLM) method",
+            "label": "method",
+            "score": 0.5357963442802429
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:82ee1333ef4c755bd9f20e8af05a920b80870aa92afd4e76ee68fb6973b78d2d",
+      "document_id": "W4230116451",
+      "start": 629,
+      "end": 654,
+      "surface_text": "blockwise non-local means",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "blockwise non-local means"
+      ],
+      "confidence": 0.7259698510169983,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 629,
+          "end": 654,
+          "surface_text": "blockwise non-local means",
+          "ner_label_hint": "METHOD",
+          "score": 0.7259698510169983,
+          "normalized_form": "blockwise non-local means",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 629,
+            "end": 654,
+            "text": "blockwise non-local means",
+            "label": "method",
+            "score": 0.7259698510169983
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:22baf9c70cd50e2c38f4cf4758a12594894e408a0996d586476281a4d292bcd8",
+      "document_id": "W4230116451",
+      "start": 629,
+      "end": 670,
+      "surface_text": "blockwise non-local means (OB-NLM) method",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "blockwise non-local means (ob-nlm) method"
+      ],
+      "confidence": 0.7531383037567139,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 629,
+          "end": 670,
+          "surface_text": "blockwise non-local means (OB-NLM) method",
+          "ner_label_hint": "METHOD",
+          "score": 0.7531383037567139,
+          "normalized_form": "blockwise non-local means (ob-nlm) method",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 629,
+            "end": 670,
+            "text": "blockwise non-local means (OB-NLM) method",
+            "label": "method",
+            "score": 0.7531383037567139
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:8612a3b0cc6abfc85fcac9ead889fb5fd906c6e98e0edd690d0964287a19266a",
+      "document_id": "W4230116451",
+      "start": 656,
+      "end": 662,
+      "surface_text": "OB-NLM",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "ob-nlm"
+      ],
+      "confidence": 0.7773869633674622,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 656,
+          "end": 662,
+          "surface_text": "OB-NLM",
+          "ner_label_hint": "METHOD",
+          "score": 0.7773869633674622,
+          "normalized_form": "ob-nlm",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 656,
+            "end": 662,
+            "text": "OB-NLM",
+            "label": "method",
+            "score": 0.7773869633674622
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:646e834d3b7fe3f065a6133635b7b1fe279acf06960eb97f983bcf48fcffdf6e",
+      "document_id": "W4230116451",
+      "start": 672,
+      "end": 692,
+      "surface_text": "Experimental results",
+      "entity_types": [
+        "CONDITION",
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "experimental results"
+      ],
+      "confidence": 0.8763576745986938,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 672,
+          "end": 692,
+          "surface_text": "Experimental results",
+          "ner_label_hint": "RESULT",
+          "score": 0.8763576745986938,
+          "normalized_form": "experimental results",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 672,
+            "end": 692,
+            "text": "Experimental results",
+            "label": "result",
+            "score": 0.8763576745986938
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 672,
+          "end": 692,
+          "surface_text": "Experimental results",
+          "ner_label_hint": "CONDITION",
+          "score": 0.47904452681541443,
+          "normalized_form": "experimental results",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 672,
+            "end": 692,
+            "text": "Experimental results",
+            "label": "condition",
+            "score": 0.47904452681541443
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:86cb70669cae271a218d17c3e5211c735040765deb02cc70b1dd15bb7b6ee6f2",
+      "document_id": "W4230116451",
+      "start": 706,
+      "end": 729,
+      "surface_text": "significant improvement",
+      "entity_types": [
+        "RESULT",
+        "TASK"
+      ],
+      "normalized_forms": [
+        "significant improvement"
+      ],
+      "confidence": 0.546168327331543,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 706,
+          "end": 729,
+          "surface_text": "significant improvement",
+          "ner_label_hint": "TASK",
+          "score": 0.546168327331543,
+          "normalized_form": "significant improvement",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 706,
+            "end": 729,
+            "text": "significant improvement",
+            "label": "task",
+            "score": 0.546168327331543
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 706,
+          "end": 729,
+          "surface_text": "significant improvement",
+          "ner_label_hint": "RESULT",
+          "score": 0.49302375316619873,
+          "normalized_form": "significant improvement",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 706,
+            "end": 729,
+            "text": "significant improvement",
+            "label": "result",
+            "score": 0.49302375316619873
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:29973bbacf12e50fa8ce02d9ee19897c1b183ef6f31b8614aba9202be768fd72",
+      "document_id": "W4230116451",
+      "start": 733,
+      "end": 763,
+      "surface_text": "healthcare processing practice",
+      "entity_types": [
+        "CONCEPT",
+        "CONDITION",
+        "OBJECT",
+        "PROCESS",
+        "TASK"
+      ],
+      "normalized_forms": [
+        "healthcare processing practice"
+      ],
+      "confidence": 0.7425433993339539,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 733,
+          "end": 763,
+          "surface_text": "healthcare processing practice",
+          "ner_label_hint": "PROCESS",
+          "score": 0.7425433993339539,
+          "normalized_form": "healthcare processing practice",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 733,
+            "end": 763,
+            "text": "healthcare processing practice",
+            "label": "process",
+            "score": 0.7425433993339539
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 733,
+          "end": 763,
+          "surface_text": "healthcare processing practice",
+          "ner_label_hint": "TASK",
+          "score": 0.6453051567077637,
+          "normalized_form": "healthcare processing practice",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 733,
+            "end": 763,
+            "text": "healthcare processing practice",
+            "label": "task",
+            "score": 0.6453051567077637
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 733,
+          "end": 763,
+          "surface_text": "healthcare processing practice",
+          "ner_label_hint": "CONDITION",
+          "score": 0.5383802652359009,
+          "normalized_form": "healthcare processing practice",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 733,
+            "end": 763,
+            "text": "healthcare processing practice",
+            "label": "condition",
+            "score": 0.5383802652359009
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 733,
+          "end": 763,
+          "surface_text": "healthcare processing practice",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.5284535884857178,
+          "normalized_form": "healthcare processing practice",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 733,
+            "end": 763,
+            "text": "healthcare processing practice",
+            "label": "concept",
+            "score": 0.5284535884857178
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 733,
+          "end": 763,
+          "surface_text": "healthcare processing practice",
+          "ner_label_hint": "OBJECT",
+          "score": 0.4718615710735321,
+          "normalized_form": "healthcare processing practice",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 733,
+            "end": 763,
+            "text": "healthcare processing practice",
+            "label": "object",
+            "score": 0.4718615710735321
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:df7df057e79d9c2d47b981107d834c23329cd8ef6e30556858a4d0e23df369a6",
+      "document_id": "W4230116451",
+      "start": 776,
+      "end": 790,
+      "surface_text": "execution time",
+      "entity_types": [
+        "ATTRIBUTE",
+        "CONDITION",
+        "TASK"
+      ],
+      "normalized_forms": [
+        "execution time"
+      ],
+      "confidence": 0.9031783938407898,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 776,
+          "end": 790,
+          "surface_text": "execution time",
+          "ner_label_hint": "ATTRIBUTE",
+          "score": 0.9031783938407898,
+          "normalized_form": "execution time",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 776,
+            "end": 790,
+            "text": "execution time",
+            "label": "attribute",
+            "score": 0.9031783938407898
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 776,
+          "end": 790,
+          "surface_text": "execution time",
+          "ner_label_hint": "CONDITION",
+          "score": 0.4668399691581726,
+          "normalized_form": "execution time",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 776,
+            "end": 790,
+            "text": "execution time",
+            "label": "condition",
+            "score": 0.4668399691581726
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W4230116451",
+          "start": 776,
+          "end": 790,
+          "surface_text": "execution time",
+          "ner_label_hint": "TASK",
+          "score": 0.32649490237236023,
+          "normalized_form": "execution time",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "raw_prediction": {
+            "start": 776,
+            "end": 790,
+            "text": "execution time",
+            "label": "task",
+            "score": 0.32649490237236023
+          }
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "triple_id": "t:1118dff6d011fb4add1f8a0822dc6b1c177b8ec5edfddd1a2017bd4744b6dda7",
+      "document_id": "W4230116451",
+      "head_id": "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+      "tail_id": "e:8612a3b0cc6abfc85fcac9ead889fb5fd906c6e98e0edd690d0964287a19266a",
+      "head_types": [
+        "CONCEPT",
+        "METHOD",
+        "OBJECT",
+        "PROCESS"
+      ],
+      "tail_types": [
+        "METHOD"
+      ],
+      "relation_type": "DERIVED_FROM",
+      "confidence": 0.865771472454071,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "document_id": "W4230116451",
+          "start": 0,
+          "end": 791,
+          "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:536493804f0520b00c2943ac30ff25c6c5ebc3cda0880491c38dbbfe4ede45a9",
+      "document_id": "W4230116451",
+      "head_id": "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+      "tail_id": "e:34cb59c49eb76cc3e6ea759b4a737017af09a5ba91987aa7d82bbe8b3ff85b56",
+      "head_types": [
+        "CONCEPT",
+        "METHOD",
+        "OBJECT",
+        "PROCESS"
+      ],
+      "tail_types": [
+        "METHOD"
+      ],
+      "relation_type": "DERIVED_FROM",
+      "confidence": 0.7810620069503784,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "document_id": "W4230116451",
+          "start": 0,
+          "end": 791,
+          "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:7a87ccc168feb8b73b963b9345b15d5c2bb33a1111e5e33056288b7834224c41",
+      "document_id": "W4230116451",
+      "head_id": "e:1c69d063f1ff9152c495a7a1748627e29c8ac48f5bd4740383b11c0afd7ba7de",
+      "tail_id": "e:54f09db3e2d9e7264ffd3fe0c2ccaf4730d4bc539646f506ada5ba9e004f69a8",
+      "head_types": [
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "tail_types": [
+        "CONDITION",
+        "DATA_RESOURCE"
+      ],
+      "relation_type": "PRODUCES",
+      "confidence": 0.7729268670082092,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "document_id": "W4230116451",
+          "start": 0,
+          "end": 791,
+          "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:9e2833d64d438fa7c10e09128dfde020429b22dded37133ee9e94ff25602eab3",
+      "document_id": "W4230116451",
+      "head_id": "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+      "tail_id": "e:22baf9c70cd50e2c38f4cf4758a12594894e408a0996d586476281a4d292bcd8",
+      "head_types": [
+        "CONCEPT",
+        "METHOD",
+        "OBJECT",
+        "PROCESS"
+      ],
+      "tail_types": [
+        "METHOD"
+      ],
+      "relation_type": "DERIVED_FROM",
+      "confidence": 0.9207437634468079,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "document_id": "W4230116451",
+          "start": 0,
+          "end": 791,
+          "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:a7197bb6edf33c86a601e56ed30b5d224b71a62f4d468ce02e31f545b347a5d7",
+      "document_id": "W4230116451",
+      "head_id": "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+      "tail_id": "e:82ee1333ef4c755bd9f20e8af05a920b80870aa92afd4e76ee68fb6973b78d2d",
+      "head_types": [
+        "CONCEPT",
+        "METHOD",
+        "OBJECT",
+        "PROCESS"
+      ],
+      "tail_types": [
+        "METHOD"
+      ],
+      "relation_type": "DERIVED_FROM",
+      "confidence": 0.8998945355415344,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "document_id": "W4230116451",
+          "start": 0,
+          "end": 791,
+          "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:b4c85beb1ee9c9eae8dfc8875bbb1208f5a565cbb423867239546934a01369b1",
+      "document_id": "W4230116451",
+      "head_id": "e:9fe5931155612ce4903b4afb954f82d0386ab3fbeb91b508edc0f3806f1e8627",
+      "tail_id": "e:8b3c36b55e3849577a5a701dea4abb7b9b900c855790bffe7d43915645e1665f",
+      "head_types": [
+        "OBJECT"
+      ],
+      "tail_types": [
+        "PROCESS",
+        "TASK"
+      ],
+      "relation_type": "USED_FOR",
+      "confidence": 0.702842652797699,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "document_id": "W4230116451",
+          "start": 0,
+          "end": 791,
+          "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+          "entity_ids": []
+        }
+      ]
+    }
+  ],
+  "raw_relation_count": 6,
+  "seconds": 4.596195199992508
+}

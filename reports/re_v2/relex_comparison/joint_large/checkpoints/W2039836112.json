@@ -1,0 +1,3781 @@
+{
+  "fingerprint": "c79845cf50e55b434eab0bcd7d45fb6779c27e093e96fa9a77b4c2f1b311bf99",
+  "document_id": "W2039836112",
+  "model": "knowledgator/gliner-relex-large-v1.0",
+  "mode": "joint",
+  "raw_windows": [
+    {
+      "window": {
+        "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+        "document_id": "W2039836112",
+        "start": 0,
+        "end": 1668,
+        "text": "Spinal astrocytes are coupled by connexin (Cx) gap junctions and express pannexin 1 (Px1) and purinergic receptors. Fibroblast growth factor 1 (FGF-1), which is released in spinal cord injury, activated spinal astrocytes in culture, induced secretion of ATP, and permeabilized them to relatively large fluorescent tracers [ethidium (Etd) and lucifer yellow (LY)] through \"hemichannels\" (HCs). HCs can be formed by connexins or pannexins; they can open to extracellular space or can form gap junction (GJ) channels, one HC from each cell. (Pannexins may not form gap junctions in mammalian tissues, but they do in invertebrates). HC types were differentiated pharmacologically and by Px1 knockdown with siRNA and by use of astrocytes from Cx43 knockout mice. Permeabilization was reduced by apyrase (APY), an ATPase, and by P2X(7) receptor antagonists, implicating secretion of ATP and autocrine and/or paracrine action. Increased permeability of cells exposed to FGF-1 or ATP for 2 h was mediated largely by Px1 HCs activated by P2X(7) receptors. After a 7-h treatment, the permeability was mediated by both Cx43 and Px1 HCs. FGF-1 also caused reduction in gap junctional communication. Botulinum neurotoxin A, a blocker of vesicular release, reduced permeabilization when given 30 min before FGF-1 application, but not when given 1 h after FGF-1. We infer that ATP is initially released from vesicles and then it mediates continued release by action on P2X(7) receptors and opening of HCs. These changes in HCs and gap junction channels may promote inflammation and deprive neurons of astrocyte-mediated protection in spinal cord trauma and neurodegenerative disease.",
+        "entity_ids": []
+      },
+      "entities": [
+        {
+          "start": 0,
+          "end": 17,
+          "text": "Spinal astrocytes",
+          "label": "object",
+          "score": 0.4831332564353943
+        },
+        {
+          "start": 7,
+          "end": 17,
+          "text": "astrocytes",
+          "label": "object",
+          "score": 0.7365583181381226
+        },
+        {
+          "start": 33,
+          "end": 60,
+          "text": "connexin (Cx) gap junctions",
+          "label": "object",
+          "score": 0.7420310974121094
+        },
+        {
+          "start": 47,
+          "end": 60,
+          "text": "gap junctions",
+          "label": "object",
+          "score": 0.5629900097846985
+        },
+        {
+          "start": 73,
+          "end": 89,
+          "text": "pannexin 1 (Px1)",
+          "label": "object",
+          "score": 0.718396008014679
+        },
+        {
+          "start": 73,
+          "end": 83,
+          "text": "pannexin 1",
+          "label": "object",
+          "score": 0.4069337844848633
+        },
+        {
+          "start": 85,
+          "end": 88,
+          "text": "Px1",
+          "label": "object",
+          "score": 0.3527349829673767
+        },
+        {
+          "start": 94,
+          "end": 114,
+          "text": "purinergic receptors",
+          "label": "object",
+          "score": 0.7747368812561035
+        },
+        {
+          "start": 116,
+          "end": 150,
+          "text": "Fibroblast growth factor 1 (FGF-1)",
+          "label": "object",
+          "score": 0.7604967951774597
+        },
+        {
+          "start": 116,
+          "end": 142,
+          "text": "Fibroblast growth factor 1",
+          "label": "object",
+          "score": 0.36047428846359253
+        },
+        {
+          "start": 116,
+          "end": 150,
+          "text": "Fibroblast growth factor 1 (FGF-1)",
+          "label": "condition",
+          "score": 0.3265525996685028
+        },
+        {
+          "start": 144,
+          "end": 149,
+          "text": "FGF-1",
+          "label": "object",
+          "score": 0.3944295346736908
+        },
+        {
+          "start": 173,
+          "end": 191,
+          "text": "spinal cord injury",
+          "label": "condition",
+          "score": 0.9764497876167297
+        },
+        {
+          "start": 173,
+          "end": 191,
+          "text": "spinal cord injury",
+          "label": "object",
+          "score": 0.6147261261940002
+        },
+        {
+          "start": 203,
+          "end": 220,
+          "text": "spinal astrocytes",
+          "label": "object",
+          "score": 0.66944819688797
+        },
+        {
+          "start": 241,
+          "end": 257,
+          "text": "secretion of ATP",
+          "label": "process",
+          "score": 0.9058018922805786
+        },
+        {
+          "start": 241,
+          "end": 257,
+          "text": "secretion of ATP",
+          "label": "object",
+          "score": 0.501153826713562
+        },
+        {
+          "start": 254,
+          "end": 257,
+          "text": "ATP",
+          "label": "object",
+          "score": 0.4972490966320038
+        },
+        {
+          "start": 254,
+          "end": 257,
+          "text": "ATP",
+          "label": "process",
+          "score": 0.4508295953273773
+        },
+        {
+          "start": 263,
+          "end": 276,
+          "text": "permeabilized",
+          "label": "process",
+          "score": 0.6167944073677063
+        },
+        {
+          "start": 372,
+          "end": 384,
+          "text": "hemichannels",
+          "label": "object",
+          "score": 0.4072401821613312
+        },
+        {
+          "start": 387,
+          "end": 390,
+          "text": "HCs",
+          "label": "object",
+          "score": 0.8195968270301819
+        },
+        {
+          "start": 487,
+          "end": 513,
+          "text": "gap junction (GJ) channels",
+          "label": "object",
+          "score": 0.4482901692390442
+        },
+        {
+          "start": 519,
+          "end": 521,
+          "text": "HC",
+          "label": "object",
+          "score": 0.32335007190704346
+        },
+        {
+          "start": 683,
+          "end": 707,
+          "text": "Px1 knockdown with siRNA",
+          "label": "method",
+          "score": 0.7163671255111694
+        },
+        {
+          "start": 683,
+          "end": 696,
+          "text": "Px1 knockdown",
+          "label": "process",
+          "score": 0.6384348273277283
+        },
+        {
+          "start": 683,
+          "end": 696,
+          "text": "Px1 knockdown",
+          "label": "method",
+          "score": 0.38680005073547363
+        },
+        {
+          "start": 683,
+          "end": 707,
+          "text": "Px1 knockdown with siRNA",
+          "label": "object",
+          "score": 0.3556194305419922
+        },
+        {
+          "start": 683,
+          "end": 696,
+          "text": "Px1 knockdown",
+          "label": "mechanism",
+          "score": 0.32066041231155396
+        },
+        {
+          "start": 683,
+          "end": 696,
+          "text": "Px1 knockdown",
+          "label": "object",
+          "score": 0.3158079981803894
+        },
+        {
+          "start": 702,
+          "end": 707,
+          "text": "siRNA",
+          "label": "method",
+          "score": 0.9536335468292236
+        },
+        {
+          "start": 702,
+          "end": 707,
+          "text": "siRNA",
+          "label": "object",
+          "score": 0.7164553999900818
+        },
+        {
+          "start": 738,
+          "end": 756,
+          "text": "Cx43 knockout mice",
+          "label": "object",
+          "score": 0.9190790057182312
+        },
+        {
+          "start": 738,
+          "end": 756,
+          "text": "Cx43 knockout mice",
+          "label": "condition",
+          "score": 0.8043581247329712
+        },
+        {
+          "start": 738,
+          "end": 742,
+          "text": "Cx43",
+          "label": "object",
+          "score": 0.32913148403167725
+        },
+        {
+          "start": 758,
+          "end": 774,
+          "text": "Permeabilization",
+          "label": "process",
+          "score": 0.6354557275772095
+        },
+        {
+          "start": 790,
+          "end": 803,
+          "text": "apyrase (APY)",
+          "label": "object",
+          "score": 0.7417115569114685
+        },
+        {
+          "start": 790,
+          "end": 803,
+          "text": "apyrase (APY)",
+          "label": "method",
+          "score": 0.5514382719993591
+        },
+        {
+          "start": 790,
+          "end": 797,
+          "text": "apyrase",
+          "label": "object",
+          "score": 0.4241718649864197
+        },
+        {
+          "start": 799,
+          "end": 802,
+          "text": "APY",
+          "label": "object",
+          "score": 0.3228512406349182
+        },
+        {
+          "start": 808,
+          "end": 814,
+          "text": "ATPase",
+          "label": "object",
+          "score": 0.893351674079895
+        },
+        {
+          "start": 808,
+          "end": 814,
+          "text": "ATPase",
+          "label": "method",
+          "score": 0.6526287198066711
+        },
+        {
+          "start": 823,
+          "end": 850,
+          "text": "P2X(7) receptor antagonists",
+          "label": "object",
+          "score": 0.710493266582489
+        },
+        {
+          "start": 823,
+          "end": 850,
+          "text": "P2X(7) receptor antagonists",
+          "label": "method",
+          "score": 0.5870757699012756
+        },
+        {
+          "start": 864,
+          "end": 880,
+          "text": "secretion of ATP",
+          "label": "process",
+          "score": 0.5591238141059875
+        },
+        {
+          "start": 864,
+          "end": 880,
+          "text": "secretion of ATP",
+          "label": "mechanism",
+          "score": 0.4511012136936188
+        },
+        {
+          "start": 885,
+          "end": 918,
+          "text": "autocrine and/or paracrine action",
+          "label": "mechanism",
+          "score": 0.749712347984314
+        },
+        {
+          "start": 885,
+          "end": 894,
+          "text": "autocrine",
+          "label": "mechanism",
+          "score": 0.38230639696121216
+        },
+        {
+          "start": 902,
+          "end": 918,
+          "text": "paracrine action",
+          "label": "mechanism",
+          "score": 0.5104131102561951
+        },
+        {
+          "start": 930,
+          "end": 942,
+          "text": "permeability",
+          "label": "process",
+          "score": 0.4251841604709625
+        },
+        {
+          "start": 1008,
+          "end": 1015,
+          "text": "Px1 HCs",
+          "label": "object",
+          "score": 0.4851512610912323
+        },
+        {
+          "start": 1144,
+          "end": 1185,
+          "text": "reduction in gap junctional communication",
+          "label": "process",
+          "score": 0.846253514289856
+        },
+        {
+          "start": 1144,
+          "end": 1185,
+          "text": "reduction in gap junctional communication",
+          "label": "mechanism",
+          "score": 0.6062472462654114
+        },
+        {
+          "start": 1144,
+          "end": 1185,
+          "text": "reduction in gap junctional communication",
+          "label": "object",
+          "score": 0.4410925507545471
+        },
+        {
+          "start": 1157,
+          "end": 1185,
+          "text": "gap junctional communication",
+          "label": "object",
+          "score": 0.6545538902282715
+        },
+        {
+          "start": 1157,
+          "end": 1185,
+          "text": "gap junctional communication",
+          "label": "process",
+          "score": 0.4783095419406891
+        },
+        {
+          "start": 1157,
+          "end": 1185,
+          "text": "gap junctional communication",
+          "label": "concept",
+          "score": 0.36375030875205994
+        },
+        {
+          "start": 1187,
+          "end": 1209,
+          "text": "Botulinum neurotoxin A",
+          "label": "object",
+          "score": 0.8616120219230652
+        },
+        {
+          "start": 1187,
+          "end": 1209,
+          "text": "Botulinum neurotoxin A",
+          "label": "method",
+          "score": 0.6676325798034668
+        },
+        {
+          "start": 1187,
+          "end": 1209,
+          "text": "Botulinum neurotoxin A",
+          "label": "actor",
+          "score": 0.34137776494026184
+        },
+        {
+          "start": 1213,
+          "end": 1241,
+          "text": "blocker of vesicular release",
+          "label": "object",
+          "score": 0.45216891169548035
+        },
+        {
+          "start": 1213,
+          "end": 1241,
+          "text": "blocker of vesicular release",
+          "label": "method",
+          "score": 0.36652329564094543
+        },
+        {
+          "start": 1224,
+          "end": 1241,
+          "text": "vesicular release",
+          "label": "process",
+          "score": 0.5958473086357117
+        },
+        {
+          "start": 1224,
+          "end": 1241,
+          "text": "vesicular release",
+          "label": "object",
+          "score": 0.4929092228412628
+        },
+        {
+          "start": 1224,
+          "end": 1241,
+          "text": "vesicular release",
+          "label": "mechanism",
+          "score": 0.47220146656036377
+        },
+        {
+          "start": 1516,
+          "end": 1537,
+          "text": "gap junction channels",
+          "label": "object",
+          "score": 0.8142116069793701
+        },
+        {
+          "start": 1550,
+          "end": 1562,
+          "text": "inflammation",
+          "label": "condition",
+          "score": 0.9779552817344666
+        },
+        {
+          "start": 1550,
+          "end": 1562,
+          "text": "inflammation",
+          "label": "object",
+          "score": 0.7173029184341431
+        },
+        {
+          "start": 1550,
+          "end": 1562,
+          "text": "inflammation",
+          "label": "mechanism",
+          "score": 0.44702938199043274
+        },
+        {
+          "start": 1586,
+          "end": 1615,
+          "text": "astrocyte-mediated protection",
+          "label": "process",
+          "score": 0.37663793563842773
+        },
+        {
+          "start": 1619,
+          "end": 1637,
+          "text": "spinal cord trauma",
+          "label": "condition",
+          "score": 0.7052748203277588
+        },
+        {
+          "start": 1642,
+          "end": 1667,
+          "text": "neurodegenerative disease",
+          "label": "condition",
+          "score": 0.9137665629386902
+        }
+      ],
+      "predictions": [
+        {
+          "head": {
+            "start": 116,
+            "end": 150,
+            "text": "Fibroblast growth factor 1 (FGF-1)",
+            "type": "object",
+            "entity_idx": 8
+          },
+          "tail": {
+            "start": 387,
+            "end": 390,
+            "text": "HCs",
+            "type": "object",
+            "entity_idx": 21
+          },
+          "relation": "changes",
+          "score": 0.7994536757469177
+        },
+        {
+          "head": {
+            "start": 144,
+            "end": 149,
+            "text": "FGF-1",
+            "type": "object",
+            "entity_idx": 11
+          },
+          "tail": {
+            "start": 387,
+            "end": 390,
+            "text": "HCs",
+            "type": "object",
+            "entity_idx": 21
+          },
+          "relation": "changes",
+          "score": 0.8561975955963135
+        },
+        {
+          "head": {
+            "start": 144,
+            "end": 149,
+            "text": "FGF-1",
+            "type": "object",
+            "entity_idx": 11
+          },
+          "tail": {
+            "start": 1516,
+            "end": 1537,
+            "text": "gap junction channels",
+            "type": "object",
+            "entity_idx": 65
+          },
+          "relation": "changes",
+          "score": 0.7743716239929199
+        },
+        {
+          "head": {
+            "start": 702,
+            "end": 707,
+            "text": "siRNA",
+            "type": "method",
+            "entity_idx": 30
+          },
+          "tail": {
+            "start": 683,
+            "end": 696,
+            "text": "Px1 knockdown",
+            "type": "process",
+            "entity_idx": 25
+          },
+          "relation": "used for",
+          "score": 0.7791436314582825
+        },
+        {
+          "head": {
+            "start": 790,
+            "end": 797,
+            "text": "apyrase",
+            "type": "object",
+            "entity_idx": 38
+          },
+          "tail": {
+            "start": 808,
+            "end": 814,
+            "text": "ATPase",
+            "type": "object",
+            "entity_idx": 40
+          },
+          "relation": "is a",
+          "score": 0.8573172092437744
+        },
+        {
+          "head": {
+            "start": 790,
+            "end": 803,
+            "text": "apyrase (APY)",
+            "type": "object",
+            "entity_idx": 36
+          },
+          "tail": {
+            "start": 808,
+            "end": 814,
+            "text": "ATPase",
+            "type": "object",
+            "entity_idx": 40
+          },
+          "relation": "is a",
+          "score": 0.9262183904647827
+        },
+        {
+          "head": {
+            "start": 1187,
+            "end": 1209,
+            "text": "Botulinum neurotoxin A",
+            "type": "object",
+            "entity_idx": 57
+          },
+          "tail": {
+            "start": 1213,
+            "end": 1241,
+            "text": "blocker of vesicular release",
+            "type": "object",
+            "entity_idx": 60
+          },
+          "relation": "is a",
+          "score": 0.8500015139579773
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "e:1c11cd5aa1707c898f7283a169c34b4a218edea1837ba12077462b751068323f",
+      "document_id": "W2039836112",
+      "start": 0,
+      "end": 17,
+      "surface_text": "Spinal astrocytes",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "spinal astrocytes"
+      ],
+      "confidence": 0.4831332564353943,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 0,
+          "end": 17,
+          "surface_text": "Spinal astrocytes",
+          "ner_label_hint": "OBJECT",
+          "score": 0.4831332564353943,
+          "normalized_form": "spinal astrocytes",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 0,
+            "end": 17,
+            "text": "Spinal astrocytes",
+            "label": "object",
+            "score": 0.4831332564353943
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:86c5c809181e4e816803ef3775b90adbc35db52a1287650baf87bb6914c8ff43",
+      "document_id": "W2039836112",
+      "start": 7,
+      "end": 17,
+      "surface_text": "astrocytes",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "astrocytes"
+      ],
+      "confidence": 0.7365583181381226,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 7,
+          "end": 17,
+          "surface_text": "astrocytes",
+          "ner_label_hint": "OBJECT",
+          "score": 0.7365583181381226,
+          "normalized_form": "astrocytes",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 7,
+            "end": 17,
+            "text": "astrocytes",
+            "label": "object",
+            "score": 0.7365583181381226
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d93f1646a5094bbe3632d99288bf40900f6410d866ce448f609149b98abf2824",
+      "document_id": "W2039836112",
+      "start": 33,
+      "end": 60,
+      "surface_text": "connexin (Cx) gap junctions",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "connexin (cx) gap junctions"
+      ],
+      "confidence": 0.7420310974121094,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 33,
+          "end": 60,
+          "surface_text": "connexin (Cx) gap junctions",
+          "ner_label_hint": "OBJECT",
+          "score": 0.7420310974121094,
+          "normalized_form": "connexin (cx) gap junctions",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 33,
+            "end": 60,
+            "text": "connexin (Cx) gap junctions",
+            "label": "object",
+            "score": 0.7420310974121094
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:20846f07acfcc86d40c6392188b8e64ba04080300f138cf793398f7fffd38129",
+      "document_id": "W2039836112",
+      "start": 47,
+      "end": 60,
+      "surface_text": "gap junctions",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "gap junctions"
+      ],
+      "confidence": 0.5629900097846985,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 47,
+          "end": 60,
+          "surface_text": "gap junctions",
+          "ner_label_hint": "OBJECT",
+          "score": 0.5629900097846985,
+          "normalized_form": "gap junctions",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 47,
+            "end": 60,
+            "text": "gap junctions",
+            "label": "object",
+            "score": 0.5629900097846985
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:9fca63b7dd12b6a016e8d54fa6ce2b735d0fb60ca0072ea166a20c489edfddda",
+      "document_id": "W2039836112",
+      "start": 73,
+      "end": 83,
+      "surface_text": "pannexin 1",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "pannexin 1"
+      ],
+      "confidence": 0.4069337844848633,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 73,
+          "end": 83,
+          "surface_text": "pannexin 1",
+          "ner_label_hint": "OBJECT",
+          "score": 0.4069337844848633,
+          "normalized_form": "pannexin 1",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 73,
+            "end": 83,
+            "text": "pannexin 1",
+            "label": "object",
+            "score": 0.4069337844848633
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:922919f1b43e32254c436e147f0220ea5b7d3a4b4dc2bd648e4086baced7aa61",
+      "document_id": "W2039836112",
+      "start": 73,
+      "end": 89,
+      "surface_text": "pannexin 1 (Px1)",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "pannexin 1 (px1)"
+      ],
+      "confidence": 0.718396008014679,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 73,
+          "end": 89,
+          "surface_text": "pannexin 1 (Px1)",
+          "ner_label_hint": "OBJECT",
+          "score": 0.718396008014679,
+          "normalized_form": "pannexin 1 (px1)",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 73,
+            "end": 89,
+            "text": "pannexin 1 (Px1)",
+            "label": "object",
+            "score": 0.718396008014679
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:62869ada080bc518a10abf0c83104d20b9565c76bb96f39d27191647b64f2567",
+      "document_id": "W2039836112",
+      "start": 85,
+      "end": 88,
+      "surface_text": "Px1",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "px1"
+      ],
+      "confidence": 0.3527349829673767,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 85,
+          "end": 88,
+          "surface_text": "Px1",
+          "ner_label_hint": "OBJECT",
+          "score": 0.3527349829673767,
+          "normalized_form": "px1",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 85,
+            "end": 88,
+            "text": "Px1",
+            "label": "object",
+            "score": 0.3527349829673767
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:f3a9120b30021536d2c4ca2938c9df6504925c1085da034dd3f4d3a26e48780c",
+      "document_id": "W2039836112",
+      "start": 94,
+      "end": 114,
+      "surface_text": "purinergic receptors",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "purinergic receptors"
+      ],
+      "confidence": 0.7747368812561035,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 94,
+          "end": 114,
+          "surface_text": "purinergic receptors",
+          "ner_label_hint": "OBJECT",
+          "score": 0.7747368812561035,
+          "normalized_form": "purinergic receptors",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 94,
+            "end": 114,
+            "text": "purinergic receptors",
+            "label": "object",
+            "score": 0.7747368812561035
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:305a23924d5ae6bc95d112972f4ff88d80fecf25a2f90a9bec1ea0c15d751c01",
+      "document_id": "W2039836112",
+      "start": 116,
+      "end": 142,
+      "surface_text": "Fibroblast growth factor 1",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "fibroblast growth factor 1"
+      ],
+      "confidence": 0.36047428846359253,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 116,
+          "end": 142,
+          "surface_text": "Fibroblast growth factor 1",
+          "ner_label_hint": "OBJECT",
+          "score": 0.36047428846359253,
+          "normalized_form": "fibroblast growth factor 1",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 116,
+            "end": 142,
+            "text": "Fibroblast growth factor 1",
+            "label": "object",
+            "score": 0.36047428846359253
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d6af3bbf31dc9710197c5e2f3d95a1f4a65a85d4b65b3a6aac40681c96c6fd6d",
+      "document_id": "W2039836112",
+      "start": 116,
+      "end": 150,
+      "surface_text": "Fibroblast growth factor 1 (FGF-1)",
+      "entity_types": [
+        "CONDITION",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "fibroblast growth factor 1 (fgf-1)"
+      ],
+      "confidence": 0.7604967951774597,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 116,
+          "end": 150,
+          "surface_text": "Fibroblast growth factor 1 (FGF-1)",
+          "ner_label_hint": "OBJECT",
+          "score": 0.7604967951774597,
+          "normalized_form": "fibroblast growth factor 1 (fgf-1)",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 116,
+            "end": 150,
+            "text": "Fibroblast growth factor 1 (FGF-1)",
+            "label": "object",
+            "score": 0.7604967951774597
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 116,
+          "end": 150,
+          "surface_text": "Fibroblast growth factor 1 (FGF-1)",
+          "ner_label_hint": "CONDITION",
+          "score": 0.3265525996685028,
+          "normalized_form": "fibroblast growth factor 1 (fgf-1)",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 116,
+            "end": 150,
+            "text": "Fibroblast growth factor 1 (FGF-1)",
+            "label": "condition",
+            "score": 0.3265525996685028
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d7df580f2dcbf287ee9c59ec72c7d0edebd43de36c913fad4f620ec4ddcf0737",
+      "document_id": "W2039836112",
+      "start": 144,
+      "end": 149,
+      "surface_text": "FGF-1",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "fgf-1"
+      ],
+      "confidence": 0.3944295346736908,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 144,
+          "end": 149,
+          "surface_text": "FGF-1",
+          "ner_label_hint": "OBJECT",
+          "score": 0.3944295346736908,
+          "normalized_form": "fgf-1",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 144,
+            "end": 149,
+            "text": "FGF-1",
+            "label": "object",
+            "score": 0.3944295346736908
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:b8e81c854cdb240beb6d6deb9a0f3f04dbfa533925782164f52ff2c44b2dd4dc",
+      "document_id": "W2039836112",
+      "start": 173,
+      "end": 191,
+      "surface_text": "spinal cord injury",
+      "entity_types": [
+        "CONDITION",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "spinal cord injury"
+      ],
+      "confidence": 0.9764497876167297,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 173,
+          "end": 191,
+          "surface_text": "spinal cord injury",
+          "ner_label_hint": "CONDITION",
+          "score": 0.9764497876167297,
+          "normalized_form": "spinal cord injury",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 173,
+            "end": 191,
+            "text": "spinal cord injury",
+            "label": "condition",
+            "score": 0.9764497876167297
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 173,
+          "end": 191,
+          "surface_text": "spinal cord injury",
+          "ner_label_hint": "OBJECT",
+          "score": 0.6147261261940002,
+          "normalized_form": "spinal cord injury",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 173,
+            "end": 191,
+            "text": "spinal cord injury",
+            "label": "object",
+            "score": 0.6147261261940002
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:c3fbad2bf1300e96151be13d44e3370d8087ef7fcea658e6a4428b212c5e5b34",
+      "document_id": "W2039836112",
+      "start": 203,
+      "end": 220,
+      "surface_text": "spinal astrocytes",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "spinal astrocytes"
+      ],
+      "confidence": 0.66944819688797,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 203,
+          "end": 220,
+          "surface_text": "spinal astrocytes",
+          "ner_label_hint": "OBJECT",
+          "score": 0.66944819688797,
+          "normalized_form": "spinal astrocytes",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 203,
+            "end": 220,
+            "text": "spinal astrocytes",
+            "label": "object",
+            "score": 0.66944819688797
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:790c9e7ab14df43fc6537e83217c6365afbf4674c95b1a779d1065379084fb86",
+      "document_id": "W2039836112",
+      "start": 241,
+      "end": 257,
+      "surface_text": "secretion of ATP",
+      "entity_types": [
+        "OBJECT",
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "secretion of atp"
+      ],
+      "confidence": 0.9058018922805786,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 241,
+          "end": 257,
+          "surface_text": "secretion of ATP",
+          "ner_label_hint": "PROCESS",
+          "score": 0.9058018922805786,
+          "normalized_form": "secretion of atp",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 241,
+            "end": 257,
+            "text": "secretion of ATP",
+            "label": "process",
+            "score": 0.9058018922805786
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 241,
+          "end": 257,
+          "surface_text": "secretion of ATP",
+          "ner_label_hint": "OBJECT",
+          "score": 0.501153826713562,
+          "normalized_form": "secretion of atp",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 241,
+            "end": 257,
+            "text": "secretion of ATP",
+            "label": "object",
+            "score": 0.501153826713562
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:7b9c8188b695137024fa8383b97def7856148fbdc1cf8bb34e6d9c72c7c562cc",
+      "document_id": "W2039836112",
+      "start": 254,
+      "end": 257,
+      "surface_text": "ATP",
+      "entity_types": [
+        "OBJECT",
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "atp"
+      ],
+      "confidence": 0.4972490966320038,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 254,
+          "end": 257,
+          "surface_text": "ATP",
+          "ner_label_hint": "OBJECT",
+          "score": 0.4972490966320038,
+          "normalized_form": "atp",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 254,
+            "end": 257,
+            "text": "ATP",
+            "label": "object",
+            "score": 0.4972490966320038
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 254,
+          "end": 257,
+          "surface_text": "ATP",
+          "ner_label_hint": "PROCESS",
+          "score": 0.4508295953273773,
+          "normalized_form": "atp",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 254,
+            "end": 257,
+            "text": "ATP",
+            "label": "process",
+            "score": 0.4508295953273773
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:b1e067765b3565046a0e0fdf44acc3335a43f16b4d113fc20310c7574bbc9e74",
+      "document_id": "W2039836112",
+      "start": 263,
+      "end": 276,
+      "surface_text": "permeabilized",
+      "entity_types": [
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "permeabilized"
+      ],
+      "confidence": 0.6167944073677063,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 263,
+          "end": 276,
+          "surface_text": "permeabilized",
+          "ner_label_hint": "PROCESS",
+          "score": 0.6167944073677063,
+          "normalized_form": "permeabilized",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 263,
+            "end": 276,
+            "text": "permeabilized",
+            "label": "process",
+            "score": 0.6167944073677063
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:7820dc50301bf13cda517f559d6228cf42742dc7e6568e9af3b8ec6036a5f96d",
+      "document_id": "W2039836112",
+      "start": 372,
+      "end": 384,
+      "surface_text": "hemichannels",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "hemichannels"
+      ],
+      "confidence": 0.4072401821613312,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 372,
+          "end": 384,
+          "surface_text": "hemichannels",
+          "ner_label_hint": "OBJECT",
+          "score": 0.4072401821613312,
+          "normalized_form": "hemichannels",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 372,
+            "end": 384,
+            "text": "hemichannels",
+            "label": "object",
+            "score": 0.4072401821613312
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:f5d46f82f40d412576f293ba35e1002003838b34d59370518d2fe331b8557b79",
+      "document_id": "W2039836112",
+      "start": 387,
+      "end": 390,
+      "surface_text": "HCs",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "hcs"
+      ],
+      "confidence": 0.8195968270301819,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 387,
+          "end": 390,
+          "surface_text": "HCs",
+          "ner_label_hint": "OBJECT",
+          "score": 0.8195968270301819,
+          "normalized_form": "hcs",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 387,
+            "end": 390,
+            "text": "HCs",
+            "label": "object",
+            "score": 0.8195968270301819
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a93832bf0cb0e3fbbbf3c7bbfbe102bda81f8a8203d333379776ac2d1385ea26",
+      "document_id": "W2039836112",
+      "start": 487,
+      "end": 513,
+      "surface_text": "gap junction (GJ) channels",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "gap junction (gj) channels"
+      ],
+      "confidence": 0.4482901692390442,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 487,
+          "end": 513,
+          "surface_text": "gap junction (GJ) channels",
+          "ner_label_hint": "OBJECT",
+          "score": 0.4482901692390442,
+          "normalized_form": "gap junction (gj) channels",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 487,
+            "end": 513,
+            "text": "gap junction (GJ) channels",
+            "label": "object",
+            "score": 0.4482901692390442
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:10920f8afc0173e924c8d2d95aa97afd091ff5496b5aebac1c5f49c00bd5ba39",
+      "document_id": "W2039836112",
+      "start": 519,
+      "end": 521,
+      "surface_text": "HC",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "hc"
+      ],
+      "confidence": 0.32335007190704346,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 519,
+          "end": 521,
+          "surface_text": "HC",
+          "ner_label_hint": "OBJECT",
+          "score": 0.32335007190704346,
+          "normalized_form": "hc",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 519,
+            "end": 521,
+            "text": "HC",
+            "label": "object",
+            "score": 0.32335007190704346
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:f7c714a7e7bda2b7fd473a66c8cd6a04a4e963a929a7a93d0293b2b31d640cf5",
+      "document_id": "W2039836112",
+      "start": 683,
+      "end": 696,
+      "surface_text": "Px1 knockdown",
+      "entity_types": [
+        "MECHANISM",
+        "METHOD",
+        "OBJECT",
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "px1 knockdown"
+      ],
+      "confidence": 0.6384348273277283,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 683,
+          "end": 696,
+          "surface_text": "Px1 knockdown",
+          "ner_label_hint": "PROCESS",
+          "score": 0.6384348273277283,
+          "normalized_form": "px1 knockdown",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 683,
+            "end": 696,
+            "text": "Px1 knockdown",
+            "label": "process",
+            "score": 0.6384348273277283
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 683,
+          "end": 696,
+          "surface_text": "Px1 knockdown",
+          "ner_label_hint": "METHOD",
+          "score": 0.38680005073547363,
+          "normalized_form": "px1 knockdown",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 683,
+            "end": 696,
+            "text": "Px1 knockdown",
+            "label": "method",
+            "score": 0.38680005073547363
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 683,
+          "end": 696,
+          "surface_text": "Px1 knockdown",
+          "ner_label_hint": "MECHANISM",
+          "score": 0.32066041231155396,
+          "normalized_form": "px1 knockdown",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 683,
+            "end": 696,
+            "text": "Px1 knockdown",
+            "label": "mechanism",
+            "score": 0.32066041231155396
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 683,
+          "end": 696,
+          "surface_text": "Px1 knockdown",
+          "ner_label_hint": "OBJECT",
+          "score": 0.3158079981803894,
+          "normalized_form": "px1 knockdown",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 683,
+            "end": 696,
+            "text": "Px1 knockdown",
+            "label": "object",
+            "score": 0.3158079981803894
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:c608b42f825a2c831425fbb3eb495ddb798018087422938739d6200bc40b0e63",
+      "document_id": "W2039836112",
+      "start": 683,
+      "end": 707,
+      "surface_text": "Px1 knockdown with siRNA",
+      "entity_types": [
+        "METHOD",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "px1 knockdown with sirna"
+      ],
+      "confidence": 0.7163671255111694,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 683,
+          "end": 707,
+          "surface_text": "Px1 knockdown with siRNA",
+          "ner_label_hint": "METHOD",
+          "score": 0.7163671255111694,
+          "normalized_form": "px1 knockdown with sirna",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 683,
+            "end": 707,
+            "text": "Px1 knockdown with siRNA",
+            "label": "method",
+            "score": 0.7163671255111694
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 683,
+          "end": 707,
+          "surface_text": "Px1 knockdown with siRNA",
+          "ner_label_hint": "OBJECT",
+          "score": 0.3556194305419922,
+          "normalized_form": "px1 knockdown with sirna",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 683,
+            "end": 707,
+            "text": "Px1 knockdown with siRNA",
+            "label": "object",
+            "score": 0.3556194305419922
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:37d26c9da936c6a6e04a18530b41b5453250625935734e940af3486934a32724",
+      "document_id": "W2039836112",
+      "start": 702,
+      "end": 707,
+      "surface_text": "siRNA",
+      "entity_types": [
+        "METHOD",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "sirna"
+      ],
+      "confidence": 0.9536335468292236,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 702,
+          "end": 707,
+          "surface_text": "siRNA",
+          "ner_label_hint": "METHOD",
+          "score": 0.9536335468292236,
+          "normalized_form": "sirna",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 702,
+            "end": 707,
+            "text": "siRNA",
+            "label": "method",
+            "score": 0.9536335468292236
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 702,
+          "end": 707,
+          "surface_text": "siRNA",
+          "ner_label_hint": "OBJECT",
+          "score": 0.7164553999900818,
+          "normalized_form": "sirna",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 702,
+            "end": 707,
+            "text": "siRNA",
+            "label": "object",
+            "score": 0.7164553999900818
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:5f7677f3976b31b50f8afc5104ef5a520c6dac05df1b2d523f01bee4ff528783",
+      "document_id": "W2039836112",
+      "start": 738,
+      "end": 742,
+      "surface_text": "Cx43",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "cx43"
+      ],
+      "confidence": 0.32913148403167725,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 738,
+          "end": 742,
+          "surface_text": "Cx43",
+          "ner_label_hint": "OBJECT",
+          "score": 0.32913148403167725,
+          "normalized_form": "cx43",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 738,
+            "end": 742,
+            "text": "Cx43",
+            "label": "object",
+            "score": 0.32913148403167725
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d6a2ee2168dd7072f23a59a1cd7121e7d5b753fee41bc502722e9c0ed8b42aa6",
+      "document_id": "W2039836112",
+      "start": 738,
+      "end": 756,
+      "surface_text": "Cx43 knockout mice",
+      "entity_types": [
+        "CONDITION",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "cx43 knockout mice"
+      ],
+      "confidence": 0.9190790057182312,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 738,
+          "end": 756,
+          "surface_text": "Cx43 knockout mice",
+          "ner_label_hint": "OBJECT",
+          "score": 0.9190790057182312,
+          "normalized_form": "cx43 knockout mice",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 738,
+            "end": 756,
+            "text": "Cx43 knockout mice",
+            "label": "object",
+            "score": 0.9190790057182312
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 738,
+          "end": 756,
+          "surface_text": "Cx43 knockout mice",
+          "ner_label_hint": "CONDITION",
+          "score": 0.8043581247329712,
+          "normalized_form": "cx43 knockout mice",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 738,
+            "end": 756,
+            "text": "Cx43 knockout mice",
+            "label": "condition",
+            "score": 0.8043581247329712
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:35bdc82c4177e77b058d2c522bafea2acb206c3630e84e810b8958777fb718a4",
+      "document_id": "W2039836112",
+      "start": 758,
+      "end": 774,
+      "surface_text": "Permeabilization",
+      "entity_types": [
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "permeabilization"
+      ],
+      "confidence": 0.6354557275772095,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 758,
+          "end": 774,
+          "surface_text": "Permeabilization",
+          "ner_label_hint": "PROCESS",
+          "score": 0.6354557275772095,
+          "normalized_form": "permeabilization",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 758,
+            "end": 774,
+            "text": "Permeabilization",
+            "label": "process",
+            "score": 0.6354557275772095
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:bc20bbb24a0a8b8f66f0cb5f21595aabb6a60994a0f7e2a007c5ad2046477fbe",
+      "document_id": "W2039836112",
+      "start": 790,
+      "end": 797,
+      "surface_text": "apyrase",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "apyrase"
+      ],
+      "confidence": 0.4241718649864197,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 790,
+          "end": 797,
+          "surface_text": "apyrase",
+          "ner_label_hint": "OBJECT",
+          "score": 0.4241718649864197,
+          "normalized_form": "apyrase",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 790,
+            "end": 797,
+            "text": "apyrase",
+            "label": "object",
+            "score": 0.4241718649864197
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:dba3581aa158ea49db64bb8f19ba4319f496fdfaf793141e1a45c910b5e8a2a3",
+      "document_id": "W2039836112",
+      "start": 790,
+      "end": 803,
+      "surface_text": "apyrase (APY)",
+      "entity_types": [
+        "METHOD",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "apyrase (apy)"
+      ],
+      "confidence": 0.7417115569114685,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 790,
+          "end": 803,
+          "surface_text": "apyrase (APY)",
+          "ner_label_hint": "OBJECT",
+          "score": 0.7417115569114685,
+          "normalized_form": "apyrase (apy)",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 790,
+            "end": 803,
+            "text": "apyrase (APY)",
+            "label": "object",
+            "score": 0.7417115569114685
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 790,
+          "end": 803,
+          "surface_text": "apyrase (APY)",
+          "ner_label_hint": "METHOD",
+          "score": 0.5514382719993591,
+          "normalized_form": "apyrase (apy)",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 790,
+            "end": 803,
+            "text": "apyrase (APY)",
+            "label": "method",
+            "score": 0.5514382719993591
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:42c04128a1f94e6d265e67ea5f4d30489a3106846506146675bf7578079646ba",
+      "document_id": "W2039836112",
+      "start": 799,
+      "end": 802,
+      "surface_text": "APY",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "apy"
+      ],
+      "confidence": 0.3228512406349182,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 799,
+          "end": 802,
+          "surface_text": "APY",
+          "ner_label_hint": "OBJECT",
+          "score": 0.3228512406349182,
+          "normalized_form": "apy",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 799,
+            "end": 802,
+            "text": "APY",
+            "label": "object",
+            "score": 0.3228512406349182
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:cfa07189ee32ecc5575737fb1b84ce170dbb94207a5ba5a1a98b7dfa36933f02",
+      "document_id": "W2039836112",
+      "start": 808,
+      "end": 814,
+      "surface_text": "ATPase",
+      "entity_types": [
+        "METHOD",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "atpase"
+      ],
+      "confidence": 0.893351674079895,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 808,
+          "end": 814,
+          "surface_text": "ATPase",
+          "ner_label_hint": "OBJECT",
+          "score": 0.893351674079895,
+          "normalized_form": "atpase",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 808,
+            "end": 814,
+            "text": "ATPase",
+            "label": "object",
+            "score": 0.893351674079895
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 808,
+          "end": 814,
+          "surface_text": "ATPase",
+          "ner_label_hint": "METHOD",
+          "score": 0.6526287198066711,
+          "normalized_form": "atpase",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 808,
+            "end": 814,
+            "text": "ATPase",
+            "label": "method",
+            "score": 0.6526287198066711
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d634fbf63b020a5ad785b6fc2948503cc66e706b96fabb25e526750dcb37c8c1",
+      "document_id": "W2039836112",
+      "start": 823,
+      "end": 850,
+      "surface_text": "P2X(7) receptor antagonists",
+      "entity_types": [
+        "METHOD",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "p2x(7) receptor antagonists"
+      ],
+      "confidence": 0.710493266582489,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 823,
+          "end": 850,
+          "surface_text": "P2X(7) receptor antagonists",
+          "ner_label_hint": "OBJECT",
+          "score": 0.710493266582489,
+          "normalized_form": "p2x(7) receptor antagonists",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 823,
+            "end": 850,
+            "text": "P2X(7) receptor antagonists",
+            "label": "object",
+            "score": 0.710493266582489
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 823,
+          "end": 850,
+          "surface_text": "P2X(7) receptor antagonists",
+          "ner_label_hint": "METHOD",
+          "score": 0.5870757699012756,
+          "normalized_form": "p2x(7) receptor antagonists",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 823,
+            "end": 850,
+            "text": "P2X(7) receptor antagonists",
+            "label": "method",
+            "score": 0.5870757699012756
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:8d4942147fe7e65b0471a0c1bcba1ac4faa92a6aea1cd17a1d45ade63d869741",
+      "document_id": "W2039836112",
+      "start": 864,
+      "end": 880,
+      "surface_text": "secretion of ATP",
+      "entity_types": [
+        "MECHANISM",
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "secretion of atp"
+      ],
+      "confidence": 0.5591238141059875,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 864,
+          "end": 880,
+          "surface_text": "secretion of ATP",
+          "ner_label_hint": "PROCESS",
+          "score": 0.5591238141059875,
+          "normalized_form": "secretion of atp",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 864,
+            "end": 880,
+            "text": "secretion of ATP",
+            "label": "process",
+            "score": 0.5591238141059875
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 864,
+          "end": 880,
+          "surface_text": "secretion of ATP",
+          "ner_label_hint": "MECHANISM",
+          "score": 0.4511012136936188,
+          "normalized_form": "secretion of atp",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 864,
+            "end": 880,
+            "text": "secretion of ATP",
+            "label": "mechanism",
+            "score": 0.4511012136936188
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a4278eb27b4feadf9eb3bb95684b9701a9eba8808d4d76c4f27e7f94f1a6df0d",
+      "document_id": "W2039836112",
+      "start": 885,
+      "end": 894,
+      "surface_text": "autocrine",
+      "entity_types": [
+        "MECHANISM"
+      ],
+      "normalized_forms": [
+        "autocrine"
+      ],
+      "confidence": 0.38230639696121216,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 885,
+          "end": 894,
+          "surface_text": "autocrine",
+          "ner_label_hint": "MECHANISM",
+          "score": 0.38230639696121216,
+          "normalized_form": "autocrine",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 885,
+            "end": 894,
+            "text": "autocrine",
+            "label": "mechanism",
+            "score": 0.38230639696121216
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:87db6ce6fb1f2f754f07f3b307563e77467ddfa321af7ab3d494e440ad9d884f",
+      "document_id": "W2039836112",
+      "start": 885,
+      "end": 918,
+      "surface_text": "autocrine and/or paracrine action",
+      "entity_types": [
+        "MECHANISM"
+      ],
+      "normalized_forms": [
+        "autocrine and/or paracrine action"
+      ],
+      "confidence": 0.749712347984314,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 885,
+          "end": 918,
+          "surface_text": "autocrine and/or paracrine action",
+          "ner_label_hint": "MECHANISM",
+          "score": 0.749712347984314,
+          "normalized_form": "autocrine and/or paracrine action",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 885,
+            "end": 918,
+            "text": "autocrine and/or paracrine action",
+            "label": "mechanism",
+            "score": 0.749712347984314
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:b75b1728c303f4f11cbcf03144973d2b5158dd40088ce848d85146bcfd2d7ca7",
+      "document_id": "W2039836112",
+      "start": 902,
+      "end": 918,
+      "surface_text": "paracrine action",
+      "entity_types": [
+        "MECHANISM"
+      ],
+      "normalized_forms": [
+        "paracrine action"
+      ],
+      "confidence": 0.5104131102561951,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 902,
+          "end": 918,
+          "surface_text": "paracrine action",
+          "ner_label_hint": "MECHANISM",
+          "score": 0.5104131102561951,
+          "normalized_form": "paracrine action",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 902,
+            "end": 918,
+            "text": "paracrine action",
+            "label": "mechanism",
+            "score": 0.5104131102561951
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:2a5a15a65a2a11a9a2a444b425c1b15995f716878913f96ad7f2a512772d0de0",
+      "document_id": "W2039836112",
+      "start": 930,
+      "end": 942,
+      "surface_text": "permeability",
+      "entity_types": [
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "permeability"
+      ],
+      "confidence": 0.4251841604709625,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 930,
+          "end": 942,
+          "surface_text": "permeability",
+          "ner_label_hint": "PROCESS",
+          "score": 0.4251841604709625,
+          "normalized_form": "permeability",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 930,
+            "end": 942,
+            "text": "permeability",
+            "label": "process",
+            "score": 0.4251841604709625
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a2b68ae2b940202029a0029f67cfa917a0731ebc9ccccd658e7bbee320ee02c4",
+      "document_id": "W2039836112",
+      "start": 1008,
+      "end": 1015,
+      "surface_text": "Px1 HCs",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "px1 hcs"
+      ],
+      "confidence": 0.4851512610912323,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 1008,
+          "end": 1015,
+          "surface_text": "Px1 HCs",
+          "ner_label_hint": "OBJECT",
+          "score": 0.4851512610912323,
+          "normalized_form": "px1 hcs",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 1008,
+            "end": 1015,
+            "text": "Px1 HCs",
+            "label": "object",
+            "score": 0.4851512610912323
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:e4bc206b4271de90311a28b8f3804e3008b92ad1fb53b46da7ef41686eafb11b",
+      "document_id": "W2039836112",
+      "start": 1144,
+      "end": 1185,
+      "surface_text": "reduction in gap junctional communication",
+      "entity_types": [
+        "MECHANISM",
+        "OBJECT",
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "reduction in gap junctional communication"
+      ],
+      "confidence": 0.846253514289856,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 1144,
+          "end": 1185,
+          "surface_text": "reduction in gap junctional communication",
+          "ner_label_hint": "PROCESS",
+          "score": 0.846253514289856,
+          "normalized_form": "reduction in gap junctional communication",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 1144,
+            "end": 1185,
+            "text": "reduction in gap junctional communication",
+            "label": "process",
+            "score": 0.846253514289856
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 1144,
+          "end": 1185,
+          "surface_text": "reduction in gap junctional communication",
+          "ner_label_hint": "MECHANISM",
+          "score": 0.6062472462654114,
+          "normalized_form": "reduction in gap junctional communication",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 1144,
+            "end": 1185,
+            "text": "reduction in gap junctional communication",
+            "label": "mechanism",
+            "score": 0.6062472462654114
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 1144,
+          "end": 1185,
+          "surface_text": "reduction in gap junctional communication",
+          "ner_label_hint": "OBJECT",
+          "score": 0.4410925507545471,
+          "normalized_form": "reduction in gap junctional communication",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 1144,
+            "end": 1185,
+            "text": "reduction in gap junctional communication",
+            "label": "object",
+            "score": 0.4410925507545471
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:81f9f66ccdc6d878de69e5987c8d6671b95ba2536543aae103f3bbb9798aadd3",
+      "document_id": "W2039836112",
+      "start": 1157,
+      "end": 1185,
+      "surface_text": "gap junctional communication",
+      "entity_types": [
+        "CONCEPT",
+        "OBJECT",
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "gap junctional communication"
+      ],
+      "confidence": 0.6545538902282715,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 1157,
+          "end": 1185,
+          "surface_text": "gap junctional communication",
+          "ner_label_hint": "OBJECT",
+          "score": 0.6545538902282715,
+          "normalized_form": "gap junctional communication",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 1157,
+            "end": 1185,
+            "text": "gap junctional communication",
+            "label": "object",
+            "score": 0.6545538902282715
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 1157,
+          "end": 1185,
+          "surface_text": "gap junctional communication",
+          "ner_label_hint": "PROCESS",
+          "score": 0.4783095419406891,
+          "normalized_form": "gap junctional communication",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 1157,
+            "end": 1185,
+            "text": "gap junctional communication",
+            "label": "process",
+            "score": 0.4783095419406891
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 1157,
+          "end": 1185,
+          "surface_text": "gap junctional communication",
+          "ner_label_hint": "CONCEPT",
+          "score": 0.36375030875205994,
+          "normalized_form": "gap junctional communication",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 1157,
+            "end": 1185,
+            "text": "gap junctional communication",
+            "label": "concept",
+            "score": 0.36375030875205994
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:61364228d509b91b30fc30f98cfa0ee178c8941599565aa57fc73413c0b5d9e2",
+      "document_id": "W2039836112",
+      "start": 1187,
+      "end": 1209,
+      "surface_text": "Botulinum neurotoxin A",
+      "entity_types": [
+        "ACTOR",
+        "METHOD",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "botulinum neurotoxin a"
+      ],
+      "confidence": 0.8616120219230652,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 1187,
+          "end": 1209,
+          "surface_text": "Botulinum neurotoxin A",
+          "ner_label_hint": "OBJECT",
+          "score": 0.8616120219230652,
+          "normalized_form": "botulinum neurotoxin a",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 1187,
+            "end": 1209,
+            "text": "Botulinum neurotoxin A",
+            "label": "object",
+            "score": 0.8616120219230652
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 1187,
+          "end": 1209,
+          "surface_text": "Botulinum neurotoxin A",
+          "ner_label_hint": "METHOD",
+          "score": 0.6676325798034668,
+          "normalized_form": "botulinum neurotoxin a",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 1187,
+            "end": 1209,
+            "text": "Botulinum neurotoxin A",
+            "label": "method",
+            "score": 0.6676325798034668
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 1187,
+          "end": 1209,
+          "surface_text": "Botulinum neurotoxin A",
+          "ner_label_hint": "ACTOR",
+          "score": 0.34137776494026184,
+          "normalized_form": "botulinum neurotoxin a",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 1187,
+            "end": 1209,
+            "text": "Botulinum neurotoxin A",
+            "label": "actor",
+            "score": 0.34137776494026184
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:8977dcb42ec2bbb42af435659742b090abfb218dfee98bdb1ebcbda699aacd24",
+      "document_id": "W2039836112",
+      "start": 1213,
+      "end": 1241,
+      "surface_text": "blocker of vesicular release",
+      "entity_types": [
+        "METHOD",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "blocker of vesicular release"
+      ],
+      "confidence": 0.45216891169548035,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 1213,
+          "end": 1241,
+          "surface_text": "blocker of vesicular release",
+          "ner_label_hint": "OBJECT",
+          "score": 0.45216891169548035,
+          "normalized_form": "blocker of vesicular release",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 1213,
+            "end": 1241,
+            "text": "blocker of vesicular release",
+            "label": "object",
+            "score": 0.45216891169548035
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 1213,
+          "end": 1241,
+          "surface_text": "blocker of vesicular release",
+          "ner_label_hint": "METHOD",
+          "score": 0.36652329564094543,
+          "normalized_form": "blocker of vesicular release",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 1213,
+            "end": 1241,
+            "text": "blocker of vesicular release",
+            "label": "method",
+            "score": 0.36652329564094543
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:fc8743ebfae161c92df4f541c1b6e6dd6c696bac853d0b0efc5dd8ee7822cc5f",
+      "document_id": "W2039836112",
+      "start": 1224,
+      "end": 1241,
+      "surface_text": "vesicular release",
+      "entity_types": [
+        "MECHANISM",
+        "OBJECT",
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "vesicular release"
+      ],
+      "confidence": 0.5958473086357117,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 1224,
+          "end": 1241,
+          "surface_text": "vesicular release",
+          "ner_label_hint": "PROCESS",
+          "score": 0.5958473086357117,
+          "normalized_form": "vesicular release",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 1224,
+            "end": 1241,
+            "text": "vesicular release",
+            "label": "process",
+            "score": 0.5958473086357117
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 1224,
+          "end": 1241,
+          "surface_text": "vesicular release",
+          "ner_label_hint": "OBJECT",
+          "score": 0.4929092228412628,
+          "normalized_form": "vesicular release",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 1224,
+            "end": 1241,
+            "text": "vesicular release",
+            "label": "object",
+            "score": 0.4929092228412628
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 1224,
+          "end": 1241,
+          "surface_text": "vesicular release",
+          "ner_label_hint": "MECHANISM",
+          "score": 0.47220146656036377,
+          "normalized_form": "vesicular release",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 1224,
+            "end": 1241,
+            "text": "vesicular release",
+            "label": "mechanism",
+            "score": 0.47220146656036377
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:56cad19e6fe0b4af29ecae195592796ff4838ebccce1380baca77c2d3da29951",
+      "document_id": "W2039836112",
+      "start": 1516,
+      "end": 1537,
+      "surface_text": "gap junction channels",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "gap junction channels"
+      ],
+      "confidence": 0.8142116069793701,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 1516,
+          "end": 1537,
+          "surface_text": "gap junction channels",
+          "ner_label_hint": "OBJECT",
+          "score": 0.8142116069793701,
+          "normalized_form": "gap junction channels",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 1516,
+            "end": 1537,
+            "text": "gap junction channels",
+            "label": "object",
+            "score": 0.8142116069793701
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:65454103943f33677b25410a54cbc8c3d5bd465d82506fce9dfb7673e29d9d50",
+      "document_id": "W2039836112",
+      "start": 1550,
+      "end": 1562,
+      "surface_text": "inflammation",
+      "entity_types": [
+        "CONDITION",
+        "MECHANISM",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "inflammation"
+      ],
+      "confidence": 0.9779552817344666,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 1550,
+          "end": 1562,
+          "surface_text": "inflammation",
+          "ner_label_hint": "CONDITION",
+          "score": 0.9779552817344666,
+          "normalized_form": "inflammation",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 1550,
+            "end": 1562,
+            "text": "inflammation",
+            "label": "condition",
+            "score": 0.9779552817344666
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 1550,
+          "end": 1562,
+          "surface_text": "inflammation",
+          "ner_label_hint": "OBJECT",
+          "score": 0.7173029184341431,
+          "normalized_form": "inflammation",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 1550,
+            "end": 1562,
+            "text": "inflammation",
+            "label": "object",
+            "score": 0.7173029184341431
+          }
+        },
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 1550,
+          "end": 1562,
+          "surface_text": "inflammation",
+          "ner_label_hint": "MECHANISM",
+          "score": 0.44702938199043274,
+          "normalized_form": "inflammation",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 1550,
+            "end": 1562,
+            "text": "inflammation",
+            "label": "mechanism",
+            "score": 0.44702938199043274
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:9742a6b79d423dbb3373937ecec38a5e8eb6b6aa585ff92da8abe5dba0dfb99f",
+      "document_id": "W2039836112",
+      "start": 1586,
+      "end": 1615,
+      "surface_text": "astrocyte-mediated protection",
+      "entity_types": [
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "astrocyte-mediated protection"
+      ],
+      "confidence": 0.37663793563842773,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 1586,
+          "end": 1615,
+          "surface_text": "astrocyte-mediated protection",
+          "ner_label_hint": "PROCESS",
+          "score": 0.37663793563842773,
+          "normalized_form": "astrocyte-mediated protection",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 1586,
+            "end": 1615,
+            "text": "astrocyte-mediated protection",
+            "label": "process",
+            "score": 0.37663793563842773
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:dd27009f26606fb0b756345dd8ebfb74b4feea287816cb2c5b499317d42ac3e2",
+      "document_id": "W2039836112",
+      "start": 1619,
+      "end": 1637,
+      "surface_text": "spinal cord trauma",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "spinal cord trauma"
+      ],
+      "confidence": 0.7052748203277588,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 1619,
+          "end": 1637,
+          "surface_text": "spinal cord trauma",
+          "ner_label_hint": "CONDITION",
+          "score": 0.7052748203277588,
+          "normalized_form": "spinal cord trauma",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 1619,
+            "end": 1637,
+            "text": "spinal cord trauma",
+            "label": "condition",
+            "score": 0.7052748203277588
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e:635bdaaea999a3c5532814e245380b1832a4a976143ba183fa44962c7805ec61",
+      "document_id": "W2039836112",
+      "start": 1642,
+      "end": 1667,
+      "surface_text": "neurodegenerative disease",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "neurodegenerative disease"
+      ],
+      "confidence": 0.9137665629386902,
+      "source_mentions": [
+        {
+          "configuration": "joint_relex",
+          "document_id": "W2039836112",
+          "start": 1642,
+          "end": 1667,
+          "surface_text": "neurodegenerative disease",
+          "ner_label_hint": "CONDITION",
+          "score": 0.9137665629386902,
+          "normalized_form": "neurodegenerative disease",
+          "normalizer_version": "joint-nfc-casefold-v1",
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1",
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2039836112",
+            "doi": "https://doi.org/10.1073/pnas.1013793107",
+            "landing_page_url": "https://doi.org/10.1073/pnas.1013793107",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W2039836112",
+            "text_sha256": "9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+          },
+          "raw_prediction": {
+            "start": 1642,
+            "end": 1667,
+            "text": "neurodegenerative disease",
+            "label": "condition",
+            "score": 0.9137665629386902
+          }
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "triple_id": "t:69f386bd679e9b7acdd08414efa703330dd9193af153b0799fed61e57b77170e",
+      "document_id": "W2039836112",
+      "head_id": "e:d7df580f2dcbf287ee9c59ec72c7d0edebd43de36c913fad4f620ec4ddcf0737",
+      "tail_id": "e:56cad19e6fe0b4af29ecae195592796ff4838ebccce1380baca77c2d3da29951",
+      "head_types": [
+        "OBJECT"
+      ],
+      "tail_types": [
+        "OBJECT"
+      ],
+      "relation_type": "CHANGES",
+      "confidence": 0.7743716239929199,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "document_id": "W2039836112",
+          "start": 0,
+          "end": 1668,
+          "text": "Spinal astrocytes are coupled by connexin (Cx) gap junctions and express pannexin 1 (Px1) and purinergic receptors. Fibroblast growth factor 1 (FGF-1), which is released in spinal cord injury, activated spinal astrocytes in culture, induced secretion of ATP, and permeabilized them to relatively large fluorescent tracers [ethidium (Etd) and lucifer yellow (LY)] through \"hemichannels\" (HCs). HCs can be formed by connexins or pannexins; they can open to extracellular space or can form gap junction (GJ) channels, one HC from each cell. (Pannexins may not form gap junctions in mammalian tissues, but they do in invertebrates). HC types were differentiated pharmacologically and by Px1 knockdown with siRNA and by use of astrocytes from Cx43 knockout mice. Permeabilization was reduced by apyrase (APY), an ATPase, and by P2X(7) receptor antagonists, implicating secretion of ATP and autocrine and/or paracrine action. Increased permeability of cells exposed to FGF-1 or ATP for 2 h was mediated largely by Px1 HCs activated by P2X(7) receptors. After a 7-h treatment, the permeability was mediated by both Cx43 and Px1 HCs. FGF-1 also caused reduction in gap junctional communication. Botulinum neurotoxin A, a blocker of vesicular release, reduced permeabilization when given 30 min before FGF-1 application, but not when given 1 h after FGF-1. We infer that ATP is initially released from vesicles and then it mediates continued release by action on P2X(7) receptors and opening of HCs. These changes in HCs and gap junction channels may promote inflammation and deprive neurons of astrocyte-mediated protection in spinal cord trauma and neurodegenerative disease.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:89e62f23d4270ccb933cf8b29696f26c1a1c9f22eebadd064e2bcc00aa5c7e4c",
+      "document_id": "W2039836112",
+      "head_id": "e:bc20bbb24a0a8b8f66f0cb5f21595aabb6a60994a0f7e2a007c5ad2046477fbe",
+      "tail_id": "e:cfa07189ee32ecc5575737fb1b84ce170dbb94207a5ba5a1a98b7dfa36933f02",
+      "head_types": [
+        "OBJECT"
+      ],
+      "tail_types": [
+        "METHOD",
+        "OBJECT"
+      ],
+      "relation_type": "IS_A",
+      "confidence": 0.8573172092437744,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "document_id": "W2039836112",
+          "start": 0,
+          "end": 1668,
+          "text": "Spinal astrocytes are coupled by connexin (Cx) gap junctions and express pannexin 1 (Px1) and purinergic receptors. Fibroblast growth factor 1 (FGF-1), which is released in spinal cord injury, activated spinal astrocytes in culture, induced secretion of ATP, and permeabilized them to relatively large fluorescent tracers [ethidium (Etd) and lucifer yellow (LY)] through \"hemichannels\" (HCs). HCs can be formed by connexins or pannexins; they can open to extracellular space or can form gap junction (GJ) channels, one HC from each cell. (Pannexins may not form gap junctions in mammalian tissues, but they do in invertebrates). HC types were differentiated pharmacologically and by Px1 knockdown with siRNA and by use of astrocytes from Cx43 knockout mice. Permeabilization was reduced by apyrase (APY), an ATPase, and by P2X(7) receptor antagonists, implicating secretion of ATP and autocrine and/or paracrine action. Increased permeability of cells exposed to FGF-1 or ATP for 2 h was mediated largely by Px1 HCs activated by P2X(7) receptors. After a 7-h treatment, the permeability was mediated by both Cx43 and Px1 HCs. FGF-1 also caused reduction in gap junctional communication. Botulinum neurotoxin A, a blocker of vesicular release, reduced permeabilization when given 30 min before FGF-1 application, but not when given 1 h after FGF-1. We infer that ATP is initially released from vesicles and then it mediates continued release by action on P2X(7) receptors and opening of HCs. These changes in HCs and gap junction channels may promote inflammation and deprive neurons of astrocyte-mediated protection in spinal cord trauma and neurodegenerative disease.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:90b5c2cdb566641597419178ad775ae9cbdf87bda9780d4bf370b8a5b67653e2",
+      "document_id": "W2039836112",
+      "head_id": "e:37d26c9da936c6a6e04a18530b41b5453250625935734e940af3486934a32724",
+      "tail_id": "e:f7c714a7e7bda2b7fd473a66c8cd6a04a4e963a929a7a93d0293b2b31d640cf5",
+      "head_types": [
+        "METHOD",
+        "OBJECT"
+      ],
+      "tail_types": [
+        "MECHANISM",
+        "METHOD",
+        "OBJECT",
+        "PROCESS"
+      ],
+      "relation_type": "USED_FOR",
+      "confidence": 0.7791436314582825,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "document_id": "W2039836112",
+          "start": 0,
+          "end": 1668,
+          "text": "Spinal astrocytes are coupled by connexin (Cx) gap junctions and express pannexin 1 (Px1) and purinergic receptors. Fibroblast growth factor 1 (FGF-1), which is released in spinal cord injury, activated spinal astrocytes in culture, induced secretion of ATP, and permeabilized them to relatively large fluorescent tracers [ethidium (Etd) and lucifer yellow (LY)] through \"hemichannels\" (HCs). HCs can be formed by connexins or pannexins; they can open to extracellular space or can form gap junction (GJ) channels, one HC from each cell. (Pannexins may not form gap junctions in mammalian tissues, but they do in invertebrates). HC types were differentiated pharmacologically and by Px1 knockdown with siRNA and by use of astrocytes from Cx43 knockout mice. Permeabilization was reduced by apyrase (APY), an ATPase, and by P2X(7) receptor antagonists, implicating secretion of ATP and autocrine and/or paracrine action. Increased permeability of cells exposed to FGF-1 or ATP for 2 h was mediated largely by Px1 HCs activated by P2X(7) receptors. After a 7-h treatment, the permeability was mediated by both Cx43 and Px1 HCs. FGF-1 also caused reduction in gap junctional communication. Botulinum neurotoxin A, a blocker of vesicular release, reduced permeabilization when given 30 min before FGF-1 application, but not when given 1 h after FGF-1. We infer that ATP is initially released from vesicles and then it mediates continued release by action on P2X(7) receptors and opening of HCs. These changes in HCs and gap junction channels may promote inflammation and deprive neurons of astrocyte-mediated protection in spinal cord trauma and neurodegenerative disease.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:a485854bfa2aac3310b101795bd1a5061fa94ce20b2297277f774418aa964d3e",
+      "document_id": "W2039836112",
+      "head_id": "e:61364228d509b91b30fc30f98cfa0ee178c8941599565aa57fc73413c0b5d9e2",
+      "tail_id": "e:8977dcb42ec2bbb42af435659742b090abfb218dfee98bdb1ebcbda699aacd24",
+      "head_types": [
+        "ACTOR",
+        "METHOD",
+        "OBJECT"
+      ],
+      "tail_types": [
+        "METHOD",
+        "OBJECT"
+      ],
+      "relation_type": "IS_A",
+      "confidence": 0.8500015139579773,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "document_id": "W2039836112",
+          "start": 0,
+          "end": 1668,
+          "text": "Spinal astrocytes are coupled by connexin (Cx) gap junctions and express pannexin 1 (Px1) and purinergic receptors. Fibroblast growth factor 1 (FGF-1), which is released in spinal cord injury, activated spinal astrocytes in culture, induced secretion of ATP, and permeabilized them to relatively large fluorescent tracers [ethidium (Etd) and lucifer yellow (LY)] through \"hemichannels\" (HCs). HCs can be formed by connexins or pannexins; they can open to extracellular space or can form gap junction (GJ) channels, one HC from each cell. (Pannexins may not form gap junctions in mammalian tissues, but they do in invertebrates). HC types were differentiated pharmacologically and by Px1 knockdown with siRNA and by use of astrocytes from Cx43 knockout mice. Permeabilization was reduced by apyrase (APY), an ATPase, and by P2X(7) receptor antagonists, implicating secretion of ATP and autocrine and/or paracrine action. Increased permeability of cells exposed to FGF-1 or ATP for 2 h was mediated largely by Px1 HCs activated by P2X(7) receptors. After a 7-h treatment, the permeability was mediated by both Cx43 and Px1 HCs. FGF-1 also caused reduction in gap junctional communication. Botulinum neurotoxin A, a blocker of vesicular release, reduced permeabilization when given 30 min before FGF-1 application, but not when given 1 h after FGF-1. We infer that ATP is initially released from vesicles and then it mediates continued release by action on P2X(7) receptors and opening of HCs. These changes in HCs and gap junction channels may promote inflammation and deprive neurons of astrocyte-mediated protection in spinal cord trauma and neurodegenerative disease.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:b730119b58b38447c8d7b7e0f439e5462b954586c3308d8243067e7136aabefd",
+      "document_id": "W2039836112",
+      "head_id": "e:d6af3bbf31dc9710197c5e2f3d95a1f4a65a85d4b65b3a6aac40681c96c6fd6d",
+      "tail_id": "e:f5d46f82f40d412576f293ba35e1002003838b34d59370518d2fe331b8557b79",
+      "head_types": [
+        "CONDITION",
+        "OBJECT"
+      ],
+      "tail_types": [
+        "OBJECT"
+      ],
+      "relation_type": "CHANGES",
+      "confidence": 0.7994536757469177,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "document_id": "W2039836112",
+          "start": 0,
+          "end": 1668,
+          "text": "Spinal astrocytes are coupled by connexin (Cx) gap junctions and express pannexin 1 (Px1) and purinergic receptors. Fibroblast growth factor 1 (FGF-1), which is released in spinal cord injury, activated spinal astrocytes in culture, induced secretion of ATP, and permeabilized them to relatively large fluorescent tracers [ethidium (Etd) and lucifer yellow (LY)] through \"hemichannels\" (HCs). HCs can be formed by connexins or pannexins; they can open to extracellular space or can form gap junction (GJ) channels, one HC from each cell. (Pannexins may not form gap junctions in mammalian tissues, but they do in invertebrates). HC types were differentiated pharmacologically and by Px1 knockdown with siRNA and by use of astrocytes from Cx43 knockout mice. Permeabilization was reduced by apyrase (APY), an ATPase, and by P2X(7) receptor antagonists, implicating secretion of ATP and autocrine and/or paracrine action. Increased permeability of cells exposed to FGF-1 or ATP for 2 h was mediated largely by Px1 HCs activated by P2X(7) receptors. After a 7-h treatment, the permeability was mediated by both Cx43 and Px1 HCs. FGF-1 also caused reduction in gap junctional communication. Botulinum neurotoxin A, a blocker of vesicular release, reduced permeabilization when given 30 min before FGF-1 application, but not when given 1 h after FGF-1. We infer that ATP is initially released from vesicles and then it mediates continued release by action on P2X(7) receptors and opening of HCs. These changes in HCs and gap junction channels may promote inflammation and deprive neurons of astrocyte-mediated protection in spinal cord trauma and neurodegenerative disease.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:c0c557c3327bc10835d2cbb14d200fbc4402f9d2a06034a048f2ab356d303c35",
+      "document_id": "W2039836112",
+      "head_id": "e:d7df580f2dcbf287ee9c59ec72c7d0edebd43de36c913fad4f620ec4ddcf0737",
+      "tail_id": "e:f5d46f82f40d412576f293ba35e1002003838b34d59370518d2fe331b8557b79",
+      "head_types": [
+        "OBJECT"
+      ],
+      "tail_types": [
+        "OBJECT"
+      ],
+      "relation_type": "CHANGES",
+      "confidence": 0.8561975955963135,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "document_id": "W2039836112",
+          "start": 0,
+          "end": 1668,
+          "text": "Spinal astrocytes are coupled by connexin (Cx) gap junctions and express pannexin 1 (Px1) and purinergic receptors. Fibroblast growth factor 1 (FGF-1), which is released in spinal cord injury, activated spinal astrocytes in culture, induced secretion of ATP, and permeabilized them to relatively large fluorescent tracers [ethidium (Etd) and lucifer yellow (LY)] through \"hemichannels\" (HCs). HCs can be formed by connexins or pannexins; they can open to extracellular space or can form gap junction (GJ) channels, one HC from each cell. (Pannexins may not form gap junctions in mammalian tissues, but they do in invertebrates). HC types were differentiated pharmacologically and by Px1 knockdown with siRNA and by use of astrocytes from Cx43 knockout mice. Permeabilization was reduced by apyrase (APY), an ATPase, and by P2X(7) receptor antagonists, implicating secretion of ATP and autocrine and/or paracrine action. Increased permeability of cells exposed to FGF-1 or ATP for 2 h was mediated largely by Px1 HCs activated by P2X(7) receptors. After a 7-h treatment, the permeability was mediated by both Cx43 and Px1 HCs. FGF-1 also caused reduction in gap junctional communication. Botulinum neurotoxin A, a blocker of vesicular release, reduced permeabilization when given 30 min before FGF-1 application, but not when given 1 h after FGF-1. We infer that ATP is initially released from vesicles and then it mediates continued release by action on P2X(7) receptors and opening of HCs. These changes in HCs and gap junction channels may promote inflammation and deprive neurons of astrocyte-mediated protection in spinal cord trauma and neurodegenerative disease.",
+          "entity_ids": []
+        }
+      ]
+    },
+    {
+      "triple_id": "t:c9ee7ff21419d2673dd9dee09e3e34db5cfdb7b0499f1e4efa410f6af143a90b",
+      "document_id": "W2039836112",
+      "head_id": "e:dba3581aa158ea49db64bb8f19ba4319f496fdfaf793141e1a45c910b5e8a2a3",
+      "tail_id": "e:cfa07189ee32ecc5575737fb1b84ce170dbb94207a5ba5a1a98b7dfa36933f02",
+      "head_types": [
+        "METHOD",
+        "OBJECT"
+      ],
+      "tail_types": [
+        "METHOD",
+        "OBJECT"
+      ],
+      "relation_type": "IS_A",
+      "confidence": 0.9262183904647827,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:193f2401af98ad37464e5d09a8f5143cdd9a4823e93cddda7602e5ec4a0eadd8",
+          "document_id": "W2039836112",
+          "start": 0,
+          "end": 1668,
+          "text": "Spinal astrocytes are coupled by connexin (Cx) gap junctions and express pannexin 1 (Px1) and purinergic receptors. Fibroblast growth factor 1 (FGF-1), which is released in spinal cord injury, activated spinal astrocytes in culture, induced secretion of ATP, and permeabilized them to relatively large fluorescent tracers [ethidium (Etd) and lucifer yellow (LY)] through \"hemichannels\" (HCs). HCs can be formed by connexins or pannexins; they can open to extracellular space or can form gap junction (GJ) channels, one HC from each cell. (Pannexins may not form gap junctions in mammalian tissues, but they do in invertebrates). HC types were differentiated pharmacologically and by Px1 knockdown with siRNA and by use of astrocytes from Cx43 knockout mice. Permeabilization was reduced by apyrase (APY), an ATPase, and by P2X(7) receptor antagonists, implicating secretion of ATP and autocrine and/or paracrine action. Increased permeability of cells exposed to FGF-1 or ATP for 2 h was mediated largely by Px1 HCs activated by P2X(7) receptors. After a 7-h treatment, the permeability was mediated by both Cx43 and Px1 HCs. FGF-1 also caused reduction in gap junctional communication. Botulinum neurotoxin A, a blocker of vesicular release, reduced permeabilization when given 30 min before FGF-1 application, but not when given 1 h after FGF-1. We infer that ATP is initially released from vesicles and then it mediates continued release by action on P2X(7) receptors and opening of HCs. These changes in HCs and gap junction channels may promote inflammation and deprive neurons of astrocyte-mediated protection in spinal cord trauma and neurodegenerative disease.",
+          "entity_ids": []
+        }
+      ]
+    }
+  ],
+  "raw_relation_count": 7,
+  "seconds": 7.997153900098056
+}

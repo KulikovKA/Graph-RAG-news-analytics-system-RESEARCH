@@ -499,6 +499,10 @@ def import_graph(driver, database, namespace, documents, entities, predictions, 
         return counts
 
 
+class Neo4jConnectionError(RuntimeError):
+    """Actionable connection error with no credentials or automatic password retries."""
+
+
 def connect_neo4j(env_file=None):
     if env_file:
         # Read only Neo4j variables into process environment; never write or log credentials.
@@ -507,16 +511,36 @@ def connect_neo4j(env_file=None):
             if match:
                 os.environ.setdefault(match[1], match[2].strip("\"'"))
     from neo4j import GraphDatabase
+    from neo4j.exceptions import AuthError
     uri = os.environ.get("NEO4J_URI", "bolt://127.0.0.1:17687")
     password = os.environ.get("NEO4J_PASSWORD")
     if not password:
         raise ValueError("Set NEO4J_PASSWORD (or use --neo4j-env with the existing project's .env)")
     driver = GraphDatabase.driver(uri, auth=(os.environ.get("NEO4J_USER", "neo4j"), password),
                                   connection_timeout=10)
-    driver.verify_connectivity()
     database = os.environ.get("NEO4J_DATABASE", "neo4j")
-    with driver.session(database=database) as session:
-        session.run("RETURN 1").consume()
+    try:
+        driver.verify_connectivity()
+        with driver.session(database=database) as session:
+            session.run("RETURN 1").consume()
+    except Exception as exc:
+        driver.close()
+        code = getattr(exc, "code", "")
+        if code == "Neo.ClientError.Security.AuthenticationRateLimit":
+            raise Neo4jConnectionError(
+                "Neo4j temporarily blocked authentication after repeated failed logins. "
+                "Stop retries, wait for the server authentication lock to expire, then set the correct "
+                "NEO4J_USER and NEO4J_PASSWORD in PowerShell. Existing process environment variables "
+                "override --neo4j-env. No models have been loaded."
+            ) from None
+        if isinstance(exc, AuthError) or code == "Neo.ClientError.Security.Unauthorized":
+            raise Neo4jConnectionError(
+                "Neo4j rejected NEO4J_USER/NEO4J_PASSWORD. Finding an .env file does not verify its password: "
+                "the existing database may retain a different password. Set the actual credentials in "
+                "PowerShell; process environment variables override --neo4j-env. "
+                "The password is not changed or retried automatically. No models have been loaded."
+            ) from None
+        raise
     return driver, database
 
 
@@ -770,4 +794,7 @@ def main(argv=None):
 
 if __name__ == "__main__":
     mp.freeze_support()
-    main()
+    try:
+        main()
+    except Neo4jConnectionError as exc:
+        sys.exit(str(exc))

@@ -1,0 +1,4110 @@
+{
+  "fingerprint": "68877d1a9d3e60c95fa0f80b22849e687e090d57cd2766f6c7948ec7306fc75d",
+  "document_id": "W3123056951",
+  "model": "knowledgator/gliner-relex-base-v1.0",
+  "mode": "e3",
+  "raw_windows": [
+    {
+      "window": {
+        "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+        "document_id": "W3123056951",
+        "start": 0,
+        "end": 1243,
+        "text": "Recombinant human erythropoietin (rHuEPO) is a biopharmaceutical drug given to patients who have a low hemoglobin related to chronic kidney disease, cancer or anemia. However, some patients repeatedly receiving rHuEPO develop anti-rHuEPO neutralizing antibodies leading to the development of pure red cell aplasia (PRCA). The immunogenic antibody response activated by rHuEPO is believed to be triggered by T-cells recognizing EPO epitopes bound to MHC molecules displayed on the cell surface of APCs. Previous studies have reported an association between the development of anti-rHuEpo-associated PRCA and the HLA-DRB1*09 gene, which is reported to be entrenched in the Thai population. In this study, we used computational design to screen for immunogenic hotspots recognized by HLA-DRB1*09, and predicted seventeen mutants having anywhere between one through four mutations that reduce affinity for the allele, without disrupting the structural integrity and bioactivity. Five out of seventeen mutants were less immunogenic in vitro while retaining similar or slightly reduced bioactivity than rHuEPO. These engineered proteins could be the potential candidates to treat patients who are rHuEpo-dependent and express the HLA-DRB1*09 allele.",
+        "entity_ids": [
+          "e:498d2e043b17b7584de73784321081f070e71403c7d6e4e3c6594678603997a4",
+          "e:0748b4395ddf95750c2e9a8365d4ae37a5f39d5df9593da367d5cccfa01f5969",
+          "e:f6e4ef94482c38f4faebd6c584474f7eba5c03647a8476ed400594e1125897c8",
+          "e:dcbe03525e58d5738409185db8cde990e2d49155a54a571fa2bf92c4b1bcefe7",
+          "e:f5d6e1f28e7e14102074fbed128ce69450ca65513ae55bb12c317b166659e815",
+          "e:411a7f6c8fd96a98b774401fc6e833bc14c4bd92cea6058fe5983b5ab35bc869",
+          "e:0603ca063d4d046819d2c4b1a066507381448b982c68312fdcca361990141627",
+          "e:e63b755e17649cb646d5b8fd463e67708677f90d5c2b00c59a529ceb153fdc5b",
+          "e:6b0117f0cabcba655f0e778bcd07adf2d903746177e0ed61a375803ad1bd5b33",
+          "e:d9dc8318cbfb9b59f303d416074fd10b7c191935907843d2eb9dbf0609cb0cda",
+          "e:ac3b2ddcbcf862d44eac73d81b160cef0645087378e63b177e3aa5489f3f83cb",
+          "e:5e24a03d9bf60444f203890235102624d6ef990e27ff4e4d166cdd78882e1c53",
+          "e:cbb092f39ec68fad4847ab4a27f2194f19c63c36b433495237d8d5fab9a5f1cb",
+          "e:68fb5d238d63035aadb86e6224366efb522dd4bea7477766399c161f8796a772",
+          "e:30c293414927449fefb37cbd6295d11b099806229f8a9ae360fb18a233a78a70",
+          "e:3de6be6c3dc38e978119b9bbfde94d990e86b5c2e81018030d193cca164bf07f",
+          "e:d87f3668c887e48ae79c2c87dacc72be5432b519985507ea6e8399d9d1eeaeed",
+          "e:10b0febb0a23d79a94c04ec5f0874829b48c23d3a7cc28f963a9055a1dced53a",
+          "e:696cd04fc9d27fc700ef7e1ae3f5b50774d1fa8f36cca132ac11c225506ffbae",
+          "e:bbe1f7a9ce1e846d104afb65f6ff0395575393ace74eff5c9db405bfcab3b457",
+          "e:d42b1895368f12e6c1081f3e2006134da78913515d802038ccef3e04c96fbc52",
+          "e:426d664a81b4c1a27dc6da00a0800ac5eb840f11de1e5e7d89658da8ba673a7f",
+          "e:4b4ace3fcac1c880857237816d762cbfa52b33086fd96286ee9fb3d962039534",
+          "e:05e1eb3533486f54345311549e59b88957fce028d654c866736743bb2f85f379",
+          "e:8a1fc5f6d75d1d9a231bb62cd6ca6ea252bab969e83c6b27dbfafbadad2753ec",
+          "e:2746dda9839353c641759747a967769c5901ab693bec8ab93a9d2055f7b4c7d2",
+          "e:b50960bc1d73d289f54cbbf5538acac7f3192c5bf986149aaa01297e1b5b2b4a",
+          "e:6a548ca41d58d948902a5ec4149c8cc9e7d239c618a4c84b550c5fafae0c3677",
+          "e:a37175599aef926c7613589cdad3321631e8550218096d2a6938f32a9d1b67ad",
+          "e:c5038cdea1d7ff9033981a557abbe6369078d4f8e615d93622fb22364f7764b7",
+          "e:70f3ba3e266beabd8f0b401b3727ad29c787c5d898e0f4dffb189d6df7de0892",
+          "e:407558ea45a30f02f3c4a94061105075d560b88a3d0eaa7b1aaace03e17aaae9",
+          "e:6cbb71b02c973f291d6aa9501541d7ae1cd916033010977306aa64d6b08701df",
+          "e:08efb2e96e20aac4f36a91ea8cff02116ecdef9654074e0667e493d1fe13ab5a",
+          "e:065dc7cf9a8457b8c56e82cc4046305900d753f7a0696bae1936d64fbb2c2492",
+          "e:84ec69994f70c54476a52f5a4753be91e9c0d60cdb003bdee5b5c6504e2ea515",
+          "e:625be93f8c6df149c1dd4cd80190698aa108d426b913d5355f5a72f1fc4f2123",
+          "e:0ce60ac354c9c819a154f79041ec87a6b65bfc526093dcea5c3c107d3e42cc47",
+          "e:2d2ea0650b172acb14d26d5a7e8a5c7978fe41b9b3fb730ee7cea97900519ad2",
+          "e:4135a0fd5b64bd7f67217466464410ad72542594afbd515abdd4f0bf89ff65ad",
+          "e:b53b7503bc4287341025bd1dd86d2addd33287c12efbca8950eb4117a8fe266a",
+          "e:a460ea56a55db8a97181843e0f5ad6c92f8653603f04fbf75687393aaf9a55ee"
+        ]
+      },
+      "audit": {
+        "tokens": 334,
+        "spans": 42,
+        "pairs": 1722,
+        "supplied_word_spans": [
+          [
+            0,
+            2
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            20,
+            22
+          ],
+          [
+            24,
+            24
+          ],
+          [
+            26,
+            26
+          ],
+          [
+            31,
+            31
+          ],
+          [
+            36,
+            38
+          ],
+          [
+            42,
+            42
+          ],
+          [
+            44,
+            47
+          ],
+          [
+            65,
+            65
+          ],
+          [
+            67,
+            68
+          ],
+          [
+            71,
+            72
+          ],
+          [
+            76,
+            77
+          ],
+          [
+            79,
+            79
+          ],
+          [
+            81,
+            82
+          ],
+          [
+            82,
+            82
+          ],
+          [
+            89,
+            89
+          ],
+          [
+            95,
+            97
+          ],
+          [
+            95,
+            98
+          ],
+          [
+            108,
+            109
+          ],
+          [
+            113,
+            113
+          ],
+          [
+            117,
+            118
+          ],
+          [
+            122,
+            123
+          ],
+          [
+            126,
+            128
+          ],
+          [
+            132,
+            133
+          ],
+          [
+            133,
+            133
+          ],
+          [
+            143,
+            143
+          ],
+          [
+            146,
+            146
+          ],
+          [
+            151,
+            152
+          ],
+          [
+            154,
+            154
+          ],
+          [
+            159,
+            160
+          ],
+          [
+            160,
+            160
+          ],
+          [
+            172,
+            172
+          ],
+          [
+            174,
+            174
+          ],
+          [
+            177,
+            178
+          ],
+          [
+            185,
+            186
+          ],
+          [
+            186,
+            186
+          ],
+          [
+            189,
+            189
+          ],
+          [
+            193,
+            195
+          ],
+          [
+            193,
+            196
+          ],
+          [
+            196,
+            196
+          ]
+        ]
+      },
+      "predictions": [
+        {
+          "head": {
+            "start": 0,
+            "end": 32,
+            "text": "Recombinant human erythropoietin"
+          },
+          "tail": {
+            "start": 47,
+            "end": 69,
+            "text": "biopharmaceutical drug"
+          },
+          "relation": "is a",
+          "score": 0.9598032832145691
+        },
+        {
+          "head": {
+            "start": 226,
+            "end": 261,
+            "text": "anti-rHuEPO neutralizing antibodies"
+          },
+          "tail": {
+            "start": 292,
+            "end": 313,
+            "text": "pure red cell aplasia"
+          },
+          "relation": "causes",
+          "score": 0.7569400668144226
+        },
+        {
+          "head": {
+            "start": 611,
+            "end": 627,
+            "text": "HLA-DRB1*09 gene"
+          },
+          "tail": {
+            "start": 671,
+            "end": 686,
+            "text": "Thai population"
+          },
+          "relation": "located in",
+          "score": 0.7413177490234375
+        },
+        {
+          "head": {
+            "start": 696,
+            "end": 701,
+            "text": "study"
+          },
+          "tail": {
+            "start": 711,
+            "end": 731,
+            "text": "computational design"
+          },
+          "relation": "uses",
+          "score": 0.8448812365531921
+        },
+        {
+          "head": {
+            "start": 1111,
+            "end": 1130,
+            "text": "engineered proteins"
+          },
+          "tail": {
+            "start": 1097,
+            "end": 1103,
+            "text": "rHuEPO"
+          },
+          "relation": "compared with",
+          "score": 0.7578063607215881
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "e:498d2e043b17b7584de73784321081f070e71403c7d6e4e3c6594678603997a4",
+      "document_id": "W3123056951",
+      "start": 0,
+      "end": 32,
+      "surface_text": "Recombinant human erythropoietin",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "Recombinant human erythropoietin"
+      ],
+      "confidence": 0.9110761880874634,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [
+            {
+              "long_end": 32,
+              "long_form": "Recombinant human erythropoietin",
+              "long_start": 0,
+              "scope": "document_candidate_only",
+              "short_end": 40,
+              "short_form": "rHuEPO",
+              "short_start": 34
+            }
+          ],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 32,
+          "lemma": "Recombinant human erythropoietin",
+          "mention_id": "m:6ce927555f8ac11ac8e7770b1d5fc32f5567c79f9e45f07ae705e033f60148c3",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "Recombinant human erythropoietin",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.9110761880874634,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 0,
+          "surface_text": "Recombinant human erythropoietin",
+          "tokens": [
+            {
+              "end": 11,
+              "lemma": "Recombinant",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 0,
+              "tag": "JJ",
+              "text": "Recombinant"
+            },
+            {
+              "end": 17,
+              "lemma": "human",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 12,
+              "tag": "JJ",
+              "text": "human"
+            },
+            {
+              "end": 32,
+              "lemma": "erythropoietin",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 18,
+              "tag": "NN",
+              "text": "erythropoietin"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:0748b4395ddf95750c2e9a8365d4ae37a5f39d5df9593da367d5cccfa01f5969",
+      "document_id": "W3123056951",
+      "start": 47,
+      "end": 69,
+      "surface_text": "biopharmaceutical drug",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "biopharmaceutical drug"
+      ],
+      "confidence": 0.6755453944206238,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 69,
+          "lemma": "biopharmaceutical drug",
+          "mention_id": "m:25edf9d10680b0d3df7b22538de9b7c5fc162067e061ddac4e3edf0e2d400cca",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "biopharmaceutical drug",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.6755453944206238,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 47,
+          "surface_text": "biopharmaceutical drug",
+          "tokens": [
+            {
+              "end": 64,
+              "lemma": "biopharmaceutical",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 47,
+              "tag": "JJ",
+              "text": "biopharmaceutical"
+            },
+            {
+              "end": 69,
+              "lemma": "drug",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 65,
+              "tag": "NN",
+              "text": "drug"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:f6e4ef94482c38f4faebd6c584474f7eba5c03647a8476ed400594e1125897c8",
+      "document_id": "W3123056951",
+      "start": 79,
+      "end": 87,
+      "surface_text": "patients",
+      "entity_types": [
+        "ACTOR"
+      ],
+      "normalized_forms": [
+        "patient"
+      ],
+      "confidence": 0.8805137872695923,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 87,
+              "original": "patients",
+              "replacement": "patient",
+              "rule": "plural_noun_head",
+              "start": 79
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 87,
+          "lemma": "patient",
+          "mention_id": "m:8c1787e9dc042eff665481369c76e658f85c687efbfd3f8d6386d0ccd03879e8",
+          "ner_label_hint": "ACTOR",
+          "normalized_form": "patient",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.8805137872695923,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 79,
+          "surface_text": "patients",
+          "tokens": [
+            {
+              "end": 87,
+              "lemma": "patient",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 79,
+              "tag": "NNS",
+              "text": "patients"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:dcbe03525e58d5738409185db8cde990e2d49155a54a571fa2bf92c4b1bcefe7",
+      "document_id": "W3123056951",
+      "start": 125,
+      "end": 147,
+      "surface_text": "chronic kidney disease",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "chronic kidney disease"
+      ],
+      "confidence": 0.9986984729766846,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 147,
+          "lemma": "chronic kidney disease",
+          "mention_id": "m:0efc34fef1e56f79bdc92710b976a1b6e4912c0f5cd7783ae95454430cca4043",
+          "ner_label_hint": "CONDITION",
+          "normalized_form": "chronic kidney disease",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.9986984729766846,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 125,
+          "surface_text": "chronic kidney disease",
+          "tokens": [
+            {
+              "end": 132,
+              "lemma": "chronic",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 125,
+              "tag": "JJ",
+              "text": "chronic"
+            },
+            {
+              "end": 139,
+              "lemma": "kidney",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 133,
+              "tag": "NN",
+              "text": "kidney"
+            },
+            {
+              "end": 147,
+              "lemma": "disease",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 140,
+              "tag": "NN",
+              "text": "disease"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:f5d6e1f28e7e14102074fbed128ce69450ca65513ae55bb12c317b166659e815",
+      "document_id": "W3123056951",
+      "start": 149,
+      "end": 155,
+      "surface_text": "cancer",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "cancer"
+      ],
+      "confidence": 0.9963570237159729,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 155,
+          "lemma": "cancer",
+          "mention_id": "m:8426e02be69fb088190a4d78e18df2f657616d321d27f7eb62df754dbf7615e3",
+          "ner_label_hint": "CONDITION",
+          "normalized_form": "cancer",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.9963570237159729,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 149,
+          "surface_text": "cancer",
+          "tokens": [
+            {
+              "end": 155,
+              "lemma": "cancer",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 149,
+              "tag": "NN",
+              "text": "cancer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:411a7f6c8fd96a98b774401fc6e833bc14c4bd92cea6058fe5983b5ab35bc869",
+      "document_id": "W3123056951",
+      "start": 159,
+      "end": 165,
+      "surface_text": "anemia",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "anemia"
+      ],
+      "confidence": 0.9970076680183411,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 165,
+          "lemma": "anemia",
+          "mention_id": "m:33dc1918c376d3141e641b72bce9af69bc6646a2a8fe5efb07da3d2db2829111",
+          "ner_label_hint": "CONDITION",
+          "normalized_form": "anemia",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.9970076680183411,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 159,
+          "surface_text": "anemia",
+          "tokens": [
+            {
+              "end": 165,
+              "lemma": "anemia",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 159,
+              "tag": "NN",
+              "text": "anemia"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:0603ca063d4d046819d2c4b1a066507381448b982c68312fdcca361990141627",
+      "document_id": "W3123056951",
+      "start": 181,
+      "end": 189,
+      "surface_text": "patients",
+      "entity_types": [
+        "ACTOR"
+      ],
+      "normalized_forms": [
+        "patient"
+      ],
+      "confidence": 0.9406412839889526,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 189,
+              "original": "patients",
+              "replacement": "patient",
+              "rule": "plural_noun_head",
+              "start": 181
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 189,
+          "lemma": "patient",
+          "mention_id": "m:e62db5e03a3477ec60d9644f8203a112c3712987b18397542e5e0bd07612e2da",
+          "ner_label_hint": "ACTOR",
+          "normalized_form": "patient",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.9406412839889526,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 181,
+          "surface_text": "patients",
+          "tokens": [
+            {
+              "end": 189,
+              "lemma": "patient",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 181,
+              "tag": "NNS",
+              "text": "patients"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:e63b755e17649cb646d5b8fd463e67708677f90d5c2b00c59a529ceb153fdc5b",
+      "document_id": "W3123056951",
+      "start": 226,
+      "end": 261,
+      "surface_text": "anti-rHuEPO neutralizing antibodies",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "anti-rHuEPO neutralizing antibody"
+      ],
+      "confidence": 0.5544543266296387,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 261,
+              "original": "antibodies",
+              "replacement": "antibody",
+              "rule": "plural_noun_head",
+              "start": 251
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 261,
+          "lemma": "anti-rHuEPO neutralizing antibody",
+          "mention_id": "m:a8b6f64d945d38fd9ae599804d32a8419e01c16daefc28c73dc0ad5e3c14fde6",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "anti-rHuEPO neutralizing antibody",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.5544543266296387,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 226,
+          "surface_text": "anti-rHuEPO neutralizing antibodies",
+          "tokens": [
+            {
+              "end": 230,
+              "lemma": "anti",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 226,
+              "tag": "JJ",
+              "text": "anti"
+            },
+            {
+              "end": 231,
+              "lemma": "-",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 230,
+              "tag": "JJ",
+              "text": "-"
+            },
+            {
+              "end": 237,
+              "lemma": "rHuEPO",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 231,
+              "tag": "JJ",
+              "text": "rHuEPO"
+            },
+            {
+              "end": 250,
+              "lemma": "neutralizing",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 238,
+              "tag": "NN",
+              "text": "neutralizing"
+            },
+            {
+              "end": 261,
+              "lemma": "antibody",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 251,
+              "tag": "NNS",
+              "text": "antibodies"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:6b0117f0cabcba655f0e778bcd07adf2d903746177e0ed61a375803ad1bd5b33",
+      "document_id": "W3123056951",
+      "start": 277,
+      "end": 288,
+      "surface_text": "development",
+      "entity_types": [
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "development"
+      ],
+      "confidence": 0.4284685254096985,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 288,
+          "lemma": "development",
+          "mention_id": "m:02660a1d1542150d17d26ad2d393df3122fd45e014b495e4c3c50b331d6aece6",
+          "ner_label_hint": "PROCESS",
+          "normalized_form": "development",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.4284685254096985,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 277,
+          "surface_text": "development",
+          "tokens": [
+            {
+              "end": 288,
+              "lemma": "development",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 277,
+              "tag": "NN",
+              "text": "development"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d9dc8318cbfb9b59f303d416074fd10b7c191935907843d2eb9dbf0609cb0cda",
+      "document_id": "W3123056951",
+      "start": 292,
+      "end": 313,
+      "surface_text": "pure red cell aplasia",
+      "entity_types": [
+        "MECHANISM"
+      ],
+      "normalized_forms": [
+        "pure red cell aplasia"
+      ],
+      "confidence": 0.6380559206008911,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [
+            {
+              "long_end": 313,
+              "long_form": "pure red cell aplasia",
+              "long_start": 292,
+              "scope": "document_candidate_only",
+              "short_end": 319,
+              "short_form": "PRCA",
+              "short_start": 315
+            }
+          ],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 313,
+          "lemma": "pure red cell aplasia",
+          "mention_id": "m:9fb50e0ed6e556718231170e1dc1a46aa5df1c15f0fe7aef882fe8ae94802afc",
+          "ner_label_hint": "MECHANISM",
+          "normalized_form": "pure red cell aplasia",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.6380559206008911,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 292,
+          "surface_text": "pure red cell aplasia",
+          "tokens": [
+            {
+              "end": 296,
+              "lemma": "pure",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 292,
+              "tag": "JJ",
+              "text": "pure"
+            },
+            {
+              "end": 300,
+              "lemma": "red",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 297,
+              "tag": "JJ",
+              "text": "red"
+            },
+            {
+              "end": 305,
+              "lemma": "cell",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 301,
+              "tag": "NN",
+              "text": "cell"
+            },
+            {
+              "end": 313,
+              "lemma": "aplasia",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 306,
+              "tag": "NNP",
+              "text": "aplasia"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:ac3b2ddcbcf862d44eac73d81b160cef0645087378e63b177e3aa5489f3f83cb",
+      "document_id": "W3123056951",
+      "start": 407,
+      "end": 414,
+      "surface_text": "T-cells",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "T-cells"
+      ],
+      "confidence": 0.9177163243293762,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 414,
+          "lemma": "T-cells",
+          "mention_id": "m:b0f1d44fec94ae907ee929dc656571af957d0b4d4d43891e592ee61fcf6c2f93",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "T-cells",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.9177163243293762,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 407,
+          "surface_text": "T-cells",
+          "tokens": [
+            {
+              "end": 408,
+              "lemma": "T",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 407,
+              "tag": "NN",
+              "text": "T"
+            },
+            {
+              "end": 409,
+              "lemma": "-",
+              "morph": {
+                "PunctType": "Dash"
+              },
+              "partial_token": false,
+              "pos": "PUNCT",
+              "possessive": false,
+              "start": 408,
+              "tag": "HYPH",
+              "text": "-"
+            },
+            {
+              "end": 414,
+              "lemma": "cell",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 409,
+              "tag": "NNS",
+              "text": "cells"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:5e24a03d9bf60444f203890235102624d6ef990e27ff4e4d166cdd78882e1c53",
+      "document_id": "W3123056951",
+      "start": 427,
+      "end": 439,
+      "surface_text": "EPO epitopes",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "EPO epitope"
+      ],
+      "confidence": 0.9194889664649963,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 439,
+              "original": "epitopes",
+              "replacement": "epitope",
+              "rule": "plural_noun_head",
+              "start": 431
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 439,
+          "lemma": "EPO epitope",
+          "mention_id": "m:b5e17a3c65e0de906ef8d171b7925af6d675b887570f0c5b8a6cfa532fc4a0c1",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "EPO epitope",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.9194889664649963,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 427,
+          "surface_text": "EPO epitopes",
+          "tokens": [
+            {
+              "end": 430,
+              "lemma": "EPO",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 427,
+              "tag": "NNP",
+              "text": "EPO"
+            },
+            {
+              "end": 439,
+              "lemma": "epitope",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 431,
+              "tag": "NNS",
+              "text": "epitopes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:cbb092f39ec68fad4847ab4a27f2194f19c63c36b433495237d8d5fab9a5f1cb",
+      "document_id": "W3123056951",
+      "start": 449,
+      "end": 462,
+      "surface_text": "MHC molecules",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "MHC molecule"
+      ],
+      "confidence": 0.9677078127861023,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 462,
+              "original": "molecules",
+              "replacement": "molecule",
+              "rule": "plural_noun_head",
+              "start": 453
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 462,
+          "lemma": "MHC molecule",
+          "mention_id": "m:6040af7e7754de083ca07a6e21ab40630935ec6ea8a919d70a96be420de94580",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "MHC molecule",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.9677078127861023,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 449,
+          "surface_text": "MHC molecules",
+          "tokens": [
+            {
+              "end": 452,
+              "lemma": "MHC",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 449,
+              "tag": "NNP",
+              "text": "MHC"
+            },
+            {
+              "end": 462,
+              "lemma": "molecule",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 453,
+              "tag": "NNS",
+              "text": "molecules"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:68fb5d238d63035aadb86e6224366efb522dd4bea7477766399c161f8796a772",
+      "document_id": "W3123056951",
+      "start": 480,
+      "end": 492,
+      "surface_text": "cell surface",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "cell surface"
+      ],
+      "confidence": 0.8325508832931519,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 492,
+          "lemma": "cell surface",
+          "mention_id": "m:b9f2368cf9906505b96cc20d28eafebcfd0c5d1a394cdc71c51aca37547fd47e",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "cell surface",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.8325508832931519,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 480,
+          "surface_text": "cell surface",
+          "tokens": [
+            {
+              "end": 484,
+              "lemma": "cell",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 480,
+              "tag": "NN",
+              "text": "cell"
+            },
+            {
+              "end": 492,
+              "lemma": "surface",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 485,
+              "tag": "NN",
+              "text": "surface"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:30c293414927449fefb37cbd6295d11b099806229f8a9ae360fb18a233a78a70",
+      "document_id": "W3123056951",
+      "start": 496,
+      "end": 500,
+      "surface_text": "APCs",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "APCs"
+      ],
+      "confidence": 0.8752678036689758,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 500,
+          "lemma": "APCs",
+          "mention_id": "m:9cfe4dd4d983164cb5356fa3afd47e3e2d44c03cce5c0a5cd26f6fc8e5f2b2a6",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "APCs",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.8752678036689758,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 496,
+          "surface_text": "APCs",
+          "tokens": [
+            {
+              "end": 500,
+              "lemma": "APCs",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 496,
+              "tag": "NNS",
+              "text": "APCs"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:3de6be6c3dc38e978119b9bbfde94d990e86b5c2e81018030d193cca164bf07f",
+      "document_id": "W3123056951",
+      "start": 502,
+      "end": 518,
+      "surface_text": "Previous studies",
+      "entity_types": [
+        "TASK"
+      ],
+      "normalized_forms": [
+        "Previous study"
+      ],
+      "confidence": 0.47291842103004456,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 518,
+              "original": "studies",
+              "replacement": "study",
+              "rule": "plural_noun_head",
+              "start": 511
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 518,
+          "lemma": "Previous study",
+          "mention_id": "m:78b1dea4aa9e344cbdf668ea1bad96e48e26cffbb4fb74051185f2b42c8c3c75",
+          "ner_label_hint": "TASK",
+          "normalized_form": "Previous study",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.47291842103004456,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 502,
+          "surface_text": "Previous studies",
+          "tokens": [
+            {
+              "end": 510,
+              "lemma": "Previous",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 502,
+              "tag": "JJ",
+              "text": "Previous"
+            },
+            {
+              "end": 518,
+              "lemma": "study",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 511,
+              "tag": "NNS",
+              "text": "studies"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d87f3668c887e48ae79c2c87dacc72be5432b519985507ea6e8399d9d1eeaeed",
+      "document_id": "W3123056951",
+      "start": 511,
+      "end": 518,
+      "surface_text": "studies",
+      "entity_types": [
+        "TASK"
+      ],
+      "normalized_forms": [
+        "study"
+      ],
+      "confidence": 0.4176129102706909,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 518,
+              "original": "studies",
+              "replacement": "study",
+              "rule": "plural_noun_head",
+              "start": 511
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 518,
+          "lemma": "study",
+          "mention_id": "m:2c501ca420e47283f553f1e4c28613fd63ef5019444b1c2de44a842fe0f54e28",
+          "ner_label_hint": "TASK",
+          "normalized_form": "study",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.4176129102706909,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 511,
+          "surface_text": "studies",
+          "tokens": [
+            {
+              "end": 518,
+              "lemma": "study",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 511,
+              "tag": "NNS",
+              "text": "studies"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:10b0febb0a23d79a94c04ec5f0874829b48c23d3a7cc28f963a9055a1dced53a",
+      "document_id": "W3123056951",
+      "start": 560,
+      "end": 571,
+      "surface_text": "development",
+      "entity_types": [
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "development"
+      ],
+      "confidence": 0.536345899105072,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 571,
+          "lemma": "development",
+          "mention_id": "m:65344827f18237b5c85d00c01dee5838fdb8df8c45a655ac471ba759ecab7f75",
+          "ner_label_hint": "PROCESS",
+          "normalized_form": "development",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.536345899105072,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 560,
+          "surface_text": "development",
+          "tokens": [
+            {
+              "end": 571,
+              "lemma": "development",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 560,
+              "tag": "NN",
+              "text": "development"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:696cd04fc9d27fc700ef7e1ae3f5b50774d1fa8f36cca132ac11c225506ffbae",
+      "document_id": "W3123056951",
+      "start": 611,
+      "end": 622,
+      "surface_text": "HLA-DRB1*09",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "HLA-DRB1*09"
+      ],
+      "confidence": 0.7405691146850586,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 622,
+          "lemma": "HLA-DRB1*09",
+          "mention_id": "m:cb688b2379dd6f994580e8b765512c73450fee9cc050ffe548b00db17c7da05e",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "HLA-DRB1*09",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.7405691146850586,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 611,
+          "surface_text": "HLA-DRB1*09",
+          "tokens": [
+            {
+              "end": 614,
+              "lemma": "HLA",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 611,
+              "tag": "NNP",
+              "text": "HLA"
+            },
+            {
+              "end": 615,
+              "lemma": "-",
+              "morph": {
+                "PunctType": "Dash"
+              },
+              "partial_token": false,
+              "pos": "PUNCT",
+              "possessive": false,
+              "start": 614,
+              "tag": "HYPH",
+              "text": "-"
+            },
+            {
+              "end": 619,
+              "lemma": "DRB1",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 615,
+              "tag": "NNP",
+              "text": "DRB1"
+            },
+            {
+              "end": 620,
+              "lemma": "*",
+              "morph": {},
+              "partial_token": false,
+              "pos": "SYM",
+              "possessive": false,
+              "start": 619,
+              "tag": "SYM",
+              "text": "*"
+            },
+            {
+              "end": 622,
+              "lemma": "09",
+              "morph": {
+                "NumType": "Card"
+              },
+              "partial_token": false,
+              "pos": "NUM",
+              "possessive": false,
+              "start": 620,
+              "tag": "CD",
+              "text": "09"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:bbe1f7a9ce1e846d104afb65f6ff0395575393ace74eff5c9db405bfcab3b457",
+      "document_id": "W3123056951",
+      "start": 611,
+      "end": 627,
+      "surface_text": "HLA-DRB1*09 gene",
+      "entity_types": [
+        "ATTRIBUTE",
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "HLA-DRB1*09 gene"
+      ],
+      "confidence": 0.7917393445968628,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 627,
+          "lemma": "HLA-DRB1*09 gene",
+          "mention_id": "m:bedb3bfa20c2dc184a967caeaaaeb45f6be389a1a21eb7f7863673bb663b54c6",
+          "ner_label_hint": "ATTRIBUTE",
+          "normalized_form": "HLA-DRB1*09 gene",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.46822208166122437,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 611,
+          "surface_text": "HLA-DRB1*09 gene",
+          "tokens": [
+            {
+              "end": 614,
+              "lemma": "HLA",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 611,
+              "tag": "NNP",
+              "text": "HLA"
+            },
+            {
+              "end": 615,
+              "lemma": "-",
+              "morph": {
+                "PunctType": "Dash"
+              },
+              "partial_token": false,
+              "pos": "PUNCT",
+              "possessive": false,
+              "start": 614,
+              "tag": "HYPH",
+              "text": "-"
+            },
+            {
+              "end": 619,
+              "lemma": "DRB1",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 615,
+              "tag": "NNP",
+              "text": "DRB1"
+            },
+            {
+              "end": 620,
+              "lemma": "*",
+              "morph": {},
+              "partial_token": false,
+              "pos": "SYM",
+              "possessive": false,
+              "start": 619,
+              "tag": "SYM",
+              "text": "*"
+            },
+            {
+              "end": 622,
+              "lemma": "09",
+              "morph": {
+                "NumType": "Card"
+              },
+              "partial_token": false,
+              "pos": "NUM",
+              "possessive": false,
+              "start": 620,
+              "tag": "CD",
+              "text": "09"
+            },
+            {
+              "end": 627,
+              "lemma": "gene",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 623,
+              "tag": "NN",
+              "text": "gene"
+            }
+          ]
+        },
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 627,
+          "lemma": "HLA-DRB1*09 gene",
+          "mention_id": "m:318d3795afba47ee29ed5f2fb3814997163bc3bd525e47b9eec3673b76efd37d",
+          "ner_label_hint": "CONCEPT",
+          "normalized_form": "HLA-DRB1*09 gene",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.4447632133960724,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 611,
+          "surface_text": "HLA-DRB1*09 gene",
+          "tokens": [
+            {
+              "end": 614,
+              "lemma": "HLA",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 611,
+              "tag": "NNP",
+              "text": "HLA"
+            },
+            {
+              "end": 615,
+              "lemma": "-",
+              "morph": {
+                "PunctType": "Dash"
+              },
+              "partial_token": false,
+              "pos": "PUNCT",
+              "possessive": false,
+              "start": 614,
+              "tag": "HYPH",
+              "text": "-"
+            },
+            {
+              "end": 619,
+              "lemma": "DRB1",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 615,
+              "tag": "NNP",
+              "text": "DRB1"
+            },
+            {
+              "end": 620,
+              "lemma": "*",
+              "morph": {},
+              "partial_token": false,
+              "pos": "SYM",
+              "possessive": false,
+              "start": 619,
+              "tag": "SYM",
+              "text": "*"
+            },
+            {
+              "end": 622,
+              "lemma": "09",
+              "morph": {
+                "NumType": "Card"
+              },
+              "partial_token": false,
+              "pos": "NUM",
+              "possessive": false,
+              "start": 620,
+              "tag": "CD",
+              "text": "09"
+            },
+            {
+              "end": 627,
+              "lemma": "gene",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 623,
+              "tag": "NN",
+              "text": "gene"
+            }
+          ]
+        },
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 627,
+          "lemma": "HLA-DRB1*09 gene",
+          "mention_id": "m:802a0318e1cf9baeddbccf55663414088df6303b6160d0c9b2a5f34efe055deb",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "HLA-DRB1*09 gene",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.7917393445968628,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 611,
+          "surface_text": "HLA-DRB1*09 gene",
+          "tokens": [
+            {
+              "end": 614,
+              "lemma": "HLA",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 611,
+              "tag": "NNP",
+              "text": "HLA"
+            },
+            {
+              "end": 615,
+              "lemma": "-",
+              "morph": {
+                "PunctType": "Dash"
+              },
+              "partial_token": false,
+              "pos": "PUNCT",
+              "possessive": false,
+              "start": 614,
+              "tag": "HYPH",
+              "text": "-"
+            },
+            {
+              "end": 619,
+              "lemma": "DRB1",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 615,
+              "tag": "NNP",
+              "text": "DRB1"
+            },
+            {
+              "end": 620,
+              "lemma": "*",
+              "morph": {},
+              "partial_token": false,
+              "pos": "SYM",
+              "possessive": false,
+              "start": 619,
+              "tag": "SYM",
+              "text": "*"
+            },
+            {
+              "end": 622,
+              "lemma": "09",
+              "morph": {
+                "NumType": "Card"
+              },
+              "partial_token": false,
+              "pos": "NUM",
+              "possessive": false,
+              "start": 620,
+              "tag": "CD",
+              "text": "09"
+            },
+            {
+              "end": 627,
+              "lemma": "gene",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 623,
+              "tag": "NN",
+              "text": "gene"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:d42b1895368f12e6c1081f3e2006134da78913515d802038ccef3e04c96fbc52",
+      "document_id": "W3123056951",
+      "start": 671,
+      "end": 686,
+      "surface_text": "Thai population",
+      "entity_types": [
+        "ACTOR",
+        "DATA_RESOURCE"
+      ],
+      "normalized_forms": [
+        "Thai population"
+      ],
+      "confidence": 0.8511594533920288,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 686,
+          "lemma": "Thai population",
+          "mention_id": "m:c4f60727aa7d8a3d5b8a119d11209a0753e64d90ff1b0c16d4800fcff3d92520",
+          "ner_label_hint": "ACTOR",
+          "normalized_form": "Thai population",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.8511594533920288,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 671,
+          "surface_text": "Thai population",
+          "tokens": [
+            {
+              "end": 675,
+              "lemma": "Thai",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 671,
+              "tag": "JJ",
+              "text": "Thai"
+            },
+            {
+              "end": 686,
+              "lemma": "population",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 676,
+              "tag": "NN",
+              "text": "population"
+            }
+          ]
+        },
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 686,
+          "lemma": "Thai population",
+          "mention_id": "m:05eae49fa08f990dab30ce30b708b4b0337444d7ee4e42dadc7e5ba789db5cf8",
+          "ner_label_hint": "DATA_RESOURCE",
+          "normalized_form": "Thai population",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.6204930543899536,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 671,
+          "surface_text": "Thai population",
+          "tokens": [
+            {
+              "end": 675,
+              "lemma": "Thai",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 671,
+              "tag": "JJ",
+              "text": "Thai"
+            },
+            {
+              "end": 686,
+              "lemma": "population",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 676,
+              "tag": "NN",
+              "text": "population"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:426d664a81b4c1a27dc6da00a0800ac5eb840f11de1e5e7d89658da8ba673a7f",
+      "document_id": "W3123056951",
+      "start": 696,
+      "end": 701,
+      "surface_text": "study",
+      "entity_types": [
+        "TASK"
+      ],
+      "normalized_forms": [
+        "study"
+      ],
+      "confidence": 0.4861956536769867,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 701,
+          "lemma": "study",
+          "mention_id": "m:8146d5c46a9e7cf1a9bc4959a2fd15e0fb276837fa146a017c8d4454c68e6917",
+          "ner_label_hint": "TASK",
+          "normalized_form": "study",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.4861956536769867,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 696,
+          "surface_text": "study",
+          "tokens": [
+            {
+              "end": 701,
+              "lemma": "study",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 696,
+              "tag": "NN",
+              "text": "study"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:4b4ace3fcac1c880857237816d762cbfa52b33086fd96286ee9fb3d962039534",
+      "document_id": "W3123056951",
+      "start": 711,
+      "end": 731,
+      "surface_text": "computational design",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "computational design"
+      ],
+      "confidence": 0.985123336315155,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 731,
+          "lemma": "computational design",
+          "mention_id": "m:d907142e4ddc85b1bc4d0172e7bd95b3e7d24e8248572df58299a673c727cf85",
+          "ner_label_hint": "METHOD",
+          "normalized_form": "computational design",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.985123336315155,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 711,
+          "surface_text": "computational design",
+          "tokens": [
+            {
+              "end": 724,
+              "lemma": "computational",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 711,
+              "tag": "JJ",
+              "text": "computational"
+            },
+            {
+              "end": 731,
+              "lemma": "design",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 725,
+              "tag": "NN",
+              "text": "design"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:05e1eb3533486f54345311549e59b88957fce028d654c866736743bb2f85f379",
+      "document_id": "W3123056951",
+      "start": 746,
+      "end": 766,
+      "surface_text": "immunogenic hotspots",
+      "entity_types": [
+        "MECHANISM"
+      ],
+      "normalized_forms": [
+        "immunogenic hotspot"
+      ],
+      "confidence": 0.4365938603878021,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 766,
+              "original": "hotspots",
+              "replacement": "hotspot",
+              "rule": "plural_noun_head",
+              "start": 758
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 766,
+          "lemma": "immunogenic hotspot",
+          "mention_id": "m:752143ef14ed91915d91d9ec1f70dcd19870515aee13bb2b646d2ea7b138f7f9",
+          "ner_label_hint": "MECHANISM",
+          "normalized_form": "immunogenic hotspot",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.4365938603878021,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 746,
+          "surface_text": "immunogenic hotspots",
+          "tokens": [
+            {
+              "end": 757,
+              "lemma": "immunogenic",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 746,
+              "tag": "JJ",
+              "text": "immunogenic"
+            },
+            {
+              "end": 766,
+              "lemma": "hotspot",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 758,
+              "tag": "NNS",
+              "text": "hotspots"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:8a1fc5f6d75d1d9a231bb62cd6ca6ea252bab969e83c6b27dbfafbadad2753ec",
+      "document_id": "W3123056951",
+      "start": 781,
+      "end": 792,
+      "surface_text": "HLA-DRB1*09",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "HLA-DRB1*09"
+      ],
+      "confidence": 0.8322645425796509,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 792,
+          "lemma": "HLA-DRB1*09",
+          "mention_id": "m:2296eab7dd90076351ce5e09b12bdee29768f7077a4e523ec048b183ae77e16c",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "HLA-DRB1*09",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.8322645425796509,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 781,
+          "surface_text": "HLA-DRB1*09",
+          "tokens": [
+            {
+              "end": 784,
+              "lemma": "HLA",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 781,
+              "tag": "NNP",
+              "text": "HLA"
+            },
+            {
+              "end": 785,
+              "lemma": "-",
+              "morph": {
+                "PunctType": "Dash"
+              },
+              "partial_token": false,
+              "pos": "PUNCT",
+              "possessive": false,
+              "start": 784,
+              "tag": "HYPH",
+              "text": "-"
+            },
+            {
+              "end": 789,
+              "lemma": "DRB1",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 785,
+              "tag": "NNP",
+              "text": "DRB1"
+            },
+            {
+              "end": 790,
+              "lemma": "*",
+              "morph": {
+                "NumType": "Card"
+              },
+              "partial_token": false,
+              "pos": "NUM",
+              "possessive": false,
+              "start": 789,
+              "tag": "CD",
+              "text": "*"
+            },
+            {
+              "end": 792,
+              "lemma": "09",
+              "morph": {
+                "NumType": "Card"
+              },
+              "partial_token": false,
+              "pos": "NUM",
+              "possessive": false,
+              "start": 790,
+              "tag": "CD",
+              "text": "09"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:2746dda9839353c641759747a967769c5901ab693bec8ab93a9d2055f7b4c7d2",
+      "document_id": "W3123056951",
+      "start": 808,
+      "end": 825,
+      "surface_text": "seventeen mutants",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "seventeen mutant"
+      ],
+      "confidence": 0.5671281814575195,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 825,
+              "original": "mutants",
+              "replacement": "mutant",
+              "rule": "plural_noun_head",
+              "start": 818
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 825,
+          "lemma": "seventeen mutant",
+          "mention_id": "m:7d9caacfb918695069570983e4478c84ccb927d7634a237beaa6d78a676423cf",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "seventeen mutant",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.5671281814575195,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 808,
+          "surface_text": "seventeen mutants",
+          "tokens": [
+            {
+              "end": 817,
+              "lemma": "seventeen",
+              "morph": {
+                "NumType": "Card"
+              },
+              "partial_token": false,
+              "pos": "NUM",
+              "possessive": false,
+              "start": 808,
+              "tag": "CD",
+              "text": "seventeen"
+            },
+            {
+              "end": 825,
+              "lemma": "mutant",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 818,
+              "tag": "NNS",
+              "text": "mutants"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:b50960bc1d73d289f54cbbf5538acac7f3192c5bf986149aaa01297e1b5b2b4a",
+      "document_id": "W3123056951",
+      "start": 818,
+      "end": 825,
+      "surface_text": "mutants",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "mutant"
+      ],
+      "confidence": 0.5646905899047852,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 825,
+              "original": "mutants",
+              "replacement": "mutant",
+              "rule": "plural_noun_head",
+              "start": 818
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 825,
+          "lemma": "mutant",
+          "mention_id": "m:c4b9e1341df9cdbdcb6eb62368d893e18be44366236a58f8a08e1895649dfff4",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "mutant",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.5646905899047852,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 818,
+          "surface_text": "mutants",
+          "tokens": [
+            {
+              "end": 825,
+              "lemma": "mutant",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 818,
+              "tag": "NNS",
+              "text": "mutants"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:6a548ca41d58d948902a5ec4149c8cc9e7d239c618a4c84b550c5fafae0c3677",
+      "document_id": "W3123056951",
+      "start": 889,
+      "end": 897,
+      "surface_text": "affinity",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "affinity"
+      ],
+      "confidence": 0.43763527274131775,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 897,
+          "lemma": "affinity",
+          "mention_id": "m:cbdd24a5ea6b52d7f8359e90090b8304ddfc84c219ee7dea7b02930bc6435bd8",
+          "ner_label_hint": "ATTRIBUTE",
+          "normalized_form": "affinity",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.43763527274131775,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 889,
+          "surface_text": "affinity",
+          "tokens": [
+            {
+              "end": 897,
+              "lemma": "affinity",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 889,
+              "tag": "NN",
+              "text": "affinity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a37175599aef926c7613589cdad3321631e8550218096d2a6938f32a9d1b67ad",
+      "document_id": "W3123056951",
+      "start": 906,
+      "end": 912,
+      "surface_text": "allele",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "allele"
+      ],
+      "confidence": 0.5960109233856201,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 912,
+          "lemma": "allele",
+          "mention_id": "m:6f71889279f09ed8fe910c47a4bccfaf8a6adb0c42070a8cf15bc135f357bc84",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "allele",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.5960109233856201,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 906,
+          "surface_text": "allele",
+          "tokens": [
+            {
+              "end": 912,
+              "lemma": "allele",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 906,
+              "tag": "NN",
+              "text": "allele"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:c5038cdea1d7ff9033981a557abbe6369078d4f8e615d93622fb22364f7764b7",
+      "document_id": "W3123056951",
+      "start": 937,
+      "end": 957,
+      "surface_text": "structural integrity",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "structural integrity"
+      ],
+      "confidence": 0.5659281015396118,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 957,
+          "lemma": "structural integrity",
+          "mention_id": "m:623bc252570ad13072c9b1c03d49ec6460133e236037514cc737da9c5c899902",
+          "ner_label_hint": "ATTRIBUTE",
+          "normalized_form": "structural integrity",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.5659281015396118,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 937,
+          "surface_text": "structural integrity",
+          "tokens": [
+            {
+              "end": 947,
+              "lemma": "structural",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 937,
+              "tag": "JJ",
+              "text": "structural"
+            },
+            {
+              "end": 957,
+              "lemma": "integrity",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 948,
+              "tag": "NN",
+              "text": "integrity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:70f3ba3e266beabd8f0b401b3727ad29c787c5d898e0f4dffb189d6df7de0892",
+      "document_id": "W3123056951",
+      "start": 962,
+      "end": 973,
+      "surface_text": "bioactivity",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "bioactivity"
+      ],
+      "confidence": 0.5600391030311584,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 973,
+          "lemma": "bioactivity",
+          "mention_id": "m:d583d3d34dbdef049e103bb0d11d16ec3d9dcbcb180dc9acc50e3bce3f4b8e84",
+          "ner_label_hint": "ATTRIBUTE",
+          "normalized_form": "bioactivity",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.5600391030311584,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 962,
+          "surface_text": "bioactivity",
+          "tokens": [
+            {
+              "end": 973,
+              "lemma": "bioactivity",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 962,
+              "tag": "NN",
+              "text": "bioactivity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:407558ea45a30f02f3c4a94061105075d560b88a3d0eaa7b1aaace03e17aaae9",
+      "document_id": "W3123056951",
+      "start": 987,
+      "end": 1004,
+      "surface_text": "seventeen mutants",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "seventeen mutant"
+      ],
+      "confidence": 0.6619983315467834,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 1004,
+              "original": "mutants",
+              "replacement": "mutant",
+              "rule": "plural_noun_head",
+              "start": 997
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 1004,
+          "lemma": "seventeen mutant",
+          "mention_id": "m:8508c56b2162e5189811cf026712b3757428295138902090d185741f665d3fae",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "seventeen mutant",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.6619983315467834,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 987,
+          "surface_text": "seventeen mutants",
+          "tokens": [
+            {
+              "end": 996,
+              "lemma": "seventeen",
+              "morph": {
+                "NumType": "Card"
+              },
+              "partial_token": false,
+              "pos": "NUM",
+              "possessive": false,
+              "start": 987,
+              "tag": "CD",
+              "text": "seventeen"
+            },
+            {
+              "end": 1004,
+              "lemma": "mutant",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 997,
+              "tag": "NNS",
+              "text": "mutants"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:6cbb71b02c973f291d6aa9501541d7ae1cd916033010977306aa64d6b08701df",
+      "document_id": "W3123056951",
+      "start": 997,
+      "end": 1004,
+      "surface_text": "mutants",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "mutant"
+      ],
+      "confidence": 0.6376160383224487,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 1004,
+              "original": "mutants",
+              "replacement": "mutant",
+              "rule": "plural_noun_head",
+              "start": 997
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 1004,
+          "lemma": "mutant",
+          "mention_id": "m:c2c5977e272c6b80eed40f72e1692bfb7a79b27135631c0558696cf240d4c29d",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "mutant",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.6376160383224487,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 997,
+          "surface_text": "mutants",
+          "tokens": [
+            {
+              "end": 1004,
+              "lemma": "mutant",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 997,
+              "tag": "NNS",
+              "text": "mutants"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:08efb2e96e20aac4f36a91ea8cff02116ecdef9654074e0667e493d1fe13ab5a",
+      "document_id": "W3123056951",
+      "start": 1080,
+      "end": 1091,
+      "surface_text": "bioactivity",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "bioactivity"
+      ],
+      "confidence": 0.5827698707580566,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 1091,
+          "lemma": "bioactivity",
+          "mention_id": "m:77c6a2d0151d52319775a2d9ebe3ef8d86695bfb9323c5e3fa4a396c6f235062",
+          "ner_label_hint": "ATTRIBUTE",
+          "normalized_form": "bioactivity",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.5827698707580566,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 1080,
+          "surface_text": "bioactivity",
+          "tokens": [
+            {
+              "end": 1091,
+              "lemma": "bioactivity",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 1080,
+              "tag": "NN",
+              "text": "bioactivity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:065dc7cf9a8457b8c56e82cc4046305900d753f7a0696bae1936d64fbb2c2492",
+      "document_id": "W3123056951",
+      "start": 1097,
+      "end": 1103,
+      "surface_text": "rHuEPO",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "rHuEPO"
+      ],
+      "confidence": 0.8983951807022095,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [
+            {
+              "long_end": 32,
+              "long_form": "Recombinant human erythropoietin",
+              "long_start": 0,
+              "scope": "document_candidate_only",
+              "short_end": 40,
+              "short_form": "rHuEPO",
+              "short_start": 34
+            }
+          ],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 1103,
+          "lemma": "rHuEPO",
+          "mention_id": "m:9c7a77352d82bf5e3ba41d03e4e621094b002e415cc344f3b1e0168e2877745b",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "rHuEPO",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.8983951807022095,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 1097,
+          "surface_text": "rHuEPO",
+          "tokens": [
+            {
+              "end": 1103,
+              "lemma": "rHuEPO",
+              "morph": {
+                "PronType": "Prs"
+              },
+              "partial_token": false,
+              "pos": "PRON",
+              "possessive": false,
+              "start": 1097,
+              "tag": "PRP",
+              "text": "rHuEPO"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:84ec69994f70c54476a52f5a4753be91e9c0d60cdb003bdee5b5c6504e2ea515",
+      "document_id": "W3123056951",
+      "start": 1111,
+      "end": 1130,
+      "surface_text": "engineered proteins",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "engineered protein"
+      ],
+      "confidence": 0.8629717230796814,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 1130,
+              "original": "proteins",
+              "replacement": "protein",
+              "rule": "plural_noun_head",
+              "start": 1122
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 1130,
+          "lemma": "engineered protein",
+          "mention_id": "m:f52ec4961e49640e02dfe07872b453f8c2e75b13deaa326b213e7df90a7ca47e",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "engineered protein",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.8629717230796814,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 1111,
+          "surface_text": "engineered proteins",
+          "tokens": [
+            {
+              "end": 1121,
+              "lemma": "engineer",
+              "morph": {
+                "Aspect": "Perf",
+                "Tense": "Past",
+                "VerbForm": "Part"
+              },
+              "partial_token": false,
+              "pos": "VERB",
+              "possessive": false,
+              "start": 1111,
+              "tag": "VBN",
+              "text": "engineered"
+            },
+            {
+              "end": 1130,
+              "lemma": "protein",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 1122,
+              "tag": "NNS",
+              "text": "proteins"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:625be93f8c6df149c1dd4cd80190698aa108d426b913d5355f5a72f1fc4f2123",
+      "document_id": "W3123056951",
+      "start": 1168,
+      "end": 1182,
+      "surface_text": "treat patients",
+      "entity_types": [
+        "TASK"
+      ],
+      "normalized_forms": [
+        "treat patient"
+      ],
+      "confidence": 0.3514125943183899,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 1182,
+              "original": "patients",
+              "replacement": "patient",
+              "rule": "plural_noun_head",
+              "start": 1174
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 1182,
+          "lemma": "treat patient",
+          "mention_id": "m:1a0720a35f603dd5d20ae689890e3c5cb398efa1550db26cba17ec80c7f96213",
+          "ner_label_hint": "TASK",
+          "normalized_form": "treat patient",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.3514125943183899,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 1168,
+          "surface_text": "treat patients",
+          "tokens": [
+            {
+              "end": 1173,
+              "lemma": "treat",
+              "morph": {
+                "VerbForm": "Inf"
+              },
+              "partial_token": false,
+              "pos": "VERB",
+              "possessive": false,
+              "start": 1168,
+              "tag": "VB",
+              "text": "treat"
+            },
+            {
+              "end": 1182,
+              "lemma": "patient",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 1174,
+              "tag": "NNS",
+              "text": "patients"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:0ce60ac354c9c819a154f79041ec87a6b65bfc526093dcea5c3c107d3e42cc47",
+      "document_id": "W3123056951",
+      "start": 1174,
+      "end": 1182,
+      "surface_text": "patients",
+      "entity_types": [
+        "ACTOR"
+      ],
+      "normalized_forms": [
+        "patient"
+      ],
+      "confidence": 0.4099867343902588,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 1182,
+              "original": "patients",
+              "replacement": "patient",
+              "rule": "plural_noun_head",
+              "start": 1174
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 1182,
+          "lemma": "patient",
+          "mention_id": "m:b6120c25a3ab65f29b3f0e384d2da998ac5d9b886663cb2e8e8a5fac9df4fdd8",
+          "ner_label_hint": "ACTOR",
+          "normalized_form": "patient",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.4099867343902588,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 1174,
+          "surface_text": "patients",
+          "tokens": [
+            {
+              "end": 1182,
+              "lemma": "patient",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 1174,
+              "tag": "NNS",
+              "text": "patients"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:2d2ea0650b172acb14d26d5a7e8a5c7978fe41b9b3fb730ee7cea97900519ad2",
+      "document_id": "W3123056951",
+      "start": 1191,
+      "end": 1207,
+      "surface_text": "rHuEpo-dependent",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "rHuEpo-dependent"
+      ],
+      "confidence": 0.6671363711357117,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 1207,
+          "lemma": "rHuEpo-dependent",
+          "mention_id": "m:bae04771e5943ce6807b8d32ef8114a1ddc45d82d2e05e4f0e3cd5fe701c092b",
+          "ner_label_hint": "CONDITION",
+          "normalized_form": "rHuEpo-dependent",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.6671363711357117,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 1191,
+          "surface_text": "rHuEpo-dependent",
+          "tokens": [
+            {
+              "end": 1197,
+              "lemma": "rHuEpo",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 1191,
+              "tag": "JJ",
+              "text": "rHuEpo"
+            },
+            {
+              "end": 1198,
+              "lemma": "-",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 1197,
+              "tag": "JJ",
+              "text": "-"
+            },
+            {
+              "end": 1207,
+              "lemma": "dependent",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 1198,
+              "tag": "JJ",
+              "text": "dependent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:4135a0fd5b64bd7f67217466464410ad72542594afbd515abdd4f0bf89ff65ad",
+      "document_id": "W3123056951",
+      "start": 1224,
+      "end": 1235,
+      "surface_text": "HLA-DRB1*09",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "HLA-DRB1*09"
+      ],
+      "confidence": 0.6527907848358154,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 1235,
+          "lemma": "HLA-DRB1*09",
+          "mention_id": "m:7a9fe18a0a78fad9d8b08594d369c9e100c41424d061ab09e286772789e98ee3",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "HLA-DRB1*09",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.6527907848358154,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 1224,
+          "surface_text": "HLA-DRB1*09",
+          "tokens": [
+            {
+              "end": 1227,
+              "lemma": "HLA",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 1224,
+              "tag": "NNP",
+              "text": "HLA"
+            },
+            {
+              "end": 1228,
+              "lemma": "-",
+              "morph": {
+                "PunctType": "Dash"
+              },
+              "partial_token": false,
+              "pos": "PUNCT",
+              "possessive": false,
+              "start": 1227,
+              "tag": "HYPH",
+              "text": "-"
+            },
+            {
+              "end": 1232,
+              "lemma": "DRB1",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 1228,
+              "tag": "NNP",
+              "text": "DRB1"
+            },
+            {
+              "end": 1233,
+              "lemma": "*",
+              "morph": {},
+              "partial_token": false,
+              "pos": "SYM",
+              "possessive": false,
+              "start": 1232,
+              "tag": "SYM",
+              "text": "*"
+            },
+            {
+              "end": 1235,
+              "lemma": "09",
+              "morph": {
+                "NumType": "Card"
+              },
+              "partial_token": false,
+              "pos": "NUM",
+              "possessive": false,
+              "start": 1233,
+              "tag": "CD",
+              "text": "09"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:b53b7503bc4287341025bd1dd86d2addd33287c12efbca8950eb4117a8fe266a",
+      "document_id": "W3123056951",
+      "start": 1224,
+      "end": 1242,
+      "surface_text": "HLA-DRB1*09 allele",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "HLA-DRB1*09 allele"
+      ],
+      "confidence": 0.8583234548568726,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 1242,
+          "lemma": "HLA-DRB1*09 allele",
+          "mention_id": "m:6b770b36284ed113d106bf54f67f51be1e0d745d797c044f092a6a8c7afadcb4",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "HLA-DRB1*09 allele",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.8583234548568726,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 1224,
+          "surface_text": "HLA-DRB1*09 allele",
+          "tokens": [
+            {
+              "end": 1227,
+              "lemma": "HLA",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 1224,
+              "tag": "NNP",
+              "text": "HLA"
+            },
+            {
+              "end": 1228,
+              "lemma": "-",
+              "morph": {
+                "PunctType": "Dash"
+              },
+              "partial_token": false,
+              "pos": "PUNCT",
+              "possessive": false,
+              "start": 1227,
+              "tag": "HYPH",
+              "text": "-"
+            },
+            {
+              "end": 1232,
+              "lemma": "DRB1",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 1228,
+              "tag": "NNP",
+              "text": "DRB1"
+            },
+            {
+              "end": 1233,
+              "lemma": "*",
+              "morph": {},
+              "partial_token": false,
+              "pos": "SYM",
+              "possessive": false,
+              "start": 1232,
+              "tag": "SYM",
+              "text": "*"
+            },
+            {
+              "end": 1235,
+              "lemma": "09",
+              "morph": {
+                "NumType": "Card"
+              },
+              "partial_token": false,
+              "pos": "NUM",
+              "possessive": false,
+              "start": 1233,
+              "tag": "CD",
+              "text": "09"
+            },
+            {
+              "end": 1242,
+              "lemma": "allele",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 1236,
+              "tag": "NN",
+              "text": "allele"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a460ea56a55db8a97181843e0f5ad6c92f8653603f04fbf75687393aaf9a55ee",
+      "document_id": "W3123056951",
+      "start": 1236,
+      "end": 1242,
+      "surface_text": "allele",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "allele"
+      ],
+      "confidence": 0.38577279448509216,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W3123056951",
+          "end": 1242,
+          "lemma": "allele",
+          "mention_id": "m:07f08ca73badcd9783edf1d024f71f03bd525c16d2d7bae37e16b1d6817b0597",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "allele",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5",
+          "score": 0.38577279448509216,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W3123056951",
+            "doi": "https://doi.org/10.1038/s41598-020-80402-1",
+            "landing_page_url": "https://doi.org/10.1038/s41598-020-80402-1",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-31T12:09:11.096373",
+            "source_url": "https://openalex.org/W3123056951",
+            "text_sha256": "aa04a14796bd6c13a2dbcfd79d237898ec2abe12c095cd1dfb23a9c36bce0fa5"
+          },
+          "start": 1236,
+          "surface_text": "allele",
+          "tokens": [
+            {
+              "end": 1242,
+              "lemma": "allele",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 1236,
+              "tag": "NN",
+              "text": "allele"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "triple_id": "t:10c0123416c8c6e225a0efcd119ca72d009d56849717a67614a202cf2dc9d24a",
+      "document_id": "W3123056951",
+      "head_id": "e:426d664a81b4c1a27dc6da00a0800ac5eb840f11de1e5e7d89658da8ba673a7f",
+      "tail_id": "e:4b4ace3fcac1c880857237816d762cbfa52b33086fd96286ee9fb3d962039534",
+      "head_types": [
+        "TASK"
+      ],
+      "tail_types": [
+        "METHOD"
+      ],
+      "relation_type": "USES",
+      "confidence": 0.8448812365531921,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "document_id": "W3123056951",
+          "start": 0,
+          "end": 1243,
+          "text": "Recombinant human erythropoietin (rHuEPO) is a biopharmaceutical drug given to patients who have a low hemoglobin related to chronic kidney disease, cancer or anemia. However, some patients repeatedly receiving rHuEPO develop anti-rHuEPO neutralizing antibodies leading to the development of pure red cell aplasia (PRCA). The immunogenic antibody response activated by rHuEPO is believed to be triggered by T-cells recognizing EPO epitopes bound to MHC molecules displayed on the cell surface of APCs. Previous studies have reported an association between the development of anti-rHuEpo-associated PRCA and the HLA-DRB1*09 gene, which is reported to be entrenched in the Thai population. In this study, we used computational design to screen for immunogenic hotspots recognized by HLA-DRB1*09, and predicted seventeen mutants having anywhere between one through four mutations that reduce affinity for the allele, without disrupting the structural integrity and bioactivity. Five out of seventeen mutants were less immunogenic in vitro while retaining similar or slightly reduced bioactivity than rHuEPO. These engineered proteins could be the potential candidates to treat patients who are rHuEpo-dependent and express the HLA-DRB1*09 allele.",
+          "entity_ids": [
+            "e:498d2e043b17b7584de73784321081f070e71403c7d6e4e3c6594678603997a4",
+            "e:0748b4395ddf95750c2e9a8365d4ae37a5f39d5df9593da367d5cccfa01f5969",
+            "e:f6e4ef94482c38f4faebd6c584474f7eba5c03647a8476ed400594e1125897c8",
+            "e:dcbe03525e58d5738409185db8cde990e2d49155a54a571fa2bf92c4b1bcefe7",
+            "e:f5d6e1f28e7e14102074fbed128ce69450ca65513ae55bb12c317b166659e815",
+            "e:411a7f6c8fd96a98b774401fc6e833bc14c4bd92cea6058fe5983b5ab35bc869",
+            "e:0603ca063d4d046819d2c4b1a066507381448b982c68312fdcca361990141627",
+            "e:e63b755e17649cb646d5b8fd463e67708677f90d5c2b00c59a529ceb153fdc5b",
+            "e:6b0117f0cabcba655f0e778bcd07adf2d903746177e0ed61a375803ad1bd5b33",
+            "e:d9dc8318cbfb9b59f303d416074fd10b7c191935907843d2eb9dbf0609cb0cda",
+            "e:ac3b2ddcbcf862d44eac73d81b160cef0645087378e63b177e3aa5489f3f83cb",
+            "e:5e24a03d9bf60444f203890235102624d6ef990e27ff4e4d166cdd78882e1c53",
+            "e:cbb092f39ec68fad4847ab4a27f2194f19c63c36b433495237d8d5fab9a5f1cb",
+            "e:68fb5d238d63035aadb86e6224366efb522dd4bea7477766399c161f8796a772",
+            "e:30c293414927449fefb37cbd6295d11b099806229f8a9ae360fb18a233a78a70",
+            "e:3de6be6c3dc38e978119b9bbfde94d990e86b5c2e81018030d193cca164bf07f",
+            "e:d87f3668c887e48ae79c2c87dacc72be5432b519985507ea6e8399d9d1eeaeed",
+            "e:10b0febb0a23d79a94c04ec5f0874829b48c23d3a7cc28f963a9055a1dced53a",
+            "e:696cd04fc9d27fc700ef7e1ae3f5b50774d1fa8f36cca132ac11c225506ffbae",
+            "e:bbe1f7a9ce1e846d104afb65f6ff0395575393ace74eff5c9db405bfcab3b457",
+            "e:d42b1895368f12e6c1081f3e2006134da78913515d802038ccef3e04c96fbc52",
+            "e:426d664a81b4c1a27dc6da00a0800ac5eb840f11de1e5e7d89658da8ba673a7f",
+            "e:4b4ace3fcac1c880857237816d762cbfa52b33086fd96286ee9fb3d962039534",
+            "e:05e1eb3533486f54345311549e59b88957fce028d654c866736743bb2f85f379",
+            "e:8a1fc5f6d75d1d9a231bb62cd6ca6ea252bab969e83c6b27dbfafbadad2753ec",
+            "e:2746dda9839353c641759747a967769c5901ab693bec8ab93a9d2055f7b4c7d2",
+            "e:b50960bc1d73d289f54cbbf5538acac7f3192c5bf986149aaa01297e1b5b2b4a",
+            "e:6a548ca41d58d948902a5ec4149c8cc9e7d239c618a4c84b550c5fafae0c3677",
+            "e:a37175599aef926c7613589cdad3321631e8550218096d2a6938f32a9d1b67ad",
+            "e:c5038cdea1d7ff9033981a557abbe6369078d4f8e615d93622fb22364f7764b7",
+            "e:70f3ba3e266beabd8f0b401b3727ad29c787c5d898e0f4dffb189d6df7de0892",
+            "e:407558ea45a30f02f3c4a94061105075d560b88a3d0eaa7b1aaace03e17aaae9",
+            "e:6cbb71b02c973f291d6aa9501541d7ae1cd916033010977306aa64d6b08701df",
+            "e:08efb2e96e20aac4f36a91ea8cff02116ecdef9654074e0667e493d1fe13ab5a",
+            "e:065dc7cf9a8457b8c56e82cc4046305900d753f7a0696bae1936d64fbb2c2492",
+            "e:84ec69994f70c54476a52f5a4753be91e9c0d60cdb003bdee5b5c6504e2ea515",
+            "e:625be93f8c6df149c1dd4cd80190698aa108d426b913d5355f5a72f1fc4f2123",
+            "e:0ce60ac354c9c819a154f79041ec87a6b65bfc526093dcea5c3c107d3e42cc47",
+            "e:2d2ea0650b172acb14d26d5a7e8a5c7978fe41b9b3fb730ee7cea97900519ad2",
+            "e:4135a0fd5b64bd7f67217466464410ad72542594afbd515abdd4f0bf89ff65ad",
+            "e:b53b7503bc4287341025bd1dd86d2addd33287c12efbca8950eb4117a8fe266a",
+            "e:a460ea56a55db8a97181843e0f5ad6c92f8653603f04fbf75687393aaf9a55ee"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:23e57348c141c1f72e8072e556f879c991c9eb2139c63eef84ffce9c14217c70",
+      "document_id": "W3123056951",
+      "head_id": "e:bbe1f7a9ce1e846d104afb65f6ff0395575393ace74eff5c9db405bfcab3b457",
+      "tail_id": "e:d42b1895368f12e6c1081f3e2006134da78913515d802038ccef3e04c96fbc52",
+      "head_types": [
+        "ATTRIBUTE",
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "tail_types": [
+        "ACTOR",
+        "DATA_RESOURCE"
+      ],
+      "relation_type": "LOCATED_IN",
+      "confidence": 0.7413177490234375,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "document_id": "W3123056951",
+          "start": 0,
+          "end": 1243,
+          "text": "Recombinant human erythropoietin (rHuEPO) is a biopharmaceutical drug given to patients who have a low hemoglobin related to chronic kidney disease, cancer or anemia. However, some patients repeatedly receiving rHuEPO develop anti-rHuEPO neutralizing antibodies leading to the development of pure red cell aplasia (PRCA). The immunogenic antibody response activated by rHuEPO is believed to be triggered by T-cells recognizing EPO epitopes bound to MHC molecules displayed on the cell surface of APCs. Previous studies have reported an association between the development of anti-rHuEpo-associated PRCA and the HLA-DRB1*09 gene, which is reported to be entrenched in the Thai population. In this study, we used computational design to screen for immunogenic hotspots recognized by HLA-DRB1*09, and predicted seventeen mutants having anywhere between one through four mutations that reduce affinity for the allele, without disrupting the structural integrity and bioactivity. Five out of seventeen mutants were less immunogenic in vitro while retaining similar or slightly reduced bioactivity than rHuEPO. These engineered proteins could be the potential candidates to treat patients who are rHuEpo-dependent and express the HLA-DRB1*09 allele.",
+          "entity_ids": [
+            "e:498d2e043b17b7584de73784321081f070e71403c7d6e4e3c6594678603997a4",
+            "e:0748b4395ddf95750c2e9a8365d4ae37a5f39d5df9593da367d5cccfa01f5969",
+            "e:f6e4ef94482c38f4faebd6c584474f7eba5c03647a8476ed400594e1125897c8",
+            "e:dcbe03525e58d5738409185db8cde990e2d49155a54a571fa2bf92c4b1bcefe7",
+            "e:f5d6e1f28e7e14102074fbed128ce69450ca65513ae55bb12c317b166659e815",
+            "e:411a7f6c8fd96a98b774401fc6e833bc14c4bd92cea6058fe5983b5ab35bc869",
+            "e:0603ca063d4d046819d2c4b1a066507381448b982c68312fdcca361990141627",
+            "e:e63b755e17649cb646d5b8fd463e67708677f90d5c2b00c59a529ceb153fdc5b",
+            "e:6b0117f0cabcba655f0e778bcd07adf2d903746177e0ed61a375803ad1bd5b33",
+            "e:d9dc8318cbfb9b59f303d416074fd10b7c191935907843d2eb9dbf0609cb0cda",
+            "e:ac3b2ddcbcf862d44eac73d81b160cef0645087378e63b177e3aa5489f3f83cb",
+            "e:5e24a03d9bf60444f203890235102624d6ef990e27ff4e4d166cdd78882e1c53",
+            "e:cbb092f39ec68fad4847ab4a27f2194f19c63c36b433495237d8d5fab9a5f1cb",
+            "e:68fb5d238d63035aadb86e6224366efb522dd4bea7477766399c161f8796a772",
+            "e:30c293414927449fefb37cbd6295d11b099806229f8a9ae360fb18a233a78a70",
+            "e:3de6be6c3dc38e978119b9bbfde94d990e86b5c2e81018030d193cca164bf07f",
+            "e:d87f3668c887e48ae79c2c87dacc72be5432b519985507ea6e8399d9d1eeaeed",
+            "e:10b0febb0a23d79a94c04ec5f0874829b48c23d3a7cc28f963a9055a1dced53a",
+            "e:696cd04fc9d27fc700ef7e1ae3f5b50774d1fa8f36cca132ac11c225506ffbae",
+            "e:bbe1f7a9ce1e846d104afb65f6ff0395575393ace74eff5c9db405bfcab3b457",
+            "e:d42b1895368f12e6c1081f3e2006134da78913515d802038ccef3e04c96fbc52",
+            "e:426d664a81b4c1a27dc6da00a0800ac5eb840f11de1e5e7d89658da8ba673a7f",
+            "e:4b4ace3fcac1c880857237816d762cbfa52b33086fd96286ee9fb3d962039534",
+            "e:05e1eb3533486f54345311549e59b88957fce028d654c866736743bb2f85f379",
+            "e:8a1fc5f6d75d1d9a231bb62cd6ca6ea252bab969e83c6b27dbfafbadad2753ec",
+            "e:2746dda9839353c641759747a967769c5901ab693bec8ab93a9d2055f7b4c7d2",
+            "e:b50960bc1d73d289f54cbbf5538acac7f3192c5bf986149aaa01297e1b5b2b4a",
+            "e:6a548ca41d58d948902a5ec4149c8cc9e7d239c618a4c84b550c5fafae0c3677",
+            "e:a37175599aef926c7613589cdad3321631e8550218096d2a6938f32a9d1b67ad",
+            "e:c5038cdea1d7ff9033981a557abbe6369078d4f8e615d93622fb22364f7764b7",
+            "e:70f3ba3e266beabd8f0b401b3727ad29c787c5d898e0f4dffb189d6df7de0892",
+            "e:407558ea45a30f02f3c4a94061105075d560b88a3d0eaa7b1aaace03e17aaae9",
+            "e:6cbb71b02c973f291d6aa9501541d7ae1cd916033010977306aa64d6b08701df",
+            "e:08efb2e96e20aac4f36a91ea8cff02116ecdef9654074e0667e493d1fe13ab5a",
+            "e:065dc7cf9a8457b8c56e82cc4046305900d753f7a0696bae1936d64fbb2c2492",
+            "e:84ec69994f70c54476a52f5a4753be91e9c0d60cdb003bdee5b5c6504e2ea515",
+            "e:625be93f8c6df149c1dd4cd80190698aa108d426b913d5355f5a72f1fc4f2123",
+            "e:0ce60ac354c9c819a154f79041ec87a6b65bfc526093dcea5c3c107d3e42cc47",
+            "e:2d2ea0650b172acb14d26d5a7e8a5c7978fe41b9b3fb730ee7cea97900519ad2",
+            "e:4135a0fd5b64bd7f67217466464410ad72542594afbd515abdd4f0bf89ff65ad",
+            "e:b53b7503bc4287341025bd1dd86d2addd33287c12efbca8950eb4117a8fe266a",
+            "e:a460ea56a55db8a97181843e0f5ad6c92f8653603f04fbf75687393aaf9a55ee"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:5714167e2870d4a086e9a4fed1d75425fcb2b61d069039d0db27819390e96007",
+      "document_id": "W3123056951",
+      "head_id": "e:498d2e043b17b7584de73784321081f070e71403c7d6e4e3c6594678603997a4",
+      "tail_id": "e:0748b4395ddf95750c2e9a8365d4ae37a5f39d5df9593da367d5cccfa01f5969",
+      "head_types": [
+        "OBJECT"
+      ],
+      "tail_types": [
+        "OBJECT"
+      ],
+      "relation_type": "IS_A",
+      "confidence": 0.9598032832145691,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "document_id": "W3123056951",
+          "start": 0,
+          "end": 1243,
+          "text": "Recombinant human erythropoietin (rHuEPO) is a biopharmaceutical drug given to patients who have a low hemoglobin related to chronic kidney disease, cancer or anemia. However, some patients repeatedly receiving rHuEPO develop anti-rHuEPO neutralizing antibodies leading to the development of pure red cell aplasia (PRCA). The immunogenic antibody response activated by rHuEPO is believed to be triggered by T-cells recognizing EPO epitopes bound to MHC molecules displayed on the cell surface of APCs. Previous studies have reported an association between the development of anti-rHuEpo-associated PRCA and the HLA-DRB1*09 gene, which is reported to be entrenched in the Thai population. In this study, we used computational design to screen for immunogenic hotspots recognized by HLA-DRB1*09, and predicted seventeen mutants having anywhere between one through four mutations that reduce affinity for the allele, without disrupting the structural integrity and bioactivity. Five out of seventeen mutants were less immunogenic in vitro while retaining similar or slightly reduced bioactivity than rHuEPO. These engineered proteins could be the potential candidates to treat patients who are rHuEpo-dependent and express the HLA-DRB1*09 allele.",
+          "entity_ids": [
+            "e:498d2e043b17b7584de73784321081f070e71403c7d6e4e3c6594678603997a4",
+            "e:0748b4395ddf95750c2e9a8365d4ae37a5f39d5df9593da367d5cccfa01f5969",
+            "e:f6e4ef94482c38f4faebd6c584474f7eba5c03647a8476ed400594e1125897c8",
+            "e:dcbe03525e58d5738409185db8cde990e2d49155a54a571fa2bf92c4b1bcefe7",
+            "e:f5d6e1f28e7e14102074fbed128ce69450ca65513ae55bb12c317b166659e815",
+            "e:411a7f6c8fd96a98b774401fc6e833bc14c4bd92cea6058fe5983b5ab35bc869",
+            "e:0603ca063d4d046819d2c4b1a066507381448b982c68312fdcca361990141627",
+            "e:e63b755e17649cb646d5b8fd463e67708677f90d5c2b00c59a529ceb153fdc5b",
+            "e:6b0117f0cabcba655f0e778bcd07adf2d903746177e0ed61a375803ad1bd5b33",
+            "e:d9dc8318cbfb9b59f303d416074fd10b7c191935907843d2eb9dbf0609cb0cda",
+            "e:ac3b2ddcbcf862d44eac73d81b160cef0645087378e63b177e3aa5489f3f83cb",
+            "e:5e24a03d9bf60444f203890235102624d6ef990e27ff4e4d166cdd78882e1c53",
+            "e:cbb092f39ec68fad4847ab4a27f2194f19c63c36b433495237d8d5fab9a5f1cb",
+            "e:68fb5d238d63035aadb86e6224366efb522dd4bea7477766399c161f8796a772",
+            "e:30c293414927449fefb37cbd6295d11b099806229f8a9ae360fb18a233a78a70",
+            "e:3de6be6c3dc38e978119b9bbfde94d990e86b5c2e81018030d193cca164bf07f",
+            "e:d87f3668c887e48ae79c2c87dacc72be5432b519985507ea6e8399d9d1eeaeed",
+            "e:10b0febb0a23d79a94c04ec5f0874829b48c23d3a7cc28f963a9055a1dced53a",
+            "e:696cd04fc9d27fc700ef7e1ae3f5b50774d1fa8f36cca132ac11c225506ffbae",
+            "e:bbe1f7a9ce1e846d104afb65f6ff0395575393ace74eff5c9db405bfcab3b457",
+            "e:d42b1895368f12e6c1081f3e2006134da78913515d802038ccef3e04c96fbc52",
+            "e:426d664a81b4c1a27dc6da00a0800ac5eb840f11de1e5e7d89658da8ba673a7f",
+            "e:4b4ace3fcac1c880857237816d762cbfa52b33086fd96286ee9fb3d962039534",
+            "e:05e1eb3533486f54345311549e59b88957fce028d654c866736743bb2f85f379",
+            "e:8a1fc5f6d75d1d9a231bb62cd6ca6ea252bab969e83c6b27dbfafbadad2753ec",
+            "e:2746dda9839353c641759747a967769c5901ab693bec8ab93a9d2055f7b4c7d2",
+            "e:b50960bc1d73d289f54cbbf5538acac7f3192c5bf986149aaa01297e1b5b2b4a",
+            "e:6a548ca41d58d948902a5ec4149c8cc9e7d239c618a4c84b550c5fafae0c3677",
+            "e:a37175599aef926c7613589cdad3321631e8550218096d2a6938f32a9d1b67ad",
+            "e:c5038cdea1d7ff9033981a557abbe6369078d4f8e615d93622fb22364f7764b7",
+            "e:70f3ba3e266beabd8f0b401b3727ad29c787c5d898e0f4dffb189d6df7de0892",
+            "e:407558ea45a30f02f3c4a94061105075d560b88a3d0eaa7b1aaace03e17aaae9",
+            "e:6cbb71b02c973f291d6aa9501541d7ae1cd916033010977306aa64d6b08701df",
+            "e:08efb2e96e20aac4f36a91ea8cff02116ecdef9654074e0667e493d1fe13ab5a",
+            "e:065dc7cf9a8457b8c56e82cc4046305900d753f7a0696bae1936d64fbb2c2492",
+            "e:84ec69994f70c54476a52f5a4753be91e9c0d60cdb003bdee5b5c6504e2ea515",
+            "e:625be93f8c6df149c1dd4cd80190698aa108d426b913d5355f5a72f1fc4f2123",
+            "e:0ce60ac354c9c819a154f79041ec87a6b65bfc526093dcea5c3c107d3e42cc47",
+            "e:2d2ea0650b172acb14d26d5a7e8a5c7978fe41b9b3fb730ee7cea97900519ad2",
+            "e:4135a0fd5b64bd7f67217466464410ad72542594afbd515abdd4f0bf89ff65ad",
+            "e:b53b7503bc4287341025bd1dd86d2addd33287c12efbca8950eb4117a8fe266a",
+            "e:a460ea56a55db8a97181843e0f5ad6c92f8653603f04fbf75687393aaf9a55ee"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:d1ada511edf0993fc89cb42c79c39aaaaeb090ba5d357c2ccac0fd9fbbd37a9a",
+      "document_id": "W3123056951",
+      "head_id": "e:e63b755e17649cb646d5b8fd463e67708677f90d5c2b00c59a529ceb153fdc5b",
+      "tail_id": "e:d9dc8318cbfb9b59f303d416074fd10b7c191935907843d2eb9dbf0609cb0cda",
+      "head_types": [
+        "OBJECT"
+      ],
+      "tail_types": [
+        "MECHANISM"
+      ],
+      "relation_type": "CAUSES",
+      "confidence": 0.7569400668144226,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "document_id": "W3123056951",
+          "start": 0,
+          "end": 1243,
+          "text": "Recombinant human erythropoietin (rHuEPO) is a biopharmaceutical drug given to patients who have a low hemoglobin related to chronic kidney disease, cancer or anemia. However, some patients repeatedly receiving rHuEPO develop anti-rHuEPO neutralizing antibodies leading to the development of pure red cell aplasia (PRCA). The immunogenic antibody response activated by rHuEPO is believed to be triggered by T-cells recognizing EPO epitopes bound to MHC molecules displayed on the cell surface of APCs. Previous studies have reported an association between the development of anti-rHuEpo-associated PRCA and the HLA-DRB1*09 gene, which is reported to be entrenched in the Thai population. In this study, we used computational design to screen for immunogenic hotspots recognized by HLA-DRB1*09, and predicted seventeen mutants having anywhere between one through four mutations that reduce affinity for the allele, without disrupting the structural integrity and bioactivity. Five out of seventeen mutants were less immunogenic in vitro while retaining similar or slightly reduced bioactivity than rHuEPO. These engineered proteins could be the potential candidates to treat patients who are rHuEpo-dependent and express the HLA-DRB1*09 allele.",
+          "entity_ids": [
+            "e:498d2e043b17b7584de73784321081f070e71403c7d6e4e3c6594678603997a4",
+            "e:0748b4395ddf95750c2e9a8365d4ae37a5f39d5df9593da367d5cccfa01f5969",
+            "e:f6e4ef94482c38f4faebd6c584474f7eba5c03647a8476ed400594e1125897c8",
+            "e:dcbe03525e58d5738409185db8cde990e2d49155a54a571fa2bf92c4b1bcefe7",
+            "e:f5d6e1f28e7e14102074fbed128ce69450ca65513ae55bb12c317b166659e815",
+            "e:411a7f6c8fd96a98b774401fc6e833bc14c4bd92cea6058fe5983b5ab35bc869",
+            "e:0603ca063d4d046819d2c4b1a066507381448b982c68312fdcca361990141627",
+            "e:e63b755e17649cb646d5b8fd463e67708677f90d5c2b00c59a529ceb153fdc5b",
+            "e:6b0117f0cabcba655f0e778bcd07adf2d903746177e0ed61a375803ad1bd5b33",
+            "e:d9dc8318cbfb9b59f303d416074fd10b7c191935907843d2eb9dbf0609cb0cda",
+            "e:ac3b2ddcbcf862d44eac73d81b160cef0645087378e63b177e3aa5489f3f83cb",
+            "e:5e24a03d9bf60444f203890235102624d6ef990e27ff4e4d166cdd78882e1c53",
+            "e:cbb092f39ec68fad4847ab4a27f2194f19c63c36b433495237d8d5fab9a5f1cb",
+            "e:68fb5d238d63035aadb86e6224366efb522dd4bea7477766399c161f8796a772",
+            "e:30c293414927449fefb37cbd6295d11b099806229f8a9ae360fb18a233a78a70",
+            "e:3de6be6c3dc38e978119b9bbfde94d990e86b5c2e81018030d193cca164bf07f",
+            "e:d87f3668c887e48ae79c2c87dacc72be5432b519985507ea6e8399d9d1eeaeed",
+            "e:10b0febb0a23d79a94c04ec5f0874829b48c23d3a7cc28f963a9055a1dced53a",
+            "e:696cd04fc9d27fc700ef7e1ae3f5b50774d1fa8f36cca132ac11c225506ffbae",
+            "e:bbe1f7a9ce1e846d104afb65f6ff0395575393ace74eff5c9db405bfcab3b457",
+            "e:d42b1895368f12e6c1081f3e2006134da78913515d802038ccef3e04c96fbc52",
+            "e:426d664a81b4c1a27dc6da00a0800ac5eb840f11de1e5e7d89658da8ba673a7f",
+            "e:4b4ace3fcac1c880857237816d762cbfa52b33086fd96286ee9fb3d962039534",
+            "e:05e1eb3533486f54345311549e59b88957fce028d654c866736743bb2f85f379",
+            "e:8a1fc5f6d75d1d9a231bb62cd6ca6ea252bab969e83c6b27dbfafbadad2753ec",
+            "e:2746dda9839353c641759747a967769c5901ab693bec8ab93a9d2055f7b4c7d2",
+            "e:b50960bc1d73d289f54cbbf5538acac7f3192c5bf986149aaa01297e1b5b2b4a",
+            "e:6a548ca41d58d948902a5ec4149c8cc9e7d239c618a4c84b550c5fafae0c3677",
+            "e:a37175599aef926c7613589cdad3321631e8550218096d2a6938f32a9d1b67ad",
+            "e:c5038cdea1d7ff9033981a557abbe6369078d4f8e615d93622fb22364f7764b7",
+            "e:70f3ba3e266beabd8f0b401b3727ad29c787c5d898e0f4dffb189d6df7de0892",
+            "e:407558ea45a30f02f3c4a94061105075d560b88a3d0eaa7b1aaace03e17aaae9",
+            "e:6cbb71b02c973f291d6aa9501541d7ae1cd916033010977306aa64d6b08701df",
+            "e:08efb2e96e20aac4f36a91ea8cff02116ecdef9654074e0667e493d1fe13ab5a",
+            "e:065dc7cf9a8457b8c56e82cc4046305900d753f7a0696bae1936d64fbb2c2492",
+            "e:84ec69994f70c54476a52f5a4753be91e9c0d60cdb003bdee5b5c6504e2ea515",
+            "e:625be93f8c6df149c1dd4cd80190698aa108d426b913d5355f5a72f1fc4f2123",
+            "e:0ce60ac354c9c819a154f79041ec87a6b65bfc526093dcea5c3c107d3e42cc47",
+            "e:2d2ea0650b172acb14d26d5a7e8a5c7978fe41b9b3fb730ee7cea97900519ad2",
+            "e:4135a0fd5b64bd7f67217466464410ad72542594afbd515abdd4f0bf89ff65ad",
+            "e:b53b7503bc4287341025bd1dd86d2addd33287c12efbca8950eb4117a8fe266a",
+            "e:a460ea56a55db8a97181843e0f5ad6c92f8653603f04fbf75687393aaf9a55ee"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:f6f6957f61998146e52a33e8a00b6476afd27b547765e7fe5f980d0ad113f495",
+      "document_id": "W3123056951",
+      "head_id": "e:84ec69994f70c54476a52f5a4753be91e9c0d60cdb003bdee5b5c6504e2ea515",
+      "tail_id": "e:065dc7cf9a8457b8c56e82cc4046305900d753f7a0696bae1936d64fbb2c2492",
+      "head_types": [
+        "OBJECT"
+      ],
+      "tail_types": [
+        "OBJECT"
+      ],
+      "relation_type": "COMPARED_WITH",
+      "confidence": 0.7578063607215881,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:eaa05a4f455945ca334e99753bbbf80c9fcaa6c79062cb4805e0152d2bfcf3ab",
+          "document_id": "W3123056951",
+          "start": 0,
+          "end": 1243,
+          "text": "Recombinant human erythropoietin (rHuEPO) is a biopharmaceutical drug given to patients who have a low hemoglobin related to chronic kidney disease, cancer or anemia. However, some patients repeatedly receiving rHuEPO develop anti-rHuEPO neutralizing antibodies leading to the development of pure red cell aplasia (PRCA). The immunogenic antibody response activated by rHuEPO is believed to be triggered by T-cells recognizing EPO epitopes bound to MHC molecules displayed on the cell surface of APCs. Previous studies have reported an association between the development of anti-rHuEpo-associated PRCA and the HLA-DRB1*09 gene, which is reported to be entrenched in the Thai population. In this study, we used computational design to screen for immunogenic hotspots recognized by HLA-DRB1*09, and predicted seventeen mutants having anywhere between one through four mutations that reduce affinity for the allele, without disrupting the structural integrity and bioactivity. Five out of seventeen mutants were less immunogenic in vitro while retaining similar or slightly reduced bioactivity than rHuEPO. These engineered proteins could be the potential candidates to treat patients who are rHuEpo-dependent and express the HLA-DRB1*09 allele.",
+          "entity_ids": [
+            "e:498d2e043b17b7584de73784321081f070e71403c7d6e4e3c6594678603997a4",
+            "e:0748b4395ddf95750c2e9a8365d4ae37a5f39d5df9593da367d5cccfa01f5969",
+            "e:f6e4ef94482c38f4faebd6c584474f7eba5c03647a8476ed400594e1125897c8",
+            "e:dcbe03525e58d5738409185db8cde990e2d49155a54a571fa2bf92c4b1bcefe7",
+            "e:f5d6e1f28e7e14102074fbed128ce69450ca65513ae55bb12c317b166659e815",
+            "e:411a7f6c8fd96a98b774401fc6e833bc14c4bd92cea6058fe5983b5ab35bc869",
+            "e:0603ca063d4d046819d2c4b1a066507381448b982c68312fdcca361990141627",
+            "e:e63b755e17649cb646d5b8fd463e67708677f90d5c2b00c59a529ceb153fdc5b",
+            "e:6b0117f0cabcba655f0e778bcd07adf2d903746177e0ed61a375803ad1bd5b33",
+            "e:d9dc8318cbfb9b59f303d416074fd10b7c191935907843d2eb9dbf0609cb0cda",
+            "e:ac3b2ddcbcf862d44eac73d81b160cef0645087378e63b177e3aa5489f3f83cb",
+            "e:5e24a03d9bf60444f203890235102624d6ef990e27ff4e4d166cdd78882e1c53",
+            "e:cbb092f39ec68fad4847ab4a27f2194f19c63c36b433495237d8d5fab9a5f1cb",
+            "e:68fb5d238d63035aadb86e6224366efb522dd4bea7477766399c161f8796a772",
+            "e:30c293414927449fefb37cbd6295d11b099806229f8a9ae360fb18a233a78a70",
+            "e:3de6be6c3dc38e978119b9bbfde94d990e86b5c2e81018030d193cca164bf07f",
+            "e:d87f3668c887e48ae79c2c87dacc72be5432b519985507ea6e8399d9d1eeaeed",
+            "e:10b0febb0a23d79a94c04ec5f0874829b48c23d3a7cc28f963a9055a1dced53a",
+            "e:696cd04fc9d27fc700ef7e1ae3f5b50774d1fa8f36cca132ac11c225506ffbae",
+            "e:bbe1f7a9ce1e846d104afb65f6ff0395575393ace74eff5c9db405bfcab3b457",
+            "e:d42b1895368f12e6c1081f3e2006134da78913515d802038ccef3e04c96fbc52",
+            "e:426d664a81b4c1a27dc6da00a0800ac5eb840f11de1e5e7d89658da8ba673a7f",
+            "e:4b4ace3fcac1c880857237816d762cbfa52b33086fd96286ee9fb3d962039534",
+            "e:05e1eb3533486f54345311549e59b88957fce028d654c866736743bb2f85f379",
+            "e:8a1fc5f6d75d1d9a231bb62cd6ca6ea252bab969e83c6b27dbfafbadad2753ec",
+            "e:2746dda9839353c641759747a967769c5901ab693bec8ab93a9d2055f7b4c7d2",
+            "e:b50960bc1d73d289f54cbbf5538acac7f3192c5bf986149aaa01297e1b5b2b4a",
+            "e:6a548ca41d58d948902a5ec4149c8cc9e7d239c618a4c84b550c5fafae0c3677",
+            "e:a37175599aef926c7613589cdad3321631e8550218096d2a6938f32a9d1b67ad",
+            "e:c5038cdea1d7ff9033981a557abbe6369078d4f8e615d93622fb22364f7764b7",
+            "e:70f3ba3e266beabd8f0b401b3727ad29c787c5d898e0f4dffb189d6df7de0892",
+            "e:407558ea45a30f02f3c4a94061105075d560b88a3d0eaa7b1aaace03e17aaae9",
+            "e:6cbb71b02c973f291d6aa9501541d7ae1cd916033010977306aa64d6b08701df",
+            "e:08efb2e96e20aac4f36a91ea8cff02116ecdef9654074e0667e493d1fe13ab5a",
+            "e:065dc7cf9a8457b8c56e82cc4046305900d753f7a0696bae1936d64fbb2c2492",
+            "e:84ec69994f70c54476a52f5a4753be91e9c0d60cdb003bdee5b5c6504e2ea515",
+            "e:625be93f8c6df149c1dd4cd80190698aa108d426b913d5355f5a72f1fc4f2123",
+            "e:0ce60ac354c9c819a154f79041ec87a6b65bfc526093dcea5c3c107d3e42cc47",
+            "e:2d2ea0650b172acb14d26d5a7e8a5c7978fe41b9b3fb730ee7cea97900519ad2",
+            "e:4135a0fd5b64bd7f67217466464410ad72542594afbd515abdd4f0bf89ff65ad",
+            "e:b53b7503bc4287341025bd1dd86d2addd33287c12efbca8950eb4117a8fe266a",
+            "e:a460ea56a55db8a97181843e0f5ad6c92f8653603f04fbf75687393aaf9a55ee"
+          ]
+        }
+      ]
+    }
+  ],
+  "raw_relation_count": 5,
+  "seconds": 1.7945403999183327
+}
