@@ -604,6 +604,18 @@ wheels = [
 ]
 
 [[package]]
+name = "neo4j"
+version = "6.1.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pytz" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/1b/01/d6ce65e4647f6cb2b9cca3b813978f7329b54b4e36660aaec1ddf0ccce7a/neo4j-6.1.0.tar.gz", hash = "sha256:b5dde8c0d8481e7b6ae3733569d990dd3e5befdc5d452f531ad1884ed3500b84", size = 239629, upload-time = "2026-01-12T11:27:34.777Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/70/5c/ee71e2dd955045425ef44283f40ba1da67673cf06404916ca2950ac0cd39/neo4j-6.1.0-py3-none-any.whl", hash = "sha256:3bd93941f3a3559af197031157220af9fd71f4f93a311db687bd69ffa417b67d", size = 325326, upload-time = "2026-01-12T11:27:33.196Z" },
+]
+
+[[package]]
 name = "networkx"
 version = "3.6.1"
 source = { registry = "https://pypi.org/simple" }
@@ -873,6 +885,15 @@ wheels = [
 ]
 
 [[package]]
+name = "pytz"
+version = "2026.6"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/f5/b0/168030b0bfcc334cf09fa3313afdb888d892c8a0027324683d1de0ec277e/pytz-2026.6.tar.gz", hash = "sha256:3b0fc2727707663d6e517936f444fd8a8b240f1fc32f4bf7ee03274245945284", size = 318520, upload-time = "2026-10-29T09:05:47.011Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b6/25/564f3fc5b70c1398d706c51f2b1470d0ea0b1b2f96fee67877b6f5bdf3b6/pytz-2026.6-py2.py3-none-any.whl", hash = "sha256:7fed3fee8fd6bd4a2b7b75a8d56021d0624127bf69bd5691f115db929ac570b3", size = 506321, upload-time = "2026-10-29T09:05:45.14Z" },
+]
+
+[[package]]
 name = "pyyaml"
 version = "6.0.3"
 source = { registry = "https://pypi.org/simple" }
@@ -1124,6 +1145,10 @@ ner-v2 = [
     { name = "spacy" },
     { name = "tqdm" },
 ]
+relex = [
+    { name = "neo4j" },
+    { name = "tqdm" },
+]
 research = [
     { name = "gliner2", extra = ["local"] },
     { name = "matplotlib" },
@@ -1141,6 +1166,7 @@ requires-dist = [
     { name = "huggingface-hub", specifier = "==1.28.0" },
     { name = "jsonschema", specifier = "==4.25.1" },
     { name = "matplotlib", marker = "extra == 'research'", specifier = "==3.10.8" },
+    { name = "neo4j", marker = "extra == 'relex'", specifier = "==6.1.0" },
     { name = "numpy", specifier = "==2.4.1" },
     { name = "psutil", specifier = "==7.2.2" },
     { name = "pytest", marker = "extra == 'test'", specifier = "==8.3.5" },
@@ -1153,9 +1179,10 @@ requires-dist = [
     { name = "torch", marker = "sys_platform != 'linux'", specifier = "==2.11.0" },
     { name = "torch", marker = "sys_platform == 'linux'", specifier = "==2.11.0", index = "https://download.pytorch.org/whl/cpu" },
     { name = "tqdm", marker = "extra == 'ner-v2'", specifier = "==4.70.1" },
+    { name = "tqdm", marker = "extra == 'relex'", specifier = "==4.70.1" },
     { name = "transformers", specifier = "==5.1.0" },
 ]
-provides-extras = ["test", "benchmark", "research", "ner-v2"]
+provides-extras = ["test", "benchmark", "research", "relex", "ner-v2"]
 
 [[package]]
 name = "smart-open"

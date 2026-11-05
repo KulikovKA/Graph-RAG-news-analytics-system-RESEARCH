@@ -1,0 +1,792 @@
+{
+  "fingerprint": "68877d1a9d3e60c95fa0f80b22849e687e090d57cd2766f6c7948ec7306fc75d",
+  "document_id": "W4230116451",
+  "model": "knowledgator/gliner-relex-base-v1.0",
+  "raw_windows": [
+    {
+      "window": {
+        "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+        "document_id": "W4230116451",
+        "start": 0,
+        "end": 791,
+        "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+        "entity_ids": [
+          "e:35d89c1e16e72b4dec6a364bccbf728449b09a896cd2cb95cf850388dea02fef",
+          "e:54f09db3e2d9e7264ffd3fe0c2ccaf4730d4bc539646f506ada5ba9e004f69a8",
+          "e:88a0ff4b02098968c3be76b57ae7809d3f4197d85ac375e42859569defddf1df",
+          "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a",
+          "e:dfa62891c45caaad0430a5ca197acdc26a2a74011e696e4de73f113b131d97a6",
+          "e:65e57b254ff4266e47ed2b19aee5b817fa1c1e26988c170926e6015f0f7e5fb1",
+          "e:ef0326aa41bb08767db52f38d4dd5da5c39dd6a13f6cb097563e4dd1099e0673",
+          "e:7bbf03cd5f65b3ab3ac311fa55cf82abe4c1a6da9215f14b07907d80cdd3e284",
+          "e:1089bf670c142b4a18644fcad47f9074e82420710e0858fbac9c55bf345fcca5",
+          "e:188f42404969746a895a746a7a0a916ef6d524480bd159a46bfc726b4dac7e5b",
+          "e:55f096f9222ef594500635ef0503900d77c3d7a538340168d68a5d3539f65bc5",
+          "e:a30d0fc39205514ef9aff67c50e6cb9dbb808c0b5876c9b14e741a891de870c3",
+          "e:114d9bd4197e9e8afa140239a2f43adecd5fdf4018a781d4887655ebdf8fb6c2",
+          "e:be1c5ea3c7e6475974dde138d69049694acfa353302341ffce8ddba375f96072",
+          "e:6fcaf54d0a22415d4769b35e20c116f59acde3596971391a10a35cac72f62f01",
+          "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+          "e:c6d9d225577d02c73e29519b9610d590504615913d90ea5ae00e07414e2df4aa",
+          "e:ada2e4f3e230688ebe9d2c8e13abfd371787d2d24eef9c7e6d1a000e68d5296b",
+          "e:82ee1333ef4c755bd9f20e8af05a920b80870aa92afd4e76ee68fb6973b78d2d",
+          "e:8612a3b0cc6abfc85fcac9ead889fb5fd906c6e98e0edd690d0964287a19266a",
+          "e:646e834d3b7fe3f065a6133635b7b1fe279acf06960eb97f983bcf48fcffdf6e",
+          "e:c8ad6ac62d3aae3822a2c85af0a7f8b3a6766881f497bda07f16981969c94609",
+          "e:29973bbacf12e50fa8ce02d9ee19897c1b183ef6f31b8614aba9202be768fd72",
+          "e:df7df057e79d9c2d47b981107d834c23329cd8ef6e30556858a4d0e23df369a6"
+        ]
+      },
+      "audit": {
+        "tokens": 227,
+        "spans": 24,
+        "pairs": 552,
+        "supplied_word_spans": [
+          [
+            3,
+            4
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            30,
+            31
+          ],
+          [
+            35,
+            37
+          ],
+          [
+            36,
+            37
+          ],
+          [
+            55,
+            58
+          ],
+          [
+            57,
+            57
+          ],
+          [
+            63,
+            65
+          ],
+          [
+            72,
+            73
+          ],
+          [
+            76,
+            78
+          ],
+          [
+            86,
+            86
+          ],
+          [
+            88,
+            88
+          ],
+          [
+            92,
+            93
+          ],
+          [
+            99,
+            99
+          ],
+          [
+            99,
+            101
+          ],
+          [
+            105,
+            108
+          ],
+          [
+            105,
+            111
+          ],
+          [
+            106,
+            108
+          ],
+          [
+            110,
+            110
+          ],
+          [
+            114,
+            115
+          ],
+          [
+            122,
+            123
+          ],
+          [
+            122,
+            124
+          ],
+          [
+            128,
+            129
+          ]
+        ]
+      },
+      "predictions": [
+        {
+          "head": {
+            "start": 19,
+            "end": 36,
+            "text": "computing systems"
+          },
+          "tail": {
+            "start": 107,
+            "end": 122,
+            "text": "biomedical data"
+          },
+          "relation": "produces",
+          "score": 0.7523834705352783
+        },
+        {
+          "head": {
+            "start": 19,
+            "end": 36,
+            "text": "computing systems"
+          },
+          "tail": {
+            "start": 130,
+            "end": 144,
+            "text": "e-health field"
+          },
+          "relation": "located in",
+          "score": 0.7086603045463562
+        },
+        {
+          "head": {
+            "start": 583,
+            "end": 605,
+            "text": "GPU parallel algorithm"
+          },
+          "tail": {
+            "start": 619,
+            "end": 654,
+            "text": "optimised blockwise non-local means"
+          },
+          "relation": "derived from",
+          "score": 0.8757212162017822
+        },
+        {
+          "head": {
+            "start": 583,
+            "end": 605,
+            "text": "GPU parallel algorithm"
+          },
+          "tail": {
+            "start": 619,
+            "end": 654,
+            "text": "optimised blockwise non-local means"
+          },
+          "relation": "depends on",
+          "score": 0.7123239636421204
+        },
+        {
+          "head": {
+            "start": 583,
+            "end": 605,
+            "text": "GPU parallel algorithm"
+          },
+          "tail": {
+            "start": 619,
+            "end": 663,
+            "text": "optimised blockwise non-local means (OB-NLM)"
+          },
+          "relation": "derived from",
+          "score": 0.9301209449768066
+        },
+        {
+          "head": {
+            "start": 583,
+            "end": 605,
+            "text": "GPU parallel algorithm"
+          },
+          "tail": {
+            "start": 619,
+            "end": 663,
+            "text": "optimised blockwise non-local means (OB-NLM)"
+          },
+          "relation": "depends on",
+          "score": 0.7647201418876648
+        },
+        {
+          "head": {
+            "start": 583,
+            "end": 605,
+            "text": "GPU parallel algorithm"
+          },
+          "tail": {
+            "start": 629,
+            "end": 654,
+            "text": "blockwise non-local means"
+          },
+          "relation": "derived from",
+          "score": 0.8436450958251953
+        },
+        {
+          "head": {
+            "start": 583,
+            "end": 605,
+            "text": "GPU parallel algorithm"
+          },
+          "tail": {
+            "start": 656,
+            "end": 662,
+            "text": "OB-NLM"
+          },
+          "relation": "derived from",
+          "score": 0.8787720799446106
+        },
+        {
+          "head": {
+            "start": 672,
+            "end": 692,
+            "text": "Experimental results"
+          },
+          "tail": {
+            "start": 733,
+            "end": 763,
+            "text": "healthcare processing practice"
+          },
+          "relation": "evaluated on",
+          "score": 0.7039808630943298
+        },
+        {
+          "head": {
+            "start": 733,
+            "end": 763,
+            "text": "healthcare processing practice"
+          },
+          "tail": {
+            "start": 776,
+            "end": 790,
+            "text": "execution time"
+          },
+          "relation": "measures",
+          "score": 0.7091900706291199
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "triple_id": "t:1118dff6d011fb4add1f8a0822dc6b1c177b8ec5edfddd1a2017bd4744b6dda7",
+      "document_id": "W4230116451",
+      "head_id": "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+      "tail_id": "e:8612a3b0cc6abfc85fcac9ead889fb5fd906c6e98e0edd690d0964287a19266a",
+      "head_types": [
+        "METHOD"
+      ],
+      "tail_types": [
+        "METHOD"
+      ],
+      "relation_type": "DERIVED_FROM",
+      "confidence": 0.8787720799446106,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "document_id": "W4230116451",
+          "start": 0,
+          "end": 791,
+          "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+          "entity_ids": [
+            "e:35d89c1e16e72b4dec6a364bccbf728449b09a896cd2cb95cf850388dea02fef",
+            "e:54f09db3e2d9e7264ffd3fe0c2ccaf4730d4bc539646f506ada5ba9e004f69a8",
+            "e:88a0ff4b02098968c3be76b57ae7809d3f4197d85ac375e42859569defddf1df",
+            "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a",
+            "e:dfa62891c45caaad0430a5ca197acdc26a2a74011e696e4de73f113b131d97a6",
+            "e:65e57b254ff4266e47ed2b19aee5b817fa1c1e26988c170926e6015f0f7e5fb1",
+            "e:ef0326aa41bb08767db52f38d4dd5da5c39dd6a13f6cb097563e4dd1099e0673",
+            "e:7bbf03cd5f65b3ab3ac311fa55cf82abe4c1a6da9215f14b07907d80cdd3e284",
+            "e:1089bf670c142b4a18644fcad47f9074e82420710e0858fbac9c55bf345fcca5",
+            "e:188f42404969746a895a746a7a0a916ef6d524480bd159a46bfc726b4dac7e5b",
+            "e:55f096f9222ef594500635ef0503900d77c3d7a538340168d68a5d3539f65bc5",
+            "e:a30d0fc39205514ef9aff67c50e6cb9dbb808c0b5876c9b14e741a891de870c3",
+            "e:114d9bd4197e9e8afa140239a2f43adecd5fdf4018a781d4887655ebdf8fb6c2",
+            "e:be1c5ea3c7e6475974dde138d69049694acfa353302341ffce8ddba375f96072",
+            "e:6fcaf54d0a22415d4769b35e20c116f59acde3596971391a10a35cac72f62f01",
+            "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+            "e:c6d9d225577d02c73e29519b9610d590504615913d90ea5ae00e07414e2df4aa",
+            "e:ada2e4f3e230688ebe9d2c8e13abfd371787d2d24eef9c7e6d1a000e68d5296b",
+            "e:82ee1333ef4c755bd9f20e8af05a920b80870aa92afd4e76ee68fb6973b78d2d",
+            "e:8612a3b0cc6abfc85fcac9ead889fb5fd906c6e98e0edd690d0964287a19266a",
+            "e:646e834d3b7fe3f065a6133635b7b1fe279acf06960eb97f983bcf48fcffdf6e",
+            "e:c8ad6ac62d3aae3822a2c85af0a7f8b3a6766881f497bda07f16981969c94609",
+            "e:29973bbacf12e50fa8ce02d9ee19897c1b183ef6f31b8614aba9202be768fd72",
+            "e:df7df057e79d9c2d47b981107d834c23329cd8ef6e30556858a4d0e23df369a6"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:3a1b7404e9ffe0026bab1d5f588729a0854e203955db6a47f55841fe905ff60d",
+      "document_id": "W4230116451",
+      "head_id": "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+      "tail_id": "e:ada2e4f3e230688ebe9d2c8e13abfd371787d2d24eef9c7e6d1a000e68d5296b",
+      "head_types": [
+        "METHOD"
+      ],
+      "tail_types": [
+        "METHOD"
+      ],
+      "relation_type": "DERIVED_FROM",
+      "confidence": 0.9301209449768066,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "document_id": "W4230116451",
+          "start": 0,
+          "end": 791,
+          "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+          "entity_ids": [
+            "e:35d89c1e16e72b4dec6a364bccbf728449b09a896cd2cb95cf850388dea02fef",
+            "e:54f09db3e2d9e7264ffd3fe0c2ccaf4730d4bc539646f506ada5ba9e004f69a8",
+            "e:88a0ff4b02098968c3be76b57ae7809d3f4197d85ac375e42859569defddf1df",
+            "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a",
+            "e:dfa62891c45caaad0430a5ca197acdc26a2a74011e696e4de73f113b131d97a6",
+            "e:65e57b254ff4266e47ed2b19aee5b817fa1c1e26988c170926e6015f0f7e5fb1",
+            "e:ef0326aa41bb08767db52f38d4dd5da5c39dd6a13f6cb097563e4dd1099e0673",
+            "e:7bbf03cd5f65b3ab3ac311fa55cf82abe4c1a6da9215f14b07907d80cdd3e284",
+            "e:1089bf670c142b4a18644fcad47f9074e82420710e0858fbac9c55bf345fcca5",
+            "e:188f42404969746a895a746a7a0a916ef6d524480bd159a46bfc726b4dac7e5b",
+            "e:55f096f9222ef594500635ef0503900d77c3d7a538340168d68a5d3539f65bc5",
+            "e:a30d0fc39205514ef9aff67c50e6cb9dbb808c0b5876c9b14e741a891de870c3",
+            "e:114d9bd4197e9e8afa140239a2f43adecd5fdf4018a781d4887655ebdf8fb6c2",
+            "e:be1c5ea3c7e6475974dde138d69049694acfa353302341ffce8ddba375f96072",
+            "e:6fcaf54d0a22415d4769b35e20c116f59acde3596971391a10a35cac72f62f01",
+            "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+            "e:c6d9d225577d02c73e29519b9610d590504615913d90ea5ae00e07414e2df4aa",
+            "e:ada2e4f3e230688ebe9d2c8e13abfd371787d2d24eef9c7e6d1a000e68d5296b",
+            "e:82ee1333ef4c755bd9f20e8af05a920b80870aa92afd4e76ee68fb6973b78d2d",
+            "e:8612a3b0cc6abfc85fcac9ead889fb5fd906c6e98e0edd690d0964287a19266a",
+            "e:646e834d3b7fe3f065a6133635b7b1fe279acf06960eb97f983bcf48fcffdf6e",
+            "e:c8ad6ac62d3aae3822a2c85af0a7f8b3a6766881f497bda07f16981969c94609",
+            "e:29973bbacf12e50fa8ce02d9ee19897c1b183ef6f31b8614aba9202be768fd72",
+            "e:df7df057e79d9c2d47b981107d834c23329cd8ef6e30556858a4d0e23df369a6"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:40dfd665fd65104c407565bbedc8a74449f33d072ded4ef7a0d827ebda452337",
+      "document_id": "W4230116451",
+      "head_id": "e:29973bbacf12e50fa8ce02d9ee19897c1b183ef6f31b8614aba9202be768fd72",
+      "tail_id": "e:df7df057e79d9c2d47b981107d834c23329cd8ef6e30556858a4d0e23df369a6",
+      "head_types": [
+        "TASK"
+      ],
+      "tail_types": [
+        "ATTRIBUTE"
+      ],
+      "relation_type": "MEASURES",
+      "confidence": 0.7091900706291199,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "document_id": "W4230116451",
+          "start": 0,
+          "end": 791,
+          "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+          "entity_ids": [
+            "e:35d89c1e16e72b4dec6a364bccbf728449b09a896cd2cb95cf850388dea02fef",
+            "e:54f09db3e2d9e7264ffd3fe0c2ccaf4730d4bc539646f506ada5ba9e004f69a8",
+            "e:88a0ff4b02098968c3be76b57ae7809d3f4197d85ac375e42859569defddf1df",
+            "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a",
+            "e:dfa62891c45caaad0430a5ca197acdc26a2a74011e696e4de73f113b131d97a6",
+            "e:65e57b254ff4266e47ed2b19aee5b817fa1c1e26988c170926e6015f0f7e5fb1",
+            "e:ef0326aa41bb08767db52f38d4dd5da5c39dd6a13f6cb097563e4dd1099e0673",
+            "e:7bbf03cd5f65b3ab3ac311fa55cf82abe4c1a6da9215f14b07907d80cdd3e284",
+            "e:1089bf670c142b4a18644fcad47f9074e82420710e0858fbac9c55bf345fcca5",
+            "e:188f42404969746a895a746a7a0a916ef6d524480bd159a46bfc726b4dac7e5b",
+            "e:55f096f9222ef594500635ef0503900d77c3d7a538340168d68a5d3539f65bc5",
+            "e:a30d0fc39205514ef9aff67c50e6cb9dbb808c0b5876c9b14e741a891de870c3",
+            "e:114d9bd4197e9e8afa140239a2f43adecd5fdf4018a781d4887655ebdf8fb6c2",
+            "e:be1c5ea3c7e6475974dde138d69049694acfa353302341ffce8ddba375f96072",
+            "e:6fcaf54d0a22415d4769b35e20c116f59acde3596971391a10a35cac72f62f01",
+            "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+            "e:c6d9d225577d02c73e29519b9610d590504615913d90ea5ae00e07414e2df4aa",
+            "e:ada2e4f3e230688ebe9d2c8e13abfd371787d2d24eef9c7e6d1a000e68d5296b",
+            "e:82ee1333ef4c755bd9f20e8af05a920b80870aa92afd4e76ee68fb6973b78d2d",
+            "e:8612a3b0cc6abfc85fcac9ead889fb5fd906c6e98e0edd690d0964287a19266a",
+            "e:646e834d3b7fe3f065a6133635b7b1fe279acf06960eb97f983bcf48fcffdf6e",
+            "e:c8ad6ac62d3aae3822a2c85af0a7f8b3a6766881f497bda07f16981969c94609",
+            "e:29973bbacf12e50fa8ce02d9ee19897c1b183ef6f31b8614aba9202be768fd72",
+            "e:df7df057e79d9c2d47b981107d834c23329cd8ef6e30556858a4d0e23df369a6"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:68ac5e59cae3585c9374838a592b82c97aa5dd64fd366764e6e26fa1bc4d435b",
+      "document_id": "W4230116451",
+      "head_id": "e:35d89c1e16e72b4dec6a364bccbf728449b09a896cd2cb95cf850388dea02fef",
+      "tail_id": "e:88a0ff4b02098968c3be76b57ae7809d3f4197d85ac375e42859569defddf1df",
+      "head_types": [
+        "MECHANISM"
+      ],
+      "tail_types": [
+        "CONCEPT"
+      ],
+      "relation_type": "LOCATED_IN",
+      "confidence": 0.7086603045463562,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "document_id": "W4230116451",
+          "start": 0,
+          "end": 791,
+          "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+          "entity_ids": [
+            "e:35d89c1e16e72b4dec6a364bccbf728449b09a896cd2cb95cf850388dea02fef",
+            "e:54f09db3e2d9e7264ffd3fe0c2ccaf4730d4bc539646f506ada5ba9e004f69a8",
+            "e:88a0ff4b02098968c3be76b57ae7809d3f4197d85ac375e42859569defddf1df",
+            "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a",
+            "e:dfa62891c45caaad0430a5ca197acdc26a2a74011e696e4de73f113b131d97a6",
+            "e:65e57b254ff4266e47ed2b19aee5b817fa1c1e26988c170926e6015f0f7e5fb1",
+            "e:ef0326aa41bb08767db52f38d4dd5da5c39dd6a13f6cb097563e4dd1099e0673",
+            "e:7bbf03cd5f65b3ab3ac311fa55cf82abe4c1a6da9215f14b07907d80cdd3e284",
+            "e:1089bf670c142b4a18644fcad47f9074e82420710e0858fbac9c55bf345fcca5",
+            "e:188f42404969746a895a746a7a0a916ef6d524480bd159a46bfc726b4dac7e5b",
+            "e:55f096f9222ef594500635ef0503900d77c3d7a538340168d68a5d3539f65bc5",
+            "e:a30d0fc39205514ef9aff67c50e6cb9dbb808c0b5876c9b14e741a891de870c3",
+            "e:114d9bd4197e9e8afa140239a2f43adecd5fdf4018a781d4887655ebdf8fb6c2",
+            "e:be1c5ea3c7e6475974dde138d69049694acfa353302341ffce8ddba375f96072",
+            "e:6fcaf54d0a22415d4769b35e20c116f59acde3596971391a10a35cac72f62f01",
+            "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+            "e:c6d9d225577d02c73e29519b9610d590504615913d90ea5ae00e07414e2df4aa",
+            "e:ada2e4f3e230688ebe9d2c8e13abfd371787d2d24eef9c7e6d1a000e68d5296b",
+            "e:82ee1333ef4c755bd9f20e8af05a920b80870aa92afd4e76ee68fb6973b78d2d",
+            "e:8612a3b0cc6abfc85fcac9ead889fb5fd906c6e98e0edd690d0964287a19266a",
+            "e:646e834d3b7fe3f065a6133635b7b1fe279acf06960eb97f983bcf48fcffdf6e",
+            "e:c8ad6ac62d3aae3822a2c85af0a7f8b3a6766881f497bda07f16981969c94609",
+            "e:29973bbacf12e50fa8ce02d9ee19897c1b183ef6f31b8614aba9202be768fd72",
+            "e:df7df057e79d9c2d47b981107d834c23329cd8ef6e30556858a4d0e23df369a6"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:709d1f8492c1e646bdab0303dff166702d60c5bc73c89bbb89dac63ad57fbc96",
+      "document_id": "W4230116451",
+      "head_id": "e:646e834d3b7fe3f065a6133635b7b1fe279acf06960eb97f983bcf48fcffdf6e",
+      "tail_id": "e:29973bbacf12e50fa8ce02d9ee19897c1b183ef6f31b8614aba9202be768fd72",
+      "head_types": [
+        "RESULT"
+      ],
+      "tail_types": [
+        "TASK"
+      ],
+      "relation_type": "EVALUATED_ON",
+      "confidence": 0.7039808630943298,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "document_id": "W4230116451",
+          "start": 0,
+          "end": 791,
+          "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+          "entity_ids": [
+            "e:35d89c1e16e72b4dec6a364bccbf728449b09a896cd2cb95cf850388dea02fef",
+            "e:54f09db3e2d9e7264ffd3fe0c2ccaf4730d4bc539646f506ada5ba9e004f69a8",
+            "e:88a0ff4b02098968c3be76b57ae7809d3f4197d85ac375e42859569defddf1df",
+            "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a",
+            "e:dfa62891c45caaad0430a5ca197acdc26a2a74011e696e4de73f113b131d97a6",
+            "e:65e57b254ff4266e47ed2b19aee5b817fa1c1e26988c170926e6015f0f7e5fb1",
+            "e:ef0326aa41bb08767db52f38d4dd5da5c39dd6a13f6cb097563e4dd1099e0673",
+            "e:7bbf03cd5f65b3ab3ac311fa55cf82abe4c1a6da9215f14b07907d80cdd3e284",
+            "e:1089bf670c142b4a18644fcad47f9074e82420710e0858fbac9c55bf345fcca5",
+            "e:188f42404969746a895a746a7a0a916ef6d524480bd159a46bfc726b4dac7e5b",
+            "e:55f096f9222ef594500635ef0503900d77c3d7a538340168d68a5d3539f65bc5",
+            "e:a30d0fc39205514ef9aff67c50e6cb9dbb808c0b5876c9b14e741a891de870c3",
+            "e:114d9bd4197e9e8afa140239a2f43adecd5fdf4018a781d4887655ebdf8fb6c2",
+            "e:be1c5ea3c7e6475974dde138d69049694acfa353302341ffce8ddba375f96072",
+            "e:6fcaf54d0a22415d4769b35e20c116f59acde3596971391a10a35cac72f62f01",
+            "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+            "e:c6d9d225577d02c73e29519b9610d590504615913d90ea5ae00e07414e2df4aa",
+            "e:ada2e4f3e230688ebe9d2c8e13abfd371787d2d24eef9c7e6d1a000e68d5296b",
+            "e:82ee1333ef4c755bd9f20e8af05a920b80870aa92afd4e76ee68fb6973b78d2d",
+            "e:8612a3b0cc6abfc85fcac9ead889fb5fd906c6e98e0edd690d0964287a19266a",
+            "e:646e834d3b7fe3f065a6133635b7b1fe279acf06960eb97f983bcf48fcffdf6e",
+            "e:c8ad6ac62d3aae3822a2c85af0a7f8b3a6766881f497bda07f16981969c94609",
+            "e:29973bbacf12e50fa8ce02d9ee19897c1b183ef6f31b8614aba9202be768fd72",
+            "e:df7df057e79d9c2d47b981107d834c23329cd8ef6e30556858a4d0e23df369a6"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:9843942a45541acacae681ef2977baa9bdc2b0dd7dfc725a459e97f5d81c3fea",
+      "document_id": "W4230116451",
+      "head_id": "e:35d89c1e16e72b4dec6a364bccbf728449b09a896cd2cb95cf850388dea02fef",
+      "tail_id": "e:54f09db3e2d9e7264ffd3fe0c2ccaf4730d4bc539646f506ada5ba9e004f69a8",
+      "head_types": [
+        "MECHANISM"
+      ],
+      "tail_types": [
+        "DATA_RESOURCE",
+        "OBJECT"
+      ],
+      "relation_type": "PRODUCES",
+      "confidence": 0.7523834705352783,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "document_id": "W4230116451",
+          "start": 0,
+          "end": 791,
+          "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+          "entity_ids": [
+            "e:35d89c1e16e72b4dec6a364bccbf728449b09a896cd2cb95cf850388dea02fef",
+            "e:54f09db3e2d9e7264ffd3fe0c2ccaf4730d4bc539646f506ada5ba9e004f69a8",
+            "e:88a0ff4b02098968c3be76b57ae7809d3f4197d85ac375e42859569defddf1df",
+            "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a",
+            "e:dfa62891c45caaad0430a5ca197acdc26a2a74011e696e4de73f113b131d97a6",
+            "e:65e57b254ff4266e47ed2b19aee5b817fa1c1e26988c170926e6015f0f7e5fb1",
+            "e:ef0326aa41bb08767db52f38d4dd5da5c39dd6a13f6cb097563e4dd1099e0673",
+            "e:7bbf03cd5f65b3ab3ac311fa55cf82abe4c1a6da9215f14b07907d80cdd3e284",
+            "e:1089bf670c142b4a18644fcad47f9074e82420710e0858fbac9c55bf345fcca5",
+            "e:188f42404969746a895a746a7a0a916ef6d524480bd159a46bfc726b4dac7e5b",
+            "e:55f096f9222ef594500635ef0503900d77c3d7a538340168d68a5d3539f65bc5",
+            "e:a30d0fc39205514ef9aff67c50e6cb9dbb808c0b5876c9b14e741a891de870c3",
+            "e:114d9bd4197e9e8afa140239a2f43adecd5fdf4018a781d4887655ebdf8fb6c2",
+            "e:be1c5ea3c7e6475974dde138d69049694acfa353302341ffce8ddba375f96072",
+            "e:6fcaf54d0a22415d4769b35e20c116f59acde3596971391a10a35cac72f62f01",
+            "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+            "e:c6d9d225577d02c73e29519b9610d590504615913d90ea5ae00e07414e2df4aa",
+            "e:ada2e4f3e230688ebe9d2c8e13abfd371787d2d24eef9c7e6d1a000e68d5296b",
+            "e:82ee1333ef4c755bd9f20e8af05a920b80870aa92afd4e76ee68fb6973b78d2d",
+            "e:8612a3b0cc6abfc85fcac9ead889fb5fd906c6e98e0edd690d0964287a19266a",
+            "e:646e834d3b7fe3f065a6133635b7b1fe279acf06960eb97f983bcf48fcffdf6e",
+            "e:c8ad6ac62d3aae3822a2c85af0a7f8b3a6766881f497bda07f16981969c94609",
+            "e:29973bbacf12e50fa8ce02d9ee19897c1b183ef6f31b8614aba9202be768fd72",
+            "e:df7df057e79d9c2d47b981107d834c23329cd8ef6e30556858a4d0e23df369a6"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:a7197bb6edf33c86a601e56ed30b5d224b71a62f4d468ce02e31f545b347a5d7",
+      "document_id": "W4230116451",
+      "head_id": "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+      "tail_id": "e:82ee1333ef4c755bd9f20e8af05a920b80870aa92afd4e76ee68fb6973b78d2d",
+      "head_types": [
+        "METHOD"
+      ],
+      "tail_types": [
+        "METHOD"
+      ],
+      "relation_type": "DERIVED_FROM",
+      "confidence": 0.8436450958251953,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "document_id": "W4230116451",
+          "start": 0,
+          "end": 791,
+          "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+          "entity_ids": [
+            "e:35d89c1e16e72b4dec6a364bccbf728449b09a896cd2cb95cf850388dea02fef",
+            "e:54f09db3e2d9e7264ffd3fe0c2ccaf4730d4bc539646f506ada5ba9e004f69a8",
+            "e:88a0ff4b02098968c3be76b57ae7809d3f4197d85ac375e42859569defddf1df",
+            "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a",
+            "e:dfa62891c45caaad0430a5ca197acdc26a2a74011e696e4de73f113b131d97a6",
+            "e:65e57b254ff4266e47ed2b19aee5b817fa1c1e26988c170926e6015f0f7e5fb1",
+            "e:ef0326aa41bb08767db52f38d4dd5da5c39dd6a13f6cb097563e4dd1099e0673",
+            "e:7bbf03cd5f65b3ab3ac311fa55cf82abe4c1a6da9215f14b07907d80cdd3e284",
+            "e:1089bf670c142b4a18644fcad47f9074e82420710e0858fbac9c55bf345fcca5",
+            "e:188f42404969746a895a746a7a0a916ef6d524480bd159a46bfc726b4dac7e5b",
+            "e:55f096f9222ef594500635ef0503900d77c3d7a538340168d68a5d3539f65bc5",
+            "e:a30d0fc39205514ef9aff67c50e6cb9dbb808c0b5876c9b14e741a891de870c3",
+            "e:114d9bd4197e9e8afa140239a2f43adecd5fdf4018a781d4887655ebdf8fb6c2",
+            "e:be1c5ea3c7e6475974dde138d69049694acfa353302341ffce8ddba375f96072",
+            "e:6fcaf54d0a22415d4769b35e20c116f59acde3596971391a10a35cac72f62f01",
+            "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+            "e:c6d9d225577d02c73e29519b9610d590504615913d90ea5ae00e07414e2df4aa",
+            "e:ada2e4f3e230688ebe9d2c8e13abfd371787d2d24eef9c7e6d1a000e68d5296b",
+            "e:82ee1333ef4c755bd9f20e8af05a920b80870aa92afd4e76ee68fb6973b78d2d",
+            "e:8612a3b0cc6abfc85fcac9ead889fb5fd906c6e98e0edd690d0964287a19266a",
+            "e:646e834d3b7fe3f065a6133635b7b1fe279acf06960eb97f983bcf48fcffdf6e",
+            "e:c8ad6ac62d3aae3822a2c85af0a7f8b3a6766881f497bda07f16981969c94609",
+            "e:29973bbacf12e50fa8ce02d9ee19897c1b183ef6f31b8614aba9202be768fd72",
+            "e:df7df057e79d9c2d47b981107d834c23329cd8ef6e30556858a4d0e23df369a6"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:cbc9a56df9dbf50427ddb5847f874bca380a93a53520014f6579251b14659613",
+      "document_id": "W4230116451",
+      "head_id": "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+      "tail_id": "e:c6d9d225577d02c73e29519b9610d590504615913d90ea5ae00e07414e2df4aa",
+      "head_types": [
+        "METHOD"
+      ],
+      "tail_types": [
+        "METHOD"
+      ],
+      "relation_type": "DEPENDS_ON",
+      "confidence": 0.7123239636421204,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "document_id": "W4230116451",
+          "start": 0,
+          "end": 791,
+          "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+          "entity_ids": [
+            "e:35d89c1e16e72b4dec6a364bccbf728449b09a896cd2cb95cf850388dea02fef",
+            "e:54f09db3e2d9e7264ffd3fe0c2ccaf4730d4bc539646f506ada5ba9e004f69a8",
+            "e:88a0ff4b02098968c3be76b57ae7809d3f4197d85ac375e42859569defddf1df",
+            "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a",
+            "e:dfa62891c45caaad0430a5ca197acdc26a2a74011e696e4de73f113b131d97a6",
+            "e:65e57b254ff4266e47ed2b19aee5b817fa1c1e26988c170926e6015f0f7e5fb1",
+            "e:ef0326aa41bb08767db52f38d4dd5da5c39dd6a13f6cb097563e4dd1099e0673",
+            "e:7bbf03cd5f65b3ab3ac311fa55cf82abe4c1a6da9215f14b07907d80cdd3e284",
+            "e:1089bf670c142b4a18644fcad47f9074e82420710e0858fbac9c55bf345fcca5",
+            "e:188f42404969746a895a746a7a0a916ef6d524480bd159a46bfc726b4dac7e5b",
+            "e:55f096f9222ef594500635ef0503900d77c3d7a538340168d68a5d3539f65bc5",
+            "e:a30d0fc39205514ef9aff67c50e6cb9dbb808c0b5876c9b14e741a891de870c3",
+            "e:114d9bd4197e9e8afa140239a2f43adecd5fdf4018a781d4887655ebdf8fb6c2",
+            "e:be1c5ea3c7e6475974dde138d69049694acfa353302341ffce8ddba375f96072",
+            "e:6fcaf54d0a22415d4769b35e20c116f59acde3596971391a10a35cac72f62f01",
+            "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+            "e:c6d9d225577d02c73e29519b9610d590504615913d90ea5ae00e07414e2df4aa",
+            "e:ada2e4f3e230688ebe9d2c8e13abfd371787d2d24eef9c7e6d1a000e68d5296b",
+            "e:82ee1333ef4c755bd9f20e8af05a920b80870aa92afd4e76ee68fb6973b78d2d",
+            "e:8612a3b0cc6abfc85fcac9ead889fb5fd906c6e98e0edd690d0964287a19266a",
+            "e:646e834d3b7fe3f065a6133635b7b1fe279acf06960eb97f983bcf48fcffdf6e",
+            "e:c8ad6ac62d3aae3822a2c85af0a7f8b3a6766881f497bda07f16981969c94609",
+            "e:29973bbacf12e50fa8ce02d9ee19897c1b183ef6f31b8614aba9202be768fd72",
+            "e:df7df057e79d9c2d47b981107d834c23329cd8ef6e30556858a4d0e23df369a6"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:d7fea878993b7e33981b130f18f0fc4e6b677ace146367453abb6ae65162f2c6",
+      "document_id": "W4230116451",
+      "head_id": "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+      "tail_id": "e:ada2e4f3e230688ebe9d2c8e13abfd371787d2d24eef9c7e6d1a000e68d5296b",
+      "head_types": [
+        "METHOD"
+      ],
+      "tail_types": [
+        "METHOD"
+      ],
+      "relation_type": "DEPENDS_ON",
+      "confidence": 0.7647201418876648,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "document_id": "W4230116451",
+          "start": 0,
+          "end": 791,
+          "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+          "entity_ids": [
+            "e:35d89c1e16e72b4dec6a364bccbf728449b09a896cd2cb95cf850388dea02fef",
+            "e:54f09db3e2d9e7264ffd3fe0c2ccaf4730d4bc539646f506ada5ba9e004f69a8",
+            "e:88a0ff4b02098968c3be76b57ae7809d3f4197d85ac375e42859569defddf1df",
+            "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a",
+            "e:dfa62891c45caaad0430a5ca197acdc26a2a74011e696e4de73f113b131d97a6",
+            "e:65e57b254ff4266e47ed2b19aee5b817fa1c1e26988c170926e6015f0f7e5fb1",
+            "e:ef0326aa41bb08767db52f38d4dd5da5c39dd6a13f6cb097563e4dd1099e0673",
+            "e:7bbf03cd5f65b3ab3ac311fa55cf82abe4c1a6da9215f14b07907d80cdd3e284",
+            "e:1089bf670c142b4a18644fcad47f9074e82420710e0858fbac9c55bf345fcca5",
+            "e:188f42404969746a895a746a7a0a916ef6d524480bd159a46bfc726b4dac7e5b",
+            "e:55f096f9222ef594500635ef0503900d77c3d7a538340168d68a5d3539f65bc5",
+            "e:a30d0fc39205514ef9aff67c50e6cb9dbb808c0b5876c9b14e741a891de870c3",
+            "e:114d9bd4197e9e8afa140239a2f43adecd5fdf4018a781d4887655ebdf8fb6c2",
+            "e:be1c5ea3c7e6475974dde138d69049694acfa353302341ffce8ddba375f96072",
+            "e:6fcaf54d0a22415d4769b35e20c116f59acde3596971391a10a35cac72f62f01",
+            "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+            "e:c6d9d225577d02c73e29519b9610d590504615913d90ea5ae00e07414e2df4aa",
+            "e:ada2e4f3e230688ebe9d2c8e13abfd371787d2d24eef9c7e6d1a000e68d5296b",
+            "e:82ee1333ef4c755bd9f20e8af05a920b80870aa92afd4e76ee68fb6973b78d2d",
+            "e:8612a3b0cc6abfc85fcac9ead889fb5fd906c6e98e0edd690d0964287a19266a",
+            "e:646e834d3b7fe3f065a6133635b7b1fe279acf06960eb97f983bcf48fcffdf6e",
+            "e:c8ad6ac62d3aae3822a2c85af0a7f8b3a6766881f497bda07f16981969c94609",
+            "e:29973bbacf12e50fa8ce02d9ee19897c1b183ef6f31b8614aba9202be768fd72",
+            "e:df7df057e79d9c2d47b981107d834c23329cd8ef6e30556858a4d0e23df369a6"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:fdbcf13df5e0b2adc1d0a1015ee17e111925d0f7779d129b27db771e987cdac9",
+      "document_id": "W4230116451",
+      "head_id": "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+      "tail_id": "e:c6d9d225577d02c73e29519b9610d590504615913d90ea5ae00e07414e2df4aa",
+      "head_types": [
+        "METHOD"
+      ],
+      "tail_types": [
+        "METHOD"
+      ],
+      "relation_type": "DERIVED_FROM",
+      "confidence": 0.8757212162017822,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "document_id": "W4230116451",
+          "start": 0,
+          "end": 791,
+          "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+          "entity_ids": [
+            "e:35d89c1e16e72b4dec6a364bccbf728449b09a896cd2cb95cf850388dea02fef",
+            "e:54f09db3e2d9e7264ffd3fe0c2ccaf4730d4bc539646f506ada5ba9e004f69a8",
+            "e:88a0ff4b02098968c3be76b57ae7809d3f4197d85ac375e42859569defddf1df",
+            "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a",
+            "e:dfa62891c45caaad0430a5ca197acdc26a2a74011e696e4de73f113b131d97a6",
+            "e:65e57b254ff4266e47ed2b19aee5b817fa1c1e26988c170926e6015f0f7e5fb1",
+            "e:ef0326aa41bb08767db52f38d4dd5da5c39dd6a13f6cb097563e4dd1099e0673",
+            "e:7bbf03cd5f65b3ab3ac311fa55cf82abe4c1a6da9215f14b07907d80cdd3e284",
+            "e:1089bf670c142b4a18644fcad47f9074e82420710e0858fbac9c55bf345fcca5",
+            "e:188f42404969746a895a746a7a0a916ef6d524480bd159a46bfc726b4dac7e5b",
+            "e:55f096f9222ef594500635ef0503900d77c3d7a538340168d68a5d3539f65bc5",
+            "e:a30d0fc39205514ef9aff67c50e6cb9dbb808c0b5876c9b14e741a891de870c3",
+            "e:114d9bd4197e9e8afa140239a2f43adecd5fdf4018a781d4887655ebdf8fb6c2",
+            "e:be1c5ea3c7e6475974dde138d69049694acfa353302341ffce8ddba375f96072",
+            "e:6fcaf54d0a22415d4769b35e20c116f59acde3596971391a10a35cac72f62f01",
+            "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+            "e:c6d9d225577d02c73e29519b9610d590504615913d90ea5ae00e07414e2df4aa",
+            "e:ada2e4f3e230688ebe9d2c8e13abfd371787d2d24eef9c7e6d1a000e68d5296b",
+            "e:82ee1333ef4c755bd9f20e8af05a920b80870aa92afd4e76ee68fb6973b78d2d",
+            "e:8612a3b0cc6abfc85fcac9ead889fb5fd906c6e98e0edd690d0964287a19266a",
+            "e:646e834d3b7fe3f065a6133635b7b1fe279acf06960eb97f983bcf48fcffdf6e",
+            "e:c8ad6ac62d3aae3822a2c85af0a7f8b3a6766881f497bda07f16981969c94609",
+            "e:29973bbacf12e50fa8ce02d9ee19897c1b183ef6f31b8614aba9202be768fd72",
+            "e:df7df057e79d9c2d47b981107d834c23329cd8ef6e30556858a4d0e23df369a6"
+          ]
+        }
+      ]
+    }
+  ],
+  "raw_relation_count": 10,
+  "seconds": 0.9295256999321282
+}

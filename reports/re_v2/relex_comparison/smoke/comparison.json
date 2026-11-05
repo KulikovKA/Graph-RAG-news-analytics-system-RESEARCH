@@ -1,0 +1,69 @@
+{
+  "models": {
+    "base": {
+      "model": "base",
+      "documents": 2,
+      "entities": 42,
+      "source_mentions": 47,
+      "extracted_relations": 13,
+      "unique_triples": 13,
+      "involved_entities": 15,
+      "entity_coverage": 0.35714285714285715,
+      "suspicious_type_hint_fraction": 0.0,
+      "endpoint_violations": 0,
+      "confidence_mean": 0.7777363566251901,
+      "confidence_min": 0.7039808630943298,
+      "confidence_max": 0.9301209449768066,
+      "document_inference_seconds": 2.143245399929583,
+      "worker_wall_seconds": 13.169412800110877,
+      "resumed_documents": 2,
+      "peak_rss_mib": 387.11328125,
+      "total_run_seconds": 44.90599099989049,
+      "peak_combined_rss_mib": 1174.51953125
+    },
+    "large": {
+      "model": "large",
+      "documents": 2,
+      "entities": 42,
+      "source_mentions": 47,
+      "extracted_relations": 5,
+      "unique_triples": 5,
+      "involved_entities": 7,
+      "entity_coverage": 0.16666666666666666,
+      "suspicious_type_hint_fraction": 0.0,
+      "endpoint_violations": 0,
+      "confidence_mean": 0.802227520942688,
+      "confidence_min": 0.7167283296585083,
+      "confidence_max": 0.8998945355415344,
+      "document_inference_seconds": 4.994613799965009,
+      "worker_wall_seconds": 12.923794599948451,
+      "resumed_documents": 2,
+      "peak_rss_mib": 386.7890625,
+      "total_run_seconds": 44.90599099989049,
+      "peak_combined_rss_mib": 1174.51953125
+    }
+  },
+  "agreement": {
+    "shared_triples": 4,
+    "union_triples": 14,
+    "jaccard": 0.2857142857142857,
+    "base_only": 9,
+    "large_only": 1
+  },
+  "neo4j": {
+    "base": {
+      "documents": 2,
+      "entities": 42,
+      "relations": 13,
+      "mentions": 42,
+      "cross_namespace_edges": 0
+    },
+    "large": {
+      "documents": 2,
+      "entities": 42,
+      "relations": 5,
+      "mentions": 42,
+      "cross_namespace_edges": 0
+    }
+  }
+}

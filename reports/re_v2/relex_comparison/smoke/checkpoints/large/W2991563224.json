@@ -1,0 +1,180 @@
+{
+  "fingerprint": "68877d1a9d3e60c95fa0f80b22849e687e090d57cd2766f6c7948ec7306fc75d",
+  "document_id": "W2991563224",
+  "model": "knowledgator/gliner-relex-large-v1.0",
+  "raw_windows": [
+    {
+      "window": {
+        "window_id": "w:4a04d4833853bbc6656ed41bb894030a65b74ac5986e75d6f4e84a94786e4bb6",
+        "document_id": "W2991563224",
+        "start": 0,
+        "end": 800,
+        "text": "In this paper, we propose a new approach to improve the protocol LEACH performance. It has been accomplished by increasing the energy balancing in clusters among all nodes to minimize the energy dissipation during network communications. The improved method is based on an optimized selection of cluster head. The development of this approach has indicated progress in terms of network lifetime, energy consumption and number of packets transferred to base station, compared to LEACH or other related extended spaces protocols. Mathematical analysis and simulations results show the effectiveness of the proposed approach. The energy consumption of WSN has been reduced up to about 3.5 %. The network life cycle is prolonged by 44 %. The number of packets sent has been increased by 185 % than LEACH.",
+        "entity_ids": [
+          "e:13a3a3d720801d4918e2591ff595807742db3bb7a63c60b299a94e05e35f174e",
+          "e:ec77da065ebe3d0b507ac227f1b21e92d236b6fba6bc8e05a67e85ee0908b76b",
+          "e:f3afee2aabe07cd0a2b336385fb9232603e080bb90ddcc8f0cf1f777c96e3657",
+          "e:869ac0060bdaeaa8c1d3ab8db0cd436361830ecde7e51e1b589672c1ba10f38f",
+          "e:fd4ff5293039d54f5eecf359ec6de0019deb59dbc8ee7a4e03ec9c1ce6fd4a93",
+          "e:83b0e3fbb905da6d726e50dc8ffe0fc26a78ef2c0f5665a87a99e5e319a0593d",
+          "e:1bc4ad46a55b0609da14977f2ad182166e908fbfb686379e5d9087da89596385",
+          "e:725f112a18aaabd03f3b1003d9cdeb9f57996d74b98bc6a57c779c05f91c69ee",
+          "e:566ff9d0a6e357fc2316e6bf8dd66548ef5c762e4c4b4f21d506e741bfbf690c",
+          "e:2e6f291d5bd3a5aee20c5ddc0a2ade392f8ad972f212d9733174124cae77b268",
+          "e:cc4bb9ef388bd2e456bde8d114ea2aec73a5badf6939f5717f99095b91b012a2",
+          "e:bd3e46331f9ed794e2bdac2f561b5f3e33e19a2ade37e44f9566eeb2954ea4a2",
+          "e:d090de7f3d97c76d0d0d37acdc13eb2e4e386d3314367768b51902c4be420088",
+          "e:492dbd7aa432b0334c0cf70aa504d7e055b0432bb6132c5a262933efc8f676cd",
+          "e:7ee27f03f07c76345bff6848557cd73edb12b467ddb536880c9489a642c46b65",
+          "e:b37205f91664d380454ee6aa26f110db4c32343e5c0372b7c416666de56e37cc",
+          "e:f3d9114eeafb4c22a482ae6786fede754359b137d4bcb9c855b49f16bbec7386",
+          "e:e8d6dc1188ddee5726c359775f7d5dba1609da774a275f6c757b8bf8ec5c3a08"
+        ]
+      },
+      "audit": {
+        "tokens": 224,
+        "spans": 18,
+        "pairs": 306,
+        "supplied_word_spans": [
+          [
+            2,
+            2
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            29,
+            29
+          ],
+          [
+            36,
+            37
+          ],
+          [
+            46,
+            47
+          ],
+          [
+            63,
+            64
+          ],
+          [
+            66,
+            67
+          ],
+          [
+            69,
+            71
+          ],
+          [
+            69,
+            72
+          ],
+          [
+            74,
+            75
+          ],
+          [
+            97,
+            98
+          ],
+          [
+            101,
+            102
+          ],
+          [
+            104,
+            104
+          ],
+          [
+            117,
+            119
+          ],
+          [
+            127,
+            129
+          ],
+          [
+            129,
+            129
+          ],
+          [
+            138,
+            138
+          ]
+        ]
+      },
+      "predictions": [
+        {
+          "head": {
+            "start": 649,
+            "end": 652,
+            "text": "WSN"
+          },
+          "tail": {
+            "start": 396,
+            "end": 414,
+            "text": "energy consumption"
+          },
+          "relation": "measures",
+          "score": 0.7958626747131348
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "triple_id": "t:c9d1ed7c1f488eefafcffd1309249c6df13e0e6acd3aa6d73199ae71e2142f8d",
+      "document_id": "W2991563224",
+      "head_id": "e:492dbd7aa432b0334c0cf70aa504d7e055b0432bb6132c5a262933efc8f676cd",
+      "tail_id": "e:725f112a18aaabd03f3b1003d9cdeb9f57996d74b98bc6a57c779c05f91c69ee",
+      "head_types": [
+        "ACTOR",
+        "OBJECT"
+      ],
+      "tail_types": [
+        "ATTRIBUTE"
+      ],
+      "relation_type": "MEASURES",
+      "confidence": 0.7958626747131348,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:4a04d4833853bbc6656ed41bb894030a65b74ac5986e75d6f4e84a94786e4bb6",
+          "document_id": "W2991563224",
+          "start": 0,
+          "end": 800,
+          "text": "In this paper, we propose a new approach to improve the protocol LEACH performance. It has been accomplished by increasing the energy balancing in clusters among all nodes to minimize the energy dissipation during network communications. The improved method is based on an optimized selection of cluster head. The development of this approach has indicated progress in terms of network lifetime, energy consumption and number of packets transferred to base station, compared to LEACH or other related extended spaces protocols. Mathematical analysis and simulations results show the effectiveness of the proposed approach. The energy consumption of WSN has been reduced up to about 3.5 %. The network life cycle is prolonged by 44 %. The number of packets sent has been increased by 185 % than LEACH.",
+          "entity_ids": [
+            "e:13a3a3d720801d4918e2591ff595807742db3bb7a63c60b299a94e05e35f174e",
+            "e:ec77da065ebe3d0b507ac227f1b21e92d236b6fba6bc8e05a67e85ee0908b76b",
+            "e:f3afee2aabe07cd0a2b336385fb9232603e080bb90ddcc8f0cf1f777c96e3657",
+            "e:869ac0060bdaeaa8c1d3ab8db0cd436361830ecde7e51e1b589672c1ba10f38f",
+            "e:fd4ff5293039d54f5eecf359ec6de0019deb59dbc8ee7a4e03ec9c1ce6fd4a93",
+            "e:83b0e3fbb905da6d726e50dc8ffe0fc26a78ef2c0f5665a87a99e5e319a0593d",
+            "e:1bc4ad46a55b0609da14977f2ad182166e908fbfb686379e5d9087da89596385",
+            "e:725f112a18aaabd03f3b1003d9cdeb9f57996d74b98bc6a57c779c05f91c69ee",
+            "e:566ff9d0a6e357fc2316e6bf8dd66548ef5c762e4c4b4f21d506e741bfbf690c",
+            "e:2e6f291d5bd3a5aee20c5ddc0a2ade392f8ad972f212d9733174124cae77b268",
+            "e:cc4bb9ef388bd2e456bde8d114ea2aec73a5badf6939f5717f99095b91b012a2",
+            "e:bd3e46331f9ed794e2bdac2f561b5f3e33e19a2ade37e44f9566eeb2954ea4a2",
+            "e:d090de7f3d97c76d0d0d37acdc13eb2e4e386d3314367768b51902c4be420088",
+            "e:492dbd7aa432b0334c0cf70aa504d7e055b0432bb6132c5a262933efc8f676cd",
+            "e:7ee27f03f07c76345bff6848557cd73edb12b467ddb536880c9489a642c46b65",
+            "e:b37205f91664d380454ee6aa26f110db4c32343e5c0372b7c416666de56e37cc",
+            "e:f3d9114eeafb4c22a482ae6786fede754359b137d4bcb9c855b49f16bbec7386",
+            "e:e8d6dc1188ddee5726c359775f7d5dba1609da774a275f6c757b8bf8ec5c3a08"
+          ]
+        }
+      ]
+    }
+  ],
+  "raw_relation_count": 1,
+  "seconds": 2.711865299846977
+}
