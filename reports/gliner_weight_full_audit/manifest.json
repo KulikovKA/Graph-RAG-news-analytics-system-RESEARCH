@@ -1,0 +1,147 @@
+{
+  "status": "COMPLETE",
+  "created_at_utc": "2026-11-04T22:32:51.122461+00:00",
+  "source_weights_sha256": "7274094de2e0c2a37a386f55fc4e23061a954da5bd7a335e7dfe56f2743c277a",
+  "source_repo": "fastino/gliner2.5-base-v1",
+  "revision": "54785d51df8d86a0d8f2eb212fec15871aad2c4d",
+  "tensors": 334,
+  "matrices": 134,
+  "vectors": 200,
+  "parameters": 193581591,
+  "finite_parameters": 193581591,
+  "groups": {
+    "span_boundary_representation": {
+      "tensors": 28,
+      "parameters": 463360,
+      "matrices": 9
+    },
+    "legacy_per_query_proposals_and_scoring": {
+      "tensors": 28,
+      "parameters": 266447,
+      "matrices": 13
+    },
+    "type_conditioned_boundary_and_inside_scores": {
+      "tensors": 12,
+      "parameters": 426752,
+      "matrices": 6
+    },
+    "record_relation_candidate_features": {
+      "tensors": 2,
+      "parameters": 197376,
+      "matrices": 1
+    },
+    "count_auxiliary_head": {
+      "tensors": 2,
+      "parameters": 769,
+      "matrices": 1
+    },
+    "abstention_auxiliary_head": {
+      "tensors": 2,
+      "parameters": 769,
+      "matrices": 1
+    },
+    "candidate_pool_selection": {
+      "tensors": 4,
+      "parameters": 33024,
+      "matrices": 2
+    },
+    "joint_span_type_reranking": {
+      "tensors": 24,
+      "parameters": 231489,
+      "matrices": 10
+    },
+    "schema_text_classification": {
+      "tensors": 4,
+      "parameters": 1182721,
+      "matrices": 2
+    },
+    "token_embeddings_and_input_normalization": {
+      "tensors": 3,
+      "parameters": 98313984,
+      "matrices": 1
+    },
+    "relative_position_embeddings_and_normalization": {
+      "tensors": 3,
+      "parameters": 394752,
+      "matrices": 1
+    },
+    "transformer_attention": {
+      "tensors": 120,
+      "parameters": 28366848,
+      "matrices": 48
+    },
+    "transformer_feedforward": {
+      "tensors": 72,
+      "parameters": 56687616,
+      "matrices": 24
+    },
+    "structured_record_decoding": {
+      "tensors": 18,
+      "parameters": 1108994,
+      "matrices": 9
+    },
+    "relation_extraction": {
+      "tensors": 12,
+      "parameters": 5906690,
+      "matrices": 6
+    }
+  },
+  "source_unchanged": true,
+  "full_coverage": "All scalar values and every 2D spectrum; no random sampling",
+  "v1_changed_tensors_reverified": [
+    "boundary_head.shared_pool_scorer.start_projection.weight"
+  ],
+  "v1_surgery_is_task_conditioned": false,
+  "task": {
+    "labels": {
+      "OBJECT": "physical, biological or digital object",
+      "ACTOR": "person or organization",
+      "CONCEPT": "scientific concept or theory",
+      "METHOD": "algorithm or research method",
+      "PROCESS": "event or scientific process",
+      "DATA_RESOURCE": "dataset or research corpus",
+      "ATTRIBUTE": "property, parameter or metric",
+      "RESULT": "measured or observed result",
+      "CONDITION": "experimental or contextual condition",
+      "TASK": "research task or application",
+      "MECHANISM": "mechanism explaining a phenomenon"
+    },
+    "ontology_definitions": {
+      "OBJECT": "physical biological technical or digital object, system, component or artifact, not an abstract concept or method",
+      "ACTOR": "person organization institution state or participant acting as a subject in context",
+      "CONCEPT": "abstract concept theory mathematical construction scientific category or hypothesis",
+      "METHOD": "algorithm procedure technology or experimental technique describing how to perform an action",
+      "PROCESS": "action operation event change or sequence of occurring actions, not the method",
+      "DATA_RESOURCE": "dataset corpus registry archive sample or source of organized information",
+      "ATTRIBUTE": "property parameter measurable characteristic or metric, not a particular obtained result",
+      "RESULT": "observed measured computed or established outcome of research experiment method or process",
+      "CONDITION": "explicit experimental observational or applicability condition of a statement",
+      "TASK": "task goal problem or application area, not a method for solving it",
+      "MECHANISM": "source-described mechanism explaining how or why a phenomenon occurs, not every process"
+    },
+    "active_candidate_pool": "shared",
+    "max_input_tokens": 512,
+    "entity_threshold": 0.35,
+    "normalization": "N3"
+  },
+  "no_training": true,
+  "no_gradients": true,
+  "no_optimizers": true,
+  "no_inference_or_tests": true,
+  "no_corpus_or_reference_read": true,
+  "new_weight_modifications": 0,
+  "blas_threads": 1,
+  "wall_seconds": 68.54355459986255,
+  "sources_sha256": {
+    ".venv-ner-v2\\Lib\\site-packages\\gliner2\\models\\boundary\\model.py": "e2e006a1a9f05ec4830f284f6dc90c4e6744311197e06deb556e9b75d8219faf",
+    ".venv-ner-v2\\Lib\\site-packages\\gliner2\\models\\boundary\\heads.py": "61f34add8dfca1d1e668bac4d6fefe556b7dac3225737542be032edc70e96220",
+    ".venv-ner-v2\\Lib\\site-packages\\gliner2\\models\\boundary\\pool.py": "1b6ab4f7af64cd499d474a9052823d2b0a3d2f8caf50ed8f037cbdb23d08ff9b",
+    ".venv-ner-v2\\Lib\\site-packages\\gliner2\\models\\boundary\\encoding.py": "0c9860a063c527031db3547d2ee65cc36ac7de13e3b2059c357386c505956a51",
+    ".venv-ner-v2\\Lib\\site-packages\\gliner2\\inference\\candidate_decoder.py": "ec0f8bdbacd9b3430a2e34a8abf51a40aa44dab1325cfb8a90cbb3de08f47b30",
+    ".venv-ner-v2\\Lib\\site-packages\\gliner2\\inference\\runtime.py": "acc500efe68209df7620c5810b5ff38a4d6151e8799063e0139ec60220183a60",
+    "src\\cgraph\\entity_typing_v2\\dataset.py": "4a7c59f999617512e46a1d78a4b56e1153c2d46b34842bd16e59e49daf85c963",
+    "contracts\\ner_v2\\ontology.v2.json": "248abbec239279ae640e7188a7bb8e68f01f9f116ea8ca671d0da0c815613b14",
+    "artifacts\\ner_v2\\models\\gliner25\\config.json": "d6b515c21ae2100c12267fb42a3f02c1e99ad87580366aebedb161efd74441c7"
+  },
+  "script_sha256": "8ff45f405fafed9af9ddf535cdbd884e57c76b1b038dbf3d0dde4f2d9e2f95d8"
+}

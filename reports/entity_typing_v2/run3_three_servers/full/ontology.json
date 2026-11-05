@@ -1,0 +1,72 @@
+{
+  "ontology_version": "2.0",
+  "status": "approved",
+  "entity_types": {
+    "OBJECT": {
+      "definition_ru": "физический, биологический, технический или цифровой объект, система, компонент либо артефакт. Примеры: клетка, робот, нейросеть как конкретная модель, программная система, экспериментальный образец. Не путать с абстрактным понятием или методом.",
+      "ner_description_en": "physical biological technical or digital object, system, component or artifact, not an abstract concept or method"
+    },
+    "ACTOR": {
+      "definition_ru": "человек, организация, учреждение, государство или другой участник, выступающий в контексте действующим субъектом. Примеры: исследователь, университет, правительство, компания. Не считать ACTOR всякий объект, который физически вызывает изменение.",
+      "ner_description_en": "person organization institution state or participant acting as a subject in context"
+    },
+    "CONCEPT": {
+      "definition_ru": "абстрактное понятие, теория, математическая конструкция, научная категория или гипотеза. Примеры: экономическое равновесие, теория игр, топологическое пространство, справедливость. Не путать с конкретным методом или объектом.",
+      "ner_description_en": "abstract concept theory mathematical construction scientific category or hypothesis"
+    },
+    "METHOD": {
+      "definition_ru": "определённый способ выполнения, исследования, анализа или вычисления: алгоритм, процедура, технология, экспериментальная методика. Примеры: PCA, рандомизация, спектроскопия, метод Монте-Карло. Метод отличается от конкретного процесса его выполнения.",
+      "ner_description_en": "algorithm procedure technology or experimental technique describing how to perform an action"
+    },
+    "PROCESS": {
+      "definition_ru": "действие, операция, событие, изменение или последовательность происходящих действий. Примеры: деление клетки, обучение модели, инфляция, химическая реакция, миграция. Не путать с METHOD, который описывает способ выполнения действия.",
+      "ner_description_en": "action operation event change or sequence of occurring actions, not the method"
+    },
+    "DATA_RESOURCE": {
+      "definition_ru": "набор данных, корпус, реестр, архив, выборка или источник систематизированной информации. Примеры: ImageNet, медицинский реестр, корпус текстов, набор экспериментальных наблюдений. Отличать данные от объекта, о котором эти данные собраны.",
+      "ner_description_en": "dataset corpus registry archive sample or source of organized information"
+    },
+    "ATTRIBUTE": {
+      "definition_ru": "свойство, параметр, измеряемая характеристика или показатель. Примеры: температура, возраст, точность классификации как метрика, масса, сложность алгоритма. ATTRIBUTE — характеристика, а не конкретный полученный результат.",
+      "ner_description_en": "property parameter measurable characteristic or metric, not a particular obtained result"
+    },
+    "RESULT": {
+      "definition_ru": "наблюдаемый, измеренный, вычисленный или установленный итог исследования, эксперимента, метода либо процесса. Примеры: точность 94%, снижение смертности, обнаруженный эффект, полученная оценка. Отличать от ATTRIBUTE: accuracy как показатель — ATTRIBUTE, конкретный результат 94% accuracy — RESULT.",
+      "ner_description_en": "observed measured computed or established outcome of research experiment method or process"
+    },
+    "CONDITION": {
+      "definition_ru": "явно указанное условие эксперимента, наблюдения или применимости утверждения. Примеры: комнатная температура, контрольная группа, состояние натощак, обучение в течение 20 эпох. Может позднее связываться с конкретным утверждением как qualifier.",
+      "ner_description_en": "explicit experimental observational or applicability condition of a statement"
+    },
+    "TASK": {
+      "definition_ru": "задача, цель, проблема или область применения. Примеры: классификация изображений, прогнозирование инфляции, диагностика заболевания, оптимизация маршрута. Не путать с METHOD — способом решения задачи.",
+      "ner_description_en": "task goal problem or application area, not a method for solving it"
+    },
+    "MECHANISM": {
+      "definition_ru": "описанный в источнике механизм, объясняющий, как или почему происходит определённое явление. Примеры: механизм иммунного ответа, механизм передачи сигнала, причинный механизм заболевания. Не превращать автоматически любой PROCESS в MECHANISM.",
+      "ner_description_en": "source-described mechanism explaining how or why a phenomenon occurs, not every process"
+    }
+  },
+  "relation_types": {
+    "IS_A": "принадлежит к более общей категории.",
+    "HAS_PART": "содержит составную часть.",
+    "HAS_MEMBER": "содержит участника или элемент явно обозначенной группы.",
+    "HAS_ATTRIBUTE": "обладает характеристикой.",
+    "HAS_RESULT": "демонстрирует установленный результат.",
+    "USES": "использует ресурс, метод или инструмент.",
+    "USED_FOR": "предназначен для выполнения задачи.",
+    "APPLIED_TO": "применяется к объекту или данным.",
+    "PERFORMS": "субъект выполняет действие.",
+    "PRODUCES": "создаёт объект или результат.",
+    "DERIVED_FROM": "происходит или получен из другого объекта либо источника.",
+    "EVALUATED_ON": "оценивается на тесте, выборке или наборе данных.",
+    "MEASURES": "измеряет определённый показатель.",
+    "CHANGES": "изменяет параметр или состояние.",
+    "CAUSES": "вызывает событие или эффект при явном причинном утверждении.",
+    "DEPENDS_ON": "зависит от параметра или условия.",
+    "EXPLAINS": "объясняет явление или результат.",
+    "ASSOCIATED_WITH": "имеет явно установленную непричинную связь.",
+    "COMPARED_WITH": "явно сравнивается с другой сущностью.",
+    "LOCATED_IN": "находится в определённом пространственном или структурном контексте."
+  }
+}

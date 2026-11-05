@@ -12,7 +12,7 @@
 
 Общий RAM budget учитывает **две модели, два независимых KV cache и резерв runtime для каждой**. Одинаковый `num_ctx` выбирается максимальным из native ladder для обеих копий и затем проверяется на обоих `/api/ps`. Например, два окна по 32768 — два отдельных окна, а не общее окно 65536. Если даже минимальное окно не помещается по RAM или не вмещает полный prompt, эксперимент останавливается; освободите память и повторите dry-run. Тексты не обрезаются. По умолчанию `num_thread=4` на модель, то есть до 8 compute threads для двух серверов; `-NumThread 2` задаёт по два. Ускорение зависит от CPU и памяти, оно не гарантировано.
 
-Новая конфигурация пишет в **`reports/entity_typing_v2/run2_two_servers/`**, оставляя прежнюю попытку `run1` без изменений. Frozen runtime старого прогона не мигрируется и результаты разных настроек не смешиваются. Для полноценного одиночного режима можно создать отдельный config с `server_urls: []` и отдельным `output`.
+Новая конфигурация пишет в **`reports/entity_typing_v2/run3_three_servers/`**, оставляя прежнюю попытку `run1` без изменений. Frozen runtime старого прогона не мигрируется и результаты разных настроек не смешиваются. Для полноценного одиночного режима можно создать отдельный config с `server_urls: []` и отдельным `output`.
 
 Dry-run не запускает серверы и не загружает модели. Если 11435 ещё не запущен, он использует метаданные checkpoint с работающего `base_url` (11434), явно отмечает второй сервер как `ready=false` и считает RAM для **двух** копий. Это проверка плана, а не подтверждение фактической аллокации второго экземпляра.
 
@@ -35,7 +35,7 @@ Dry-run не запускает серверы и не загружает мод
 
 Launcher работает в текущем foreground PowerShell, ждёт Python до завершения, не создаёт detached jobs и не запрашивает подтверждений. На время реального запуска он запрещает автоматический сон Windows через [SetThreadExecutionState](https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-setthreadexecutionstate), затем восстанавливает предыдущее состояние; постоянный план питания не меняется, экран может выключаться. Не закрывайте PowerShell и не отправляйте компьютер в сон вручную: такой пользовательский сон API не блокирует. `-DryRun` состояние питания не меняет.
 
-Полный каталог: `reports/entity_typing_v2/run2_two_servers/full/`; итоговый ZIP: `reports/entity_typing_v2/run2_two_servers/full_results.zip`. Технические логи — `full/night_runs/`: PowerShell transcript и Python log (stdout/stderr, tqdm и traceback), отдельные файлы на каждый запуск. `manifest.json` содержит requested config, checkpoint/digest/quantization, фактический context, thinking flags, версии Python/пакетов/Ollama, timings и историю этапов каждого запуска. При model preflight failure фактический контекст остаётся неизвестным — он не подменяется оценочным.
+Полный каталог: `reports/entity_typing_v2/run3_three_servers/full/`; итоговый ZIP: `reports/entity_typing_v2/run3_three_servers/full_results.zip`. Технические логи — `full/night_runs/`: PowerShell transcript и Python log (stdout/stderr, tqdm и traceback), отдельные файлы на каждый запуск. `manifest.json` содержит requested config, checkpoint/digest/quantization, фактический context, thinking flags, версии Python/пакетов/Ollama, timings и историю этапов каждого запуска. При model preflight failure фактический контекст остаётся неизвестным — он не подменяется оценочным.
 
 После исчерпания retries неудачного batch сохраняются NOT_PROCESSED, обработка остальных batches продолжается. Неполный T2.1 не блокирует T2.2 и офлайн-отчёты. Ошибки этапов сохраняются в `stage_errors.jsonl` и общем `failure_log.jsonl`. Повторите `.\run_all_night.ps1`, чтобы продолжить: полностью завершённые T2.1/T2.2 проверяются по durable journal и пропускаются **без обращения к Ollama**, незавершённые отправляют только оставшиеся IDs. Между этапами удерживается единый OS lock, поэтому второй launcher не может вмешаться в тот же сервер/checkout.
 
@@ -120,7 +120,7 @@ Dry-run создаёт `dry_run.json` и `dry_run_batches.jsonl`, проверя
 .\run_all_night.ps1 -Python $py -DryRun
 ```
 
-Без явного выбора dataset используются все 1211 mentions. Для быстрой проверки задайте `--dataset pilot`/`-Dataset pilot`. Pilot сохраняется в `reports/entity_typing_v2/run2_two_servers/`, full — в `reports/entity_typing_v2/run2_two_servers/full/`; manifests не смешиваются. `--output reports/entity_typing_v2/run2` выбирает новый корень (для full также добавится `full/`). Если ExecutionPolicy запрещает запуск `.ps1`, используйте Python-команды выше; временный запрет сна реализован именно PowerShell launcher.
+Без явного выбора dataset используются все 1211 mentions. Для быстрой проверки задайте `--dataset pilot`/`-Dataset pilot`. Pilot сохраняется в `reports/entity_typing_v2/run3_three_servers/`, full — в `reports/entity_typing_v2/run3_three_servers/full/`; manifests не смешиваются. `--output reports/entity_typing_v2/run2` выбирает новый корень (для full также добавится `full/`). Если ExecutionPolicy запрещает запуск `.ps1`, используйте Python-команды выше; временный запрет сна реализован именно PowerShell launcher.
 
 ## Максимальная ёмкость контекста
 
@@ -184,7 +184,7 @@ Evaluator проверит IDs, допустимые типы и статус re
 
 ## Артефакты и ZIP
 
-Общий каталог pilot — `reports/entity_typing_v2/run2_two_servers/`:
+Общий каталог pilot — `reports/entity_typing_v2/run3_three_servers/`:
 
 - `manifest.json`, `candidate_dataset.jsonl`, `ontology.json` — frozen входы и runtime identity.
 - `T1_gliner.jsonl`, `T21_qwen_no_thinking.jsonl`, `T22_qwen_thinking.jsonl`, `T3_hybrid.jsonl` — решения.
@@ -200,4 +200,4 @@ Evaluator проверит IDs, допустимые типы и статус re
 & $py scripts/run_entity_typing_v2.py export-results --dataset full --zip .\reports\entity_typing_v2\full_results.zip
 ```
 
-Pilot ZIP по умолчанию: `reports/entity_typing_v2/run2_two_servers_pilot_results.zip`. Он содержит результаты, raw responses/thinking, manifest, метрики, логи, frozen ontology, исходники стенда/конфиг/README для воспроизведения и `archive_sha256_manifest.json`. Веса и caches не включаются; full подкаталог не попадает в pilot ZIP. Можно экспортировать незавершённый эксперимент: summary явно укажет пропущенные результаты. Передайте ZIP для анализа после своего запуска.
+Pilot ZIP по умолчанию: `reports/entity_typing_v2/run3_three_servers_pilot_results.zip`. Он содержит результаты, raw responses/thinking, manifest, метрики, логи, frozen ontology, исходники стенда/конфиг/README для воспроизведения и `archive_sha256_manifest.json`. Веса и caches не включаются; full подкаталог не попадает в pilot ZIP. Можно экспортировать незавершённый эксперимент: summary явно укажет пропущенные результаты. Передайте ZIP для анализа после своего запуска.
