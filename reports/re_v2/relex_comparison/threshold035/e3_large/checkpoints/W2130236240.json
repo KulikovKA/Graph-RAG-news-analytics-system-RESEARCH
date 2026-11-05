@@ -1,0 +1,1016 @@
+{
+  "fingerprint": "43cfe5b9ca331173e4f77c2e3a0aa24ad2cee116eacfc8f2c0ed6f9d86acb634",
+  "document_id": "W2130236240",
+  "model": "knowledgator/gliner-relex-large-v1.0",
+  "mode": "e3",
+  "raw_windows": [
+    {
+      "window": {
+        "window_id": "w:776609d0cfb3584593925faa622a1b020e1fd169da98e6da38a01cd649f2f5c7",
+        "document_id": "W2130236240",
+        "start": 0,
+        "end": 700,
+        "text": "In their analysis of the effects of advance notification of plant closings, Nord and Ting (ILR Review, July 1991) claim that much can be expected of current legislation that mandates a 60-day prenotification standard because the outcomes of voluntary arrangements, in an interval preceding implementation of the legislation, point to substantial reductions in both joblessness and earnings losses for workers given over two months' warning of their impending layoff. They also suggest that many of the disparate results reported in the earlier plant closing literature reflect the inability to distinguish between formal and informal notice on the basis of the 1984 and 1986 Displaced Worker Surveys.",
+        "entity_ids": [
+          "e:3fca24ee21f3ef1738f75c8682161fb1aae7da8dd11b90e6e963af32eed9f538",
+          "e:c2cbc01c4b5a6613f9eee156bc7fddb69f908109e580a852245b594c3ccabd48",
+          "e:912f70d52b5c8aad5dbb2e77633800c4c8f3d9c6fd46a6732ef410af7f93637b",
+          "e:cd2b5d6e478228e893b5476f45aba068a0db059f0717e2369bcbe56c03addbf4",
+          "e:cf62b208cd1ea09ea3194948ca29b22e967c534e9a617bddb6c1e9dc7431fe1e",
+          "e:0431e6502a81b2e98cfc388689b44bd2a7906f7bed97928916b27119004902a0",
+          "e:a5b35eaa5d1795ccb41ad06538713c49fdf1a53531a9090d541a474af1ae83ce",
+          "e:52a586186bf0e3582ed1b2889fbf5c6da7b3052b55e70cba942ba2e2dd9d9747",
+          "e:e22e3b1dae3ce5ef3787b2f5f08ca23e2bc92482a36831727ea672c3a44a2fd5",
+          "e:540d7e1c068300fa7273ad662b61585e77a651eef03afc5aedec429c7e84ebd4",
+          "e:2462ef63c4e08c5329dd2ea55144d10903b70ccdb282596faf696d123a54c132",
+          "e:a6f0956a6abf2873db299584554cf49cc5fc3c66780bbd83b14632742d0da16b",
+          "e:bb89cb64a740ace7ca9ae7040eb3eb54029341f9b3d83e5fde9bbc0ca82ee385"
+        ]
+      },
+      "audit": {
+        "tokens": 201,
+        "spans": 13,
+        "pairs": 156,
+        "supplied_word_spans": [
+          [
+            7,
+            8
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            40,
+            40
+          ],
+          [
+            42,
+            43
+          ],
+          [
+            49,
+            49
+          ],
+          [
+            60,
+            60
+          ],
+          [
+            62,
+            63
+          ],
+          [
+            65,
+            65
+          ],
+          [
+            75,
+            75
+          ],
+          [
+            84,
+            85
+          ],
+          [
+            89,
+            92
+          ],
+          [
+            90,
+            92
+          ],
+          [
+            99,
+            99
+          ]
+        ]
+      },
+      "predictions": []
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "e:3fca24ee21f3ef1738f75c8682161fb1aae7da8dd11b90e6e963af32eed9f538",
+      "document_id": "W2130236240",
+      "start": 36,
+      "end": 56,
+      "surface_text": "advance notification",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "advance notification"
+      ],
+      "confidence": 0.37750887870788574,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2130236240",
+          "end": 56,
+          "lemma": "advance notification",
+          "mention_id": "m:efae480adb192878648234bfc31a7af1529ab6dc20ce4cc876fe5120a50c449a",
+          "ner_label_hint": "METHOD",
+          "normalized_form": "advance notification",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "score": 0.37750887870788574,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "start": 36,
+          "surface_text": "advance notification",
+          "tokens": [
+            {
+              "end": 43,
+              "lemma": "advance",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 36,
+              "tag": "NN",
+              "text": "advance"
+            },
+            {
+              "end": 56,
+              "lemma": "notification",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 44,
+              "tag": "NN",
+              "text": "notification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:c2cbc01c4b5a6613f9eee156bc7fddb69f908109e580a852245b594c3ccabd48",
+      "document_id": "W2130236240",
+      "start": 60,
+      "end": 74,
+      "surface_text": "plant closings",
+      "entity_types": [
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "plant closing"
+      ],
+      "confidence": 0.4829845428466797,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 74,
+              "original": "closings",
+              "replacement": "closing",
+              "rule": "plural_noun_head",
+              "start": 66
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W2130236240",
+          "end": 74,
+          "lemma": "plant closing",
+          "mention_id": "m:039294631a63560e20d1894c45787e8e9e05fab2b22cb6bf0c9c957aa056c35a",
+          "ner_label_hint": "PROCESS",
+          "normalized_form": "plant closing",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "score": 0.4829845428466797,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "start": 60,
+          "surface_text": "plant closings",
+          "tokens": [
+            {
+              "end": 65,
+              "lemma": "plant",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 60,
+              "tag": "NN",
+              "text": "plant"
+            },
+            {
+              "end": 74,
+              "lemma": "closing",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 66,
+              "tag": "NNS",
+              "text": "closings"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:912f70d52b5c8aad5dbb2e77633800c4c8f3d9c6fd46a6732ef410af7f93637b",
+      "document_id": "W2130236240",
+      "start": 229,
+      "end": 237,
+      "surface_text": "outcomes",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "outcome"
+      ],
+      "confidence": 0.5326326489448547,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 237,
+              "original": "outcomes",
+              "replacement": "outcome",
+              "rule": "plural_noun_head",
+              "start": 229
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W2130236240",
+          "end": 237,
+          "lemma": "outcome",
+          "mention_id": "m:89d797045074fb70c8b8c6f9070660e3976d3d829c959c75af21849b78ed5d89",
+          "ner_label_hint": "RESULT",
+          "normalized_form": "outcome",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "score": 0.5326326489448547,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "start": 229,
+          "surface_text": "outcomes",
+          "tokens": [
+            {
+              "end": 237,
+              "lemma": "outcome",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 229,
+              "tag": "NNS",
+              "text": "outcomes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:cd2b5d6e478228e893b5476f45aba068a0db059f0717e2369bcbe56c03addbf4",
+      "document_id": "W2130236240",
+      "start": 241,
+      "end": 263,
+      "surface_text": "voluntary arrangements",
+      "entity_types": [
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "voluntary arrangement"
+      ],
+      "confidence": 0.3986944556236267,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 263,
+              "original": "arrangements",
+              "replacement": "arrangement",
+              "rule": "plural_noun_head",
+              "start": 251
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W2130236240",
+          "end": 263,
+          "lemma": "voluntary arrangement",
+          "mention_id": "m:8bb1426858996ef9d0c4e183e06809d8c0a9b1019b8a526b0d4cf86793c162b0",
+          "ner_label_hint": "PROCESS",
+          "normalized_form": "voluntary arrangement",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "score": 0.3986944556236267,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "start": 241,
+          "surface_text": "voluntary arrangements",
+          "tokens": [
+            {
+              "end": 250,
+              "lemma": "voluntary",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 241,
+              "tag": "JJ",
+              "text": "voluntary"
+            },
+            {
+              "end": 263,
+              "lemma": "arrangement",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 251,
+              "tag": "NNS",
+              "text": "arrangements"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:cf62b208cd1ea09ea3194948ca29b22e967c534e9a617bddb6c1e9dc7431fe1e",
+      "document_id": "W2130236240",
+      "start": 290,
+      "end": 304,
+      "surface_text": "implementation",
+      "entity_types": [
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "implementation"
+      ],
+      "confidence": 0.4723517596721649,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2130236240",
+          "end": 304,
+          "lemma": "implementation",
+          "mention_id": "m:0f993720b17c673090de75f9550014bafe8658c4903e4f6686a8552f5b4e8762",
+          "ner_label_hint": "PROCESS",
+          "normalized_form": "implementation",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "score": 0.4723517596721649,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "start": 290,
+          "surface_text": "implementation",
+          "tokens": [
+            {
+              "end": 304,
+              "lemma": "implementation",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 290,
+              "tag": "NN",
+              "text": "implementation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:0431e6502a81b2e98cfc388689b44bd2a7906f7bed97928916b27119004902a0",
+      "document_id": "W2130236240",
+      "start": 365,
+      "end": 376,
+      "surface_text": "joblessness",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "joblessness"
+      ],
+      "confidence": 0.9182336330413818,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2130236240",
+          "end": 376,
+          "lemma": "joblessness",
+          "mention_id": "m:6f14185429a9766b612e62614d62d36e810f24c8554781e715fd8e32666fbf3d",
+          "ner_label_hint": "CONDITION",
+          "normalized_form": "joblessness",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "score": 0.9182336330413818,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "start": 365,
+          "surface_text": "joblessness",
+          "tokens": [
+            {
+              "end": 376,
+              "lemma": "joblessness",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 365,
+              "tag": "NN",
+              "text": "joblessness"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a5b35eaa5d1795ccb41ad06538713c49fdf1a53531a9090d541a474af1ae83ce",
+      "document_id": "W2130236240",
+      "start": 381,
+      "end": 396,
+      "surface_text": "earnings losses",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "earnings loss"
+      ],
+      "confidence": 0.7512835264205933,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 396,
+              "original": "losses",
+              "replacement": "loss",
+              "rule": "plural_noun_head",
+              "start": 390
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W2130236240",
+          "end": 396,
+          "lemma": "earnings loss",
+          "mention_id": "m:6169a547f902d93e82f1063b21df2684a55440b4d251a4db9d40f5c2d4566b3b",
+          "ner_label_hint": "CONDITION",
+          "normalized_form": "earnings loss",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "score": 0.7512835264205933,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "start": 381,
+          "surface_text": "earnings losses",
+          "tokens": [
+            {
+              "end": 389,
+              "lemma": "earning",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 381,
+              "tag": "NNS",
+              "text": "earnings"
+            },
+            {
+              "end": 396,
+              "lemma": "loss",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 390,
+              "tag": "NNS",
+              "text": "losses"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:52a586186bf0e3582ed1b2889fbf5c6da7b3052b55e70cba942ba2e2dd9d9747",
+      "document_id": "W2130236240",
+      "start": 401,
+      "end": 408,
+      "surface_text": "workers",
+      "entity_types": [
+        "ACTOR"
+      ],
+      "normalized_forms": [
+        "worker"
+      ],
+      "confidence": 0.9450370073318481,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 408,
+              "original": "workers",
+              "replacement": "worker",
+              "rule": "plural_noun_head",
+              "start": 401
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W2130236240",
+          "end": 408,
+          "lemma": "worker",
+          "mention_id": "m:7b59ad139a324c40987012f7507791e3f8ac24afc3e94aaddace6d5c6f62ba96",
+          "ner_label_hint": "ACTOR",
+          "normalized_form": "worker",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "score": 0.9450370073318481,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "start": 401,
+          "surface_text": "workers",
+          "tokens": [
+            {
+              "end": 408,
+              "lemma": "worker",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 401,
+              "tag": "NNS",
+              "text": "workers"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:e22e3b1dae3ce5ef3787b2f5f08ca23e2bc92482a36831727ea672c3a44a2fd5",
+      "document_id": "W2130236240",
+      "start": 459,
+      "end": 465,
+      "surface_text": "layoff",
+      "entity_types": [
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "layoff"
+      ],
+      "confidence": 0.37949493527412415,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2130236240",
+          "end": 465,
+          "lemma": "layoff",
+          "mention_id": "m:6e34d029bf651cac29894944ec741252aff4ffb7a34c0f906ed0f38027a38850",
+          "ner_label_hint": "PROCESS",
+          "normalized_form": "layoff",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "score": 0.37949493527412415,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "start": 459,
+          "surface_text": "layoff",
+          "tokens": [
+            {
+              "end": 465,
+              "lemma": "layoff",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 459,
+              "tag": "NN",
+              "text": "layoff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:540d7e1c068300fa7273ad662b61585e77a651eef03afc5aedec429c7e84ebd4",
+      "document_id": "W2130236240",
+      "start": 502,
+      "end": 519,
+      "surface_text": "disparate results",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "disparate result"
+      ],
+      "confidence": 0.621117353439331,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 519,
+              "original": "results",
+              "replacement": "result",
+              "rule": "plural_noun_head",
+              "start": 512
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W2130236240",
+          "end": 519,
+          "lemma": "disparate result",
+          "mention_id": "m:086f2c806c3257a25dbc340b01f221a4db7b33c4d6b4c980cee784a73f27e47e",
+          "ner_label_hint": "RESULT",
+          "normalized_form": "disparate result",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "score": 0.621117353439331,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "start": 502,
+          "surface_text": "disparate results",
+          "tokens": [
+            {
+              "end": 511,
+              "lemma": "disparate",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 502,
+              "tag": "JJ",
+              "text": "disparate"
+            },
+            {
+              "end": 519,
+              "lemma": "result",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 512,
+              "tag": "NNS",
+              "text": "results"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:2462ef63c4e08c5329dd2ea55144d10903b70ccdb282596faf696d123a54c132",
+      "document_id": "W2130236240",
+      "start": 536,
+      "end": 568,
+      "surface_text": "earlier plant closing literature",
+      "entity_types": [
+        "DATA_RESOURCE"
+      ],
+      "normalized_forms": [
+        "earlier plant closing literature"
+      ],
+      "confidence": 0.5433372855186462,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2130236240",
+          "end": 568,
+          "lemma": "earlier plant closing literature",
+          "mention_id": "m:f9b6b52208c7d736d0279f005b3973ffc79b622422576ba0dd27bf472e21b49d",
+          "ner_label_hint": "DATA_RESOURCE",
+          "normalized_form": "earlier plant closing literature",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "score": 0.5433372855186462,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "start": 536,
+          "surface_text": "earlier plant closing literature",
+          "tokens": [
+            {
+              "end": 543,
+              "lemma": "early",
+              "morph": {
+                "Degree": "Cmp"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 536,
+              "tag": "JJR",
+              "text": "earlier"
+            },
+            {
+              "end": 549,
+              "lemma": "plant",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 544,
+              "tag": "NN",
+              "text": "plant"
+            },
+            {
+              "end": 557,
+              "lemma": "closing",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 550,
+              "tag": "NN",
+              "text": "closing"
+            },
+            {
+              "end": 568,
+              "lemma": "literature",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 558,
+              "tag": "NN",
+              "text": "literature"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a6f0956a6abf2873db299584554cf49cc5fc3c66780bbd83b14632742d0da16b",
+      "document_id": "W2130236240",
+      "start": 544,
+      "end": 568,
+      "surface_text": "plant closing literature",
+      "entity_types": [
+        "DATA_RESOURCE"
+      ],
+      "normalized_forms": [
+        "plant closing literature"
+      ],
+      "confidence": 0.8997756838798523,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2130236240",
+          "end": 568,
+          "lemma": "plant closing literature",
+          "mention_id": "m:00d361c73804c11dac107ae543d7a6dc0fce94bd2cabb4bf6fcc9d370e05a220",
+          "ner_label_hint": "DATA_RESOURCE",
+          "normalized_form": "plant closing literature",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "score": 0.8997756838798523,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "start": 544,
+          "surface_text": "plant closing literature",
+          "tokens": [
+            {
+              "end": 549,
+              "lemma": "plant",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 544,
+              "tag": "NN",
+              "text": "plant"
+            },
+            {
+              "end": 557,
+              "lemma": "closing",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 550,
+              "tag": "NN",
+              "text": "closing"
+            },
+            {
+              "end": 568,
+              "lemma": "literature",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 558,
+              "tag": "NN",
+              "text": "literature"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:bb89cb64a740ace7ca9ae7040eb3eb54029341f9b3d83e5fde9bbc0ca82ee385",
+      "document_id": "W2130236240",
+      "start": 614,
+      "end": 620,
+      "surface_text": "formal",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "formal"
+      ],
+      "confidence": 0.3588552176952362,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2130236240",
+          "end": 620,
+          "lemma": "formal",
+          "mention_id": "m:ef5d6fd4935f40cde9fabbb9ce9f524cd5ded5ef0becc0e14b67dec034831ff7",
+          "ner_label_hint": "ATTRIBUTE",
+          "normalized_form": "formal",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900",
+          "score": 0.3588552176952362,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2130236240",
+            "doi": "https://doi.org/10.1177/001979399204500403",
+            "landing_page_url": "https://doi.org/10.1177/001979399204500403",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-12T09:40:04.860316",
+            "source_url": "https://openalex.org/W2130236240",
+            "text_sha256": "9e231f1ce7251317d477b15c090001eee5efab8336e78362621e30329140e900"
+          },
+          "start": 614,
+          "surface_text": "formal",
+          "tokens": [
+            {
+              "end": 620,
+              "lemma": "formal",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 614,
+              "tag": "JJ",
+              "text": "formal"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [],
+  "raw_relation_count": 0,
+  "seconds": 3.0271660999860615
+}

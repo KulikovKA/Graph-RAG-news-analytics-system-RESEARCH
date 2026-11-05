@@ -7,12 +7,17 @@
 
 | Скрипт | Источник сущностей | Модель отношений | Namespace | Каталог результата |
 |---|---|---|---|---|
-| `build_e3_relex_base.py` | Исходный E3 GLiNER | RelEx Base | `relex_base` | `e3_base/` |
+| `build_e3_relex_base.py` | Исходный E3 GLiNER | RelEx Base, порог 0.35 | `relex_base_t035` | `threshold035/e3_base/` |
 | `build_e3_relex_large.py` | Исходный E3 GLiNER | RelEx Large | `relex_large` | `e3_large/` |
 | `build_joint_relex_base.py` | Сама RelEx Base | Та же RelEx Base | `relex_joint_base` | `joint_base/` |
 | `build_joint_relex_large.py` | Сама RelEx Large | Та же RelEx Large | `relex_joint_large` | `joint_large/` |
 
 Каталоги находятся внутри `reports/re_v2/relex_comparison/`.
+
+По текущему указанию пользователя `build_e3_relex_base.py` использует порог **0.35**
+без дополнительных аргументов. Новый граф — `relex_base_t035`, прежний граф
+`relex_base` с порогом 0.7 сохраняется. Остальные три entrypoint используют
+прежние настройки. Любой явно переданный CLI-параметр переопределяет настройку скрипта.
 
 В **каждом скрипте по умолчанию два Python worker**. Каждый загружает одну копию
 нужной модели один раз. На 30 документах worker 1 обрабатывает 15 документов,
@@ -117,6 +122,21 @@ foreach ($relexScript in $relexScripts) {
 Есть `--inference-only` (без Neo4j), `--neo4j-env`, `--relation-threshold`
 (по умолчанию 0.7), `--entity-threshold` (только совместный режим, по умолчанию 0.3).
 Повторный запуск с готовыми checkpoints требует `--resume`.
+
+Для нового порога можно задать отдельный `--namespace`, сохраняя предыдущий граф.
+Он должен начинаться с namespace соответствующего эксперимента и суффикса через
+подчёркивание: например, `relex_large_t035`. Числа и латинские буквы нижнего регистра
+допустимы; общая длина — до 63 символов. Старые namespaces других экспериментов
+использовать нельзя. Fingerprint по-прежнему защищает каждый граф от случайного
+импорта несовместимых настроек.
+
+```powershell
+.\.venv\Scripts\python.exe scripts\build_e3_relex_large.py `
+    --relation-threshold 0.35 `
+    --namespace relex_large_t035 `
+    --output reports/re_v2/relex_comparison/threshold035/e3_large `
+    --workers 2 --threads 2 --resume
+```
 
 ## Различия режимов и результаты
 

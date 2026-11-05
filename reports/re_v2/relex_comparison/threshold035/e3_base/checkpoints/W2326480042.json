@@ -1,0 +1,1325 @@
+{
+  "fingerprint": "43cfe5b9ca331173e4f77c2e3a0aa24ad2cee116eacfc8f2c0ed6f9d86acb634",
+  "document_id": "W2326480042",
+  "model": "knowledgator/gliner-relex-base-v1.0",
+  "mode": "e3",
+  "raw_windows": [
+    {
+      "window": {
+        "window_id": "w:e2ce00a83530a6e3569da87eb2a85488a2e4831a57f71882cff3defaf6e4827f",
+        "document_id": "W2326480042",
+        "start": 0,
+        "end": 790,
+        "text": "I strongly doubt if we will ever understandand fully evaluate -the 60s without placing it against the background of another radical decade, the 30s. Having lived out both periods up to the hilt, I find that my older contemporaries as well as the younger people with whom I worked twenty years ago have seldom been able to distance themselves sufficiently from their time to draw these crucial comparisons adequately. Recent biographies by old New York socialists and communists who lived with such nostalgic exhilaration in the era climaxed by the Spanish Civil War and CIO organizing drives seem utterly estranged and uncomprehending in their attitudes toward the new left and counterculture. By the same token, the younger people of '68 and of New York's Lower Eastside and San Francis247",
+        "entity_ids": [
+          "e:5ad7761ff5a3ac1286915156c655f494b7b9bed15691f8fe5c3d7c39f41061db",
+          "e:1725ca19fa99f3c14ae8284301fd361dbb586a0c740aab1a84f2f1924f066a57",
+          "e:85de2153af98600d858b42820fb2467ee3061c6fbd21a4fe2678624afad842f8",
+          "e:a0e2e53a03de10b2fd511c0277a211f89919925b0d7dacd803f827c922eff57f",
+          "e:46944b7bd18c1fe53d4cfde0fc1e373a286c791187bbad0d9aa8c1ebf6d7633d",
+          "e:c39e410c73efdd7e0109aa69342b53e145aa4c5bbb0a9ca4de9b8164b1c824f3",
+          "e:7da8bdf41b9aa29424f492802b5b3211fb826466384c461d1176d5aa74e9652b",
+          "e:8a7b9b9942effa803eff368cddde8a3b4f88e54c216f5f674d44d96489c713dd",
+          "e:510004ca6ad74992a49e846516f1434f6f2ce7501cc2d5d16aac1186fddfd7ba",
+          "e:b25748be32fe417599707ebe410703cb0dba453d32189c7b52e4c29d92a77177"
+        ]
+      },
+      "audit": {
+        "tokens": 227,
+        "spans": 10,
+        "pairs": 90,
+        "supplied_word_spans": [
+          [
+            77,
+            80
+          ],
+          [
+            78,
+            80
+          ],
+          [
+            82,
+            82
+          ],
+          [
+            95,
+            97
+          ],
+          [
+            99,
+            99
+          ],
+          [
+            99,
+            101
+          ],
+          [
+            112,
+            113
+          ],
+          [
+            115,
+            115
+          ],
+          [
+            130,
+            135
+          ],
+          [
+            137,
+            138
+          ]
+        ]
+      },
+      "predictions": [
+        {
+          "head": {
+            "start": 443,
+            "end": 462,
+            "text": "New York socialists"
+          },
+          "tail": {
+            "start": 439,
+            "end": 462,
+            "text": "old New York socialists"
+          },
+          "relation": "has member",
+          "score": 0.40100589394569397
+        },
+        {
+          "head": {
+            "start": 443,
+            "end": 462,
+            "text": "New York socialists"
+          },
+          "tail": {
+            "start": 467,
+            "end": 477,
+            "text": "communists"
+          },
+          "relation": "has member",
+          "score": 0.4619656205177307
+        },
+        {
+          "head": {
+            "start": 443,
+            "end": 462,
+            "text": "New York socialists"
+          },
+          "tail": {
+            "start": 746,
+            "end": 771,
+            "text": "New York's Lower Eastside"
+          },
+          "relation": "located in",
+          "score": 0.49260973930358887
+        },
+        {
+          "head": {
+            "start": 746,
+            "end": 771,
+            "text": "New York's Lower Eastside"
+          },
+          "tail": {
+            "start": 776,
+            "end": 790,
+            "text": "San Francis247"
+          },
+          "relation": "located in",
+          "score": 0.3771931827068329
+        },
+        {
+          "head": {
+            "start": 776,
+            "end": 790,
+            "text": "San Francis247"
+          },
+          "tail": {
+            "start": 746,
+            "end": 771,
+            "text": "New York's Lower Eastside"
+          },
+          "relation": "located in",
+          "score": 0.5076716542243958
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "e:5ad7761ff5a3ac1286915156c655f494b7b9bed15691f8fe5c3d7c39f41061db",
+      "document_id": "W2326480042",
+      "start": 439,
+      "end": 462,
+      "surface_text": "old New York socialists",
+      "entity_types": [
+        "ACTOR"
+      ],
+      "normalized_forms": [
+        "old New York socialist"
+      ],
+      "confidence": 0.6618534326553345,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 462,
+              "original": "socialists",
+              "replacement": "socialist",
+              "rule": "plural_noun_head",
+              "start": 452
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W2326480042",
+          "end": 462,
+          "lemma": "old New York socialist",
+          "mention_id": "m:1c560558b78a5bad975e78d99ee7a2c2a878ee028b4cacef04999f9f88aba96d",
+          "ner_label_hint": "ACTOR",
+          "normalized_form": "old New York socialist",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:22b10a66ff08a431db39dce70a17d17784fd9e59e9e10a8ff978d1cb827ceff2",
+          "score": 0.6618534326553345,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2326480042",
+            "doi": "https://doi.org/10.2307/466552",
+            "landing_page_url": "https://doi.org/10.2307/466552",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2326480042",
+            "text_sha256": "22b10a66ff08a431db39dce70a17d17784fd9e59e9e10a8ff978d1cb827ceff2"
+          },
+          "start": 439,
+          "surface_text": "old New York socialists",
+          "tokens": [
+            {
+              "end": 442,
+              "lemma": "old",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 439,
+              "tag": "JJ",
+              "text": "old"
+            },
+            {
+              "end": 446,
+              "lemma": "New",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 443,
+              "tag": "NNP",
+              "text": "New"
+            },
+            {
+              "end": 451,
+              "lemma": "York",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 447,
+              "tag": "NNP",
+              "text": "York"
+            },
+            {
+              "end": 462,
+              "lemma": "socialist",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 452,
+              "tag": "NNS",
+              "text": "socialists"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:1725ca19fa99f3c14ae8284301fd361dbb586a0c740aab1a84f2f1924f066a57",
+      "document_id": "W2326480042",
+      "start": 443,
+      "end": 462,
+      "surface_text": "New York socialists",
+      "entity_types": [
+        "ACTOR"
+      ],
+      "normalized_forms": [
+        "New York socialist"
+      ],
+      "confidence": 0.6688376665115356,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 462,
+              "original": "socialists",
+              "replacement": "socialist",
+              "rule": "plural_noun_head",
+              "start": 452
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W2326480042",
+          "end": 462,
+          "lemma": "New York socialist",
+          "mention_id": "m:d6d8682400d4c27e81ec106e62913cb5f069bd042a7ce90ab3eb0cc42dd11d56",
+          "ner_label_hint": "ACTOR",
+          "normalized_form": "New York socialist",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:22b10a66ff08a431db39dce70a17d17784fd9e59e9e10a8ff978d1cb827ceff2",
+          "score": 0.6688376665115356,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2326480042",
+            "doi": "https://doi.org/10.2307/466552",
+            "landing_page_url": "https://doi.org/10.2307/466552",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2326480042",
+            "text_sha256": "22b10a66ff08a431db39dce70a17d17784fd9e59e9e10a8ff978d1cb827ceff2"
+          },
+          "start": 443,
+          "surface_text": "New York socialists",
+          "tokens": [
+            {
+              "end": 446,
+              "lemma": "New",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 443,
+              "tag": "NNP",
+              "text": "New"
+            },
+            {
+              "end": 451,
+              "lemma": "York",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 447,
+              "tag": "NNP",
+              "text": "York"
+            },
+            {
+              "end": 462,
+              "lemma": "socialist",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 452,
+              "tag": "NNS",
+              "text": "socialists"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:85de2153af98600d858b42820fb2467ee3061c6fbd21a4fe2678624afad842f8",
+      "document_id": "W2326480042",
+      "start": 467,
+      "end": 477,
+      "surface_text": "communists",
+      "entity_types": [
+        "ACTOR"
+      ],
+      "normalized_forms": [
+        "communist"
+      ],
+      "confidence": 0.7710705995559692,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 477,
+              "original": "communists",
+              "replacement": "communist",
+              "rule": "plural_noun_head",
+              "start": 467
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W2326480042",
+          "end": 477,
+          "lemma": "communist",
+          "mention_id": "m:ecfbe0ad6e28d62d7519ee7c4d4e3bf62de280da4d8dd0958b6810f47cb285e9",
+          "ner_label_hint": "ACTOR",
+          "normalized_form": "communist",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:22b10a66ff08a431db39dce70a17d17784fd9e59e9e10a8ff978d1cb827ceff2",
+          "score": 0.7710705995559692,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2326480042",
+            "doi": "https://doi.org/10.2307/466552",
+            "landing_page_url": "https://doi.org/10.2307/466552",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2326480042",
+            "text_sha256": "22b10a66ff08a431db39dce70a17d17784fd9e59e9e10a8ff978d1cb827ceff2"
+          },
+          "start": 467,
+          "surface_text": "communists",
+          "tokens": [
+            {
+              "end": 477,
+              "lemma": "communist",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 467,
+              "tag": "NNS",
+              "text": "communists"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a0e2e53a03de10b2fd511c0277a211f89919925b0d7dacd803f827c922eff57f",
+      "document_id": "W2326480042",
+      "start": 548,
+      "end": 565,
+      "surface_text": "Spanish Civil War",
+      "entity_types": [
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "Spanish Civil War"
+      ],
+      "confidence": 0.9589183330535889,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2326480042",
+          "end": 565,
+          "lemma": "Spanish Civil War",
+          "mention_id": "m:d2f36a5407250db5bbdb61f007f51528f18211ec8257e92e710c6494e9b1473f",
+          "ner_label_hint": "PROCESS",
+          "normalized_form": "Spanish Civil War",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:22b10a66ff08a431db39dce70a17d17784fd9e59e9e10a8ff978d1cb827ceff2",
+          "score": 0.9589183330535889,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2326480042",
+            "doi": "https://doi.org/10.2307/466552",
+            "landing_page_url": "https://doi.org/10.2307/466552",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2326480042",
+            "text_sha256": "22b10a66ff08a431db39dce70a17d17784fd9e59e9e10a8ff978d1cb827ceff2"
+          },
+          "start": 548,
+          "surface_text": "Spanish Civil War",
+          "tokens": [
+            {
+              "end": 555,
+              "lemma": "Spanish",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 548,
+              "tag": "NNP",
+              "text": "Spanish"
+            },
+            {
+              "end": 561,
+              "lemma": "Civil",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 556,
+              "tag": "NNP",
+              "text": "Civil"
+            },
+            {
+              "end": 565,
+              "lemma": "War",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 562,
+              "tag": "NNP",
+              "text": "War"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:46944b7bd18c1fe53d4cfde0fc1e373a286c791187bbad0d9aa8c1ebf6d7633d",
+      "document_id": "W2326480042",
+      "start": 570,
+      "end": 573,
+      "surface_text": "CIO",
+      "entity_types": [
+        "ACTOR"
+      ],
+      "normalized_forms": [
+        "CIO"
+      ],
+      "confidence": 0.57804274559021,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2326480042",
+          "end": 573,
+          "lemma": "CIO",
+          "mention_id": "m:445d65962438974dfb6352910a3e500dec5bf68005e80727e7910555730239f0",
+          "ner_label_hint": "ACTOR",
+          "normalized_form": "CIO",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:22b10a66ff08a431db39dce70a17d17784fd9e59e9e10a8ff978d1cb827ceff2",
+          "score": 0.57804274559021,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2326480042",
+            "doi": "https://doi.org/10.2307/466552",
+            "landing_page_url": "https://doi.org/10.2307/466552",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2326480042",
+            "text_sha256": "22b10a66ff08a431db39dce70a17d17784fd9e59e9e10a8ff978d1cb827ceff2"
+          },
+          "start": 570,
+          "surface_text": "CIO",
+          "tokens": [
+            {
+              "end": 573,
+              "lemma": "CIO",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 570,
+              "tag": "NNP",
+              "text": "CIO"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:c39e410c73efdd7e0109aa69342b53e145aa4c5bbb0a9ca4de9b8164b1c824f3",
+      "document_id": "W2326480042",
+      "start": 570,
+      "end": 591,
+      "surface_text": "CIO organizing drives",
+      "entity_types": [
+        "ACTOR",
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "CIO organizing drive"
+      ],
+      "confidence": 0.8006624579429626,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 591,
+              "original": "drives",
+              "replacement": "drive",
+              "rule": "plural_noun_head",
+              "start": 585
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W2326480042",
+          "end": 591,
+          "lemma": "CIO organizing drive",
+          "mention_id": "m:6248311aebc7ab32c57c714c5306a3e0eace710559355fcce8e2e82fe2d1ca73",
+          "ner_label_hint": "ACTOR",
+          "normalized_form": "CIO organizing drive",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:22b10a66ff08a431db39dce70a17d17784fd9e59e9e10a8ff978d1cb827ceff2",
+          "score": 0.6370689272880554,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2326480042",
+            "doi": "https://doi.org/10.2307/466552",
+            "landing_page_url": "https://doi.org/10.2307/466552",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2326480042",
+            "text_sha256": "22b10a66ff08a431db39dce70a17d17784fd9e59e9e10a8ff978d1cb827ceff2"
+          },
+          "start": 570,
+          "surface_text": "CIO organizing drives",
+          "tokens": [
+            {
+              "end": 573,
+              "lemma": "CIO",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 570,
+              "tag": "NNP",
+              "text": "CIO"
+            },
+            {
+              "end": 584,
+              "lemma": "organizing",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 574,
+              "tag": "NN",
+              "text": "organizing"
+            },
+            {
+              "end": 591,
+              "lemma": "drive",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 585,
+              "tag": "NNS",
+              "text": "drives"
+            }
+          ]
+        },
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 591,
+              "original": "drives",
+              "replacement": "drive",
+              "rule": "plural_noun_head",
+              "start": 585
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W2326480042",
+          "end": 591,
+          "lemma": "CIO organizing drive",
+          "mention_id": "m:352b2d7d2a3446b9f53b1ea97cc154d36b005ae2125fcb3448bcbd782d4e054e",
+          "ner_label_hint": "PROCESS",
+          "normalized_form": "CIO organizing drive",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:22b10a66ff08a431db39dce70a17d17784fd9e59e9e10a8ff978d1cb827ceff2",
+          "score": 0.8006624579429626,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2326480042",
+            "doi": "https://doi.org/10.2307/466552",
+            "landing_page_url": "https://doi.org/10.2307/466552",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2326480042",
+            "text_sha256": "22b10a66ff08a431db39dce70a17d17784fd9e59e9e10a8ff978d1cb827ceff2"
+          },
+          "start": 570,
+          "surface_text": "CIO organizing drives",
+          "tokens": [
+            {
+              "end": 573,
+              "lemma": "CIO",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 570,
+              "tag": "NNP",
+              "text": "CIO"
+            },
+            {
+              "end": 584,
+              "lemma": "organizing",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 574,
+              "tag": "NN",
+              "text": "organizing"
+            },
+            {
+              "end": 591,
+              "lemma": "drive",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 585,
+              "tag": "NNS",
+              "text": "drives"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:7da8bdf41b9aa29424f492802b5b3211fb826466384c461d1176d5aa74e9652b",
+      "document_id": "W2326480042",
+      "start": 665,
+      "end": 673,
+      "surface_text": "new left",
+      "entity_types": [
+        "ACTOR",
+        "CONCEPT"
+      ],
+      "normalized_forms": [
+        "new left"
+      ],
+      "confidence": 0.7108719348907471,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2326480042",
+          "end": 673,
+          "lemma": "new left",
+          "mention_id": "m:8ecfe95783de2b28237c2514a7abc63eec4beb8ecdc91629ac4ac49c145d6ec8",
+          "ner_label_hint": "ACTOR",
+          "normalized_form": "new left",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:22b10a66ff08a431db39dce70a17d17784fd9e59e9e10a8ff978d1cb827ceff2",
+          "score": 0.7108719348907471,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2326480042",
+            "doi": "https://doi.org/10.2307/466552",
+            "landing_page_url": "https://doi.org/10.2307/466552",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2326480042",
+            "text_sha256": "22b10a66ff08a431db39dce70a17d17784fd9e59e9e10a8ff978d1cb827ceff2"
+          },
+          "start": 665,
+          "surface_text": "new left",
+          "tokens": [
+            {
+              "end": 668,
+              "lemma": "new",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 665,
+              "tag": "JJ",
+              "text": "new"
+            },
+            {
+              "end": 673,
+              "lemma": "left",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 669,
+              "tag": "NN",
+              "text": "left"
+            }
+          ]
+        },
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2326480042",
+          "end": 673,
+          "lemma": "new left",
+          "mention_id": "m:7b9b028d34130004a4dc30771bf5a65ef58717677dbcf54825b93abafe2736f1",
+          "ner_label_hint": "CONCEPT",
+          "normalized_form": "new left",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:22b10a66ff08a431db39dce70a17d17784fd9e59e9e10a8ff978d1cb827ceff2",
+          "score": 0.6935118436813354,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2326480042",
+            "doi": "https://doi.org/10.2307/466552",
+            "landing_page_url": "https://doi.org/10.2307/466552",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2326480042",
+            "text_sha256": "22b10a66ff08a431db39dce70a17d17784fd9e59e9e10a8ff978d1cb827ceff2"
+          },
+          "start": 665,
+          "surface_text": "new left",
+          "tokens": [
+            {
+              "end": 668,
+              "lemma": "new",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 665,
+              "tag": "JJ",
+              "text": "new"
+            },
+            {
+              "end": 673,
+              "lemma": "left",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 669,
+              "tag": "NN",
+              "text": "left"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:8a7b9b9942effa803eff368cddde8a3b4f88e54c216f5f674d44d96489c713dd",
+      "document_id": "W2326480042",
+      "start": 678,
+      "end": 692,
+      "surface_text": "counterculture",
+      "entity_types": [
+        "CONCEPT"
+      ],
+      "normalized_forms": [
+        "counterculture"
+      ],
+      "confidence": 0.9224338531494141,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2326480042",
+          "end": 692,
+          "lemma": "counterculture",
+          "mention_id": "m:af4389b6053471517e8bcb861f14312e865168b75106acf77f35c07a317af00f",
+          "ner_label_hint": "CONCEPT",
+          "normalized_form": "counterculture",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:22b10a66ff08a431db39dce70a17d17784fd9e59e9e10a8ff978d1cb827ceff2",
+          "score": 0.9224338531494141,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2326480042",
+            "doi": "https://doi.org/10.2307/466552",
+            "landing_page_url": "https://doi.org/10.2307/466552",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2326480042",
+            "text_sha256": "22b10a66ff08a431db39dce70a17d17784fd9e59e9e10a8ff978d1cb827ceff2"
+          },
+          "start": 678,
+          "surface_text": "counterculture",
+          "tokens": [
+            {
+              "end": 692,
+              "lemma": "counterculture",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 678,
+              "tag": "NN",
+              "text": "counterculture"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:510004ca6ad74992a49e846516f1434f6f2ce7501cc2d5d16aac1186fddfd7ba",
+      "document_id": "W2326480042",
+      "start": 746,
+      "end": 771,
+      "surface_text": "New York's Lower Eastside",
+      "entity_types": [
+        "CONDITION"
+      ],
+      "normalized_forms": [
+        "New York Lower Eastside"
+      ],
+      "confidence": 0.6448041796684265,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 756,
+              "original": "'s",
+              "replacement": "",
+              "rule": "possessive_POS",
+              "start": 754
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W2326480042",
+          "end": 771,
+          "lemma": "New York Lower Eastside",
+          "mention_id": "m:e727f0381e0123407f876817e253cd52ebdf7210f0e528d9f26fe621760d5d1f",
+          "ner_label_hint": "CONDITION",
+          "normalized_form": "New York Lower Eastside",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:22b10a66ff08a431db39dce70a17d17784fd9e59e9e10a8ff978d1cb827ceff2",
+          "score": 0.6448041796684265,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2326480042",
+            "doi": "https://doi.org/10.2307/466552",
+            "landing_page_url": "https://doi.org/10.2307/466552",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2326480042",
+            "text_sha256": "22b10a66ff08a431db39dce70a17d17784fd9e59e9e10a8ff978d1cb827ceff2"
+          },
+          "start": 746,
+          "surface_text": "New York's Lower Eastside",
+          "tokens": [
+            {
+              "end": 749,
+              "lemma": "New",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 746,
+              "tag": "NNP",
+              "text": "New"
+            },
+            {
+              "end": 754,
+              "lemma": "York",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 750,
+              "tag": "NNP",
+              "text": "York"
+            },
+            {
+              "end": 756,
+              "lemma": "'s",
+              "morph": {},
+              "partial_token": false,
+              "pos": "PART",
+              "possessive": true,
+              "start": 754,
+              "tag": "POS",
+              "text": "'s"
+            },
+            {
+              "end": 762,
+              "lemma": "Lower",
+              "morph": {
+                "Degree": "Cmp"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 757,
+              "tag": "JJR",
+              "text": "Lower"
+            },
+            {
+              "end": 771,
+              "lemma": "Eastside",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 763,
+              "tag": "NNP",
+              "text": "Eastside"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:b25748be32fe417599707ebe410703cb0dba453d32189c7b52e4c29d92a77177",
+      "document_id": "W2326480042",
+      "start": 776,
+      "end": 790,
+      "surface_text": "San Francis247",
+      "entity_types": [
+        "DATA_RESOURCE",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "San Francis247"
+      ],
+      "confidence": 0.7587876319885254,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2326480042",
+          "end": 790,
+          "lemma": "San Francis247",
+          "mention_id": "m:0484c54cc5473ef1e61d6ef4ec3b29c2d8ff02608ccc57c501ac7d1f0319e106",
+          "ner_label_hint": "DATA_RESOURCE",
+          "normalized_form": "San Francis247",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:22b10a66ff08a431db39dce70a17d17784fd9e59e9e10a8ff978d1cb827ceff2",
+          "score": 0.38909420371055603,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2326480042",
+            "doi": "https://doi.org/10.2307/466552",
+            "landing_page_url": "https://doi.org/10.2307/466552",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2326480042",
+            "text_sha256": "22b10a66ff08a431db39dce70a17d17784fd9e59e9e10a8ff978d1cb827ceff2"
+          },
+          "start": 776,
+          "surface_text": "San Francis247",
+          "tokens": [
+            {
+              "end": 779,
+              "lemma": "San",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 776,
+              "tag": "NNP",
+              "text": "San"
+            },
+            {
+              "end": 790,
+              "lemma": "Francis247",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 780,
+              "tag": "NNP",
+              "text": "Francis247"
+            }
+          ]
+        },
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W2326480042",
+          "end": 790,
+          "lemma": "San Francis247",
+          "mention_id": "m:dc32d9a5c69e9a5647c18bc08527679354de32e90bddacb2afdab53238a0e768",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "San Francis247",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:22b10a66ff08a431db39dce70a17d17784fd9e59e9e10a8ff978d1cb827ceff2",
+          "score": 0.7587876319885254,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W2326480042",
+            "doi": "https://doi.org/10.2307/466552",
+            "landing_page_url": "https://doi.org/10.2307/466552",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-10-30T12:39:25.321706",
+            "source_url": "https://openalex.org/W2326480042",
+            "text_sha256": "22b10a66ff08a431db39dce70a17d17784fd9e59e9e10a8ff978d1cb827ceff2"
+          },
+          "start": 776,
+          "surface_text": "San Francis247",
+          "tokens": [
+            {
+              "end": 779,
+              "lemma": "San",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 776,
+              "tag": "NNP",
+              "text": "San"
+            },
+            {
+              "end": 790,
+              "lemma": "Francis247",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 780,
+              "tag": "NNP",
+              "text": "Francis247"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "triple_id": "t:051930a1d98ad4fca26ffe69f953dd929afc7b8f5ae698149d087d9b3ccbdce7",
+      "document_id": "W2326480042",
+      "head_id": "e:510004ca6ad74992a49e846516f1434f6f2ce7501cc2d5d16aac1186fddfd7ba",
+      "tail_id": "e:b25748be32fe417599707ebe410703cb0dba453d32189c7b52e4c29d92a77177",
+      "head_types": [
+        "CONDITION"
+      ],
+      "tail_types": [
+        "DATA_RESOURCE",
+        "OBJECT"
+      ],
+      "relation_type": "LOCATED_IN",
+      "confidence": 0.3771931827068329,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:e2ce00a83530a6e3569da87eb2a85488a2e4831a57f71882cff3defaf6e4827f",
+          "document_id": "W2326480042",
+          "start": 0,
+          "end": 790,
+          "text": "I strongly doubt if we will ever understandand fully evaluate -the 60s without placing it against the background of another radical decade, the 30s. Having lived out both periods up to the hilt, I find that my older contemporaries as well as the younger people with whom I worked twenty years ago have seldom been able to distance themselves sufficiently from their time to draw these crucial comparisons adequately. Recent biographies by old New York socialists and communists who lived with such nostalgic exhilaration in the era climaxed by the Spanish Civil War and CIO organizing drives seem utterly estranged and uncomprehending in their attitudes toward the new left and counterculture. By the same token, the younger people of '68 and of New York's Lower Eastside and San Francis247",
+          "entity_ids": [
+            "e:5ad7761ff5a3ac1286915156c655f494b7b9bed15691f8fe5c3d7c39f41061db",
+            "e:1725ca19fa99f3c14ae8284301fd361dbb586a0c740aab1a84f2f1924f066a57",
+            "e:85de2153af98600d858b42820fb2467ee3061c6fbd21a4fe2678624afad842f8",
+            "e:a0e2e53a03de10b2fd511c0277a211f89919925b0d7dacd803f827c922eff57f",
+            "e:46944b7bd18c1fe53d4cfde0fc1e373a286c791187bbad0d9aa8c1ebf6d7633d",
+            "e:c39e410c73efdd7e0109aa69342b53e145aa4c5bbb0a9ca4de9b8164b1c824f3",
+            "e:7da8bdf41b9aa29424f492802b5b3211fb826466384c461d1176d5aa74e9652b",
+            "e:8a7b9b9942effa803eff368cddde8a3b4f88e54c216f5f674d44d96489c713dd",
+            "e:510004ca6ad74992a49e846516f1434f6f2ce7501cc2d5d16aac1186fddfd7ba",
+            "e:b25748be32fe417599707ebe410703cb0dba453d32189c7b52e4c29d92a77177"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:3ce551a81d6ee068b060b8aebabd70c10e71e03c6f629f0b7e2c16d8d2204694",
+      "document_id": "W2326480042",
+      "head_id": "e:1725ca19fa99f3c14ae8284301fd361dbb586a0c740aab1a84f2f1924f066a57",
+      "tail_id": "e:85de2153af98600d858b42820fb2467ee3061c6fbd21a4fe2678624afad842f8",
+      "head_types": [
+        "ACTOR"
+      ],
+      "tail_types": [
+        "ACTOR"
+      ],
+      "relation_type": "HAS_MEMBER",
+      "confidence": 0.4619656205177307,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:e2ce00a83530a6e3569da87eb2a85488a2e4831a57f71882cff3defaf6e4827f",
+          "document_id": "W2326480042",
+          "start": 0,
+          "end": 790,
+          "text": "I strongly doubt if we will ever understandand fully evaluate -the 60s without placing it against the background of another radical decade, the 30s. Having lived out both periods up to the hilt, I find that my older contemporaries as well as the younger people with whom I worked twenty years ago have seldom been able to distance themselves sufficiently from their time to draw these crucial comparisons adequately. Recent biographies by old New York socialists and communists who lived with such nostalgic exhilaration in the era climaxed by the Spanish Civil War and CIO organizing drives seem utterly estranged and uncomprehending in their attitudes toward the new left and counterculture. By the same token, the younger people of '68 and of New York's Lower Eastside and San Francis247",
+          "entity_ids": [
+            "e:5ad7761ff5a3ac1286915156c655f494b7b9bed15691f8fe5c3d7c39f41061db",
+            "e:1725ca19fa99f3c14ae8284301fd361dbb586a0c740aab1a84f2f1924f066a57",
+            "e:85de2153af98600d858b42820fb2467ee3061c6fbd21a4fe2678624afad842f8",
+            "e:a0e2e53a03de10b2fd511c0277a211f89919925b0d7dacd803f827c922eff57f",
+            "e:46944b7bd18c1fe53d4cfde0fc1e373a286c791187bbad0d9aa8c1ebf6d7633d",
+            "e:c39e410c73efdd7e0109aa69342b53e145aa4c5bbb0a9ca4de9b8164b1c824f3",
+            "e:7da8bdf41b9aa29424f492802b5b3211fb826466384c461d1176d5aa74e9652b",
+            "e:8a7b9b9942effa803eff368cddde8a3b4f88e54c216f5f674d44d96489c713dd",
+            "e:510004ca6ad74992a49e846516f1434f6f2ce7501cc2d5d16aac1186fddfd7ba",
+            "e:b25748be32fe417599707ebe410703cb0dba453d32189c7b52e4c29d92a77177"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:4d3b8e56914f264a0b7793a5e2d6fe18a7f044fe9b8d1fcbe7f9f21d9752ae9e",
+      "document_id": "W2326480042",
+      "head_id": "e:1725ca19fa99f3c14ae8284301fd361dbb586a0c740aab1a84f2f1924f066a57",
+      "tail_id": "e:510004ca6ad74992a49e846516f1434f6f2ce7501cc2d5d16aac1186fddfd7ba",
+      "head_types": [
+        "ACTOR"
+      ],
+      "tail_types": [
+        "CONDITION"
+      ],
+      "relation_type": "LOCATED_IN",
+      "confidence": 0.49260973930358887,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:e2ce00a83530a6e3569da87eb2a85488a2e4831a57f71882cff3defaf6e4827f",
+          "document_id": "W2326480042",
+          "start": 0,
+          "end": 790,
+          "text": "I strongly doubt if we will ever understandand fully evaluate -the 60s without placing it against the background of another radical decade, the 30s. Having lived out both periods up to the hilt, I find that my older contemporaries as well as the younger people with whom I worked twenty years ago have seldom been able to distance themselves sufficiently from their time to draw these crucial comparisons adequately. Recent biographies by old New York socialists and communists who lived with such nostalgic exhilaration in the era climaxed by the Spanish Civil War and CIO organizing drives seem utterly estranged and uncomprehending in their attitudes toward the new left and counterculture. By the same token, the younger people of '68 and of New York's Lower Eastside and San Francis247",
+          "entity_ids": [
+            "e:5ad7761ff5a3ac1286915156c655f494b7b9bed15691f8fe5c3d7c39f41061db",
+            "e:1725ca19fa99f3c14ae8284301fd361dbb586a0c740aab1a84f2f1924f066a57",
+            "e:85de2153af98600d858b42820fb2467ee3061c6fbd21a4fe2678624afad842f8",
+            "e:a0e2e53a03de10b2fd511c0277a211f89919925b0d7dacd803f827c922eff57f",
+            "e:46944b7bd18c1fe53d4cfde0fc1e373a286c791187bbad0d9aa8c1ebf6d7633d",
+            "e:c39e410c73efdd7e0109aa69342b53e145aa4c5bbb0a9ca4de9b8164b1c824f3",
+            "e:7da8bdf41b9aa29424f492802b5b3211fb826466384c461d1176d5aa74e9652b",
+            "e:8a7b9b9942effa803eff368cddde8a3b4f88e54c216f5f674d44d96489c713dd",
+            "e:510004ca6ad74992a49e846516f1434f6f2ce7501cc2d5d16aac1186fddfd7ba",
+            "e:b25748be32fe417599707ebe410703cb0dba453d32189c7b52e4c29d92a77177"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:5c5f1c022855824b2359624133cabbe3c919832ccd3ca8f7349f92bcd6fa109c",
+      "document_id": "W2326480042",
+      "head_id": "e:b25748be32fe417599707ebe410703cb0dba453d32189c7b52e4c29d92a77177",
+      "tail_id": "e:510004ca6ad74992a49e846516f1434f6f2ce7501cc2d5d16aac1186fddfd7ba",
+      "head_types": [
+        "DATA_RESOURCE",
+        "OBJECT"
+      ],
+      "tail_types": [
+        "CONDITION"
+      ],
+      "relation_type": "LOCATED_IN",
+      "confidence": 0.5076716542243958,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:e2ce00a83530a6e3569da87eb2a85488a2e4831a57f71882cff3defaf6e4827f",
+          "document_id": "W2326480042",
+          "start": 0,
+          "end": 790,
+          "text": "I strongly doubt if we will ever understandand fully evaluate -the 60s without placing it against the background of another radical decade, the 30s. Having lived out both periods up to the hilt, I find that my older contemporaries as well as the younger people with whom I worked twenty years ago have seldom been able to distance themselves sufficiently from their time to draw these crucial comparisons adequately. Recent biographies by old New York socialists and communists who lived with such nostalgic exhilaration in the era climaxed by the Spanish Civil War and CIO organizing drives seem utterly estranged and uncomprehending in their attitudes toward the new left and counterculture. By the same token, the younger people of '68 and of New York's Lower Eastside and San Francis247",
+          "entity_ids": [
+            "e:5ad7761ff5a3ac1286915156c655f494b7b9bed15691f8fe5c3d7c39f41061db",
+            "e:1725ca19fa99f3c14ae8284301fd361dbb586a0c740aab1a84f2f1924f066a57",
+            "e:85de2153af98600d858b42820fb2467ee3061c6fbd21a4fe2678624afad842f8",
+            "e:a0e2e53a03de10b2fd511c0277a211f89919925b0d7dacd803f827c922eff57f",
+            "e:46944b7bd18c1fe53d4cfde0fc1e373a286c791187bbad0d9aa8c1ebf6d7633d",
+            "e:c39e410c73efdd7e0109aa69342b53e145aa4c5bbb0a9ca4de9b8164b1c824f3",
+            "e:7da8bdf41b9aa29424f492802b5b3211fb826466384c461d1176d5aa74e9652b",
+            "e:8a7b9b9942effa803eff368cddde8a3b4f88e54c216f5f674d44d96489c713dd",
+            "e:510004ca6ad74992a49e846516f1434f6f2ce7501cc2d5d16aac1186fddfd7ba",
+            "e:b25748be32fe417599707ebe410703cb0dba453d32189c7b52e4c29d92a77177"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:b06b4470f826ee296e68c892527aaf8fc5bd28e54ff075d61f0c104243bc5e8f",
+      "document_id": "W2326480042",
+      "head_id": "e:1725ca19fa99f3c14ae8284301fd361dbb586a0c740aab1a84f2f1924f066a57",
+      "tail_id": "e:5ad7761ff5a3ac1286915156c655f494b7b9bed15691f8fe5c3d7c39f41061db",
+      "head_types": [
+        "ACTOR"
+      ],
+      "tail_types": [
+        "ACTOR"
+      ],
+      "relation_type": "HAS_MEMBER",
+      "confidence": 0.40100589394569397,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:e2ce00a83530a6e3569da87eb2a85488a2e4831a57f71882cff3defaf6e4827f",
+          "document_id": "W2326480042",
+          "start": 0,
+          "end": 790,
+          "text": "I strongly doubt if we will ever understandand fully evaluate -the 60s without placing it against the background of another radical decade, the 30s. Having lived out both periods up to the hilt, I find that my older contemporaries as well as the younger people with whom I worked twenty years ago have seldom been able to distance themselves sufficiently from their time to draw these crucial comparisons adequately. Recent biographies by old New York socialists and communists who lived with such nostalgic exhilaration in the era climaxed by the Spanish Civil War and CIO organizing drives seem utterly estranged and uncomprehending in their attitudes toward the new left and counterculture. By the same token, the younger people of '68 and of New York's Lower Eastside and San Francis247",
+          "entity_ids": [
+            "e:5ad7761ff5a3ac1286915156c655f494b7b9bed15691f8fe5c3d7c39f41061db",
+            "e:1725ca19fa99f3c14ae8284301fd361dbb586a0c740aab1a84f2f1924f066a57",
+            "e:85de2153af98600d858b42820fb2467ee3061c6fbd21a4fe2678624afad842f8",
+            "e:a0e2e53a03de10b2fd511c0277a211f89919925b0d7dacd803f827c922eff57f",
+            "e:46944b7bd18c1fe53d4cfde0fc1e373a286c791187bbad0d9aa8c1ebf6d7633d",
+            "e:c39e410c73efdd7e0109aa69342b53e145aa4c5bbb0a9ca4de9b8164b1c824f3",
+            "e:7da8bdf41b9aa29424f492802b5b3211fb826466384c461d1176d5aa74e9652b",
+            "e:8a7b9b9942effa803eff368cddde8a3b4f88e54c216f5f674d44d96489c713dd",
+            "e:510004ca6ad74992a49e846516f1434f6f2ce7501cc2d5d16aac1186fddfd7ba",
+            "e:b25748be32fe417599707ebe410703cb0dba453d32189c7b52e4c29d92a77177"
+          ]
+        }
+      ]
+    }
+  ],
+  "raw_relation_count": 5,
+  "seconds": 1.1751387000549585
+}

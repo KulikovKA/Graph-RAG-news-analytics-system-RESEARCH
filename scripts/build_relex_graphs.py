@@ -50,6 +50,14 @@ TYPE_HINTS = {
     "EXPLAINS": ({"MECHANISM", "CONCEPT"}, {"PROCESS", "RESULT", "CONCEPT"}),
 }
 NAMESPACES = {"relex_base", "relex_large", "relex_joint_base", "relex_joint_large"}
+RELEX_NAMESPACE_PATTERN = r"relex_(?:joint_)?(base|large)(?:_[a-z0-9]+)*"
+
+
+def namespace_variant(namespace):
+    match = re.fullmatch(RELEX_NAMESPACE_PATTERN, namespace)
+    if match is None or len(namespace) > 63:
+        raise ValueError("Only dedicated RelEx namespaces (up to 63 characters) are writable")
+    return match.group(1)
 
 
 def digest(value):
@@ -403,8 +411,7 @@ def worker(variant, worker_index, config, barrier, events):
 
 
 def graph_key(namespace, identity):
-    if namespace not in NAMESPACES:
-        raise ValueError("Only dedicated RE-V2-001 namespaces are writable")
+    namespace_variant(namespace)
     return f"{namespace}:{identity}"
 
 
@@ -444,7 +451,7 @@ RETURN count(r) AS n
 
 
 def import_graph(driver, database, namespace, documents, entities, predictions, config):
-    model = config["model_ids"][namespace.rsplit("_", 1)[-1]]
+    model = config["model_ids"][namespace_variant(namespace)]
     with driver.session(database=database) as session:
         for label in ("RELEXDocument", "RELEXEntity"):
             session.run(f"CREATE CONSTRAINT uq_{label.lower()}_key IF NOT EXISTS FOR (n:{label}) REQUIRE n.key IS UNIQUE").consume()
@@ -545,12 +552,12 @@ def connect_neo4j(env_file=None):
 
 
 def legacy_counts(driver, database):
-    """Read-only guard: existing data outside our two namespaces must keep its counts."""
+    """Read-only guard: data outside dedicated RelEx namespaces keeps its counts."""
     with driver.session(database=database) as session:
-        return {"nodes": session.run("MATCH (n) WHERE NOT coalesce(n.namespace,'') IN $ns RETURN count(n) AS n",
-                    ns=sorted(NAMESPACES)).single()["n"],
-                "edges": session.run("MATCH ()-[r]->() WHERE NOT coalesce(r.namespace,'') IN $ns RETURN count(r) AS n",
-                    ns=sorted(NAMESPACES)).single()["n"]}
+        return {"nodes": session.run("MATCH (n) WHERE NOT (coalesce(n.namespace,'') =~ $pattern) RETURN count(n) AS n",
+                    pattern=RELEX_NAMESPACE_PATTERN).single()["n"],
+                "edges": session.run("MATCH ()-[r]->() WHERE NOT (coalesce(r.namespace,'') =~ $pattern) RETURN count(r) AS n",
+                    pattern=RELEX_NAMESPACE_PATTERN).single()["n"]}
 
 
 def csv_file(path, rows, fields):

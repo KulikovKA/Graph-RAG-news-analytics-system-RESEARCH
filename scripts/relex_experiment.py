@@ -26,6 +26,15 @@ def experiment_namespace(mode, variant):
     return f"relex_{variant}" if mode == "e3" else f"relex_joint_{variant}"
 
 
+def resolve_namespace(mode, variant, requested=None):
+    default = experiment_namespace(mode, variant)
+    namespace = requested or default
+    core.namespace_variant(namespace)
+    if namespace != default and not namespace.startswith(default + "_"):
+        raise ValueError(f"Namespace must be {default} or {default}_<run suffix>")
+    return namespace
+
+
 def infer_joint_window(model, window, labels, entity_threshold, relation_threshold):
     """Native joint NER+RE API: no E3 entities, input_spans or forced endpoints."""
     entities, relations = model.inference(
@@ -304,11 +313,16 @@ def run(mode, variant, argv=None):
     parser.add_argument("--relation-threshold", type=float, default=0.7)
     parser.add_argument("--entity-threshold", type=float, default=0.3, help="NER threshold for joint mode only")
     parser.add_argument("--output", type=Path, default=core.OUTPUT / f"{mode}_{variant}")
+    parser.add_argument("--namespace", help="Separate Neo4j namespace, e.g. relex_large_t035")
     parser.add_argument("--neo4j-env", type=Path)
     parser.add_argument("--inference-only", action="store_true")
     args = parser.parse_args(argv)
     if args.threads < 1 or args.workers < 1 or not 0 < args.relation_threshold < 1 or not 0 < args.entity_threshold < 1:
         parser.error("Invalid workers, threads or thresholds")
+    try:
+        namespace = resolve_namespace(mode, variant, args.namespace)
+    except ValueError as exc:
+        parser.error(str(exc))
     os.environ.update(OMP_NUM_THREADS=str(args.threads), MKL_NUM_THREADS=str(args.threads),
         OPENBLAS_NUM_THREADS=str(args.threads), TOKENIZERS_PARALLELISM="false", HF_HUB_OFFLINE="1", TRANSFORMERS_OFFLINE="1")
     out = args.output.resolve()
@@ -394,7 +408,7 @@ def run(mode, variant, argv=None):
                 core.atomic_json(out / "legacy_data_verification.json", {"before": legacy_before, "after": legacy_after,
                     "unchanged_counts": legacy_before == legacy_after})
                 if legacy_before != legacy_after:
-                    raise RuntimeError("Data outside the four dedicated namespaces changed during the run")
+                    raise RuntimeError("Data outside dedicated RelEx namespaces changed during the run")
             (out / "graph.cypher").write_text(
                 f"MATCH (e:RELEXEntity {{namespace:'{namespace}'}})\n"
                 f"OPTIONAL MATCH (e)-[r:RELEX_REL {{namespace:'{namespace}'}}]->(t:RELEXEntity {{namespace:'{namespace}'}})\n"

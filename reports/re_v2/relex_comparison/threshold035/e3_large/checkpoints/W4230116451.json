@@ -1,0 +1,3362 @@
+{
+  "fingerprint": "43cfe5b9ca331173e4f77c2e3a0aa24ad2cee116eacfc8f2c0ed6f9d86acb634",
+  "document_id": "W4230116451",
+  "model": "knowledgator/gliner-relex-large-v1.0",
+  "mode": "e3",
+  "raw_windows": [
+    {
+      "window": {
+        "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+        "document_id": "W4230116451",
+        "start": 0,
+        "end": 791,
+        "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+        "entity_ids": [
+          "e:35d89c1e16e72b4dec6a364bccbf728449b09a896cd2cb95cf850388dea02fef",
+          "e:54f09db3e2d9e7264ffd3fe0c2ccaf4730d4bc539646f506ada5ba9e004f69a8",
+          "e:88a0ff4b02098968c3be76b57ae7809d3f4197d85ac375e42859569defddf1df",
+          "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a",
+          "e:dfa62891c45caaad0430a5ca197acdc26a2a74011e696e4de73f113b131d97a6",
+          "e:65e57b254ff4266e47ed2b19aee5b817fa1c1e26988c170926e6015f0f7e5fb1",
+          "e:ef0326aa41bb08767db52f38d4dd5da5c39dd6a13f6cb097563e4dd1099e0673",
+          "e:7bbf03cd5f65b3ab3ac311fa55cf82abe4c1a6da9215f14b07907d80cdd3e284",
+          "e:1089bf670c142b4a18644fcad47f9074e82420710e0858fbac9c55bf345fcca5",
+          "e:188f42404969746a895a746a7a0a916ef6d524480bd159a46bfc726b4dac7e5b",
+          "e:55f096f9222ef594500635ef0503900d77c3d7a538340168d68a5d3539f65bc5",
+          "e:a30d0fc39205514ef9aff67c50e6cb9dbb808c0b5876c9b14e741a891de870c3",
+          "e:114d9bd4197e9e8afa140239a2f43adecd5fdf4018a781d4887655ebdf8fb6c2",
+          "e:be1c5ea3c7e6475974dde138d69049694acfa353302341ffce8ddba375f96072",
+          "e:6fcaf54d0a22415d4769b35e20c116f59acde3596971391a10a35cac72f62f01",
+          "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+          "e:c6d9d225577d02c73e29519b9610d590504615913d90ea5ae00e07414e2df4aa",
+          "e:ada2e4f3e230688ebe9d2c8e13abfd371787d2d24eef9c7e6d1a000e68d5296b",
+          "e:82ee1333ef4c755bd9f20e8af05a920b80870aa92afd4e76ee68fb6973b78d2d",
+          "e:8612a3b0cc6abfc85fcac9ead889fb5fd906c6e98e0edd690d0964287a19266a",
+          "e:646e834d3b7fe3f065a6133635b7b1fe279acf06960eb97f983bcf48fcffdf6e",
+          "e:c8ad6ac62d3aae3822a2c85af0a7f8b3a6766881f497bda07f16981969c94609",
+          "e:29973bbacf12e50fa8ce02d9ee19897c1b183ef6f31b8614aba9202be768fd72",
+          "e:df7df057e79d9c2d47b981107d834c23329cd8ef6e30556858a4d0e23df369a6"
+        ]
+      },
+      "audit": {
+        "tokens": 227,
+        "spans": 24,
+        "pairs": 552,
+        "supplied_word_spans": [
+          [
+            3,
+            4
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            30,
+            31
+          ],
+          [
+            35,
+            37
+          ],
+          [
+            36,
+            37
+          ],
+          [
+            55,
+            58
+          ],
+          [
+            57,
+            57
+          ],
+          [
+            63,
+            65
+          ],
+          [
+            72,
+            73
+          ],
+          [
+            76,
+            78
+          ],
+          [
+            86,
+            86
+          ],
+          [
+            88,
+            88
+          ],
+          [
+            92,
+            93
+          ],
+          [
+            99,
+            99
+          ],
+          [
+            99,
+            101
+          ],
+          [
+            105,
+            108
+          ],
+          [
+            105,
+            111
+          ],
+          [
+            106,
+            108
+          ],
+          [
+            110,
+            110
+          ],
+          [
+            114,
+            115
+          ],
+          [
+            122,
+            123
+          ],
+          [
+            122,
+            124
+          ],
+          [
+            128,
+            129
+          ]
+        ]
+      },
+      "predictions": [
+        {
+          "head": {
+            "start": 19,
+            "end": 36,
+            "text": "computing systems"
+          },
+          "tail": {
+            "start": 107,
+            "end": 122,
+            "text": "biomedical data"
+          },
+          "relation": "produces",
+          "score": 0.6376854181289673
+        },
+        {
+          "head": {
+            "start": 392,
+            "end": 417,
+            "text": "graphics processing units"
+          },
+          "tail": {
+            "start": 185,
+            "end": 204,
+            "text": "real-time diagnosis"
+          },
+          "relation": "used for",
+          "score": 0.5306435227394104
+        },
+        {
+          "head": {
+            "start": 392,
+            "end": 417,
+            "text": "graphics processing units"
+          },
+          "tail": {
+            "start": 514,
+            "end": 523,
+            "text": "denoising"
+          },
+          "relation": "used for",
+          "score": 0.3969464898109436
+        },
+        {
+          "head": {
+            "start": 583,
+            "end": 605,
+            "text": "GPU parallel algorithm"
+          },
+          "tail": {
+            "start": 185,
+            "end": 204,
+            "text": "real-time diagnosis"
+          },
+          "relation": "performs",
+          "score": 0.37544122338294983
+        },
+        {
+          "head": {
+            "start": 583,
+            "end": 605,
+            "text": "GPU parallel algorithm"
+          },
+          "tail": {
+            "start": 392,
+            "end": 417,
+            "text": "graphics processing units"
+          },
+          "relation": "uses",
+          "score": 0.6009272336959839
+        },
+        {
+          "head": {
+            "start": 583,
+            "end": 605,
+            "text": "GPU parallel algorithm"
+          },
+          "tail": {
+            "start": 433,
+            "end": 443,
+            "text": "case study"
+          },
+          "relation": "evaluated on",
+          "score": 0.566052258014679
+        },
+        {
+          "head": {
+            "start": 583,
+            "end": 605,
+            "text": "GPU parallel algorithm"
+          },
+          "tail": {
+            "start": 451,
+            "end": 477,
+            "text": "magnetic resonance imaging"
+          },
+          "relation": "applied to",
+          "score": 0.5663317441940308
+        },
+        {
+          "head": {
+            "start": 583,
+            "end": 605,
+            "text": "GPU parallel algorithm"
+          },
+          "tail": {
+            "start": 540,
+            "end": 559,
+            "text": "real-time diagnosis"
+          },
+          "relation": "performs",
+          "score": 0.3825119435787201
+        },
+        {
+          "head": {
+            "start": 583,
+            "end": 605,
+            "text": "GPU parallel algorithm"
+          },
+          "tail": {
+            "start": 619,
+            "end": 654,
+            "text": "optimised blockwise non-local means"
+          },
+          "relation": "derived from",
+          "score": 0.7328805923461914
+        },
+        {
+          "head": {
+            "start": 583,
+            "end": 605,
+            "text": "GPU parallel algorithm"
+          },
+          "tail": {
+            "start": 619,
+            "end": 663,
+            "text": "optimised blockwise non-local means (OB-NLM)"
+          },
+          "relation": "derived from",
+          "score": 0.7167283296585083
+        },
+        {
+          "head": {
+            "start": 583,
+            "end": 605,
+            "text": "GPU parallel algorithm"
+          },
+          "tail": {
+            "start": 629,
+            "end": 654,
+            "text": "blockwise non-local means"
+          },
+          "relation": "derived from",
+          "score": 0.8998945355415344
+        },
+        {
+          "head": {
+            "start": 583,
+            "end": 605,
+            "text": "GPU parallel algorithm"
+          },
+          "tail": {
+            "start": 656,
+            "end": 662,
+            "text": "OB-NLM"
+          },
+          "relation": "derived from",
+          "score": 0.865771472454071
+        },
+        {
+          "head": {
+            "start": 583,
+            "end": 605,
+            "text": "GPU parallel algorithm"
+          },
+          "tail": {
+            "start": 672,
+            "end": 692,
+            "text": "Experimental results"
+          },
+          "relation": "evaluated on",
+          "score": 0.495157927274704
+        },
+        {
+          "head": {
+            "start": 672,
+            "end": 692,
+            "text": "Experimental results"
+          },
+          "tail": {
+            "start": 776,
+            "end": 790,
+            "text": "execution time"
+          },
+          "relation": "measures",
+          "score": 0.6908314824104309
+        },
+        {
+          "head": {
+            "start": 733,
+            "end": 763,
+            "text": "healthcare processing practice"
+          },
+          "tail": {
+            "start": 776,
+            "end": 790,
+            "text": "execution time"
+          },
+          "relation": "has attribute",
+          "score": 0.4691355526447296
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "e:35d89c1e16e72b4dec6a364bccbf728449b09a896cd2cb95cf850388dea02fef",
+      "document_id": "W4230116451",
+      "start": 19,
+      "end": 36,
+      "surface_text": "computing systems",
+      "entity_types": [
+        "MECHANISM"
+      ],
+      "normalized_forms": [
+        "computing system"
+      ],
+      "confidence": 0.4136902391910553,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 36,
+              "original": "systems",
+              "replacement": "system",
+              "rule": "plural_noun_head",
+              "start": 29
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W4230116451",
+          "end": 36,
+          "lemma": "computing system",
+          "mention_id": "m:031e52d60bf0f8f5d0d76852760f8ddaa4dc49b5e59ee76193a69028b83aa2c5",
+          "ner_label_hint": "MECHANISM",
+          "normalized_form": "computing system",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "score": 0.4136902391910553,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "start": 19,
+          "surface_text": "computing systems",
+          "tokens": [
+            {
+              "end": 28,
+              "lemma": "computing",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 19,
+              "tag": "NN",
+              "text": "computing"
+            },
+            {
+              "end": 36,
+              "lemma": "system",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 29,
+              "tag": "NNS",
+              "text": "systems"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:54f09db3e2d9e7264ffd3fe0c2ccaf4730d4bc539646f506ada5ba9e004f69a8",
+      "document_id": "W4230116451",
+      "start": 107,
+      "end": 122,
+      "surface_text": "biomedical data",
+      "entity_types": [
+        "DATA_RESOURCE",
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "biomedical datum"
+      ],
+      "confidence": 0.9970914125442505,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 122,
+              "original": "data",
+              "replacement": "datum",
+              "rule": "plural_noun_head",
+              "start": 118
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W4230116451",
+          "end": 122,
+          "lemma": "biomedical datum",
+          "mention_id": "m:0b27159053d24eb5f464b21aa73e641cc1cc913c1a1e1576881e6ec4fc8fa65f",
+          "ner_label_hint": "DATA_RESOURCE",
+          "normalized_form": "biomedical datum",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "score": 0.9970914125442505,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "start": 107,
+          "surface_text": "biomedical data",
+          "tokens": [
+            {
+              "end": 117,
+              "lemma": "biomedical",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 107,
+              "tag": "JJ",
+              "text": "biomedical"
+            },
+            {
+              "end": 122,
+              "lemma": "datum",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 118,
+              "tag": "NNS",
+              "text": "data"
+            }
+          ]
+        },
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 122,
+              "original": "data",
+              "replacement": "datum",
+              "rule": "plural_noun_head",
+              "start": 118
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W4230116451",
+          "end": 122,
+          "lemma": "biomedical datum",
+          "mention_id": "m:cc7292b67752e3184b62df4ab3c04dfcd24ad3f7c1f9142c501799f2fdd962be",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "biomedical datum",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "score": 0.4004952311515808,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "start": 107,
+          "surface_text": "biomedical data",
+          "tokens": [
+            {
+              "end": 117,
+              "lemma": "biomedical",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 107,
+              "tag": "JJ",
+              "text": "biomedical"
+            },
+            {
+              "end": 122,
+              "lemma": "datum",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 118,
+              "tag": "NNS",
+              "text": "data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:88a0ff4b02098968c3be76b57ae7809d3f4197d85ac375e42859569defddf1df",
+      "document_id": "W4230116451",
+      "start": 130,
+      "end": 144,
+      "surface_text": "e-health field",
+      "entity_types": [
+        "CONCEPT"
+      ],
+      "normalized_forms": [
+        "e-health field"
+      ],
+      "confidence": 0.5803928971290588,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W4230116451",
+          "end": 144,
+          "lemma": "e-health field",
+          "mention_id": "m:a828fc82ed7d1606973257dd7d14a46ce1eed41337b35cc2d96cfd5855229a82",
+          "ner_label_hint": "CONCEPT",
+          "normalized_form": "e-health field",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "score": 0.5803928971290588,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "start": 130,
+          "surface_text": "e-health field",
+          "tokens": [
+            {
+              "end": 131,
+              "lemma": "e",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 130,
+              "tag": "NN",
+              "text": "e"
+            },
+            {
+              "end": 132,
+              "lemma": "-",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 131,
+              "tag": "NN",
+              "text": "-"
+            },
+            {
+              "end": 138,
+              "lemma": "health",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 132,
+              "tag": "NN",
+              "text": "health"
+            },
+            {
+              "end": 144,
+              "lemma": "field",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 139,
+              "tag": "NN",
+              "text": "field"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a",
+      "document_id": "W4230116451",
+      "start": 185,
+      "end": 204,
+      "surface_text": "real-time diagnosis",
+      "entity_types": [
+        "TASK"
+      ],
+      "normalized_forms": [
+        "real-time diagnosis"
+      ],
+      "confidence": 0.9095429182052612,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W4230116451",
+          "end": 204,
+          "lemma": "real-time diagnosis",
+          "mention_id": "m:c9de4f00c47e2df7c339bc6655f49e1d2910fac133aa75c7d404a4cf57fde2a6",
+          "ner_label_hint": "TASK",
+          "normalized_form": "real-time diagnosis",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "score": 0.9095429182052612,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "start": 185,
+          "surface_text": "real-time diagnosis",
+          "tokens": [
+            {
+              "end": 189,
+              "lemma": "real",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 185,
+              "tag": "JJ",
+              "text": "real"
+            },
+            {
+              "end": 190,
+              "lemma": "-",
+              "morph": {
+                "PunctType": "Dash"
+              },
+              "partial_token": false,
+              "pos": "PUNCT",
+              "possessive": false,
+              "start": 189,
+              "tag": "HYPH",
+              "text": "-"
+            },
+            {
+              "end": 194,
+              "lemma": "time",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 190,
+              "tag": "NN",
+              "text": "time"
+            },
+            {
+              "end": 204,
+              "lemma": "diagnosis",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 195,
+              "tag": "NN",
+              "text": "diagnosis"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:dfa62891c45caaad0430a5ca197acdc26a2a74011e696e4de73f113b131d97a6",
+      "document_id": "W4230116451",
+      "start": 217,
+      "end": 251,
+      "surface_text": "complex computational environments",
+      "entity_types": [
+        "MECHANISM"
+      ],
+      "normalized_forms": [
+        "complex computational environment"
+      ],
+      "confidence": 0.5983992218971252,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 251,
+              "original": "environments",
+              "replacement": "environment",
+              "rule": "plural_noun_head",
+              "start": 239
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W4230116451",
+          "end": 251,
+          "lemma": "complex computational environment",
+          "mention_id": "m:49bf61528d3050779f383f584d06fd93c57147948ec8a113ff911bc5a4b45eaf",
+          "ner_label_hint": "MECHANISM",
+          "normalized_form": "complex computational environment",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "score": 0.5983992218971252,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "start": 217,
+          "surface_text": "complex computational environments",
+          "tokens": [
+            {
+              "end": 224,
+              "lemma": "complex",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 217,
+              "tag": "JJ",
+              "text": "complex"
+            },
+            {
+              "end": 238,
+              "lemma": "computational",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 225,
+              "tag": "JJ",
+              "text": "computational"
+            },
+            {
+              "end": 251,
+              "lemma": "environment",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 239,
+              "tag": "NNS",
+              "text": "environments"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:65e57b254ff4266e47ed2b19aee5b817fa1c1e26988c170926e6015f0f7e5fb1",
+      "document_id": "W4230116451",
+      "start": 225,
+      "end": 251,
+      "surface_text": "computational environments",
+      "entity_types": [
+        "MECHANISM"
+      ],
+      "normalized_forms": [
+        "computational environment"
+      ],
+      "confidence": 0.568282961845398,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 251,
+              "original": "environments",
+              "replacement": "environment",
+              "rule": "plural_noun_head",
+              "start": 239
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W4230116451",
+          "end": 251,
+          "lemma": "computational environment",
+          "mention_id": "m:c34a0b298f8ad0b731d8c365ecf44504a29623bbdd69ac756d54f5a22c53b2b3",
+          "ner_label_hint": "MECHANISM",
+          "normalized_form": "computational environment",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "score": 0.568282961845398,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "start": 225,
+          "surface_text": "computational environments",
+          "tokens": [
+            {
+              "end": 238,
+              "lemma": "computational",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 225,
+              "tag": "JJ",
+              "text": "computational"
+            },
+            {
+              "end": 251,
+              "lemma": "environment",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 239,
+              "tag": "NNS",
+              "text": "environments"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:ef0326aa41bb08767db52f38d4dd5da5c39dd6a13f6cb097563e4dd1099e0673",
+      "document_id": "W4230116451",
+      "start": 344,
+      "end": 377,
+      "surface_text": "distributed cloud e-health system",
+      "entity_types": [
+        "MECHANISM"
+      ],
+      "normalized_forms": [
+        "distributed cloud e-health system"
+      ],
+      "confidence": 0.7824828624725342,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W4230116451",
+          "end": 377,
+          "lemma": "distributed cloud e-health system",
+          "mention_id": "m:e29a38cdf425f894ca876352fc2a38e79e29d6dd6baa7daa3e41a7d14615d12b",
+          "ner_label_hint": "MECHANISM",
+          "normalized_form": "distributed cloud e-health system",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "score": 0.7824828624725342,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "start": 344,
+          "surface_text": "distributed cloud e-health system",
+          "tokens": [
+            {
+              "end": 355,
+              "lemma": "distribute",
+              "morph": {
+                "Aspect": "Perf",
+                "Tense": "Past",
+                "VerbForm": "Part"
+              },
+              "partial_token": false,
+              "pos": "VERB",
+              "possessive": false,
+              "start": 344,
+              "tag": "VBN",
+              "text": "distributed"
+            },
+            {
+              "end": 361,
+              "lemma": "cloud",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 356,
+              "tag": "NN",
+              "text": "cloud"
+            },
+            {
+              "end": 363,
+              "lemma": "e",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 362,
+              "tag": "NN",
+              "text": "e"
+            },
+            {
+              "end": 364,
+              "lemma": "-",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 363,
+              "tag": "NN",
+              "text": "-"
+            },
+            {
+              "end": 370,
+              "lemma": "health",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 364,
+              "tag": "NN",
+              "text": "health"
+            },
+            {
+              "end": 377,
+              "lemma": "system",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 371,
+              "tag": "NN",
+              "text": "system"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:7bbf03cd5f65b3ab3ac311fa55cf82abe4c1a6da9215f14b07907d80cdd3e284",
+      "document_id": "W4230116451",
+      "start": 362,
+      "end": 370,
+      "surface_text": "e-health",
+      "entity_types": [
+        "CONCEPT"
+      ],
+      "normalized_forms": [
+        "e-health"
+      ],
+      "confidence": 0.41837048530578613,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W4230116451",
+          "end": 370,
+          "lemma": "e-health",
+          "mention_id": "m:dedeaac846dc7186110063fac97d67c1df031c29cf2f8b4a7f4aef4e9fbcad25",
+          "ner_label_hint": "CONCEPT",
+          "normalized_form": "e-health",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "score": 0.41837048530578613,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "start": 362,
+          "surface_text": "e-health",
+          "tokens": [
+            {
+              "end": 363,
+              "lemma": "e",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 362,
+              "tag": "NN",
+              "text": "e"
+            },
+            {
+              "end": 364,
+              "lemma": "-",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 363,
+              "tag": "NN",
+              "text": "-"
+            },
+            {
+              "end": 370,
+              "lemma": "health",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 364,
+              "tag": "NN",
+              "text": "health"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:1089bf670c142b4a18644fcad47f9074e82420710e0858fbac9c55bf345fcca5",
+      "document_id": "W4230116451",
+      "start": 392,
+      "end": 417,
+      "surface_text": "graphics processing units",
+      "entity_types": [
+        "MECHANISM"
+      ],
+      "normalized_forms": [
+        "graphics processing unit"
+      ],
+      "confidence": 0.5850389003753662,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [
+            {
+              "long_end": 417,
+              "long_form": "graphics processing units",
+              "long_start": 392,
+              "scope": "document_candidate_only",
+              "short_end": 423,
+              "short_form": "GPUs",
+              "short_start": 419
+            }
+          ],
+          "changes": [
+            {
+              "end": 417,
+              "original": "units",
+              "replacement": "unit",
+              "rule": "plural_noun_head",
+              "start": 412
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W4230116451",
+          "end": 417,
+          "lemma": "graphics processing unit",
+          "mention_id": "m:65475862e09690bf6ecd2ad6b303e4d7f5834dd54bc5ef658dee64199415c180",
+          "ner_label_hint": "MECHANISM",
+          "normalized_form": "graphics processing unit",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "score": 0.5850389003753662,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "start": 392,
+          "surface_text": "graphics processing units",
+          "tokens": [
+            {
+              "end": 400,
+              "lemma": "graphic",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 392,
+              "tag": "NNS",
+              "text": "graphics"
+            },
+            {
+              "end": 411,
+              "lemma": "processing",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 401,
+              "tag": "NN",
+              "text": "processing"
+            },
+            {
+              "end": 417,
+              "lemma": "unit",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 412,
+              "tag": "NNS",
+              "text": "units"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:188f42404969746a895a746a7a0a916ef6d524480bd159a46bfc726b4dac7e5b",
+      "document_id": "W4230116451",
+      "start": 433,
+      "end": 443,
+      "surface_text": "case study",
+      "entity_types": [
+        "TASK"
+      ],
+      "normalized_forms": [
+        "case study"
+      ],
+      "confidence": 0.5269516110420227,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W4230116451",
+          "end": 443,
+          "lemma": "case study",
+          "mention_id": "m:daeee52c6372c15274db0fadb869fc7d6cd884c280930ddd520af9109584a530",
+          "ner_label_hint": "TASK",
+          "normalized_form": "case study",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "score": 0.5269516110420227,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "start": 433,
+          "surface_text": "case study",
+          "tokens": [
+            {
+              "end": 437,
+              "lemma": "case",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 433,
+              "tag": "NN",
+              "text": "case"
+            },
+            {
+              "end": 443,
+              "lemma": "study",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 438,
+              "tag": "NN",
+              "text": "study"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:55f096f9222ef594500635ef0503900d77c3d7a538340168d68a5d3539f65bc5",
+      "document_id": "W4230116451",
+      "start": 451,
+      "end": 477,
+      "surface_text": "magnetic resonance imaging",
+      "entity_types": [
+        "TASK"
+      ],
+      "normalized_forms": [
+        "magnetic resonance imaging"
+      ],
+      "confidence": 0.49372750520706177,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [
+            {
+              "long_end": 477,
+              "long_form": "magnetic resonance imaging",
+              "long_start": 451,
+              "scope": "document_candidate_only",
+              "short_end": 482,
+              "short_form": "MRI",
+              "short_start": 479
+            }
+          ],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W4230116451",
+          "end": 477,
+          "lemma": "magnetic resonance imaging",
+          "mention_id": "m:5f024f7d809f7e950efdfcc679ee616b1f05de28695bba71ce10d04735226117",
+          "ner_label_hint": "TASK",
+          "normalized_form": "magnetic resonance imaging",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "score": 0.49372750520706177,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "start": 451,
+          "surface_text": "magnetic resonance imaging",
+          "tokens": [
+            {
+              "end": 459,
+              "lemma": "magnetic",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 451,
+              "tag": "JJ",
+              "text": "magnetic"
+            },
+            {
+              "end": 469,
+              "lemma": "resonance",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 460,
+              "tag": "NN",
+              "text": "resonance"
+            },
+            {
+              "end": 477,
+              "lemma": "imaging",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 470,
+              "tag": "NN",
+              "text": "imaging"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:a30d0fc39205514ef9aff67c50e6cb9dbb808c0b5876c9b14e741a891de870c3",
+      "document_id": "W4230116451",
+      "start": 503,
+      "end": 510,
+      "surface_text": "quality",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "quality"
+      ],
+      "confidence": 0.5340524315834045,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W4230116451",
+          "end": 510,
+          "lemma": "quality",
+          "mention_id": "m:af08c02ae037e1a60772336767a27019ea87399ed87b2bf34e8309a6185e6d0b",
+          "ner_label_hint": "ATTRIBUTE",
+          "normalized_form": "quality",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "score": 0.5340524315834045,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "start": 503,
+          "surface_text": "quality",
+          "tokens": [
+            {
+              "end": 510,
+              "lemma": "quality",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 503,
+              "tag": "NN",
+              "text": "quality"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:114d9bd4197e9e8afa140239a2f43adecd5fdf4018a781d4887655ebdf8fb6c2",
+      "document_id": "W4230116451",
+      "start": 514,
+      "end": 523,
+      "surface_text": "denoising",
+      "entity_types": [
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "denoising"
+      ],
+      "confidence": 0.642643928527832,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W4230116451",
+          "end": 523,
+          "lemma": "denoising",
+          "mention_id": "m:25030145547d2724c4de10023959dccdd1d5261b1d9b5d493f9efc3f682c5259",
+          "ner_label_hint": "PROCESS",
+          "normalized_form": "denoising",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "score": 0.642643928527832,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "start": 514,
+          "surface_text": "denoising",
+          "tokens": [
+            {
+              "end": 523,
+              "lemma": "denoise",
+              "morph": {
+                "Aspect": "Prog",
+                "Tense": "Pres",
+                "VerbForm": "Part"
+              },
+              "partial_token": false,
+              "pos": "VERB",
+              "possessive": false,
+              "start": 514,
+              "tag": "VBG",
+              "text": "denoising"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:be1c5ea3c7e6475974dde138d69049694acfa353302341ffce8ddba375f96072",
+      "document_id": "W4230116451",
+      "start": 540,
+      "end": 559,
+      "surface_text": "real-time diagnosis",
+      "entity_types": [
+        "TASK"
+      ],
+      "normalized_forms": [
+        "real-time diagnosis"
+      ],
+      "confidence": 0.8877683281898499,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W4230116451",
+          "end": 559,
+          "lemma": "real-time diagnosis",
+          "mention_id": "m:a9ee5283bfac6c6accd38cdbbc5a3a67e73a52daccae75dbe07f82207b856b70",
+          "ner_label_hint": "TASK",
+          "normalized_form": "real-time diagnosis",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "score": 0.8877683281898499,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "start": 540,
+          "surface_text": "real-time diagnosis",
+          "tokens": [
+            {
+              "end": 544,
+              "lemma": "real",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 540,
+              "tag": "JJ",
+              "text": "real"
+            },
+            {
+              "end": 545,
+              "lemma": "-",
+              "morph": {
+                "PunctType": "Dash"
+              },
+              "partial_token": false,
+              "pos": "PUNCT",
+              "possessive": false,
+              "start": 544,
+              "tag": "HYPH",
+              "text": "-"
+            },
+            {
+              "end": 549,
+              "lemma": "time",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 545,
+              "tag": "NN",
+              "text": "time"
+            },
+            {
+              "end": 559,
+              "lemma": "diagnosis",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 550,
+              "tag": "NN",
+              "text": "diagnosis"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:6fcaf54d0a22415d4769b35e20c116f59acde3596971391a10a35cac72f62f01",
+      "document_id": "W4230116451",
+      "start": 583,
+      "end": 586,
+      "surface_text": "GPU",
+      "entity_types": [
+        "OBJECT"
+      ],
+      "normalized_forms": [
+        "GPU"
+      ],
+      "confidence": 0.40701600909233093,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W4230116451",
+          "end": 586,
+          "lemma": "GPU",
+          "mention_id": "m:002c10e12f50b711182219e8697a50e646783819bf6d98420bd6157d3e335c08",
+          "ner_label_hint": "OBJECT",
+          "normalized_form": "GPU",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "score": 0.40701600909233093,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "start": 583,
+          "surface_text": "GPU",
+          "tokens": [
+            {
+              "end": 586,
+              "lemma": "GPU",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 583,
+              "tag": "NNP",
+              "text": "GPU"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+      "document_id": "W4230116451",
+      "start": 583,
+      "end": 605,
+      "surface_text": "GPU parallel algorithm",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "GPU parallel algorithm"
+      ],
+      "confidence": 0.7534056901931763,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W4230116451",
+          "end": 605,
+          "lemma": "GPU parallel algorithm",
+          "mention_id": "m:a147c9e25802ea2d9729dfcc04cf4cbd73d29b86ed0efb72cc0e70312d1f28da",
+          "ner_label_hint": "METHOD",
+          "normalized_form": "GPU parallel algorithm",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "score": 0.7534056901931763,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "start": 583,
+          "surface_text": "GPU parallel algorithm",
+          "tokens": [
+            {
+              "end": 586,
+              "lemma": "GPU",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 583,
+              "tag": "NNP",
+              "text": "GPU"
+            },
+            {
+              "end": 595,
+              "lemma": "parallel",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 587,
+              "tag": "JJ",
+              "text": "parallel"
+            },
+            {
+              "end": 605,
+              "lemma": "algorithm",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 596,
+              "tag": "NN",
+              "text": "algorithm"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:c6d9d225577d02c73e29519b9610d590504615913d90ea5ae00e07414e2df4aa",
+      "document_id": "W4230116451",
+      "start": 619,
+      "end": 654,
+      "surface_text": "optimised blockwise non-local means",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "optimised blockwise non-local mean"
+      ],
+      "confidence": 0.40373069047927856,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [
+            {
+              "long_end": 654,
+              "long_form": "optimised blockwise non-local means",
+              "long_start": 619,
+              "scope": "document_candidate_only",
+              "short_end": 662,
+              "short_form": "OB-NLM",
+              "short_start": 656
+            }
+          ],
+          "changes": [
+            {
+              "end": 654,
+              "original": "means",
+              "replacement": "mean",
+              "rule": "plural_noun_head",
+              "start": 649
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W4230116451",
+          "end": 654,
+          "lemma": "optimised blockwise non-local mean",
+          "mention_id": "m:857023b2aff6f13d9cbe7ac6cabe6c50bf03bd1d0e9ef7da586ae3b53c2451ec",
+          "ner_label_hint": "METHOD",
+          "normalized_form": "optimised blockwise non-local mean",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "score": 0.40373069047927856,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "start": 619,
+          "surface_text": "optimised blockwise non-local means",
+          "tokens": [
+            {
+              "end": 628,
+              "lemma": "optimise",
+              "morph": {
+                "Aspect": "Perf",
+                "Tense": "Past",
+                "VerbForm": "Part"
+              },
+              "partial_token": false,
+              "pos": "VERB",
+              "possessive": false,
+              "start": 619,
+              "tag": "VBN",
+              "text": "optimised"
+            },
+            {
+              "end": 638,
+              "lemma": "blockwise",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 629,
+              "tag": "NN",
+              "text": "blockwise"
+            },
+            {
+              "end": 642,
+              "lemma": "non",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 639,
+              "tag": "JJ",
+              "text": "non"
+            },
+            {
+              "end": 643,
+              "lemma": "-",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 642,
+              "tag": "JJ",
+              "text": "-"
+            },
+            {
+              "end": 648,
+              "lemma": "local",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 643,
+              "tag": "JJ",
+              "text": "local"
+            },
+            {
+              "end": 654,
+              "lemma": "mean",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 649,
+              "tag": "NNS",
+              "text": "means"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:ada2e4f3e230688ebe9d2c8e13abfd371787d2d24eef9c7e6d1a000e68d5296b",
+      "document_id": "W4230116451",
+      "start": 619,
+      "end": 663,
+      "surface_text": "optimised blockwise non-local means (OB-NLM)",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "optimised blockwise non-local means (OB-NLM)"
+      ],
+      "confidence": 0.37996041774749756,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W4230116451",
+          "end": 663,
+          "lemma": "optimised blockwise non-local means (OB-NLM)",
+          "mention_id": "m:5d400a8229428a55bf7c4eb6d3e81fe6195ca79f51ef53f6c9620d7ce3cd9b39",
+          "ner_label_hint": "METHOD",
+          "normalized_form": "optimised blockwise non-local means (OB-NLM)",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "score": 0.37996041774749756,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "start": 619,
+          "surface_text": "optimised blockwise non-local means (OB-NLM)",
+          "tokens": [
+            {
+              "end": 628,
+              "lemma": "optimise",
+              "morph": {
+                "Aspect": "Perf",
+                "Tense": "Past",
+                "VerbForm": "Part"
+              },
+              "partial_token": false,
+              "pos": "VERB",
+              "possessive": false,
+              "start": 619,
+              "tag": "VBN",
+              "text": "optimised"
+            },
+            {
+              "end": 638,
+              "lemma": "blockwise",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 629,
+              "tag": "NN",
+              "text": "blockwise"
+            },
+            {
+              "end": 642,
+              "lemma": "non",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 639,
+              "tag": "JJ",
+              "text": "non"
+            },
+            {
+              "end": 643,
+              "lemma": "-",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 642,
+              "tag": "JJ",
+              "text": "-"
+            },
+            {
+              "end": 648,
+              "lemma": "local",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 643,
+              "tag": "JJ",
+              "text": "local"
+            },
+            {
+              "end": 654,
+              "lemma": "mean",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 649,
+              "tag": "NNS",
+              "text": "means"
+            },
+            {
+              "end": 656,
+              "lemma": "(",
+              "morph": {
+                "PunctSide": "Ini",
+                "PunctType": "Brck"
+              },
+              "partial_token": false,
+              "pos": "PUNCT",
+              "possessive": false,
+              "start": 655,
+              "tag": "-LRB-",
+              "text": "("
+            },
+            {
+              "end": 658,
+              "lemma": "OB",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 656,
+              "tag": "NNP",
+              "text": "OB"
+            },
+            {
+              "end": 659,
+              "lemma": "-",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 658,
+              "tag": "NNP",
+              "text": "-"
+            },
+            {
+              "end": 662,
+              "lemma": "NLM",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 659,
+              "tag": "NNP",
+              "text": "NLM"
+            },
+            {
+              "end": 663,
+              "lemma": ")",
+              "morph": {
+                "PunctSide": "Fin",
+                "PunctType": "Brck"
+              },
+              "partial_token": false,
+              "pos": "PUNCT",
+              "possessive": false,
+              "start": 662,
+              "tag": "-RRB-",
+              "text": ")"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:82ee1333ef4c755bd9f20e8af05a920b80870aa92afd4e76ee68fb6973b78d2d",
+      "document_id": "W4230116451",
+      "start": 629,
+      "end": 654,
+      "surface_text": "blockwise non-local means",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "blockwise non-local mean"
+      ],
+      "confidence": 0.49291113018989563,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 654,
+              "original": "means",
+              "replacement": "mean",
+              "rule": "plural_noun_head",
+              "start": 649
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W4230116451",
+          "end": 654,
+          "lemma": "blockwise non-local mean",
+          "mention_id": "m:3b67c7e13f6f9078e9f6e7a372cfbf79bb16905568301cd13ed245f6e7870783",
+          "ner_label_hint": "METHOD",
+          "normalized_form": "blockwise non-local mean",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "score": 0.49291113018989563,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "start": 629,
+          "surface_text": "blockwise non-local means",
+          "tokens": [
+            {
+              "end": 638,
+              "lemma": "blockwise",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 629,
+              "tag": "NN",
+              "text": "blockwise"
+            },
+            {
+              "end": 642,
+              "lemma": "non",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 639,
+              "tag": "JJ",
+              "text": "non"
+            },
+            {
+              "end": 643,
+              "lemma": "-",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 642,
+              "tag": "JJ",
+              "text": "-"
+            },
+            {
+              "end": 648,
+              "lemma": "local",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 643,
+              "tag": "JJ",
+              "text": "local"
+            },
+            {
+              "end": 654,
+              "lemma": "mean",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 649,
+              "tag": "NNS",
+              "text": "means"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:8612a3b0cc6abfc85fcac9ead889fb5fd906c6e98e0edd690d0964287a19266a",
+      "document_id": "W4230116451",
+      "start": 656,
+      "end": 662,
+      "surface_text": "OB-NLM",
+      "entity_types": [
+        "METHOD"
+      ],
+      "normalized_forms": [
+        "OB-NLM"
+      ],
+      "confidence": 0.40688061714172363,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [
+            {
+              "long_end": 654,
+              "long_form": "optimised blockwise non-local means",
+              "long_start": 619,
+              "scope": "document_candidate_only",
+              "short_end": 662,
+              "short_form": "OB-NLM",
+              "short_start": 656
+            }
+          ],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W4230116451",
+          "end": 662,
+          "lemma": "OB-NLM",
+          "mention_id": "m:6cde7d459158a60eb891be00cb9ab10f97048ea445e8d0b9425bea7ae840e9ab",
+          "ner_label_hint": "METHOD",
+          "normalized_form": "OB-NLM",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "score": 0.40688061714172363,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "start": 656,
+          "surface_text": "OB-NLM",
+          "tokens": [
+            {
+              "end": 658,
+              "lemma": "OB",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 656,
+              "tag": "NNP",
+              "text": "OB"
+            },
+            {
+              "end": 659,
+              "lemma": "-",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 658,
+              "tag": "NNP",
+              "text": "-"
+            },
+            {
+              "end": 662,
+              "lemma": "NLM",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "PROPN",
+              "possessive": false,
+              "start": 659,
+              "tag": "NNP",
+              "text": "NLM"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:646e834d3b7fe3f065a6133635b7b1fe279acf06960eb97f983bcf48fcffdf6e",
+      "document_id": "W4230116451",
+      "start": 672,
+      "end": 692,
+      "surface_text": "Experimental results",
+      "entity_types": [
+        "RESULT"
+      ],
+      "normalized_forms": [
+        "Experimental result"
+      ],
+      "confidence": 0.9734808206558228,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [
+            {
+              "end": 692,
+              "original": "results",
+              "replacement": "result",
+              "rule": "plural_noun_head",
+              "start": 685
+            }
+          ],
+          "configuration": "E3",
+          "document_id": "W4230116451",
+          "end": 692,
+          "lemma": "Experimental result",
+          "mention_id": "m:cb969db5c46946ea3a8234b96dbafbc813c12aea1a8facfbb34b8a2b81a63431",
+          "ner_label_hint": "RESULT",
+          "normalized_form": "Experimental result",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "score": 0.9734808206558228,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "start": 672,
+          "surface_text": "Experimental results",
+          "tokens": [
+            {
+              "end": 684,
+              "lemma": "Experimental",
+              "morph": {
+                "Degree": "Pos"
+              },
+              "partial_token": false,
+              "pos": "ADJ",
+              "possessive": false,
+              "start": 672,
+              "tag": "JJ",
+              "text": "Experimental"
+            },
+            {
+              "end": 692,
+              "lemma": "result",
+              "morph": {
+                "Number": "Plur"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 685,
+              "tag": "NNS",
+              "text": "results"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:c8ad6ac62d3aae3822a2c85af0a7f8b3a6766881f497bda07f16981969c94609",
+      "document_id": "W4230116451",
+      "start": 733,
+      "end": 754,
+      "surface_text": "healthcare processing",
+      "entity_types": [
+        "PROCESS"
+      ],
+      "normalized_forms": [
+        "healthcare processing"
+      ],
+      "confidence": 0.7100290060043335,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W4230116451",
+          "end": 754,
+          "lemma": "healthcare processing",
+          "mention_id": "m:44eee9ed4ac33c1b22df5a372cc4b8dda2c4eaf881d1d84716d55d2f2583e83c",
+          "ner_label_hint": "PROCESS",
+          "normalized_form": "healthcare processing",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "score": 0.7100290060043335,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "start": 733,
+          "surface_text": "healthcare processing",
+          "tokens": [
+            {
+              "end": 743,
+              "lemma": "healthcare",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 733,
+              "tag": "NN",
+              "text": "healthcare"
+            },
+            {
+              "end": 754,
+              "lemma": "processing",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 744,
+              "tag": "NN",
+              "text": "processing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:29973bbacf12e50fa8ce02d9ee19897c1b183ef6f31b8614aba9202be768fd72",
+      "document_id": "W4230116451",
+      "start": 733,
+      "end": 763,
+      "surface_text": "healthcare processing practice",
+      "entity_types": [
+        "TASK"
+      ],
+      "normalized_forms": [
+        "healthcare processing practice"
+      ],
+      "confidence": 0.9509538412094116,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W4230116451",
+          "end": 763,
+          "lemma": "healthcare processing practice",
+          "mention_id": "m:1d3bfae1740fdafffdec625c789fc0fa71c61ca8237cca841afb868a12960035",
+          "ner_label_hint": "TASK",
+          "normalized_form": "healthcare processing practice",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "score": 0.9509538412094116,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "start": 733,
+          "surface_text": "healthcare processing practice",
+          "tokens": [
+            {
+              "end": 743,
+              "lemma": "healthcare",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 733,
+              "tag": "NN",
+              "text": "healthcare"
+            },
+            {
+              "end": 754,
+              "lemma": "processing",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 744,
+              "tag": "NN",
+              "text": "processing"
+            },
+            {
+              "end": 763,
+              "lemma": "practice",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 755,
+              "tag": "NN",
+              "text": "practice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity_id": "e:df7df057e79d9c2d47b981107d834c23329cd8ef6e30556858a4d0e23df369a6",
+      "document_id": "W4230116451",
+      "start": 776,
+      "end": 790,
+      "surface_text": "execution time",
+      "entity_types": [
+        "ATTRIBUTE"
+      ],
+      "normalized_forms": [
+        "execution time"
+      ],
+      "confidence": 0.9979089498519897,
+      "source_mentions": [
+        {
+          "abbreviation_candidates": [],
+          "changes": [],
+          "configuration": "E3",
+          "document_id": "W4230116451",
+          "end": 790,
+          "lemma": "execution time",
+          "mention_id": "m:8d7d5dab1cdd1438dd6cffac88e4c02f46b6716c23e228e4b5110fbc50f3ac87",
+          "ner_label_hint": "ATTRIBUTE",
+          "normalized_form": "execution time",
+          "normalizer_version": "scientific-noun-head-nfc-v1",
+          "revision_id": "sha256:be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed",
+          "score": 0.9979089498519897,
+          "source_reference": {
+            "api_url": "https://api.openalex.org/works/W4230116451",
+            "doi": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "landing_page_url": "https://doi.org/10.1504/ijhpcn.2018.093231",
+            "provider": "openalex",
+            "section": "abstract",
+            "source_updated_date": "2026-08-01T09:00:35.917206",
+            "source_url": "https://openalex.org/W4230116451",
+            "text_sha256": "be8d449de0b368ff95d367594803fe257989c989633702f3bee4ceab8be839ed"
+          },
+          "start": 776,
+          "surface_text": "execution time",
+          "tokens": [
+            {
+              "end": 785,
+              "lemma": "execution",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 776,
+              "tag": "NN",
+              "text": "execution"
+            },
+            {
+              "end": 790,
+              "lemma": "time",
+              "morph": {
+                "Number": "Sing"
+              },
+              "partial_token": false,
+              "pos": "NOUN",
+              "possessive": false,
+              "start": 786,
+              "tag": "NN",
+              "text": "time"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "triple_id": "t:1118dff6d011fb4add1f8a0822dc6b1c177b8ec5edfddd1a2017bd4744b6dda7",
+      "document_id": "W4230116451",
+      "head_id": "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+      "tail_id": "e:8612a3b0cc6abfc85fcac9ead889fb5fd906c6e98e0edd690d0964287a19266a",
+      "head_types": [
+        "METHOD"
+      ],
+      "tail_types": [
+        "METHOD"
+      ],
+      "relation_type": "DERIVED_FROM",
+      "confidence": 0.865771472454071,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "document_id": "W4230116451",
+          "start": 0,
+          "end": 791,
+          "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+          "entity_ids": [
+            "e:35d89c1e16e72b4dec6a364bccbf728449b09a896cd2cb95cf850388dea02fef",
+            "e:54f09db3e2d9e7264ffd3fe0c2ccaf4730d4bc539646f506ada5ba9e004f69a8",
+            "e:88a0ff4b02098968c3be76b57ae7809d3f4197d85ac375e42859569defddf1df",
+            "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a",
+            "e:dfa62891c45caaad0430a5ca197acdc26a2a74011e696e4de73f113b131d97a6",
+            "e:65e57b254ff4266e47ed2b19aee5b817fa1c1e26988c170926e6015f0f7e5fb1",
+            "e:ef0326aa41bb08767db52f38d4dd5da5c39dd6a13f6cb097563e4dd1099e0673",
+            "e:7bbf03cd5f65b3ab3ac311fa55cf82abe4c1a6da9215f14b07907d80cdd3e284",
+            "e:1089bf670c142b4a18644fcad47f9074e82420710e0858fbac9c55bf345fcca5",
+            "e:188f42404969746a895a746a7a0a916ef6d524480bd159a46bfc726b4dac7e5b",
+            "e:55f096f9222ef594500635ef0503900d77c3d7a538340168d68a5d3539f65bc5",
+            "e:a30d0fc39205514ef9aff67c50e6cb9dbb808c0b5876c9b14e741a891de870c3",
+            "e:114d9bd4197e9e8afa140239a2f43adecd5fdf4018a781d4887655ebdf8fb6c2",
+            "e:be1c5ea3c7e6475974dde138d69049694acfa353302341ffce8ddba375f96072",
+            "e:6fcaf54d0a22415d4769b35e20c116f59acde3596971391a10a35cac72f62f01",
+            "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+            "e:c6d9d225577d02c73e29519b9610d590504615913d90ea5ae00e07414e2df4aa",
+            "e:ada2e4f3e230688ebe9d2c8e13abfd371787d2d24eef9c7e6d1a000e68d5296b",
+            "e:82ee1333ef4c755bd9f20e8af05a920b80870aa92afd4e76ee68fb6973b78d2d",
+            "e:8612a3b0cc6abfc85fcac9ead889fb5fd906c6e98e0edd690d0964287a19266a",
+            "e:646e834d3b7fe3f065a6133635b7b1fe279acf06960eb97f983bcf48fcffdf6e",
+            "e:c8ad6ac62d3aae3822a2c85af0a7f8b3a6766881f497bda07f16981969c94609",
+            "e:29973bbacf12e50fa8ce02d9ee19897c1b183ef6f31b8614aba9202be768fd72",
+            "e:df7df057e79d9c2d47b981107d834c23329cd8ef6e30556858a4d0e23df369a6"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:1a4aed82dcb7335126b53bfe566f4c24ac9e8e031e82942fbbf0231450689fa4",
+      "document_id": "W4230116451",
+      "head_id": "e:29973bbacf12e50fa8ce02d9ee19897c1b183ef6f31b8614aba9202be768fd72",
+      "tail_id": "e:df7df057e79d9c2d47b981107d834c23329cd8ef6e30556858a4d0e23df369a6",
+      "head_types": [
+        "TASK"
+      ],
+      "tail_types": [
+        "ATTRIBUTE"
+      ],
+      "relation_type": "HAS_ATTRIBUTE",
+      "confidence": 0.4691355526447296,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "document_id": "W4230116451",
+          "start": 0,
+          "end": 791,
+          "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+          "entity_ids": [
+            "e:35d89c1e16e72b4dec6a364bccbf728449b09a896cd2cb95cf850388dea02fef",
+            "e:54f09db3e2d9e7264ffd3fe0c2ccaf4730d4bc539646f506ada5ba9e004f69a8",
+            "e:88a0ff4b02098968c3be76b57ae7809d3f4197d85ac375e42859569defddf1df",
+            "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a",
+            "e:dfa62891c45caaad0430a5ca197acdc26a2a74011e696e4de73f113b131d97a6",
+            "e:65e57b254ff4266e47ed2b19aee5b817fa1c1e26988c170926e6015f0f7e5fb1",
+            "e:ef0326aa41bb08767db52f38d4dd5da5c39dd6a13f6cb097563e4dd1099e0673",
+            "e:7bbf03cd5f65b3ab3ac311fa55cf82abe4c1a6da9215f14b07907d80cdd3e284",
+            "e:1089bf670c142b4a18644fcad47f9074e82420710e0858fbac9c55bf345fcca5",
+            "e:188f42404969746a895a746a7a0a916ef6d524480bd159a46bfc726b4dac7e5b",
+            "e:55f096f9222ef594500635ef0503900d77c3d7a538340168d68a5d3539f65bc5",
+            "e:a30d0fc39205514ef9aff67c50e6cb9dbb808c0b5876c9b14e741a891de870c3",
+            "e:114d9bd4197e9e8afa140239a2f43adecd5fdf4018a781d4887655ebdf8fb6c2",
+            "e:be1c5ea3c7e6475974dde138d69049694acfa353302341ffce8ddba375f96072",
+            "e:6fcaf54d0a22415d4769b35e20c116f59acde3596971391a10a35cac72f62f01",
+            "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+            "e:c6d9d225577d02c73e29519b9610d590504615913d90ea5ae00e07414e2df4aa",
+            "e:ada2e4f3e230688ebe9d2c8e13abfd371787d2d24eef9c7e6d1a000e68d5296b",
+            "e:82ee1333ef4c755bd9f20e8af05a920b80870aa92afd4e76ee68fb6973b78d2d",
+            "e:8612a3b0cc6abfc85fcac9ead889fb5fd906c6e98e0edd690d0964287a19266a",
+            "e:646e834d3b7fe3f065a6133635b7b1fe279acf06960eb97f983bcf48fcffdf6e",
+            "e:c8ad6ac62d3aae3822a2c85af0a7f8b3a6766881f497bda07f16981969c94609",
+            "e:29973bbacf12e50fa8ce02d9ee19897c1b183ef6f31b8614aba9202be768fd72",
+            "e:df7df057e79d9c2d47b981107d834c23329cd8ef6e30556858a4d0e23df369a6"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:202f8ff5c35c83962a76b9972fc83f72e7d753ca0b0651d0c509067c56ba741d",
+      "document_id": "W4230116451",
+      "head_id": "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+      "tail_id": "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a",
+      "head_types": [
+        "METHOD"
+      ],
+      "tail_types": [
+        "TASK"
+      ],
+      "relation_type": "PERFORMS",
+      "confidence": 0.37544122338294983,
+      "suspicious_type_hint": true,
+      "evidence": [
+        {
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "document_id": "W4230116451",
+          "start": 0,
+          "end": 791,
+          "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+          "entity_ids": [
+            "e:35d89c1e16e72b4dec6a364bccbf728449b09a896cd2cb95cf850388dea02fef",
+            "e:54f09db3e2d9e7264ffd3fe0c2ccaf4730d4bc539646f506ada5ba9e004f69a8",
+            "e:88a0ff4b02098968c3be76b57ae7809d3f4197d85ac375e42859569defddf1df",
+            "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a",
+            "e:dfa62891c45caaad0430a5ca197acdc26a2a74011e696e4de73f113b131d97a6",
+            "e:65e57b254ff4266e47ed2b19aee5b817fa1c1e26988c170926e6015f0f7e5fb1",
+            "e:ef0326aa41bb08767db52f38d4dd5da5c39dd6a13f6cb097563e4dd1099e0673",
+            "e:7bbf03cd5f65b3ab3ac311fa55cf82abe4c1a6da9215f14b07907d80cdd3e284",
+            "e:1089bf670c142b4a18644fcad47f9074e82420710e0858fbac9c55bf345fcca5",
+            "e:188f42404969746a895a746a7a0a916ef6d524480bd159a46bfc726b4dac7e5b",
+            "e:55f096f9222ef594500635ef0503900d77c3d7a538340168d68a5d3539f65bc5",
+            "e:a30d0fc39205514ef9aff67c50e6cb9dbb808c0b5876c9b14e741a891de870c3",
+            "e:114d9bd4197e9e8afa140239a2f43adecd5fdf4018a781d4887655ebdf8fb6c2",
+            "e:be1c5ea3c7e6475974dde138d69049694acfa353302341ffce8ddba375f96072",
+            "e:6fcaf54d0a22415d4769b35e20c116f59acde3596971391a10a35cac72f62f01",
+            "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+            "e:c6d9d225577d02c73e29519b9610d590504615913d90ea5ae00e07414e2df4aa",
+            "e:ada2e4f3e230688ebe9d2c8e13abfd371787d2d24eef9c7e6d1a000e68d5296b",
+            "e:82ee1333ef4c755bd9f20e8af05a920b80870aa92afd4e76ee68fb6973b78d2d",
+            "e:8612a3b0cc6abfc85fcac9ead889fb5fd906c6e98e0edd690d0964287a19266a",
+            "e:646e834d3b7fe3f065a6133635b7b1fe279acf06960eb97f983bcf48fcffdf6e",
+            "e:c8ad6ac62d3aae3822a2c85af0a7f8b3a6766881f497bda07f16981969c94609",
+            "e:29973bbacf12e50fa8ce02d9ee19897c1b183ef6f31b8614aba9202be768fd72",
+            "e:df7df057e79d9c2d47b981107d834c23329cd8ef6e30556858a4d0e23df369a6"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:32b4db2da56b273a49dd352ab88cfffcbc4ee7bb64c63bde56d75d7e9817c679",
+      "document_id": "W4230116451",
+      "head_id": "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+      "tail_id": "e:188f42404969746a895a746a7a0a916ef6d524480bd159a46bfc726b4dac7e5b",
+      "head_types": [
+        "METHOD"
+      ],
+      "tail_types": [
+        "TASK"
+      ],
+      "relation_type": "EVALUATED_ON",
+      "confidence": 0.566052258014679,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "document_id": "W4230116451",
+          "start": 0,
+          "end": 791,
+          "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+          "entity_ids": [
+            "e:35d89c1e16e72b4dec6a364bccbf728449b09a896cd2cb95cf850388dea02fef",
+            "e:54f09db3e2d9e7264ffd3fe0c2ccaf4730d4bc539646f506ada5ba9e004f69a8",
+            "e:88a0ff4b02098968c3be76b57ae7809d3f4197d85ac375e42859569defddf1df",
+            "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a",
+            "e:dfa62891c45caaad0430a5ca197acdc26a2a74011e696e4de73f113b131d97a6",
+            "e:65e57b254ff4266e47ed2b19aee5b817fa1c1e26988c170926e6015f0f7e5fb1",
+            "e:ef0326aa41bb08767db52f38d4dd5da5c39dd6a13f6cb097563e4dd1099e0673",
+            "e:7bbf03cd5f65b3ab3ac311fa55cf82abe4c1a6da9215f14b07907d80cdd3e284",
+            "e:1089bf670c142b4a18644fcad47f9074e82420710e0858fbac9c55bf345fcca5",
+            "e:188f42404969746a895a746a7a0a916ef6d524480bd159a46bfc726b4dac7e5b",
+            "e:55f096f9222ef594500635ef0503900d77c3d7a538340168d68a5d3539f65bc5",
+            "e:a30d0fc39205514ef9aff67c50e6cb9dbb808c0b5876c9b14e741a891de870c3",
+            "e:114d9bd4197e9e8afa140239a2f43adecd5fdf4018a781d4887655ebdf8fb6c2",
+            "e:be1c5ea3c7e6475974dde138d69049694acfa353302341ffce8ddba375f96072",
+            "e:6fcaf54d0a22415d4769b35e20c116f59acde3596971391a10a35cac72f62f01",
+            "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+            "e:c6d9d225577d02c73e29519b9610d590504615913d90ea5ae00e07414e2df4aa",
+            "e:ada2e4f3e230688ebe9d2c8e13abfd371787d2d24eef9c7e6d1a000e68d5296b",
+            "e:82ee1333ef4c755bd9f20e8af05a920b80870aa92afd4e76ee68fb6973b78d2d",
+            "e:8612a3b0cc6abfc85fcac9ead889fb5fd906c6e98e0edd690d0964287a19266a",
+            "e:646e834d3b7fe3f065a6133635b7b1fe279acf06960eb97f983bcf48fcffdf6e",
+            "e:c8ad6ac62d3aae3822a2c85af0a7f8b3a6766881f497bda07f16981969c94609",
+            "e:29973bbacf12e50fa8ce02d9ee19897c1b183ef6f31b8614aba9202be768fd72",
+            "e:df7df057e79d9c2d47b981107d834c23329cd8ef6e30556858a4d0e23df369a6"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:3a1b7404e9ffe0026bab1d5f588729a0854e203955db6a47f55841fe905ff60d",
+      "document_id": "W4230116451",
+      "head_id": "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+      "tail_id": "e:ada2e4f3e230688ebe9d2c8e13abfd371787d2d24eef9c7e6d1a000e68d5296b",
+      "head_types": [
+        "METHOD"
+      ],
+      "tail_types": [
+        "METHOD"
+      ],
+      "relation_type": "DERIVED_FROM",
+      "confidence": 0.7167283296585083,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "document_id": "W4230116451",
+          "start": 0,
+          "end": 791,
+          "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+          "entity_ids": [
+            "e:35d89c1e16e72b4dec6a364bccbf728449b09a896cd2cb95cf850388dea02fef",
+            "e:54f09db3e2d9e7264ffd3fe0c2ccaf4730d4bc539646f506ada5ba9e004f69a8",
+            "e:88a0ff4b02098968c3be76b57ae7809d3f4197d85ac375e42859569defddf1df",
+            "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a",
+            "e:dfa62891c45caaad0430a5ca197acdc26a2a74011e696e4de73f113b131d97a6",
+            "e:65e57b254ff4266e47ed2b19aee5b817fa1c1e26988c170926e6015f0f7e5fb1",
+            "e:ef0326aa41bb08767db52f38d4dd5da5c39dd6a13f6cb097563e4dd1099e0673",
+            "e:7bbf03cd5f65b3ab3ac311fa55cf82abe4c1a6da9215f14b07907d80cdd3e284",
+            "e:1089bf670c142b4a18644fcad47f9074e82420710e0858fbac9c55bf345fcca5",
+            "e:188f42404969746a895a746a7a0a916ef6d524480bd159a46bfc726b4dac7e5b",
+            "e:55f096f9222ef594500635ef0503900d77c3d7a538340168d68a5d3539f65bc5",
+            "e:a30d0fc39205514ef9aff67c50e6cb9dbb808c0b5876c9b14e741a891de870c3",
+            "e:114d9bd4197e9e8afa140239a2f43adecd5fdf4018a781d4887655ebdf8fb6c2",
+            "e:be1c5ea3c7e6475974dde138d69049694acfa353302341ffce8ddba375f96072",
+            "e:6fcaf54d0a22415d4769b35e20c116f59acde3596971391a10a35cac72f62f01",
+            "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+            "e:c6d9d225577d02c73e29519b9610d590504615913d90ea5ae00e07414e2df4aa",
+            "e:ada2e4f3e230688ebe9d2c8e13abfd371787d2d24eef9c7e6d1a000e68d5296b",
+            "e:82ee1333ef4c755bd9f20e8af05a920b80870aa92afd4e76ee68fb6973b78d2d",
+            "e:8612a3b0cc6abfc85fcac9ead889fb5fd906c6e98e0edd690d0964287a19266a",
+            "e:646e834d3b7fe3f065a6133635b7b1fe279acf06960eb97f983bcf48fcffdf6e",
+            "e:c8ad6ac62d3aae3822a2c85af0a7f8b3a6766881f497bda07f16981969c94609",
+            "e:29973bbacf12e50fa8ce02d9ee19897c1b183ef6f31b8614aba9202be768fd72",
+            "e:df7df057e79d9c2d47b981107d834c23329cd8ef6e30556858a4d0e23df369a6"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:44379afadd6d277d9b063c11fab85fbfee3bd42641f8649bd7555c666025eb8d",
+      "document_id": "W4230116451",
+      "head_id": "e:1089bf670c142b4a18644fcad47f9074e82420710e0858fbac9c55bf345fcca5",
+      "tail_id": "e:114d9bd4197e9e8afa140239a2f43adecd5fdf4018a781d4887655ebdf8fb6c2",
+      "head_types": [
+        "MECHANISM"
+      ],
+      "tail_types": [
+        "PROCESS"
+      ],
+      "relation_type": "USED_FOR",
+      "confidence": 0.3969464898109436,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "document_id": "W4230116451",
+          "start": 0,
+          "end": 791,
+          "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+          "entity_ids": [
+            "e:35d89c1e16e72b4dec6a364bccbf728449b09a896cd2cb95cf850388dea02fef",
+            "e:54f09db3e2d9e7264ffd3fe0c2ccaf4730d4bc539646f506ada5ba9e004f69a8",
+            "e:88a0ff4b02098968c3be76b57ae7809d3f4197d85ac375e42859569defddf1df",
+            "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a",
+            "e:dfa62891c45caaad0430a5ca197acdc26a2a74011e696e4de73f113b131d97a6",
+            "e:65e57b254ff4266e47ed2b19aee5b817fa1c1e26988c170926e6015f0f7e5fb1",
+            "e:ef0326aa41bb08767db52f38d4dd5da5c39dd6a13f6cb097563e4dd1099e0673",
+            "e:7bbf03cd5f65b3ab3ac311fa55cf82abe4c1a6da9215f14b07907d80cdd3e284",
+            "e:1089bf670c142b4a18644fcad47f9074e82420710e0858fbac9c55bf345fcca5",
+            "e:188f42404969746a895a746a7a0a916ef6d524480bd159a46bfc726b4dac7e5b",
+            "e:55f096f9222ef594500635ef0503900d77c3d7a538340168d68a5d3539f65bc5",
+            "e:a30d0fc39205514ef9aff67c50e6cb9dbb808c0b5876c9b14e741a891de870c3",
+            "e:114d9bd4197e9e8afa140239a2f43adecd5fdf4018a781d4887655ebdf8fb6c2",
+            "e:be1c5ea3c7e6475974dde138d69049694acfa353302341ffce8ddba375f96072",
+            "e:6fcaf54d0a22415d4769b35e20c116f59acde3596971391a10a35cac72f62f01",
+            "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+            "e:c6d9d225577d02c73e29519b9610d590504615913d90ea5ae00e07414e2df4aa",
+            "e:ada2e4f3e230688ebe9d2c8e13abfd371787d2d24eef9c7e6d1a000e68d5296b",
+            "e:82ee1333ef4c755bd9f20e8af05a920b80870aa92afd4e76ee68fb6973b78d2d",
+            "e:8612a3b0cc6abfc85fcac9ead889fb5fd906c6e98e0edd690d0964287a19266a",
+            "e:646e834d3b7fe3f065a6133635b7b1fe279acf06960eb97f983bcf48fcffdf6e",
+            "e:c8ad6ac62d3aae3822a2c85af0a7f8b3a6766881f497bda07f16981969c94609",
+            "e:29973bbacf12e50fa8ce02d9ee19897c1b183ef6f31b8614aba9202be768fd72",
+            "e:df7df057e79d9c2d47b981107d834c23329cd8ef6e30556858a4d0e23df369a6"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:4d90550bb5be54bc9b3a54ae8f50e38e3889cc990f570b24fa57f38d067bd911",
+      "document_id": "W4230116451",
+      "head_id": "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+      "tail_id": "e:55f096f9222ef594500635ef0503900d77c3d7a538340168d68a5d3539f65bc5",
+      "head_types": [
+        "METHOD"
+      ],
+      "tail_types": [
+        "TASK"
+      ],
+      "relation_type": "APPLIED_TO",
+      "confidence": 0.5663317441940308,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "document_id": "W4230116451",
+          "start": 0,
+          "end": 791,
+          "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+          "entity_ids": [
+            "e:35d89c1e16e72b4dec6a364bccbf728449b09a896cd2cb95cf850388dea02fef",
+            "e:54f09db3e2d9e7264ffd3fe0c2ccaf4730d4bc539646f506ada5ba9e004f69a8",
+            "e:88a0ff4b02098968c3be76b57ae7809d3f4197d85ac375e42859569defddf1df",
+            "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a",
+            "e:dfa62891c45caaad0430a5ca197acdc26a2a74011e696e4de73f113b131d97a6",
+            "e:65e57b254ff4266e47ed2b19aee5b817fa1c1e26988c170926e6015f0f7e5fb1",
+            "e:ef0326aa41bb08767db52f38d4dd5da5c39dd6a13f6cb097563e4dd1099e0673",
+            "e:7bbf03cd5f65b3ab3ac311fa55cf82abe4c1a6da9215f14b07907d80cdd3e284",
+            "e:1089bf670c142b4a18644fcad47f9074e82420710e0858fbac9c55bf345fcca5",
+            "e:188f42404969746a895a746a7a0a916ef6d524480bd159a46bfc726b4dac7e5b",
+            "e:55f096f9222ef594500635ef0503900d77c3d7a538340168d68a5d3539f65bc5",
+            "e:a30d0fc39205514ef9aff67c50e6cb9dbb808c0b5876c9b14e741a891de870c3",
+            "e:114d9bd4197e9e8afa140239a2f43adecd5fdf4018a781d4887655ebdf8fb6c2",
+            "e:be1c5ea3c7e6475974dde138d69049694acfa353302341ffce8ddba375f96072",
+            "e:6fcaf54d0a22415d4769b35e20c116f59acde3596971391a10a35cac72f62f01",
+            "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+            "e:c6d9d225577d02c73e29519b9610d590504615913d90ea5ae00e07414e2df4aa",
+            "e:ada2e4f3e230688ebe9d2c8e13abfd371787d2d24eef9c7e6d1a000e68d5296b",
+            "e:82ee1333ef4c755bd9f20e8af05a920b80870aa92afd4e76ee68fb6973b78d2d",
+            "e:8612a3b0cc6abfc85fcac9ead889fb5fd906c6e98e0edd690d0964287a19266a",
+            "e:646e834d3b7fe3f065a6133635b7b1fe279acf06960eb97f983bcf48fcffdf6e",
+            "e:c8ad6ac62d3aae3822a2c85af0a7f8b3a6766881f497bda07f16981969c94609",
+            "e:29973bbacf12e50fa8ce02d9ee19897c1b183ef6f31b8614aba9202be768fd72",
+            "e:df7df057e79d9c2d47b981107d834c23329cd8ef6e30556858a4d0e23df369a6"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:8e6bf12cff9e31ad011f175e23e434fbb37252a6cddf1affcc75aa6f27a3f835",
+      "document_id": "W4230116451",
+      "head_id": "e:1089bf670c142b4a18644fcad47f9074e82420710e0858fbac9c55bf345fcca5",
+      "tail_id": "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a",
+      "head_types": [
+        "MECHANISM"
+      ],
+      "tail_types": [
+        "TASK"
+      ],
+      "relation_type": "USED_FOR",
+      "confidence": 0.5306435227394104,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "document_id": "W4230116451",
+          "start": 0,
+          "end": 791,
+          "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+          "entity_ids": [
+            "e:35d89c1e16e72b4dec6a364bccbf728449b09a896cd2cb95cf850388dea02fef",
+            "e:54f09db3e2d9e7264ffd3fe0c2ccaf4730d4bc539646f506ada5ba9e004f69a8",
+            "e:88a0ff4b02098968c3be76b57ae7809d3f4197d85ac375e42859569defddf1df",
+            "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a",
+            "e:dfa62891c45caaad0430a5ca197acdc26a2a74011e696e4de73f113b131d97a6",
+            "e:65e57b254ff4266e47ed2b19aee5b817fa1c1e26988c170926e6015f0f7e5fb1",
+            "e:ef0326aa41bb08767db52f38d4dd5da5c39dd6a13f6cb097563e4dd1099e0673",
+            "e:7bbf03cd5f65b3ab3ac311fa55cf82abe4c1a6da9215f14b07907d80cdd3e284",
+            "e:1089bf670c142b4a18644fcad47f9074e82420710e0858fbac9c55bf345fcca5",
+            "e:188f42404969746a895a746a7a0a916ef6d524480bd159a46bfc726b4dac7e5b",
+            "e:55f096f9222ef594500635ef0503900d77c3d7a538340168d68a5d3539f65bc5",
+            "e:a30d0fc39205514ef9aff67c50e6cb9dbb808c0b5876c9b14e741a891de870c3",
+            "e:114d9bd4197e9e8afa140239a2f43adecd5fdf4018a781d4887655ebdf8fb6c2",
+            "e:be1c5ea3c7e6475974dde138d69049694acfa353302341ffce8ddba375f96072",
+            "e:6fcaf54d0a22415d4769b35e20c116f59acde3596971391a10a35cac72f62f01",
+            "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+            "e:c6d9d225577d02c73e29519b9610d590504615913d90ea5ae00e07414e2df4aa",
+            "e:ada2e4f3e230688ebe9d2c8e13abfd371787d2d24eef9c7e6d1a000e68d5296b",
+            "e:82ee1333ef4c755bd9f20e8af05a920b80870aa92afd4e76ee68fb6973b78d2d",
+            "e:8612a3b0cc6abfc85fcac9ead889fb5fd906c6e98e0edd690d0964287a19266a",
+            "e:646e834d3b7fe3f065a6133635b7b1fe279acf06960eb97f983bcf48fcffdf6e",
+            "e:c8ad6ac62d3aae3822a2c85af0a7f8b3a6766881f497bda07f16981969c94609",
+            "e:29973bbacf12e50fa8ce02d9ee19897c1b183ef6f31b8614aba9202be768fd72",
+            "e:df7df057e79d9c2d47b981107d834c23329cd8ef6e30556858a4d0e23df369a6"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:9843942a45541acacae681ef2977baa9bdc2b0dd7dfc725a459e97f5d81c3fea",
+      "document_id": "W4230116451",
+      "head_id": "e:35d89c1e16e72b4dec6a364bccbf728449b09a896cd2cb95cf850388dea02fef",
+      "tail_id": "e:54f09db3e2d9e7264ffd3fe0c2ccaf4730d4bc539646f506ada5ba9e004f69a8",
+      "head_types": [
+        "MECHANISM"
+      ],
+      "tail_types": [
+        "DATA_RESOURCE",
+        "OBJECT"
+      ],
+      "relation_type": "PRODUCES",
+      "confidence": 0.6376854181289673,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "document_id": "W4230116451",
+          "start": 0,
+          "end": 791,
+          "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+          "entity_ids": [
+            "e:35d89c1e16e72b4dec6a364bccbf728449b09a896cd2cb95cf850388dea02fef",
+            "e:54f09db3e2d9e7264ffd3fe0c2ccaf4730d4bc539646f506ada5ba9e004f69a8",
+            "e:88a0ff4b02098968c3be76b57ae7809d3f4197d85ac375e42859569defddf1df",
+            "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a",
+            "e:dfa62891c45caaad0430a5ca197acdc26a2a74011e696e4de73f113b131d97a6",
+            "e:65e57b254ff4266e47ed2b19aee5b817fa1c1e26988c170926e6015f0f7e5fb1",
+            "e:ef0326aa41bb08767db52f38d4dd5da5c39dd6a13f6cb097563e4dd1099e0673",
+            "e:7bbf03cd5f65b3ab3ac311fa55cf82abe4c1a6da9215f14b07907d80cdd3e284",
+            "e:1089bf670c142b4a18644fcad47f9074e82420710e0858fbac9c55bf345fcca5",
+            "e:188f42404969746a895a746a7a0a916ef6d524480bd159a46bfc726b4dac7e5b",
+            "e:55f096f9222ef594500635ef0503900d77c3d7a538340168d68a5d3539f65bc5",
+            "e:a30d0fc39205514ef9aff67c50e6cb9dbb808c0b5876c9b14e741a891de870c3",
+            "e:114d9bd4197e9e8afa140239a2f43adecd5fdf4018a781d4887655ebdf8fb6c2",
+            "e:be1c5ea3c7e6475974dde138d69049694acfa353302341ffce8ddba375f96072",
+            "e:6fcaf54d0a22415d4769b35e20c116f59acde3596971391a10a35cac72f62f01",
+            "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+            "e:c6d9d225577d02c73e29519b9610d590504615913d90ea5ae00e07414e2df4aa",
+            "e:ada2e4f3e230688ebe9d2c8e13abfd371787d2d24eef9c7e6d1a000e68d5296b",
+            "e:82ee1333ef4c755bd9f20e8af05a920b80870aa92afd4e76ee68fb6973b78d2d",
+            "e:8612a3b0cc6abfc85fcac9ead889fb5fd906c6e98e0edd690d0964287a19266a",
+            "e:646e834d3b7fe3f065a6133635b7b1fe279acf06960eb97f983bcf48fcffdf6e",
+            "e:c8ad6ac62d3aae3822a2c85af0a7f8b3a6766881f497bda07f16981969c94609",
+            "e:29973bbacf12e50fa8ce02d9ee19897c1b183ef6f31b8614aba9202be768fd72",
+            "e:df7df057e79d9c2d47b981107d834c23329cd8ef6e30556858a4d0e23df369a6"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:a7197bb6edf33c86a601e56ed30b5d224b71a62f4d468ce02e31f545b347a5d7",
+      "document_id": "W4230116451",
+      "head_id": "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+      "tail_id": "e:82ee1333ef4c755bd9f20e8af05a920b80870aa92afd4e76ee68fb6973b78d2d",
+      "head_types": [
+        "METHOD"
+      ],
+      "tail_types": [
+        "METHOD"
+      ],
+      "relation_type": "DERIVED_FROM",
+      "confidence": 0.8998945355415344,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "document_id": "W4230116451",
+          "start": 0,
+          "end": 791,
+          "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+          "entity_ids": [
+            "e:35d89c1e16e72b4dec6a364bccbf728449b09a896cd2cb95cf850388dea02fef",
+            "e:54f09db3e2d9e7264ffd3fe0c2ccaf4730d4bc539646f506ada5ba9e004f69a8",
+            "e:88a0ff4b02098968c3be76b57ae7809d3f4197d85ac375e42859569defddf1df",
+            "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a",
+            "e:dfa62891c45caaad0430a5ca197acdc26a2a74011e696e4de73f113b131d97a6",
+            "e:65e57b254ff4266e47ed2b19aee5b817fa1c1e26988c170926e6015f0f7e5fb1",
+            "e:ef0326aa41bb08767db52f38d4dd5da5c39dd6a13f6cb097563e4dd1099e0673",
+            "e:7bbf03cd5f65b3ab3ac311fa55cf82abe4c1a6da9215f14b07907d80cdd3e284",
+            "e:1089bf670c142b4a18644fcad47f9074e82420710e0858fbac9c55bf345fcca5",
+            "e:188f42404969746a895a746a7a0a916ef6d524480bd159a46bfc726b4dac7e5b",
+            "e:55f096f9222ef594500635ef0503900d77c3d7a538340168d68a5d3539f65bc5",
+            "e:a30d0fc39205514ef9aff67c50e6cb9dbb808c0b5876c9b14e741a891de870c3",
+            "e:114d9bd4197e9e8afa140239a2f43adecd5fdf4018a781d4887655ebdf8fb6c2",
+            "e:be1c5ea3c7e6475974dde138d69049694acfa353302341ffce8ddba375f96072",
+            "e:6fcaf54d0a22415d4769b35e20c116f59acde3596971391a10a35cac72f62f01",
+            "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+            "e:c6d9d225577d02c73e29519b9610d590504615913d90ea5ae00e07414e2df4aa",
+            "e:ada2e4f3e230688ebe9d2c8e13abfd371787d2d24eef9c7e6d1a000e68d5296b",
+            "e:82ee1333ef4c755bd9f20e8af05a920b80870aa92afd4e76ee68fb6973b78d2d",
+            "e:8612a3b0cc6abfc85fcac9ead889fb5fd906c6e98e0edd690d0964287a19266a",
+            "e:646e834d3b7fe3f065a6133635b7b1fe279acf06960eb97f983bcf48fcffdf6e",
+            "e:c8ad6ac62d3aae3822a2c85af0a7f8b3a6766881f497bda07f16981969c94609",
+            "e:29973bbacf12e50fa8ce02d9ee19897c1b183ef6f31b8614aba9202be768fd72",
+            "e:df7df057e79d9c2d47b981107d834c23329cd8ef6e30556858a4d0e23df369a6"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:af4aadb5f2ef4b7cf7353b4187e247fb36e5c54671341c327b902f72445e4db1",
+      "document_id": "W4230116451",
+      "head_id": "e:646e834d3b7fe3f065a6133635b7b1fe279acf06960eb97f983bcf48fcffdf6e",
+      "tail_id": "e:df7df057e79d9c2d47b981107d834c23329cd8ef6e30556858a4d0e23df369a6",
+      "head_types": [
+        "RESULT"
+      ],
+      "tail_types": [
+        "ATTRIBUTE"
+      ],
+      "relation_type": "MEASURES",
+      "confidence": 0.6908314824104309,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "document_id": "W4230116451",
+          "start": 0,
+          "end": 791,
+          "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+          "entity_ids": [
+            "e:35d89c1e16e72b4dec6a364bccbf728449b09a896cd2cb95cf850388dea02fef",
+            "e:54f09db3e2d9e7264ffd3fe0c2ccaf4730d4bc539646f506ada5ba9e004f69a8",
+            "e:88a0ff4b02098968c3be76b57ae7809d3f4197d85ac375e42859569defddf1df",
+            "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a",
+            "e:dfa62891c45caaad0430a5ca197acdc26a2a74011e696e4de73f113b131d97a6",
+            "e:65e57b254ff4266e47ed2b19aee5b817fa1c1e26988c170926e6015f0f7e5fb1",
+            "e:ef0326aa41bb08767db52f38d4dd5da5c39dd6a13f6cb097563e4dd1099e0673",
+            "e:7bbf03cd5f65b3ab3ac311fa55cf82abe4c1a6da9215f14b07907d80cdd3e284",
+            "e:1089bf670c142b4a18644fcad47f9074e82420710e0858fbac9c55bf345fcca5",
+            "e:188f42404969746a895a746a7a0a916ef6d524480bd159a46bfc726b4dac7e5b",
+            "e:55f096f9222ef594500635ef0503900d77c3d7a538340168d68a5d3539f65bc5",
+            "e:a30d0fc39205514ef9aff67c50e6cb9dbb808c0b5876c9b14e741a891de870c3",
+            "e:114d9bd4197e9e8afa140239a2f43adecd5fdf4018a781d4887655ebdf8fb6c2",
+            "e:be1c5ea3c7e6475974dde138d69049694acfa353302341ffce8ddba375f96072",
+            "e:6fcaf54d0a22415d4769b35e20c116f59acde3596971391a10a35cac72f62f01",
+            "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+            "e:c6d9d225577d02c73e29519b9610d590504615913d90ea5ae00e07414e2df4aa",
+            "e:ada2e4f3e230688ebe9d2c8e13abfd371787d2d24eef9c7e6d1a000e68d5296b",
+            "e:82ee1333ef4c755bd9f20e8af05a920b80870aa92afd4e76ee68fb6973b78d2d",
+            "e:8612a3b0cc6abfc85fcac9ead889fb5fd906c6e98e0edd690d0964287a19266a",
+            "e:646e834d3b7fe3f065a6133635b7b1fe279acf06960eb97f983bcf48fcffdf6e",
+            "e:c8ad6ac62d3aae3822a2c85af0a7f8b3a6766881f497bda07f16981969c94609",
+            "e:29973bbacf12e50fa8ce02d9ee19897c1b183ef6f31b8614aba9202be768fd72",
+            "e:df7df057e79d9c2d47b981107d834c23329cd8ef6e30556858a4d0e23df369a6"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:d2478f85247f57d8d0554abb5ff89b11a9480d45d2f601ea0ff58271aa92621a",
+      "document_id": "W4230116451",
+      "head_id": "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+      "tail_id": "e:1089bf670c142b4a18644fcad47f9074e82420710e0858fbac9c55bf345fcca5",
+      "head_types": [
+        "METHOD"
+      ],
+      "tail_types": [
+        "MECHANISM"
+      ],
+      "relation_type": "USES",
+      "confidence": 0.6009272336959839,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "document_id": "W4230116451",
+          "start": 0,
+          "end": 791,
+          "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+          "entity_ids": [
+            "e:35d89c1e16e72b4dec6a364bccbf728449b09a896cd2cb95cf850388dea02fef",
+            "e:54f09db3e2d9e7264ffd3fe0c2ccaf4730d4bc539646f506ada5ba9e004f69a8",
+            "e:88a0ff4b02098968c3be76b57ae7809d3f4197d85ac375e42859569defddf1df",
+            "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a",
+            "e:dfa62891c45caaad0430a5ca197acdc26a2a74011e696e4de73f113b131d97a6",
+            "e:65e57b254ff4266e47ed2b19aee5b817fa1c1e26988c170926e6015f0f7e5fb1",
+            "e:ef0326aa41bb08767db52f38d4dd5da5c39dd6a13f6cb097563e4dd1099e0673",
+            "e:7bbf03cd5f65b3ab3ac311fa55cf82abe4c1a6da9215f14b07907d80cdd3e284",
+            "e:1089bf670c142b4a18644fcad47f9074e82420710e0858fbac9c55bf345fcca5",
+            "e:188f42404969746a895a746a7a0a916ef6d524480bd159a46bfc726b4dac7e5b",
+            "e:55f096f9222ef594500635ef0503900d77c3d7a538340168d68a5d3539f65bc5",
+            "e:a30d0fc39205514ef9aff67c50e6cb9dbb808c0b5876c9b14e741a891de870c3",
+            "e:114d9bd4197e9e8afa140239a2f43adecd5fdf4018a781d4887655ebdf8fb6c2",
+            "e:be1c5ea3c7e6475974dde138d69049694acfa353302341ffce8ddba375f96072",
+            "e:6fcaf54d0a22415d4769b35e20c116f59acde3596971391a10a35cac72f62f01",
+            "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+            "e:c6d9d225577d02c73e29519b9610d590504615913d90ea5ae00e07414e2df4aa",
+            "e:ada2e4f3e230688ebe9d2c8e13abfd371787d2d24eef9c7e6d1a000e68d5296b",
+            "e:82ee1333ef4c755bd9f20e8af05a920b80870aa92afd4e76ee68fb6973b78d2d",
+            "e:8612a3b0cc6abfc85fcac9ead889fb5fd906c6e98e0edd690d0964287a19266a",
+            "e:646e834d3b7fe3f065a6133635b7b1fe279acf06960eb97f983bcf48fcffdf6e",
+            "e:c8ad6ac62d3aae3822a2c85af0a7f8b3a6766881f497bda07f16981969c94609",
+            "e:29973bbacf12e50fa8ce02d9ee19897c1b183ef6f31b8614aba9202be768fd72",
+            "e:df7df057e79d9c2d47b981107d834c23329cd8ef6e30556858a4d0e23df369a6"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:e2530ec3b28e21fefd61a61ac46311efe5e42ac86450b63d714dac01dd8e7490",
+      "document_id": "W4230116451",
+      "head_id": "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+      "tail_id": "e:be1c5ea3c7e6475974dde138d69049694acfa353302341ffce8ddba375f96072",
+      "head_types": [
+        "METHOD"
+      ],
+      "tail_types": [
+        "TASK"
+      ],
+      "relation_type": "PERFORMS",
+      "confidence": 0.3825119435787201,
+      "suspicious_type_hint": true,
+      "evidence": [
+        {
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "document_id": "W4230116451",
+          "start": 0,
+          "end": 791,
+          "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+          "entity_ids": [
+            "e:35d89c1e16e72b4dec6a364bccbf728449b09a896cd2cb95cf850388dea02fef",
+            "e:54f09db3e2d9e7264ffd3fe0c2ccaf4730d4bc539646f506ada5ba9e004f69a8",
+            "e:88a0ff4b02098968c3be76b57ae7809d3f4197d85ac375e42859569defddf1df",
+            "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a",
+            "e:dfa62891c45caaad0430a5ca197acdc26a2a74011e696e4de73f113b131d97a6",
+            "e:65e57b254ff4266e47ed2b19aee5b817fa1c1e26988c170926e6015f0f7e5fb1",
+            "e:ef0326aa41bb08767db52f38d4dd5da5c39dd6a13f6cb097563e4dd1099e0673",
+            "e:7bbf03cd5f65b3ab3ac311fa55cf82abe4c1a6da9215f14b07907d80cdd3e284",
+            "e:1089bf670c142b4a18644fcad47f9074e82420710e0858fbac9c55bf345fcca5",
+            "e:188f42404969746a895a746a7a0a916ef6d524480bd159a46bfc726b4dac7e5b",
+            "e:55f096f9222ef594500635ef0503900d77c3d7a538340168d68a5d3539f65bc5",
+            "e:a30d0fc39205514ef9aff67c50e6cb9dbb808c0b5876c9b14e741a891de870c3",
+            "e:114d9bd4197e9e8afa140239a2f43adecd5fdf4018a781d4887655ebdf8fb6c2",
+            "e:be1c5ea3c7e6475974dde138d69049694acfa353302341ffce8ddba375f96072",
+            "e:6fcaf54d0a22415d4769b35e20c116f59acde3596971391a10a35cac72f62f01",
+            "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+            "e:c6d9d225577d02c73e29519b9610d590504615913d90ea5ae00e07414e2df4aa",
+            "e:ada2e4f3e230688ebe9d2c8e13abfd371787d2d24eef9c7e6d1a000e68d5296b",
+            "e:82ee1333ef4c755bd9f20e8af05a920b80870aa92afd4e76ee68fb6973b78d2d",
+            "e:8612a3b0cc6abfc85fcac9ead889fb5fd906c6e98e0edd690d0964287a19266a",
+            "e:646e834d3b7fe3f065a6133635b7b1fe279acf06960eb97f983bcf48fcffdf6e",
+            "e:c8ad6ac62d3aae3822a2c85af0a7f8b3a6766881f497bda07f16981969c94609",
+            "e:29973bbacf12e50fa8ce02d9ee19897c1b183ef6f31b8614aba9202be768fd72",
+            "e:df7df057e79d9c2d47b981107d834c23329cd8ef6e30556858a4d0e23df369a6"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:eb0f55311d45fcce1374f95c881809f20a2cfa8044f453d3a29f45c91771821b",
+      "document_id": "W4230116451",
+      "head_id": "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+      "tail_id": "e:646e834d3b7fe3f065a6133635b7b1fe279acf06960eb97f983bcf48fcffdf6e",
+      "head_types": [
+        "METHOD"
+      ],
+      "tail_types": [
+        "RESULT"
+      ],
+      "relation_type": "EVALUATED_ON",
+      "confidence": 0.495157927274704,
+      "suspicious_type_hint": true,
+      "evidence": [
+        {
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "document_id": "W4230116451",
+          "start": 0,
+          "end": 791,
+          "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+          "entity_ids": [
+            "e:35d89c1e16e72b4dec6a364bccbf728449b09a896cd2cb95cf850388dea02fef",
+            "e:54f09db3e2d9e7264ffd3fe0c2ccaf4730d4bc539646f506ada5ba9e004f69a8",
+            "e:88a0ff4b02098968c3be76b57ae7809d3f4197d85ac375e42859569defddf1df",
+            "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a",
+            "e:dfa62891c45caaad0430a5ca197acdc26a2a74011e696e4de73f113b131d97a6",
+            "e:65e57b254ff4266e47ed2b19aee5b817fa1c1e26988c170926e6015f0f7e5fb1",
+            "e:ef0326aa41bb08767db52f38d4dd5da5c39dd6a13f6cb097563e4dd1099e0673",
+            "e:7bbf03cd5f65b3ab3ac311fa55cf82abe4c1a6da9215f14b07907d80cdd3e284",
+            "e:1089bf670c142b4a18644fcad47f9074e82420710e0858fbac9c55bf345fcca5",
+            "e:188f42404969746a895a746a7a0a916ef6d524480bd159a46bfc726b4dac7e5b",
+            "e:55f096f9222ef594500635ef0503900d77c3d7a538340168d68a5d3539f65bc5",
+            "e:a30d0fc39205514ef9aff67c50e6cb9dbb808c0b5876c9b14e741a891de870c3",
+            "e:114d9bd4197e9e8afa140239a2f43adecd5fdf4018a781d4887655ebdf8fb6c2",
+            "e:be1c5ea3c7e6475974dde138d69049694acfa353302341ffce8ddba375f96072",
+            "e:6fcaf54d0a22415d4769b35e20c116f59acde3596971391a10a35cac72f62f01",
+            "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+            "e:c6d9d225577d02c73e29519b9610d590504615913d90ea5ae00e07414e2df4aa",
+            "e:ada2e4f3e230688ebe9d2c8e13abfd371787d2d24eef9c7e6d1a000e68d5296b",
+            "e:82ee1333ef4c755bd9f20e8af05a920b80870aa92afd4e76ee68fb6973b78d2d",
+            "e:8612a3b0cc6abfc85fcac9ead889fb5fd906c6e98e0edd690d0964287a19266a",
+            "e:646e834d3b7fe3f065a6133635b7b1fe279acf06960eb97f983bcf48fcffdf6e",
+            "e:c8ad6ac62d3aae3822a2c85af0a7f8b3a6766881f497bda07f16981969c94609",
+            "e:29973bbacf12e50fa8ce02d9ee19897c1b183ef6f31b8614aba9202be768fd72",
+            "e:df7df057e79d9c2d47b981107d834c23329cd8ef6e30556858a4d0e23df369a6"
+          ]
+        }
+      ]
+    },
+    {
+      "triple_id": "t:fdbcf13df5e0b2adc1d0a1015ee17e111925d0f7779d129b27db771e987cdac9",
+      "document_id": "W4230116451",
+      "head_id": "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+      "tail_id": "e:c6d9d225577d02c73e29519b9610d590504615913d90ea5ae00e07414e2df4aa",
+      "head_types": [
+        "METHOD"
+      ],
+      "tail_types": [
+        "METHOD"
+      ],
+      "relation_type": "DERIVED_FROM",
+      "confidence": 0.7328805923461914,
+      "suspicious_type_hint": false,
+      "evidence": [
+        {
+          "window_id": "w:51d2decacd2a35bd158f7ab765dc969a252a14616486828640c867f395955db4",
+          "document_id": "W4230116451",
+          "start": 0,
+          "end": 791,
+          "text": "Recently, advanced computing systems are widely adopted in order to intensively elaborate a huge amount of biomedical data in the e-health field. An interesting challenge is to perform real-time diagnosis by means of complex computational environments. In this paper, we suggest to deal the most computationally expensive processing steps of a distributed cloud e-health system by the use of graphics processing units (GPUs). In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method. Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.",
+          "entity_ids": [
+            "e:35d89c1e16e72b4dec6a364bccbf728449b09a896cd2cb95cf850388dea02fef",
+            "e:54f09db3e2d9e7264ffd3fe0c2ccaf4730d4bc539646f506ada5ba9e004f69a8",
+            "e:88a0ff4b02098968c3be76b57ae7809d3f4197d85ac375e42859569defddf1df",
+            "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a",
+            "e:dfa62891c45caaad0430a5ca197acdc26a2a74011e696e4de73f113b131d97a6",
+            "e:65e57b254ff4266e47ed2b19aee5b817fa1c1e26988c170926e6015f0f7e5fb1",
+            "e:ef0326aa41bb08767db52f38d4dd5da5c39dd6a13f6cb097563e4dd1099e0673",
+            "e:7bbf03cd5f65b3ab3ac311fa55cf82abe4c1a6da9215f14b07907d80cdd3e284",
+            "e:1089bf670c142b4a18644fcad47f9074e82420710e0858fbac9c55bf345fcca5",
+            "e:188f42404969746a895a746a7a0a916ef6d524480bd159a46bfc726b4dac7e5b",
+            "e:55f096f9222ef594500635ef0503900d77c3d7a538340168d68a5d3539f65bc5",
+            "e:a30d0fc39205514ef9aff67c50e6cb9dbb808c0b5876c9b14e741a891de870c3",
+            "e:114d9bd4197e9e8afa140239a2f43adecd5fdf4018a781d4887655ebdf8fb6c2",
+            "e:be1c5ea3c7e6475974dde138d69049694acfa353302341ffce8ddba375f96072",
+            "e:6fcaf54d0a22415d4769b35e20c116f59acde3596971391a10a35cac72f62f01",
+            "e:27e15e284e263b61f72617bb18aac503418bbaf5b4d3c2c45c071ce56193616b",
+            "e:c6d9d225577d02c73e29519b9610d590504615913d90ea5ae00e07414e2df4aa",
+            "e:ada2e4f3e230688ebe9d2c8e13abfd371787d2d24eef9c7e6d1a000e68d5296b",
+            "e:82ee1333ef4c755bd9f20e8af05a920b80870aa92afd4e76ee68fb6973b78d2d",
+            "e:8612a3b0cc6abfc85fcac9ead889fb5fd906c6e98e0edd690d0964287a19266a",
+            "e:646e834d3b7fe3f065a6133635b7b1fe279acf06960eb97f983bcf48fcffdf6e",
+            "e:c8ad6ac62d3aae3822a2c85af0a7f8b3a6766881f497bda07f16981969c94609",
+            "e:29973bbacf12e50fa8ce02d9ee19897c1b183ef6f31b8614aba9202be768fd72",
+            "e:df7df057e79d9c2d47b981107d834c23329cd8ef6e30556858a4d0e23df369a6"
+          ]
+        }
+      ]
+    }
+  ],
+  "raw_relation_count": 15,
+  "seconds": 3.9983019998762757
+}

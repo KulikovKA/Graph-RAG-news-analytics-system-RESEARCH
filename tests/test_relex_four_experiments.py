@@ -38,6 +38,18 @@ def test_namespaces_are_disjoint(experiment):
     assert len({experiment.core.graph_key(ns, "same-document-span") for ns in namespaces}) == 4
 
 
+def test_threshold_namespace_isolated_and_routes_to_large(experiment):
+    namespace = experiment.resolve_namespace("e3", "large", "relex_large_t035")
+    assert experiment.core.namespace_variant(namespace) == "large"
+    assert experiment.core.graph_key(namespace, "node") != experiment.core.graph_key("relex_large", "node")
+
+
+@pytest.mark.parametrize("namespace", ["article-analysis-domain-v1", "relex_base_t035", "relex_joint_large_t035", "relex_large;DELETE", "relex_large_" + "x" * 64])
+def test_invalid_or_other_experiment_namespace_rejected(experiment, namespace):
+    with pytest.raises(ValueError):
+        experiment.resolve_namespace("e3", "large", namespace)
+
+
 def test_joint_preserves_native_types_and_window_offsets(experiment, source):
     document, window, native, relation = source
     native.append({**native[0], "label": "object", "score": .75})
@@ -81,7 +93,8 @@ def test_each_entrypoint_exposes_cli_without_running_models(script):
 
 
 @pytest.mark.parametrize("mode,variant", [(m, v) for m in ("e3", "joint") for v in ("base", "large")])
-def test_each_experiment_writes_and_resumes_without_model_reload(experiment, source, tmp_path, monkeypatch, mode, variant):
+@pytest.mark.parametrize("use_suffix", [False, True])
+def test_each_experiment_writes_and_resumes_without_model_reload(experiment, source, tmp_path, monkeypatch, mode, variant, use_suffix):
     document, window, native, relation = source
     documents = [document, {**document, "document_id": "D2"}]
     windows = [window, {**window, "document_id": "D2", "window_id": "w:2"}]
@@ -128,12 +141,16 @@ def test_each_experiment_writes_and_resumes_without_model_reload(experiment, sou
     monkeypatch.setattr(experiment, "execute_workers", execute_fake_workers)
     monkeypatch.setattr(experiment.core, "connect_neo4j", lambda *_: pytest.fail("No Neo4j connection allowed"))
     args = ["--inference-only", "--output", str(tmp_path)]
+    expected_namespace = experiment.experiment_namespace(mode, variant)
+    if use_suffix:
+        expected_namespace += "_t035"
+        args += ["--namespace", expected_namespace, "--relation-threshold", "0.35"]
     experiment.run(mode, variant, args)
     assert len(loads) == 2 and shards == [0, 1]
     assert bool(e3_calls) == (mode == "e3")
     config = json.loads((tmp_path / "experiment_config.json").read_text())
     summary = json.loads((tmp_path / "summary.json").read_text())
-    assert config["namespace"] == experiment.experiment_namespace(mode, variant)
+    assert config["namespace"] == expected_namespace
     assert summary["metrics"]["unique_triples"] == 2
     assert summary["metrics"]["entities"] == 4
     assert summary["metrics"]["workers"] == 2

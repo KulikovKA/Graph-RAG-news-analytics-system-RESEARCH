@@ -1,0 +1,65 @@
+{
+  "prior_graphs_unchanged": true,
+  "baseline_relations_retained": 72,
+  "baseline_relations_missing": 0,
+  "additional_relations": 498,
+  "cross_namespace_edges": 0,
+  "target_nodes": [
+    {
+      "labels": [
+        "RELEXDocument"
+      ],
+      "count": 30
+    },
+    {
+      "labels": [
+        "RELEXEntity"
+      ],
+      "count": 1211
+    }
+  ],
+  "target_edges": [
+    {
+      "type": "RELEX_MENTIONS",
+      "count": 1211
+    },
+    {
+      "type": "RELEX_REL",
+      "count": 570
+    }
+  ],
+  "threshold_curve": [
+    {
+      "threshold": "0.35",
+      "unique_relations": 570
+    },
+    {
+      "threshold": "0.40",
+      "unique_relations": 432
+    },
+    {
+      "threshold": "0.45",
+      "unique_relations": 320
+    },
+    {
+      "threshold": "0.50",
+      "unique_relations": 238
+    },
+    {
+      "threshold": "0.55",
+      "unique_relations": 184
+    },
+    {
+      "threshold": "0.60",
+      "unique_relations": 145
+    },
+    {
+      "threshold": "0.65",
+      "unique_relations": 105
+    },
+    {
+      "threshold": "0.70",
+      "unique_relations": 72
+    }
+  ]
+}
