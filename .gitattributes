@@ -1,3 +1,5 @@
 * text=auto eol=lf
 *.json -text
 *.jsonl -text
+reports/entity_resolution/relex_base_t035/semantic_resolution/model_comparison/candidate_pairs.csv filter=lfs diff=lfs merge=lfs -text
+reports/entity_resolution/relex_base_t035/semantic_resolution/candidate_verification/verified_pairs.csv filter=lfs diff=lfs merge=lfs -text
