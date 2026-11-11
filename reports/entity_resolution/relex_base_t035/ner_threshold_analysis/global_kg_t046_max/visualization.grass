@@ -1,0 +1,25 @@
+node.RELEXDocument {
+  color: #F6A5C0;
+  size: 55px;
+  caption: "{title}";
+}
+node.RELEXEntity {
+  color: #B7E84B;
+  size: 20px;
+  caption: "{name}";
+}
+relationship.RELEX_MENTIONS {
+  color: #CCCCCC;
+  width: 1px;
+  caption: "MENTIONS";
+}
+relationship.RELEX_REL {
+  color: #A86FC2;
+  width: 2px;
+  caption: "{relation_type}";
+}
+relationship.SIMILAR_TO {
+  color: #159FE0;
+  width: 3px;
+  caption: "{scope}";
+}

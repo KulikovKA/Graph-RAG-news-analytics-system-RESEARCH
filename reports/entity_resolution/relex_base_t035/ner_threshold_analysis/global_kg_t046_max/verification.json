@@ -1,0 +1,181 @@
+{
+  "namespace": "relex_sem_e5_small_name_t095_ner_t046_max",
+  "database": "neo4j",
+  "verified_at_moscow": "2026-11-11T16:26:48.197125+03:00",
+  "first_import": {
+    "nodes": 935,
+    "relationships": 2704
+  },
+  "repeated_import": {
+    "nodes": 0,
+    "relationships": 0
+  },
+  "connectivity": {
+    "entities": 905,
+    "isolated": 175,
+    "weak_components": 230,
+    "largest_component_vertices": 378,
+    "largest_component_documents": 17
+  },
+  "cypher_checks": [
+    {
+      "query": 1,
+      "rows": 1,
+      "notifications": 0
+    },
+    {
+      "query": 2,
+      "rows": 1,
+      "notifications": 0
+    },
+    {
+      "query": 3,
+      "rows": 20,
+      "notifications": 0
+    },
+    {
+      "query": 4,
+      "rows": 1,
+      "notifications": 0
+    },
+    {
+      "query": 5,
+      "rows": 1,
+      "notifications": 0
+    },
+    {
+      "query": 6,
+      "rows": 1,
+      "notifications": 0
+    },
+    {
+      "query": 7,
+      "rows": 10,
+      "notifications": 0
+    },
+    {
+      "query": 8,
+      "rows": 20,
+      "notifications": 0
+    },
+    {
+      "query": 9,
+      "rows": 10,
+      "notifications": 0
+    }
+  ],
+  "full_visualization_query_coverage": {
+    "nodes": 935,
+    "relationships": 2704
+  },
+  "outside_snapshot_before": {
+    "nodes": 10525,
+    "relationships": 18586,
+    "sha256": "a4081997ce381e78f269fb777de2e98bf65fffd1e9fdb6b119b4f313e4454c4e"
+  },
+  "outside_snapshot_after": {
+    "nodes": 10525,
+    "relationships": 18586,
+    "sha256": "a4081997ce381e78f269fb777de2e98bf65fffd1e9fdb6b119b4f313e4454c4e"
+  },
+  "outside_namespace_unchanged": true,
+  "local_protected_files_unchanged": true,
+  "source_sha256": {
+    "reports/entity_resolution/relex_base_t035/conservative_resolution/canonical_mapping.jsonl": "f97e8f920cf7cced3483caca39bdf87079f2b8a9c7d5240b812c886cc766c8b3",
+    "reports/entity_resolution/relex_base_t035/conservative_resolution/report.md": "d9ae051c9bb57019f215aa5db9ab74150c144358850324337460db4b3930f9cc",
+    "reports/entity_resolution/relex_base_t035/conservative_resolution/review_groups.csv": "6ea86012816fc3d04603fc61a778c6577351611fba91984611f2beacb060551b",
+    "reports/entity_resolution/relex_base_t035/cross_document_re/cross_document_relations.jsonl": "875ce53f7662ca0cef87203c0556686c075b17007f4dea5260f786704e9248f8",
+    "reports/entity_resolution/relex_base_t035/cross_document_re/graph_stats.cypher": "c302143127a446bdb423895ea9b4f6114b600bb99e6b28ed189f005a6bb98af6",
+    "reports/entity_resolution/relex_base_t035/cross_document_re/report.md": "c123dc6b52644f693436f4b86ea1fd50249ba123c79b37ec7cf67ad6eb0787f3",
+    "reports/entity_resolution/relex_base_t035/exact_matching_audit/ambiguous_groups.csv": "fdf596b77ed5e0fd063b52a64ee814da14675085d1520d4eb70e1606ce3e0795",
+    "reports/entity_resolution/relex_base_t035/exact_matching_audit/exact_groups.csv": "fda84b2faa3fddf13103f711ab1cf6bd04b86b802691b6d9d5c005b1583e0972",
+    "reports/entity_resolution/relex_base_t035/exact_matching_audit/exact_merge_preview.jsonl": "d68c01c9d72622a29deb3378079d6887641baef4f590a949bf2db9918bacd855",
+    "reports/entity_resolution/relex_base_t035/exact_matching_audit/report.md": "92158a6653b224524cbc231f04470465db3542771a6521187bda3863e84b595b",
+    "reports/entity_resolution/relex_base_t035/graph_comparison/report.md": "cff7dc986261ff26ed376ae309443291b1381fda3b349b53b6a6f4261815f14c",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/analysis.png": "6320fc258a75921db266cc7266a510f9ec748428dad063c241242f9bccfeb3d0",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/analysis.svg": "032c9f7df1710cd08e16367fe3e003fe72cfb422ebd49a6ad6b97413e0a3cfa0",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/analyze.py": "0bf1bdd8523f74ce8f1c891e396c50994e748c115fc9e2e3100843f3931fa59d",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/comparison.csv": "afd4f8f12229fe40586c1cf64bd9923b2e4a5bfc61ca84ce9ade0fdefb6f917c",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/components.csv": "2c612bfe4430ee55a34a62e1d73f74dd41e73b34febf8b5d020f4c7a6f0a0622",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/confidence_histogram.csv": "ea17541b5cec7421fb6d3c34b64491a8c76da64be47c68e0a759820585d511ba",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/distribution_summary.csv": "68fa5cda262b21d3879593a8a99fa670d82b0ea04afc369c8dbb7b63f51019c9",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/entity_confidences.csv": "5634689708386a931c9994bb5d6956a8efa57166182c36555f68f31e38719ee1",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/examples.csv": "d6242ec3344878ce98586d747621eebcf4c265446208a8fa9b2e4b9ae1fc8d4b",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/independent_validation.json": "254c021772975082bd8a911edbbd32e45fcd12a7be9a8e30597c33636e2a595d",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/metrics.json": "de11faab54174c4fd063f36055e7cb4d169927290e3308020e6c8bec28f24d8b",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/qualitative_review.csv": "2ecde0316bb276a13dd7435fcb7eda9ef766a25810148094b6647109800aa143",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/report.md": "90b6d269ce8249a04487645d3355edf12203674b589595ca61d75ad74bb8262c",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/retention_by_discipline.csv": "f4a9e2250d169c2c686184ca9cc895c330907175d020fffe5e33a54d7161bcdb",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/retention_by_document.csv": "fd5dd03c68a39d8944fec53d4c176ba2b25139b8a3e2738ef6b49250a5a5cfe4",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/retention_by_type.csv": "dd78657220c8bdb73af2575a29927443465afb2c454848c7a09470ee2191e084",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/source_entity_confidences.csv": "92c86e39fa7df06f4e637a60afa4d1a870303350bb487fcc8e6d8d50dc345b13",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/strategy_disagreements.csv": "ce597f2225481394c10b055231d32555258352d8bfb0306d61966ccd26f019e3",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/threshold_045_050/comparison.csv": "baeb64d8159d2899dd787122eafdf794bca23a18460b5818b374208f542fb752",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/threshold_045_050/components.csv": "027e8dddd22bf5dbbd9c54df29ebe9a8f0ef18b442648dc8285d75a9bbf23cd6",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/threshold_045_050/confidence_histogram.csv": "ea17541b5cec7421fb6d3c34b64491a8c76da64be47c68e0a759820585d511ba",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/threshold_045_050/cross_document_losses_047_048.csv": "c0faf4cb1ce467b340e6e91ccfffd355be86573c6c9b4db13de0daabf66e458e",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/threshold_045_050/distribution_summary.csv": "68fa5cda262b21d3879593a8a99fa670d82b0ea04afc369c8dbb7b63f51019c9",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/threshold_045_050/entity_confidences.csv": "5634689708386a931c9994bb5d6956a8efa57166182c36555f68f31e38719ee1",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/threshold_045_050/examples.csv": "c68a0f109541ec3e0ae858b8fbf624637ce906bf0bbac9de11da0ea7def03281",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/threshold_045_050/independent_validation.json": "1c8105910b58f672219ba45e2ece172d0fbcb4d4fe5890f8229ef74ddbdc324e",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/threshold_045_050/largest_component_split_047_048.csv": "cc625b38656d1bbca44ec71f069a8edf37db914157e847509bc6be023871d8a8",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/threshold_045_050/marginal_removed_entities.csv": "59d8a134a4c819dd7c2644801b5a6c734d21c589155b8237ce96042b256ac2c7",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/threshold_045_050/metrics.json": "398f3e4d1b626dd771e878a41aee8ff91ac8c31ed86de97aba3aeab02b46c776",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/threshold_045_050/qualitative_review.csv": "0aed8d2a0fccab868f40b2bb17cde8633c098b4471702578e0debd28b62255bc",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/threshold_045_050/report.md": "5e52d1aa657cb68296a1c37d3f7fd8d67122f15c24a3acdc5f89119c857e3bdd",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/threshold_045_050/retention_by_discipline.csv": "7c551a4017258c4089a95dbc5eda03732792e59d8c66145712f5aea1e2573691",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/threshold_045_050/retention_by_document.csv": "2fbaa508f344683fd769722e6bea798978b99c31be751bca46a53d983b8ecd74",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/threshold_045_050/retention_by_type.csv": "fd1045adea53051ddbe4f20ec6abc3fec989c55c9aa13d5808de2fa6acbcacb6",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/threshold_045_050/run.py": "35a19c90af30332e4de2276ec875f5eda4caceeda2dff0070333e1d9f6736537",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/threshold_045_050/source_entity_confidences.csv": "92c86e39fa7df06f4e637a60afa4d1a870303350bb487fcc8e6d8d50dc345b13",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/threshold_045_050/step_deltas.csv": "e7a8054b12d37dbe49f2384e139e5e3cee13cdd1c1415fe7f7800fe3b7a01228",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/threshold_045_050/strategy_disagreements.csv": "bd23d46ac5537916f888928077a8d3bdbe69092abc3914e370e645fc46d333ce",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/threshold_045_050/validation.json": "cead515c345be08810609938db8ba083da3478a439c120ffa6393d952c1b582c",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/threshold_045_050/virtual_subgraphs.jsonl": "19dd336366d7270568357b18c84afeb7715f3362ea0d938ea1dfd31184d68b01",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/threshold_045_050/write_report.py": "019831413612fb9a716626b99926969c7e81541651e3ceee27b5fa14195319cc",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/validation.json": "82792afe853c2e2be14122de32e1cc3cdb5649360c408f5a98453d4f380cb353",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/virtual_subgraphs.jsonl": "7dc6b6e4435d5fbe7985fdc0a6a06e666b7f2c4b8f6dd254af8e2c21e2fc8858",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/write_report.py": "9f02539c1dedded9baf78bdb795dd901999ade8ccfa823b2318977eddd86a11f",
+    "reports/entity_resolution/relex_base_t035/relation_remapping/canonical_relations.jsonl": "febcd7b9e717575bed79e3e1483402fdd81aae54b59d72b81d6b91582fccda6a",
+    "reports/entity_resolution/relex_base_t035/relation_remapping/remapped_relations.jsonl": "4b0ea8f647aed02a4b9a42a274d1e87611a2158fffe10cf3362f1d83884025c6",
+    "reports/entity_resolution/relex_base_t035/relation_remapping/report.md": "b760c94584a5f7dbf27bf410e88f678b1fba711292206f622c52ce1b69e546a4",
+    "reports/entity_resolution/relex_base_t035/semantic_resolution/candidate_verification/proposed_merge_rules.md": "38b22237a006cce27907a3ded4d2f5045d82b1f9a64d183f2e3718095c78a161",
+    "reports/entity_resolution/relex_base_t035/semantic_resolution/candidate_verification/report.md": "01753a6f060a9d7891f25e25a0ddb1441dc241b9257ebe6e9999c6f9e2cb17d1",
+    "reports/entity_resolution/relex_base_t035/semantic_resolution/candidate_verification/verified_pairs.csv": "b181f6466634f639ed9cde9c3a625ce2a7f26154b31bbfdecfabc96f93c49220",
+    "reports/entity_resolution/relex_base_t035/semantic_resolution/global_kg_import/graph_stats.cypher": "d537963eccb7d00cb688f1f2ba1c98fd09a41bfd0e6edd3dcc267b8e62d8a35d",
+    "reports/entity_resolution/relex_base_t035/semantic_resolution/global_kg_import/report.md": "fe172c301be66baadd0b2c42d14a55eb35b2a4a10199e72dc58fa11190a9481e",
+    "reports/entity_resolution/relex_base_t035/semantic_resolution/global_linking_preview/report.md": "b941a0080c70c0229d07e7538e240faf6c96b5718f027f9c806574a2999a1231",
+    "reports/entity_resolution/relex_base_t035/semantic_resolution/global_linking_preview/semantic_links.csv": "6a87703a6114b2e52c90bd3a69f7f475ef68f8f26a5c9dd5ee3ed380d5570cc1",
+    "reports/entity_resolution/relex_base_t035/semantic_resolution/input/canonical_entities.jsonl": "34fe3fd42e110b5b7a8b054360eee2a6182c67782e7afa54d2298e0491bf9151",
+    "reports/entity_resolution/relex_base_t035/semantic_resolution/input/report.md": "bd99b9d37b9461fcf932ff37428d1cbefb0d7fabb2b40977ae73430a212714dc",
+    "reports/entity_resolution/relex_base_t035/semantic_resolution/model_comparison/candidate_pairs.csv": "5b5101945ce513243d3a28969b77425c4e1549a96bb31bb616546727d815ae2f",
+    "reports/entity_resolution/relex_base_t035/semantic_resolution/model_comparison/model_comparison.csv": "e89fa1b0d133f33c0710b6bf595e1bbddc7fcc6c21d77bc2c9c222bf454aac6c",
+    "reports/entity_resolution/relex_base_t035/semantic_resolution/model_comparison/report.md": "40f5f0d7d5b0100a02c83b774430ec6538b99e3fde668c030f75c43c81a881bc",
+    "reports/entity_resolution/relex_base_t035/semantic_resolution/threshold_sweep/report.md": "68d301a45cdb24334fc189e4253a455995a01966eaf718d425a33386fbe9f017",
+    "reports/entity_resolution/relex_base_t035/semantic_resolution/threshold_sweep/threshold_results.csv": "f3a26801a3a505355043111cdab8bb9d99a544ea49ee59324dcbe5ccf0200f2a",
+    "reports/ner_v2/research_run2/input_abstracts.jsonl": "684ca3a758a128c6382ab924f5c131f0e27faa9f7625b431ae0d6db975e543b1",
+    "scripts/build_relex_graphs.py": "52bba8372b64abc660acff82a47987e752f9f2caa85a618f7cddea52b046ab85",
+    "scripts/import_global_semantic_graph.py": "c996185dfe1ff3bfbf1e2c28cc670a1e96bdb99d194103fb4cd4e1665be86824",
+    "scripts/import_ner_filtered_global_graph.py": "6aeb8a617f766d226119a055ac87b14860aee9fdec81d5882ebe4e6eed147718"
+  },
+  "neo4j_version": [
+    {
+      "name": "Neo4j Kernel",
+      "versions": [
+        "2026.08.1"
+      ],
+      "edition": "community"
+    },
+    {
+      "name": "Cypher",
+      "versions": [
+        "5",
+        "25"
+      ],
+      "edition": ""
+    }
+  ],
+  "models_launched": false,
+  "entity_merge_performed": false,
+  "cosine_recomputed": false
+}

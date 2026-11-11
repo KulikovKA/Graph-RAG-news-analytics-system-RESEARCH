@@ -1,0 +1,38 @@
+{
+  "stage": "NER-filtered-Global-KG-v1",
+  "namespace": "relex_sem_e5_small_name_t095_ner_t046_max",
+  "baseline_namespace": "relex_sem_e5_small_name_t095",
+  "ner_entity_threshold": 0.46,
+  "ner_entity_confidence_strategy": "max_member",
+  "semantic_model": "intfloat/e5-small-v2",
+  "semantic_mode": "text_name",
+  "semantic_threshold": 0.95,
+  "inputs": {
+    "reports/ner_v2/research_run2/input_abstracts.jsonl": "684ca3a758a128c6382ab924f5c131f0e27faa9f7625b431ae0d6db975e543b1",
+    "reports/entity_resolution/relex_base_t035/semantic_resolution/input/canonical_entities.jsonl": "34fe3fd42e110b5b7a8b054360eee2a6182c67782e7afa54d2298e0491bf9151",
+    "reports/entity_resolution/relex_base_t035/relation_remapping/canonical_relations.jsonl": "febcd7b9e717575bed79e3e1483402fdd81aae54b59d72b81d6b91582fccda6a",
+    "reports/entity_resolution/relex_base_t035/semantic_resolution/global_linking_preview/semantic_links.csv": "6a87703a6114b2e52c90bd3a69f7f475ef68f8f26a5c9dd5ee3ed380d5570cc1",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/threshold_045_050/comparison.csv": "baeb64d8159d2899dd787122eafdf794bca23a18460b5818b374208f542fb752",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/threshold_045_050/virtual_subgraphs.jsonl": "19dd336366d7270568357b18c84afeb7715f3362ea0d938ea1dfd31184d68b01"
+  },
+  "fingerprint": "dd36a0f38729c87cf609a82dbb56cf7dd9fdedbef909d693ae2bb4bec7ee29a9",
+  "expected_connectivity": {
+    "entities": 905,
+    "isolated": 175,
+    "weak_components": 230,
+    "largest_component_vertices": 378,
+    "largest_component_documents": 17
+  },
+  "counts": {
+    "documents": 30,
+    "entities": 905,
+    "removed_entities": 217,
+    "relex_rel": 1307,
+    "similar_to": 492,
+    "cross_document_links": 121,
+    "within_document_links": 371,
+    "mentions": 905,
+    "total_nodes": 935,
+    "total_relationships": 2704
+  }
+}
