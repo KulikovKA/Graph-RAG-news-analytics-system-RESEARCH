@@ -1,0 +1,12 @@
+{
+  "initial_creation_confirmed": {
+    "nodes": 873,
+    "relationships": 2728
+  },
+  "initial_full_readback_passed": true,
+  "initial_provenance_restoration_passed": true,
+  "failed_stage": "НАЧИНАЮ ИМПОРТ GLOBAL KG В NEO4J — ПРОХОД 2",
+  "error": "{neo4j_code: Neo.TransientError.General.MemoryPoolOutOfMemoryError} {message: The allocation of an extra 2.0 MiB would use more than the limit 716.8 MiB. Currently using 716.0 MiB. dbms.memory.transaction.total.max threshold reached} {gql_status: 51N72} {gql_status_description: error: system configuration or operation exception - memory pool out of memory. Failed to allocate memory in a memory pool. See dbms.memory.transaction.total.max in the neo4j.conf file.}",
+  "remedy": "Exact fingerprint/count/property/endpoint verification and read-only no-op on repeated imports; no memory-limit change",
+  "verification_counters_describe_final_recovery_run": true
+}

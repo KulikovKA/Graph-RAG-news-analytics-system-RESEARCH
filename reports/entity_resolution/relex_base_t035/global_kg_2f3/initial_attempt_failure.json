@@ -1,0 +1,7 @@
+{
+  "stage": "НАЧИНАЮ ИМПОРТ GLOBAL KG В NEO4J — ПРОХОД 2",
+  "last_successfully_processed_batch": "PASS 2, HAS_SHARED_CONCEPT, 101..118/118",
+  "exception_type": "TransientError",
+  "message": "{neo4j_code: Neo.TransientError.General.MemoryPoolOutOfMemoryError} {message: The allocation of an extra 2.0 MiB would use more than the limit 716.8 MiB. Currently using 716.0 MiB. dbms.memory.transaction.total.max threshold reached} {gql_status: 51N72} {gql_status_description: error: system configuration or operation exception - memory pool out of memory. Failed to allocate memory in a memory pool. See dbms.memory.transaction.total.max in the neo4j.conf file.}",
+  "import_transaction_committed": true
+}
