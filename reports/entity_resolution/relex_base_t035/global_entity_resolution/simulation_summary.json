@@ -1,0 +1,109 @@
+{
+  "namespace": "relex_sem_e5_small_name_t095_ner_t046_max",
+  "baseline_documents": 30,
+  "baseline_entities": 905,
+  "baseline_facts": 1307,
+  "baseline_similar_to": 492,
+  "duplicate_audit": {
+    "duplicate_groups": 96,
+    "vertices_in_duplicate_groups": 259,
+    "exact_name_similar_to": 349,
+    "cross_document_exact_name_similar_to": 91
+  },
+  "reviewed_exact_groups": 96,
+  "candidate_pair_count": 593,
+  "candidate_decisions": {
+    "MERGE": 126,
+    "REVIEW": 79,
+    "RELATED": 97,
+    "REJECT": 51,
+    "SHARED_CONCEPT": 240
+  },
+  "merge_groups": 69,
+  "merge_members": 163,
+  "eliminated_vertices": 94,
+  "contextual_vertices_after_merge": 811,
+  "concept_nodes": 32,
+  "total_vertices_with_concepts": 843,
+  "cross_document_merge_groups": 0,
+  "merge_groups_with_type_set_conflict": 18,
+  "merge_groups_with_multitype": 15,
+  "exact_groups_with_type_set_conflict": 28,
+  "exact_groups_with_multitype": 29,
+  "facts": {
+    "original_records": 1307,
+    "unique_structural_relations": 1076,
+    "parallel_structural_groups": 164,
+    "parallel_record_excess": 231,
+    "original_self_loop_records": 12,
+    "self_loop_records_after_merge": 39,
+    "original_raw_relation_count": 1490,
+    "original_raw_relation_ids": 1490,
+    "new_loop_records": 27,
+    "unique_self_loop_structures": 26,
+    "merge_groups_creating_loops": 14
+  },
+  "semantic_statuses": {
+    "review_pending": 70,
+    "identity_redundant": 72,
+    "replaceable_by_concept_path": 233,
+    "related_retained": 80,
+    "rejected_candidate": 37
+  },
+  "exact_name_semantic_statuses": {
+    "identity_redundant": 49,
+    "replaceable_by_concept_path": 205,
+    "rejected_candidate": 27,
+    "review_pending": 42,
+    "related_retained": 26
+  },
+  "cross_document_semantic_decisions": {
+    "SHARED_CONCEPT": 77,
+    "REJECT": 30,
+    "RELATED": 13,
+    "REVIEW": 1
+  },
+  "cross_document_supported_existing_transitions": 90,
+  "cross_document_supported_exact_transitions": 66,
+  "cross_document_factual_relations_after_merge": 0,
+  "concept_links": 118,
+  "concepts_spanning_documents": 3,
+  "retained_display_similar_to": 150,
+  "connectivity": {
+    "baseline": {
+      "vertices": 905,
+      "isolated_vertices": 175,
+      "weak_components": 230,
+      "largest_component_vertices": 378,
+      "largest_component_documents": 17
+    },
+    "merge_only_lossless": {
+      "vertices": 811,
+      "isolated_vertices": 172,
+      "weak_components": 225,
+      "largest_component_vertices": 346,
+      "largest_component_documents": 17
+    },
+    "merge_plus_concepts_lossless_similar_to": {
+      "vertices": 843,
+      "isolated_vertices": 172,
+      "weak_components": 223,
+      "largest_component_vertices": 369,
+      "largest_component_documents": 17
+    },
+    "proposed_display": {
+      "vertices": 843,
+      "isolated_vertices": 181,
+      "weak_components": 239,
+      "largest_component_vertices": 132,
+      "largest_component_documents": 5
+    }
+  },
+  "unknown_nonexact_pair_reviews": [],
+  "source_entities_covered": 993,
+  "source_mentions_covered": 1101,
+  "candidate_entities_covered": 463,
+  "within_document_repetition_groups": 87,
+  "cross_document_repetition_groups": 11,
+  "exact_name_redundant_identity_or_concept": 254
+}

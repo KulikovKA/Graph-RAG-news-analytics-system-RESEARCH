@@ -1,0 +1,20 @@
+{
+  "namespace": "relex_sem_e5_small_name_t095_ner_t046_max",
+  "database": "neo4j",
+  "documents": 30,
+  "entities": 905,
+  "relationship_counts": {
+    "RELEX_REL": 1307,
+    "RELEX_MENTIONS": 905,
+    "SIMILAR_TO": 492
+  },
+  "source_properties_and_provenance_exact": true,
+  "snapshot_sha256": "2ca5debfb9db9678a0b357d9cbe3502adecf727612efeeaa28b61a0ab224a7cc",
+  "access_mode": "READ",
+  "contains_updates": false,
+  "queries": [
+    "MATCH nodes RETURN properties",
+    "MATCH relationships RETURN properties"
+  ],
+  "same_snapshot_before_after_analysis": true
+}

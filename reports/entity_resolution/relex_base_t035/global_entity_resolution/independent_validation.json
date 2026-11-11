@@ -1,0 +1,41 @@
+{
+  "algorithm": "disjoint_set_union",
+  "all_four_connectivity_views_match": {
+    "baseline": {
+      "vertices": 905,
+      "isolated_vertices": 175,
+      "weak_components": 230,
+      "largest_component_vertices": 378,
+      "largest_component_documents": 17
+    },
+    "merge_only_lossless": {
+      "vertices": 811,
+      "isolated_vertices": 172,
+      "weak_components": 225,
+      "largest_component_vertices": 346,
+      "largest_component_documents": 17
+    },
+    "merge_plus_concepts_lossless_similar_to": {
+      "vertices": 843,
+      "isolated_vertices": 172,
+      "weak_components": 223,
+      "largest_component_vertices": 369,
+      "largest_component_documents": 17
+    },
+    "proposed_display": {
+      "vertices": 843,
+      "isolated_vertices": 181,
+      "weak_components": 239,
+      "largest_component_vertices": 132,
+      "largest_component_documents": 5
+    }
+  },
+  "all_merge_cliques_complete": true,
+  "no_negative_or_review_pair_merged": true,
+  "all_905_original_entity_objects_restorable": true,
+  "all_1307_factual_objects_restorable": true,
+  "all_492_semantic_objects_restorable": true,
+  "original_raw_relations": 1490,
+  "no_fact_inheritance_by_concepts": true,
+  "source_files_and_prior_reports_unchanged": true
+}

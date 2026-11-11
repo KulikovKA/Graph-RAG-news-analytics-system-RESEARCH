@@ -1,0 +1,32 @@
+{
+  "namespace": "relex_sem_e5_small_name_t095_ner_t046_max",
+  "counts": {
+    "documents": 30,
+    "entities": 905,
+    "relex_rel": 1307,
+    "similar_to": 492,
+    "cross_document_similar_to": 121
+  },
+  "connectivity": {
+    "entities": 905,
+    "isolated": 175,
+    "weak_components": 230,
+    "largest_component_vertices": 378,
+    "largest_component_documents": 17
+  },
+  "duplicate_audit": {
+    "duplicate_groups": 96,
+    "vertices_in_duplicate_groups": 259,
+    "exact_name_similar_to": 349,
+    "cross_document_exact_name_similar_to": 91
+  },
+  "sources": {
+    "reports/entity_resolution/relex_base_t035/semantic_resolution/input/canonical_entities.jsonl": "34fe3fd42e110b5b7a8b054360eee2a6182c67782e7afa54d2298e0491bf9151",
+    "reports/entity_resolution/relex_base_t035/relation_remapping/canonical_relations.jsonl": "febcd7b9e717575bed79e3e1483402fdd81aae54b59d72b81d6b91582fccda6a",
+    "reports/entity_resolution/relex_base_t035/semantic_resolution/global_linking_preview/semantic_links.csv": "6a87703a6114b2e52c90bd3a69f7f475ef68f8f26a5c9dd5ee3ed380d5570cc1",
+    "reports/ner_v2/research_run2/input_abstracts.jsonl": "684ca3a758a128c6382ab924f5c131f0e27faa9f7625b431ae0d6db975e543b1",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/global_kg_t046_max/membership.json": "3cf4770b13dc225e0c6effc016d8e02ca5196483303cf8e4f6524aac448e338d",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/global_kg_t046_max/manifest.json": "a47b9b77b69d4ba80e6f5cbab3b6302f020ad4962149ee22693e11f6848e4bfa",
+    "reports/entity_resolution/relex_base_t035/semantic_resolution/candidate_verification/verified_pairs.csv": "b181f6466634f639ed9cde9c3a625ce2a7f26154b31bbfdecfabc96f93c49220"
+  }
+}

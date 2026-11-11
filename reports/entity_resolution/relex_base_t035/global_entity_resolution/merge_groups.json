@@ -1,0 +1,2714 @@
+[
+  {
+    "merge_group_id": "M001",
+    "referent_level": "document_characteristic",
+    "reason": "Mammographic density (MD) определено в начале того же документа; последующие MD обозначают эту характеристику, не отдельные значения измерений.",
+    "proposed_primary_type": "CONCEPT",
+    "representative_id": "e:beabc1568b9224e3f85f9fdef8c3fab88c0a382a0a630faf4e86a2aa2fe0bdec",
+    "representative_alias": "N001",
+    "member_aliases": [
+      "N001",
+      "N006"
+    ],
+    "member_canonical_ids": [
+      "e:beabc1568b9224e3f85f9fdef8c3fab88c0a382a0a630faf4e86a2aa2fe0bdec",
+      "e:5696e2bf6ff48479755a4db2df06a4a3dd7be680ce2cb67a8f33faef607c6406"
+    ],
+    "source_entity_ids": [
+      "e:5696e2bf6ff48479755a4db2df06a4a3dd7be680ce2cb67a8f33faef607c6406",
+      "e:7d259627b34d719295da77b1e51e02511a2ecffa212a289ac95d40d5d80b9636",
+      "e:beabc1568b9224e3f85f9fdef8c3fab88c0a382a0a630faf4e86a2aa2fe0bdec"
+    ],
+    "source_mention_ids": [
+      "m:25bedf479c6b80ecd1ec508371589820d1508bca684711384feeed1b1b37132b",
+      "m:45ccaa98f80ac536df47f1b7839d5b4431f614d644673054c9a774ac727a05d7",
+      "m:9b38d419bc96d040649855fa22a82f27c98e1b843db3733b472fd26edbadb8d2"
+    ],
+    "document_id": "W1979727947",
+    "original_type_sets": {
+      "N001": [
+        "CONCEPT"
+      ],
+      "N006": [
+        "CONCEPT"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M002",
+    "referent_level": "statistic_definition",
+    "reason": "Явное определение Pearson product-moment correlation coefficient (r) в одном выражении; наблюдаемое r=0.884 исключено.",
+    "proposed_primary_type": "ATTRIBUTE",
+    "representative_id": "e:9385937fb3b8f4a1a8027764002ec59ee02f2b838af0568ff4a664ed2d5043a1",
+    "representative_alias": "N015",
+    "member_aliases": [
+      "N015",
+      "N016"
+    ],
+    "member_canonical_ids": [
+      "e:9385937fb3b8f4a1a8027764002ec59ee02f2b838af0568ff4a664ed2d5043a1",
+      "e:b3bc6cd6ab1be4660b50f13d68524bf3a2f73c133bce102657731eab7672ed10"
+    ],
+    "source_entity_ids": [
+      "e:9385937fb3b8f4a1a8027764002ec59ee02f2b838af0568ff4a664ed2d5043a1",
+      "e:b3bc6cd6ab1be4660b50f13d68524bf3a2f73c133bce102657731eab7672ed10"
+    ],
+    "source_mention_ids": [
+      "m:f96696c5cc7bebe85c623c1ed6919993e359859e9544bb0034e1083182687b8c",
+      "m:ffb6903603b598e1549d11828228e649917ebd4d8e4bff9e476ace1e8fce3c11"
+    ],
+    "document_id": "W1979727947",
+    "original_type_sets": {
+      "N015": [
+        "ATTRIBUTE"
+      ],
+      "N016": [
+        "ATTRIBUTE"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M003",
+    "referent_level": "seven_genome_set",
+    "reason": "The seven genomes и their genomes относятся к семи явно перечисленным геномам; подмножество Thalassiosirales исключено.",
+    "proposed_primary_type": "OBJECT",
+    "representative_id": "e:ae7309627cc710937c27fe51a3e3357e8028f71b98e4174c2a6fef26a5b41290",
+    "representative_alias": "N050",
+    "member_aliases": [
+      "N050",
+      "N051"
+    ],
+    "member_canonical_ids": [
+      "e:ae7309627cc710937c27fe51a3e3357e8028f71b98e4174c2a6fef26a5b41290",
+      "e:92bdde59e71e335892d5cea3e7c9dfb56ca960860a4a7ad06627676eafaa40c9"
+    ],
+    "source_entity_ids": [
+      "e:92bdde59e71e335892d5cea3e7c9dfb56ca960860a4a7ad06627676eafaa40c9",
+      "e:ae7309627cc710937c27fe51a3e3357e8028f71b98e4174c2a6fef26a5b41290",
+      "e:d2b50641e9c6358042072c429fcf76fa1d646c361d1ccc67d13f70cb58d808a8"
+    ],
+    "source_mention_ids": [
+      "m:1f61d5aa25d60bae6480763b50c65a5d7e6d59886a622da3cf64feb5ef7e1596",
+      "m:4ec4d8c4bb1ec2544f8fd4adc1b6f47c6b38cad06d6b07a7afea5183a4045877",
+      "m:bcc564abad76b2463a8311f94a2f79ea77eec8104b084d9a63b5c4db8cb145e7"
+    ],
+    "document_id": "W1995028339",
+    "original_type_sets": {
+      "N050": [
+        "OBJECT"
+      ],
+      "N051": [
+        "OBJECT"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M004",
+    "referent_level": "named_molecular_kind",
+    "reason": "pannexin 1 (Px1) задано явно; Px1 в Px1 HCs обозначает тот же именованный компонент, не самостоятельного ACTOR.",
+    "proposed_primary_type": "OBJECT",
+    "representative_id": "e:9fca63b7dd12b6a016e8d54fa6ce2b735d0fb60ca0072ea166a20c489edfddda",
+    "representative_alias": "N083",
+    "member_aliases": [
+      "N083",
+      "N111"
+    ],
+    "member_canonical_ids": [
+      "e:9fca63b7dd12b6a016e8d54fa6ce2b735d0fb60ca0072ea166a20c489edfddda",
+      "e:e60ca7f68a948790bb9d85f5d13a3adefe0b787becc30d24082832112aad5d85"
+    ],
+    "source_entity_ids": [
+      "e:9fca63b7dd12b6a016e8d54fa6ce2b735d0fb60ca0072ea166a20c489edfddda",
+      "e:e60ca7f68a948790bb9d85f5d13a3adefe0b787becc30d24082832112aad5d85"
+    ],
+    "source_mention_ids": [
+      "m:562991c6ee4594e7496f3ad33a77a968a4bdeb333bb93c7b9d0a7ebad5601895",
+      "m:cbb4256f77b15261f22646f4fb8bcca24c24232d531ad8638ddc2a7947608d5f"
+    ],
+    "document_id": "W2039836112",
+    "original_type_sets": {
+      "N083": [
+        "CONCEPT"
+      ],
+      "N111": [
+        "ACTOR"
+      ]
+    },
+    "type_set_conflict": true,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M005",
+    "referent_level": "named_molecular_kind",
+    "reason": "Явное Fibroblast growth factor 1 (FGF-1); все участники обозначают именованный фактор. Условия 2h/7h/до/после блокера сохраняются в исходных фактах и контекстах.",
+    "proposed_primary_type": "OBJECT",
+    "representative_id": "e:305a23924d5ae6bc95d112972f4ff88d80fecf25a2f90a9bec1ea0c15d751c01",
+    "representative_alias": "N085",
+    "member_aliases": [
+      "N085",
+      "N108",
+      "N113",
+      "N117"
+    ],
+    "member_canonical_ids": [
+      "e:305a23924d5ae6bc95d112972f4ff88d80fecf25a2f90a9bec1ea0c15d751c01",
+      "e:99a9fa5da229ceafc34a9a3f5793eff27f6d5c099f157382bf3ac3fe3b55bb83",
+      "e:e13a311a5f8c6545810352e36ce5166da334a6d9416ccd5fd95f32675d003aed",
+      "e:1d185c7ef97117d019c662ffed6f4d8baef8a2d3631ed546bac5c935ed2b0ff1"
+    ],
+    "source_entity_ids": [
+      "e:1d185c7ef97117d019c662ffed6f4d8baef8a2d3631ed546bac5c935ed2b0ff1",
+      "e:305a23924d5ae6bc95d112972f4ff88d80fecf25a2f90a9bec1ea0c15d751c01",
+      "e:54419ebf819b9bd9af85b4dbe058a4b2d6d9b96160a24982d30cfa1156c8178f",
+      "e:99a9fa5da229ceafc34a9a3f5793eff27f6d5c099f157382bf3ac3fe3b55bb83",
+      "e:e13a311a5f8c6545810352e36ce5166da334a6d9416ccd5fd95f32675d003aed"
+    ],
+    "source_mention_ids": [
+      "m:02b7b6d29ad315ae92827d72d49ce65ef4d29f330d278ab7683b696a92d7e86d",
+      "m:3759b4667a3ada5bdf3dcaf86caa83c0f9e76f615aac3816557ed9046a0d6094",
+      "m:522b86a5986827f103c0e2446c51ad1952f9ca72f1b837ea6e94866cbf3be07b",
+      "m:5c8d280fdd5df3975b34aca6bf6f28fb11edd7348bd2b9c159c3b8d393c8a4c6",
+      "m:887fce5e937406db7b9744c0b081f3b000aa9c206a33542d82f1fb8763446ca8",
+      "m:9919e06eaa0c51ee2ab94db48c773e36faa23a220dcb0376f4d5d2309b8b73d4",
+      "m:aca047cbd3035282fdb04752b3827bab54414b4017d200ba87d6541bcfafcfee"
+    ],
+    "document_id": "W2039836112",
+    "original_type_sets": {
+      "N085": [
+        "CONCEPT",
+        "OBJECT"
+      ],
+      "N108": [
+        "ATTRIBUTE"
+      ],
+      "N113": [
+        "ACTOR",
+        "ATTRIBUTE"
+      ],
+      "N117": [
+        "ACTOR"
+      ]
+    },
+    "type_set_conflict": true,
+    "original_multitype": true
+  },
+  {
+    "merge_group_id": "M006",
+    "referent_level": "named_molecular_kind",
+    "reason": "Один ATP как именованный химический вид в описанном механизме. MERGE не утверждает тождество endogenous/reagent molecules или отдельных ATP pools.",
+    "proposed_primary_type": "OBJECT",
+    "representative_id": "e:7b9c8188b695137024fa8383b97def7856148fbdc1cf8bb34e6d9c72c7c562cc",
+    "representative_alias": "N089",
+    "member_aliases": [
+      "N089",
+      "N106",
+      "N109"
+    ],
+    "member_canonical_ids": [
+      "e:7b9c8188b695137024fa8383b97def7856148fbdc1cf8bb34e6d9c72c7c562cc",
+      "e:1339994efd3ff4a7f1910e163cf4cd689fc1eb368f522505de9fed6aa55a1ce8",
+      "e:c741550b3929c89af1b6670601e7c2be9fd8a2200ec702b1d1193e7d00827c3f"
+    ],
+    "source_entity_ids": [
+      "e:1339994efd3ff4a7f1910e163cf4cd689fc1eb368f522505de9fed6aa55a1ce8",
+      "e:7b9c8188b695137024fa8383b97def7856148fbdc1cf8bb34e6d9c72c7c562cc",
+      "e:c741550b3929c89af1b6670601e7c2be9fd8a2200ec702b1d1193e7d00827c3f",
+      "e:e135abd188516c94104f7111ae6e0d0f0995b15b6856d86db50b4ff27cefa815"
+    ],
+    "source_mention_ids": [
+      "m:1df9af561a024b9d61a23a3cd3e9330efba60f0eb5f1de14c0aeba2fe29440fd",
+      "m:2f09020ea79a524bc6a810369a10d07c259a15c515b420b603bd5d08ce6522f9",
+      "m:7f4d6b6a14d5931ad7c22cfa705858262e51bc8faec2f1ee1272ebe387c78295",
+      "m:ad0431b398a5bbe1a2bd6250e0aa924153811c17849ffeed966a4f9df6d0eb01"
+    ],
+    "document_id": "W2039836112",
+    "original_type_sets": {
+      "N089": [
+        "OBJECT"
+      ],
+      "N106": [
+        "ATTRIBUTE"
+      ],
+      "N109": [
+        "ATTRIBUTE"
+      ]
+    },
+    "type_set_conflict": true,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M007",
+    "referent_level": "two_mouse_model_set",
+    "reason": "Оба вложенных span находятся в In our lab we established two inbred mouse models; это один явно заданный набор двух моделей.",
+    "proposed_primary_type": "OBJECT",
+    "representative_id": "e:2fc97458d4df33f694feb04a72fd87a5f794568387147af76640aa314acb8d27",
+    "representative_alias": "N127",
+    "member_aliases": [
+      "N127",
+      "N128"
+    ],
+    "member_canonical_ids": [
+      "e:2fc97458d4df33f694feb04a72fd87a5f794568387147af76640aa314acb8d27",
+      "e:040e110e1a3a18f6e474c4b7310d3bcae9ed41e60574da90d64883b5ebafc895"
+    ],
+    "source_entity_ids": [
+      "e:040e110e1a3a18f6e474c4b7310d3bcae9ed41e60574da90d64883b5ebafc895",
+      "e:2fc97458d4df33f694feb04a72fd87a5f794568387147af76640aa314acb8d27"
+    ],
+    "source_mention_ids": [
+      "m:64bfcf2874620be2c1df0c53de6611616d5614479d6b16234575258e7e945caa",
+      "m:ad031b0dbd54f8240e6976f8a6b6e021e25d7b43c423f5f1f47bb0b1523ef91c"
+    ],
+    "document_id": "W2076293586",
+    "original_type_sets": {
+      "N127": [
+        "OBJECT"
+      ],
+      "N128": [
+        "OBJECT"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M008",
+    "referent_level": "variant_class",
+    "reason": "Явное copy number variants (CNVs) задаёт имя класса; найденные конкретные regions/these CNVs не включены.",
+    "proposed_primary_type": "CONCEPT",
+    "representative_id": "e:9fd95042d28a2349c73e84fa1f27cc933f6acfd5c816f2210b1d02f6913b6add",
+    "representative_alias": "N141",
+    "member_aliases": [
+      "N141",
+      "N142"
+    ],
+    "member_canonical_ids": [
+      "e:9fd95042d28a2349c73e84fa1f27cc933f6acfd5c816f2210b1d02f6913b6add",
+      "e:98d78509b483bd8f064a0dc1eacf842d1c7f7cd7644b00d6144f161874f73ebb"
+    ],
+    "source_entity_ids": [
+      "e:98d78509b483bd8f064a0dc1eacf842d1c7f7cd7644b00d6144f161874f73ebb",
+      "e:9fd95042d28a2349c73e84fa1f27cc933f6acfd5c816f2210b1d02f6913b6add"
+    ],
+    "source_mention_ids": [
+      "m:43b5330925e1f33f1360fa48ba11c3459652f8d1a55380e52fe58a465d2f4ee3",
+      "m:97c127d0de7318afae1fe5dbc088a1d671265f85bf880ec1b885c9fa9b94d7a2"
+    ],
+    "document_id": "W2076293586",
+    "original_type_sets": {
+      "N141": [
+        "CONCEPT"
+      ],
+      "N142": [
+        "CONCEPT"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M009",
+    "referent_level": "named_framework",
+    "reason": "Все ERM относятся к одной обсуждаемой системе с members, sustainability и disruption в одной статье. Расшифровка вне текста не домысливается.",
+    "proposed_primary_type": null,
+    "representative_id": "e:f2de79a28aef5e6fd50b92994e7eb3745a6570802f1975c032c065430af120e7",
+    "representative_alias": "N166",
+    "member_aliases": [
+      "N166",
+      "N187",
+      "N188",
+      "N197"
+    ],
+    "member_canonical_ids": [
+      "e:f2de79a28aef5e6fd50b92994e7eb3745a6570802f1975c032c065430af120e7",
+      "e:4940506f122a0465c0495725e1e30b5076f4239d331b5dcf8ebf209b8fa4de2e",
+      "e:fee19c3c7810dec2660fc94c6acaeefaa706c5af4c0e51f41f8eeea5e06c9132",
+      "e:f402c755282a6ad0a72c69185f1e9ce0cf51aa4a107f3841b5040ad4314fe550"
+    ],
+    "source_entity_ids": [
+      "e:4940506f122a0465c0495725e1e30b5076f4239d331b5dcf8ebf209b8fa4de2e",
+      "e:f2de79a28aef5e6fd50b92994e7eb3745a6570802f1975c032c065430af120e7",
+      "e:f402c755282a6ad0a72c69185f1e9ce0cf51aa4a107f3841b5040ad4314fe550",
+      "e:fee19c3c7810dec2660fc94c6acaeefaa706c5af4c0e51f41f8eeea5e06c9132"
+    ],
+    "source_mention_ids": [
+      "m:122f8f6f5d6fbf1530a4a7ce4eefebd885170d76d2f2b260f4ba936088d564b6",
+      "m:125d2ff1496c2ee02ba99f1ad6efa80dfbddeb6d1bf0fdbdbe452059db9ee905",
+      "m:16be0f151856e4195ee33336cbd3b8b7b7670454c4c6dff29b10d27862e9b997",
+      "m:34dbff67646ec2ef71e10704a7430b04caa115c97cb945c13dc8e5626f899990",
+      "m:3e25a92b39757b8c38056d46d61203bdd7af585f85e8948852916ca48affba0c",
+      "m:c8a1292cf9bd4ce5dadbf2fa4a3615ce88612a4033593fd43ecae5ff0c6313d5"
+    ],
+    "document_id": "W2078771716",
+    "original_type_sets": {
+      "N166": [
+        "OBJECT"
+      ],
+      "N187": [
+        "MECHANISM",
+        "METHOD"
+      ],
+      "N188": [
+        "MECHANISM",
+        "METHOD"
+      ],
+      "N197": [
+        "METHOD"
+      ]
+    },
+    "type_set_conflict": true,
+    "original_multitype": true
+  },
+  {
+    "merge_group_id": "M010",
+    "referent_level": "document_defined_location",
+    "reason": "Одна нижняя divertor x-point NSTX в геометрии и наблюдении. Surrounding lower x-point region не включён.",
+    "proposed_primary_type": "OBJECT",
+    "representative_id": "e:8ca13ec426b807258564ee8941a2b49f49bdb696ff3604543234d17bfe0e26ac",
+    "representative_alias": "N200",
+    "member_aliases": [
+      "N200",
+      "N201"
+    ],
+    "member_canonical_ids": [
+      "e:8ca13ec426b807258564ee8941a2b49f49bdb696ff3604543234d17bfe0e26ac",
+      "e:8ad9735b322506e2936a6f2dace6857afefcd4bec8c3c017e45ada161053b47b"
+    ],
+    "source_entity_ids": [
+      "e:22746369cfcb43d3155f10f6abbd2994353601a2da31b9d1cab9c11255a2e402",
+      "e:72246b0b564346ccc6457dea8b26fe804de89749c02ad44ca155d18ac3940ce7",
+      "e:8ad9735b322506e2936a6f2dace6857afefcd4bec8c3c017e45ada161053b47b",
+      "e:8ca13ec426b807258564ee8941a2b49f49bdb696ff3604543234d17bfe0e26ac"
+    ],
+    "source_mention_ids": [
+      "m:49b68712d7baef1fa27bdc66148f05797149caee242659226f2c708c8d57968b",
+      "m:821bdc091addfb417e6282adf94feb577bdb5a387086c784d6c882b242150095",
+      "m:8bc134097c9f5ef9af9b59bb86e50042ceaadf7037657dfbd0f74349ede0a97c",
+      "m:cedc7af0c7ad05c51703faf52242be10bdd73b85aeffd76c901fd59c193b7a2f"
+    ],
+    "document_id": "W2084709926",
+    "original_type_sets": {
+      "N200": [
+        "OBJECT"
+      ],
+      "N201": [
+        "OBJECT"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M011",
+    "referent_level": "optical_component",
+    "reason": "Один moveable in-vessel mirror в конкретной схеме с sapphire window; два вложенных имени относятся к нему, а не двум зеркалам.",
+    "proposed_primary_type": "OBJECT",
+    "representative_id": "e:ecd0ce7e3db151ba03b3c5bbc333752d832655681ad36c76eb59d15ba3213e6f",
+    "representative_alias": "N209",
+    "member_aliases": [
+      "N209",
+      "N210"
+    ],
+    "member_canonical_ids": [
+      "e:ecd0ce7e3db151ba03b3c5bbc333752d832655681ad36c76eb59d15ba3213e6f",
+      "e:7c5b20ff8ab621c7ae4a4f4586e3f64a48ddaed4eabf687e5e9f89b9af855631"
+    ],
+    "source_entity_ids": [
+      "e:7c5b20ff8ab621c7ae4a4f4586e3f64a48ddaed4eabf687e5e9f89b9af855631",
+      "e:ecd0ce7e3db151ba03b3c5bbc333752d832655681ad36c76eb59d15ba3213e6f"
+    ],
+    "source_mention_ids": [
+      "m:77d5913e23d48e7554e7debaf3619d2daa858ce11cf587e0d14305e9d223a452",
+      "m:d28d89408cdbe1e8dc4de76af0816d07ad224689916a2d44720846d06b557065"
+    ],
+    "document_id": "W2084709926",
+    "original_type_sets": {
+      "N209": [
+        "OBJECT"
+      ],
+      "N210": [
+        "OBJECT"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M012",
+    "referent_level": "optical_component",
+    "reason": "Один coherent fiber optic bundle, передающий изображение в той же диагностической схеме; не сравниваются разные optical bundles.",
+    "proposed_primary_type": "OBJECT",
+    "representative_id": "e:03862d508b5fb6287111369cf7b5bbecd720ac9708e4fe156d699f15be09866a",
+    "representative_alias": "N213",
+    "member_aliases": [
+      "N213",
+      "N214"
+    ],
+    "member_canonical_ids": [
+      "e:03862d508b5fb6287111369cf7b5bbecd720ac9708e4fe156d699f15be09866a",
+      "e:cb0a784642be7c115de3b3ab5c119b8befa675870d9e8b907a040557995c1cca"
+    ],
+    "source_entity_ids": [
+      "e:03862d508b5fb6287111369cf7b5bbecd720ac9708e4fe156d699f15be09866a",
+      "e:cb0a784642be7c115de3b3ab5c119b8befa675870d9e8b907a040557995c1cca"
+    ],
+    "source_mention_ids": [
+      "m:2d736ebd0ba3b528bc08488e3a232a2c6306ad55fdbb5724a69ef4ef880b1fe3",
+      "m:77fe82e5adead3a93ba8148bd7dccbddf0a4bbabbb29ce2875fccdc724622288"
+    ],
+    "document_id": "W2084709926",
+    "original_type_sets": {
+      "N213": [
+        "OBJECT"
+      ],
+      "N214": [
+        "OBJECT"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M013",
+    "referent_level": "optical_component",
+    "reason": "Один remotely selected filter в optical path, явно описанный одним noun phrase.",
+    "proposed_primary_type": "OBJECT",
+    "representative_id": "e:4189a9774fb11637b7ff07377b185fba4117af5973382861460eca8606271d3d",
+    "representative_alias": "N215",
+    "member_aliases": [
+      "N215",
+      "N216"
+    ],
+    "member_canonical_ids": [
+      "e:4189a9774fb11637b7ff07377b185fba4117af5973382861460eca8606271d3d",
+      "e:b4b5a2296b273a84058a5bb8df0c932582cae326f3f1c5763c0319dbf0b79c5d"
+    ],
+    "source_entity_ids": [
+      "e:4189a9774fb11637b7ff07377b185fba4117af5973382861460eca8606271d3d",
+      "e:b4b5a2296b273a84058a5bb8df0c932582cae326f3f1c5763c0319dbf0b79c5d"
+    ],
+    "source_mention_ids": [
+      "m:cc2ef1945727c130e9ff1eff03483f15d0b3ca65fcb15a998f267ebbee00e771",
+      "m:ee9f55f47d2930cdfce792ff24c04da915f713f27b2810981c1ff0d5e54a7cf9"
+    ],
+    "document_id": "W2084709926",
+    "original_type_sets": {
+      "N215": [
+        "OBJECT"
+      ],
+      "N216": [
+        "OBJECT"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M014",
+    "referent_level": "camera_role",
+    "reason": "Два вложенных span fast camera и camera обозначают одну роль в optical path; пример Photron не приравнивается роли автоматически.",
+    "proposed_primary_type": "OBJECT",
+    "representative_id": "e:d411d5c9833979ea70ae0d871997894734c1025a8dc7dc93869e7a7f993f636a",
+    "representative_alias": "N217",
+    "member_aliases": [
+      "N217",
+      "N218"
+    ],
+    "member_canonical_ids": [
+      "e:d411d5c9833979ea70ae0d871997894734c1025a8dc7dc93869e7a7f993f636a",
+      "e:8d38f2567d54fc21e2078b54ed9281a54d0cbc2c0dfd8366a29ab281a72a9276"
+    ],
+    "source_entity_ids": [
+      "e:8d38f2567d54fc21e2078b54ed9281a54d0cbc2c0dfd8366a29ab281a72a9276",
+      "e:d411d5c9833979ea70ae0d871997894734c1025a8dc7dc93869e7a7f993f636a"
+    ],
+    "source_mention_ids": [
+      "m:c9c2557f663c319f4a1d6a8e9c9dc3f07e6bd8cb6c5bcc7a7b1432f4c6a1293d",
+      "m:cc025686acc35157b9334fe9cbbfff9908a9ceae57d3e2182a98d71448ac1bea"
+    ],
+    "document_id": "W2084709926",
+    "original_type_sets": {
+      "N217": [
+        "OBJECT"
+      ],
+      "N218": [
+        "OBJECT"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M015",
+    "referent_level": "camera_example",
+    "reason": "Все четыре вложенных span находятся в единственном описании примера 40 500 frames/s Photron CMOS camera. Полная спецификация сохранена у представителя.",
+    "proposed_primary_type": "OBJECT",
+    "representative_id": "e:5bb52d4c765784ed49bc6e1365c6e3ac28d4cdebda7718c892edbce1bcd341a9",
+    "representative_alias": "N219",
+    "member_aliases": [
+      "N219",
+      "N220",
+      "N221",
+      "N223"
+    ],
+    "member_canonical_ids": [
+      "e:5bb52d4c765784ed49bc6e1365c6e3ac28d4cdebda7718c892edbce1bcd341a9",
+      "e:b7273b705a6af90bbb80948861d95c08eaf29ef29c6f06ac45046275456b8bba",
+      "e:354613f7ac454eca17a1205aa20492f33c10807b0eb99a46ba6fcb3ebb70d4c7",
+      "e:f0db6896d5a4ac2b8e7d9c42ebb4e249ba94ceafcfc54cab898f922b90c5a608"
+    ],
+    "source_entity_ids": [
+      "e:354613f7ac454eca17a1205aa20492f33c10807b0eb99a46ba6fcb3ebb70d4c7",
+      "e:5bb52d4c765784ed49bc6e1365c6e3ac28d4cdebda7718c892edbce1bcd341a9",
+      "e:b7273b705a6af90bbb80948861d95c08eaf29ef29c6f06ac45046275456b8bba",
+      "e:f0db6896d5a4ac2b8e7d9c42ebb4e249ba94ceafcfc54cab898f922b90c5a608"
+    ],
+    "source_mention_ids": [
+      "m:1265f617fc609bc374ef451311baa97483f62064f80439efd6eead06e1c1179c",
+      "m:8cde9125035ad2fd03a9c3ea9d9bce6f94ef65c2516eb37772f36bbb64fc97d8",
+      "m:96d0bb6668c551fdcd30c50906499a350bb07d02206fcbc1216ce827186149f4",
+      "m:c0ce223e19ddd42a7b47413bb47ea558536ae38bcc459aebfe16d9d83f39c279"
+    ],
+    "document_id": "W2084709926",
+    "original_type_sets": {
+      "N219": [
+        "OBJECT"
+      ],
+      "N220": [
+        "OBJECT"
+      ],
+      "N221": [
+        "OBJECT"
+      ],
+      "N223": [
+        "OBJECT"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M016",
+    "referent_level": "document_defined_location",
+    "reason": "Оба span внутри lower inboard divertor, где находится gas puffer; один явно локализованный участок NSTX.",
+    "proposed_primary_type": "OBJECT",
+    "representative_id": "e:d50d8171fe8d086b2256557dec366d74026b28ecb7898af303bfd58d9c9b300b",
+    "representative_alias": "N225",
+    "member_aliases": [
+      "N225",
+      "N226"
+    ],
+    "member_canonical_ids": [
+      "e:d50d8171fe8d086b2256557dec366d74026b28ecb7898af303bfd58d9c9b300b",
+      "e:54f6337cc6865cc3b23bfca16fee0e0547235098c4b59146a9e5104ad6fa3077"
+    ],
+    "source_entity_ids": [
+      "e:54f6337cc6865cc3b23bfca16fee0e0547235098c4b59146a9e5104ad6fa3077",
+      "e:d50d8171fe8d086b2256557dec366d74026b28ecb7898af303bfd58d9c9b300b"
+    ],
+    "source_mention_ids": [
+      "m:5bc890a432de139425878db33862bc5c5e56b7c3bde25b1488565385307a4a52",
+      "m:e798826022eec3c12621205d864e3c1e3a155d6c136bba65093acdc795981657"
+    ],
+    "document_id": "W2084709926",
+    "original_type_sets": {
+      "N225": [
+        "OBJECT"
+      ],
+      "N226": [
+        "OBJECT"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M017",
+    "referent_level": "named_instrument",
+    "reason": "Оба span внутри synthesis telescope of the Dominion Radio Astrophysical Observatory Synthesis Telescope однозначно называют один именованный прибор; исходные DATA_RESOURCE/METHOD сохраняются.",
+    "proposed_primary_type": "OBJECT",
+    "representative_id": "e:57b6d8787ac6e44f3eeeeac99f67840858e7905f81d097f20215cd93078aca46",
+    "representative_alias": "N231",
+    "member_aliases": [
+      "N231",
+      "N233"
+    ],
+    "member_canonical_ids": [
+      "e:57b6d8787ac6e44f3eeeeac99f67840858e7905f81d097f20215cd93078aca46",
+      "e:2e50bec6ed7cc93f9ff9e86da6f3993557548c4dee62b0104847fd57404034c7"
+    ],
+    "source_entity_ids": [
+      "e:2e50bec6ed7cc93f9ff9e86da6f3993557548c4dee62b0104847fd57404034c7",
+      "e:57b6d8787ac6e44f3eeeeac99f67840858e7905f81d097f20215cd93078aca46"
+    ],
+    "source_mention_ids": [
+      "m:4b6b077fb7e8c0b0dd841a0dccbde31567fc8cc11bdae557f240ca6501410dfc",
+      "m:978b195964352d5cec133e0bcff8f5211403d711c6fb1be7813e284224a79571",
+      "m:dc460d93735103fd1ad3c94560fef275f82dbf32c771485611c5119b0c856c90",
+      "m:f992a2da5129168dbee0b9f0a7321b7bb0ee93190d334d6aab50fca0e19ff275"
+    ],
+    "document_id": "W2096307598",
+    "original_type_sets": {
+      "N231": [
+        "DATA_RESOURCE",
+        "METHOD"
+      ],
+      "N233": [
+        "DATA_RESOURCE",
+        "METHOD"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": true
+  },
+  {
+    "merge_group_id": "M018",
+    "referent_level": "disk_mean_measurement",
+    "reason": "Все вложенные span обозначают одно среднее lunar brightness temperature по всему диску, about 233 K; квадранты и максимум 257 K исключены.",
+    "proposed_primary_type": "RESULT",
+    "representative_id": "e:c97724cfd8db26e39c075481cd123c4a8318f59f1c76f3d19e221f135149b14d",
+    "representative_alias": "N237",
+    "member_aliases": [
+      "N237",
+      "N238",
+      "N239"
+    ],
+    "member_canonical_ids": [
+      "e:c97724cfd8db26e39c075481cd123c4a8318f59f1c76f3d19e221f135149b14d",
+      "e:793995d26429f1e1ffbaa132de05d4560d4edfeca49bde9ccec9cdb2ff63791a",
+      "e:7f7836576f717b94ecde43def83dad4b2fd196d2cd58f0dd87c1c8f2566a59e1"
+    ],
+    "source_entity_ids": [
+      "e:793995d26429f1e1ffbaa132de05d4560d4edfeca49bde9ccec9cdb2ff63791a",
+      "e:7f7836576f717b94ecde43def83dad4b2fd196d2cd58f0dd87c1c8f2566a59e1",
+      "e:c97724cfd8db26e39c075481cd123c4a8318f59f1c76f3d19e221f135149b14d"
+    ],
+    "source_mention_ids": [
+      "m:5158425181992a846eccc96ef648f97c215412495804223d64772e6df9bb68c1",
+      "m:8958b20555ae9128138583651c1842fd4930a1c1f7d9f6f440cefb14e20bbc87",
+      "m:9afafebbd54f5a233921b9f99e97e136632d22c3f873c3e147ce27d4cf0f1a0b",
+      "m:f5c75a2a42cda4058c11e552c3154ea00a93cb96388120f2f40d38219a0e4a19"
+    ],
+    "document_id": "W2096307598",
+    "original_type_sets": {
+      "N237": [
+        "RESULT"
+      ],
+      "N238": [
+        "ATTRIBUTE",
+        "RESULT"
+      ],
+      "N239": [
+        "ATTRIBUTE"
+      ]
+    },
+    "type_set_conflict": true,
+    "original_multitype": true
+  },
+  {
+    "merge_group_id": "M019",
+    "referent_level": "maximum_measurement",
+    "reason": "Оба span внутри highest brightness temperature about 257 K на западном участке экватора; не объединяются со средним 233 K.",
+    "proposed_primary_type": "RESULT",
+    "representative_id": "e:b4c0b94fe499fd6587ba9d42d92c04afaedcab5184b210009dd05116fadfe1d5",
+    "representative_alias": "N241",
+    "member_aliases": [
+      "N241",
+      "N242"
+    ],
+    "member_canonical_ids": [
+      "e:b4c0b94fe499fd6587ba9d42d92c04afaedcab5184b210009dd05116fadfe1d5",
+      "e:ca2f47b7a89d416a7976f92ad76d770f9a130139b2e06decac9c82523e4b075a"
+    ],
+    "source_entity_ids": [
+      "e:b4c0b94fe499fd6587ba9d42d92c04afaedcab5184b210009dd05116fadfe1d5",
+      "e:ca2f47b7a89d416a7976f92ad76d770f9a130139b2e06decac9c82523e4b075a"
+    ],
+    "source_mention_ids": [
+      "m:01a1ad66ada0698ad4d0b29ea012986dddfee65df2f285af917ea1aa717e5f16",
+      "m:166e003929c01334cad1ee541c93ccbe7028e2125c5c6493549633ddd0ba1def",
+      "m:33d94bec6a6ce79b4cc24f10443eef82ca829ac1a86c400fa158b0d0999c6eb3"
+    ],
+    "document_id": "W2096307598",
+    "original_type_sets": {
+      "N241": [
+        "RESULT"
+      ],
+      "N242": [
+        "ATTRIBUTE",
+        "RESULT"
+      ]
+    },
+    "type_set_conflict": true,
+    "original_multitype": true
+  },
+  {
+    "merge_group_id": "M020",
+    "referent_level": "lunar_material_class",
+    "reason": "regolith и lunar regolith в выводе о свойствах/толщине относятся к лунному материалу в одном исследовании; не утверждается одна и та же пространственная проба.",
+    "proposed_primary_type": "OBJECT",
+    "representative_id": "e:44b10dedc236c1a7ffe5ba3aacb6db8ca9c89695f2bdf7f68642eee70d3521ba",
+    "representative_alias": "N254",
+    "member_aliases": [
+      "N254",
+      "N260"
+    ],
+    "member_canonical_ids": [
+      "e:44b10dedc236c1a7ffe5ba3aacb6db8ca9c89695f2bdf7f68642eee70d3521ba",
+      "e:59a49a64165fc63b726ece96b37ae820c87bdd63a2d077e2141ee17d4d452caa"
+    ],
+    "source_entity_ids": [
+      "e:230bd92b98db52aa1e9a691092092152f85910220948096d434b0cc34d6bafff",
+      "e:44b10dedc236c1a7ffe5ba3aacb6db8ca9c89695f2bdf7f68642eee70d3521ba",
+      "e:59a49a64165fc63b726ece96b37ae820c87bdd63a2d077e2141ee17d4d452caa"
+    ],
+    "source_mention_ids": [
+      "m:3a5ae6d21fb3dd99e8f6aab54e29b528e3db2f15e104f3af62463ef72ef3e89c",
+      "m:6ea4f4abe9eb486ab961302e2d00217858282c362d3112e32a55e7eff27b70c8",
+      "m:796baaa9405cd1c614a8308a3f3de2d52eced5398fe4471fe5a1821c2715a02f"
+    ],
+    "document_id": "W2096307598",
+    "original_type_sets": {
+      "N254": [
+        "OBJECT"
+      ],
+      "N260": [
+        "OBJECT"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M021",
+    "referent_level": "document_literature_set",
+    "reason": "Вложенные имена в earlier plant closing literature задают одну цитируемую совокупность литературы; earlier не отбрасывается из итогового названия.",
+    "proposed_primary_type": "DATA_RESOURCE",
+    "representative_id": "e:2462ef63c4e08c5329dd2ea55144d10903b70ccdb282596faf696d123a54c132",
+    "representative_alias": "N269",
+    "member_aliases": [
+      "N269",
+      "N270"
+    ],
+    "member_canonical_ids": [
+      "e:2462ef63c4e08c5329dd2ea55144d10903b70ccdb282596faf696d123a54c132",
+      "e:a6f0956a6abf2873db299584554cf49cc5fc3c66780bbd83b14632742d0da16b"
+    ],
+    "source_entity_ids": [
+      "e:2462ef63c4e08c5329dd2ea55144d10903b70ccdb282596faf696d123a54c132",
+      "e:a6f0956a6abf2873db299584554cf49cc5fc3c66780bbd83b14632742d0da16b"
+    ],
+    "source_mention_ids": [
+      "m:00d361c73804c11dac107ae543d7a6dc0fce94bd2cabb4bf6fcc9d370e05a220",
+      "m:f9b6b52208c7d736d0279f005b3973ffc79b622422576ba0dd27bf472e21b49d"
+    ],
+    "document_id": "W2130236240",
+    "original_type_sets": {
+      "N269": [
+        "DATA_RESOURCE"
+      ],
+      "N270": [
+        "DATA_RESOURCE"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M022",
+    "referent_level": "named_method",
+    "reason": "Полное имя метода Kerr effect и его же span с (TKE) в одном перечислении; одинаковый start и неповреждённые имена.",
+    "proposed_primary_type": "METHOD",
+    "representative_id": "e:a4162e57bc02a5010e6ef5b855d7492a53443eb0e2abc49c301638c283ea1f94",
+    "representative_alias": "N282",
+    "member_aliases": [
+      "N281",
+      "N282"
+    ],
+    "member_canonical_ids": [
+      "e:9a782d1a60de3801bba556e5972ac3a40127f101adee223ee5e5b793fb4ec2c4",
+      "e:a4162e57bc02a5010e6ef5b855d7492a53443eb0e2abc49c301638c283ea1f94"
+    ],
+    "source_entity_ids": [
+      "e:9a782d1a60de3801bba556e5972ac3a40127f101adee223ee5e5b793fb4ec2c4",
+      "e:a4162e57bc02a5010e6ef5b855d7492a53443eb0e2abc49c301638c283ea1f94"
+    ],
+    "source_mention_ids": [
+      "m:3f111af21f625b85a2d85604b534fd223e8ea45c52890ad7888750eb0f55f9c7",
+      "m:5710a1e80a16f367b04a15b2976151df87cb606bf3bac1b6af373c42002a7775"
+    ],
+    "document_id": "W2317432785",
+    "original_type_sets": {
+      "N281": [
+        "METHOD"
+      ],
+      "N282": [
+        "METHOD"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M023",
+    "referent_level": "named_method",
+    "reason": "Одно неповреждённое имя X-ray absorption spectroscopy с/без (XANES), одинаковый start. Повреждение Zr L2�3 находится вне имени и не исправляется.",
+    "proposed_primary_type": "METHOD",
+    "representative_id": "e:103551b33ce7b9561df91ed8f9b0d4655f30b1862bc2201d1dfeb1bfb9400232",
+    "representative_alias": "N284",
+    "member_aliases": [
+      "N284",
+      "N285"
+    ],
+    "member_canonical_ids": [
+      "e:103551b33ce7b9561df91ed8f9b0d4655f30b1862bc2201d1dfeb1bfb9400232",
+      "e:d094550058a2511022a91e8f85a5c8723eb6b71dc6531a2ae99981658437e433"
+    ],
+    "source_entity_ids": [
+      "e:103551b33ce7b9561df91ed8f9b0d4655f30b1862bc2201d1dfeb1bfb9400232",
+      "e:d094550058a2511022a91e8f85a5c8723eb6b71dc6531a2ae99981658437e433"
+    ],
+    "source_mention_ids": [
+      "m:16de0baba87283cad285a8e1af8f81be30cc58ce042009c28621c72e4c239e10",
+      "m:bc3739a2309a29759579b162cdbe509e4ebd49688f23751989f8797a9dd5445b"
+    ],
+    "document_id": "W2317432785",
+    "original_type_sets": {
+      "N284": [
+        "METHOD"
+      ],
+      "N285": [
+        "METHOD"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M024",
+    "referent_level": "named_method",
+    "reason": "Одно неповреждённое имя X-ray magnetic circular dichroism с/без (XMCD); повреждённая соседняя формула не идентифицируется.",
+    "proposed_primary_type": "METHOD",
+    "representative_id": "e:3b1b3c50d7a5e493e200bdac50fca8dfe57e2f0ba2f2dd63772f3fdc05116b37",
+    "representative_alias": "N286",
+    "member_aliases": [
+      "N286",
+      "N287"
+    ],
+    "member_canonical_ids": [
+      "e:3b1b3c50d7a5e493e200bdac50fca8dfe57e2f0ba2f2dd63772f3fdc05116b37",
+      "e:ec51be88055b53a73f2c1405f5c3f680b4b95e68412bf6fe203e3bee496bb004"
+    ],
+    "source_entity_ids": [
+      "e:3b1b3c50d7a5e493e200bdac50fca8dfe57e2f0ba2f2dd63772f3fdc05116b37",
+      "e:ec51be88055b53a73f2c1405f5c3f680b4b95e68412bf6fe203e3bee496bb004"
+    ],
+    "source_mention_ids": [
+      "m:77fb727e3919b06ae6a76f125eb3ea520153d5d523454dd8cc27fb224f852ccc",
+      "m:bae911fe70c162408a3b7c82fc8ddb02ce54fce59ed99c658bdebe94894cb451"
+    ],
+    "document_id": "W2317432785",
+    "original_type_sets": {
+      "N286": [
+        "METHOD"
+      ],
+      "N287": [
+        "METHOD"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M025",
+    "referent_level": "document_group",
+    "reason": "Вложенные old New York socialists / New York socialists относятся к авторам одних biographies в данном предложении; квалификатор old сохраняется.",
+    "proposed_primary_type": "ACTOR",
+    "representative_id": "e:5ad7761ff5a3ac1286915156c655f494b7b9bed15691f8fe5c3d7c39f41061db",
+    "representative_alias": "N311",
+    "member_aliases": [
+      "N311",
+      "N312"
+    ],
+    "member_canonical_ids": [
+      "e:5ad7761ff5a3ac1286915156c655f494b7b9bed15691f8fe5c3d7c39f41061db",
+      "e:1725ca19fa99f3c14ae8284301fd361dbb586a0c740aab1a84f2f1924f066a57"
+    ],
+    "source_entity_ids": [
+      "e:1725ca19fa99f3c14ae8284301fd361dbb586a0c740aab1a84f2f1924f066a57",
+      "e:5ad7761ff5a3ac1286915156c655f494b7b9bed15691f8fe5c3d7c39f41061db"
+    ],
+    "source_mention_ids": [
+      "m:1c560558b78a5bad975e78d99ee7a2c2a878ee028b4cacef04999f9f88aba96d",
+      "m:d6d8682400d4c27e81ec106e62913cb5f069bd042a7ce90ab3eb0cc42dd11d56"
+    ],
+    "document_id": "W2326480042",
+    "original_type_sets": {
+      "N311": [
+        "ACTOR"
+      ],
+      "N312": [
+        "ACTOR"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M026",
+    "referent_level": "named_software",
+    "reason": "PSCAD/EMTDC внутри полного имени power simulation software — один именованный программный продукт.",
+    "proposed_primary_type": "DATA_RESOURCE",
+    "representative_id": "e:36285854574954987afb483139ac119bf8ce2ae49e258165f2a4585f1fcae0ec",
+    "representative_alias": "N331",
+    "member_aliases": [
+      "N331",
+      "N332"
+    ],
+    "member_canonical_ids": [
+      "e:36285854574954987afb483139ac119bf8ce2ae49e258165f2a4585f1fcae0ec",
+      "e:d57569e86e48434a1dd44abe27b5f550ae4d55272539758f461814b1a3e0ac57"
+    ],
+    "source_entity_ids": [
+      "e:36285854574954987afb483139ac119bf8ce2ae49e258165f2a4585f1fcae0ec",
+      "e:d57569e86e48434a1dd44abe27b5f550ae4d55272539758f461814b1a3e0ac57"
+    ],
+    "source_mention_ids": [
+      "m:7f948550a70ea05421cfac21f86909491589c115c742e6dcebecc1110c9e065f",
+      "m:fa548fd572c7729eb8fcff06a8d2a6e41cb30a76fd419470df892428bdb0005c"
+    ],
+    "document_id": "W2364973104",
+    "original_type_sets": {
+      "N331": [
+        "DATA_RESOURCE"
+      ],
+      "N332": [
+        "DATA_RESOURCE"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M027",
+    "referent_level": "disease_kind",
+    "reason": "Явное end-stage renal disease (ESRD) в background и ESRD в выводе задают один вид заболевания; конкретные ESRD patients не объединяются с диагнозом.",
+    "proposed_primary_type": "CONDITION",
+    "representative_id": "e:a66fa8c5529f8692ed65e6a50ea322e93ecaca391fa2d520995982d517f605d1",
+    "representative_alias": "N387",
+    "member_aliases": [
+      "N387",
+      "N444"
+    ],
+    "member_canonical_ids": [
+      "e:a66fa8c5529f8692ed65e6a50ea322e93ecaca391fa2d520995982d517f605d1",
+      "e:2fec25c564abaa71da9c760b2be7ad98815b4a73ec56a1ed887e563b9a4b5507"
+    ],
+    "source_entity_ids": [
+      "e:2fec25c564abaa71da9c760b2be7ad98815b4a73ec56a1ed887e563b9a4b5507",
+      "e:a66fa8c5529f8692ed65e6a50ea322e93ecaca391fa2d520995982d517f605d1"
+    ],
+    "source_mention_ids": [
+      "m:0544b6545372e544cc5057984f22c053846db9403c1592d7fd7751e736986fe8",
+      "m:e274a711bb407b6140ea150b615c8399cd5cdaac2af392403a86e4f1a61e91c5"
+    ],
+    "document_id": "W2761455282",
+    "original_type_sets": {
+      "N387": [
+        "CONDITION"
+      ],
+      "N444": [
+        "CONCEPT"
+      ]
+    },
+    "type_set_conflict": true,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M028",
+    "referent_level": "procedure_kind",
+    "reason": "Явное total knee arthroplasty (TKA), последующие общие TKA обозначают тот же тип процедуры. Primary TKA у 21 человека (N402) исключено из группы.",
+    "proposed_primary_type": "METHOD",
+    "representative_id": "e:a74d56d825620f06e7dfa76130a8cb77c7013f5d9f3e6c0103698018cc2b5ad3",
+    "representative_alias": "N392",
+    "member_aliases": [
+      "N392",
+      "N397",
+      "N430"
+    ],
+    "member_canonical_ids": [
+      "e:a74d56d825620f06e7dfa76130a8cb77c7013f5d9f3e6c0103698018cc2b5ad3",
+      "e:34f65f3c533604442256b7d072508f83ef1c0971590c86fb053190a9d18531e2",
+      "e:0c7e451818bd1d5822e1461a13e7f639da6fd6b49170f8aa2c76be5d052f9dbc"
+    ],
+    "source_entity_ids": [
+      "e:0c7e451818bd1d5822e1461a13e7f639da6fd6b49170f8aa2c76be5d052f9dbc",
+      "e:34f65f3c533604442256b7d072508f83ef1c0971590c86fb053190a9d18531e2",
+      "e:4bf0b690b2b4a6907bee7c656a883a38ee6d767f49fb61ebbce00c6ea97d8cee",
+      "e:6159614091ccc2b1516ed92b1d3864d204347454f12801c2acdc9ffebdf83160",
+      "e:a74d56d825620f06e7dfa76130a8cb77c7013f5d9f3e6c0103698018cc2b5ad3"
+    ],
+    "source_mention_ids": [
+      "m:1b13bede714304d3b94a1ec156bfdbee2e66c9c9b6d885cc622aa27aa96041a0",
+      "m:3f0606c7c3567ed994bb9a32870768f47756ac51af3b3eb24cfcb470b631f06c",
+      "m:7699f25b31a46c18b1f6d452db18197acb46360436f350f4469e0bd99a5ebf09",
+      "m:7bd11c68e5cd415a5ef9becb3e22e3d4e31ddc93c420f8cb106036489d467be7",
+      "m:df41389c582bba86c9d7f3d6374b6349a54e7d3f37f16e60d64887ed5ccc87fc"
+    ],
+    "document_id": "W2761455282",
+    "original_type_sets": {
+      "N392": [
+        "MECHANISM"
+      ],
+      "N397": [
+        "MECHANISM"
+      ],
+      "N430": [
+        "METHOD"
+      ]
+    },
+    "type_set_conflict": true,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M029",
+    "referent_level": "twenty_one_patient_cohort",
+    "reason": "Dialysis patients at our hospital during the past decade непосредственно уточнены как 21 patients (26 knees), primary TKA 2007–2015; all patients анафорически та же когорта. Подгруппы 20/6/19 исключены.",
+    "proposed_primary_type": "ACTOR",
+    "representative_id": "e:6f4392020fff6ea63315a46d29ab8e3277d0b4e8dfca460f8a1c36e81e81871a",
+    "representative_alias": "N398",
+    "member_aliases": [
+      "N398",
+      "N399",
+      "N400"
+    ],
+    "member_canonical_ids": [
+      "e:6f4392020fff6ea63315a46d29ab8e3277d0b4e8dfca460f8a1c36e81e81871a",
+      "e:4c01c07b43a258ceb4b109bfcba6bda6c443a7e35f80c5aba73bcbebe984bfbd",
+      "e:c7f6b860fc0a506dae2449143c893a63d5b63638bb39d3a1522b154ee318edb9"
+    ],
+    "source_entity_ids": [
+      "e:493c206e7449f31b787d30fdd52f9ff9ab5cb5c5767f077b81df2ca640443b4f",
+      "e:4c01c07b43a258ceb4b109bfcba6bda6c443a7e35f80c5aba73bcbebe984bfbd",
+      "e:6f4392020fff6ea63315a46d29ab8e3277d0b4e8dfca460f8a1c36e81e81871a",
+      "e:8ca768fdb7eab7cd83957c404a956d065f71670980d54e17f0f044a4ee1ceb48",
+      "e:c7f6b860fc0a506dae2449143c893a63d5b63638bb39d3a1522b154ee318edb9"
+    ],
+    "source_mention_ids": [
+      "m:032f792ec7b274314173ab10acc74bfee81ed88f0b55ef1f55d05eeab1bda6ab",
+      "m:6211b954d5f789cd3947a43d083cbc7a8d016f0157b2f9c62b71ad99626eb4b9",
+      "m:76f4975a3716e49e591dcca956c28fe6bbe3a37f505cbd1a2cab3090b78f8ca7",
+      "m:b269cd81ec2c8afa067a0907489a04daa6b068931357f2a8abe043063c10d724",
+      "m:e775f953b468ad098dfbdf6b46b5aef262ad545e0b72e2b05d4f9a18a1ab7df5"
+    ],
+    "document_id": "W2761455282",
+    "original_type_sets": {
+      "N398": [
+        "ACTOR"
+      ],
+      "N399": [
+        "ACTOR"
+      ],
+      "N400": [
+        "ACTOR"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M030",
+    "referent_level": "named_instrument",
+    "reason": "Одна именованная American Knee Society Scores как шкала оценки; исходные типы ATTRIBUTE/DATA_RESOURCE и DATA_RESOURCE сохраняются. Не объединяются численные результаты пациентов.",
+    "proposed_primary_type": "DATA_RESOURCE",
+    "representative_id": "e:017ff55918cfcbc620e02a79962cd976071c3081b96d8da7862ab4d0adef5637",
+    "representative_alias": "N406",
+    "member_aliases": [
+      "N406",
+      "N431"
+    ],
+    "member_canonical_ids": [
+      "e:017ff55918cfcbc620e02a79962cd976071c3081b96d8da7862ab4d0adef5637",
+      "e:4972e0e527bb68fc93244e6aeeb121769b75874f11f099fddf44f529f80694a4"
+    ],
+    "source_entity_ids": [
+      "e:017ff55918cfcbc620e02a79962cd976071c3081b96d8da7862ab4d0adef5637",
+      "e:4972e0e527bb68fc93244e6aeeb121769b75874f11f099fddf44f529f80694a4"
+    ],
+    "source_mention_ids": [
+      "m:26bc4c9e165c0d45863c0c4d686960f2006188a0cdff212dcce690ef6400cf09",
+      "m:4cf866100e812b5dc4e739ba946f9855a886b2d6c901998d8d255a889e7c4c69",
+      "m:4e23e86ce536fbb97ac073455dc318ead96a923d5f7e56d777e75af8a8898a79"
+    ],
+    "document_id": "W2761455282",
+    "original_type_sets": {
+      "N406": [
+        "ATTRIBUTE",
+        "DATA_RESOURCE"
+      ],
+      "N431": [
+        "DATA_RESOURCE"
+      ]
+    },
+    "type_set_conflict": true,
+    "original_multitype": true
+  },
+  {
+    "merge_group_id": "M031",
+    "referent_level": "nineteen_patient_outcome",
+    "reason": "Оба вложенных span относятся к одному утверждению об improved clinical outcomes у 19 пациентов (90.5%) в latest follow-up; generic outcome и Most patients исключены.",
+    "proposed_primary_type": "RESULT",
+    "representative_id": "e:cbb7abc4752bbe483034956fac5ec02459e88f18ff6768b017afc8655f354cf4",
+    "representative_alias": "N427",
+    "member_aliases": [
+      "N427",
+      "N428"
+    ],
+    "member_canonical_ids": [
+      "e:cbb7abc4752bbe483034956fac5ec02459e88f18ff6768b017afc8655f354cf4",
+      "e:98d9c2998cbcf0083082155e01b718f4fdfdc4656eb4d4f3b21e2c646b7bd32b"
+    ],
+    "source_entity_ids": [
+      "e:98d9c2998cbcf0083082155e01b718f4fdfdc4656eb4d4f3b21e2c646b7bd32b",
+      "e:cbb7abc4752bbe483034956fac5ec02459e88f18ff6768b017afc8655f354cf4"
+    ],
+    "source_mention_ids": [
+      "m:9df9be969db95a0dadd18589a33dec91ec0fe850675993c15807f40a1b965b2f",
+      "m:a08ed42fe4564a6ede9ce628ac2fc600139d3e949f969619c833ed365377ea0c"
+    ],
+    "document_id": "W2761455282",
+    "original_type_sets": {
+      "N427": [
+        "RESULT"
+      ],
+      "N428": [
+        "RESULT"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M032",
+    "referent_level": "named_disease",
+    "reason": "Явное chronic rhinosinusitis with nasal polyposis (CRSwNP) и повторные disease-labels; ACTOR/OBJECT не создают отдельные болезни или людей. Узлы patients with CRSwNP сюда не входят.",
+    "proposed_primary_type": "CONDITION",
+    "representative_id": "e:f83dae14ea34651a7d5a7997659def367fb0cf06e440a323a4666d7f8d552dfe",
+    "representative_alias": "N446",
+    "member_aliases": [
+      "N446",
+      "N464",
+      "N475",
+      "N477"
+    ],
+    "member_canonical_ids": [
+      "e:f83dae14ea34651a7d5a7997659def367fb0cf06e440a323a4666d7f8d552dfe",
+      "e:94f3ba59daed94023c789fa18b2f098f54e5b5ac9a4e1940feb74d2cf6f1eda9",
+      "e:8e599f9f7d39e8c7a6c4796642fb8c18913ecc9b862a50467d914f08956fd5d2",
+      "e:1b9c58da39cf9169db24b8ecd985d5b3ac90f1d3b8c25e5113a76984b160e963"
+    ],
+    "source_entity_ids": [
+      "e:1b9c58da39cf9169db24b8ecd985d5b3ac90f1d3b8c25e5113a76984b160e963",
+      "e:8e599f9f7d39e8c7a6c4796642fb8c18913ecc9b862a50467d914f08956fd5d2",
+      "e:94f3ba59daed94023c789fa18b2f098f54e5b5ac9a4e1940feb74d2cf6f1eda9",
+      "e:f83dae14ea34651a7d5a7997659def367fb0cf06e440a323a4666d7f8d552dfe"
+    ],
+    "source_mention_ids": [
+      "m:1a207299959339c7edb950e9a6a6dc73b7dc90c45897f96e31d6b3bcf4bee175",
+      "m:36c3e2cde578056d77e45a22095e133a96dcf4030c2aead30b72583ee655690a",
+      "m:3b76d76f7c45c6366b0c50f6b22981455fefebb8b79be9dd827b09f70f88a59d",
+      "m:738ee768f4c126f6076ffcfbdf409dca99513d23647772789c33dec8169c07ed",
+      "m:8ea92e68048ba3e554e497dc522e55c4a5263cdce753e1c54247f3ae7fd62590",
+      "m:9110198bb65de64aab7fe28b1d947d9c3a7d1ec151e293b58537410ce528b35c",
+      "m:96683844eaa751e8b9e43971206689306f1656e9f81555dafb51f1e84ebdc00a",
+      "m:febd7568317d35a8aabfcb398f141cabc92238ab0b29c2708123bd99e484fc2c"
+    ],
+    "document_id": "W2791492120",
+    "original_type_sets": {
+      "N446": [
+        "CONDITION"
+      ],
+      "N464": [
+        "ACTOR",
+        "CONDITION"
+      ],
+      "N475": [
+        "ACTOR",
+        "CONDITION"
+      ],
+      "N477": [
+        "ACTOR",
+        "CONDITION",
+        "OBJECT"
+      ]
+    },
+    "type_set_conflict": true,
+    "original_multitype": true
+  },
+  {
+    "merge_group_id": "M033",
+    "referent_level": "ten_patient_cohort",
+    "reason": "Исходные 10 пациентов sinus surgery и последующие patients with CRSwNP в results/conclusion относятся к той же серии. CONDITION у квалифицированной фразы — ошибка типа пациента.",
+    "proposed_primary_type": "ACTOR",
+    "representative_id": "e:f90203005b5e3b7e0fa7ab882e09b2b098ed35a6383f0dd0032e589fe3f82bfe",
+    "representative_alias": "N455",
+    "member_aliases": [
+      "N455",
+      "N463",
+      "N474"
+    ],
+    "member_canonical_ids": [
+      "e:f90203005b5e3b7e0fa7ab882e09b2b098ed35a6383f0dd0032e589fe3f82bfe",
+      "e:75d7391d31e45e8a9014c706aa38bc9eda06cc6a870d6d1fca5b7b918598a648",
+      "e:7bcf608db954392fc1c42781339361bdb38042dd4c616fd79a6c1d0ab1c1763f"
+    ],
+    "source_entity_ids": [
+      "e:295147e9aa04d41b2083932eea93b2fc2814f41c482486a87a240481e3cefbf5",
+      "e:3c5621ddc81518615015d35a7acdd12257ef268b18ab6c5558ed290de80cb749",
+      "e:6de685facf8bac0d9f1341bf344e15c535c4643e7f8a7017fa79dafe5bc227a7",
+      "e:743392c8b5ce42cea1add5117afab46d81683f219f8a99eafa646ea5389211c3",
+      "e:75d7391d31e45e8a9014c706aa38bc9eda06cc6a870d6d1fca5b7b918598a648",
+      "e:7bcf608db954392fc1c42781339361bdb38042dd4c616fd79a6c1d0ab1c1763f",
+      "e:f90203005b5e3b7e0fa7ab882e09b2b098ed35a6383f0dd0032e589fe3f82bfe"
+    ],
+    "source_mention_ids": [
+      "m:12bca7ffaf59d4b1766b8a7218bb59acaa895466170226f2d81c89c002762fae",
+      "m:38a0576249d759f8324ed32c62c7dc38fb45f69bac900cc91e689f030f8c5ab1",
+      "m:3aea7ba0ee2290ec9ffacf88c7fd2d363aec889ad1945e48ba31d5868ab3429e",
+      "m:61a3af2c3e12ec6798501ac52a8ff0aeeb46ba31efb1f50add0d073726f1cfc3",
+      "m:bea9af2590cd31b3e0e250231d208aaf1b9e18f50db8043e0f2f3c40508b2e47",
+      "m:da3d041f5027d20848ef8c27d475f60e66b687c61bd44b62460c023be24cc838",
+      "m:daf7474424f84eb990b9e40c7440bd5a7999d440500977ef25d0961034f4cd34"
+    ],
+    "document_id": "W2791492120",
+    "original_type_sets": {
+      "N455": [
+        "ACTOR"
+      ],
+      "N463": [
+        "CONDITION"
+      ],
+      "N474": [
+        "CONDITION"
+      ]
+    },
+    "type_set_conflict": true,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M034",
+    "referent_level": "sampled_polyp_compartment",
+    "reason": "Повторён один polypoid-tissue compartment CRSwNP-исследования 10 пациентов, сравненный с blood PBMC. Отдельные полипы не идентифицируются.",
+    "proposed_primary_type": "OBJECT",
+    "representative_id": "e:4322c7061d0e9072509b0654c29a0725b3e37190ce216bf9bcfa545d0cd8fdfd",
+    "representative_alias": "N460",
+    "member_aliases": [
+      "N460",
+      "N468",
+      "N473"
+    ],
+    "member_canonical_ids": [
+      "e:4322c7061d0e9072509b0654c29a0725b3e37190ce216bf9bcfa545d0cd8fdfd",
+      "e:74135017fad5b6729e9fde1daaaf633150644b08bf8e32bfe0f07bbd18e4000e",
+      "e:3e256833888fc1aef4996e6363c96bfc55ed4f958e1e8e75d9eb14318d66812e"
+    ],
+    "source_entity_ids": [
+      "e:3e256833888fc1aef4996e6363c96bfc55ed4f958e1e8e75d9eb14318d66812e",
+      "e:4322c7061d0e9072509b0654c29a0725b3e37190ce216bf9bcfa545d0cd8fdfd",
+      "e:74135017fad5b6729e9fde1daaaf633150644b08bf8e32bfe0f07bbd18e4000e"
+    ],
+    "source_mention_ids": [
+      "m:4a56c80b2f86fe921a6aefde40b5fd0546ba9f8f34aa6545ca2aa7363c337427",
+      "m:86e4c43a072258cd0c6951c0b5c0e3efb41dc1fd1edf329421427d73208f5865",
+      "m:8b833316e9fd64de3493eea8ed7a9fdc6aedd4d66b6ab07ab0ac3c2444d0ea07",
+      "m:8d3a6efcd12937f3ef7e276d2a79e2ee773dfc231be391940797cc8e9916c5ad",
+      "m:90d678e12d35da6b856e20e175a7cf60021f3e0294397a918c0f51b9cb3b35d9",
+      "m:d8b164727f05d94ec37089d95aca186b1d5bcb67a38bb915740dd8007e070219"
+    ],
+    "document_id": "W2791492120",
+    "original_type_sets": {
+      "N460": [
+        "CONDITION",
+        "OBJECT"
+      ],
+      "N468": [
+        "CONDITION",
+        "OBJECT"
+      ],
+      "N473": [
+        "CONDITION",
+        "OBJECT"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": true
+  },
+  {
+    "merge_group_id": "M035",
+    "referent_level": "sampled_pbmc_compartment",
+    "reason": "Явное peripheral blood mononuclear cells (PBMC) и последующие сравнения той же CRSwNP-серии задают один blood-cell compartment, без смешения с nasal polyps.",
+    "proposed_primary_type": "OBJECT",
+    "representative_id": "e:b97ece67b0a4af2e49316cdea76c641bd0ac8d808822305d4e7abcc4bef49e24",
+    "representative_alias": "N461",
+    "member_aliases": [
+      "N461",
+      "N462",
+      "N465",
+      "N471"
+    ],
+    "member_canonical_ids": [
+      "e:b97ece67b0a4af2e49316cdea76c641bd0ac8d808822305d4e7abcc4bef49e24",
+      "e:a6b9b76e3eefc402321ae19e8c10a023126714139d940f60d51a6b0165f8f32c",
+      "e:ae28ee9b2e843edaf56f8fca34439319ca839a5e9f6f08e6091009d4fe7f6bc7",
+      "e:8282b28de72413b8a3a65015737a5e5f9cd689ab8bd7fd4035c3298f11559517"
+    ],
+    "source_entity_ids": [
+      "e:8282b28de72413b8a3a65015737a5e5f9cd689ab8bd7fd4035c3298f11559517",
+      "e:a6b9b76e3eefc402321ae19e8c10a023126714139d940f60d51a6b0165f8f32c",
+      "e:ae28ee9b2e843edaf56f8fca34439319ca839a5e9f6f08e6091009d4fe7f6bc7",
+      "e:b97ece67b0a4af2e49316cdea76c641bd0ac8d808822305d4e7abcc4bef49e24"
+    ],
+    "source_mention_ids": [
+      "m:2ddd34ad6cefd87159442e4d5b8dc8d12ef632223c30d289401c4432a3762fb3",
+      "m:49ae6dac0d40bd5ade902479d55b0fcbf16f07d4bba0860b04cab1411730a37b",
+      "m:62013cfb4e60f083b7c610bd919a4a49c4555440d68a6c65c8fd9af8563539f0",
+      "m:ac9ee8b483b28e726a37d34604a8425e53450341bf0d96a61ff0806f942315e7",
+      "m:e38e5097680cf8e783262c0d2147a4b1c54dcd146ad246747d60b5d2a5ad9545",
+      "m:ef9b4558521cea977886b9df28b266045dd9e0ba43d8d677c4b2da65f0138ed0"
+    ],
+    "document_id": "W2791492120",
+    "original_type_sets": {
+      "N461": [
+        "OBJECT"
+      ],
+      "N462": [
+        "OBJECT"
+      ],
+      "N465": [
+        "DATA_RESOURCE",
+        "OBJECT"
+      ],
+      "N471": [
+        "DATA_RESOURCE",
+        "OBJECT"
+      ]
+    },
+    "type_set_conflict": true,
+    "original_multitype": true
+  },
+  {
+    "merge_group_id": "M036",
+    "referent_level": "sampled_memory_b_subpopulation",
+    "reason": "Оба упоминания относятся к memory B-cell subpopulation в nasal polyps тех же CRSwNP patients; не объединяются mature B cells или blood PBMC.",
+    "proposed_primary_type": "OBJECT",
+    "representative_id": "e:2ff183e0074c9592dc887e638a5dbcc464ac835efff176712b1792753d7a0ac8",
+    "representative_alias": "N466",
+    "member_aliases": [
+      "N466",
+      "N472"
+    ],
+    "member_canonical_ids": [
+      "e:2ff183e0074c9592dc887e638a5dbcc464ac835efff176712b1792753d7a0ac8",
+      "e:fb776e6ffe342a6bab73783202301236c502008f2df15e7538de19d6af5e2b17"
+    ],
+    "source_entity_ids": [
+      "e:2ff183e0074c9592dc887e638a5dbcc464ac835efff176712b1792753d7a0ac8",
+      "e:fb776e6ffe342a6bab73783202301236c502008f2df15e7538de19d6af5e2b17"
+    ],
+    "source_mention_ids": [
+      "m:26492a3e936c29f7ddb60a3715d26882d7662fb03fb06160032179f1fa8483b9",
+      "m:820fba0dda31bbcbe549adbe1f84a5854288df68f92baa85aabf348714cf6ee1",
+      "m:ba1f2eb16fd32fd193671a4745d2c0a366f15bfd0fb829aac70b08d99c2560ff",
+      "m:dc535cf889b85bebbb929b291a46f98a92bfd9d4c5deca0f43080ca0b59667a9"
+    ],
+    "document_id": "W2791492120",
+    "original_type_sets": {
+      "N466": [
+        "ATTRIBUTE",
+        "OBJECT"
+      ],
+      "N472": [
+        "ATTRIBUTE",
+        "OBJECT"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": true
+  },
+  {
+    "merge_group_id": "M037",
+    "referent_level": "named_economic_phenomenon",
+    "reason": "Один Harvest Paradox в той же статье: явление, его условия и обсуждение политики. Возможное противоречие утверждений источника не устраняется MERGE.",
+    "proposed_primary_type": "CONCEPT",
+    "representative_id": "e:e51c4d3ebfe6df80119a8a6b8f72726d306bf1876375bfeba12e3372805dc9e5",
+    "representative_alias": "N486",
+    "member_aliases": [
+      "N486",
+      "N494",
+      "N508"
+    ],
+    "member_canonical_ids": [
+      "e:e51c4d3ebfe6df80119a8a6b8f72726d306bf1876375bfeba12e3372805dc9e5",
+      "e:b6f9165c18529605bb74e59d6c35ebb9d81e120760d1e551f82fafa541e91b14",
+      "e:46e6726e95eebfe15d5bfbf6fb665a707d4bbaa43b738d490faf71b766a4b4aa"
+    ],
+    "source_entity_ids": [
+      "e:46e6726e95eebfe15d5bfbf6fb665a707d4bbaa43b738d490faf71b766a4b4aa",
+      "e:b6f9165c18529605bb74e59d6c35ebb9d81e120760d1e551f82fafa541e91b14",
+      "e:d056fe7124e5230f0b3a81bed2823ebbda4be32cfc73091f512608a58e41e19c",
+      "e:e51c4d3ebfe6df80119a8a6b8f72726d306bf1876375bfeba12e3372805dc9e5"
+    ],
+    "source_mention_ids": [
+      "m:0cd11aaa2698fc970c5f5e02678e05cc6cffe0ce4332d3bc9bc669c7d2f5ab59",
+      "m:4be367e3ecb4696a6d558827704fe2daa0b1a7102129a58947d25084a04bd1c4",
+      "m:4d9c218d421f5121b3cf415009dabbb7aca0a9647bef4a8a2d57d23b378a19ea",
+      "m:aaefec0359b910b5d300538594f6861111995c029bbf286a8649089413f13dbd",
+      "m:d6c29531ca4bdb4c96e41432d3e60a258036e503f062cdb984c4caa44cec136b"
+    ],
+    "document_id": "W2906067930",
+    "original_type_sets": {
+      "N486": [
+        "MECHANISM"
+      ],
+      "N494": [
+        "CONCEPT",
+        "MECHANISM"
+      ],
+      "N508": [
+        "CONCEPT"
+      ]
+    },
+    "type_set_conflict": true,
+    "original_multitype": true
+  },
+  {
+    "merge_group_id": "M038",
+    "referent_level": "farmers_total_income_variable",
+    "reason": "Оба span внутри farmers total income в утверждении 2003–2014; residents income и нормативное будущее farmers income не включены.",
+    "proposed_primary_type": "ATTRIBUTE",
+    "representative_id": "e:1d43e4a8ff297601f04bb2f85f296fc280b3aa1cfd8c7f9b1dfe29993764ab0d",
+    "representative_alias": "N501",
+    "member_aliases": [
+      "N501",
+      "N502"
+    ],
+    "member_canonical_ids": [
+      "e:1d43e4a8ff297601f04bb2f85f296fc280b3aa1cfd8c7f9b1dfe29993764ab0d",
+      "e:93a034d1bf19702514b0c6f1e82c60bb0d5b604f4a46d2504e60e0bcf78f9116"
+    ],
+    "source_entity_ids": [
+      "e:1d43e4a8ff297601f04bb2f85f296fc280b3aa1cfd8c7f9b1dfe29993764ab0d",
+      "e:93a034d1bf19702514b0c6f1e82c60bb0d5b604f4a46d2504e60e0bcf78f9116"
+    ],
+    "source_mention_ids": [
+      "m:0cd26407eabdc4b86923bfae3f1340768141ecdf2206b73e2b6c5c9af79f5f62",
+      "m:fa5302dd45e675cd55b436d3110ce21bb60ec3e4905cc01b3c409c66d58b2fac"
+    ],
+    "document_id": "W2906067930",
+    "original_type_sets": {
+      "N501": [
+        "ATTRIBUTE"
+      ],
+      "N502": [
+        "ATTRIBUTE"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M039",
+    "referent_level": "packet_transfer_metric",
+    "reason": "Оба span внутри number of packets transferred to base station в одном перечислении метрик; квалификатор transferred to base station сохраняется.",
+    "proposed_primary_type": "ATTRIBUTE",
+    "representative_id": "e:2e6f291d5bd3a5aee20c5ddc0a2ade392f8ad972f212d9733174124cae77b268",
+    "representative_alias": "N519",
+    "member_aliases": [
+      "N519",
+      "N520"
+    ],
+    "member_canonical_ids": [
+      "e:2e6f291d5bd3a5aee20c5ddc0a2ade392f8ad972f212d9733174124cae77b268",
+      "e:566ff9d0a6e357fc2316e6bf8dd66548ef5c762e4c4b4f21d506e741bfbf690c"
+    ],
+    "source_entity_ids": [
+      "e:2e6f291d5bd3a5aee20c5ddc0a2ade392f8ad972f212d9733174124cae77b268",
+      "e:566ff9d0a6e357fc2316e6bf8dd66548ef5c762e4c4b4f21d506e741bfbf690c"
+    ],
+    "source_mention_ids": [
+      "m:07bb013c88c6709ea4e34864833c0e065a8b8278b3d1ef3f75bb9f02c4ff11b1",
+      "m:f752d9cf05aec27d8aed2a7c5b922394a5e184fce4eba85cd8bf4b105cd04d4a"
+    ],
+    "document_id": "W2991563224",
+    "original_type_sets": {
+      "N519": [
+        "ATTRIBUTE"
+      ],
+      "N520": [
+        "ATTRIBUTE"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M040",
+    "referent_level": "embedded_nanostructure_class",
+    "reason": "Два вложенных имени относятся к одним embedded platinum nanostructures, получаемым описанным протоколом; embedded сохраняется.",
+    "proposed_primary_type": "OBJECT",
+    "representative_id": "e:e579835ad751f422192f704435cbcfeb28b1b50458cfeb126bf1fdf42a647285",
+    "representative_alias": "N546",
+    "member_aliases": [
+      "N546",
+      "N547"
+    ],
+    "member_canonical_ids": [
+      "e:e579835ad751f422192f704435cbcfeb28b1b50458cfeb126bf1fdf42a647285",
+      "e:5c6dfbc0f8225e309989b8b070787a41c0f54f9db8b559d229513d2a5dcb4825"
+    ],
+    "source_entity_ids": [
+      "e:5c6dfbc0f8225e309989b8b070787a41c0f54f9db8b559d229513d2a5dcb4825",
+      "e:e579835ad751f422192f704435cbcfeb28b1b50458cfeb126bf1fdf42a647285"
+    ],
+    "source_mention_ids": [
+      "m:3b60e0770ce9b5a39c3db8e9e91160639ef0ce61ab0170513e04637070c78dd0",
+      "m:7d46915797466030fb9346ad6f53d185f38e71fbc55531a0b53710f44e1bf8df"
+    ],
+    "document_id": "W3027457624",
+    "original_type_sets": {
+      "N546": [
+        "OBJECT"
+      ],
+      "N547": [
+        "OBJECT"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M041",
+    "referent_level": "procedure_kind",
+    "reason": "Явное penetrating keratoplasty (PK) в начале документа и повторные PK в том же GDD/PK-исследовании обозначают тип процедуры, не равенство операций разных пациентов.",
+    "proposed_primary_type": "PROCESS",
+    "representative_id": "e:4114c9a03161acf403aa05bd7507d52f70449f06a502a73984e3fc03f72c253c",
+    "representative_alias": "N576",
+    "member_aliases": [
+      "N576",
+      "N584"
+    ],
+    "member_canonical_ids": [
+      "e:4114c9a03161acf403aa05bd7507d52f70449f06a502a73984e3fc03f72c253c",
+      "e:62701abd13dd7c9c32835744ed5c1a4509014b2f5f0df978eea0aabb3d14f50c"
+    ],
+    "source_entity_ids": [
+      "e:31353740d011992aa490318f2fa27bdb57480cb57c81b6a5236654369292a034",
+      "e:4114c9a03161acf403aa05bd7507d52f70449f06a502a73984e3fc03f72c253c",
+      "e:62701abd13dd7c9c32835744ed5c1a4509014b2f5f0df978eea0aabb3d14f50c"
+    ],
+    "source_mention_ids": [
+      "m:3adecbdb4d0e9e10be60e0adf6eabfd0bf439fdce6bdd951c0ad1dbbdd6702b5",
+      "m:5d7fbfb0cb091d9b502db9b6e669b0186d29dbee8b5400826206034f7a4cffb2",
+      "m:6db45f5cd1ce8612eeaad31d5019b715182d4bee02dcd4643be6cf377ee383fb"
+    ],
+    "document_id": "W3101922761",
+    "original_type_sets": {
+      "N576": [
+        "PROCESS"
+      ],
+      "N584": [
+        "PROCESS"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M042",
+    "referent_level": "forty_eye_cohort",
+    "reason": "Purpose to compare eyes with GDD after PK непосредственно реализован серией Forty eyes of 40 patients; подгруппа 20 и outcome-specific groups исключены.",
+    "proposed_primary_type": "OBJECT",
+    "representative_id": "e:4985db187b92b0df25db8f7d0106140e8cbff83ccdab81ead031e0c4be5062bf",
+    "representative_alias": "N579",
+    "member_aliases": [
+      "N579",
+      "N586"
+    ],
+    "member_canonical_ids": [
+      "e:4985db187b92b0df25db8f7d0106140e8cbff83ccdab81ead031e0c4be5062bf",
+      "e:3a2668eee06d42cef170c526874f41660a3ed4dc035046914d215da7fbe04e2d"
+    ],
+    "source_entity_ids": [
+      "e:3a2668eee06d42cef170c526874f41660a3ed4dc035046914d215da7fbe04e2d",
+      "e:4985db187b92b0df25db8f7d0106140e8cbff83ccdab81ead031e0c4be5062bf"
+    ],
+    "source_mention_ids": [
+      "m:a8b38c25fd580e951382e2c4f1ac6e7be056f68d2cc1193c06c8ccdd7d77599f",
+      "m:d84cfab6826806c6263798231ba0ba5edacac5dc97f485ba5ebd3630eb569915"
+    ],
+    "document_id": "W3101922761",
+    "original_type_sets": {
+      "N579": [
+        "OBJECT"
+      ],
+      "N586": [
+        "OBJECT"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M043",
+    "referent_level": "disease_kind",
+    "reason": "Оба span относятся к самому заболеванию glaucoma, а не слову внутри device/medications/outcome/surgery/success. N573 сохраняет квалификатор intractable через provenance.",
+    "proposed_primary_type": "CONDITION",
+    "representative_id": "e:4a59e7a64dfd6f3d87d0895e7ecadf80b2ed5b2e77a2fc8f208c090afd55da07",
+    "representative_alias": "N573",
+    "member_aliases": [
+      "N573",
+      "N609"
+    ],
+    "member_canonical_ids": [
+      "e:4a59e7a64dfd6f3d87d0895e7ecadf80b2ed5b2e77a2fc8f208c090afd55da07",
+      "e:fec086ad84095aed9f1032f5b5a9b3309f6939ebacac638bff68f8c0ecd12bd9"
+    ],
+    "source_entity_ids": [
+      "e:4a59e7a64dfd6f3d87d0895e7ecadf80b2ed5b2e77a2fc8f208c090afd55da07",
+      "e:a40caf1aa634bb0a374e1c33e96ead20ff387d213b823bbaa4c33308d6361bc1",
+      "e:fec086ad84095aed9f1032f5b5a9b3309f6939ebacac638bff68f8c0ecd12bd9"
+    ],
+    "source_mention_ids": [
+      "m:6660773615a7d0c690d24c68fe85a2e330c13ae41ea74ff783f1f425e94701b3",
+      "m:83c3b565cf977387d3102014c581faa0bb6833715035adfe9afe61512482a0a3",
+      "m:855a65df4b0bdf1dec6200911ef5febf5f414d9f57a8f8e0329b698234e519ed"
+    ],
+    "document_id": "W3101922761",
+    "original_type_sets": {
+      "N573": [
+        "CONDITION"
+      ],
+      "N609": [
+        "CONDITION"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M044",
+    "referent_level": "full_graft_series",
+    "reason": "Описание clear survival corneal grafts в исходной серии и заключение о low survival относятся ко всей изученной серии; 7 clear grafts при последнем follow-up исключены.",
+    "proposed_primary_type": "OBJECT",
+    "representative_id": "e:6d66d753b05c357870785ef2bbb474fd7bbe5e1bc77c7e437d925160d6ac09c1",
+    "representative_alias": "N613",
+    "member_aliases": [
+      "N613",
+      "N619"
+    ],
+    "member_canonical_ids": [
+      "e:6d66d753b05c357870785ef2bbb474fd7bbe5e1bc77c7e437d925160d6ac09c1",
+      "e:a6943368162a0db0673910c6addd704a3e652a0af51d2a0acdb2edb860b1b32f"
+    ],
+    "source_entity_ids": [
+      "e:6d66d753b05c357870785ef2bbb474fd7bbe5e1bc77c7e437d925160d6ac09c1",
+      "e:a6943368162a0db0673910c6addd704a3e652a0af51d2a0acdb2edb860b1b32f"
+    ],
+    "source_mention_ids": [
+      "m:5c6585340fd8600621b407ab1d19c32b34535e6914452fa11cb100a6cd3c4548",
+      "m:fd0cbfbddb16e7500e3c988522eee3f938ef87813bf9f54a90a8f119e4e36954"
+    ],
+    "document_id": "W3101922761",
+    "original_type_sets": {
+      "N613": [
+        "OBJECT"
+      ],
+      "N619": [
+        "OBJECT"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M045",
+    "referent_level": "named_biopharmaceutical",
+    "reason": "Явное Recombinant human erythropoietin (rHuEPO); rHuEPO как comparator — тот же исходный препарат, не мутанты или anti-rHuEPO antibodies.",
+    "proposed_primary_type": "OBJECT",
+    "representative_id": "e:498d2e043b17b7584de73784321081f070e71403c7d6e4e3c6594678603997a4",
+    "representative_alias": "N620",
+    "member_aliases": [
+      "N620",
+      "N648"
+    ],
+    "member_canonical_ids": [
+      "e:498d2e043b17b7584de73784321081f070e71403c7d6e4e3c6594678603997a4",
+      "e:065dc7cf9a8457b8c56e82cc4046305900d753f7a0696bae1936d64fbb2c2492"
+    ],
+    "source_entity_ids": [
+      "e:065dc7cf9a8457b8c56e82cc4046305900d753f7a0696bae1936d64fbb2c2492",
+      "e:498d2e043b17b7584de73784321081f070e71403c7d6e4e3c6594678603997a4"
+    ],
+    "source_mention_ids": [
+      "m:6ce927555f8ac11ac8e7770b1d5fc32f5567c79f9e45f07ae705e033f60148c3",
+      "m:9c7a77352d82bf5e3ba41d03e4e621094b002e415cc344f3b1e0168e2877745b"
+    ],
+    "document_id": "W3123056951",
+    "original_type_sets": {
+      "N620": [
+        "OBJECT"
+      ],
+      "N648": [
+        "OBJECT"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M046",
+    "referent_level": "named_allele",
+    "reason": "HLA-DRB1*09 как распознаваемый allele, the allele и HLA-DRB1*09 allele прямо связываются текстом; span, явно названный gene, исключён.",
+    "proposed_primary_type": "OBJECT",
+    "representative_id": "e:8a1fc5f6d75d1d9a231bb62cd6ca6ea252bab969e83c6b27dbfafbadad2753ec",
+    "representative_alias": "N641",
+    "member_aliases": [
+      "N641",
+      "N644",
+      "N651"
+    ],
+    "member_canonical_ids": [
+      "e:8a1fc5f6d75d1d9a231bb62cd6ca6ea252bab969e83c6b27dbfafbadad2753ec",
+      "e:a37175599aef926c7613589cdad3321631e8550218096d2a6938f32a9d1b67ad",
+      "e:b53b7503bc4287341025bd1dd86d2addd33287c12efbca8950eb4117a8fe266a"
+    ],
+    "source_entity_ids": [
+      "e:4135a0fd5b64bd7f67217466464410ad72542594afbd515abdd4f0bf89ff65ad",
+      "e:8a1fc5f6d75d1d9a231bb62cd6ca6ea252bab969e83c6b27dbfafbadad2753ec",
+      "e:a37175599aef926c7613589cdad3321631e8550218096d2a6938f32a9d1b67ad",
+      "e:a460ea56a55db8a97181843e0f5ad6c92f8653603f04fbf75687393aaf9a55ee",
+      "e:b53b7503bc4287341025bd1dd86d2addd33287c12efbca8950eb4117a8fe266a"
+    ],
+    "source_mention_ids": [
+      "m:07f08ca73badcd9783edf1d024f71f03bd525c16d2d7bae37e16b1d6817b0597",
+      "m:2296eab7dd90076351ce5e09b12bdee29768f7077a4e523ec048b183ae77e16c",
+      "m:6b770b36284ed113d106bf54f67f51be1e0d745d797c044f092a6a8c7afadcb4",
+      "m:6f71889279f09ed8fe910c47a4bccfaf8a6adb0c42070a8cf15bc135f357bc84",
+      "m:7a9fe18a0a78fad9d8b08594d369c9e100c41424d061ab09e286772789e98ee3"
+    ],
+    "document_id": "W3123056951",
+    "original_type_sets": {
+      "N641": [
+        "OBJECT"
+      ],
+      "N644": [
+        "OBJECT"
+      ],
+      "N651": [
+        "OBJECT"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M047",
+    "referent_level": "seventeen_mutant_set",
+    "reason": "Все сохранённые members имеют nested starts 808/818 и 987/997 внутри seventeen mutants; это один набор 17, не утверждение Five out of seventeen как отдельный набор.",
+    "proposed_primary_type": "OBJECT",
+    "representative_id": "e:2746dda9839353c641759747a967769c5901ab693bec8ab93a9d2055f7b4c7d2",
+    "representative_alias": "N642",
+    "member_aliases": [
+      "N642",
+      "N643"
+    ],
+    "member_canonical_ids": [
+      "e:2746dda9839353c641759747a967769c5901ab693bec8ab93a9d2055f7b4c7d2",
+      "e:b50960bc1d73d289f54cbbf5538acac7f3192c5bf986149aaa01297e1b5b2b4a"
+    ],
+    "source_entity_ids": [
+      "e:2746dda9839353c641759747a967769c5901ab693bec8ab93a9d2055f7b4c7d2",
+      "e:407558ea45a30f02f3c4a94061105075d560b88a3d0eaa7b1aaace03e17aaae9",
+      "e:6cbb71b02c973f291d6aa9501541d7ae1cd916033010977306aa64d6b08701df",
+      "e:b50960bc1d73d289f54cbbf5538acac7f3192c5bf986149aaa01297e1b5b2b4a"
+    ],
+    "source_mention_ids": [
+      "m:7d9caacfb918695069570983e4478c84ccb927d7634a237beaa6d78a676423cf",
+      "m:8508c56b2162e5189811cf026712b3757428295138902090d185741f665d3fae",
+      "m:c2c5977e272c6b80eed40f72e1692bfb7a79b27135631c0558696cf240d4c29d",
+      "m:c4b9e1341df9cdbdcb6eb62368d893e18be44366236a58f8a08e1895649dfff4"
+    ],
+    "document_id": "W3123056951",
+    "original_type_sets": {
+      "N642": [
+        "OBJECT"
+      ],
+      "N643": [
+        "OBJECT"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M048",
+    "referent_level": "named_species",
+    "reason": "Полное Yarrowia lipolytica и сокращение Y. lipolytica относятся к одному виду в работе. Это уровень вида, не тождество всех инженерных штаммов или культур.",
+    "proposed_primary_type": "OBJECT",
+    "representative_id": "e:a819a412a4761dd0023cc77f7c4b71c9c375840116cfd76d9e344a736ba9f081",
+    "representative_alias": "N672",
+    "member_aliases": [
+      "N672",
+      "N673",
+      "N674",
+      "N690"
+    ],
+    "member_canonical_ids": [
+      "e:a819a412a4761dd0023cc77f7c4b71c9c375840116cfd76d9e344a736ba9f081",
+      "e:e05a7757e1e0db7767142b5389eed12c634dc56216ded73c4942dd5ce3d84b53",
+      "e:8c897a21a138b7d18aeb4e07092cbdbd09409531f2f630abc2c42760e58b2b57",
+      "e:e88e8ea95c739847d5e37656127f99a7d63e12c4e9510b47101f895a5564ec06"
+    ],
+    "source_entity_ids": [
+      "e:05e5a1a32e48b1854e31b1c653040bc898db575ca93f3ddb2940aabe96c756cd",
+      "e:8c897a21a138b7d18aeb4e07092cbdbd09409531f2f630abc2c42760e58b2b57",
+      "e:a819a412a4761dd0023cc77f7c4b71c9c375840116cfd76d9e344a736ba9f081",
+      "e:e05a7757e1e0db7767142b5389eed12c634dc56216ded73c4942dd5ce3d84b53",
+      "e:e88e8ea95c739847d5e37656127f99a7d63e12c4e9510b47101f895a5564ec06"
+    ],
+    "source_mention_ids": [
+      "m:06e085dee593fd6ebe7d921d91ca7a56bcb7491fde4263ba2fb7c9299b80baa0",
+      "m:1eca5c299a43034567c50ffaee60bd637f74de67cb99c41f877b6d9262b01236",
+      "m:2dbe9ef797c1df23253bd56850206dc43d85bb52dc578448bf9f1d611030b7d3",
+      "m:4800fae0d2295ba42c8dbedb2dbf9d4c49fdadcb0bb12864e06e904146aec3ff",
+      "m:71782f05faee0030cefeb6a2b3258a3c3d3d95f774a95abb5e13b5288ffdb8cd"
+    ],
+    "document_id": "W3138328568",
+    "original_type_sets": {
+      "N672": [
+        "OBJECT"
+      ],
+      "N673": [
+        "OBJECT"
+      ],
+      "N674": [
+        "OBJECT"
+      ],
+      "N690": [
+        "OBJECT"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M049",
+    "referent_level": "eight_gene_set",
+    "reason": "These genes и tolerance-enhancing genes в одном предложении после 8 of the gene candidates относятся к набору восьми; исходные 82 и успешные 5 исключены.",
+    "proposed_primary_type": "OBJECT",
+    "representative_id": "e:32697b3b8272542d2b8784c8ed71c0a41ede3e56f129d173ef3df0ce0b6c3c0d",
+    "representative_alias": "N678",
+    "member_aliases": [
+      "N678",
+      "N680"
+    ],
+    "member_canonical_ids": [
+      "e:32697b3b8272542d2b8784c8ed71c0a41ede3e56f129d173ef3df0ce0b6c3c0d",
+      "e:a1cfe6b00589c1dd50d633aca5b79c481b66758e0a5dfae8ed1dbbcecdd546f2"
+    ],
+    "source_entity_ids": [
+      "e:32697b3b8272542d2b8784c8ed71c0a41ede3e56f129d173ef3df0ce0b6c3c0d",
+      "e:a1cfe6b00589c1dd50d633aca5b79c481b66758e0a5dfae8ed1dbbcecdd546f2"
+    ],
+    "source_mention_ids": [
+      "m:44e7c73cd536ca400016f582dddd08a83721efdc116e939c2348568b3dc78b7e",
+      "m:cbd8fbfacebfdd1707bb7f7612bde0304460126bfcdd37ced4cd5079f31f9f45"
+    ],
+    "document_id": "W3138328568",
+    "original_type_sets": {
+      "N678": [
+        "CONCEPT"
+      ],
+      "N680": [
+        "CONCEPT"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M050",
+    "referent_level": "task_class",
+    "reason": "Один заявленный challenge real-time diagnosis; case study MRI помогает именно этой задаче. Отдельные диагнозы пациентов не объединяются.",
+    "proposed_primary_type": "TASK",
+    "representative_id": "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a",
+    "representative_alias": "N698",
+    "member_aliases": [
+      "N698",
+      "N707"
+    ],
+    "member_canonical_ids": [
+      "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a",
+      "e:be1c5ea3c7e6475974dde138d69049694acfa353302341ffce8ddba375f96072"
+    ],
+    "source_entity_ids": [
+      "e:be1c5ea3c7e6475974dde138d69049694acfa353302341ffce8ddba375f96072",
+      "e:cc943f21416cd1ef008b7d6dda3320120f45d8855a8c099f003d431a6350eb8a"
+    ],
+    "source_mention_ids": [
+      "m:a9ee5283bfac6c6accd38cdbbc5a3a67e73a52daccae75dbe07f82207b856b70",
+      "m:c9de4f00c47e2df7c339bc6655f49e1d2910fac133aa75c7d404a4cf57fde2a6"
+    ],
+    "document_id": "W4230116451",
+    "original_type_sets": {
+      "N698": [
+        "TASK"
+      ],
+      "N707": [
+        "TASK"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M051",
+    "referent_level": "document_environment",
+    "reason": "Оба вложенных span находятся в complex computational environments одного предложения; MECHANISM выглядит ошибочным для среды, исходный тип не изменяется.",
+    "proposed_primary_type": "OBJECT",
+    "representative_id": "e:dfa62891c45caaad0430a5ca197acdc26a2a74011e696e4de73f113b131d97a6",
+    "representative_alias": "N699",
+    "member_aliases": [
+      "N699",
+      "N700"
+    ],
+    "member_canonical_ids": [
+      "e:dfa62891c45caaad0430a5ca197acdc26a2a74011e696e4de73f113b131d97a6",
+      "e:65e57b254ff4266e47ed2b19aee5b817fa1c1e26988c170926e6015f0f7e5fb1"
+    ],
+    "source_entity_ids": [
+      "e:65e57b254ff4266e47ed2b19aee5b817fa1c1e26988c170926e6015f0f7e5fb1",
+      "e:dfa62891c45caaad0430a5ca197acdc26a2a74011e696e4de73f113b131d97a6"
+    ],
+    "source_mention_ids": [
+      "m:49bf61528d3050779f383f584d06fd93c57147948ec8a113ff911bc5a4b45eaf",
+      "m:c34a0b298f8ad0b731d8c365ecf44504a29623bbdd69ac756d54f5a22c53b2b3"
+    ],
+    "document_id": "W4230116451",
+    "original_type_sets": {
+      "N699": [
+        "MECHANISM"
+      ],
+      "N700": [
+        "MECHANISM"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M052",
+    "referent_level": "named_institution",
+    "reason": "PNM в том же описании SPMI и доменах student.pnm.ac.id / imonev.pnm.ac.id отсылает к названному Politeknik Negeri Madiun; конфликт DATA_RESOURCE/ACTOR не обозначает другой вуз.",
+    "proposed_primary_type": "ACTOR",
+    "representative_id": "e:f8aa142a5687096ba32bcb6bd3aa627376e65d2e3e600c319d5233744fad2f91",
+    "representative_alias": "N716",
+    "member_aliases": [
+      "N716",
+      "N735"
+    ],
+    "member_canonical_ids": [
+      "e:f8aa142a5687096ba32bcb6bd3aa627376e65d2e3e600c319d5233744fad2f91",
+      "e:bd6ee7a0da73a5c62e8d59a41cb3b58d1423fb38e40d20fa8ea1f81fa582afa0"
+    ],
+    "source_entity_ids": [
+      "e:5d2297815d8da87dc191ea541384b1deee3c82acd581dc5d251ee86946ded146",
+      "e:bd6ee7a0da73a5c62e8d59a41cb3b58d1423fb38e40d20fa8ea1f81fa582afa0",
+      "e:f8aa142a5687096ba32bcb6bd3aa627376e65d2e3e600c319d5233744fad2f91"
+    ],
+    "source_mention_ids": [
+      "m:51104655daffc336f3d3bf1455b13c7f18a5c488b3f9b94178d74df73cbcbd2c",
+      "m:8713df3ce5a735620eebfdd3f48c37cef9ef9839509c1727be97df687df3aa17",
+      "m:b4178b7687f7d93c04e1afdd3c293d15128b7e64df5ce0976bb9afbb1e5e8db9"
+    ],
+    "document_id": "W4234628002",
+    "original_type_sets": {
+      "N716": [
+        "ACTOR"
+      ],
+      "N735": [
+        "DATA_RESOURCE"
+      ]
+    },
+    "type_set_conflict": true,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M053",
+    "referent_level": "document_user_class",
+    "reason": "Один класс students PNM с доступом к оценке преподавателей и questionnaire page student.pnm.ac.id; не отдельные учебные потоки.",
+    "proposed_primary_type": "ACTOR",
+    "representative_id": "e:6fe47b576c9d4d8684d4925e8468f7073cc86423523824f671f2e7761add1f20",
+    "representative_alias": "N721",
+    "member_aliases": [
+      "N721",
+      "N737"
+    ],
+    "member_canonical_ids": [
+      "e:6fe47b576c9d4d8684d4925e8468f7073cc86423523824f671f2e7761add1f20",
+      "e:b4fd58cc579357ce0090cefe2dc61dec9560d261594644faeb7a1f93cbf67889"
+    ],
+    "source_entity_ids": [
+      "e:21ca2c21cb1efb7ed59a82b9d20de89a1e4fc92194fb81892d9ab02adc772d0d",
+      "e:6fe47b576c9d4d8684d4925e8468f7073cc86423523824f671f2e7761add1f20",
+      "e:b4fd58cc579357ce0090cefe2dc61dec9560d261594644faeb7a1f93cbf67889"
+    ],
+    "source_mention_ids": [
+      "m:59e95df732059448db9aa62ca4ca735dff57123c9a7d00c006dcce7f48f7c6fa",
+      "m:d4b26e2865071ddb28553bf569d74ea6b999ea05b54533cd800593801f4ecefe",
+      "m:d64efe7a90008c0e675adaba423c90faa41cee716d23b1d906b6b416c632cf3b"
+    ],
+    "document_id": "W4234628002",
+    "original_type_sets": {
+      "N721": [
+        "ACTOR"
+      ],
+      "N737": [
+        "ACTOR"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M054",
+    "referent_level": "transport_mode",
+    "reason": "Два span в high-speed rail (HSR) обозначают один транспортный mode/sector. Конкретные поезда или перевозчики не идентифицируются.",
+    "proposed_primary_type": null,
+    "representative_id": "e:0be9a05e02501ad818d7cad8e087c2f7958cb1ef74237d7140c3ccdc1124c2e8",
+    "representative_alias": "N782",
+    "member_aliases": [
+      "N782",
+      "N783"
+    ],
+    "member_canonical_ids": [
+      "e:0be9a05e02501ad818d7cad8e087c2f7958cb1ef74237d7140c3ccdc1124c2e8",
+      "e:a0fd83bf3465134e855fb7de50584367abdb98f1fdbe59aea6f242202743d89d"
+    ],
+    "source_entity_ids": [
+      "e:0be9a05e02501ad818d7cad8e087c2f7958cb1ef74237d7140c3ccdc1124c2e8",
+      "e:a0fd83bf3465134e855fb7de50584367abdb98f1fdbe59aea6f242202743d89d"
+    ],
+    "source_mention_ids": [
+      "m:ab457df9e80a431fc33179c1e8b8de8343aba9d4327e1a94da91978f021a026a",
+      "m:b3154e10bad197a07906ae7563a3d24f4f66957bc373483f87335f20b0ba3886"
+    ],
+    "document_id": "W4309030044",
+    "original_type_sets": {
+      "N782": [
+        "ACTOR"
+      ],
+      "N783": [
+        "ACTOR"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M055",
+    "referent_level": "document_carrier_class",
+    "reason": "Один класс airlines как контрагент HSR в исходной постановке и заключении модели; не утверждается один и тот же рейс/компания.",
+    "proposed_primary_type": "ACTOR",
+    "representative_id": "e:8f73ea6468b3e5aad9ed634882e81a1d8aa9f5a50063535943b933cf26c5cd1d",
+    "representative_alias": "N784",
+    "member_aliases": [
+      "N784",
+      "N794"
+    ],
+    "member_canonical_ids": [
+      "e:8f73ea6468b3e5aad9ed634882e81a1d8aa9f5a50063535943b933cf26c5cd1d",
+      "e:408cf7f2cc69dfd3cc1674c01293146341c9c27941e53a9d63dcbbb2b00c54d3"
+    ],
+    "source_entity_ids": [
+      "e:408cf7f2cc69dfd3cc1674c01293146341c9c27941e53a9d63dcbbb2b00c54d3",
+      "e:8f73ea6468b3e5aad9ed634882e81a1d8aa9f5a50063535943b933cf26c5cd1d"
+    ],
+    "source_mention_ids": [
+      "m:95a95510858e3791cb090231f05b4772949ac067ad4ad86e04bfcc80e822f500",
+      "m:cd731d7361427913ed3a9dc582c1712bc84cdb7cc74473a1b878f0a9a518d1af"
+    ],
+    "document_id": "W4309030044",
+    "original_type_sets": {
+      "N784": [
+        "ACTOR"
+      ],
+      "N794": [
+        "ACTOR"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M056",
+    "referent_level": "named_method",
+    "reason": "method of successive averages и вложенное successive averages в том же выборе solver — один метод.",
+    "proposed_primary_type": "METHOD",
+    "representative_id": "e:35c9adcf60176ff329506571408631827a7c7681d08fc463a64afbc456dd58f3",
+    "representative_alias": "N791",
+    "member_aliases": [
+      "N791",
+      "N792"
+    ],
+    "member_canonical_ids": [
+      "e:35c9adcf60176ff329506571408631827a7c7681d08fc463a64afbc456dd58f3",
+      "e:00c27c413889406c14f24be9b1840d7286728df59a4ff65276e7af4e48065007"
+    ],
+    "source_entity_ids": [
+      "e:00c27c413889406c14f24be9b1840d7286728df59a4ff65276e7af4e48065007",
+      "e:35c9adcf60176ff329506571408631827a7c7681d08fc463a64afbc456dd58f3"
+    ],
+    "source_mention_ids": [
+      "m:32fb06d9d005a434b04e05709da6018194890432aaaeaac721ba3ce8b0f08508",
+      "m:fa6ca0446db54ed4ca8ba4304d969b5878cd1c8da30d610fc06ddbc862295625"
+    ],
+    "document_id": "W4309030044",
+    "original_type_sets": {
+      "N791": [
+        "METHOD"
+      ],
+      "N792": [
+        "METHOD"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M057",
+    "referent_level": "named_narrative_people",
+    "reason": "Nephite people и Nephite race в одном повествовании о descendants of Lehi явно один названный коллектив; не подтверждается историческая истинность повествования.",
+    "proposed_primary_type": "ACTOR",
+    "representative_id": "e:91817fd77a9f3b2ca806734985cf61d0bc1f754ff3f0a5fb1592c642f44962f0",
+    "representative_alias": "N802",
+    "member_aliases": [
+      "N802",
+      "N807"
+    ],
+    "member_canonical_ids": [
+      "e:91817fd77a9f3b2ca806734985cf61d0bc1f754ff3f0a5fb1592c642f44962f0",
+      "e:fb41271f712e7fa9a3f927a28b75235d8c37e8409ff2ee69e8774aa6cd45fdf5"
+    ],
+    "source_entity_ids": [
+      "e:91817fd77a9f3b2ca806734985cf61d0bc1f754ff3f0a5fb1592c642f44962f0",
+      "e:fb41271f712e7fa9a3f927a28b75235d8c37e8409ff2ee69e8774aa6cd45fdf5"
+    ],
+    "source_mention_ids": [
+      "m:6dd7b2be204a59ed33c36e08735814916ff97559218f5080706612a61087025d",
+      "m:787d0b37dba98a26f3ac8e87cd5540b9b820a78eccec24405dcbdde6bb0f3ea8"
+    ],
+    "document_id": "W4312422299",
+    "original_type_sets": {
+      "N802": [
+        "CONCEPT"
+      ],
+      "N807": [
+        "CONCEPT"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M058",
+    "referent_level": "document_process_class",
+    "reason": "reproduction и reproduce в последовательном разъяснении того, как Nephites reproduce the people of God, обозначают один процесс на уровне темы.",
+    "proposed_primary_type": "PROCESS",
+    "representative_id": "e:aaf72b0c489808c065ce0c466aa42c74381e7fc794c8ad43890b7ed37f1bb858",
+    "representative_alias": "N810",
+    "member_aliases": [
+      "N810",
+      "N811"
+    ],
+    "member_canonical_ids": [
+      "e:aaf72b0c489808c065ce0c466aa42c74381e7fc794c8ad43890b7ed37f1bb858",
+      "e:767b15bd318c189c68fe704d6aeae4b983b1c63ad240a54b9ecb1566365cf3ec"
+    ],
+    "source_entity_ids": [
+      "e:767b15bd318c189c68fe704d6aeae4b983b1c63ad240a54b9ecb1566365cf3ec",
+      "e:aaf72b0c489808c065ce0c466aa42c74381e7fc794c8ad43890b7ed37f1bb858"
+    ],
+    "source_mention_ids": [
+      "m:bc7fe74678b1eb7f7c535d35214106c748a6530455eeae9f7b193a18049619a6",
+      "m:d1fa8b12dff26d8f84d68bbfef7c0ce5b268c360c4f86207e686c2b0773ca007"
+    ],
+    "document_id": "W4312422299",
+    "original_type_sets": {
+      "N810": [
+        "PROCESS"
+      ],
+      "N811": [
+        "PROCESS"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M059",
+    "referent_level": "discipline",
+    "reason": "Одна дисциплина Oral history в Италии — предмет исторического описания и отношения архивов; не конкретные интервью.",
+    "proposed_primary_type": "CONCEPT",
+    "representative_id": "e:8717a3dbc605d0334a6e41a1758dc2dc19f4c951366db71f00e654bd4f1d2a0c",
+    "representative_alias": "N812",
+    "member_aliases": [
+      "N812",
+      "N818"
+    ],
+    "member_canonical_ids": [
+      "e:8717a3dbc605d0334a6e41a1758dc2dc19f4c951366db71f00e654bd4f1d2a0c",
+      "e:9e58bcfdb23a5bcf82a187e9c3ea0336fc77929326493090cb56040967f4be1b"
+    ],
+    "source_entity_ids": [
+      "e:8717a3dbc605d0334a6e41a1758dc2dc19f4c951366db71f00e654bd4f1d2a0c",
+      "e:9e58bcfdb23a5bcf82a187e9c3ea0336fc77929326493090cb56040967f4be1b"
+    ],
+    "source_mention_ids": [
+      "m:2bb866b3a6fa8e44bdf152c63acf4db40cf4a1600a4d299361fa0ead7c107aa3",
+      "m:349855f2a10dcd4d07f43213116efbed3bf9b9dc6487cfccdc3ce0366c25998d",
+      "m:5dee87626384f0f3334db48b1a869ca144cd4168a49215f33ec57a8afa016c8e",
+      "m:aa28530c6bbb5f2cef2db6add6b2788cdb8ca07eb1afb23e29bdf5dfdcce5ed7"
+    ],
+    "document_id": "W4381572413",
+    "original_type_sets": {
+      "N812": [
+        "CONCEPT",
+        "TASK"
+      ],
+      "N818": [
+        "CONCEPT",
+        "TASK"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": true
+  },
+  {
+    "merge_group_id": "M060",
+    "referent_level": "named_architecture",
+    "reason": "Явное feature pyramid network (FPN) и FPN backbone того же текста; конфликт MECHANISM/ACTOR относится к типизации архитектуры.",
+    "proposed_primary_type": "METHOD",
+    "representative_id": "e:84a7c9f7526af62ef063d3e04261984e327599ccf8d2f28b7a5b65ceec60d00c",
+    "representative_alias": "N833",
+    "member_aliases": [
+      "N833",
+      "N840"
+    ],
+    "member_canonical_ids": [
+      "e:84a7c9f7526af62ef063d3e04261984e327599ccf8d2f28b7a5b65ceec60d00c",
+      "e:4d86ea3f8065f58c771f15ac031861764b52c663e8da1767c9b3c0b6800802c5"
+    ],
+    "source_entity_ids": [
+      "e:4d86ea3f8065f58c771f15ac031861764b52c663e8da1767c9b3c0b6800802c5",
+      "e:84a7c9f7526af62ef063d3e04261984e327599ccf8d2f28b7a5b65ceec60d00c"
+    ],
+    "source_mention_ids": [
+      "m:2d513a5cff15c6db525c2d7ba325a1de5a5981a1620733b5f69a4647f444d335",
+      "m:46332b05d34f38c62376bcc7c10cf3bf9c053d3c21891402cb0e5d8f3df98acb"
+    ],
+    "document_id": "W4389076493",
+    "original_type_sets": {
+      "N833": [
+        "MECHANISM"
+      ],
+      "N840": [
+        "ACTOR"
+      ]
+    },
+    "type_set_conflict": true,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M061",
+    "referent_level": "named_model",
+    "reason": "Предложен один novel adaptive region proposal network (ARPN); все последующие ARPN ссылаются на него, без версий или альтернативных моделей с этим именем.",
+    "proposed_primary_type": "METHOD",
+    "representative_id": "e:0405a612e6ef478f87f6728b2a3e7a554663cfb04a6bfc4d86f75eb618c50cdd",
+    "representative_alias": "N845",
+    "member_aliases": [
+      "N845",
+      "N846",
+      "N851",
+      "N856"
+    ],
+    "member_canonical_ids": [
+      "e:0405a612e6ef478f87f6728b2a3e7a554663cfb04a6bfc4d86f75eb618c50cdd",
+      "e:71228efadee6787c502d10a752656de5b24e0e0f09ddfe617e3a6863a4c495a3",
+      "e:4ac42b4d8728336fa36d82fc7ba27caa7b15a02c2df68bdca5fb83b0b4c2975d",
+      "e:e79a63909c3963b7d2abe4bf03e67f1b0c6460b45d65ec9bb0e552be8c51fc4b"
+    ],
+    "source_entity_ids": [
+      "e:0405a612e6ef478f87f6728b2a3e7a554663cfb04a6bfc4d86f75eb618c50cdd",
+      "e:4ac42b4d8728336fa36d82fc7ba27caa7b15a02c2df68bdca5fb83b0b4c2975d",
+      "e:71228efadee6787c502d10a752656de5b24e0e0f09ddfe617e3a6863a4c495a3",
+      "e:77fcc2a646ab1be091b6913d23097d429f8836e61323f63b49f917cfa1f26e73",
+      "e:e79a63909c3963b7d2abe4bf03e67f1b0c6460b45d65ec9bb0e552be8c51fc4b"
+    ],
+    "source_mention_ids": [
+      "m:36e6427594822166b43ed15bf983ab095d3fa0182acc639ec242a2993033fda0",
+      "m:429e1e76f3c94f43bf314727bbb3206312447d0d3c0deacd41412ef4e86f81fe",
+      "m:4e6310c66ffb4df7ab2dcf961813b54b774dd505b65f55aa93a5b308ae5bd8ff",
+      "m:8b4f4d2c9503a43bb39e83e81a1cd8d2171267c9bf64b3d82d510f1a19e4239f",
+      "m:949a30eaa3afc5817c82c7c9536efc54085ca66d4748e0fcfbdffd585d7ab678",
+      "m:b66c5ae3060082264729afd8ff182669f234b2baed5b67b7ed0cf4839ee3de48",
+      "m:b953007d36711544adc4eb395fc547af374000bac7d09e4bb1c0c3851793f87d"
+    ],
+    "document_id": "W4389076493",
+    "original_type_sets": {
+      "N845": [
+        "METHOD"
+      ],
+      "N846": [
+        "ACTOR"
+      ],
+      "N851": [
+        "CONCEPT"
+      ],
+      "N856": [
+        "ACTOR",
+        "CONCEPT",
+        "METHOD"
+      ]
+    },
+    "type_set_conflict": true,
+    "original_multitype": true
+  },
+  {
+    "merge_group_id": "M062",
+    "referent_level": "document_competitor_set",
+    "reason": "Два вложенных span находятся в other competitors одного утверждения об экспериментах; квалификатор other сохраняется. Состав конкурентных методов неизвестен.",
+    "proposed_primary_type": null,
+    "representative_id": "e:6fe9842618d91f8eba22c11427e52503168cd97745d303c70b7c336331113b89",
+    "representative_alias": "N858",
+    "member_aliases": [
+      "N858",
+      "N859"
+    ],
+    "member_canonical_ids": [
+      "e:6fe9842618d91f8eba22c11427e52503168cd97745d303c70b7c336331113b89",
+      "e:36eb0172845a70ff06838060382c16a2ac605e1f35ab0dc44d20f1fafe6df794"
+    ],
+    "source_entity_ids": [
+      "e:36eb0172845a70ff06838060382c16a2ac605e1f35ab0dc44d20f1fafe6df794",
+      "e:6fe9842618d91f8eba22c11427e52503168cd97745d303c70b7c336331113b89"
+    ],
+    "source_mention_ids": [
+      "m:e7d8c4c37980fe53b4987c67b5f0c3fc043db2c429f59c0b594baf5775a28b68",
+      "m:fa68b411b86bd7330bad10f6ac23313d1788a61f06243aaf9aa828cb13aecacc"
+    ],
+    "document_id": "W4389076493",
+    "original_type_sets": {
+      "N858": [
+        "ACTOR"
+      ],
+      "N859": [
+        "ACTOR"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M063",
+    "referent_level": "named_metric",
+    "reason": "average recall (AR) и его вложенная полная форма задают одну метрику; average precision не включена.",
+    "proposed_primary_type": "ATTRIBUTE",
+    "representative_id": "e:d54badba773c8e3d81e65976c455d52b4ba2f803f4a6eb626bd09279c471ac54",
+    "representative_alias": "N861",
+    "member_aliases": [
+      "N861",
+      "N862"
+    ],
+    "member_canonical_ids": [
+      "e:d54badba773c8e3d81e65976c455d52b4ba2f803f4a6eb626bd09279c471ac54",
+      "e:da53986ca0abd61c1d83c3b996bca5a924a7b7b3b9c1b87ca063b9336cc29bac"
+    ],
+    "source_entity_ids": [
+      "e:d54badba773c8e3d81e65976c455d52b4ba2f803f4a6eb626bd09279c471ac54",
+      "e:da53986ca0abd61c1d83c3b996bca5a924a7b7b3b9c1b87ca063b9336cc29bac"
+    ],
+    "source_mention_ids": [
+      "m:c4fa9417c8c76a124b1285ea181d4a0a10095cc2a849e0ef0fd0812f0ea6c74a",
+      "m:d28e7f6ee3795d72d41290793f11e982684badfebb0d0bfa39946c68e57ac883"
+    ],
+    "document_id": "W4389076493",
+    "original_type_sets": {
+      "N861": [
+        "ATTRIBUTE"
+      ],
+      "N862": [
+        "ATTRIBUTE"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M064",
+    "referent_level": "device_kind",
+    "reason": "Одно определение cardiac implantable electronic device (CIED) с/без скобок и аббревиатура при том же определении; конкретные CIEDs 16 пациентов исключены.",
+    "proposed_primary_type": "OBJECT",
+    "representative_id": "e:0b948f1fcf84cac30d3dba50e093b26a4b1597c93ace9b2adeea935263df977a",
+    "representative_alias": "N866",
+    "member_aliases": [
+      "N865",
+      "N866",
+      "N867"
+    ],
+    "member_canonical_ids": [
+      "e:08b9d2ad6ed9077a9992901cd451178cd23ba0ad375a1df47284718df7f0d9a2",
+      "e:0b948f1fcf84cac30d3dba50e093b26a4b1597c93ace9b2adeea935263df977a",
+      "e:3366345b7c4d2568a73bc8eface9b10aa1094f2e3591217ae8190cf279a1d33c"
+    ],
+    "source_entity_ids": [
+      "e:08b9d2ad6ed9077a9992901cd451178cd23ba0ad375a1df47284718df7f0d9a2",
+      "e:0b948f1fcf84cac30d3dba50e093b26a4b1597c93ace9b2adeea935263df977a",
+      "e:3366345b7c4d2568a73bc8eface9b10aa1094f2e3591217ae8190cf279a1d33c"
+    ],
+    "source_mention_ids": [
+      "m:249e019c92bdbf89954aa43ce8dcda53bacf8c05389730b9307e401e1763df50",
+      "m:321f7e6a5fb9e112fff772a30a9b818a8094b3a36f79bc2826bef224aefca2b5",
+      "m:b0033b57f930f921fba777b172d2e0e5ebda80871a44a9f0f1ce7dcb1435d1bb"
+    ],
+    "document_id": "W4391351014",
+    "original_type_sets": {
+      "N865": [
+        "OBJECT"
+      ],
+      "N866": [
+        "OBJECT"
+      ],
+      "N867": [
+        "OBJECT"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M065",
+    "referent_level": "procedure_kind",
+    "reason": "radiotherapy и RT в одном исследовании 16 пациентов обозначают вид терапии. Разные fractions/дозы/курсы сохраняются как разные исходные факты.",
+    "proposed_primary_type": "PROCESS",
+    "representative_id": "e:f1b7e26849d139768fb0d1e3c944c279c2e34b910af12f8e48f117bd8c9f7643",
+    "representative_alias": "N872",
+    "member_aliases": [
+      "N872",
+      "N883"
+    ],
+    "member_canonical_ids": [
+      "e:f1b7e26849d139768fb0d1e3c944c279c2e34b910af12f8e48f117bd8c9f7643",
+      "e:cf9d12ce56078c2d12a32e7fb845a0bd81df81441b1c50b1ed1a9948b69d7186"
+    ],
+    "source_entity_ids": [
+      "e:4c053b6d99fbeb57824291c5b499ced266e98d753d8d64f366677df113f29e4a",
+      "e:c813eee400f32c5249d50b8d088b501ec6e99ff2215e473db324b4b158e86a7d",
+      "e:cf9d12ce56078c2d12a32e7fb845a0bd81df81441b1c50b1ed1a9948b69d7186",
+      "e:d8a65a0ce2cbc18520c021381898bd01b509322a7247598f7a671f8652d4a3ce",
+      "e:f1b7e26849d139768fb0d1e3c944c279c2e34b910af12f8e48f117bd8c9f7643"
+    ],
+    "source_mention_ids": [
+      "m:51a7c40301490be48df353881c7e87c17bd446f3bfe078d00d38665b3c3df20b",
+      "m:943fe92e369739c674e1b4f08ba9a86ffd9a9712414086fa3b12468d67576c8a",
+      "m:cb0b08252707cde4072c05d6ca0c287f6abeccad038895993d974c2ce54892fb",
+      "m:dad1ae97263a5adf0f0bf622006a19944332ab6f1ef00d61c9a32ac148f7cec9",
+      "m:fbfd87523a63506992349a8663ddd83232d12bbce57b86062d597d24b5806c0b"
+    ],
+    "document_id": "W4391351014",
+    "original_type_sets": {
+      "N872": [
+        "PROCESS"
+      ],
+      "N883": [
+        "PROCESS"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M066",
+    "referent_level": "named_taxon",
+    "reason": "Rhizosolenia imbricata в перечне видов и в сообщении об отсутствующих genes — один таксон, не конкретные клетки/экземпляры; ошибочные CONDITION/RESULT сохраняются в provenance.",
+    "proposed_primary_type": "OBJECT",
+    "representative_id": "e:6d255f981cc2f195186910803a5a220f7aa2c44543ae9de811f78753ffa84134",
+    "representative_alias": "N048",
+    "member_aliases": [
+      "N048",
+      "N079"
+    ],
+    "member_canonical_ids": [
+      "e:6d255f981cc2f195186910803a5a220f7aa2c44543ae9de811f78753ffa84134",
+      "e:e241a409df3262d861344af06a8994f6632dadc62138b78116faeed27b078f9d"
+    ],
+    "source_entity_ids": [
+      "e:6d255f981cc2f195186910803a5a220f7aa2c44543ae9de811f78753ffa84134",
+      "e:e241a409df3262d861344af06a8994f6632dadc62138b78116faeed27b078f9d"
+    ],
+    "source_mention_ids": [
+      "m:0a8f241a4915f72dc2976543165f0b8d3bbda6adf86e6130aee6ca8488c2075d",
+      "m:b20fc10213f15b7c30f1709fddaca8cbba4fd1a9f0a1baa0f9b39861240cb7d6",
+      "m:e7bfcbaabd00195bc96500e83c6d2b146e48ce2ba8a1e22ee09029b21118dde4",
+      "m:f1b2eb4547fc98c092e0d21a40cc9e76b645f177463b3e66727ecfeda2744798"
+    ],
+    "document_id": "W1995028339",
+    "original_type_sets": {
+      "N048": [
+        "OBJECT"
+      ],
+      "N079": [
+        "CONDITION",
+        "OBJECT",
+        "RESULT"
+      ]
+    },
+    "type_set_conflict": true,
+    "original_multitype": true
+  },
+  {
+    "merge_group_id": "M067",
+    "referent_level": "named_taxon",
+    "reason": "Один названный order Thalassiosirales; gene order и acpP1 — свойства/аргументы фактов о том же таксоне, не отдельные виды.",
+    "proposed_primary_type": "OBJECT",
+    "representative_id": "e:31bd290a905e51076aeccdad12b4da52794de1c0cfb6ddbe2d1d8b9aafc49bcf",
+    "representative_alias": "N039",
+    "member_aliases": [
+      "N039",
+      "N066",
+      "N073"
+    ],
+    "member_canonical_ids": [
+      "e:31bd290a905e51076aeccdad12b4da52794de1c0cfb6ddbe2d1d8b9aafc49bcf",
+      "e:cd984e9c955784565ae89949a3606d0c204c9abb5a83c5b4a90fda8e1859df01",
+      "e:618e89dadeb440800eb70c17dc51e89ac0b08811e5c28f98762d932b991cf4d3"
+    ],
+    "source_entity_ids": [
+      "e:31bd290a905e51076aeccdad12b4da52794de1c0cfb6ddbe2d1d8b9aafc49bcf",
+      "e:618e89dadeb440800eb70c17dc51e89ac0b08811e5c28f98762d932b991cf4d3",
+      "e:affde9d95ab26011288dee0abcbdeebfd5694edaae9b7b6b760edefa92d17fac",
+      "e:cce630eb06927dea5ce4e64ef99bb68686b4e4eaff3b3b4df4083af7354bb258",
+      "e:cd984e9c955784565ae89949a3606d0c204c9abb5a83c5b4a90fda8e1859df01",
+      "e:e3db524ae201c4736d459a2def25bbe39b169906d5c97ade32089a22be1f6da8"
+    ],
+    "source_mention_ids": [
+      "m:36876c79e292409bf39f78b2dacb4dd32f1ad754f1fe8cffb5721cbd630dc39f",
+      "m:4c8dc0c716b992a15680edc6b4deef515ba943819117b646469c9fe7783eb01c",
+      "m:5979e8126ee3bfe134139008fcefd7b5df53e9fd813d4c192bc7d62788ffdf8a",
+      "m:5c52815222f51df53678495699861452fb8f2364d6d05f47dbab00df63e5c23f",
+      "m:60f02aba92a9db3204d4e56092621ffc25c01655a8b1ab7936ff2bab353d8caf",
+      "m:bcc6c3d22ec9a19c7c7748fa3fe6de30184fa889dcf4c1ce488c5d6d2c112f84",
+      "m:c62fb5bf952b22a486711b096a7514c06dc5984de35a3c1ce40471c2eea69e83",
+      "m:f847d1170f4b755f81650945dcdfac5c20d45c61fb47682aff8820e25625ccd8"
+    ],
+    "document_id": "W1995028339",
+    "original_type_sets": {
+      "N039": [
+        "OBJECT"
+      ],
+      "N066": [
+        "ACTOR",
+        "OBJECT"
+      ],
+      "N073": [
+        "ACTOR",
+        "OBJECT"
+      ]
+    },
+    "type_set_conflict": true,
+    "original_multitype": true
+  },
+  {
+    "merge_group_id": "M068",
+    "referent_level": "historical_topic",
+    "reason": "В обоих местах прямо указан один период papal politics XVII века в той же статье; это тема исследования, не отдельное политическое событие.",
+    "proposed_primary_type": "CONCEPT",
+    "representative_id": "e:2cea42b889532d26473a6c55ecc5bc0d6e72b4acd4fd154666f2b989dba080fd",
+    "representative_alias": "N358",
+    "member_aliases": [
+      "N358",
+      "N362"
+    ],
+    "member_canonical_ids": [
+      "e:2cea42b889532d26473a6c55ecc5bc0d6e72b4acd4fd154666f2b989dba080fd",
+      "e:829ac7f8e169c4eb0e8c9dec206ec48ca87627da83d81172ebd4cb092a6b72f9"
+    ],
+    "source_entity_ids": [
+      "e:2cea42b889532d26473a6c55ecc5bc0d6e72b4acd4fd154666f2b989dba080fd",
+      "e:829ac7f8e169c4eb0e8c9dec206ec48ca87627da83d81172ebd4cb092a6b72f9"
+    ],
+    "source_mention_ids": [
+      "m:8dbe8d33b4ebe79c8b9016a65d3d4e23510446ce976ae970190d4e1d41fd2a7a",
+      "m:c4205a8214010d9926211f8ca4070af9d53366fa3805fe84ced7abf76999045d"
+    ],
+    "document_id": "W2394633461",
+    "original_type_sets": {
+      "N358": [
+        "CONCEPT"
+      ],
+      "N362": [
+        "CONCEPT"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  },
+  {
+    "merge_group_id": "M069",
+    "referent_level": "document_phenomenon",
+    "reason": "Один научный phenomenon turbulence около lower x-point NSTX в prediction/visualization/localization, на уровне феномена, не временной реализации турбулентности.",
+    "proposed_primary_type": "MECHANISM",
+    "representative_id": "e:b46d190db9ca02e86b7184e1eb245da6d688cfd8e9ab8e3aa4e7bf2f1152504f",
+    "representative_alias": "N203",
+    "member_aliases": [
+      "N203",
+      "N204",
+      "N228"
+    ],
+    "member_canonical_ids": [
+      "e:b46d190db9ca02e86b7184e1eb245da6d688cfd8e9ab8e3aa4e7bf2f1152504f",
+      "e:7b8229b28ed60853de2468f907e66b3af5735f54176108cce64997258b65bdcb",
+      "e:70bf7cd5c33e0a03e18d137efbc93a53b4f686e94ae71264ceb6074a08aa54d0"
+    ],
+    "source_entity_ids": [
+      "e:70bf7cd5c33e0a03e18d137efbc93a53b4f686e94ae71264ceb6074a08aa54d0",
+      "e:7b8229b28ed60853de2468f907e66b3af5735f54176108cce64997258b65bdcb",
+      "e:b46d190db9ca02e86b7184e1eb245da6d688cfd8e9ab8e3aa4e7bf2f1152504f"
+    ],
+    "source_mention_ids": [
+      "m:25dcb806a405bb8060ebe106c6cf5abf37283c9dcc533252d4a4cc3f05470bac",
+      "m:b3f49824f189a9968bbe543db22c8dc66af0795babe2d18a141fdcdc37bd891f",
+      "m:ee59b0881a07c0c00238343530867e0b7075d260792f2a7c9aab9b977cb931a8"
+    ],
+    "document_id": "W2084709926",
+    "original_type_sets": {
+      "N203": [
+        "MECHANISM"
+      ],
+      "N204": [
+        "MECHANISM"
+      ],
+      "N228": [
+        "MECHANISM"
+      ]
+    },
+    "type_set_conflict": false,
+    "original_multitype": false
+  }
+]
