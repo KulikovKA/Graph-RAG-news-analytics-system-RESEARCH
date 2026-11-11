@@ -1,0 +1,105 @@
+{
+  "original_ner_cutoff": 0.35,
+  "minimum_historical_inference_threshold": 0.15,
+  "relex_config_entity_threshold": null,
+  "source_entity_confidence_equals_max_source_mention_score": true,
+  "source_entity_reconstruction_exact": true,
+  "source_mention_reconstruction_exact": true,
+  "baseline_connectivity_matched": true,
+  "canonical_representative_ids_matched": true,
+  "all_contexts_offsets_verified": true,
+  "all_threshold_sets_nested": true,
+  "representative_subset_of_max_member": true,
+  "protected_files_unchanged": true,
+  "protected_file_count": 54,
+  "sources": {
+    "entities": {
+      "path": "reports/entity_resolution/relex_base_t035/semantic_resolution/input/canonical_entities.jsonl",
+      "sha256": "34fe3fd42e110b5b7a8b054360eee2a6182c67782e7afa54d2298e0491bf9151"
+    },
+    "relations": {
+      "path": "reports/entity_resolution/relex_base_t035/relation_remapping/canonical_relations.jsonl",
+      "sha256": "febcd7b9e717575bed79e3e1483402fdd81aae54b59d72b81d6b91582fccda6a"
+    },
+    "links": {
+      "path": "reports/entity_resolution/relex_base_t035/semantic_resolution/global_linking_preview/semantic_links.csv",
+      "sha256": "6a87703a6114b2e52c90bd3a69f7f475ef68f8f26a5c9dd5ee3ed380d5570cc1"
+    },
+    "original_entities": {
+      "path": "reports/re_v2/relex_comparison/threshold035/e3_base/entities.jsonl",
+      "sha256": "19039d87119130dcc37d2c472a7f2242c6a3ad5059e46a1ff431e6fa37e3b6ba"
+    },
+    "mentions": {
+      "path": "reports/ner_v2/research_run2/E3/mentions_035.jsonl",
+      "sha256": "495027052bf560b66c4a0aef1a2342c63aa40a3359566d0571b554234ddc5dbf"
+    },
+    "ner_config": {
+      "path": "reports/ner_v2/research_run2/E3/config.json",
+      "sha256": "9cc9fa30598c79b0f3c444372c287c5f4187ab08e16a8c39a4fc8d4991b4a882"
+    },
+    "re_config": {
+      "path": "reports/re_v2/relex_comparison/threshold035/e3_base/experiment_config.json",
+      "sha256": "6e641e60f49a71ee133015cec6a99d7bd069ae73c1de650f10e5401f208729a8"
+    },
+    "documents": {
+      "path": "reports/ner_v2/research_run2/input_abstracts.jsonl",
+      "sha256": "684ca3a758a128c6382ab924f5c131f0e27faa9f7625b431ae0d6db975e543b1"
+    }
+  },
+  "protected_sha256": {
+    "reports/entity_resolution/relex_base_t035/conservative_resolution/canonical_mapping.jsonl": "f97e8f920cf7cced3483caca39bdf87079f2b8a9c7d5240b812c886cc766c8b3",
+    "reports/entity_resolution/relex_base_t035/conservative_resolution/report.md": "d9ae051c9bb57019f215aa5db9ab74150c144358850324337460db4b3930f9cc",
+    "reports/entity_resolution/relex_base_t035/conservative_resolution/review_groups.csv": "6ea86012816fc3d04603fc61a778c6577351611fba91984611f2beacb060551b",
+    "reports/entity_resolution/relex_base_t035/cross_document_re/cross_document_relations.jsonl": "875ce53f7662ca0cef87203c0556686c075b17007f4dea5260f786704e9248f8",
+    "reports/entity_resolution/relex_base_t035/cross_document_re/graph_stats.cypher": "c302143127a446bdb423895ea9b4f6114b600bb99e6b28ed189f005a6bb98af6",
+    "reports/entity_resolution/relex_base_t035/cross_document_re/report.md": "c123dc6b52644f693436f4b86ea1fd50249ba123c79b37ec7cf67ad6eb0787f3",
+    "reports/entity_resolution/relex_base_t035/exact_matching_audit/ambiguous_groups.csv": "fdf596b77ed5e0fd063b52a64ee814da14675085d1520d4eb70e1606ce3e0795",
+    "reports/entity_resolution/relex_base_t035/exact_matching_audit/exact_groups.csv": "fda84b2faa3fddf13103f711ab1cf6bd04b86b802691b6d9d5c005b1583e0972",
+    "reports/entity_resolution/relex_base_t035/exact_matching_audit/exact_merge_preview.jsonl": "d68c01c9d72622a29deb3378079d6887641baef4f590a949bf2db9918bacd855",
+    "reports/entity_resolution/relex_base_t035/exact_matching_audit/report.md": "92158a6653b224524cbc231f04470465db3542771a6521187bda3863e84b595b",
+    "reports/entity_resolution/relex_base_t035/graph_comparison/report.md": "cff7dc986261ff26ed376ae309443291b1381fda3b349b53b6a6f4261815f14c",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/analysis.png": "6320fc258a75921db266cc7266a510f9ec748428dad063c241242f9bccfeb3d0",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/analysis.svg": "032c9f7df1710cd08e16367fe3e003fe72cfb422ebd49a6ad6b97413e0a3cfa0",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/analyze.py": "0bf1bdd8523f74ce8f1c891e396c50994e748c115fc9e2e3100843f3931fa59d",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/comparison.csv": "afd4f8f12229fe40586c1cf64bd9923b2e4a5bfc61ca84ce9ade0fdefb6f917c",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/components.csv": "2c612bfe4430ee55a34a62e1d73f74dd41e73b34febf8b5d020f4c7a6f0a0622",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/confidence_histogram.csv": "ea17541b5cec7421fb6d3c34b64491a8c76da64be47c68e0a759820585d511ba",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/distribution_summary.csv": "68fa5cda262b21d3879593a8a99fa670d82b0ea04afc369c8dbb7b63f51019c9",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/entity_confidences.csv": "5634689708386a931c9994bb5d6956a8efa57166182c36555f68f31e38719ee1",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/examples.csv": "d6242ec3344878ce98586d747621eebcf4c265446208a8fa9b2e4b9ae1fc8d4b",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/independent_validation.json": "254c021772975082bd8a911edbbd32e45fcd12a7be9a8e30597c33636e2a595d",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/metrics.json": "de11faab54174c4fd063f36055e7cb4d169927290e3308020e6c8bec28f24d8b",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/qualitative_review.csv": "2ecde0316bb276a13dd7435fcb7eda9ef766a25810148094b6647109800aa143",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/report.md": "90b6d269ce8249a04487645d3355edf12203674b589595ca61d75ad74bb8262c",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/retention_by_discipline.csv": "f4a9e2250d169c2c686184ca9cc895c330907175d020fffe5e33a54d7161bcdb",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/retention_by_document.csv": "fd5dd03c68a39d8944fec53d4c176ba2b25139b8a3e2738ef6b49250a5a5cfe4",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/retention_by_type.csv": "dd78657220c8bdb73af2575a29927443465afb2c454848c7a09470ee2191e084",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/source_entity_confidences.csv": "92c86e39fa7df06f4e637a60afa4d1a870303350bb487fcc8e6d8d50dc345b13",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/strategy_disagreements.csv": "ce597f2225481394c10b055231d32555258352d8bfb0306d61966ccd26f019e3",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/validation.json": "82792afe853c2e2be14122de32e1cc3cdb5649360c408f5a98453d4f380cb353",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/virtual_subgraphs.jsonl": "7dc6b6e4435d5fbe7985fdc0a6a06e666b7f2c4b8f6dd254af8e2c21e2fc8858",
+    "reports/entity_resolution/relex_base_t035/ner_threshold_analysis/write_report.py": "9f02539c1dedded9baf78bdb795dd901999ade8ccfa823b2318977eddd86a11f",
+    "reports/entity_resolution/relex_base_t035/relation_remapping/canonical_relations.jsonl": "febcd7b9e717575bed79e3e1483402fdd81aae54b59d72b81d6b91582fccda6a",
+    "reports/entity_resolution/relex_base_t035/relation_remapping/remapped_relations.jsonl": "4b0ea8f647aed02a4b9a42a274d1e87611a2158fffe10cf3362f1d83884025c6",
+    "reports/entity_resolution/relex_base_t035/relation_remapping/report.md": "b760c94584a5f7dbf27bf410e88f678b1fba711292206f622c52ce1b69e546a4",
+    "reports/entity_resolution/relex_base_t035/semantic_resolution/candidate_verification/proposed_merge_rules.md": "38b22237a006cce27907a3ded4d2f5045d82b1f9a64d183f2e3718095c78a161",
+    "reports/entity_resolution/relex_base_t035/semantic_resolution/candidate_verification/report.md": "01753a6f060a9d7891f25e25a0ddb1441dc241b9257ebe6e9999c6f9e2cb17d1",
+    "reports/entity_resolution/relex_base_t035/semantic_resolution/candidate_verification/verified_pairs.csv": "b181f6466634f639ed9cde9c3a625ce2a7f26154b31bbfdecfabc96f93c49220",
+    "reports/entity_resolution/relex_base_t035/semantic_resolution/global_kg_import/graph_stats.cypher": "d537963eccb7d00cb688f1f2ba1c98fd09a41bfd0e6edd3dcc267b8e62d8a35d",
+    "reports/entity_resolution/relex_base_t035/semantic_resolution/global_kg_import/report.md": "fe172c301be66baadd0b2c42d14a55eb35b2a4a10199e72dc58fa11190a9481e",
+    "reports/entity_resolution/relex_base_t035/semantic_resolution/global_linking_preview/report.md": "b941a0080c70c0229d07e7538e240faf6c96b5718f027f9c806574a2999a1231",
+    "reports/entity_resolution/relex_base_t035/semantic_resolution/global_linking_preview/semantic_links.csv": "6a87703a6114b2e52c90bd3a69f7f475ef68f8f26a5c9dd5ee3ed380d5570cc1",
+    "reports/entity_resolution/relex_base_t035/semantic_resolution/input/canonical_entities.jsonl": "34fe3fd42e110b5b7a8b054360eee2a6182c67782e7afa54d2298e0491bf9151",
+    "reports/entity_resolution/relex_base_t035/semantic_resolution/input/report.md": "bd99b9d37b9461fcf932ff37428d1cbefb0d7fabb2b40977ae73430a212714dc",
+    "reports/entity_resolution/relex_base_t035/semantic_resolution/model_comparison/candidate_pairs.csv": "5b5101945ce513243d3a28969b77425c4e1549a96bb31bb616546727d815ae2f",
+    "reports/entity_resolution/relex_base_t035/semantic_resolution/model_comparison/model_comparison.csv": "e89fa1b0d133f33c0710b6bf595e1bbddc7fcc6c21d77bc2c9c222bf454aac6c",
+    "reports/entity_resolution/relex_base_t035/semantic_resolution/model_comparison/report.md": "40f5f0d7d5b0100a02c83b774430ec6538b99e3fde668c030f75c43c81a881bc",
+    "reports/entity_resolution/relex_base_t035/semantic_resolution/threshold_sweep/report.md": "68d301a45cdb24334fc189e4253a455995a01966eaf718d425a33386fbe9f017",
+    "reports/entity_resolution/relex_base_t035/semantic_resolution/threshold_sweep/threshold_results.csv": "f3a26801a3a505355043111cdab8bb9d99a544ea49ee59324dcbe5ccf0200f2a",
+    "reports/ner_v2/research_run2/E3/config.json": "9cc9fa30598c79b0f3c444372c287c5f4187ab08e16a8c39a4fc8d4991b4a882",
+    "reports/ner_v2/research_run2/E3/mentions_035.jsonl": "495027052bf560b66c4a0aef1a2342c63aa40a3359566d0571b554234ddc5dbf",
+    "reports/ner_v2/research_run2/input_abstracts.jsonl": "684ca3a758a128c6382ab924f5c131f0e27faa9f7625b431ae0d6db975e543b1",
+    "reports/re_v2/relex_comparison/threshold035/e3_base/entities.jsonl": "19039d87119130dcc37d2c472a7f2242c6a3ad5059e46a1ff431e6fa37e3b6ba",
+    "reports/re_v2/relex_comparison/threshold035/e3_base/experiment_config.json": "6e641e60f49a71ee133015cec6a99d7bd069ae73c1de650f10e5401f208729a8"
+  }
+}
