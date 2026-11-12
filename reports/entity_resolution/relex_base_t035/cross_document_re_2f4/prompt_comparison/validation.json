@@ -1,0 +1,99 @@
+{
+  "passed": true,
+  "shared_pairs": 68,
+  "configurations": [
+    "A",
+    "B",
+    "C"
+  ],
+  "completed_pairs_by_configuration": {
+    "A": 68,
+    "B": 68,
+    "C": 68
+  },
+  "predictions_by_configuration": {
+    "A": 32,
+    "B": 3,
+    "C": 32
+  },
+  "positive_pairs_by_configuration": {
+    "A": 15,
+    "B": 2,
+    "C": 16
+  },
+  "every_positive_prediction_and_pair_audited": true,
+  "pilot_predictions_audited": 18,
+  "prompt_counts": {
+    "A": 20,
+    "B": 9,
+    "C": 20
+  },
+  "dynamic_prompts_and_code_mapping_verified": true,
+  "common_inputs_identical_A_B_C": true,
+  "exact_offsets": true,
+  "no_outer_targets": true,
+  "no_truncation": true,
+  "separate_signatures_and_checkpoints": true,
+  "raw_float_thresholds": [
+    0.35,
+    0.4,
+    0.45,
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.8,
+    0.85,
+    0.9
+  ],
+  "threshold_inference_calls": 0,
+  "baseline": {
+    "weak_components": 223,
+    "largest_component_vertices": 369,
+    "largest_component_documents": 17
+  },
+  "baseline_relex_preserved": 1307,
+  "baseline_similar_preserved": 492,
+  "baseline_concepts_preserved": 118,
+  "neo4j_before": {
+    "namespace": "relex_sem_e5_small_name_t095_ner_t046_er2f3",
+    "database": "neo4j",
+    "nodes": 873,
+    "relationships": 2728,
+    "sha256": "5daa32d6b8e389592db3e3d0a5326f04cf06706b198448950ee7d9250ca431cf",
+    "outside": {
+      "nodes": 11460,
+      "relationships": 21290,
+      "sha256": "f0592a6b5b993f3bd7afd5dcebb843a85612b98b81dc12d836b26061f3c09e36"
+    }
+  },
+  "neo4j_after": {
+    "namespace": "relex_sem_e5_small_name_t095_ner_t046_er2f3",
+    "database": "neo4j",
+    "nodes": 873,
+    "relationships": 2728,
+    "sha256": "5daa32d6b8e389592db3e3d0a5326f04cf06706b198448950ee7d9250ca431cf",
+    "outside": {
+      "nodes": 11460,
+      "relationships": 21290,
+      "sha256": "f0592a6b5b993f3bd7afd5dcebb843a85612b98b81dc12d836b26061f3c09e36"
+    }
+  },
+  "all_namespaces_unchanged": true,
+  "protected_files_unchanged": true,
+  "protected_file_count": 140,
+  "intra_document_default_backward_compatible": true,
+  "tests": "39 passed: tests/test_build_relex_graphs.py tests/test_relex_four_experiments.py",
+  "hybrid_pairs_with_general_and_original_codes": [
+    "bridgepair:5f2e80b4da60e3b4b31a8649"
+  ],
+  "models_trained": false,
+  "NER_rerun": false,
+  "embeddings_rerun": false,
+  "LLMs_launched": false,
+  "entity_resolution_changed": false,
+  "neo4j_import": false,
+  "stage_2f5_started": false
+}

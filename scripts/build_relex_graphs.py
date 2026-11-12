@@ -206,14 +206,22 @@ def explicit_span_embeddings(marker, words, indices):
     return marker.out_project(torch.cat((starts, ends), dim=-1).relu())
 
 
-def predict_window(model, window, members, labels, relation_threshold, token_limit):
+def predict_window(model, window, members, labels, relation_threshold, token_limit, relation_labels=None):
     """Run the trained encoder, span projections and directed relation head on E3 only.
 
     The high-level API does not enforce input_spans. Base forward can consume
     span_idx; Large forward still filters them by NER scores and grid width.
     Use the same learned submodules, bypassing both NER selection mechanisms.
+    relation_labels optionally supplies code -> English prompt for cross-document
+    experiments. Omission preserves the original intra-document prompts and audit.
     """
     import torch
+    predicates = PREDICATES if relation_labels is None else relation_labels
+    if not predicates or any(not isinstance(k, str) or not k or not isinstance(v, str) or not v.strip()
+                             for k, v in predicates.items()):
+        raise ValueError("Relation labels must contain nonempty string codes and prompts")
+    if len(set(predicates.values())) != len(predicates):
+        raise ValueError("Relation prompt text must be unique")
     if len(members) < 2:
         return [], {"tokens": 0, "spans": len(members), "pairs": 0}
     tokens, starts, ends = model.prepare_inputs([window["text"]])
@@ -230,7 +238,7 @@ def predict_window(model, window, members, labels, relation_threshold, token_lim
         prepare_labels=False,
     )
     batch = collator(model.prepare_base_input(tokens), entity_types=labels,
-                     relation_types=list(PREDICATES.values()))
+                     relation_types=list(predicates.values()))
     if batch["input_ids"].shape[1] > token_limit:
         raise ValueError("Actual collator token budget exceeds common window plan")
     from gliner.modeling.utils import extract_prompt_features, build_all_entity_pairs
@@ -251,13 +259,15 @@ def predict_window(model, window, members, labels, relation_threshold, token_lim
         pair_indices, pair_mask, heads, tails = build_all_entity_pairs(representations, span_mask)
         rel_prompts, _ = extract_prompt_features(model.config.rel_token_index, encoded,
             batch["input_ids"], batch["attention_mask"], 1, representations.shape[-1], model.config.embed_rel_token)
-        if rel_prompts.shape[1] != len(PREDICATES):
+        if rel_prompts.shape[1] != len(predicates):
             raise RuntimeError("Relation prompt labels were truncated")
         pairs = network.pair_rep_layer(torch.cat((heads, tails), dim=-1))
         probabilities = torch.einsum("BND,BCD->BNC", pairs, rel_prompts)[0].sigmoid()
     selected = ((probabilities > relation_threshold) & pair_mask[0].bool().unsqueeze(-1)).nonzero()
     mapping = batch["rel_id_to_classes"]
     mapping = mapping[0] if isinstance(mapping, list) else mapping
+    if [mapping[i + 1] for i in range(len(predicates))] != list(predicates.values()):
+        raise RuntimeError("Relation prompt index-to-label mapping differs from supplied labels")
     raw = []
     for pair, label in selected.tolist():
         head, tail = pair_indices[0, pair].tolist()
@@ -268,8 +278,12 @@ def predict_window(model, window, members, labels, relation_threshold, token_lim
                               "end": members[tail]["end"] - window["start"],
                               "text": members[tail]["surface_text"]},
                     "relation": mapping[label + 1], "score": probabilities[pair, label].item()})
-    return raw, {"tokens": batch["input_ids"].shape[1], "spans": len(indices),
-                 "pairs": int(pair_mask.sum()), "supplied_word_spans": indices}
+    audit = {"tokens": batch["input_ids"].shape[1], "spans": len(indices),
+             "pairs": int(pair_mask.sum()), "supplied_word_spans": indices}
+    if relation_labels is not None:
+        audit.update(relation_prompt_count=rel_prompts.shape[1], relation_codes=list(predicates),
+                     relation_prompts=[mapping[i + 1] for i in range(len(predicates))])
+    return raw, audit
 
 
 def convert_prediction(raw, window, entities):

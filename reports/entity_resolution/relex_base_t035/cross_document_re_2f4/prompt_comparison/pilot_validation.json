@@ -1,0 +1,56 @@
+{
+  "technical_passed": true,
+  "content_reviewed": true,
+  "signatures": {
+    "A": "f78a95de7499fbad060784b28ab00fc9a8ee637c0849f589b53825b8645c59f2",
+    "B": "1ad0f819257d2c9decf3768afe78c1edd1bfded4a8415eda21c90cf827d793aa",
+    "C": "ff8417eb2066d8024decd82bc3a60a6e12b577a695ce6bd0ca7b56e35efea927"
+  },
+  "shared_pilot_ids": [
+    "bridgepair:047ae1dc52f752aa006a25a9",
+    "bridgepair:066e6be63cf8b40b7b2610a0",
+    "bridgepair:0894e698c5a93b1379c51472",
+    "bridgepair:0d935923a60b8a9cad0aaae5",
+    "bridgepair:1246ad9dbc5472cf12e04e54",
+    "bridgepair:246a494c5fe97b92745bb92f",
+    "bridgepair:26bc9c59119aa333b96f9093",
+    "bridgepair:32ebfee1a5fc39bff78606fe",
+    "bridgepair:4ce41e74215c18216789d147",
+    "bridgepair:5d80e4d063ec7864487ece0c",
+    "bridgepair:6aeeebfa357362796fb34fe4",
+    "bridgepair:929a1775c023ef43f29afe43",
+    "bridgepair:cbcb50b0959107cab6919566",
+    "bridgepair:eb190c2a2b619baf75e517c6"
+  ],
+  "statistics": {
+    "A": {
+      "completed_pairs": 14,
+      "positive_pairs": 4,
+      "predictions": 10,
+      "actual_new_forward_calls": 14
+    },
+    "B": {
+      "completed_pairs": 14,
+      "positive_pairs": 0,
+      "predictions": 0,
+      "actual_new_forward_calls": 14
+    },
+    "C": {
+      "completed_pairs": 14,
+      "positive_pairs": 4,
+      "predictions": 8,
+      "actual_new_forward_calls": 14
+    }
+  },
+  "offsets_exact": true,
+  "target_spans_only": true,
+  "all_label_maps_verified": true,
+  "prompt_counts": {
+    "A": 20,
+    "B": 9,
+    "C": 20
+  },
+  "common_contexts_frozen": true,
+  "content_review_sha256": "5beebd87c5d9fb6fb110f9190a08866f2eae977d255769f329d96cab5c94ab92",
+  "content_decision": "Continue every configuration despite zero B positives. All 18 positive pilot predictions audited; semantic errors, no offset/mapping/token technical failures."
+}

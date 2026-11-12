@@ -1,0 +1,271 @@
+{
+  "A": {
+    "name": "Original",
+    "relation_labels": {
+      "IS_A": "is a",
+      "HAS_PART": "has part",
+      "HAS_MEMBER": "has member",
+      "HAS_ATTRIBUTE": "has attribute",
+      "HAS_RESULT": "has result",
+      "USES": "uses",
+      "USED_FOR": "used for",
+      "APPLIED_TO": "applied to",
+      "PERFORMS": "performs",
+      "PRODUCES": "produces",
+      "DERIVED_FROM": "derived from",
+      "EVALUATED_ON": "evaluated on",
+      "MEASURES": "measures",
+      "CHANGES": "changes",
+      "CAUSES": "causes",
+      "DEPENDS_ON": "depends on",
+      "EXPLAINS": "explains",
+      "ASSOCIATED_WITH": "associated with",
+      "COMPARED_WITH": "compared with",
+      "LOCATED_IN": "located in"
+    },
+    "ordered_relation_labels": [
+      [
+        "IS_A",
+        "is a"
+      ],
+      [
+        "HAS_PART",
+        "has part"
+      ],
+      [
+        "HAS_MEMBER",
+        "has member"
+      ],
+      [
+        "HAS_ATTRIBUTE",
+        "has attribute"
+      ],
+      [
+        "HAS_RESULT",
+        "has result"
+      ],
+      [
+        "USES",
+        "uses"
+      ],
+      [
+        "USED_FOR",
+        "used for"
+      ],
+      [
+        "APPLIED_TO",
+        "applied to"
+      ],
+      [
+        "PERFORMS",
+        "performs"
+      ],
+      [
+        "PRODUCES",
+        "produces"
+      ],
+      [
+        "DERIVED_FROM",
+        "derived from"
+      ],
+      [
+        "EVALUATED_ON",
+        "evaluated on"
+      ],
+      [
+        "MEASURES",
+        "measures"
+      ],
+      [
+        "CHANGES",
+        "changes"
+      ],
+      [
+        "CAUSES",
+        "causes"
+      ],
+      [
+        "DEPENDS_ON",
+        "depends on"
+      ],
+      [
+        "EXPLAINS",
+        "explains"
+      ],
+      [
+        "ASSOCIATED_WITH",
+        "associated with"
+      ],
+      [
+        "COMPARED_WITH",
+        "compared with"
+      ],
+      [
+        "LOCATED_IN",
+        "located in"
+      ]
+    ],
+    "relation_prompt_count": 20
+  },
+  "B": {
+    "name": "Semantic",
+    "relation_labels": {
+      "RELATED_TO": "related to",
+      "CONCEPTUALLY_RELATED_TO": "conceptually related to",
+      "SIMILAR_IN_MEANING_TO": "similar to",
+      "STUDIES_SAME_PHENOMENON_AS": "studies the same phenomenon as",
+      "USES_SAME_METHOD_AS": "uses the same method as",
+      "COMPLEMENTS": "complements",
+      "BUILDS_ON": "builds on",
+      "INFLUENCES": "influences",
+      "ADDRESSES_RELATED_PROBLEM": "addresses a related problem to"
+    },
+    "ordered_relation_labels": [
+      [
+        "RELATED_TO",
+        "related to"
+      ],
+      [
+        "CONCEPTUALLY_RELATED_TO",
+        "conceptually related to"
+      ],
+      [
+        "SIMILAR_IN_MEANING_TO",
+        "similar to"
+      ],
+      [
+        "STUDIES_SAME_PHENOMENON_AS",
+        "studies the same phenomenon as"
+      ],
+      [
+        "USES_SAME_METHOD_AS",
+        "uses the same method as"
+      ],
+      [
+        "COMPLEMENTS",
+        "complements"
+      ],
+      [
+        "BUILDS_ON",
+        "builds on"
+      ],
+      [
+        "INFLUENCES",
+        "influences"
+      ],
+      [
+        "ADDRESSES_RELATED_PROBLEM",
+        "addresses a related problem to"
+      ]
+    ],
+    "relation_prompt_count": 9
+  },
+  "C": {
+    "name": "Hybrid",
+    "relation_labels": {
+      "IS_A": "is a",
+      "HAS_PART": "has part",
+      "HAS_RESULT": "has result",
+      "USES": "uses",
+      "USED_FOR": "used for",
+      "APPLIED_TO": "applied to",
+      "PRODUCES": "produces",
+      "DERIVED_FROM": "derived from",
+      "DEPENDS_ON": "depends on",
+      "CAUSES": "causes",
+      "ASSOCIATED_WITH": "associated with",
+      "RELATED_TO": "related to",
+      "CONCEPTUALLY_RELATED_TO": "conceptually related to",
+      "SIMILAR_IN_MEANING_TO": "similar to",
+      "STUDIES_SAME_PHENOMENON_AS": "studies the same phenomenon as",
+      "USES_SAME_METHOD_AS": "uses the same method as",
+      "COMPLEMENTS": "complements",
+      "BUILDS_ON": "builds on",
+      "INFLUENCES": "influences",
+      "ADDRESSES_RELATED_PROBLEM": "addresses a related problem to"
+    },
+    "ordered_relation_labels": [
+      [
+        "IS_A",
+        "is a"
+      ],
+      [
+        "HAS_PART",
+        "has part"
+      ],
+      [
+        "HAS_RESULT",
+        "has result"
+      ],
+      [
+        "USES",
+        "uses"
+      ],
+      [
+        "USED_FOR",
+        "used for"
+      ],
+      [
+        "APPLIED_TO",
+        "applied to"
+      ],
+      [
+        "PRODUCES",
+        "produces"
+      ],
+      [
+        "DERIVED_FROM",
+        "derived from"
+      ],
+      [
+        "DEPENDS_ON",
+        "depends on"
+      ],
+      [
+        "CAUSES",
+        "causes"
+      ],
+      [
+        "ASSOCIATED_WITH",
+        "associated with"
+      ],
+      [
+        "RELATED_TO",
+        "related to"
+      ],
+      [
+        "CONCEPTUALLY_RELATED_TO",
+        "conceptually related to"
+      ],
+      [
+        "SIMILAR_IN_MEANING_TO",
+        "similar to"
+      ],
+      [
+        "STUDIES_SAME_PHENOMENON_AS",
+        "studies the same phenomenon as"
+      ],
+      [
+        "USES_SAME_METHOD_AS",
+        "uses the same method as"
+      ],
+      [
+        "COMPLEMENTS",
+        "complements"
+      ],
+      [
+        "BUILDS_ON",
+        "builds on"
+      ],
+      [
+        "INFLUENCES",
+        "influences"
+      ],
+      [
+        "ADDRESSES_RELATED_PROBLEM",
+        "addresses a related problem to"
+      ]
+    ],
+    "relation_prompt_count": 20
+  }
+}
