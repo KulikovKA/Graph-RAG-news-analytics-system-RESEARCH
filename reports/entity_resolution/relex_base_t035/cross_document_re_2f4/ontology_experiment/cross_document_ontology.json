@@ -1,0 +1,140 @@
+{
+  "version": "cross-document-D-v1",
+  "status": "frozen_before_inference",
+  "configurations": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "model_id": "knowledgator/gliner-relex-base-v1.0",
+  "design_set_used": true,
+  "independent_gold": false,
+  "entity_types_are_review_hints_not_filters": true,
+  "relations": [
+    {
+      "code": "SUBTYPE_OF",
+      "label": "is a type of",
+      "definition_ru": "Класс head является специализацией класса tail; не identity и не отдельный экземпляр.",
+      "head_role": "scientific object/process/method class",
+      "tail_role": "more general class",
+      "direction": "head_to_tail",
+      "symmetric": false,
+      "positive_example": "multilayer perceptron -> neural network",
+      "negative_or_boundary_example": "mouse CNV -> yeast overexpression: разные процессы, не subtype",
+      "distinction_ru": "IS_A близко; новый label явно обозначает class-to-class, а не instance membership.",
+      "evidence_requirement_ru": "Совместимые определения и включение смыслового объёма; концептуальный scope должен быть указан."
+    },
+    {
+      "code": "STAGE_OF",
+      "label": "is a stage of",
+      "definition_ru": "Head обозначает стадию или фазу развития tail, а не произвольный подтип.",
+      "head_role": "stage/phase/state class",
+      "tail_role": "disease/developmental/lifecycle process",
+      "direction": "head_to_tail",
+      "symmetric": false,
+      "positive_example": "metaphase -> mitosis",
+      "negative_or_boundary_example": "glaucoma -> kidney disease: не стадия",
+      "distinction_ru": "Уточняет временной/стадийный смысл, который IS_A и PART_OF сохраняют лишь приблизительно.",
+      "evidence_requirement_ru": "Определение стадии/процесса; без вывода о переходе конкретного пациента или объекта."
+    },
+    {
+      "code": "PART_OF",
+      "label": "is part of",
+      "definition_ru": "Head является компонентом tail; допускается явно оговорённое отношение типов компонентов.",
+      "head_role": "material/system/process component",
+      "tail_role": "composite system/process",
+      "direction": "head_to_tail",
+      "symmetric": false,
+      "positive_example": "detector module -> telescope",
+      "negative_or_boundary_example": "economic supply curve -> electrical supply line: омонимия",
+      "distinction_ru": "Inverse HAS_PART; HAS_MEMBER означает членство коллекции, не конструктивный компонент.",
+      "evidence_requirement_ru": "Структурное основание; различать component type и конкретный экземпляр, не переносить физические параметры."
+    },
+    {
+      "code": "HAS_PARTICIPANT",
+      "label": "has participant",
+      "definition_ru": "Процесс или активность head имеет участника типа tail, включая действующий или преобразуемый объект.",
+      "head_role": "process/activity",
+      "tail_role": "participant object/cell/agent class",
+      "direction": "head_to_tail",
+      "symmetric": false,
+      "positive_example": "cell division -> cell",
+      "negative_or_boundary_example": "cooperation in banking -> cooperation in transport: два процесса, не участник",
+      "distinction_ru": "PERFORMS задаёт агента, HAS_ATTRIBUTE свойство, HAS_PART структурную часть; участие не равняется причинности.",
+      "evidence_requirement_ru": "Совместимые роли процесс/участник и source context либо определение; не наследовать эффекты между популяциями."
+    },
+    {
+      "code": "HAS_PROPERTY",
+      "label": "has property",
+      "definition_ru": "Head характеризуется свойством или измеримой величиной tail на указанном уровне.",
+      "head_role": "object/system/process class",
+      "tail_role": "property/parameter/metric",
+      "direction": "head_to_tail",
+      "symmetric": false,
+      "positive_example": "material -> electrical conductivity",
+      "negative_or_boundary_example": "lunar resolution -> barcode resolution: две характеристики разных систем",
+      "distinction_ru": "HAS_ATTRIBUTE близко; свойство не конкретный RESULT, и две величины не становятся одной measurement.",
+      "evidence_requirement_ru": "Источник явно связывает bearer/property; проверить units, объект, условия и generalization."
+    },
+    {
+      "code": "USED_FOR",
+      "label": "is used for",
+      "definition_ru": "Head выполняет назначение или служит задаче tail; это функциональная связь.",
+      "head_role": "method/tool/intervention",
+      "tail_role": "task/intended process",
+      "direction": "head_to_tail",
+      "symmetric": false,
+      "positive_example": "Kalman filter -> state estimation",
+      "negative_or_boundary_example": "two unrelated studies -> each other: нет общей функции",
+      "distinction_ru": "Отличается от APPLIED_TO: task/function вместо конкретных данных/популяции; не CAUSES успешный результат.",
+      "evidence_requirement_ru": "Подтверждённое назначение, совместимость method/task; функция не доказывает эффективность."
+    },
+    {
+      "code": "APPLIED_TO",
+      "label": "is applied to",
+      "definition_ru": "Head реально применяется к объекту/данным tail в сообщённом исследовании либо источниками подтверждённой общей практике.",
+      "head_role": "method/intervention",
+      "tail_role": "object/data/population",
+      "direction": "head_to_tail",
+      "symmetric": false,
+      "positive_example": "PCA -> measured expression dataset (when reported)",
+      "negative_or_boundary_example": "MRI algorithm -> mammograms merely because both are images",
+      "distinction_ru": "APPLIED_TO A/C близко; не заменяет гипотетическую применимость или intended task.",
+      "evidence_requirement_ru": "Нужна actual-use evidence; независимые документы и аналогия сами не подтверждают применение."
+    },
+    {
+      "code": "POTENTIALLY_APPLICABLE_TO",
+      "label": "may be applied to",
+      "definition_ru": "Проверяемая возможность применить head к tail при конкретных пока не подтверждённых условиях.",
+      "head_role": "method/tool/drug/intervention",
+      "tail_role": "compatible target/task/data/subpopulation",
+      "direction": "head_to_tail",
+      "symmetric": false,
+      "positive_example": "noise filter -> new scanner images, subject to noise-model validation",
+      "negative_or_boundary_example": "surge protector -> ionizing-radiation injury without compatible mechanism",
+      "distinction_ru": "Сохраняет модальность в отличие от APPLIED_TO, не общая RELATED_TO. Условия хранятся в review, а не в длинном prompt.",
+      "evidence_requirement_ru": "Научное основание совместимости, явные необходимые условия и отдельная проверка; никогда не actual-use fact."
+    },
+    {
+      "code": "DERIVED_FROM",
+      "label": "is derived from",
+      "definition_ru": "Head получен из tail как данные, модель или преобразованный объект с установленным происхождением.",
+      "head_role": "data/model/material/algorithm output",
+      "tail_role": "source/input/precursor",
+      "direction": "head_to_tail",
+      "symmetric": false,
+      "positive_example": "summary statistic -> observations (when computed from them)",
+      "negative_or_boundary_example": "independent results -> results of another paper",
+      "distinction_ru": "Не то же, что CAUSES/DEPENDS_ON, и не автоматическое BUILDS_ON между независимыми публикациями.",
+      "evidence_requirement_ru": "Нужна source/provenance или операция преобразования, а не схожесть названий."
+    }
+  ],
+  "excluded": [
+    "untyped relatedness",
+    "unqualified causality",
+    "new empirical dependencies without evidence",
+    "automatic identity"
+  ],
+  "no_E_reason": "Одна типизированная гипотеза дизайна; более широкая E без отдельного научного вопроса повторила бы B."
+}

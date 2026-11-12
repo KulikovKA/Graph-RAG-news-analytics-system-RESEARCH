@@ -1,0 +1,25 @@
+pair_id,configuration,coverage,relation_code,relation_prompt,expected_direction,scope,abstain_on_exact_target_if_no_exact_label,reason
+P01,A,APPROXIMATE,IS_A,is a,E2_TO_E3,concept,True,Подтип не сохраняет именно стадию.
+P01,B,APPROXIMATE,CONCEPTUALLY_RELATED_TO,conceptually related to,EITHER,concept,True,Общая ассоциация теряет стадию и направление.
+P01,C,APPROXIMATE,IS_A,is a,E2_TO_E3,concept,True,Подтип не сохраняет именно стадию.
+P01,D,EXACT,STAGE_OF,is a stage of,E2_TO_E3,concept,False,"Стадия заболевания, class-level scope, не переход конкретного пациента."
+P02,A,APPROXIMATE,APPLIED_TO,applied to,E2_TO_E3,conditional_hypothesis,True,Фактическое применение не выражает условную возможность.
+P02,B,APPROXIMATE,RELATED_TO,related to,EITHER,conditional_hypothesis,True,Связь без условий применимости недостаточно точна.
+P02,C,APPROXIMATE,APPLIED_TO,applied to,E2_TO_E3,conditional_hypothesis,True,Не сохраняет модальность.
+P02,D,EXACT,POTENTIALLY_APPLICABLE_TO,may be applied to,E2_TO_E3,conditional_hypothesis,False,"Только подходящая подгруппа с анемией/низким Hb и показаниями, не вся когорта."
+P03,A,APPROXIMATE,PERFORMS,performs,E3_TO_E2,concept,True,"Agency вместо общего process-participant, не exact."
+P03,B,APPROXIMATE,CONCEPTUALLY_RELATED_TO,conceptually related to,EITHER,concept,True,Не выражает роль участника.
+P03,C,APPROXIMATE,CONCEPTUALLY_RELATED_TO,conceptually related to,EITHER,concept,True,Не выражает роль участника.
+P03,D,EXACT,HAS_PARTICIPANT,has participant,E2_TO_E3,concept,False,Activity-to-cell-class; не общая клеточная популяция и не Breg/EPO mechanism.
+P04,A,EXACT,IS_A,is a,E2_TO_E3,concept,False,"Частный режим биологического процесса, не тождество событий."
+P04,B,APPROXIMATE,CONCEPTUALLY_RELATED_TO,conceptually related to,EITHER,concept,True,Не сохраняет специализацию.
+P04,C,EXACT,IS_A,is a,E2_TO_E3,concept,False,Частный режим биологического процесса.
+P04,D,EXACT,SUBTYPE_OF,is a type of,E2_TO_E3,concept,False,"Специализированный режим expression, разные организмы/гены."
+P05,A,EXACT,HAS_PART,has part,E2_TO_E3,concept,False,"Только тип компонентов, не конкретные волокна D15."
+P05,B,APPROXIMATE,CONCEPTUALLY_RELATED_TO,conceptually related to,EITHER,concept,True,Не сохраняет компонентность.
+P05,C,EXACT,HAS_PART,has part,E2_TO_E3,concept,False,Только component-type shortcut.
+P05,D,EXACT,PART_OF,is part of,E3_TO_E2,concept,False,Inverse direction: optical-fiber type -> bundle class; не identity hardware.
+P06,A,APPROXIMATE,APPLIED_TO,applied to,E2_TO_E3,conditional_hypothesis,True,Actual use вместо гипотезы transfer.
+P06,B,APPROXIMATE,ADDRESSES_RELATED_PROBLEM,addresses a related problem to,EITHER,conditional_hypothesis,True,Не выражает конкретную potential method-target связь.
+P06,C,APPROXIMATE,APPLIED_TO,applied to,E2_TO_E3,conditional_hypothesis,True,Actual use не подтверждён.
+P06,D,EXACT,POTENTIALLY_APPLICABLE_TO,may be applied to,E2_TO_E3,conditional_hypothesis,False,"Проверить noise model, texture/density preservation и calibration."

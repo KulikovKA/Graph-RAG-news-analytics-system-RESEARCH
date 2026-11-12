@@ -1,0 +1,98 @@
+{
+  "preparation_passed": true,
+  "pairs": 28,
+  "sanity_pairs": 6,
+  "exact_spans": true,
+  "label_maps_verified": true,
+  "max_tokens": {
+    "A": 427,
+    "B": 409,
+    "C": 439,
+    "D": 411
+  },
+  "no_expected_label_or_audit_status_in_model_text": true,
+  "local_predictions_not_inserted": true,
+  "adapter_compatibility": {
+    "passed": true,
+    "historical_commit": "2e7c740",
+    "pair_id": "P01",
+    "all_raw_scores_identical": true,
+    "default_audit_identical": true,
+    "forwards": 3
+  },
+  "pilot_technical_passed": true,
+  "pilot": {
+    "technical_passed": true,
+    "content_reviewed": true,
+    "reviewed_predictions": 30,
+    "main_positive_predictions": 4,
+    "pilot_ids": [
+      "P01",
+      "P03",
+      "P06",
+      "N01",
+      "N07",
+      "W04"
+    ],
+    "signatures": {
+      "A": "def37571e53721001a8517ceb85de47c0fa440254a31c90663f7f7d9b55c2aef",
+      "B": "6a15de58b4b79e8d06e1ef2cd7680821c443be4e8bcf075087313c3c9bffaac3",
+      "C": "dde2c3ce2a8edda7384140f3b8988e6e21bc1c44b68bcc833a9d3d6dbbea3cf9",
+      "D": "564214251bd9dd05ec4879518f3b71177d78d4544b0c125de4f6bcea5b8586e8"
+    },
+    "content_review_sha256": "32a56cf7524628d2045b7b37d1127e2de4c103d5329a1058e92891ed8718cc1b",
+    "continue_reason": "No technical errors or changed protected data; low/zero output is not a stopping condition."
+  },
+  "infer_technical_passed": true,
+  "passed": true,
+  "main_results": 112,
+  "sanity_results": 24,
+  "configurations": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "main_pairs_per_configuration": 28,
+  "all_raw_scores_saved": true,
+  "every_positive_prediction_audited": true,
+  "reviewed_main_predictions": 11,
+  "reviewed_sanity_predictions": 26,
+  "identical_inputs_and_exact_fixed_spans": true,
+  "no_truncation": true,
+  "protected_file_count": 1183,
+  "protected_files_unchanged": true,
+  "ontology_and_contexts_frozen": true,
+  "model_forwards": 139,
+  "threshold_forwards": 0,
+  "baseline": {
+    "weak_components": 223,
+    "largest_component_vertices": 369,
+    "largest_component_documents": 17
+  },
+  "thresholds": [
+    0.35,
+    0.4,
+    0.45,
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.8,
+    0.85,
+    0.9
+  ],
+  "tests": "42 passed: test_build_relex_graphs, test_relex_four_experiments, test_cross_document_ontology_experiment",
+  "resume_duplicate_and_foreign_signature_rejected": true,
+  "incomplete_tail_recovery_tested": true,
+  "neo4j_accessed": false,
+  "neo4j_import": false,
+  "NER_rerun": false,
+  "embeddings_rerun": false,
+  "other_LLMs_launched": false,
+  "entity_resolution_changed": false,
+  "stage_2f5_started": false,
+  "checkpoint_files_unchanged_after_inference": true
+}
