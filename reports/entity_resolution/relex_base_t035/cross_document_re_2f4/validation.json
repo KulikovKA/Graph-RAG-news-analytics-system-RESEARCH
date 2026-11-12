@@ -1,0 +1,82 @@
+{
+  "passed": true,
+  "namespace": "relex_sem_e5_small_name_t095_ner_t046_er2f3",
+  "baseline": {
+    "weak_components": 223,
+    "largest_component_vertices": 369,
+    "largest_component_documents": 17
+  },
+  "candidate_inventory": 682,
+  "selected_pairs": 36,
+  "processed_pairs": 36,
+  "negative_pairs": 30,
+  "predictions": 9,
+  "unique_directed_triples": 9,
+  "all_discovered_paths_archived": 3236,
+  "representative_paths": 1129,
+  "all_offsets_exact": true,
+  "fixed_spans_only": true,
+  "both_directions_evaluated": true,
+  "no_token_truncation": true,
+  "all_source_fragments_exact": true,
+  "negative_results_saved": true,
+  "thresholds": [
+    0.35,
+    0.4,
+    0.45,
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.8,
+    0.85,
+    0.9
+  ],
+  "threshold_rounding_before_filter": false,
+  "inference_repeated_for_thresholds": false,
+  "baseline_multiset_sha256": "a4d14f418bea9e2ca836043614a6132d95311659276c9384474378a7f1c49d5d",
+  "all_1307_facts_preserved": true,
+  "all_492_similar_to_preserved": true,
+  "all_118_concept_links_preserved": true,
+  "neo4j_before": {
+    "namespace": "relex_sem_e5_small_name_t095_ner_t046_er2f3",
+    "database": "neo4j",
+    "nodes": 873,
+    "relationships": 2728,
+    "sha256": "5daa32d6b8e389592db3e3d0a5326f04cf06706b198448950ee7d9250ca431cf",
+    "outside": {
+      "nodes": 11460,
+      "relationships": 21290,
+      "sha256": "f0592a6b5b993f3bd7afd5dcebb843a85612b98b81dc12d836b26061f3c09e36"
+    }
+  },
+  "neo4j_after": {
+    "namespace": "relex_sem_e5_small_name_t095_ner_t046_er2f3",
+    "database": "neo4j",
+    "nodes": 873,
+    "relationships": 2728,
+    "sha256": "5daa32d6b8e389592db3e3d0a5326f04cf06706b198448950ee7d9250ca431cf",
+    "outside": {
+      "nodes": 11460,
+      "relationships": 21290,
+      "sha256": "f0592a6b5b993f3bd7afd5dcebb843a85612b98b81dc12d836b26061f3c09e36"
+    }
+  },
+  "all_neo4j_namespaces_unchanged": true,
+  "protected_source_files_unchanged": true,
+  "protected_source_file_count": 118,
+  "quality_audit_counts": {
+    "REJECTED": 9
+  },
+  "review_is_targeted_not_unbiased_precision": true,
+  "NER_rerun": false,
+  "embeddings_rerun": false,
+  "all_predictions_audited": true,
+  "checkpoint_pair_ids_unique": true,
+  "entity_resolution_changed": false,
+  "other_LLMs_launched": false,
+  "neo4j_import": false,
+  "stage_2f4d_started": false
+}
