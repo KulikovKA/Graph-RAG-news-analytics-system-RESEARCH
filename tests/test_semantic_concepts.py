@@ -154,3 +154,103 @@ def test_semantic_pairs_do_not_create_transitive_class_or_identity_links():
     decisions, _ = sweep.evaluate(candidates, [a, b, c], [], set())
     assert {r["source_entity_id"] for r in decisions if r["status"] == "ACCEPT"} == {"a", "b"}
     assert all(r["status"] == "REJECT" for r in decisions if r["source_entity_id"] == "b" and r["candidate_id"] == "bc")
+
+
+def test_extended_thresholds_and_vector_cutoffs_match_exact_decimal_gates():
+    assert len(sweep.EXTENDED_THRESHOLDS) == 51
+    assert sweep.EXTENDED_THRESHOLDS[0] == "0.700" and sweep.EXTENDED_THRESHOLDS[-1] == "0.950"
+    for threshold in sweep.EXTENDED_THRESHOLDS:
+        value = float(threshold)
+        values = np.array([np.nextafter(value, -np.inf), value, np.nextafter(value, np.inf)])
+        assert list(values >= sweep.binary_cutoff(threshold)) == [passes(v, threshold) for v in values]
+
+
+def test_topk_accounts_for_pruned_pairs_and_preserves_all_high_threshold_candidates(tmp_path, monkeypatch):
+    monkeypatch.setattr(sweep, "CACHE", tmp_path)
+    rows = [dict(entity_id=i, document_id=i.upper(), text_name=i) for i in "abcd"]
+    matrix = np.array([[1, .99, .98, .8], [.99, 1, .96, .71], [.98, .96, 1, .75], [.8, .71, .75, 1]])
+    for mode in sweep.MODES:
+        np.save(tmp_path / (mode + "_ee.npy"), matrix)
+        np.save(tmp_path / (mode + "_ec.npy"), np.empty((4, 0)))
+    distribution = []
+    selected = sweep.discover(rows, [], [], set(), thresholds=("0.700", "0.950"),
+        topk_entity=1, topk_concept=1, preserve_above="0.950", distribution=distribution)
+    for r in distribution:
+        assert r["full_candidates"] == r["reviewed_candidates"] + r["pruned_candidates"]
+        if r["threshold"] == "0.700":
+            assert r["full_candidates"] == 6 and r["pruned_candidates"] == 2
+        else:
+            assert r["full_candidates"] == r["reviewed_candidates"] == 3
+    assert len(selected) == 8
+
+
+def test_memoization_and_compact_provenance_preserve_frozen_scientific_decisions():
+    a, b = e("a", "A", "Surgical procedures"), e("b", "B", "surgery")
+    candidates = [dict(candidate_id=mode, kind="entity_entity", source_entity_id="a", reference_entity_id="b",
+        embedding_mode=mode, cosine_similarity=.96, qualifying_thresholds=["0.700", "0.950"]) for mode in sweep.MODES]
+    plain, plain_proposals = sweep.evaluate(candidates, [a, b], [], set())
+    statistics = {}
+    compact, compact_proposals = sweep.evaluate(candidates, [a, b], [], set(), compact=True, memoize=True, statistics=statistics)
+    fields = ("candidate_id", "source_entity_id", "target_concept_id", "status", "reason")
+    assert [tuple(r[k] for k in fields) for r in plain] == [tuple(r[k] for k in fields) for r in compact]
+    assert [r["status"] for r in plain_proposals] == [r["status"] for r in compact_proposals]
+    assert statistics["pair_evaluations"] == 1 and statistics["pair_calls"] == 2
+    assert statistics["semantic_evaluations"] < statistics["semantic_calls"]
+    assert "source_contexts_refs" in compact[0]["evidence"] and "source_contexts" not in compact[0]["evidence"]
+
+
+def test_hybrid_extended_graph_keeps_validator_only_delta_when_semantic_gate_is_empty():
+    ns = sweep.NS
+    nodes = {ns + ":a": dict(label="RELEXEntity", properties=dict(document_id="A", name="a")),
+             ns + ":b": dict(label="RELEXEntity", properties=dict(document_id="B", name="b")),
+             ns + ":c": dict(label="RELEXConcept", properties=dict(concept_id="c", name="Surgery"))}
+    edges = {ns + ":m": dict(type="HAS_SHARED_CONCEPT", head=ns + ":a", tail=ns + ":c", properties={})}
+    delta = [dict(source_entity_id="b", target_concept_id="c", target_concept_name="Surgery", document_id="B",
+                  semantic_only_membership=False, decision_id="B", status="ACCEPT", cosine_similarity=None)]
+    result, accepted, _, _ = sweep.threshold_sweep(nodes, edges, [], [], [Concept("c", "Surgery")],
+        thresholds=("0.950",), lexical_delta=delta, retain_evidence=False)
+    assert len(result) == 2 and all(r["new_memberships"] == 1 for r in result)
+    assert all(r["new_entity_concept_entity_bridges"] == 1 for r in result)
+    assert {r["source_entity_id"] for r in accepted} == {"b"}
+
+
+def test_compressed_decision_artifacts_are_deterministic_and_lossless(tmp_path):
+    import hashlib
+    rows = [dict(status="ACCEPT", name="хирургия", source_entity_id="a")]
+    a, b = tmp_path / "a.gz", tmp_path / "b.gz"
+    sweep.gzip_jsonl(a, rows); sweep.gzip_jsonl(b, rows)
+    assert hashlib.sha256(a.read_bytes()).digest() == hashlib.sha256(b.read_bytes()).digest()
+    assert sweep.read_gzip_jsonl(a) == rows
+
+
+def test_extended_sweep_preserves_stage_2g1_validator_and_dictionaries_exactly():
+    import hashlib
+    import json
+    root = Path(__file__).resolve().parents[1]
+    previous = json.loads((root / "reports/entity_resolution/relex_base_t035/semantic_concept_sweep/manifest.json").read_text(encoding="utf-8"))
+    current = hashlib.sha256((root / "src/cgraph/semantic_concepts.py").read_bytes()).hexdigest()
+    assert current == previous["code_sha256"]["src/cgraph/semantic_concepts.py"]
+    assert sweep.SEMANTIC_POLICY == previous["policy"]
+
+
+def test_extended_semantic_only_analysis_does_not_call_regular_plurals_semantic_discoveries():
+    a = e("a", "A", "peripheral blood mononuclear cells", types=("OBJECT",))
+    b = e("b", "B", "cell", types=("OBJECT",))
+    row = dict(source_entity_id="a", reference_entity_id="b", target_concept_id="new-cell", target_concept_name="cell",
+               semantic_only_membership=True, status="ACCEPT", reason="frozen")
+    sweep.refine_extended_semantic_flags([row], [a, b], [])
+    assert not row["semantic_only_membership"] and not row["semantic_only_candidate_pair"]
+    assert row["raw_token_semantic_only_2g1"] and row["status"] == "ACCEPT"
+
+
+def test_posthoc_broad_hub_audit_flags_do_not_modify_scientific_decisions_or_keep_orphan_proposals():
+    a = e("a", "A", "cell", types=("OBJECT",))
+    b = e("b", "B", "peripheral blood mononuclear cells", types=("OBJECT",))
+    rows = [dict(source_entity_id=i, target_concept_id="new-cell", target_concept_name="cell", document_id=d,
+                 reference_entity_id=ref, status="ACCEPT", reason="frozen", semantic_only_membership=False)
+            for i, d, ref in (("a", "A", "b"), ("b", "B", "a"))]
+    original = deepcopy(rows)
+    audit = sweep.extended_audit([], rows, [a, b], [], set(), [])
+    assert all(r["audit_verdict"] == "SUSPICIOUS" for r in audit)
+    assert rows == original
+    assert sweep.audit_supported_delta(rows, {("a", "new-cell")}, set()) == []

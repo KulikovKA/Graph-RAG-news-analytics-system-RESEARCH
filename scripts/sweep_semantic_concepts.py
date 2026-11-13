@@ -10,6 +10,7 @@ import argparse
 from collections import Counter, defaultdict
 import csv
 from datetime import datetime, timedelta, timezone
+from decimal import Decimal
 import json
 from pathlib import Path
 import subprocess
@@ -30,6 +31,15 @@ NS = graph.TARGET_NS
 require, dumps, banner, progress = graph.require, graph.dumps, graph.banner, graph.progress
 RECIPE = "e5-source-name-context-lodo-v1"
 COSINE_RECIPE = "float64-exact-identical-vectors-v1"
+EXTENDED_THRESHOLDS = tuple(format(Decimal(i) / Decimal(1000), ".3f") for i in range(700, 951, 5))
+EXTENDED_OUT = graph.base.ER / "semantic_concept_sweep_extended"
+
+
+def binary_cutoff(threshold):
+    """Smallest binary64 number >= the exact requested decimal."""
+    import numpy as np
+    value = float(threshold)
+    return np.nextafter(value, np.inf) if Decimal.from_float(value) < Decimal(threshold) else value
 
 
 def save(path, obj):
@@ -186,19 +196,63 @@ def embeddings(rows, references):
     return meta
 
 
-def discover(rows, references, catalog, memberships, similar=()):
+def discover(rows, references, catalog, memberships, similar=(), *, thresholds=THRESHOLDS,
+             topk_entity=None, topk_concept=None, preserve_above=None, distribution=None):
     import numpy as np
     output = []
     old_pairs = {tuple(sorted(p)) for p in similar}
     concept_index = {c.concept_id: c for c in catalog}
     ref_lookup = {(r["concept_id"], r["excluded_document_id"]): i for i, r in enumerate(references)}
+    minimum = binary_cutoff(thresholds[0])
     for mode in MODES:
         ee = np.load(CACHE / (mode + "_ee.npy"), allow_pickle=False)
         ec = np.load(CACHE / (mode + "_ec.npy"), allow_pickle=False)
+        documents = np.array([r["document_id"] for r in rows])
+        cross = documents[:, None] != documents[None, :]
+        full_ee = np.triu(cross & (ee >= minimum), 1)
+        selected_ee = full_ee.copy()
+        if topk_entity is not None:
+            selected_ee[:] = False
+            for i in range(len(rows)):
+                ranked = np.flatnonzero(cross[i] & (ee[i] >= minimum))
+                ranked = ranked[np.argsort(-ee[i, ranked], kind="stable")][:topk_entity]
+                for j in ranked:
+                    selected_ee[min(i, j), max(i, j)] = True
+            if preserve_above is not None:
+                selected_ee |= np.triu(cross & (ee >= binary_cutoff(preserve_above)), 1)
+        selected_ec = np.zeros((len(rows), len(concept_index)), dtype=bool)
+        concept_ids = sorted(concept_index)
+        ec_scores = np.empty(selected_ec.shape, dtype=np.float64)
+        eligible_ec = np.ones(selected_ec.shape, dtype=bool)
+        for i, row in enumerate(rows):
+            for j, cid in enumerate(concept_ids):
+                column = ref_lookup.get((cid, row["document_id"]), ref_lookup[(cid, None)])
+                ec_scores[i, j] = ec[i, column]
+                eligible_ec[i, j] = (row["entity_id"], cid) not in memberships
+            ranked = np.flatnonzero(eligible_ec[i] & (ec_scores[i] >= minimum))
+            ranked = ranked[np.argsort(-ec_scores[i, ranked], kind="stable")]
+            selected_ec[i, ranked if topk_concept is None else ranked[:topk_concept]] = True
+        if preserve_above is not None:
+            selected_ec |= eligible_ec & (ec_scores >= binary_cutoff(preserve_above))
+        if distribution is not None:
+            ee_values = ee[np.triu(cross, 1)]
+            ec_values = ec_scores[eligible_ec]
+            checked_ee = ee[selected_ee]
+            checked_ec = ec_scores[selected_ec]
+            for threshold in thresholds:
+                cutoff = binary_cutoff(threshold)
+                full_a, full_b = int(np.count_nonzero(ee_values >= cutoff)), int(np.count_nonzero(ec_values >= cutoff))
+                selected_a, selected_b = int(np.count_nonzero(checked_ee >= cutoff)), int(np.count_nonzero(checked_ec >= cutoff))
+                distribution.append(dict(embedding_mode=mode, threshold=threshold,
+                    full_entity_entity_candidates=full_a, full_entity_concept_candidates=full_b,
+                    full_candidates=full_a + full_b, reviewed_entity_entity_candidates=selected_a,
+                    reviewed_entity_concept_candidates=selected_b, reviewed_candidates=selected_a + selected_b,
+                    pruned_candidates=full_a + full_b - selected_a - selected_b,
+                    reviewed_fraction=(selected_a + selected_b) / (full_a + full_b) if full_a + full_b else 1.0))
         for i, left in enumerate(rows):
-            for j in np.flatnonzero(ee[i, i + 1:] >= .95) + i + 1:
+            for j in np.flatnonzero(selected_ee[i]):
                 right = rows[int(j)]; score = float(ee[i, j])
-                if left["document_id"] == right["document_id"] or not passes(score, THRESHOLDS[0]):
+                if left["document_id"] == right["document_id"] or not passes(score, thresholds[0]):
                     continue
                 output.append(dict(candidate_id="ee:" + digest([mode, left["entity_id"], right["entity_id"]])[:24],
                     kind="entity_entity", embedding_mode=mode, source_entity_id=left["entity_id"],
@@ -206,12 +260,12 @@ def discover(rows, references, catalog, memberships, similar=()):
                     reference_entity_id=right["entity_id"], source_document_id=left["document_id"],
                     reference_document_id=right["document_id"], cosine_similarity=score,
                     existing_similar_to=tuple(sorted((left["entity_id"], right["entity_id"]))) in old_pairs))
-            for cid in sorted(concept_index):
-                if (left["entity_id"], cid) in memberships:
+            for index, cid in enumerate(concept_ids):
+                if not selected_ec[i, index]:
                     continue
                 j = ref_lookup.get((cid, left["document_id"]), ref_lookup[(cid, None)])
                 score = float(ec[i, j])
-                if passes(score, THRESHOLDS[0]):
+                if passes(score, thresholds[0]):
                     ref = references[j]
                     output.append(dict(candidate_id="ec:" + digest([mode, left["entity_id"], cid])[:24],
                         kind="entity_concept", embedding_mode=mode, source_entity_id=left["entity_id"],
@@ -220,7 +274,7 @@ def discover(rows, references, catalog, memberships, similar=()):
                         reference_id=ref["reference_id"], reference_context_document_ids=ref["context_document_ids"],
                         name_only_fallback=ref["name_only_fallback"]))
     for c in output:
-        c["qualifying_thresholds"] = [t for t in THRESHOLDS if passes(c["cosine_similarity"], t)]
+        c["qualifying_thresholds"] = [t for t in thresholds if passes(c["cosine_similarity"], t)]
     return sorted(output, key=lambda c: (c["embedding_mode"], c["kind"], c["candidate_id"]))
 
 
@@ -230,7 +284,24 @@ def no_lexical_overlap(left, right):
     return not all_tokens(left) & all_tokens(right)
 
 
-def evaluate(candidates, entities, catalog, memberships):
+def compact_proof(value):
+    """Deduplicate source text by its immutable mention/span/hash reference."""
+    if isinstance(value, list):
+        return [compact_proof(v) for v in value]
+    if not isinstance(value, dict):
+        return value
+    output = {}
+    for key, item in value.items():
+        if key in {"source_contexts", "reference_contexts"}:
+            output[key + "_refs"] = [dict(document_id=c["document_id"], source_entity_id=c.get("source_entity_id"),
+                source_mention_ids=c.get("source_mention_ids", []), start=c.get("start"), end=c.get("end"),
+                revision_id=c.get("revision_id"), context_sha256=digest(c["text"])) for c in item]
+        else:
+            output[key] = compact_proof(item)
+    return output
+
+
+def evaluate(candidates, entities, catalog, memberships, *, compact=False, memoize=False, statistics=None):
     by = {e.entity_id: e for e in entities}
     cat = {c.concept_id: c for c in catalog}
     catalog_names = {class_form(c.name): c.concept_id for c in catalog}
@@ -238,6 +309,37 @@ def evaluate(candidates, entities, catalog, memberships):
     for eid, cid in memberships:
         member_concepts[eid].add(cid)
     resolver = HybridConceptResolver(catalog, entities, memberships)
+    if compact or memoize:
+        original = resolver.validate_semantic
+        cache = {}; pair_cache = {}
+        stats = statistics if statistics is not None else {}
+        stats.update(semantic_calls=0, semantic_evaluations=0, pair_calls=0, pair_evaluations=0)
+        def checked(entity, concept, reference):
+            stats["semantic_calls"] += 1
+            key = (entity.entity_id, concept.concept_id, concept.name, concept.aliases, concept.existing, reference.entity_id)
+            if not memoize or key not in cache:
+                status, reason, evidence = original(entity, concept, reference)
+                stats["semantic_evaluations"] += 1
+                result = (status, reason, compact_proof(evidence) if compact else evidence)
+                if memoize:
+                    cache[key] = result
+            else:
+                result = cache[key]
+            return result[0], result[1], dict(result[2])
+        resolver.validate_semantic = checked
+        original_pair = resolver.validate_pair
+        def checked_pair(left, right):
+            stats["pair_calls"] += 1
+            key = (left.entity_id, right.entity_id)
+            if not memoize or key not in pair_cache:
+                result = original_pair(left, right)
+                stats["pair_evaluations"] += 1
+                if memoize:
+                    pair_cache[key] = result
+            else:
+                result = pair_cache[key]
+            return result[0], result[1], dict(result[2])
+        resolver.validate_pair = checked_pair
     decisions, proposals = [], []
 
     def decision(candidate, entity, concept, reference, *, new_concept=False, pair_evidence=None):
@@ -340,12 +442,13 @@ def graph_metrics(nodes, edges):
                 entity_concept_entity_bridges=bridge_count), doc_pairs, graph.reachable_document_pairs(nodes, edges)
 
 
-def threshold_sweep(nodes, edges, candidates, decisions, catalog):
+def threshold_sweep(nodes, edges, candidates, decisions, catalog, *, thresholds=THRESHOLDS,
+                    lexical_delta=(), distribution=None, retain_evidence=True):
     base_metrics, old_pairs, old_reachable = graph_metrics(nodes, edges)
     cat_ids = {c.concept_id for c in catalog}
     result = []; memberships = []; changes = []
     for mode in MODES:
-        for threshold in progress(THRESHOLDS, total=len(THRESHOLDS), desc="ВИРТУАЛЬНЫЕ ГРАФЫ " + mode):
+        for threshold in progress(thresholds, total=len(thresholds), desc="ВИРТУАЛЬНЫЕ ГРАФЫ " + mode):
             active = [c for c in candidates if c["embedding_mode"] == mode and passes(c["cosine_similarity"], threshold)]
             eligible = [r for r in decisions if r["embedding_mode"] == mode and r["status"] == "ACCEPT" and
                         r.get("adds_membership", True) and passes(r["cosine_similarity"], threshold)]
@@ -359,6 +462,10 @@ def threshold_sweep(nodes, edges, candidates, decisions, catalog):
             for r in accepted:
                 supports[r["target_concept_id"]].add(r["document_id"])
             accepted = [r for r in accepted if r["target_concept_id"] in cat_ids or len(supports[r["target_concept_id"]]) >= 2]
+            semantic_accepted = list(accepted)
+            union = {(r["source_entity_id"], r["target_concept_id"]): r for r in lexical_delta}
+            union.update({(r["source_entity_id"], r["target_concept_id"]): r for r in accepted})
+            accepted = list(union.values())
             vn, ve = virtual_graph(nodes, edges, accepted)
             metrics, doc_pairs, reachable = graph_metrics(vn, ve)
             row = dict(variant="H", embedding_mode=mode, threshold=threshold,
@@ -373,9 +480,28 @@ def threshold_sweep(nodes, edges, candidates, decisions, catalog):
                 suspicious_new_memberships=0, independently_measured_false_memberships="not_measured", semantic_only_memberships=sum(r["semantic_only_membership"] for r in accepted),
                 rejected_candidate_decisions=sum(r["status"] == "REJECT" and r["embedding_mode"] == mode and passes(r["cosine_similarity"], threshold) for r in decisions))
             result.append(row)
+            if distribution is not None:
+                dist = next(r for r in distribution if r["embedding_mode"] == mode and r["threshold"] == threshold)
+                active_ids = {r["candidate_id"] for r in active}
+                grouped = defaultdict(list)
+                for d in decisions:
+                    if d["candidate_id"] in active_ids:
+                        grouped[d["candidate_id"]].append(d)
+                accepted_candidates = sum(any(d["status"] == "ACCEPT" for d in ds) for ds in grouped.values())
+                new_accept_candidates = sum(any(d["status"] == "ACCEPT" and d.get("adds_membership", True) for d in ds) for ds in grouped.values())
+                old_lexical = {(r["source_entity_id"], r["target_concept_id"]) for r in lexical_delta}
+                row.update(variant="C", full_candidates=dist["full_candidates"], checked_candidates=len(active),
+                    pruned_candidates=dist["pruned_candidates"], reviewed_fraction=dist["reviewed_fraction"],
+                    accepted_checked_candidates=accepted_candidates, rejected_checked_candidates=len(grouped) - accepted_candidates,
+                    new_accept_candidates=new_accept_candidates,
+                    acceptance_fraction_checked_candidates=accepted_candidates / len(active) if active else 0,
+                    semantic_accepted_memberships=len(semantic_accepted),
+                    validator_only_memberships=len(lexical_delta),
+                    memberships_beyond_validator_only=sum((r["source_entity_id"], r["target_concept_id"]) not in old_lexical for r in semantic_accepted))
             changes.append(dict(embedding_mode=mode, threshold=threshold, newly_directly_connected_document_pairs=sorted(doc_pairs - old_pairs),
                                 newly_reachable_document_pairs=sorted(reachable - old_reachable)))
-            memberships.extend(dict(r, threshold=threshold, virtual_only=True) for r in accepted)
+            memberships.extend(dict({k: v for k, v in r.items() if retain_evidence or k not in {"evidence", "qualifying_thresholds"}},
+                                    embedding_mode=mode, threshold=threshold, virtual_only=True) for r in accepted)
     return result, memberships, changes, base_metrics
 
 
@@ -653,11 +779,416 @@ def write_report(comparison, baseline, candidates, decisions, accepted, control,
     (OUT / "comparison_report.md").write_text("\n".join(rows), encoding="utf-8", newline="\n")
 
 
+def gzip_jsonl(path, rows):
+    import gzip
+    import io
+    with path.open("wb") as raw:
+        with gzip.GzipFile(filename="", fileobj=raw, mode="wb", mtime=0) as compressed:
+            with io.TextIOWrapper(compressed, encoding="utf-8", newline="\n") as stream:
+                for row in rows:
+                    stream.write(dumps(row) + "\n")
+
+
+def read_gzip_jsonl(path):
+    import gzip
+    with gzip.open(path, "rt", encoding="utf-8") as stream:
+        return [json.loads(line) for line in stream if line.strip()]
+
+
+def extended_lexical_control(entities, catalog, memberships):
+    """B uses the frozen lexical candidate universe, never embedding scores."""
+    from cgraph.concepts import ConceptResolver
+    by = {e.entity_id: e for e in entities}; cat = {c.concept_id: c for c in catalog}
+    lexical = ConceptResolver(catalog, entities, memberships).resolve_batch(entities)
+    historical = graph.base.core.read_jsonl(SOURCE / "candidate_decisions.jsonl")
+    universe = {(r["entity_id"], r["concept_id"]) for r in [*historical, *lexical.decisions]}
+    resolver = HybridConceptResolver(catalog, entities, memberships)
+    delta, decisions = {}, []
+    for eid, cid in sorted(universe):
+        if (eid, cid) in memberships or cid not in cat:
+            continue
+        c = cat[cid]; e = by[eid]
+        checks = [(*resolver.validate_semantic(e, c, by[i]), i) for i in c.member_ids if i != eid]
+        if not checks:
+            continue
+        checks.sort(key=lambda x: (x[0] != "ACCEPT", by[x[3]].document_id == e.document_id, x[3]))
+        status, reason, evidence, refid = checks[0]
+        row = dict(candidate_id="lexical-control:" + digest([eid, cid])[:24],
+            decision_id="validator-only:" + digest([eid, cid, VERSION])[:24], source_entity_id=eid,
+            source_name=e.name, target_concept_id=cid, target_concept_name=c.name,
+            document_id=e.document_id, reference_entity_id=refid, reference_document_id=by[refid].document_id,
+            status=status, reason=reason, evidence=compact_proof(evidence), resolver_version=VERSION,
+            embedding_mode="lexical", cosine_similarity=None, new_concept=False, origin="validator_only",
+            semantic_only_membership=no_lexical_overlap(e, c), factual=False, identity=False, fact_inheritance_allowed=False)
+        decisions.append(row)
+        if status == "ACCEPT":
+            delta[eid, cid] = row
+    return list(delta.values()), decisions, universe
+
+
+def extended_evaluate(candidates, entities, catalog, memberships, validator_sha):
+    """Reuse each checked scientific decision across thresholds and modes."""
+    import inspect
+    signature = digest(dict(candidates=candidates, validator_sha256=validator_sha,
+        evaluation_source=inspect.getsource(evaluate), proof_source=inspect.getsource(compact_proof),
+        source_snapshot=json.loads((SOURCE / "verification.json").read_text(encoding="utf-8"))["target_sha256"]))
+    directory = CACHE / "extended_evaluation"
+    directory.mkdir(exist_ok=True)
+    metadata = directory / "manifest.json"
+    if metadata.exists():
+        cached = json.loads(metadata.read_text(encoding="utf-8"))
+        if cached["fingerprint"] == signature:
+            require(all(graph.base.sha(directory / n) == h for n, h in cached["files_sha256"].items()), "Extended evaluation cache corrupted")
+            return read_gzip_jsonl(directory / "decisions.jsonl.gz"), read_gzip_jsonl(directory / "proposals.jsonl.gz"), cached["statistics"]
+    statistics = {}
+    decisions, proposals = evaluate(candidates, entities, catalog, memberships, compact=True, memoize=True, statistics=statistics)
+    gzip_jsonl(directory / "decisions.jsonl.gz", decisions)
+    gzip_jsonl(directory / "proposals.jsonl.gz", proposals)
+    save(metadata, dict(fingerprint=signature, statistics=statistics,
+        files_sha256={p.name: graph.base.sha(p) for p in directory.glob("*.gz")}))
+    return decisions, proposals, statistics
+
+
+def extended_audit(decisions, accepted, entities, catalog, lexical_universe, lexical_delta):
+    """Audit flags do not change ACCEPT/REJECT or the frozen validator rules."""
+    from cgraph.semantic_concepts import modifiers_conflict
+    by = {e.entity_id: e for e in entities}; cat = {c.concept_id: c for c in catalog}
+    unique = {}
+    for r in accepted:
+        unique.setdefault((r["source_entity_id"], r["target_concept_id"]), r)
+    rows = []
+    for (eid, cid), r in sorted(unique.items()):
+        e = by[eid]; ref = by.get(r.get("reference_entity_id"))
+        target = Concept(cid, r["target_concept_name"])
+        # A narrow target's contradictory modifiers are suspicious even if a
+        # generic approved alias bypassed that distinction in the old rules.
+        flags = []
+        if cid not in cat and class_form(target.name) == "cell":
+            flags.append("new_biological_cell_class_is_too_broad_for_unreviewed_global_hub")
+        if modifiers_conflict(e, target):
+            flags.append("contradictory_target_qualifier")
+        if "RESULT" in e.entity_types:
+            flags.append("experiment_result_as_class_member")
+        if set(e.name.lower().split()) & {"risk", "rate", "rates", "outcome", "outcomes", "success", "failure"}:
+            flags.append("property_result_or_relation_scope_needs_review")
+        rows.append(dict(audit_kind="all_unique_ACCEPT", source_entity_id=eid, source_name=e.name,
+            target_concept_id=cid, target_concept_name=r["target_concept_name"], document_id=e.document_id,
+            reference_entity_id=ref.entity_id if ref else "", reference_name=ref.name if ref else "",
+            status="ACCEPT", reason=r["reason"], risk_flags=flags,
+            audit_verdict="SUSPICIOUS" if flags else "SOURCE_SUPPORTED_UNDER_FROZEN_RULES",
+            independent_gold=False, semantic_only_membership=r.get("semantic_only_membership", False),
+            unavailable_to_lexical_baseline=(eid, cid) not in lexical_universe,
+            beyond_validator_only=(eid, cid) not in {(x["source_entity_id"], x["target_concept_id"]) for x in lexical_delta},
+            source_contexts=list(e.evidence), reference_contexts=list(ref.evidence) if ref else [],
+            note="Category membership only; retain separate studies, instances and original facts. Audit is not independent Gold."))
+    # Stratified REJECT sample: highest scores per reason and mode, plus known FN.
+    groups = defaultdict(list)
+    for r in decisions:
+        if r["status"] == "REJECT":
+            groups[r["embedding_mode"], r["reason"]].append(r)
+    sampled = {}
+    for rs in groups.values():
+        for r in sorted(rs, key=lambda r: (-r["cosine_similarity"], r["decision_id"]))[:3]:
+            sampled[r["decision_id"]] = r
+    possible_fn = {}
+    for r in decisions:
+        source_name = r.get("source_name", "").casefold()
+        target_name = class_form(r.get("target_concept_name", ""))
+        known_pair = ((source_name == "pathological stress reactivity" and target_name == "stress reactivity") or
+                      (source_name == "hla-drb1*09 gene" and target_name == "gene"))
+        if r["status"] == "REJECT" and known_pair:
+            key = (r["source_entity_id"], r["target_concept_id"], r["embedding_mode"])
+            if key not in possible_fn or r["cosine_similarity"] > possible_fn[key]["cosine_similarity"]:
+                possible_fn[key] = r
+    for r in possible_fn.values():
+        sampled.setdefault(r["decision_id"], r)
+    for r in sampled.values():
+        e = by[r["source_entity_id"]]; ref = by.get(r.get("reference_entity_id"))
+        known_fn = ((e.name.casefold() == "pathological stress reactivity" and class_form(r.get("target_concept_name", "")) == "stress reactivity") or
+                    (e.name.casefold() == "hla-drb1*09 gene" and class_form(r.get("target_concept_name", "")) == "gene"))
+        rows.append(dict(audit_kind="stratified_REJECT_sample", source_entity_id=e.entity_id, source_name=e.name,
+            target_concept_id=r["target_concept_id"], target_concept_name=r.get("target_concept_name", ""),
+            document_id=e.document_id, reference_entity_id=ref.entity_id if ref else "", reference_name=ref.name if ref else "",
+            status="REJECT", reason=r["reason"], risk_flags=[],
+            audit_verdict="POTENTIAL_FALSE_NEGATIVE" if known_fn else "REJECT_OR_INSUFFICIENT_EVIDENCE",
+            independent_gold=False, semantic_only_membership=r.get("semantic_only_membership", False),
+            unavailable_to_lexical_baseline=(e.entity_id, r["target_concept_id"]) not in lexical_universe,
+            beyond_validator_only=False, source_contexts=list(e.evidence), reference_contexts=list(ref.evidence) if ref else [],
+            note="Potential qualified phenotype or explicitly source-named gene class; frozen context rules abstain." if known_fn else
+                 "High similarity does not establish a shared scientific class; inspect roles, qualifiers and source scope."))
+    return rows
+
+
+def refine_extended_semantic_flags(decisions, entities, catalog):
+    """Analysis labels only: regular plurals/lexical suffixes are not semantic-only."""
+    by = {e.entity_id: e for e in entities}; cat = {c.concept_id: c for c in catalog}
+    normalized_tokens = {e.entity_id: set().union(*(tokens(class_form(a)) for a in (e.name, *e.aliases))) for e in entities}
+    for r in decisions:
+        if r.get("adds_membership") is False:
+            continue
+        e = by[r["source_entity_id"]]
+        concept = cat.get(r["target_concept_id"], Concept(r["target_concept_id"], r.get("target_concept_name", "")))
+        target_tokens = set().union(*(tokens(class_form(a)) for a in (concept.name, *concept.aliases)))
+        r["raw_token_semantic_only_2g1"] = r.get("semantic_only_membership", False)
+        r["semantic_only_membership"] = not normalized_tokens[e.entity_id] & target_tokens and lexical_match(e, concept) is None
+        if r.get("reference_entity_id") in by:
+            r["semantic_only_candidate_pair"] = not normalized_tokens[e.entity_id] & normalized_tokens[r["reference_entity_id"]]
+
+
+def audit_supported_delta(active, suspicious, catalog_ids):
+    kept = [r for r in active if (r["source_entity_id"], r["target_concept_id"]) not in suspicious]
+    documents = defaultdict(set)
+    for r in kept:
+        documents[r["target_concept_id"]].add(r["document_id"])
+    return [r for r in kept if r["target_concept_id"] in catalog_ids or len(documents[r["target_concept_id"]]) >= 2]
+
+
+def compact_artifact_row(row):
+    r = dict(row)
+    if "qualifying_thresholds" in r:
+        ts = r.pop("qualifying_thresholds")
+        r["qualifying_threshold_range"] = [ts[0], ts[-1]] if ts else []
+    if "evidence" in r and r.get("status") != "ACCEPT":
+        r["evidence"] = dict(entity_bundle="entity_evidence.jsonl", source_entity_id=r.get("source_entity_id"),
+            reference_entity_id=r.get("reference_entity_id"), proof_sha256=digest(r["evidence"]),
+            reason=r.get("reason"))
+    return r
+
+
+def extended_plots(comparison, distribution, b_metrics, baseline):
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+    for filename, kind in (("candidate_counts", "candidates"), ("new_concept_bridges", "bridges")):
+        fig, axes = plt.subplots(1, 2, figsize=(12, 4.8), sharey=True, layout="constrained")
+        for ax, mode in zip(axes, MODES):
+            if kind == "candidates":
+                rs = [r for r in distribution if r["embedding_mode"] == mode]
+                x = [float(r["threshold"]) for r in rs]
+                ax.plot(x, [r["full_candidates"] for r in rs], label="Все пары выше порога", linewidth=2)
+                ax.plot(x, [r["reviewed_candidates"] for r in rs], "--", label="Проверенные top-k + ≥0.950", linewidth=2)
+                ax.set_yscale("symlog", linthresh=1)
+                ax.set_ylabel("Кандидаты (symlog, включая 0)")
+            else:
+                rs = [r for r in comparison if r["embedding_mode"] == mode]
+                x = [float(r["threshold"]) for r in rs]
+                ax.plot(x, [r["new_entity_concept_entity_bridges"] for r in rs], color="0.6", label="C − A: все ACCEPT validator", linewidth=1.5)
+                ax.plot(x, [r["audit_supported_new_bridges"] for r in rs], label="Без спорных memberships", linewidth=2)
+                ax.plot(x, [r["audit_supported_bridges_beyond_B"] for r in rs], "--", label="Без спорных, сверх B", linewidth=2)
+                ax.axhline(b_metrics["entity_concept_entity_bridges"] - baseline["entity_concept_entity_bridges"],
+                           color="0.5", linestyle=":", label="B − A: validator only")
+                ax.set_ylabel("Новые entity–concept–entity мосты")
+            ax.set_title(mode); ax.set_xlabel("Cosine threshold")
+            ax.set_xlim(.700, .950); ax.grid(alpha=.25); ax.legend(fontsize=8)
+        fig.suptitle("Stage 2G.2 — тот же корпус, замороженный validator; top-k не даёт полного Recall", fontsize=11)
+        fig.savefig(OUT / (filename + ".png"), dpi=180)
+        svg_path = OUT / (filename + ".svg")
+        fig.savefig(svg_path)
+        svg_path.write_text("\n".join(line.rstrip() for line in svg_path.read_text(encoding="utf-8").splitlines()) + "\n",
+                            encoding="utf-8", newline="\n")
+        plt.close(fig)
+
+
+def extended_report(comparison, distribution, baseline, b_metrics, b_delta, audit, semantic_only, stats):
+    chosen = {"0.700", "0.750", "0.800", "0.825", "0.830", "0.845", "0.850", "0.870", "0.875", "0.900", "0.925", "0.950"}
+    lines = ["# Stage 2G.2 — Extended Semantic Concept Threshold Sweep", "",
+        "102 виртуальные конфигурации на прежних 30 документах. Neo4j не изменён; нового импорта и push нет.", "",
+        "Validator и его словари заморожены в версии Stage 2G.1. Новый диапазон — Decimal 0.700–0.950, шаг 0.005. Embeddings/cosine cache предыдущего эксперимента проверен по hashes, input ordering, модели и рецепту; E5 не запускалась повторно.", "",
+        "## Полный подсчёт и ограниченная содержательная проверка", "",
+        "Все 315954 cross-document EE и 27444 nonmember EC пары на режим участвуют в полном векторизованном подсчёте. Для проверки смысла выбираются top-20 cross-document соседей каждой entity (симметричное объединение) и top-10 concepts каждой entity; дополнительно сохраняются все кандидаты с cosine ≥0.950. Tie-break: стабильный ID. Решение вычисляется один раз для уникального candidate/reference и переиспользуется при всех порогах/режимах. Отсечённые пары не объявляются REJECT; их смысл не проверялся. **Полный Recall не измеряется.**", "",
+        "| Режим | Порог | Все кандидаты | Проверены | Отсечены | C memberships Δ | C concepts Δ | C bridges Δ | Bridges без спорных | C−B bridges | WCC | Largest | Suspicious ACCEPT |", "|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|"]
+    for r in comparison:
+        if r["threshold"] in chosen:
+            lines.append(f"| {r['embedding_mode']} | {r['threshold']} | {r['full_candidates']} | {r['checked_candidates']} | {r['pruned_candidates']} | {r['new_memberships']} | {r['new_concepts']} | {r['new_entity_concept_entity_bridges']} | {r['audit_supported_new_bridges']} | {r['bridges_beyond_validator_only']} | {r['weak_components']} | {r['largest_component_vertices']} | {r['suspicious_new_memberships']} |")
+    lines += ["", "Полные 102 строки: threshold_comparison.csv и candidate_distribution.csv. Доля ACCEPT среди проверенных кандидатов — acceptance_fraction_checked_candidates; это **не Precision**. Она включает уже подтверждённые общие concepts, поэтому отдельно показаны new_accept_candidates и новые memberships.", "",
+        "![Candidate counts](candidate_counts.png)", "", "![New bridges](new_concept_bridges.png)", "",
+        "## Ablation: одинаковый validator, разные кандидаты", "",
+        "| Вариант | Concepts | HAS_SHARED_CONCEPT | Междокументные мосты | WCC | Largest |", "|---|---:|---:|---:|---:|---:|",
+        f"| A: неизменный Stage 2G | {baseline['concepts']} | {baseline['concept_links']} | {baseline['entity_concept_entity_bridges']} | {baseline['weak_components']} | {baseline['largest_component_vertices']} |",
+        f"| B: improved validator, lexical candidates only | {b_metrics['concepts']} | {b_metrics['concept_links']} | {b_metrics['entity_concept_entity_bridges']} | {b_metrics['weak_components']} | {b_metrics['largest_component_vertices']} |", "",
+        "B использует исторические lexical candidates Stage 2G и повторный candidate generation неизменного lexical resolver на существующем каталоге. Embedding scores в B не участвуют. C — объединение B и принятых semantic memberships; поэтому улучшение validator остаётся в C при любом пороге. Это явное уточнение относительно таблицы threshold-gated deltas Stage 2G.1, где lexical control показывался отдельно. Колонки semantic_accepted_memberships и memberships_beyond_validator_only отделяют эти вклады. Полное сравнение A/B/C для каждого режима/порога — ablation_comparison.csv.", "",
+        f"B добавляет {len(b_delta)} memberships. Unique semantic-only memberships, недоступных lexical candidate universe и отсутствующих в B: {len(semantic_only)}. Их исходные evidence и IDs — semantic_only_discoveries.jsonl. Высокий cosine или отсутствие общего слова сами по себе не означают правильность.", "",
+        "## Ответы на вопросы эксперимента", "",
+        "1. При движении вниз по порогу Surgery уже доступен при name 0.950 (в 2G.1 он появлялся и при 0.955). Новый квалифицированный member paranasal sinus surgery→surgery появляется на grid 0.870, cosine 0.873386. Новый concept cell появляется на 0.830, cosine 0.833477; он отмечен для review как чрезмерно широкая biological category. Без этой спорной категории иных новых concepts на проверенной selection ниже порога не найдено.", "",
+        "2. Name обнаруживает клиническую Surgery и её дополнительный sinus-surgery member. Name+context воспроизводит Surgery на 0.845 и ниже, но дополнительных подтверждённых classes/members сверх name здесь не даёт. Это сравнение конкретного source-context recipe с leave-one-document-out и top-k, не универсальная победа одного режима. При ≥0.900 у context нет semantic candidates; C всё равно содержит 2 lexical validator-only links B.", "",
+        "3. При снижении 0.850→0.825 full candidates растут с 6045 до 25805 для name и с 2265 до 27795 для context; на 0.800 их уже 77762/127466. Это резкий рост retrieval workload. Большинство проверенных низкосходных кандидатов не проходят научную validation, но отброшенные top-k пары не размечались и не называются ложными. При 0.700 проверены 21321 из 343174 (name) и 20910 из 343398 (context), около 6% universe выше gate; полнота содержательного поиска неизвестна.", "",
+        "4. Строго semantic-only membership без пересечения нормализованных слов/aliases и без lexical_match — Surgical procedures→surgery. Она отсутствует в lexical candidate universe и B. Paranasal sinus surgery→surgery найдена через низкопороговый EE proposal, но имеет буквальный общий термин surgery и не выдаётся за совпадение без лексики. Cells/cell — регулярное число; это также не semantic-only. raw-token flag 2G.1 сохранён отдельно для сопоставимости.", "",
+        "5. Возможные false negatives замороженного validator: pathological stress reactivity→Stress reactivity и HLA-DRB1*09 gene→Genes. Второй source прямо называет gene, однако строгие context witnesses не подтверждают общую область с reference. Они вынесены в quality_audit.csv; решение осталось REJECT. Это content-review hypotheses, не независимый Gold. Словари и ACCEPT rules для исправления этих случаев в ходе sweep не менялись.", "",
+        "6. A: 34 concepts/130 memberships/92 bridges, WCC 223/largest 371. B: 34/132/98, WCC 223/largest 371. C name 0.870: 35/136/103, WCC 223/largest 372; context 0.845: 35/135/100, WCC 223/largest 372. C name ≤0.830 даёт raw 36/138/104, WCC 222/largest 374 и 17 новых reachable document pairs, но 2 новых memberships Cell спорны. Именно общий Cell подключает ранее недостижимый документ W2039836112 через W2791492120 к большому компоненту. Без них остаются 35/136/103, WCC 223/largest 372 и 0 новых reachable pairs. Два direct document pairs Cancer связаны с B; третий raw direct pair и все 17 first-reachability pairs возникают через спорный Cell. Увеличение связности само по себе не доказывает качество.", "",
+        "7. Для следующей отдельной проверки разумны name 0.870 (добавляет sinus-surgery member), более консервативный name 0.900–0.950 и context 0.840–0.845. Это кандидаты диапазонов, не оптимумы: Gold нет, selection ограничена и source-rule validator исследован на этом же корпусе. Ниже примерно 0.825 workload резко увеличивается без новых неоспоренных gains в рассмотренной selection. Cell требует отдельного решения о полезности общего hub до какого-либо импорта.", "",
+        "## Качество и границы вывода", "",
+        "Все уникальные новые ACCEPT проходят отдельный аудит ролей, qualifiers, generic scope и source contexts; stratified REJECT sample берётся по каждому reason и режиму. Suspicious ACCEPT помечаются в quality_audit.csv и считаются отдельно, но результаты замороженного validator во время sweep не исправляются. Audit не является независимым Gold; отсутствие флага не доказывает правильность. Свойства cohorts, экземпляров и результатов не наследуются.", "",
+        "Правильные примеры: breast cancer→Cancer (disease category), Surgical procedures→surgery (clinical class), paranasal sinus surgery→surgery (конкретный вид клинического вмешательства). Исходный текст сообщает о 10 пациентах, проходивших paranasal sinus surgery; их факты не переносятся на knee/eye cohorts. Cell и peripheral blood mononuclear cells действительно обозначают биологические клетки, но общая категория слишком широка для автоматического вывода о полезном междокументном scientific bridge. Две такие memberships остаются raw ACCEPT и отдельно помечаются SUSPICIOUS; график показывает и raw ACCEPT, и вариант без них.", "",
+        "Ошибочные/неподтверждённые кандидаты: limonene↔limonene synthase gene (product vs gene), genetics→Genes (область vs объект), hip→knee arthroplasty (разные anatomical qualifiers), Study/Results (универсальные слова). Cosine не исправляет эти различия и не доказывает membership. Независимая Precision не измерялась.", "",
+        "Снижение порога увеличивает число тематически близких пар, а не автоматически число корректных научных связей. Полные counts отражают весь universe, а ACCEPT/REJECT и graph metrics — только проверенную selection плюс B. Для анализа роста неподтверждённых кандидатов сравниваются raw/full curves и reviewed REJECT; непроверенные отсечённые пары нельзя считать ложными. Нельзя выбирать оптимальный порог по максимальному числу рёбер.", "",
+        "WCC/reachability включают все 492 исходные SIMILAR_TO, в том числе с историческими REJECT/REVIEW annotations. Semantic graph path — маршрут поиска между независимыми исследованиями; он не является новой фактической зависимостью. Документы, 811 entities, 1307 facts, 492 SIMILAR_TO, 34 concepts и 130 исходных memberships во всех virtual payloads сохранены точно.", "",
+        "## Воспроизведение", "",
+        "`.venv/Scripts/python.exe scripts/sweep_semantic_concepts.py --extended --neo4j-env <existing-file>`", "",
+        "Кэш embeddings и полной memoized проверки — вне Git в .cache/semantic_concept_sweep/. Полные выбранные candidates/decisions/proposals сохранены как детерминированные .jsonl.gz; entity_evidence.jsonl позволяет восстановить исходные контексты без их многократного дублирования. Новые mappings или модели не добавлялись. Manifest фиксирует selection limits, hashes, версию validator, counts отсечённых пар, memoization statistics и тесты.", ""]
+    (OUT / "comparison_report.md").write_text("\n".join(lines), encoding="utf-8", newline="\n")
+
+
+def run_extended(args):
+    global OUT
+    OUT = EXTENDED_OUT
+    OUT.mkdir(parents=True, exist_ok=True)
+    previous = json.loads((graph.base.ER / "semantic_concept_sweep/manifest.json").read_text(encoding="utf-8"))
+    validator_path = ROOT / "src/cgraph/semantic_concepts.py"
+    validator_sha = graph.base.sha(validator_path)
+    require(validator_sha == previous["code_sha256"]["src/cgraph/semantic_concepts.py"], "Validator changed: extended sweep must freeze Stage 2G.1 rules")
+    require(digest(SEMANTIC_POLICY) == digest(previous["policy"]), "Semantic policy/dictionaries changed")
+    protected = sorted(p for p in graph.base.ER.rglob("*") if p.is_file() and not p.is_relative_to(OUT))
+    protected += [graph.base.DOCUMENTS, validator_path, ROOT / "src/cgraph/concepts.py"]
+    hashes = {p.relative_to(ROOT).as_posix(): graph.base.sha(p) for p in protected}
+    driver = None; outside_before = schema_before = None
+    banner("STAGE 2G.2: ПРОВЕРЯЮ BASELINE И КЭШ; ЗАПИСИ В NEO4J ЗАПРЕЩЕНЫ")
+    if args.neo4j_env:
+        from neo4j import READ_ACCESS
+        driver, database = graph.base.core.connect_neo4j(args.neo4j_env)
+        with driver.session(database=database, default_access_mode=READ_ACCESS) as session:
+            nodes, edges, source_manifest, _ = verified_source(session)
+            graph.base.NS = NS
+            outside_before = graph.base.outside_snapshot(session)
+            schema_before = dict(constraints=session.run(graph.SCHEMA_QUERY).data(), indexes=session.run(graph.INDEX_QUERY).data())
+    else:
+        nodes, edges, source_manifest, _ = verified_source()
+    before = graph.snapshot_hash(nodes, edges)
+    entities, catalog, memberships, similar, docs = graph.profiles(nodes, edges)
+    rows, refs = representation_inputs(nodes, entities, catalog)
+    cache_existed = (CACHE / "embedding_manifest.json").exists()
+    meta = embeddings(rows, refs)
+    require(meta["fingerprint"] == previous["embedding"]["fingerprint"], "Input ordering/model/settings differ from Stage 2G.1")
+    if cache_existed:
+        require(meta["cache_files_sha256"] == previous["embedding"]["cache_files_sha256"], "Cosine/vector cache differs from Stage 2G.1")
+    banner("ПОДСЧИТЫВАЮ ВСЕ ПАРЫ ДЛЯ 102 КОНФИГУРАЦИЙ; ОТБИРАЮ TOP-20 EE И TOP-10 EC")
+    distribution = []
+    candidates = discover(rows, refs, catalog, memberships, similar, thresholds=EXTENDED_THRESHOLDS,
+        topk_entity=20, topk_concept=10, preserve_above="0.950", distribution=distribution)
+    csvout("candidate_distribution.csv", distribution)
+    gzip_jsonl(OUT / "semantic_candidates.jsonl.gz", (compact_artifact_row(r) for r in candidates))
+    jsonl("entity_evidence.jsonl", [dict(entity_id=e.entity_id, document_id=e.document_id, name=e.name,
+        aliases=e.aliases, entity_types=e.entity_types, evidence=e.evidence) for e in entities])
+    banner(f"ПРОВЕРЯЮ {len(candidates)} УНИКАЛЬНЫХ ВЫБРАННЫХ КАНДИДАТОВ; ПОРОГИ ПЕРЕИСПОЛЬЗУЮТ РЕШЕНИЯ")
+    decisions, proposals, statistics = extended_evaluate(candidates, entities, catalog, memberships, validator_sha)
+    refine_extended_semantic_flags(decisions, entities, catalog)
+    gzip_jsonl(OUT / "semantic_decisions.jsonl.gz", (compact_artifact_row(r) for r in decisions))
+    gzip_jsonl(OUT / "new_concept_proposals.jsonl.gz", (compact_artifact_row(r) for r in proposals))
+    b_delta, b_decisions, lexical_universe = extended_lexical_control(entities, catalog, memberships)
+    jsonl("validator_only_decisions.jsonl", b_decisions)
+    comparison, accepted, changes, baseline = threshold_sweep(nodes, edges, candidates, decisions, catalog,
+        thresholds=EXTENDED_THRESHOLDS, lexical_delta=b_delta, distribution=distribution, retain_evidence=False)
+    b_nodes, b_edges = virtual_graph(nodes, edges, b_delta)
+    b_metrics = graph_metrics(b_nodes, b_edges)[0]
+    audit = extended_audit(decisions, accepted, entities, catalog, lexical_universe, b_delta)
+    suspicious = {(r["source_entity_id"], r["target_concept_id"]) for r in audit if r["audit_verdict"] == "SUSPICIOUS"}
+    ablations = []
+    baseline_reachable = graph.reachable_document_pairs(nodes, edges)
+    for r in comparison:
+        active = [a for a in accepted if a["embedding_mode"] == r["embedding_mode"] and a["threshold"] == r["threshold"]]
+        r["suspicious_new_memberships"] = sum((a["source_entity_id"], a["target_concept_id"]) in suspicious for a in active)
+        r["bridges_beyond_validator_only"] = r["new_entity_concept_entity_bridges"] - (b_metrics["entity_concept_entity_bridges"] - baseline["entity_concept_entity_bridges"])
+        supported = audit_supported_delta(active, suspicious, {c.concept_id for c in catalog})
+        supported_metrics, supported_pairs, supported_reachable = graph_metrics(*virtual_graph(nodes, edges, supported))
+        r["audit_supported_new_memberships"] = len(supported)
+        r["audit_supported_new_bridges"] = supported_metrics["entity_concept_entity_bridges"] - baseline["entity_concept_entity_bridges"]
+        r["audit_supported_bridges_beyond_B"] = supported_metrics["entity_concept_entity_bridges"] - b_metrics["entity_concept_entity_bridges"]
+        r["audit_supported_weak_components"] = supported_metrics["weak_components"]
+        r["audit_supported_largest_component_vertices"] = supported_metrics["largest_component_vertices"]
+        r["audit_supported_new_reachable_document_pairs"] = len(supported_reachable - baseline_reachable)
+        for variant, metrics, delta_count in (("A", baseline, 0), ("B", b_metrics, len(b_delta))):
+            ablations.append(dict(variant=variant, embedding_mode=r["embedding_mode"], threshold=r["threshold"],
+                concepts=metrics["concepts"], memberships=metrics["concept_links"], new_memberships=delta_count,
+                entity_concept_entity_bridges=metrics["entity_concept_entity_bridges"],
+                weak_components=metrics["weak_components"], largest_component_vertices=metrics["largest_component_vertices"]))
+        ablations.append(dict(variant="C", embedding_mode=r["embedding_mode"], threshold=r["threshold"],
+            concepts=baseline["concepts"] + r["new_concepts"], memberships=baseline["concept_links"] + r["new_memberships"],
+            new_memberships=r["new_memberships"], entity_concept_entity_bridges=baseline["entity_concept_entity_bridges"] + r["new_entity_concept_entity_bridges"],
+            weak_components=r["weak_components"], largest_component_vertices=r["largest_component_vertices"]))
+    csvout("threshold_comparison.csv", comparison)
+    csvout("ablation_comparison.csv", ablations)
+    csvout("quality_audit.csv", audit)
+    jsonl("new_memberships.jsonl", accepted)
+    save(OUT / "document_pair_changes.json", changes)
+    save(OUT / "baseline_metrics.json", baseline)
+    save(OUT / "validator_only_metrics.json", b_metrics)
+    unique = {}
+    b_pairs = {(r["source_entity_id"], r["target_concept_id"]) for r in b_delta}
+    for r in decisions:
+        pair = (r["source_entity_id"], r["target_concept_id"])
+        if (r["status"] == "ACCEPT" and r.get("adds_membership", True) and r.get("semantic_only_membership") and
+                pair not in lexical_universe and pair not in b_pairs):
+            unique.setdefault(pair, r)
+    jsonl("semantic_only_discoveries.jsonl", unique.values())
+    extended_plots(comparison, distribution, b_metrics, baseline)
+    extended_report(comparison, distribution, baseline, b_metrics, b_delta, audit, list(unique.values()), statistics)
+    require(len(comparison) == 102 and len(distribution) == 102, "Incomplete extended sweep")
+    require(graph.snapshot_hash(nodes, edges) == before, "Virtual graphs mutated source")
+    require(all(r["full_candidates"] == r["reviewed_candidates"] + r["pruned_candidates"] for r in distribution), "Candidate accounting mismatch")
+    require(all(r["pruned_candidates"] == 0 for r in distribution if r["threshold"] == "0.950"), "High-threshold preservation failed")
+    for mode in MODES:
+        rs = [r for r in distribution if r["embedding_mode"] == mode]
+        require(all(a["full_candidates"] >= b["full_candidates"] and a["reviewed_candidates"] >= b["reviewed_candidates"] for a, b in zip(rs, rs[1:])), "Non-monotonic distribution")
+    validation = dict(configurations=102, thresholds=list(EXTENDED_THRESHOLDS), documents=30, entities=811,
+        baseline_concepts=34, baseline_memberships=130, facts=1307, similar_to=492, source_sha256_before=before,
+        all_eligible_pairs_counted=True, semantic_review_is_limited=True, full_recall_claimed=False,
+        selection=dict(entity_top_k=20, concept_top_k=10, preserve_all_at_or_above="0.950"),
+        cache_reused=cache_existed, model_inference_run=not cache_existed, validator_frozen_sha256=validator_sha,
+        new_dictionary_mappings_added=False, model_files_unchanged=True, all_virtual_baseline_records_preserved=True,
+        ablation_C_includes_B=True, live_database_preservation_verified=False, neo4j_import=False, push=False)
+    validation.update(unique_ACCEPT_memberships_audited=sum(r["status"] == "ACCEPT" for r in audit),
+        suspicious_unique_ACCEPT_memberships=len(suspicious),
+        REJECT_audit_sample_rows=sum(r["status"] == "REJECT" for r in audit),
+        semantic_only_definition="no normalized name/alias token overlap AND no lexical_match AND absent in lexical universe/B",
+        audit_flags_do_not_change_frozen_ACCEPT_REJECT=True)
+    if driver is not None:
+        try:
+            with driver.session(database=database, default_access_mode=READ_ACCESS) as session:
+                banner("ПРОВЕРЯЮ СОХРАННОСТЬ STAGE 2G И ЧУЖИХ NAMESPACES ПОСЛЕ 102 ВИРТУАЛЬНЫХ КОНФИГУРАЦИЙ")
+                nn, ee, _, _ = verified_source(session)
+                after = graph.base.outside_snapshot(session)
+                schema = dict(constraints=session.run(graph.SCHEMA_QUERY).data(), indexes=session.run(graph.INDEX_QUERY).data())
+                require(graph.snapshot_hash(nn, ee) == before and outside_before == after and schema == schema_before, "Neo4j source/outside/schema changed")
+                save(OUT / "neo4j_preservation.json", dict(before=before, after=graph.snapshot_hash(nn, ee), outside_before=outside_before,
+                    outside_after=after, schema_before=schema_before, schema_after=schema))
+                validation.update(live_database_preservation_verified=True, source_sha256_after=before, external_namespaces_and_schema_unchanged=True)
+        finally:
+            driver.close()
+    require(all(graph.base.sha(ROOT / p) == h for p, h in hashes.items()), "Previous experiment/corpus/validator changed")
+    require(all(graph.base.sha(Path(r["path"])) == r["sha256"] for r in meta["model"]["files"]), "Model files changed")
+    validation["previous_experiments_and_source_files_unchanged"] = True
+    save(OUT / "validation.json", validation)
+    code = [Path(__file__), ROOT / "tests/test_semantic_concepts.py", validator_path]
+    output = dict(stage="2G.2", source_commit=subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip(),
+        completed_at=datetime.now(timezone(timedelta(hours=3))).isoformat(), timezone="Europe/Moscow",
+        source_namespace=NS, source_fingerprint=source_manifest["fingerprint"], source_sha256=before,
+        thresholds=list(EXTENDED_THRESHOLDS), policy=SEMANTIC_POLICY, embedding=meta, validation=validation,
+        evaluation_statistics=statistics, checked_candidates=len(candidates), decisions=len(decisions),
+        validator_only_new_memberships=len(b_delta), unique_new_memberships=len({(r["source_entity_id"], r["target_concept_id"]) for r in accepted}),
+        protected_files_sha256=hashes, code_sha256={p.relative_to(ROOT).as_posix(): graph.base.sha(p) for p in code},
+        independent_gold=False, neo4j_import=False, new_namespaces_created=0, push=False)
+    test_path = CACHE / "extended_tests.xml"
+    if test_path.exists():
+        import xml.etree.ElementTree as ET
+        suite = ET.parse(test_path).getroot().find("testsuite")
+        tests = {k: int(suite.attrib[k]) for k in ("tests", "failures", "errors", "skipped")}
+        tests.update(seconds=float(suite.attrib["time"]), junit_sha256=graph.base.sha(test_path))
+        require(tests["failures"] == tests["errors"] == 0, "Extended tests failed")
+        output["tests"] = tests
+    output["artifact_files_sha256"] = {p.name: graph.base.sha(p) for p in sorted(OUT.iterdir()) if p.is_file() and p.name != "manifest.json"}
+    save(OUT / "manifest.json", output)
+    banner("STAGE 2G.2 ЗАВЕРШЁН: 102 ВИРТУАЛЬНЫХ КОНФИГУРАЦИИ; ИМПОРТА И PUSH НЕТ")
+    print(dumps(dict(candidates=len(candidates), decisions=len(decisions), B_new_memberships=len(b_delta),
+        unique_new_memberships=output["unique_new_memberships"])), flush=True)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--embeddings-only", action="store_true")
     parser.add_argument("--neo4j-env", type=Path)
+    parser.add_argument("--extended", action="store_true", help="Stage 2G.2: 0.700–0.950, frozen validator, explicit top-k review")
     args = parser.parse_args()
+    if args.extended:
+        return run_extended(args)
     OUT.mkdir(parents=True, exist_ok=True); CACHE.mkdir(parents=True, exist_ok=True)
     protected = sorted(p for p in graph.base.ER.rglob("*") if p.is_file() and not p.is_relative_to(OUT))
     protected += [graph.base.DOCUMENTS, ROOT / "src/cgraph/concepts.py", ROOT / "scripts/build_dynamic_concept_graph.py"]
