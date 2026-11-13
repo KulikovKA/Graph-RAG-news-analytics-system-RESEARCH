@@ -358,7 +358,7 @@ def verify(session,nodes,edges):
     banner('НАЧИНАЮ ПРОВЕРКУ ПОЛНОТЫ ИМПОРТИРОВАННОГО ГРАФА')
     actual_nodes={};actual_edges={};digest=hashlib.sha256()
     result=session.run('MATCH (n {namespace:$ns}) RETURN n.key AS key,labels(n) AS labels,properties(n) AS properties ORDER BY key',ns=TARGET_NS)
-    for row in progress(result,total=873,desc='ПРОВЕРКА УЗЛОВ'):
+    for row in progress(result,total=EXPECTED['total_nodes'],desc='ПРОВЕРКА УЗЛОВ'):
         row=row.data();wanted=nodes.get(row['key'])
         require(wanted is not None and row['labels']==[wanted['label']],'Unexpected node or label')
         require(row['properties']=={k:v for k,v in wanted['properties'].items() if v is not None},'Node properties/provenance mismatch '+row['key'])
@@ -366,7 +366,7 @@ def verify(session,nodes,edges):
         digest.update((dumps(row)+'\n').encode())
     require(not result.consume().counters.contains_updates,'Verification updated nodes')
     result=session.run('MATCH (h)-[r]->(t) WHERE r.namespace=$ns RETURN r.key AS key,type(r) AS type,h.key AS head,t.key AS tail,properties(r) AS properties ORDER BY key',ns=TARGET_NS)
-    for row in progress(result,total=2728,desc='ПРОВЕРКА ОТНОШЕНИЙ'):
+    for row in progress(result,total=EXPECTED['total_relationships'],desc='ПРОВЕРКА ОТНОШЕНИЙ'):
         row=row.data();wanted=edges.get(row['key'])
         require(wanted is not None and all(row[k]==wanted[k] for k in ('type','head','tail')),'Relationship identity/type/endpoints mismatch')
         require(row['properties']=={k:v for k,v in wanted['properties'].items() if v is not None},'Relationship provenance mismatch '+row['key'])
@@ -375,7 +375,7 @@ def verify(session,nodes,edges):
     require(not result.consume().counters.contains_updates,'Verification updated relationships')
     require(set(actual_nodes)==set(nodes) and set(actual_edges)==set(edges),'Incomplete live graph coverage')
     result=metrics(actual_nodes,actual_edges)[0]
-    print('ВСЕ 873 УЗЛА И 2728 ОТНОШЕНИЙ ПРОЧИТАНЫ И СВЕРЕНЫ.',flush=True)
+    print(f"ВСЕ {len(actual_nodes)} УЗЛОВ И {len(actual_edges)} ОТНОШЕНИЙ ПРОЧИТАНЫ И СВЕРЕНЫ.",flush=True)
     return result,digest.hexdigest(),actual_nodes,actual_edges
 
 

@@ -1,0 +1,16 @@
+{
+  "command": ".venv/Scripts/python.exe -X utf8 -m pytest tests/test_dynamic_concepts.py tests/test_build_relex_graphs.py tests/test_contracts.py -q --junitxml=.cache/dynamic_tests.xml",
+  "tests": 57,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "seconds": 16.595,
+  "source_sha256": {
+    "src/cgraph/concepts.py": "acdc8f80cf448d7a62395e294151d672d71da435fae4e450a606a9fb1adf2740",
+    "scripts/build_dynamic_concept_graph.py": "9d0247aa91cfd69228162ae01586946aa95a5d26ad41e6b23aeab3f2856c37eb",
+    "scripts/reconstruct_global_kg_2f3.py": "4fc8365190e0aa36a8503a2429b3cfa747d8324b6ddf8a7b1b9e2655bc9d2079",
+    "tests/test_dynamic_concepts.py": "1877a25405df2add5a53b84ab675cef0797bc0090b831bd55da92bc8c71bc172"
+  },
+  "junit_sha256": "4900b1d3f5a0358d6266d8ff0ff95be7375321f576e395c99f65824187532111",
+  "warnings": "7 existing torch.jit.script deprecation warnings in synthetic vendor span-layer checks; no pretrained model inference"
+}

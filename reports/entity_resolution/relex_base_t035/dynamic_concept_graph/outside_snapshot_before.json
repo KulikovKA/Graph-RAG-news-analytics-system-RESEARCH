@@ -1,0 +1,554 @@
+{
+  "snapshot": {
+    "nodes": 12333,
+    "relationships": 24018,
+    "sha256": "b98e04f226f3647dee627e23959dc877d12ba02abb39c66ea38b2e9ece9ecf69"
+  },
+  "schema": {
+    "constraints": [
+      {
+        "name": "uq_applicant_key",
+        "type": "NODE_PROPERTY_UNIQUENESS",
+        "labelsOrTypes": [
+          "Applicant"
+        ],
+        "properties": [
+          "key"
+        ]
+      },
+      {
+        "name": "uq_author_key",
+        "type": "NODE_PROPERTY_UNIQUENESS",
+        "labelsOrTypes": [
+          "Author"
+        ],
+        "properties": [
+          "key"
+        ]
+      },
+      {
+        "name": "uq_classification_key",
+        "type": "NODE_PROPERTY_UNIQUENESS",
+        "labelsOrTypes": [
+          "Classification"
+        ],
+        "properties": [
+          "key"
+        ]
+      },
+      {
+        "name": "uq_fact_applied_by",
+        "type": "RELATIONSHIP_PROPERTY_UNIQUENESS",
+        "labelsOrTypes": [
+          "APPLIED_BY"
+        ],
+        "properties": [
+          "fact_id"
+        ]
+      },
+      {
+        "name": "uq_fact_authored_by",
+        "type": "RELATIONSHIP_PROPERTY_UNIQUENESS",
+        "labelsOrTypes": [
+          "AUTHORED_BY"
+        ],
+        "properties": [
+          "fact_id"
+        ]
+      },
+      {
+        "name": "uq_fact_cites",
+        "type": "RELATIONSHIP_PROPERTY_UNIQUENESS",
+        "labelsOrTypes": [
+          "CITES"
+        ],
+        "properties": [
+          "fact_id"
+        ]
+      },
+      {
+        "name": "uq_fact_classified_as",
+        "type": "RELATIONSHIP_PROPERTY_UNIQUENESS",
+        "labelsOrTypes": [
+          "CLASSIFIED_AS"
+        ],
+        "properties": [
+          "fact_id"
+        ]
+      },
+      {
+        "name": "uq_fact_discloses_feature",
+        "type": "RELATIONSHIP_PROPERTY_UNIQUENESS",
+        "labelsOrTypes": [
+          "DISCLOSES_FEATURE"
+        ],
+        "properties": [
+          "fact_id"
+        ]
+      },
+      {
+        "name": "uq_fact_invented_by",
+        "type": "RELATIONSHIP_PROPERTY_UNIQUENESS",
+        "labelsOrTypes": [
+          "INVENTED_BY"
+        ],
+        "properties": [
+          "fact_id"
+        ]
+      },
+      {
+        "name": "uq_fact_related_to",
+        "type": "RELATIONSHIP_PROPERTY_UNIQUENESS",
+        "labelsOrTypes": [
+          "RELATED_TO"
+        ],
+        "properties": [
+          "fact_id"
+        ]
+      },
+      {
+        "name": "uq_fact_uses_technology",
+        "type": "RELATIONSHIP_PROPERTY_UNIQUENESS",
+        "labelsOrTypes": [
+          "USES_TECHNOLOGY"
+        ],
+        "properties": [
+          "fact_id"
+        ]
+      },
+      {
+        "name": "uq_graph002_canonical_feature_id",
+        "type": "NODE_PROPERTY_UNIQUENESS",
+        "labelsOrTypes": [
+          "CanonicalTechnicalFeature"
+        ],
+        "properties": [
+          "canonical_feature_id"
+        ]
+      },
+      {
+        "name": "uq_hybrid_concept_id",
+        "type": "NODE_PROPERTY_UNIQUENESS",
+        "labelsOrTypes": [
+          "TechnicalConcept"
+        ],
+        "properties": [
+          "concept_id"
+        ]
+      },
+      {
+        "name": "uq_inventor_key",
+        "type": "NODE_PROPERTY_UNIQUENESS",
+        "labelsOrTypes": [
+          "Inventor"
+        ],
+        "properties": [
+          "key"
+        ]
+      },
+      {
+        "name": "uq_patent_key",
+        "type": "NODE_PROPERTY_UNIQUENESS",
+        "labelsOrTypes": [
+          "Patent"
+        ],
+        "properties": [
+          "key"
+        ]
+      },
+      {
+        "name": "uq_relexdocument_key",
+        "type": "NODE_PROPERTY_UNIQUENESS",
+        "labelsOrTypes": [
+          "RELEXDocument"
+        ],
+        "properties": [
+          "key"
+        ]
+      },
+      {
+        "name": "uq_relexentity_key",
+        "type": "NODE_PROPERTY_UNIQUENESS",
+        "labelsOrTypes": [
+          "RELEXEntity"
+        ],
+        "properties": [
+          "key"
+        ]
+      },
+      {
+        "name": "uq_scientific_work_key",
+        "type": "NODE_PROPERTY_UNIQUENESS",
+        "labelsOrTypes": [
+          "ScientificWork"
+        ],
+        "properties": [
+          "key"
+        ]
+      },
+      {
+        "name": "uq_technical_feature_key",
+        "type": "NODE_PROPERTY_UNIQUENESS",
+        "labelsOrTypes": [
+          "TechnicalFeature"
+        ],
+        "properties": [
+          "key"
+        ]
+      },
+      {
+        "name": "uq_technology_key",
+        "type": "NODE_PROPERTY_UNIQUENESS",
+        "labelsOrTypes": [
+          "Technology"
+        ],
+        "properties": [
+          "key"
+        ]
+      }
+    ],
+    "indexes": [
+      {
+        "name": "index_1b9dcc97",
+        "type": "LOOKUP",
+        "entityType": "RELATIONSHIP",
+        "labelsOrTypes": null,
+        "properties": null,
+        "owningConstraint": null
+      },
+      {
+        "name": "index_460996c0",
+        "type": "LOOKUP",
+        "entityType": "NODE",
+        "labelsOrTypes": null,
+        "properties": null,
+        "owningConstraint": null
+      },
+      {
+        "name": "ix_classification_scheme_code",
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Classification"
+        ],
+        "properties": [
+          "scheme",
+          "code"
+        ],
+        "owningConstraint": null
+      },
+      {
+        "name": "ix_patent_document_id",
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Patent"
+        ],
+        "properties": [
+          "document_id"
+        ],
+        "owningConstraint": null
+      },
+      {
+        "name": "ix_patent_publication_number",
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Patent"
+        ],
+        "properties": [
+          "publication_number"
+        ],
+        "owningConstraint": null
+      },
+      {
+        "name": "ix_patent_revision_id",
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Patent"
+        ],
+        "properties": [
+          "revision_id"
+        ],
+        "owningConstraint": null
+      },
+      {
+        "name": "ix_work_document_id",
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "ScientificWork"
+        ],
+        "properties": [
+          "document_id"
+        ],
+        "owningConstraint": null
+      },
+      {
+        "name": "ix_work_openalex_id",
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "ScientificWork"
+        ],
+        "properties": [
+          "openalex_id"
+        ],
+        "owningConstraint": null
+      },
+      {
+        "name": "ix_work_revision_id",
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "ScientificWork"
+        ],
+        "properties": [
+          "revision_id"
+        ],
+        "owningConstraint": null
+      },
+      {
+        "name": "uq_applicant_key",
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Applicant"
+        ],
+        "properties": [
+          "key"
+        ],
+        "owningConstraint": "uq_applicant_key"
+      },
+      {
+        "name": "uq_author_key",
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Author"
+        ],
+        "properties": [
+          "key"
+        ],
+        "owningConstraint": "uq_author_key"
+      },
+      {
+        "name": "uq_classification_key",
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Classification"
+        ],
+        "properties": [
+          "key"
+        ],
+        "owningConstraint": "uq_classification_key"
+      },
+      {
+        "name": "uq_fact_applied_by",
+        "type": "RANGE",
+        "entityType": "RELATIONSHIP",
+        "labelsOrTypes": [
+          "APPLIED_BY"
+        ],
+        "properties": [
+          "fact_id"
+        ],
+        "owningConstraint": "uq_fact_applied_by"
+      },
+      {
+        "name": "uq_fact_authored_by",
+        "type": "RANGE",
+        "entityType": "RELATIONSHIP",
+        "labelsOrTypes": [
+          "AUTHORED_BY"
+        ],
+        "properties": [
+          "fact_id"
+        ],
+        "owningConstraint": "uq_fact_authored_by"
+      },
+      {
+        "name": "uq_fact_cites",
+        "type": "RANGE",
+        "entityType": "RELATIONSHIP",
+        "labelsOrTypes": [
+          "CITES"
+        ],
+        "properties": [
+          "fact_id"
+        ],
+        "owningConstraint": "uq_fact_cites"
+      },
+      {
+        "name": "uq_fact_classified_as",
+        "type": "RANGE",
+        "entityType": "RELATIONSHIP",
+        "labelsOrTypes": [
+          "CLASSIFIED_AS"
+        ],
+        "properties": [
+          "fact_id"
+        ],
+        "owningConstraint": "uq_fact_classified_as"
+      },
+      {
+        "name": "uq_fact_discloses_feature",
+        "type": "RANGE",
+        "entityType": "RELATIONSHIP",
+        "labelsOrTypes": [
+          "DISCLOSES_FEATURE"
+        ],
+        "properties": [
+          "fact_id"
+        ],
+        "owningConstraint": "uq_fact_discloses_feature"
+      },
+      {
+        "name": "uq_fact_invented_by",
+        "type": "RANGE",
+        "entityType": "RELATIONSHIP",
+        "labelsOrTypes": [
+          "INVENTED_BY"
+        ],
+        "properties": [
+          "fact_id"
+        ],
+        "owningConstraint": "uq_fact_invented_by"
+      },
+      {
+        "name": "uq_fact_related_to",
+        "type": "RANGE",
+        "entityType": "RELATIONSHIP",
+        "labelsOrTypes": [
+          "RELATED_TO"
+        ],
+        "properties": [
+          "fact_id"
+        ],
+        "owningConstraint": "uq_fact_related_to"
+      },
+      {
+        "name": "uq_fact_uses_technology",
+        "type": "RANGE",
+        "entityType": "RELATIONSHIP",
+        "labelsOrTypes": [
+          "USES_TECHNOLOGY"
+        ],
+        "properties": [
+          "fact_id"
+        ],
+        "owningConstraint": "uq_fact_uses_technology"
+      },
+      {
+        "name": "uq_graph002_canonical_feature_id",
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "CanonicalTechnicalFeature"
+        ],
+        "properties": [
+          "canonical_feature_id"
+        ],
+        "owningConstraint": "uq_graph002_canonical_feature_id"
+      },
+      {
+        "name": "uq_hybrid_concept_id",
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "TechnicalConcept"
+        ],
+        "properties": [
+          "concept_id"
+        ],
+        "owningConstraint": "uq_hybrid_concept_id"
+      },
+      {
+        "name": "uq_inventor_key",
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Inventor"
+        ],
+        "properties": [
+          "key"
+        ],
+        "owningConstraint": "uq_inventor_key"
+      },
+      {
+        "name": "uq_patent_key",
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Patent"
+        ],
+        "properties": [
+          "key"
+        ],
+        "owningConstraint": "uq_patent_key"
+      },
+      {
+        "name": "uq_relexdocument_key",
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "RELEXDocument"
+        ],
+        "properties": [
+          "key"
+        ],
+        "owningConstraint": "uq_relexdocument_key"
+      },
+      {
+        "name": "uq_relexentity_key",
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "RELEXEntity"
+        ],
+        "properties": [
+          "key"
+        ],
+        "owningConstraint": "uq_relexentity_key"
+      },
+      {
+        "name": "uq_scientific_work_key",
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "ScientificWork"
+        ],
+        "properties": [
+          "key"
+        ],
+        "owningConstraint": "uq_scientific_work_key"
+      },
+      {
+        "name": "uq_technical_feature_key",
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "TechnicalFeature"
+        ],
+        "properties": [
+          "key"
+        ],
+        "owningConstraint": "uq_technical_feature_key"
+      },
+      {
+        "name": "uq_technology_key",
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Technology"
+        ],
+        "properties": [
+          "key"
+        ],
+        "owningConstraint": "uq_technology_key"
+      }
+    ]
+  }
+}

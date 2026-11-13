@@ -1,0 +1,93 @@
+{
+  "baseline_counts": {
+    "documents": 30,
+    "entities": 811,
+    "concepts": 32,
+    "kg_vertices": 843,
+    "total_nodes": 873,
+    "factual_relations": 1307,
+    "semantic_links": 492,
+    "concept_links": 118,
+    "document_mentions": 811,
+    "kg_edges": 1917,
+    "total_relationships": 2728
+  },
+  "target_counts": {
+    "documents": 30,
+    "entities": 811,
+    "concepts": 34,
+    "kg_vertices": 845,
+    "total_nodes": 875,
+    "factual_relations": 1307,
+    "semantic_links": 492,
+    "concept_links": 130,
+    "document_mentions": 811,
+    "kg_edges": 1929,
+    "total_relationships": 2740
+  },
+  "baseline_connectivity": {
+    "isolated": 172,
+    "weak_components": 223,
+    "largest_component_vertices": 369,
+    "largest_component_documents": 17,
+    "kg_vertices": 843,
+    "self_loop_only_vertices": 5,
+    "without_external_edges": 177,
+    "contextual_entities": 811,
+    "concepts": 32
+  },
+  "target_connectivity": {
+    "isolated": 172,
+    "weak_components": 223,
+    "largest_component_vertices": 371,
+    "largest_component_documents": 17,
+    "kg_vertices": 845,
+    "self_loop_only_vertices": 5,
+    "without_external_edges": 177,
+    "contextual_entities": 811,
+    "concepts": 34
+  },
+  "baseline_multidocument_concepts": 3,
+  "target_multidocument_concepts": 6,
+  "new_concepts": 2,
+  "new_memberships": 12,
+  "newly_directly_concept_connected_document_pairs": [
+    [
+      "W1995028339",
+      "W3138328568"
+    ]
+  ],
+  "newly_reachable_document_pairs": [],
+  "new_document_pair_concept_bridges": 3,
+  "entity_concept_entity_paths_before": 84,
+  "entity_concept_entity_paths_after": 92,
+  "new_entity_concept_entity_paths": 8,
+  "changed_document_pairs": [
+    {
+      "documents": [
+        "W1995028339",
+        "W3138328568"
+      ],
+      "added_paths": 4
+    },
+    {
+      "documents": [
+        "W2761455282",
+        "W3101922761"
+      ],
+      "added_paths": 2
+    },
+    {
+      "documents": [
+        "W3123056951",
+        "W4391351014"
+      ],
+      "added_paths": 2
+    }
+  ],
+  "decisions": {
+    "REJECT": 117,
+    "ACCEPT": 12
+  },
+  "connectivity_is_not_quality_evidence": true
+}
