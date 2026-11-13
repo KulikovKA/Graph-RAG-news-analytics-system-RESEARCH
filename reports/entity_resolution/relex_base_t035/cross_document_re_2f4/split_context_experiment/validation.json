@@ -1,0 +1,56 @@
+{
+  "preparation_passed": true,
+  "pairs": 28,
+  "exact_native_and_joint_spans": true,
+  "tokenizer_and_actual_collator_checked": true,
+  "all_nine_label_indexes_verified": true,
+  "max_tokens": {
+    "S1": 215,
+    "S2": 512,
+    "S3": 439
+  },
+  "source_only_fragments": true,
+  "additional_target_spans": false,
+  "scope_counts": {
+    "BACKGROUND-KNOWLEDGE DEPENDENT": 3,
+    "HYPOTHETICAL TRANSFER": 2,
+    "NEGATIVE / AMBIGUOUS": 22,
+    "TEXT-SUPPORTED SPLIT": 1
+  },
+  "genuine_two_source_reasoning_positives": 0,
+  "lexical_composition_positives": 1,
+  "prior_sanity_validation_sha256": "be9fe4d1468e13223be36df2604021dc6367b44e409f94a1938de29468a1e29f",
+  "prior_adapter_compatibility": {
+    "passed": true,
+    "historical_commit": "2e7c740",
+    "pair_id": "P01",
+    "all_raw_scores_identical": true,
+    "default_audit_identical": true,
+    "forwards": 3
+  },
+  "inference_passed": true,
+  "raw_vectors": 84,
+  "raw_values": 1512,
+  "all_two_directions_nine_labels": true,
+  "no_truncation": true,
+  "identical_checkpoint": true,
+  "threshold_forwards": 0,
+  "model_forwards": 79,
+  "reused_identical_inputs": 5,
+  "all_artifacts_passed": true,
+  "source_substrings_rechecked": true,
+  "output_endpoint_ids_rechecked": true,
+  "source_and_model_checkpoint_hashes_unchanged": true,
+  "complete_raw_values_rechecked": 1512,
+  "all_thresholds_derived_without_inference": true,
+  "positive_outputs_reviewed": 8,
+  "review_status": "all outputs >=0.35 explicitly source-reviewed",
+  "reviewer_count": 1,
+  "independent_gold": false,
+  "tests": {
+    "command": ".venv/Scripts/python.exe -m pytest tests/test_split_context_experiment.py tests/test_cross_document_ontology_experiment.py tests/test_build_relex_graphs.py tests/test_relex_four_experiments.py -q",
+    "passed": 46,
+    "warnings": 7
+  },
+  "completed_utc": "2026-11-13T16:06:06.024947+00:00"
+}
