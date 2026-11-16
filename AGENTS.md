@@ -46,6 +46,7 @@ Preserve frozen contracts/completed runs; use new output directories. Keep Gold 
 - Before lengthy operations, display a clear UPPERCASE warning. Use real `tqdm` for lengthy batch processing.
 - Check Git branch/status before editing. Never run `reset --hard` or delete existing artifacts without explicit permission.
 - After completing requested work and necessary checks, commit and push task-related changes to the current branch without further confirmation, unless instructed otherwise. Exclude unrelated changes; never force-push.
+- Before committing or pushing, verify the current branch and staged diff. Never stage unrelated, untracked, or secret files. In parallel workflows, push only the agent's designated feature branch.
 - Reuse existing components and minimal dependencies; justify additional frameworks/abstractions.
 - Spawn subagents only when explicitly requested; assign independent files or Git worktrees.
 - Run only necessary tests for affected components; avoid the full heavy pipeline for small changes.
