@@ -45,7 +45,7 @@ Preserve frozen contracts/completed runs; use new output directories. Keep Gold 
 - Avoid unnecessary heavy models, inference, training, or research. Default: one heavy model worker; maximum: two across all agents.
 - Before lengthy operations, display a clear UPPERCASE warning. Use real `tqdm` for lengthy batch processing.
 - Check Git branch/status before editing. Never run `reset --hard` or delete existing artifacts without explicit permission.
-- After completing requested work and necessary checks, commit and push task-related changes to the current branch without further confirmation, unless instructed otherwise. Exclude unrelated changes; never force-push.
+- Commit and push every completed task-related change, including documentation and configuration edits, after necessary checks and without further confirmation, unless the user explicitly prohibits committing or pushing for that task. Do not leave completed changes uncommitted or unpushed. Use the current branch, exclude unrelated changes, and never force-push.
 - Before committing or pushing, verify the current branch and staged diff. Never stage unrelated, untracked, or secret files. In parallel workflows, push only the agent's designated feature branch.
 - Reuse existing components and minimal dependencies; justify additional frameworks/abstractions.
 - Spawn subagents only when explicitly requested; assign independent files or Git worktrees.
