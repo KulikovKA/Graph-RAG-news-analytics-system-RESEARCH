@@ -142,3 +142,19 @@ import cgraph.retrieval_types
 """
     env = dict(os.environ, PYTHONPATH=str(root / "src"))
     subprocess.run([sys.executable, "-B", "-S", "-c", code], env=env, check=True, capture_output=True, text=True)
+
+
+def test_smoke_missing_env_file_explains_configuration_error(tmp_path):
+    root = Path(__file__).resolve().parents[1]
+    result = subprocess.run(
+        [sys.executable, "-B", str(root / "scripts/smoke_retrieval_3a1.py"),
+         "--neo4j-env", str(tmp_path / "missing.env")],
+        capture_output=True, text=True, check=False,
+    )
+    assert result.returncode == 2
+    report = json.loads(result.stdout)
+    assert report["status"] == "not_verified"
+    assert report["verified"] == {}
+    assert "no connection attempted" in report["reason"]
+    assert "NEO4J_PASSWORD" in report["action"]
+    assert "without --neo4j-env" in report["action"]

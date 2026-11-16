@@ -143,6 +143,14 @@ def main(argv=None):
     args = parser.parse_args(argv)
     report = {"namespace": TARGET_NAMESPACE, "status": "not_verified", "verified": {},
               "scope": "Counts, directions, fingerprint, snapshot hash, trust metadata, five factual evidence samples and cross-namespace guard"}
+    if args.neo4j_env is not None and not args.neo4j_env.is_file():
+        report.update(
+            reason="The --neo4j-env file does not exist or is not a file; no connection attempted",
+            error_type="FileNotFoundError",
+            action="Provide an existing --neo4j-env file, or set NEO4J_PASSWORD in PowerShell and run without --neo4j-env",
+        )
+        print(json.dumps(report, ensure_ascii=False, indent=2))
+        return 2
     try:
         driver, database = stage.graph.base.core.connect_neo4j(args.neo4j_env)
     except Exception as exc:
