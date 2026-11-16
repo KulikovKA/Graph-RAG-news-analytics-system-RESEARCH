@@ -25,6 +25,8 @@ Workflow extras (see `docs/`): `ner-v2`, `research`, `relex`.
 
 Use four-space indentation, `snake_case` functions/modules, `PascalCase` classes, `UPPER_SNAKE_CASE` constants, and descriptive stage identifiers. Preserve UTF-8 and exact evidence offsets. Follow nearby style; no formatter/linter is configured.
 
+Write code comments in Russian.
+
 ## Testing Guidelines
 
 Use `test_*.py` files and `test_*` functions. Cover contracts, split isolation, evidence integrity, and algorithm boundaries. Separate synthetic fixtures from corpus metrics. Some tests require data/models; no coverage threshold.
