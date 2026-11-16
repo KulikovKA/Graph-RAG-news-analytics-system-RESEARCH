@@ -52,3 +52,15 @@ Preserve frozen contracts/completed runs; use new output directories. Keep Gold 
 - Reuse existing components and minimal dependencies; justify additional frameworks/abstractions.
 - Spawn subagents only when explicitly requested; assign independent files or Git worktrees.
 - Run only necessary tests for affected components; avoid the full heavy pipeline for small changes.
+
+## Multi-Agent Quality Gate
+
+After subagents finish, the main orchestrator must independently review their code before committing or pushing.
+
+- Do not rely solely on subagent summaries or passing synthetic tests.
+- Compare implementation assumptions against actual project schemas, artifacts, and contracts.
+- Check edge cases, error handling, data integrity, and integration between modules.
+- Add regression tests for discovered issues.
+- Fix confirmed defects and rerun relevant tests.
+- Commit and push only after review and validation pass.
+- Do not launch additional reviewer subagents unless explicitly requested.
