@@ -31,11 +31,17 @@ def cache():
 
 
 def test_exact_keeps_contextual_ids_and_deterministic_ties():
-    result = EntityLinker(cache(), FakeEncoder(), namespace="ns", min_score=0.5).link(QueryAnalyzer(FakeNER()).analyze("RNA?"), 3)
+    linker = EntityLinker(cache(), FakeEncoder(), namespace="ns", min_score=0.5)
+    query = QueryAnalyzer(FakeNER()).analyze("RNA?")
+    result = linker.link(query, 3)
     assert [x["entity_id"] for x in result["candidates"]] == ["e:a", "e:b", "e:c"]
     assert [x["document_id"] for x in result["seeds"]] == ["d1", "d2"]
     assert [x["match_method"] for x in result["candidates"]] == ["exact", "exact", "vector"]
     assert result["seeds"][0]["node_key"] == "ns:e:a"
+    assert result["mode"] == "threshold"
+    assert result["cutoff"] == 0.5 and result["abstention_reason"] is None
+    assert not result["abstained"] and result["unresolved_mentions"] == []
+    assert linker.link_seeds(query, 3) == result["seeds"]
 
 
 def test_abstention_and_full_question_fallback():
@@ -47,7 +53,45 @@ def test_abstention_and_full_question_fallback():
     assert result["candidates"][0]["match_method"] == "fallback"
     assert result["candidates"][0]["mention_id"] is None
     assert result["abstained"] and result["seeds"] == []
-    assert linker.link(analyzer.analyze(""))["candidates"] == []
+    assert result["mode"] == "candidates_only"
+    assert result["abstention_reason"] == "no_linking_policy"
+    empty = linker.link(analyzer.analyze(""))
+    assert empty["candidates"] == [] and empty["abstention_reason"] == "empty_query"
+
+
+def test_candidates_only_does_not_promote_even_identical_vectors_without_policy():
+    encoder = FakeEncoder()
+    linker = EntityLinker(cache(), encoder)
+    query = QueryAnalyzer(FakeNER()).analyze("RNA?")
+    with pytest.raises(ValueError, match="explicit min_score policy"):
+        linker.link_seeds(query)
+    assert encoder.texts == []
+    result = linker.link(query, 2)
+    assert len(result["candidates"]) == 2
+    assert all(candidate["score"] == 1.0 for candidate in result["candidates"])
+    assert result["mode"] == "candidates_only" and result["cutoff"] is None
+    assert result["seeds"] == [] and result["abstained"]
+    assert result["unresolved_mentions"] == [query["mentions"][0]["mention_id"]]
+    assert result["abstention_reason"] == "no_linking_policy"
+
+
+@pytest.mark.parametrize("found", [True, False])
+def test_explicit_policy_abstains_on_weak_similarity_even_for_exact_names(found):
+    class WeakEncoder:
+        def encode(self, texts):
+            return np.array([[0, -1] for _ in texts], dtype=np.float32)
+
+    linker = EntityLinker(cache(), WeakEncoder(), min_score=0.5)
+    query = QueryAnalyzer(FakeNER(found)).analyze("RNA?")
+    result = linker.link(query)
+    assert result["candidates"]
+    assert max(candidate["score"] for candidate in result["candidates"]) == 0.0
+    assert result["mode"] == "threshold" and result["abstention_reason"] == "below_min_score"
+    assert result["abstained"] and result["seeds"] == []
+    assert linker.link_seeds(query) == []
+    if found:
+        assert result["candidates"][0]["match_method"] == "exact"
+        assert result["unresolved_mentions"] == [query["mentions"][0]["mention_id"]]
 
 
 def test_corrupt_cache_fails_closed(tmp_path):

@@ -154,8 +154,17 @@ class GraphRetriever:
                         continue
                     if memberships >= 2 or (memberships == 0 and reverse) or (memberships == 1 and not reverse):
                         continue
-                    if props.get("document_id") != head.get("document_id"):
+                    source_document = head.get("document_id")
+                    if not source_document or not {"document_id", "document_ids"} & props.keys():
                         continue
+                    if "document_id" in props and props["document_id"] != source_document:
+                        continue
+                    if "document_ids" in props:
+                        source_documents = props["document_ids"]
+                        if (not isinstance(source_documents, list) or
+                                not all(isinstance(d, str) and d for d in source_documents) or
+                                source_document not in source_documents):
+                            continue
                 else:
                     if "RELEXEntity" not in hlabels or "RELEXEntity" not in tlabels or memberships == 1:
                         continue

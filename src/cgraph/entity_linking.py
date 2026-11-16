@@ -115,6 +115,12 @@ class E5Encoder:
 
 
 class EntityLinker:
+    """Без min_score выдаёт только кандидатов; порог задаёт вызывающий код.
+
+    Совпадение имени и cosine не подтверждают идентичность сущности. Seeds —
+    кандидаты для обхода, допущенные явно заданной политикой min_score.
+    """
+
     def __init__(self, cache: EntityCache, encoder=None, *, namespace: str = TARGET_NAMESPACE,
                  min_score: float | None = None):
         if not namespace:
@@ -132,6 +138,11 @@ class EntityLinker:
             raise ValueError("Invalid entity identities")
 
     def link(self, query: QueryAnalysis, top_k: int = 5) -> dict:
+        """Возвращает режим, кандидатов и причину отказа от выдачи seeds.
+
+        candidates_only сохраняет кандидатов даже с высоким сходством, но не
+        выдаёт seeds без политики. abstained относится именно к выдаче seeds.
+        """
         if isinstance(top_k, bool) or not isinstance(top_k, int) or top_k < 1:
             raise ValueError("top_k must be a positive integer")
         mentions = query["mentions"]
@@ -164,6 +175,24 @@ class EntityLinker:
                         accepted = True
                 if mention_id is not None and not accepted:
                     unresolved.append(mention_id)
+        abstention_reason = None
+        if not seeds:
+            if not searches:
+                abstention_reason = "empty_query"
+            elif self.min_score is None:
+                abstention_reason = "no_linking_policy"
+            elif not candidates:
+                abstention_reason = "no_candidates"
+            else:
+                abstention_reason = "below_min_score"
         return {"namespace": self.namespace, "cache_fingerprint": self.cache.fingerprint,
                 "candidates": candidates, "seeds": seeds, "unresolved_mentions": unresolved,
-                "cutoff": self.min_score, "abstained": not bool(seeds)}
+                "cutoff": self.min_score, "abstained": not bool(seeds),
+                "mode": "candidates_only" if self.min_score is None else "threshold",
+                "abstention_reason": abstention_reason}
+
+    def link_seeds(self, query: QueryAnalysis, top_k: int = 5) -> list[Seed]:
+        """Вход для pipeline: требует политику, при слабом сходстве возвращает []."""
+        if self.min_score is None:
+            raise ValueError("link_seeds requires an explicit min_score policy; use link() for candidates only")
+        return self.link(query, top_k)["seeds"]

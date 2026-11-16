@@ -233,3 +233,56 @@ def test_unsafe_membership_flags_block_pairs_outside_cell_denylist(flags):
     retriever = GraphRetriever(FakeDriver([a, b, x], edges))
     assert retriever.retrieve([seed(a)])["paths"] == []
     assert retriever.retrieve([seed(b)])["paths"] == []
+
+
+@pytest.mark.parametrize("fields", [
+    ("document_id", "document_id"), ("document_ids", "document_ids"),
+    ("document_ids", "document_id"), ("document_id", "document_ids"),
+])
+def test_membership_source_document_formats_work_in_both_directions(fields):
+    a, b, x = node("a", "d1"), node("b", "d2"), node("concept:x", concept=True)
+    rows = [edge(a, x, "HAS_SHARED_CONCEPT", "m1"),
+            edge(b, x, "HAS_SHARED_CONCEPT", "m2")]
+    for row, field in zip(rows, fields):
+        document = row["head"]["document_id"]
+        row["properties"].pop("document_id")
+        row["properties"][field] = [document] if field == "document_ids" else document
+    original = {r["properties"]["key"]: dict(r["properties"]) for r in rows}
+    retriever = GraphRetriever(FakeDriver([a, b, x], rows))
+    for start, end in ((a, b), (b, a)):
+        paths = retriever.retrieve([seed(start)])["paths"]
+        assert len(paths) == 1
+        assert paths[0]["node_keys"] == [start[0]["key"], x[0]["key"], end[0]["key"]]
+        assert paths[0]["document_ids"] == ["d1", "d2"]
+        assert all(e["properties"] == original[e["key"]] for e in paths[0]["edges"])
+
+
+@pytest.mark.parametrize("source_fields", [
+    {"document_id": "d2"}, {"document_ids": ["d2"]},
+    {"document_id": "d1", "document_ids": ["d2"]},
+    {"document_id": "d2", "document_ids": ["d1"]},
+    {}, {"document_id": None, "document_ids": ["d1"]},
+    {"document_ids": "d1"}, {"document_ids": []}, {"document_ids": ["d1", None]},
+])
+def test_membership_missing_mismatched_or_conflicting_document_is_not_traversed(source_fields):
+    a, b, x = node("a", "d1"), node("b", "d2"), node("concept:x", concept=True)
+    invalid = edge(a, x, "HAS_SHARED_CONCEPT", "m1")
+    invalid["properties"].pop("document_id")
+    invalid["properties"].update(source_fields)
+    retriever = GraphRetriever(FakeDriver(
+        [a, b, x], [invalid, edge(b, x, "HAS_SHARED_CONCEPT", "m2")],
+    ))
+    assert retriever.retrieve([seed(a)])["paths"] == []
+    assert retriever.retrieve([seed(b)])["paths"] == []
+
+
+@pytest.mark.parametrize("limit_name", ["max_neighbors", "max_candidates"])
+def test_truncation_can_hide_a_valid_longer_path(limit_name):
+    a, b, c = node("a"), node("b"), node("c")
+    rows = [edge(a, b, "RELEX_REL", "r1"), edge(b, c, "RELEX_REL", "r2")]
+    retriever = GraphRetriever(FakeDriver([a, b, c], rows))
+    full = retriever.retrieve([seed(a)])
+    assert any(p["node_keys"][-1] == c[0]["key"] for p in full["paths"])
+    limited = retriever.retrieve([seed(a)], {limit_name: 1})
+    assert all(c[0]["key"] not in p["node_keys"] for p in limited["paths"])
+    assert limited["truncated"] and limit_name in limited["diagnostics"]["limits_hit"]
