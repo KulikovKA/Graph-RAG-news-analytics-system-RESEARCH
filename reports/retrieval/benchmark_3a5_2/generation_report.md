@@ -1,11 +1,11 @@
 # Stage 3A.5.2 · Evidence-grounded benchmark
 
-В benchmark сохранены 30 исходных идентификаторов вопросов и охват всех 30 замороженных аннотаций. У восьми записей блока A человек утвердил формулировки вопросов и ожидаемых ответов. Эти записи имеют статус `HUMAN_REVIEWED` и флаг `requires_human_review: false`. Остальные 22 записи сохраняют статус `DRAFT_UNREVIEWED` и флаг `requires_human_review: true`. Итоговое утверждение benchmark и присвоение статуса Gold остаются отдельными этапами.
+В benchmark сохранены 30 исходных идентификаторов вопросов и охват всех 30 замороженных аннотаций. Человек утвердил формулировки вопросов и ожидаемых ответов для 8 записей блока A и 7 записей блока B. Эти 15 записей имеют статус `HUMAN_REVIEWED` и флаг `requires_human_review: false`. Остальные 15 записей сохраняют статус `DRAFT_UNREVIEWED` и флаг `requires_human_review: true`. Итоговое утверждение benchmark и присвоение статуса Gold остаются отдельными этапами.
 
 | Category | Questions | Answerability | Review status |
 |---|---:|---|---|
 | A · Single-document, 1-hop | 8 | 8 answerable | `HUMAN_REVIEWED` |
-| B · Single-document, multi-hop | 7 | 7 answerable | `DRAFT_UNREVIEWED` |
+| B · Single-document, multi-hop | 7 | 7 answerable | `HUMAN_REVIEWED` |
 | C · Cross-document | 10 | 10 answerable | `DRAFT_UNREVIEWED` |
 | D · Negative / ambiguous | 5 | 4 insufficient evidence, 1 ambiguous | `DRAFT_UNREVIEWED` |
 
@@ -19,7 +19,7 @@ I read the archived OpenAlex abstract text for every locked ID and matched title
 
 Questions and answers were drafted from these texts without external scientific sources, retrieval outputs, model predictions or graph paths as evidence. No retrieval run or paraphrase generation was performed. The executor was the active Codex session. The requested model and effort were GPT-6.2 Astra High. The exact runtime variant and effort could not be independently established.
 
-Исходный benchmark зафиксирован коммитом `808c3d14c49547f4252067f2675a90f2b5aa6cb5`. Поля `generation_method: EVIDENCE_GROUNDED_DRAFT` и `source_of_truth: ORIGINAL_DOCUMENT` сохраняют происхождение записей. При ручной ревизии авторитетным источником формулировок стал утверждённый текст блока A, а опорные фрагменты повторно сверены с замороженными аннотациями. Ссылки, идентификаторы и хеши документов сохранены.
+Исходный benchmark зафиксирован коммитом `808c3d14c49547f4252067f2675a90f2b5aa6cb5`, ревизия блока A — коммитом `e39c5ecbc7240b9c70dca7a923cc69ebfb34fc6b`. Поля `generation_method: EVIDENCE_GROUNDED_DRAFT` и `source_of_truth: ORIGINAL_DOCUMENT` сохраняют происхождение записей. При ручной ревизии блоков A и B формулировки взяты из утверждённых человеком текстов, а опорные фрагменты повторно сверены с замороженными аннотациями. Ссылки, идентификаторы и хеши документов сохранены.
 
 ## Ручная ревизия блока A
 
@@ -32,7 +32,23 @@ Questions and answers were drafted from these texts without external scientific 
 - A07. Причина ухода Легия приведена в изложении титульного листа The Book of Mormon.
 - A08. Новый фрагмент описывает предложение об установке SPD на трёх типах линий для экранирования и фильтрации. Источник рассматривает косвенное грозовое перенапряжение в исследованной системе электроснабжения.
 
-Независимое смысловое ревью подтвердило поддержку всех восьми ответов замороженными текстами и точное совпадение формулировок с утверждённой версией. Структурное ревью подтвердило согласованность JSONL и Markdown, метаданных, offsets и SHA-256. Ревью Git diff подтвердило неизменность записей B–D, исходного корпуса и document lock. Блокирующих дефектов не выявлено.
+При ревизии блока A независимое смысловое ревью подтвердило поддержку всех восьми ответов замороженными текстами и точное совпадение формулировок с утверждённой версией. Структурное ревью подтвердило согласованность JSONL и Markdown, метаданных, offsets и SHA-256. Ревью Git diff подтвердило неизменность записей B–D на этапе A, исходного корпуса и document lock. Блокирующих дефектов не выявлено.
+
+## Ручная ревизия блока B
+
+Цепочки описывают операции над одним источником. Число приведённых цитат отражает покрытие утверждений. Количество извлекаемых чанков и маршруты в KG здесь не проверялись.
+
+| ID | Смысловая цепочка и характер вывода | Методологическое ограничение |
+|---|---|---|
+| B01 | Аннотация прямо связывает фиксированное число proposals с ограниченной адаптивностью к распределению людей. Затем описывает mini-density map, основанную на идее crowd counting, для адаптивного выбора числа proposals и сообщает о снижении избыточности при сохранении качества proposal boxes. | Утверждение о качестве относится к region proposals. Качество итоговой детекции по всем показателям этой фразой не установлено. |
+| B02 | Из двух рядов извлекаются показатели за одинаковый десятилетний срок, 70% для контроля глаукомы и 26% для прозрачности трансплантата. Из них вычисляется разница в 44 процентных пункта и делается сравнение частот. | Ретроспективное сравнение двух маргинальных исходов не устанавливает причинность или наличие обоих исходов у одних и тех же глаз. Показатели последнего визита относятся к отдельной конечной точке. |
+| B03 | Фактор риска и трудоёмкое, зависящее от специалиста измерение объясняют интерес к автоматизации. Внешняя проверка дала корреляцию с Cumulus `r = 0.884`. Авторы описывают потенциальную применимость в масштабных исследованиях. | Корреляция сама по себе не устанавливает взаимозаменяемость методов или клиническую диагностическую точность. |
+| B04 | CNV обнаружены при сравнении крайних фенотипов мышиных линий. Авторы сравнили дозу генов с экспрессией, не нашли простой корреляции во всех случаях и указали на необходимость дальнейшей работы по экспрессии. | Недостаточность одного обнаружения CNV для объяснения поведения — интерпретация ограниченных функциональных результатов. |
+| B05 | В объяснении авторов неценовые факторы сдвинули спрос сильнее предложения, цены выросли при увеличении производства, совокупный доход фермеров не снизился. | Период 2003–2014 опущен в вопросе, но сохранён в evidence. Результат относится к Китаю в этот период и к совокупному доходу. Данных о доходах отдельных фермеров нет. |
+| B06 | Автор предлагает IFS inner work для проработки травм отношений, связывает это с развитием эмоциональных навыков и описывает зрелость и проработку травм привязанности как предпосылки открытости и сотрудничества на равных. | Это концептуальная гипотеза автора. Экспериментального подтверждения терапевтического эффекта в аннотации нет. |
+| B07 | Ежегодные медали отмечали достижения предыдущего года и продвигали образы строителя, воина и импресарио. Их периодичность позволяет сопоставлять саморепрезентацию и прослеживать политический курс. | Вопрос говорит о папских медалях шире. Ответ ограничен ежегодными выпусками 1605–1700 годов, изученными в статье. Источник описывает задуманный образ и воспринимаемый успех. |
+
+Независимое смысловое ревью подтвердило дословное совпадение утверждённых формулировок и поддержку существенных звеньев каждой цепочки. Структурное ревью подтвердило согласованность записей и артефактов, включая метаданные, SHA-256 и offsets. Ревью Git diff подтвердило, что изменены ровно семь записей B, а блоки A, C и D, корпус и document lock сохранены. Блокирующих дефектов не выявлено.
 
 ## Coverage and evidence
 
@@ -51,11 +67,10 @@ All **10 cross-document questions** have separate passages supporting the contri
 
 ## Review findings and limits
 
-- B02 pairs the ten-year entries of two outcome series. The last visit is a different endpoint and the two marginal rates cannot identify which eyes experienced both outcomes.
-- B06 rests on an author's proposed link between relational healing and a synodal mindset. Its expected answer preserves that qualification. C05 uses the writer's explicit comparison of the 1930s and 1960s; the archived abstract ends mid-thought and only its earlier complete statements are used.
+- C05 uses the writer's explicit comparison of the 1930s and 1960s; the archived abstract ends mid-thought and only its earlier complete statements are used.
 - D01 cannot yield a clinical benefit rate from a count of variants tested in vitro. D02 cannot establish a universal device-dose threshold from one cohort. D03 cannot quantify a legislative effect from preceding voluntary arrangements. D05 lacks identifiers linking individuals across cohorts. These limitations apply to the requested conclusions in this corpus.
 - Coverage is deliberately broad in a small corpus. Some papers support several questions and some contribute only to a comparison or a negative control. Difficulty labels are drafting judgments based on the operations needed. The named study contexts in category C may make locating sources easier.
-- Для дальнейшей ревизии блоков B–D сохраняются исходные задачи. В B нужно проверить необходимость каждого шага. В C нужно проверить, можно ли ответить с одним источником и естественно ли сравнение, особенно междисциплинарное сравнение в C02. В D нужно проверить критерии зачёта ограниченного или условного ответа.
+- Для дальнейшей ревизии C сохраняется проверка достаточности одного источника и естественности сравнения, особенно междисциплинарного сравнения в C02. Для D сохраняется проверка критериев зачёта ограниченного или условного ответа.
 
 ## Reproducing the checks
 
@@ -65,4 +80,4 @@ From the repository root, run:
 python reports/retrieval/benchmark_3a5_2/validate_draft.py
 ```
 
-Исходный валидатор зафиксировал 30 уникальных ID, 65 вхождений evidence и охват 30 из 30 документов. Актуализированный валидатор подтвердил **30 уникальных ID, 8 записей после ручной ревизии, 22 побайтно идентичные исходным записи B–D, 66 вхождений evidence и охват 30 из 30 документов**. Дополнительное вхождение подтверждает диапазон наблюдений в A03. Проверки включают соответствие метаданных и SHA-256 замороженному корпусу и его lock, границы и точный текст цитат, согласованность вкладов документов и число различных источников. Проверка пригодности benchmark для retrieval и присвоение статуса Gold остаются отдельными задачами. [Question records](questions_draft.jsonl) · [Review copy](questions_review.md)
+Исходный валидатор зафиксировал 30 уникальных ID, 65 вхождений evidence и охват 30 из 30 документов. После ревизии A было 66 вхождений, включая дополнительное подтверждение диапазона наблюдений в A03. После ревизии B валидатор подтвердил **30 исходных уникальных ID, 15 записей после ручной ревизии, 15 черновых записей, 74 вхождения evidence и охват 30 из 30 документов**. Он проверяет байты блока A по контрольной сумме коммита ревизии A, а байты блоков C и D — по контрольной сумме исходного benchmark. В сумме это 23 побайтно неизменные записи при 7 обновлённых. Проверки включают соответствие метаданных и SHA-256 замороженному корпусу и его lock, границы и точный текст цитат, согласованность вкладов документов и число различных источников. Проверка пригодности benchmark для retrieval и присвоение статуса Gold остаются отдельными задачами. [Question records](questions_draft.jsonl) · [Review copy](questions_review.md)

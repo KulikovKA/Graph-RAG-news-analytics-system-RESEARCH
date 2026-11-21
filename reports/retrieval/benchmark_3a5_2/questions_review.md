@@ -1,6 +1,6 @@
 # Stage 3A.5.2 ? Evidence review
 
-???? A ?????? ?????? ??????? ???????????? ? ????????? ???????. ????? B, C ? D ????????? ?????? `DRAFT_UNREVIEWED`. ???????? ??????????? benchmark ???????? ????????? ??????.
+Блоки A и B прошли ручную ревизию формулировок и ожидаемых ответов. Блоки C и D сохраняют статус `DRAFT_UNREVIEWED`. Итоговое утверждение benchmark остаётся отдельным этапом.
 Offsets count Unicode code points from zero in the frozen abstract. The end offset is exclusive.
 
 ## A ? Single-document, 1-hop
@@ -175,9 +175,9 @@ Offsets count Unicode code points from zero in the frozen abstract. The end offs
 
 ### 3A52-B01 · Single-document, multi-hop
 
-**Question**  How did the UAV detector address the mismatch between a fixed proposal count and the distribution of tiny people in an image?
+**Question**  How can a detector avoid generating unnecessary region proposals when the number of people in drone images varies?
 
-**Expected answer**  A fixed count limited adaptability. The authors used a mini-density map to set the proposal count adaptively and report reduced redundancy while retaining high-quality boxes.
+**Expected answer**  Use a mini-density map inspired by crowd counting to adaptively determine the number of region proposals instead of using a fixed number. This reduces redundancy while maintaining proposal quality.
 
 **Source evidence** (1 document(s))
 
@@ -185,109 +185,145 @@ Offsets count Unicode code points from zero in the frozen abstract. The end offs
 
   > Secondly, the fixed number of generated proposal boxes limits adaptability to the distribution of tiny person objects.
 
-  Identifies the limitation of a fixed count.
+  A fixed number of proposals limits adaptability to the distribution of tiny people.
 
 - W4389076493 · [An Adaptive Region Proposal Network With Progressive Attention Propagation for Tiny Person Detection From UAV Images](https://doi.org/10.1109/tcsvt.2023.3335157) · `[1456:1634)`
 
   > On the other hand, a mini-density map, which is inspired by the philosophy of crowd counting, is elaborately designed to adaptively determine the number of region proposal boxes.
 
-  Identifies the map and the quantity it controls.
+  The crowd-counting-inspired mini-density map adaptively determines the number of proposals.
 
 - W4389076493 · [An Adaptive Region Proposal Network With Progressive Attention Propagation for Tiny Person Detection From UAV Images](https://doi.org/10.1109/tcsvt.2023.3335157) · `[1635:1728)`
 
   > This approach significantly reduces redundancy while maintaining high-quality proposal boxes.
 
-  States the effect of the preceding design choice.
+  The authors report reduced redundancy while retaining high-quality proposal boxes.
 
-**Why this question**  Link the stated limitation to the component that controls proposal count and then to its reported effect.
+**Why this question**  The abstract links a fixed proposal count to limited adaptability, then links the crowd-counting-inspired mini-density map to an adaptive count and reports reduced redundancy with high-quality proposal boxes.
 
-**Limitations**  The attention modules serve a different function. The abstract gives no numerical redundancy reduction.
+**Limitations**  The reported quality claim concerns region proposals. It does not establish that every aspect of final detection quality is preserved.
 
-`SUPPORTED` · `ANSWERABLE` · `DRAFT_UNREVIEWED`
+`SUPPORTED` · `ANSWERABLE` · `HUMAN_REVIEWED`
 
 ### 3A52-B02 · Single-document, multi-hop
 
-**Question**  Ten years after drainage-device implantation following penetrating keratoplasty, how did glaucoma control compare with graft clarity?
+**Question**  How much better is glaucoma control than corneal graft clarity 10 years after glaucoma drainage surgery following a corneal transplant?
 
-**Expected answer**  At ten years, glaucoma was controlled in 70% of eyes and 26% of grafts remained clear.
+**Expected answer**  Glaucoma was controlled in 70% of eyes, while only 26% of corneal grafts remained clear, a difference of 44 percentage points. Long-term glaucoma control was therefore considerably more successful than preservation of graft clarity.
 
 **Source evidence** (1 document(s))
+
+- W3101922761 · [Ten-Year Outcome of Glaucoma Drainage Device Surgery After Penetrating Keratoplasty](https://doi.org/10.1097/ijg.0000000000001741) · `[0:300)`
+
+  > PRECIS: In eyes with intractable glaucoma, drainage devices provide long-term control of intraocular pressure also after penetrating keratoplasty (PK). There is a high incidence of corneal graft failure. PURPOSE: To compare very long-term results of eyes with glaucoma drainage device (GDD) after PK.
+
+  The study compares long-term outcomes after glaucoma drainage-device implantation following penetrating keratoplasty (PK).
 
 - W3101922761 · [Ten-Year Outcome of Glaucoma Drainage Device Surgery After Penetrating Keratoplasty](https://doi.org/10.1097/ijg.0000000000001741) · `[1169:1317)`
 
   > GDD implantation successfully controlled glaucoma in 88%, 88%, 85%, 80%, 78%, 75%, and 70% of eyes, at 1, 2, 3, 4, 5, 7, and 10 years, respectively.
 
-  Ten-year glaucoma control is the final entry.
+  At 10 years, glaucoma was controlled in 70% of eyes.
 
 - W3101922761 · [Ten-Year Outcome of Glaucoma Drainage Device Surgery After Penetrating Keratoplasty](https://doi.org/10.1097/ijg.0000000000001741) · `[1365:1496)`
 
   > The corneal grafts remained clear in 74%, 63%, 45%, 45%, 37%, 32%, and 26% of eyes at 1, 2, 3, 4, 5, 7, and 10 years, respectively.
 
-  Ten-year graft clarity is the final entry.
+  At the same 10-year endpoint, 26% of eyes had clear grafts.
 
-**Why this question**  Read the ten-year entry in each of two time series and match each percentage to its endpoint.
+**Why this question**  The study reports both outcomes after drainage-device implantation following penetrating keratoplasty. Select the 10-year value in each series, then subtract 26% from 70% to compute the 44-percentage-point gap.
 
-**Limitations**  The series give marginal percentages. They do not identify individual eyes with both outcomes.
+**Limitations**  The difference compares two marginal outcomes at 10 years in one retrospective study. It establishes neither a causal relationship nor which individual eyes experienced both outcomes. Last follow-up is a separate endpoint.
 
-`SUPPORTED` · `ANSWERABLE` · `DRAFT_UNREVIEWED`
+`SUPPORTED` · `ANSWERABLE` · `HUMAN_REVIEWED`
 
 ### 3A52-B03 · Single-document, multi-hop
 
-**Question**  How did the mammographic-density study test whether its automated measure reproduced Cumulus, and what did the test show?
+**Question**  Why could automated mammographic density measurements be useful for large breast cancer risk studies?
 
-**Expected answer**  It compared the two measures using Pearson correlation. In the external test set, r was 0.884 (95% CI 0.872 to 0.894).
+**Expected answer**  Mammographic density is an independent risk factor for breast cancer, but conventional measurements are time-consuming and reader-dependent. The automated method showed a high correlation with Cumulus (r = 0.884), suggesting that it could make density measurements more practical for large-scale research.
 
 **Source evidence** (1 document(s))
+
+- W1979727947 · [High-throughput mammographic-density measurement: a tool for risk prediction of breast cancer](https://doi.org/10.1186/bcr3238) · `[14:267)`
+
+  > Mammographic density (MD) is a strong, independent risk factor for breast cancer, but measuring MD is time consuming and reader dependent. Objective MD measurement in a high-throughput fashion would enable its wider use as a biomarker for breast cancer.
+
+  The abstract identifies a risk factor, a measurement burden and the rationale for high-throughput measurement.
 
 - W1979727947 · [High-throughput mammographic-density measurement: a tool for risk prediction of breast cancer](https://doi.org/10.1186/bcr3238) · `[793:947)`
 
   > The Pearson product-moment correlation coefficient (r) was used to compare the MD measurements by Cumulus and our automated measure, which mimics Cumulus.
 
-  Specifies the statistic and measures.
+  The researchers used Pearson correlation to compare Cumulus with the automated measure.
 
 - W1979727947 · [High-throughput mammographic-density measurement: a tool for risk prediction of breast cancer](https://doi.org/10.1186/bcr3238) · `[1149:1311)`
 
   > RESULTS: We observed a high correlation between the Cumulus measure and our measure mimicking Cumulus (r = 0.884; 95% CI, 0.872 to 0.894) in an external test set.
 
-  Reports the estimate, interval and assessment context.
+  The external test set showed a correlation of r = 0.884.
 
-**Why this question**  The method defines the comparison and the result supplies its value and assessment set.
+- W1979727947 · [High-throughput mammographic-density measurement: a tool for risk prediction of breast cancer](https://doi.org/10.1186/bcr3238) · `[1500:1679)`
 
-**Limitations**  Correlation alone gives neither agreement for individual images nor diagnostic accuracy.
+  > Our results demonstrate the potential to facilitate the integration of mammographic density measurements into large-scale research studies and subsequently into clinical practice.
 
-`SUPPORTED` · `ANSWERABLE` · `DRAFT_UNREVIEWED`
+  The authors describe potential applicability to large-scale research.
+
+**Why this question**  The abstract connects the risk relevance of mammographic density and the burden of existing measurements to the value of automation. The external comparison with Cumulus supports the authors' proposed applicability to large-scale research.
+
+**Limitations**  A high external-test correlation with Cumulus supports potential research use. Interchangeability and clinical diagnostic accuracy would require separate evidence.
+
+`SUPPORTED` · `ANSWERABLE` · `HUMAN_REVIEWED`
 
 ### 3A52-B04 · Single-document, multi-hop
 
-**Question**  After finding copy-number variants in the mouse lines, how did the authors investigate their functional relevance, and what limited the interpretation?
+**Question**  Why isn't finding copy number variants enough to explain differences in anxiety and stress responses in mice?
 
-**Expected answer**  They compared changes in copy number with changes in gene expression. A simple dosage–expression correlation did not hold in every case.
+**Expected answer**  The researchers compared copy number changes with changes in gene expression, but a simple correlation between gene dosage and expression was not found in every case. Further research is therefore needed to establish the functional role of these variants before using them to explain behavioral differences.
 
 **Source evidence** (1 document(s))
+
+- W2076293586 · [Copy number variants in two mouse models of affective disorders](https://doi.org/10.1055/s-0031-1292452) · `[182:384)`
+
+  > Starting from a heterogeneous CD-1 outbred population, animals were bred for extremes in anxiety-related behavior and extremes in stress reactivity, respectively, following a strict inbreeding protocol.
+
+  The mouse lines were bred for extremes in anxiety-related behavior or stress reactivity.
+
+- W2076293586 · [Copy number variants in two mouse models of affective disorders](https://doi.org/10.1055/s-0031-1292452) · `[660:856)`
+
+  > Two array approaches were used to reveal regions of CNVs that differ between the extremes of the respective mouse lines (aCGH, NimbleGen; SNP-based invariant genomic probes, Jackson Laboratories).
+
+  The researchers detected CNV regions differing between extremes in the mouse lines.
 
 - W2076293586 · [Copy number variants in two mouse models of affective disorders](https://doi.org/10.1055/s-0031-1292452) · `[946:1064)`
 
   > To test the functional relevance of these CNVs, we associated changes in copy numbers with changes in gene expression.
 
-  Defines the functional comparison.
+  Changes in copy number were compared with changes in gene expression to test functional relevance.
 
 - W2076293586 · [Copy number variants in two mouse models of affective disorders](https://doi.org/10.1055/s-0031-1292452) · `[1065:1158)`
 
   > A simple correlation between gene dosage and gene expression could not be found in all cases.
 
-  Limits the universality of the correlation.
+  A simple gene dosage and expression correlation was not found in every case.
 
-**Why this question**  Connect the functional test to the qualified outcome of that test.
+- W2076293586 · [Copy number variants in two mouse models of affective disorders](https://doi.org/10.1055/s-0031-1292452) · `[1343:1436)`
 
-**Limitations**  The result leaves open which loci show a relationship and whether it is causal.
+  > Further studies to define the precise role of CNVs on gene expression remain to be conducted.
 
-`SUPPORTED` · `ANSWERABLE` · `DRAFT_UNREVIEWED`
+  The authors call for further work on how CNVs affect gene expression.
+
+**Why this question**  The researchers found CNVs differing between mouse-line extremes, compared copy number and expression, and did not find a simple correlation in every case. They call for further expression studies. The limit on behavioral explanation is inferred from this evidence.
+
+**Limitations**  The abstract calls for further study of the role of CNVs in gene expression in these mouse models. The conclusion about explaining behavioral differences is an interpretation of the limited functional evidence.
+
+`SUPPORTED` · `ANSWERABLE` · `HUMAN_REVIEWED`
 
 ### 3A52-B05 · Single-document, multi-hop
 
-**Question**  How do the authors explain why increased grain production in China did not reduce farmers' total income in 2003–2014?
+**Question**  Why didn't Chinese farmers lose income when grain production increased?
 
-**Expected answer**  In their supply-and-demand account, non-grain-price factors shifted demand more than supply, so the grain price rose even as production increased. They report no loss of total farm income.
+**Expected answer**  Non-price factors caused demand for grain to shift more than supply. As a result, grain prices increased despite higher production, preventing a decline in farmers' total income.
 
 **Source evidence** (1 document(s))
 
@@ -295,63 +331,69 @@ Offsets count Unicode code points from zero in the frozen abstract. The end offs
 
   > The phenomenon was found it didn’t cause the loss of farmers' total income that the grain production in China had increased for 11 years from 2003 to 2014, which was inconsistent with the Harvest Paradox in economics.
 
-  Specifies the income observation and production trend.
+  The study reports no decline in farmers' total income as grain production increased in China over 2003–2014.
 
 - W2906067930 · [Research on the Phenomenon That the Increase of Grain Production Did Not Cause the Harvest Paradox in China from 2003 to 2014](https://doi.org/10.11648/j.ijber.20180706.16) · `[821:926)`
 
   > It resulted from non-grain price factors which caused the demand line moved in excess of the supply line.
 
-  Attributes the relative shift to non-grain-price factors.
+  The authors attribute the outcome to non-grain-price factors shifting demand more than supply.
 
 - W2906067930 · [Research on the Phenomenon That the Increase of Grain Production Did Not Cause the Harvest Paradox in China from 2003 to 2014](https://doi.org/10.11648/j.ijber.20180706.16) · `[927:953)`
 
   > Thus the grain price rose.
 
-  Gives the resulting direction of the price change.
+  The authors report that the grain price rose.
 
-**Why this question**  The income observation, relative shifts and direction of price change form the authors' explanation.
+**Why this question**  In the article's supply-and-demand explanation, non-grain-price factors shift demand more than supply, so prices rise despite higher production. The reported outcome in China over 2003–2014 is no decline in farmers' total income.
 
-**Limitations**  This is the paper's interpretation for the stated period. It gives no estimate for an individual farmer.
+**Limitations**  The finding concerns aggregate farm income in China over 2003–2014. The article's explanation is specific to that period and does not give outcomes for individual farmers.
 
-`SUPPORTED` · `ANSWERABLE` · `DRAFT_UNREVIEWED`
+`SUPPORTED` · `ANSWERABLE` · `HUMAN_REVIEWED`
 
 ### 3A52-B06 · Single-document, multi-hop
 
-**Question**  How does the author of the synodality essay connect Internal Family Systems therapy to the ability to consider differing viewpoints?
+**Question**  How might IFS therapy help people become more open to different viewpoints in a synodal church?
 
-**Expected answer**  The author says attachment wounds must be addressed to consider differing views and collaborate as equals. IFS inner work is proposed as a way to heal relational wounds and develop the emotional skills that this mindset requires.
+**Expected answer**  IFS therapy is proposed as a way to heal relational and attachment wounds through inner work. This may help develop emotional maturity and the skills needed to consider different viewpoints and collaborate with others as equals.
 
 **Source evidence** (1 document(s))
+
+- W7215137876 · [Emotional Maturity in the Light of Synodality: Contributions from Internal Family System Therapy](https://openalex.org/W7215137876) · `[0:180)`
+
+  > The author brings to light that the synodal mindset that is demanded by the synod on synodality demands the adequate development of emotional maturity, especially in relationships.
+
+  The author connects emotional maturity in relationships to a synodal mindset.
 
 - W7215137876 · [Emotional Maturity in the Light of Synodality: Contributions from Internal Family System Therapy](https://openalex.org/W7215137876) · `[181:366)`
 
   > To genuinely consider differing viewpoints, collaborate with the laity on an equal basis, and refrain from succumbing to clericalism, it is essential to address attachment wounds first.
 
-  States the proposed prerequisite for considering differing views.
+  The author treats addressing attachment wounds as a prerequisite for considering differing viewpoints and collaborating with the laity as equals.
 
 - W7215137876 · [Emotional Maturity in the Light of Synodality: Contributions from Internal Family System Therapy](https://openalex.org/W7215137876) · `[367:494)`
 
   > The author proposes that the Internal Family Systems (IFS) therapy approach can help heal relational wounds through inner work.
 
-  Identifies the proposed role of IFS inner work.
+  IFS is proposed as a way to heal relational wounds through inner work.
 
 - W7215137876 · [Emotional Maturity in the Light of Synodality: Contributions from Internal Family System Therapy](https://openalex.org/W7215137876) · `[495:610)`
 
   > This can have positive repercussions with the development of emotional skills required to develop this new mindset.
 
-  Connects healing with possible emotional skill development.
+  The author proposes that such healing can help develop the emotional skills for this mindset.
 
-**Why this question**  The proposed connection needs both a stated prerequisite for collaboration and a proposed way to address that prerequisite.
+**Why this question**  The author links a synodal mindset to emotional maturity, identifies attachment wounds as a barrier to considering other views and collaborating as equals, and proposes IFS inner work to heal relational wounds and support the development of emotional skills.
 
-**Limitations**  This is a conceptual proposal. The abstract supplies no measured therapeutic effect on collaboration.
+**Limitations**  The chain summarizes the author's conceptual hypothesis. The abstract provides no experimental demonstration of a therapeutic effect on emotional maturity, openness to viewpoints or collaboration.
 
-`SUPPORTED` · `ANSWERABLE` · `DRAFT_UNREVIEWED`
+`SUPPORTED` · `ANSWERABLE` · `HUMAN_REVIEWED`
 
 ### 3A52-B07 · Single-document, multi-hop
 
-**Question**  Why does the medal study treat annual issues as evidence of perceived papal success from year to year?
+**Question**  How do papal medals help historians understand the image that seventeenth-century popes wanted to create?
 
-**Expected answer**  The medals celebrated an important achievement from the preceding year. Their timing lets the historian trace perceived achievements and the political course of successive popes.
+**Expected answer**  Annual papal medals commemorated important achievements from the preceding year and were used to promote the image of the pope as a builder, warrior, and impresario. Their annual production allows historians to trace changes in papal self-representation and political priorities over time.
 
 **Source evidence** (1 document(s))
 
@@ -359,19 +401,25 @@ Offsets count Unicode code points from zero in the frozen abstract. The end offs
 
   > Annual medals are a unique iteration of papal commemorative medals and they celebrate an important papal achievement from the preceding year.
 
-  Describes what each issue commemorated.
+  Annual papal medals celebrate an important achievement from the previous year.
+
+- W2394633461 · [Pressing Metal, Pressing Politics: Papal Annual Medals, 1605–1700](https://doi.org/10.3390/rel7050060) · `[779:980)`
+
+  > The production of annual medals was an exercise in identity creation, undertaken to advance the image of the pope as an aristocratic prince in three specific roles: as builder, warrior, and impresario.
+
+  Medals promoted the pope's image as builder, warrior, and impresario.
 
 - W2394633461 · [Pressing Metal, Pressing Politics: Papal Annual Medals, 1605–1700](https://doi.org/10.3390/rel7050060) · `[981:1185)`
 
   > The timeliness of the medals makes them valuable sources to gauge the perceived success of the papacy on an annual basis and to chart the political course plotted by popes through the seventeenth century.
 
-  Explains how timing informs the historical interpretation.
+  Annual timing lets historians gauge perceived success and trace the seventeenth-century political course.
 
-**Why this question**  Connect the commemorative convention to the author's use of the objects as historical evidence.
+**Why this question**  The annual medals commemorated achievements from the preceding year and promoted three papal roles. The article uses their timing to connect evidence of perceived success and self-representation to changes in the popes' political course.
 
-**Limitations**  The evidence concerns public representation of success, rather than an independent measure of performance.
+**Limitations**  The evidence concerns annual papal medals studied from 1605 to 1700, a specific subset of papal medals. Their imagery records intended self-representation and perceived success.
 
-`SUPPORTED` · `ANSWERABLE` · `DRAFT_UNREVIEWED`
+`SUPPORTED` · `ANSWERABLE` · `HUMAN_REVIEWED`
 
 ## C · Cross-document
 

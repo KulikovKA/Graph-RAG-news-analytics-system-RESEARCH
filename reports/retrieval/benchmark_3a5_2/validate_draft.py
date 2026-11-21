@@ -12,8 +12,11 @@ REPORTS = HERE.parents[1]
 SOURCE = REPORTS / "ner_v2/research_run2/input_abstracts.jsonl"
 LOCK = REPORTS / "entity_resolution/relex_base_t035/dynamic_concept_graph/document_lock.json"
 CATEGORY_COUNTS = {"A": 8, "B": 7, "C": 10, "D": 5}
-# SHA-256 исходных строк B–D из коммита 808c3d14c49547f4252067f2675a90f2b5aa6cb5.
-UNREVIEWED_BLOCKS_SHA256 = "43480f3eebf898e6686e347a8e1e8effaaa41437f9f4ff613ec836f42c4c107c"
+REVIEWED_CATEGORIES = {"A", "B"}
+# SHA-256 утверждённых строк A из коммита e39c5ecbc7240b9c70dca7a923cc69ebfb34fc6b.
+BLOCK_A_SHA256 = "7a9c2340dda065d15c13dcd80666442766629214009d8515658e5701bedbacd4"
+# SHA-256 исходных строк C–D из коммита 808c3d14c49547f4252067f2675a90f2b5aa6cb5.
+UNREVIEWED_BLOCKS_SHA256 = "5144658cbe7b4ec6eb567b652f46950904778173192e2810f7a63bde9ebb3a24"
 FIXED = {
     "source_of_truth": "ORIGINAL_DOCUMENT",
     "generation_method": "EVIDENCE_GROUNDED_DRAFT",
@@ -66,7 +69,7 @@ def validate(row, docs):
         require(nonempty(row[field]), f"{key}: {field}")
     for field, value in FIXED.items():
         require(row[field] == value, f"{key}: {field}")
-    human_reviewed = category == "A"
+    human_reviewed = category in REVIEWED_CATEGORIES
     review_status = "HUMAN_REVIEWED" if human_reviewed else "DRAFT_UNREVIEWED"
     require(row["review_status"] == review_status, f"{key}: review status")
     require(row["requires_human_review"] is (not human_reviewed), f"{key}: review flag")
@@ -117,12 +120,17 @@ def main():
         for number in range(1, count + 1)
     }
     require(ids == expected_ids, "Benchmark question IDs differ from the original 30 IDs")
-    require(reviewed == CATEGORY_COUNTS["A"], "Unexpected number of human-reviewed questions")
-    unreviewed_lines = benchmark.read_bytes().splitlines(keepends=True)[CATEGORY_COUNTS["A"]:]
-    digest = hashlib.sha256(b"".join(unreviewed_lines)).hexdigest()
-    require(digest == UNREVIEWED_BLOCKS_SHA256, "Original B-D JSONL rows changed")
+    expected_reviewed = sum(CATEGORY_COUNTS[category] for category in REVIEWED_CATEGORIES)
+    require(reviewed == expected_reviewed, "Unexpected number of human-reviewed questions")
+    require(cited == docs.keys(), "Benchmark must cite all locked documents")
+    lines = benchmark.read_bytes().splitlines(keepends=True)
+    a_digest = hashlib.sha256(b"".join(lines[:CATEGORY_COUNTS["A"]])).hexdigest()
+    require(a_digest == BLOCK_A_SHA256, "Approved A JSONL rows changed")
+    draft_digest = hashlib.sha256(b"".join(lines[expected_reviewed:])).hexdigest()
+    require(draft_digest == UNREVIEWED_BLOCKS_SHA256, "Original C-D JSONL rows changed")
     print(f"PASS (structure and exact source text): {len(ids)} questions, "
-          f"{reviewed} human-reviewed (A), {len(ids) - reviewed} unchanged draft (B-D), "
+          f"{reviewed} human-reviewed (A-B), {len(ids) - reviewed} unchanged draft (C-D), "
+          f"{CATEGORY_COUNTS['A']} unchanged approved (A), "
           f"{spans} evidence occurrences, {len(cited)}/{len(docs)} locked documents cited.")
 
 
