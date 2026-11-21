@@ -1,168 +1,175 @@
-# Stage 3A.5.2 · Evidence review
+# Stage 3A.5.2 ? Evidence review
 
-All records await human review. Offsets count Unicode code points from zero in the frozen abstract. The end offset is exclusive.
+???? A ?????? ?????? ??????? ???????????? ? ????????? ???????. ????? B, C ? D ????????? ?????? `DRAFT_UNREVIEWED`. ???????? ??????????? benchmark ???????? ????????? ??????.
+Offsets count Unicode code points from zero in the frozen abstract. The end offset is exclusive.
 
-## A · Single-document, 1-hop
+## A ? Single-document, 1-hop
 
-### 3A52-A01 · Single-document, 1-hop
+### 3A52-A01 ? Single-document, 1-hop
 
-**Question**  What obstacle to high-titer limonene production do the authors identify in engineered microbes?
+**Question**  What limits microbial production of limonene?
 
-**Expected answer**  Limonene itself is toxic to the cells and impairs cellular activity.
+**Expected answer**  Limonene is toxic to microbial cells and negatively affects their activity.
 
 **Source evidence** (1 document(s))
 
-- W3138328568 · [Simultaneous Improvement of Limonene Production and Tolerance in Yarrowia lipolytica through Tolerance Engineering and Evolutionary Engineering](https://doi.org/10.1021/acssynbio.1c00052) · `[475:649)`
+- W3138328568 ? [Simultaneous Improvement of Limonene Production and Tolerance in Yarrowia lipolytica through Tolerance Engineering and Evolutionary Engineering](https://doi.org/10.1021/acssynbio.1c00052) ? `[475:649)`
 
   > However, the deleterious effects on cellular activity by the toxicity of limonene is the major obstacle in achieving high-titer production of limonene in engineered microbes.
 
-  The product's cellular toxicity limits high-titer production.
+  Limonene toxicity impairs cellular activity and limits high-titer production in engineered microbes.
 
-**Why this question**  The question tests whether the product can be identified as the source of the production constraint.
+**Why this question**  The abstract directly links product toxicity to the production constraint.
 
-**Limitations**  The abstract calls this a major obstacle without quantifying a universal toxicity threshold.
+**Limitations**  The finding concerns high-titer production in engineered microbes. The abstract does not establish a universal toxicity threshold.
 
-`SUPPORTED` · `ANSWERABLE` · `DRAFT_UNREVIEWED`
+`SUPPORTED` ? `ANSWERABLE` ? `HUMAN_REVIEWED`
 
-### 3A52-A02 · Single-document, 1-hop
+### 3A52-A02 ? Single-document, 1-hop
 
-**Question**  Which B-cell population predominated in the nasal polyps, and which predominated in peripheral blood mononuclear cells?
+**Question**  Which B cells dominate in nasal polyps?
 
-**Expected answer**  Memory B cells predominated in polyps and mature resting B cells in peripheral blood mononuclear cells.
-
-**Source evidence** (1 document(s))
-
-- W2791492120 · [Impact and Modulations of Peripheral and Edaphic B Cell Subpopulations in Chronic Rhinosinusitis With Nasal Polyposis](https://doi.org/10.21053/ceo.2017.01389) · `[874:981)`
-
-  > Mature resting B cells were the main population within B cells in PBMC, and memory B cells in nasal polyps.
-
-  The authors name the predominant B-cell population in each compartment.
-
-**Why this question**  The compartment labels determine the direction of a contrast reported in one sentence.
-
-**Limitations**  These are subpopulations within B cells in the sampled patients.
-
-`SUPPORTED` · `ANSWERABLE` · `DRAFT_UNREVIEWED`
-
-### 3A52-A03 · Single-document, 1-hop
-
-**Question**  Where on the Moon did the L-band observations place the highest brightness temperature, and how high was it?
-
-**Expected answer**  Along the lunar equator to the west, at about 257 K.
+**Expected answer**  Memory B cells.
 
 **Source evidence** (1 document(s))
 
-- W2096307598 · [New radio observations of the Moon atLband](https://doi.org/10.1088/1674-4527/12/9/010) · `[592:697)`
+- W2791492120 ? [Impact and Modulations of Peripheral and Edaphic B Cell Subpopulations in Chronic Rhinosinusitis With Nasal Polyposis](https://doi.org/10.21053/ceo.2017.01389) ? `[1074:1192)`
+
+  > Memory B cells significantly increased and represented the main subpopulation in nasal polyps in patients with CRSwNP.
+
+  Memory B cells are the predominant B-cell subpopulation in nasal polyps in the sampled patients.
+
+**Why this question**  The abstract identifies the dominant B-cell subpopulation specifically in nasal polyps.
+
+**Limitations**  The finding applies to the sampled patients with chronic rhinosinusitis with nasal polyposis and concerns subpopulations within B cells.
+
+`SUPPORTED` ? `ANSWERABLE` ? `HUMAN_REVIEWED`
+
+### 3A52-A03 ? Single-document, 1-hop
+
+**Question**  Where is the Moon's brightness temperature highest in the L band?
+
+**Expected answer**  Along the lunar equator, to the west.
+
+**Source evidence** (1 document(s))
+
+- W2096307598 ? [New radio observations of the Moon atLband](https://doi.org/10.1088/1674-4527/12/9/010) ? `[0:164)`
+
+  > We present results of new radio observations of the Moon at L band with the synthesis telescope of the Dominion Radio Astrophysical Observatory Synthesis Telescope.
+
+  The observations of the Moon were made in the L band.
+
+- W2096307598 ? [New radio observations of the Moon atLband](https://doi.org/10.1088/1674-4527/12/9/010) ? `[592:697)`
 
   > The highest brightness temperature is about 257 K and it is located along the lunar equator, to the west.
 
-  The location and approximate peak value are reported together.
+  The observed maximum lies along the lunar equator to the west.
 
-**Why this question**  A single observation gives both the location and the magnitude of the peak.
+**Why this question**  The abstract identifies the location of the maximum in the L-band observations.
 
-**Limitations**  Brightness temperature here is a radio measurement. The whole-disk mean is a different quantity.
+**Limitations**  The location is reported for this set of L-band radio observations. The abstract gives no exact longitude for the peak.
 
-`SUPPORTED` · `ANSWERABLE` · `DRAFT_UNREVIEWED`
+`SUPPORTED` ? `ANSWERABLE` ? `HUMAN_REVIEWED`
 
-### 3A52-A04 · Single-document, 1-hop
+### 3A52-A04 ? Single-document, 1-hop
 
-**Question**  Why did the optical soliton study use a tanh ansatz?
+**Question**  Why use a tanh ansatz to find optical soliton solutions?
 
-**Expected answer**  The reduced ordinary differential equation was of even order.
+**Expected answer**  The reduced ordinary differential equation is of even order.
 
 **Source evidence** (1 document(s))
 
-- W3081936674 · [Optical soliton solutions to a (2+1) dimensional Schrödinger equation using a couple of integration architectures](https://doi.org/10.2478/amns.2020.2.00010) · `[462:570)`
+- W3081936674 ? [Optical soliton solutions to a (2+1) dimensional Schrödinger equation using a couple of integration architectures](https://doi.org/10.2478/amns.2020.2.00010) ? `[462:570)`
 
   > Moreover, we make tanh ansatz because of the being even order of the reduced ordinary differential equation.
 
-  Even order is given as the reason for the ansatz.
+  The authors give the even order of the reduced ordinary differential equation as their reason for using a tanh ansatz.
 
-**Why this question**  The authors explicitly give their reason for this mathematical choice.
+**Why this question**  The abstract states the reason for the authors' choice of ansatz.
 
 **Limitations**  The explanation applies to the reduced equation in this study.
 
-`SUPPORTED` · `ANSWERABLE` · `DRAFT_UNREVIEWED`
+`SUPPORTED` ? `ANSWERABLE` ? `HUMAN_REVIEWED`
 
-### 3A52-A05 · Single-document, 1-hop
+### 3A52-A05 ? Single-document, 1-hop
 
-**Question**  What accounts for most of the extra plastid genome length in Thalassiosirales compared with other diatoms?
+**Question**  Why is the length of the plastid genome in Thalassiosirales greater than in other diatoms?
 
 **Expected answer**  Expansion of the inverted repeat.
 
 **Source evidence** (1 document(s))
 
-- W1995028339 · [Conserved Gene Order and Expanded Inverted Repeats Characterize Plastid Genomes of Thalassiosirales](https://doi.org/10.1371/journal.pone.0107854) · `[805:943)`
+- W1995028339 ? [Conserved Gene Order and Expanded Inverted Repeats Characterize Plastid Genomes of Thalassiosirales](https://doi.org/10.1371/journal.pone.0107854) ? `[805:943)`
 
   > The larger size of the plastid genomes of Thalassiosirales compared to other diatoms is due primarily to expansion of the inverted repeat.
 
-  The authors identify the main source of the size difference.
+  The authors attribute the greater plastid genome size primarily to expansion of the inverted repeat.
 
 **Why this question**  The abstract directly attributes the size difference to a particular genome region.
 
-**Limitations**  The authors say primarily, leaving room for other contributions.
+**Limitations**  The authors identify the primary contribution in the genomes compared.
 
-`SUPPORTED` · `ANSWERABLE` · `DRAFT_UNREVIEWED`
+`SUPPORTED` ? `ANSWERABLE` ? `HUMAN_REVIEWED`
 
-### 3A52-A06 · Single-document, 1-hop
+### 3A52-A06 ? Single-document, 1-hop
 
-**Question**  Which five financial instruments does the green banking article examine?
+**Question**  What financial instruments are used in green banking?
 
 **Expected answer**  Green bank lending, green mortgages, green bonds, co-investment by green banks, and securitization of green bank assets.
 
 **Source evidence** (1 document(s))
 
-- W4285525942 · [FEATURES OF FINANCIAL INSTRUMENTS OF GREEN BANKING IN THE GLOBAL MARKET OF BANKING SERVICES](https://doi.org/10.32782/2224-6282/176-4) · `[638:824)`
+- W4285525942 ? [FEATURES OF FINANCIAL INSTRUMENTS OF GREEN BANKING IN THE GLOBAL MARKET OF BANKING SERVICES](https://doi.org/10.32782/2224-6282/176-4) ? `[638:824)`
 
   > The article analyzes the main financial instruments of green banking: green bank lending, green mortgages, green bonds, co-investment of green banks, securitization of green bank assets.
 
-  All five instruments appear in the inventory.
+  The article lists all five instruments as main financial instruments of green banking.
 
-**Why this question**  The article defines its scope with an explicit inventory.
+**Why this question**  The answer follows the explicit inventory in the abstract.
 
-**Limitations**  The list describes this article's coverage and supplies no ranking by market share.
+**Limitations**  The list reflects the article's scope and may be incomplete outside that scope.
 
-`SUPPORTED` · `ANSWERABLE` · `DRAFT_UNREVIEWED`
+`SUPPORTED` ? `ANSWERABLE` ? `HUMAN_REVIEWED`
 
-### 3A52-A07 · Single-document, 1-hop
+### 3A52-A07 ? Single-document, 1-hop
 
-**Question**  In the account of Lehi's departure, what purpose does the title page give for leaving Jerusalem?
+**Question**  Why did Lehi leave Jerusalem?
 
-**Expected answer**  To save his family from destruction.
+**Expected answer**  God commanded him to leave Jerusalem to save his family from destruction.
 
 **Source evidence** (1 document(s))
 
-- W4312422299 · [Land as Regenerative Space in The Book of Mormon](https://doi.org/10.5406/jbookmormstud2.27.2018.0187) · `[147:336)`
+- W4312422299 ? [Land as Regenerative Space in The Book of Mormon](https://doi.org/10.5406/jbookmormstud2.27.2018.0187) ? `[147:336)`
 
   > As the title page claims, this book contains the record of the Nephite people, descendants of Lehi, who was commanded by God to leave Jerusalem in order to save his family from destruction.
 
-  The title page's stated purpose for the departure.
+  In the title-page account cited by the article, God commands Lehi to leave Jerusalem to save his family from destruction.
 
-**Why this question**  The article attributes the reason to a specific voice in the narrative.
+**Why this question**  The cited narrative states both the command and the purpose of the departure.
 
-**Limitations**  Keep the attribution to the title page when describing the event.
+**Limitations**  The explanation is attributed to the title page of The Book of Mormon as cited by the article.
 
-`SUPPORTED` · `ANSWERABLE` · `DRAFT_UNREVIEWED`
+`SUPPORTED` ? `ANSWERABLE` ? `HUMAN_REVIEWED`
 
-### 3A52-A08 · Single-document, 1-hop
+### 3A52-A08 ? Single-document, 1-hop
 
-**Question**  Which simulation software did the power-station study use for its electromagnetic transient model?
+**Question**  How can military power stations be protected from indirect lightning strikes?
 
-**Expected answer**  PSCAD/EMTDC.
+**Expected answer**  By installing surge protection devices (SPDs) on electrical supply, power supply and signal lines to provide shielding and filtering.
 
 **Source evidence** (1 document(s))
 
-- W2364973104 · [Research on the Influence Factors and Limiting Methods for Lighting Over-Voltage in Military Power Supply](https://openalex.org/W2364973104) · `[270:453)`
+- W2364973104 ? [Research on the Influence Factors and Limiting Methods for Lighting Over-Voltage in Military Power Supply](https://openalex.org/W2364973104) ? `[453:878)`
 
-  > establishes the electromagnetic transient model containing key parts in the lighting protection,such as generator,control unit,and cables by the PSCAD/EMTDC power simulation software.
+  > The action mechanism and influence laws of indirect lighting over-voltage in the military power supply are discussed,and a technical proposal of the indirect lightning protection for the military power system is presented.This proposal is realized mainly by installing the SPD on the parts of the electric supply line,power supply line and signal line to provide shielding and filtering for the indirect lightning protection.
 
-  The model and software appear in the same clause.
+  The technical proposal places SPDs on electrical supply, power supply and signal lines for shielding and filtering against indirect lightning.
 
-**Why this question**  This asks for the tool attached to one modeling task.
+**Why this question**  The abstract describes the proposed protective device, the lines it protects and its stated functions.
 
-**Limitations**  The text identifies a simulation tool and gives no version.
+**Limitations**  The abstract describes a technical proposal for indirect lightning protection in the modeled military power supply.
 
-`SUPPORTED` · `ANSWERABLE` · `DRAFT_UNREVIEWED`
+`SUPPORTED` ? `ANSWERABLE` ? `HUMAN_REVIEWED`
 
 ## B · Single-document, multi-hop
 
