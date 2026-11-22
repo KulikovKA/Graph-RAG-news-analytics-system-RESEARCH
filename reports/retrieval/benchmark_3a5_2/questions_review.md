@@ -423,319 +423,431 @@ Offsets count Unicode code points from zero in the frozen abstract. The end offs
 
 ## C · Cross-document
 
-### 3A52-C01 · Cross-document
+C01-C10 approved by human review. Every listed span is mandatory.
 
-**Question**  What performance gains did the wireless sensor network and MRI computing studies report for their respective optimizations?
+### 3A52-C01 · Shared Entity
 
-**Expected answer**  The sensor-network paper reports up to about 3.5% lower energy consumption, a 44% longer network life cycle and 185% more packets sent than LEACH. The MRI team reports shorter processing time with its GPU implementation.
+**Question**  What roles do T cells play in immune regulation and reactions to recombinant erythropoietin?
 
-**Source evidence** (2 document(s))
+**Expected answer**  Regulatory B cells (Breg) suppress T-cell activity. In a separate context, T cells are believed to trigger immune responses against recombinant human erythropoietin by recognizing EPO epitopes presented by MHC molecules on antigen-presenting cells. Such responses may involve neutralizing antibodies and pure red cell aplasia.
 
-- W2991563224 · [Energy efficiency of organized cluster election method in wireless sensor networks](https://doi.org/10.11591/ijeecs.v18.i1.pp218-226) · `[623:688)`
+**Bridge**  T cells
 
-  > The energy consumption of WSN has been reduced up to about 3.5 %.
+**Source evidence** (2 documents)
 
-  Energy consumption fell by up to about 3.5%.
+- E1 · W2791492120 · [Impact and Modulations of Peripheral and Edaphic B Cell Subpopulations in Chronic Rhinosinusitis With Nasal Polyposis](https://openalex.org/W2791492120) · `[137:338)`
 
-- W2991563224 · [Energy efficiency of organized cluster election method in wireless sensor networks](https://doi.org/10.11591/ijeecs.v18.i1.pp218-226) · `[689:733)`
+> Regulatory B cells (Breg) are responsible for the suppression of T cell activity: deficiencies for Breg have been demonstrated to contribute to autoimmune disorders, e.g., systemic lupus erythematosus.
 
-  > The network life cycle is prolonged by 44 %.
+Breg suppress T-cell activity.
 
-  Sensor network life cycle increased by 44%.
+- E2 · W3123056951 · [Modified recombinant human erythropoietin with potentially reduced immunogenicity](https://openalex.org/W3123056951) · `[167:321)`
 
-- W2991563224 · [Energy efficiency of organized cluster election method in wireless sensor networks](https://doi.org/10.11591/ijeecs.v18.i1.pp218-226) · `[734:800)`
+> However, some patients repeatedly receiving rHuEPO develop anti-rHuEPO neutralizing antibodies leading to the development of pure red cell aplasia (PRCA).
 
-  > The number of packets sent has been increased by 185 % than LEACH.
+Repeated rHuEPO treatment can lead to neutralizing anti-rHuEPO antibodies and pure red cell aplasia.
 
-  Packet count increased by 185% relative to LEACH.
+- E3 · W3123056951 · [Modified recombinant human erythropoietin with potentially reduced immunogenicity](https://openalex.org/W3123056951) · `[322:501)`
 
-- W4230116451 · [A GPU parallel optimised blockwise NLM algorithm in a distributed computing system](https://doi.org/10.1504/ijhpcn.2018.093231) · `[426:671)`
+> The immunogenic antibody response activated by rHuEPO is believed to be triggered by T-cells recognizing EPO epitopes bound to MHC molecules displayed on the cell surface of APCs.
 
-  > In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method.
+T cells are believed to trigger the antibody response by recognizing EPO epitopes presented by MHC on antigen-presenting cells.
 
-  Identifies the GPU MRI denoising case.
+**Why this question**  Compares the role of T cells in immune regulation with their proposed role in a response to a therapeutic protein.
 
-- W4230116451 · [A GPU parallel optimised blockwise NLM algorithm in a distributed computing system](https://doi.org/10.1504/ijhpcn.2018.093231) · `[672:791)`
+**Limitations**  Breg не исследовались в контексте лечения rHuEPO. Иммунный механизм описан авторами второй статьи как предполагаемый.
 
-  > Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.
+`SUPPORTED` · `ANSWERABLE` · `HUMAN_REVIEWED`
 
-  Execution time is the reported computational outcome.
+### 3A52-C02 · Shared Concept
 
-**Why this question**  One study reports network-level outcomes, while the other assesses the time needed for image processing.
+**Question**  What different treatment risks are described in studies involving dialysis patients and recombinant erythropoietin?
 
-**Limitations**  Execution time has no numerical speedup in the MRI abstract. The percentages belong to the sensor network.
+**Expected answer**  The knee-replacement study reported pneumonia, strokes and cardiovascular events after discharge among dialysis patients. The erythropoietin study describes neutralizing anti-rHuEPO antibodies and pure red cell aplasia associated with repeated treatment.
 
-`SUPPORTED` · `ANSWERABLE` · `DRAFT_UNREVIEWED`
+**Bridge**  Kidney disease; ESRD related to CKD
 
-### 3A52-C02 · Cross-document
+**Source evidence** (2 documents)
 
-**Question**  How do shape-coded composites and papal annual medals each carry information in a physical object?
+- E1 · W2761455282 · [Perioperative Complications of Total Knee Arthroplasty in Dialysis Patients](https://openalex.org/W2761455282) · `[485:594)`
 
-**Expected answer**  Controlled shapes of embedded nanoparticles encode information in composites. The medals use images on their reverses and commemorate a papal achievement from the preceding year.
+> We retrospectively assessed 21 patients (26 knees) with ESRD who underwent primary TKA between 2007 and 2015.
 
-**Source evidence** (2 document(s))
+The knee-replacement cohort comprised patients with ESRD undergoing primary TKA.
 
-- W3027457624 · [“Shape-Coding”: Morphology-Based Information System for Polymers and Composites](https://doi.org/10.1021/acsami.0c05314) · `[492:677)`
+- E2 · W2761455282 · [Perioperative Complications of Total Knee Arthroplasty in Dialysis Patients](https://openalex.org/W2761455282) · `[1110:1268)`
 
-  > We describe a universal method to store information in fiber-reinforced composites based on solid-state in situ reduction leading to embedded nanoparticles with controlled morphologies.
+> Six patients (28.5%) had medical complications, including pneumonia (n = 3), stroke (n = 2), and cardiovascular events (n = 3), after discharge from hospital.
 
-  The composite stores information in controlled nanoparticle morphologies.
+The study recorded pneumonia, stroke and cardiovascular events after discharge.
 
-- W2394633461 · [Pressing Metal, Pressing Politics: Papal Annual Medals, 1605–1700](https://doi.org/10.3390/rel7050060) · `[0:363)`
+- E3 · W3123056951 · [Modified recombinant human erythropoietin with potentially reduced immunogenicity](https://openalex.org/W3123056951) · `[0:166)`
 
-  > This article surveys images depicted on the reverses of papal annual medals in the seventeenth century, beginning in 1605 under Paul V (r. 1605–21) with the first confirmed annual medal, and ending in 1700 at the conclusion of the papacy of Innocent XII (r. 1691–1700), a reign that marked a distinct change in papal politics in advance of the eighteenth century.
+> Recombinant human erythropoietin (rHuEPO) is a biopharmaceutical drug given to patients who have a low hemoglobin related to chronic kidney disease, cancer or anemia.
 
-  The survey identifies reverse-side images as its material.
+rHuEPO treats low hemoglobin associated with chronic kidney disease and other conditions.
 
-- W2394633461 · [Pressing Metal, Pressing Politics: Papal Annual Medals, 1605–1700](https://doi.org/10.3390/rel7050060) · `[637:778)`
+- E4 · W3123056951 · [Modified recombinant human erythropoietin with potentially reduced immunogenicity](https://openalex.org/W3123056951) · `[167:321)`
 
-  > Annual medals are a unique iteration of papal commemorative medals and they celebrate an important papal achievement from the preceding year.
+> However, some patients repeatedly receiving rHuEPO develop anti-rHuEPO neutralizing antibodies leading to the development of pure red cell aplasia (PRCA).
 
-  The annual issues commemorate achievements.
+Repeated treatment can elicit neutralizing antibodies and pure red cell aplasia.
 
-**Why this question**  Each source supplies a different physical carrier and a different meaning attached to it.
+**Why this question**  Compares reported adverse outcomes in two treatment settings involving kidney disease.
 
-**Limitations**  This comparison of encoding and commemoration implies no historical influence between the practices.
+**Limitations**  Разные пациенты и виды лечения. ESRD и CKD нельзя безоговорочно считать тождественными сущностями.
 
-`SUPPORTED` · `ANSWERABLE` · `DRAFT_UNREVIEWED`
+`SUPPORTED` · `ANSWERABLE` · `HUMAN_REVIEWED`
 
-### 3A52-C03 · Cross-document
+### 3A52-C03 · Shared Concept
 
-**Question**  How did researchers capture an image of the NSTX divertor, and what instrument did astronomers use to map the Moon at L band?
+**Question**  How have researchers used gene expression analysis and genetic perturbations to investigate biological functions?
 
-**Expected answer**  At NSTX, a sapphire window and movable in-vessel mirror image the divertor, and a coherent fiber optic bundle carries the image through a filter to a fast camera. The lunar team used the Dominion Radio Astrophysical Observatory Synthesis Telescope.
+**Expected answer**  In mouse models of anxiety and stress reactivity, researchers compared copy-number variation with gene expression but found no simple correlation in all cases. In Yarrowia lipolytica, overexpressing candidate genes improved limonene tolerance for eight candidates and production for five. In spinal astrocytes, pharmacological tests, Px1 knockdown and Cx43 knockout helped distinguish hemichannel functions, with Px1 dominating after 2 hours and both Px1 and Cx43 contributing after 7 hours.
 
-**Source evidence** (2 document(s))
+**Bridge**  Functional characterization of genes
 
-- W2084709926 · [NSTX tangential divertor camera](https://doi.org/10.1063/1.1789609) · `[325:503)`
+**Source evidence** (3 documents)
 
-  > A reentrant sapphire window with a moveable in-vessel mirror images the divertor region from the center stack out to R∼80 cm and views the x-point for most plasma configurations.
+- M3 · W2076293586 · [Copy number variants in two mouse models of affective disorders](https://openalex.org/W2076293586) · `[946:1064)`
 
-  Identifies the window, mirror and region imaged.
+> To test the functional relevance of these CNVs, we associated changes in copy numbers with changes in gene expression.
 
-- W2084709926 · [NSTX tangential divertor camera](https://doi.org/10.1063/1.1789609) · `[504:693)`
+Changes in copy number were compared with changes in gene expression to assess CNV function.
 
-  > A coherent fiber optic bundle transmits the image through a remotely selected filter to a fast camera, for example, a 40 500 frames/s photron complementary metal-oxide-semiconductor camera.
+- M4 · W2076293586 · [Copy number variants in two mouse models of affective disorders](https://openalex.org/W2076293586) · `[1065:1158)`
 
-  Traces the image to the filtered camera.
+> A simple correlation between gene dosage and gene expression could not be found in all cases.
 
-- W2096307598 · [New radio observations of the Moon atLband](https://doi.org/10.1088/1674-4527/12/9/010) · `[0:164)`
+A simple gene dosage–expression correlation was not found in all cases.
 
-  > We present results of new radio observations of the Moon at L band with the synthesis telescope of the Dominion Radio Astrophysical Observatory Synthesis Telescope.
+- Y2 · W3138328568 · [Simultaneous Improvement of Limonene Production and Tolerance in Yarrowia lipolytica through Tolerance Engineering and Evolutionary Engineering](https://openalex.org/W3138328568) · `[814:922)`
 
-  Identifies the observing band, target and telescope.
+> When overexpressed, 8 of the gene candidates improved tolerance of this yeast to exogenously added limonene.
 
-**Why this question**  Each abstract identifies how its observing system forms or receives an image of a spatially extended target.
+Overexpression of eight candidate genes improved limonene tolerance.
 
-**Limitations**  The instruments observe different sources. Their spatial resolutions cannot be compared from these passages alone.
+- Y3 · W3138328568 · [Simultaneous Improvement of Limonene Production and Tolerance in Yarrowia lipolytica through Tolerance Engineering and Evolutionary Engineering](https://openalex.org/W3138328568) · `[1103:1199)`
 
-`SUPPORTED` · `ANSWERABLE` · `DRAFT_UNREVIEWED`
+> Indeed, expression of 5 of the 8 candidate genes enhanced limonene production in Y. lipolytica .
 
-### 3A52-C04 · Cross-document
+Expression of five of the eight candidates enhanced limonene production in Y. lipolytica.
 
-**Question**  How did the economic convergence and air–rail fare papers solve different modeling problems?
+- A1 · W2039836112 · [FGF-1 induces ATP release from spinal astrocytes in culture and opens pannexin and connexin hemichannels](https://openalex.org/W2039836112) · `[629:757)`
 
-**Expected answer**  The convergence paper proposed time-varying parameters estimated by Kalman filtering to test convergence. The fare paper optimized prices in a bi-level model, using particle swarm for the upper level and successive averages for the lower level.
+> HC types were differentiated pharmacologically and by Px1 knockdown with siRNA and by use of astrocytes from Cx43 knockout mice.
 
-**Source evidence** (2 document(s))
+Pharmacological tests, Px1 knockdown and Cx43 knockout distinguished hemichannel types.
 
-- W2078771716 · [Measuring Economic Convergence](https://doi.org/10.1002/(sici)1099-1158(199704)2:2<131::aid-ijfe42>3.0.co;2-m) · `[519:720)`
+- A2 · W2039836112 · [FGF-1 induces ATP release from spinal astrocytes in culture and opens pannexin and connexin hemichannels](https://openalex.org/W2039836112) · `[920:1046)`
 
-  > These two considerations lead us to a preferred definition of convergence and a proposed framework for testing, based on a time varying parameter formulation and estimation by Kalman filter techniques.
+> Increased permeability of cells exposed to FGF-1 or ATP for 2 h was mediated largely by Px1 HCs activated by P2X(7) receptors.
 
-  Defines the convergence testing framework and estimation method.
+Px1 hemichannels largely mediated increased permeability after 2 hours.
 
-- W4309030044 · [Market competition oriented air-rail ticket fare optimization](https://doi.org/10.1016/j.multra.2022.100053) · `[447:711)`
+- A3 · W2039836112 · [FGF-1 induces ATP release from spinal astrocytes in culture and opens pannexin and connexin hemichannels](https://openalex.org/W2039836112) · `[1047:1125)`
 
-  > The stochastic user equilibrium model based on elastic demand is used to establish a bi-level programming model for the optimization of fares; the upper and lower models are solved using the particle swarm algorithm and method of successive averages, respectively.
+> After a 7-h treatment, the permeability was mediated by both Cx43 and Px1 HCs.
 
-  Names the fare model and assigns each solver to a level.
+Both Cx43 and Px1 mediated permeability after 7 hours.
 
-**Why this question**  The first source supplies an estimation framework and the second supplies the ordered pair of optimization methods.
+**Why this question**  Compares three approaches to investigating gene function across separate experimental systems.
 
-**Limitations**  The methods address different objectives. These descriptions supply no comparison of their accuracy.
+**Limitations**  Три разные экспериментальные системы. CNV–expression correlation, overexpression и knockdown/knockout — разные методы. Вопрос широкий, поэтому объявленные три Gold-документа не обязательно образуют исчерпывающий набор релевантных источников.
 
-`SUPPORTED` · `ANSWERABLE` · `DRAFT_UNREVIEWED`
+`SUPPORTED` · `ANSWERABLE` · `HUMAN_REVIEWED`
 
-### 3A52-C05 · Cross-document
+### 3A52-C04 · Shared Concept
 
-**Question**  What difficulty with historical testimony does the essay comparing the 1930s and 1960s describe, and how does the Italian oral-history essay characterize the making of an interview?
+**Question**  What computational approaches can make medical imaging faster and more suitable for large-scale studies?
 
-**Expected answer**  The first writer says contemporaries and younger collaborators often lacked sufficient distance from their own time to compare the decades. The Italian essay describes interviews as stories from below co-authored by the interviewee and an empathic interviewer.
+**Expected answer**  For MRI, researchers implemented a GPU-parallel optimized blockwise non-local means (OB-NLM) algorithm and reported improved execution time. For mammographic density, researchers used automated image-processing software and penalized regression to mimic Cumulus, achieving a high correlation (r = 0.884) and supporting the potential for large-scale research.
 
-**Source evidence** (2 document(s))
+**Bridge**  Medical image processing; computational efficiency; automation
 
-- W2326480042 · [Between the 30s and the 60s](https://doi.org/10.2307/466552) · `[0:148)`
+**Source evidence** (2 documents)
 
-  > I strongly doubt if we will ever understandand fully evaluate -the 60s without placing it against the background of another radical decade, the 30s.
+- M3 · W4230116451 · [A GPU parallel optimised blockwise NLM algorithm in a distributed computing system](https://openalex.org/W4230116451) · `[426:671)`
 
-  Names the decades the author wants to compare.
+> In the case study of the magnetic resonance imaging (MRI), for improving the quality of denoising and helping the real-time diagnosis, we have implemented a GPU parallel algorithm based on the optimised blockwise non-local means (OB-NLM) method.
 
-- W2326480042 · [Between the 30s and the 60s](https://doi.org/10.2307/466552) · `[149:416)`
+The MRI case implemented a GPU-parallel optimized blockwise non-local means algorithm.
 
-  > Having lived out both periods up to the hilt, I find that my older contemporaries as well as the younger people with whom I worked twenty years ago have seldom been able to distance themselves sufficiently from their time to draw these crucial comparisons adequately.
+- M4 · W4230116451 · [A GPU parallel optimised blockwise NLM algorithm in a distributed computing system](https://openalex.org/W4230116451) · `[672:791)`
 
-  Identifies the writer's concern about historical distance.
+> Experimental results have shown a significant improvement of healthcare processing practice in terms of execution time.
 
-- W4381572413 · [“First of all, let’s go learn something”](https://doi.org/10.20318/hn.2023.7620) · `[169:301)`
+The MRI experiment reported improved execution time.
 
-  > Oral interviews are stories “from below”, where the authorship is shared between the interviewed people and an empathic interviewer.
+- D1 · W1979727947 · [High-throughput mammographic-density measurement: a tool for risk prediction of breast cancer](https://openalex.org/W1979727947) · `[14:152)`
 
-  Describes the relationship that produces interview testimony.
+> Mammographic density (MD) is a strong, independent risk factor for breast cancer, but measuring MD is time consuming and reader dependent.
 
-**Why this question**  The retrospective essay supplies a problem of perspective. The oral-history account supplies a distinct description of authorship.
+Mammographic density measurement is time-consuming and reader-dependent.
 
-**Limitations**  The Italian essay does not establish that shared authorship resolves the other writer's difficulty.
+- D2 · W1979727947 · [High-throughput mammographic-density measurement: a tool for risk prediction of breast cancer](https://openalex.org/W1979727947) · `[153:267)`
 
-`SUPPORTED` · `ANSWERABLE` · `DRAFT_UNREVIEWED`
+> Objective MD measurement in a high-throughput fashion would enable its wider use as a biomarker for breast cancer.
 
-### 3A52-C06 · Cross-document
+Objective high-throughput measurement could broaden use of mammographic density as a biomarker.
 
-**Question**  Whose judgments does the PNM teaching-evaluation system collect, and what reader-dependent measurement did the mammography team try to automate?
+- D3 · W1979727947 · [High-throughput mammographic-density measurement: a tool for risk prediction of breast cancer](https://openalex.org/W1979727947) · `[268:467)`
 
-**Expected answer**  At PNM, students evaluate lecturers' teaching and learning processes. In the mammography study, the authors used image processing and penalized regression to mimic the semiautomated Cumulus measure of mammographic density.
+> We use a public domain image-processing software for the fully automated analysis of MD and penalized regression to construct a measure that mimics a well-established semiautomated measure (Cumulus).
 
-**Source evidence** (2 document(s))
+Automated image processing and penalized regression produced a measure mimicking Cumulus.
 
-- W4234628002 · [Sistem Informasi Terintegrasi Evaluasi Kegiatan Mengajar Dosen Sebagai Implementasi Sistem Penjaminan Mutu Internal](https://doi.org/10.31940/matrix.v9i1.1243) · `[283:573)`
+- D5 · W1979727947 · [High-throughput mammographic-density measurement: a tool for risk prediction of breast cancer](https://openalex.org/W1979727947) · `[1149:1311)`
 
-  > To realize the objectives of SPMI Dikti, it is needed an information technology based system that can manage the result of quality control from PNM which can be accessed via online by students privately and allows the students to evaluate the teaching and learning process of the lecturers.
+> RESULTS: We observed a high correlation between the Cumulus measure and our measure mimicking Cumulus (r = 0.884; 95% CI, 0.872 to 0.894) in an external test set.
 
-  Identifies the students and the object of their evaluations.
+The new measure correlated with Cumulus at r = 0.884 in an external test set.
 
-- W1979727947 · [High-throughput mammographic-density measurement: a tool for risk prediction of breast cancer](https://doi.org/10.1186/bcr3238) · `[0:152)`
+**Why this question**  Pairs a runtime improvement in MRI processing with automation suited to high-throughput mammographic density measurement.
 
-  > INTRODUCTION: Mammographic density (MD) is a strong, independent risk factor for breast cancer, but measuring MD is time consuming and reader dependent.
+**Limitations**  Разные задачи обработки изображений. Ускорение MRI не задано конкретным коэффициентом; r=0.884 — корреляция с Cumulus, а не показатель ускорения или диагностической точности.
 
-  Names reader dependence as a measurement problem.
+`SUPPORTED` · `ANSWERABLE` · `HUMAN_REVIEWED`
 
-- W1979727947 · [High-throughput mammographic-density measurement: a tool for risk prediction of breast cancer](https://doi.org/10.1186/bcr3238) · `[268:467)`
+### 3A52-C05 · Shared Concept
 
-  > We use a public domain image-processing software for the fully automated analysis of MD and penalized regression to construct a measure that mimics a well-established semiautomated measure (Cumulus).
+**Question**  How does consumer demand affect prices and pricing decisions in different markets?
 
-  Identifies the automated method and its reference measure.
+**Expected answer**  In China's grain market, non-price factors shifted demand more than supply, so grain prices rose despite increased production and farmers' total income did not decline. In air-rail transport, researchers incorporated elastic demand into a bi-level fare optimization model to account for competition between airlines and high-speed rail.
 
-**Why this question**  Both studies deal with assessments that involve people. One builds a system to gather their judgments, while the other seeks to reproduce an established measure automatically.
+**Bridge**  Demand; supply and demand; elastic demand; pricing
 
-**Limitations**  Collecting evaluations online does not imply automated scoring of teaching quality. Mimicking Cumulus does not validate an individual cancer diagnosis.
+**Source evidence** (2 documents)
 
-`SUPPORTED` · `ANSWERABLE` · `DRAFT_UNREVIEWED`
+- G3 · W2906067930 · [Research on the Phenomenon That the Increase of Grain Production Did Not Cause the Harvest Paradox in China from 2003 to 2014](https://openalex.org/W2906067930) · `[603:820)`
 
-### 3A52-C07 · Cross-document
+> The phenomenon was found it didn’t cause the loss of farmers' total income that the grain production in China had increased for 11 years from 2003 to 2014, which was inconsistent with the Harvest Paradox in economics.
 
-**Question**  How did the dialysis knee-replacement study and the esophageal radiotherapy pilot monitor what happened after treatment?
+Chinese grain production increased from 2003 to 2014 without a decline in farmers' total income.
 
-**Expected answer**  The knee study used clinical and radiographic evaluations, American Knee Society Scores, and the Western Ontario and McMaster Universities Arthritis Index. The radiotherapy study checked cardiac device function before therapy and after every irradiation.
+- G4 · W2906067930 · [Research on the Phenomenon That the Increase of Grain Production Did Not Cause the Harvest Paradox in China from 2003 to 2014](https://openalex.org/W2906067930) · `[821:926)`
 
-**Source evidence** (2 document(s))
+> It resulted from non-grain price factors which caused the demand line moved in excess of the supply line.
 
-- W2761455282 · [Perioperative Complications of Total Knee Arthroplasty in Dialysis Patients](https://doi.org/10.1016/j.arth.2017.09.058) · `[690:883)`
+Non-grain-price factors shifted demand more than supply.
 
-  > All patients had complete clinical and radiographic evaluations, and the outcome was scored using American Knee Society Scores and the Western Ontario and McMaster Universities Arthritis Index.
+- G5 · W2906067930 · [Research on the Phenomenon That the Increase of Grain Production Did Not Cause the Harvest Paradox in China from 2003 to 2014](https://openalex.org/W2906067930) · `[927:953)`
 
-  Specifies the knee evaluations and scoring instruments.
+> Thus the grain price rose.
 
-- W4391351014 · [Effects of Ionizing Radiation on Cardiac Implantable Electronic Devices (CIEDs) in Patients with Esophageal Cancer Undergoing Radiotherapy: A Pilot Study](https://doi.org/10.3390/cancers16030555) · `[374:531)`
+Grain prices rose.
 
-  > All patients underwent systemic evaluation including pre-therapeutic cardiological examinations of the CIED functionality and after every single irradiation.
+- T2 · W4309030044 · [Market competition oriented air-rail ticket fare optimization](https://openalex.org/W4309030044) · `[171:446)`
 
-  Specifies the timing and target of the device checks.
+> This study takes the competitive relationship between high-speed rail (HSR) and airlines as well as carrier connectivity as the starting point, analyzes the advantages and disadvantages of different carriers in the different markets, and researches the optimization of fares.
 
-**Why this question**  Only the orthopedic source supplies its joint assessments, and only the pilot specifies fraction-by-fraction device checks.
+The fare study considered competition between high-speed rail and airlines and differences across markets.
 
-**Limitations**  Different cohorts and endpoints preclude a joint complication rate.
+- T3 · W4309030044 · [Market competition oriented air-rail ticket fare optimization](https://openalex.org/W4309030044) · `[447:711)`
 
-`SUPPORTED` · `ANSWERABLE` · `DRAFT_UNREVIEWED`
+> The stochastic user equilibrium model based on elastic demand is used to establish a bi-level programming model for the optimization of fares; the upper and lower models are solved using the particle swarm algorithm and method of successive averages, respectively.
 
-### 3A52-C08 · Cross-document
+An elastic-demand stochastic user equilibrium model underpinned bi-level fare optimization.
 
-**Question**  How did the astrocyte researchers distinguish the channels involved in permeability, and how did the mouse copy-number study assess whether genomic differences mattered for expression?
+**Why this question**  Compares a demand shift in a grain market with the use of elastic demand in a fare model.
 
-**Expected answer**  The astrocyte study combined pharmacological tests with Px1 knockdown and astrocytes from Cx43 knockout mice. The mouse study compared changes in copy number with changes in gene expression and found that a simple correlation did not hold in every case.
+**Limitations**  Сдвиг спроса и эластичный спрос в модели оптимизации — разные механизмы. Исследование зернового рынка относится к Китаю 2003–2014 годов.
 
-**Source evidence** (2 document(s))
+`SUPPORTED` · `ANSWERABLE` · `HUMAN_REVIEWED`
 
-- W2039836112 · [FGF-1 induces ATP release from spinal astrocytes in culture and opens pannexin and connexin hemichannels](https://doi.org/10.1073/pnas.1013793107) · `[629:757)`
+### 3A52-C06 · Comparative Multi-document
 
-  > HC types were differentiated pharmacologically and by Px1 knockdown with siRNA and by use of astrocytes from Cx43 knockout mice.
+**Question**  Why can an operation improve a patient's primary condition without eliminating other medical risks?
 
-  Specifies the tests used to differentiate channel types.
+**Expected answer**  The glaucoma drainage study reported long-term glaucoma control alongside low corneal graft clarity, while the dialysis knee-replacement study reported substantial improvement in knee outcomes alongside medical complications. These distinct examples show why primary treatment success and other adverse outcomes should be evaluated separately.
 
-- W2039836112 · [FGF-1 induces ATP release from spinal astrocytes in culture and opens pannexin and connexin hemichannels](https://doi.org/10.1073/pnas.1013793107) · `[920:1046)`
+**Bridge**  Surgical outcomes; primary treatment benefit versus other adverse outcomes
 
-  > Increased permeability of cells exposed to FGF-1 or ATP for 2 h was mediated largely by Px1 HCs activated by P2X(7) receptors.
+**Source evidence** (2 documents)
 
-  Relates a channel type to cell permeability.
+- G3 · W3101922761 · [Ten-Year Outcome of Glaucoma Drainage Device Surgery After Penetrating Keratoplasty](https://openalex.org/W3101922761) · `[1169:1317)`
 
-- W2076293586 · [Copy number variants in two mouse models of affective disorders](https://doi.org/10.1055/s-0031-1292452) · `[946:1064)`
+> GDD implantation successfully controlled glaucoma in 88%, 88%, 85%, 80%, 78%, 75%, and 70% of eyes, at 1, 2, 3, 4, 5, 7, and 10 years, respectively.
 
-  > To test the functional relevance of these CNVs, we associated changes in copy numbers with changes in gene expression.
+Glaucoma control after GDD implantation persisted through long-term follow-up.
 
-  Identifies the comparison used to assess functional relevance.
+- G4 · W3101922761 · [Ten-Year Outcome of Glaucoma Drainage Device Surgery After Penetrating Keratoplasty](https://openalex.org/W3101922761) · `[1365:1496)`
 
-- W2076293586 · [Copy number variants in two mouse models of affective disorders](https://doi.org/10.1055/s-0031-1292452) · `[1065:1158)`
+> The corneal grafts remained clear in 74%, 63%, 45%, 45%, 37%, 32%, and 26% of eyes at 1, 2, 3, 4, 5, 7, and 10 years, respectively.
 
-  > A simple correlation between gene dosage and gene expression could not be found in all cases.
+The proportion of clear corneal grafts decreased over follow-up.
 
-  Qualifies the observed dosage–expression relationship.
+- G5 · W3101922761 · [Ten-Year Outcome of Glaucoma Drainage Device Surgery After Penetrating Keratoplasty](https://openalex.org/W3101922761) · `[1561:1730)`
 
-**Why this question**  The studies give two ways of examining functional relevance. One distinguishes channel types by perturbation, and the other checks whether measured changes covary.
+> CONCLUSIONS: A GDD can successfully control intractable glaucoma even after a very long period of time also after PK. However, the survival of the corneal grafts is low.
 
-**Limitations**  A dosage–expression association cannot establish the role of a channel in cultured cells. The findings belong to different experimental systems.
+The authors conclude that long-term glaucoma control can coexist with low corneal graft survival.
 
-`SUPPORTED` · `ANSWERABLE` · `DRAFT_UNREVIEWED`
+- K1 · W2761455282 · [Perioperative Complications of Total Knee Arthroplasty in Dialysis Patients](https://openalex.org/W2761455282) · `[485:594)`
 
-### 3A52-C09 · Cross-document
+> We retrospectively assessed 21 patients (26 knees) with ESRD who underwent primary TKA between 2007 and 2015.
 
-**Question**  How do the Chinese grain-production article and the comment on plant closings describe income outcomes under the conditions each discusses?
+The knee-replacement study examined primary TKA in patients with ESRD.
 
-**Expected answer**  The grain article reports no loss of farmers' total income as grain output rose. The comment attributes to Nord and Ting the claim that workers given over two months' voluntary warning faced smaller earnings losses.
+- K2 · W2761455282 · [Perioperative Complications of Total Knee Arthroplasty in Dialysis Patients](https://openalex.org/W2761455282) · `[1110:1268)`
 
-**Source evidence** (2 document(s))
+> Six patients (28.5%) had medical complications, including pneumonia (n = 3), stroke (n = 2), and cardiovascular events (n = 3), after discharge from hospital.
 
-- W2906067930 · [Research on the Phenomenon That the Increase of Grain Production Did Not Cause the Harvest Paradox in China from 2003 to 2014](https://doi.org/10.11648/j.ijber.20180706.16) · `[603:820)`
+Post-discharge medical complications included pneumonia, stroke and cardiovascular events.
 
-  > The phenomenon was found it didn’t cause the loss of farmers' total income that the grain production in China had increased for 11 years from 2003 to 2014, which was inconsistent with the Harvest Paradox in economics.
+- K3 · W2761455282 · [Perioperative Complications of Total Knee Arthroplasty in Dialysis Patients](https://openalex.org/W2761455282) · `[1269:1502)`
 
-  Gives the scope and direction of farm income.
+> At the latest follow-up, 19 patients (90.5%) had improved clinical outcomes of the knee after TKA according to the American Knee Society Scores (P < .01) and Western Ontario and McMaster Universities Arthritis Index scores (P < .01).
 
-- W2130236240 · [The Impact of Advance Notice: A Comment on a Study by Nord and Ting](https://doi.org/10.1177/001979399204500403) · `[0:466)`
+Knee outcomes improved for 19 patients (90.5%) at the latest follow-up.
 
-  > In their analysis of the effects of advance notification of plant closings, Nord and Ting (ILR Review, July 1991) claim that much can be expected of current legislation that mandates a 60-day prenotification standard because the outcomes of voluntary arrangements, in an interval preceding implementation of the legislation, point to substantial reductions in both joblessness and earnings losses for workers given over two months' warning of their impending layoff.
+**Why this question**  Pairs two surgical studies in which primary clinical improvement coexists with other adverse outcomes.
 
-  Attributes the voluntary-notice finding and distinguishes it from later legislation.
+**Limitations**  Разные когорты, периоды наблюдения и конечные точки. Каждый документ может отдельно проиллюстрировать общий ответ, поэтому Gold-пара не является доказанно единственной возможной.
 
-**Why this question**  The grain paper provides a sector-level income observation. The comment reports another study's worker-level claim.
+`SUPPORTED` · `ANSWERABLE` · `HUMAN_REVIEWED`
 
-**Limitations**  The voluntary-notice observation cannot by itself establish the impact of the later statutory standard. The texts concern different populations.
+### 3A52-C07 · Comparative Multi-document
 
-`SUPPORTED` · `ANSWERABLE` · `DRAFT_UNREVIEWED`
+**Question**  How can personal perspectives influence the way historical events are remembered and recorded?
 
-### 3A52-C10 · Cross-document
+**Expected answer**  One essay argues that people who lived through the 1930s and 1960s often lacked sufficient historical distance to compare those periods adequately. The oral-history study describes historical interviews as accounts co-authored by interviewees and empathic interviewers. Together, these accounts show why historians should consider both the perspective of witnesses and the process through which historical records are created.
 
-**Question**  What role does listening play in the synodality essay, and who shares authorship of a spoken account in the Italian oral-history essay?
+**Bridge**  Historical testimony; historical distance; personal perspective; shared authorship
 
-**Expected answer**  The synodality essay treats listening as an outward practice alongside collaboration and leadership, drawing an analogy to inner work in IFS. The oral-history essay gives the empathic interviewer and the interviewee shared authorship.
+**Source evidence** (2 documents)
 
-**Source evidence** (2 document(s))
+- H1 · W2326480042 · [Between the 30s and the 60s](https://openalex.org/W2326480042) · `[0:148)`
 
-- W7215137876 · [Emotional Maturity in the Light of Synodality: Contributions from Internal Family System Therapy](https://openalex.org/W7215137876) · `[611:789)`
+> I strongly doubt if we will ever understandand fully evaluate -the 60s without placing it against the background of another radical decade, the 30s.
 
-  > It examines similarities between the IFS way of dealing with the inner world of the person and Synodal practices like listening, collaboration, and leadership in the outer world.
+The essay argues that evaluating the 1960s requires comparison with the 1930s.
 
-  Places listening among synodal practices and draws the inner/outer analogy.
+- H2 · W2326480042 · [Between the 30s and the 60s](https://openalex.org/W2326480042) · `[149:416)`
 
-- W4381572413 · [“First of all, let’s go learn something”](https://doi.org/10.20318/hn.2023.7620) · `[169:301)`
+> Having lived out both periods up to the hilt, I find that my older contemporaries as well as the younger people with whom I worked twenty years ago have seldom been able to distance themselves sufficiently from their time to draw these crucial comparisons adequately.
 
-  > Oral interviews are stories “from below”, where the authorship is shared between the interviewed people and an empathic interviewer.
+The author describes contemporaries as often lacking sufficient historical distance for that comparison.
 
-  Defines the participants' shared authorship.
+- O2 · W4381572413 · [“First of all, let’s go learn something”](https://openalex.org/W4381572413) · `[169:301)`
 
-**Why this question**  Both accounts attend to interpersonal practice. Only the synodality essay makes the IFS analogy, and only the oral-history essay assigns authorship.
+> Oral interviews are stories “from below”, where the authorship is shared between the interviewed people and an empathic interviewer.
 
-**Limitations**  Shared attention to listening does not imply that the oral historian uses IFS.
+Oral interviews are accounts from below co-authored by interviewees and empathic interviewers.
 
-`SUPPORTED` · `ANSWERABLE` · `DRAFT_UNREVIEWED`
+**Why this question**  Compares how historical distance and interview co-authorship shape the historical record.
+
+**Limitations**  Первая frozen-аннотация обрезана. Не восстанавливать отсутствующий текст и не приписывать авторам единую методологию.
+
+`SUPPORTED` · `ANSWERABLE` · `HUMAN_REVIEWED`
+
+### 3A52-C08 · Comparative Multi-document
+
+**Question**  How are openness to other people's views and collaborative participation described in synodality and oral history?
+
+**Expected answer**  The synodality author emphasizes considering differing viewpoints, collaborating as equals, and developing emotional maturity, with IFS proposed as one possible approach to relational wounds. The oral-history author characterizes interviews as stories from below, co-authored by interviewees and empathic interviewers. The texts offer conceptually related but distinct accounts of working with others.
+
+**Bridge**  Interpersonal understanding; differing perspectives; collaboration; empathy
+
+**Source evidence** (2 documents)
+
+- S2 · W7215137876 · [Emotional Maturity in the Light of Synodality: Contributions from Internal Family System Therapy](https://openalex.org/W7215137876) · `[181:366)`
+
+> To genuinely consider differing viewpoints, collaborate with the laity on an equal basis, and refrain from succumbing to clericalism, it is essential to address attachment wounds first.
+
+The author links addressing attachment wounds to considering differing views and collaborating with the laity on an equal basis.
+
+- S3 · W7215137876 · [Emotional Maturity in the Light of Synodality: Contributions from Internal Family System Therapy](https://openalex.org/W7215137876) · `[367:494)`
+
+> The author proposes that the Internal Family Systems (IFS) therapy approach can help heal relational wounds through inner work.
+
+The author proposes IFS as a possible way to heal relational wounds.
+
+- S5 · W7215137876 · [Emotional Maturity in the Light of Synodality: Contributions from Internal Family System Therapy](https://openalex.org/W7215137876) · `[611:789)`
+
+> It examines similarities between the IFS way of dealing with the inner world of the person and Synodal practices like listening, collaboration, and leadership in the outer world.
+
+The text compares IFS inner work with synodal listening, collaboration and leadership.
+
+- O2 · W4381572413 · [“First of all, let’s go learn something”](https://openalex.org/W4381572413) · `[169:301)`
+
+> Oral interviews are stories “from below”, where the authorship is shared between the interviewed people and an empathic interviewer.
+
+Oral interviews are accounts from below co-authored by interviewees and empathic interviewers.
+
+**Why this question**  Compares relational practices in synodality and collaboratively produced oral histories.
+
+**Limitations**  IFS только предлагается в первой статье. Исследование устной истории не применяет IFS. Evidence O2 повторяется из C07.
+
+`SUPPORTED` · `ANSWERABLE` · `HUMAN_REVIEWED`
+
+### 3A52-C09 · Shared Entity
+
+**Question**  What different roles do optical fibers play in plasma diagnostics and nonlinear optics research?
+
+**Expected answer**  In NSTX plasma diagnostics, a coherent fiber-optic bundle transmits an image of the divertor through a filter to a fast camera. In nonlinear optics research, optical fibers are studied as a medium for optical pulse propagation using a (2+1)-dimensional nonlinear Schrödinger system, with solutions including dark solitons and periodic waves. The studies address distinct applications rather than the same experimental setup.
+
+**Bridge**  Optical fibers / fiber optic bundle
+
+**Source evidence** (2 documents)
+
+- N3 · W2084709926 · [NSTX tangential divertor camera](https://openalex.org/W2084709926) · `[504:693)`
+
+> A coherent fiber optic bundle transmits the image through a remotely selected filter to a fast camera, for example, a 40 500 frames/s photron complementary metal-oxide-semiconductor camera.
+
+A coherent fiber-optic bundle transmits the image through a filter to a fast camera.
+
+- S1 · W3081936674 · [Optical soliton solutions to a (2+1) dimensional Schrödinger equation using a couple of integration architectures](https://openalex.org/W3081936674) · `[0:198)`
+
+> Abstract In this work, we consider a (2+1) dimensional nonlinear Schrödinger system which appears in the theory of nonlinear optics and describe transmission of the optical pulses in optical fibers.
+
+The (2+1)-dimensional nonlinear Schrödinger system models optical pulse transmission in fibers.
+
+- S4 · W3081936674 · [Optical soliton solutions to a (2+1) dimensional Schrödinger equation using a couple of integration architectures](https://openalex.org/W3081936674) · `[571:721)`
+
+> The obtained solutions are in the form of dark soliton, combined soliton, symmetrical Lucas sine, Lucas cosine functions, and periodic wave solutions.
+
+The reported solutions include dark solitons and periodic waves.
+
+**Why this question**  Connects two uses of optical fibers, as part of an imaging system and as a medium for modeled pulse propagation.
+
+**Limitations**  Это общий класс технологий, а не одно физическое устройство. Нелинейная модель Шрёдингера из второй статьи не описывает установку NSTX.
+
+`SUPPORTED` · `ANSWERABLE` · `HUMAN_REVIEWED`
+
+### 3A52-C10 · Comparative Multi-document
+
+**Question**  How do official commemorative objects and oral interviews construct different representations of the past?
+
+**Expected answer**  Seventeenth-century papal annual medals commemorated papal achievements and deliberately promoted an image of the pope as a builder, warrior and impresario. Oral-history interviews, by contrast, are accounts from below jointly created by interviewees and empathic interviewers. Both are shaped by the conditions of their production, but in different ways.
+
+**Bridge**  Historical representation; source authorship; deliberate public image versus collaborative oral accounts
+
+**Source evidence** (2 documents)
+
+- P2 · W2394633461 · [Pressing Metal, Pressing Politics: Papal Annual Medals, 1605–1700](https://openalex.org/W2394633461) · `[637:778)`
+
+> Annual medals are a unique iteration of papal commemorative medals and they celebrate an important papal achievement from the preceding year.
+
+Annual papal medals commemorate achievements from the preceding year.
+
+- P3 · W2394633461 · [Pressing Metal, Pressing Politics: Papal Annual Medals, 1605–1700](https://openalex.org/W2394633461) · `[779:980)`
+
+> The production of annual medals was an exercise in identity creation, undertaken to advance the image of the pope as an aristocratic prince in three specific roles: as builder, warrior, and impresario.
+
+The medals deliberately shape the pope's public image as a builder, warrior and impresario.
+
+- O2 · W4381572413 · [“First of all, let’s go learn something”](https://openalex.org/W4381572413) · `[169:301)`
+
+> Oral interviews are stories “from below”, where the authorship is shared between the interviewed people and an empathic interviewer.
+
+Oral interviews are accounts from below co-authored by interviewees and empathic interviewers.
+
+**Why this question**  Compares the role of authorship and production in two types of historical sources.
+
+**Limitations**  Ни один документ не устанавливает сравнительную достоверность двух типов источников. Evidence O2 повторяется в C07 и C08.
+
+`SUPPORTED` · `ANSWERABLE` · `HUMAN_REVIEWED`
 
 ## D · Negative / ambiguous
 

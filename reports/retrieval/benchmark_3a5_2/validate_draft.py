@@ -4,6 +4,7 @@ import hashlib
 import json
 import re
 import sys
+from collections import defaultdict
 from pathlib import Path
 
 
@@ -12,11 +13,15 @@ REPORTS = HERE.parents[1]
 SOURCE = REPORTS / "ner_v2/research_run2/input_abstracts.jsonl"
 LOCK = REPORTS / "entity_resolution/relex_base_t035/dynamic_concept_graph/document_lock.json"
 CATEGORY_COUNTS = {"A": 8, "B": 7, "C": 10, "D": 5}
-REVIEWED_CATEGORIES = {"A", "B"}
+REVIEWED_CATEGORIES = {"A", "B", "C"}
 # SHA-256 утверждённых строк A из коммита e39c5ecbc7240b9c70dca7a923cc69ebfb34fc6b.
-BLOCK_A_SHA256 = "7a9c2340dda065d15c13dcd80666442766629214009d8515658e5701bedbacd4"
-# SHA-256 исходных строк C–D из коммита 808c3d14c49547f4252067f2675a90f2b5aa6cb5.
-UNREVIEWED_BLOCKS_SHA256 = "5144658cbe7b4ec6eb567b652f46950904778173192e2810f7a63bde9ebb3a24"
+# B и исходные строки D зафиксированы по коммиту cd38cb4131109366adee4525bbbee01b714e9e0d.
+BLOCK_SHA256 = {
+    "A": "7a9c2340dda065d15c13dcd80666442766629214009d8515658e5701bedbacd4",
+    "B": "162d8056b53b6f52d2d06d19282b94c0cd6a14109615ada525d1707831de160e",
+    "D": "da70f8ccdce6017b9fbd0bba3c516ae06632432405415d939f2c7eb26b09b3a0",
+}
+LOCK_SHA256 = "0d472e0a6a5800bba52c20b90670cd7b40a7b2d2c9ebe64e74522fbd3168e37c"
 FIXED = {
     "source_of_truth": "ORIGINAL_DOCUMENT",
     "generation_method": "EVIDENCE_GROUNDED_DRAFT",
@@ -40,7 +45,9 @@ def jsonl(path):
 
 
 def documents():
-    locked = json.loads(LOCK.read_text(encoding="utf-8"))
+    lock_bytes = LOCK.read_bytes()
+    require(hashlib.sha256(lock_bytes).hexdigest() == LOCK_SHA256, "Document lock SHA-256 mismatch")
+    locked = json.loads(lock_bytes)
     by_id = {row["document_id"]: row for row in locked}
     require(len(by_id) == len(locked) == 30, "Invalid document lock")
     docs = {}
@@ -99,6 +106,13 @@ def validate(row, docs):
         require(count == 1, f"{key}: single document required")
     if category == "C":
         require(count >= 2, f"{key}: different documents required")
+        require(nonempty(row["bridge_concept"]), f"{key}: missing bridge concept")
+        require(row["cross_doc_type"] in {"shared_entity", "shared_concept", "comparative_multi_document"},
+                f"{key}: cross-document type")
+        require(type(row["reference_set_non_exhaustive"]) is bool, f"{key}: reference set flag")
+        evidence_ids = [e["evidence_id"] for e in row["evidence"]]
+        require(all(nonempty(e) for e in evidence_ids) and len(set(evidence_ids)) == len(evidence_ids),
+                f"{key}: missing or duplicate evidence IDs")
 
 
 def main():
@@ -106,6 +120,8 @@ def main():
     benchmark = HERE / "questions_draft.jsonl"
     ids, cited = set(), set()
     spans = reviewed = 0
+    c_documents = set()
+    c_ranges = defaultdict(list)
     for row in jsonl(benchmark):
         validate(row, docs)
         key = row["question_id"]
@@ -114,24 +130,37 @@ def main():
         cited.update(row["document_contributions"])
         spans += len(row["evidence"])
         reviewed += row["review_status"] == "HUMAN_REVIEWED"
-    expected_ids = {
+        if row["category"] == "C":
+            c_documents.update(row["document_contributions"])
+            for e in row["evidence"]:
+                c_ranges[e["document_id"], e["start"], e["end"]].append(f"{key}/{e['evidence_id']}")
+    expected_ids = [
         f"3A52-{category}{number:02d}"
         for category, count in CATEGORY_COUNTS.items()
         for number in range(1, count + 1)
-    }
-    require(ids == expected_ids, "Benchmark question IDs differ from the original 30 IDs")
+    ]
+    require(ids == set(expected_ids), "Benchmark question IDs differ from the original 30 IDs")
     expected_reviewed = sum(CATEGORY_COUNTS[category] for category in REVIEWED_CATEGORIES)
     require(reviewed == expected_reviewed, "Unexpected number of human-reviewed questions")
-    require(cited == docs.keys(), "Benchmark must cite all locked documents")
     lines = benchmark.read_bytes().splitlines(keepends=True)
-    a_digest = hashlib.sha256(b"".join(lines[:CATEGORY_COUNTS["A"]])).hexdigest()
-    require(a_digest == BLOCK_A_SHA256, "Approved A JSONL rows changed")
-    draft_digest = hashlib.sha256(b"".join(lines[expected_reviewed:])).hexdigest()
-    require(draft_digest == UNREVIEWED_BLOCKS_SHA256, "Original C-D JSONL rows changed")
+    require([json.loads(line)["question_id"] for line in lines] == expected_ids, "Unexpected row order")
+    offset = 0
+    for category, count in CATEGORY_COUNTS.items():
+        if category in BLOCK_SHA256:
+            digest = hashlib.sha256(b"".join(lines[offset:offset + count])).hexdigest()
+            require(digest == BLOCK_SHA256[category], f"Block {category} JSONL rows changed")
+        offset += count
+    c_spans = sum(len(uses) for uses in c_ranges.values())
+    require((len(c_documents), c_spans, len(c_ranges)) == (17, 44, 39), "Unexpected C evidence totals")
     print(f"PASS (structure and exact source text): {len(ids)} questions, "
-          f"{reviewed} human-reviewed (A-B), {len(ids) - reviewed} unchanged draft (C-D), "
-          f"{CATEGORY_COUNTS['A']} unchanged approved (A), "
-          f"{spans} evidence occurrences, {len(cited)}/{len(docs)} locked documents cited.")
+          f"{reviewed} human-reviewed (A-C), {len(ids) - reviewed} drafts (D), "
+          f"A/B/D byte-identical, {spans} evidence occurrences.")
+    print(f"Frozen corpus integrity: {len(docs)} documents and document_lock.json verified.")
+    print(f"Gold coverage: {len(cited)}/{len(docs)}; uncited: {', '.join(sorted(docs.keys() - cited))}.")
+    print(f"Block C: {len(c_documents)} documents, {c_spans} evidence occurrences, {len(c_ranges)} unique ranges.")
+    for (document_id, start, end), uses in sorted(c_ranges.items()):
+        if len(uses) > 1:
+            print(f"  {document_id} [{start},{end}): {', '.join(uses)}")
 
 
 if __name__ == "__main__":
