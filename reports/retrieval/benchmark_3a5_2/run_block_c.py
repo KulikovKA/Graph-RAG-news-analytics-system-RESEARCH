@@ -127,7 +127,7 @@ def run_question(row, analyzer, linker, retriever, extractor, rerank_paths, limi
         accepted = {(s["mention_id"], s["node_key"]) for s in link["seeds"]}
         link["cutoff_excluded"] = [c for c in link["candidates"]
                                    if (c["mention_id"], c["node_key"]) not in accepted]
-        retrieval = timed("graph_retrieval", retriever.retrieve, seeds)
+        retrieval = timed("graph_retrieval", retriever.retrieve, seeds, limits)
         result["traversal"] = {k: v for k, v in retrieval.items() if k != "paths"}
         evidence = timed("evidence_extraction", extractor.extract, retrieval)
         ranking = timed("reranking", rerank_paths, question, retrieval, evidence, seeds)
@@ -170,7 +170,7 @@ def main():
         from cgraph.evidence_extraction import EvidenceExtractor
         from cgraph.path_reranking import DEFAULT_RERANKING_POLICY, rerank_paths
 
-        limits = TraversalLimits()
+        limits = TraversalLimits(max_candidates=200)
         analyzer = QueryAnalyzer()
         source = documents()
         cache = load_entity_cache()

@@ -286,3 +286,39 @@ def test_truncation_can_hide_a_valid_longer_path(limit_name):
     limited = retriever.retrieve([seed(a)], {limit_name: 1})
     assert all(c[0]["key"] not in p["node_keys"] for p in limited["paths"])
     assert limited["truncated"] and limit_name in limited["diagnostics"]["limits_hit"]
+
+
+def test_seed_fair_shares_candidate_budget_and_is_order_invariant():
+    a, b, c, late, other = (node(key) for key in ("a", "b", "c", "late", "other"))
+    driver = FakeDriver([a, b, c, late, other], [
+        edge(a, b, "RELEX_REL", "r1"), edge(a, c, "RELEX_REL", "r2"),
+        edge(late, other, "RELEX_REL", "r3"),
+    ])
+    retriever = GraphRetriever(driver)
+    limits = TraversalLimits(max_candidates=2)
+    current = retriever.retrieve([seed(a), seed(late)], limits)
+    fair = retriever.retrieve([seed(a), seed(late)], limits, seed_fair=True)
+    reversed_fair = retriever.retrieve([seed(late), seed(a)], limits, seed_fair=True)
+    assert [p["seed_key"] for p in current["paths"]] == [seed(a)["node_key"]] * 2
+    assert [p["seed_key"] for p in fair["paths"]] == [seed(a)["node_key"], seed(late)["node_key"]]
+    assert fair == reversed_fair
+    assert "max_candidates" in fair["diagnostics"]["limits_hit"]
+
+
+def test_seed_fair_rotates_past_incomplete_concept_expansion():
+    a, x = node("a"), node("x", concept=True)
+    late, other = node("late"), node("other")
+    driver = FakeDriver([a, x, late, other], [
+        edge(a, x, "HAS_SHARED_CONCEPT", "m1"),
+        edge(other, x, "HAS_SHARED_CONCEPT", "m2"),
+        edge(late, other, "RELEX_REL", "r1"),
+    ])
+    result = GraphRetriever(driver).retrieve(
+        [seed(a), seed(late)], TraversalLimits(max_relationships=2), seed_fair=True)
+    assert [p["seed_key"] for p in result["paths"]] == [seed(late)["node_key"]]
+    assert result["diagnostics"]["relationships_examined"] == 2
+
+
+def test_production_candidate_budget_preserves_explicit_baseline():
+    assert TraversalLimits().max_candidates == 100
+    assert TraversalLimits(max_candidates=200).max_candidates == 200
