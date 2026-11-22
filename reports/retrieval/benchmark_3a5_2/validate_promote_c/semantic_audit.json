@@ -1,0 +1,1250 @@
+{
+  "validation_results_sha256": "500591588730e885f6539a7c0dd6ab468a4fd9a63d4b53b8fcee8de2d68cbba9",
+  "rubric": {
+    "DIRECT_COMPONENT": "The edge and exact source express a needed component.",
+    "PARTIAL_CONTEXT": "Topically pertinent, but the requested claim is incomplete.",
+    "OFF_TOPIC": "Does not address the question's requested relation or named study.",
+    "UNSUPPORTED_RELATION": "The source does not support the edge's wording, direction, attribution or polarity."
+  },
+  "scope": "One manual review of distinct changed factual edges per question in both modes. Reused edges preserve the same assertion and source. No whole-answer semantic coverage score.",
+  "groups": {
+    "holdout": {
+      "questions": [
+        {
+          "question_id": "3A52-C01",
+          "A_only": [],
+          "C_only": [],
+          "A_only_path_ids": [],
+          "C_only_path_ids": [],
+          "reviewed_irrelevant_factual_documents": {
+            "A": [
+              {
+                "document_id": "W3123056951",
+                "title": "Modified recombinant human erythropoietin with potentially reduced immunogenicity"
+              },
+              {
+                "document_id": "W4389076493",
+                "title": "An Adaptive Region Proposal Network With Progressive Attention Propagation for Tiny Person Detection From UAV Images"
+              }
+            ],
+            "C": [
+              {
+                "document_id": "W3123056951",
+                "title": "Modified recombinant human erythropoietin with potentially reduced immunogenicity"
+              },
+              {
+                "document_id": "W4389076493",
+                "title": "An Adaptive Region Proposal Network With Progressive Attention Propagation for Tiny Person Detection From UAV Images"
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "3A52-C02",
+          "A_only": [],
+          "C_only": [],
+          "A_only_path_ids": [],
+          "C_only_path_ids": [],
+          "reviewed_irrelevant_factual_documents": {
+            "A": [
+              {
+                "document_id": "W4234628002",
+                "title": "Sistem Informasi Terintegrasi Evaluasi Kegiatan Mengajar Dosen Sebagai Implementasi Sistem Penjaminan Mutu Internal"
+              }
+            ],
+            "C": [
+              {
+                "document_id": "W4234628002",
+                "title": "Sistem Informasi Terintegrasi Evaluasi Kegiatan Mengajar Dosen Sebagai Implementasi Sistem Penjaminan Mutu Internal"
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "3A52-C03",
+          "A_only": [
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:14bdacfd13caedc979ea063e9ecb4342091e48c77f041ab131dfa640e9b189d6",
+              "document_id": "W2084709926",
+              "source_triple_ids": [
+                "t:60c07aa34fa3fef96f285687d251ba7469781d5cbeafbe9b8470e20a897e4bf5"
+              ],
+              "predicate_and_endpoints": [
+                "gas puffer",
+                "LOCATED_IN",
+                "lower inboard divertor"
+              ],
+              "judgment": "OFF_TOPIC",
+              "reason": "The gas puffer location does not explain how the NSTX image is captured."
+            }
+          ],
+          "C_only": [
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:66d2cb7e96b25e7edb908cd1faea116dbd26486efd381322a45f0ffb9d7a2b27",
+              "document_id": "W3138328568",
+              "source_triple_ids": [
+                "t:c8be6b698067ec392b4a0a7ce5ccf9541355fcf15141ef824865afae6c5a4393"
+              ],
+              "predicate_and_endpoints": [
+                "study",
+                "USES",
+                "tolerance engineering"
+              ],
+              "judgment": "OFF_TOPIC",
+              "reason": "Tolerance engineering in yeast does not describe either imaging instrument."
+            }
+          ],
+          "A_only_path_ids": [
+            "path:7071f14eabae8e37d52dc03d6647bd97c93e92f0a8ff070cff7575d4d6a51074"
+          ],
+          "C_only_path_ids": [
+            "path:11759b3aed0ce46b3d85f13d81aa18a03b51e48a2897983bd55dc2c6804f2e53"
+          ],
+          "reviewed_irrelevant_factual_documents": {
+            "A": [],
+            "C": [
+              {
+                "document_id": "W3138328568",
+                "title": "Simultaneous Improvement of Limonene Production and Tolerance in Yarrowia lipolytica through Tolerance Engineering and Evolutionary Engineering"
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "3A52-C04",
+          "A_only": [],
+          "C_only": [],
+          "A_only_path_ids": [],
+          "C_only_path_ids": [],
+          "reviewed_irrelevant_factual_documents": {
+            "A": [],
+            "C": []
+          }
+        },
+        {
+          "question_id": "3A52-C05",
+          "A_only": [],
+          "C_only": [],
+          "A_only_path_ids": [],
+          "C_only_path_ids": [],
+          "reviewed_irrelevant_factual_documents": {
+            "A": [],
+            "C": []
+          }
+        },
+        {
+          "question_id": "3A52-C06",
+          "A_only": [
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:3e3f74fb97d6b4968d1a2f2821121bad387df780e9b0a599744e59c94979b3eb",
+              "document_id": "W1979727947",
+              "source_triple_ids": [
+                "t:bbae38688937c3032edcb6e9b49ced7c6001588c4b9b973de16cb48d76d589b4"
+              ],
+              "predicate_and_endpoints": [
+                "Mammographic density",
+                "ASSOCIATED_WITH",
+                "breast cancer risk"
+              ],
+              "judgment": "PARTIAL_CONTEXT",
+              "reason": "Connects mammographic density with cancer risk but does not express the reader dependence or automated method."
+            },
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:fe160395610c2aba84deba1fa83c048914209de9e74e47f7b73db97c7cd9895c",
+              "document_id": "W1979727947",
+              "source_triple_ids": [
+                "t:5f0dc293cc88cc18f812c9c3fa308c5250553115f6aaf46e6a0c68774091b081"
+              ],
+              "predicate_and_endpoints": [
+                "Mammographic density",
+                "DEPENDS_ON",
+                "reader"
+              ],
+              "judgment": "DIRECT_COMPONENT",
+              "reason": "Identifies reader dependence of mammographic density, the requested property of the measurement.",
+              "audited_excerpt": {
+                "start": 14,
+                "end": 152,
+                "quote": "Mammographic density (MD) is a strong, independent risk factor for breast cancer, but measuring MD is time consuming and reader dependent.",
+                "revision_id": "sha256:e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505"
+              }
+            }
+          ],
+          "C_only": [
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:805cc674fcfc5df192e78da2744b64c74e588d135ca9aa9588968015cb202d4e",
+              "document_id": "W3123056951",
+              "source_triple_ids": [
+                "t:f3007d7385cc5e7a5058fabe9459852128918300f4fb41718e57d93cce72f572"
+              ],
+              "predicate_and_endpoints": [
+                "Recombinant human erythropoietin",
+                "ASSOCIATED_WITH",
+                "cancer"
+              ],
+              "judgment": "OFF_TOPIC",
+              "reason": "The drug indication does not identify the PNM evaluators or the measurement to automate."
+            },
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:f998567e2ba8cc7054de81c039083527a29ac563670d9cc0aed2207c3acdf9ae",
+              "document_id": "W2078771716",
+              "source_triple_ids": [
+                "t:280e7b00a3aa9afd8ece095994dbdf089867b225c6b6757cdc28b2cc4d768145"
+              ],
+              "predicate_and_endpoints": [
+                "ERM",
+                "CAUSES",
+                "convergence"
+              ],
+              "judgment": "OFF_TOPIC",
+              "reason": "Economic convergence cannot answer either half of this question. The causal wording is also stronger than the source."
+            }
+          ],
+          "A_only_path_ids": [
+            "path:6cd268f9abf8a9b36448af9fe7b214a3e92303ada1996b747e3098d5650a5d97",
+            "path:7c8e8e0d4c3178d3beadec926a62cc1b5f9ef256fa089022734e429b5e596e7c"
+          ],
+          "C_only_path_ids": [
+            "path:0a9d7c930839f3e35d44046e59945447e845004c4f0253df2bdca192da8d905d",
+            "path:72f2f5ac681c55256e38709c6d6a4d3482d920f439ddf2d5baeeb71fc82b7834"
+          ],
+          "reviewed_irrelevant_factual_documents": {
+            "A": [],
+            "C": [
+              {
+                "document_id": "W2078771716",
+                "title": "Measuring Economic Convergence"
+              },
+              {
+                "document_id": "W3123056951",
+                "title": "Modified recombinant human erythropoietin with potentially reduced immunogenicity"
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "3A52-C07",
+          "A_only": [],
+          "C_only": [],
+          "A_only_path_ids": [],
+          "C_only_path_ids": [],
+          "reviewed_irrelevant_factual_documents": {
+            "A": [],
+            "C": []
+          }
+        },
+        {
+          "question_id": "3A52-C08",
+          "A_only": [
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:4f603879d1fbb98f95b2cfc0290e393335cb4a9266bed9b49d2c574d073c848e",
+              "document_id": "W2076293586",
+              "source_triple_ids": [
+                "t:1b1e9b9a7a0124b557189616635f63ce360cdeeaff2ffe95b748421969e8564a"
+              ],
+              "predicate_and_endpoints": [
+                "copy number variants",
+                "CHANGES",
+                "copy numbers"
+              ],
+              "judgment": "UNSUPPORTED_RELATION",
+              "reason": "The source describes copy-number variation and compares expression. It does not establish that variants cause a change in copy numbers."
+            },
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:a86e47ab2bf027aa2d8a505260adccd7895188e5c8a2772c3cbea5fb0f767eda",
+              "document_id": "W2076293586",
+              "source_triple_ids": [
+                "t:e98761a56d2acaf09f111a9707158d6284c0bced73aea25813f180f89463cc44"
+              ],
+              "predicate_and_endpoints": [
+                "CNVs",
+                "CHANGES",
+                "copy numbers"
+              ],
+              "judgment": "UNSUPPORTED_RELATION",
+              "reason": "The source compares expression with copy-number differences. The causal-sounding CHANGES relation expresses no method or finding."
+            }
+          ],
+          "C_only": [
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:606c0840cc06313e08b1dfd5b58aeecaeac169644ba7cefdfce8906d1fe2e88d",
+              "document_id": "W3138328568",
+              "source_triple_ids": [
+                "t:ae5ae377c503cd98d849a78dedf8a4dd7fa3ddfdc8f432d8e364cdd07723bb00"
+              ],
+              "predicate_and_endpoints": [
+                "genes",
+                "DERIVED_FROM",
+                "nonconventional yeast Yarrowia lipolytica"
+              ],
+              "judgment": "OFF_TOPIC",
+              "reason": "Yeast gene provenance does not answer either nominated study."
+            },
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:985c369535a661365a0932805252577e97afe3933994d7ac2e00792f1d27837f",
+              "document_id": "W2039836112",
+              "source_triple_ids": [
+                "t:c8ff1e7848107b0eb9d55559d80d26dbcb2530c5d7b5f8891f3783c610713a95"
+              ],
+              "predicate_and_endpoints": [
+                "knockdown",
+                "APPLIED_TO",
+                "astrocytes"
+              ],
+              "judgment": "PARTIAL_CONTEXT",
+              "reason": "Captures use of knockdown on astrocytes, but omits Px1, siRNA, the pharmacological test and Cx43 knockout.",
+              "audited_excerpt": {
+                "start": 629,
+                "end": 757,
+                "quote": "HC types were differentiated pharmacologically and by Px1 knockdown with siRNA and by use of astrocytes from Cx43 knockout mice.",
+                "revision_id": "sha256:9b07bbf92eed6b7b5c36f4357836c6736cb8e3a85b0828367913e4f1f32319f1"
+              }
+            }
+          ],
+          "A_only_path_ids": [
+            "path:ad50f2eb48ea10de9e1a2983fd21005545533b62d5657e833cd2fb04066d2ddf",
+            "path:b819596d06fac284b4281bd0658c5d62ffcef5fb262f6aadc697fe77dc5640de"
+          ],
+          "C_only_path_ids": [
+            "path:2e7f02db19626f13bdf503bd65910f2704e20b2ff6f5d8efeaa0e98e1d4fa3e9",
+            "path:b8dbb8b070b9c231128b22d3375664525efd2e57f76bfdcb6878e83fad384c86"
+          ],
+          "reviewed_irrelevant_factual_documents": {
+            "A": [],
+            "C": [
+              {
+                "document_id": "W3138328568",
+                "title": "Simultaneous Improvement of Limonene Production and Tolerance in Yarrowia lipolytica through Tolerance Engineering and Evolutionary Engineering"
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "3A52-C09",
+          "A_only": [
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:0a136073f9e70d858dc30c6fa768634eae69d058802be85bd072701c62cdf52b",
+              "document_id": "W2906067930",
+              "source_triple_ids": [
+                "t:a49e6fb6bd012136b68b71aed05f606a30057ae0408dc7e43f1f7e81874f2a3e"
+              ],
+              "predicate_and_endpoints": [
+                "grain",
+                "HAS_PART",
+                "grain production"
+              ],
+              "judgment": "UNSUPPORTED_RELATION",
+              "reason": "The paper compares output and income. It does not present grain production as a physical part of grain."
+            }
+          ],
+          "C_only": [
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:64b4d83d89bdb02c7c07161d305dc75659349e8d8608d4ab012a395141fa4230",
+              "document_id": "W2317432785",
+              "source_triple_ids": [
+                "t:829e27c6ec5b774a461f65ec138b3213df920e78da5e807b7f69b4cfaa8292b0"
+              ],
+              "predicate_and_endpoints": [
+                "grain formation",
+                "DERIVED_FROM",
+                "macroscopic data"
+              ],
+              "judgment": "OFF_TOPIC",
+              "reason": "Metallurgical grain formation does not discuss agricultural income or layoffs."
+            }
+          ],
+          "A_only_path_ids": [
+            "path:ea8935c714925f3ce0c4383314c7bf57863f8d5fd058da7e14794bf71bed4cbe"
+          ],
+          "C_only_path_ids": [
+            "path:234c2d3998145931439bd54169882218396c29b44bc6c1191fd1f4a47e7da147"
+          ],
+          "reviewed_irrelevant_factual_documents": {
+            "A": [],
+            "C": [
+              {
+                "document_id": "W2317432785",
+                "title": "Structural and Magnetic Studies of [Co0.45Fe0.45Zr0.1/a-Si]N Multilayers"
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "3A52-C10",
+          "A_only": [
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:f85c9942ec1c562877be97a1cd43f5f3241c086f54c26531434277b902ccbbff",
+              "document_id": "W4381572413",
+              "source_triple_ids": [
+                "t:19d768eda440bf502b1b0b5812f967edbff63f6a8be93f4850ee603aa07c4c8e"
+              ],
+              "predicate_and_endpoints": [
+                "empathic interviewer",
+                "PERFORMS",
+                "Oral history"
+              ],
+              "judgment": "PARTIAL_CONTEXT",
+              "reason": "Captures interviewer involvement but neither the interviewee nor shared authorship.",
+              "audited_excerpt": {
+                "start": 169,
+                "end": 301,
+                "quote": "Oral interviews are stories “from below”, where the authorship is shared between the interviewed people and an empathic interviewer.",
+                "revision_id": "sha256:8c231ed4d765453627674ff77b2912ad48e256fb7a99ee645374b28f220dcb9a"
+              }
+            }
+          ],
+          "C_only": [
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:5bb6019efa012187ed16be279b2ae59fd116336586250131dff6b41081c49197",
+              "document_id": "W7215137876",
+              "source_triple_ids": [
+                "t:b243106a6044ae994d04d98579093cf9a169f72a61f8afc887ef1b8a489f1be4"
+              ],
+              "predicate_and_endpoints": [
+                "author",
+                "PERFORMS",
+                "listening"
+              ],
+              "judgment": "UNSUPPORTED_RELATION",
+              "reason": "Listening is a synodal practice discussed by the author. The abstract does not say the author performs it.",
+              "audited_excerpt": {
+                "start": 611,
+                "end": 789,
+                "quote": "It examines similarities between the IFS way of dealing with the inner world of the person and Synodal practices like listening, collaboration, and leadership in the outer world.",
+                "revision_id": "sha256:7348a443574c79025e8d91562a546eaddbb34a1731bcfe890d09037c05581a14"
+              }
+            }
+          ],
+          "A_only_path_ids": [
+            "path:ec7bc34b5e5ce53bd0b0ae210d73e2d7a766bd8b8e3965233788ed29a5e7d563"
+          ],
+          "C_only_path_ids": [
+            "path:7809de4c12eb7982a73796699207b9fb5c4d0d70930a9381e46b8bfce5acf28f"
+          ],
+          "reviewed_irrelevant_factual_documents": {
+            "A": [],
+            "C": []
+          }
+        }
+      ],
+      "A_only": {
+        "OFF_TOPIC": 1,
+        "PARTIAL_CONTEXT": 2,
+        "DIRECT_COMPONENT": 1,
+        "UNSUPPORTED_RELATION": 3
+      },
+      "C_only": {
+        "OFF_TOPIC": 5,
+        "PARTIAL_CONTEXT": 1,
+        "UNSUPPORTED_RELATION": 1
+      },
+      "irrelevant_factual_documents": {
+        "A": 3,
+        "C": 8
+      }
+    },
+    "controls": {
+      "questions": [
+        {
+          "question_id": "3A52-A01",
+          "A_only": [],
+          "C_only": [],
+          "A_only_path_ids": [],
+          "C_only_path_ids": [],
+          "reviewed_irrelevant_factual_documents": {
+            "A": [],
+            "C": []
+          }
+        },
+        {
+          "question_id": "3A52-A02",
+          "A_only": [],
+          "C_only": [],
+          "A_only_path_ids": [],
+          "C_only_path_ids": [],
+          "reviewed_irrelevant_factual_documents": {
+            "A": [],
+            "C": []
+          }
+        },
+        {
+          "question_id": "3A52-A03",
+          "A_only": [],
+          "C_only": [],
+          "A_only_path_ids": [],
+          "C_only_path_ids": [],
+          "reviewed_irrelevant_factual_documents": {
+            "A": [],
+            "C": []
+          }
+        },
+        {
+          "question_id": "3A52-A04",
+          "A_only": [],
+          "C_only": [],
+          "A_only_path_ids": [],
+          "C_only_path_ids": [],
+          "reviewed_irrelevant_factual_documents": {
+            "A": [],
+            "C": []
+          }
+        },
+        {
+          "question_id": "3A52-A05",
+          "A_only": [],
+          "C_only": [],
+          "A_only_path_ids": [],
+          "C_only_path_ids": [],
+          "reviewed_irrelevant_factual_documents": {
+            "A": [],
+            "C": []
+          }
+        },
+        {
+          "question_id": "3A52-A06",
+          "A_only": [],
+          "C_only": [],
+          "A_only_path_ids": [],
+          "C_only_path_ids": [],
+          "reviewed_irrelevant_factual_documents": {
+            "A": [],
+            "C": []
+          }
+        },
+        {
+          "question_id": "3A52-A07",
+          "A_only": [],
+          "C_only": [],
+          "A_only_path_ids": [],
+          "C_only_path_ids": [],
+          "reviewed_irrelevant_factual_documents": {
+            "A": [],
+            "C": []
+          }
+        },
+        {
+          "question_id": "3A52-A08",
+          "A_only": [],
+          "C_only": [],
+          "A_only_path_ids": [],
+          "C_only_path_ids": [],
+          "reviewed_irrelevant_factual_documents": {
+            "A": [],
+            "C": []
+          }
+        },
+        {
+          "question_id": "3A52-B01",
+          "A_only": [
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:5ee4a3f50251138ae298544a3470bb2a4b31febc0f5a568098420483214fada9",
+              "document_id": "W4389076493",
+              "source_triple_ids": [
+                "t:afc97fba485b690184ee89cc5110bbd7ffa4515750fd92644439225ee43ea101"
+              ],
+              "predicate_and_endpoints": [
+                "adaptive region proposal network",
+                "DEPENDS_ON",
+                "feature representations"
+              ],
+              "judgment": "PARTIAL_CONTEXT",
+              "reason": "Feature representations supply detector context, separate from adapting the proposal count."
+            },
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:6ff8da7bea4b85505aecffb399a18057fb7c734b9c465107053610a1bc164367",
+              "document_id": "W4389076493",
+              "source_triple_ids": [
+                "t:d5c0cade752770f544075bcbd7cfa6d908c0bd6cd036c63b75d16218b4ce4919"
+              ],
+              "predicate_and_endpoints": [
+                "adaptive region proposal network",
+                "HAS_PART",
+                "top-to-bottom back attention modules"
+              ],
+              "judgment": "PARTIAL_CONTEXT",
+              "reason": "The attention modules concern the detector, but the edge does not describe the mini-density map or adaptive count."
+            }
+          ],
+          "C_only": [
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:684dae1a456ee636f8aa0d2fff520d239b771a0f5f721b8d8281eb9a6651de41",
+              "document_id": "W1979727947",
+              "source_triple_ids": [
+                "t:0d8b8282729d89918bd025c9cc28726c053869a77755b79641f7b6e3419ea7bd"
+              ],
+              "predicate_and_endpoints": [
+                "automated measure",
+                "DERIVED_FROM",
+                "mammographic images"
+              ],
+              "judgment": "OFF_TOPIC",
+              "reason": "The mammography measure is unrelated to proposal counts in drone imagery."
+            },
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:71738993ad4fe85165561ddd8374bb62c127d347e7fa45ab388a21ba23b2b511",
+              "document_id": "W2991563224",
+              "source_triple_ids": [
+                "t:71777482e4990649182dc25548ec06e366aa61f8409109898e17fa814342684b"
+              ],
+              "predicate_and_endpoints": [
+                "proposed approach",
+                "MEASURES",
+                "number of packets transferred"
+              ],
+              "judgment": "OFF_TOPIC",
+              "reason": "Packet transfer in wireless networks is unrelated to object detection."
+            }
+          ],
+          "A_only_path_ids": [
+            "path:1517357bb67b6e918a82df03cdb0e0982e433c790fcfe2a6f9a49e95ef7bd67f",
+            "path:183c4464561ee54edf03694041fb076a2517e832059dab35defea8e4999ca80c"
+          ],
+          "C_only_path_ids": [
+            "path:0f26ceb20f510e6f6a38fb63181a5daa309abef80e40d01506350cdff4645b41",
+            "path:327d00423bcd48b3a358a5636963e86461bb545b6fa3fed2c4237d3742d375cf"
+          ],
+          "reviewed_irrelevant_factual_documents": {
+            "A": [],
+            "C": [
+              {
+                "document_id": "W1979727947",
+                "title": "High-throughput mammographic-density measurement: a tool for risk prediction of breast cancer"
+              },
+              {
+                "document_id": "W2991563224",
+                "title": "Energy efficiency of organized cluster election method in wireless sensor networks"
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "3A52-B02",
+          "A_only": [],
+          "C_only": [],
+          "A_only_path_ids": [],
+          "C_only_path_ids": [],
+          "reviewed_irrelevant_factual_documents": {
+            "A": [],
+            "C": []
+          }
+        },
+        {
+          "question_id": "3A52-B03",
+          "A_only": [
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:132c99d3a1e8b8ab75ace3d40834cc545395312e69418928ff1c866218dfeb15",
+              "document_id": "W1979727947",
+              "source_triple_ids": [
+                "t:63baa12dca675d45373f20cc960b8649ac86f4900a658e3f9f564839c28eb55d"
+              ],
+              "predicate_and_endpoints": [
+                "logistic regression models",
+                "APPLIED_TO",
+                "breast cancer risk"
+              ],
+              "judgment": "PARTIAL_CONTEXT",
+              "reason": "The risk-regression evaluation is pertinent to how the measurement was assessed but does not report throughput or r=0.884."
+            }
+          ],
+          "C_only": [
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:13e8331fb20b1ed3ce991b6be9e4cde0f20d92c2e00ce868a4455a510d7e492d",
+              "document_id": "W1979727947",
+              "source_triple_ids": [
+                "t:70b88d3bd9ba4d3b4755a2fedebdeb1f85f232a62d43817ae488c68677f8153d",
+                "t:d54f962f788601d7c897a65b750baff2bafa0954547c5fa6c444fff564290411"
+              ],
+              "predicate_and_endpoints": [
+                "Mammographic density",
+                "ASSOCIATED_WITH",
+                "breast cancer"
+              ],
+              "judgment": "PARTIAL_CONTEXT",
+              "reason": "States the density?cancer association, one rationale for measurement. It omits independence, throughput and validation against Cumulus.",
+              "audited_excerpt": {
+                "start": 14,
+                "end": 152,
+                "quote": "Mammographic density (MD) is a strong, independent risk factor for breast cancer, but measuring MD is time consuming and reader dependent.",
+                "revision_id": "sha256:e884e0e10d07e2f4d99fb3a768c3d6513389a47d10dfea36b2b61938ddb00505"
+              }
+            },
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:805cc674fcfc5df192e78da2744b64c74e588d135ca9aa9588968015cb202d4e",
+              "document_id": "W3123056951",
+              "source_triple_ids": [
+                "t:f3007d7385cc5e7a5058fabe9459852128918300f4fb41718e57d93cce72f572"
+              ],
+              "predicate_and_endpoints": [
+                "Recombinant human erythropoietin",
+                "ASSOCIATED_WITH",
+                "cancer"
+              ],
+              "judgment": "OFF_TOPIC",
+              "reason": "The study of erythropoietin does not address automated mammographic measurements."
+            }
+          ],
+          "A_only_path_ids": [
+            "path:628e757e00ed8c8a63d2abdc1bb94141b4b8bb9c628fe05a7642910f5db3b611"
+          ],
+          "C_only_path_ids": [
+            "path:1232aae9ab2f13815ff0fade921b553248ae501466044651d5758b60a0e399c8"
+          ],
+          "reviewed_irrelevant_factual_documents": {
+            "A": [],
+            "C": [
+              {
+                "document_id": "W3123056951",
+                "title": "Modified recombinant human erythropoietin with potentially reduced immunogenicity"
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "3A52-B04",
+          "A_only": [],
+          "C_only": [],
+          "A_only_path_ids": [],
+          "C_only_path_ids": [],
+          "reviewed_irrelevant_factual_documents": {
+            "A": [],
+            "C": []
+          }
+        },
+        {
+          "question_id": "3A52-B05",
+          "A_only": [],
+          "C_only": [],
+          "A_only_path_ids": [],
+          "C_only_path_ids": [],
+          "reviewed_irrelevant_factual_documents": {
+            "A": [],
+            "C": []
+          }
+        },
+        {
+          "question_id": "3A52-B06",
+          "A_only": [
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:2008e8a58e89ef0b3dad480fb21746df55853453019d3b56fbd2049bbcd00870",
+              "document_id": "W7215137876",
+              "source_triple_ids": [
+                "t:4127ba8042659cdea57fea64362778b0e7060e3e56b7f29f3f5853901651a4eb"
+              ],
+              "predicate_and_endpoints": [
+                "IFS",
+                "APPLIED_TO",
+                "person"
+              ],
+              "judgment": "PARTIAL_CONTEXT",
+              "reason": "Generic application to the person is on topic but omits the proposed healing of attachment wounds and its social implications."
+            }
+          ],
+          "C_only": [
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:5dd8cbbfac4b6caaf64430c87db4ea81d0eb46a6c18567efa6129581975e295e",
+              "document_id": "W4309030044",
+              "source_triple_ids": [
+                "t:3bf93f642bb49335fb4da7fdfdf55129f8fbb06c591013d099610a740b6dd40d"
+              ],
+              "predicate_and_endpoints": [
+                "different carriers",
+                "HAS_ATTRIBUTE",
+                "disadvantages"
+              ],
+              "judgment": "OFF_TOPIC",
+              "reason": "Disadvantages of transport carriers do not answer how IFS can support a synodal mindset."
+            }
+          ],
+          "A_only_path_ids": [
+            "path:4b53747fd6039392ed5ad5234ff61bf19ef3a95753099191826b651e4d47fc54"
+          ],
+          "C_only_path_ids": [
+            "path:f87e906eeb8b3f3283850c22ffc80591f7e0783a76382009483a7776e8371670"
+          ],
+          "reviewed_irrelevant_factual_documents": {
+            "A": [],
+            "C": [
+              {
+                "document_id": "W4309030044",
+                "title": "Market competition oriented air-rail ticket fare optimization"
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "3A52-B07",
+          "A_only": [],
+          "C_only": [],
+          "A_only_path_ids": [],
+          "C_only_path_ids": [],
+          "reviewed_irrelevant_factual_documents": {
+            "A": [],
+            "C": []
+          }
+        }
+      ],
+      "A_only": {
+        "PARTIAL_CONTEXT": 4
+      },
+      "C_only": {
+        "OFF_TOPIC": 4,
+        "PARTIAL_CONTEXT": 1
+      },
+      "irrelevant_factual_documents": {
+        "A": 0,
+        "C": 4
+      }
+    },
+    "approved_replay": {
+      "questions": [
+        {
+          "question_id": "3A52-C01",
+          "A_only": [
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:6bc9f298194e668d817bbf558c70c2fa38cfc4cf6e599b001855313d1d846164",
+              "document_id": "W3123056951",
+              "source_triple_ids": [
+                "t:5714167e2870d4a086e9a4fed1d75425fcb2b61d069039d0db27819390e96007"
+              ],
+              "predicate_and_endpoints": [
+                "Recombinant human erythropoietin",
+                "IS_A",
+                "biopharmaceutical drug"
+              ],
+              "judgment": "OFF_TOPIC",
+              "reason": "The drug class does not answer the immune mechanism question."
+            },
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:7434d0a397664db96b8fb79e5aa012e598c5c02440935d83522fcf2fac4a4878",
+              "document_id": "W3123056951",
+              "source_triple_ids": [
+                "t:f6f6957f61998146e52a33e8a00b6476afd27b547765e7fe5f980d0ad113f495"
+              ],
+              "predicate_and_endpoints": [
+                "engineered proteins",
+                "COMPARED_WITH",
+                "Recombinant human erythropoietin"
+              ],
+              "judgment": "OFF_TOPIC",
+              "reason": "Comparison with engineered proteins does not express T-cell recognition or the proposed immune response."
+            }
+          ],
+          "C_only": [
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:5ee7bd84ca54272072d04fb99ea91d2a52d59a00e28a4933797050f4efa64210",
+              "document_id": "W2791492120",
+              "source_triple_ids": [
+                "t:65e006b2d7aca87ce2c73d84ea7b90e64003174e93102fea0fd70050dd09a670"
+              ],
+              "predicate_and_endpoints": [
+                "lymphocytes",
+                "DERIVED_FROM",
+                "blood samples"
+              ],
+              "judgment": "OFF_TOPIC",
+              "reason": "A specimen source does not establish Breg suppression of T-cell activity."
+            },
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:f1b9682ffd4e194e2dd034c42fe1b6c3ad21a874a382fc68d68d3258807a3527",
+              "document_id": "W2039836112",
+              "source_triple_ids": [
+                "t:37b2b2d984c18692191df3f30ae6323a5607a1ed3282ef89c87fe4fb427c5271"
+              ],
+              "predicate_and_endpoints": [
+                "Fibroblast growth factor 1",
+                "CAUSES",
+                "inflammation"
+              ],
+              "judgment": "OFF_TOPIC",
+              "reason": "FGF-1 in astrocytes does not address either T-cell context."
+            }
+          ],
+          "A_only_path_ids": [
+            "path:c09c20d5b85608a8502e2738182a1da3e82e5802bd843c8bfa0d19c33dccccf4",
+            "path:de65df937e37b45f7554d1b91870d2bc602e26ebcad5711a38e093c4cd39bf9e"
+          ],
+          "C_only_path_ids": [
+            "path:471989f60c057e313c6a657c17da19c73ecf364d59872d4fe69623eb38ee38c8",
+            "path:02e3120d99c3450ec08200e70716c7e9785a85b9b3bad313f5c601724e148695"
+          ]
+        },
+        {
+          "question_id": "3A52-C02",
+          "A_only": [
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:6bc9f298194e668d817bbf558c70c2fa38cfc4cf6e599b001855313d1d846164",
+              "document_id": "W3123056951",
+              "source_triple_ids": [
+                "t:5714167e2870d4a086e9a4fed1d75425fcb2b61d069039d0db27819390e96007"
+              ],
+              "predicate_and_endpoints": [
+                "Recombinant human erythropoietin",
+                "IS_A",
+                "biopharmaceutical drug"
+              ],
+              "judgment": "PARTIAL_CONTEXT",
+              "reason": "Identifies the drug class but carries neither the kidney disease context nor the adverse outcome."
+            },
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:7434d0a397664db96b8fb79e5aa012e598c5c02440935d83522fcf2fac4a4878",
+              "document_id": "W3123056951",
+              "source_triple_ids": [
+                "t:f6f6957f61998146e52a33e8a00b6476afd27b547765e7fe5f980d0ad113f495"
+              ],
+              "predicate_and_endpoints": [
+                "engineered proteins",
+                "COMPARED_WITH",
+                "Recombinant human erythropoietin"
+              ],
+              "judgment": "OFF_TOPIC",
+              "reason": "The comparison with engineered proteins does not state either treatment risk."
+            }
+          ],
+          "C_only": [
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:4b2cc6b7aec1c964e26cbbf8ee6755336cc74fd4a921f60c67b1a47322ae6420",
+              "document_id": "W2761455282",
+              "source_triple_ids": [
+                "t:3deb0c96278b7902e9f3280ec814a14ffabd09209c74b88537f7289c9db82594"
+              ],
+              "predicate_and_endpoints": [
+                "improved clinical outcomes",
+                "APPLIED_TO",
+                "dialysis patients"
+              ],
+              "judgment": "OFF_TOPIC",
+              "reason": "An improved outcome does not state the requested treatment risks from the dialysis cohort."
+            },
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:8ae3b4a79e61e5985ed9c7aefcb4d575d8c04335907095124c6807b269d52b94",
+              "document_id": "W4391351014",
+              "source_triple_ids": [
+                "t:fc4046780de97c70a7f137f0f242fd505582f41462773ca6e2f613334fc59bec"
+              ],
+              "predicate_and_endpoints": [
+                "patients",
+                "CAUSES",
+                "RT-related malfunctions"
+              ],
+              "judgment": "UNSUPPORTED_RELATION",
+              "reason": "The pilot reports no severe RT-related malfunctions, and it examines a different treatment and cohort."
+            }
+          ],
+          "A_only_path_ids": [
+            "path:c09c20d5b85608a8502e2738182a1da3e82e5802bd843c8bfa0d19c33dccccf4",
+            "path:de65df937e37b45f7554d1b91870d2bc602e26ebcad5711a38e093c4cd39bf9e"
+          ],
+          "C_only_path_ids": [
+            "path:0648be3f7c41756aa7b21e0f3f7e5c78a4502f83f6bca14d7713caf5ceddc89a",
+            "path:027e4fd3270acff9b7cc6941fb9afe7472763e072f68a159ffc37a284ad2938c"
+          ]
+        },
+        {
+          "question_id": "3A52-C03",
+          "A_only": [],
+          "C_only": [],
+          "A_only_path_ids": [],
+          "C_only_path_ids": []
+        },
+        {
+          "question_id": "3A52-C04",
+          "A_only": [],
+          "C_only": [],
+          "A_only_path_ids": [],
+          "C_only_path_ids": []
+        },
+        {
+          "question_id": "3A52-C05",
+          "A_only": [],
+          "C_only": [],
+          "A_only_path_ids": [],
+          "C_only_path_ids": []
+        },
+        {
+          "question_id": "3A52-C06",
+          "A_only": [
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:035810dfeef422de94f5b0135689b6092f4eb018b075ad8a5e40669fc09e6de6",
+              "document_id": "W2761455282",
+              "source_triple_ids": [
+                "t:97535c35b927a4da2d53cfa0251e44de47171cc3d454eb6f6b36844a50e488d1"
+              ],
+              "predicate_and_endpoints": [
+                "medical complications",
+                "HAS_RESULT",
+                "improved clinical outcome"
+              ],
+              "judgment": "UNSUPPORTED_RELATION",
+              "reason": "The source reports complications and improved outcomes separately. The edge wrongly presents improvement as a result of complications."
+            },
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:6941ec8722b3717703129ee1208ed3324d711bdc626c30ac26c4e81098d1f6e3",
+              "document_id": "W2761455282",
+              "source_triple_ids": [
+                "t:3158a9b6dce8d380b24bf006ce1d1499721288c59727fa9dbfbe0a97e13161f0"
+              ],
+              "predicate_and_endpoints": [
+                "medical complications",
+                "HAS_RESULT",
+                "improved clinical outcomes"
+              ],
+              "judgment": "UNSUPPORTED_RELATION",
+              "reason": "The source reports complications and improved outcomes separately. The edge wrongly presents improvement as a result of complications."
+            }
+          ],
+          "C_only": [
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:4e6560c5dd4d91f13945af1692b16a1841af22a39c9fda19d8dcc2c87e0c0c41",
+              "document_id": "W3123056951",
+              "source_triple_ids": [
+                "t:7f6cbbec6fd7b4b7c7c64c0b0a9c637b906475d78e367c95d49e2568cc08a1f1"
+              ],
+              "predicate_and_endpoints": [
+                "patients",
+                "PRODUCES",
+                "anti-rHuEPO neutralizing antibodies"
+              ],
+              "judgment": "OFF_TOPIC",
+              "reason": "Antibodies against rHuEPO are a different treatment setting and do not answer the surgery comparison."
+            },
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:5d5b396b4c437d387f4cd810c04fb82cf2b8dcb61645b6561bedba2b82f667e2",
+              "document_id": "W3101922761",
+              "source_triple_ids": [
+                "t:b62d7fc00a9197438c2703c0342b5915a0c05abf3ea1e609c5ad2e40b3a99c6b"
+              ],
+              "predicate_and_endpoints": [
+                "Glaucoma outcome",
+                "DERIVED_FROM",
+                "medical records"
+              ],
+              "judgment": "PARTIAL_CONTEXT",
+              "reason": "Identifies where glaucoma outcome data came from but omits long-term control and corneal graft clarity."
+            }
+          ],
+          "A_only_path_ids": [
+            "path:2fd2ef4a1cd492c500fad66ed987b2600ca628c4d3f921f46a1f760e5d8c1d25",
+            "path:5ea83d2f167b7b9af9bdfa4fc2a4aadfd73f05277dfa7bf60708d3c3b61fa7ce"
+          ],
+          "C_only_path_ids": [
+            "path:bb332b209fe4b65b853cf59c5096c07f79b6ceb3d6bff08c9d4a16046e401be9",
+            "path:8828792cefd32ccc795add4932e1cf8cc16a030adcbe25aee9b7d34fd05559ec"
+          ]
+        },
+        {
+          "question_id": "3A52-C07",
+          "A_only": [
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:989b250578e7ca9d2882abdc24c55a2788b7debd9a4d7dca16b295b1e5cadd1a",
+              "document_id": "W4381572413",
+              "source_triple_ids": [
+                "t:ddfab6772d36b421b40bd61242966898ae516e60df800f4744480bbfbd7316b5"
+              ],
+              "predicate_and_endpoints": [
+                "Oral history",
+                "IS_A",
+                "Oral interviews"
+              ],
+              "judgment": "PARTIAL_CONTEXT",
+              "reason": "Connects oral history with interviewing but omits the perspective and co-authorship mechanism."
+            }
+          ],
+          "C_only": [
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:ec609e3d4bf4d4c83744bc640ea97ba1bd58d1bd685adcce1b3771baa08013fd",
+              "document_id": "W4391351014",
+              "source_triple_ids": [
+                "t:e40dd7bdefe2e86472c82a4253cafbef93d07a841132bee278d7120ae552c862"
+              ],
+              "predicate_and_endpoints": [
+                "patients",
+                "HAS_RESULT",
+                "registered events"
+              ],
+              "judgment": "UNSUPPORTED_RELATION",
+              "reason": "A radiotherapy study outside this topic reports no registered events. The edge omits the negation."
+            }
+          ],
+          "A_only_path_ids": [
+            "path:ec350d54fb7c08c3e8bab82aaabec869cb1f41dcd13f895e7e6c6e550ddef7ab"
+          ],
+          "C_only_path_ids": [
+            "path:c609257f137ab7445a81acf3f799d00754ef615a47e45bdd9a126e70f3477a6b"
+          ]
+        },
+        {
+          "question_id": "3A52-C08",
+          "A_only": [
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:989b250578e7ca9d2882abdc24c55a2788b7debd9a4d7dca16b295b1e5cadd1a",
+              "document_id": "W4381572413",
+              "source_triple_ids": [
+                "t:ddfab6772d36b421b40bd61242966898ae516e60df800f4744480bbfbd7316b5"
+              ],
+              "predicate_and_endpoints": [
+                "Oral history",
+                "IS_A",
+                "Oral interviews"
+              ],
+              "judgment": "PARTIAL_CONTEXT",
+              "reason": "Connects oral history and interviewing but does not describe how participants create an account."
+            },
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:f85c9942ec1c562877be97a1cd43f5f3241c086f54c26531434277b902ccbbff",
+              "document_id": "W4381572413",
+              "source_triple_ids": [
+                "t:19d768eda440bf502b1b0b5812f967edbff63f6a8be93f4850ee603aa07c4c8e"
+              ],
+              "predicate_and_endpoints": [
+                "empathic interviewer",
+                "PERFORMS",
+                "Oral history"
+              ],
+              "judgment": "PARTIAL_CONTEXT",
+              "reason": "Identifies the empathic interviewer but leaves out the interviewee and the shared authorship.",
+              "audited_excerpt": {
+                "start": 169,
+                "end": 301,
+                "quote": "Oral interviews are stories “from below”, where the authorship is shared between the interviewed people and an empathic interviewer.",
+                "revision_id": "sha256:8c231ed4d765453627674ff77b2912ad48e256fb7a99ee645374b28f220dcb9a"
+              }
+            }
+          ],
+          "C_only": [
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:5bbbb26b357839e7610a2c69b3105d58128514220fb50fb2e9baaf6cc14be7a6",
+              "document_id": "W4285525942",
+              "source_triple_ids": [
+                "t:16f9c8e05eed84f9dbe730ed50738afa38bb3896467c0a1753b539757190401e"
+              ],
+              "predicate_and_endpoints": [
+                "green financial instruments",
+                "USED_FOR",
+                "cooperation"
+              ],
+              "judgment": "OFF_TOPIC",
+              "reason": "Financial instruments for cooperation are unrelated to listening or collaboration in the two studies."
+            },
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:8e72ead495fbcf197acf7543bfe4de4157b38f51bfbf778b7b5e41fc7107bf7a",
+              "document_id": "W7215137876",
+              "source_triple_ids": [
+                "t:2d22e50e8dfcce455019b078ded0f97a4cd9f8bef7604010aa27b1d449023241"
+              ],
+              "predicate_and_endpoints": [
+                "synod on synodality",
+                "ASSOCIATED_WITH",
+                "emotional maturity"
+              ],
+              "judgment": "DIRECT_COMPONENT",
+              "reason": "The essay explicitly links the synodal mindset to emotional maturity in relationships.",
+              "audited_excerpt": {
+                "start": 0,
+                "end": 180,
+                "quote": "The author brings to light that the synodal mindset that is demanded by the synod on synodality demands the adequate development of emotional maturity, especially in relationships.",
+                "revision_id": "sha256:7348a443574c79025e8d91562a546eaddbb34a1731bcfe890d09037c05581a14"
+              }
+            }
+          ],
+          "A_only_path_ids": [
+            "path:ec350d54fb7c08c3e8bab82aaabec869cb1f41dcd13f895e7e6c6e550ddef7ab",
+            "path:ec7bc34b5e5ce53bd0b0ae210d73e2d7a766bd8b8e3965233788ed29a5e7d563"
+          ],
+          "C_only_path_ids": [
+            "path:377102676e063d7ecec06d2cb036cf18e375a82da01fd418e9df5565a590d567",
+            "path:6dde2c838eca58aa51c30a17418b68a877ee862f2fe214746c8653db3eff57b5"
+          ]
+        },
+        {
+          "question_id": "3A52-C09",
+          "A_only": [
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:09bbd153d41b580a999539e4dbabd583d10594eea96c0f8cf92a4fba7773e8f0",
+              "document_id": "W2364973104",
+              "source_triple_ids": [
+                "t:c99f5ba74e6c157f90a099ace710b75bf113c7bd6f5e12d81194b14b31bddf9e"
+              ],
+              "predicate_and_endpoints": [
+                "military power supply",
+                "HAS_PART",
+                "cables"
+              ],
+              "judgment": "OFF_TOPIC",
+              "reason": "Power cables are unrelated to the two optical-fiber systems."
+            },
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:47821b40b6189f69f7b154532cbb586f4454aa857247d5d5a875490d2f9fdb48",
+              "document_id": "W4230116451",
+              "source_triple_ids": [
+                "t:9b6645d03c9004d579ab71ccfcf0c994186aead789826acf35c15ae407032e6c"
+              ],
+              "predicate_and_endpoints": [
+                "magnetic resonance imaging",
+                "PERFORMS",
+                "real-time diagnosis"
+              ],
+              "judgment": "OFF_TOPIC",
+              "reason": "MRI diagnosis does not answer how the optical fibers are used in NSTX or nonlinear optics."
+            }
+          ],
+          "C_only": [
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:5ee7bd84ca54272072d04fb99ea91d2a52d59a00e28a4933797050f4efa64210",
+              "document_id": "W2791492120",
+              "source_triple_ids": [
+                "t:65e006b2d7aca87ce2c73d84ea7b90e64003174e93102fea0fd70050dd09a670"
+              ],
+              "predicate_and_endpoints": [
+                "lymphocytes",
+                "DERIVED_FROM",
+                "blood samples"
+              ],
+              "judgment": "OFF_TOPIC",
+              "reason": "Lymphocyte specimen provenance does not concern fiber optics."
+            },
+            {
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:638ba11cfcca5059016e861a4a422b9059a484460b5934fe3507fcb8e36345b8",
+              "document_id": "W2791492120",
+              "source_triple_ids": [
+                "t:01c2b3ec9289e48d5ff19827f5588fc8e3fdf136a277d5d942c0624fddb6f908"
+              ],
+              "predicate_and_endpoints": [
+                "Polypoid tissue",
+                "DERIVED_FROM",
+                "blood samples"
+              ],
+              "judgment": "OFF_TOPIC",
+              "reason": "Nasal polyp specimen provenance does not concern either optical application."
+            }
+          ],
+          "A_only_path_ids": [
+            "path:06a3e35072ee0168cee751044f577af4d9a261edc52a56d929168ba0743a48e9",
+            "path:1c2e455518022d718c96704194d099a13087da8934ad2483d50c8db0810ebd03"
+          ],
+          "C_only_path_ids": [
+            "path:20e7a5cff567ef232fb911270f1e4db348d5a7305f54371e40bd5504be4c35ab",
+            "path:e94348febbd368021280ad4b9c567696e8a9d3b6f8d113b26660817c68cf5e73"
+          ]
+        },
+        {
+          "question_id": "3A52-C10",
+          "A_only": [],
+          "C_only": [],
+          "A_only_path_ids": [],
+          "C_only_path_ids": []
+        }
+      ],
+      "A_only": {
+        "OFF_TOPIC": 5,
+        "PARTIAL_CONTEXT": 4,
+        "UNSUPPORTED_RELATION": 2
+      },
+      "C_only": {
+        "OFF_TOPIC": 7,
+        "UNSUPPORTED_RELATION": 2,
+        "PARTIAL_CONTEXT": 1,
+        "DIRECT_COMPONENT": 1
+      }
+    }
+  }
+}
