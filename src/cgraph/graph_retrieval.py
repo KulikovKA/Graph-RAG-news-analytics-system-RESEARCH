@@ -15,7 +15,7 @@ from .retrieval_types import (MAX_PHYSICAL_HOPS, SUSPICIOUS_CELL_PAIRS, TARGET_N
 class TraversalLimits:
     max_hops: int = 5
     max_neighbors: int = 50
-    max_candidates: int = 200
+    max_candidates: int = 100
     max_relationships: int = 1000
     max_seeds: int = 32
     timeout_seconds: float = 10.0
@@ -65,7 +65,8 @@ class GraphRetriever:
             raise ValueError("Unsupported namespace")
         self.driver, self.database, self.namespace = driver, database, namespace
 
-    def retrieve(self, seeds: Iterable[Seed], limits: TraversalLimits | dict | None = None) -> RetrievalResult:
+    def retrieve(self, seeds: Iterable[Seed], limits: TraversalLimits | dict | None = None,
+                 *, seed_fair: bool = False) -> RetrievalResult:
         if limits is None:
             limits = TraversalLimits()
         elif isinstance(limits, dict):
@@ -87,12 +88,13 @@ class GraphRetriever:
 
         @unit_of_work(timeout=limits.timeout_seconds)
         def read(tx):
-            return self._retrieve(tx, seeds, limits)
+            return self._retrieve(tx, seeds, limits, seed_fair=seed_fair)
 
         with self.driver.session(**options) as session:
             return session.execute_read(read)
 
-    def _retrieve(self, tx, seeds: list[Seed], limits: TraversalLimits) -> RetrievalResult:
+    def _retrieve(self, tx, seeds: list[Seed], limits: TraversalLimits, *,
+                  seed_fair: bool = False) -> RetrievalResult:
         ns = self.namespace
         records = list(tx.run(_FINGERPRINT_QUERY, namespace=ns))
         fingerprint = records[0]["fingerprint"] if records else None
@@ -100,7 +102,6 @@ class GraphRetriever:
             raise ValueError("Namespace has no graph fingerprint")
         diagnostics = {"nodes_examined": 0, "relationships_examined": 0, "limits_hit": []}
         hits: set[str] = set()
-        paths: list[GraphPath] = []
         queue = deque()
         for seed in seeds:
             records = list(tx.run(_NODE_QUERY, namespace=ns, key=seed["node_key"]))
@@ -113,6 +114,34 @@ class GraphRetriever:
                 raise ValueError("Seed node/document mismatch")
             queue.append((seed["node_key"], [seed["node_key"]], [], {seed["document_id"]}, 0, 0))
 
+        if seed_fair:
+            # FIFO ?????? ??????? seed, ???? ???? ?? ???. ?????????? ????????? ??????? ???????? ???????.
+            streams = deque(self._paths(tx, deque([state]), limits, fingerprint, diagnostics, hits,
+                                        yield_empty_expansions=True)
+                            for state in sorted(queue, key=lambda state: state[0]))
+        else:
+            streams = deque([self._paths(tx, queue, limits, fingerprint, diagnostics, hits)])
+        paths: list[GraphPath] = []
+        while streams:
+            stream = streams.popleft()
+            try:
+                path = next(stream)
+            except StopIteration:
+                continue
+            if path is None:
+                streams.append(stream)
+                continue
+            if len(paths) >= limits.max_candidates:
+                hits.add("max_candidates")
+                break
+            paths.append(path)
+            streams.append(stream)
+        diagnostics["limits_hit"] = sorted(hits)
+        return {"namespace": ns, "graph_fingerprint": fingerprint, "paths": paths,
+                "truncated": bool(hits), "diagnostics": diagnostics}
+
+    def _paths(self, tx, queue, limits, fingerprint, diagnostics, hits, *, yield_empty_expansions=False):
+        ns = self.namespace
         while queue:
             seed_key, nodes, edges, docs, semantic, memberships = queue.popleft()
             if len(edges) >= limits.max_hops:
@@ -128,6 +157,7 @@ class GraphRetriever:
             diagnostics["nodes_examined"] += len(rows)
             if len(rows) == cap:
                 hits.add("max_neighbors" if cap == limits.max_neighbors else "max_relationships")
+            emitted = False
             for row in rows:
                 head, tail, props = row["head"], row["tail"], row["properties"]
                 self._check_node(head, row["head_labels"], fingerprint)
@@ -185,18 +215,13 @@ class GraphRetriever:
                 path: GraphPath = {"path_id": graph_path_id(seed_key, new_nodes, new_edges), "seed_key": seed_key,
                         "node_keys": new_nodes, "edges": new_edges, "document_ids": sorted(new_docs)}
                 validate_graph_path(path, ns)
-                if count != 1:
-                    if len(paths) >= limits.max_candidates:
-                        hits.add("max_candidates")
-                        break
-                    paths.append(path)
                 queue.append((seed_key, new_nodes, new_edges, new_docs,
                               semantic + (kind == "SIMILAR_TO"), count))
-            if "max_candidates" in hits:
-                break
-        diagnostics["limits_hit"] = sorted(hits)
-        return {"namespace": ns, "graph_fingerprint": fingerprint, "paths": paths,
-                "truncated": bool(hits), "diagnostics": diagnostics}
+                if count != 1:
+                    emitted = True
+                    yield path
+            if yield_empty_expansions and not emitted:
+                yield None
 
     def _check_node(self, node, labels, fingerprint):
         if (node.get("namespace") != self.namespace or node.get("fingerprint") != fingerprint or
