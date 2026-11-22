@@ -3,7 +3,7 @@
 from collections import defaultdict
 from math import fsum
 
-from cgraph.path_reranking import DIVERSITY_WEIGHT, _features, _overlap, _terms, rerank_paths
+from cgraph.path_reranking import DIVERSITY_WEIGHT, _features, _overlap, _terms, rerank_paths_a as rerank_paths
 
 
 BASE_SCORE_MARGIN = 1.0

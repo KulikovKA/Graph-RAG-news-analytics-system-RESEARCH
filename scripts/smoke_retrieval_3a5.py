@@ -120,7 +120,7 @@ def main(argv=None):
         from cgraph.entity_linking import E5Encoder, EntityLinker, load_entity_cache
         from cgraph.graph_retrieval import GraphRetriever, TraversalLimits
         from cgraph.evidence_extraction import EvidenceExtractor
-        from cgraph.path_reranking import rerank_paths
+        from cgraph.path_reranking import rerank_paths_a as rerank_paths
         import gliner2
         import torch
         require(all((ROOT / "artifacts/ner_v2/models/gliner25" / name).is_file() for name in E3_HASHES),

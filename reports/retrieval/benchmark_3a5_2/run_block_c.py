@@ -3,6 +3,7 @@
 import argparse
 from collections import Counter
 from dataclasses import asdict
+from functools import partial
 import json
 import os
 from pathlib import Path
@@ -146,6 +147,8 @@ def main():
     parser.add_argument("--min-score", type=float, required=True,
                         help="Explicit experimental E5 query-linking policy. No production cutoff exists.")
     parser.add_argument("--output", type=Path, required=True, help="New JSON path")
+    parser.add_argument("--reranking-policy", choices=("A", "C", "C2"),
+                        help="Override the default ranking policy for this run")
     args = parser.parse_args()
     if args.output.exists():
         parser.error("--output already exists")
@@ -165,7 +168,7 @@ def main():
         from cgraph.entity_linking import _sha, load_entity_cache, EntityLinker
         from cgraph.graph_retrieval import GraphRetriever, TraversalLimits
         from cgraph.evidence_extraction import EvidenceExtractor
-        from cgraph.path_reranking import rerank_paths
+        from cgraph.path_reranking import DEFAULT_RERANKING_POLICY, rerank_paths
 
         limits = TraversalLimits()
         analyzer = QueryAnalyzer()
@@ -184,6 +187,7 @@ def main():
                               "traversal": asdict(limits), "rerank_top_k": 5,
                               "torch": torch.__version__, "python": sys.version.split()[0],
                               "torch_seed": 42, "cpu_threads": 4, "answer_generation": False}
+        report["settings"]["reranking_policy"] = args.reranking_policy or DEFAULT_RERANKING_POLICY
         require(bool(os.getenv("NEO4J_PASSWORD")), "missing_process_neo4j_credentials")
         driver, database = audit.stage.graph.base.core.connect_neo4j()
         with driver.session(database=database, default_access_mode=READ_ACCESS) as session:
@@ -202,10 +206,14 @@ def main():
         torch.set_num_threads(4)
         retriever = GraphRetriever(driver, database=database)
         extractor = EvidenceExtractor(driver, database=database)
+        kwargs = {"policy": args.reranking_policy}
+        if args.reranking_policy == "C2":
+            kwargs["entity_nodes"] = {n["key"]: n for n in props}
+        rank = partial(rerank_paths, **kwargs)
         phase = "retrieval"
         print("WARNING: SEQUENTIAL REAL GLINER/E5 CPU INFERENCE AND LIVE NEO4J RETRIEVAL.", flush=True)
         for row in tqdm(questions, desc="Block C", unit="question"):
-            report["questions"].append(run_question(row, analyzer, linker, retriever, extractor, rerank_paths, limits, nodes))
+            report["questions"].append(run_question(row, analyzer, linker, retriever, extractor, rank, limits, nodes))
         phase = "measurement"
         gold = {r["question_id"]: r for r in jsonl(QUESTIONS) if r["category"] == "C"}
         for result in report["questions"]:

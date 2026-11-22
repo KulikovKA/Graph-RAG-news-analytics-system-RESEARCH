@@ -1,7 +1,7 @@
 """Stage 3A.4 deterministic, evidence-gated ranking. Scores are not probabilities.
 
-Only exact verified quotations supply lexical terms; opaque entity keys and
-semantic similarity are never treated as names or factual confidence. Seed
+Ranking uses verified quotations and, for C2, optional snapshot entity names.
+Opaque keys and semantic similarities never supply factual relevance. Seed
 scores express linking relevance only. All factual edges must validate fully.
 """
 from __future__ import annotations
@@ -9,7 +9,7 @@ from __future__ import annotations
 from copy import deepcopy
 import math
 import re
-from typing import Iterable
+from typing import Iterable, Literal, Mapping
 
 from .retrieval_types import RetrievalResult, Seed, validate_graph_path, validate_seed
 
@@ -93,17 +93,24 @@ def _overlap(a, b):
                      if a[field] or b[field])
 
 
+RerankingPolicy = Literal["A", "C", "C2"]
+DEFAULT_RERANKING_POLICY: RerankingPolicy = "C"
+
+
 def rerank_paths(question: str, retrieval: RetrievalResult, evidence: Iterable[dict],
-                 seeds: Iterable[Seed] = (), *, top_k: int = 5) -> dict:
+                 seeds: Iterable[Seed] = (), *, top_k: int = 5, policy: RerankingPolicy | None = None,
+                 entity_nodes: Mapping[str, dict] | None = None) -> dict:
     """Return up to five evidence-backed paths, plus exclusions and diagnostics.
 
-    Evidence must come from evidence_extraction for this exact retrieval. Greedy
-    diversity subtracts weighted Jaccard overlap with the most similar selected
-    path. Routes exposing exactly the same physical facts/sources/windows are
-    redundant, even if their seed/direction/navigation differs. Independent
-    parallel edges remain distinct, including when they share a quotation.
-    Retrieval warnings are copied unchanged. No IO, neural models or name lookup.
+    Evidence must come from evidence_extraction for this exact retrieval.
+    C prioritizes relevant factual documents. A is the original path-only
+    ranking and C2 is an experimental endpoint-aware policy.
+    Retrieval warnings are copied unchanged. Entity context is optional and
+    must use the physical snapshot node key and properties. No IO or models.
     """
+    policy = DEFAULT_RERANKING_POLICY if policy is None else policy
+    if policy not in ("A", "C", "C2"):
+        raise ValueError("policy must be A, C or C2")
     if not isinstance(question, str):
         raise TypeError("Question must be a string")
     if type(top_k) is not int or not 1 <= top_k <= 5:
@@ -167,7 +174,7 @@ def rerank_paths(question: str, retrieval: RetrievalResult, evidence: Iterable[d
                      "non_factual_transitions": -NON_FACTUAL_PENALTY * non_factual_count,
                      "repeated_windows": -REPETITION_PENALTY * repetition,
                      "diversity": 0.0}
-        candidates.append({"path_id": identity, "path": deepcopy(path), "evidence": deepcopy(bundle),
+        candidates.append({"path_id": identity, "path": path, "evidence": bundle,
                            "base_score": round(math.fsum(breakdown.values()), 12),
                            "score": 0.0, "score_breakdown": breakdown,
                            "metrics": {"question_term_coverage": coverage, "matched_terms": matched,
@@ -175,6 +182,36 @@ def rerank_paths(question: str, retrieval: RetrievalResult, evidence: Iterable[d
                                        "non_factual_edges": non_factual_count, "seed_score": seed_score},
                            "features": features})
     result["ranking_diagnostics"]["eligible_paths"] = len(candidates)
+    if policy == "A":
+        selected = _select_a(candidates, top_k, result["excluded"])
+    else:
+        from .document_ranking import select_documents
+
+        selected = select_documents(question, candidates, top_k, result["excluded"], policy,
+                                    retrieval["graph_fingerprint"], entity_nodes)
+    paths = []
+    for rank, candidate in enumerate(selected, 1):
+        item = {k: candidate[k] for k in ("path_id", "path", "evidence", "base_score", "score",
+                                         "score_breakdown", "metrics")}
+        for key in ("selection_phase", "primary_document", "new_factual_documents", "new_source_triples"):
+            if key in candidate:
+                item[key] = candidate[key]
+        paths.append(deepcopy({**item, "rank": rank}))
+    result["paths"] = paths
+    result["excluded"].sort(key=lambda p: (p["path_id"], p["reason"]))
+    result["ranking_diagnostics"]["selected_paths"] = len(selected)
+    if not selected:
+        result["reason"] = "no_usable_factual_paths" if retrieval["paths"] else "empty_input"
+    return result
+
+
+def rerank_paths_a(question: str, retrieval: RetrievalResult, evidence: Iterable[dict],
+                   seeds: Iterable[Seed] = (), *, top_k: int = 5) -> dict:
+    """Run original Stage 3A.4 policy A explicitly."""
+    return rerank_paths(question, retrieval, evidence, seeds, top_k=top_k, policy="A")
+
+
+def _select_a(candidates, top_k, excluded):
     selected = []
     while candidates and len(selected) < top_k:
         for candidate in candidates:
@@ -187,19 +224,11 @@ def rerank_paths(question: str, retrieval: RetrievalResult, evidence: Iterable[d
         remaining = []
         for candidate in candidates:
             if candidate["features"]["facts"] == best["features"]["facts"]:
-                result["excluded"].append({"path_id": candidate["path_id"], "reason": "duplicate_factual_sources",
-                                           "duplicate_of": best["path_id"], "evidence_reasons": []})
+                excluded.append({"path_id": candidate["path_id"], "reason": "duplicate_factual_sources",
+                                 "duplicate_of": best["path_id"], "evidence_reasons": []})
             else:
                 remaining.append(candidate)
         candidates = remaining
     for candidate in candidates:
-        result["excluded"].append({"path_id": candidate["path_id"], "reason": "outside_top_k", "evidence_reasons": []})
-    for rank, candidate in enumerate(selected, 1):
-        del candidate["features"]
-        candidate["rank"] = rank
-    result["paths"] = selected
-    result["excluded"].sort(key=lambda p: (p["path_id"], p["reason"]))
-    result["ranking_diagnostics"]["selected_paths"] = len(selected)
-    if not selected:
-        result["reason"] = "no_usable_factual_paths" if retrieval["paths"] else "empty_input"
-    return result
+        excluded.append({"path_id": candidate["path_id"], "reason": "outside_top_k", "evidence_reasons": []})
+    return selected

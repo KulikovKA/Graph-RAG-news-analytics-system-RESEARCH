@@ -11,7 +11,7 @@ import sys
 from validate_draft import HERE, documents, jsonl, require
 
 sys.path.insert(0, str(HERE.parents[2] / "src"))
-from cgraph.path_reranking import rerank_paths
+from cgraph.path_reranking import rerank_paths_a as rerank_paths
 from document_aware_reranking import (BASE_SCORE_MARGIN, DOCUMENT_FIRST_SLOTS, REPEATED_DOCUMENT_PENALTY,
                                      SECOND_PATH_WEIGHT, score_candidates, select_paths)
 

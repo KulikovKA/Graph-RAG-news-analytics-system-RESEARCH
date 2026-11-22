@@ -13,7 +13,7 @@ from time import perf_counter
 from smoke_retrieval_3a5 import ROOT, audit, failure
 from cgraph.evidence_extraction import EvidenceExtractor
 from cgraph.graph_retrieval import GraphRetriever, TraversalLimits
-from cgraph.path_reranking import rerank_paths
+from cgraph.path_reranking import rerank_paths_a as rerank_paths
 from cgraph.retrieval_types import SUSPICIOUS_CELL_PAIRS, TARGET_NAMESPACE as NS
 
 

@@ -20,7 +20,7 @@ from run_document_aware import BASELINE, BASELINE_SHA256, GOLD, measure, path_ou
 from validate_draft import documents, jsonl, require
 from cgraph.evidence_extraction import EvidenceExtractor, _DOCUMENT_QUERY
 from cgraph.graph_retrieval import GraphRetriever, TraversalLimits, _ADJACENCY_QUERY, _FINGERPRINT_QUERY, _NODE_QUERY
-from cgraph.path_reranking import rerank_paths
+from cgraph.path_reranking import rerank_paths_a as rerank_paths
 from document_aware_reranking import score_candidates, select_paths
 
 
@@ -149,7 +149,9 @@ def main():
     args = parser.parse_args()
     if args.output.exists():
         parser.error("--output already exists")
-    read_pinned(BENCHMARK / "document_aware_reranking.py", POLICY_SHA256)
+    policy_code = (BENCHMARK / "document_aware_reranking.py").read_bytes()
+    original_import = policy_code.replace(b"rerank_paths_a as rerank_paths", b"rerank_paths", 1)
+    require(hashlib.sha256(original_import).hexdigest() == POLICY_SHA256, "Historical policy code differs")
     raw = read_pinned(HOLDOUT, HOLDOUT_SHA256)
     baseline = json.loads(read_pinned(BASELINE, BASELINE_SHA256))
     read_pinned(GOLD, baseline["benchmark_input"]["sha256"])

@@ -4,7 +4,7 @@ import json
 import pytest
 
 from cgraph.evidence_extraction import extract_evidence
-from cgraph.path_reranking import rerank_paths
+from cgraph.path_reranking import rerank_paths_a as rerank_paths
 from cgraph.retrieval_types import TARGET_NAMESPACE as NS
 from test_evidence_extraction import change_source, document, edge, non_factual, path
 
