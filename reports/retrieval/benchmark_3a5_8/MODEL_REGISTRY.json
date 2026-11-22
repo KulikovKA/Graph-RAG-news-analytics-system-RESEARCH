@@ -1,0 +1,96 @@
+{
+  "ettin-68m": {
+    "repository": "cross-encoder/ettin-reranker-68m-v1",
+    "card": "https://huggingface.co/cross-encoder/ettin-reranker-68m-v1",
+    "local_folder": "ettin-68m-v1",
+    "version": "v1",
+    "revision": "d166fa88ddde3c42bc3ee92f7df476d941c8204a",
+    "license": "apache-2.0",
+    "parameters_millions": 68.6,
+    "tier": "Small",
+    "architecture": "ModernBertModel",
+    "adapter": "ettin",
+    "scoring": "Local Sentence Transformers CrossEncoder module chain, identity activation",
+    "weights_sha256": {
+      "model.safetensors": "d6aa3080446f53cbc7fc2af35621fcd149eeb8f93def521cadd5b57654f2c422",
+      "2_Dense/model.safetensors": "ee9b8a9186fffb05cea0cd73e2ccfc8a4bf641c075d8f304e5c4e4f5fe0716d0",
+      "3_LayerNorm/model.safetensors": "3906f4be69408f4f370c7bfdc2de6ef825d4d1f4da4f01221d831336c0e3a91a",
+      "4_Dense/model.safetensors": "1a391820f020c8fc3efb1da894e1719cfdfb8a6c73d214f34f5b1802bac8b9dd"
+    }
+  },
+  "ettin-400m": {
+    "repository": "cross-encoder/ettin-reranker-400m-v1",
+    "card": "https://huggingface.co/cross-encoder/ettin-reranker-400m-v1",
+    "local_folder": "ettin-400m-v1",
+    "version": "v1",
+    "revision": "5dca36282a5d85f368d2544002513a29159b4c9e",
+    "license": "apache-2.0",
+    "parameters_millions": 401,
+    "tier": "Base",
+    "architecture": "ModernBertModel",
+    "adapter": "ettin",
+    "scoring": "Local Sentence Transformers CrossEncoder module chain, identity activation",
+    "weights_sha256": {
+      "model.safetensors": "4b8364853f7ed939d93d3ae8b4ead502db7b86b7a67ed2046907166477d947c2",
+      "2_Dense/model.safetensors": "c8f99555ed4aad347dca99afeb5609ba2f803c0b54592a9f3ef26ad60ac9d4c2",
+      "3_LayerNorm/model.safetensors": "c3bc9839299b6c8b7d473279ef9e1ec1a5d70d63581383b963e51df692676817",
+      "4_Dense/model.safetensors": "83ab91e7f5f697783a49c5864bd552844fa06b5dc6b80e795823c2a5e932b311"
+    }
+  },
+  "bge-m3": {
+    "repository": "BAAI/bge-reranker-v2-m3",
+    "card": "https://huggingface.co/BAAI/bge-reranker-v2-m3",
+    "local_folder": "bge-v2-m3",
+    "version": "v2-m3",
+    "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+    "license": "apache-2.0",
+    "parameters_millions": 568,
+    "tier": "Large",
+    "architecture": "XLMRobertaForSequenceClassification",
+    "adapter": "classifier",
+    "scoring": "One raw sequence-classification logit",
+    "weights_sha256": {"model.safetensors": "d9e3e081faff1eefb84019509b2f5558fd74c1a05a2c7db22f74174fcedb5286"}
+  },
+  "mxbai-base": {
+    "repository": "mixedbread-ai/mxbai-rerank-base-v2",
+    "card": "https://huggingface.co/mixedbread-ai/mxbai-rerank-base-v2",
+    "local_folder": "mxbai-base-v2",
+    "version": "v2",
+    "revision": "3ea9d4dffa7d12a4f366be8e275c349de9fc9865",
+    "license": "apache-2.0",
+    "parameters_millions": 494,
+    "tier": "Base",
+    "architecture": "Qwen2ForCausalLM",
+    "adapter": "mixedbread",
+    "scoring": "Publisher query/document binary relevance prompt and trained 1/0 labels",
+    "weights_sha256": {"model.safetensors": "c01649fe56b3fe32e52da43c69e084dff7c2252cf231a38c56d5a291a674338f"}
+  },
+  "minilm-l6": {
+    "repository": "cross-encoder/ms-marco-MiniLM-L6-v2",
+    "card": "https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2",
+    "local_folder": "minilm-l6-v2",
+    "version": "L6-v2",
+    "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+    "license": "apache-2.0",
+    "parameters_millions": 22.7,
+    "tier": "Small",
+    "architecture": "BertForSequenceClassification",
+    "adapter": "classifier",
+    "scoring": "One raw sequence-classification logit",
+    "weights_sha256": {"model.safetensors": "821d1aa69520101d6e0737f78a042ae25b19e5cb9160701909d10434f4aeb0ae"}
+  },
+  "qwen3-0.6b": {
+    "repository": "Qwen/Qwen3-Reranker-0.6B",
+    "card": "https://huggingface.co/Qwen/Qwen3-Reranker-0.6B",
+    "local_folder": "qwen3-reranker-0.6b",
+    "version": "Qwen3-Reranker-0.6B",
+    "revision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+    "license": "apache-2.0",
+    "parameters_millions": 596,
+    "tier": "Large",
+    "architecture": "Qwen3ForCausalLM",
+    "adapter": "qwen",
+    "scoring": "Publisher Instruct/Query/Document template, last-token yes minus no logit",
+    "weights_sha256": {"model.safetensors": "27cd75a405b9c1b46b59abfd88aaa209e6fed2a1972cde9b70e7659537c5e65b"}
+  }
+}
