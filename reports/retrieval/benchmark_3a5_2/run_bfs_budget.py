@@ -214,7 +214,9 @@ def main():
     report["selected"] = {k: chosen[k] for k in ("limits", "fair", "summary")}
     key = next(k for k, n in snapshot.nodes.items() if n.get("document_id") == "W2084709926"
                and n.get("name", "").casefold() == "coherent fiber optic bundle")
-    report["c09"] = dict(seed_key=key, incident=[r for r in snapshot.relationships if key in (r["head"], r["tail"])],
+    report["c09"] = dict(seed_key=key, incident=[{**r, "properties": {k: v for k, v in r["properties"].items()
+                                                          if k in {"resolution_decision_2f2", "is_self_loop"}}}
+                                    for r in snapshot.relationships if key in (r["head"], r["tail"])],
                          document_factual_edges=[r["key"] for r in snapshot.relationships
                                                  if r["type"] == "RELEX_REL"
                                                  and r["properties"].get("document_id") == "W2084709926"])
@@ -229,10 +231,9 @@ def main():
                 question["path_ids_sha256"] = path_digest(question.pop("path_ids"))
                 question["gold_factual_path_ids_sha256"] = path_digest(question.pop("gold_factual_path_ids"))
     with args.output.open("x", encoding="utf-8") as output:
-        json.dump(report, output, ensure_ascii=False, separators=(",", ":"))
+        json.dump(report, output, ensure_ascii=False, indent=1, allow_nan=False)
+        output.write("\n")
 
 
 if __name__ == "__main__":
     main()
-
-
