@@ -100,6 +100,90 @@ def test_corrupt_cache_fails_closed(tmp_path):
         load_entity_cache(tmp_path)
 
 
+def test_conditional_fallback_recovers_after_mention_fails_threshold():
+    class Encoder:
+        def encode(self, texts):
+            return np.array([[-1, 0] if t == "RNA" else [0, 1] for t in texts], dtype=np.float32)
+
+    query = QueryAnalyzer(FakeNER()).analyze("RNA question?")
+    baseline = EntityLinker(cache(), Encoder(), min_score=0.8, top_k=1)
+    assert baseline.link_seeds(query) == []
+    linker = EntityLinker(cache(), Encoder(), min_score=0.8, top_k=1, fallback="conditional")
+    result = linker.link(query)
+    assert result["unresolved_mentions"] == [query["mentions"][0]["mention_id"]]
+    assert [(seed["entity_id"], seed["match_method"]) for seed in result["seeds"]] == [("e:c", "fallback")]
+    candidate = result["candidates"][-1]
+    assert candidate["query_span"] == {"start": 0, "end": len(query["text"]), "text": query["text"]}
+    assert "query_span" not in result["seeds"][0]
+
+
+def test_expansion_keeps_literal_spans_and_prioritizes_primary_exact_seeds():
+    text = "gene expression and plastid genome?"
+    mentions = [{"mention_id": "vector-first", "surface_text": "gene", "start": 0, "end": 4},
+                {"mention_id": "exact-later", "surface_text": "gene expression", "start": 0, "end": 15}]
+    rows = [
+        dict(entity_id="e:a", document_id="d1", text_name="gene expression"),
+        dict(entity_id="e:b", document_id="d2", text_name="genetics"),
+        dict(entity_id="e:c", document_id="d3", text_name="plastid genome"),
+        dict(entity_id="e:d", document_id="d4", text_name="genome length"),
+    ]
+    vectors = np.array([[0.8, 0.6], [1, 0], [0, 1], [-1, 0]], dtype=np.float32)
+    entity_cache = EntityCache(rows, vectors, "synthetic", {})
+
+    class Encoder:
+        def encode(self, texts):
+            return np.array([[0, 1] if t == "plastid genome" else [-1, 0] if t == text else [1, 0]
+                             for t in texts], dtype=np.float32)
+
+    linker = EntityLinker(entity_cache, Encoder(), min_score=0.75, top_k=2, fallback="expansion",
+                          max_fallback_seeds=1)
+    result = linker.link({"text": text, "mentions": mentions})
+    assert [(s["entity_id"], s["match_method"]) for s in result["seeds"]] == [
+        ("e:a", "exact"), ("e:b", "vector"), ("e:c", "fallback")]
+    assert len({s["node_key"] for s in result["seeds"]}) == 3
+    spans = [row["query_span"] for row in result["candidates"] if row["match_method"] == "fallback"]
+    assert {span["text"] for span in spans} == {"plastid genome", text}
+    assert all(text[span["start"]:span["end"]] == span["text"] for span in spans)
+    assert result == linker.link({"text": text, "mentions": mentions})
+
+
+def test_conditional_skips_when_specific_primary_covers_question():
+    encoder = FakeEncoder()
+    rows = [dict(entity_id="e:a", document_id="d1", text_name="plastid genome")]
+    entity_cache = EntityCache(rows, np.array([[1, 0]], dtype=np.float32), "synthetic", {})
+    text = "What is the plastid genome?"
+    mention = {"mention_id": "qm", "surface_text": "plastid genome", "start": 12, "end": 26}
+    linker = EntityLinker(entity_cache, encoder, min_score=0.85, fallback="conditional")
+    assert [s["match_method"] for s in linker.link_seeds({"text": text, "mentions": [mention]})] == ["exact"]
+    assert encoder.texts == ["plastid genome"]
+
+
+def test_constructor_top_k_and_baseline_duplicate_order_are_reproducible():
+    text = "RNA?"
+    query = QueryAnalyzer(FakeNER()).analyze(text)
+    query["mentions"].append({**query["mentions"][0], "mention_id": "second"})
+    linker = EntityLinker(cache(), FakeEncoder(), min_score=0.8, top_k=1)
+    assert [s["entity_id"] for s in linker.link_seeds(query)] == ["e:a", "e:a"]
+    assert [s["entity_id"] for s in linker.link_seeds(query, 2)] == ["e:a", "e:b", "e:a", "e:b"]
+
+
+def test_retrieval_profile_uses_selected_top_k_without_changing_baseline():
+    query = QueryAnalyzer(FakeNER()).analyze("RNA?")
+    rows = [dict(entity_id=f"e:{i:02d}", document_id=f"d{i}", text_name="RNA") for i in range(12)]
+    entity_cache = EntityCache(rows, np.tile(np.array([[1, 0]], dtype=np.float32), (12, 1)), "synthetic", {})
+    production = EntityLinker.for_retrieval(entity_cache, FakeEncoder(), namespace="ns")
+    baseline = EntityLinker(entity_cache, FakeEncoder(), namespace="ns", min_score=0.85)
+    assert (production.min_score, production.top_k, production.fallback) == (0.85, 10, "baseline")
+    assert len(production.link_seeds(query)) == 10
+    assert production.link_seeds(query, 5) == baseline.link_seeds(query)
+
+
+@pytest.mark.parametrize("settings", [{"top_k": 0}, {"fallback": "unknown"}, {"max_fallback_seeds": -1}])
+def test_invalid_linking_settings(settings):
+    with pytest.raises(ValueError):
+        EntityLinker(cache(), **settings)
+
+
 def test_e5_prefix_padding_and_masked_pooling():
     torch = pytest.importorskip("torch")
     class Token:
