@@ -1,0 +1,742 @@
+{
+  "retrieval_profile": "3A59-production-C",
+  "frozen_index_rows_verified": 25,
+  "live_replay_parity": {
+    "ranked_paths_and_provenance": true,
+    "identical_prompt": true
+  },
+  "final_cli_parity_without_api": {
+    "frozen_replay": "PASS",
+    "full_graph_rag": "PASS"
+  },
+  "cases": {
+    "cross_market": {
+      "status": "ANSWERED",
+      "mode": "frozen_replay",
+      "usage": {
+        "input_tokens": 825,
+        "output_tokens": 140,
+        "total_tokens": 965
+      },
+      "request_id": "req_01m849se94e7r970czzn16ee1z",
+      "attempts": [
+        {
+          "attempt": 1,
+          "request_id": "req_01m849se94e7r970czzn16ee1z",
+          "http_status": 200,
+          "latency_seconds": 17.188939899991965
+        }
+      ],
+      "error": null,
+      "timings_seconds": {
+        "retrieval": 0.018904199998360127,
+        "context_building": 1.7035850000102073,
+        "llm": 17.189248899987433,
+        "end_to_end": 18.915893800003687
+      },
+      "path_ids": [
+        "path:c0405ec6b625d15a0fc2a7f61f3c32419c59b3ef681fc8b99c0523f65316d2f3",
+        "path:1255b0732ccac4ab5b50b65328e9a99c5f670c4dbb582d37b65a83591c5cfd92",
+        "path:68f555eb542e136408b321fa70307164293fa5a19488d3c72072ba7615dd1baa",
+        "path:6afdd5e78b6bd68c7c29f2ee461b6cfc7d9996d6d67152c3c3ea016570ba739b",
+        "path:75b2e298e537833863cdcb7e8e921ec1a3ef004a1d92b09ac724fd4b8220dab0"
+      ],
+      "citation_ids": [
+        "source-1"
+      ],
+      "citations": [
+        {
+          "document_id": "W2906067930",
+          "revision_id": "sha256:7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd",
+          "title": "Research on the Phenomenon That the Increase of Grain Production Did Not Cause the Harvest Paradox in China from 2003 to 2014",
+          "source_url": "https://openalex.org/W2906067930",
+          "text_sha256": "7cad1d4676ba282b72e20667d454da06526d16c0aa9914a0d749c4e82862d1fd",
+          "start": 0,
+          "end": 1222,
+          "citation_id": "source-1",
+          "origins": [
+            {
+              "path_id": "path:c0405ec6b625d15a0fc2a7f61f3c32419c59b3ef681fc8b99c0523f65316d2f3",
+              "source_triple_id": "t:1c0e8d7f74e4e658edd3d1d83240a3108edb96c58851c1b79505eef2484484af",
+              "window_id": "w:0cb1721d318db3732e2e8d8f4b020b251797b464e81bbce20c96f17547d63e99",
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:794ef939d68d3958112061b183eade76a0c9c51c42787fa411669518f325c20f",
+              "relation_type": "MEASURES",
+              "head_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:e:1a707af151fa45fd244632076f025619ab58d483b857b1affc21a3948fc6e0ed",
+              "tail_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:e:7c0a7acd907e30a5cc5ae5829c04664923786167f9e9702f48f9e2132f766ea1",
+              "traversed_reverse": true
+            },
+            {
+              "path_id": "path:1255b0732ccac4ab5b50b65328e9a99c5f670c4dbb582d37b65a83591c5cfd92",
+              "source_triple_id": "t:47f45823d01558cc11958536a543bba0f047169a61913fcd18be6070786e3af4",
+              "window_id": "w:0cb1721d318db3732e2e8d8f4b020b251797b464e81bbce20c96f17547d63e99",
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:621952cd44615174e202d9115f671bf72e10e83d054ac399060185cdae49c0ca",
+              "relation_type": "DEPENDS_ON",
+              "head_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:e:d50cd1d9ce13e25008350629d99a717b86d879ae9c5673551d0dee49ef7ccd6d",
+              "tail_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:e:158fbf96bed02926b50b8ee38276751c4964ea7bdd76d1e65b6674622e5fab40",
+              "traversed_reverse": false
+            },
+            {
+              "path_id": "path:68f555eb542e136408b321fa70307164293fa5a19488d3c72072ba7615dd1baa",
+              "source_triple_id": "t:bfa8d794c7302715fb41ff9f1f17449766e088884c8895d78976fcd09f6ea651",
+              "window_id": "w:0cb1721d318db3732e2e8d8f4b020b251797b464e81bbce20c96f17547d63e99",
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:911f1a0b18f877e2b7de841dacff4091602b646f3679e7625571595aba5e3bfa",
+              "relation_type": "CHANGES",
+              "head_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:e:e66330c5d198279063877231e6f8365f3178f97a50eb2c57cae17fc0bd42b325",
+              "tail_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:e:bba3d119ac3df0790254b29caff084c75d09417fa8f44a824dd5779e41628f9d",
+              "traversed_reverse": false
+            },
+            {
+              "path_id": "path:6afdd5e78b6bd68c7c29f2ee461b6cfc7d9996d6d67152c3c3ea016570ba739b",
+              "source_triple_id": "t:fbcf4500d0dfefccff8d02b964cad54aee1d726d9157119d79d74565d6431012",
+              "window_id": "w:0cb1721d318db3732e2e8d8f4b020b251797b464e81bbce20c96f17547d63e99",
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:e0b4f4a2d9d8bfc65fa97f92b39522a1439bf68af8a8b4907a4f38b4bd00562f",
+              "relation_type": "DEPENDS_ON",
+              "head_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:e:e66330c5d198279063877231e6f8365f3178f97a50eb2c57cae17fc0bd42b325",
+              "tail_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:e:9cadaf5d48e5210b3bc716fd1f92da1a0617866ee212bc46f8bbfaeb31a2f16f",
+              "traversed_reverse": false
+            },
+            {
+              "path_id": "path:75b2e298e537833863cdcb7e8e921ec1a3ef004a1d92b09ac724fd4b8220dab0",
+              "source_triple_id": "t:b34d164ddbfd0e7b5b83465e63786d7e12ba0cba17ce1a26675d880b402ce611",
+              "window_id": "w:0cb1721d318db3732e2e8d8f4b020b251797b464e81bbce20c96f17547d63e99",
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:09b9d2d951d072221a0831526557281af0a5266c275007d40bff4d392db9c0aa",
+              "relation_type": "DEPENDS_ON",
+              "head_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:e:e66330c5d198279063877231e6f8365f3178f97a50eb2c57cae17fc0bd42b325",
+              "tail_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:e:bba3d119ac3df0790254b29caff084c75d09417fa8f44a824dd5779e41628f9d",
+              "traversed_reverse": false
+            }
+          ]
+        }
+      ],
+      "included_documents": [
+        "W2906067930"
+      ],
+      "model": "openai/gpt-oss-120b",
+      "generation_settings": {
+        "model": "openai/gpt-oss-120b",
+        "temperature": 0.0,
+        "max_output_tokens": 1000,
+        "timeout": 30.0,
+        "max_retries": 0,
+        "max_input_tokens": 6000,
+        "context_window": 131072,
+        "reasoning_effort": "low"
+      },
+      "tokenizer_sha256": "0614fe83cadab421296e664e1f48f4261fa8fef6e03e63bb75c20f38e37d07d3",
+      "prompt_sha256": "f23d624a6a49559e4c671a2e74d3527e3894994c3cf900bb43c9c71d266077d9",
+      "input_tokens_with_reserve": 1008,
+      "excluded_windows": 0
+    },
+    "cross_optics": {
+      "status": "PARTIAL",
+      "mode": "frozen_replay",
+      "usage": {
+        "input_tokens": 1546,
+        "output_tokens": 180,
+        "total_tokens": 1726
+      },
+      "request_id": "req_01m849sh0ce1wvxsr3831zx4e0",
+      "attempts": [
+        {
+          "attempt": 1,
+          "request_id": "req_01m849sh0ce1wvxsr3831zx4e0",
+          "http_status": 200,
+          "latency_seconds": 1.4189452000136953
+        }
+      ],
+      "error": null,
+      "timings_seconds": {
+        "retrieval": 0.018264499987708405,
+        "context_building": 1.6780453999817837,
+        "llm": 1.4192818000155967,
+        "end_to_end": 3.120725399989169
+      },
+      "path_ids": [
+        "path:fa3735d91da947df44210e5a7eca13055e44ab66d5338c50da7ad91286179e1f",
+        "path:1adc57715691f6c4a46232457868e84650f6ea3b01239999a8cfebaeec5ed766",
+        "path:20e7a5cff567ef232fb911270f1e4db348d5a7305f54371e40bd5504be4c35ab",
+        "path:e94348febbd368021280ad4b9c567696e8a9d3b6f8d113b26660817c68cf5e73",
+        "path:32db63b70af874158980f737781de2962e0815d2a228f8e704b6f270b693754a"
+      ],
+      "citation_ids": [
+        "source-1"
+      ],
+      "citations": [
+        {
+          "document_id": "W3081936674",
+          "revision_id": "sha256:9a0f1e3257cc64d931aa684e38adc3063a1502b60f2d1c43e046ba0c77429695",
+          "title": "Optical soliton solutions to a (2+1) dimensional Schrödinger equation using a couple of integration architectures",
+          "source_url": "https://openalex.org/W3081936674",
+          "text_sha256": "9a0f1e3257cc64d931aa684e38adc3063a1502b60f2d1c43e046ba0c77429695",
+          "start": 0,
+          "end": 872,
+          "citation_id": "source-1",
+          "origins": [
+            {
+              "path_id": "path:fa3735d91da947df44210e5a7eca13055e44ab66d5338c50da7ad91286179e1f",
+              "source_triple_id": "t:dcad379ba0de6f84026a0ac2c488316dadd560a09cca044834e96a76256e54d9",
+              "window_id": "w:8dad6b80d99dc45fd2298bc043cc0d801697a37312348fe57bcea6333238bb85",
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:38efbf9b92359aebd875e5098c029aeb268280e4a320260ae0d667e89703a636",
+              "relation_type": "LOCATED_IN",
+              "head_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:e:4e3fbf440b9f4b59b1c1d58208c5d19f988a45b9a906b2e9edec2e4e113adb87",
+              "tail_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:e:6689d34e835d6c171eb41c1289e724ef69bdaf1b2414b0a49f589379e0ac0fde",
+              "traversed_reverse": true
+            }
+          ]
+        }
+      ],
+      "included_documents": [
+        "W3081936674",
+        "W2791492120",
+        "W3027457624"
+      ],
+      "model": "openai/gpt-oss-120b",
+      "generation_settings": {
+        "model": "openai/gpt-oss-120b",
+        "temperature": 0.0,
+        "max_output_tokens": 1000,
+        "timeout": 30.0,
+        "max_retries": 0,
+        "max_input_tokens": 6000,
+        "context_window": 131072,
+        "reasoning_effort": "low"
+      },
+      "tokenizer_sha256": "0614fe83cadab421296e664e1f48f4261fa8fef6e03e63bb75c20f38e37d07d3",
+      "prompt_sha256": "8dc607f0726129d50196c4b94dc674b32a687af2ab5e8a2a1f7799f6229149d2",
+      "input_tokens_with_reserve": 1729,
+      "excluded_windows": 0
+    },
+    "live_empty": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "mode": "full_graph_rag",
+      "usage": {
+        "input_tokens": 1898,
+        "output_tokens": 81,
+        "total_tokens": 1979
+      },
+      "request_id": "req_01m849x85se52s70ad4gfkxvbt",
+      "attempts": [
+        {
+          "attempt": 1,
+          "request_id": "req_01m849x85se52s70ad4gfkxvbt",
+          "http_status": 200,
+          "latency_seconds": 1.0934225999808405
+        }
+      ],
+      "error": null,
+      "timings_seconds": {
+        "retrieval_preflight": 3.090662100003101,
+        "query_analysis": 18.631513300002553,
+        "entity_linking": 0.5446025000128429,
+        "graph_retrieval": 2.3515366000065114,
+        "evidence_extraction": 0.04362340000807308,
+        "reranking": 0.05187509997631423,
+        "retrieval_postflight": 2.291887900006259,
+        "retrieval": 27.03876389999641,
+        "context_building": 1.7477088999876287,
+        "llm": 1.0936734999995679,
+        "end_to_end": 29.88430679999874
+      },
+      "path_ids": [
+        "path:79a29a349204c124086179f0059f329c1a8f6b1b2050b24472d167749d6e32eb",
+        "path:218586329d1e8ebdc20f4c0c0800517e0f66dd982019d808d048681985322885",
+        "path:8828792cefd32ccc795add4932e1cf8cc16a030adcbe25aee9b7d34fd05559ec",
+        "path:88640b287f37de19dd8fb92157bed96d8be2ce3a625d8a65f4fe2a8461e6e3f2",
+        "path:f73d5c36588382e31cc720e7bd48b72e673f42e909122f65c79c4c87a82cac85"
+      ],
+      "citation_ids": [],
+      "citations": [],
+      "included_documents": [
+        "W2096307598",
+        "W2076293586",
+        "W3101922761"
+      ],
+      "model": "openai/gpt-oss-120b",
+      "generation_settings": {
+        "model": "openai/gpt-oss-120b",
+        "temperature": 0.0,
+        "max_output_tokens": 1000,
+        "timeout": 30.0,
+        "max_retries": 0,
+        "max_input_tokens": 6000,
+        "context_window": 131072,
+        "reasoning_effort": "low"
+      },
+      "tokenizer_sha256": "0614fe83cadab421296e664e1f48f4261fa8fef6e03e63bb75c20f38e37d07d3",
+      "prompt_sha256": "2b30ba9bc7230c32754e7fd1375fa9d069b8faa331c528e1e86fe47f610e0bc4",
+      "input_tokens_with_reserve": 2081,
+      "excluded_windows": 0
+    },
+    "live_missing_detail": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "mode": "full_graph_rag",
+      "usage": {
+        "input_tokens": 2425,
+        "output_tokens": 73,
+        "total_tokens": 2498
+      },
+      "request_id": "req_01m849waqgec89cbgw4d1wgbwn",
+      "attempts": [
+        {
+          "attempt": 1,
+          "request_id": "req_01m849waqgec89cbgw4d1wgbwn",
+          "http_status": 200,
+          "latency_seconds": 1.333744800009299
+        }
+      ],
+      "error": null,
+      "timings_seconds": {
+        "retrieval_preflight": 3.2241809999977704,
+        "query_analysis": 18.6304167000053,
+        "entity_linking": 0.44270919999689795,
+        "graph_retrieval": 2.4761936999857426,
+        "evidence_extraction": 0.04828139999881387,
+        "reranking": 0.048469900008058175,
+        "retrieval_postflight": 1.9988575000024866,
+        "retrieval": 26.931090800004313,
+        "context_building": 1.3937729000172112,
+        "llm": 1.3339827999880072,
+        "end_to_end": 29.66294259999995
+      },
+      "path_ids": [
+        "path:a4fd5fe00e285afc980d902e0e452fea4197497a9f2d528321b60eb085d08717",
+        "path:347bdc9ebaa82894e75ea2d3903a674b68fb3c01dd101e2f5006d323feec8c71",
+        "path:817466239ea4a8c8cbe8fa93520a17d1ff783312bf1544fd51126cc6c8879247",
+        "path:720c1d621a74e4884ededc8c8a986783738861770c483fc628c691408d1fc59e",
+        "path:1b665eaaeffa3c2e3aa27717c1fdd1356d81d3962890bbd6dcf93ea8312ac346"
+      ],
+      "citation_ids": [],
+      "citations": [],
+      "included_documents": [
+        "W4389076493",
+        "W2991563224",
+        "W3138328568",
+        "W4230116451",
+        "W2906067930"
+      ],
+      "model": "openai/gpt-oss-120b",
+      "generation_settings": {
+        "model": "openai/gpt-oss-120b",
+        "temperature": 0.0,
+        "max_output_tokens": 1000,
+        "timeout": 30.0,
+        "max_retries": 0,
+        "max_input_tokens": 6000,
+        "context_window": 131072,
+        "reasoning_effort": "low"
+      },
+      "tokenizer_sha256": "0614fe83cadab421296e664e1f48f4261fa8fef6e03e63bb75c20f38e37d07d3",
+      "prompt_sha256": "4507ca43f95c2187ee47b398e93f4e6f12976573d876c30681d712035fcb5629",
+      "input_tokens_with_reserve": 2608,
+      "excluded_windows": 0
+    },
+    "live_parity": {
+      "status": "ANSWERED",
+      "mode": "full_graph_rag",
+      "usage": {
+        "input_tokens": 930,
+        "output_tokens": 112,
+        "total_tokens": 1042
+      },
+      "request_id": "req_01m849vdxzebeb7sfszam89y14",
+      "attempts": [
+        {
+          "attempt": 1,
+          "request_id": "req_01m849vdxzebeb7sfszam89y14",
+          "http_status": 200,
+          "latency_seconds": 17.21254659999977
+        }
+      ],
+      "error": null,
+      "timings_seconds": {
+        "retrieval_preflight": 3.3851600000052713,
+        "query_analysis": 28.546994100004667,
+        "entity_linking": 0.48847109999042004,
+        "graph_retrieval": 3.783018899994204,
+        "evidence_extraction": 0.26742049999302253,
+        "reranking": 0.06247000000439584,
+        "retrieval_postflight": 2.0988265000050887,
+        "retrieval": 43.024499399994966,
+        "context_building": 1.6992803999746684,
+        "llm": 17.21272539999336,
+        "end_to_end": 61.94046149999485
+      },
+      "path_ids": [
+        "path:017ee8bf54704bd4504a3c9f0fd763565246ef30dfd9e8f3b3e4a082cb65f457",
+        "path:1fd59c3ab5e0e3e9f9bfb0fe4dd9af3f97e893f357ccfe4b7adb1b7bbfa502b3",
+        "path:3562f4ab4061096755c19e1863d71c12542200b68c1c9ebc6997ac4ee14aeabd",
+        "path:bbc683af7c0e9bb9cd9f687ddc922309dbe0f994dfbd84ace6b83d09a1105a74",
+        "path:147302925b8d0ce17f5e5b5dcd1a851d39acb92b18d2a6042200031b126780bb"
+      ],
+      "citation_ids": [
+        "source-1"
+      ],
+      "citations": [
+        {
+          "document_id": "W3138328568",
+          "revision_id": "sha256:4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "title": "Simultaneous Improvement of Limonene Production and Tolerance in Yarrowia lipolytica through Tolerance Engineering and Evolutionary Engineering",
+          "source_url": "https://openalex.org/W3138328568",
+          "text_sha256": "4e04e88c833477762332b30f68ea9f9cc8b444e20aaa56f6252b0011937b3b25",
+          "start": 0,
+          "end": 1744,
+          "citation_id": "source-1",
+          "origins": [
+            {
+              "path_id": "path:017ee8bf54704bd4504a3c9f0fd763565246ef30dfd9e8f3b3e4a082cb65f457",
+              "source_triple_id": "t:501023a771bf7c6caad7ae95a9f6dcfbbdf68f5933178eaf39edc270ffdc054a",
+              "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:d7489c75fbd44c86873b334147512c4cd9ebcb4ea01ab52d05568f1969af9adf",
+              "relation_type": "PRODUCES",
+              "head_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:e:272b02b32fc2144d14531ea849798af919b92e082d725fb1e37b053f9eeb237a",
+              "tail_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:e:1d05cadd8a7c4335cbe9a8c2eead3a4d40855753b3d88a436000d1bba2adabd5",
+              "traversed_reverse": true
+            },
+            {
+              "path_id": "path:1fd59c3ab5e0e3e9f9bfb0fe4dd9af3f97e893f357ccfe4b7adb1b7bbfa502b3",
+              "source_triple_id": "t:2812412c50cbf5412d574504b7f7d308f6fd451ac89d5fd397772b432b3e3729",
+              "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:274fc498de33f76988e4d5f98ad65ebb5e5aabfaf6ea8b47df799426ae7f317f",
+              "relation_type": "CAUSES",
+              "head_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:e:1d05cadd8a7c4335cbe9a8c2eead3a4d40855753b3d88a436000d1bba2adabd5",
+              "tail_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:e:3f25356633b00252b44ea3923bbef3c7d6d01e4e649659bd0f7de923ed236fb2",
+              "traversed_reverse": false
+            },
+            {
+              "path_id": "path:3562f4ab4061096755c19e1863d71c12542200b68c1c9ebc6997ac4ee14aeabd",
+              "source_triple_id": "t:275ba35e1efa361d39a299d12717a3a5d46323b5bec636ba9bd89da067095c51",
+              "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:cdf0550e35ebfae464b832d35d64832396fa44d19457838762cd41fcdd642e4c",
+              "relation_type": "HAS_ATTRIBUTE",
+              "head_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:e:1d05cadd8a7c4335cbe9a8c2eead3a4d40855753b3d88a436000d1bba2adabd5",
+              "tail_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:e:587081b3c77656fdfc864b44dd963399032404a5999de8877e3b0d4153881a47",
+              "traversed_reverse": false
+            },
+            {
+              "path_id": "path:bbc683af7c0e9bb9cd9f687ddc922309dbe0f994dfbd84ace6b83d09a1105a74",
+              "source_triple_id": "t:469892259fe2be59582a6078f6a55513a11ba03ead52bb2454b0a05261dcc8ab",
+              "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:5ec33d604f4dd6d1cc446ee631d748dcd604922d70102efc061205cb435213e5",
+              "relation_type": "PRODUCES",
+              "head_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:e:11aa16588639658ad8769035b49b247a2e3aabd81dff0f78fdbf4452ff450fd2",
+              "tail_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:e:1d05cadd8a7c4335cbe9a8c2eead3a4d40855753b3d88a436000d1bba2adabd5",
+              "traversed_reverse": true
+            },
+            {
+              "path_id": "path:147302925b8d0ce17f5e5b5dcd1a851d39acb92b18d2a6042200031b126780bb",
+              "source_triple_id": "t:36901571f6e22ae3f74dabc59376c5b895010819b165ca4640de19e8629025cf",
+              "window_id": "w:7cf9fd7d8c977940f88a9d2c39922f177d24773a15e6841ed6fa8bd9037d3903",
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:5bc208b4cc9f766e4644b974b705e80811034f3d4cf242667a266684850fa679",
+              "relation_type": "PRODUCES",
+              "head_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:e:1d21a3fb6aad416d430f9af7d559580ba74b9dd2b5f9aaf7ed26a6205e3fdaae",
+              "tail_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:e:272b02b32fc2144d14531ea849798af919b92e082d725fb1e37b053f9eeb237a",
+              "traversed_reverse": true
+            }
+          ]
+        }
+      ],
+      "included_documents": [
+        "W3138328568"
+      ],
+      "model": "openai/gpt-oss-120b",
+      "generation_settings": {
+        "model": "openai/gpt-oss-120b",
+        "temperature": 0.0,
+        "max_output_tokens": 1000,
+        "timeout": 30.0,
+        "max_retries": 0,
+        "max_input_tokens": 6000,
+        "context_window": 131072,
+        "reasoning_effort": "low"
+      },
+      "tokenizer_sha256": "0614fe83cadab421296e664e1f48f4261fa8fef6e03e63bb75c20f38e37d07d3",
+      "prompt_sha256": "a9bf52a0e3bf2b30ac8e2bc73851ab90e5e29b96ffc4002c4195c6d97a4c4872",
+      "input_tokens_with_reserve": 1113,
+      "excluded_windows": 0
+    },
+    "minimal": {
+      "status": "PASS",
+      "mode": "api_minimal",
+      "usage": {
+        "input_tokens": 114,
+        "output_tokens": 30,
+        "total_tokens": 144
+      },
+      "request_id": "req_01m849qrn2epx8jnf7x9wx22v7",
+      "attempts": [
+        {
+          "attempt": 1,
+          "request_id": "req_01m849qrn2epx8jnf7x9wx22v7",
+          "http_status": 200,
+          "latency_seconds": 1.2846321999968495
+        }
+      ],
+      "error": null,
+      "timings_seconds": null,
+      "path_ids": [],
+      "citation_ids": [],
+      "citations": [],
+      "included_documents": [],
+      "model": "openai/gpt-oss-120b",
+      "generation_settings": {
+        "model": "openai/gpt-oss-120b",
+        "temperature": 0.0,
+        "max_output_tokens": 1000,
+        "timeout": 30.0,
+        "max_retries": 0,
+        "max_input_tokens": 6000,
+        "context_window": 131072,
+        "reasoning_effort": "low"
+      },
+      "tokenizer_sha256": "0614fe83cadab421296e664e1f48f4261fa8fef6e03e63bb75c20f38e37d07d3",
+      "prompt_sha256": null,
+      "input_tokens_with_reserve": 297,
+      "excluded_windows": 0
+    },
+    "multi_hop": {
+      "status": "ANSWERED",
+      "mode": "frozen_replay",
+      "usage": {
+        "input_tokens": 1869,
+        "output_tokens": 146,
+        "total_tokens": 2015
+      },
+      "request_id": "req_01m849rv2sebyah0szbbbx5713",
+      "attempts": [
+        {
+          "attempt": 1,
+          "request_id": "req_01m849rv2sebyah0szbbbx5713",
+          "http_status": 200,
+          "latency_seconds": 1.8282058000040706
+        }
+      ],
+      "error": null,
+      "timings_seconds": {
+        "retrieval": 0.015187099983450025,
+        "context_building": 1.7486268999928143,
+        "llm": 1.8285958000051323,
+        "end_to_end": 3.597080300009111
+      },
+      "path_ids": [
+        "path:06fa08fbdf3fbbc723a999b588f636416f356f3589aa4874b7e2ee7e464ffa37",
+        "path:0f26ceb20f510e6f6a38fb63181a5daa309abef80e40d01506350cdff4645b41",
+        "path:e266dd8cac7fac979b9600f913c51994ff0ae59fb32ffa7c5b6069da58c50bb0",
+        "path:07d51da5704ab907d4964e221a8a356beb26b43b0b4feed8b648613a96b759a8",
+        "path:097682065d813e8114174de2d0ccd61d3b2c07960433e3350f8435c62afae4b4"
+      ],
+      "citation_ids": [
+        "source-1"
+      ],
+      "citations": [
+        {
+          "document_id": "W4389076493",
+          "revision_id": "sha256:f4cf0293b69944ea4057fbb9b4935928b2ddc909e1b7e72e7b9ea3e9414ed1fe",
+          "title": "An Adaptive Region Proposal Network With Progressive Attention Propagation for Tiny Person Detection From UAV Images",
+          "source_url": "https://openalex.org/W4389076493",
+          "text_sha256": "f4cf0293b69944ea4057fbb9b4935928b2ddc909e1b7e72e7b9ea3e9414ed1fe",
+          "start": 0,
+          "end": 1999,
+          "citation_id": "source-1",
+          "origins": [
+            {
+              "path_id": "path:06fa08fbdf3fbbc723a999b588f636416f356f3589aa4874b7e2ee7e464ffa37",
+              "source_triple_id": "t:ee2c4f6e3c5281889fd117af10edc8a50b8972cf96567abbcdee6a86095dfc45",
+              "window_id": "w:6a466297ec55724f06e12041fcbaf921cf54eb5d0e022774ad35cb8fbf3d3952",
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:dca9b0f770631a6dab9721bd336b6e0103342f3fa6e1f535aebe621a61e9dd4a",
+              "relation_type": "USES",
+              "head_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:e:0405a612e6ef478f87f6728b2a3e7a554663cfb04a6bfc4d86f75eb618c50cdd",
+              "tail_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:e:be68e27619e72487b891d48e09accc99f8de62889fce58fd66c2e6dabdcf188c",
+              "traversed_reverse": false
+            },
+            {
+              "path_id": "path:07d51da5704ab907d4964e221a8a356beb26b43b0b4feed8b648613a96b759a8",
+              "source_triple_id": "t:0af502bed3d414bbd3a12afecd993c208484daab2df3d0375f925ed405e0860f",
+              "window_id": "w:6a466297ec55724f06e12041fcbaf921cf54eb5d0e022774ad35cb8fbf3d3952",
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:b1a6c909713e266cd34904ac2610d8b14fd7b7a30a69c79ab951d1cbe512b8c1",
+              "relation_type": "COMPARED_WITH",
+              "head_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:e:0405a612e6ef478f87f6728b2a3e7a554663cfb04a6bfc4d86f75eb618c50cdd",
+              "tail_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:e:6fe9842618d91f8eba22c11427e52503168cd97745d303c70b7c336331113b89",
+              "traversed_reverse": false
+            },
+            {
+              "path_id": "path:097682065d813e8114174de2d0ccd61d3b2c07960433e3350f8435c62afae4b4",
+              "source_triple_id": "t:3f15a38e848c7229ead613511b1041dfcf7f742f6128549618025bcda593bf4c",
+              "window_id": "w:6a466297ec55724f06e12041fcbaf921cf54eb5d0e022774ad35cb8fbf3d3952",
+              "edge_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:ct:6b9e8f493ed70142f7782e25584533c04bd86051dcbe94efcaa8ca2b2eb8aa0c",
+              "relation_type": "MEASURES",
+              "head_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:e:0405a612e6ef478f87f6728b2a3e7a554663cfb04a6bfc4d86f75eb618c50cdd",
+              "tail_key": "relex_sem_e5_small_name_t095_ner_t046_er2f3_concept_v2_sem_name_t0830:e:d54badba773c8e3d81e65976c455d52b4ba2f803f4a6eb626bd09279c471ac54",
+              "traversed_reverse": false
+            }
+          ]
+        }
+      ],
+      "included_documents": [
+        "W4389076493",
+        "W2991563224",
+        "W3101922761"
+      ],
+      "model": "openai/gpt-oss-120b",
+      "generation_settings": {
+        "model": "openai/gpt-oss-120b",
+        "temperature": 0.0,
+        "max_output_tokens": 1000,
+        "timeout": 30.0,
+        "max_retries": 0,
+        "max_input_tokens": 6000,
+        "context_window": 131072,
+        "reasoning_effort": "low"
+      },
+      "tokenizer_sha256": "0614fe83cadab421296e664e1f48f4261fa8fef6e03e63bb75c20f38e37d07d3",
+      "prompt_sha256": "1ee09cc06728b9892991bd0e11dabf45988aceb1a7c8108d502207e215074d68",
+      "input_tokens_with_reserve": 2052,
+      "excluded_windows": 0
+    },
+    "single": {
+      "status": "ERROR",
+      "mode": "frozen_replay",
+      "usage": null,
+      "request_id": null,
+      "attempts": [
+        {
+          "attempt": 1,
+          "request_id": null,
+          "latency_seconds": 30.378583500016248,
+          "error": "timeout"
+        }
+      ],
+      "error": {
+        "stage": "generation",
+        "code": "timeout"
+      },
+      "timings_seconds": {
+        "retrieval": 0.020329999999376014,
+        "context_building": 1.9511180999979842,
+        "llm": 30.378876000002492,
+        "end_to_end": 32.35679799999343
+      },
+      "path_ids": [
+        "path:017ee8bf54704bd4504a3c9f0fd763565246ef30dfd9e8f3b3e4a082cb65f457",
+        "path:1fd59c3ab5e0e3e9f9bfb0fe4dd9af3f97e893f357ccfe4b7adb1b7bbfa502b3",
+        "path:3562f4ab4061096755c19e1863d71c12542200b68c1c9ebc6997ac4ee14aeabd",
+        "path:bbc683af7c0e9bb9cd9f687ddc922309dbe0f994dfbd84ace6b83d09a1105a74",
+        "path:147302925b8d0ce17f5e5b5dcd1a851d39acb92b18d2a6042200031b126780bb"
+      ],
+      "citation_ids": [],
+      "citations": [],
+      "included_documents": [
+        "W3138328568"
+      ],
+      "model": "openai/gpt-oss-120b",
+      "generation_settings": {
+        "model": "openai/gpt-oss-120b",
+        "temperature": 0.0,
+        "max_output_tokens": 1000,
+        "timeout": 30.0,
+        "max_retries": 0,
+        "max_input_tokens": 6000,
+        "context_window": 131072,
+        "reasoning_effort": "low"
+      },
+      "tokenizer_sha256": "0614fe83cadab421296e664e1f48f4261fa8fef6e03e63bb75c20f38e37d07d3",
+      "prompt_sha256": "a9bf52a0e3bf2b30ac8e2bc73851ab90e5e29b96ffc4002c4195c6d97a4c4872",
+      "input_tokens_with_reserve": 1113,
+      "excluded_windows": 0
+    }
+  },
+  "earlier_preflight_attempts": [
+    {
+      "status": "BLOCKED",
+      "mode": "api_minimal",
+      "usage": null,
+      "request_id": null,
+      "attempts": [
+        {
+          "attempt": 1,
+          "request_id": null,
+          "latency_seconds": 0.6236888999992516,
+          "error": "network_error"
+        }
+      ],
+      "error": "network_error",
+      "timings_seconds": null,
+      "path_ids": [],
+      "citation_ids": [],
+      "citations": [],
+      "included_documents": [],
+      "model": "llama-3.3-70b-versatile",
+      "generation_settings": {
+        "model": "llama-3.3-70b-versatile",
+        "temperature": 0.0,
+        "max_output_tokens": 1000,
+        "timeout": 30.0,
+        "max_retries": 0,
+        "max_input_tokens": 6000,
+        "context_window": 131072
+      },
+      "tokenizer_sha256": null,
+      "prompt_sha256": null,
+      "input_tokens_with_reserve": null,
+      "excluded_windows": 0
+    },
+    {
+      "status": "BLOCKED",
+      "mode": "api_minimal",
+      "usage": null,
+      "request_id": "req_01m849k70xer286a8c9mm52kct",
+      "attempts": [
+        {
+          "attempt": 1,
+          "request_id": "req_01m849k70xer286a8c9mm52kct",
+          "http_status": 404,
+          "latency_seconds": 1.0421206000028178
+        }
+      ],
+      "error": "http_error",
+      "timings_seconds": null,
+      "path_ids": [],
+      "citation_ids": [],
+      "citations": [],
+      "included_documents": [],
+      "model": "llama-3.3-70b-versatile",
+      "generation_settings": {
+        "model": "llama-3.3-70b-versatile",
+        "temperature": 0.0,
+        "max_output_tokens": 1000,
+        "timeout": 30.0,
+        "max_retries": 0,
+        "max_input_tokens": 6000,
+        "context_window": 131072
+      },
+      "tokenizer_sha256": null,
+      "prompt_sha256": null,
+      "input_tokens_with_reserve": null,
+      "excluded_windows": 0
+    }
+  ],
+  "artifact_sha256": {
+    "cross_market.json": "f0d3034ed856e799b3989c922a73560310884b1f68377e944f2aa42b7a589d08",
+    "cross_optics.json": "2fcb0361360814b1067efc0120dbccb193d4a7e5a439728a67e39bb1ae34baa6",
+    "live_empty.json": "acbc663be9c8f62d71339cf00bd6764b25e5084d1af7fdf8a3e2203759b223c4",
+    "live_missing_detail.json": "28c689598e638ad5e594fa6dcaa2e2874e7bbf43416008fbaf39477f79de5722",
+    "live_parity.json": "f8aafd88444fa10884cfe7fcc2c4f5899eb24511877170dc2196c4101c1caf9f",
+    "minimal.json": "ebda6ae5b4186d945fa6955dab5e8a4bf8e99f637d6c8932153e6d19b1968af7",
+    "multi_hop.json": "b501538edd5f9df2ef0097a8473b2db7c7fc8625810fbec228f46a43e1985d43",
+    "single.json": "5cf8f78b45e74125a646434ed4fc0d7c4b1a548e018e2ad0cda1e64bfa3994c7"
+  },
+  "completion_attempts": 10,
+  "usage_reported_attempts": 7,
+  "reported_usage": {
+    "input_tokens": 9607,
+    "output_tokens": 762,
+    "total_tokens": 10369
+  },
+  "junit": {
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "196",
+    "time": "7.262",
+    "timestamp": "2026-11-23T16:42:07.248645+03:00"
+  }
+}

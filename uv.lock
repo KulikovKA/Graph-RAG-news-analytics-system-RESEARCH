@@ -1122,6 +1122,7 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "gliner" },
+    { name = "httpx" },
     { name = "huggingface-hub" },
     { name = "jsonschema" },
     { name = "numpy" },
@@ -1163,6 +1164,7 @@ requires-dist = [
     { name = "gliner", specifier = "==0.2.26" },
     { name = "gliner2", extras = ["local"], marker = "extra == 'benchmark'", specifier = "==2.1.0" },
     { name = "gliner2", extras = ["local"], marker = "extra == 'research'", specifier = "==2.1.0" },
+    { name = "httpx", specifier = "==0.28.1" },
     { name = "huggingface-hub", specifier = "==1.28.0" },
     { name = "jsonschema", specifier = "==4.25.1" },
     { name = "matplotlib", marker = "extra == 'research'", specifier = "==3.10.8" },
