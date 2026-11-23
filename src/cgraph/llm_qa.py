@@ -1,7 +1,9 @@
 """CLI для Stage 3A.5.10, запуск из исследовательского checkout."""
 
 import argparse
+from contextlib import ExitStack
 from dataclasses import asdict
+from functools import lru_cache
 from hashlib import sha256
 from importlib.metadata import version
 import json
@@ -12,10 +14,12 @@ from time import perf_counter
 
 from .llm_context import (PROMPT_VERSION, AnswerError, ContextError, build_context, validate_answer)
 from .llm_groq import GenerationSettings, GroqClient, HarmonyTokenCounter, ProviderError, SECRET_PATTERN
-from .llm_retrieval import ROOT, PROFILE_SHA, RetrievalError, frozen_replay, live_retrieval, load_corpus, load_profile
+from .llm_retrieval import (ROOT, PROFILE_SHA, RetrievalError, frozen_replay, live_retrieval, load_corpus,
+                            load_profile, open_live_runtime, peak_rss_bytes)
 
 
-def run_question(question, *, replay, neo4j_env=None, entity_cache=None, gliner_path=None):
+def run_question(question, *, replay, neo4j_env=None, entity_cache=None, gliner_path=None,
+                 runtime=None, tokenizer_factory=None):
     start = perf_counter()
     timings = {}
     record = {"schema_version": "3A.5.10-v1", "mode": "frozen_replay" if replay else "full_graph_rag",
@@ -30,7 +34,7 @@ def run_question(question, *, replay, neo4j_env=None, entity_cache=None, gliner_
         settings = GenerationSettings.from_environment()
         record["model"] = settings.model
         record["generation_settings"] = asdict(settings)
-        profile = load_profile()
+        profile = load_profile() if runtime is None else runtime.profile
         record["retrieval_identity"] = {k: profile[k] for k in (
             "profile_id", "namespace", "corpus_sha256", "document_lock_sha256",
             "graph_fingerprint", "snapshot_sha256")}
@@ -42,6 +46,8 @@ def run_question(question, *, replay, neo4j_env=None, entity_cache=None, gliner_
         try:
             if replay:
                 retrieval = frozen_replay(question, profile)
+            elif runtime is not None:
+                retrieval = runtime.retrieve(question, timings)
             else:
                 retrieval = live_retrieval(question, profile, timings, neo4j_env=neo4j_env,
                                            entity_cache=entity_cache, gliner_path=gliner_path)
@@ -52,8 +58,9 @@ def run_question(question, *, replay, neo4j_env=None, entity_cache=None, gliner_
         stage = "context"
         moment = perf_counter()
         try:
-            count = HarmonyTokenCounter(Path(os.environ["LLM_TOKENIZER_PATH"]),
-                                        os.environ["LLM_TOKENIZER_SHA256"], settings.reasoning_effort)
+            tokenizer_factory = tokenizer_factory or HarmonyTokenCounter
+            count = tokenizer_factory(Path(os.environ["LLM_TOKENIZER_PATH"]),
+                                      os.environ["LLM_TOKENIZER_SHA256"], settings.reasoning_effort)
             context = build_context(question, retrieval["paths"], corpus, count, settings.max_input_tokens)
         finally:
             timings["context_building"] = perf_counter() - moment
@@ -105,40 +112,97 @@ def run_question(question, *, replay, neo4j_env=None, entity_cache=None, gliner_
     return record
 
 
-def main(argv=None):
-    parser = argparse.ArgumentParser(description="Answer a question with the frozen Graph-RAG C profile.")
-    parser.add_argument("--question", required=True)
-    parser.add_argument("--replay", action="store_true", help="Use exact approved Stage 3A.5.9 archived retrieval")
-    parser.add_argument("--neo4j-env", type=Path, help="Existing file with Neo4j connection settings")
-    parser.add_argument("--entity-cache", type=Path, default=ROOT / ".cache/semantic_concept_sweep")
-    parser.add_argument("--gliner-path", type=Path, default=ROOT / "artifacts/ner_v2/models/gliner25")
-    parser.add_argument("--output", type=Path, help="Write a new JSON result file")
-    args = parser.parse_args(argv)
-    if not args.question.strip():
-        parser.error("--question must be nonempty")
-    if args.output is not None and (args.output.exists() or not args.output.parent.is_dir()):
-        parser.error("--output must name a new file in an existing directory")
-    if not args.replay:
-        print("WARNING: LIVE GRAPH PREFLIGHT AND LOCAL GLINER/E5 INFERENCE MAY TAKE TIME.",
-              file=sys.stderr, flush=True)
-    record = run_question(args.question, replay=args.replay, neo4j_env=args.neo4j_env,
-                          entity_cache=args.entity_cache, gliner_path=args.gliner_path)
+def emit_result(record, output):
     encoded = json.dumps(record, ensure_ascii=False, allow_nan=False, indent=2)
     key = os.getenv("GROQ_API_KEY", "").strip()
     if SECRET_PATTERN.search(encoded) or (key and key in encoded):
         print("ERROR: secret_in_result", file=sys.stderr)
         return 2
-    if args.output is not None:
+    if output is not None:
         try:
-            with args.output.open("x", encoding="utf-8", newline="\n") as stream:
+            with output.open("x", encoding="utf-8", newline="\n") as stream:
                 stream.write(encoded + "\n")
         except OSError:
             print("ERROR: output_write_failed", file=sys.stderr)
             return 2
-    print(encoded)
+    print(encoded, flush=True)
     if record.get("error", {}).get("code") == "missing_GROQ_API_KEY":
         print("Set GROQ_API_KEY in the process environment. See .env.example.", file=sys.stderr)
     return 2 if record["status"] == "ERROR" else 0
+
+
+def run_interactive(*, neo4j_env, entity_cache, gliner_path, output):
+    runtime = None
+    tokenizer_factory = lru_cache(maxsize=1)(HarmonyTokenCounter)
+    exit_code, index = 0, 0
+    with ExitStack() as lifetime:
+        try:
+            while True:
+                if sys.stdin.isatty():
+                    print("question (exit to quit)> ", file=sys.stderr, end="", flush=True)
+                line = sys.stdin.readline()
+                if not line or line.strip().casefold() == "exit":
+                    break
+                question = line.rstrip("\r\n")
+                if not question.strip():
+                    continue
+                started = perf_counter()
+                setup = None
+                if runtime is None:
+                    try:
+                        runtime = lifetime.enter_context(open_live_runtime(
+                            load_profile(), neo4j_env=neo4j_env, entity_cache=entity_cache, gliner_path=gliner_path))
+                    except Exception as exc:
+                        print(f"ERROR: live runtime startup failed ({type(exc).__name__}). "
+                              "Check the frozen model assets and NEO4J_* settings.", file=sys.stderr)
+                        return 2
+                    setup = perf_counter() - started
+                index += 1
+                record = run_question(question, replay=False, runtime=runtime, tokenizer_factory=tokenizer_factory)
+                if setup is not None:
+                    timings = record["timings_seconds"]
+                    timings["runtime_setup"] = setup
+                    timings["end_to_end"] += setup
+                    if "retrieval" in timings:
+                        timings["retrieval"] += setup
+                record["session_query"] = index
+                record["peak_rss_bytes"] = peak_rss_bytes()
+                path = None if output is None else output / f"question-{index:04d}.json"
+                exit_code = max(exit_code, emit_result(record, path))
+        except KeyboardInterrupt:
+            return 130
+    return exit_code
+
+
+def main(argv=None):
+    parser = argparse.ArgumentParser(description="Answer a question with the frozen Graph-RAG C profile.")
+    mode = parser.add_mutually_exclusive_group(required=True)
+    mode.add_argument("--question")
+    mode.add_argument("--interactive", action="store_true", help="Keep one live runtime until exit or EOF")
+    parser.add_argument("--replay", action="store_true", help="Use exact approved Stage 3A.5.9 archived retrieval")
+    parser.add_argument("--neo4j-env", type=Path, help="Existing file with Neo4j connection settings")
+    parser.add_argument("--entity-cache", type=Path, default=ROOT / ".cache/semantic_concept_sweep")
+    parser.add_argument("--gliner-path", type=Path, default=ROOT / "artifacts/ner_v2/models/gliner25")
+    parser.add_argument("--output", type=Path, help="New JSON result file, or an existing directory for --interactive")
+    args = parser.parse_args(argv)
+    if args.interactive:
+        if args.replay:
+            parser.error("--interactive requires live retrieval")
+        if args.output is not None and not args.output.is_dir():
+            parser.error("--interactive --output must name an existing directory")
+    else:
+        if not args.question.strip():
+            parser.error("--question must be nonempty")
+        if args.output is not None and (args.output.exists() or not args.output.parent.is_dir()):
+            parser.error("--output must name a new file in an existing directory")
+    if not args.replay:
+        print("WARNING: LIVE GRAPH PREFLIGHT AND LOCAL GLINER/E5 INFERENCE MAY TAKE TIME.",
+              file=sys.stderr, flush=True)
+    options = {"neo4j_env": args.neo4j_env, "entity_cache": args.entity_cache, "gliner_path": args.gliner_path}
+    if args.interactive:
+        return run_interactive(**options, output=args.output)
+    record = run_question(args.question, replay=args.replay, **options)
+    return emit_result(record, args.output)
 
 
 if __name__ == "__main__":

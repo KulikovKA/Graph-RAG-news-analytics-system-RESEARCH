@@ -135,8 +135,62 @@ def retrieve_c(question: str, profile: dict, driver, database, timings: dict,
             "truncated": ranked["truncated"], "reason": ranked["reason"]}
 
 
-def live_retrieval(question: str, profile: dict, timings: dict, *, neo4j_env: Path | None,
-                   entity_cache: Path, gliner_path: Path) -> dict:
+class LiveRetrievalRuntime:
+    """Владеет ресурсами одной последовательной сессии с профилем C."""
+
+    def __init__(self, profile, driver, database, analyzer, linker, read_snapshot, set_seed):
+        self.profile = profile
+        self._driver, self._database = driver, database
+        self._analyzer, self._linker = analyzer, linker
+        self._read_snapshot, self._set_seed = read_snapshot, set_seed
+
+    def __enter__(self):
+        if self._driver is None:
+            raise RetrievalError("Live runtime is closed")
+        return self
+
+    def __exit__(self, *_):
+        self.close()
+
+    def close(self):
+        driver = self._driver
+        self._driver = self._analyzer = self._linker = None
+        if driver is not None:
+            driver.close()
+
+    def retrieve(self, question: str, timings: dict) -> dict:
+        if self._driver is None:
+            raise RetrievalError("Live runtime is closed")
+
+        started = perf_counter()
+        before = self._read_snapshot(self._driver, self._database)
+        if any(before[k] != self.profile[k] for k in ("graph_fingerprint", "snapshot_sha256")):
+            raise RetrievalError("Live graph snapshot mismatch")
+        timings["retrieval_preflight"] = perf_counter() - started
+        self._set_seed(self.profile["seed"])
+        result = retrieve_c(question, self.profile, self._driver, self._database, timings,
+                            analyze=self._analyzer.analyze, link=self._linker.link_seeds)
+
+        started = perf_counter()
+        after = self._read_snapshot(self._driver, self._database)
+        timings["retrieval_postflight"] = perf_counter() - started
+        if before != after:
+            raise RetrievalError("Live graph changed during retrieval")
+        result["graph_verified"] = {k: after[k] for k in ("graph_fingerprint", "snapshot_sha256")}
+        return result
+
+
+def peak_rss_bytes() -> int:
+    if sys.platform == "win32":
+        import psutil
+        return psutil.Process().memory_info().peak_wset
+    import resource
+    value = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+    return value if sys.platform == "darwin" else value * 1024
+
+
+def open_live_runtime(profile: dict, *, neo4j_env: Path | None, entity_cache: Path,
+                      gliner_path: Path) -> LiveRetrievalRuntime:
     search_path = sys.path[:]
     sys.path.insert(0, str(ROOT / "scripts"))
     try:
@@ -150,55 +204,44 @@ def live_retrieval(question: str, profile: dict, timings: dict, *, neo4j_env: Pa
     from .entity_linking import EntityLinker, load_entity_cache
     from .query_analysis import E3_HASHES, MODEL_ID, E3Extractor, QueryAnalyzer
 
+    for name, digest in profile["source_sha256"].items():
+        check_python_source(ROOT / name, digest)
+    versions = {"python": platform.python_version()}
+    versions.update({name: version(name) for name in profile["versions"] if name != "python"})
+    if versions != profile["versions"]:
+        raise RetrievalError("Installed retrieval versions differ from PROFILE.json")
+    gliner = profile["models"]["GLiNER"]
+    if gliner["sha256"] != E3_HASHES or gliner["id"] != MODEL_ID:
+        raise RetrievalError("GLiNER identity mismatch")
+    cache = load_entity_cache(entity_cache)
+    identity = profile["models"]["E5"]
+    model_root = Path(cache.model["root"])
+    hashes = {Path(row["path"]).relative_to(model_root).as_posix(): row["sha256"]
+              for row in cache.model["files"]}
+    if (cache.fingerprint != identity["entity_cache_fingerprint"]
+            or cache.model["model"] != identity["id"] or hashes != identity["sha256"]):
+        raise RetrievalError("E5 identity mismatch")
+
+    production = profile["production"]
+    analyzer = QueryAnalyzer(E3Extractor(gliner_path), threshold=production["gliner_threshold"])
+    linker = EntityLinker(cache, namespace=profile["namespace"], **production["linking"])
+    torch.set_num_threads(profile["cpu_threads"])
+
+    def read_snapshot(driver, database):
+        facts = {}
+        with driver.session(database=database, default_access_mode=READ_ACCESS) as session:
+            verify(session, facts)
+        return facts
+
+    driver, database = connect_neo4j(neo4j_env)
+    return LiveRetrievalRuntime(profile, driver, database, analyzer, linker, read_snapshot, torch.manual_seed)
+
+
+def live_retrieval(question: str, profile: dict, timings: dict, *, neo4j_env: Path | None,
+                   entity_cache: Path, gliner_path: Path) -> dict:
     started = perf_counter()
-    driver = None
-    try:
-        for name, digest in profile["source_sha256"].items():
-            check_python_source(ROOT / name, digest)
-        versions = {"python": platform.python_version()}
-        versions.update({name: version(name) for name in profile["versions"] if name != "python"})
-        if versions != profile["versions"]:
-            raise RetrievalError("Installed retrieval versions differ from PROFILE.json")
-        gliner = profile["models"]["GLiNER"]
-        if gliner["sha256"] != E3_HASHES or gliner["id"] != MODEL_ID:
-            raise RetrievalError("GLiNER identity mismatch")
-        cache = load_entity_cache(entity_cache)
-        identity = profile["models"]["E5"]
-        model_root = Path(cache.model["root"])
-        hashes = {Path(row["path"]).relative_to(model_root).as_posix(): row["sha256"]
-                  for row in cache.model["files"]}
-        if (cache.fingerprint != identity["entity_cache_fingerprint"]
-                or cache.model["model"] != identity["id"] or hashes != identity["sha256"]):
-            raise RetrievalError("E5 identity mismatch")
-
-        before = {}
-        driver, database = connect_neo4j(neo4j_env)
-        with driver.session(database=database, default_access_mode=READ_ACCESS) as session:
-            verify(session, before)
-        if any(before[k] != profile[k] for k in ("graph_fingerprint", "snapshot_sha256")):
-            raise RetrievalError("Live graph snapshot mismatch")
-        timings["retrieval_preflight"] = perf_counter() - started
-        torch.set_num_threads(profile["cpu_threads"])
-        torch.manual_seed(profile["seed"])
-
-        def analyze(text):
-            return QueryAnalyzer(E3Extractor(gliner_path),
-                                 threshold=profile["production"]["gliner_threshold"]).analyze(text)
-
-        config = profile["production"]["linking"]
-        linker = EntityLinker(cache, namespace=profile["namespace"], min_score=config["min_score"],
-                              top_k=config["top_k"], fallback=config["fallback"],
-                              max_fallback_seeds=config["max_fallback_seeds"])
-        result = retrieve_c(question, profile, driver, database, timings, analyze=analyze, link=linker.link_seeds)
-        after = {}
-        started = perf_counter()
-        with driver.session(database=database, default_access_mode=READ_ACCESS) as session:
-            verify(session, after)
-        timings["retrieval_postflight"] = perf_counter() - started
-        if before != after:
-            raise RetrievalError("Live graph changed during retrieval")
-        result["graph_verified"] = {k: after[k] for k in ("graph_fingerprint", "snapshot_sha256")}
+    with open_live_runtime(profile, neo4j_env=neo4j_env, entity_cache=entity_cache, gliner_path=gliner_path) as runtime:
+        setup = perf_counter() - started
+        result = runtime.retrieve(question, timings)
+        timings["retrieval_preflight"] += setup
         return result
-    finally:
-        if driver is not None:
-            driver.close()
