@@ -4,6 +4,8 @@
 
 На независимых от обучения **четырёх DEV validation-документах** exact typed entity F1 = **0,4154**, raw relation F1 = **0,0448**, relation F1 после gates = **0**. При Gold entities в отдельной RE-диагностике F1 после gates = **0,1127**. Это исполняемый начальный baseline с низким качеством отношений. Полные результаты и ограничения: [C001_REPORT.md](reports/C001_REPORT.md).
 
+Подключение к общему MLflow, импорт исторических агрегатов и схема будущего Judge описаны в [руководстве tracking](tracking/README.md).
+
 ## Структура
 
 ```text
