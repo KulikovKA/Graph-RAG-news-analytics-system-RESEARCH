@@ -1,0 +1,415 @@
+{
+  "study": "3A.5.11.1-corpus100-v1",
+  "seed": null,
+  "providers": [
+    "Europe PMC (discovery)",
+    "OpenAlex (identity)",
+    "PubMed Central Cloud (publisher JATS)"
+  ],
+  "acquisition_policy": "Unpaid API, one process, up to four JATS HTTP requests concurrently, fixed catalog snapshots",
+  "query_extensions": {
+    "ext1": {
+      "group": "external_validation",
+      "expression": "\"external validation\" AND \"risk prediction\" AND \"random forest\"",
+      "reason": "В базовой выдаче после проверок издательской версии, лицензии и JATS меньше 10 доступных работ. Уточнение ищет альтернативы с внешней валидацией дерева/ансамбля для прогноза клинического риска."
+    },
+    "ext2": {
+      "group": "algal_biogas",
+      "expression": "\"microalgal biomass\" AND \"methane yield\"",
+      "reason": "В исходной выборке часть работ изучает рост на готовом дигестате или получаемые кислоты. Расширение нацелено на измерение метанового выхода при переработке микроводорослей."
+    },
+    "ext3": {
+      "group": "algal_biogas",
+      "expression": "\"microalgae\" AND \"biogas\"",
+      "reason": "Выдача по термину methane yield не добавила работ, прошедших лицензионные и языковые проверки. Этот поиск использует термин biogas для охвата работ о выходе газа и связанных интегрированных процессах."
+    }
+  },
+  "transport_adjustments": [
+    {
+      "provider": "Europe PMC",
+      "operation": "fullTextXML",
+      "outcome": "read timeouts on probe",
+      "replacement": "PMC Cloud versioned JATS"
+    },
+    {
+      "provider": "Europe PMC",
+      "operation": "pv_forecast catalog search",
+      "original_expression": "(\"photovoltaic power\" OR \"solar power\") AND (\"power forecasting\" OR \"power prediction\" OR \"photovoltaic forecasting\")",
+      "outcome": "read timeouts",
+      "replacement": "\"photovoltaic power forecasting\""
+    }
+  ],
+  "pools": [
+    {
+      "group": "readmission",
+      "label": "base",
+      "expression": "\"hospital readmission\" AND \"machine learning\"",
+      "params": {
+        "query": "(TITLE_ABS:\"hospital readmission\" AND TITLE_ABS:\"machine learning\") AND OPEN_ACCESS:Y AND FIRST_PDATE:[2018-01-01 TO 2025-12-31]",
+        "pageSize": 40,
+        "format": "json",
+        "resultType": "lite"
+      },
+      "retrieved_utc": "2026-11-24T11:24:59.341264+00:00",
+      "status": 200,
+      "hit_count": 80,
+      "response_sha256": "f473d2af7f159cc565e1bee2fd378dc6c018f12f91163de4e1f9d596f52aba1a",
+      "openalex_requests": [
+        {
+          "endpoint": "works",
+          "params": {
+            "filter": "doi:10.3390/ijerph22111705|10.1038/s41746-025-01925-3|10.1186/s12882-025-04128-w|10.1371/journal.pone.0328848|10.1186/s12872-025-04700-0|10.1002/oto2.70100|10.7759/cureus.95741|10.4258/hir.2024.30.3.253|10.3390/biomimetics9120752|10.20407/fmj.2024-027|10.3390/diagnostics14192151|10.3390/diagnostics15040501|10.1016/j.heliyon.2025.e41994|10.3390/jpm13091393|10.1002/ehf2.14855|10.1371/journal.pdig.0000636|10.1186/s43019-025-00295-0|10.1038/s41598-023-35201-9|10.7759/cureus.82437|10.1016/j.wnsx.2024.100338|10.3389/fmolb.2022.910688|10.1016/j.heliyon.2023.e20942|10.1016/j.rcsop.2023.100317|10.1186/s12911-023-02193-5|10.1186/s12911-022-01804-x|10.1371/journal.pone.0279433|10.3390/bios12080605|10.1177/20552076251325990|10.1038/s41598-023-40552-4|10.1007/s13755-022-00195-7|10.3390/diagnostics15030318|10.1111/jnu.13026|10.1200/cci.22.00143|10.4258/hir.2021.27.4.307|10.3390/diagnostics13111948|10.1186/s12913-024-11771-w|10.1038/s41405-021-00057-6|10.1016/j.patter.2021.100395|10.1038/s41746-021-00468-7",
+            "per_page": 50,
+            "select": "id,doi,title,publication_year,language,type,is_retracted,primary_topic,primary_location,ids,updated_date"
+          },
+          "status": 200
+        }
+      ],
+      "returned": 40,
+      "local_snapshot_sha256": "e1aa1bb7dd6292b966ec2e2650d1b4dd3e00edca680d81edf646b74295f4b3a8"
+    },
+    {
+      "group": "external_validation",
+      "label": "base",
+      "expression": "\"external validation\" AND \"machine learning\" AND \"prediction model\"",
+      "params": {
+        "query": "(TITLE_ABS:\"external validation\" AND TITLE_ABS:\"machine learning\" AND TITLE_ABS:\"prediction model\") AND OPEN_ACCESS:Y AND FIRST_PDATE:[2018-01-01 TO 2025-12-31]",
+        "pageSize": 40,
+        "format": "json",
+        "resultType": "lite"
+      },
+      "retrieved_utc": "2026-11-24T11:25:41.461269+00:00",
+      "status": 200,
+      "hit_count": 542,
+      "response_sha256": "9fb692214fe75c76ea53e4a941965b3f7bd18e383e532a59b9f95af858cd84fc",
+      "openalex_requests": [
+        {
+          "endpoint": "works",
+          "params": {
+            "filter": "doi:10.1186/s12884-025-08500-4|10.3389/fcvm.2025.1610938|10.1007/s00240-025-01856-4|10.3389/fendo.2025.1692917|10.3389/fonc.2025.1661212|10.1111/anae.16777|10.1038/s41598-025-24826-7|10.1186/s12880-025-01944-2|10.1186/s12911-025-03309-9|10.1038/s41746-025-01766-0|10.3389/fphar.2025.1565420|10.1093/bjsopen/zraf167|10.1055/a-2733-1387|10.1007/s10238-025-01886-7|10.1177/21925682251407962|10.3390/diagnostics16010068|10.1038/s41598-025-25423-4|10.1038/s41598-025-11726-z|10.1007/s10238-025-01873-y|10.3389/fneur.2025.1539341|10.3389/fphys.2025.1617196|10.1111/dme.70171|10.1186/s12967-025-06102-4|10.1186/s12911-025-03281-4|10.3389/fonc.2025.1607173|10.1186/s12911-025-03201-6|10.1007/s00464-025-11937-5|10.7759/cureus.88568|10.3389/fneur.2025.1591570|10.3390/biomedicines13112768|10.3389/fpubh.2025.1685305|10.1038/s41380-025-03381-7|10.1186/s12885-025-14813-6|10.1186/s40001-025-02442-5|10.1186/s12911-025-03054-z|10.3389/fonc.2025.1653506|10.1007/s00384-025-04993-9|10.1007/s12519-025-00950-2|10.1007/s11255-025-04807-5|10.1186/s12890-025-03881-w",
+            "per_page": 50,
+            "select": "id,doi,title,publication_year,language,type,is_retracted,primary_topic,primary_location,ids,updated_date"
+          },
+          "status": 200
+        }
+      ],
+      "returned": 40,
+      "local_snapshot_sha256": "0654818fd0c0fc5933d0fb079c93cbb01f02d07270b3a448a3bb7903ba919364"
+    },
+    {
+      "group": "external_validation",
+      "label": "ext1",
+      "expression": "\"external validation\" AND \"risk prediction\" AND \"random forest\"",
+      "params": {
+        "query": "TITLE_ABS:\"external validation\" AND TITLE_ABS:\"risk prediction\" AND TITLE_ABS:\"random forest\" AND OPEN_ACCESS:Y AND FIRST_PDATE:[2018-01-01 TO 2025-12-31]",
+        "pageSize": 40,
+        "format": "json",
+        "resultType": "lite"
+      },
+      "retrieved_utc": "2026-11-24T11:35:01.241543+00:00",
+      "status": 200,
+      "hit_count": 97,
+      "response_sha256": "216ac48ff0d6a8e971ef9a28ec9195f0d63d4e2026d9a41fb19ac664224ff288",
+      "openalex_requests": [
+        {
+          "endpoint": "works",
+          "params": {
+            "filter": "doi:10.3389/fpubh.2025.1701050|10.3389/fgene.2025.1694084|10.1186/s12938-025-01487-1|10.1186/s12891-025-09229-z|10.3389/fonc.2025.1607173|10.1186/s12916-025-04523-y|10.1080/0886022x.2025.2491656|10.3389/fpubh.2025.1685305|10.1038/s41598-025-14406-0|10.3389/fimmu.2025.1648648|10.3390/medicina62010032|10.2147/por.s520056|10.1016/j.ijcrp.2025.200509|10.1007/s43390-025-01208-7|10.1038/s41598-025-21810-z|10.3389/fmed.2025.1680731|10.21037/jtd-2025-1215|10.3389/fmed.2025.1680180|10.1038/s41598-025-25423-4|10.3389/fcvm.2025.1600012|10.7150/ijms.119142|10.1371/journal.pone.0311719|10.3389/fphar.2025.1565420|10.3389/fmed.2025.1598065|10.3390/cancers17050869|10.1038/s41598-025-24756-4|10.1038/s41598-025-24478-7|10.1007/s40520-025-02945-5|10.1186/s40001-025-02543-1|10.7759/cureus.83961|10.3389/fgene.2024.1409755|10.1038/s41598-025-86715-3|10.3389/fcell.2025.1627355|10.34133/research.0817|10.21037/qims-2025-887|10.1016/j.identj.2025.104028|10.2147/cia.s544949|10.1016/j.cpnec.2025.100323|10.2196/73052|10.3389/fcvm.2024.1469801",
+            "per_page": 50,
+            "select": "id,doi,title,publication_year,language,type,is_retracted,primary_topic,primary_location,ids,updated_date"
+          },
+          "status": 200
+        }
+      ],
+      "returned": 40,
+      "local_snapshot_sha256": "d21913a8019f7c307eccd993da06996ea21ed79e9d000c512c73805ccd9d4619"
+    },
+    {
+      "group": "chest_xray",
+      "label": "base",
+      "expression": "(\"chest x-ray\" OR \"chest radiograph\") AND \"classification\" AND \"deep learning\"",
+      "params": {
+        "query": "((TITLE_ABS:\"chest x-ray\" OR TITLE_ABS:\"chest radiograph\") AND TITLE_ABS:\"classification\" AND TITLE_ABS:\"deep learning\") AND OPEN_ACCESS:Y AND FIRST_PDATE:[2018-01-01 TO 2025-12-31]",
+        "pageSize": 40,
+        "format": "json",
+        "resultType": "lite"
+      },
+      "retrieved_utc": "2026-11-24T11:25:44.850415+00:00",
+      "status": 200,
+      "hit_count": 490,
+      "response_sha256": "9e85336c62dd39735b3c31ca30c928de5bc90429df398e09da23858a45644c86",
+      "openalex_requests": [
+        {
+          "endpoint": "works",
+          "params": {
+            "filter": "doi:10.3390/jimaging12010014|10.7717/peerj-cs.2968|10.1038/s41598-025-16669-z|10.3390/diagnostics15243216|10.2174/0115734056380939250527080046|10.1007/s10278-025-01494-7|10.5539/ijsp.v13n4p42|10.3390/diagnostics15131728|10.1038/s41598-025-28723-x|10.1007/s00330-025-12097-9|10.1007/s00330-025-12053-7|10.1371/journal.pone.0327099|10.5114/pjr/200628|10.3390/diagnostics15182404|10.3390/s25154580|10.1002/mp.17977|10.3390/bioengineering12020167|10.1038/s41598-023-39855-3|10.1186/s12880-025-01909-5|10.1038/s41598-025-90607-x|10.1177/20552076251361745|10.3390/diagnostics15030248|10.1038/s41598-025-26628-3|10.1038/s41598-025-19179-0|10.1097/mcp.0000000000001240|10.1038/s41598-024-61693-0|10.3389/fmed.2024.1511389|10.3390/diagnostics14161699|10.3390/diagnostics14232636|10.3389/fradi.2025.1703927|10.3390/s24051478|10.1155/pm/6614016|10.3390/diagnostics15212673|10.1038/s41598-025-88451-0|10.1186/s12911-025-03256-5|10.3390/s23146585|10.1038/s41598-024-70801-z|10.3389/fdata.2024.1393758",
+            "per_page": 50,
+            "select": "id,doi,title,publication_year,language,type,is_retracted,primary_topic,primary_location,ids,updated_date"
+          },
+          "status": 200
+        }
+      ],
+      "returned": 40,
+      "local_snapshot_sha256": "5adb4c47909e8751f191b9e2689770524965daed25cfbdd594dfa31960c64ad3"
+    },
+    {
+      "group": "pv_imaging",
+      "label": "base",
+      "expression": "(\"photovoltaic\" OR \"solar panels\") AND (\"defect detection\" OR \"fault detection\") AND (\"image\" OR \"imaging\" OR \"vision\")",
+      "params": {
+        "query": "((TITLE_ABS:\"photovoltaic\" OR TITLE_ABS:\"solar panels\") AND (TITLE_ABS:\"defect detection\" OR TITLE_ABS:\"fault detection\") AND (TITLE_ABS:\"image\" OR TITLE_ABS:\"imaging\" OR TITLE_ABS:\"vision\")) AND OPEN_ACCESS:Y AND FIRST_PDATE:[2018-01-01 TO 2025-12-31]",
+        "pageSize": 40,
+        "format": "json",
+        "resultType": "lite"
+      },
+      "retrieved_utc": "2026-11-24T11:25:55.782084+00:00",
+      "status": 200,
+      "hit_count": 19,
+      "response_sha256": "04f2cf0c574665bcfa088cf66b472dc769f0606502322a94995b0d183ce5bd85",
+      "openalex_requests": [
+        {
+          "endpoint": "works",
+          "params": {
+            "filter": "doi:10.1371/journal.pone.0310742|10.7717/peerj-cs.2776|10.1038/s41598-025-20849-2|10.7717/peerj-cs.2148|10.1038/s41598-025-00600-7|10.1016/j.dib.2024.111184|10.3390/s24051539|10.3390/jimaging11090287|10.1038/s41598-025-09101-z|10.3390/s25061755|10.3390/mi16040437|10.3389/fnbot.2024.1396979|10.3390/s22124617|10.3390/s23010297|10.3390/s23031314|10.3390/mi13020332|10.3390/s23218780|10.1155/2023/2663150|10.3390/s21134292",
+            "per_page": 50,
+            "select": "id,doi,title,publication_year,language,type,is_retracted,primary_topic,primary_location,ids,updated_date"
+          },
+          "status": 200
+        }
+      ],
+      "returned": 19,
+      "local_snapshot_sha256": "e8a767e84c32e5c464869593106c7e3dbb5e09539160d796b753e097bdc6f533"
+    },
+    {
+      "group": "clinical_ner",
+      "label": "base",
+      "expression": "\"named entity recognition\" AND (\"clinical notes\" OR \"clinical text\" OR \"electronic health records\")",
+      "params": {
+        "query": "(TITLE_ABS:\"named entity recognition\" AND (TITLE_ABS:\"clinical notes\" OR TITLE_ABS:\"clinical text\" OR TITLE_ABS:\"electronic health records\")) AND OPEN_ACCESS:Y AND FIRST_PDATE:[2018-01-01 TO 2025-12-31]",
+        "pageSize": 40,
+        "format": "json",
+        "resultType": "lite"
+      },
+      "retrieved_utc": "2026-11-24T11:26:38.268091+00:00",
+      "status": 200,
+      "hit_count": 84,
+      "response_sha256": "7e9ee9c25fc6ad3d299de773e8d6a8de9a462471048cdab20d1a2b56b6e32e81",
+      "openalex_requests": [
+        {
+          "endpoint": "works",
+          "params": {
+            "filter": "doi:10.2196/76912|10.2196/71949|10.1186/s12911-025-03137-x|10.1038/s41598-025-98465-3|10.1055/s-0046-1816632|10.2196/59251|10.1007/s11517-024-03227-4|10.1016/j.xops.2025.100944|10.3389/frai.2024.1450477|10.1093/jamiaopen/ooaf157|10.1038/s44401-025-00033-4|10.1016/j.csbj.2025.09.009|10.1186/s12911-025-02871-6|10.3233/shti231052|10.1186/s44342-024-00036-x|10.1038/s44184-024-00105-7|10.1016/j.csbj.2025.07.018|10.1007/s41666-025-00190-z|10.1016/j.mcpdig.2025.100244|10.1186/s12911-025-03195-1|10.3389/fdgth.2022.1065581|10.4258/hir.2023.29.4.286|10.1038/s41597-025-04503-0|10.2196/49607|10.1186/s12911-025-02998-6|10.1093/jamia/ocaf157|10.1093/database/baae068|10.1017/cts.2023.626|10.1371/journal.pdig.0000218|10.1186/s12911-024-02422-5|10.2196/63445|10.2196/68704|10.1093/jamia/ocae069|10.2196/34436|10.1186/s12911-024-02790-y|10.1186/s12911-019-0981-y|10.1371/journal.pone.0310432|10.3390/jpm14080856|10.1093/database/baae117|10.1186/s13326-021-00236-2",
+            "per_page": 50,
+            "select": "id,doi,title,publication_year,language,type,is_retracted,primary_topic,primary_location,ids,updated_date"
+          },
+          "status": 200
+        }
+      ],
+      "returned": 40,
+      "local_snapshot_sha256": "0ecd28625ab49d7252a0115e7ed40efe236ca4826e7a4c2a0581dd937dc5eb60"
+    },
+    {
+      "group": "radiology_llm",
+      "label": "base",
+      "expression": "(\"large language model\" OR \"large language models\") AND (\"radiology reports\" OR \"radiology report\")",
+      "params": {
+        "query": "((TITLE_ABS:\"large language model\" OR TITLE_ABS:\"large language models\") AND (TITLE_ABS:\"radiology reports\" OR TITLE_ABS:\"radiology report\")) AND OPEN_ACCESS:Y AND FIRST_PDATE:[2018-01-01 TO 2025-12-31]",
+        "pageSize": 40,
+        "format": "json",
+        "resultType": "lite"
+      },
+      "retrieved_utc": "2026-11-24T11:26:48.030394+00:00",
+      "status": 200,
+      "hit_count": 90,
+      "response_sha256": "2b013673a299e1af7e9abe80ef91cc69dd8dfa1db89528a9dbcada97b25657eb",
+      "openalex_requests": [
+        {
+          "endpoint": "works",
+          "params": {
+            "filter": "doi:10.1038/s41598-025-16213-z|10.1186/s13244-025-02121-3|10.1007/s10278-025-01637-w|10.3348/jksr.2025.0018|10.2196/75556|10.1007/s00330-025-11438-y|10.2196/48328|10.4258/hir.2025.31.3.295|10.3390/cancers16213621|10.2196/68618|10.1186/s12880-025-01844-5|10.7759/cureus.96448|10.1093/jamiaopen/ooaf073|10.1186/s41747-025-00659-x|10.1186/s12880-024-01435-w|10.2196/63786|10.1007/s11604-025-01799-1|10.1007/s00330-024-11107-6|10.1007/s00330-024-11339-6|10.3390/diagnostics15070930|10.3348/kjr.2025.0599|10.1007/s00330-024-11074-y|10.1186/s12910-025-01285-3|10.1093/dmfr/twaf060|10.1007/s10278-025-01659-4|10.2196/76097|10.1093/radadv/umaf024|10.2196/67706|10.3390/bioengineering12070693|10.1093/jamiaopen/ooaf128|10.1155/ijbi/5019035|10.2196/57275|10.1038/s41746-024-01219-0|10.3390/cancers17132073|10.1038/s41746-025-01522-4|10.3389/frai.2025.1513674|10.1055/s-0044-1789618|10.1371/journal.pdig.0000835|10.1007/s11604-025-01764-y",
+            "per_page": 50,
+            "select": "id,doi,title,publication_year,language,type,is_retracted,primary_topic,primary_location,ids,updated_date"
+          },
+          "status": 200
+        }
+      ],
+      "returned": 40,
+      "local_snapshot_sha256": "f600175adf8eb2b86d54f2ad1092df984565eba212d8f494cf90092bc3f341de"
+    },
+    {
+      "group": "algal_lipids",
+      "label": "base",
+      "expression": "(\"microalgae\" OR \"microalgal\") AND \"lipid production\"",
+      "params": {
+        "query": "((TITLE_ABS:\"microalgae\" OR TITLE_ABS:\"microalgal\") AND TITLE_ABS:\"lipid production\") AND OPEN_ACCESS:Y AND FIRST_PDATE:[2018-01-01 TO 2025-12-31]",
+        "pageSize": 40,
+        "format": "json",
+        "resultType": "lite"
+      },
+      "retrieved_utc": "2026-11-24T11:26:58.539380+00:00",
+      "status": 200,
+      "hit_count": 119,
+      "response_sha256": "478f82cb99bb98d92fa3e2e3392705f905e2510783b26317eba031fec886777d",
+      "openalex_requests": [
+        {
+          "endpoint": "works",
+          "params": {
+            "filter": "doi:10.3389/fnut.2025.1664674|10.3390/bioengineering12121291|10.1186/s13068-025-02679-6|10.3390/foods14193451|10.3390/microorganisms13030606|10.3390/life15030407|10.1186/s12934-024-02550-7|10.3390/md22050216|10.3390/proteomes12020013|10.3389/fmicb.2025.1601691|10.1016/j.jare.2025.03.019|10.3389/fmicb.2025.1715734|10.30498/ijb.2025.479547.3995|10.1186/s13068-024-02577-3|10.1038/s41598-025-28963-x|10.3389/fbioe.2024.1396127|10.1186/s12934-025-02849-z|10.3390/microorganisms13051131|10.3390/biology14111599|10.3389/fbioe.2023.1149762|10.1007/s11101-021-09784-y|10.1186/s12934-025-02824-8|10.4014/jmb.2209.09012|10.1002/biof.70027|10.1016/j.ese.2022.100230|10.1186/s13068-025-02654-1|10.3390/bioengineering12030246|10.1038/s42003-023-05096-3|10.1186/s40643-025-00897-2|10.1186/s12934-025-02794-x|10.3390/md21110560|10.1186/s13068-022-02196-w|10.3390/molecules26247697|10.1021/acsestengg.4c00443|10.1007/s11274-023-03863-2|10.1016/j.heliyon.2024.e36343|10.4014/jmb.2212.12009|10.1186/s12934-023-02244-6|10.1186/s13068-022-02220-z|10.3390/microorganisms7120670",
+            "per_page": 50,
+            "select": "id,doi,title,publication_year,language,type,is_retracted,primary_topic,primary_location,ids,updated_date"
+          },
+          "status": 200
+        }
+      ],
+      "returned": 40,
+      "local_snapshot_sha256": "8e679a1c7f91327762c24a501efc566a4e1abb668b9e7fb1e0c9aba35538a9e9"
+    },
+    {
+      "group": "biomass_hydrolysis",
+      "label": "base",
+      "expression": "\"lignocellulosic biomass\" AND (\"enzymatic hydrolysis\" OR \"enzymatic saccharification\")",
+      "params": {
+        "query": "(TITLE_ABS:\"lignocellulosic biomass\" AND (TITLE_ABS:\"enzymatic hydrolysis\" OR TITLE_ABS:\"enzymatic saccharification\")) AND OPEN_ACCESS:Y AND FIRST_PDATE:[2018-01-01 TO 2025-12-31]",
+        "pageSize": 40,
+        "format": "json",
+        "resultType": "lite"
+      },
+      "retrieved_utc": "2026-11-24T11:27:15.026934+00:00",
+      "status": 200,
+      "hit_count": 187,
+      "response_sha256": "eebc0f938683f72fed4310fd000b30252214478c5fbb8caedd8ae73fbf2061bd",
+      "openalex_requests": [
+        {
+          "endpoint": "works",
+          "params": {
+            "filter": "doi:10.1186/s40643-025-00967-5|10.1186/s12896-025-01091-0|10.17113/ftb.63.02.25.8808|10.1016/j.csbj.2025.09.027|10.3390/polym17233148|10.1371/journal.pone.0322367|10.1002/cssc.202501034|10.1186/s40643-025-00905-5|10.1002/cssc.202501354|10.1186/s13068-025-02691-w|10.1038/s41598-025-94675-x|10.1021/acsenvironau.4c00045|10.5458/jag.7202203|10.1016/j.engmic.2024.100139|10.1021/acssuschemeng.5c02288|10.3390/molecules30234648|10.1186/s13068-025-02680-z|10.3390/ijms252212306|10.1186/s13036-025-00615-8|10.1016/j.csbj.2024.01.006|10.1186/s13104-025-07469-9|10.1007/s00253-025-13627-7|10.1002/cssc.202500891|10.3390/ma18235321|10.3390/polym16243577|10.1021/acsomega.4c08702|10.1016/j.btre.2025.e00899|10.1080/21655979.2021.2023801|10.1186/s13068-022-02133-x|10.3389/fbioe.2023.1332185|10.1007/s00253-025-13408-2|10.3390/polym15234488|10.1186/s40643-023-00658-z|10.3390/microorganisms12081715|10.1002/elsc.202400029|10.1016/j.heliyon.2023.e16604|10.3390/molecules27238180|10.1186/s13068-024-02553-x|10.1186/s13068-025-02643-4|10.1186/s13068-023-02306-2",
+            "per_page": 50,
+            "select": "id,doi,title,publication_year,language,type,is_retracted,primary_topic,primary_location,ids,updated_date"
+          },
+          "status": 200
+        }
+      ],
+      "returned": 40,
+      "local_snapshot_sha256": "4fc24221fc6cd206ae5e35b50eada34955a2dee2602f6ac09bf140af56770bff"
+    },
+    {
+      "group": "pv_forecast",
+      "label": "base",
+      "expression": "\"photovoltaic power forecasting\"",
+      "params": {
+        "query": "TITLE_ABS:\"photovoltaic power forecasting\" AND OPEN_ACCESS:Y AND FIRST_PDATE:[2018-01-01 TO 2025-12-31]",
+        "pageSize": 40,
+        "format": "json",
+        "resultType": "lite"
+      },
+      "retrieved_utc": "2026-11-24T11:31:55.477475+00:00",
+      "status": 200,
+      "hit_count": 16,
+      "response_sha256": "a210f8ad9129a1eca47d32928189e6db9a40721081a57d13ab71b8fc9f33d513",
+      "openalex_requests": [
+        {
+          "endpoint": "works",
+          "params": {
+            "filter": "doi:10.3390/s25113378|10.3390/s25247607|10.3390/s25195977|10.1371/journal.pone.0334828|10.1038/s41598-025-23305-3|10.1038/s41598-025-22838-x|10.3390/s25144489|10.1038/s41598-025-99109-2|10.1038/s41598-025-16368-9|10.1038/s41598-025-88959-5|10.1038/s41598-024-57398-z|10.3390/s24092866|10.1371/journal.pone.0273632|10.1016/j.heliyon.2024.e33419|10.3390/s22249630|10.1038/s41598-022-18820-6",
+            "per_page": 50,
+            "select": "id,doi,title,publication_year,language,type,is_retracted,primary_topic,primary_location,ids,updated_date"
+          },
+          "status": 200
+        }
+      ],
+      "returned": 16,
+      "local_snapshot_sha256": "1ac5904dde7d702b0f890f9134088d02ac81dd9b74747c0fbe1cd0e09ed30aea"
+    },
+    {
+      "group": "algal_biogas",
+      "label": "base",
+      "expression": "\"microalgae\" AND \"anaerobic digestion\"",
+      "params": {
+        "query": "TITLE_ABS:\"microalgae\" AND TITLE_ABS:\"anaerobic digestion\" AND OPEN_ACCESS:Y AND FIRST_PDATE:[2018-01-01 TO 2025-12-31]",
+        "pageSize": 40,
+        "format": "json",
+        "resultType": "lite"
+      },
+      "retrieved_utc": "2026-11-24T11:32:47.756644+00:00",
+      "status": 200,
+      "hit_count": 38,
+      "response_sha256": "2cc9c5bc7b95ddd88c09267dc8e309fb8b749fe962053355f857045cbe5e2645",
+      "openalex_requests": [
+        {
+          "endpoint": "works",
+          "params": {
+            "filter": "doi:10.1021/acsomega.5c04364|10.1128/msystems.01674-24|10.1016/j.jgeb.2024.100407|10.1016/j.heliyon.2024.e40885|10.3389/fbioe.2023.1219103|10.1007/s11356-024-34468-3|10.1016/j.heliyon.2023.e23240|10.3390/bioengineering9110637|10.3390/plants12010053|10.1016/j.heliyon.2022.e11256|10.1016/j.btre.2023.e00827|10.3390/molecules27206856|10.1039/d1ra04845g|10.3390/microorganisms10020357|10.1186/s40643-023-00720-w|10.3390/microorganisms12010109|10.3389/fmicb.2022.903737|10.3390/ijerph192315881|10.1007/s11356-022-23019-3|10.1039/d2ra06014k|10.3390/molecules23051098|10.3390/bioengineering8050057|10.1021/acssuschemeng.0c01106|10.3389/fmicb.2021.614612|10.3390/microorganisms7100428|10.1039/d0ra07840a|10.3390/md20070415|10.1186/s13068-019-1553-1|10.3390/plants11081086|10.3390/molecules23092096|10.3390/microorganisms9010075|10.3390/molecules24244544|10.1186/s13068-018-1190-0|10.1186/s13068-018-1188-7|10.3389/fpls.2019.01193|10.1038/s41598-019-54914-4|10.1016/j.biotechadv.2018.04.003|10.3389/fpls.2020.00982",
+            "per_page": 50,
+            "select": "id,doi,title,publication_year,language,type,is_retracted,primary_topic,primary_location,ids,updated_date"
+          },
+          "status": 200
+        }
+      ],
+      "returned": 38,
+      "local_snapshot_sha256": "675c9c5da04d1080c6bb17d9276616658b8de799942011e2effd622504426711"
+    },
+    {
+      "group": "algal_biogas",
+      "label": "ext2",
+      "expression": "\"microalgal biomass\" AND \"methane yield\"",
+      "params": {
+        "query": "TITLE_ABS:\"microalgal biomass\" AND TITLE_ABS:\"methane yield\" AND OPEN_ACCESS:Y AND FIRST_PDATE:[2018-01-01 TO 2025-12-31]",
+        "pageSize": 40,
+        "format": "json",
+        "resultType": "lite"
+      },
+      "retrieved_utc": "2026-11-24T11:35:43.670067+00:00",
+      "status": 200,
+      "hit_count": 2,
+      "response_sha256": "f3f70dc5ada3418ac2234378aa4c2f6ab88d44d6f1bc68f508ebd414e01d0ac4",
+      "openalex_requests": [
+        {
+          "endpoint": "works",
+          "params": {
+            "filter": "doi:10.1021/acs.jafc.1c08100|10.1186/s13068-021-02041-6",
+            "per_page": 50,
+            "select": "id,doi,title,publication_year,language,type,is_retracted,primary_topic,primary_location,ids,updated_date"
+          },
+          "status": 200
+        }
+      ],
+      "returned": 2,
+      "local_snapshot_sha256": "15447942b9eb6f4a8009cfc22c4b6cfbfb87c6e7e5f44fc0956104f2b3bef9d6"
+    },
+    {
+      "group": "algal_biogas",
+      "label": "ext3",
+      "expression": "\"microalgae\" AND \"biogas\"",
+      "params": {
+        "query": "TITLE_ABS:\"microalgae\" AND TITLE_ABS:\"biogas\" AND OPEN_ACCESS:Y AND FIRST_PDATE:[2018-01-01 TO 2025-12-31]",
+        "pageSize": 40,
+        "format": "json",
+        "resultType": "lite"
+      },
+      "retrieved_utc": "2026-11-24T11:37:07.982458+00:00",
+      "status": 200,
+      "hit_count": 37,
+      "response_sha256": "695dcf829ade7c9d41dcfb0e08ffb85e93c709dc5f5d679ae667a2880c20ccb8",
+      "openalex_requests": [
+        {
+          "endpoint": "works",
+          "params": {
+            "filter": "doi:10.1128/spectrum.00688-25|10.1021/acsomega.5c04364|10.1039/d5ra04845a|10.1016/j.heliyon.2023.e23240|10.3389/fbioe.2024.1387519|10.1128/msystems.01674-24|10.3390/toxics12010056|10.3390/microorganisms12010109|10.1186/s40643-023-00720-w|10.1016/j.crmicr.2024.100305|10.3390/cells11071206|10.3390/plants11243583|10.1039/d1ra04845g|10.3389/fmicb.2022.903737|10.3390/vetsci10090556|10.1016/j.heliyon.2024.e37539|10.1007/s11356-022-23019-3|10.1021/acs.iecr.0c05974|10.3390/microorganisms11122994|10.3390/ijerph192315881|10.1021/acssuschemeng.0c01106|10.3390/bioengineering8050057|10.3390/ijerph19052634|10.1039/d0ra07840a|10.1038/s41598-020-71141-4|10.3390/ijerph15030528|10.3390/molecules23051098|10.1038/s41598-018-26141-w|10.3390/molecules25081790|10.3389/fmicb.2018.01388|10.3390/molecules23092096|10.1111/pbi.13447|10.1186/s12934-018-0871-5|10.1186/s13068-018-1102-3|10.3389/fpls.2020.00982|10.3389/fmicb.2019.00678|10.1038/s41598-019-54914-4",
+            "per_page": 50,
+            "select": "id,doi,title,publication_year,language,type,is_retracted,primary_topic,primary_location,ids,updated_date"
+          },
+          "status": 200
+        }
+      ],
+      "returned": 37,
+      "local_snapshot_sha256": "ee250e3a1b3fc63837a68ceca65fadc276ae8348f21b0cf1681c1dccf172608a"
+    }
+  ],
+  "versions": {
+    "python": "3.11.9",
+    "requests": "2.34.2",
+    "openalex_adapter_sha256": "76bcc434608a9d1d4dd52fa96093a1598b1a3b6545e9162d8fa8c7c3fa917218",
+    "spec_sha256": "c6ad96b68ae908b3f9cd043f694801b5aa525ac1210c284e2341e1141a502b22",
+    "source_contract_sha256": "8fdeb0592f855db176a793011a7750f67d546773343835ef892cf7cb9018e0b1"
+  }
+}

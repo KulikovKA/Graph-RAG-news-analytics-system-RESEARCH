@@ -1,0 +1,154 @@
+{
+  "document_count": 100,
+  "words": {
+    "total": 23603,
+    "min": 110,
+    "median": 226.0,
+    "mean": 236.03,
+    "p95": 350,
+    "max": 454
+  },
+  "tokens": {
+    "total": 30757,
+    "min": 122,
+    "median": 283.0,
+    "mean": 307.57,
+    "p95": 457,
+    "max": 583
+  },
+  "tokenizer": {
+    "name": "Unicode Regex v1",
+    "pattern": "\\w+|[^\\w\\s]",
+    "implementation": "Python 3.11 re",
+    "special_tokens": false
+  },
+  "words_histogram": {
+    "80-149": 4,
+    "150-199": 27,
+    "200-249": 32,
+    "250-299": 22,
+    "300-399": 14,
+    "400-600": 1
+  },
+  "per_year": {
+    "2018": 4,
+    "2019": 3,
+    "2020": 1,
+    "2022": 9,
+    "2023": 7,
+    "2024": 18,
+    "2025": 58
+  },
+  "per_topic": {
+    "Machine Learning": {
+      "count": 20,
+      "words": {
+        "total": 4949,
+        "min": 150,
+        "median": 250.0,
+        "mean": 247.45,
+        "p95": 342,
+        "max": 379
+      },
+      "tokens": {
+        "total": 6516,
+        "min": 174,
+        "median": 330.0,
+        "mean": 325.8,
+        "p95": 451,
+        "max": 486
+      }
+    },
+    "Computer Vision": {
+      "count": 20,
+      "words": {
+        "total": 4375,
+        "min": 110,
+        "median": 218.0,
+        "mean": 218.75,
+        "p95": 308,
+        "max": 320
+      },
+      "tokens": {
+        "total": 5628,
+        "min": 122,
+        "median": 277.0,
+        "mean": 281.4,
+        "p95": 390,
+        "max": 413
+      }
+    },
+    "NLP и LLM": {
+      "count": 20,
+      "words": {
+        "total": 5899,
+        "min": 166,
+        "median": 292.5,
+        "mean": 294.95,
+        "p95": 359,
+        "max": 454
+      },
+      "tokens": {
+        "total": 7867,
+        "min": 204,
+        "median": 378.5,
+        "mean": 393.35,
+        "p95": 579,
+        "max": 583
+      }
+    },
+    "Биотехнологии": {
+      "count": 20,
+      "words": {
+        "total": 4295,
+        "min": 147,
+        "median": 209.5,
+        "mean": 214.75,
+        "p95": 275,
+        "max": 281
+      },
+      "tokens": {
+        "total": 5589,
+        "min": 192,
+        "median": 279.0,
+        "mean": 279.45,
+        "p95": 358,
+        "max": 384
+      }
+    },
+    "Энергетика": {
+      "count": 20,
+      "words": {
+        "total": 4085,
+        "min": 142,
+        "median": 201.5,
+        "mean": 204.25,
+        "p95": 292,
+        "max": 301
+      },
+      "tokens": {
+        "total": 5157,
+        "min": 176,
+        "median": 253.5,
+        "mean": 257.85,
+        "p95": 370,
+        "max": 417
+      }
+    }
+  },
+  "per_subgroup": {
+    "readmission": 10,
+    "external_validation": 10,
+    "chest_xray": 10,
+    "pv_imaging": 10,
+    "clinical_ner": 10,
+    "radiology_llm": 10,
+    "algal_lipids": 10,
+    "biomass_hydrolysis": 10,
+    "pv_forecast": 10,
+    "algal_biogas": 10
+  },
+  "licenses": {
+    "CC-BY-4.0": 100
+  }
+}
