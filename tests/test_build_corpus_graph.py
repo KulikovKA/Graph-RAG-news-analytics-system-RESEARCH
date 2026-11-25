@@ -3,14 +3,16 @@ import json
 import subprocess
 import sys
 import time
+from types import SimpleNamespace
 
 import psutil
 import pytest
+import requests
 
 SCRIPTS = Path(__file__).resolve().parents[1] / "scripts"
 sys.path.insert(0, str(SCRIPTS))
 
-from build_corpus_graph import checkpoint, load_checkpoint, source_identity
+from build_corpus_graph import checkpoint, load_checkpoint, log_mlflow, source_identity
 from corpus_graph_inference import e3_source_span
 from corpus_graph_payload import build_payload, graph_statistics, resolve_entities
 
@@ -100,6 +102,53 @@ def test_e3_removes_only_model_appended_window_punctuation():
         "start": 6, "end": 12, "text": "161.2."}
     with pytest.raises(ValueError, match="Offsets"):
         e3_source_span("value 161.2", dict(start=6, end=12, text="261.2."))
+
+
+@pytest.mark.parametrize("existing", [False, True])
+def test_mlflow_duration_uses_only_requested_stages(monkeypatch, existing):
+    report = dict(stage_seconds=dict(ner=207.992931, re=279.197492, neo4j=109.532453,
+                                     semantic=9.7, embeddings_entity=18376),
+                  counts=dict(documents=100), peak_rss_bytes=42, namespace="ns",
+                  graph_fingerprint="graph", corpus_sha256="corpus", config_fingerprint="config")
+    original_start = 1000000
+    run = {"info": dict(run_id="corpus100", status="FINISHED", start_time=original_start,
+                        end_time=original_start+116), "data": dict(metrics=[], tags=[])} if existing else None
+    writes = []
+
+    def request(method, url, **kwargs):
+        nonlocal run
+        route = url.split("/api/2.0/mlflow/")[1]
+        payload = kwargs.get("json")
+        if route == "experiments/get-by-name":
+            response = {"experiment": {"experiment_id": "1"}}
+        elif route == "runs/search":
+            response = {"runs": [run] if run else []}
+        elif route == "runs/create":
+            run = {"info": dict(run_id="corpus100", status="RUNNING", start_time=payload["start_time"]),
+                   "data": dict(metrics=[], tags=[])}
+            response = {"run": run}
+        elif route == "runs/log-batch":
+            writes.append(route)
+            run["data"]["metrics"].extend(payload["metrics"])
+            run["data"]["tags"].extend(payload["tags"])
+            response = {}
+        else:
+            assert route == "runs/update"
+            writes.append(route)
+            run["info"].update(status=payload["status"], end_time=payload["end_time"])
+            response = {}
+        return SimpleNamespace(raise_for_status=lambda: None, json=lambda: response)
+
+    monkeypatch.setattr(requests, "request", request)
+    assert log_mlflow("http://tracking", report) == dict(status="PASS", run_id="corpus100", reused=existing)
+    assert run["info"]["end_time"] - run["info"]["start_time"] == 596723
+    if existing:
+        assert run["info"]["start_time"] == original_start
+    metrics = {metric["key"]: metric["value"] for metric in run["data"]["metrics"]}
+    assert metrics["processing_seconds"] == pytest.approx(596.722876)
+    assert run["data"]["tags"] == [dict(key="duration_basis", value="ner_seconds+re_seconds+neo4j_seconds")]
+    assert log_mlflow("http://tracking", report)["reused"]
+    assert writes == ["runs/log-batch", "runs/update"]
 
 
 def test_global_er_preserves_offsets_parallel_edges_and_self_loops():

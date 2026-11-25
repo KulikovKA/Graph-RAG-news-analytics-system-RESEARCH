@@ -375,6 +375,11 @@ def log_mlflow(uri, report):
         return response.json()
 
     try:
+        stages = report["stage_seconds"]
+        processing_seconds = math.fsum(stages[name] for name in ("ner", "re", "neo4j"))
+        duration_ms = round(processing_seconds * 1000)
+        duration_basis = "ner_seconds+re_seconds+neo4j_seconds"
+        now = int(time.time()*1000)
         experiment = call("GET", "experiments/get-by-name", params={"experiment_name": "data_expansion"})
         experiment_id = experiment["experiment"]["experiment_id"]
         external_id = f"corpus100-{report['graph_fingerprint']}"
@@ -384,23 +389,35 @@ def log_mlflow(uri, report):
         if len(runs) > 1:
             raise ValueError("Duplicate MLflow external_id")
         if runs:
-            run_id = runs[0]["info"]["run_id"]
-            if runs[0]["info"]["status"] == "FINISHED":
-                return dict(status="PASS", run_id=run_id, reused=True)
+            run = runs[0]
         else:
-            run = call("POST", "runs/create", json=dict(experiment_id=experiment_id, run_name=STAGE + " Corpus100",
-                       start_time=int(time.time()*1000), tags=[dict(key="external_id", value=external_id)]))
-            run_id = run["run"]["info"]["run_id"]
-        measured = {k: v for k, v in report["counts"].items() if isinstance(v, (int, float))}
-        measured.update({f"{k}_seconds": v for k, v in report["stage_seconds"].items()})
-        measured["peak_rss_bytes"] = report["peak_rss_bytes"]
-        now = int(time.time()*1000)
-        call("POST", "runs/log-batch", json=dict(run_id=run_id, metrics=[
-            dict(key=k, value=v, timestamp=now, step=0) for k, v in measured.items()],
-            params=[dict(key=key, value=report[key]) for key in
-                    ("namespace", "graph_fingerprint", "corpus_sha256", "config_fingerprint")]))
-        call("POST", "runs/update", json=dict(run_id=run_id, status="FINISHED", end_time=now))
-        return dict(status="PASS", run_id=run_id, reused=False)
+            run = call("POST", "runs/create", json=dict(
+                experiment_id=experiment_id, run_name=STAGE + " Corpus100", start_time=now-duration_ms,
+                tags=[dict(key="external_id", value=external_id)]))["run"]
+        info = run["info"]
+        run_id = info["run_id"]
+        finished = info["status"] == "FINISHED"
+        data = run.get("data", {})
+        logged = {row["key"]: row["value"] for row in data.get("metrics", [])}
+        tags = [] if any(row["key"] == "duration_basis" and row["value"] == duration_basis
+                         for row in data.get("tags", [])) else [dict(key="duration_basis", value=duration_basis)]
+        measured, params = {}, []
+        if logged.get("processing_seconds") != processing_seconds:
+            measured["processing_seconds"] = processing_seconds
+        if not finished:
+            measured.update({k: v for k, v in report["counts"].items() if isinstance(v, (int, float))})
+            measured.update({f"{k}_seconds": v for k, v in stages.items()})
+            measured["peak_rss_bytes"] = report["peak_rss_bytes"]
+            params = [dict(key=key, value=report[key]) for key in
+                      ("namespace", "graph_fingerprint", "corpus_sha256", "config_fingerprint")]
+        if measured or params or tags:
+            call("POST", "runs/log-batch", json=dict(run_id=run_id, metrics=[
+                dict(key=k, value=v, timestamp=now, step=0) for k, v in measured.items()], params=params, tags=tags))
+        # Для исторического run сохраняем start_time, а разность меток отражает сумму стадий.
+        end_time = info["start_time"] + duration_ms
+        if not finished or info.get("end_time") != end_time:
+            call("POST", "runs/update", json=dict(run_id=run_id, status="FINISHED", end_time=end_time))
+        return dict(status="PASS", run_id=run_id, reused=bool(runs))
     except (requests.RequestException, KeyError, ValueError) as exc:
         return dict(status="BLOCKED", error_type=type(exc).__name__)
 
