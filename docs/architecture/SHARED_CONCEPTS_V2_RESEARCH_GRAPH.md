@@ -1,6 +1,6 @@
 # Shared Concepts V2 в графе RESEARCH
 
-Подбор параметров завершён. Штатный вход в сборку графа RESEARCH — `scripts/build_corpus_graph.py`. Новый граф публикуется в изолированной локальной Neo4j под namespace `relex_corpus100_shared_concepts_v2`. [Исследование Corpus100](../../reports/retrieval/shared_concepts_v2_study/corpus100/REPORT.md)
+Подбор параметров завершён. Штатный вход в сборку графа RESEARCH — `scripts/build_corpus_graph.py`. Новый граф публикуется под namespace `relex_corpus100_shared_concepts_v2`. Для подтверждённой общей локальной Neo4j требуется явный флаг. [Исследование Corpus100](../../reports/retrieval/shared_concepts_v2_study/corpus100/REPORT.md)
 
 ## Утверждённая конфигурация
 
@@ -25,13 +25,13 @@
 
 ## Запуск из PowerShell
 
-Из корня RESEARCH в Python 3.11 с установленным extra `relex`. Команда требует точного имени Docker-контейнера, имени пользовательской базы и прямого проброса его порта 7687 на `127.0.0.1`. Используйте значения изолированной базы RESEARCH в `RESEARCH_NEO4J_URI`, `RESEARCH_NEO4J_DATABASE` и `RESEARCH_NEO4J_CONTAINER`. Для аутентификации служат `NEO4J_USER` и `NEO4J_PASSWORD` из текущего процесса или `--neo4j-env <путь>`. Проверка цели исключает Bolt MAIN `127.0.0.1:17687`, соответствующие контейнер Compose и том данных, базу `system`, а также любые записи вне целевого namespace в пользовательской базе RESEARCH.
+Из корня RESEARCH в Python 3.11 с установленным extra `relex`. Для общей базы обязательна комбинация `bolt://127.0.0.1:17687`, контейнер `article-analysis-neo4j-1`, база `neo4j` и флаг `--allow-shared-neo4j`. Перед подключением проверяются Compose-сервисы, привязка порта к loopback, маршрут Bolt-прокси и подключённый том. Флаг применяется только к этой комбинации. Для изолированного контейнера сохраняется проверка прямого проброса порта 7687 на loopback. `system` исключена. Перед публикацией проверяется отсутствие записей вне целевого namespace. Для аутентификации служат `NEO4J_USER` и `NEO4J_PASSWORD` из текущего процесса или `--neo4j-env <путь>`.
 
 Первичная сборка и её resume используют одну и ту же команду.
 
 ```powershell
 $env:PYTHONUTF8 = '1'
-uv run --no-sync python scripts/build_corpus_graph.py --apply --neo4j-uri $env:RESEARCH_NEO4J_URI --database $env:RESEARCH_NEO4J_DATABASE --container $env:RESEARCH_NEO4J_CONTAINER
+uv run --no-sync python scripts/build_corpus_graph.py --apply --allow-shared-neo4j --neo4j-uri bolt://127.0.0.1:17687 --database neo4j --container article-analysis-neo4j-1 --neo4j-env '..\Graph-based RAG for article analysis\.env.secrets'
 ```
 
 Проверка готовых входов отделена от batch и подключения к Neo4j.
@@ -55,7 +55,7 @@ uv run --no-sync python scripts/build_corpus_graph.py --validate-frozen
 Для входов с подготовленными V2-векторами команда пополнения и её resume выглядят так.
 
 ```powershell
-uv run --no-sync python scripts/build_corpus_graph.py --apply --neo4j-uri $env:RESEARCH_NEO4J_URI --database $env:RESEARCH_NEO4J_DATABASE --container $env:RESEARCH_NEO4J_CONTAINER --delta $env:RESEARCH_GRAPH_DELTA
+uv run --no-sync python scripts/build_corpus_graph.py --apply --allow-shared-neo4j --neo4j-uri bolt://127.0.0.1:17687 --database neo4j --container article-analysis-neo4j-1 --neo4j-env '..\Graph-based RAG for article analysis\.env.secrets' --delta $env:RESEARCH_GRAPH_DELTA
 ```
 
 Если пакет поставляет готовые ER и `SIMILAR_TO`, но пока не поставляет V2-векторы, добавляется `--e5-model <локальный каталог зафиксированной модели>`. В таком запуске только новые профили векторизуются через существующий проверяемый кэш. Новое поколение переиспользует старые векторы и EE-соседство. Изменения концептов и memberships, новые документы и связи публикуются одной транзакцией Neo4j. Старые фактологические узлы и рёбра сохраняют прежние свойства. Поколение Corpus100 и его пополнения принадлежат только указанному namespace RESEARCH.
@@ -100,12 +100,14 @@ MATCH ()-[r]->() RETURN type(r) AS relationship_type, count(r) AS relationships 
 
 **PASS.** Проверены 100 checkpoint NER, 100 checkpoint RE и готовый локальный архив точки `91-87-93-90-05`. Совпали SHA-256 архива и канонического состава, 575 концептов, 4 938 memberships и 1 605 охваченных сущностей. Эти числа относятся к готовому исследовательскому каталогу.
 
-**PASS.** Прошли 89 целевых тестов, включая сборку, повтор публикации и восстановление после серверного commit на синтетическом адаптере. Полная сборка Corpus100, inference и реальный импорт получили статус **NOT RUN**.
+**PASS.** Прошли 90 целевых тестов, включая сборку, повтор публикации, восстановление после серверного commit и обязательность разрешения общей базы. Сценарии записи проверены на синтетическом адаптере. Полная сборка Corpus100, inference и реальный импорт получили статус **NOT RUN**.
 
 ```powershell
 uv run --no-sync python -m pytest tests/test_corpus_graph_v2.py tests/test_build_corpus_graph.py tests/test_shared_concepts_v2.py tests/test_shared_concepts_v2_study.py tests/test_contextual_shared_concepts.py tests/test_semantic_concepts.py -q
 ```
 
-## Проверка локальной цели
+## Резервная копия и очистка общей базы
 
-Read-only сверка связала `bolt://127.0.0.1:17687` с контейнером `article-analysis-neo4j-1` и томом `article-analysis_neo4j_data`. На экземпляре онлайн две базы, пользовательская `neo4j` и системная `system`. В `neo4j` обнаружены 18 736 узлов и 55 381 отношение. Из них 1 450 узлов и 1 677 отношений относятся к MAIN `article-analysis-domain-v1` по namespace и концам рёбер. Полная очистка этой базы затронула бы MAIN. Очистка ждёт точного адреса отдельной пользовательской базы RESEARCH. Серверные числа 0/0 и агрегаты нового графа пока не подтверждены.
+**PASS.** По явному подтверждению полностью очищена пользовательская база `neo4j` на `bolt://127.0.0.1:17687` в контейнере `article-analysis-neo4j-1`. Удалены все 18 736 узлов и 55 381 отношение, включая данные MAIN и RESEARCH. После отката удаления одной транзакцией из-за лимита памяти использовались пакеты по 500. Отдельные серверные запросы в режиме чтения подтвердили **0 узлов и 0 отношений**. Сверены определения всех 29 индексов и 20 constraints, системная база и идентичность контейнера и тома `article-analysis_neo4j_data`.
+
+Локальная резервная копия в `artifacts/neo4j-backups/neo4j-before-clear-20261126T163452Z/` содержит `store.tar.gz` для `/data/databases/neo4j` и `transactions.tar.gz` для `/data/transactions/neo4j`. Архивы созданы после штатной остановки и проверены до удаления по структуре, gzip CRC и SHA-256. После запуска того же контейнера отпечатки узлов, рёбер и схема совпали с состоянием до остановки. В `MANIFEST.json` сохранены хеши, исходные счётчики и схема, в `CLEANUP.json` сохранено контрольное чтение после очистки. Восстановление архивов и импорт Corpus100 относятся к отдельным операциям. Текущая пользовательская база пуста.

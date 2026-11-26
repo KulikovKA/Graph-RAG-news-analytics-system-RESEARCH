@@ -220,6 +220,39 @@ def test_target_requires_verified_loopback_mapping_and_excludes_main(monkeypatch
         db.inspect_target(db.Target("bolt://127.0.0.1:27687", "neo4j", "research"))
 
 
+def test_shared_target_requires_opt_in_database_and_verified_proxy(monkeypatch):
+    def labels(service):
+        return {"com.docker.compose.project": "article-analysis", "com.docker.compose.service": service}
+
+    containers = {
+        db.SHARED_CONTAINER: dict(
+            Id="shared-id", Name="/"+db.SHARED_CONTAINER, State={"Running": True},
+            Mounts=[dict(Destination="/data", Name=db.SHARED_VOLUME)],
+            Config=dict(Labels=labels("neo4j"), Image="neo4j:2026.08.1-community"),
+            NetworkSettings=dict(Ports={}, Networks={db.SHARED_NETWORK: dict(NetworkID="fixture", Aliases=["neo4j"])}),
+        ),
+        db.SHARED_PROXY: dict(
+            Name="/"+db.SHARED_PROXY, State={"Running": True},
+            Config=dict(Labels=labels("neo4j-bolt-proxy"),
+                        Cmd=["TCP-LISTEN:17687,fork,reuseaddr", "TCP:neo4j:7687"]),
+            NetworkSettings=dict(Ports={"17687/tcp": [{"HostIp": "127.0.0.1", "HostPort": "17687"}]},
+                                 Networks={db.SHARED_NETWORK: dict(NetworkID="fixture")}),
+        ),
+    }
+    monkeypatch.setattr(db.subprocess, "check_output", lambda cmd: json.dumps([containers[cmd[-1]]]).encode())
+    requested = db.Target(db.SHARED_URI, "neo4j", db.SHARED_CONTAINER)
+    with pytest.raises(ValueError, match="--allow-shared-neo4j"):
+        db.inspect_target(requested)
+    enabled = db.Target(db.SHARED_URI, "neo4j", db.SHARED_CONTAINER, True)
+    assert db.inspect_target(enabled) == "shared-id"
+    assert enabled.record() == requested.record()
+    with pytest.raises(ValueError, match="explicitly approved"):
+        db.inspect_target(db.Target(db.SHARED_URI, "other", db.SHARED_CONTAINER, True))
+    containers[db.SHARED_PROXY]["Config"]["Cmd"][1] = "TCP:other:7687"
+    with pytest.raises(ValueError, match="differs from"):
+        db.inspect_target(enabled)
+
+
 def test_append_rejects_existing_fact_changes():
     relation = dict(type="RELEX_REL", head="a", tail="b", properties=dict(factual=True))
     previous = dict(anchor="doc", nodes={}, edges={"fact": relation})

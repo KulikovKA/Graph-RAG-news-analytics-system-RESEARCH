@@ -236,13 +236,16 @@ def main(argv=None):
     parser.add_argument("--database")
     parser.add_argument("--container")
     parser.add_argument("--neo4j-env", type=Path)
+    parser.add_argument("--allow-shared-neo4j", action="store_true",
+                        help="Разрешить только подтверждённую общую локальную базу neo4j")
     parser.add_argument("--delta", type=Path, help="Подготовленные данные новых документов")
     parser.add_argument("--e5-model", type=Path, help="Локальный E5 для delta при отсутствии готовых V2 векторов")
     resource_options(parser)
     args = parser.parse_args(argv)
     config = approved_config()
     if args.validate_frozen:
-        if any((args.neo4j_uri, args.database, args.container, args.neo4j_env, args.delta, args.e5_model)):
+        if any((args.neo4j_uri, args.database, args.container, args.neo4j_env, args.delta, args.e5_model,
+                args.allow_shared_neo4j)):
             parser.error("--validate-frozen сверяет только исходные артефакты")
         print("ПРЕДУПРЕЖДЕНИЕ: СВЕРЯЮ ГОТОВЫЕ ЧЕКПОЙНТЫ CORPUS100.", flush=True)
         frozen_inputs(config)
@@ -250,8 +253,8 @@ def main(argv=None):
                               neo4j="NOT RUN", inference="NOT RUN", batch="NOT RUN"), ensure_ascii=False))
         return 0
     if not all((args.neo4j_uri, args.database, args.container)) or args.e5_model and args.delta is None:
-        parser.error("--apply требует --neo4j-uri, --database и --container изолированной цели")
-    target = publication.Target(args.neo4j_uri, args.database, args.container)
+        parser.error("--apply требует --neo4j-uri, --database и --container локальной цели")
+    target = publication.Target(args.neo4j_uri, args.database, args.container, args.allow_shared_neo4j)
     print("ПРЕДУПРЕЖДЕНИЕ: ПОСТРОЕНИЕ КАТАЛОГА И ПУБЛИКАЦИЯ В NEO4J МОГУТ ЗАНЯТЬ ПРОДОЛЖИТЕЛЬНОЕ ВРЕМЯ.",
           flush=True)
     with publication.connect(target, args.neo4j_env) as driver:

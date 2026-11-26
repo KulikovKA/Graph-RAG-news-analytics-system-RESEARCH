@@ -1,7 +1,7 @@
-"""Идемпотентная публикация одного изолированного поколения графа RESEARCH."""
+"""Идемпотентная публикация поколения графа RESEARCH с проверкой физической цели."""
 
 from collections import Counter
-from dataclasses import asdict, dataclass
+from dataclasses import dataclass
 import json
 import os
 import re
@@ -14,15 +14,48 @@ from tqdm import tqdm
 import corpus_graph_payload as graph
 from shared_concepts_v2_pipeline import RESEARCH_GRAPH_NAMESPACE as NAMESPACE
 
+SHARED_URI = "bolt://127.0.0.1:17687"
+SHARED_CONTAINER = "article-analysis-neo4j-1"
+SHARED_DATABASE = "neo4j"
+SHARED_VOLUME = "article-analysis_neo4j_data"
+SHARED_PROXY = "article-analysis-neo4j-bolt-proxy-1"
+SHARED_NETWORK = "article-analysis_backend"
+
 
 @dataclass(frozen=True)
 class Target:
     uri: str
     database: str
     container: str
+    allow_shared_neo4j: bool = False
 
     def record(self):
-        return asdict(self)
+        # Разрешение проверяется при каждом запуске и не меняет идентичность цели resume.
+        return dict(uri=self.uri, database=self.database, container=self.container)
+
+
+def docker_container(name):
+    container, = json.loads(subprocess.check_output(["docker", "inspect", "--type", "container", name]))
+    return container
+
+
+def verify_shared_route(container, labels, data_mounts):
+    proxy = docker_container(SHARED_PROXY)
+    proxy_labels = proxy["Config"].get("Labels") or {}
+    exposed = proxy["NetworkSettings"]["Ports"].get("17687/tcp") or []
+    backend = container["NetworkSettings"]["Networks"].get(SHARED_NETWORK) or {}
+    forwarded = proxy["NetworkSettings"]["Networks"].get(SHARED_NETWORK) or {}
+    if (labels.get("com.docker.compose.project") != "article-analysis"
+            or labels.get("com.docker.compose.service") != "neo4j"
+            or [mount.get("Name") for mount in data_mounts] != [SHARED_VOLUME]
+            or proxy["Name"] != "/" + SHARED_PROXY or not proxy["State"]["Running"]
+            or proxy_labels.get("com.docker.compose.project") != "article-analysis"
+            or proxy_labels.get("com.docker.compose.service") != "neo4j-bolt-proxy"
+            or proxy["Config"]["Cmd"] != ["TCP-LISTEN:17687,fork,reuseaddr", "TCP:neo4j:7687"]
+            or {"HostIp": "127.0.0.1", "HostPort": "17687"} not in exposed
+            or not backend.get("NetworkID") or backend["NetworkID"] != forwarded.get("NetworkID")
+            or "neo4j" not in (backend.get("Aliases") or ())):
+        raise ValueError("The shared Bolt proxy, Neo4j container or data volume differs from the approved target")
 
 
 def inspect_target(target):
@@ -32,16 +65,23 @@ def inspect_target(target):
             or not re.fullmatch(r"[a-z][a-z0-9.-]{0,62}", target.database) or target.database == "system"
             or not re.fullmatch(r"[a-zA-Z0-9][a-zA-Z0-9_.-]*", target.container)):
         raise ValueError("Use an explicitly named local Docker container and its user database over 127.0.0.1 Bolt")
-    container, = json.loads(subprocess.check_output(["docker", "inspect", "--type", "container", target.container]))
+    approved_shared = (target.uri, target.database, target.container) == (SHARED_URI, SHARED_DATABASE, SHARED_CONTAINER)
+    if target.allow_shared_neo4j and not approved_shared:
+        raise ValueError("--allow-shared-neo4j applies only to the explicitly approved shared target")
+    container = docker_container(target.container)
     labels = container["Config"].get("Labels") or {}
     data_mounts = [mount for mount in container["Mounts"] if mount["Destination"] == "/data"]
-    if (uri.port == 17687 or container["Name"] == "/article-analysis-neo4j-1"
+    is_shared = (uri.port == 17687 or container["Name"] == "/" + SHARED_CONTAINER
             or labels.get("com.docker.compose.project") == "article-analysis"
-            or any("article-analysis_neo4j_data" in str(mount) for mount in data_mounts)):
-        raise ValueError("MAIN/shared local Neo4j is excluded. Use an isolated RESEARCH container")
+            or any(SHARED_VOLUME in str(mount) for mount in data_mounts))
+    if is_shared and not (approved_shared and target.allow_shared_neo4j):
+        raise ValueError("MAIN/shared local Neo4j requires the exact approved target and --allow-shared-neo4j")
     if (container["Name"] != "/" + target.container or not container["State"]["Running"]
             or not container["Config"]["Image"].split("/")[-1].startswith("neo4j:")):
         raise ValueError("Expected a running Neo4j container")
+    if is_shared:
+        verify_shared_route(container, labels, data_mounts)
+        return container["Id"]
     ports = container["NetworkSettings"]["Ports"].get("7687/tcp") or []
     if {"HostIp": "127.0.0.1", "HostPort": str(uri.port)} not in ports:
         raise ValueError("Bolt does not map directly to the specified RESEARCH container on loopback")
@@ -58,7 +98,7 @@ def read_credentials(env_file):
     user = os.environ.get("NEO4J_USER", values.get("NEO4J_USER", "neo4j"))
     password = os.environ.get("NEO4J_PASSWORD", values.get("NEO4J_PASSWORD"))
     if not password:
-        raise ValueError("Set NEO4J_PASSWORD or use --neo4j-env for the isolated RESEARCH database")
+        raise ValueError("Set NEO4J_PASSWORD or use --neo4j-env for the selected local database")
     return user, password
 
 
