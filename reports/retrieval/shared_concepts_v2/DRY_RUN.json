@@ -1,0 +1,546 @@
+{
+  "approved_documents_sha256": {
+    "Shared_Concepts_V2_Complete_Architecture.html": "6f9a3d6dc7790fc1db2bffd4cee0873138750d664784225ec8096b3267b81b94",
+    "Shared_Concepts_V2_Implementation_Goal.md": "8aba7be53f65fad5f14159f572f334aa68616c24d4ce893594649d4eccd316d8",
+    "Shared_Concepts_V2_Methodology.md": "9b5709d7d5504e1559bc5a97f9640a08dad883d87149f40896bd81349600d7ef",
+    "Shared_Concepts_V2_Technical_Architecture.md": "c33b5de47dfa27e116ae21a1d20ee0b48b08c3ff8eed8162c33957a082b911c3"
+  },
+  "artifact_hashes": {
+    "dry_run/catalog.json": "78eacd6ed9d54c7e61c8712a7046b0ffe70b4911408e1850cf87b495bc463fdb",
+    "dry_run/ee.json": "a185de71a18c16666bcb6f912e0960301be076c7bfe33aa8f7875d4ef449f398",
+    "dry_run/memberships.json": "0acf560095fec29a9a551ab41be23244231326252532a636258e86ec59381c9a",
+    "results.json": "e3d07029b62c37f9096fa354747061c7cafd5acc64b121145bccd8fda72fba69"
+  },
+  "config_sha256": "10a9540fe4631ad127d0f2275abf36ac72a9c8795445f128c0b37f3e4fe77f28",
+  "configuration": {
+    "cc": {
+      "context": 0.95,
+      "name": 0.98
+    },
+    "delta": "1/10",
+    "ec": {
+      "context": 0.92,
+      "name": 0.95
+    }
+  },
+  "corpus_and_prior_input_files_checked": 378,
+  "corpus_sha256": "7c761626906e27ddd6d32570ca934f41b5367996b90ceb0696435bfcc5898f96",
+  "ee": {
+    "context_pass": 910698,
+    "cross_document_pairs": 10042851,
+    "documents_with_neighbors": 100,
+    "documents_with_raw_neighbors": 100,
+    "entities": 4506,
+    "entities_with_neighbors": 1605,
+    "entities_with_raw_neighbors": 2004,
+    "guard_hits": {
+      "conflicting_expansions": 0,
+      "incompatible_types": 2110,
+      "result_type": 863
+    },
+    "guarded_document_pairs": 1065,
+    "guarded_pairs": 5655,
+    "name_pass": 12225,
+    "raw_document_pairs": 1227,
+    "raw_pairs": 8173
+  },
+  "generation": "5a02c08648f1134869be617a4656e828e1ab75b32f9fb94967dbc8c177d20804",
+  "historical_cases_passing_ee": 16,
+  "input": {
+    "corpus": "Corpus100",
+    "embedding_source": "3A.5.12",
+    "frozen_manifest_sha256": "9ba2676f92341e35bff3d976076e64eb6114126259fb78f66f7e58e8f397a3f4",
+    "inference_seconds": 0,
+    "inference_versions": {
+      "matplotlib": "3.10.8",
+      "numpy": "2.4.1",
+      "psutil": "7.2.2",
+      "threadpoolctl": "3.8.0",
+      "tokenizers": "0.22.2",
+      "torch": "2.11.0",
+      "tqdm": "4.70.1",
+      "transformers": "5.1.0"
+    },
+    "prior_fingerprint": "2c290fe2d8a6813f665b5215eb50698d77e215f102fecba98f1559076578b4b1",
+    "recipe": {
+      "code_sha256": {
+        "contextual_shared_concepts.py": "ab22654c66a48d955ea8af5ba606af9355c96f8563472150042ddd4fbdd28d4d",
+        "corpus_graph_inference.py": "53d448121c4a2ef914938bf0f87f21cac414877e31c202311c14cbb012c9016e",
+        "semantic_concepts.py": "28d2249f76c4892f565018de904aedaee10405fcb25a0a1bda9d71db54760b94"
+      },
+      "embedding": {
+        "batch": 8,
+        "context_aggregation": "mean_float64",
+        "context_template": "{name}. {window}",
+        "device": "cpu",
+        "dimension": 384,
+        "dtype": "float32",
+        "mode": "text_name",
+        "model": "intfloat/e5-small-v2",
+        "normalization": "individual_l2",
+        "pooling": "masked_mean",
+        "prefix": "query: ",
+        "token_limit": 512
+      },
+      "model": "intfloat/e5-small-v2",
+      "model_files_sha256": {
+        "1_Pooling/config.json": "987f7a67a38fa564c849bb5d277c52ab9088a84368fc0be31a354125aebb12a0",
+        "config.json": "5dfb0363cd0243be179c03bcaafd1542d0fbb95e8cbcf575fff3e229342adc2f",
+        "model.safetensors": "45bfa60070649aae2244fbc9d508537779b93b6f353c17b0f95ceccb1c5116c1",
+        "sentence_bert_config.json": "948201d8329907aae938fa62f9ceeed53f5694dacc2b87b9f3b78b37ee986529",
+        "special_tokens_map.json": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+        "tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+        "tokenizer_config.json": "ae83fa6ca0333117ff12606020af925d648667ef70d92ff7f27d781ba0ca4544"
+      },
+      "revision": "ffb93f3bd4047442299a41ebb6fa998a38507c52",
+      "seed": 42,
+      "tokenizer_revision": "ffb93f3bd4047442299a41ebb6fa998a38507c52",
+      "versions": {
+        "numpy": "2.4.1",
+        "tokenizers": "0.22.2",
+        "torch": "2.11.0",
+        "transformers": "5.1.0"
+      },
+      "window": "S1"
+    },
+    "reused_entity_vectors": 4506,
+    "vector_hashes": {
+      "S1_vectors.npy": "75557cb2b04c6de3cb80481c71fda4d091406dcc1bc843b6766a16000e87f444",
+      "S1_windows.json": "14a25e2095eefa34aefa051f7152cde57e58e7c50817140cf7e092df9e98f3df",
+      "name_vectors.npy": "105f8b2ed923fe626b391c64316d791af947171d7d3837376f7dfa1eb6651918"
+    }
+  },
+  "label": "dry_run",
+  "namespace": "research:corpus100:corpus100-shared-concepts-v2:dry_run",
+  "resources": {
+    "completed_at": "2026-11-26T13:40:38.877147+00:00",
+    "max_rss_bytes": 2147483648,
+    "max_seconds": 1800,
+    "peak_rss_bytes": 233025536,
+    "started_at": "2026-11-26T13:40:02.270693+00:00",
+    "threads": 4,
+    "wall_seconds": 36.606196100008674
+  },
+  "run": "corpus100-shared-concepts-v2",
+  "source": {
+    "code_sha256": {
+      "benchmark_contextual_shared_concepts.py": "3eb63ec842abbf40d09f49507baae6f99b5ce81d67950893e03d7049ec8ef907",
+      "contextual_shared_concepts.py": "ab22654c66a48d955ea8af5ba606af9355c96f8563472150042ddd4fbdd28d4d",
+      "run_shared_concepts_v2.py": "13885b47db96e0defd4843902f8f818a05f3c75a099cf4da8afea8379e19789b",
+      "shared_concepts_v2.py": "d9378d413c8ef2cf18e888ad0cb907db674fe7e5ef4d12ed139a948f04aea206",
+      "shared_concepts_v2_pipeline.py": "59ec9888eaf434fa602e2ebc6f390144126d2f5f3bfda9aa710615f49a13995f",
+      "sweep_shared_concepts_v2.py": "2985c5fd05b3c6ed4ab35b2584801828b290b03d80e14388ad4cd9b82c0ef2db"
+    },
+    "dependencies": {
+      "filelock": "4.2.9",
+      "numpy": "2.4.1",
+      "psutil": "7.2.2",
+      "threadpoolctl": "3.8.0",
+      "tqdm": "4.70.1"
+    },
+    "python": "3.11.9"
+  },
+  "source_commit_at_execution": "713a816d56438b126fbb05a3f8cb611a093c051e",
+  "state_sha256": "1aaeec9ae8318a6c6586217eaf285d1fe248abac64620bd8a5f92f442fa92c3a",
+  "statistics": {
+    "by_topic": {
+      "Computer Vision": {
+        "documents": 20,
+        "entities": 300,
+        "memberships": 1038
+      },
+      "Machine Learning": {
+        "documents": 20,
+        "entities": 416,
+        "memberships": 1723
+      },
+      "NLP и LLM": {
+        "documents": 20,
+        "entities": 384,
+        "memberships": 1259
+      },
+      "Биотехнологии": {
+        "documents": 20,
+        "entities": 262,
+        "memberships": 1127
+      },
+      "Энергетика": {
+        "documents": 20,
+        "entities": 223,
+        "memberships": 750
+      }
+    },
+    "cc": {
+      "context_pass": 195261,
+      "disjoint": 1531242,
+      "eligible": 12421,
+      "name_pass": 12897,
+      "nested": 2577,
+      "partial": 13861,
+      "threshold_reject": 1532682
+    },
+    "concept_sizes": {
+      "10": 23,
+      "11": 12,
+      "12": 13,
+      "13": 15,
+      "14": 8,
+      "15": 14,
+      "16": 11,
+      "17": 16,
+      "18": 10,
+      "19": 8,
+      "2": 246,
+      "20": 7,
+      "21": 2,
+      "22": 2,
+      "23": 2,
+      "24": 2,
+      "25": 4,
+      "26": 2,
+      "27": 6,
+      "28": 4,
+      "29": 2,
+      "3": 113,
+      "30": 1,
+      "32": 3,
+      "33": 5,
+      "34": 1,
+      "35": 1,
+      "36": 2,
+      "37": 2,
+      "4": 82,
+      "42": 1,
+      "43": 1,
+      "45": 1,
+      "46": 1,
+      "47": 1,
+      "5": 60,
+      "6": 48,
+      "7": 35,
+      "8": 37,
+      "9": 29
+    },
+    "concepts": 833,
+    "covered_documents": 100,
+    "covered_entities": 1585,
+    "document_pairs": 1386,
+    "ee_component_sizes": {
+      "1": 2901,
+      "10": 6,
+      "11": 2,
+      "12": 2,
+      "13": 4,
+      "14": 2,
+      "15": 1,
+      "16": 3,
+      "17": 1,
+      "18": 1,
+      "19": 1,
+      "2": 89,
+      "20": 2,
+      "21": 1,
+      "22": 1,
+      "23": 1,
+      "3": 56,
+      "36": 1,
+      "37": 1,
+      "38": 1,
+      "4": 25,
+      "49": 1,
+      "5": 19,
+      "54": 1,
+      "6": 14,
+      "60": 1,
+      "62": 1,
+      "7": 8,
+      "79": 1,
+      "8": 8,
+      "9": 4
+    },
+    "exact_dedup": 2,
+    "memberships": 5897,
+    "memberships_per_entity": {
+      "0": 2921,
+      "1": 250,
+      "10": 45,
+      "11": 24,
+      "12": 6,
+      "13": 5,
+      "14": 5,
+      "15": 5,
+      "2": 452,
+      "3": 278,
+      "4": 173,
+      "5": 98,
+      "6": 98,
+      "7": 59,
+      "8": 53,
+      "9": 34
+    },
+    "neighborhoods": [
+      {
+        "event_id": 0,
+        "exact_groups": 1419,
+        "nonisolated": 1605,
+        "operation": "neighborhoods",
+        "raw_size_histogram": {
+          "10": 46,
+          "11": 32,
+          "12": 23,
+          "13": 28,
+          "14": 31,
+          "15": 27,
+          "16": 29,
+          "17": 29,
+          "18": 25,
+          "19": 15,
+          "2": 432,
+          "20": 15,
+          "21": 16,
+          "22": 14,
+          "23": 11,
+          "24": 11,
+          "25": 11,
+          "26": 8,
+          "27": 9,
+          "28": 7,
+          "29": 4,
+          "3": 187,
+          "30": 8,
+          "31": 5,
+          "32": 6,
+          "33": 7,
+          "34": 5,
+          "35": 3,
+          "36": 1,
+          "37": 2,
+          "38": 2,
+          "39": 2,
+          "4": 152,
+          "40": 1,
+          "41": 3,
+          "42": 3,
+          "43": 1,
+          "44": 1,
+          "45": 1,
+          "46": 1,
+          "5": 116,
+          "6": 95,
+          "7": 66,
+          "8": 62,
+          "9": 52
+        },
+        "seeds": 4506
+      }
+    ],
+    "operations": {
+      "append": {
+        "accepted_exclusions": 0,
+        "accepted_sizes": {},
+        "attempts": 0,
+        "ec_rounds": {},
+        "excluded_per_accept": {},
+        "outcomes": {}
+      },
+      "initialize": {
+        "accepted_exclusions": 161,
+        "accepted_sizes": {
+          "10": 45,
+          "11": 29,
+          "12": 21,
+          "13": 29,
+          "14": 35,
+          "15": 29,
+          "16": 23,
+          "17": 21,
+          "18": 20,
+          "19": 13,
+          "2": 343,
+          "20": 18,
+          "21": 11,
+          "22": 10,
+          "23": 10,
+          "24": 12,
+          "25": 13,
+          "26": 6,
+          "27": 3,
+          "28": 6,
+          "29": 6,
+          "3": 157,
+          "30": 6,
+          "31": 8,
+          "32": 6,
+          "33": 6,
+          "34": 2,
+          "35": 1,
+          "36": 2,
+          "37": 1,
+          "38": 5,
+          "39": 2,
+          "4": 132,
+          "40": 3,
+          "42": 1,
+          "43": 2,
+          "44": 1,
+          "5": 102,
+          "6": 84,
+          "7": 56,
+          "8": 56,
+          "9": 43
+        },
+        "attempts": 1419,
+        "ec_rounds": {
+          "max": 3,
+          "mean": 1.0965468639887244,
+          "median": 1.0,
+          "min": 1
+        },
+        "excluded_per_accept": {
+          "0": 1251,
+          "1": 99,
+          "2": 25,
+          "3": 4
+        },
+        "outcomes": {
+          "EXCLUSION_BUDGET": 40,
+          "PASS": 1379
+        }
+      },
+      "merge": {
+        "accepted_exclusions": 66,
+        "accepted_sizes": {
+          "10": 23,
+          "11": 15,
+          "12": 15,
+          "13": 15,
+          "14": 16,
+          "15": 25,
+          "16": 14,
+          "17": 19,
+          "18": 12,
+          "19": 12,
+          "20": 11,
+          "21": 9,
+          "22": 9,
+          "23": 7,
+          "24": 8,
+          "25": 14,
+          "26": 10,
+          "27": 10,
+          "28": 11,
+          "29": 4,
+          "3": 40,
+          "30": 3,
+          "31": 5,
+          "32": 3,
+          "33": 6,
+          "34": 4,
+          "35": 4,
+          "36": 4,
+          "37": 5,
+          "39": 1,
+          "4": 32,
+          "40": 2,
+          "41": 3,
+          "42": 4,
+          "43": 9,
+          "44": 1,
+          "45": 4,
+          "46": 1,
+          "47": 2,
+          "5": 32,
+          "6": 32,
+          "7": 29,
+          "8": 30,
+          "9": 29
+        },
+        "attempts": 2000,
+        "ec_rounds": {
+          "max": 3,
+          "mean": 1.1935,
+          "median": 1.0,
+          "min": 1
+        },
+        "excluded_per_accept": {
+          "0": 488,
+          "1": 49,
+          "2": 4,
+          "3": 3
+        },
+        "outcomes": {
+          "EXCLUSION_BUDGET": 80,
+          "NESTING": 1376,
+          "PASS": 544
+        }
+      }
+    },
+    "strict_inclusions": 730
+  },
+  "status": "PASS",
+  "synthetic": {
+    "synthetic-v2-checked-base": {
+      "cache": {
+        "cache_hits": 2,
+        "encoded": 0,
+        "inference_seconds": 0.0,
+        "unique_inputs": 2
+      },
+      "concept_id": "scv2:014d8e518bd740057fd410eedcfbc7d84b9b9883bad7aa7973f93c7dfcceb303",
+      "generation": "8bb6f63feb88bc52187b395db4a488bc201ee2c5ffec8c1e798302f7c7de5694",
+      "input_sha256": {
+        "base": null,
+        "canonical_input": "5e6604fce35ed132b24cd4ce58b43fac7ce63b823da2ea4104b334400380e333",
+        "documents": "0b4e7b9293e388ef3660a5cfbd54c296eacf32c9b5a54f5d830a78c146df7783",
+        "format": "profiles"
+      },
+      "members": [
+        "fixture-a",
+        "fixture-b"
+      ],
+      "state_sha256": "aba9c7a842ae7578b0ae8f8b890e656cdbd8ebe3d32704d46f3cf1b7c8dde8ed",
+      "version": 1
+    },
+    "synthetic-v2-checked-delta": {
+      "cache": {
+        "cache_hits": 2,
+        "encoded": 0,
+        "inference_seconds": 0.0,
+        "unique_inputs": 2
+      },
+      "concept_id": "scv2:014d8e518bd740057fd410eedcfbc7d84b9b9883bad7aa7973f93c7dfcceb303",
+      "generation": "402e07d825489559327c241984f6a7b02d71fe8cb53a041329d17398de299a54",
+      "input_sha256": {
+        "base": "8bb6f63feb88bc52187b395db4a488bc201ee2c5ffec8c1e798302f7c7de5694",
+        "canonical_input": "93f54db5557e6f72c7089535e1f0f2691c5c0a7f87cf0ea521e5123d22d24623",
+        "documents": "ca7e67ae8fa449bbb66077fd61e745036efcd345bdb3430eaa6300773721c507",
+        "format": "profiles"
+      },
+      "members": [
+        "fixture-a",
+        "fixture-b",
+        "fixture-c"
+      ],
+      "state_sha256": "764b75b546bc0468373c5484abe604b5656acbac960504650b80dc89f3f94e42",
+      "version": 2
+    }
+  },
+  "tests": {
+    "passed": 78,
+    "status": "PASS",
+    "v2_tests": 31
+  },
+  "verification": {
+    "accepted_merges": 544,
+    "concepts": 833,
+    "ee_max_error": 1.5543122344752192e-15,
+    "generation": "5a02c08648f1134869be617a4656e828e1ab75b32f9fb94967dbc8c177d20804",
+    "historical_cases": 20,
+    "initialize": 1419,
+    "memberships": 5897,
+    "merge": 2000,
+    "status": "PASS",
+    "strict_inclusions": 730
+  },
+  "verifier_sha256": "f33def9e518190e90e343b158542f276bc13ccb824c54f83f8b01edbd77c1bfa"
+}
