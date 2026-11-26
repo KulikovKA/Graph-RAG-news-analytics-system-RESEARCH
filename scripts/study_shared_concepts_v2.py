@@ -1,6 +1,7 @@
 """Поэтапное исследование EC, CC и delta на замороженном Corpus100."""
 
 from argparse import ArgumentParser
+from contextlib import ExitStack
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from fractions import Fraction
@@ -30,6 +31,7 @@ from shared_concepts_v2_pipeline import (
     load_checked, source_identity, write_checked,
 )
 from shared_concepts_v2_study_metrics import measure, score_histogram, shortlist, write_reports
+from shared_concepts_v2_study_progress import COMPATIBLE_RUNNERS, WorkerProgress, WorkerRows
 
 
 BASELINE = (95, 92, 98, 95, 10)
@@ -136,11 +138,12 @@ def read_archive(path):
         return json.load(stream)
 
 
-def init_worker(data, output, run_id, identity, options):
+def init_worker(data, output, run_id, identity, options, events):
     global _WORKER
     signal.signal(signal.SIGINT, signal.SIG_IGN)
     _WORKER = (data, output, run_id, identity, options,
-               {e.entity_id: e.profile.get("topic", "") for e in data.entities})
+               {e.entity_id: e.profile.get("topic", "") for e in data.entities}, events)
+    WorkerProgress(events).report("idle")
 
 
 def trial_path(output, point):
@@ -154,7 +157,16 @@ def validate_row(row, identity, point):
 
 
 def run_worker(point):
-    data, output, run_id, identity, options, topics = _WORKER
+    data, output, run_id, identity, options, topics, events = _WORKER
+    progress = WorkerProgress(events, point)
+    progress.report("opening trial")
+    try:
+        return work_on_trial(point, data, output, run_id, identity, options, topics, progress)
+    finally:
+        WorkerProgress(events).report("idle")
+
+
+def work_on_trial(point, data, output, run_id, identity, options, topics, progress):
     folder = trial_path(output, point)
     folder.mkdir(parents=True, exist_ok=True)
     metrics_path = folder / "metrics.json"
@@ -167,14 +179,14 @@ def run_worker(point):
             # Если процесс завершился между двумя фиксациями, восстанавливаем метрики без повторного расчёта.
             row = validate_row(read_archive(archive)["row"], identity, point)
         else:
-            row = evaluate(point, data, run_id, identity, options, topics, sampler, checkpoint, archive)
+            row = evaluate(point, data, run_id, identity, options, topics, sampler, checkpoint, archive, progress)
         row = row | dict(archive_sha256=sha(archive))
         write_checked(metrics_path, row)
         checkpoint.unlink(missing_ok=True)
         return row
 
 
-def evaluate(point, data, run_id, identity, options, topics, sampler, checkpoint, archive):
+def evaluate(point, data, run_id, identity, options, topics, sampler, checkpoint, archive, progress):
     started = perf_counter()
     budget = ResourceBudget(sampler, started, options["max_seconds"], options["max_rss"])
     parent = mp.parent_process()
@@ -190,6 +202,7 @@ def evaluate(point, data, run_id, identity, options, topics, sampler, checkpoint
     total_seconds = peak_rss = attempts = 0
     started_at = utc_now()
     if checkpoint.is_file():
+        progress.report("restoring checkpoint")
         saved = read_archive(checkpoint)
         validate_row(saved, identity, point)
         catalog.restore(saved["state"])
@@ -198,10 +211,11 @@ def evaluate(point, data, run_id, identity, options, topics, sampler, checkpoint
         started_at = saved["started_at"]
     else:
         catalog.add_edges((a, b) for a, b, *_ in data.ee["edges"])
-        catalog.initialize(catalog.entities, check=check)
-        catalog.prepare_cc(check=check)
+        catalog.initialize(catalog.entities, progress=lambda groups: progress.track(groups, "EC groups"), check=check)
+        catalog.prepare_cc(progress=lambda concepts: progress.track(concepts, "CC index"), check=check)
 
     def save():
+        progress.report(f"checkpoint @{attempts}")
         write_archive(checkpoint, dict(
             study=identity, point=point, attempts=attempts, state=catalog.snapshot(),
             event_seconds=catalog.event_seconds, elapsed_seconds=total_seconds + perf_counter() - started,
@@ -217,15 +231,19 @@ def evaluate(point, data, run_id, identity, options, topics, sampler, checkpoint
             attempts += 1
             if attempts % options["checkpoint_every"] == 0:
                 save()
+            else:
+                progress.report(f"CC tried {attempts} / queue {len(catalog.queue)}", force=False)
         check()
     except RuntimeError:
         save()
         raise
+    progress.report("collecting metrics")
     metrics = measure(catalog, topics)
     row = dict(study=identity, point=point, config=config.to_dict(), metrics=metrics,
                elapsed_seconds=total_seconds + perf_counter() - started, peak_rss_bytes=max(peak_rss, sampler.peak),
                worker_pid=os.getpid(), started_at=started_at, completed_at=utc_now(),
                blas_threads=[lib["num_threads"] for lib in threadpool_info() if lib["user_api"] == "blas"])
+    progress.report("saving result")
     write_archive(archive, dict(row=row, namespace=namespace, config_hash=catalog.config_hash,
                                state=catalog.snapshot(), event_seconds=catalog.event_seconds))
     return row
@@ -289,6 +307,19 @@ def prune_workspace(output, rows):
             (folder / name).unlink(missing_ok=True)
 
 
+def resume_study_identity(saved, definition):
+    current = digest(definition)
+    if saved["study"] == current:
+        return current
+    hashes = definition["study_code_sha256"]
+    legacy = COMPATIBLE_RUNNERS.get(hashes[Path(__file__).name])
+    if legacy:
+        previous = definition | dict(study_code_sha256=hashes | {Path(__file__).name: legacy})
+        if saved["study"] == digest(previous) == digest(saved["definition"]):
+            return saved["study"]
+    raise ValueError("Incompatible study resume; use the original inputs or a new run ID")
+
+
 def run_study(data, output, run_id, *, smoke=False, workers=3, max_seconds=1800, max_rss=2 * 1024**3,
               checkpoint_every=500, on_saved=None):
     if min(workers, max_seconds, max_rss, checkpoint_every) < 1:
@@ -299,8 +330,7 @@ def run_study(data, output, run_id, *, smoke=False, workers=3, max_seconds=1800,
     manifest, complete = output / "manifest.json", output / "complete.json"
     with FileLock(output / ".study.lock", timeout=0):
         if manifest.exists():
-            if load_checked(manifest)["study"] != identity:
-                raise ValueError("Incompatible study resume; use the original inputs or a new run ID")
+            identity = resume_study_identity(load_checked(manifest), definition)
         else:
             write_checked(manifest, dict(study=identity, definition=definition, created_at=utc_now(),
                                         git_head=subprocess.check_output(
@@ -335,9 +365,14 @@ def execute_stages(data, output, run_id, identity, smoke, workers, options, on_s
         retained = selected
 
     context = mp.get_context("spawn")
-    with context.Pool(workers, initializer=init_worker,
-                      initargs=(data, output, run_id, identity, options)) as pool, tqdm(
-                          total=sum(stage_sizes), desc="Corpus100 EC/CC/delta", unit="point", position=0) as total:
+    with ExitStack() as stack:
+        events = context.Queue()
+        stack.callback(events.close)
+        pool = stack.enter_context(context.Pool(workers, initializer=init_worker,
+                                                initargs=(data, output, run_id, identity, options, events)))
+        total = stack.enter_context(tqdm(total=sum(stage_sizes), desc=f"Corpus100 | {workers} workers",
+                                         unit="point", position=0, dynamic_ncols=True))
+        worker_rows = stack.enter_context(WorkerRows(events, workers))
         stage_inputs = stage_a(smoke)
         for name, next_stage in (("A", stage_b), ("B", stage_c), ("C", stage_d), ("D", None)):
             stages[name] = stage_inputs
@@ -350,7 +385,8 @@ def execute_stages(data, output, run_id, identity, smoke, workers, options, on_s
             if name == "D":
                 total.total = total.n + len(stage_inputs)
                 total.refresh()
-            with tqdm(total=len(stage_inputs), desc=f"Stage {name}", unit="point", position=1, leave=True) as bar:
+            with tqdm(total=len(stage_inputs), desc=f"Stage {name}", unit="point", position=1, leave=False,
+                      dynamic_ncols=True) as bar:
                 pending = []
                 for point in stage_inputs:
                     if point not in rows:
@@ -362,12 +398,15 @@ def execute_stages(data, output, run_id, identity, smoke, workers, options, on_s
                             continue
                     bar.update()
                     total.update()
-                for row in pool.imap_unordered(run_worker, pending, chunksize=1):
+                bar.set_postfix(cached=len(stage_inputs) - len(pending), queued=len(pending))
+                results = pool.imap_unordered(run_worker, pending, chunksize=1)
+                for row in worker_rows.results(results, len(pending)):
                     register(row)
                     bar.update()
                     total.update()
                     if on_saved is not None:
                         on_saved(row)
+                worker_rows.collect()
             if next_stage is not None:
                 stage_inputs = next_stage([rows[point] for point in stage_inputs], smoke)
     ordered = [rows[point] for point in sorted(rows)]

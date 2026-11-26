@@ -1,5 +1,6 @@
 from itertools import product
 from pathlib import Path
+from queue import Queue
 import sys
 
 import pytest
@@ -42,7 +43,7 @@ def test_stage_plans_grid_and_rank():
     assert all(all(v in axis for v, axis in zip(point, study.RANGES, strict=True)) for point in d)
 
 
-def test_three_workers_resume_and_serial_equivalence(tmp_path):
+def test_parallel_resume_and_serial_equivalence(tmp_path, capsys):
     rows = [entity(str(i), i * 15) for i in range(5)]
     pairs = [(str(i), str(i+1), .966, .966) for i in range(4)]
     inputs = study.StudyInput(rows, METADATA, dict(key="fixture", edges=pairs, metrics={"guarded_pairs": len(pairs)},
@@ -59,7 +60,10 @@ def test_three_workers_resume_and_serial_equivalence(tmp_path):
     assert not (target / "complete.json").exists()
     completed = study.trial_path(target, first[0]) / "metrics.json"
     preserved = sha(completed)
-    resumed = study.run_study(inputs, target, "parallel", smoke=True, workers=3)
+    resumed = study.run_study(inputs, target, "parallel", smoke=True, workers=4)
+    progress_output = capsys.readouterr().err
+    assert "Corpus100 | 4 workers" in progress_output
+    assert all(f"Worker {number}:" in progress_output for number in range(1, 5))
     assert sha(completed) == preserved
     serial = study.run_study(inputs, tmp_path / "serial", "serial", smoke=True, workers=1)
     assert resumed["stages"] == serial["stages"]
@@ -80,3 +84,26 @@ def test_three_workers_resume_and_serial_equivalence(tmp_path):
     assert details["points"][study.point_id(study.BASELINE)]["baseline"]
     assert not list((target / "trials").glob("*/catalog.json.gz"))
     assert digest(study.run_study(inputs, target, "parallel", smoke=True)) == digest(resumed)
+
+
+def test_worker_rows_show_pid_phase_and_thresholds(capsys):
+    events = Queue()
+    with study.WorkerRows(events, 4) as display:
+        for pid in range(100, 104):
+            events.put((pid, study.BASELINE, "EC groups 5/120"))
+        display.collect()
+    out = capsys.readouterr().err
+    assert all(f"Worker {slot} [{pid}]" in out for slot, pid in enumerate(range(100, 104), 1))
+    assert "EC 0.95/0.92 CC 0.98/0.95 δ0.10 | EC groups 5/120" in out
+
+
+def test_progress_only_upgrade_keeps_old_study_identity():
+    runner = Path(study.__file__)
+    new_hash = sha(runner)
+    old_hash = study.COMPATIBLE_RUNNERS[new_hash]
+    definition = dict(input="fixture", study_code_sha256={runner.name: new_hash, "other.py": "unchanged"})
+    legacy = definition | dict(study_code_sha256=definition["study_code_sha256"] | {runner.name: old_hash})
+    saved = dict(study=digest(legacy), definition=legacy)
+    assert study.resume_study_identity(saved, definition) == saved["study"]
+    with pytest.raises(ValueError, match="Incompatible study resume"):
+        study.resume_study_identity(saved, definition | dict(input="different"))
