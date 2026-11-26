@@ -1,0 +1,171 @@
+{
+  "baseline_and_final_details": [
+    "95-91-99-95-10",
+    "95-92-98-95-10",
+    "95-92-99-95-10"
+  ],
+  "compared_run_id": "corpus100-v2-study-smoke",
+  "completed_run_resume": "PASS",
+  "configurations": 9,
+  "ee": {
+    "cache_key": "914dd6164bc30c47fe4b732390c3bec6d786946fb57c0d1ade9a4273b6b170de",
+    "context_pass": 910698,
+    "cross_document_pairs": 10042851,
+    "documents_with_neighbors": 100,
+    "documents_with_raw_neighbors": 100,
+    "entities": 4506,
+    "entities_with_neighbors": 1605,
+    "entities_with_raw_neighbors": 2004,
+    "guard_hits": {
+      "conflicting_expansions": 0,
+      "incompatible_types": 2110,
+      "result_type": 863
+    },
+    "guarded_document_pairs": 1065,
+    "guarded_pairs": 5655,
+    "historical_edge_set": "exact_match",
+    "historical_max_absolute_score_difference": 1.5543122344752192e-15,
+    "name_pass": 12225,
+    "raw_document_pairs": 1227,
+    "raw_pairs": 8173
+  },
+  "git_head_at_execution": "9e94e7a9193d6610f26a838d7133ff1fed663ae1",
+  "identical_catalogs_and_structural_metrics_by_point": {
+    "95-92-98-95-10": "9a22f9f0967075ebeac8f74bd352789c08db080ad26b4b4f479c8b6be9c66540",
+    "95-92-98-96-10": "35c665ab0166f9b6dd81c5ed406aa3aec5e35f74bafdae7ec23e2cc3c37d06ab",
+    "95-92-99-95-09": "3b3b0f5578cbaa9c6a196a4c1c5e3ce26daca9423ec6c58baef65f28001d1d3c",
+    "95-92-99-95-10": "8f63b085086ba0a9d7580a374aea0ab1fde226c543e959370ebf043941ff9053",
+    "95-92-99-95-11": "8c588572d7c03bde8e9a5ddfd79981bcd5fdc52c766d23498bf557241e6f9db3",
+    "95-93-98-95-10": "7eb21538c84bc27c813765855dce09c0aa1a8f595b652e8b42ce4d96dc233421",
+    "96-92-98-95-10": "75834227f05d27e9a254dc72f719a808ad5f02003ea27db54e9c27f185e9a4b6"
+  },
+  "interrupted": {
+    "first_pid": 38384,
+    "interrupted_at": "2026-11-26T14:35:15.766218+00:00",
+    "point": [
+      95,
+      93,
+      98,
+      95,
+      10
+    ],
+    "pool_pids": [
+      17720,
+      38384,
+      39404
+    ]
+  },
+  "interruption_exit_code": 130,
+  "mode": "smoke",
+  "new_stage_D_points": [
+    [
+      95,
+      91,
+      99,
+      95,
+      10
+    ],
+    [
+      95,
+      93,
+      99,
+      95,
+      10
+    ]
+  ],
+  "png_dimensions": {
+    "cc_heatmaps.png": [
+      756,
+      658
+    ],
+    "delta.png": [
+      1190,
+      1050
+    ],
+    "ec_heatmap.png": [
+      756,
+      658
+    ]
+  },
+  "resources": {
+    "blas_threads_per_worker": 1,
+    "peak_worker_rss_bytes": 302899200,
+    "wall_seconds_including_interruption": 174.070678
+  },
+  "resume": {
+    "checkpoints": [
+      {
+        "completed_at": "2026-11-26T14:35:42.513600+00:00",
+        "point": "95-92-98-95-10",
+        "restored_started_at": "2026-11-26T14:34:51.235227+00:00",
+        "resume_pid": 20720,
+        "sha256": "A3C3DC4879074E8F94904602732C0FE2C83D2D31CD4235E6F6EA730D903C4362"
+      },
+      {
+        "completed_at": "2026-11-26T14:35:32.343702+00:00",
+        "point": "96-92-98-95-10",
+        "restored_started_at": "2026-11-26T14:34:51.280500+00:00",
+        "resume_pid": 16496,
+        "sha256": "1E0F046056971E2EE6410E0B696DA04552702DC5089B5D006C470C85CECB61C9"
+      }
+    ],
+    "completed": [
+      {
+        "point": "95-93-98-95-10",
+        "sha256": "92329BBD2F7459A4DD37AE4E57A8186EC2345618D0B76DA6A39FBFB501A3E5E7"
+      }
+    ]
+  },
+  "run_id": "corpus100-v2-study-verified",
+  "sha256": {
+    "REPORT.md": "2d3ecde3590caf95da6595e754ad78ff6350c3439e4b018b0aa55cdb579ded5d",
+    "cc_heatmaps.png": "7f1bf7405e84bcbecff83ac47863257b80d5f4d4ef3b5a3ef41f7857aa6b0471",
+    "delta.png": "2076a58af4d43b4c324a22bfa0a43334496b4731424274cf7cfc99fe82a69d39",
+    "details/95-91-99-95-10-diagnostics.json": "dabc8f6bba4c357910716406693f0879b8b06b3f55bbc6e4fb22dcc1262ddcf4",
+    "details/95-91-99-95-10.json.gz": "5462be2141a86b5aac6702221623ebca560580b11d59819f5db7d72a1ee326fe",
+    "details/95-92-98-95-10-diagnostics.json": "efd9c1828fc5370446b8fb0a5fb07482812269ee747be0622d2c0c32e7484bee",
+    "details/95-92-98-95-10.json.gz": "16f8ae0155f32428e76ea137b9671622cb06d9ef36109fe88d5185dde9deba02",
+    "details/95-92-99-95-10-diagnostics.json": "66ed9807b7f3c98fe6b8292c84c98f54ba303205734f914d69776d9356259c34",
+    "details/95-92-99-95-10.json.gz": "806ff3b04185731131768b5ffc9dcd616db78c7d25184d19571a4f15d58bd979",
+    "details/MANIFEST.json": "f7e8d65007c8f140a1e1eb9a576bb3626eab676f08704ce5c9210b24980c7545",
+    "details/profiles.json.gz": "967ed9f47c1e3f1a5eaee8c8d3f02929c4a1db815d1b6403008dfe54dd013b55",
+    "ec_heatmap.png": "6d4977dadb3951fc3d3603430fa242e7cd51e1eb1e1706e7151190894c30f04d",
+    "results.csv": "8ee7ede68f85180759e953430eba33801d84ec2f4d74a596ab3e2a80b0e7d680",
+    "results.json": "66ff8c3d27256a1f9f8a1d8f7f7191069b4fd131ff6feb75a539737b46cd176a"
+  },
+  "shortlist": [
+    [
+      95,
+      91,
+      99,
+      95,
+      10
+    ],
+    [
+      95,
+      92,
+      99,
+      95,
+      10
+    ]
+  ],
+  "source_sha256": {
+    "benchmark_contextual_shared_concepts.py": "3eb63ec842abbf40d09f49507baae6f99b5ce81d67950893e03d7049ec8ef907",
+    "contextual_shared_concepts.py": "ab22654c66a48d955ea8af5ba606af9355c96f8563472150042ddd4fbdd28d4d",
+    "run_shared_concepts_v2.py": "13885b47db96e0defd4843902f8f818a05f3c75a099cf4da8afea8379e19789b",
+    "shared_concepts_v2.py": "265af002f07fb3ef258b4282ae7a6e59d5c2c90f0f82ed9e144d995fec4047a0",
+    "shared_concepts_v2_pipeline.py": "59ec9888eaf434fa602e2ebc6f390144126d2f5f3bfda9aa710615f49a13995f",
+    "shared_concepts_v2_study_metrics.py": "82580ce1c8daeb9740eaf84207fdcca4cd54795212f15823718000d4a6f348bd",
+    "study_shared_concepts_v2.py": "7649a1ff9dc7a4fcd270e030ae599f4b5a7ae0d1cb40f1895f38b4565ce3ad12",
+    "sweep_shared_concepts_v2.py": "2985c5fd05b3c6ed4ab35b2584801828b290b03d80e14388ad4cd9b82c0ef2db"
+  },
+  "stage_configuration_counts": {
+    "A": 3,
+    "B": 3,
+    "C": 3,
+    "D": 3
+  },
+  "tests": {
+    "passed": 81
+  }
+}

@@ -186,7 +186,7 @@ def test_cc_jaccard_priority_stable_ties_and_no_double_count():
     catalog = Catalog(rows, config(cc=(.9, .9)), "test")
     add_concepts(catalog, a="ab", b="bc", c="cd", z="efg")
     catalog.prepare_cc()
-    assert catalog.queue[0][:3] == (Fraction(-1, 3), ("a", 1), ("b", 1))
+    assert catalog.queue[0][:4] == (Fraction(-1, 3), (("a", "b"), ("b", "c")), ("a", 1), ("b", 1))
     assert catalog.merge_next()
     merged = next(c for c in catalog.concepts.values() if c.members == ("a", "b", "c"))
     np.testing.assert_allclose(merged.sums, catalog.sums("abc"))
@@ -198,6 +198,30 @@ def test_cc_jaccard_priority_stable_ties_and_no_double_count():
     assert final.members == tuple("abcdefg")
     assert any(e["jaccard"] == "0" for e in catalog.events)
     np.testing.assert_allclose(final.centroids, catalog.sums("abcdefg") / 7)
+
+
+def test_cc_equal_jaccard_is_independent_of_namespace_and_label():
+    rows = [entity(key, 17 * index) for index, key in enumerate("abcd")]
+    old_choices = set()
+    config_hashes = set()
+    for index in range(12):
+        namespace = f"research:corpus100:namespace-{index % 3}:label-{index}"
+        catalog = Catalog(rows, config(ec=(.93 if index % 2 else .94, .94), cc=(.8, .8)), namespace)
+        config_hashes.add(catalog.config_hash)
+        groups = {"ab": catalog.fresh_id(["initialize", tuple("ab")]),
+                  "bc": catalog.fresh_id(["initialize", tuple("bc")]),
+                  "cd": catalog.fresh_id(["initialize", tuple("cd")])}
+        id_pair_ab_bc = sorted((groups["ab"], groups["bc"]))
+        id_pair_bc_cd = sorted((groups["bc"], groups["cd"]))
+        old_choices.add(id_pair_ab_bc < id_pair_bc_cd)
+        add_concepts(catalog, **{cid: members for members, cid in reversed(list(groups.items()))})
+        merge_all(catalog)
+        assert sorted(c.members for c in catalog.concepts.values()) == [tuple("abc"), tuple("cd")]
+        merged = catalog.concepts[catalog.by_members[tuple("abc")]]
+        expected_id = catalog.fresh_id(["merge", *((key, 1) for key in id_pair_ab_bc), tuple("abc")])
+        assert merged.concept_id == expected_id
+    assert old_choices == {True, False}
+    assert len(config_hashes) == 2
 
 
 def test_cc_two_thresholds_and_failed_merge_keeps_catalog():

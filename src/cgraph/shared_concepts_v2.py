@@ -16,6 +16,7 @@ MODEL = "intfloat/e5-small-v2"
 DIMENSION = 384
 WINDOW = "S1"
 EE = (.94, .86)
+COSINE_BINS = np.linspace(-1., 1., 201)
 
 
 def canonical(value):
@@ -179,7 +180,7 @@ class ECResult:
 
 
 class Catalog:
-    def __init__(self, entities, config, namespace, recipe_hash=None):
+    def __init__(self, entities, config, namespace, recipe_hash=None, *, track_cc=False):
         self.entities = {e.entity_id: e for e in entities}
         if len(self.entities) != len(entities):
             raise ValueError("Duplicate canonical entity ID")
@@ -201,6 +202,7 @@ class Catalog:
         self.events = []
         self.event_seconds = {}
         self.cc_counts = Counter()
+        self.cc_histogram = np.zeros((2, len(COSINE_BINS) - 1), dtype=np.int64) if track_cc else None
         self.queue = []
         self.nesting_rejected = []
 
@@ -346,7 +348,7 @@ class Catalog:
         for parent in parents:
             before = self.concepts[parent]
             neighbors = set.union(*(self.by_entity[key] for key in before.members))
-            for other_id in sorted(neighbors - {parent}):
+            for other_id in sorted(neighbors - {parent}, key=lambda key: self.concepts[key].members):
                 other = self.concepts[other_id].set_members
                 after = proposed.set_members if other_id in changed else other
                 if ((before.set_members < other and not proposed.set_members < after)
@@ -404,11 +406,14 @@ class Catalog:
         b_unit = np.asarray([self.unit_sums[other.concept_id] for other in others])
         scores = np.where(np.all(a_unit == b_unit, axis=-1), 1.,
                           np.clip(np.sum(a_unit * b_unit, axis=-1), -1, 1))
-        for other, score in zip(others, scores, strict=True):
+        scored = []
+        for index, (other, score) in enumerate(zip(others, scores, strict=True)):
             a, b = concept.set_members, other.set_members
             if a < b or b < a:
                 self.cc_counts["nested"] += 1
                 continue
+            if self.cc_histogram is not None:
+                scored.append(index)
             intersection = len(a & b)
             kind = "partial" if intersection else "disjoint"
             self.cc_counts[kind] += 1
@@ -420,9 +425,13 @@ class Catalog:
                 self.cc_counts["threshold_reject"] += 1
                 continue
             self.cc_counts["eligible"] += 1
-            first, second = sorted((concept.key, other.key))
+            first, second = sorted((concept, other), key=lambda row: row.members)
             priority = -Fraction(intersection, len(a) + len(b) - intersection)
-            heappush(self.queue, (priority, first, second, tuple(score.tolist())))
+            heappush(self.queue, (priority, (first.members, second.members),
+                                  first.key, second.key, tuple(score.tolist())))
+        if scored:
+            for channel, values in enumerate(scores[scored].T):
+                self.cc_histogram[channel] += np.histogram(values, bins=COSINE_BINS)[0]
 
     def prepare_cc(self, progress=iter, check=lambda: None):
         ordered = sorted(self.concepts)
@@ -437,7 +446,7 @@ class Catalog:
     def retry_nesting(self):
         still_blocked = []
         for entry, dependencies in self.nesting_rejected:
-            if self.active(entry[1]) and self.active(entry[2]):
+            if self.active(entry[2]) and self.active(entry[3]):
                 if any(not self.active(key) for key in dependencies):
                     heappush(self.queue, entry)
                 else:
@@ -447,7 +456,7 @@ class Catalog:
     def merge_next(self):
         while self.queue:
             entry = heappop(self.queue)
-            priority, first, second, scores = entry
+            priority, _, first, second, scores = entry
             if not (self.active(first) and self.active(second)):
                 continue
             started = perf_counter()
@@ -460,7 +469,8 @@ class Catalog:
                 self.event("merge", **info)
                 return True
             event = len(self.events)
-            concept_id = self.fresh_id(["merge", first, second, trial.members])
+            # ID по-прежнему зависит от отсортированных версий родителей.
+            concept_id = self.fresh_id(["merge", *sorted((first, second)), trial.members])
             version = self.versions.get(concept_id, 0) + 1
             proposed = self.concept(concept_id, version, trial, a.seeds + b.seeds, (*a.events, *b.events, event))
             blockers = set()
@@ -482,19 +492,20 @@ class Catalog:
 
     def snapshot(self):
         def pack(entry):
-            priority, a, b, scores = entry
-            return str(priority), a, b, scores
+            priority, members, a, b, scores = entry
+            return str(priority), members, a, b, scores
 
         return dict(concepts=[self.concepts[key].record() for key in sorted(self.concepts)],
                     versions=dict(self.versions),
                     edges=[(a, b) for a in sorted(self.adjacency) for b in sorted(self.adjacency[a]) if a < b],
                     events=self.events, cc_counts=dict(self.cc_counts), queue=[pack(e) for e in sorted(self.queue)],
-                    nesting_rejected=[(pack(e), keys) for e, keys in sorted(self.nesting_rejected)])
+                    nesting_rejected=[(pack(e), keys) for e, keys in sorted(self.nesting_rejected)],
+                    cc_histogram=self.cc_histogram.tolist() if self.cc_histogram is not None else None)
 
     def restore(self, state):
         def unpack(entry):
-            priority, a, b, scores = entry
-            return Fraction(priority), tuple(a), tuple(b), tuple(scores)
+            priority, members, a, b, scores = entry
+            return Fraction(priority), tuple(map(tuple, members)), tuple(a), tuple(b), tuple(scores)
 
         for row in state["concepts"]:
             self.put(Concept.from_record(dict(row)))
@@ -502,6 +513,8 @@ class Catalog:
         self.add_edges(state["edges"])
         self.events = list(state["events"])
         self.cc_counts = Counter(state["cc_counts"])
+        if self.cc_histogram is not None:
+            self.cc_histogram[:] = state["cc_histogram"]
         self.queue = [unpack(entry) for entry in state["queue"]]
         heapify(self.queue)
         self.nesting_rejected = [(unpack(entry), tuple(map(tuple, keys))) for entry, keys in state["nesting_rejected"]]
