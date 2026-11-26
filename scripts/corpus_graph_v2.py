@@ -165,7 +165,8 @@ def build_prepared(folder, inputs, config, options, parent_folder, parent_payloa
     return payload
 
 
-def run_graph(driver, target, output, config, options, *, delta=None, model=None):
+def run_graph(driver, target, output, config, options, *, delta=None, model=None,
+              workers=publication.BOOTSTRAP_WORKERS):
     """Файловый указатель меняется после точного подтверждения Neo4j."""
     output.mkdir(parents=True, exist_ok=True)
     current_path = output / "CURRENT.json"
@@ -215,7 +216,7 @@ def run_graph(driver, target, output, config, options, *, delta=None, model=None
             if parent_payload:
                 result = publication.publish_append(driver, target.database, parent_payload, payload)
             else:
-                result = publication.bootstrap(driver, target.database, payload)
+                result = publication.bootstrap(driver, target.database, payload, workers=workers)
             write_checked(folder / "verification.json", result | dict(verified_at=stamp()))
             write_checked(current_path, dict(request=request, generation=payload["generation"],
                                              payload_sha256=sha(folder / "payload.json"), target=target.record()))
@@ -238,6 +239,8 @@ def main(argv=None):
     parser.add_argument("--neo4j-env", type=Path)
     parser.add_argument("--allow-shared-neo4j", action="store_true",
                         help="Разрешить только подтверждённую общую локальную базу neo4j")
+    parser.add_argument("--workers", type=int, default=publication.BOOTSTRAP_WORKERS,
+                        help="Параллельные сессии Neo4j при начальной загрузке (по умолчанию %(default)s)")
     parser.add_argument("--delta", type=Path, help="Подготовленные данные новых документов")
     parser.add_argument("--e5-model", type=Path, help="Локальный E5 для delta при отсутствии готовых V2 векторов")
     resource_options(parser)
@@ -254,11 +257,14 @@ def main(argv=None):
         return 0
     if not all((args.neo4j_uri, args.database, args.container)) or args.e5_model and args.delta is None:
         parser.error("--apply требует --neo4j-uri, --database и --container локальной цели")
+    if args.workers < 1:
+        parser.error("--workers должен быть положительным")
     target = publication.Target(args.neo4j_uri, args.database, args.container, args.allow_shared_neo4j)
     print("ПРЕДУПРЕЖДЕНИЕ: ПОСТРОЕНИЕ КАТАЛОГА И ПУБЛИКАЦИЯ В NEO4J МОГУТ ЗАНЯТЬ ПРОДОЛЖИТЕЛЬНОЕ ВРЕМЯ.",
           flush=True)
     with publication.connect(target, args.neo4j_env) as driver:
-        result = run_graph(driver, target, OUTPUT, config, limits(args), delta=args.delta, model=args.e5_model)
+        result = run_graph(driver, target, OUTPUT, config, limits(args), delta=args.delta,
+                           model=args.e5_model, workers=args.workers)
     print(json.dumps(result, ensure_ascii=False, indent=2))
     return 0
 

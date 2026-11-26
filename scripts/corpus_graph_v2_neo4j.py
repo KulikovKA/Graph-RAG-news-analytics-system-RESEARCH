@@ -20,6 +20,7 @@ SHARED_DATABASE = "neo4j"
 SHARED_VOLUME = "article-analysis_neo4j_data"
 SHARED_PROXY = "article-analysis-neo4j-bolt-proxy-1"
 SHARED_NETWORK = "article-analysis_backend"
+BOOTSTRAP_WORKERS = 4
 
 
 @dataclass(frozen=True)
@@ -145,10 +146,10 @@ def verify(tx, payload):
     return dict(counts=actual, readback=checked)
 
 
-def bootstrap(driver, database, payload):
+def bootstrap(driver, database, payload, *, workers=BOOTSTRAP_WORKERS):
     with driver.session(database=database, default_access_mode=READ_ACCESS) as session:
         session.execute_read(isolated)
-    result = graph.import_neo4j(driver, database, NAMESPACE, payload["nodes"], payload["edges"])
+    result = graph.import_neo4j(driver, database, NAMESPACE, payload["nodes"], payload["edges"], workers=workers)
     with driver.session(database=database, default_access_mode=READ_ACCESS) as session:
         return result | session.execute_read(verify, payload)
 

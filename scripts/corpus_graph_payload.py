@@ -1,5 +1,6 @@
 """Corpus-wide resolution, semantic layers and isolated Neo4j publication."""
 from collections import Counter, defaultdict
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import hashlib
 from itertools import combinations
 
@@ -379,20 +380,61 @@ def verify_neo4j(tx, namespace, nodes, edges, *, complete=True):
                 sha256=snapshot.hexdigest()), keys
 
 
-def import_neo4j(driver, database, namespace, nodes, edges):
+def import_waves(rows, workers, *, relationships, batch_size=100):
+    """Пакеты одной волны рёбер не блокируют общие узлы."""
+    if not relationships or workers == 1:
+        width = workers * batch_size
+        for begin in range(0, len(rows), width):
+            yield [rows[start:start+batch_size] for start in range(begin, min(begin + width, len(rows)), batch_size)]
+        return
+
+    pending = rows
+    while pending:
+        batches = [[] for _ in range(workers)]
+        owners = {}
+        postponed = []
+        assigned = 0
+        for index, row in enumerate(pending):
+            if assigned == workers * batch_size:
+                postponed.extend(pending[index:])
+                break
+            keys = row["head"], row["tail"]
+            active = {owners[key] for key in keys if key in owners}
+            if len(active) > 1:
+                postponed.append(row)
+                continue
+            slot = next(iter(active)) if active else min(range(workers), key=lambda i: len(batches[i]))
+            if len(batches[slot]) == batch_size:
+                postponed.append(row)
+                continue
+            batches[slot].append(row)
+            owners.update((key, slot) for key in keys)
+            assigned += 1
+        yield [batch for batch in batches if batch]
+        pending = postponed
+
+
+def import_neo4j(driver, database, namespace, nodes, edges, *, workers=1):
+    require(workers > 0, "Neo4j import requires at least one worker")
+
     def write_batch(tx, query, batch):
         result = tx.run(query, rows=batch, ns=namespace)
         require(result.single(strict=True)["n"] == len(batch), "Neo4j batch count mismatch")
         counters = result.consume().counters
         return counters.nodes_created, counters.relationships_created
 
-    with driver.session(database=database) as session:
+    def import_batch(query, batch):
+        with driver.session(database=database) as worker_session:
+            return worker_session.execute_write(write_batch, query, batch)
+
+    with driver.session(database=database) as session, ThreadPoolExecutor(max_workers=workers) as pool:
         before = session.execute_read(outside_snapshot, namespace)
         _, present = session.execute_read(lambda tx: verify_neo4j(tx, namespace, nodes, edges, complete=False))
         created_nodes, created_edges = 0, 0
         for kinds, payload, field, verified_keys in ((LABELS, nodes, "label", present[0]),
                                                      (REL_TYPES, edges, "type", present[1])):
-            with tqdm(total=len(payload), initial=len(verified_keys), desc=f"Neo4j {field}", unit="object") as bar:
+            desc = f"Neo4j {field} ({workers} workers)" if workers > 1 else f"Neo4j {field}"
+            with tqdm(total=len(payload), initial=len(verified_keys), desc=desc, unit="object") as bar:
                 for kind in kinds:
                     rows = [r for key, r in payload.items() if r[field] == kind and key not in verified_keys]
                     if field == "label":
@@ -405,12 +447,20 @@ def import_neo4j(driver, database, namespace, nodes, edges):
                                  "WHERE a.fingerprint=row.properties.fingerprint AND b.fingerprint=row.properties.fingerprint "
                                  f"MERGE (a)-[r:{kind} {{key:row.properties.key,namespace:$ns}}]->(b) "
                                  "ON CREATE SET r += row.properties RETURN count(r) AS n")
-                    for start in range(0, len(rows), 100):
-                        batch = rows[start:start+100]
-                        new_nodes, new_edges = session.execute_write(write_batch, query, batch)
-                        created_nodes += new_nodes
-                        created_edges += new_edges
-                        bar.update(len(batch))
+                    for wave in import_waves(rows, workers, relationships=field == "type"):
+                        if workers == 1:
+                            batch, = wave
+                            new_nodes, new_edges = session.execute_write(write_batch, query, batch)
+                            created_nodes += new_nodes
+                            created_edges += new_edges
+                            bar.update(len(batch))
+                            continue
+                        jobs = {pool.submit(import_batch, query, batch): len(batch) for batch in wave}
+                        for job in as_completed(jobs):
+                            new_nodes, new_edges = job.result()
+                            created_nodes += new_nodes
+                            created_edges += new_edges
+                            bar.update(jobs[job])
         require(created_nodes == len(nodes)-len(present[0]) and created_edges == len(edges)-len(present[1]),
                 "Neo4j creation count mismatch")
         verified, _ = session.execute_read(verify_neo4j, namespace, nodes, edges)

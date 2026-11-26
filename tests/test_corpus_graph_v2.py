@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 import re
 import sys
+from threading import Barrier, Lock, get_ident
 from types import SimpleNamespace
 
 import pytest
@@ -201,6 +202,79 @@ def test_publication_rejects_other_namespaces_before_build(tmp_path, monkeypatch
     with pytest.raises(ValueError, match="empty outside"):
         v2.run_graph(server, target, tmp_path/"graph", inputs.approved_config(), {})
     assert server.writes == 0
+
+
+def test_initial_import_uses_four_sessions_and_resumes_after_partial_wave():
+    size = 400
+    ns = v2.NAMESPACE
+    identity = lambda item: f"{ns}:{item}"
+    nodes, edges = {}, {}
+    for index in range(size):
+        doc, entity_key, mention = map(identity, (f"doc-{index:04}", f"ent-{index:04}", f"m-{index:04}"))
+        for key, label in ((doc, "RELEXDocument"), (entity_key, "RELEXEntity")):
+            nodes[key] = dict(label=label, properties=dict(key=key, namespace=ns, fingerprint="fixture"))
+        edges[mention] = dict(type="RELEX_MENTIONS", head=doc, tail=entity_key,
+                              properties=dict(key=mention, namespace=ns, fingerprint="fixture"))
+    payload = dict(nodes=nodes, edges=edges, expected=db.count_payload(nodes, edges))
+    store = MemoryNeo4j()
+    gate, mutation = Barrier(4, timeout=10), Lock()
+    active_threads = set()
+    sessions = []
+    interrupt_first_wave = True
+
+    class Session:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *_):
+            pass
+
+        def execute_read(self, command, *args):
+            return store.execute_read(command, *args)
+
+        def execute_write(self, command, query, batch):
+            if interrupt_first_wave and "MERGE (n:RELEXDocument" in query:
+                with mutation:
+                    active_threads.add(get_ident())
+                    sessions.append(self)
+                gate.wait()
+                if batch[0]["properties"]["key"] == identity("doc-0300"):
+                    raise InterruptedError("one batch failed")
+            with mutation:
+                return store.execute_write(command, query, batch)
+
+    class Driver:
+        def session(self, database, **_):
+            assert database == "neo4j"
+            return Session()
+
+    driver = Driver()
+    with pytest.raises(InterruptedError, match="one batch failed"):
+        db.bootstrap(driver, "neo4j", payload)
+    assert len(active_threads) == len({id(session) for session in sessions}) == 4
+    assert len(store.nodes) == 300 and not store.edges
+    interrupt_first_wave = False
+    resumed = db.bootstrap(driver, "neo4j", payload)
+    assert resumed["first"]["created_nodes"] == 500
+    assert resumed["first"]["created_relationships"] == size
+    assert resumed["counts"] == payload["expected"]
+    assert db.bootstrap(driver, "neo4j", payload)["first"]["created_nodes"] == 0
+
+
+def test_relationship_waves_do_not_share_endpoints_between_workers():
+    rows = ([dict(head="hub", tail=f"n-{i}") for i in range(21)]
+            + [dict(head=f"n-{i}", tail=f"extra-{i}") for i in range(35)]
+            + [dict(head="loop", tail="loop")])
+    waves = list(graph.import_waves(rows, 4, relationships=True, batch_size=3))
+    assert any(len(wave) == 4 for wave in waves)
+    assert sorted(id(row) for wave in waves for batch in wave for row in batch) == sorted(map(id, rows))
+    for wave in waves:
+        seen = set()
+        for batch in wave:
+            assert 0 < len(batch) <= 3
+            keys = {row[side] for row in batch for side in ("head", "tail")}
+            assert seen.isdisjoint(keys)
+            seen.update(keys)
 
 
 def test_target_requires_verified_loopback_mapping_and_excludes_main(monkeypatch):
