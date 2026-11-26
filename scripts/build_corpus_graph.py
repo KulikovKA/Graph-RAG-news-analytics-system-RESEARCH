@@ -494,7 +494,7 @@ def build(run, docs, paths, neo4j_env, mlflow_uri):
     print(json.dumps(report, ensure_ascii=False, indent=2), flush=True)
 
 
-def main():
+def historical_main():
     parser = ArgumentParser(description=__doc__)
     parser.add_argument("--resume", action="store_true")
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
@@ -535,6 +535,15 @@ def main():
                 run.error(run.state.get("current_stage"), None, str(exc))
                 raise
     return 0
+
+
+def main():
+    if sys.argv[1:2] == ["--historical-3a5-11"]:
+        del sys.argv[1]
+        return historical_main()
+    from corpus_graph_v2 import main as shared_concepts_v2_main
+
+    return shared_concepts_v2_main()
 
 
 if __name__ == "__main__":

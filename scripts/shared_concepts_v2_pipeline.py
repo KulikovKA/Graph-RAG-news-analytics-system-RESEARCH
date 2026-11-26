@@ -33,6 +33,8 @@ from relex_experiment import MemorySampler
 ROOT = previous.ROOT
 REVISION = previous.REVISION
 PREVIOUS_RUN = previous.OUTPUT / "corpus100"
+RESEARCH_GRAPH_NAMESPACE = "relex_corpus100_shared_concepts_v2"
+RESEARCH_CATALOG_NAMESPACE = f"research:corpus100:{RESEARCH_GRAPH_NAMESPACE}"
 FROZEN_MANIFEST = ROOT / "reports/retrieval/benchmark_3a5_13/MANIFEST.json"
 EXPECTED_EE = dict(entities=4506, cross_document_pairs=10042851, raw_pairs=8173, guarded_pairs=5655,
                    entities_with_neighbors=1605, documents_with_neighbors=100)
@@ -457,9 +459,13 @@ def _run(entities, config, namespace, output, metadata, base, regression, checkp
                     ee_regression=regression)
     if base is not None:
         before = base["identity"]
+        same_research_graph = (
+            namespace == RESEARCH_CATALOG_NAMESPACE
+            and metadata.get("research_graph") == before["input"].get("research_graph") == RESEARCH_GRAPH_NAMESPACE
+        )
         if (before["namespace"] != namespace or before["config"] != config.to_dict()
                 or before["input"]["recipe"] != metadata["recipe"] or before["source"] != source
-                or before["input"].get("corpus") == "Corpus100"):
+                or (before["input"].get("corpus") == "Corpus100" and not same_research_graph)):
             raise ValueError("Base catalog namespace, configuration, recipe or implementation mismatch")
         if any(fingerprints.get(key) != value for key, value in base["fingerprints"].items()):
             raise ValueError("Existing canonical profile changed or disappeared; rebuild required")
