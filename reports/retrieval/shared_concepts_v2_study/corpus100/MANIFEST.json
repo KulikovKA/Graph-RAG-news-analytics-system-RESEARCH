@@ -74,11 +74,86 @@
   },
   "elapsed_seconds": 2866.375008,
   "publication_transformations": {
-    "REPORT.md": "Added baseline comparison and publication provenance",
+    "REPORT.md": "Added baseline comparison and publication provenance, added finalist catalog links",
     "results.csv": "CRLF to LF, parsed CSV rows unchanged"
   },
+  "published_catalogs": [
+    {
+      "concepts": 575,
+      "covered_entities": 1605,
+      "equivalent_points": [
+        [
+          91,
+          85,
+          93,
+          90,
+          5
+        ],
+        [
+          91,
+          86,
+          93,
+          90,
+          5
+        ],
+        [
+          91,
+          87,
+          93,
+          90,
+          5
+        ]
+      ],
+      "member_sets_sha256": "b5929794303a94b26ade70903d6e87a08be8c36fc465b0736f1265dd08105bbf",
+      "memberships": 4938,
+      "path": "catalogs/91-85-93-90-05.json.gz",
+      "point": [
+        91,
+        85,
+        93,
+        90,
+        5
+      ],
+      "sha256": "41e0f3ea91036b28aca6afc81074e52ae45077bbac958e1f18125a90d01bc331",
+      "source_path": "details/91-85-93-90-05.json.gz"
+    },
+    {
+      "concepts": 577,
+      "covered_entities": 1605,
+      "equivalent_points": [
+        [
+          91,
+          85,
+          93,
+          91,
+          5
+        ],
+        [
+          91,
+          86,
+          93,
+          91,
+          5
+        ]
+      ],
+      "member_sets_sha256": "292152322cb2a117b606beb8eaacd86315efc0fc01517218c9b676e90770c01e",
+      "memberships": 4939,
+      "path": "catalogs/91-85-93-91-05.json.gz",
+      "point": [
+        91,
+        85,
+        93,
+        91,
+        5
+      ],
+      "sha256": "e59ed370fd3a7f44f17cb8e0b62f2a4be58bb1aaba4cf455540cbc6a4c3e6b48",
+      "source_path": "details/91-85-93-91-05.json.gz"
+    }
+  ],
   "published_sha256": {
-    "REPORT.md": "42a36f319f0aaf524db4272030dd5d30adb5b755cbc80dc622247637ce600220",
+    "REPORT.md": "f0ef80f4882c00658a4b556f04fbd8c00a8dd288096efa39d391d58ce56a5f26",
+    "catalogs/91-85-93-90-05.json.gz": "41e0f3ea91036b28aca6afc81074e52ae45077bbac958e1f18125a90d01bc331",
+    "catalogs/91-85-93-91-05.json.gz": "e59ed370fd3a7f44f17cb8e0b62f2a4be58bb1aaba4cf455540cbc6a4c3e6b48",
     "cc_heatmaps.png": "4283644c0cf4c298f7908f8121462d5d525b4d836b49859d170959d5456008ff",
     "delta.png": "b197d99dd9c1a0fa71405a364bffb255b083fb4443f1275230611078906c491c",
     "ec_heatmap.png": "266161bef21e418c07d4713031040ca95d55c377a51cbba8d9829302aa95d35d",
