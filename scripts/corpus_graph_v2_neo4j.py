@@ -21,6 +21,7 @@ SHARED_VOLUME = "article-analysis_neo4j_data"
 SHARED_PROXY = "article-analysis-neo4j-bolt-proxy-1"
 SHARED_NETWORK = "article-analysis_backend"
 BOOTSTRAP_WORKERS = 4
+V2_RELATIONSHIP_TYPES = ("RELEX_MENTIONS", "RELEX_REL", "HAS_SHARED_CONCEPT")
 
 
 @dataclass(frozen=True)
@@ -135,11 +136,15 @@ def isolated(tx):
     snapshot = graph.outside_snapshot(tx, NAMESPACE)
     if snapshot["nodes"] or snapshot["relationships"]:
         raise ValueError("RESEARCH graph publication requires a database empty outside the V2 namespace")
+    actual = counts(tx)
+    unexpected = actual["relationships"].keys() - set(V2_RELATIONSHIP_TYPES)
+    if unexpected:
+        raise ValueError(f"Database contains relationship types outside the current V2 profile: {sorted(unexpected)}")
+    return actual
 
 
 def verify(tx, payload):
-    isolated(tx)
-    actual = counts(tx)
+    actual = isolated(tx)
     if actual != payload["expected"]:
         raise ValueError(f"Neo4j aggregate mismatch: expected {payload['expected']}; found {actual}")
     checked, _ = graph.verify_neo4j(tx, NAMESPACE, payload["nodes"], payload["edges"])
@@ -149,7 +154,8 @@ def verify(tx, payload):
 def bootstrap(driver, database, payload, *, workers=BOOTSTRAP_WORKERS):
     with driver.session(database=database, default_access_mode=READ_ACCESS) as session:
         session.execute_read(isolated)
-    result = graph.import_neo4j(driver, database, NAMESPACE, payload["nodes"], payload["edges"], workers=workers)
+    result = graph.import_neo4j(driver, database, NAMESPACE, payload["nodes"], payload["edges"], workers=workers,
+                               relationship_types=V2_RELATIONSHIP_TYPES)
     with driver.session(database=database, default_access_mode=READ_ACCESS) as session:
         return result | session.execute_read(verify, payload)
 
@@ -160,6 +166,9 @@ def changed_payload(previous, target):
     anchor = previous["anchor"]
     if target["anchor"] != anchor:
         raise ValueError("The frozen generation anchor cannot move")
+    if any(row["type"] not in V2_RELATIONSHIP_TYPES for payload in (previous, target)
+           for row in payload["edges"].values()):
+        raise ValueError("Append contains relationships outside the current V2 profile")
     for key, row in previous["nodes"].items():
         new = target["nodes"].get(key)
         if key == anchor:
@@ -179,7 +188,7 @@ def changed_payload(previous, target):
         if new is not None and new["type"] != row["type"]:
             raise ValueError(f"Append cannot change an existing relationship type: {key}")
         if row["type"] != "HAS_SHARED_CONCEPT" and new != row:
-            raise ValueError(f"Append cannot change existing facts, mentions or SIMILAR_TO: {key}")
+            raise ValueError(f"Append cannot change existing facts or mentions: {key}")
         if new is None or (new["head"], new["tail"]) != (row["head"], row["tail"]):
             remove_edges[key] = row
     put_nodes.update({key: row for key, row in target["nodes"].items() if previous["nodes"].get(key) != row})
@@ -218,7 +227,8 @@ def publish_append(driver, database, previous, target):
                 run_batches(tx, f"UNWIND $rows AS row MERGE (n:{kind} {{key:row.properties.key,namespace:$ns}}) "
                             "SET n = row.properties RETURN count(n) AS n",
                             [row for row in put_nodes.values() if row["label"] == kind], bar)
-            for kind, (head, tail) in graph.EDGE_LABELS.items():
+            for kind in V2_RELATIONSHIP_TYPES:
+                head, tail = graph.EDGE_LABELS[kind]
                 run_batches(tx, f"UNWIND $rows AS row MATCH (a:{head} {{key:row.head,namespace:$ns}}),"
                             f"(b:{tail} {{key:row.tail,namespace:$ns}}) "
                             f"MERGE (a)-[r:{kind} {{key:row.properties.key,namespace:$ns}}]->(b) "

@@ -414,8 +414,9 @@ def import_waves(rows, workers, *, relationships, batch_size=100):
         pending = postponed
 
 
-def import_neo4j(driver, database, namespace, nodes, edges, *, workers=1):
+def import_neo4j(driver, database, namespace, nodes, edges, *, workers=1, relationship_types=REL_TYPES):
     require(workers > 0, "Neo4j import requires at least one worker")
+    require(all(row["type"] in relationship_types for row in edges.values()), "Unexpected relationship type")
 
     def write_batch(tx, query, batch):
         result = tx.run(query, rows=batch, ns=namespace)
@@ -432,7 +433,7 @@ def import_neo4j(driver, database, namespace, nodes, edges, *, workers=1):
         _, present = session.execute_read(lambda tx: verify_neo4j(tx, namespace, nodes, edges, complete=False))
         created_nodes, created_edges = 0, 0
         for kinds, payload, field, verified_keys in ((LABELS, nodes, "label", present[0]),
-                                                     (REL_TYPES, edges, "type", present[1])):
+                                                     (relationship_types, edges, "type", present[1])):
             desc = f"Neo4j {field} ({workers} workers)" if workers > 1 else f"Neo4j {field}"
             with tqdm(total=len(payload), initial=len(verified_keys), desc=desc, unit="object") as bar:
                 for kind in kinds:

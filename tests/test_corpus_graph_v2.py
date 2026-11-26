@@ -130,8 +130,8 @@ def sources(keys, *, frozen=False):
     metadata = METADATA | dict(research_graph=pipeline.RESEARCH_GRAPH_NAMESPACE)
     if frozen:
         metadata["corpus"] = "Corpus100"
-    return inputs.Inputs(dict(documents=docs, resolution=dict(entities=members, mapping=mapping, relations=[]),
-                              links=[]), entities, metadata)
+    return inputs.Inputs(dict(documents=docs, resolution=dict(entities=members, mapping=mapping, relations=[])),
+                         entities, metadata)
 
 
 def test_graph_bootstrap_append_and_crash_resume(tmp_path, monkeypatch):
@@ -147,7 +147,12 @@ def test_graph_bootstrap_append_and_crash_resume(tmp_path, monkeypatch):
     monkeypatch.setattr(v2, "BOOTSTRAP_NODES", dict(RELEXDocument=2, RELEXEntity=2, RELEXConcept=1))
     monkeypatch.setattr(v2, "BOOTSTRAP_EDGES", dict(RELEX_MENTIONS=2, HAS_SHARED_CONCEPT=2))
     monkeypatch.setattr(v2, "BOOTSTRAP_MEMBERS_SHA256", digest([["a", "b"]]))
-    output = tmp_path/"graph"
+    previous_output = tmp_path/v2.NAMESPACE
+    previous_output.mkdir()
+    old_pointer = b"historical publication state"
+    (previous_output/"CURRENT.json").write_bytes(old_pointer)
+    output = tmp_path/v2.OUTPUT.name
+    assert output != previous_output
     write_checked = v2.write_checked
 
     with monkeypatch.context() as patch:
@@ -192,6 +197,7 @@ def test_graph_bootstrap_append_and_crash_resume(tmp_path, monkeypatch):
         if row["type"] == "RELEX_MENTIONS":
             assert server.edges[key] == row
     assert v2.run_graph(server, target, output, config, options, delta=delta)["mutations"] == 0
+    assert (previous_output/"CURRENT.json").read_bytes() == old_pointer
 
 
 def test_publication_rejects_other_namespaces_before_build(tmp_path, monkeypatch):
@@ -201,6 +207,21 @@ def test_publication_rejects_other_namespaces_before_build(tmp_path, monkeypatch
     monkeypatch.setattr(v2, "frozen_inputs", lambda _: pytest.fail("Should stop before build"))
     with pytest.raises(ValueError, match="empty outside"):
         v2.run_graph(server, target, tmp_path/"graph", inputs.approved_config(), {})
+    assert server.writes == 0
+
+
+def test_publication_refuses_legacy_similarities_before_build_or_write(tmp_path, monkeypatch):
+    target = db.Target("bolt://127.0.0.1:27687", "neo4j", "isolated")
+    server = MemoryNeo4j()
+    forbidden = dict(type="SIMILAR_TO", head="a", tail="b", properties={"namespace": v2.NAMESPACE})
+    server.edges["historical-edge"] = forbidden
+    monkeypatch.setattr(v2, "frozen_inputs", lambda _: pytest.fail("Should stop before build"))
+    with pytest.raises(ValueError, match="outside the current V2 profile"):
+        v2.run_graph(server, target, tmp_path/"graph", inputs.approved_config(), {})
+    server.edges.clear()
+    generated = dict(nodes={}, edges={"unexpected": forbidden})
+    with pytest.raises(ValueError, match="Unexpected relationship type"):
+        db.bootstrap(server, "neo4j", generated)
     assert server.writes == 0
 
 
@@ -345,7 +366,8 @@ def test_approved_configuration_cannot_be_retuned(tmp_path):
         inputs.approved_config(path)
 
 
-def test_delta_from_existing_er_and_semantic_checkpoint_with_ready_vectors(tmp_path, monkeypatch):
+@pytest.mark.parametrize("legacy_manifest", (False, True))
+def test_delta_from_existing_er_without_semantic_checkpoint(tmp_path, monkeypatch, legacy_manifest):
     previous = sources("a")
     delta = sources("b")
     source = delta.source
@@ -361,30 +383,63 @@ def test_delta_from_existing_er_and_semantic_checkpoint_with_ready_vectors(tmp_p
     mention = {key: member["source_entity"][key] for key in ("document_id", "start", "end", "surface_text")}
     member["source_entity"]["source_mentions"] = [mention | dict(
         revision_id="r1", mention_id="mention-b", abbreviation_candidates=[])]
-    for data, key in ((previous.source, "a"), (source, "b")):
-        data["resolution"]["entities"][key][0]["text_name"] = key
     (tmp_path/"documents.jsonl").write_text(json.dumps(doc)+"\n", encoding="utf-8")
     inputs.old.checkpoint(tmp_path/"entity_resolution.json", {"stage": "entity_resolution"},
                           source["resolution"], 0)
-    er = {key: previous.source["resolution"][key] | source["resolution"][key] for key in ("entities", "mapping")}
-    links = graph.semantic_links(er, {"a": vector(0), "b": vector(0)}, "0.950")
-    assert len(links) == 1 and links[0]["threshold"] == "0.950"
-    inputs.old.checkpoint(tmp_path/"semantic.json", {"stage": "semantic"}, links, 0)
     profile, = pipeline.resolved_profiles({"doc-b": doc}, tmp_path/"entity_resolution.json")
     ref = profile["evidence"][0] | dict(text_sha256=checksum, window_start=0, window_end=len(text),
                                         input_start=0, input_end=len(text))
     embedded = Entity.create(profile, [dict(text=text, input=profile["name"]+". "+text, provenance=[ref])],
                              (vector(0), vector(0, .5)), digest(METADATA["recipe"]))
     pipeline.write_entity_bundle(tmp_path/"entities.json", [embedded])
-    v2.write_checked(tmp_path/"manifest.json", dict(base_generation="seed", files_sha256={
-        name: v2.sha(tmp_path/name) for name in inputs.DELTA_FILES | {"entities.json"}}))
+    files = {name: v2.sha(tmp_path/name) for name in inputs.DELTA_FILES | {"entities.json"}}
+    if legacy_manifest:
+        files["semantic.json"] = "unused former checksum"
+    v2.write_checked(tmp_path/"manifest.json", dict(base_generation="seed", files_sha256=files))
     monkeypatch.setattr(inputs, "vectorize", lambda *_: pytest.fail("Inference is unnecessary"))
+    monkeypatch.setattr(graph, "semantic_links", lambda *_: pytest.fail("Similarity calculation is forbidden"))
     identity = inputs.delta_identity(tmp_path)
+    assert "semantic.json" not in identity["input_sha256"]
     prepared = inputs.delta_inputs(tmp_path, identity, previous, {"generation": "seed"}, None,
                                    tmp_path/"cache", 1, 30, 2**30)
     assert list(prepared.source["documents"]) == ["doc-a", "doc-b"]
-    assert prepared.source["links"] == links
+    assert set(prepared.source) == {"documents", "resolution"}
     assert prepared.entities[-1].fingerprint == embedded.fingerprint
     with pytest.raises(ValueError, match="different parent"):
         inputs.delta_inputs(tmp_path, identity, previous, {"generation": "other"}, None,
                             tmp_path/"cache", 1, 30, 2**30)
+
+
+def test_frozen_graph_inputs_do_not_read_historical_semantic_artifacts(monkeypatch):
+    previous = pipeline.previous
+    required = (
+        previous.frozen.CORPUS, previous.frozen.FROZEN / "document_lock.json",
+        previous.PRIOR / "manifest.json", previous.PRIOR / "checkpoints/entity_resolution/corpus.json",
+    )
+    archived = (previous.PRIOR / "checkpoints/semantic/corpus.json", previous.PRIOR / "checkpoints/concepts/corpus.json")
+    input_hashes = {p.relative_to(pipeline.ROOT).as_posix(): str(i) for i, p in enumerate(required + archived)}
+    shared = dict(smoke=False, model_revision=pipeline.REVISION, seed=pipeline.contextual.SEED,
+                  entity_ids_sha256="fixture", model_files_sha256={}, pair_cosine={}, inputs_sha256=input_hashes,
+                  windows={"S1": 1}, embedding=pipeline.RECIPE)
+    historical = shared | dict(force_recompute=False, rules=pipeline.contextual.RULES)
+    identity = shared | dict(stage="3A.5.12")
+    manifest = dict(stage="3A.5.13", status="complete", fingerprint=pipeline.signature(historical), identity=historical)
+    monkeypatch.setattr(pipeline, "read", lambda path: manifest if path == pipeline.FROZEN_MANIFEST else identity)
+    visited = []
+
+    def file_sha(path):
+        assert path not in archived
+        visited.append(path)
+        return input_hashes[path.relative_to(pipeline.ROOT).as_posix()]
+
+    class StopAfterInputChecks(Exception):
+        pass
+
+    def recipe(_):
+        raise StopAfterInputChecks
+
+    monkeypatch.setattr(pipeline, "sha", file_sha)
+    monkeypatch.setattr(pipeline, "vector_recipe", recipe)
+    with pytest.raises(StopAfterInputChecks):
+        pipeline.frozen_corpus(graph_inputs_only=True)
+    assert set(visited) == set(required)

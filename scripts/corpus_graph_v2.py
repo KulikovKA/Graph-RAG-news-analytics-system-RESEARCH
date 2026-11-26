@@ -21,7 +21,7 @@ from shared_concepts_v2_pipeline import (
     read_entity_bundle, run_catalog, write_checked, write_entity_bundle,
 )
 
-OUTPUT = ROOT / "artifacts" / NAMESPACE
+OUTPUT = ROOT / "artifacts" / f"{NAMESPACE}_no_similar_to"
 CATALOG = "catalog"
 
 
@@ -117,7 +117,7 @@ def assemble(inputs, catalog, memberships, catalog_sha256, *, parent=None, froze
         fingerprint = digest([NAMESPACE, catalog["identity"]["config_hash"], inputs.metadata])
     projected = concept_projection(inputs, catalog, memberships)
     nodes, edges = graph.build_payload(NAMESPACE, fingerprint, source["documents"],
-                                       source["resolution"], source["links"], projected)
+                                       source["resolution"], (), projected)
     nodes[anchor]["properties"].update(scv2_generation=catalog["generation"], scv2_catalog_sha256=catalog_sha256)
     expected = publication.count_payload(nodes, edges)
     if frozen:
@@ -172,7 +172,8 @@ def run_graph(driver, target, output, config, options, *, delta=None, model=None
     current_path = output / "CURRENT.json"
     pending_path = output / "PENDING.json"
     input_plan = delta_identity(delta) if delta is not None else None
-    request = digest(dict(target=target.record(), config=sha(APPROVED), delta=input_plan))
+    request = digest(dict(target=target.record(), config=sha(APPROVED), delta=input_plan,
+                          relationship_types=publication.V2_RELATIONSHIP_TYPES))
     with FileLock(output / ".lock", timeout=0):
         current = load_checked(current_path) if current_path.exists() else None
         pending = load_checked(pending_path) if pending_path.exists() else None

@@ -1,4 +1,4 @@
-"""Входы штатного графа V2 после зафиксированных стадий NER, RE, ER и SIMILAR_TO."""
+"""Входы штатного графа V2 после зафиксированных стадий NER, RE и ER."""
 
 from dataclasses import dataclass
 import inspect
@@ -11,7 +11,7 @@ from tqdm import tqdm
 import benchmark_contextual_shared_concepts as historical
 import build_corpus_graph as old
 import build_relex_graphs as relex
-from cgraph.ner_v2.io import read_documents, validate_span
+from cgraph.ner_v2.io import read_documents
 from cgraph.shared_concepts_v2 import Config, EE, MODEL, WINDOW, digest
 from relex_experiment import MemorySampler
 from run_shared_concepts_v2 import read_configuration
@@ -23,10 +23,9 @@ from shared_concepts_v2_pipeline import (
 APPROVED = ROOT / "config/shared_concepts_v2_approved.json"
 REFERENCE = ROOT / "reports/retrieval/shared_concepts_v2_study/corpus100/results.json"
 BOOTSTRAP_NODES = {"RELEXDocument": 100, "RELEXEntity": 4506, "RELEXConcept": 575}
-BOOTSTRAP_EDGES = {"RELEX_MENTIONS": 4506, "RELEX_REL": 8498, "SIMILAR_TO": 12640, "HAS_SHARED_CONCEPT": 4938}
+BOOTSTRAP_EDGES = {"RELEX_MENTIONS": 4506, "RELEX_REL": 8498, "HAS_SHARED_CONCEPT": 4938}
 BOOTSTRAP_MEMBERS_SHA256 = "b5929794303a94b26ade70903d6e87a08be8c36fc465b0736f1265dd08105bbf"
-DELTA_FILES = {"documents.jsonl", "entity_resolution.json", "semantic.json"}
-SEMANTIC_THRESHOLD = "0.950"
+DELTA_FILES = {"documents.jsonl", "entity_resolution.json"}
 
 
 @dataclass
@@ -77,65 +76,41 @@ def ready_frozen_checkpoints(documents, manifest):
 
 
 def frozen_inputs(config, frozen_run=PREVIOUS_RUN):
-    entities, metadata = frozen_corpus(frozen_run)
+    entities, metadata = frozen_corpus(frozen_run, graph_inputs_only=True)
     manifest = old.read(historical.PRIOR / "manifest.json")
     if old.signature(manifest["configuration"]) != manifest["fingerprint"]:
         raise ValueError("Invalid historical Corpus100 manifest")
     documents = {row["document_id"]: row for row in read_documents(old.CORPUS)}
     ready_frozen_checkpoints(documents, manifest)
-    checkpoints = historical.PRIOR / "checkpoints"
-    resolution, links = (historical.frozen_checkpoint(checkpoints / stage / "corpus.json", manifest, stage)
-                         for stage in ("entity_resolution", "semantic"))
+    resolution_path = historical.PRIOR / "checkpoints/entity_resolution/corpus.json"
+    resolution = historical.frozen_checkpoint(resolution_path, manifest, "entity_resolution")
     verify = load_checked(REFERENCE)
     parameters = config.to_dict()
     matching = [row for row in verify["results"] if row["config"] == parameters]
-    actual = (len(documents), len(entities), len(resolution["entities"]), len(resolution["relations"]), len(links))
-    expected = (100, 4506, 4506, 8498, 12640)
+    actual = (len(documents), len(entities), len(resolution["entities"]), len(resolution["relations"]))
+    expected = (100, 4506, 4506, 8498)
     if (actual != expected or verify["ee"]["guarded_pairs"] != EXPECTED_EE["guarded_pairs"]
             or len(matching) != 1
             or (matching[0]["metrics"]["concepts"], matching[0]["metrics"]["memberships"],
                 matching[0]["metrics"]["catalog_members_sha256"]) != (575, 4938, BOOTSTRAP_MEMBERS_SHA256)):
         raise ValueError(f"Frozen inputs or approved study reference differ: {actual}")
-    return Inputs(dict(documents=documents, resolution=resolution, links=links), entities,
+    return Inputs(dict(documents=documents, resolution=resolution), entities,
                   metadata | dict(research_graph=RESEARCH_GRAPH_NAMESPACE, reference_sha256=old.sha(REFERENCE)))
 
 
 def delta_identity(folder):
     manifest = load_checked(folder / "manifest.json")
     actual = {"manifest.json": old.sha(folder / "manifest.json")}
-    files = manifest["files_sha256"]
+    # Запись в старом манифесте допустима, содержимое semantic.json графу больше не требуется.
+    files = {name: checksum for name, checksum in manifest["files_sha256"].items() if name != "semantic.json"}
     if set(files) not in (DELTA_FILES, DELTA_FILES | {"entities.json"}):
-        raise ValueError("Delta manifest must pin documents, ER, SIMILAR_TO and optional V2 vectors")
+        raise ValueError("Delta manifest must pin documents, ER and optional V2 vectors")
     for name, expected in files.items():
         checksum = old.sha(folder / name)
         if checksum != expected:
             raise ValueError(f"Delta file checksum mismatch: {name}")
         actual[name] = checksum
     return dict(base_generation=manifest["base_generation"], input_sha256=actual)
-
-
-def checked_delta_links(links, documents, resolution, new_ids):
-    mapping = resolution["mapping"]
-    source = {member["source_entity"]["entity_id"]: member
-              for group in resolution["entities"].values() for member in group}
-    cutoff = old.graph.binary_cutoff(SEMANTIC_THRESHOLD)
-    for row in links:
-        a, b = row["source_head_id"], row["source_tail_id"]
-        left, right = source[a], source[b]
-        if (not a < b or row["link_id"] != "sl:" + relex.digest([a, b])
-                or row["head_id"] != mapping[a] or row["tail_id"] != mapping[b]
-                or new_ids.isdisjoint({mapping[a], mapping[b]})
-                or (row["mode"], row["model"], row["threshold"]) != ("text_name", MODEL, SEMANTIC_THRESHOLD)
-                or not isinstance(row["similarity"], (int, float))
-                or not cutoff <= row["similarity"] <= 1.000001
-                or any(row[key] is not False for key in ("factual", "identity", "fact_inheritance_allowed"))):
-            raise ValueError("Delta SIMILAR_TO differs from the existing mechanism or scope")
-        for field, context_field, record in (("left_document_id", "left_context", left),
-                                             ("right_document_id", "right_context", right)):
-            context = record["context"]
-            if row[context_field] != context or row[field] != record["source_entity"]["document_id"]:
-                raise ValueError("Delta SIMILAR_TO source provenance mismatch")
-            validate_span(documents[row[field]]["text"], context["start"], context["end"], context["text"])
 
 
 def delta_inputs(folder, identity, previous, base, model, cache, threads, max_seconds, max_rss):
@@ -146,9 +121,8 @@ def delta_inputs(folder, identity, previous, base, model, cache, threads, max_se
     if former["documents"].keys() & docs.keys():
         raise ValueError("Only new document IDs can be appended")
     resolution = old.load_checkpoint(folder/"entity_resolution.json", {"stage": "entity_resolution"}, lambda _: None)
-    links = old.load_checkpoint(folder/"semantic.json", {"stage": "semantic"}, lambda _: None)
-    if not isinstance(resolution, dict) or not isinstance(links, list):
-        raise ValueError("Invalid upstream ER or SIMILAR_TO checksum")
+    if not isinstance(resolution, dict):
+        raise ValueError("Invalid upstream ER checkpoint checksum")
     profiles = resolved_profiles(docs, folder/"entity_resolution.json")
     old_er = former["resolution"]
     for key in ("entities", "mapping"):
@@ -158,7 +132,6 @@ def delta_inputs(folder, identity, previous, base, model, cache, threads, max_se
     merged = dict(entities=old_er["entities"] | resolution["entities"],
                   mapping=old_er["mapping"] | resolution["mapping"],
                   relations=old_er["relations"] + resolution["relations"])
-    checked_delta_links(links, all_docs, merged, resolution["entities"].keys())
     recipe = previous.metadata["recipe"]
     if "entities.json" in identity["input_sha256"]:
         vectors = sorted(read_entity_bundle(folder/"entities.json"), key=lambda e: e.entity_id)
@@ -177,6 +150,6 @@ def delta_inputs(folder, identity, previous, base, model, cache, threads, max_se
             raise ValueError("Delta E5 recipe differs from the pinned base recipe")
     if delta_identity(folder) != identity:
         raise ValueError("Delta changed while preparing inputs")
-    return Inputs(dict(documents=all_docs, resolution=merged, links=former["links"] + links),
+    return Inputs(dict(documents=all_docs, resolution=merged),
                   previous.entities + vectors,
                   dict(recipe=recipe, research_graph=RESEARCH_GRAPH_NAMESPACE, delta=identity))

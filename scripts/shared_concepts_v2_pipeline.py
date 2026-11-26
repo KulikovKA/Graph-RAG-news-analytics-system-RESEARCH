@@ -126,7 +126,7 @@ def check_windows(profiles, windows, documents):
             raise ValueError("Source mentions and window evidence differ")
 
 
-def frozen_corpus(directory=PREVIOUS_RUN):
+def frozen_corpus(directory=PREVIOUS_RUN, *, graph_inputs_only=False):
     """Проверяет цепочку доверия 3A.5.11 → 3A.5.12 → 3A.5.13."""
     manifest = read(FROZEN_MANIFEST)
     identity = read(directory / "identity.json")
@@ -144,7 +144,16 @@ def frozen_corpus(directory=PREVIOUS_RUN):
             or locked["embedding"] != RECIPE
             or {k: v for k, v in identity["embedding"].items() if k not in {"threads", "workers"}} != RECIPE):
         raise ValueError("Incompatible Corpus100 embedding or input identity")
-    for path, value in expected_inputs.items():
+    used_inputs = expected_inputs
+    if graph_inputs_only:
+        # Исторические манифесты остаются неизменными, но для графа нужны только исходники и ER.
+        used_paths = (
+            previous.frozen.CORPUS, previous.frozen.FROZEN / "document_lock.json",
+            previous.PRIOR / "manifest.json", previous.PRIOR / "checkpoints/entity_resolution/corpus.json",
+        )
+        used_inputs = {p.relative_to(ROOT).as_posix(): expected_inputs[p.relative_to(ROOT).as_posix()]
+                       for p in used_paths}
+    for path, value in used_inputs.items():
         if sha(ROOT / path) != value:
             raise ValueError(f"Frozen input checksum mismatch: {path}")
     recipe = vector_recipe(locked["model_files_sha256"])
@@ -185,7 +194,7 @@ def frozen_corpus(directory=PREVIOUS_RUN):
     recipe_hash = digest(recipe)
     entities = [Entity.create(profile, row["contexts"], (n, c), recipe_hash)
                 for profile, row, n, c in zip(profiles, windows, names, contexts, strict=True)]
-    return entities, dict(recipe=recipe, corpus="Corpus100", input_hashes=expected_inputs, vector_hashes=files,
+    return entities, dict(recipe=recipe, corpus="Corpus100", input_hashes=used_inputs, vector_hashes=files,
                           prior_fingerprint=prior, embedding_source=previous.STAGE,
                           frozen_manifest_sha256=sha(FROZEN_MANIFEST), inference_seconds=0,
                           reused_entity_vectors=len(entities), inference_versions=identity["versions"])
